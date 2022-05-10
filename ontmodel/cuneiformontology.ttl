@@ -1,0 +1,10 @@
+@prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix cunei: <http://www.purl.org/cuneiform/> .
+@prefix lemon: <http://lemon-model.net/lemon#> .
+@prefix anno: <http://www.w3.org/ns/anno.jsonld> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+cunei:Tablet rdf:type owl:Class .
+cunei:Tablet rdfs:subClassOf cidoc:E22_ManMadeObject .
