@@ -24,3 +24,9 @@ jobs:
          cp index.html docs/index.html
          pylode -i ontmodel/cuneiformontology.ttl -o docs/ontology.html
          pylode -i postagging/akkadian.ttl -o docs/postagging.html
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+         BRANCH: gh-pages
+         FOLDER: docs/
