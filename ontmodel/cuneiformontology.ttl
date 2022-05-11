@@ -162,37 +162,43 @@ cidoc:TX9_Glyph rdf:type owl:Class ;
 ###  http://www.co-ode.org/ontologies/ont.owl#BottomSide
 <http://www.co-ode.org/ontologies/ont.owl#BottomSide> rdf:type owl:Class ;
                                                       rdfs:subClassOf cunei:TabletSide ;
-                                                      rdfs:label "bottom side"@en .
+                                                      rdfs:label "bottom side"@en ;
+                                                      <http://www.w3.org/2004/02/skos/core#definition> "The bottom side of a cuneiform tablet"@en .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#LeftSide
 <http://www.co-ode.org/ontologies/ont.owl#LeftSide> rdf:type owl:Class ;
                                                     rdfs:subClassOf cunei:TabletSide ;
-                                                    rdfs:label "left side"@en .
+                                                    rdfs:label "left side"@en ;
+                                                    <http://www.w3.org/2004/02/skos/core#definition> "The left side of a cuneiform tablet"@en .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ObverseSide
 <http://www.co-ode.org/ontologies/ont.owl#ObverseSide> rdf:type owl:Class ;
                                                        rdfs:subClassOf cunei:TabletSide ;
-                                                       rdfs:label "obverse side"@en .
+                                                       rdfs:label "obverse side"@en ;
+                                                       <http://www.w3.org/2004/02/skos/core#definition> "The obverse side of a cuneiform tablet"@en .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ReverseSide
 <http://www.co-ode.org/ontologies/ont.owl#ReverseSide> rdf:type owl:Class ;
                                                        rdfs:subClassOf cunei:TabletSide ;
-                                                       rdfs:label "reverse side"@en .
+                                                       rdfs:label "reverse side"@en ;
+                                                       <http://www.w3.org/2004/02/skos/core#definition> "The reverse side of a cuneiform tablet"@en .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#RightSide
 <http://www.co-ode.org/ontologies/ont.owl#RightSide> rdf:type owl:Class ;
                                                      rdfs:subClassOf cunei:TabletSide ;
-                                                     rdfs:label "right side"@en .
+                                                     rdfs:label "right side"@en ;
+                                                     <http://www.w3.org/2004/02/skos/core#definition> "The right side of a cuneiform tablet"@en .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#TopSide
 <http://www.co-ode.org/ontologies/ont.owl#TopSide> rdf:type owl:Class ;
                                                    rdfs:subClassOf cunei:TabletSide ;
-                                                   rdfs:label "top side"@en .
+                                                   rdfs:label "top side"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "The top side of a cuneiform tablet"@en .
 
 
 ###  http://www.opengis.net/ont/geosparql#Feature
@@ -248,7 +254,8 @@ cunei:TabletSide rdf:type owl:Class ;
 ###  http://www.purl.org/cuneiform/Transliteration
 cunei:Transliteration rdf:type owl:Class ;
                       rdfs:subClassOf cidoc:TX6_Transcription ;
-                      rdfs:label "transliteration"@en .
+                      rdfs:label "transliteration"@en ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "The transliteration of the text of a cuneiform tablet including all tablet sides"@en .
 
 
 ###  http://www.purl.org/cuneiform/WordForm
@@ -274,7 +281,8 @@ cunei:WordForm rdf:type owl:Class ;
 
 
 ###  http://www.w3.org/ns/prov#Activity
-<http://www.w3.org/ns/prov#Activity> rdf:type owl:Class .
+<http://www.w3.org/ns/prov#Activity> rdf:type owl:Class ;
+                                     <http://www.w3.org/2004/02/skos/core#definition> "activity"@en .
 
 
 ###  http://www.w3.org/ns/prov#Entity
