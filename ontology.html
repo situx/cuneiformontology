@@ -251,6 +251,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
       <li><a href="http://lemon-model.net/lemon#LexicalForm">lemon:LexicalForm</a></li>
       <li><a href="http://lemon-model.net/lemon#LexicalSense">lemon:LexicalSense</a></li>
       <li><a href="http://lemon-model.net/lemon#Lexicon">lemon:Lexicon</a></li>
+      <li><a href="http://lemon-model.net/lemon#Word">lemon:Word</a></li>
       <li><a href="http://www.cidoc-crm.org/cidoc-crm/E22_ManMadeObject">cidoc:E22_ManMadeObject</a></li>
       <li><a href="http://www.cidoc-crm.org/cidoc-crm/TX1_WrittenText">cidoc:TX1_WrittenText</a></li>
       <li><a href="http://www.cidoc-crm.org/cidoc-crm/TX2_Writing">cidoc:TX2_Writing</a></li>
@@ -266,11 +267,16 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
       <li><a href="http://www.opengis.net/ont/geosparql#Geometry">geosparql:Geometry</a></li>
       <li><a href="http://www.opengis.net/ont/geosparql#SpatialObject">geosparql:SpatialObject</a></li>
       <li><a href="#bottomside">bottom side</a></li>
+      <li><a href="#damagedarea">damaged area</a></li>
+      <li><a href="#erasure">erasure</a></li>
       <li><a href="#findspot">find spot</a></li>
+      <li><a href="#firinghole">firing hole</a></li>
       <li><a href="#GottsteinWedgeTypeA">Gottstein Wedge Type A</a></li>
       <li><a href="#GottsteinWedgeTypeB">Gottstein Wedge Type B</a></li>
       <li><a href="#GottsteinWedgeTypeC">Gottstein Wedge Type C</a></li>
       <li><a href="#GottsteinWedgeTypeD">Gottstein Wedge Type D</a></li>
+      <li><a href="#horizontalruling">horizontal ruling</a></li>
+      <li><a href="#ImageAnnotation">ImageAnnotation</a></li>
       <li><a href="#leftside">left side</a></li>
       <li><a href="#line">line</a></li>
       <li><a href="#obverseside">obverse side</a></li>
@@ -281,15 +287,24 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
       <li><a href="#PaleoCodeWedgeTypeE">PaleoCode Wedge Type E</a></li>
       <li><a href="#PaleoCodeWedgeTypeF">PaleoCode Wedge Type F</a></li>
       <li><a href="#PaleoCodeWedgeTypeW">PaleoCode Wedge Type W</a></li>
+      <li><a href="#pictoralelement">pictoral element</a></li>
       <li><a href="#reverseside">reverse side</a></li>
       <li><a href="#rightside">right side</a></li>
+      <li><a href="#ruling">ruling</a></li>
+      <li><a href="#seal">seal</a></li>
       <li><a href="#sentence">sentence</a></li>
       <li><a href="#cuneiformtablet">cuneiform tablet</a></li>
+      <li><a href="#tabletfeature">tablet feature</a></li>
       <li><a href="#tabletside">tablet side</a></li>
       <li><a href="#topside">top side</a></li>
       <li><a href="#transliteration">transliteration</a></li>
+      <li><a href="#verticalruling">vertical ruling</a></li>
       <li><a href="#wedgetype">wedge type</a></li>
       <li><a href="#wordoccurence">word occurence</a></li>
+      <li><a href="#TransliterationCharOccurance">Transliteration CharOccurance</a></li>
+      <li><a href="#TransliterationLine">Transliteration Line</a></li>
+      <li><a href="#TransliterationSentence">Transliteration Sentence</a></li>
+      <li><a href="#TransliterationWordOccurance">Transliteration WordOccurance</a></li>
       <li><a href="http://www.w3.org/ns/oa#Annotation">oa:Annotation</a></li>
       <li><a href="http://www.w3.org/ns/oa#SvgSelector">oa:SvgSelector</a></li>
       <li><a href="http://www.w3.org/ns/oa#TextualBody">oa:TextualBody</a></li>
@@ -305,6 +320,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>URI</th>
                 <td><code>http://lemon-model.net/lemon#LexicalEntry</code></td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="http://lemon-model.net/lemon#Word">lemon:Word</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
             </tr>
             <tr>
                 <th>In domain of</th>
@@ -376,6 +397,24 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>In domain of</th>
                 <td>
                     <a href="http://lemon-model.net/lemon#entry">lemon:entry</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Word">
+        <h3>
+          Word<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Word" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://lemon-model.net/lemon#Word</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="http://lemon-model.net/lemon#LexicalEntry">lemon:LexicalEntry</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -526,9 +565,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Sub-classes</th>
                 <td>
                     <a href="http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph">cidoc:TX9_Glyph</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#wordoccurence">word occurence</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#sentence">sentence</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#line">line</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#sentence">sentence</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#wordoccurence">word occurence</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -609,12 +648,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#PaleoCodeWedgeTypeD">PaleoCode Wedge Type D</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#PaleoCodeWedgeTypeE">PaleoCode Wedge Type E</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#PaleoCodeWedgeTypeF">PaleoCode Wedge Type F</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#PaleoCodeWedgeTypeA">PaleoCode Wedge Type A</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#PaleoCodeWedgeTypeE">PaleoCode Wedge Type E</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#PaleoCodeWedgeTypeB">PaleoCode Wedge Type B</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#PaleoCodeWedgeTypeD">PaleoCode Wedge Type D</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#PaleoCodeWedgeTypeC">PaleoCode Wedge Type C</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#PaleoCodeWedgeTypeA">PaleoCode Wedge Type A</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#PaleoCodeWedgeTypeW">PaleoCode Wedge Type W</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
@@ -687,8 +726,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#Geometry">geosparql:Geometry</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.opengis.net/ont/geosparql#Feature">geosparql:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.opengis.net/ont/geosparql#Geometry">geosparql:Geometry</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -723,6 +762,66 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
+    <div class="entity class" id="damagedarea">
+        <h3>
+          damaged area<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#damagedarea" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/DamagedArea</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A damaged area on a cuneiform tablet</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#tabletfeature">tablet feature</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#hasdamagedarea">has damaged area</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="erasure">
+        <h3>
+          erasure<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#erasure" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/Erasure</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>An erasure found on a cuneiform tablet</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#tabletfeature">tablet feature</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#haserasure">has erasure</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity class" id="findspot">
         <h3>
           find spot<sup title="class" class="sup-c">c</sup>
@@ -737,6 +836,36 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Super-classes</th>
                 <td>
                     <a href="http://www.opengis.net/ont/geosparql#Feature">geosparql:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="firinghole">
+        <h3>
+          firing hole<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#firinghole" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/FiringHole</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A firing hole present on a cuneiform tablet</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#tabletfeature">tablet feature</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#hasfiringhole">has firing hole</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -837,6 +966,42 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
+    <div class="entity class" id="horizontalruling">
+        <h3>
+          horizontal ruling<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#horizontalruling" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/HorizontalRuling</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A horizontal ruling on a cuneiform tablet</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#ruling">ruling</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="ImageAnnotation">
+        <h3>
+          ImageAnnotation<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ImageAnnotation" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/ImageAnnotation</code></td>
+            </tr>
+        </table>
+    </div>
     <div class="entity class" id="leftside">
         <h3>
           left side<sup title="class" class="sup-c">c</sup>
@@ -899,8 +1064,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#nextline">next line</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#previousline">previous line</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#nextline">next line</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1103,6 +1268,36 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
+    <div class="entity class" id="pictoralelement">
+        <h3>
+          pictoral element<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#pictoralelement" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/PictoralElement</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A pictoral element on a cuneiform tablet</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#tabletfeature">tablet feature</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#haspictoralelement">has pictoral element</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity class" id="reverseside">
         <h3>
           reverse side<sup title="class" class="sup-c">c</sup>
@@ -1159,6 +1354,73 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>In range of</th>
                 <td>
                     <a href="#hasside">has side</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="ruling">
+        <h3>
+          ruling<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ruling" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/Ruling</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A ruling on a cuneiform tablet</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#tabletfeature">tablet feature</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#verticalruling">vertical ruling</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#horizontalruling">horizontal ruling</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#hasruling">has ruling</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="seal">
+        <h3>
+          seal<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#seal" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/Seal</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A seal inscription on a cuneiform tablet</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#tabletfeature">tablet feature</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#hasseal">has seal</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1225,6 +1487,35 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
+    <div class="entity class" id="tabletfeature">
+        <h3>
+          tablet feature<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#tabletfeature" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/TabletFeature</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A feature physically represented on a cuneiform tablet</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#ruling">ruling</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#damagedarea">damaged area</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#pictoralelement">pictoral element</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#firinghole">firing hole</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#seal">seal</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#erasure">erasure</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity class" id="tabletside">
         <h3>
           tablet side<sup title="class" class="sup-c">c</sup>
@@ -1250,12 +1541,23 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#rightside">right side</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#topside">top side</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#reverseside">reverse side</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#obverseside">obverse side</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#rightside">right side</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#leftside">left side</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#bottomside">bottom side</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#obverseside">obverse side</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#haserasure">has erasure</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasseal">has seal</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasdamagedarea">has damaged area</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#haspictoralelement">has pictoral element</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasruling">has ruling</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasfiringhole">has firing hole</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -1318,6 +1620,39 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                     <a href="http://www.cidoc-crm.org/cidoc-crm/TX6_Transcription">cidoc:TX6_Transcription</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#TransliterationSentence">Transliteration Sentence</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#TransliterationCharOccurance">Transliteration CharOccurance</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#TransliterationLine">Transliteration Line</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#TransliterationWordOccurance">Transliteration WordOccurance</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="verticalruling">
+        <h3>
+          vertical ruling<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#verticalruling" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/VerticalRuling</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A vertical ruling on a cuneiform tablet</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#ruling">ruling</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="entity class" id="wedgetype">
@@ -1376,15 +1711,87 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#previousword">previous word</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#nextword">next word</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#previousword">previous word</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#nextword">next word</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#previousword">previous word</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#nextword">next word</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="TransliterationCharOccurance">
+        <h3>
+          Transliteration CharOccurance<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#TransliterationCharOccurance" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/transliteration_charoccurrence</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#transliteration">transliteration</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="TransliterationLine">
+        <h3>
+          Transliteration Line<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#TransliterationLine" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/transliteration_line</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#transliteration">transliteration</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="TransliterationSentence">
+        <h3>
+          Transliteration Sentence<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#TransliterationSentence" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/transliteration_sentence</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#transliteration">transliteration</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="TransliterationWordOccurance">
+        <h3>
+          Transliteration WordOccurance<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#TransliterationWordOccurance" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/transliteration_wordoccurence</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#transliteration">transliteration</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1402,8 +1809,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="http://www.w3.org/ns/oa#hasBody">oa:hasBody</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="http://www.w3.org/ns/oa#hasTarget">oa:hasTarget</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.w3.org/ns/oa#hasBody">oa:hasBody</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1492,9 +1899,16 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <li><a href="#represents">represents</a></li>
         <li><a href="#isfoundon">is found on</a></li>
         <li><a href="#readby">read by</a></li>
+        <li><a href="#includes">includes</a></li>
         <li><a href="#isrenderedby">is rendered by</a></li>
         <li><a href="#isencodedby">is encoded by</a></li>
         <li><a href="#hasgeometry">has geometry</a></li>
+        <li><a href="#hasdamagedarea">has damaged area</a></li>
+        <li><a href="#haserasure">has erasure</a></li>
+        <li><a href="#hasfiringhole">has firing hole</a></li>
+        <li><a href="#haspictoralelement">has pictoral element</a></li>
+        <li><a href="#hasruling">has ruling</a></li>
+        <li><a href="#hasseal">has seal</a></li>
         <li><a href="#hasside">has side</a></li>
         <li><a href="#includeswedgetype">includes wedge type</a></li>
         <li><a href="#isattested">is attested</a></li>
@@ -1634,6 +2048,17 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
+    <div class="entity property" id="includes">
+        <h3>includes<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#includes" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.cidoc-crm.org/cidoc-crm/TXP2_includes</code></td>
+            </tr>
+        </table>
+    </div>
     <div class="entity property" id="isrenderedby">
         <h3>is rendered by<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
             <a href="#isrenderedby" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
@@ -1685,6 +2110,144 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
+    <div class="entity property" id="hasdamagedarea">
+        <h3>has damaged area<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasdamagedarea" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/hasDamagedArea</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#tabletside">tablet side</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/DamagedArea">cunei:DamagedArea</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="haserasure">
+        <h3>has erasure<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#haserasure" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/hasErasure</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#tabletside">tablet side</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/Erasure">cunei:Erasure</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasfiringhole">
+        <h3>has firing hole<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasfiringhole" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/hasFiringHole</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#tabletside">tablet side</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/FiringHole">cunei:FiringHole</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="haspictoralelement">
+        <h3>has pictoral element<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#haspictoralelement" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/hasPictoralElement</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#tabletside">tablet side</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/PictoralElement">cunei:PictoralElement</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasruling">
+        <h3>has ruling<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasruling" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/hasRuling</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#tabletside">tablet side</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/Ruling">cunei:Ruling</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasseal">
+        <h3>has seal<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasseal" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/hasSeal</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#tabletside">tablet side</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/Seal">cunei:Seal</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity property" id="hasside">
         <h3>has side<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
             <a href="#hasside" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
@@ -1703,13 +2266,13 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://www.purl.org/cuneiform/RightSide">cunei:RightSide</a><sup class="sup-c" title="class">c</sup>
                     <a href="http://www.purl.org/cuneiform/BottomSide">cunei:BottomSide</a><sup class="sup-c" title="class">c</sup>
-                    <a href="http://www.purl.org/cuneiform/ObverseSide">cunei:ObverseSide</a><sup class="sup-c" title="class">c</sup>
-                    <a href="http://www.purl.org/cuneiform/TabletSide">cunei:TabletSide</a><sup class="sup-c" title="class">c</sup>
-                    <a href="http://www.purl.org/cuneiform/TopSide">cunei:TopSide</a><sup class="sup-c" title="class">c</sup>
-                    <a href="http://www.purl.org/cuneiform/ReverseSide">cunei:ReverseSide</a><sup class="sup-c" title="class">c</sup>
                     <a href="http://www.purl.org/cuneiform/LeftSide">cunei:LeftSide</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://www.purl.org/cuneiform/ObverseSide">cunei:ObverseSide</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://www.purl.org/cuneiform/RightSide">cunei:RightSide</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://www.purl.org/cuneiform/ReverseSide">cunei:ReverseSide</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://www.purl.org/cuneiform/TopSide">cunei:TopSide</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://www.purl.org/cuneiform/TabletSide">cunei:TabletSide</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
