@@ -361,9 +361,14 @@ cunei:DamagedArea rdf:type owl:Class ;
                   <http://www.w3.org/2004/02/skos/core#definition> "A damaged area on a cuneiform tablet"@en .
 
 
+###  http://www.purl.org/cuneiform/Dynasty
+cunei:Dynasty rdf:type owl:Class ;
+              rdfs:label "dynasty" .
+
+
 ###  http://www.purl.org/cuneiform/Epoch
 cunei:Epoch rdf:type owl:Class ;
-            <http://www.w3.org/2004/02/skos/core#definition> "epoch" .
+            rdfs:label "epoch" .
 
 
 ###  http://www.purl.org/cuneiform/Erasure
@@ -787,6 +792,11 @@ cunei:Hellenistic rdf:type owl:NamedIndividual ,
                            cunei:Epoch .
 
 
+###  http://www.purl.org/cuneiform/Kish
+cunei:Kish rdf:type owl:NamedIndividual ,
+                    cunei:Dynasty .
+
+
 ###  http://www.purl.org/cuneiform/LinearElamite
 cunei:LinearElamite rdf:type owl:NamedIndividual ,
                              cunei:Epoch .
@@ -802,6 +812,11 @@ cunei:MiddleBabylonian rdf:type owl:NamedIndividual ,
                                 cunei:Epoch .
 
 
+###  http://www.purl.org/cuneiform/MiddleElamite
+cunei:MiddleElamite rdf:type owl:NamedIndividual ,
+                             cunei:Epoch .
+
+
 ###  http://www.purl.org/cuneiform/MiddleHittite
 cunei:MiddleHittite rdf:type owl:NamedIndividual ,
                              cunei:Epoch .
@@ -810,6 +825,11 @@ cunei:MiddleHittite rdf:type owl:NamedIndividual ,
 ###  http://www.purl.org/cuneiform/NeoAssyrian
 cunei:NeoAssyrian rdf:type owl:NamedIndividual ,
                            cunei:Epoch .
+
+
+###  http://www.purl.org/cuneiform/NeoElamite
+cunei:NeoElamite rdf:type owl:NamedIndividual ,
+                          cunei:Epoch .
 
 
 ###  http://www.purl.org/cuneiform/OldAssyrian
@@ -832,9 +852,19 @@ cunei:UncertainPeriod rdf:type owl:NamedIndividual ,
                                cunei:Epoch .
 
 
+###  http://www.purl.org/cuneiform/Ur
+cunei:Ur rdf:type owl:NamedIndividual ,
+                  cunei:Dynasty .
+
+
 ###  http://www.purl.org/cuneiform/UrIII
 cunei:UrIII rdf:type owl:NamedIndividual ,
                      cunei:Epoch .
+
+
+###  http://www.purl.org/cuneiform/Uruk
+cunei:Uruk rdf:type owl:NamedIndividual ,
+                    cunei:Dynasty .
 
 
 ###  http://www.purl.org/cuneiform/Uruk3
