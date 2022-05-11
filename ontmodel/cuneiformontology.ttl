@@ -246,6 +246,23 @@ cunei:prevWord rdf:type owl:ObjectProperty ;
 
 
 #################################################################
+#    Data properties
+#################################################################
+
+###  http://www.purl.org/cuneiform/height
+cunei:height rdf:type owl:DatatypeProperty ;
+             rdfs:domain cunei:Tablet ;
+             rdfs:label "height" .
+
+
+###  http://www.purl.org/cuneiform/width
+cunei:width rdf:type owl:DatatypeProperty ;
+            rdfs:domain cunei:Tablet ;
+            rdfs:label "width" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "width of the cuneiform tablet" .
+
+
+#################################################################
 #    Classes
 #################################################################
 
@@ -887,9 +904,19 @@ cunei:agate rdf:type owl:NamedIndividual ,
                      cunei:Material .
 
 
+###  http://www.purl.org/cuneiform/alabaster
+cunei:alabaster rdf:type owl:NamedIndividual ,
+                         cunei:Material .
+
+
 ###  http://www.purl.org/cuneiform/alloy
 cunei:alloy rdf:type owl:NamedIndividual ,
                      cunei:MaterialAspect .
+
+
+###  http://www.purl.org/cuneiform/aragonite
+cunei:aragonite rdf:type owl:NamedIndividual ,
+                         cunei:Material .
 
 
 ###  http://www.purl.org/cuneiform/baked
@@ -902,9 +929,29 @@ cunei:banded rdf:type owl:NamedIndividual ,
                       cunei:MaterialAspect .
 
 
+###  http://www.purl.org/cuneiform/bitumen
+cunei:bitumen rdf:type owl:NamedIndividual ,
+                       cunei:Material .
+
+
 ###  http://www.purl.org/cuneiform/burnt
 cunei:burnt rdf:type owl:NamedIndividual ,
                      cunei:MaterialAspect .
+
+
+###  http://www.purl.org/cuneiform/calcite
+cunei:calcite rdf:type owl:NamedIndividual ,
+                       cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/carnelian
+cunei:carnelian rdf:type owl:NamedIndividual ,
+                         cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/chlorite
+cunei:chlorite rdf:type owl:NamedIndividual ,
+                        cunei:Material .
 
 
 ###  http://www.purl.org/cuneiform/clay
@@ -922,9 +969,24 @@ cunei:composite rdf:type owl:NamedIndividual ,
                          cunei:MaterialAspect .
 
 
+###  http://www.purl.org/cuneiform/copper
+cunei:copper rdf:type owl:NamedIndividual ,
+                      cunei:Material .
+
+
 ###  http://www.purl.org/cuneiform/glazed
 cunei:glazed rdf:type owl:NamedIndividual ,
                       cunei:MaterialAspect .
+
+
+###  http://www.purl.org/cuneiform/gneiss
+cunei:gneiss rdf:type owl:NamedIndividual ,
+                      cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/gypsum
+cunei:gypsum rdf:type owl:NamedIndividual ,
+                      cunei:Material .
 
 
 ###  http://www.purl.org/cuneiform/iron
@@ -932,9 +994,29 @@ cunei:iron rdf:type owl:NamedIndividual ,
                     cunei:Material .
 
 
+###  http://www.purl.org/cuneiform/ivory
+cunei:ivory rdf:type owl:NamedIndividual ,
+                     cunei:Material .
+
+
 ###  http://www.purl.org/cuneiform/jadelike
 cunei:jadelike rdf:type owl:NamedIndividual ,
                         cunei:MaterialAspect .
+
+
+###  http://www.purl.org/cuneiform/lapislazuli
+cunei:lapislazuli rdf:type owl:NamedIndividual ,
+                           cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/lead
+cunei:lead rdf:type owl:NamedIndividual ,
+                    cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/limestone
+cunei:limestone rdf:type owl:NamedIndividual ,
+                         cunei:Material .
 
 
 ###  http://www.purl.org/cuneiform/marble
@@ -942,14 +1024,44 @@ cunei:marble rdf:type owl:NamedIndividual ,
                       cunei:Material .
 
 
+###  http://www.purl.org/cuneiform/obsidian
+cunei:obsidian rdf:type owl:NamedIndividual ,
+                        cunei:Material .
+
+
 ###  http://www.purl.org/cuneiform/petrified
 cunei:petrified rdf:type owl:NamedIndividual ,
                          cunei:MaterialAspect .
 
 
+###  http://www.purl.org/cuneiform/plasma
+cunei:plasma rdf:type owl:NamedIndividual ,
+                      cunei:Material .
+
+
 ###  http://www.purl.org/cuneiform/plaster
 cunei:plaster rdf:type owl:NamedIndividual ,
                        cunei:MaterialAspect .
+
+
+###  http://www.purl.org/cuneiform/sandstone
+cunei:sandstone rdf:type owl:NamedIndividual ,
+                         cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/schist
+cunei:schist rdf:type owl:NamedIndividual ,
+                      cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/serpentine
+cunei:serpentine rdf:type owl:NamedIndividual ,
+                          cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/shell
+cunei:shell rdf:type owl:NamedIndividual ,
+                     cunei:Material .
 
 
 ###  http://www.purl.org/cuneiform/shiny
@@ -970,6 +1082,16 @@ cunei:stone rdf:type owl:NamedIndividual ,
 ###  http://www.purl.org/cuneiform/translucent
 cunei:translucent rdf:type owl:NamedIndividual ,
                            cunei:MaterialAspect .
+
+
+###  http://www.purl.org/cuneiform/tuff
+cunei:tuff rdf:type owl:NamedIndividual ,
+                    cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/wood
+cunei:wood rdf:type owl:NamedIndividual ,
+                    cunei:Material .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
