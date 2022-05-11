@@ -1,3 +1,4 @@
+@prefix : <http://www.purl.org/cuneiform/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -7,12 +8,11 @@
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix cunei: <http://www.purl.org/cuneiform/> .
 @prefix lemon: <http://lemon-model.net/lemon#> .
-@base <http://www.w3.org/2002/07/owl#> .
+@base <http://www.purl.org/cuneiform/> .
 
-[ rdf:type owl:Ontology ;
-   <http://purl.org/dc/elements/1.1/title> "Ontology Model for Cuneiform Artifacts" ;
-   <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0"
- ] .
+<http://www.purl.org/cuneiform/> rdf:type owl:Ontology ;
+                                  <http://purl.org/dc/elements/1.1/title> "Ontology Model for Cuneiform Artifacts" ;
+                                  <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" .
 
 #################################################################
 #    Annotation properties
@@ -90,20 +90,6 @@ cidoc:TXP9_is_encoded_by rdf:type owl:ObjectProperty ;
                          rdfs:label "is encoded by" .
 
 
-###  http://www.co-ode.org/ontologies/ont.owl#nextSentence
-<http://www.co-ode.org/ontologies/ont.owl#nextSentence> rdf:type owl:ObjectProperty ;
-                                                        rdfs:domain cunei:Sentence ;
-                                                        rdfs:range cunei:Sentence ;
-                                                        rdfs:label "next sentence" .
-
-
-###  http://www.co-ode.org/ontologies/ont.owl#prevSentence
-<http://www.co-ode.org/ontologies/ont.owl#prevSentence> rdf:type owl:ObjectProperty ;
-                                                        rdfs:domain cunei:Sentence ;
-                                                        rdfs:range cunei:Sentence ;
-                                                        rdfs:label "previous sentence" .
-
-
 ###  http://www.opengis.net/ont/geosparql#hasGeometry
 <http://www.opengis.net/ont/geosparql#hasGeometry> rdf:type owl:ObjectProperty ;
                                                    rdfs:domain <http://www.opengis.net/ont/geosparql#Feature> ;
@@ -114,14 +100,21 @@ cidoc:TXP9_is_encoded_by rdf:type owl:ObjectProperty ;
 ###  http://www.purl.org/cuneiform/hasSide
 cunei:hasSide rdf:type owl:ObjectProperty ;
               rdfs:domain cunei:Tablet ;
-              rdfs:range <http://www.co-ode.org/ontologies/ont.owl#BottomSide> ,
-                         <http://www.co-ode.org/ontologies/ont.owl#LeftSide> ,
-                         <http://www.co-ode.org/ontologies/ont.owl#ObverseSide> ,
-                         <http://www.co-ode.org/ontologies/ont.owl#ReverseSide> ,
-                         <http://www.co-ode.org/ontologies/ont.owl#RightSide> ,
-                         <http://www.co-ode.org/ontologies/ont.owl#TopSide> ,
-                         cunei:TabletSide ;
+              rdfs:range cunei:BottomSide ,
+                         cunei:LeftSide ,
+                         cunei:ObverseSide ,
+                         cunei:ReverseSide ,
+                         cunei:RightSide ,
+                         cunei:TabletSide ,
+                         cunei:TopSide ;
               rdfs:label "has side" .
+
+
+###  http://www.purl.org/cuneiform/includes_wedge_type
+cunei:includes_wedge_type rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf owl:topObjectProperty ;
+                          rdfs:range cunei:WedgeType ;
+                          rdfs:label "includes wedge type" .
 
 
 ###  http://www.purl.org/cuneiform/isAttested
@@ -136,6 +129,13 @@ cunei:nextLine rdf:type owl:ObjectProperty ;
                rdfs:label "next line" .
 
 
+###  http://www.purl.org/cuneiform/nextSentence
+cunei:nextSentence rdf:type owl:ObjectProperty ;
+                   rdfs:domain cunei:Sentence ;
+                   rdfs:range cunei:Sentence ;
+                   rdfs:label "next sentence" .
+
+
 ###  http://www.purl.org/cuneiform/nextWord
 cunei:nextWord rdf:type owl:ObjectProperty ;
                rdfs:domain cunei:WordForm ;
@@ -148,6 +148,13 @@ cunei:prevLine rdf:type owl:ObjectProperty ;
                rdfs:domain cunei:Line ;
                rdfs:range cunei:Line ;
                rdfs:label "previous line" .
+
+
+###  http://www.purl.org/cuneiform/prevSentence
+cunei:prevSentence rdf:type owl:ObjectProperty ;
+                   rdfs:domain cunei:Sentence ;
+                   rdfs:range cunei:Sentence ;
+                   rdfs:label "previous sentence" .
 
 
 ###  http://www.purl.org/cuneiform/prevWord
@@ -167,6 +174,7 @@ cunei:prevWord rdf:type owl:ObjectProperty ;
 ###  http://www.w3.org/ns/oa#hasPurpose
 <http://www.w3.org/ns/oa#hasPurpose> rdf:type owl:ObjectProperty ;
                                      rdfs:subPropertyOf owl:topObjectProperty ;
+                                     rdfs:domain <http://www.w3.org/ns/oa#TextualBody> ;
                                      rdfs:label "has purpose" .
 
 
@@ -256,46 +264,18 @@ cidoc:TX9_Glyph rdf:type owl:Class ;
                 rdfs:label "glyph"@en .
 
 
-###  http://www.co-ode.org/ontologies/ont.owl#BottomSide
-<http://www.co-ode.org/ontologies/ont.owl#BottomSide> rdf:type owl:Class ;
-                                                      rdfs:subClassOf cunei:TabletSide ;
-                                                      rdfs:label "bottom side"@en ;
-                                                      <http://www.w3.org/2004/02/skos/core#definition> "The bottom side of a cuneiform tablet"@en .
+###  http://www.co-ode.org/ontologies/ont.owl#GottsteinWedgeType
+<http://www.co-ode.org/ontologies/ont.owl#GottsteinWedgeType> rdf:type owl:Class ;
+                                                              rdfs:subClassOf cunei:WedgeType ;
+                                                              rdfs:label "Gottstein wedge type"@en ;
+                                                              <http://www.w3.org/2004/02/skos/core#definition> "A wedge type according to the Gottstein classification system"@en .
 
 
-###  http://www.co-ode.org/ontologies/ont.owl#LeftSide
-<http://www.co-ode.org/ontologies/ont.owl#LeftSide> rdf:type owl:Class ;
-                                                    rdfs:subClassOf cunei:TabletSide ;
-                                                    rdfs:label "left side"@en ;
-                                                    <http://www.w3.org/2004/02/skos/core#definition> "The left side of a cuneiform tablet"@en .
-
-
-###  http://www.co-ode.org/ontologies/ont.owl#ObverseSide
-<http://www.co-ode.org/ontologies/ont.owl#ObverseSide> rdf:type owl:Class ;
-                                                       rdfs:subClassOf cunei:TabletSide ;
-                                                       rdfs:label "obverse side"@en ;
-                                                       <http://www.w3.org/2004/02/skos/core#definition> "The obverse side of a cuneiform tablet"@en .
-
-
-###  http://www.co-ode.org/ontologies/ont.owl#ReverseSide
-<http://www.co-ode.org/ontologies/ont.owl#ReverseSide> rdf:type owl:Class ;
-                                                       rdfs:subClassOf cunei:TabletSide ;
-                                                       rdfs:label "reverse side"@en ;
-                                                       <http://www.w3.org/2004/02/skos/core#definition> "The reverse side of a cuneiform tablet"@en .
-
-
-###  http://www.co-ode.org/ontologies/ont.owl#RightSide
-<http://www.co-ode.org/ontologies/ont.owl#RightSide> rdf:type owl:Class ;
-                                                     rdfs:subClassOf cunei:TabletSide ;
-                                                     rdfs:label "right side"@en ;
-                                                     <http://www.w3.org/2004/02/skos/core#definition> "The right side of a cuneiform tablet"@en .
-
-
-###  http://www.co-ode.org/ontologies/ont.owl#TopSide
-<http://www.co-ode.org/ontologies/ont.owl#TopSide> rdf:type owl:Class ;
-                                                   rdfs:subClassOf cunei:TabletSide ;
-                                                   rdfs:label "top side"@en ;
-                                                   <http://www.w3.org/2004/02/skos/core#definition> "The top side of a cuneiform tablet"@en .
+###  http://www.co-ode.org/ontologies/ont.owl#PaleoCodeWedgeType
+<http://www.co-ode.org/ontologies/ont.owl#PaleoCodeWedgeType> rdf:type owl:Class ;
+                                                              rdfs:subClassOf cunei:WedgeType ;
+                                                              rdfs:label "PaleoCodage Wedge Type"@en ;
+                                                              <http://www.w3.org/2004/02/skos/core#definition> "A wedge type according to the PaleoCodage specification"@en .
 
 
 ###  http://www.opengis.net/ont/geosparql#Feature
@@ -315,10 +295,52 @@ cidoc:TX9_Glyph rdf:type owl:Class ;
                                                      rdfs:label "spatial object"@en .
 
 
+###  http://www.purl.org/cuneiform/BottomSide
+cunei:BottomSide rdf:type owl:Class ;
+                 rdfs:subClassOf cunei:TabletSide ;
+                 rdfs:label "bottom side"@en ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "The bottom side of a cuneiform tablet"@en .
+
+
 ###  http://www.purl.org/cuneiform/FindSpot
 cunei:FindSpot rdf:type owl:Class ;
                rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ;
                rdfs:label "find spot"@en .
+
+
+###  http://www.purl.org/cuneiform/Gottstein_A
+cunei:Gottstein_A rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GottsteinWedgeType> ;
+                  rdfs:label "Gottstein Wedge Type A"@en ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Wedge Type A as defined by the Gottstein system"@en .
+
+
+###  http://www.purl.org/cuneiform/Gottstein_B
+cunei:Gottstein_B rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GottsteinWedgeType> ;
+                  rdfs:label "Gottstein Wedge Type B"@en ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Wedge Type B as defined by the Gottstein system"@en .
+
+
+###  http://www.purl.org/cuneiform/Gottstein_C
+cunei:Gottstein_C rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GottsteinWedgeType> ;
+                  rdfs:label "Gottstein Wedge Type C"@en ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Wedge Type C as defined by the Gottstein system"@en .
+
+
+###  http://www.purl.org/cuneiform/Gottstein_D
+cunei:Gottstein_D rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GottsteinWedgeType> ;
+                  rdfs:label "Gottstein Wedge Type D"@en ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Wedge Type D as defined by the Gottstein system"@en .
+
+
+###  http://www.purl.org/cuneiform/LeftSide
+cunei:LeftSide rdf:type owl:Class ;
+               rdfs:subClassOf cunei:TabletSide ;
+               rdfs:label "left side"@en ;
+               <http://www.w3.org/2004/02/skos/core#definition> "The left side of a cuneiform tablet"@en .
 
 
 ###  http://www.purl.org/cuneiform/Line
@@ -326,6 +348,76 @@ cunei:Line rdf:type owl:Class ;
            rdfs:subClassOf cidoc:TX7_WrittenTextFragment ;
            rdfs:label "line"@en ;
            <http://www.w3.org/2004/02/skos/core#definition> "The physical representation of a line of text on a cuneiform artifact"@en .
+
+
+###  http://www.purl.org/cuneiform/ObverseSide
+cunei:ObverseSide rdf:type owl:Class ;
+                  rdfs:subClassOf cunei:TabletSide ;
+                  rdfs:label "obverse side"@en ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "The obverse side of a cuneiform tablet"@en .
+
+
+###  http://www.purl.org/cuneiform/PaleoCode_A
+cunei:PaleoCode_A rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#PaleoCodeWedgeType> ;
+                  rdfs:label "PaleoCode Wedge Type A"@en ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Wedge Type A as defined by the PaleoCodage encoding"@en .
+
+
+###  http://www.purl.org/cuneiform/PaleoCode_B
+cunei:PaleoCode_B rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#PaleoCodeWedgeType> ;
+                  rdfs:label "PaleoCode Wedge Type B"@en ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Wedge Type B as defined by the PaleoCodage encoding"@en .
+
+
+###  http://www.purl.org/cuneiform/PaleoCode_C
+cunei:PaleoCode_C rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#PaleoCodeWedgeType> ;
+                  rdfs:label "PaleoCode Wedge Type C"@en ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Wedge Type C as defined by the PaleoCodage encoding"@en .
+
+
+###  http://www.purl.org/cuneiform/PaleoCode_D
+cunei:PaleoCode_D rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#PaleoCodeWedgeType> ;
+                  rdfs:label "PaleoCode Wedge Type D"@en ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Wedge Type D as defined by the PaleoCodage encoding"@en .
+
+
+###  http://www.purl.org/cuneiform/PaleoCode_E
+cunei:PaleoCode_E rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#PaleoCodeWedgeType> ;
+                  rdfs:label "PaleoCode Wedge Type E"@en ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Wedge Type E as defined by the PaleoCodage encoding"@en .
+
+
+###  http://www.purl.org/cuneiform/PaleoCode_F
+cunei:PaleoCode_F rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#PaleoCodeWedgeType> ;
+                  rdfs:label "PaleoCode Wedge Type F"@en ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Wedge Type F as defined by the PaleoCodage encoding"@en .
+
+
+###  http://www.purl.org/cuneiform/PaleoCode_W
+cunei:PaleoCode_W rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#PaleoCodeWedgeType> ;
+                  rdfs:label "PaleoCode Wedge Type W"@en ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Wedge Type W as defined by the PaleoCodage encoding"@en .
+
+
+###  http://www.purl.org/cuneiform/ReverseSide
+cunei:ReverseSide rdf:type owl:Class ;
+                  rdfs:subClassOf cunei:TabletSide ;
+                  rdfs:label "reverse side"@en ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "The reverse side of a cuneiform tablet"@en .
+
+
+###  http://www.purl.org/cuneiform/RightSide
+cunei:RightSide rdf:type owl:Class ;
+                rdfs:subClassOf cunei:TabletSide ;
+                rdfs:label "right side"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "The right side of a cuneiform tablet"@en .
 
 
 ###  http://www.purl.org/cuneiform/Sentence
@@ -348,11 +440,24 @@ cunei:TabletSide rdf:type owl:Class ;
                  <http://www.w3.org/2004/02/skos/core#definition> "The side of a cuneiform artifact, usually one of obverse, reverse, left, right, top, bottom"@en .
 
 
+###  http://www.purl.org/cuneiform/TopSide
+cunei:TopSide rdf:type owl:Class ;
+              rdfs:subClassOf cunei:TabletSide ;
+              rdfs:label "top side"@en ;
+              <http://www.w3.org/2004/02/skos/core#definition> "The top side of a cuneiform tablet"@en .
+
+
 ###  http://www.purl.org/cuneiform/Transliteration
 cunei:Transliteration rdf:type owl:Class ;
                       rdfs:subClassOf cidoc:TX6_Transcription ;
                       rdfs:label "transliteration"@en ;
                       <http://www.w3.org/2004/02/skos/core#definition> "The transliteration of the text of a cuneiform tablet including all tablet sides"@en .
+
+
+###  http://www.purl.org/cuneiform/WedgeType
+cunei:WedgeType rdf:type owl:Class ;
+                rdfs:label "wedge type"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "The wedge type of a cuneiform sign according to a given codification system"@en .
 
 
 ###  http://www.purl.org/cuneiform/WordForm
