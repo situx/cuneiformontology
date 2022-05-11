@@ -3,6 +3,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix system: <http://purl.org/olia/system.owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://purl.org/olia/akkadian.owl> .
 
@@ -33,6 +34,15 @@
 ###  http://www.w3.org/2004/02/skos/core#definition
 <http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty ;
                                                  rdfs:subPropertyOf rdfs:label .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/olia/system.owl#hasTier
+<http://purl.org/olia/system.owl#hasTier> rdf:type owl:DatatypeProperty ;
+                                          rdfs:label "has tier" .
 
 
 #################################################################
@@ -153,7 +163,8 @@
 ###  http://purl.org/olia/akkadian.owl#First
 :First rdf:type owl:Class ;
        rdfs:subClassOf :Person ;
-       rdfs:label "first person"@en .
+       rdfs:label "first person"@en ;
+       <http://www.w3.org/2004/02/skos/core#definition> "first person case"@en .
 
 
 ###  http://purl.org/olia/akkadian.owl#Fraction
@@ -310,7 +321,12 @@
 
 ###  http://purl.org/olia/akkadian.owl#PartOfSpeech
 :PartOfSpeech rdf:type owl:Class ;
-              rdfs:subClassOf <http://purl.org/olia/system.owl#UnitOfAnnotation> ;
+              rdfs:subClassOf <http://purl.org/olia/system.owl#UnitOfAnnotation> 
+			  ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty system:hasTier ;
+                                    owl:hasValue "pos"
+                                  ] ;
               rdfs:label "part of speech"@en .
 
 
@@ -436,7 +452,8 @@
 ###  http://purl.org/olia/akkadian.owl#Second
 :Second rdf:type owl:Class ;
         rdfs:subClassOf :Person ;
-        rdfs:label "second person"@en .
+        rdfs:label "second person"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition> "second person case"@en .
 
 
 ###  http://purl.org/olia/akkadian.owl#Singular
@@ -496,7 +513,8 @@
 ###  http://purl.org/olia/akkadian.owl#Third
 :Third rdf:type owl:Class ;
        rdfs:subClassOf :Person ;
-       rdfs:label "third person"@en .
+       rdfs:label "third person"@en ;
+       <http://www.w3.org/2004/02/skos/core#definition> "third person case"@en .
 
 
 ###  http://purl.org/olia/akkadian.owl#Ventive

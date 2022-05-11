@@ -13,63 +13,134 @@
  ] .
 
 #################################################################
+#    Object Properties
+#################################################################
+
+###  http://lemon-model.net/lemon#entry
+lemon:entry rdf:type owl:ObjectProperty ;
+            rdfs:label "entry" .
+
+
+###  http://lemon-model.net/lemon#form
+lemon:form rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:label "form" .
+
+
+###  http://lemon-model.net/lemon#sense
+lemon:sense rdf:type owl:ObjectProperty ;
+            rdfs:label "sense" .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P138_represents
+cidoc:P138_represents rdf:type owl:ObjectProperty ;
+                      rdfs:label "represents" .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P56_isFoundOn
+cidoc:P56_isFoundOn rdf:type owl:ObjectProperty ;
+                    rdfs:label "is found on" .
+
+
+###  http://www.w3.org/ns/oa#hasPurpose
+<http://www.w3.org/ns/oa#hasPurpose> rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf owl:topObjectProperty ;
+                                     rdfs:label "has purpose" .
+
+
+###  http://www.w3.org/ns/oa#hasSelector
+<http://www.w3.org/ns/oa#hasSelector> rdf:type owl:ObjectProperty ;
+                                      rdfs:label "has selector" .
+
+
+###  http://www.w3.org/ns/oa#hasTarget
+<http://www.w3.org/ns/oa#hasTarget> rdf:type owl:ObjectProperty ;
+                                    rdfs:subPropertyOf owl:topObjectProperty ;
+                                    rdfs:label "has target" .
+
+
+#################################################################
 #    Classes
 #################################################################
 
+###  http://lemon-model.net/lemon#LexicalEntry
+lemon:LexicalEntry rdf:type owl:Class ;
+                   rdfs:label "lexical entry"@en .
+
+
 ###  http://lemon-model.net/lemon#LexicalForm
-lemon:LexicalForm rdf:type owl:Class .
+lemon:LexicalForm rdf:type owl:Class ;
+                  rdfs:label "lexical form"@en .
 
 
 ###  http://lemon-model.net/lemon#LexicalSense
-lemon:LexicalSense rdf:type owl:Class .
+lemon:LexicalSense rdf:type owl:Class ;
+                   rdfs:label "lexical sense"@en .
 
 
 ###  http://lemon-model.net/lemon#Lexicon
-lemon:Lexicon rdf:type owl:Class .
+lemon:Lexicon rdf:type owl:Class ;
+              rdfs:label "lexicon"@en .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/E22_ManMadeObject
-cidoc:E22_ManMadeObject rdf:type owl:Class .
+cidoc:E22_ManMadeObject rdf:type owl:Class ;
+                        rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                        rdfs:label "Man Made Object" .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/TX1_WrittenText
-cidoc:TX1_WrittenText rdf:type owl:Class .
+cidoc:TX1_WrittenText rdf:type owl:Class ;
+                      rdfs:label "written text"@en .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/TX2_Writing
-cidoc:TX2_Writing rdf:type owl:Class .
+cidoc:TX2_Writing rdf:type owl:Class ;
+                  rdfs:label "writing"@en .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/TX4_WritingField
-cidoc:TX4_WritingField rdf:type owl:Class .
+cidoc:TX4_WritingField rdf:type owl:Class ;
+                       rdfs:label "writing field"@en .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/TX5_Reading
-cidoc:TX5_Reading rdf:type owl:Class .
+cidoc:TX5_Reading rdf:type owl:Class ;
+                  rdfs:label "reading"@en .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/TX6_Transcription
-cidoc:TX6_Transcription rdf:type owl:Class .
+cidoc:TX6_Transcription rdf:type owl:Class ;
+                        rdfs:label "transcription"@en .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph
 cidoc:TX9_Glyph rdf:type owl:Class ;
-                rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment> .
+                rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment> ;
+                rdfs:label "glyph"@en .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment
 <http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment> rdf:type owl:Class ;
-                                                                   rdfs:subClassOf cidoc:TX1_WrittenText .
+                                                                   rdfs:subClassOf cidoc:TX1_WrittenText ;
+                                                                   rdfs:label "written text fragment"@en .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#TextualBody
+<http://www.co-ode.org/ontologies/ont.owl#TextualBody> rdf:type owl:Class ;
+                                                       rdfs:label "textual body"@en .
 
 
 ###  http://www.purl.org/cuneiform/Line
 cunei:Line rdf:type owl:Class ;
-           rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment> .
+           rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment> ;
+           rdfs:label "line"@en .
 
 
 ###  http://www.purl.org/cuneiform/Sentence
 cunei:Sentence rdf:type owl:Class ;
-               rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment> .
+               rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment> ;
+               rdfs:label "sentence"@en .
 
 
 ###  http://www.purl.org/cuneiform/Tablet
@@ -79,17 +150,34 @@ cunei:Tablet rdf:type owl:Class ;
 
 ###  http://www.purl.org/cuneiform/TabletSide
 cunei:TabletSide rdf:type owl:Class ;
-                 rdfs:subClassOf cidoc:TX4_WritingField .
+                 rdfs:subClassOf cidoc:TX4_WritingField ;
+                 rdfs:label "tablet side"@en .
 
 
 ###  http://www.purl.org/cuneiform/Transliteration
 cunei:Transliteration rdf:type owl:Class ;
-                      rdfs:subClassOf cidoc:TX6_Transcription .
+                      rdfs:subClassOf cidoc:TX6_Transcription ;
+                      rdfs:label "transliteration"@en .
 
 
 ###  http://www.purl.org/cuneiform/WordForm
 cunei:WordForm rdf:type owl:Class ;
-               rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment> .
+               rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment> ;
+               rdfs:label "word occurence"@en .
+
+
+###  http://www.w3.org/ns/oa#Annotation
+<http://www.w3.org/ns/oa#Annotation> rdf:type owl:Class ;
+                                     rdfs:label "annotation"@en .
+
+
+###  http://www.w3.org/ns/oa#SvgSelector
+<http://www.w3.org/ns/oa#SvgSelector> rdf:type owl:Class ;
+                                      rdfs:label "svg selector"@en .
+
+
+###  http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> rdf:type owl:Class .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
