@@ -192,7 +192,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
     <script type="application/ld+json">
       [
   {
-    "@id": "nbe572722f8da4f4e93eb2ba5ced520afb1",
+    "@id": "n3c43b0eccbc443bc9cdf1791a854ca7cb1",
     "@type": [
       "https://schema.org/DefinedTermSet"
     ],
@@ -215,7 +215,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
     <h2 style="display:none;">Metadata</h2>
     <dl>
         <dt>URI</dt>
-        <dd><code>nbe572722f8da4f4e93eb2ba5ced520afb1</code></dd>
+        <dd><code>n3c43b0eccbc443bc9cdf1791a854ca7cb1</code></dd>
         <dt>Ontology RDF</dt>
         <dd><a href="cuneiformontology.ttl">RDF (turtle)</a></dd>
     </dl>
@@ -224,6 +224,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
     <h2>Table of Contents</h2>
     <ol>
         <li><a href="#classes">Classes</a></li>
+        <li><a href="#objectproperties">Object Properties</a></li>
         <li><a href="#namespaces">Namespaces</a></li>
         <li><a href="#legend">Legend</a></li>
     </ol>
@@ -238,6 +239,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
   <section id="classes">
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
+      <li><a href="http://lemon-model.net/lemon#LexicalEntry">lemon:LexicalEntry</a></li>
       <li><a href="http://lemon-model.net/lemon#LexicalForm">lemon:LexicalForm</a></li>
       <li><a href="http://lemon-model.net/lemon#LexicalSense">lemon:LexicalSense</a></li>
       <li><a href="http://lemon-model.net/lemon#Lexicon">lemon:Lexicon</a></li>
@@ -249,17 +251,33 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
       <li><a href="http://www.cidoc-crm.org/cidoc-crm/TX6_Transcription">cidoc:TX6_Transcription</a></li>
       <li><a href="http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph">cidoc:TX9_Glyph</a></li>
       <li><a href="http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment">http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment</a></li>
+      <li><a href="http://www.co-ode.org/ontologies/ont.owl#TextualBody">http://www.co-ode.org/ontologies/ont.owl#TextualBody</a></li>
       <li><a href="http://www.purl.org/cuneiform/Line">cunei:Line</a></li>
       <li><a href="http://www.purl.org/cuneiform/Sentence">cunei:Sentence</a></li>
       <li><a href="http://www.purl.org/cuneiform/Tablet">cunei:Tablet</a></li>
       <li><a href="http://www.purl.org/cuneiform/TabletSide">cunei:TabletSide</a></li>
       <li><a href="http://www.purl.org/cuneiform/Transliteration">cunei:Transliteration</a></li>
       <li><a href="http://www.purl.org/cuneiform/WordForm">cunei:WordForm</a></li>
+      <li><a href="http://www.w3.org/ns/oa#Annotation">oa:Annotation</a></li>
+      <li><a href="http://www.w3.org/ns/oa#SvgSelector">oa:SvgSelector</a></li>
+      <li><a href="http://www.w3.org/ns/prov#Entity">prov:Entity</a></li>
     </ul>
-    <div class="entity class" id="LexicalForm">
+    <div class="entity class" id="lexicalentry">
         <h3>
-          LexicalForm<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#LexicalForm" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          lexical entry<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#lexicalentry" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://lemon-model.net/lemon#LexicalEntry</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="lexicalform">
+        <h3>
+          lexical form<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#lexicalform" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -268,10 +286,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="LexicalSense">
+    <div class="entity class" id="lexicalsense">
         <h3>
-          LexicalSense<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#LexicalSense" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          lexical sense<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#lexicalsense" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -280,10 +298,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="Lexicon">
+    <div class="entity class" id="lexicon">
         <h3>
-          Lexicon<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Lexicon" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          lexicon<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#lexicon" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -292,15 +310,21 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="E22_ManMadeObject">
+    <div class="entity class" id="ManMadeObject">
         <h3>
-          E22_ManMadeObject<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#E22_ManMadeObject" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          Man Made Object<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ManMadeObject" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
                 <th>URI</th>
                 <td><code>http://www.cidoc-crm.org/cidoc-crm/E22_ManMadeObject</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="http://www.w3.org/ns/prov#Entity">prov:Entity</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
@@ -310,10 +334,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="TX1_WrittenText">
+    <div class="entity class" id="writtentext">
         <h3>
-          TX1_WrittenText<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#TX1_WrittenText" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          written text<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#writtentext" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -328,10 +352,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="TX2_Writing">
+    <div class="entity class" id="writing">
         <h3>
-          TX2_Writing<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#TX2_Writing" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          writing<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#writing" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -340,10 +364,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="TX4_WritingField">
+    <div class="entity class" id="writingfield">
         <h3>
-          TX4_WritingField<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#TX4_WritingField" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          writing field<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#writingfield" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -358,10 +382,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="TX5_Reading">
+    <div class="entity class" id="reading">
         <h3>
-          TX5_Reading<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#TX5_Reading" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          reading<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#reading" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -370,10 +394,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="TX6_Transcription">
+    <div class="entity class" id="transcription">
         <h3>
-          TX6_Transcription<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#TX6_Transcription" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          transcription<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#transcription" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -388,10 +412,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="TX9_Glyph">
+    <div class="entity class" id="glyph">
         <h3>
-          TX9_Glyph<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#TX9_Glyph" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          glyph<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#glyph" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -406,10 +430,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="TX7_WrittenTextFragment">
+    <div class="entity class" id="writtentextfragment">
         <h3>
-          TX7_WrittenTextFragment<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#TX7_WrittenTextFragment" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          written text fragment<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#writtentextfragment" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -426,17 +450,29 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Sub-classes</th>
                 <td>
                     <a href="http://www.purl.org/cuneiform/Line">cunei:Line</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.purl.org/cuneiform/Sentence">cunei:Sentence</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.purl.org/cuneiform/WordForm">cunei:WordForm</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.purl.org/cuneiform/Sentence">cunei:Sentence</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph">cidoc:TX9_Glyph</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity class" id="Line">
+    <div class="entity class" id="textualbody">
         <h3>
-          Line<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Line" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          textual body<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#textualbody" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.co-ode.org/ontologies/ont.owl#TextualBody</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="line">
+        <h3>
+          line<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#line" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -451,10 +487,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="Sentence">
+    <div class="entity class" id="sentence">
         <h3>
-          Sentence<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Sentence" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          sentence<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#sentence" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -487,10 +523,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="TabletSide">
+    <div class="entity class" id="tabletside">
         <h3>
-          TabletSide<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#TabletSide" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          tablet side<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#tabletside" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -505,10 +541,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="Transliteration">
+    <div class="entity class" id="transliteration">
         <h3>
-          Transliteration<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Transliteration" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          transliteration<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#transliteration" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -523,10 +559,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="WordForm">
+    <div class="entity class" id="wordoccurence">
         <h3>
-          WordForm<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#WordForm" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          word occurence<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#wordoccurence" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -541,13 +577,175 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
+    <div class="entity class" id="annotation">
+        <h3>
+          annotation<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#annotation" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.w3.org/ns/oa#Annotation</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="svgselector">
+        <h3>
+          svg selector<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#svgselector" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.w3.org/ns/oa#SvgSelector</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Entity">
+        <h3>
+          Entity<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Entity" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.w3.org/ns/prov#Entity</code></td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="http://www.cidoc-crm.org/cidoc-crm/E22_ManMadeObject">cidoc:E22_ManMadeObject</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
 </section>
+<section id="objectproperties">
+    <h2>Object Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <ul class="hlist">
+        <li><a href="#entry">entry</a></li>
+        <li><a href="#form">form</a></li>
+        <li><a href="#sense">sense</a></li>
+        <li><a href="#represents">represents</a></li>
+        <li><a href="#isfoundon">is found on</a></li>
+        <li><a href="#haspurpose">has purpose</a></li>
+        <li><a href="#hasselector">has selector</a></li>
+        <li><a href="#hastarget">has target</a></li>
+    </ul>
+    <div class="entity property" id="entry">
+        <h3>entry<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#entry" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://lemon-model.net/lemon#entry</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="form">
+        <h3>form<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#form" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://lemon-model.net/lemon#form</code></td>
+            </tr>
+            <tr>
+                <th>Super-properties</th>
+                <td>
+                    <a href="http://www.w3.org/2002/07/owl#topObjectProperty">owl:topObjectProperty</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="sense">
+        <h3>sense<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#sense" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://lemon-model.net/lemon#sense</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="represents">
+        <h3>represents<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#represents" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.cidoc-crm.org/cidoc-crm/P138_represents</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="isfoundon">
+        <h3>is found on<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#isfoundon" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.cidoc-crm.org/cidoc-crm/P56_isFoundOn</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="haspurpose">
+        <h3>has purpose<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#haspurpose" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.w3.org/ns/oa#hasPurpose</code></td>
+            </tr>
+            <tr>
+                <th>Super-properties</th>
+                <td>
+                    <a href="http://www.w3.org/2002/07/owl#topObjectProperty">owl:topObjectProperty</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasselector">
+        <h3>has selector<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasselector" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.w3.org/ns/oa#hasSelector</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hastarget">
+        <h3>has target<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hastarget" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.w3.org/ns/oa#hasTarget</code></td>
+            </tr>
+            <tr>
+                <th>Super-properties</th>
+                <td>
+                    <a href="http://www.w3.org/2002/07/owl#topObjectProperty">owl:topObjectProperty</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+
   
   <section id="namespaces">
     <h2>Namespaces <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <dl>
         <dt>default (:)</dt>
-        <dd><code>nbe572722f8da4f4e93eb2ba5ced520afb1</code></dd>
+        <dd><code>n3c43b0eccbc443bc9cdf1791a854ca7cb1</code></dd>
         <dt>anno</dt>
         <dd><code>http://www.w3.org/ns/anno.jsonld</code></dd>
         <dt>brick</dt>
@@ -574,6 +772,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <dd><code>http://xmlns.com/foaf/0.1/</code></dd>
         <dt>lemon</dt>
         <dd><code>http://lemon-model.net/lemon#</code></dd>
+        <dt>oa</dt>
+        <dd><code>http://www.w3.org/ns/oa#</code></dd>
         <dt>odrl</dt>
         <dd><code>http://www.w3.org/ns/odrl/2/</code></dd>
         <dt>org</dt>
