@@ -1,10 +1,160 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix anno: <http://www.w3.org/ns/anno.jsonld> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix cunei: <http://www.purl.org/cuneiform/> .
 @prefix lemon: <http://lemon-model.net/lemon#> .
-@prefix anno: <http://www.w3.org/ns/anno.jsonld> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
 
-cunei:Tablet rdf:type owl:Class .
-cunei:Tablet rdfs:subClassOf cidoc:E22_ManMadeObject .
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.co-ode.org/ontologies/ont.owl#TXP2_includes
+<http://www.co-ode.org/ontologies/ont.owl#TXP2_includes> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://lemon-model.net/lemon#LexicalForm
+lemon:LexicalForm rdf:type owl:Class .
+
+
+###  http://lemon-model.net/lemon#LexicalSense
+lemon:LexicalSense rdf:type owl:Class .
+
+
+###  http://lemon-model.net/lemon#Lexicon
+lemon:Lexicon rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E22_ManMadeObject
+cidoc:E22_ManMadeObject rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/TX1_WrittenText
+cidoc:TX1_WrittenText rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/TX2_Writing
+cidoc:TX2_Writing rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/TX4_WritingField
+cidoc:TX4_WritingField rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/TX6_Transcription
+cidoc:TX6_Transcription rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme
+cidoc:TX8_Grapheme rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph
+cidoc:TX9_Glyph rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment
+<http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf cidoc:TX1_WrittenText .
+
+
+###  http://www.purl.org/cuneiform/Line
+cunei:Line rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment> .
+
+
+###  http://www.purl.org/cuneiform/Sentence
+cunei:Sentence rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment> .
+
+
+###  http://www.purl.org/cuneiform/Tablet
+cunei:Tablet rdf:type owl:Class ;
+             rdfs:subClassOf cidoc:E22_ManMadeObject .
+
+
+###  http://www.purl.org/cuneiform/TabletSide
+cunei:TabletSide rdf:type owl:Class ;
+                 rdfs:subClassOf cidoc:TX4_WritingField .
+
+
+###  http://www.purl.org/cuneiform/Transliteration
+cunei:Transliteration rdf:type owl:Class ;
+                      rdfs:subClassOf cidoc:TX6_Transcription .
+
+
+###  http://www.purl.org/cuneiform/WordForm
+cunei:WordForm rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment> .
+
+
+###  http://www.w3.org/ns/anno.jsonldAnnotation
+anno:Annotation rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/anno.jsonldTextualBody
+anno:TextualBody rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174
+<http://www.co-ode.org/ontologies/ont.owl#hs1174> rdf:type owl:NamedIndividual ,
+                                                           cunei:Tablet .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_bottom
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_bottom> rdf:type owl:NamedIndividual ,
+                                                                  cunei:TabletSide .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_left
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_left> rdf:type owl:NamedIndividual ,
+                                                                cunei:TabletSide .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse> rdf:type owl:NamedIndividual ,
+                                                                   cunei:TabletSide .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line1
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line1> rdf:type owl:NamedIndividual ,
+                                                                         cunei:Line .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_writtentext
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_writtentext> rdf:type owl:NamedIndividual ,
+                                                                               cidoc:TX1_WrittenText .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse> rdf:type owl:NamedIndividual ,
+                                                                   cunei:TabletSide .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_right
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_right> rdf:type owl:NamedIndividual ,
+                                                                 cunei:TabletSide .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_top
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_top> rdf:type owl:NamedIndividual ,
+                                                               cunei:TabletSide .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
