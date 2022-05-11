@@ -7,6 +7,7 @@
 @base <http://purl.org/olia/akkadian.owl> .
 
 <http://purl.org/olia/akkadian.owl> rdf:type owl:Ontology ;
+                                     <http://purl.org/dc/elements/1.1/title> "OLiA Ontology for Akkadian" ;
                                      <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" ;
                                      rdfs:comment "OLiA annotation model for morphosyntactic and morphological annotations of Akkadian cuneiform following recommendations of Tim Brandes and Doris Prechel and a tagset provided by the Hethitologie Portal Mainz" ;
                                      owl:versionInfo "created 2022-05-11" .
@@ -14,6 +15,11 @@
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty ;
+                                        rdfs:subPropertyOf owl:versionInfo .
+
 
 ###  http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty ;
