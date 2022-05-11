@@ -122,6 +122,7 @@ cidoc:TX1_WrittenText rdf:type owl:Class ;
 
 ###  http://www.cidoc-crm.org/cidoc-crm/TX2_Writing
 cidoc:TX2_Writing rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
                   rdfs:label "writing"@en .
 
 
@@ -130,8 +131,14 @@ cidoc:TX4_WritingField rdf:type owl:Class ;
                        rdfs:label "writing field"@en .
 
 
+###  http://www.cidoc-crm.org/cidoc-crm/TX4_WrittenScript
+cidoc:TX4_WrittenScript rdf:type owl:Class ;
+                        rdfs:label "written script"@en .
+
+
 ###  http://www.cidoc-crm.org/cidoc-crm/TX5_Reading
 cidoc:TX5_Reading rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
                   rdfs:label "reading"@en .
 
 
@@ -150,6 +157,65 @@ cidoc:TX7_WrittenTextFragment rdf:type owl:Class ;
 cidoc:TX9_Glyph rdf:type owl:Class ;
                 rdfs:subClassOf cidoc:TX7_WrittenTextFragment ;
                 rdfs:label "glyph"@en .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#BottomSide
+<http://www.co-ode.org/ontologies/ont.owl#BottomSide> rdf:type owl:Class ;
+                                                      rdfs:subClassOf cunei:TabletSide ;
+                                                      rdfs:label "bottom side"@en .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#LeftSide
+<http://www.co-ode.org/ontologies/ont.owl#LeftSide> rdf:type owl:Class ;
+                                                    rdfs:subClassOf cunei:TabletSide ;
+                                                    rdfs:label "left side"@en .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ObverseSide
+<http://www.co-ode.org/ontologies/ont.owl#ObverseSide> rdf:type owl:Class ;
+                                                       rdfs:subClassOf cunei:TabletSide ;
+                                                       rdfs:label "obverse side"@en .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ReverseSide
+<http://www.co-ode.org/ontologies/ont.owl#ReverseSide> rdf:type owl:Class ;
+                                                       rdfs:subClassOf cunei:TabletSide ;
+                                                       rdfs:label "reverse side"@en .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#RightSide
+<http://www.co-ode.org/ontologies/ont.owl#RightSide> rdf:type owl:Class ;
+                                                     rdfs:subClassOf cunei:TabletSide ;
+                                                     rdfs:label "right side"@en .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#TopSide
+<http://www.co-ode.org/ontologies/ont.owl#TopSide> rdf:type owl:Class ;
+                                                   rdfs:subClassOf cunei:TabletSide ;
+                                                   rdfs:label "top side"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#Feature
+<http://www.opengis.net/ont/geosparql#Feature> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                               rdfs:label "feature"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                rdfs:label "geometry"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#SpatialObject
+<http://www.opengis.net/ont/geosparql#SpatialObject> rdf:type owl:Class ;
+                                                     rdfs:label "spatial object"@en .
+
+
+###  http://www.purl.org/cuneiform/FindSpot
+cunei:FindSpot rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ;
+               rdfs:label "find spot"@en .
 
 
 ###  http://www.purl.org/cuneiform/Line
@@ -205,6 +271,10 @@ cunei:WordForm rdf:type owl:Class ;
 ###  http://www.w3.org/ns/oa#TextualBody
 <http://www.w3.org/ns/oa#TextualBody> rdf:type owl:Class ;
                                       rdfs:label "textual body"@en .
+
+
+###  http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> rdf:type owl:Class .
 
 
 ###  http://www.w3.org/ns/prov#Entity
