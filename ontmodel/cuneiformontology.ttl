@@ -9,8 +9,28 @@
 @prefix lemon: <http://lemon-model.net/lemon#> .
 @base <http://www.w3.org/2002/07/owl#> .
 
-[ rdf:type owl:Ontology
+[ rdf:type owl:Ontology ;
+   <http://purl.org/dc/elements/1.1/title> "Ontology Model for Cuneiform Artifacts" ;
+   <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0"
  ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty ;
+                                        rdfs:subPropertyOf rdfs:comment .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty ;
+                                   rdfs:subPropertyOf owl:backwardCompatibleWith .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
 
 #################################################################
 #    Object Properties
@@ -40,6 +60,12 @@ cidoc:P138_represents rdf:type owl:ObjectProperty ;
 ###  http://www.cidoc-crm.org/cidoc-crm/P56_isFoundOn
 cidoc:P56_isFoundOn rdf:type owl:ObjectProperty ;
                     rdfs:label "is found on" .
+
+
+###  http://www.w3.org/ns/oa#hasBody
+<http://www.w3.org/ns/oa#hasBody> rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf owl:topObjectProperty ;
+                                  rdfs:label "has body" .
 
 
 ###  http://www.w3.org/ns/oa#hasPurpose
@@ -114,44 +140,43 @@ cidoc:TX6_Transcription rdf:type owl:Class ;
                         rdfs:label "transcription"@en .
 
 
+###  http://www.cidoc-crm.org/cidoc-crm/TX7_WrittenTextFragment
+cidoc:TX7_WrittenTextFragment rdf:type owl:Class ;
+                              rdfs:subClassOf cidoc:TX1_WrittenText ;
+                              rdfs:label "written text fragment"@en .
+
+
 ###  http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph
 cidoc:TX9_Glyph rdf:type owl:Class ;
-                rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment> ;
+                rdfs:subClassOf cidoc:TX7_WrittenTextFragment ;
                 rdfs:label "glyph"@en .
-
-
-###  http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment
-<http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment> rdf:type owl:Class ;
-                                                                   rdfs:subClassOf cidoc:TX1_WrittenText ;
-                                                                   rdfs:label "written text fragment"@en .
-
-
-###  http://www.co-ode.org/ontologies/ont.owl#TextualBody
-<http://www.co-ode.org/ontologies/ont.owl#TextualBody> rdf:type owl:Class ;
-                                                       rdfs:label "textual body"@en .
 
 
 ###  http://www.purl.org/cuneiform/Line
 cunei:Line rdf:type owl:Class ;
-           rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment> ;
-           rdfs:label "line"@en .
+           rdfs:subClassOf cidoc:TX7_WrittenTextFragment ;
+           rdfs:label "line"@en ;
+           <http://www.w3.org/2004/02/skos/core#definition> "The physical representation of a line of text on a cuneiform artifact"@en .
 
 
 ###  http://www.purl.org/cuneiform/Sentence
 cunei:Sentence rdf:type owl:Class ;
-               rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment> ;
-               rdfs:label "sentence"@en .
+               rdfs:subClassOf cidoc:TX7_WrittenTextFragment ;
+               rdfs:label "sentence"@en ;
+               <http://www.w3.org/2004/02/skos/core#definition> "The physical representation of a sentence on a cuneiform artifact"@en .
 
 
 ###  http://www.purl.org/cuneiform/Tablet
 cunei:Tablet rdf:type owl:Class ;
-             rdfs:subClassOf cidoc:E22_ManMadeObject .
+             rdfs:subClassOf cidoc:E22_ManMadeObject ;
+             rdfs:label "cuneiform tablet"@en .
 
 
 ###  http://www.purl.org/cuneiform/TabletSide
 cunei:TabletSide rdf:type owl:Class ;
                  rdfs:subClassOf cidoc:TX4_WritingField ;
-                 rdfs:label "tablet side"@en .
+                 rdfs:label "tablet side"@en ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "The side of a cuneiform artifact, usually one of obverse, reverse, left, right, top, bottom"@en .
 
 
 ###  http://www.purl.org/cuneiform/Transliteration
@@ -162,8 +187,9 @@ cunei:Transliteration rdf:type owl:Class ;
 
 ###  http://www.purl.org/cuneiform/WordForm
 cunei:WordForm rdf:type owl:Class ;
-               rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment> ;
-               rdfs:label "word occurence"@en .
+               rdfs:subClassOf cidoc:TX7_WrittenTextFragment ;
+               rdfs:label "word occurence"@en ;
+               <http://www.w3.org/2004/02/skos/core#definition> "The physical representation of a list of characters, i.e. word on a cuneiform artifact"@en .
 
 
 ###  http://www.w3.org/ns/oa#Annotation
@@ -176,8 +202,14 @@ cunei:WordForm rdf:type owl:Class ;
                                       rdfs:label "svg selector"@en .
 
 
+###  http://www.w3.org/ns/oa#TextualBody
+<http://www.w3.org/ns/oa#TextualBody> rdf:type owl:Class ;
+                                      rdfs:label "textual body"@en .
+
+
 ###  http://www.w3.org/ns/prov#Entity
-<http://www.w3.org/ns/prov#Entity> rdf:type owl:Class .
+<http://www.w3.org/ns/prov#Entity> rdf:type owl:Class ;
+                                   rdfs:label "entity"@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
