@@ -324,20 +324,6 @@ cidoc:TX9_Glyph rdf:type owl:Class ;
                 rdfs:label "glyph"@en .
 
 
-###  http://www.co-ode.org/ontologies/ont.owl#GottsteinWedgeType
-<http://www.co-ode.org/ontologies/ont.owl#GottsteinWedgeType> rdf:type owl:Class ;
-                                                              rdfs:subClassOf cunei:WedgeType ;
-                                                              rdfs:label "Gottstein wedge type"@en ;
-                                                              <http://www.w3.org/2004/02/skos/core#definition> "A wedge type according to the Gottstein classification system"@en .
-
-
-###  http://www.co-ode.org/ontologies/ont.owl#PaleoCodeWedgeType
-<http://www.co-ode.org/ontologies/ont.owl#PaleoCodeWedgeType> rdf:type owl:Class ;
-                                                              rdfs:subClassOf cunei:WedgeType ;
-                                                              rdfs:label "PaleoCodage Wedge Type"@en ;
-                                                              <http://www.w3.org/2004/02/skos/core#definition> "A wedge type according to the PaleoCodage specification"@en .
-
-
 ###  http://www.opengis.net/ont/geosparql#Feature
 <http://www.opengis.net/ont/geosparql#Feature> rdf:type owl:Class ;
                                                rdfs:subClassOf <http://www.opengis.net/ont/geosparql#SpatialObject> ;
@@ -389,30 +375,37 @@ cunei:FiringHole rdf:type owl:Class ;
                  <http://www.w3.org/2004/02/skos/core#definition> "A firing hole present on a cuneiform tablet"@en .
 
 
+###  http://www.purl.org/cuneiform/GottsteinWedgeType
+cunei:GottsteinWedgeType rdf:type owl:Class ;
+                         rdfs:subClassOf cunei:WedgeType ;
+                         rdfs:label "Gottstein wedge type"@en ;
+                         <http://www.w3.org/2004/02/skos/core#definition> "A wedge type according to the Gottstein classification system"@en .
+
+
 ###  http://www.purl.org/cuneiform/Gottstein_A
 cunei:Gottstein_A rdf:type owl:Class ;
-                  rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GottsteinWedgeType> ;
+                  rdfs:subClassOf cunei:GottsteinWedgeType ;
                   rdfs:label "Gottstein Wedge Type A"@en ;
                   <http://www.w3.org/2004/02/skos/core#definition> "Wedge Type A as defined by the Gottstein system"@en .
 
 
 ###  http://www.purl.org/cuneiform/Gottstein_B
 cunei:Gottstein_B rdf:type owl:Class ;
-                  rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GottsteinWedgeType> ;
+                  rdfs:subClassOf cunei:GottsteinWedgeType ;
                   rdfs:label "Gottstein Wedge Type B"@en ;
                   <http://www.w3.org/2004/02/skos/core#definition> "Wedge Type B as defined by the Gottstein system"@en .
 
 
 ###  http://www.purl.org/cuneiform/Gottstein_C
 cunei:Gottstein_C rdf:type owl:Class ;
-                  rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GottsteinWedgeType> ;
+                  rdfs:subClassOf cunei:GottsteinWedgeType ;
                   rdfs:label "Gottstein Wedge Type C"@en ;
                   <http://www.w3.org/2004/02/skos/core#definition> "Wedge Type C as defined by the Gottstein system"@en .
 
 
 ###  http://www.purl.org/cuneiform/Gottstein_D
 cunei:Gottstein_D rdf:type owl:Class ;
-                  rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GottsteinWedgeType> ;
+                  rdfs:subClassOf cunei:GottsteinWedgeType ;
                   rdfs:label "Gottstein Wedge Type D"@en ;
                   <http://www.w3.org/2004/02/skos/core#definition> "Wedge Type D as defined by the Gottstein system"@en .
 
@@ -454,51 +447,58 @@ cunei:ObverseSide rdf:type owl:Class ;
                   <http://www.w3.org/2004/02/skos/core#definition> "The obverse side of a cuneiform tablet"@en .
 
 
+###  http://www.purl.org/cuneiform/PaleoCodeWedgeType
+cunei:PaleoCodeWedgeType rdf:type owl:Class ;
+                         rdfs:subClassOf cunei:WedgeType ;
+                         rdfs:label "PaleoCodage Wedge Type"@en ;
+                         <http://www.w3.org/2004/02/skos/core#definition> "A wedge type according to the PaleoCodage specification"@en .
+
+
 ###  http://www.purl.org/cuneiform/PaleoCode_A
 cunei:PaleoCode_A rdf:type owl:Class ;
-                  rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#PaleoCodeWedgeType> ;
+                  rdfs:subClassOf cunei:PaleoCodeWedgeType ;
                   rdfs:label "PaleoCode Wedge Type A"@en ;
                   <http://www.w3.org/2004/02/skos/core#definition> "Wedge Type A as defined by the PaleoCodage encoding"@en .
 
 
 ###  http://www.purl.org/cuneiform/PaleoCode_B
 cunei:PaleoCode_B rdf:type owl:Class ;
-                  rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#PaleoCodeWedgeType> ;
+                  rdfs:subClassOf cunei:PaleoCodeWedgeType ;
                   rdfs:label "PaleoCode Wedge Type B"@en ;
                   <http://www.w3.org/2004/02/skos/core#definition> "Wedge Type B as defined by the PaleoCodage encoding"@en .
 
 
 ###  http://www.purl.org/cuneiform/PaleoCode_C
 cunei:PaleoCode_C rdf:type owl:Class ;
-                  rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#PaleoCodeWedgeType> ;
+                  rdfs:subClassOf cunei:PaleoCodeWedgeType ;
                   rdfs:label "PaleoCode Wedge Type C"@en ;
                   <http://www.w3.org/2004/02/skos/core#definition> "Wedge Type C as defined by the PaleoCodage encoding"@en .
 
 
 ###  http://www.purl.org/cuneiform/PaleoCode_D
 cunei:PaleoCode_D rdf:type owl:Class ;
-                  rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#PaleoCodeWedgeType> ;
+                  rdfs:subClassOf cunei:PaleoCodeWedgeType ;
                   rdfs:label "PaleoCode Wedge Type D"@en ;
                   <http://www.w3.org/2004/02/skos/core#definition> "Wedge Type D as defined by the PaleoCodage encoding"@en .
 
 
 ###  http://www.purl.org/cuneiform/PaleoCode_E
 cunei:PaleoCode_E rdf:type owl:Class ;
-                  rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#PaleoCodeWedgeType> ;
+                  rdfs:subClassOf cunei:PaleoCodeWedgeType ;
                   rdfs:label "PaleoCode Wedge Type E"@en ;
                   <http://www.w3.org/2004/02/skos/core#definition> "Wedge Type E as defined by the PaleoCodage encoding"@en .
 
 
 ###  http://www.purl.org/cuneiform/PaleoCode_F
 cunei:PaleoCode_F rdf:type owl:Class ;
-                  rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#PaleoCodeWedgeType> ;
+                  rdfs:subClassOf cunei:PaleoCodeWedgeType ;
                   rdfs:label "PaleoCode Wedge Type F"@en ;
                   <http://www.w3.org/2004/02/skos/core#definition> "Wedge Type F as defined by the PaleoCodage encoding"@en .
 
 
 ###  http://www.purl.org/cuneiform/PaleoCode_W
 cunei:PaleoCode_W rdf:type owl:Class ;
-                  rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#PaleoCodeWedgeType> ;
+                  rdfs:subClassOf cunei:PaleoCodeWedgeType ;
                   rdfs:label "PaleoCode Wedge Type W"@en ;
                   <http://www.w3.org/2004/02/skos/core#definition> "Wedge Type W as defined by the PaleoCodage encoding"@en .
 
