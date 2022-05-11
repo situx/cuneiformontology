@@ -38,18 +38,29 @@
 
 ###  http://lemon-model.net/lemon#entry
 lemon:entry rdf:type owl:ObjectProperty ;
+            rdfs:domain lemon:Lexicon ;
+            rdfs:range lemon:LexicalEntry ;
             rdfs:label "entry" .
 
 
 ###  http://lemon-model.net/lemon#form
 lemon:form rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain lemon:LexicalEntry ;
+           rdfs:range lemon:LexicalForm ;
            rdfs:label "form" .
 
 
 ###  http://lemon-model.net/lemon#sense
 lemon:sense rdf:type owl:ObjectProperty ;
+            rdfs:range lemon:LexicalSense ;
             rdfs:label "sense" .
+
+
+###  http://lexinfo.net/ontology/2.0/lexinfo#partOfSpeech
+<http://lexinfo.net/ontology/2.0/lexinfo#partOfSpeech> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain lemon:LexicalForm ;
+                                                       rdfs:label "part of speech" .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/P138_represents
@@ -62,9 +73,94 @@ cidoc:P56_isFoundOn rdf:type owl:ObjectProperty ;
                     rdfs:label "is found on" .
 
 
+###  http://www.cidoc-crm.org/cidoc-crm/TXP10_read_by
+cidoc:TXP10_read_by rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdfs:label "read by" .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/TXP3_is_rendered_by
+cidoc:TXP3_is_rendered_by rdf:type owl:ObjectProperty ;
+                          rdfs:label "is rendered by" .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/TXP9_is_encoded_by
+cidoc:TXP9_is_encoded_by rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:label "is encoded by" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#nextSentence
+<http://www.co-ode.org/ontologies/ont.owl#nextSentence> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain cunei:Sentence ;
+                                                        rdfs:range cunei:Sentence ;
+                                                        rdfs:label "next sentence" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#prevSentence
+<http://www.co-ode.org/ontologies/ont.owl#prevSentence> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain cunei:Sentence ;
+                                                        rdfs:range cunei:Sentence ;
+                                                        rdfs:label "previous sentence" .
+
+
+###  http://www.opengis.net/ont/geosparql#hasGeometry
+<http://www.opengis.net/ont/geosparql#hasGeometry> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain <http://www.opengis.net/ont/geosparql#Feature> ;
+                                                   rdfs:range <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                                   rdfs:label "has geometry" .
+
+
+###  http://www.purl.org/cuneiform/hasSide
+cunei:hasSide rdf:type owl:ObjectProperty ;
+              rdfs:domain cunei:Tablet ;
+              rdfs:range <http://www.co-ode.org/ontologies/ont.owl#BottomSide> ,
+                         <http://www.co-ode.org/ontologies/ont.owl#LeftSide> ,
+                         <http://www.co-ode.org/ontologies/ont.owl#ObverseSide> ,
+                         <http://www.co-ode.org/ontologies/ont.owl#ReverseSide> ,
+                         <http://www.co-ode.org/ontologies/ont.owl#RightSide> ,
+                         <http://www.co-ode.org/ontologies/ont.owl#TopSide> ,
+                         cunei:TabletSide ;
+              rdfs:label "has side" .
+
+
+###  http://www.purl.org/cuneiform/isAttested
+cunei:isAttested rdf:type owl:ObjectProperty ;
+                 rdfs:label "is attested" .
+
+
+###  http://www.purl.org/cuneiform/nextLine
+cunei:nextLine rdf:type owl:ObjectProperty ;
+               rdfs:domain cunei:Line ;
+               rdfs:range cunei:Line ;
+               rdfs:label "next line" .
+
+
+###  http://www.purl.org/cuneiform/nextWord
+cunei:nextWord rdf:type owl:ObjectProperty ;
+               rdfs:domain cunei:WordForm ;
+               rdfs:range cunei:WordForm ;
+               rdfs:label "next word" .
+
+
+###  http://www.purl.org/cuneiform/prevLine
+cunei:prevLine rdf:type owl:ObjectProperty ;
+               rdfs:domain cunei:Line ;
+               rdfs:range cunei:Line ;
+               rdfs:label "previous line" .
+
+
+###  http://www.purl.org/cuneiform/prevWord
+cunei:prevWord rdf:type owl:ObjectProperty ;
+               rdfs:domain cunei:WordForm ;
+               rdfs:range cunei:WordForm ;
+               rdfs:label "previous word" .
+
+
 ###  http://www.w3.org/ns/oa#hasBody
 <http://www.w3.org/ns/oa#hasBody> rdf:type owl:ObjectProperty ;
                                   rdfs:subPropertyOf owl:topObjectProperty ;
+                                  rdfs:domain <http://www.w3.org/ns/oa#Annotation> ;
                                   rdfs:label "has body" .
 
 
@@ -82,6 +178,7 @@ cidoc:P56_isFoundOn rdf:type owl:ObjectProperty ;
 ###  http://www.w3.org/ns/oa#hasTarget
 <http://www.w3.org/ns/oa#hasTarget> rdf:type owl:ObjectProperty ;
                                     rdfs:subPropertyOf owl:topObjectProperty ;
+                                    rdfs:domain <http://www.w3.org/ns/oa#Annotation> ;
                                     rdfs:label "has target" .
 
 
