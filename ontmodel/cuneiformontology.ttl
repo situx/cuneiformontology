@@ -79,6 +79,11 @@ cidoc:TXP10_read_by rdf:type owl:ObjectProperty ;
                     rdfs:label "read by" .
 
 
+###  http://www.cidoc-crm.org/cidoc-crm/TXP2_includes
+cidoc:TXP2_includes rdf:type owl:ObjectProperty ;
+                    rdfs:label "includes" .
+
+
 ###  http://www.cidoc-crm.org/cidoc-crm/TXP3_is_rendered_by
 cidoc:TXP3_is_rendered_by rdf:type owl:ObjectProperty ;
                           rdfs:label "is rendered by" .
@@ -95,6 +100,48 @@ cidoc:TXP9_is_encoded_by rdf:type owl:ObjectProperty ;
                                                    rdfs:domain <http://www.opengis.net/ont/geosparql#Feature> ;
                                                    rdfs:range <http://www.opengis.net/ont/geosparql#Geometry> ;
                                                    rdfs:label "has geometry" .
+
+
+###  http://www.purl.org/cuneiform/hasDamagedArea
+cunei:hasDamagedArea rdf:type owl:ObjectProperty ;
+                     rdfs:domain cunei:TabletSide ;
+                     rdfs:range cunei:DamagedArea ;
+                     rdfs:label "has damaged area" .
+
+
+###  http://www.purl.org/cuneiform/hasErasure
+cunei:hasErasure rdf:type owl:ObjectProperty ;
+                 rdfs:domain cunei:TabletSide ;
+                 rdfs:range cunei:Erasure ;
+                 rdfs:label "has erasure" .
+
+
+###  http://www.purl.org/cuneiform/hasFiringHole
+cunei:hasFiringHole rdf:type owl:ObjectProperty ;
+                    rdfs:domain cunei:TabletSide ;
+                    rdfs:range cunei:FiringHole ;
+                    rdfs:label "has firing hole" .
+
+
+###  http://www.purl.org/cuneiform/hasPictoralElement
+cunei:hasPictoralElement rdf:type owl:ObjectProperty ;
+                         rdfs:domain cunei:TabletSide ;
+                         rdfs:range cunei:PictoralElement ;
+                         rdfs:label "has pictoral element" .
+
+
+###  http://www.purl.org/cuneiform/hasRuling
+cunei:hasRuling rdf:type owl:ObjectProperty ;
+                rdfs:domain cunei:TabletSide ;
+                rdfs:range cunei:Ruling ;
+                rdfs:label "has ruling" .
+
+
+###  http://www.purl.org/cuneiform/hasSeal
+cunei:hasSeal rdf:type owl:ObjectProperty ;
+              rdfs:domain cunei:TabletSide ;
+              rdfs:range cunei:Seal ;
+              rdfs:label "has seal" .
 
 
 ###  http://www.purl.org/cuneiform/hasSide
@@ -214,6 +261,11 @@ lemon:Lexicon rdf:type owl:Class ;
               rdfs:label "lexicon"@en .
 
 
+###  http://lemon-model.net/lemon#Word
+lemon:Word rdf:type owl:Class ;
+           rdfs:subClassOf lemon:LexicalEntry .
+
+
 ###  http://www.cidoc-crm.org/cidoc-crm/E22_ManMadeObject
 cidoc:E22_ManMadeObject rdf:type owl:Class ;
                         rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
@@ -302,10 +354,31 @@ cunei:BottomSide rdf:type owl:Class ;
                  <http://www.w3.org/2004/02/skos/core#definition> "The bottom side of a cuneiform tablet"@en .
 
 
+###  http://www.purl.org/cuneiform/DamagedArea
+cunei:DamagedArea rdf:type owl:Class ;
+                  rdfs:subClassOf cunei:TabletFeature ;
+                  rdfs:label "damaged area"@en ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "A damaged area on a cuneiform tablet"@en .
+
+
+###  http://www.purl.org/cuneiform/Erasure
+cunei:Erasure rdf:type owl:Class ;
+              rdfs:subClassOf cunei:TabletFeature ;
+              rdfs:label "erasure"@en ;
+              <http://www.w3.org/2004/02/skos/core#definition> "An erasure found on a cuneiform tablet"@en .
+
+
 ###  http://www.purl.org/cuneiform/FindSpot
 cunei:FindSpot rdf:type owl:Class ;
                rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ;
                rdfs:label "find spot"@en .
+
+
+###  http://www.purl.org/cuneiform/FiringHole
+cunei:FiringHole rdf:type owl:Class ;
+                 rdfs:subClassOf cunei:TabletFeature ;
+                 rdfs:label "firing hole"@en ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "A firing hole present on a cuneiform tablet"@en .
 
 
 ###  http://www.purl.org/cuneiform/Gottstein_A
@@ -334,6 +407,17 @@ cunei:Gottstein_D rdf:type owl:Class ;
                   rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GottsteinWedgeType> ;
                   rdfs:label "Gottstein Wedge Type D"@en ;
                   <http://www.w3.org/2004/02/skos/core#definition> "Wedge Type D as defined by the Gottstein system"@en .
+
+
+###  http://www.purl.org/cuneiform/HorizontalRuling
+cunei:HorizontalRuling rdf:type owl:Class ;
+                       rdfs:subClassOf cunei:Ruling ;
+                       rdfs:label "horizontal ruling"@en ;
+                       <http://www.w3.org/2004/02/skos/core#definition> "A horizontal ruling on a cuneiform tablet"@en .
+
+
+###  http://www.purl.org/cuneiform/ImageAnnotation
+cunei:ImageAnnotation rdf:type owl:Class .
 
 
 ###  http://www.purl.org/cuneiform/LeftSide
@@ -406,6 +490,13 @@ cunei:PaleoCode_W rdf:type owl:Class ;
                   <http://www.w3.org/2004/02/skos/core#definition> "Wedge Type W as defined by the PaleoCodage encoding"@en .
 
 
+###  http://www.purl.org/cuneiform/PictoralElement
+cunei:PictoralElement rdf:type owl:Class ;
+                      rdfs:subClassOf cunei:TabletFeature ;
+                      rdfs:label "pictoral element"@en ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "A pictoral element on a cuneiform tablet"@en .
+
+
 ###  http://www.purl.org/cuneiform/ReverseSide
 cunei:ReverseSide rdf:type owl:Class ;
                   rdfs:subClassOf cunei:TabletSide ;
@@ -420,6 +511,20 @@ cunei:RightSide rdf:type owl:Class ;
                 <http://www.w3.org/2004/02/skos/core#definition> "The right side of a cuneiform tablet"@en .
 
 
+###  http://www.purl.org/cuneiform/Ruling
+cunei:Ruling rdf:type owl:Class ;
+             rdfs:subClassOf cunei:TabletFeature ;
+             rdfs:label "ruling"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "A ruling on a cuneiform tablet"@en .
+
+
+###  http://www.purl.org/cuneiform/Seal
+cunei:Seal rdf:type owl:Class ;
+           rdfs:subClassOf cunei:TabletFeature ;
+           rdfs:label "seal"@en ;
+           <http://www.w3.org/2004/02/skos/core#definition> "A seal inscription on a cuneiform tablet"@en .
+
+
 ###  http://www.purl.org/cuneiform/Sentence
 cunei:Sentence rdf:type owl:Class ;
                rdfs:subClassOf cidoc:TX7_WrittenTextFragment ;
@@ -431,6 +536,12 @@ cunei:Sentence rdf:type owl:Class ;
 cunei:Tablet rdf:type owl:Class ;
              rdfs:subClassOf cidoc:E22_ManMadeObject ;
              rdfs:label "cuneiform tablet"@en .
+
+
+###  http://www.purl.org/cuneiform/TabletFeature
+cunei:TabletFeature rdf:type owl:Class ;
+                    rdfs:label "tablet feature"@en ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "A feature physically represented on a cuneiform tablet"@en .
 
 
 ###  http://www.purl.org/cuneiform/TabletSide
@@ -454,6 +565,13 @@ cunei:Transliteration rdf:type owl:Class ;
                       <http://www.w3.org/2004/02/skos/core#definition> "The transliteration of the text of a cuneiform tablet including all tablet sides"@en .
 
 
+###  http://www.purl.org/cuneiform/VerticalRuling
+cunei:VerticalRuling rdf:type owl:Class ;
+                     rdfs:subClassOf cunei:Ruling ;
+                     rdfs:label "vertical ruling"@en ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "A vertical ruling on a cuneiform tablet"@en .
+
+
 ###  http://www.purl.org/cuneiform/WedgeType
 cunei:WedgeType rdf:type owl:Class ;
                 rdfs:label "wedge type"@en ;
@@ -465,6 +583,30 @@ cunei:WordForm rdf:type owl:Class ;
                rdfs:subClassOf cidoc:TX7_WrittenTextFragment ;
                rdfs:label "word occurence"@en ;
                <http://www.w3.org/2004/02/skos/core#definition> "The physical representation of a list of characters, i.e. word on a cuneiform artifact"@en .
+
+
+###  http://www.purl.org/cuneiform/transliteration_charoccurrence
+cunei:transliteration_charoccurrence rdf:type owl:Class ;
+                                     rdfs:subClassOf cunei:Transliteration ;
+                                     rdfs:label "Transliteration CharOccurance"@en .
+
+
+###  http://www.purl.org/cuneiform/transliteration_line
+cunei:transliteration_line rdf:type owl:Class ;
+                           rdfs:subClassOf cunei:Transliteration ;
+                           rdfs:label "Transliteration Line"@en .
+
+
+###  http://www.purl.org/cuneiform/transliteration_sentence
+cunei:transliteration_sentence rdf:type owl:Class ;
+                               rdfs:subClassOf cunei:Transliteration ;
+                               rdfs:label "Transliteration Sentence"@en .
+
+
+###  http://www.purl.org/cuneiform/transliteration_wordoccurence
+cunei:transliteration_wordoccurence rdf:type owl:Class ;
+                                    rdfs:subClassOf cunei:Transliteration ;
+                                    rdfs:label "Transliteration WordOccurance"@en .
 
 
 ###  http://www.w3.org/ns/oa#Annotation
