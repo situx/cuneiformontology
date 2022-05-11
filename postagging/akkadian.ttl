@@ -1,0 +1,990 @@
+@prefix : <http://purl.org/olia/akkadian.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://purl.org/olia/akkadian.owl> .
+
+<http://purl.org/olia/akkadian.owl> rdf:type owl:Ontology ;
+                                     <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" ;
+                                     rdfs:comment "OLiA annotation model for morphosyntactic and morphological annotations of Akkadian cuneiform following recommendations of Tim Brandes and Doris Prechel and a tagset provided by the Hethitologie Portal Mainz" ;
+                                     owl:versionInfo "created 2022-05-11" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty ;
+                                   rdfs:subPropertyOf rdfs:comment .
+
+
+###  http://purl.org/olia/akkadian.owl#hasTag
+:hasTag rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty ;
+                                                 rdfs:subPropertyOf rdfs:label .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/olia/akkadian.owl#Adjective
+:Adjective rdf:type owl:Class ;
+           rdfs:subClassOf :PartOfSpeech ;
+           rdfs:label "adjective"@en ;
+           <http://www.w3.org/2004/02/skos/core#definition> "part of speech that describes a noun or pronoun"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Adverb
+:Adverb rdf:type owl:Class ;
+        rdfs:subClassOf :PartOfSpeech ;
+        rdfs:label "adverb"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition> "word that modifies a verb, adjective, or another adverb"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Cardinal
+:Cardinal rdf:type owl:Class ;
+          rdfs:subClassOf :Numeral ;
+          rdfs:label "cardinal"@en ;
+          <http://www.w3.org/2004/02/skos/core#definition> "finite or infinite number that measures cardinality (size) of sets"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Case
+:Case rdf:type owl:Class ;
+      rdfs:subClassOf :PartOfSpeech ;
+      rdfs:label "case"@en ;
+      <http://www.w3.org/2004/02/skos/core#definition> "grammatical case"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Cohortative
+:Cohortative rdf:type owl:Class ;
+             rdfs:subClassOf :Mood ;
+             rdfs:label "cohortative"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "grammatical mood of imploration"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Conjunction
+:Conjunction rdf:type owl:Class ;
+             rdfs:subClassOf :PartOfSpeech ;
+             rdfs:label "conjunction"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "part of speech that connects two words, sentences, phrases, or clauses"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#DStem
+:DStem rdf:type owl:Class ;
+       rdfs:subClassOf :VerbCase ;
+       rdfs:label "D Stem"@en ;
+       <http://www.w3.org/2004/02/skos/core#definition> "Akkadian verb D stem"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Dative
+:Dative rdf:type owl:Class ;
+        rdfs:subClassOf :Case ;
+        rdfs:label "dative"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition> "grammatical case generally used to indicate the noun to which something is given"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#DemonstrativePronoun
+:DemonstrativePronoun rdf:type owl:Class ;
+                      rdfs:subClassOf :Pronoun ;
+                      rdfs:label "demonstrative pronoun"@en ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "A demonstrative pronoun is a pronoun that is used to point to something specific within a sentence"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#DeterminativePronoun
+:DeterminativePronoun rdf:type owl:Class ;
+                      rdfs:subClassOf :Pronoun ;
+                      rdfs:label "determinative pronoun"@en ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "pronoun used to emphasize a noun or other pronoun"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#DistributiveNumeral
+:DistributiveNumeral rdf:type owl:Class ;
+                     rdfs:subClassOf :Numeral ;
+                     rdfs:label "distributive numeral"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#DivineName
+:DivineName rdf:type owl:Class ;
+            rdfs:subClassOf :ProperNoun ;
+            rdfs:label "divine name"@en ;
+            <http://www.w3.org/2004/02/skos/core#definition> "proper noun representing a divine being"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#DtnStem
+:DtnStem rdf:type owl:Class ;
+         rdfs:subClassOf :VerbCase ;
+         rdfs:label "Dtn Stem"@en ;
+         <http://www.w3.org/2004/02/skos/core#definition> "Akkadian verb Dtn stem"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Dual
+:Dual rdf:type owl:Class ;
+      rdfs:subClassOf :Number ;
+      rdfs:label "dual"@en ;
+      <http://www.w3.org/2004/02/skos/core#definition> "grammatical number representing two entities"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#EnclicticPersonalPronoun
+:EnclicticPersonalPronoun rdf:type owl:Class ;
+                          rdfs:subClassOf :PersonalPronoun ;
+                          rdfs:label "independent personal pronoun"@en ;
+                          <http://www.w3.org/2004/02/skos/core#definition> "personal pronoun that consists as a single word entity"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Feminine
+:Feminine rdf:type owl:Class ;
+          rdfs:subClassOf :Gender ;
+          rdfs:label "female"@en ;
+          <http://www.w3.org/2004/02/skos/core#definition> "the grammatical gender female"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#First
+:First rdf:type owl:Class ;
+       rdfs:subClassOf :Person ;
+       rdfs:label "first person"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Fraction
+:Fraction rdf:type owl:Class ;
+          rdfs:subClassOf :Numeral ;
+          rdfs:label "fraction"@en ;
+          <http://www.w3.org/2004/02/skos/core#definition> "mathematical representation of a portion of a whole"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#GStem
+:GStem rdf:type owl:Class ;
+       rdfs:subClassOf :VerbCase ;
+       rdfs:label "G Stem"@en ;
+       <http://www.w3.org/2004/02/skos/core#definition> "Akkadian verb G stem"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Gender
+:Gender rdf:type owl:Class ;
+        rdfs:subClassOf :PartOfSpeech ;
+        rdfs:label "gender"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Genitive
+:Genitive rdf:type owl:Class ;
+          rdfs:subClassOf :Case ;
+          rdfs:label "genitive"@en ;
+          <http://www.w3.org/2004/02/skos/core#definition> "grammatical case that marks a word as modifying another word, indicating possession, composition, etc."@en .
+
+
+###  http://purl.org/olia/akkadian.owl#GeographicalName
+:GeographicalName rdf:type owl:Class ;
+                  rdfs:subClassOf :ProperNoun ;
+                  rdfs:label "geographical name"@en ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "name for a geographical entity or location"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#GtStem
+:GtStem rdf:type owl:Class ;
+        rdfs:subClassOf :VerbCase ;
+        rdfs:label "Gt Stem"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition> "Akkadian verb Gt stem"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#GtnStem
+:GtnStem rdf:type owl:Class ;
+         rdfs:subClassOf :VerbCase ;
+         rdfs:label "Gtn Stem"@en ;
+         <http://www.w3.org/2004/02/skos/core#definition> "Akkadian verb Gtn stem"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Infinitive
+:Infinitive rdf:type owl:Class ;
+            rdfs:subClassOf :Case ;
+            rdfs:label "infinitive"@en ;
+            <http://www.w3.org/2004/02/skos/core#definition> "grammatical form of a typically non-conjugated verb"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Interjection
+:Interjection rdf:type owl:Class ;
+              rdfs:subClassOf :PartOfSpeech ;
+              rdfs:label "interjection"@en ;
+              <http://www.w3.org/2004/02/skos/core#definition> "word or expression used to express an emotion or sentiment"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#InterrogativePronoun
+:InterrogativePronoun rdf:type owl:Class ;
+                      rdfs:subClassOf :Pronoun ;
+                      rdfs:label "interrogative pronoun"@en ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "pronoun announcing a question"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Locative
+:Locative rdf:type owl:Class ;
+          rdfs:subClassOf :Case ;
+          rdfs:label "locative"@en ;
+          <http://www.w3.org/2004/02/skos/core#definition> "grammatical case which indicates a location"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Male
+:Male rdf:type owl:Class ;
+      rdfs:subClassOf :Gender ;
+      rdfs:label "male"@en ;
+      <http://www.w3.org/2004/02/skos/core#definition> "the grammatical gender male"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Mood
+:Mood rdf:type owl:Class ;
+      rdfs:subClassOf :PartOfSpeech ;
+      rdfs:label "mood"@en ;
+      <http://www.w3.org/2004/02/skos/core#definition> "grammatical mood"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#MultiplicativeNumeral
+:MultiplicativeNumeral rdf:type owl:Class ;
+                       rdfs:subClassOf :Numeral ;
+                       rdfs:label "multiplicative numeral"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#NStem
+:NStem rdf:type owl:Class ;
+       rdfs:subClassOf :VerbCase ;
+       rdfs:label "N Stem"@en ;
+       <http://www.w3.org/2004/02/skos/core#definition> "Akkadian verb N stem"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#NTN_Stem
+:NTN_Stem rdf:type owl:Class ;
+          rdfs:subClassOf :VerbCase ;
+          rdfs:label "Ntn Stem"@en ;
+          <http://www.w3.org/2004/02/skos/core#definition> "Akkadian verb Ntn stem"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Nominative
+:Nominative rdf:type owl:Class ;
+            rdfs:subClassOf :Case ;
+            rdfs:label "nominative"@en ;
+            <http://www.w3.org/2004/02/skos/core#definition> "grammatical case that is use for a noun or pronoun that is the subject of a verb"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Noun
+:Noun rdf:type owl:Class ;
+      rdfs:subClassOf :PartOfSpeech ;
+      rdfs:label "noun"@en ;
+      <http://www.w3.org/2004/02/skos/core#definition> "part of speech in grammar denoting a figurative or real thing or person"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Number
+:Number rdf:type owl:Class ;
+        rdfs:subClassOf :PartOfSpeech ;
+        rdfs:label "number"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition> "grammatical number"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Numeral
+:Numeral rdf:type owl:Class ;
+         rdfs:subClassOf :PartOfSpeech ;
+         rdfs:label "numeral"@en ;
+         <http://www.w3.org/2004/02/skos/core#definition> "word class (part of speech) designating numbers"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Oblique
+:Oblique rdf:type owl:Class ;
+         rdfs:subClassOf :Case ;
+         rdfs:label "oblique"@en ;
+         <http://www.w3.org/2004/02/skos/core#definition> "A word can be in the oblique case if the sentence already includes a nominative case"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Ordinal
+:Ordinal rdf:type owl:Class ;
+         rdfs:subClassOf :Numeral ;
+         rdfs:label "ordinal"@en ;
+         <http://www.w3.org/2004/02/skos/core#definition> "order type of a well-ordered set"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#PartOfSpeech
+:PartOfSpeech rdf:type owl:Class ;
+              rdfs:subClassOf <http://purl.org/olia/system.owl#UnitOfAnnotation> ;
+              rdfs:label "part of speech"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Participle
+:Participle rdf:type owl:Class ;
+            rdfs:subClassOf :PartOfSpeech ;
+            rdfs:label "participle"@en ;
+            <http://www.w3.org/2004/02/skos/core#definition> "form of a verb which is used in a sentence to modify a noun or noun phrase"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Particle
+:Particle rdf:type owl:Class ;
+          rdfs:subClassOf :PartOfSpeech ;
+          rdfs:label "particle"@en ;
+          <http://www.w3.org/2004/02/skos/core#definition> "typically short and indeclinable word with a grammatical function but no clear part of speech"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf :PartOfSpeech ;
+        rdfs:label "person"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition> "grammatical person"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#PersonalName
+:PersonalName rdf:type owl:Class ;
+              rdfs:subClassOf :ProperNoun ;
+              rdfs:label "personal name"@en ;
+              <http://www.w3.org/2004/02/skos/core#definition> "full proper name of a person"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#PersonalPronoun
+:PersonalPronoun rdf:type owl:Class ;
+                 rdfs:subClassOf :Pronoun ;
+                 rdfs:label "personal pronoun"@en ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "pronoun that is associated with a particular grammatical person"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Plural
+:Plural rdf:type owl:Class ;
+        rdfs:subClassOf :Number ;
+        rdfs:label "plural"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition> "grammatical number representing multiple entities"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#PossessivePronoun
+:PossessivePronoun rdf:type owl:Class ;
+                   rdfs:subClassOf :Pronoun ;
+                   rdfs:label "possessive pronoun"@en ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "pronoun acting as modifier showing ownership"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Postposition
+:Postposition rdf:type owl:Class ;
+              rdfs:subClassOf :PartOfSpeech ;
+              rdfs:label "postposition"@en ;
+              <http://www.w3.org/2004/02/skos/core#definition> "adposition occurring after the term that it complements or modifies"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Precative
+:Precative rdf:type owl:Class ;
+           rdfs:subClassOf :Mood ;
+           rdfs:label "precative"@en ;
+           <http://www.w3.org/2004/02/skos/core#definition> "grammatical mood of request"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Preposition
+:Preposition rdf:type owl:Class ;
+             rdfs:subClassOf :PartOfSpeech ;
+             rdfs:label "preposition"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "word or phrase able to connect a following noun or noun phrase (and often other parts of the speech) as a complement to some other part of the sentence, expressing a relation between them"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Prohibitive
+:Prohibitive rdf:type owl:Class ;
+             rdfs:subClassOf :Case ;
+             rdfs:label "prohibitive"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "verb case to signify prohibition of actions"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Pronoun
+:Pronoun rdf:type owl:Class ;
+         rdfs:subClassOf :PartOfSpeech ;
+         rdfs:label "pronoun"@en ;
+         <http://www.w3.org/2004/02/skos/core#definition> "word or form that substitutes for a noun or noun phrase"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#ProperNoun
+:ProperNoun rdf:type owl:Class ;
+            rdfs:subClassOf :Noun ;
+            rdfs:label "proper noun"@en ;
+            <http://www.w3.org/2004/02/skos/core#definition> "noun (or noun phrase) that in its primary application refers to a unique entity or instance"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#RelativePronoun
+:RelativePronoun rdf:type owl:Class ;
+                 rdfs:subClassOf :Pronoun ;
+                 rdfs:label "relative pronoun"@en ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "type of pronoun that marks a relative clause"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#SZDStem
+:SZDStem rdf:type owl:Class ;
+         rdfs:subClassOf :VerbCase ;
+         rdfs:label "SZD Stem"@en ;
+         <http://www.w3.org/2004/02/skos/core#definition> "Akkadian verb SZD stem"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#SZStem
+:SZStem rdf:type owl:Class ;
+        rdfs:subClassOf :VerbCase ;
+        rdfs:label "SZ Stem"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition> "Akkadian verb SZ stem"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#SZTNStem
+:SZTNStem rdf:type owl:Class ;
+          rdfs:subClassOf :VerbCase ;
+          rdfs:label "SZtn Stem"@en ;
+          <http://www.w3.org/2004/02/skos/core#definition> "Akkadian verb SZtn stem"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Second
+:Second rdf:type owl:Class ;
+        rdfs:subClassOf :Person ;
+        rdfs:label "second person"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Singular
+:Singular rdf:type owl:Class ;
+          rdfs:subClassOf :Number ;
+          rdfs:label "singular"@en ;
+          <http://www.w3.org/2004/02/skos/core#definition> "grammatical number representing a single entity"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Stative
+:Stative rdf:type owl:Class ;
+         rdfs:subClassOf :Case ;
+         rdfs:label "stative"@en ;
+         <http://www.w3.org/2004/02/skos/core#definition> "verb case that describes a state of being"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#StatusAbsolutus
+:StatusAbsolutus rdf:type owl:Class ;
+                 rdfs:subClassOf :Case ;
+                 rdfs:label "status absolutus"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#StatusConstructus
+:StatusConstructus rdf:type owl:Class ;
+                   rdfs:subClassOf :Case ;
+                   rdfs:label "status constructus"@en ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "The first noun in a genitive phrase of a possessed noun followed by a possessor noun"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#StatusRectus
+:StatusRectus rdf:type owl:Class ;
+              rdfs:subClassOf :Case ;
+              rdfs:label "status rectus"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#SuffixedPronoun
+:SuffixedPronoun rdf:type owl:Class ;
+                 rdfs:subClassOf :Pronoun ;
+                 rdfs:label "suffixed pronoun"@en ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "pronoun acting as the suffix of a noun"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Tense
+:Tense rdf:type owl:Class ;
+       rdfs:subClassOf :PartOfSpeech ;
+       rdfs:label "tense"@en ;
+       <http://www.w3.org/2004/02/skos/core#definition> "grammatical tense"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Terminative
+:Terminative rdf:type owl:Class ;
+             rdfs:subClassOf :Case ;
+             rdfs:label "terminative"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "grammatical case related to the final space or time of an action"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Third
+:Third rdf:type owl:Class ;
+       rdfs:subClassOf :Person ;
+       rdfs:label "third person"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Ventive
+:Ventive rdf:type owl:Class ;
+         rdfs:subClassOf :Case ;
+         rdfs:label "ventive"@en ;
+         <http://www.w3.org/2004/02/skos/core#definition> "verb case that does not express a notion of movement"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Verb
+:Verb rdf:type owl:Class ;
+      rdfs:subClassOf :PartOfSpeech ;
+      rdfs:label "verb"@en ;
+      <http://www.w3.org/2004/02/skos/core#definition> "class of words that, from the semantic point of view, contain the notions of action, process or state, and, from the syntactic point of view, exert the core function of the sentence predicate"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#VerbCase
+:VerbCase rdf:type owl:Class ;
+          rdfs:subClassOf :Case ;
+          rdfs:label "verb case"@en ;
+          <http://www.w3.org/2004/02/skos/core#definition> "A case or classification associated with verbs"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#accusative
+:accusative rdf:type owl:Class ;
+            rdfs:subClassOf :Case ;
+            rdfs:label "accusative"@en ;
+            <http://www.w3.org/2004/02/skos/core#definition> "grammatical case used to mark the direct object of a transitive verb"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#imperative
+:imperative rdf:type owl:Class ;
+            rdfs:subClassOf :Mood ;
+            rdfs:label "imperative"@en ;
+            <http://www.w3.org/2004/02/skos/core#definition> "grammatical mood that expresses a command or request"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#imperfective
+:imperfective rdf:type owl:Class ;
+              rdfs:subClassOf :Tense ;
+              rdfs:label "imperfective"@en ;
+              <http://www.w3.org/2004/02/skos/core#definition> "grammatical aspect of continuity or repetition"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#indicative
+:indicative rdf:type owl:Class ;
+            rdfs:subClassOf :Mood ;
+            rdfs:label "indicative"@en ;
+            <http://www.w3.org/2004/02/skos/core#definition> "grammatical mood, used principally to indicate that something is a statement of fact"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#negation
+:negation rdf:type owl:Class ;
+          rdfs:subClassOf :Case ;
+          rdfs:label "negation"@en ;
+          <http://www.w3.org/2004/02/skos/core#definition> "grammatical form that encodes negative polarity or falsity"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#past
+:past rdf:type owl:Class ;
+      rdfs:subClassOf :Tense ;
+      rdfs:label "past"@en ;
+      <http://www.w3.org/2004/02/skos/core#definition> "Grammatical tense indicating an action in the past"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#present
+:present rdf:type owl:Class ;
+         rdfs:subClassOf :Tense ;
+         rdfs:label "present"@en ;
+         <http://www.w3.org/2004/02/skos/core#definition> "Grammatical tense indicating an action in the present"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#subjunctive
+:subjunctive rdf:type owl:Class ;
+             rdfs:subClassOf :Mood ;
+             rdfs:label "subjunctive"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "grammatical mood of possibility"@en .
+
+
+###  http://purl.org/olia/system.owl#UnitOfAnnotation
+<http://purl.org/olia/system.owl#UnitOfAnnotation> rdf:type owl:Class ;
+                                                   rdfs:label "unit of annotation"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://purl.org/olia/akkadian.owl#ACC
+:ACC rdf:type owl:NamedIndividual ,
+              :accusative ;
+     :hasTag "ACC" .
+
+
+###  http://purl.org/olia/akkadian.owl#ADJ
+:ADJ rdf:type owl:NamedIndividual ,
+              :Adjective ;
+     :hasTag "ADJ" .
+
+
+###  http://purl.org/olia/akkadian.owl#ADV
+:ADV rdf:type owl:NamedIndividual ,
+              :Adverb ;
+     :hasTag "ADV" .
+
+
+###  http://purl.org/olia/akkadian.owl#CARD
+:CARD rdf:type owl:NamedIndividual ,
+               :Cardinal ;
+      :hasTag "CARD" .
+
+
+###  http://purl.org/olia/akkadian.owl#CNJ
+:CNJ rdf:type owl:NamedIndividual ,
+              :Conjunction ;
+     :hasTag "CNJ" .
+
+
+###  http://purl.org/olia/akkadian.owl#COH
+:COH rdf:type owl:NamedIndividual ,
+              :Cohortative ;
+     :hasTag "COH" .
+
+
+###  http://purl.org/olia/akkadian.owl#DAT
+:DAT rdf:type owl:NamedIndividual ,
+              :Dative ;
+     :hasTag "DAT" .
+
+
+###  http://purl.org/olia/akkadian.owl#DEM
+:DEM rdf:type owl:NamedIndividual ,
+              :DemonstrativePronoun ;
+     :hasTag "DEM" .
+
+
+###  http://purl.org/olia/akkadian.owl#DETPRO
+:DETPRO rdf:type owl:NamedIndividual ,
+                 :DeterminativePronoun ;
+        :hasTag "DETPRO" .
+
+
+###  http://purl.org/olia/akkadian.owl#DIST
+:DIST rdf:type owl:NamedIndividual ,
+               :DistributiveNumeral ;
+      :hasTag "DIST" .
+
+
+###  http://purl.org/olia/akkadian.owl#DN
+:DN rdf:type owl:NamedIndividual ,
+             :DivineName ;
+    :hasTag "DN" .
+
+
+###  http://purl.org/olia/akkadian.owl#DSTEM
+:DSTEM rdf:type owl:NamedIndividual ,
+                :DStem ;
+       :hasTag "DSTEM" .
+
+
+###  http://purl.org/olia/akkadian.owl#DTNSTEM
+:DTNSTEM rdf:type owl:NamedIndividual ,
+                  :DtnStem ;
+         :hasTag "DTNSTEM" .
+
+
+###  http://purl.org/olia/akkadian.owl#DUAL
+:DUAL rdf:type owl:NamedIndividual ,
+               :Dual ;
+      :hasTag "DUAL" .
+
+
+###  http://purl.org/olia/akkadian.owl#F
+:F rdf:type owl:NamedIndividual ,
+            :Feminine ;
+   :hasTag "F" .
+
+
+###  http://purl.org/olia/akkadian.owl#FIRST
+:FIRST rdf:type owl:NamedIndividual ,
+                :First ;
+       :hasTag "FIRST" .
+
+
+###  http://purl.org/olia/akkadian.owl#FRAC
+:FRAC rdf:type owl:NamedIndividual ,
+               :Fraction ;
+      :hasTag "FRAC" .
+
+
+###  http://purl.org/olia/akkadian.owl#GEN
+:GEN rdf:type owl:NamedIndividual ,
+              :Genitive ;
+     :hasTag "GEN" .
+
+
+###  http://purl.org/olia/akkadian.owl#GN
+:GN rdf:type owl:NamedIndividual ,
+             :GeographicalName ;
+    :hasTag "GN" .
+
+
+###  http://purl.org/olia/akkadian.owl#GST
+:GST rdf:type owl:NamedIndividual ,
+              :GStem ;
+     :hasTag "GST" .
+
+
+###  http://purl.org/olia/akkadian.owl#GTNSTEM
+:GTNSTEM rdf:type owl:NamedIndividual ,
+                  :GtnStem ;
+         :hasTag "GTNSTEM" .
+
+
+###  http://purl.org/olia/akkadian.owl#GTSTEM
+:GTSTEM rdf:type owl:NamedIndividual ,
+                 :GtStem ;
+        :hasTag "GTSTEM" .
+
+
+###  http://purl.org/olia/akkadian.owl#IMP
+:IMP rdf:type owl:NamedIndividual ,
+              :imperative ;
+     :hasTag "IMP" .
+
+
+###  http://purl.org/olia/akkadian.owl#IMPF
+:IMPF rdf:type owl:NamedIndividual ,
+               :imperfective ;
+      :hasTag "IMPF" .
+
+
+###  http://purl.org/olia/akkadian.owl#IND
+:IND rdf:type owl:NamedIndividual ,
+              :indicative ;
+     :hasTag "IND" .
+
+
+###  http://purl.org/olia/akkadian.owl#INDPPRO
+:INDPPRO rdf:type owl:NamedIndividual ,
+                  :EnclicticPersonalPronoun ;
+         :hasTag "INDPPRO" .
+
+
+###  http://purl.org/olia/akkadian.owl#INF
+:INF rdf:type owl:NamedIndividual ,
+              :Infinitive ;
+     :hasTag "INF"^^xsd:float .
+
+
+###  http://purl.org/olia/akkadian.owl#INT
+:INT rdf:type owl:NamedIndividual ,
+              :InterrogativePronoun ;
+     :hasTag "INT" .
+
+
+###  http://purl.org/olia/akkadian.owl#INTJ
+:INTJ rdf:type owl:NamedIndividual ,
+               :Interjection ;
+      :hasTag "INTJ" .
+
+
+###  http://purl.org/olia/akkadian.owl#LOC
+:LOC rdf:type owl:NamedIndividual ,
+              :Locative ;
+     :hasTag "LOC" .
+
+
+###  http://purl.org/olia/akkadian.owl#M
+:M rdf:type owl:NamedIndividual ,
+            :Male ;
+   :hasTag "M" .
+
+
+###  http://purl.org/olia/akkadian.owl#MUL
+:MUL rdf:type owl:NamedIndividual ,
+              :MultiplicativeNumeral ;
+     :hasTag "MUL" .
+
+
+###  http://purl.org/olia/akkadian.owl#NEG
+:NEG rdf:type owl:NamedIndividual ,
+              :negation ;
+     :hasTag "NEG" .
+
+
+###  http://purl.org/olia/akkadian.owl#NOM
+:NOM rdf:type owl:NamedIndividual ,
+              :Nominative ;
+     :hasTag "NOM" .
+
+
+###  http://purl.org/olia/akkadian.owl#NSTEM
+:NSTEM rdf:type owl:NamedIndividual ,
+                :NStem ;
+       :hasTag "NSTEM" .
+
+
+###  http://purl.org/olia/akkadian.owl#NTNSTEM
+:NTNSTEM rdf:type owl:NamedIndividual ,
+                  :NTN_Stem ;
+         :hasTag "NTNSTEM" .
+
+
+###  http://purl.org/olia/akkadian.owl#NUM
+:NUM rdf:type owl:NamedIndividual ,
+              :Numeral ;
+     :hasTag "NUM" .
+
+
+###  http://purl.org/olia/akkadian.owl#OBL
+:OBL rdf:type owl:NamedIndividual ,
+              :Oblique ;
+     :hasTag "OBL" .
+
+
+###  http://purl.org/olia/akkadian.owl#ORD
+:ORD rdf:type owl:NamedIndividual ,
+              :Ordinal ;
+     :hasTag "ORD" .
+
+
+###  http://purl.org/olia/akkadian.owl#PL
+:PL rdf:type owl:NamedIndividual ,
+             :Plural ;
+    :hasTag "PL" .
+
+
+###  http://purl.org/olia/akkadian.owl#PN
+:PN rdf:type owl:NamedIndividual ,
+             :PersonalName ;
+    :hasTag "PN" .
+
+
+###  http://purl.org/olia/akkadian.owl#PNOUN
+:PNOUN rdf:type owl:NamedIndividual ,
+                :ProperNoun ;
+       :hasTag "PNOUN" .
+
+
+###  http://purl.org/olia/akkadian.owl#POSP
+:POSP rdf:type owl:NamedIndividual ,
+               :Postposition ;
+      :hasTag "POSP" .
+
+
+###  http://purl.org/olia/akkadian.owl#POSS
+:POSS rdf:type owl:NamedIndividual ,
+               :PossessivePronoun ;
+      :hasTag "POSS" .
+
+
+###  http://purl.org/olia/akkadian.owl#PREC
+:PREC rdf:type owl:NamedIndividual ,
+               :Precative ;
+      :hasTag "PREC" .
+
+
+###  http://purl.org/olia/akkadian.owl#PREP
+:PREP rdf:type owl:NamedIndividual ,
+               :Preposition ;
+      :hasTag "PREP" .
+
+
+###  http://purl.org/olia/akkadian.owl#PRO
+:PRO rdf:type owl:NamedIndividual ,
+              :Pronoun ;
+     :hasTag "PRO" .
+
+
+###  http://purl.org/olia/akkadian.owl#PROH
+:PROH rdf:type owl:NamedIndividual ,
+               :Prohibitive ;
+      :hasTag "PROH" .
+
+
+###  http://purl.org/olia/akkadian.owl#PRS
+:PRS rdf:type owl:NamedIndividual ,
+              :present ;
+     :hasTag "PRS" .
+
+
+###  http://purl.org/olia/akkadian.owl#PST
+:PST rdf:type owl:NamedIndividual ,
+              :past ;
+     :hasTag "PST" .
+
+
+###  http://purl.org/olia/akkadian.owl#PTC
+:PTC rdf:type owl:NamedIndividual ,
+              :Particle ;
+     :hasTag "PTC" .
+
+
+###  http://purl.org/olia/akkadian.owl#PTCP
+:PTCP rdf:type owl:NamedIndividual ,
+               :Participle ;
+      :hasTag "PTCP" .
+
+
+###  http://purl.org/olia/akkadian.owl#REL
+:REL rdf:type owl:NamedIndividual ,
+              :RelativePronoun ;
+     :hasTag "REL" .
+
+
+###  http://purl.org/olia/akkadian.owl#SBJV
+:SBJV rdf:type owl:NamedIndividual ,
+               :subjunctive ;
+      :hasTag "SBJV" .
+
+
+###  http://purl.org/olia/akkadian.owl#SBST
+:SBST rdf:type owl:NamedIndividual ,
+               :Noun ;
+      :hasTag "SBST" .
+
+
+###  http://purl.org/olia/akkadian.owl#SECOND
+:SECOND rdf:type owl:NamedIndividual ,
+                 :Second ;
+        :hasTag "SECOND" .
+
+
+###  http://purl.org/olia/akkadian.owl#SG
+:SG rdf:type owl:NamedIndividual ,
+             :Singular ;
+    :hasTag "SG" .
+
+
+###  http://purl.org/olia/akkadian.owl#SST
+:SST rdf:type owl:NamedIndividual ,
+              :SZStem ;
+     :hasTag "SST" .
+
+
+###  http://purl.org/olia/akkadian.owl#STA
+:STA rdf:type owl:NamedIndividual ,
+              :StatusAbsolutus ;
+     :hasTag "STA" .
+
+
+###  http://purl.org/olia/akkadian.owl#STC
+:STC rdf:type owl:NamedIndividual ,
+              :StatusConstructus ;
+     :hasTag "STC" .
+
+
+###  http://purl.org/olia/akkadian.owl#STR
+:STR rdf:type owl:NamedIndividual ,
+              :StatusRectus ;
+     :hasTag "STR" .
+
+
+###  http://purl.org/olia/akkadian.owl#STV
+:STV rdf:type owl:NamedIndividual ,
+              :Stative ;
+     :hasTag "STV" .
+
+
+###  http://purl.org/olia/akkadian.owl#SZTDSTEM
+:SZTDSTEM rdf:type owl:NamedIndividual ,
+                   :SZDStem ;
+          :hasTag "SZTDSTEM" .
+
+
+###  http://purl.org/olia/akkadian.owl#SZTNSTEM
+:SZTNSTEM rdf:type owl:NamedIndividual ,
+                   :SZTNStem ;
+          :hasTag "SZTNSTEM" .
+
+
+###  http://purl.org/olia/akkadian.owl#TERM
+:TERM rdf:type owl:NamedIndividual ,
+               :Terminative ;
+      :hasTag "TERM" .
+
+
+###  http://purl.org/olia/akkadian.owl#THIRD
+:THIRD rdf:type owl:NamedIndividual ,
+                :Third ;
+       :hasTag "THIRD" .
+
+
+###  http://purl.org/olia/akkadian.owl#VB
+:VB rdf:type owl:NamedIndividual ,
+             :Verb ;
+    :hasTag "VB" .
+
+
+###  http://purl.org/olia/akkadian.owl#VEN
+:VEN rdf:type owl:NamedIndividual ,
+              :Ventive ;
+     :hasTag "VEN" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
