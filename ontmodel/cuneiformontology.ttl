@@ -65,6 +65,14 @@ lemon:sense rdf:type owl:ObjectProperty ;
 
 ###  http://www.cidoc-crm.org/cidoc-crm/P138_represents
 cidoc:P138_represents rdf:type owl:ObjectProperty ;
+                      rdfs:domain cidoc:TX9_Glyph ,
+                                  cunei:Line ,
+                                  cunei:Sentence ,
+                                  cunei:WordForm ;
+                      rdfs:range cunei:transliteration_charoccurrence ,
+                                 cunei:transliteration_line ,
+                                 cunei:transliteration_sentence ,
+                                 cunei:transliteration_wordoccurence ;
                       rdfs:label "represents" .
 
 
@@ -416,6 +424,11 @@ cunei:HorizontalRuling rdf:type owl:Class ;
                        <http://www.w3.org/2004/02/skos/core#definition> "A horizontal ruling on a cuneiform tablet"@en .
 
 
+###  http://www.purl.org/cuneiform/Image
+cunei:Image rdf:type owl:Class ;
+            rdfs:label "image"@en .
+
+
 ###  http://www.purl.org/cuneiform/ImageAnnotation
 cunei:ImageAnnotation rdf:type owl:Class .
 
@@ -497,6 +510,11 @@ cunei:PictoralElement rdf:type owl:Class ;
                       <http://www.w3.org/2004/02/skos/core#definition> "A pictoral element on a cuneiform tablet"@en .
 
 
+###  http://www.purl.org/cuneiform/PointCloud
+cunei:PointCloud rdf:type owl:Class ;
+                 rdfs:label "point cloud"@en .
+
+
 ###  http://www.purl.org/cuneiform/ReverseSide
 cunei:ReverseSide rdf:type owl:Class ;
                   rdfs:subClassOf cunei:TabletSide ;
@@ -549,6 +567,20 @@ cunei:TabletSide rdf:type owl:Class ;
                  rdfs:subClassOf cidoc:TX4_WritingField ;
                  rdfs:label "tablet side"@en ;
                  <http://www.w3.org/2004/02/skos/core#definition> "The side of a cuneiform artifact, usually one of obverse, reverse, left, right, top, bottom"@en .
+
+
+###  http://www.purl.org/cuneiform/TabletSide3DRendering
+cunei:TabletSide3DRendering rdf:type owl:Class ;
+                            rdfs:subClassOf <http://www.purl.org/cuneiform/3DRendering> ;
+                            rdfs:label "tablet side 3d rendering"@en ;
+                            <http://www.w3.org/2004/02/skos/core#definition> "A 3D rendering which depicts a side of a cuneiform tablet"@en .
+
+
+###  http://www.purl.org/cuneiform/TabletSideImage
+cunei:TabletSideImage rdf:type owl:Class ;
+                      rdfs:subClassOf cunei:Image ;
+                      rdfs:label "tablet side image"@en ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "An image representing a side of a cuneiform tablet"@en .
 
 
 ###  http://www.purl.org/cuneiform/TopSide
@@ -607,6 +639,23 @@ cunei:transliteration_sentence rdf:type owl:Class ;
 cunei:transliteration_wordoccurence rdf:type owl:Class ;
                                     rdfs:subClassOf cunei:Transliteration ;
                                     rdfs:label "Transliteration WordOccurance"@en .
+
+
+###  http://www.purl.org/cuneiform/3DMesh
+<http://www.purl.org/cuneiform/3DMesh> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://www.purl.org/cuneiform/3DModel> ;
+                                       rdfs:label "3d mesh"@en .
+
+
+###  http://www.purl.org/cuneiform/3DModel
+<http://www.purl.org/cuneiform/3DModel> rdf:type owl:Class ;
+                                        rdfs:subClassOf cunei:PointCloud ;
+                                        rdfs:label "3d model"@en .
+
+
+###  http://www.purl.org/cuneiform/3DRendering
+<http://www.purl.org/cuneiform/3DRendering> rdf:type owl:Class ;
+                                            rdfs:label "3d rendering"@en .
 
 
 ###  http://www.w3.org/ns/oa#Annotation
