@@ -192,7 +192,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
     <script type="application/ld+json">
       [
   {
-    "@id": "nde3ccd7af38a4c3790d0cda15962f579b1",
+    "@id": "n3f290405650b428c8d275c4d92d4a907b1",
     "@type": [
       "https://schema.org/DefinedTermSet"
     ],
@@ -220,7 +220,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
     <h2 style="display:none;">Metadata</h2>
     <dl>
         <dt>URI</dt>
-        <dd><code>nde3ccd7af38a4c3790d0cda15962f579b1</code></dd>
+        <dd><code>n3f290405650b428c8d275c4d92d4a907b1</code></dd>
         <dt>License</dt>
         <dd><a href="https://creativecommons.org/licenses/by/4.0">https://creativecommons.org/licenses/by/4.0</a></dd>
         <dt>Ontology RDF</dt>
@@ -292,6 +292,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>URI</th>
                 <td><code>http://lemon-model.net/lemon#LexicalEntry</code></td>
             </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="http://lemon-model.net/lemon#form">lemon:form</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="http://lemon-model.net/lemon#entry">lemon:entry</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="entity class" id="lexicalform">
@@ -303,6 +315,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>URI</th>
                 <td><code>http://lemon-model.net/lemon#LexicalForm</code></td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="http://lexinfo.net/ontology/2.0/lexinfo#partOfSpeech">http://lexinfo.net/ontology/2.0/lexinfo#partOfSpeech</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="http://lemon-model.net/lemon#form">lemon:form</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
             </tr>
         </table>
     </div>
@@ -316,6 +340,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>URI</th>
                 <td><code>http://lemon-model.net/lemon#LexicalSense</code></td>
             </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="http://lemon-model.net/lemon#sense">lemon:sense</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="entity class" id="lexicon">
@@ -327,6 +357,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>URI</th>
                 <td><code>http://lemon-model.net/lemon#Lexicon</code></td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="http://lemon-model.net/lemon#entry">lemon:entry</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
             </tr>
         </table>
     </div>
@@ -475,10 +511,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="http://www.purl.org/cuneiform/Sentence">cunei:Sentence</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph">cidoc:TX9_Glyph</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.purl.org/cuneiform/WordForm">cunei:WordForm</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.purl.org/cuneiform/Line">cunei:Line</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.purl.org/cuneiform/Sentence">cunei:Sentence</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.purl.org/cuneiform/WordForm">cunei:WordForm</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph">cidoc:TX9_Glyph</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -523,6 +559,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                     <a href="http://www.purl.org/cuneiform/TabletSide">cunei:TabletSide</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/hasSide">cunei:hasSide</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="entity class" id="leftside">
@@ -545,6 +587,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Super-classes</th>
                 <td>
                     <a href="http://www.purl.org/cuneiform/TabletSide">cunei:TabletSide</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/hasSide">cunei:hasSide</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -571,6 +619,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                     <a href="http://www.purl.org/cuneiform/TabletSide">cunei:TabletSide</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/hasSide">cunei:hasSide</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="entity class" id="reverseside">
@@ -593,6 +647,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Super-classes</th>
                 <td>
                     <a href="http://www.purl.org/cuneiform/TabletSide">cunei:TabletSide</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/hasSide">cunei:hasSide</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -619,6 +679,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                     <a href="http://www.purl.org/cuneiform/TabletSide">cunei:TabletSide</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/hasSide">cunei:hasSide</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="entity class" id="topside">
@@ -641,6 +707,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Super-classes</th>
                 <td>
                     <a href="http://www.purl.org/cuneiform/TabletSide">cunei:TabletSide</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/hasSide">cunei:hasSide</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -667,6 +739,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                     <a href="http://www.purl.org/cuneiform/FindSpot">cunei:FindSpot</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="http://www.opengis.net/ont/geosparql#hasGeometry">geosparql:hasGeometry</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="entity class" id="geometry">
@@ -685,6 +763,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                     <a href="http://www.opengis.net/ont/geosparql#SpatialObject">geosparql:SpatialObject</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="http://www.opengis.net/ont/geosparql#hasGeometry">geosparql:hasGeometry</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="entity class" id="spatialobject">
@@ -700,8 +784,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#Feature">geosparql:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.opengis.net/ont/geosparql#Geometry">geosparql:Geometry</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.opengis.net/ont/geosparql#Feature">geosparql:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -746,6 +830,20 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                     <a href="http://www.cidoc-crm.org/cidoc-crm/TX7_WrittenTextFragment">cidoc:TX7_WrittenTextFragment</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/nextLine">cunei:nextLine</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.purl.org/cuneiform/prevLine">cunei:prevLine</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/nextLine">cunei:nextLine</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.purl.org/cuneiform/prevLine">cunei:prevLine</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="entity class" id="sentence">
@@ -770,6 +868,20 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                     <a href="http://www.cidoc-crm.org/cidoc-crm/TX7_WrittenTextFragment">cidoc:TX7_WrittenTextFragment</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="http://www.co-ode.org/ontologies/ont.owl#nextSentence">http://www.co-ode.org/ontologies/ont.owl#nextSentence</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.co-ode.org/ontologies/ont.owl#prevSentence">http://www.co-ode.org/ontologies/ont.owl#prevSentence</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="http://www.co-ode.org/ontologies/ont.owl#nextSentence">http://www.co-ode.org/ontologies/ont.owl#nextSentence</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.co-ode.org/ontologies/ont.owl#prevSentence">http://www.co-ode.org/ontologies/ont.owl#prevSentence</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="entity class" id="cuneiformtablet">
@@ -786,6 +898,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Super-classes</th>
                 <td>
                     <a href="http://www.cidoc-crm.org/cidoc-crm/E22_ManMadeObject">cidoc:E22_ManMadeObject</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/hasSide">cunei:hasSide</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -815,12 +933,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="http://www.co-ode.org/ontologies/ont.owl#BottomSide">http://www.co-ode.org/ontologies/ont.owl#BottomSide</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.co-ode.org/ontologies/ont.owl#TopSide">http://www.co-ode.org/ontologies/ont.owl#TopSide</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.co-ode.org/ontologies/ont.owl#ObverseSide">http://www.co-ode.org/ontologies/ont.owl#ObverseSide</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.co-ode.org/ontologies/ont.owl#LeftSide">http://www.co-ode.org/ontologies/ont.owl#LeftSide</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.co-ode.org/ontologies/ont.owl#RightSide">http://www.co-ode.org/ontologies/ont.owl#RightSide</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.co-ode.org/ontologies/ont.owl#TopSide">http://www.co-ode.org/ontologies/ont.owl#TopSide</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.co-ode.org/ontologies/ont.owl#LeftSide">http://www.co-ode.org/ontologies/ont.owl#LeftSide</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.co-ode.org/ontologies/ont.owl#BottomSide">http://www.co-ode.org/ontologies/ont.owl#BottomSide</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.co-ode.org/ontologies/ont.owl#ObverseSide">http://www.co-ode.org/ontologies/ont.owl#ObverseSide</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.co-ode.org/ontologies/ont.owl#ReverseSide">http://www.co-ode.org/ontologies/ont.owl#ReverseSide</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/hasSide">cunei:hasSide</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -871,6 +995,20 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                     <a href="http://www.cidoc-crm.org/cidoc-crm/TX7_WrittenTextFragment">cidoc:TX7_WrittenTextFragment</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/nextWord">cunei:nextWord</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.purl.org/cuneiform/prevWord">cunei:prevWord</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/nextWord">cunei:nextWord</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.purl.org/cuneiform/prevWord">cunei:prevWord</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="entity class" id="annotation">
@@ -882,6 +1020,13 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>URI</th>
                 <td><code>http://www.w3.org/ns/oa#Annotation</code></td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="http://www.w3.org/ns/oa#hasBody">oa:hasBody</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.w3.org/ns/oa#hasTarget">oa:hasTarget</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
             </tr>
         </table>
     </div>
@@ -928,8 +1073,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="http://www.cidoc-crm.org/cidoc-crm/TX2_Writing">cidoc:TX2_Writing</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.cidoc-crm.org/cidoc-crm/TX5_Reading">cidoc:TX5_Reading</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.cidoc-crm.org/cidoc-crm/TX2_Writing">cidoc:TX2_Writing</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -959,8 +1104,21 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <li><a href="#entry">entry</a></li>
         <li><a href="#form">form</a></li>
         <li><a href="#sense">sense</a></li>
+        <li><a href="#partofspeech">part of speech</a></li>
         <li><a href="#represents">represents</a></li>
         <li><a href="#isfoundon">is found on</a></li>
+        <li><a href="#readby">read by</a></li>
+        <li><a href="#isrenderedby">is rendered by</a></li>
+        <li><a href="#isencodedby">is encoded by</a></li>
+        <li><a href="#nextsentence">next sentence</a></li>
+        <li><a href="#previoussentence">previous sentence</a></li>
+        <li><a href="#hasgeometry">has geometry</a></li>
+        <li><a href="#hasside">has side</a></li>
+        <li><a href="#isattested">is attested</a></li>
+        <li><a href="#nextline">next line</a></li>
+        <li><a href="#nextword">next word</a></li>
+        <li><a href="#previousline">previous line</a></li>
+        <li><a href="#previousword">previous word</a></li>
         <li><a href="#hasbody">has body</a></li>
         <li><a href="#haspurpose">has purpose</a></li>
         <li><a href="#hasselector">has selector</a></li>
@@ -974,6 +1132,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>URI</th>
                 <td><code>http://lemon-model.net/lemon#entry</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="http://lemon-model.net/lemon#Lexicon">lemon:Lexicon</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://lemon-model.net/lemon#LexicalEntry">lemon:LexicalEntry</a><sup class="sup-c" title="class">c</sup>
+                </td>
             </tr>
         </table>
     </div>
@@ -992,6 +1162,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                     <a href="http://www.w3.org/2002/07/owl#topObjectProperty">owl:topObjectProperty</a>
                 </td>
             </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="http://lemon-model.net/lemon#LexicalEntry">lemon:LexicalEntry</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://lemon-model.net/lemon#LexicalForm">lemon:LexicalForm</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="entity property" id="sense">
@@ -1002,6 +1184,29 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>URI</th>
                 <td><code>http://lemon-model.net/lemon#sense</code></td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://lemon-model.net/lemon#LexicalSense">lemon:LexicalSense</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="partofspeech">
+        <h3>part of speech<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#partofspeech" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://lexinfo.net/ontology/2.0/lexinfo#partOfSpeech</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="http://lemon-model.net/lemon#LexicalForm">lemon:LexicalForm</a><sup class="sup-c" title="class">c</sup>
+                </td>
             </tr>
         </table>
     </div>
@@ -1027,6 +1232,252 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
+    <div class="entity property" id="readby">
+        <h3>read by<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#readby" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.cidoc-crm.org/cidoc-crm/TXP10_read_by</code></td>
+            </tr>
+            <tr>
+                <th>Super-properties</th>
+                <td>
+                    <a href="http://www.w3.org/2002/07/owl#topObjectProperty">owl:topObjectProperty</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="isrenderedby">
+        <h3>is rendered by<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#isrenderedby" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.cidoc-crm.org/cidoc-crm/TXP3_is_rendered_by</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="isencodedby">
+        <h3>is encoded by<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#isencodedby" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.cidoc-crm.org/cidoc-crm/TXP9_is_encoded_by</code></td>
+            </tr>
+            <tr>
+                <th>Super-properties</th>
+                <td>
+                    <a href="http://www.w3.org/2002/07/owl#topObjectProperty">owl:topObjectProperty</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="nextsentence">
+        <h3>next sentence<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#nextsentence" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.co-ode.org/ontologies/ont.owl#nextSentence</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/Sentence">cunei:Sentence</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/Sentence">cunei:Sentence</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="previoussentence">
+        <h3>previous sentence<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#previoussentence" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.co-ode.org/ontologies/ont.owl#prevSentence</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/Sentence">cunei:Sentence</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/Sentence">cunei:Sentence</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasgeometry">
+        <h3>has geometry<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasgeometry" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.opengis.net/ont/geosparql#hasGeometry</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="http://www.opengis.net/ont/geosparql#Feature">geosparql:Feature</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.opengis.net/ont/geosparql#Geometry">geosparql:Geometry</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasside">
+        <h3>has side<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasside" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/hasSide</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/Tablet">cunei:Tablet</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.co-ode.org/ontologies/ont.owl#BottomSide">http://www.co-ode.org/ontologies/ont.owl#BottomSide</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://www.co-ode.org/ontologies/ont.owl#TopSide">http://www.co-ode.org/ontologies/ont.owl#TopSide</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://www.co-ode.org/ontologies/ont.owl#LeftSide">http://www.co-ode.org/ontologies/ont.owl#LeftSide</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://www.co-ode.org/ontologies/ont.owl#RightSide">http://www.co-ode.org/ontologies/ont.owl#RightSide</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://www.purl.org/cuneiform/TabletSide">cunei:TabletSide</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://www.co-ode.org/ontologies/ont.owl#ReverseSide">http://www.co-ode.org/ontologies/ont.owl#ReverseSide</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://www.co-ode.org/ontologies/ont.owl#ObverseSide">http://www.co-ode.org/ontologies/ont.owl#ObverseSide</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="isattested">
+        <h3>is attested<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#isattested" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/isAttested</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="nextline">
+        <h3>next line<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#nextline" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/nextLine</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/Line">cunei:Line</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/Line">cunei:Line</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="nextword">
+        <h3>next word<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#nextword" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/nextWord</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/WordForm">cunei:WordForm</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/WordForm">cunei:WordForm</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="previousline">
+        <h3>previous line<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#previousline" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/prevLine</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/Line">cunei:Line</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/Line">cunei:Line</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="previousword">
+        <h3>previous word<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#previousword" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/prevWord</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/WordForm">cunei:WordForm</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/WordForm">cunei:WordForm</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity property" id="hasbody">
         <h3>has body<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
             <a href="#hasbody" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
@@ -1040,6 +1491,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Super-properties</th>
                 <td>
                     <a href="http://www.w3.org/2002/07/owl#topObjectProperty">owl:topObjectProperty</a>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="http://www.w3.org/ns/oa#Annotation">oa:Annotation</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1085,6 +1542,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Super-properties</th>
                 <td>
                     <a href="http://www.w3.org/2002/07/owl#topObjectProperty">owl:topObjectProperty</a>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="http://www.w3.org/ns/oa#Annotation">oa:Annotation</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1150,7 +1613,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
     <h2>Namespaces <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <dl>
         <dt>default (:)</dt>
-        <dd><code>nde3ccd7af38a4c3790d0cda15962f579b1</code></dd>
+        <dd><code>n3f290405650b428c8d275c4d92d4a907b1</code></dd>
         <dt>anno</dt>
         <dd><code>http://www.w3.org/ns/anno.jsonld</code></dd>
         <dt>brick</dt>
