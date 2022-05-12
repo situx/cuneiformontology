@@ -270,7 +270,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
       <li><a href="#3dmodel">3d model</a></li>
       <li><a href="#3drendering">3d rendering</a></li>
       <li><a href="#administrative">administrative</a></li>
+      <li><a href="#blankspace">blank space</a></li>
       <li><a href="#bottomside">bottom side</a></li>
+      <li><a href="#bulla">bulla</a></li>
       <li><a href="#damagedarea">damaged area</a></li>
       <li><a href="#dynasty">dynasty</a></li>
       <li><a href="#epoch">epoch</a></li>
@@ -307,6 +309,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
       <li><a href="#reverseside">reverse side</a></li>
       <li><a href="#rightside">right side</a></li>
       <li><a href="#ruling">ruling</a></li>
+      <li><a href="#scribe">scribe</a></li>
       <li><a href="#seal">seal</a></li>
       <li><a href="#sentence">sentence</a></li>
       <li><a href="#cuneiformtablet">cuneiform tablet</a></li>
@@ -315,12 +318,14 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
       <li><a href="#tabletside3drendering">tablet side 3d rendering</a></li>
       <li><a href="#tabletsideimage">tablet side image</a></li>
       <li><a href="#topside">top side</a></li>
+      <li><a href="#translation">translation</a></li>
       <li><a href="#transliteration">transliteration</a></li>
       <li><a href="#verticalruling">vertical ruling</a></li>
       <li><a href="#wedgetype">wedge type</a></li>
       <li><a href="#wordoccurence">word occurence</a></li>
       <li><a href="#display">display</a></li>
       <li><a href="#envelope">envelope</a></li>
+      <li><a href="#language">language</a></li>
       <li><a href="#legal">legal</a></li>
       <li><a href="#lexical">lexical</a></li>
       <li><a href="#literary">literary</a></li>
@@ -334,6 +339,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
       <li><a href="http://www.w3.org/ns/oa#TextualBody">oa:TextualBody</a></li>
       <li><a href="http://www.w3.org/ns/prov#Activity">prov:Activity</a></li>
       <li><a href="http://www.w3.org/ns/prov#Entity">prov:Entity</a></li>
+      <li><a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a></li>
     </ul>
     <div class="entity class" id="lexicalentry">
         <h3>
@@ -462,6 +468,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
+                    <a href="#bulla">bulla</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#envelope">envelope</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#cuneiformtablet">cuneiform tablet</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
@@ -588,8 +596,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#line">line</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#wordoccurence">word occurence</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#line">line</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#sentence">sentence</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph">cidoc:TX9_Glyph</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
@@ -616,6 +624,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>In domain of</th>
                 <td>
                     <a href="http://www.cidoc-crm.org/cidoc-crm/P138_represents">cidoc:P138_represents</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isdamaged">is damaged</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
         </table>
@@ -746,6 +755,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <td><code>http://www.purl.org/cuneiform/3DRendering</code></td>
             </tr>
             <tr>
+                <th>Description</th>
+                <td>
+                    <p>A rendering calculated from a 3D model</p>
+                </td>
+            </tr>
+            <tr>
                 <th>Sub-classes</th>
                 <td>
                     <a href="#tabletside3drendering">tablet side 3d rendering</a><sup class="sup-c" title="class">c</sup><br/>
@@ -767,6 +782,30 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Super-classes</th>
                 <td>
                     <a href="#genre">genre</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="blankspace">
+        <h3>
+          blank space<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#blankspace" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/BlankSpace</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A blank space on a cuneiform artifact surface without inscriptions, damage or further tablet features</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#tabletfeature">tablet feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -794,9 +833,39 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 </td>
             </tr>
             <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#isdamaged">is damaged</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                </td>
+            </tr>
+            <tr>
                 <th>In range of</th>
                 <td>
                     <a href="#hasside">has side</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="bulla">
+        <h3>
+          bulla<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#bulla" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/Bulla</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="http://www.cidoc-crm.org/cidoc-crm/E22_ManMadeObject">cidoc:E22_ManMadeObject</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#isdamaged">is damaged</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
         </table>
@@ -844,9 +913,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Members</th>
                 <td>
-                    <a href="http://www.purl.org/cuneiform/Uruk">cunei:Uruk</a><br/>
-                    <a href="http://www.purl.org/cuneiform/Kish">cunei:Kish</a><br/>
                     <a href="http://www.purl.org/cuneiform/Ur">cunei:Ur</a><br/>
+                    <a href="http://www.purl.org/cuneiform/Kish">cunei:Kish</a><br/>
+                    <a href="http://www.purl.org/cuneiform/Uruk">cunei:Uruk</a><br/>
                 </td>
             </tr>
         </table>
@@ -864,25 +933,25 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Members</th>
                 <td>
-                    <a href="http://www.purl.org/cuneiform/Uruk3">cunei:Uruk3</a><br/>
                     <a href="http://www.purl.org/cuneiform/LinearElamite">cunei:LinearElamite</a><br/>
-                    <a href="http://www.purl.org/cuneiform/UncertainPeriod">cunei:UncertainPeriod</a><br/>
-                    <a href="http://www.purl.org/cuneiform/OldElamite">cunei:OldElamite</a><br/>
-                    <a href="http://www.purl.org/cuneiform/MiddleHittite">cunei:MiddleHittite</a><br/>
-                    <a href="http://www.purl.org/cuneiform/Ebla">cunei:Ebla</a><br/>
-                    <a href="http://www.purl.org/cuneiform/OldBabylonian">cunei:OldBabylonian</a><br/>
-                    <a href="http://www.purl.org/cuneiform/MiddleBabylonian">cunei:MiddleBabylonian</a><br/>
                     <a href="http://www.purl.org/cuneiform/NeoAssyrian">cunei:NeoAssyrian</a><br/>
-                    <a href="http://www.purl.org/cuneiform/EdIIIb">cunei:EdIIIb</a><br/>
-                    <a href="http://www.purl.org/cuneiform/MiddleAssyrian">cunei:MiddleAssyrian</a><br/>
-                    <a href="http://www.purl.org/cuneiform/NeoElamite">cunei:NeoElamite</a><br/>
-                    <a href="http://www.purl.org/cuneiform/OldAssyrian">cunei:OldAssyrian</a><br/>
-                    <a href="http://www.purl.org/cuneiform/EdIIIa">cunei:EdIIIa</a><br/>
-                    <a href="http://www.purl.org/cuneiform/Hellenistic">cunei:Hellenistic</a><br/>
                     <a href="http://www.purl.org/cuneiform/Uruk5">cunei:Uruk5</a><br/>
                     <a href="http://www.purl.org/cuneiform/UrIII">cunei:UrIII</a><br/>
-                    <a href="http://www.purl.org/cuneiform/Uruk4">cunei:Uruk4</a><br/>
+                    <a href="http://www.purl.org/cuneiform/MiddleBabylonian">cunei:MiddleBabylonian</a><br/>
                     <a href="http://www.purl.org/cuneiform/MiddleElamite">cunei:MiddleElamite</a><br/>
+                    <a href="http://www.purl.org/cuneiform/EdIIIa">cunei:EdIIIa</a><br/>
+                    <a href="http://www.purl.org/cuneiform/Ebla">cunei:Ebla</a><br/>
+                    <a href="http://www.purl.org/cuneiform/Uruk4">cunei:Uruk4</a><br/>
+                    <a href="http://www.purl.org/cuneiform/OldElamite">cunei:OldElamite</a><br/>
+                    <a href="http://www.purl.org/cuneiform/MiddleHittite">cunei:MiddleHittite</a><br/>
+                    <a href="http://www.purl.org/cuneiform/Uruk3">cunei:Uruk3</a><br/>
+                    <a href="http://www.purl.org/cuneiform/OldAssyrian">cunei:OldAssyrian</a><br/>
+                    <a href="http://www.purl.org/cuneiform/Hellenistic">cunei:Hellenistic</a><br/>
+                    <a href="http://www.purl.org/cuneiform/EdIIIb">cunei:EdIIIb</a><br/>
+                    <a href="http://www.purl.org/cuneiform/MiddleAssyrian">cunei:MiddleAssyrian</a><br/>
+                    <a href="http://www.purl.org/cuneiform/OldBabylonian">cunei:OldBabylonian</a><br/>
+                    <a href="http://www.purl.org/cuneiform/UncertainPeriod">cunei:UncertainPeriod</a><br/>
+                    <a href="http://www.purl.org/cuneiform/NeoElamite">cunei:NeoElamite</a><br/>
                 </td>
             </tr>
         </table>
@@ -978,14 +1047,14 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#display">display</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#administrative">administrative</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#official">official</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#letter">letter</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#literary">literary</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#display">display</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#list">list</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#legal">legal</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#administrative">administrative</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#letter">letter</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#lexical">lexical</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#literary">literary</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#legal">legal</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1015,10 +1084,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#GottsteinWedgeTypeA">Gottstein Wedge Type A</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#GottsteinWedgeTypeB">Gottstein Wedge Type B</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#GottsteinWedgeTypeD">Gottstein Wedge Type D</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#GottsteinWedgeTypeC">Gottstein Wedge Type C</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#GottsteinWedgeTypeA">Gottstein Wedge Type A</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#GottsteinWedgeTypeD">Gottstein Wedge Type D</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#GottsteinWedgeTypeB">Gottstein Wedge Type B</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1196,6 +1265,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 </td>
             </tr>
             <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#isdamaged">is damaged</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                </td>
+            </tr>
+            <tr>
                 <th>In range of</th>
                 <td>
                     <a href="#hasside">has side</a><sup class="sup-op" title="object property">op</sup><br/>
@@ -1264,9 +1339,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>In domain of</th>
                 <td>
+                    <a href="#isdamaged">is damaged</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="#previousline">previous line</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#nextline">next line</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="http://www.cidoc-crm.org/cidoc-crm/P138_represents">cidoc:P138_represents</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#nextline">next line</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -1321,32 +1397,32 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Members</th>
                 <td>
-                    <a href="http://www.purl.org/cuneiform/shell">cunei:shell</a><br/>
-                    <a href="http://www.purl.org/cuneiform/gneiss">cunei:gneiss</a><br/>
-                    <a href="http://www.purl.org/cuneiform/copper">cunei:copper</a><br/>
-                    <a href="http://www.purl.org/cuneiform/ivory">cunei:ivory</a><br/>
-                    <a href="http://www.purl.org/cuneiform/serpentine">cunei:serpentine</a><br/>
-                    <a href="http://www.purl.org/cuneiform/wood">cunei:wood</a><br/>
-                    <a href="http://www.purl.org/cuneiform/sandstone">cunei:sandstone</a><br/>
-                    <a href="http://www.purl.org/cuneiform/schist">cunei:schist</a><br/>
-                    <a href="http://www.purl.org/cuneiform/stone">cunei:stone</a><br/>
-                    <a href="http://www.purl.org/cuneiform/lead">cunei:lead</a><br/>
                     <a href="http://www.purl.org/cuneiform/plasma">cunei:plasma</a><br/>
-                    <a href="http://www.purl.org/cuneiform/gypsum">cunei:gypsum</a><br/>
                     <a href="http://www.purl.org/cuneiform/alabaster">cunei:alabaster</a><br/>
+                    <a href="http://www.purl.org/cuneiform/sandstone">cunei:sandstone</a><br/>
                     <a href="http://www.purl.org/cuneiform/lapislazuli">cunei:lapislazuli</a><br/>
-                    <a href="http://www.purl.org/cuneiform/obsidian">cunei:obsidian</a><br/>
-                    <a href="http://www.purl.org/cuneiform/aragonite">cunei:aragonite</a><br/>
-                    <a href="http://www.purl.org/cuneiform/tuff">cunei:tuff</a><br/>
-                    <a href="http://www.purl.org/cuneiform/bitumen">cunei:bitumen</a><br/>
-                    <a href="http://www.purl.org/cuneiform/marble">cunei:marble</a><br/>
-                    <a href="http://www.purl.org/cuneiform/iron">cunei:iron</a><br/>
-                    <a href="http://www.purl.org/cuneiform/agate">cunei:agate</a><br/>
-                    <a href="http://www.purl.org/cuneiform/clay">cunei:clay</a><br/>
-                    <a href="http://www.purl.org/cuneiform/carnelian">cunei:carnelian</a><br/>
+                    <a href="http://www.purl.org/cuneiform/copper">cunei:copper</a><br/>
+                    <a href="http://www.purl.org/cuneiform/shell">cunei:shell</a><br/>
                     <a href="http://www.purl.org/cuneiform/chlorite">cunei:chlorite</a><br/>
+                    <a href="http://www.purl.org/cuneiform/gneiss">cunei:gneiss</a><br/>
+                    <a href="http://www.purl.org/cuneiform/schist">cunei:schist</a><br/>
+                    <a href="http://www.purl.org/cuneiform/carnelian">cunei:carnelian</a><br/>
+                    <a href="http://www.purl.org/cuneiform/obsidian">cunei:obsidian</a><br/>
+                    <a href="http://www.purl.org/cuneiform/bitumen">cunei:bitumen</a><br/>
+                    <a href="http://www.purl.org/cuneiform/clay">cunei:clay</a><br/>
                     <a href="http://www.purl.org/cuneiform/calcite">cunei:calcite</a><br/>
+                    <a href="http://www.purl.org/cuneiform/marble">cunei:marble</a><br/>
+                    <a href="http://www.purl.org/cuneiform/ivory">cunei:ivory</a><br/>
+                    <a href="http://www.purl.org/cuneiform/stone">cunei:stone</a><br/>
+                    <a href="http://www.purl.org/cuneiform/serpentine">cunei:serpentine</a><br/>
+                    <a href="http://www.purl.org/cuneiform/lead">cunei:lead</a><br/>
+                    <a href="http://www.purl.org/cuneiform/gypsum">cunei:gypsum</a><br/>
+                    <a href="http://www.purl.org/cuneiform/iron">cunei:iron</a><br/>
                     <a href="http://www.purl.org/cuneiform/limestone">cunei:limestone</a><br/>
+                    <a href="http://www.purl.org/cuneiform/tuff">cunei:tuff</a><br/>
+                    <a href="http://www.purl.org/cuneiform/aragonite">cunei:aragonite</a><br/>
+                    <a href="http://www.purl.org/cuneiform/wood">cunei:wood</a><br/>
+                    <a href="http://www.purl.org/cuneiform/agate">cunei:agate</a><br/>
                 </td>
             </tr>
         </table>
@@ -1370,19 +1446,19 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Members</th>
                 <td>
-                    <a href="http://www.purl.org/cuneiform/clear">cunei:clear</a><br/>
-                    <a href="http://www.purl.org/cuneiform/banded">cunei:banded</a><br/>
                     <a href="http://www.purl.org/cuneiform/jadelike">cunei:jadelike</a><br/>
-                    <a href="http://www.purl.org/cuneiform/glazed">cunei:glazed</a><br/>
-                    <a href="http://www.purl.org/cuneiform/petrified">cunei:petrified</a><br/>
-                    <a href="http://www.purl.org/cuneiform/composite">cunei:composite</a><br/>
-                    <a href="http://www.purl.org/cuneiform/alloy">cunei:alloy</a><br/>
-                    <a href="http://www.purl.org/cuneiform/shiny">cunei:shiny</a><br/>
-                    <a href="http://www.purl.org/cuneiform/baked">cunei:baked</a><br/>
-                    <a href="http://www.purl.org/cuneiform/translucent">cunei:translucent</a><br/>
-                    <a href="http://www.purl.org/cuneiform/stalagmite">cunei:stalagmite</a><br/>
-                    <a href="http://www.purl.org/cuneiform/burnt">cunei:burnt</a><br/>
                     <a href="http://www.purl.org/cuneiform/plaster">cunei:plaster</a><br/>
+                    <a href="http://www.purl.org/cuneiform/translucent">cunei:translucent</a><br/>
+                    <a href="http://www.purl.org/cuneiform/banded">cunei:banded</a><br/>
+                    <a href="http://www.purl.org/cuneiform/baked">cunei:baked</a><br/>
+                    <a href="http://www.purl.org/cuneiform/petrified">cunei:petrified</a><br/>
+                    <a href="http://www.purl.org/cuneiform/stalagmite">cunei:stalagmite</a><br/>
+                    <a href="http://www.purl.org/cuneiform/glazed">cunei:glazed</a><br/>
+                    <a href="http://www.purl.org/cuneiform/clear">cunei:clear</a><br/>
+                    <a href="http://www.purl.org/cuneiform/burnt">cunei:burnt</a><br/>
+                    <a href="http://www.purl.org/cuneiform/shiny">cunei:shiny</a><br/>
+                    <a href="http://www.purl.org/cuneiform/alloy">cunei:alloy</a><br/>
+                    <a href="http://www.purl.org/cuneiform/composite">cunei:composite</a><br/>
                 </td>
             </tr>
         </table>
@@ -1407,6 +1483,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Super-classes</th>
                 <td>
                     <a href="#tabletside">tablet side</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#isdamaged">is damaged</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -1443,12 +1525,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Sub-classes</th>
                 <td>
                     <a href="#PaleoCodeWedgeTypeW">PaleoCode Wedge Type W</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#PaleoCodeWedgeTypeE">PaleoCode Wedge Type E</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#PaleoCodeWedgeTypeF">PaleoCode Wedge Type F</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#PaleoCodeWedgeTypeA">PaleoCode Wedge Type A</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#PaleoCodeWedgeTypeB">PaleoCode Wedge Type B</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#PaleoCodeWedgeTypeD">PaleoCode Wedge Type D</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#PaleoCodeWedgeTypeC">PaleoCode Wedge Type C</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#PaleoCodeWedgeTypeA">PaleoCode Wedge Type A</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#PaleoCodeWedgeTypeF">PaleoCode Wedge Type F</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#PaleoCodeWedgeTypeE">PaleoCode Wedge Type E</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1662,6 +1744,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <td><code>http://www.purl.org/cuneiform/PointCloud</code></td>
             </tr>
             <tr>
+                <th>Description</th>
+                <td>
+                    <p>A set of points in a given coordinate space</p>
+                </td>
+            </tr>
+            <tr>
                 <th>Sub-classes</th>
                 <td>
                     <a href="#3dmodel">3d model</a><sup class="sup-c" title="class">c</sup><br/>
@@ -1692,6 +1780,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 </td>
             </tr>
             <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#isdamaged">is damaged</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                </td>
+            </tr>
+            <tr>
                 <th>In range of</th>
                 <td>
                     <a href="#hasside">has side</a><sup class="sup-op" title="object property">op</sup><br/>
@@ -1719,6 +1813,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Super-classes</th>
                 <td>
                     <a href="#tabletside">tablet side</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#isdamaged">is damaged</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -1754,14 +1854,32 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#horizontalruling">horizontal ruling</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#verticalruling">vertical ruling</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#horizontalruling">horizontal ruling</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
                     <a href="#hasruling">has ruling</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="scribe">
+        <h3>
+          scribe<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#scribe" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/Scribe</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1821,16 +1939,17 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#previoussentence">previous sentence</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="http://www.cidoc-crm.org/cidoc-crm/P138_represents">cidoc:P138_represents</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isdamaged">is damaged</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="#nextsentence">next sentence</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.cidoc-crm.org/cidoc-crm/P138_represents">cidoc:P138_represents</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#previoussentence">previous sentence</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#previoussentence">previous sentence</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#nextsentence">next sentence</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#previoussentence">previous sentence</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1854,9 +1973,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>In domain of</th>
                 <td>
+                    <a href="#hasside">has side</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isdamaged">is damaged</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="#width">width</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="#height">height</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#hasside">has side</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1880,12 +2000,13 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#seal">seal</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ruling">ruling</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#erasure">erasure</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#damagedarea">damaged area</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#pictoralelement">pictoral element</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#ruling">ruling</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#seal">seal</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#blankspace">blank space</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#firinghole">firing hole</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#pictoralelement">pictoral element</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1915,23 +2036,24 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#reverseside">reverse side</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#topside">top side</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#bottomside">bottom side</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#leftside">left side</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#rightside">right side</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#bottomside">bottom side</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#topside">top side</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#reverseside">reverse side</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#obverseside">obverse side</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#leftside">left side</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#haspictoralelement">has pictoral element</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasruling">has ruling</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasseal">has seal</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasdamagedarea">has damaged area</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasfiringhole">has firing hole</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasruling">has ruling</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isdamaged">is damaged</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#haspictoralelement">has pictoral element</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#haserasure">has erasure</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasfiringhole">has firing hole</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasseal">has seal</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -2013,9 +2135,33 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 </td>
             </tr>
             <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#isdamaged">is damaged</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                </td>
+            </tr>
+            <tr>
                 <th>In range of</th>
                 <td>
                     <a href="#hasside">has side</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="translation">
+        <h3>
+          translation<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#translation" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/Translation</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>The translation of textual content on a cuneiform tablet</p>
                 </td>
             </tr>
         </table>
@@ -2046,9 +2192,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Sub-classes</th>
                 <td>
                     <a href="#TransliterationWordOccurance">Transliteration WordOccurance</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#TransliterationLine">Transliteration Line</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#TransliterationSentence">Transliteration Sentence</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#TransliterationCharOccurance">Transliteration CharOccurance</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#TransliterationLine">Transliteration Line</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -2096,8 +2242,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#PaleoCodageWedgeType">PaleoCodage Wedge Type</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Gottsteinwedgetype">Gottstein wedge type</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#PaleoCodageWedgeType">PaleoCodage Wedge Type</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -2134,8 +2280,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>In domain of</th>
                 <td>
                     <a href="http://www.cidoc-crm.org/cidoc-crm/P138_represents">cidoc:P138_represents</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#previousword">previous word</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#nextword">next word</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#previousword">previous word</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isdamaged">is damaged</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -2179,6 +2326,49 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Description</th>
                 <td>
                     <p>An envelope of a cuneiform tablet</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="http://www.cidoc-crm.org/cidoc-crm/E22_ManMadeObject">cidoc:E22_ManMadeObject</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#isdamaged">is damaged</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="language">
+        <h3>
+          language<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#language" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/language</code></td>
+            </tr>
+            <tr>
+                <th>Members</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/Persian">cunei:Persian</a><br/>
+                    <a href="http://www.purl.org/cuneiform/Mandaic">cunei:Mandaic</a><br/>
+                    <a href="http://www.purl.org/cuneiform/Elamite">cunei:Elamite</a><br/>
+                    <a href="http://www.purl.org/cuneiform/Egyptian">cunei:Egyptian</a><br/>
+                    <a href="http://www.purl.org/cuneiform/Greek">cunei:Greek</a><br/>
+                    <a href="http://www.purl.org/cuneiform/Urartian">cunei:Urartian</a><br/>
+                    <a href="http://www.purl.org/cuneiform/Hittite">cunei:Hittite</a><br/>
+                    <a href="http://www.purl.org/cuneiform/Harappan">cunei:Harappan</a><br/>
+                    <a href="http://www.purl.org/cuneiform/Ugaritic">cunei:Ugaritic</a><br/>
+                    <a href="http://www.purl.org/cuneiform/Sumerian">cunei:Sumerian</a><br/>
+                    <a href="http://www.purl.org/cuneiform/Eblaite">cunei:Eblaite</a><br/>
+                    <a href="http://www.purl.org/cuneiform/Hurrian">cunei:Hurrian</a><br/>
+                    <a href="http://www.purl.org/cuneiform/Akkadian">cunei:Akkadian</a><br/>
+                    <a href="http://www.purl.org/cuneiform/Hebrew">cunei:Hebrew</a><br/>
                 </td>
             </tr>
         </table>
@@ -2364,8 +2554,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="http://www.w3.org/ns/oa#hasTarget">oa:hasTarget</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="http://www.w3.org/ns/oa#hasBody">oa:hasBody</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.w3.org/ns/oa#hasTarget">oa:hasTarget</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -2419,8 +2609,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="http://www.cidoc-crm.org/cidoc-crm/TX5_Reading">cidoc:TX5_Reading</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.cidoc-crm.org/cidoc-crm/TX2_Writing">cidoc:TX2_Writing</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.cidoc-crm.org/cidoc-crm/TX5_Reading">cidoc:TX5_Reading</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -2443,6 +2633,24 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
+    <div class="entity class" id="person">
+        <h3>
+          person<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#person" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://xmlns.com/foaf/0.1/Person</code></td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#scribe">scribe</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
 </section>
 <section id="objectproperties">
     <h2>Object Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
@@ -2456,15 +2664,19 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <li><a href="#readby">read by</a></li>
         <li><a href="#includes">includes</a></li>
         <li><a href="#isrenderedby">is rendered by</a></li>
+        <li><a href="#hassegment">has segment</a></li>
         <li><a href="#isencodedby">is encoded by</a></li>
         <li><a href="#hasgeometry">has geometry</a></li>
         <li><a href="#hasdamagedarea">has damaged area</a></li>
         <li><a href="#haserasure">has erasure</a></li>
         <li><a href="#hasfiringhole">has firing hole</a></li>
+        <li><a href="#hasgenre">has genre</a></li>
         <li><a href="#haspictoralelement">has pictoral element</a></li>
         <li><a href="#hasruling">has ruling</a></li>
         <li><a href="#hasseal">has seal</a></li>
         <li><a href="#hasside">has side</a></li>
+        <li><a href="#hassubgenre">has subgenre</a></li>
+        <li><a href="#hastranslation">has translation</a></li>
         <li><a href="#includeswedgetype">includes wedge type</a></li>
         <li><a href="#isattested">is attested</a></li>
         <li><a href="#nextline">next line</a></li>
@@ -2473,6 +2685,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <li><a href="#previousline">previous line</a></li>
         <li><a href="#previoussentence">previous sentence</a></li>
         <li><a href="#previousword">previous word</a></li>
+        <li><a href="#provenience">provenience</a></li>
         <li><a href="#hasbody">has body</a></li>
         <li><a href="#haspurpose">has purpose</a></li>
         <li><a href="#hasselector">has selector</a></li>
@@ -2577,8 +2790,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Domain(s)</th>
                 <td>
                     <a href="#wordoccurence">word occurence</a><sup class="sup-c" title="class">c</sup>
-                    <a href="#line">line</a><sup class="sup-c" title="class">c</sup>
                     <a href="http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph">cidoc:TX9_Glyph</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#line">line</a><sup class="sup-c" title="class">c</sup>
                     <a href="#sentence">sentence</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
@@ -2586,9 +2799,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Range(s)</th>
                 <td>
                     <a href="http://www.purl.org/cuneiform/transliteration_line">cunei:transliteration_line</a><sup class="sup-c" title="class">c</sup>
-                    <a href="http://www.purl.org/cuneiform/transliteration_wordoccurence">cunei:transliteration_wordoccurence</a><sup class="sup-c" title="class">c</sup>
-                    <a href="http://www.purl.org/cuneiform/transliteration_sentence">cunei:transliteration_sentence</a><sup class="sup-c" title="class">c</sup>
                     <a href="http://www.purl.org/cuneiform/transliteration_charoccurrence">cunei:transliteration_charoccurrence</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://www.purl.org/cuneiform/transliteration_sentence">cunei:transliteration_sentence</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://www.purl.org/cuneiform/transliteration_wordoccurence">cunei:transliteration_wordoccurence</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -2640,6 +2853,17 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>URI</th>
                 <td><code>http://www.cidoc-crm.org/cidoc-crm/TXP3_is_rendered_by</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hassegment">
+        <h3>has segment<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hassegment" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.cidoc-crm.org/cidoc-crm/TXP4_has_segment</code></td>
             </tr>
         </table>
     </div>
@@ -2752,6 +2976,17 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
+    <div class="entity property" id="hasgenre">
+        <h3>has genre<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasgenre" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/hasGenre</code></td>
+            </tr>
+        </table>
+    </div>
     <div class="entity property" id="haspictoralelement">
         <h3>has pictoral element<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
             <a href="#haspictoralelement" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
@@ -2839,14 +3074,36 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://www.purl.org/cuneiform/TabletSide">cunei:TabletSide</a><sup class="sup-c" title="class">c</sup>
-                    <a href="http://www.purl.org/cuneiform/BottomSide">cunei:BottomSide</a><sup class="sup-c" title="class">c</sup>
                     <a href="http://www.purl.org/cuneiform/ObverseSide">cunei:ObverseSide</a><sup class="sup-c" title="class">c</sup>
-                    <a href="http://www.purl.org/cuneiform/LeftSide">cunei:LeftSide</a><sup class="sup-c" title="class">c</sup>
                     <a href="http://www.purl.org/cuneiform/ReverseSide">cunei:ReverseSide</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://www.purl.org/cuneiform/BottomSide">cunei:BottomSide</a><sup class="sup-c" title="class">c</sup>
                     <a href="http://www.purl.org/cuneiform/TopSide">cunei:TopSide</a><sup class="sup-c" title="class">c</sup>
                     <a href="http://www.purl.org/cuneiform/RightSide">cunei:RightSide</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://www.purl.org/cuneiform/LeftSide">cunei:LeftSide</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://www.purl.org/cuneiform/TabletSide">cunei:TabletSide</a><sup class="sup-c" title="class">c</sup>
                 </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hassubgenre">
+        <h3>has subgenre<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hassubgenre" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/hasSubGenre</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hastranslation">
+        <h3>has translation<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hastranslation" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/hasTranslation</code></td>
             </tr>
         </table>
     </div>
@@ -3022,6 +3279,17 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
+    <div class="entity property" id="provenience">
+        <h3>provenience<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#provenience" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/provenience</code></td>
+            </tr>
+        </table>
+    </div>
     <div class="entity property" id="hasbody">
         <h3>has body<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
             <a href="#hasbody" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
@@ -3107,9 +3375,50 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
 <section id="datatypeproperties">
     <h2>Datatype Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
+        <li><a href="#artifactnumber">artifact number</a></li>
+        <li><a href="#compositenumber">composite number</a></li>
         <li><a href="#height">height</a></li>
+        <li><a href="#isdamaged">is damaged</a></li>
+        <li><a href="#isreconstructed">is reconstructed</a></li>
+        <li><a href="#museumnumber">museum number</a></li>
+        <li><a href="#remarks">remarks</a></li>
+        <li><a href="#sealnumber">seal number</a></li>
         <li><a href="#width">width</a></li>
     </ul>
+    <div class="entity property" id="artifactnumber">
+        <h3>artifact number<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#artifactnumber" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/artifactNumber</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>An identifier of the cuneiform artifact</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="compositenumber">
+        <h3>composite number<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#compositenumber" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/compositeNumber</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Composite number of a cuneiform artifact with respect to the whole cuneiform object</p>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity property" id="height">
         <h3>height<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
             <a href="#height" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
@@ -3123,6 +3432,122 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Domain(s)</th>
                 <td>
                     <a href="#cuneiformtablet">cuneiform tablet</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="isdamaged">
+        <h3>is damaged<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#isdamaged" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/isDamaged</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Describes a damaged entity in relation to the cuneifom artifact</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#topside">top side</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#line">line</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#sentence">sentence</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#rightside">right side</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#leftside">left side</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#bulla">bulla</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#envelope">envelope</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#tabletside">tablet side</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#cuneiformtablet">cuneiform tablet</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#obverseside">obverse side</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#wordoccurence">word occurence</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph">cidoc:TX9_Glyph</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#reverseside">reverse side</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#bottomside">bottom side</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.w3.org/2001/XMLSchema#boolean">xsd:boolean</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="isreconstructed">
+        <h3>is reconstructed<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#isreconstructed" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/isReconstructed</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Describes if a given entity has been reconstructed by an interpreation process of a scholar, i.e. has no physical exact representation on the cuneiform artifact</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.w3.org/2001/XMLSchema#boolean">xsd:boolean</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="museumnumber">
+        <h3>museum number<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#museumnumber" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/museumNumber</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>An identifier to a cuneiform artifact assigned by a museum</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="remarks">
+        <h3>remarks<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#remarks" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/remarks</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>remarks with respect to a transliteration, artifact or tablet side</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="sealnumber">
+        <h3>seal number<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#sealnumber" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/sealNumber</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Identifier of a seal on a cuneiform artifact</p>
                 </td>
             </tr>
         </table>
@@ -3210,13 +3635,23 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
     <section id="namedindividuals">
         <h2>Named Individuals <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
         <ul class="hlist">
+            <li><a href="#Akkadian">Akkadian</a></li>
+            <li><a href="#Aramaic">Aramaic</a></li>
             <li><a href="#Ebla">Ebla</a></li>
+            <li><a href="#Eblaite">Eblaite</a></li>
             <li><a href="#EdIIIa">EdIIIa</a></li>
             <li><a href="#EdIIIb">EdIIIb</a></li>
+            <li><a href="#Egyptian">Egyptian</a></li>
+            <li><a href="#Elamite">Elamite</a></li>
+            <li><a href="#Greek">Greek</a></li>
+            <li><a href="#Harappan">Harappan</a></li>
+            <li><a href="#Hebrew">Hebrew</a></li>
             <li><a href="#Hellenistic">Hellenistic</a></li>
+            <li><a href="#Hittite">Hittite</a></li>
+            <li><a href="#Hurrian">Hurrian</a></li>
             <li><a href="#Kish">Kish</a></li>
-            <li><a href="#LinearElamite">LinearElamite</a></li>
-            <li><a href="#MiddleAssyrian">MiddleAssyrian</a></li>
+            <li><a href="#Mandaic">Mandaic</a></li>
+            <li><a href="#MiddleAssyrian">Middle Assyrian</a></li>
             <li><a href="#MiddleBabylonian">MiddleBabylonian</a></li>
             <li><a href="#MiddleElamite">MiddleElamite</a></li>
             <li><a href="#MiddleHittite">MiddleHittite</a></li>
@@ -3225,13 +3660,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <li><a href="#OldAssyrian">OldAssyrian</a></li>
             <li><a href="#OldBabylonian">OldBabylonian</a></li>
             <li><a href="#OldElamite">OldElamite</a></li>
+            <li><a href="#Persian">Persian</a></li>
+            <li><a href="#Phoenician">Phoenician</a></li>
+            <li><a href="#Sumerian">Sumerian</a></li>
+            <li><a href="#Ugaritic">Ugaritic</a></li>
             <li><a href="#UncertainPeriod">UncertainPeriod</a></li>
             <li><a href="#Ur">Ur</a></li>
-            <li><a href="#UrIII">UrIII</a></li>
-            <li><a href="#Uruk">Uruk</a></li>
-            <li><a href="#Uruk3">Uruk3</a></li>
-            <li><a href="#Uruk4">Uruk4</a></li>
-            <li><a href="#Uruk5">Uruk5</a></li>
+            <li><a href="#UrIIIPeriod">UrIII Period</a></li>
+            <li><a href="#Urartian">Urartian</a></li>
+            <li><a href="#UrukDynasty">Uruk Dynasty</a></li>
+            <li><a href="#Uruk3Period">Uruk3 Period</a></li>
+            <li><a href="#Uruk4Period">Uruk4 Period</a></li>
+            <li><a href="#Uruk5Period">Uruk5 Period</a></li>
             <li><a href="#agate">agate</a></li>
             <li><a href="#alabaster">alabaster</a></li>
             <li><a href="#alloy">alloy</a></li>
@@ -3256,6 +3696,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <li><a href="#lapislazuli">lapislazuli</a></li>
             <li><a href="#lead">lead</a></li>
             <li><a href="#limestone">limestone</a></li>
+            <li><a href="#linearelamite">linear elamite</a></li>
             <li><a href="#marble">marble</a></li>
             <li><a href="#obsidian">obsidian</a></li>
             <li><a href="#petrified">petrified</a></li>
@@ -3272,6 +3713,38 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <li><a href="#tuff">tuff</a></li>
             <li><a href="#wood">wood</a></li>
         </ul>
+            <div class="entity named_individual" id="Akkadian">
+        <h3>Akkadian<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/Akkadian
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/language">cunei:language</a><br/>
+            </dd>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Aramaic">
+        <h3>Aramaic<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/Aramaic
+                  
+                  </code>
+                </td>
+            </tr>
+        </table>
+    </div>
             <div class="entity named_individual" id="Ebla">
         <h3>Ebla<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
@@ -3287,6 +3760,24 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <dt>Class(es)</dt>
             <dd>
                 <a href="http://www.purl.org/cuneiform/Epoch">cunei:Epoch</a><br/>
+            </dd>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Eblaite">
+        <h3>Eblaite<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/Eblaite
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/language">cunei:language</a><br/>
             </dd>
         </table>
     </div>
@@ -3326,6 +3817,96 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </dd>
         </table>
     </div>
+            <div class="entity named_individual" id="Egyptian">
+        <h3>Egyptian<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/Egyptian
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/language">cunei:language</a><br/>
+            </dd>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Elamite">
+        <h3>Elamite<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/Elamite
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/language">cunei:language</a><br/>
+            </dd>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Greek">
+        <h3>Greek<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/Greek
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/language">cunei:language</a><br/>
+            </dd>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Harappan">
+        <h3>Harappan<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/Harappan
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/language">cunei:language</a><br/>
+            </dd>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Hebrew">
+        <h3>Hebrew<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/Hebrew
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/language">cunei:language</a><br/>
+            </dd>
+        </table>
+    </div>
             <div class="entity named_individual" id="Hellenistic">
         <h3>Hellenistic<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
@@ -3341,6 +3922,42 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <dt>Class(es)</dt>
             <dd>
                 <a href="http://www.purl.org/cuneiform/Epoch">cunei:Epoch</a><br/>
+            </dd>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Hittite">
+        <h3>Hittite<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/Hittite
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/language">cunei:language</a><br/>
+            </dd>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Hurrian">
+        <h3>Hurrian<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/Hurrian
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/language">cunei:language</a><br/>
             </dd>
         </table>
     </div>
@@ -3362,8 +3979,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </dd>
         </table>
     </div>
-            <div class="entity named_individual" id="LinearElamite">
-        <h3>LinearElamite<sup title="named individual" class="sup-ni">ni</sup></h3>
+            <div class="entity named_individual" id="linearelamite">
+        <h3>linear elamite<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -3380,8 +3997,26 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </dd>
         </table>
     </div>
+            <div class="entity named_individual" id="Mandaic">
+        <h3>Mandaic<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/Mandaic
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/language">cunei:language</a><br/>
+            </dd>
+        </table>
+    </div>
             <div class="entity named_individual" id="MiddleAssyrian">
-        <h3>MiddleAssyrian<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <h3>Middle Assyrian<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -3542,6 +4177,74 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </dd>
         </table>
     </div>
+            <div class="entity named_individual" id="Persian">
+        <h3>Persian<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/Persian
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/language">cunei:language</a><br/>
+            </dd>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Phoenician">
+        <h3>Phoenician<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/Phoenician
+                  
+                  </code>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Sumerian">
+        <h3>Sumerian<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/Sumerian
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/language">cunei:language</a><br/>
+            </dd>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Ugaritic">
+        <h3>Ugaritic<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/Ugaritic
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/language">cunei:language</a><br/>
+            </dd>
+        </table>
+    </div>
             <div class="entity named_individual" id="UncertainPeriod">
         <h3>UncertainPeriod<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
@@ -3578,8 +4281,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </dd>
         </table>
     </div>
-            <div class="entity named_individual" id="UrIII">
-        <h3>UrIII<sup title="named individual" class="sup-ni">ni</sup></h3>
+            <div class="entity named_individual" id="UrIIIPeriod">
+        <h3>UrIII Period<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -3596,8 +4299,26 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </dd>
         </table>
     </div>
-            <div class="entity named_individual" id="Uruk">
-        <h3>Uruk<sup title="named individual" class="sup-ni">ni</sup></h3>
+            <div class="entity named_individual" id="Urartian">
+        <h3>Urartian<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/Urartian
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/language">cunei:language</a><br/>
+            </dd>
+        </table>
+    </div>
+            <div class="entity named_individual" id="UrukDynasty">
+        <h3>Uruk Dynasty<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -3614,8 +4335,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </dd>
         </table>
     </div>
-            <div class="entity named_individual" id="Uruk3">
-        <h3>Uruk3<sup title="named individual" class="sup-ni">ni</sup></h3>
+            <div class="entity named_individual" id="Uruk3Period">
+        <h3>Uruk3 Period<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -3632,8 +4353,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </dd>
         </table>
     </div>
-            <div class="entity named_individual" id="Uruk4">
-        <h3>Uruk4<sup title="named individual" class="sup-ni">ni</sup></h3>
+            <div class="entity named_individual" id="Uruk4Period">
+        <h3>Uruk4 Period<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -3650,8 +4371,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </dd>
         </table>
     </div>
-            <div class="entity named_individual" id="Uruk5">
-        <h3>Uruk5<sup title="named individual" class="sup-ni">ni</sup></h3>
+            <div class="entity named_individual" id="Uruk5Period">
+        <h3>Uruk5 Period<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
                 <th>URI</th>
