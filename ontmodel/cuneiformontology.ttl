@@ -69,9 +69,9 @@ cidoc:P138_represents rdf:type owl:ObjectProperty ;
                                   cunei:Line ,
                                   cunei:Sentence ,
                                   cunei:WordForm ;
-                      rdfs:range cunei:transliteration_charoccurrence ,
+                      rdfs:range cunei:TransliterationSentence ,
+                                 cunei:transliteration_charoccurrence ,
                                  cunei:transliteration_line ,
-                                 cunei:transliteration_sentence ,
                                  cunei:transliteration_wordoccurence ;
                       rdfs:label "represents" .
 
@@ -535,6 +535,20 @@ cunei:Bulla rdf:type owl:Class ;
             rdfs:label "bulla"@en .
 
 
+###  http://www.purl.org/cuneiform/CharacterRow
+cunei:CharacterRow rdf:type owl:Class ;
+                   rdfs:subClassOf cidoc:TX7_WrittenTextFragment ;
+                   rdfs:label "character row"@en ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "A row of cuneiform characters present on a cuneiform tablet"@en .
+
+
+###  http://www.purl.org/cuneiform/Column
+cunei:Column rdf:type owl:Class ;
+             rdfs:subClassOf cidoc:TX7_WrittenTextFragment ;
+             rdfs:label "column"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "A column visible on a cuneiform tablets surface"@en .
+
+
 ###  http://www.purl.org/cuneiform/Cylinder
 cunei:Cylinder rdf:type owl:Class ;
                rdfs:subClassOf cidoc:E22_ManMadeObject ;
@@ -854,6 +868,20 @@ cunei:Transliteration rdf:type owl:Class ;
                       <http://www.w3.org/2004/02/skos/core#definition> "The transliteration of the text of a cuneiform tablet including all tablet sides"@en .
 
 
+###  http://www.purl.org/cuneiform/TransliterationColumn
+cunei:TransliterationColumn rdf:type owl:Class ;
+                            rdfs:subClassOf cunei:Transliteration ;
+                            rdfs:label "Transliteration Column"@en ;
+                            <http://www.w3.org/2004/02/skos/core#definition> "A representation of a column on a cuneiform tablet in a transliteration"@en .
+
+
+###  http://www.purl.org/cuneiform/TransliterationSentence
+cunei:TransliterationSentence rdf:type owl:Class ;
+                              rdfs:subClassOf cunei:Transliteration ;
+                              rdfs:label "Transliteration Sentence"@en ;
+                              <http://www.w3.org/2004/02/skos/core#definition> "A representation of a sentence present on a cuneiform tablet in its transliteration"@en .
+
+
 ###  http://www.purl.org/cuneiform/VerticalRuling
 cunei:VerticalRuling rdf:type owl:Class ;
                      rdfs:subClassOf cunei:Ruling ;
@@ -923,19 +951,15 @@ cunei:official rdf:type owl:Class ;
 ###  http://www.purl.org/cuneiform/transliteration_charoccurrence
 cunei:transliteration_charoccurrence rdf:type owl:Class ;
                                      rdfs:subClassOf cunei:Transliteration ;
-                                     rdfs:label "Transliteration CharOccurance"@en .
+                                     rdfs:label "Transliteration CharOccurance"@en ;
+                                     <http://www.w3.org/2004/02/skos/core#definition> "The occurrence of a character description in a transliteration of a cuneiform tablet"@en .
 
 
 ###  http://www.purl.org/cuneiform/transliteration_line
 cunei:transliteration_line rdf:type owl:Class ;
                            rdfs:subClassOf cunei:Transliteration ;
-                           rdfs:label "Transliteration Line"@en .
-
-
-###  http://www.purl.org/cuneiform/transliteration_sentence
-cunei:transliteration_sentence rdf:type owl:Class ;
-                               rdfs:subClassOf cunei:Transliteration ;
-                               rdfs:label "Transliteration Sentence"@en .
+                           rdfs:label "Transliteration Line"@en ;
+                           <http://www.w3.org/2004/02/skos/core#definition> "A representation of a line present on a cuneiform tablet in its transliteration"@en .
 
 
 ###  http://www.purl.org/cuneiform/transliteration_wordoccurence
