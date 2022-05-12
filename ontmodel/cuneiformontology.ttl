@@ -274,10 +274,75 @@ cunei:provenience rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
+###  http://www.purl.org/cuneiform/artifactNumber
+cunei:artifactNumber rdf:type owl:DatatypeProperty ;
+                     rdfs:label "artifact number" ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "An identifier of the cuneiform artifact" .
+
+
+###  http://www.purl.org/cuneiform/compositeNumber
+cunei:compositeNumber rdf:type owl:DatatypeProperty ;
+                      rdfs:label "composite number" ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "Composite number of a cuneiform artifact with respect to the whole cuneiform object" .
+
+
+###  http://www.purl.org/cuneiform/height
+cunei:height rdf:type owl:DatatypeProperty ;
+             rdfs:domain cunei:Tablet ;
+             rdfs:label "height" .
+
+
+###  http://www.purl.org/cuneiform/isDamaged
+cunei:isDamaged rdf:type owl:DatatypeProperty ;
+                rdfs:domain cidoc:TX9_Glyph ,
+                            cunei:BottomSide ,
+                            cunei:Bulla ,
+                            cunei:LeftSide ,
+                            cunei:Line ,
+                            cunei:ObverseSide ,
+                            cunei:ReverseSide ,
+                            cunei:RightSide ,
+                            cunei:Sentence ,
+                            cunei:Tablet ,
+                            cunei:TabletSide ,
+                            cunei:TopSide ,
+                            cunei:WordForm ,
+                            cunei:envelope ;
+                rdfs:range xsd:boolean ;
+                rdfs:label "is damaged" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Describes a damaged entity in relation to the cuneifom artifact" .
+
+
+###  http://www.purl.org/cuneiform/isReconstructed
+cunei:isReconstructed rdf:type owl:DatatypeProperty ;
+                      rdfs:range xsd:boolean ;
+                      rdfs:label "is reconstructed" ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "Describes if a given entity has been reconstructed by an interpreation process of a scholar, i.e. has no physical exact representation on the cuneiform artifact" .
+
+
+###  http://www.purl.org/cuneiform/museumNumber
+cunei:museumNumber rdf:type owl:DatatypeProperty ;
+                   rdfs:label "museum number" ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "An identifier to a cuneiform artifact assigned by a museum" .
+
+
 ###  http://www.purl.org/cuneiform/remarks
 cunei:remarks rdf:type owl:DatatypeProperty ;
               rdfs:label "remarks" ;
               <http://www.w3.org/2004/02/skos/core#definition> "remarks with respect to a transliteration, artifact or tablet side" .
+
+
+###  http://www.purl.org/cuneiform/sealNumber
+cunei:sealNumber rdf:type owl:DatatypeProperty ;
+                 rdfs:label "seal number" ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Identifier of a seal on a cuneiform artifact" .
+
+
+###  http://www.purl.org/cuneiform/width
+cunei:width rdf:type owl:DatatypeProperty ;
+            rdfs:domain cunei:Tablet ;
+            rdfs:label "width" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "width of the cuneiform tablet" .
 
 
 #################################################################
@@ -376,6 +441,19 @@ cidoc:TX9_Glyph rdf:type owl:Class ;
                                                      rdfs:label "spatial object"@en .
 
 
+###  http://www.purl.org/cuneiform/Administrative
+cunei:Administrative rdf:type owl:Class ;
+                     rdfs:subClassOf cunei:Genre ;
+                     rdfs:label "administrative" .
+
+
+###  http://www.purl.org/cuneiform/BlankSpace
+cunei:BlankSpace rdf:type owl:Class ;
+                 rdfs:subClassOf cunei:TabletFeature ;
+                 rdfs:label "blank space"@en ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "A blank space on a cuneiform artifact surface without inscriptions, damage or further tablet features"@en .
+
+
 ###  http://www.purl.org/cuneiform/BottomSide
 cunei:BottomSide rdf:type owl:Class ;
                  rdfs:subClassOf cunei:TabletSide ;
@@ -383,11 +461,27 @@ cunei:BottomSide rdf:type owl:Class ;
                  <http://www.w3.org/2004/02/skos/core#definition> "The bottom side of a cuneiform tablet"@en .
 
 
+###  http://www.purl.org/cuneiform/Bulla
+cunei:Bulla rdf:type owl:Class ;
+            rdfs:subClassOf cidoc:E22_ManMadeObject ;
+            rdfs:label "bulla"@en .
+
+
 ###  http://www.purl.org/cuneiform/DamagedArea
 cunei:DamagedArea rdf:type owl:Class ;
                   rdfs:subClassOf cunei:TabletFeature ;
                   rdfs:label "damaged area"@en ;
                   <http://www.w3.org/2004/02/skos/core#definition> "A damaged area on a cuneiform tablet"@en .
+
+
+###  http://www.purl.org/cuneiform/Dynasty
+cunei:Dynasty rdf:type owl:Class ;
+              rdfs:label "dynasty" .
+
+
+###  http://www.purl.org/cuneiform/Epoch
+cunei:Epoch rdf:type owl:Class ;
+            rdfs:label "epoch" .
 
 
 ###  http://www.purl.org/cuneiform/Erasure
@@ -408,6 +502,11 @@ cunei:FiringHole rdf:type owl:Class ;
                  rdfs:subClassOf cunei:TabletFeature ;
                  rdfs:label "firing hole"@en ;
                  <http://www.w3.org/2004/02/skos/core#definition> "A firing hole present on a cuneiform tablet"@en .
+
+
+###  http://www.purl.org/cuneiform/Genre
+cunei:Genre rdf:type owl:Class ;
+            rdfs:label "genre" .
 
 
 ###  http://www.purl.org/cuneiform/GottsteinWedgeType
@@ -468,11 +567,41 @@ cunei:LeftSide rdf:type owl:Class ;
                <http://www.w3.org/2004/02/skos/core#definition> "The left side of a cuneiform tablet"@en .
 
 
+###  http://www.purl.org/cuneiform/Letter
+cunei:Letter rdf:type owl:Class ;
+             rdfs:subClassOf cunei:Genre ;
+             rdfs:label "letter" .
+
+
+###  http://www.purl.org/cuneiform/LexicalList
+cunei:LexicalList rdf:type owl:Class ;
+                  rdfs:subClassOf cunei:List ;
+                  rdfs:label "lexical list" .
+
+
 ###  http://www.purl.org/cuneiform/Line
 cunei:Line rdf:type owl:Class ;
            rdfs:subClassOf cidoc:TX7_WrittenTextFragment ;
            rdfs:label "line"@en ;
            <http://www.w3.org/2004/02/skos/core#definition> "The physical representation of a line of text on a cuneiform artifact"@en .
+
+
+###  http://www.purl.org/cuneiform/List
+cunei:List rdf:type owl:Class ;
+           rdfs:subClassOf cunei:Genre ;
+           rdfs:label "list" .
+
+
+###  http://www.purl.org/cuneiform/Material
+cunei:Material rdf:type owl:Class ;
+               rdfs:label "material" ;
+               <http://www.w3.org/2004/02/skos/core#definition> "The material the cuneiform artifact is comprised of" .
+
+
+###  http://www.purl.org/cuneiform/MaterialAspect
+cunei:MaterialAspect rdf:type owl:Class ;
+                     rdfs:label "material aspect" ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "A property of the material the cuneiform artifact is comprised of" .
 
 
 ###  http://www.purl.org/cuneiform/ObverseSide
@@ -572,6 +701,12 @@ cunei:Ruling rdf:type owl:Class ;
              <http://www.w3.org/2004/02/skos/core#definition> "A ruling on a cuneiform tablet"@en .
 
 
+###  http://www.purl.org/cuneiform/Scribe
+cunei:Scribe rdf:type owl:Class ;
+             rdfs:subClassOf <http://xmlns.com/foaf/0.1/Person> ;
+             rdfs:label "scribe"@en .
+
+
 ###  http://www.purl.org/cuneiform/Seal
 cunei:Seal rdf:type owl:Class ;
            rdfs:subClassOf cunei:TabletFeature ;
@@ -659,6 +794,46 @@ cunei:WordForm rdf:type owl:Class ;
                <http://www.w3.org/2004/02/skos/core#definition> "The physical representation of a list of characters, i.e. word on a cuneiform artifact"@en .
 
 
+###  http://www.purl.org/cuneiform/display
+cunei:display rdf:type owl:Class ;
+              rdfs:subClassOf cunei:Genre .
+
+
+###  http://www.purl.org/cuneiform/envelope
+cunei:envelope rdf:type owl:Class ;
+               rdfs:subClassOf cidoc:E22_ManMadeObject ;
+               rdfs:label "envelope" ;
+               <http://www.w3.org/2004/02/skos/core#definition> "An envelope of a cuneiform tablet" .
+
+
+###  http://www.purl.org/cuneiform/language
+cunei:language rdf:type owl:Class ;
+               rdfs:label "language"@en .
+
+
+###  http://www.purl.org/cuneiform/legal
+cunei:legal rdf:type owl:Class ;
+            rdfs:subClassOf cunei:Genre ;
+            rdfs:label "legal" .
+
+
+###  http://www.purl.org/cuneiform/lexical
+cunei:lexical rdf:type owl:Class ;
+              rdfs:subClassOf cunei:Genre ;
+              rdfs:label "lexical" .
+
+
+###  http://www.purl.org/cuneiform/literary
+cunei:literary rdf:type owl:Class ;
+               rdfs:subClassOf cunei:Genre ;
+               rdfs:label "literary" .
+
+
+###  http://www.purl.org/cuneiform/official
+cunei:official rdf:type owl:Class ;
+               rdfs:subClassOf cunei:Genre .
+
+
 ###  http://www.purl.org/cuneiform/transliteration_charoccurrence
 cunei:transliteration_charoccurrence rdf:type owl:Class ;
                                      rdfs:subClassOf cunei:Transliteration ;
@@ -724,6 +899,408 @@ cunei:transliteration_wordoccurence rdf:type owl:Class ;
 ###  http://www.w3.org/ns/prov#Entity
 <http://www.w3.org/ns/prov#Entity> rdf:type owl:Class ;
                                    rdfs:label "entity"@en .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class ;
+                                   rdfs:label "person"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.purl.org/cuneiform/Akkadian
+cunei:Akkadian rdf:type owl:NamedIndividual ,
+                        cunei:language .
+
+
+###  http://www.purl.org/cuneiform/Aramaic
+cunei:Aramaic rdf:type owl:NamedIndividual .
+
+
+###  http://www.purl.org/cuneiform/Ebla
+cunei:Ebla rdf:type owl:NamedIndividual ,
+                    cunei:Epoch .
+
+
+###  http://www.purl.org/cuneiform/Eblaite
+cunei:Eblaite rdf:type owl:NamedIndividual ,
+                       cunei:language .
+
+
+###  http://www.purl.org/cuneiform/EdIIIa
+cunei:EdIIIa rdf:type owl:NamedIndividual ,
+                      cunei:Epoch .
+
+
+###  http://www.purl.org/cuneiform/EdIIIb
+cunei:EdIIIb rdf:type owl:NamedIndividual ,
+                      cunei:Epoch .
+
+
+###  http://www.purl.org/cuneiform/Egyptian
+cunei:Egyptian rdf:type owl:NamedIndividual ,
+                        cunei:language .
+
+
+###  http://www.purl.org/cuneiform/Elamite
+cunei:Elamite rdf:type owl:NamedIndividual ,
+                       cunei:language .
+
+
+###  http://www.purl.org/cuneiform/Greek
+cunei:Greek rdf:type owl:NamedIndividual ,
+                     cunei:language .
+
+
+###  http://www.purl.org/cuneiform/Harappan
+cunei:Harappan rdf:type owl:NamedIndividual ,
+                        cunei:language .
+
+
+###  http://www.purl.org/cuneiform/Hebrew
+cunei:Hebrew rdf:type owl:NamedIndividual ,
+                      cunei:language .
+
+
+###  http://www.purl.org/cuneiform/Hellenistic
+cunei:Hellenistic rdf:type owl:NamedIndividual ,
+                           cunei:Epoch .
+
+
+###  http://www.purl.org/cuneiform/Hittite
+cunei:Hittite rdf:type owl:NamedIndividual ,
+                       cunei:language .
+
+
+###  http://www.purl.org/cuneiform/Hurrian
+cunei:Hurrian rdf:type owl:NamedIndividual ,
+                       cunei:language .
+
+
+###  http://www.purl.org/cuneiform/Kish
+cunei:Kish rdf:type owl:NamedIndividual ,
+                    cunei:Dynasty .
+
+
+###  http://www.purl.org/cuneiform/LinearElamite
+cunei:LinearElamite rdf:type owl:NamedIndividual ,
+                             cunei:Epoch ;
+                    rdfs:label "linear elamite" .
+
+
+###  http://www.purl.org/cuneiform/Mandaic
+cunei:Mandaic rdf:type owl:NamedIndividual ,
+                       cunei:language .
+
+
+###  http://www.purl.org/cuneiform/MiddleAssyrian
+cunei:MiddleAssyrian rdf:type owl:NamedIndividual ,
+                              cunei:Epoch ;
+                     rdfs:label "Middle Assyrian" .
+
+
+###  http://www.purl.org/cuneiform/MiddleBabylonian
+cunei:MiddleBabylonian rdf:type owl:NamedIndividual ,
+                                cunei:Epoch .
+
+
+###  http://www.purl.org/cuneiform/MiddleElamite
+cunei:MiddleElamite rdf:type owl:NamedIndividual ,
+                             cunei:Epoch .
+
+
+###  http://www.purl.org/cuneiform/MiddleHittite
+cunei:MiddleHittite rdf:type owl:NamedIndividual ,
+                             cunei:Epoch .
+
+
+###  http://www.purl.org/cuneiform/NeoAssyrian
+cunei:NeoAssyrian rdf:type owl:NamedIndividual ,
+                           cunei:Epoch .
+
+
+###  http://www.purl.org/cuneiform/NeoElamite
+cunei:NeoElamite rdf:type owl:NamedIndividual ,
+                          cunei:Epoch .
+
+
+###  http://www.purl.org/cuneiform/OldAssyrian
+cunei:OldAssyrian rdf:type owl:NamedIndividual ,
+                           cunei:Epoch .
+
+
+###  http://www.purl.org/cuneiform/OldBabylonian
+cunei:OldBabylonian rdf:type owl:NamedIndividual ,
+                             cunei:Epoch .
+
+
+###  http://www.purl.org/cuneiform/OldElamite
+cunei:OldElamite rdf:type owl:NamedIndividual ,
+                          cunei:Epoch .
+
+
+###  http://www.purl.org/cuneiform/Persian
+cunei:Persian rdf:type owl:NamedIndividual ,
+                       cunei:language .
+
+
+###  http://www.purl.org/cuneiform/Phoenician
+cunei:Phoenician rdf:type owl:NamedIndividual .
+
+
+###  http://www.purl.org/cuneiform/Sumerian
+cunei:Sumerian rdf:type owl:NamedIndividual ,
+                        cunei:language .
+
+
+###  http://www.purl.org/cuneiform/Ugaritic
+cunei:Ugaritic rdf:type owl:NamedIndividual ,
+                        cunei:language .
+
+
+###  http://www.purl.org/cuneiform/UncertainPeriod
+cunei:UncertainPeriod rdf:type owl:NamedIndividual ,
+                               cunei:Epoch .
+
+
+###  http://www.purl.org/cuneiform/Ur
+cunei:Ur rdf:type owl:NamedIndividual ,
+                  cunei:Dynasty .
+
+
+###  http://www.purl.org/cuneiform/UrIII
+cunei:UrIII rdf:type owl:NamedIndividual ,
+                     cunei:Epoch ;
+            rdfs:label "UrIII Period" .
+
+
+###  http://www.purl.org/cuneiform/Urartian
+cunei:Urartian rdf:type owl:NamedIndividual ,
+                        cunei:language .
+
+
+###  http://www.purl.org/cuneiform/Uruk
+cunei:Uruk rdf:type owl:NamedIndividual ,
+                    cunei:Dynasty ;
+           rdfs:label "Uruk Dynasty" .
+
+
+###  http://www.purl.org/cuneiform/Uruk3
+cunei:Uruk3 rdf:type owl:NamedIndividual ,
+                     cunei:Epoch ;
+            rdfs:label "Uruk3 Period" .
+
+
+###  http://www.purl.org/cuneiform/Uruk4
+cunei:Uruk4 rdf:type owl:NamedIndividual ,
+                     cunei:Epoch ;
+            rdfs:label "Uruk4 Period" .
+
+
+###  http://www.purl.org/cuneiform/Uruk5
+cunei:Uruk5 rdf:type owl:NamedIndividual ,
+                     cunei:Epoch ;
+            rdfs:label "Uruk5 Period" .
+
+
+###  http://www.purl.org/cuneiform/agate
+cunei:agate rdf:type owl:NamedIndividual ,
+                     cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/alabaster
+cunei:alabaster rdf:type owl:NamedIndividual ,
+                         cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/alloy
+cunei:alloy rdf:type owl:NamedIndividual ,
+                     cunei:MaterialAspect .
+
+
+###  http://www.purl.org/cuneiform/aragonite
+cunei:aragonite rdf:type owl:NamedIndividual ,
+                         cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/baked
+cunei:baked rdf:type owl:NamedIndividual ,
+                     cunei:MaterialAspect .
+
+
+###  http://www.purl.org/cuneiform/banded
+cunei:banded rdf:type owl:NamedIndividual ,
+                      cunei:MaterialAspect .
+
+
+###  http://www.purl.org/cuneiform/bitumen
+cunei:bitumen rdf:type owl:NamedIndividual ,
+                       cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/burnt
+cunei:burnt rdf:type owl:NamedIndividual ,
+                     cunei:MaterialAspect .
+
+
+###  http://www.purl.org/cuneiform/calcite
+cunei:calcite rdf:type owl:NamedIndividual ,
+                       cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/carnelian
+cunei:carnelian rdf:type owl:NamedIndividual ,
+                         cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/chlorite
+cunei:chlorite rdf:type owl:NamedIndividual ,
+                        cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/clay
+cunei:clay rdf:type owl:NamedIndividual ,
+                    cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/clear
+cunei:clear rdf:type owl:NamedIndividual ,
+                     cunei:MaterialAspect .
+
+
+###  http://www.purl.org/cuneiform/composite
+cunei:composite rdf:type owl:NamedIndividual ,
+                         cunei:MaterialAspect .
+
+
+###  http://www.purl.org/cuneiform/copper
+cunei:copper rdf:type owl:NamedIndividual ,
+                      cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/glazed
+cunei:glazed rdf:type owl:NamedIndividual ,
+                      cunei:MaterialAspect .
+
+
+###  http://www.purl.org/cuneiform/gneiss
+cunei:gneiss rdf:type owl:NamedIndividual ,
+                      cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/gypsum
+cunei:gypsum rdf:type owl:NamedIndividual ,
+                      cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/iron
+cunei:iron rdf:type owl:NamedIndividual ,
+                    cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/ivory
+cunei:ivory rdf:type owl:NamedIndividual ,
+                     cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/jadelike
+cunei:jadelike rdf:type owl:NamedIndividual ,
+                        cunei:MaterialAspect .
+
+
+###  http://www.purl.org/cuneiform/lapislazuli
+cunei:lapislazuli rdf:type owl:NamedIndividual ,
+                           cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/lead
+cunei:lead rdf:type owl:NamedIndividual ,
+                    cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/limestone
+cunei:limestone rdf:type owl:NamedIndividual ,
+                         cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/marble
+cunei:marble rdf:type owl:NamedIndividual ,
+                      cunei:Material ;
+             rdfs:label "marble" .
+
+
+###  http://www.purl.org/cuneiform/obsidian
+cunei:obsidian rdf:type owl:NamedIndividual ,
+                        cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/petrified
+cunei:petrified rdf:type owl:NamedIndividual ,
+                         cunei:MaterialAspect .
+
+
+###  http://www.purl.org/cuneiform/plasma
+cunei:plasma rdf:type owl:NamedIndividual ,
+                      cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/plaster
+cunei:plaster rdf:type owl:NamedIndividual ,
+                       cunei:MaterialAspect .
+
+
+###  http://www.purl.org/cuneiform/sandstone
+cunei:sandstone rdf:type owl:NamedIndividual ,
+                         cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/schist
+cunei:schist rdf:type owl:NamedIndividual ,
+                      cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/serpentine
+cunei:serpentine rdf:type owl:NamedIndividual ,
+                          cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/shell
+cunei:shell rdf:type owl:NamedIndividual ,
+                     cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/shiny
+cunei:shiny rdf:type owl:NamedIndividual ,
+                     cunei:MaterialAspect .
+
+
+###  http://www.purl.org/cuneiform/stalagmite
+cunei:stalagmite rdf:type owl:NamedIndividual ,
+                          cunei:MaterialAspect .
+
+
+###  http://www.purl.org/cuneiform/stone
+cunei:stone rdf:type owl:NamedIndividual ,
+                     cunei:Material ;
+            rdfs:label "stone" .
+
+
+###  http://www.purl.org/cuneiform/translucent
+cunei:translucent rdf:type owl:NamedIndividual ,
+                           cunei:MaterialAspect .
+
+
+###  http://www.purl.org/cuneiform/tuff
+cunei:tuff rdf:type owl:NamedIndividual ,
+                    cunei:Material ;
+           rdfs:label "tuff" .
+
+
+###  http://www.purl.org/cuneiform/wood
+cunei:wood rdf:type owl:NamedIndividual ,
+                    cunei:Material .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
