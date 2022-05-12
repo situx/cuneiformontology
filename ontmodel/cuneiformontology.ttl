@@ -97,6 +97,11 @@ cidoc:TXP3_is_rendered_by rdf:type owl:ObjectProperty ;
                           rdfs:label "is rendered by" .
 
 
+###  http://www.cidoc-crm.org/cidoc-crm/TXP4_has_segment
+cidoc:TXP4_has_segment rdf:type owl:ObjectProperty ;
+                       rdfs:label "has segment" .
+
+
 ###  http://www.cidoc-crm.org/cidoc-crm/TXP9_is_encoded_by
 cidoc:TXP9_is_encoded_by rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf owl:topObjectProperty ;
@@ -131,6 +136,11 @@ cunei:hasFiringHole rdf:type owl:ObjectProperty ;
                     rdfs:label "has firing hole" .
 
 
+###  http://www.purl.org/cuneiform/hasGenre
+cunei:hasGenre rdf:type owl:ObjectProperty ;
+               rdfs:label "has genre" .
+
+
 ###  http://www.purl.org/cuneiform/hasPictoralElement
 cunei:hasPictoralElement rdf:type owl:ObjectProperty ;
                          rdfs:domain cunei:TabletSide ;
@@ -163,6 +173,16 @@ cunei:hasSide rdf:type owl:ObjectProperty ;
                          cunei:TabletSide ,
                          cunei:TopSide ;
               rdfs:label "has side" .
+
+
+###  http://www.purl.org/cuneiform/hasSubGenre
+cunei:hasSubGenre rdf:type owl:ObjectProperty ;
+                  rdfs:label "has subgenre" .
+
+
+###  http://www.purl.org/cuneiform/hasTranslation
+cunei:hasTranslation rdf:type owl:ObjectProperty ;
+                     rdfs:label "has translation" .
 
 
 ###  http://www.purl.org/cuneiform/includes_wedge_type
@@ -219,6 +239,11 @@ cunei:prevWord rdf:type owl:ObjectProperty ;
                rdfs:label "previous word" .
 
 
+###  http://www.purl.org/cuneiform/provenience
+cunei:provenience rdf:type owl:ObjectProperty ;
+                  rdfs:label "provenience" .
+
+
 ###  http://www.w3.org/ns/oa#hasBody
 <http://www.w3.org/ns/oa#hasBody> rdf:type owl:ObjectProperty ;
                                   rdfs:subPropertyOf owl:topObjectProperty ;
@@ -243,6 +268,16 @@ cunei:prevWord rdf:type owl:ObjectProperty ;
                                     rdfs:subPropertyOf owl:topObjectProperty ;
                                     rdfs:domain <http://www.w3.org/ns/oa#Annotation> ;
                                     rdfs:label "has target" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.purl.org/cuneiform/remarks
+cunei:remarks rdf:type owl:DatatypeProperty ;
+              rdfs:label "remarks" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "remarks with respect to a transliteration, artifact or tablet side" .
 
 
 #################################################################
@@ -512,7 +547,8 @@ cunei:PictoralElement rdf:type owl:Class ;
 
 ###  http://www.purl.org/cuneiform/PointCloud
 cunei:PointCloud rdf:type owl:Class ;
-                 rdfs:label "point cloud"@en .
+                 rdfs:label "point cloud"@en ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "A set of points in a given coordinate space"@en .
 
 
 ###  http://www.purl.org/cuneiform/ReverseSide
@@ -590,6 +626,12 @@ cunei:TopSide rdf:type owl:Class ;
               <http://www.w3.org/2004/02/skos/core#definition> "The top side of a cuneiform tablet"@en .
 
 
+###  http://www.purl.org/cuneiform/Translation
+cunei:Translation rdf:type owl:Class ;
+                  rdfs:label "translation"@en ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "The translation of textual content on a cuneiform tablet"@en .
+
+
 ###  http://www.purl.org/cuneiform/Transliteration
 cunei:Transliteration rdf:type owl:Class ;
                       rdfs:subClassOf cidoc:TX6_Transcription ;
@@ -655,7 +697,8 @@ cunei:transliteration_wordoccurence rdf:type owl:Class ;
 
 ###  http://www.purl.org/cuneiform/3DRendering
 <http://www.purl.org/cuneiform/3DRendering> rdf:type owl:Class ;
-                                            rdfs:label "3d rendering"@en .
+                                            rdfs:label "3d rendering"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "A rendering calculated from a 3D model"@en .
 
 
 ###  http://www.w3.org/ns/oa#Annotation
