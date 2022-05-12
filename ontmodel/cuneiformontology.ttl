@@ -159,15 +159,19 @@ cunei:hasPictoralElement rdf:type owl:ObjectProperty ;
 ###  http://www.purl.org/cuneiform/hasRuling
 cunei:hasRuling rdf:type owl:ObjectProperty ;
                 rdfs:domain cunei:TabletSide ;
-                rdfs:range cunei:Ruling ;
-                rdfs:label "has ruling" .
+                rdfs:range cunei:HorizontalRuling ,
+                           cunei:Ruling ,
+                           cunei:VerticalRuling ;
+                rdfs:label "has ruling" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Associates a tablet feature with a ruling" .
 
 
 ###  http://www.purl.org/cuneiform/hasSeal
 cunei:hasSeal rdf:type owl:ObjectProperty ;
               rdfs:domain cunei:TabletSide ;
               rdfs:range cunei:Seal ;
-              rdfs:label "has seal" .
+              rdfs:label "has seal" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Associates a tablet feature with a seal inscription" .
 
 
 ###  http://www.purl.org/cuneiform/hasSide
@@ -185,6 +189,8 @@ cunei:hasSide rdf:type owl:ObjectProperty ;
 
 ###  http://www.purl.org/cuneiform/hasSubGenre
 cunei:hasSubGenre rdf:type owl:ObjectProperty ;
+                  rdfs:domain cidoc:TX1_WrittenText ;
+                  rdfs:range cunei:Genre ;
                   rdfs:label "has subgenre" .
 
 
@@ -193,6 +199,12 @@ cunei:hasTranslation rdf:type owl:ObjectProperty ;
                      rdfs:domain cidoc:TX1_WrittenText ;
                      rdfs:range cunei:Translation ;
                      rdfs:label "has translation" .
+
+
+###  http://www.purl.org/cuneiform/height
+cunei:height rdf:type owl:ObjectProperty ;
+             rdfs:label "height" ;
+             <http://www.w3.org/2004/02/skos/core#definition> "height of a tablet feature" .
 
 
 ###  http://www.purl.org/cuneiform/includes_wedge_type
@@ -206,6 +218,22 @@ cunei:includes_wedge_type rdf:type owl:ObjectProperty ;
 ###  http://www.purl.org/cuneiform/isAttested
 cunei:isAttested rdf:type owl:ObjectProperty ;
                  rdfs:label "is attested" .
+
+
+###  http://www.purl.org/cuneiform/isRepresentedBy
+cunei:isRepresentedBy rdf:type owl:ObjectProperty ;
+                      rdfs:domain cunei:Bulla ,
+                                  cunei:Tablet ,
+                                  cunei:TabletFeature ,
+                                  cunei:TabletSide ,
+                                  cunei:envelope ;
+                      rdfs:range cunei:Image ,
+                                 cunei:PointCloud ,
+                                 <http://www.purl.org/cuneiform/3DMesh> ,
+                                 <http://www.purl.org/cuneiform/3DModel> ,
+                                 <http://www.purl.org/cuneiform/3DRendering> ;
+                      rdfs:label "is represented by" ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "Associates a tablet feature with a representation in a different media" .
 
 
 ###  http://www.purl.org/cuneiform/nextLine
@@ -255,6 +283,26 @@ cunei:provenience rdf:type owl:ObjectProperty ;
                   rdfs:label "provenience" .
 
 
+###  http://www.purl.org/cuneiform/width
+cunei:width rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain cidoc:TX9_Glyph ,
+                        cunei:BlankSpace ,
+                        cunei:DamagedArea ,
+                        cunei:Erasure ,
+                        cunei:FiringHole ,
+                        cunei:HorizontalRuling ,
+                        cunei:Line ,
+                        cunei:PictoralElement ,
+                        cunei:Ruling ,
+                        cunei:Seal ,
+                        cunei:Sentence ,
+                        cunei:VerticalRuling ,
+                        cunei:WordForm ;
+            rdfs:label "width" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "width of a tablet feature" .
+
+
 ###  http://www.w3.org/ns/oa#hasBody
 <http://www.w3.org/ns/oa#hasBody> rdf:type owl:ObjectProperty ;
                                   rdfs:subPropertyOf owl:topObjectProperty ;
@@ -271,6 +319,7 @@ cunei:provenience rdf:type owl:ObjectProperty ;
 
 ###  http://www.w3.org/ns/oa#hasSelector
 <http://www.w3.org/ns/oa#hasSelector> rdf:type owl:ObjectProperty ;
+                                      rdfs:range <http://www.w3.org/ns/oa#SvgSelector> ;
                                       rdfs:label "has selector" .
 
 
@@ -296,12 +345,6 @@ cunei:compositeNumber rdf:type owl:DatatypeProperty ;
                       rdfs:range xsd:string ;
                       rdfs:label "composite number" ;
                       <http://www.w3.org/2004/02/skos/core#definition> "Composite number of a cuneiform artifact with respect to the whole cuneiform object" .
-
-
-###  http://www.purl.org/cuneiform/height
-cunei:height rdf:type owl:DatatypeProperty ;
-             rdfs:domain cunei:Tablet ;
-             rdfs:label "height" .
 
 
 ###  http://www.purl.org/cuneiform/isDamaged
@@ -349,13 +392,6 @@ cunei:sealNumber rdf:type owl:DatatypeProperty ;
                  rdfs:range xsd:string ;
                  rdfs:label "seal number" ;
                  <http://www.w3.org/2004/02/skos/core#definition> "Identifier of a seal on a cuneiform artifact" .
-
-
-###  http://www.purl.org/cuneiform/width
-cunei:width rdf:type owl:DatatypeProperty ;
-            rdfs:domain cunei:Tablet ;
-            rdfs:label "width" ;
-            <http://www.w3.org/2004/02/skos/core#definition> "width of the cuneiform tablet" .
 
 
 #################################################################
@@ -406,6 +442,7 @@ cidoc:TX2_Writing rdf:type owl:Class ;
 
 ###  http://www.cidoc-crm.org/cidoc-crm/TX4_WritingField
 cidoc:TX4_WritingField rdf:type owl:Class ;
+                       rdfs:subClassOf cunei:TabletFeature ;
                        rdfs:label "writing field"@en .
 
 
@@ -460,11 +497,23 @@ cunei:Administrative rdf:type owl:Class ;
                      rdfs:label "administrative" .
 
 
+###  http://www.purl.org/cuneiform/Barrel
+cunei:Barrel rdf:type owl:Class ;
+             rdfs:subClassOf cidoc:E22_ManMadeObject ;
+             rdfs:label "barrel"@en .
+
+
 ###  http://www.purl.org/cuneiform/BlankSpace
 cunei:BlankSpace rdf:type owl:Class ;
                  rdfs:subClassOf cunei:TabletFeature ;
                  rdfs:label "blank space"@en ;
                  <http://www.w3.org/2004/02/skos/core#definition> "A blank space on a cuneiform artifact surface without inscriptions, damage or further tablet features"@en .
+
+
+###  http://www.purl.org/cuneiform/Block
+cunei:Block rdf:type owl:Class ;
+            rdfs:subClassOf cidoc:E22_ManMadeObject ;
+            rdfs:label "block"@en .
 
 
 ###  http://www.purl.org/cuneiform/BottomSide
@@ -474,10 +523,22 @@ cunei:BottomSide rdf:type owl:Class ;
                  <http://www.w3.org/2004/02/skos/core#definition> "The bottom side of a cuneiform tablet"@en .
 
 
+###  http://www.purl.org/cuneiform/Brick
+cunei:Brick rdf:type owl:Class ;
+            rdfs:subClassOf cidoc:E22_ManMadeObject ;
+            rdfs:label "brick"@en .
+
+
 ###  http://www.purl.org/cuneiform/Bulla
 cunei:Bulla rdf:type owl:Class ;
             rdfs:subClassOf cidoc:E22_ManMadeObject ;
             rdfs:label "bulla"@en .
+
+
+###  http://www.purl.org/cuneiform/Cylinder
+cunei:Cylinder rdf:type owl:Class ;
+               rdfs:subClassOf cidoc:E22_ManMadeObject ;
+               rdfs:label "cylinder"@en .
 
 
 ###  http://www.purl.org/cuneiform/DamagedArea
@@ -767,6 +828,12 @@ cunei:TabletSideImage rdf:type owl:Class ;
                       <http://www.w3.org/2004/02/skos/core#definition> "An image representing a side of a cuneiform tablet"@en .
 
 
+###  http://www.purl.org/cuneiform/Tag
+cunei:Tag rdf:type owl:Class ;
+          rdfs:subClassOf cidoc:E22_ManMadeObject ;
+          rdfs:label "tag"@en .
+
+
 ###  http://www.purl.org/cuneiform/TopSide
 cunei:TopSide rdf:type owl:Class ;
               rdfs:subClassOf cunei:TabletSide ;
@@ -805,6 +872,12 @@ cunei:WordForm rdf:type owl:Class ;
                rdfs:subClassOf cidoc:TX7_WrittenTextFragment ;
                rdfs:label "word occurence"@en ;
                <http://www.w3.org/2004/02/skos/core#definition> "The physical representation of a list of characters, i.e. word on a cuneiform artifact"@en .
+
+
+###  http://www.purl.org/cuneiform/cone
+cunei:cone rdf:type owl:Class ;
+           rdfs:subClassOf cidoc:E22_ManMadeObject ;
+           rdfs:label "cone"@en .
 
 
 ###  http://www.purl.org/cuneiform/display
