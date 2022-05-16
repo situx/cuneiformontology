@@ -62,7 +62,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#Accusative
 :Accusative rdf:type owl:Class ;
             rdfs:subClassOf :Case ;
-            rdfs:label "accusative" .
+            rdfs:label "accusative" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "grammatical case used to mark the direct object of a transitive verb" .
 
 
 ###  http://purl.org/olia/hittite.owl#Active
@@ -158,7 +159,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#CommonGender
 :CommonGender rdf:type owl:Class ;
               rdfs:subClassOf :Gender ;
-              rdfs:label "common gender" .
+              rdfs:label "common gender" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "the grammatical common gender" .
 
 
 ###  http://purl.org/olia/hittite.owl#Conjunction
@@ -177,7 +179,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#Dative
 :Dative rdf:type owl:Class ;
         rdfs:subClassOf :Case ;
-        rdfs:label "dative" .
+        rdfs:label "dative" ;
+        <http://www.w3.org/2004/02/skos/core#definition> "grammatical case generally used to indicate the noun to which something is given" .
 
 
 ###  http://purl.org/olia/hittite.owl#DativeLocative
@@ -213,7 +216,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#DivineName
 :DivineName rdf:type owl:Class ;
             rdfs:subClassOf :ProperNoun ;
-            rdfs:label "divine name" .
+            rdfs:label "divine name" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "proper noun representing a divine being" .
 
 
 ###  http://purl.org/olia/hittite.owl#EnclicticPossessivePronoun
@@ -237,7 +241,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#Female
 :Female rdf:type owl:Class ;
         rdfs:subClassOf :Gender ;
-        rdfs:label "feminine" .
+        rdfs:label "feminine" ;
+        <http://www.w3.org/2004/02/skos/core#definition> "the grammatical gender female" .
 
 
 ###  http://purl.org/olia/hittite.owl#First
@@ -256,7 +261,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#Gender
 :Gender rdf:type owl:Class ;
         rdfs:subClassOf :PartOfSpeech ;
-        rdfs:label "gender" .
+        rdfs:label "gender" ;
+        <http://www.w3.org/2004/02/skos/core#definition> "the grammatical gender" .
 
 
 ###  http://purl.org/olia/hittite.owl#GenitivalAdjective
@@ -268,7 +274,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#Genitive
 :Genitive rdf:type owl:Class ;
           rdfs:subClassOf :Case ;
-          rdfs:label "genitive" .
+          rdfs:label "genitive" ;
+          <http://www.w3.org/2004/02/skos/core#definition> "grammatical case that marks a word as modifying another word, indicating possession, composition, etc." .
 
 
 ###  http://purl.org/olia/hittite.owl#GenitiveUnHeaded
@@ -280,7 +287,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#GeographicalName
 :GeographicalName rdf:type owl:Class ;
                   rdfs:subClassOf :ProperNoun ;
-                  rdfs:label "geographical name" .
+                  rdfs:label "geographical name" ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "name for a geographical entity or location" .
 
 
 ###  http://purl.org/olia/hittite.owl#Gerund
@@ -292,13 +300,15 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#Imperative
 :Imperative rdf:type owl:Class ;
             rdfs:subClassOf :Mood ;
-            rdfs:label "imperative" .
+            rdfs:label "imperative" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "grammatical mood that expresses a command or request" .
 
 
 ###  http://purl.org/olia/hittite.owl#Imperfective
 :Imperfective rdf:type owl:Class ;
               rdfs:subClassOf :Tense ;
-              rdfs:label "imperfective" .
+              rdfs:label "imperfective" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "grammatical aspect of continuity or repetition" .
 
 
 ###  http://purl.org/olia/hittite.owl#Indeclinable
@@ -316,7 +326,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#Indicative
 :Indicative rdf:type owl:Class ;
             rdfs:subClassOf :Mood ;
-            rdfs:label "indicative" .
+            rdfs:label "indicative" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "grammatical mood, used principally to indicate that something is a statement of fact" .
 
 
 ###  http://purl.org/olia/hittite.owl#Instrumental
@@ -328,7 +339,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#Interjection
 :Interjection rdf:type owl:Class ;
               rdfs:subClassOf :PartOfSpeech ;
-              rdfs:label "interjection" .
+              rdfs:label "interjection" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "word or expression used to express an emotion or sentiment" .
 
 
 ###  http://purl.org/olia/hittite.owl#InterrogativeAdverbialPronoun
@@ -352,7 +364,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#Locative
 :Locative rdf:type owl:Class ;
           rdfs:subClassOf :Case ;
-          rdfs:label "locative" .
+          rdfs:label "locative" ;
+          <http://www.w3.org/2004/02/skos/core#definition> "grammatical case which indicates a location" .
 
 
 ###  http://purl.org/olia/hittite.owl#LocativeParticle
@@ -364,7 +377,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#Male
 :Male rdf:type owl:Class ;
       rdfs:subClassOf :Gender ;
-      rdfs:label "masculine" .
+      rdfs:label "masculine" ;
+      <http://www.w3.org/2004/02/skos/core#definition> "the grammatical gender male" .
 
 
 ###  http://purl.org/olia/hittite.owl#MedioPassive
@@ -383,7 +397,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#Neuter
 :Neuter rdf:type owl:Class ;
         rdfs:subClassOf :Gender ;
-        rdfs:label "neuter" .
+        rdfs:label "neuter" ;
+        <http://www.w3.org/2004/02/skos/core#definition> "the grammatical gender neuter" .
 
 
 ###  http://purl.org/olia/hittite.owl#Nominative
@@ -437,7 +452,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#Particle
 :Particle rdf:type owl:Class ;
           rdfs:subClassOf :PartOfSpeech ;
-          rdfs:label "particle" .
+          rdfs:label "particle" ;
+          <http://www.w3.org/2004/02/skos/core#definition> "typically short and indeclinable word with a grammatical function but no clear part of speech" .
 
 
 ###  http://purl.org/olia/hittite.owl#Passive
@@ -449,7 +465,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#Past
 :Past rdf:type owl:Class ;
       rdfs:subClassOf :Tense ;
-      rdfs:label "past tense" .
+      rdfs:label "past tense" ;
+      <http://www.w3.org/2004/02/skos/core#definition> "Grammatical tense indicating an action in the past" .
 
 
 ###  http://purl.org/olia/hittite.owl#Person
@@ -461,7 +478,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#PersonalName
 :PersonalName rdf:type owl:Class ;
               rdfs:subClassOf :ProperNoun ;
-              rdfs:label "personal name" .
+              rdfs:label "personal name" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "full proper name of a person" .
 
 
 ###  http://purl.org/olia/hittite.owl#PetrifiedParticiple
@@ -479,13 +497,15 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#Preposition
 :Preposition rdf:type owl:Class ;
              rdfs:subClassOf :PartOfSpeech ;
-             rdfs:label "preposition" .
+             rdfs:label "preposition" ;
+             <http://www.w3.org/2004/02/skos/core#definition> "word or phrase able to connect a following noun or noun phrase (and often other parts of the speech) as a complement to some other part of the sentence, expressing a relation between them" .
 
 
 ###  http://purl.org/olia/hittite.owl#Present
 :Present rdf:type owl:Class ;
          rdfs:subClassOf :Tense ;
-         rdfs:label "present tense" .
+         rdfs:label "present tense" ;
+         <http://www.w3.org/2004/02/skos/core#definition> "Grammatical tense indicating an action in the present" .
 
 
 ###  http://purl.org/olia/hittite.owl#Pronoun
@@ -497,7 +517,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#ProperNoun
 :ProperNoun rdf:type owl:Class ;
             rdfs:subClassOf :Noun ;
-            rdfs:label "proper noun" .
+            rdfs:label "proper noun" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "noun (or noun phrase) that in its primary application refers to a unique entity or instance" .
 
 
 ###  http://purl.org/olia/hittite.owl#Quantifier
@@ -564,7 +585,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#Subjunctive
 :Subjunctive rdf:type owl:Class ;
              rdfs:subClassOf :Mood ;
-             rdfs:label "subjunctive" .
+             rdfs:label "subjunctive" ;
+             <http://www.w3.org/2004/02/skos/core#definition> "grammatical mood of possibility" .
 
 
 ###  http://purl.org/olia/hittite.owl#SuffixedPronoun
@@ -588,7 +610,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#Tense
 :Tense rdf:type owl:Class ;
        rdfs:subClassOf :PartOfSpeech ;
-       rdfs:label "tense" .
+       rdfs:label "tense" ;
+       <http://www.w3.org/2004/02/skos/core#definition> "grammatical tense" .
 
 
 ###  http://purl.org/olia/hittite.owl#Third
@@ -613,7 +636,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#Ventive
 :Ventive rdf:type owl:Class ;
          rdfs:subClassOf :Case ;
-         rdfs:label "ventive" .
+         rdfs:label "ventive" ;
+         <http://www.w3.org/2004/02/skos/core#definition> "verb case that does not express a notion of movement" .
 
 
 ###  http://purl.org/olia/hittite.owl#Verb
@@ -637,7 +661,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#postposition
 :postposition rdf:type owl:Class ;
               rdfs:subClassOf :PartOfSpeech ;
-              rdfs:label "postposition" .
+              rdfs:label "postposition" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "adposition occurring after the term that it complements or modifies" .
 
 
 ###  http://purl.org/olia/system.owl#UnitOfAnnotation
