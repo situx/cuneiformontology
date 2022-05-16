@@ -164,7 +164,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#Conjunction
 :Conjunction rdf:type owl:Class ;
              rdfs:subClassOf :PartOfSpeech ;
-             rdfs:label "conjunction" .
+             rdfs:label "conjunction" ;
+             <http://www.w3.org/2004/02/skos/core#definition> "part of speech that connects two words, sentences, phrases, or clauses" .
 
 
 ###  http://purl.org/olia/hittite.owl#ContrastiveConjunction
@@ -242,7 +243,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#First
 :First rdf:type owl:Class ;
        rdfs:subClassOf :Person ;
-       rdfs:label "first person" .
+       rdfs:label "first person" ;
+       <http://www.w3.org/2004/02/skos/core#definition> "first person case" .
 
 
 ###  http://purl.org/olia/hittite.owl#FocusParticle
@@ -543,7 +545,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#Second
 :Second rdf:type owl:Class ;
         rdfs:subClassOf :Person ;
-        rdfs:label "second person" .
+        rdfs:label "second person" ;
+        <http://www.w3.org/2004/02/skos/core#definition> "second person case" .
 
 
 ###  http://purl.org/olia/hittite.owl#SentenceConnector
@@ -591,7 +594,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#Third
 :Third rdf:type owl:Class ;
        rdfs:subClassOf :Person ;
-       rdfs:label "third person" .
+       rdfs:label "third person" ;
+       <http://www.w3.org/2004/02/skos/core#definition> "third person case" .
 
 
 ###  http://purl.org/olia/hittite.owl#Universal
