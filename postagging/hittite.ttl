@@ -1,0 +1,797 @@
+@prefix : <http://purl.org/olia/hittite.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://purl.org/olia/hittite.owl> .
+
+<http://purl.org/olia/hittite.owl> rdf:type owl:Ontology ;
+                                    <http://purl.org/dc/elements/1.1/title> "OLiA Ontology for Hittite" ;
+                                    <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" ;
+                                    rdfs:comment "OLiA annotation model for morphosyntactic and morphological annotations of Hittite cuneiform following a tagset provided by the Hethitologie Portal Mainz" ;
+                                    owl:versionInfo "created 2022-05-16" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#member
+rdfs:member rdf:type owl:ObjectProperty ;
+            rdfs:label "member" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/olia/hittite.owl#Ablative
+:Ablative rdf:type owl:Class ;
+          rdfs:subClassOf :Case ;
+          rdfs:label "ablative" .
+
+
+###  http://purl.org/olia/hittite.owl#AccentedPersonalPronoun
+:AccentedPersonalPronoun rdf:type owl:Class ;
+                         rdfs:subClassOf :Pronoun ;
+                         rdfs:label "accented personal pronoun" .
+
+
+###  http://purl.org/olia/hittite.owl#Accusative
+:Accusative rdf:type owl:Class ;
+            rdfs:subClassOf :Case ;
+            rdfs:label "accusative" .
+
+
+###  http://purl.org/olia/hittite.owl#Active
+:Active rdf:type owl:Class ;
+        rdfs:subClassOf :Diathesis ;
+        rdfs:label "active" .
+
+
+###  http://purl.org/olia/hittite.owl#Adjective
+:Adjective rdf:type owl:Class ;
+           rdfs:subClassOf :PartOfSpeech ;
+           rdfs:label "adjective" .
+
+
+###  http://purl.org/olia/hittite.owl#Adverb
+:Adverb rdf:type owl:Class ;
+        rdfs:subClassOf :PartOfSpeech ;
+        rdfs:label "adverb" .
+
+
+###  http://purl.org/olia/hittite.owl#AdverbialIndefinitePronoun
+:AdverbialIndefinitePronoun rdf:type owl:Class ;
+                            rdfs:subClassOf :IndefinitePronoun ;
+                            rdfs:label "indefinite pronoun with adverbial function" .
+
+
+###  http://purl.org/olia/hittite.owl#Allative
+:Allative rdf:type owl:Class ;
+          rdfs:subClassOf :Case ;
+          rdfs:label "allative" .
+
+
+###  http://purl.org/olia/hittite.owl#AnaphoricPronoun
+:AnaphoricPronoun rdf:type owl:Class ;
+                  rdfs:subClassOf :Pronoun ;
+                  rdfs:label "anaphoric pronoun" .
+
+
+###  http://purl.org/olia/hittite.owl#Article
+:Article rdf:type owl:Class ;
+         rdfs:subClassOf :PartOfSpeech ;
+         rdfs:label "article" .
+
+
+###  http://purl.org/olia/hittite.owl#Auxiliary
+:Auxiliary rdf:type owl:Class ;
+           rdfs:subClassOf :PartOfSpeech ;
+           rdfs:label "auxiliary" .
+
+
+###  http://purl.org/olia/hittite.owl#Case
+:Case rdf:type owl:Class ;
+      rdfs:subClassOf :PartOfSpeech ;
+      rdfs:label "case" .
+
+
+###  http://purl.org/olia/hittite.owl#Collective
+:Collective rdf:type owl:Class ;
+            rdfs:subClassOf :Case ;
+            rdfs:label "collective" .
+
+
+###  http://purl.org/olia/hittite.owl#CommonGender
+:CommonGender rdf:type owl:Class ;
+              rdfs:subClassOf :Gender ;
+              rdfs:label "common gender" .
+
+
+###  http://purl.org/olia/hittite.owl#Conjunction
+:Conjunction rdf:type owl:Class ;
+             rdfs:subClassOf :PartOfSpeech ;
+             rdfs:label "conjunction" .
+
+
+###  http://purl.org/olia/hittite.owl#Dative
+:Dative rdf:type owl:Class ;
+        rdfs:subClassOf :Case ;
+        rdfs:label "dative" .
+
+
+###  http://purl.org/olia/hittite.owl#DativeLocative
+:DativeLocative rdf:type owl:Class ;
+                rdfs:subClassOf :Case ;
+                rdfs:label "dative/locative" .
+
+
+###  http://purl.org/olia/hittite.owl#DemonstrativePronoun
+:DemonstrativePronoun rdf:type owl:Class ;
+                      rdfs:subClassOf :Pronoun ;
+                      rdfs:label "demonstrative pronoun" .
+
+
+###  http://purl.org/olia/hittite.owl#Diathesis
+:Diathesis rdf:type owl:Class ;
+           rdfs:subClassOf :PartOfSpeech ;
+           rdfs:label "diathesis" .
+
+
+###  http://purl.org/olia/hittite.owl#DivineName
+:DivineName rdf:type owl:Class ;
+            rdfs:subClassOf :ProperNoun ;
+            rdfs:label "divine name" .
+
+
+###  http://purl.org/olia/hittite.owl#EnclicticPossessivePronoun
+:EnclicticPossessivePronoun rdf:type owl:Class ;
+                            rdfs:subClassOf :Pronoun ;
+                            rdfs:label "enclitic possessive pronoun" .
+
+
+###  http://purl.org/olia/hittite.owl#Ergative
+:Ergative rdf:type owl:Class ;
+          rdfs:subClassOf :Case ;
+          rdfs:label "ergative" .
+
+
+###  http://purl.org/olia/hittite.owl#Essive
+:Essive rdf:type owl:Class ;
+        rdfs:subClassOf :Case ;
+        rdfs:label "essive" .
+
+
+###  http://purl.org/olia/hittite.owl#Female
+:Female rdf:type owl:Class ;
+        rdfs:subClassOf :Gender ;
+        rdfs:label "feminine" .
+
+
+###  http://purl.org/olia/hittite.owl#First
+:First rdf:type owl:Class ;
+       rdfs:subClassOf :Person ;
+       rdfs:label "first person" .
+
+
+###  http://purl.org/olia/hittite.owl#Gender
+:Gender rdf:type owl:Class ;
+        rdfs:subClassOf :PartOfSpeech ;
+        rdfs:label "gender" .
+
+
+###  http://purl.org/olia/hittite.owl#GenitivalAdjective
+:GenitivalAdjective rdf:type owl:Class ;
+                    rdfs:subClassOf :Adjective ;
+                    rdfs:label "genitival adjective" .
+
+
+###  http://purl.org/olia/hittite.owl#Genitive
+:Genitive rdf:type owl:Class ;
+          rdfs:subClassOf :Case ;
+          rdfs:label "genitive" .
+
+
+###  http://purl.org/olia/hittite.owl#GenitiveUnHeaded
+:GenitiveUnHeaded rdf:type owl:Class ;
+                  rdfs:subClassOf :Genitive ;
+                  rdfs:label "genitive unheaded" .
+
+
+###  http://purl.org/olia/hittite.owl#GeographicalName
+:GeographicalName rdf:type owl:Class ;
+                  rdfs:subClassOf :ProperNoun ;
+                  rdfs:label "geographical name" .
+
+
+###  http://purl.org/olia/hittite.owl#Gerund
+:Gerund rdf:type owl:Class ;
+        rdfs:subClassOf :PartOfSpeech ;
+        rdfs:label "gerund" .
+
+
+###  http://purl.org/olia/hittite.owl#Imperative
+:Imperative rdf:type owl:Class ;
+            rdfs:subClassOf :Mood ;
+            rdfs:label "imperative" .
+
+
+###  http://purl.org/olia/hittite.owl#Imperfective
+:Imperfective rdf:type owl:Class ;
+              rdfs:subClassOf :Tense ;
+              rdfs:label "imperfective" .
+
+
+###  http://purl.org/olia/hittite.owl#Indeclinable
+:Indeclinable rdf:type owl:Class ;
+              rdfs:subClassOf :Case ;
+              rdfs:label "indeclinable" .
+
+
+###  http://purl.org/olia/hittite.owl#IndefinitePronoun
+:IndefinitePronoun rdf:type owl:Class ;
+                   rdfs:subClassOf :Pronoun ;
+                   rdfs:label "indefinite pronoun" .
+
+
+###  http://purl.org/olia/hittite.owl#Indicative
+:Indicative rdf:type owl:Class ;
+            rdfs:subClassOf :Mood ;
+            rdfs:label "indicative" .
+
+
+###  http://purl.org/olia/hittite.owl#Instrumental
+:Instrumental rdf:type owl:Class ;
+              rdfs:subClassOf :Case ;
+              rdfs:label "instrumental" .
+
+
+###  http://purl.org/olia/hittite.owl#Interjection
+:Interjection rdf:type owl:Class ;
+              rdfs:subClassOf :PartOfSpeech ;
+              rdfs:label "interjection" .
+
+
+###  http://purl.org/olia/hittite.owl#InterrogativeAdverbialPronoun
+:InterrogativeAdverbialPronoun rdf:type owl:Class ;
+                               rdfs:subClassOf :InterrogativePronoun ;
+                               rdfs:label "interrogative adverbial pronoun" .
+
+
+###  http://purl.org/olia/hittite.owl#InterrogativePronoun
+:InterrogativePronoun rdf:type owl:Class ;
+                      rdfs:subClassOf :Pronoun ;
+                      rdfs:label "interrogative pronoun" .
+
+
+###  http://purl.org/olia/hittite.owl#Locative
+:Locative rdf:type owl:Class ;
+          rdfs:subClassOf :Case ;
+          rdfs:label "locative" .
+
+
+###  http://purl.org/olia/hittite.owl#Male
+:Male rdf:type owl:Class ;
+      rdfs:subClassOf :Gender ;
+      rdfs:label "masculine" .
+
+
+###  http://purl.org/olia/hittite.owl#MedioPassive
+:MedioPassive rdf:type owl:Class ;
+              rdfs:subClassOf :Diathesis ;
+              rdfs:label "medio-passive" .
+
+
+###  http://purl.org/olia/hittite.owl#Mood
+:Mood rdf:type owl:Class ;
+      rdfs:subClassOf :PartOfSpeech ;
+      rdfs:label "mood" ;
+      <http://www.w3.org/2004/02/skos/core#definition> "grammatical mood" .
+
+
+###  http://purl.org/olia/hittite.owl#Neuter
+:Neuter rdf:type owl:Class ;
+        rdfs:subClassOf :Gender ;
+        rdfs:label "neuter" .
+
+
+###  http://purl.org/olia/hittite.owl#Nominative
+:Nominative rdf:type owl:Class ;
+            rdfs:subClassOf :Case ;
+            rdfs:label "nominative" .
+
+
+###  http://purl.org/olia/hittite.owl#NominativeAccusative
+:NominativeAccusative rdf:type owl:Class ;
+                      rdfs:subClassOf :Case ;
+                      rdfs:label "nominative/accusative" .
+
+
+###  http://purl.org/olia/hittite.owl#Noun
+:Noun rdf:type owl:Class ;
+      rdfs:subClassOf :PartOfSpeech ;
+      rdfs:label "noun" .
+
+
+###  http://purl.org/olia/hittite.owl#Numeral
+:Numeral rdf:type owl:Class ;
+         rdfs:subClassOf :PartOfSpeech ;
+         rdfs:label "numeral" .
+
+
+###  http://purl.org/olia/hittite.owl#Oblique
+:Oblique rdf:type owl:Class ;
+         rdfs:subClassOf :Case ;
+         rdfs:label "oblique" .
+
+
+###  http://purl.org/olia/hittite.owl#PartOfSpeech
+:PartOfSpeech rdf:type owl:Class ;
+              rdfs:subClassOf <http://purl.org/olia/system.owl#UnitOfAnnotation> ;
+              rdfs:label "part of speech" .
+
+
+###  http://purl.org/olia/hittite.owl#Participle
+:Participle rdf:type owl:Class ;
+            rdfs:subClassOf :PartOfSpeech ;
+            rdfs:label "participle" .
+
+
+###  http://purl.org/olia/hittite.owl#Passive
+:Passive rdf:type owl:Class ;
+         rdfs:subClassOf :Diathesis ;
+         rdfs:label "passive" .
+
+
+###  http://purl.org/olia/hittite.owl#Past
+:Past rdf:type owl:Class ;
+      rdfs:subClassOf :Tense ;
+      rdfs:label "past tense" .
+
+
+###  http://purl.org/olia/hittite.owl#Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf :PartOfSpeech ;
+        rdfs:label "person" .
+
+
+###  http://purl.org/olia/hittite.owl#PersonalName
+:PersonalName rdf:type owl:Class ;
+              rdfs:subClassOf :ProperNoun ;
+              rdfs:label "personal name" .
+
+
+###  http://purl.org/olia/hittite.owl#PetrifiedParticiple
+:PetrifiedParticiple rdf:type owl:Class ;
+                     rdfs:subClassOf :PartOfSpeech ;
+                     rdfs:label "petrified participle" .
+
+
+###  http://purl.org/olia/hittite.owl#Plural
+:Plural rdf:type owl:Class ;
+        rdfs:subClassOf :Case ;
+        rdfs:label "plural" .
+
+
+###  http://purl.org/olia/hittite.owl#Preposition
+:Preposition rdf:type owl:Class ;
+             rdfs:subClassOf :PartOfSpeech ;
+             rdfs:label "preposition" .
+
+
+###  http://purl.org/olia/hittite.owl#Present
+:Present rdf:type owl:Class ;
+         rdfs:subClassOf :Tense ;
+         rdfs:label "present tense" .
+
+
+###  http://purl.org/olia/hittite.owl#Pronoun
+:Pronoun rdf:type owl:Class ;
+         rdfs:subClassOf :PartOfSpeech ;
+         rdfs:label "pronoun" .
+
+
+###  http://purl.org/olia/hittite.owl#ProperNoun
+:ProperNoun rdf:type owl:Class ;
+            rdfs:subClassOf :Noun ;
+            rdfs:label "proper noun" .
+
+
+###  http://purl.org/olia/hittite.owl#Quantifier
+:Quantifier rdf:type owl:Class ;
+            rdfs:subClassOf :Numeral ;
+            rdfs:label "quantifier" .
+
+
+###  http://purl.org/olia/hittite.owl#Relator
+:Relator rdf:type owl:Class ;
+         rdfs:subClassOf :PartOfSpeech ;
+         rdfs:label "relator" .
+
+
+###  http://purl.org/olia/hittite.owl#Second
+:Second rdf:type owl:Class ;
+        rdfs:subClassOf :Person ;
+        rdfs:label "second person" .
+
+
+###  http://purl.org/olia/hittite.owl#Singular
+:Singular rdf:type owl:Class ;
+          rdfs:subClassOf :Case ;
+          rdfs:label "singular" .
+
+
+###  http://purl.org/olia/hittite.owl#Subjunctive
+:Subjunctive rdf:type owl:Class ;
+             rdfs:subClassOf :Mood ;
+             rdfs:label "subjunctive" .
+
+
+###  http://purl.org/olia/hittite.owl#Supine
+:Supine rdf:type owl:Class ;
+        rdfs:subClassOf :PartOfSpeech ;
+        rdfs:label "supine" .
+
+
+###  http://purl.org/olia/hittite.owl#Tagset
+:Tagset rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Collection> ;
+        rdfs:label "tagset" .
+
+
+###  http://purl.org/olia/hittite.owl#Tense
+:Tense rdf:type owl:Class ;
+       rdfs:subClassOf :PartOfSpeech ;
+       rdfs:label "tense" .
+
+
+###  http://purl.org/olia/hittite.owl#Third
+:Third rdf:type owl:Class ;
+       rdfs:subClassOf :Person ;
+       rdfs:label "third person" .
+
+
+###  http://purl.org/olia/hittite.owl#Universal
+:Universal rdf:type owl:Class ;
+           rdfs:subClassOf :Case ;
+           rdfs:label "universal form" .
+
+
+###  http://purl.org/olia/hittite.owl#Verb
+:Verb rdf:type owl:Class ;
+      rdfs:subClassOf :PartOfSpeech ;
+      rdfs:label "verb" .
+
+
+###  http://purl.org/olia/hittite.owl#VerbalNoun
+:VerbalNoun rdf:type owl:Class ;
+            rdfs:subClassOf :Noun ;
+            rdfs:label "verbal noun" .
+
+
+###  http://purl.org/olia/hittite.owl#Vocative
+:Vocative rdf:type owl:Class ;
+          rdfs:subClassOf :Case ;
+          rdfs:label "vocative" .
+
+
+###  http://purl.org/olia/hittite.owl#postposition
+:postposition rdf:type owl:Class ;
+              rdfs:subClassOf :PartOfSpeech ;
+              rdfs:label "postposition" .
+
+
+###  http://purl.org/olia/system.owl#UnitOfAnnotation
+<http://purl.org/olia/system.owl#UnitOfAnnotation> rdf:type owl:Class ;
+                                                   rdfs:label "unit of annotation" .
+
+
+###  http://www.w3.org/2004/02/skos/core#Collection
+<http://www.w3.org/2004/02/skos/core#Collection> rdf:type owl:Class ;
+                                                 rdfs:label "collection" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://purl.org/olia/hittite.owl#ABL
+:ABL rdf:type owl:NamedIndividual ,
+              :Ablative .
+
+
+###  http://purl.org/olia/hittite.owl#ACC
+:ACC rdf:type owl:NamedIndividual ,
+              :Accusative .
+
+
+###  http://purl.org/olia/hittite.owl#ACT
+:ACT rdf:type owl:NamedIndividual ,
+              :Active .
+
+
+###  http://purl.org/olia/hittite.owl#ADJ
+:ADJ rdf:type owl:NamedIndividual ,
+              :Adjective .
+
+
+###  http://purl.org/olia/hittite.owl#ADV
+:ADV rdf:type owl:NamedIndividual ,
+              :Adverb .
+
+
+###  http://purl.org/olia/hittite.owl#ALL
+:ALL rdf:type owl:NamedIndividual ,
+              :Allative .
+
+
+###  http://purl.org/olia/hittite.owl#ART
+:ART rdf:type owl:NamedIndividual ,
+              :Article .
+
+
+###  http://purl.org/olia/hittite.owl#AUX
+:AUX rdf:type owl:NamedIndividual ,
+              :Auxiliary .
+
+
+###  http://purl.org/olia/hittite.owl#C
+:C rdf:type owl:NamedIndividual ,
+            :CommonGender .
+
+
+###  http://purl.org/olia/hittite.owl#CNJ
+:CNJ rdf:type owl:NamedIndividual ,
+              :Conjunction .
+
+
+###  http://purl.org/olia/hittite.owl#DAT
+:DAT rdf:type owl:NamedIndividual ,
+              :Dative .
+
+
+###  http://purl.org/olia/hittite.owl#D_L
+:D_L rdf:type owl:NamedIndividual ,
+              :DativeLocative .
+
+
+###  http://purl.org/olia/hittite.owl#ERG
+:ERG rdf:type owl:NamedIndividual ,
+              :Ergative .
+
+
+###  http://purl.org/olia/hittite.owl#ESS
+:ESS rdf:type owl:NamedIndividual ,
+              :Essive .
+
+
+###  http://purl.org/olia/hittite.owl#F
+:F rdf:type owl:NamedIndividual ,
+            :Female .
+
+
+###  http://purl.org/olia/hittite.owl#GEN
+:GEN rdf:type owl:NamedIndividual ,
+              :Genitive .
+
+
+###  http://purl.org/olia/hittite.owl#GENUNH
+:GENUNH rdf:type owl:NamedIndividual ,
+                 :GenitiveUnHeaded .
+
+
+###  http://purl.org/olia/hittite.owl#GER
+:GER rdf:type owl:NamedIndividual ,
+              :Gerund .
+
+
+###  http://purl.org/olia/hittite.owl#IMP
+:IMP rdf:type owl:NamedIndividual ,
+              :Imperative .
+
+
+###  http://purl.org/olia/hittite.owl#IMPF
+:IMPF rdf:type owl:NamedIndividual ,
+               :Imperfective .
+
+
+###  http://purl.org/olia/hittite.owl#IND
+:IND rdf:type owl:NamedIndividual ,
+              :Indicative .
+
+
+###  http://purl.org/olia/hittite.owl#INDCL
+:INDCL rdf:type owl:NamedIndividual ,
+                :Indeclinable .
+
+
+###  http://purl.org/olia/hittite.owl#INDFadv
+:INDFadv rdf:type owl:NamedIndividual ,
+                  :AdverbialIndefinitePronoun .
+
+
+###  http://purl.org/olia/hittite.owl#INS
+:INS rdf:type owl:NamedIndividual ,
+              :Instrumental .
+
+
+###  http://purl.org/olia/hittite.owl#INT
+:INT rdf:type owl:NamedIndividual ,
+              :InterrogativePronoun .
+
+
+###  http://purl.org/olia/hittite.owl#INTJ
+:INTJ rdf:type owl:NamedIndividual ,
+               :Interjection .
+
+
+###  http://purl.org/olia/hittite.owl#INTadv
+:INTadv rdf:type owl:NamedIndividual ,
+                 :InterrogativeAdverbialPronoun .
+
+
+###  http://purl.org/olia/hittite.owl#LOC
+:LOC rdf:type owl:NamedIndividual ,
+              :Case .
+
+
+###  http://purl.org/olia/hittite.owl#M
+:M rdf:type owl:NamedIndividual ,
+            :Male .
+
+
+###  http://purl.org/olia/hittite.owl#MP
+:MP rdf:type owl:NamedIndividual ,
+             :MedioPassive .
+
+
+###  http://purl.org/olia/hittite.owl#Mueller2021
+:Mueller2021 rdf:type owl:NamedIndividual ,
+                      :Tagset ;
+             rdfs:label "Tagset for Hittite" ;
+             <http://www.w3.org/2004/02/skos/core#definition> "Tagset for Hittite as defined by Muller et.al and published on the Hethiter Portal Mainz" .
+
+
+###  http://purl.org/olia/hittite.owl#N
+:N rdf:type owl:NamedIndividual ,
+            :Neuter .
+
+
+###  http://purl.org/olia/hittite.owl#NOM
+:NOM rdf:type owl:NamedIndividual ,
+              :Nominative .
+
+
+###  http://purl.org/olia/hittite.owl#NUM
+:NUM rdf:type owl:NamedIndividual ,
+              :Numeral .
+
+
+###  http://purl.org/olia/hittite.owl#N_A
+:N_A rdf:type owl:NamedIndividual ,
+              :NominativeAccusative .
+
+
+###  http://purl.org/olia/hittite.owl#OBL
+:OBL rdf:type owl:NamedIndividual ,
+              :Oblique .
+
+
+###  http://purl.org/olia/hittite.owl#PASS
+:PASS rdf:type owl:NamedIndividual ,
+               :Passive .
+
+
+###  http://purl.org/olia/hittite.owl#PL
+:PL rdf:type owl:NamedIndividual ,
+             :Plural .
+
+
+###  http://purl.org/olia/hittite.owl#POSP
+:POSP rdf:type owl:NamedIndividual ,
+               :postposition .
+
+
+###  http://purl.org/olia/hittite.owl#POSS
+:POSS rdf:type owl:NamedIndividual ,
+               :EnclicticPossessivePronoun .
+
+
+###  http://purl.org/olia/hittite.owl#PPRO
+:PPRO rdf:type owl:NamedIndividual ,
+               :AnaphoricPronoun .
+
+
+###  http://purl.org/olia/hittite.owl#PPROa
+:PPROa rdf:type owl:NamedIndividual ,
+                :AccentedPersonalPronoun .
+
+
+###  http://purl.org/olia/hittite.owl#PREP
+:PREP rdf:type owl:NamedIndividual ,
+               :Preposition .
+
+
+###  http://purl.org/olia/hittite.owl#PRO
+:PRO rdf:type owl:NamedIndividual ,
+              :Pronoun .
+
+
+###  http://purl.org/olia/hittite.owl#PRS
+:PRS rdf:type owl:NamedIndividual ,
+              :Present .
+
+
+###  http://purl.org/olia/hittite.owl#PST
+:PST rdf:type owl:NamedIndividual ,
+              :Past .
+
+
+###  http://purl.org/olia/hittite.owl#PTCP
+:PTCP rdf:type owl:NamedIndividual ,
+               :Participle .
+
+
+###  http://purl.org/olia/hittite.owl#PTCPINDCL
+:PTCPINDCL rdf:type owl:NamedIndividual ,
+                    :PetrifiedParticiple .
+
+
+###  http://purl.org/olia/hittite.owl#RLT
+:RLT rdf:type owl:NamedIndividual ,
+              :Relator .
+
+
+###  http://purl.org/olia/hittite.owl#SBJV
+:SBJV rdf:type owl:NamedIndividual ,
+               :Subjunctive .
+
+
+###  http://purl.org/olia/hittite.owl#SG
+:SG rdf:type owl:NamedIndividual ,
+             :Singular .
+
+
+###  http://purl.org/olia/hittite.owl#SUP
+:SUP rdf:type owl:NamedIndividual ,
+              :Supine .
+
+
+###  http://purl.org/olia/hittite.owl#UNIV
+:UNIV rdf:type owl:NamedIndividual ,
+               :Universal .
+
+
+###  http://purl.org/olia/hittite.owl#VB
+:VB rdf:type owl:NamedIndividual ,
+             :PartOfSpeech .
+
+
+###  http://purl.org/olia/hittite.owl#VBN
+:VBN rdf:type owl:NamedIndividual ,
+              :VerbalNoun .
+
+
+###  http://purl.org/olia/hittite.owl#VOC
+:VOC rdf:type owl:NamedIndividual ,
+              :Vocative .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
