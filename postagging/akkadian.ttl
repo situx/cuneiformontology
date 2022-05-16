@@ -3,8 +3,8 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix system: <http://purl.org/olia/system.owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix system: <http://purl.org/olia/system.owl#> .
 @base <http://purl.org/olia/akkadian.owl> .
 
 <http://purl.org/olia/akkadian.owl> rdf:type owl:Ontology ;
@@ -37,12 +37,21 @@
 
 
 #################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#member
+rdfs:member rdf:type owl:ObjectProperty ;
+            rdfs:label "member" .
+
+
+#################################################################
 #    Data properties
 #################################################################
 
 ###  http://purl.org/olia/system.owl#hasTier
-<http://purl.org/olia/system.owl#hasTier> rdf:type owl:DatatypeProperty ;
-                                          rdfs:label "has tier" .
+system:hasTier rdf:type owl:DatatypeProperty ;
+               rdfs:label "has tier" .
 
 
 #################################################################
@@ -321,12 +330,11 @@
 
 ###  http://purl.org/olia/akkadian.owl#PartOfSpeech
 :PartOfSpeech rdf:type owl:Class ;
-              rdfs:subClassOf <http://purl.org/olia/system.owl#UnitOfAnnotation> 
-			  ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty system:hasTier ;
-                                    owl:hasValue "pos"
-                                  ] ;
+              rdfs:subClassOf system:UnitOfAnnotation ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty system:hasTier ;
+                                owl:hasValue "pos"
+                              ] ;
               rdfs:label "part of speech"@en .
 
 
@@ -496,6 +504,11 @@
                  <http://www.w3.org/2004/02/skos/core#definition> "pronoun acting as the suffix of a noun"@en .
 
 
+###  http://purl.org/olia/akkadian.owl#Tagset
+:Tagset rdf:type owl:Class ;
+        rdfs:label "tagset" .
+
+
 ###  http://purl.org/olia/akkadian.owl#Tense
 :Tense rdf:type owl:Class ;
        rdfs:subClassOf :PartOfSpeech ;
@@ -595,8 +608,8 @@
 
 
 ###  http://purl.org/olia/system.owl#UnitOfAnnotation
-<http://purl.org/olia/system.owl#UnitOfAnnotation> rdf:type owl:Class ;
-                                                   rdfs:label "unit of annotation"@en .
+system:UnitOfAnnotation rdf:type owl:Class ;
+                        rdfs:label "unit of annotation"@en .
 
 
 #################################################################
@@ -913,6 +926,81 @@
 :PTCP rdf:type owl:NamedIndividual ,
                :Participle ;
       :hasTag "PTCP" .
+
+
+###  http://purl.org/olia/akkadian.owl#PrechelBrandes2022
+:PrechelBrandes2022 rdf:type owl:NamedIndividual ,
+                             :Tagset ;
+                    rdfs:member :ACC ,
+                                :ADJ ,
+                                :ADV ,
+                                :CARD ,
+                                :CNJ ,
+                                :COH ,
+                                :DAT ,
+                                :DEM ,
+                                :DETPRO ,
+                                :DIST ,
+                                :DN ,
+                                :DSTEM ,
+                                :DTNSTEM ,
+                                :DUAL ,
+                                :F ,
+                                :FIRST ,
+                                :FRAC ,
+                                :GEN ,
+                                :GN ,
+                                :GST ,
+                                :GTNSTEM ,
+                                :GTSTEM ,
+                                :IMP ,
+                                :IMPF ,
+                                :IND ,
+                                :INDPPRO ,
+                                :INF ,
+                                :INT ,
+                                :INTJ ,
+                                :LOC ,
+                                :M ,
+                                :MUL ,
+                                :NEG ,
+                                :NOM ,
+                                :NSTEM ,
+                                :NTNSTEM ,
+                                :NUM ,
+                                :OBL ,
+                                :ORD ,
+                                :PL ,
+                                :PN ,
+                                :PNOUN ,
+                                :POSP ,
+                                :POSS ,
+                                :PREC ,
+                                :PREP ,
+                                :PRO ,
+                                :PROH ,
+                                :PRS ,
+                                :PST ,
+                                :PTC ,
+                                :PTCP ,
+                                :REL ,
+                                :SBJV ,
+                                :SBST ,
+                                :SECOND ,
+                                :SG ,
+                                :SST ,
+                                :STA ,
+                                :STC ,
+                                :STR ,
+                                :STV ,
+                                :SZTDSTEM ,
+                                :SZTNSTEM ,
+                                :TERM ,
+                                :THIRD ,
+                                :VB ,
+                                :VEN ;
+                    rdfs:label "Tagset for Akkadian" ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "Tagset for Akkadian as defined by Prechel and Brandes 2022" .
 
 
 ###  http://purl.org/olia/akkadian.owl#REL
