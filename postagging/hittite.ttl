@@ -87,13 +87,15 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#Adjective
 :Adjective rdf:type owl:Class ;
            rdfs:subClassOf :PartOfSpeech ;
-           rdfs:label "adjective" .
+           rdfs:label "adjective" ;
+           <http://www.w3.org/2004/02/skos/core#definition> "part of speech that describes a noun or pronoun" .
 
 
 ###  http://purl.org/olia/hittite.owl#Adverb
 :Adverb rdf:type owl:Class ;
         rdfs:subClassOf :PartOfSpeech ;
-        rdfs:label "adverb" .
+        rdfs:label "adverb" ;
+        <http://www.w3.org/2004/02/skos/core#definition> "word that modifies a verb, adjective, or another adverb" .
 
 
 ###  http://purl.org/olia/hittite.owl#AdverbialIndefinitePronoun
@@ -192,13 +194,15 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#DemonstrativePronoun
 :DemonstrativePronoun rdf:type owl:Class ;
                       rdfs:subClassOf :Pronoun ;
-                      rdfs:label "demonstrative pronoun" .
+                      rdfs:label "demonstrative pronoun" ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "A demonstrative pronoun is a pronoun that is used to point to something specific within a sentence" .
 
 
 ###  http://purl.org/olia/hittite.owl#DeterminativePronoun
 :DeterminativePronoun rdf:type owl:Class ;
                       rdfs:subClassOf :Pronoun ;
-                      rdfs:label "determinative pronoun" .
+                      rdfs:label "determinative pronoun" ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "pronoun used to emphasize a noun or other pronoun" .
 
 
 ###  http://purl.org/olia/hittite.owl#Diathesis
@@ -223,7 +227,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#EnclicticPossessivePronoun
 :EnclicticPossessivePronoun rdf:type owl:Class ;
                             rdfs:subClassOf :Pronoun ;
-                            rdfs:label "enclitic possessive pronoun" .
+                            rdfs:label "enclitic possessive pronoun" ;
+                            <http://www.w3.org/2004/02/skos/core#definition> "pronoun acting as modifier showing ownership" .
 
 
 ###  http://purl.org/olia/hittite.owl#Ergative
@@ -268,7 +273,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#GenitivalAdjective
 :GenitivalAdjective rdf:type owl:Class ;
                     rdfs:subClassOf :Adjective ;
-                    rdfs:label "genitival adjective" .
+                    rdfs:label "genitival adjective" ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "part of speech that describes a noun or pronoun in the genitive case" .
 
 
 ###  http://purl.org/olia/hittite.owl#Genitive
@@ -314,7 +320,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#Indeclinable
 :Indeclinable rdf:type owl:Class ;
               rdfs:subClassOf :Case ;
-              rdfs:label "indeclinable" .
+              rdfs:label "indeclinable" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "A word case which prohibits declination" .
 
 
 ###  http://purl.org/olia/hittite.owl#IndefinitePronoun
@@ -346,13 +353,15 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#InterrogativeAdverbialPronoun
 :InterrogativeAdverbialPronoun rdf:type owl:Class ;
                                rdfs:subClassOf :InterrogativePronoun ;
-                               rdfs:label "interrogative adverbial pronoun" .
+                               rdfs:label "interrogative adverbial pronoun" ;
+                               <http://www.w3.org/2004/02/skos/core#definition> "pronoun announcing a question in its adverbial form" .
 
 
 ###  http://purl.org/olia/hittite.owl#InterrogativePronoun
 :InterrogativePronoun rdf:type owl:Class ;
                       rdfs:subClassOf :Pronoun ;
-                      rdfs:label "interrogative pronoun" .
+                      rdfs:label "interrogative pronoun" ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "pronoun announcing a question" .
 
 
 ###  http://purl.org/olia/hittite.owl#IrrealisParticle
@@ -434,7 +443,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#Oblique
 :Oblique rdf:type owl:Class ;
          rdfs:subClassOf :Case ;
-         rdfs:label "oblique" .
+         rdfs:label "oblique" ;
+         <http://www.w3.org/2004/02/skos/core#definition> "A word can be in the oblique case if the sentence already includes a nominative case" .
 
 
 ###  http://purl.org/olia/hittite.owl#PartOfSpeech
@@ -491,7 +501,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#Plural
 :Plural rdf:type owl:Class ;
         rdfs:subClassOf :Case ;
-        rdfs:label "plural" .
+        rdfs:label "plural" ;
+        <http://www.w3.org/2004/02/skos/core#definition> "grammatical number representing multiple entities" .
 
 
 ###  http://purl.org/olia/hittite.owl#Preposition
@@ -511,7 +522,8 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#Pronoun
 :Pronoun rdf:type owl:Class ;
          rdfs:subClassOf :PartOfSpeech ;
-         rdfs:label "pronoun" .
+         rdfs:label "pronoun" ;
+         <http://www.w3.org/2004/02/skos/core#definition> "word or form that substitutes for a noun or noun phrase" .
 
 
 ###  http://purl.org/olia/hittite.owl#ProperNoun
@@ -548,13 +560,15 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#RelativePronoun
 :RelativePronoun rdf:type owl:Class ;
                  rdfs:subClassOf :Pronoun ;
-                 rdfs:label "relative pronoun" .
+                 rdfs:label "relative pronoun" ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "type of pronoun that marks a relative clause" .
 
 
 ###  http://purl.org/olia/hittite.owl#RelativePronounADV
 :RelativePronounADV rdf:type owl:Class ;
                     rdfs:subClassOf :RelativePronoun ;
-                    rdfs:label "relative pronoun with adverbial function" .
+                    rdfs:label "relative pronoun with adverbial function" ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "type of pronoun that marks a relative clause in its adverbial function" .
 
 
 ###  http://purl.org/olia/hittite.owl#Relator
@@ -704,6 +718,11 @@ rdfs:member rdf:type owl:ObjectProperty ;
               :Adjective .
 
 
+###  http://purl.org/olia/hittite.owl#ADJG
+:ADJG rdf:type owl:NamedIndividual ,
+               :GenitivalAdjective .
+
+
 ###  http://purl.org/olia/hittite.owl#ADV
 :ADV rdf:type owl:NamedIndividual ,
               :Adverb .
@@ -769,6 +788,11 @@ rdfs:member rdf:type owl:ObjectProperty ;
                   :DisjunctiveConjunction .
 
 
+###  http://purl.org/olia/hittite.owl#COLL
+:COLL rdf:type owl:NamedIndividual ,
+               :Collective .
+
+
 ###  http://purl.org/olia/hittite.owl#CONNn
 :CONNn rdf:type owl:NamedIndividual ,
                 :SentenceConnector .
@@ -787,6 +811,11 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#DAT
 :DAT rdf:type owl:NamedIndividual ,
               :Dative .
+
+
+###  http://purl.org/olia/hittite.owl#DN
+:DN rdf:type owl:NamedIndividual ,
+             :DivineName .
 
 
 ###  http://purl.org/olia/hittite.owl#D_L
@@ -827,6 +856,11 @@ rdfs:member rdf:type owl:ObjectProperty ;
 ###  http://purl.org/olia/hittite.owl#GER
 :GER rdf:type owl:NamedIndividual ,
               :Gerund .
+
+
+###  http://purl.org/olia/hittite.owl#GN
+:GN rdf:type owl:NamedIndividual ,
+             :GeographicalName .
 
 
 ###  http://purl.org/olia/hittite.owl#IMP
@@ -881,7 +915,7 @@ rdfs:member rdf:type owl:ObjectProperty ;
 
 ###  http://purl.org/olia/hittite.owl#LOC
 :LOC rdf:type owl:NamedIndividual ,
-              :Case .
+              :Locative .
 
 
 ###  http://purl.org/olia/hittite.owl#M
@@ -1043,6 +1077,11 @@ rdfs:member rdf:type owl:ObjectProperty ;
              :Plural .
 
 
+###  http://purl.org/olia/hittite.owl#PN
+:PN rdf:type owl:NamedIndividual ,
+             :PersonalName .
+
+
 ###  http://purl.org/olia/hittite.owl#POSP
 :POSP rdf:type owl:NamedIndividual ,
                :postposition .
@@ -1133,6 +1172,11 @@ rdfs:member rdf:type owl:ObjectProperty ;
                :Subjunctive .
 
 
+###  http://purl.org/olia/hittite.owl#SBST
+:SBST rdf:type owl:NamedIndividual ,
+               :Noun .
+
+
 ###  http://purl.org/olia/hittite.owl#SG
 :SG rdf:type owl:NamedIndividual ,
              :Singular .
@@ -1160,7 +1204,7 @@ rdfs:member rdf:type owl:ObjectProperty ;
 
 ###  http://purl.org/olia/hittite.owl#VB
 :VB rdf:type owl:NamedIndividual ,
-             :PartOfSpeech .
+             :Verb .
 
 
 ###  http://purl.org/olia/hittite.owl#VBN
