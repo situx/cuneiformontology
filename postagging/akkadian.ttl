@@ -31,6 +31,10 @@
 :hasTag rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2004/02/skos/core#definition
 <http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty ;
                                                  rdfs:subPropertyOf rdfs:label .
@@ -102,7 +106,7 @@ system:hasTier rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.org/olia/akkadian.owl#DStem
 :DStem rdf:type owl:Class ;
-       rdfs:subClassOf :VerbCase ;
+       rdfs:subClassOf :Stem ;
        rdfs:label "D Stem"@en ;
        <http://www.w3.org/2004/02/skos/core#definition> "Akkadian verb D stem"@en .
 
@@ -119,6 +123,13 @@ system:hasTier rdf:type owl:DatatypeProperty ;
                       rdfs:subClassOf :Pronoun ;
                       rdfs:label "demonstrative pronoun"@en ;
                       <http://www.w3.org/2004/02/skos/core#definition> "A demonstrative pronoun is a pronoun that is used to point to something specific within a sentence"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Determinative
+:Determinative rdf:type owl:Class ;
+               rdfs:subClassOf :Logogram ;
+               rdfs:label "determinative" ;
+               <http://www.w3.org/2004/02/skos/core#definition> "A single sign indicating a semantic category for the following or preceding noun" .
 
 
 ###  http://purl.org/olia/akkadian.owl#DeterminativePronoun
@@ -143,7 +154,7 @@ system:hasTier rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.org/olia/akkadian.owl#DtnStem
 :DtnStem rdf:type owl:Class ;
-         rdfs:subClassOf :VerbCase ;
+         rdfs:subClassOf :Stem ;
          rdfs:label "Dtn Stem"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "Akkadian verb Dtn stem"@en .
 
@@ -185,7 +196,7 @@ system:hasTier rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.org/olia/akkadian.owl#GStem
 :GStem rdf:type owl:Class ;
-       rdfs:subClassOf :VerbCase ;
+       rdfs:subClassOf :Stem ;
        rdfs:label "G Stem"@en ;
        <http://www.w3.org/2004/02/skos/core#definition> "Akkadian verb G stem"@en .
 
@@ -212,21 +223,21 @@ system:hasTier rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.org/olia/akkadian.owl#GtStem
 :GtStem rdf:type owl:Class ;
-        rdfs:subClassOf :VerbCase ;
+        rdfs:subClassOf :Stem ;
         rdfs:label "Gt Stem"@en ;
         <http://www.w3.org/2004/02/skos/core#definition> "Akkadian verb Gt stem"@en .
 
 
 ###  http://purl.org/olia/akkadian.owl#GtnStem
 :GtnStem rdf:type owl:Class ;
-         rdfs:subClassOf :VerbCase ;
+         rdfs:subClassOf :Stem ;
          rdfs:label "Gtn Stem"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "Akkadian verb Gtn stem"@en .
 
 
 ###  http://purl.org/olia/akkadian.owl#Infinitive
 :Infinitive rdf:type owl:Class ;
-            rdfs:subClassOf :Case ;
+            rdfs:subClassOf :VerbCase ;
             rdfs:label "infinitive"@en ;
             <http://www.w3.org/2004/02/skos/core#definition> "grammatical form of a typically non-conjugated verb"@en .
 
@@ -252,6 +263,12 @@ system:hasTier rdf:type owl:DatatypeProperty ;
           <http://www.w3.org/2004/02/skos/core#definition> "grammatical case which indicates a location"@en .
 
 
+###  http://purl.org/olia/akkadian.owl#Logogram
+:Logogram rdf:type owl:Class ;
+          rdfs:subClassOf :OrthographicElement ;
+          rdfs:label "logogram" .
+
+
 ###  http://purl.org/olia/akkadian.owl#Male
 :Male rdf:type owl:Class ;
       rdfs:subClassOf :Gender ;
@@ -274,14 +291,14 @@ system:hasTier rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.org/olia/akkadian.owl#NStem
 :NStem rdf:type owl:Class ;
-       rdfs:subClassOf :VerbCase ;
+       rdfs:subClassOf :Stem ;
        rdfs:label "N Stem"@en ;
        <http://www.w3.org/2004/02/skos/core#definition> "Akkadian verb N stem"@en .
 
 
 ###  http://purl.org/olia/akkadian.owl#NTN_Stem
 :NTN_Stem rdf:type owl:Class ;
-          rdfs:subClassOf :VerbCase ;
+          rdfs:subClassOf :Stem ;
           rdfs:label "Ntn Stem"@en ;
           <http://www.w3.org/2004/02/skos/core#definition> "Akkadian verb Ntn stem"@en .
 
@@ -328,6 +345,12 @@ system:hasTier rdf:type owl:DatatypeProperty ;
          <http://www.w3.org/2004/02/skos/core#definition> "order type of a well-ordered set"@en .
 
 
+###  http://purl.org/olia/akkadian.owl#OrthographicElement
+:OrthographicElement rdf:type owl:Class ;
+                     rdfs:subClassOf :PartOfSpeech ;
+                     rdfs:label "orthographic element" .
+
+
 ###  http://purl.org/olia/akkadian.owl#PartOfSpeech
 :PartOfSpeech rdf:type owl:Class ;
               rdfs:subClassOf system:UnitOfAnnotation ,
@@ -340,7 +363,7 @@ system:hasTier rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.org/olia/akkadian.owl#Participle
 :Participle rdf:type owl:Class ;
-            rdfs:subClassOf :PartOfSpeech ;
+            rdfs:subClassOf :VerbCase ;
             rdfs:label "participle"@en ;
             <http://www.w3.org/2004/02/skos/core#definition> "form of a verb which is used in a sentence to modify a noun or noun phrase"@en .
 
@@ -410,7 +433,7 @@ system:hasTier rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.org/olia/akkadian.owl#Prohibitive
 :Prohibitive rdf:type owl:Class ;
-             rdfs:subClassOf :Case ;
+             rdfs:subClassOf :Mood ;
              rdfs:label "prohibitive"@en ;
              <http://www.w3.org/2004/02/skos/core#definition> "verb case to signify prohibition of actions"@en .
 
@@ -438,21 +461,21 @@ system:hasTier rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.org/olia/akkadian.owl#SZDStem
 :SZDStem rdf:type owl:Class ;
-         rdfs:subClassOf :VerbCase ;
+         rdfs:subClassOf :Stem ;
          rdfs:label "SZD Stem"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "Akkadian verb SZD stem"@en .
 
 
 ###  http://purl.org/olia/akkadian.owl#SZStem
 :SZStem rdf:type owl:Class ;
-        rdfs:subClassOf :VerbCase ;
+        rdfs:subClassOf :Stem ;
         rdfs:label "SZ Stem"@en ;
         <http://www.w3.org/2004/02/skos/core#definition> "Akkadian verb SZ stem"@en .
 
 
 ###  http://purl.org/olia/akkadian.owl#SZTNStem
 :SZTNStem rdf:type owl:Class ;
-          rdfs:subClassOf :VerbCase ;
+          rdfs:subClassOf :Stem ;
           rdfs:label "SZtn Stem"@en ;
           <http://www.w3.org/2004/02/skos/core#definition> "Akkadian verb SZtn stem"@en .
 
@@ -473,28 +496,45 @@ system:hasTier rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.org/olia/akkadian.owl#Stative
 :Stative rdf:type owl:Class ;
-         rdfs:subClassOf :Case ;
+         rdfs:subClassOf :VerbCase ;
          rdfs:label "stative"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "verb case that describes a state of being"@en .
 
 
+###  http://purl.org/olia/akkadian.owl#Status
+:Status rdf:type owl:Class ;
+        rdfs:subClassOf :PartOfSpeech ;
+        rdfs:comment "status of the noun" ;
+        rdfs:label "status" .
+
+
 ###  http://purl.org/olia/akkadian.owl#StatusAbsolutus
 :StatusAbsolutus rdf:type owl:Class ;
-                 rdfs:subClassOf :Case ;
-                 rdfs:label "status absolutus"@en .
+                 rdfs:subClassOf :Status ;
+                 rdfs:label "status absolutus"@en ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Formally identical with a third person singular of stative" .
 
 
 ###  http://purl.org/olia/akkadian.owl#StatusConstructus
 :StatusConstructus rdf:type owl:Class ;
-                   rdfs:subClassOf :Case ;
+                   rdfs:subClassOf :Status ;
                    rdfs:label "status constructus"@en ;
-                   <http://www.w3.org/2004/02/skos/core#definition> "The first noun in a genitive phrase of a possessed noun followed by a possessor noun"@en .
+                   <http://www.w3.org/2004/02/skos/core#definition> "Partially declined noun with a dependent genitive or pronomial suffix or relative clause"@en .
 
 
 ###  http://purl.org/olia/akkadian.owl#StatusRectus
 :StatusRectus rdf:type owl:Class ;
-              rdfs:subClassOf :Case ;
-              rdfs:label "status rectus"@en .
+              rdfs:subClassOf :Status ;
+              rdfs:label "status rectus"@en ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Fully declined noun without nominal or pronominal genitive without dependent relative clause" .
+
+
+###  http://purl.org/olia/akkadian.owl#Stem
+:Stem rdf:type owl:Class ;
+      rdfs:subClassOf :PartOfSpeech ;
+      rdfs:label "stem"@en ;
+      <http://www.w3.org/2004/02/skos/core#altLabel> "verbal stem" ;
+      <http://www.w3.org/2004/02/skos/core#definition> "A case or classification associated with verbs"@en .
 
 
 ###  http://purl.org/olia/akkadian.owl#SuffixedPronoun
@@ -502,6 +542,13 @@ system:hasTier rdf:type owl:DatatypeProperty ;
                  rdfs:subClassOf :Pronoun ;
                  rdfs:label "suffixed pronoun"@en ;
                  <http://www.w3.org/2004/02/skos/core#definition> "pronoun acting as the suffix of a noun"@en .
+
+
+###  http://purl.org/olia/akkadian.owl#Sumerogram
+:Sumerogram rdf:type owl:Class ;
+            rdfs:subClassOf :Logogram ;
+            rdfs:label "sumerogram" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "One or many Sumerian consecutive word signs in an Akkadian text in Akkadian reading" .
 
 
 ###  http://purl.org/olia/akkadian.owl#Tagset
@@ -532,7 +579,7 @@ system:hasTier rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.org/olia/akkadian.owl#Ventive
 :Ventive rdf:type owl:Class ;
-         rdfs:subClassOf :Case ;
+         rdfs:subClassOf :VerbCase ;
          rdfs:label "ventive"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "verb case that does not express a notion of movement"@en .
 
@@ -546,9 +593,8 @@ system:hasTier rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.org/olia/akkadian.owl#VerbCase
 :VerbCase rdf:type owl:Class ;
-          rdfs:subClassOf :Case ;
-          rdfs:label "verb case"@en ;
-          <http://www.w3.org/2004/02/skos/core#definition> "A case or classification associated with verbs"@en .
+          rdfs:subClassOf :PartOfSpeech ;
+          rdfs:label "verb case" .
 
 
 ###  http://purl.org/olia/akkadian.owl#accusative
@@ -581,7 +627,7 @@ system:hasTier rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.org/olia/akkadian.owl#negation
 :negation rdf:type owl:Class ;
-          rdfs:subClassOf :Case ;
+          rdfs:subClassOf :Particle ;
           rdfs:label "negation"@en ;
           <http://www.w3.org/2004/02/skos/core#definition> "grammatical form that encodes negative polarity or falsity"@en .
 
@@ -662,6 +708,11 @@ system:UnitOfAnnotation rdf:type owl:Class ;
 :DEM rdf:type owl:NamedIndividual ,
               :DemonstrativePronoun ;
      :hasTag "DEM" .
+
+
+###  http://purl.org/olia/akkadian.owl#DET
+:DET rdf:type owl:NamedIndividual ,
+              :Determinative .
 
 
 ###  http://purl.org/olia/akkadian.owl#DETPRO
@@ -939,6 +990,7 @@ system:UnitOfAnnotation rdf:type owl:Class ;
                                 :COH ,
                                 :DAT ,
                                 :DEM ,
+                                :DET ,
                                 :DETPRO ,
                                 :DIST ,
                                 :DN ,
@@ -993,6 +1045,7 @@ system:UnitOfAnnotation rdf:type owl:Class ;
                                 :STC ,
                                 :STR ,
                                 :STV ,
+                                :SUM ,
                                 :SZTDSTEM ,
                                 :SZTNSTEM ,
                                 :TERM ,
@@ -1061,6 +1114,11 @@ system:UnitOfAnnotation rdf:type owl:Class ;
 :STV rdf:type owl:NamedIndividual ,
               :Stative ;
      :hasTag "STV" .
+
+
+###  http://purl.org/olia/akkadian.owl#SUM
+:SUM rdf:type owl:NamedIndividual ,
+              :Sumerogram .
 
 
 ###  http://purl.org/olia/akkadian.owl#SZTDSTEM
