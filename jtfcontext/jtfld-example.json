@@ -1,0 +1,47 @@
+{"@context": {
+	  "cunei": "http://www.purl.org/cuneiform/",
+	  "cidoc": "http://www.cidoc-crm.org/cidoc-crm/",
+	  "Collection": "cunei:CuneiformArtifactCollection",
+	  "tablet": "cunei:Tablet",
+	  "Cone": "cunei:Cone",
+	  "Bulla": "cunei:Bulla",
+	  "Brick": "cunei:Brick",
+	  "Block": "cunei:Block",
+	  "Barrel": "cunei:Barrel",
+  	"children": "cunei:containedIn",
+	  "Cylinder": "cunei:Cylinder",
+	  "Envelope": "cunei:Envelope",
+	  "Tag": "cunei:Tag",
+	  "sequence":"cunei:Sequence",
+  	"short":"cunei:ShortSequence",
+	  "TabletSide":"cunei:TabletSide",
+	  "bottom":"cunei:BottomSide",
+	  "top":"cunei:TopSide",
+	  "left":"cunei:LeftSide",
+	  "right":"cunei:RightSide",
+	  "obverse":"cunei:ObverseSide",
+	  "reverse":"cunei:ReverseSide",
+	  "FindSpot": "cunei:FindSpot",
+	  "Genre": "cunei:Genre",
+	  "Transliteration": "cunei:Transliteration",
+	  "TabletSide": "cunei:TabletSide",
+	  "WritingField": "cidoc:TX4_WritingField",
+	  "Column":"cunei:Column",
+	  "Sentence":"cunei:Sentence",
+	  "WordOccurance":"cunei:WordOccurance",
+	  "Glyph":"cidoc:TX9_Glyph"
+  },
+ "@graph":
+ {"_class":"object", "@id":"tab1", "@type":"tablet", "children":[
+  {"_class":"surface", "@id":"tab1_side_1","@type":"obverse", "children":[
+    {"_class":"column", "@id":"tab1_side_1_column_1", "@type":"column", "name":"1", "children":[
+      {"_class":"line", "@id":"tab1_side_1_column_1_line_1", "@type":"line", "name":"1", "children":[
+        {"_class":"sequence", "@id":"tab1_side_1_column_1_line_1_seq_1", "@type":"short", "children":[
+          {"_class":"chr", "@id":"tab1_side_1_column_1_line_1_seq_1_char_1","@type":"Glyph", "type":"U+1200", "value":"a",  "grapheme":"GRAPHEMEID","glyphrep":"GLYPHREPRESENTATIONLINK"}
+        ]}
+      ]}
+    ]}
+  ]}
+ ]
+}
+}
