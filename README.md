@@ -12,6 +12,8 @@ The goal of this collection of ontologies is to connect:
 
 ## Annotation vocabularies
 Annotation vocabularies used in this repository are suited for the need of annotations being made on depictions of sides of cuneiform tablets.
+![Possible areas of annotation on a cuneiform tablet](annotation_areas.png)
+The previous picture shows possible areas of annotation on a cuneiform tablet. These areas among others are covered by the annotation vocabulary which is present in this repository and might be used in any annotation program using for example the (https://www.w3.org/TR/annotation-model/)[W3C Web Annotation Data Model] for annotation.
 
 ## Part Of Speech Tagging Vocabularies
 This repository includes vocabularies for annotating Part Of Speech Tags derived from the (https://github.com/acoli-repo/olia)[OLiA model].
