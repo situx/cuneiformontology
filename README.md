@@ -3,7 +3,7 @@
 This repository includes a set of ontologies which enable cuneiform artifact related data to be interconnected.
 
 The goal of this collection of ontologies is to connect:
-* Linked Data Dictionaries defined by the (https://www.w3.org/2019/09/lexicog/)[Ontolex-Lemon model] 
+* Linked Data Dictionaries defined by the [Ontolex-Lemon model](https://www.w3.org/2019/09/lexicog/)
 * Cuneiform 3D meshes
 * 3D renderings
 * Photos
@@ -13,14 +13,14 @@ The goal of this collection of ontologies is to connect:
 ## Annotation vocabularies
 Annotation vocabularies used in this repository are suited for the need of annotations being made on depictions of sides of cuneiform tablets.
 ![Possible areas of annotation on a cuneiform tablet](images/annotation_areas.png)
-The previous picture shows possible areas of annotation on a cuneiform tablet. These areas among others are covered by the annotation vocabulary which is present in this repository and might be used in any annotation program using for example the (https://www.w3.org/TR/annotation-model/)[W3C Web Annotation Data Model] for annotation.
+The previous picture shows possible areas of annotation on a cuneiform tablet. These areas among others are covered by the annotation vocabulary which is present in this repository and might be used in any annotation program using for example the [W3C Web Annotation Data Model](https://www.w3.org/TR/annotation-model/) for annotation.
 
 ## Part Of Speech Tagging Vocabularies
-This repository includes vocabularies for annotating Part Of Speech Tags derived from the (https://github.com/acoli-repo/olia)[OLiA model].
+This repository includes vocabularies for annotating Part Of Speech Tags derived from the [OLiA model](https://github.com/acoli-repo/olia).
 The following languages may be annotated with the vocabularies provided:
 * Akkadian
 * Hittite
-The vocabularies include a specific Part Of Speech Tagging set by the (https://www.hethport.uni-wuerzburg.de/HPM/index.php)[Hethitology portal Mainz], refined by experts of the University of Mainz.
+The vocabularies include a specific Part Of Speech Tagging set by the [Hethitology portal Mainz](https://www.hethport.uni-wuerzburg.de/HPM/index.php), refined by experts of the University of Mainz.
 The definition of different part of speech tagging sets is possible.
 
 ## Conversion scripts
