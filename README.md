@@ -1,15 +1,14 @@
-# cuneiformontology
+# Cuneiform Ontology
 
-This repository includes ontologies which enable cuneiform artifact related data to be interconnected.
+This repository includes a set of ontologies which enable cuneiform artifact related data to be interconnected.
 
-An ontology model to integrate cuneiform data resources
-
-* Linked Data Dictionaries
+The goal of this collection of ontologies is to connect:
+* Linked Data Dictionaries defined by the (https://www.w3.org/2019/09/lexicog/)[Ontolex-Lemon model] 
 * Cuneiform 3D meshes
 * 3D renderings
 * Photos
 * Part of Speech Tagging Vocabularies 
-
+* Annotations on the aforementioned media
 
 ## Annotation vocabularies
 Annotation vocabularies used in this repository are suited for the need of annotations being made on depictions of sides of cuneiform tablets.
