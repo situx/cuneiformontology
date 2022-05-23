@@ -10,6 +10,8 @@ The goal of this collection of ontologies is to connect:
 * Part of Speech Tagging Vocabularies 
 * Annotations on the aforementioned media
 
+For an overview of all parts of the ontology model please check out the Github Page of this repository: https://situx.github.io/cuneiformontology/
+
 ## Annotation vocabularies
 Annotation vocabularies used in this repository are suited for the need of annotations being made on depictions of sides of cuneiform tablets.
 ![Possible areas of annotation on a cuneiform tablet](images/annotation_areas.png)
