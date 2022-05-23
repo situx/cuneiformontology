@@ -15,7 +15,7 @@ An ontology model to integrate cuneiform data resources
 Annotation vocabularies used in this repository are suited for the need of annotations being made on depictions of sides of cuneiform tablets.
 
 ## Part Of Speech Tagging Vocabularies
-This repository includes vocabularies for annotating Part Of Speech Tags derived from the OLiA model.
+This repository includes vocabularies for annotating Part Of Speech Tags derived from the (https://github.com/acoli-repo/olia)[OLiA model].
 The following languages may be annotated with the vocabularies provided:
 * Akkadian
 * Hittite
