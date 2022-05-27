@@ -665,6 +665,12 @@ cunei:Image rdf:type owl:Class ;
 cunei:ImageAnnotation rdf:type owl:Class .
 
 
+###  http://www.purl.org/cuneiform/LawCollection
+cunei:LawCollection rdf:type owl:Class ;
+                    rdfs:subClassOf cunei:legal ;
+                    rdfs:label "law collection" .
+
+
 ###  http://www.purl.org/cuneiform/LeftSide
 cunei:LeftSide rdf:type owl:Class ;
                rdfs:subClassOf cunei:TabletSide ;
@@ -707,6 +713,12 @@ cunei:Material rdf:type owl:Class ;
 cunei:MaterialAspect rdf:type owl:Class ;
                      rdfs:label "material aspect" ;
                      <http://www.w3.org/2004/02/skos/core#definition> "A property of the material the cuneiform artifact is comprised of" .
+
+
+###  http://www.purl.org/cuneiform/Narrative
+cunei:Narrative rdf:type owl:Class ;
+                rdfs:subClassOf cunei:Genre ;
+                rdfs:label "narrative" .
 
 
 ###  http://www.purl.org/cuneiform/ObverseSide
@@ -772,6 +784,12 @@ cunei:PaleoCode_W rdf:type owl:Class ;
                   <http://www.w3.org/2004/02/skos/core#definition> "Wedge Type W as defined by the PaleoCodage encoding"@en .
 
 
+###  http://www.purl.org/cuneiform/PersonList
+cunei:PersonList rdf:type owl:Class ;
+                 rdfs:subClassOf cunei:List ;
+                 rdfs:label "list of person" .
+
+
 ###  http://www.purl.org/cuneiform/PictoralElement
 cunei:PictoralElement rdf:type owl:Class ;
                       rdfs:subClassOf cunei:TabletFeature ;
@@ -783,6 +801,18 @@ cunei:PictoralElement rdf:type owl:Class ;
 cunei:PointCloud rdf:type owl:Class ;
                  rdfs:label "point cloud"@en ;
                  <http://www.w3.org/2004/02/skos/core#definition> "A set of points in a given coordinate space"@en .
+
+
+###  http://www.purl.org/cuneiform/Receipt
+cunei:Receipt rdf:type owl:Class ;
+              rdfs:subClassOf cunei:Genre ;
+              rdfs:label "receipt" .
+
+
+###  http://www.purl.org/cuneiform/Recipe
+cunei:Recipe rdf:type owl:Class ;
+             rdfs:subClassOf cunei:Genre ;
+             rdfs:label "recipe" .
 
 
 ###  http://www.purl.org/cuneiform/ReverseSide
@@ -797,6 +827,12 @@ cunei:RightSide rdf:type owl:Class ;
                 rdfs:subClassOf cunei:TabletSide ;
                 rdfs:label "right side"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "The right side of a cuneiform tablet"@en .
+
+
+###  http://www.purl.org/cuneiform/Ritual
+cunei:Ritual rdf:type owl:Class ;
+             rdfs:subClassOf cunei:Genre ;
+             rdfs:label "ritual" .
 
 
 ###  http://www.purl.org/cuneiform/Ruling
@@ -1287,6 +1323,11 @@ cunei:carnelian rdf:type owl:NamedIndividual ,
                          cunei:Material .
 
 
+###  http://www.purl.org/cuneiform/ceramic
+cunei:ceramic rdf:type owl:NamedIndividual ,
+                       cunei:Material .
+
+
 ###  http://www.purl.org/cuneiform/chlorite
 cunei:chlorite rdf:type owl:NamedIndividual ,
                         cunei:Material .
@@ -1310,6 +1351,25 @@ cunei:composite rdf:type owl:NamedIndividual ,
 ###  http://www.purl.org/cuneiform/copper
 cunei:copper rdf:type owl:NamedIndividual ,
                       cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/dolomite
+cunei:dolomite rdf:type owl:NamedIndividual .
+
+
+###  http://www.purl.org/cuneiform/faience
+cunei:faience rdf:type owl:NamedIndividual ,
+                       cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/feldspar
+cunei:feldspar rdf:type owl:NamedIndividual ,
+                        cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/flint
+cunei:flint rdf:type owl:NamedIndividual ,
+                     cunei:Material .
 
 
 ###  http://www.purl.org/cuneiform/glazed
@@ -1368,6 +1428,11 @@ cunei:obsidian rdf:type owl:NamedIndividual ,
                         cunei:Material .
 
 
+###  http://www.purl.org/cuneiform/onyx
+cunei:onyx rdf:type owl:NamedIndividual ,
+                    cunei:Material .
+
+
 ###  http://www.purl.org/cuneiform/petrified
 cunei:petrified rdf:type owl:NamedIndividual ,
                          cunei:MaterialAspect .
@@ -1396,6 +1461,10 @@ cunei:schist rdf:type owl:NamedIndividual ,
 ###  http://www.purl.org/cuneiform/serpentine
 cunei:serpentine rdf:type owl:NamedIndividual ,
                           cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/shale
+cunei:shale rdf:type owl:NamedIndividual .
 
 
 ###  http://www.purl.org/cuneiform/shell
