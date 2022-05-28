@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cuneiform Ontoloy Interlinks</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC40lEQVRYhe2UT0hUQRzHp6Iss1B3VZKIDbbdfW9mnoi4f3zzjkJQeOgS0SEIb1EWBGGlLLu460zQPQM1unUIIjA6rfpm6ZAhHjoIRVQUFUlEbG+euTsdXG1d3VL3bVD4g+9h+L35fT/8fvN7ADgY9aHY5fpIvK82HO9ysu66wxWOzbkjcekKx0a2ALYA/n2AGi3a6ArFezcidziecQygNhhrcUficjP6PwBqtGijKxy/thnVBePHywYoDsFhl53GV8SEcsTx4usCMLUewTVpc23BNvEzm6Neyf1+KcG2vwqwUjgrOJq2JmHftwmkVBRGTvncFodnbI7vChO/FRznCmHsNM7aHM9Yk7Df5iqsLMw9sMNOK2g+jS4IEz0UJv4iuJZb2RltWnB4UZqH6ioGAgAAGe5vtiZhtzDx7OoRadLmeM7m6IRjhnLMW2Vx1bA5GhAmnhIcz6/xNj4Ujsky8UspwfayjDPjsF2Y6L7N8Vzx/BfP+KPg6LbgSqd8DnfJW2CnbaLhfH5ephpqygJYvQU4Z3P82TLRsDDhUTnmrSq+Y3N0Mg+Xldy/zwEAnLMWZ3pHpNExmfLs/t0dOdVcbT0JeKxUwFP2VljjqiE47Jp53LTXNxhsUZjerTByXWX6VZWRs/4bIQ2ACv+UAomgDzLCISNZxAxZKMhIDjLy1JfsaK+I+eGBUBNk5E2x8RogX/PdcDZUqieWTSh5D6nOVKqfhoycUmlHFFIyu5RXqf7AcQDISCpv/tqbMBqK883RtmpISRoxQyJKPgGn3wNk5NEigDFa6hslqV/Kj+FdBQD0bshIDlKSLlVcoWQo36UhR80BAMB73lulMn0EMpJTqD6qJiOt3mho/8GbkT2BZNgDB/V+RI0fkOrT3kRIVQbaDizJm2hdNbINBxwk5xAj3yEjuV9rZ1iIkgxixkLBA83mz8uCjLwoGwAx0vOnFSy5mtR4VTaAQvVORMnwZgSpzkrV/QmdE2tKe46+MQAAAABJRU5ErkJggg==">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhklEQVQ4jbWPzStEURjG3yQLirlGKUnKFO45Z+SjmXvnnmthQcpCoVhYmD/AwmJiI3OvZuZc2U3UlKU0/gAslMw9JgvhHxAr2fko7r0jHSsl+TgbTz2Lt5731/MASEiJW9ONml2QyX6rsGalmnT74v8BDf12hxJfpV8d1uwNKUBYszabdFv84L8B9X0rESVmmUup2fme0cVhJWaZHw4NWL1Sew
+EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ9Hn31OgoATL+CkLDGB5H1OKj4nFd/FBxUXJ0UZNb4edw/6nLyJXaj5FeCVyPLNIVmYK8TG1IwWb16L1gEACAFV90ftoT8bdOX0EeyY99gxBXZMgRz6qGb1KantAACI0UvE6F5XJqEjpsdURouI0Vt5gGOUkUNnPu7ObGIIMfNaGqDmjDRi9FZldF1lRgYzeqUyeoiY4ag5Iy3RgOYRM8+/M2bG8efsO4hGrpmJseyMAAAAAElFTkSuQmCC">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+    <style>
+        #pylode {
+            position: fixed;
+            top: 130px;
+            left: -60px;
+            font-size: small;
+            transform: rotate(-90deg);
+            color: grey;
+        }
+        #pylode a {
+            font-size: 2em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #005A9C;
+        }
+        #pylode a:hover {
+            color: #333;
+        }
+
+        .cardinality {
+            font-style: italic;
+            color: #aa00aa;
+        }
+
+        dt {
+            font-weight: bold;
+            padding: 5px 0 5px 0;
+        }
+
+        ul.hlist {
+            list-style-type: none;
+            border: 1px solid navy;
+            padding:5px;
+            background-color: #F4FFFF;
+        }
+
+        ul.hierarchy {
+            border: 1px solid navy;
+            padding: 5px 25px 5px 25px;
+            background-color: #F4FFFF;
+        }
+
+
+        ul.hlist li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .entity {
+            border: 1px solid navy;
+            margin:5px 0 5px 0;
+            padding: 5px;
+        }
+
+        .entity th {
+            width: 150px;
+            vertical-align: top;
+        }
+
+        .entity th,
+        .entity td {
+            padding-bottom: 20px;
+        }
+
+        .entity table th {
+            text-align: left;
+        }
+
+        section#overview img {
+            max-width: 1000px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            text-align: left
+        }
+        h1, h2, h3 {
+            color: #005A9C; background: white
+        }
+        h1 {
+            font: 170% sans-serif;
+            line-height: 110%;
+        }
+        h2 {
+            font: 140% sans-serif;
+            margin-top:40px;
+        }
+        h3 {
+            font: 120% sans-serif;
+            margin-top: 3px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid navy;
+        }
+        h4 { font: bold 100% sans-serif }
+        h5 { font: italic 100% sans-serif }
+        h6 { font: small-caps 100% sans-serif }
+
+
+        body {
+            padding: 2em 70px 2em 70px;
+            margin: 0;
+            font-family: sans-serif;
+            color: black;
+            background: white;
+            background-position: top left;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            text-align: justify;
+        }
+
+        section {
+            max-width: 1500px;
+        }
+
+        .figure {
+            margin-bottom: 20px;
+        }
+
+        :link { color: #00C; background: transparent }
+        :visited { color: #609; background: transparent }
+        a:active { color: #C00; background: transparent }
+
+        .sup-c,
+        .sup-op,
+        .sup-fp,
+        .sup-dp,
+        .sup-ap,
+        .sup-p,
+        .sup-ni,
+        .sup-con,
+        .sup-col {
+            cursor:help;
+            margin-left: 3px;
+        }
+
+        .sup-c {
+            color:orange;
+        }
+
+        .sup-op {
+            color:navy;
+        }
+
+        .sup-fp {
+            color:lightskyblue;
+        }
+
+        .sup-dp {
+            color:green;
+        }
+
+        .sup-ap {
+            color:darkred;
+        }
+
+        .sup-p {
+            color:black;
+        }
+
+        .sup-ni {
+            color:brown;
+        }
+
+        .sup-con {
+            color:orange;
+        }
+
+        .sup-col {
+            color:darkred;
+        }
+
+        code {
+            font-size: large;
+            color: darkred;
+        }
+
+        /* less prominent links for properties */
+        .proplink {
+            color: #336;
+            text-decoration: none;
+        }
+    </style>
+    
+    <script type="application/ld+json">
+      [
+  {
+    "@id": "http://www.purl.org/cuneiform/",
+    "@type": [
+      "https://schema.org/DefinedTermSet"
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Cuneiform Ontoloy Interlinks"
+      }
+    ]
+  }
+]
+    </script>
+</head>
+<body>
+  <div id="pylode">made by <a href="http://github.com/rdflib/pyLODE">
+    <span style="color:#329545;">p</span><span style="color:#f9cb33;">y</span>LODE</a>
+    <span style="font-size:smaller;">2.13.2</span>
+  </div>
+  <h1>Cuneiform Ontoloy Interlinks</h1>
+<section id="metadata">
+    <h2 style="display:none;">Metadata</h2>
+    <dl>
+        <dt>URI</dt>
+        <dd><code>http://www.purl.org/cuneiform/</code></dd>
+        <dt>Ontology RDF</dt>
+        <dd><a href="cuneiformontology_interlinks.ttl">RDF (turtle)</a></dd>
+    </dl>
+</section>
+<section id="toc">
+    <h2>Table of Contents</h2>
+    <ol>
+        <li><a href="#classes">Classes</a></li>
+        <li><a href="#annotationproperties">Annotation Properties</a></li>
+        <li><a href="#namedindividuals">Named Individuals</a></li>
+        <li><a href="#namespaces">Namespaces</a></li>
+        <li><a href="#legend">Legend</a></li>
+    </ol>
+</section>
+<section id="overview">
+    <h2>Overview</h2>
+    <div class="figure">
+        <div style="width:500px; height:50px; background-color: lightgrey; border:solid 2px grey; padding:10px;margin-bottom:5px; text-align:center;">Pictures say 1,000 words</div>
+        <div class="caption"><strong>Figure 1:</strong> Ontology overview</div>
+    </div>
+</section>
+  <section id="classes">
+    <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <ul class="hlist">
+      <li><a href="#CuneiformOntologyInstance">CuneiformOntologyInstance</a></li>
+      <li><a href="#material">material</a></li>
+      <li><a href="#WikidataInstance">WikidataInstance</a></li>
+    </ul>
+    <div class="entity class" id="CuneiformOntologyInstance">
+        <h3>
+          CuneiformOntologyInstance<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#CuneiformOntologyInstance" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/CuneiformOntologyInstance</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="material">
+        <h3>
+          material<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#material" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/Material</code></td>
+            </tr>
+            <tr>
+                <th>Members</th>
+                <td>
+                    <a href="http://www.purl.org/cuneiform/flint">flint</a><br/>
+                    <a href="http://www.purl.org/cuneiform/aphrite">aphrite</a><br/>
+                    <a href="http://www.purl.org/cuneiform/chlorite">chlorite</a><br/>
+                    <a href="http://www.purl.org/cuneiform/dolomite">dolomite</a><br/>
+                    <a href="http://www.purl.org/cuneiform/carnelian">carnelian</a><br/>
+                    <a href="http://www.purl.org/cuneiform/feldspar">feldspar</a><br/>
+                    <a href="http://www.purl.org/cuneiform/alabaster">alabaster</a><br/>
+                    <a href="http://www.purl.org/cuneiform/calcite">calcite</a><br/>
+                    <a href="http://www.purl.org/cuneiform/aragonite">aragonite</a><br/>
+                    <a href="http://www.purl.org/cuneiform/copper">copper</a><br/>
+                    <a href="http://www.purl.org/cuneiform/ceramic">ceramic</a><br/>
+                    <a href="http://www.purl.org/cuneiform/clay">clay</a><br/>
+                    <a href="http://www.purl.org/cuneiform/bloodstone">bloodstone</a><br/>
+                    <a href="http://www.purl.org/cuneiform/faience">faience</a><br/>
+                    <a href="https://www.wikidata.org/entity/Q143447">https://www.wikidata.org/entity/Q143447</a><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="WikidataInstance">
+        <h3>
+          WikidataInstance<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#WikidataInstance" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.purl.org/cuneiform/WikidataInstance</code></td>
+            </tr>
+            <tr>
+                <th>Members</th>
+                <td>
+                    <a href="https://www.wikidata.org/wiki/Q166409">https://www.wikidata.org/wiki/Q166409</a><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+<section id="annotationproperties">
+    <h2>Annotation Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <ul class="hlist">
+        <li><a href="#definition">definition</a></li>
+    </ul>
+    <div class="entity property" id="definition">
+        <h3>definition<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#definition" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.w3.org/2004/02/skos/core#definition</code></td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+  
+    <section id="namedindividuals">
+        <h2>Named Individuals <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+        <ul class="hlist">
+            <li><a href="#Wikidata:Dolomite">Wikidata: Dolomite</a></li>
+            <li><a href="#Wikidata:alabaster">Wikidata: alabaster</a></li>
+            <li><a href="#Wikidata:aragonite">Wikidata: aragonite</a></li>
+            <li><a href="#Wikidata:calcite">Wikidata: calcite</a></li>
+            <li><a href="#Wikidata:carnelian">Wikidata: carnelian</a></li>
+            <li><a href="#Wikidata:ceramic">Wikidata: ceramic</a></li>
+            <li><a href="#Wikidata:cholorousacid">Wikidata: cholorous acid</a></li>
+            <li><a href="#Wikidata:clay">Wikidata: clay</a></li>
+            <li><a href="#Wikidata:copper">Wikidata: copper</a></li>
+            <li><a href="#Wikidata:faience">Wikidata: faience</a></li>
+            <li><a href="#Wikidata:feldspar">Wikidata: feldspar</a></li>
+            <li><a href="#Wikidata:flint">Wikidata: flint</a></li>
+            <li><a href="#Wikidata:gneiss">Wikidata: gneiss</a></li>
+            <li><a href="#Wikidata:heliotrope">Wikidata: heliotrope</a></li>
+            <li><a href="#alabaster">alabaster</a></li>
+            <li><a href="#aphrite">aphrite</a></li>
+            <li><a href="#aragonite">aragonite</a></li>
+            <li><a href="#bloodstone">bloodstone</a></li>
+            <li><a href="#calcite">calcite</a></li>
+            <li><a href="#carnelian">carnelian</a></li>
+            <li><a href="#ceramic">ceramic</a></li>
+            <li><a href="#chlorite">chlorite</a></li>
+            <li><a href="#clay">clay</a></li>
+            <li><a href="#copper">copper</a></li>
+            <li><a href="#dolomite">dolomite</a></li>
+            <li><a href="#faience">faience</a></li>
+            <li><a href="#feldspar">feldspar</a></li>
+            <li><a href="#flint">flint</a></li>
+            <li><a href="#gneiss">gneiss</a></li>
+        </ul>
+            <div class="entity named_individual" id="alabaster">
+        <h3>alabaster<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/alabaster
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/Material">Material</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    gypsum variety
+                </td>
+            </tr>
+            <tr>
+                <th>Same As</th>
+                <td>
+                    <a href="https://www.wikidata.org/entity/Q143447">https://www.wikidata.org/entity/Q143447</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="aphrite">
+        <h3>aphrite<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/aphrite
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/Material">Material</a><br/>
+            </dd>
+        </table>
+    </div>
+            <div class="entity named_individual" id="aragonite">
+        <h3>aragonite<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/aragonite
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/Material">Material</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    carbonate mineral
+                </td>
+            </tr>
+            <tr>
+                <th>Same As</th>
+                <td>
+                    <a href="https://www.wikidata.org/entity/Q23775">https://www.wikidata.org/entity/Q23775</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="bloodstone">
+        <h3>bloodstone<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/bloodstone
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/Material">Material</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    chalcedony variety
+                </td>
+            </tr>
+            <tr>
+                <th>Same As</th>
+                <td>
+                    <a href="https://www.wikidata.org/entity/Q430174">https://www.wikidata.org/entity/Q430174</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="calcite">
+        <h3>calcite<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/calcite
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/Material">Material</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    carbonate mineral
+                </td>
+            </tr>
+            <tr>
+                <th>Same As</th>
+                <td>
+                    <a href="https://www.wikidata.org/entity/Q171917">https://www.wikidata.org/entity/Q171917</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="carnelian">
+        <h3>carnelian<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/carnelian
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/Material">Material</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    yellow-red chalcedony variety, used as a semi-precious gemstone
+                </td>
+            </tr>
+            <tr>
+                <th>Same As</th>
+                <td>
+                    <a href="https://www.wikidata.org/wiki/Q324369">https://www.wikidata.org/wiki/Q324369</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="ceramic">
+        <h3>ceramic<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/ceramic
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/Material">Material</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    inorganic, nonmetallic solid prepared by the action of heat
+                </td>
+            </tr>
+            <tr>
+                <th>Same As</th>
+                <td>
+                    <a href="https://www.wikidata.org/wiki/Q45621">https://www.wikidata.org/wiki/Q45621</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="chlorite">
+        <h3>chlorite<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/chlorite
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/Material">Material</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    chemical compound
+                </td>
+            </tr>
+            <tr>
+                <th>Same As</th>
+                <td>
+                    <a href="https://www.wikidata.org/wiki/Q407495">https://www.wikidata.org/wiki/Q407495</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="clay">
+        <h3>clay<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/clay
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/Material">Material</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    soft rock based compound often used for sculpture and tools
+                </td>
+            </tr>
+            <tr>
+                <th>Same As</th>
+                <td>
+                    <a href="https://www.wikidata.org/wiki/Q42302">https://www.wikidata.org/wiki/Q42302</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="copper">
+        <h3>copper<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/copper
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/Material">Material</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    chemical element with symbol Cu and atomic number 29
+                </td>
+            </tr>
+            <tr>
+                <th>Same As</th>
+                <td>
+                    <a href="https://www.wikidata.org/wiki/Q753">https://www.wikidata.org/wiki/Q753</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="dolomite">
+        <h3>dolomite<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/dolomite
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/Material">Material</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    carbonate mineral - CaMg(CO₃)₂
+                </td>
+            </tr>
+            <tr>
+                <th>Same As</th>
+                <td>
+                    <a href="https://www.wikidata.org/wiki/Q167741">https://www.wikidata.org/wiki/Q167741</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="faience">
+        <h3>faience<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/faience
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/Material">Material</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    tin-glazed pottery
+                </td>
+            </tr>
+            <tr>
+                <th>Same As</th>
+                <td>
+                    <a href="https://www.wikidata.org/wiki/Q209671">https://www.wikidata.org/wiki/Q209671</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="feldspar">
+        <h3>feldspar<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/feldspar
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/Material">Material</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    mineral group
+                </td>
+            </tr>
+            <tr>
+                <th>Same As</th>
+                <td>
+                    <a href="https://www.wikidata.org/wiki/Q170258">https://www.wikidata.org/wiki/Q170258</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="flint">
+        <h3>flint<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/flint
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/Material">Material</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    sedimentary rock, chert variety
+                </td>
+            </tr>
+            <tr>
+                <th>Same As</th>
+                <td>
+                    <a href="https://www.wikidata.org/wiki/Q83087">https://www.wikidata.org/wiki/Q83087</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="gneiss">
+        <h3>gneiss<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://www.purl.org/cuneiform/gneiss
+                  
+                  </code>
+                </td>
+            </tr>
+            <tr>
+                <th>Same As</th>
+                <td>
+                    <a href="https://www.wikidata.org/wiki/Q166409">https://www.wikidata.org/wiki/Q166409</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Wikidata:alabaster">
+        <h3>Wikidata: alabaster<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://www.wikidata.org/entity/Q143447
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/Material">Material</a><br/>
+            </dd>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Wikidata:calcite">
+        <h3>Wikidata: calcite<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://www.wikidata.org/entity/Q171917
+                  
+                  </code>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Wikidata:aragonite">
+        <h3>Wikidata: aragonite<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://www.wikidata.org/entity/Q23775
+                  
+                  </code>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Wikidata:heliotrope">
+        <h3>Wikidata: heliotrope<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://www.wikidata.org/entity/Q430174
+                  
+                  </code>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Wikidata:gneiss">
+        <h3>Wikidata: gneiss<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://www.wikidata.org/wiki/Q166409
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="http://www.purl.org/cuneiform/WikidataInstance">WikidataInstance</a><br/>
+            </dd>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Wikidata:Dolomite">
+        <h3>Wikidata: Dolomite<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://www.wikidata.org/wiki/Q167741
+                  
+                  </code>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Wikidata:feldspar">
+        <h3>Wikidata: feldspar<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://www.wikidata.org/wiki/Q170258
+                  
+                  </code>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Wikidata:faience">
+        <h3>Wikidata: faience<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://www.wikidata.org/wiki/Q209671
+                  
+                  </code>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Wikidata:carnelian">
+        <h3>Wikidata: carnelian<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://www.wikidata.org/wiki/Q324369
+                  
+                  </code>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Wikidata:cholorousacid">
+        <h3>Wikidata: cholorous acid<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://www.wikidata.org/wiki/Q407495
+                  
+                  </code>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Wikidata:clay">
+        <h3>Wikidata: clay<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://www.wikidata.org/wiki/Q42302
+                  
+                  </code>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Wikidata:ceramic">
+        <h3>Wikidata: ceramic<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://www.wikidata.org/wiki/Q45621
+                  
+                  </code>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Wikidata:copper">
+        <h3>Wikidata: copper<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://www.wikidata.org/wiki/Q753
+                  
+                  </code>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Wikidata:flint">
+        <h3>Wikidata: flint<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://www.wikidata.org/wiki/Q83087
+                  
+                  </code>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </section>
+
+  <section id="namespaces">
+    <h2>Namespaces <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <dl>
+        <dt>default (:)</dt>
+        <dd><code>http://www.purl.org/cuneiform/</code></dd>
+        <dt>brick</dt>
+        <dd><code>https://brickschema.org/schema/Brick#</code></dd>
+        <dt>csvw</dt>
+        <dd><code>http://www.w3.org/ns/csvw#</code></dd>
+        <dt>dc</dt>
+        <dd><code>http://purl.org/dc/elements/1.1/</code></dd>
+        <dt>dcam</dt>
+        <dd><code>http://purl.org/dc/dcam/</code></dd>
+        <dt>dcat</dt>
+        <dd><code>http://www.w3.org/ns/dcat#</code></dd>
+        <dt>dcmitype</dt>
+        <dd><code>http://purl.org/dc/dcmitype/</code></dd>
+        <dt>dcterms</dt>
+        <dd><code>http://purl.org/dc/terms/</code></dd>
+        <dt>doap</dt>
+        <dd><code>http://usefulinc.com/ns/doap#</code></dd>
+        <dt>foaf</dt>
+        <dd><code>http://xmlns.com/foaf/0.1/</code></dd>
+        <dt>odrl</dt>
+        <dd><code>http://www.w3.org/ns/odrl/2/</code></dd>
+        <dt>org</dt>
+        <dd><code>http://www.w3.org/ns/org#</code></dd>
+        <dt>owl</dt>
+        <dd><code>http://www.w3.org/2002/07/owl#</code></dd>
+        <dt>prof</dt>
+        <dd><code>http://www.w3.org/ns/dx/prof/</code></dd>
+        <dt>prov</dt>
+        <dd><code>http://www.w3.org/ns/prov#</code></dd>
+        <dt>qb</dt>
+        <dd><code>http://purl.org/linked-data/cube#</code></dd>
+        <dt>rdf</dt>
+        <dd><code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code></dd>
+        <dt>rdfs</dt>
+        <dd><code>http://www.w3.org/2000/01/rdf-schema#</code></dd>
+        <dt>sdo</dt>
+        <dd><code>https://schema.org/</code></dd>
+        <dt>sh</dt>
+        <dd><code>http://www.w3.org/ns/shacl#</code></dd>
+        <dt>skos</dt>
+        <dd><code>http://www.w3.org/2004/02/skos/core#</code></dd>
+        <dt>sosa</dt>
+        <dd><code>http://www.w3.org/ns/sosa/</code></dd>
+        <dt>ssn</dt>
+        <dd><code>http://www.w3.org/ns/ssn/</code></dd>
+        <dt>time</dt>
+        <dd><code>http://www.w3.org/2006/time#</code></dd>
+        <dt>vann</dt>
+        <dd><code>http://purl.org/vocab/vann/</code></dd>
+        <dt>void</dt>
+        <dd><code>http://rdfs.org/ns/void#</code></dd>
+        <dt>xsd</dt>
+        <dd><code>http://www.w3.org/2001/XMLSchema#</code></dd>
+    </dl>
+</section>
+  <section id="legend">
+      <h2>Legend</h2>
+      <table class="entity">
+          <tr><td><sup class="sup-c" title="Classes">c</sup></td><td>Classes</td></tr>
+          <tr><td><sup class="sup-op" title="Object Properties">op</sup></td><td>Object Properties</td></tr>
+          <tr><td><sup class="sup-fp" title="Functional Properties">fp</sup></td><td>Functional Properties</td></tr>
+          <tr><td><sup class="sup-dp" title="Data Properties">dp</sup></td><td>Data Properties</td></tr>
+          <tr><td><sup class="sup-ap" title="Annotation Properties">ap</sup></td><td>Annotation Properties</td></tr>
+          <tr><td><sup class="sup-p" title="Properties">p</sup></td><td>Properties</td></tr>
+          <tr><td><sup class="sup-ni" title="Named Individuals">ni</sup></td><td>Named Individuals</td></tr>
+      </table>
+  </section>
+</body>
+</html>
