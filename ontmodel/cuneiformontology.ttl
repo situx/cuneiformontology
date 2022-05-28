@@ -1288,6 +1288,13 @@ cunei:alloy rdf:type owl:NamedIndividual ,
                      cunei:MaterialAspect .
 
 
+###  http://www.purl.org/cuneiform/aphrite
+cunei:aphrite rdf:type owl:NamedIndividual ,
+                       cunei:Material ;
+              rdfs:label "aphrite" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "a foliated or chalky variety of calcite that is pearly in luster" .
+
+
 ###  http://www.purl.org/cuneiform/aragonite
 cunei:aragonite rdf:type owl:NamedIndividual ,
                          cunei:Material .
@@ -1306,6 +1313,11 @@ cunei:banded rdf:type owl:NamedIndividual ,
 ###  http://www.purl.org/cuneiform/bitumen
 cunei:bitumen rdf:type owl:NamedIndividual ,
                        cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/bloodstone
+cunei:bloodstone rdf:type owl:NamedIndividual ,
+                          cunei:Material .
 
 
 ###  http://www.purl.org/cuneiform/burnt
@@ -1335,7 +1347,8 @@ cunei:chlorite rdf:type owl:NamedIndividual ,
 
 ###  http://www.purl.org/cuneiform/clay
 cunei:clay rdf:type owl:NamedIndividual ,
-                    cunei:Material .
+                    cunei:Material ;
+           rdfs:label "clay" .
 
 
 ###  http://www.purl.org/cuneiform/clear
@@ -1350,11 +1363,14 @@ cunei:composite rdf:type owl:NamedIndividual ,
 
 ###  http://www.purl.org/cuneiform/copper
 cunei:copper rdf:type owl:NamedIndividual ,
-                      cunei:Material .
+                      cunei:Material ;
+             rdfs:label "copper" .
 
 
 ###  http://www.purl.org/cuneiform/dolomite
-cunei:dolomite rdf:type owl:NamedIndividual .
+cunei:dolomite rdf:type owl:NamedIndividual ,
+                        cunei:Material ;
+               rdfs:label "dolomite" .
 
 
 ###  http://www.purl.org/cuneiform/faience
@@ -1364,12 +1380,14 @@ cunei:faience rdf:type owl:NamedIndividual ,
 
 ###  http://www.purl.org/cuneiform/feldspar
 cunei:feldspar rdf:type owl:NamedIndividual ,
-                        cunei:Material .
+                        cunei:Material ;
+               rdfs:label "feldspar" .
 
 
 ###  http://www.purl.org/cuneiform/flint
 cunei:flint rdf:type owl:NamedIndividual ,
-                     cunei:Material .
+                     cunei:Material ;
+            rdfs:label "flint" .
 
 
 ###  http://www.purl.org/cuneiform/glazed
@@ -1379,22 +1397,31 @@ cunei:glazed rdf:type owl:NamedIndividual ,
 
 ###  http://www.purl.org/cuneiform/gneiss
 cunei:gneiss rdf:type owl:NamedIndividual ,
-                      cunei:Material .
+                      cunei:Material ;
+             rdfs:label "gneiss" .
 
 
 ###  http://www.purl.org/cuneiform/gypsum
 cunei:gypsum rdf:type owl:NamedIndividual ,
-                      cunei:Material .
+                      cunei:Material ;
+             rdfs:label "gypsum" .
+
+
+###  http://www.purl.org/cuneiform/invoryfossil
+cunei:invoryfossil rdf:type owl:NamedIndividual ;
+                   rdfs:label "ivoryfossil" .
 
 
 ###  http://www.purl.org/cuneiform/iron
 cunei:iron rdf:type owl:NamedIndividual ,
-                    cunei:Material .
+                    cunei:Material ;
+           rdfs:label "iron" .
 
 
 ###  http://www.purl.org/cuneiform/ivory
 cunei:ivory rdf:type owl:NamedIndividual ,
-                     cunei:Material .
+                     cunei:Material ;
+            rdfs:label "ivory" .
 
 
 ###  http://www.purl.org/cuneiform/jadelike
@@ -1486,6 +1513,10 @@ cunei:stalagmite rdf:type owl:NamedIndividual ,
 cunei:stone rdf:type owl:NamedIndividual ,
                      cunei:Material ;
             rdfs:label "stone" .
+
+
+###  http://www.purl.org/cuneiform/syenite
+cunei:syenite rdf:type owl:NamedIndividual .
 
 
 ###  http://www.purl.org/cuneiform/translucent
