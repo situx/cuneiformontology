@@ -1280,7 +1280,9 @@ cunei:agate rdf:type owl:NamedIndividual ,
 
 ###  http://www.purl.org/cuneiform/alabaster
 cunei:alabaster rdf:type owl:NamedIndividual ,
-                         cunei:Material .
+                         cunei:Material ;
+                rdfs:label "alabaster" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "gypsum variety" .
 
 
 ###  http://www.purl.org/cuneiform/alloy
@@ -1317,7 +1319,9 @@ cunei:bitumen rdf:type owl:NamedIndividual ,
 
 ###  http://www.purl.org/cuneiform/bloodstone
 cunei:bloodstone rdf:type owl:NamedIndividual ,
-                          cunei:Material .
+                          cunei:Material ;
+                 rdfs:label "bloodstone" ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "chalcedony variety" .
 
 
 ###  http://www.purl.org/cuneiform/burnt
@@ -1327,28 +1331,37 @@ cunei:burnt rdf:type owl:NamedIndividual ,
 
 ###  http://www.purl.org/cuneiform/calcite
 cunei:calcite rdf:type owl:NamedIndividual ,
-                       cunei:Material .
+                       cunei:Material ;
+              rdfs:label "calcite" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "carbonate mineral" .
 
 
 ###  http://www.purl.org/cuneiform/carnelian
 cunei:carnelian rdf:type owl:NamedIndividual ,
-                         cunei:Material .
+                         cunei:Material ;
+                rdfs:label "carnelian" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "yellow-red chalcedony variety, used as a semi-precious gemstone" .
 
 
 ###  http://www.purl.org/cuneiform/ceramic
 cunei:ceramic rdf:type owl:NamedIndividual ,
-                       cunei:Material .
+                       cunei:Material ;
+              rdfs:label "ceramic" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "inorganic, nonmetallic solid prepared by the action of heat" .
 
 
 ###  http://www.purl.org/cuneiform/chlorite
 cunei:chlorite rdf:type owl:NamedIndividual ,
-                        cunei:Material .
+                        cunei:Material ;
+               rdfs:label "chlorite" ;
+               <http://www.w3.org/2004/02/skos/core#definition> "chemical compound" .
 
 
 ###  http://www.purl.org/cuneiform/clay
 cunei:clay rdf:type owl:NamedIndividual ,
                     cunei:Material ;
-           rdfs:label "clay" .
+           rdfs:label "clay" ;
+           <http://www.w3.org/2004/02/skos/core#definition> "soft rock based compound often used for sculpture and tools" .
 
 
 ###  http://www.purl.org/cuneiform/clear
@@ -1364,30 +1377,36 @@ cunei:composite rdf:type owl:NamedIndividual ,
 ###  http://www.purl.org/cuneiform/copper
 cunei:copper rdf:type owl:NamedIndividual ,
                       cunei:Material ;
-             rdfs:label "copper" .
+             rdfs:label "copper" ;
+             <http://www.w3.org/2004/02/skos/core#definition> "chemical element with symbol Cu and atomic number 29" .
 
 
 ###  http://www.purl.org/cuneiform/dolomite
 cunei:dolomite rdf:type owl:NamedIndividual ,
                         cunei:Material ;
-               rdfs:label "dolomite" .
+               rdfs:label "dolomite" ;
+               <http://www.w3.org/2004/02/skos/core#definition> "carbonate mineral - CaMg(CO₃)₂" .
 
 
 ###  http://www.purl.org/cuneiform/faience
 cunei:faience rdf:type owl:NamedIndividual ,
-                       cunei:Material .
+                       cunei:Material ;
+              rdfs:label "faience" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "tin-glazed pottery" .
 
 
 ###  http://www.purl.org/cuneiform/feldspar
 cunei:feldspar rdf:type owl:NamedIndividual ,
                         cunei:Material ;
-               rdfs:label "feldspar" .
+               rdfs:label "feldspar" ;
+               <http://www.w3.org/2004/02/skos/core#definition> "mineral group" .
 
 
 ###  http://www.purl.org/cuneiform/flint
 cunei:flint rdf:type owl:NamedIndividual ,
                      cunei:Material ;
-            rdfs:label "flint" .
+            rdfs:label "flint" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "sedimentary rock, chert variety" .
 
 
 ###  http://www.purl.org/cuneiform/glazed
@@ -1404,7 +1423,8 @@ cunei:gneiss rdf:type owl:NamedIndividual ,
 ###  http://www.purl.org/cuneiform/gypsum
 cunei:gypsum rdf:type owl:NamedIndividual ,
                       cunei:Material ;
-             rdfs:label "gypsum" .
+             rdfs:label "gypsum" ;
+             <http://www.w3.org/2004/02/skos/core#definition> "mineral, calcium sulfate with bounded water" .
 
 
 ###  http://www.purl.org/cuneiform/invoryfossil
@@ -1415,13 +1435,15 @@ cunei:invoryfossil rdf:type owl:NamedIndividual ;
 ###  http://www.purl.org/cuneiform/iron
 cunei:iron rdf:type owl:NamedIndividual ,
                     cunei:Material ;
-           rdfs:label "iron" .
+           rdfs:label "iron" ;
+           <http://www.w3.org/2004/02/skos/core#definition> "chemical element with symbol Fe and atomic number 26" .
 
 
 ###  http://www.purl.org/cuneiform/ivory
 cunei:ivory rdf:type owl:NamedIndividual ,
                      cunei:Material ;
-            rdfs:label "ivory" .
+            rdfs:label "ivory" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "material derived from the tusks and teeth of animals" .
 
 
 ###  http://www.purl.org/cuneiform/jadelike
@@ -1439,9 +1461,20 @@ cunei:lead rdf:type owl:NamedIndividual ,
                     cunei:Material .
 
 
+###  http://www.purl.org/cuneiform/limerite
+cunei:limerite rdf:type owl:NamedIndividual ,
+                        cunei:Material .
+
+
 ###  http://www.purl.org/cuneiform/limestone
 cunei:limestone rdf:type owl:NamedIndividual ,
                          cunei:Material .
+
+
+###  http://www.purl.org/cuneiform/magnetide
+cunei:magnetide rdf:type owl:NamedIndividual ,
+                         cunei:Material ;
+                rdfs:label "magnetide" .
 
 
 ###  http://www.purl.org/cuneiform/marble

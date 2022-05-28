@@ -6,7 +6,16 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://www.purl.org/cuneiform/> .
 
-<http://www.purl.org/cuneiform/> rdf:type owl:Ontology .
+<http://www.purl.org/cuneiform/> rdf:type owl:Ontology ;
+                                  rdfs:label "Cuneiform Ontoloy Interlinks" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
 
 #################################################################
 #    Classes
@@ -17,7 +26,8 @@
 
 
 ###  http://www.purl.org/cuneiform/Material
-:Material rdf:type owl:Class .
+:Material rdf:type owl:Class ;
+          rdfs:label "material" .
 
 
 ###  http://www.purl.org/cuneiform/WikidataInstance
@@ -28,16 +38,192 @@
 #    Individuals
 #################################################################
 
+###  http://www.purl.org/cuneiform/alabaster
+:alabaster rdf:type owl:NamedIndividual ,
+                    :Material ;
+           owl:sameAs <https://www.wikidata.org/entity/Q143447> ;
+           rdfs:label "alabaster" ;
+           <http://www.w3.org/2004/02/skos/core#definition> "gypsum variety" .
+
+
+###  http://www.purl.org/cuneiform/aphrite
+:aphrite rdf:type owl:NamedIndividual ,
+                  :Material ;
+         rdfs:label "aphrite" .
+
+
+###  http://www.purl.org/cuneiform/aragonite
+:aragonite rdf:type owl:NamedIndividual ,
+                    :Material ;
+           owl:sameAs <https://www.wikidata.org/entity/Q23775> ;
+           rdfs:label "aragonite" ;
+           <http://www.w3.org/2004/02/skos/core#definition> "carbonate mineral" .
+
+
+###  http://www.purl.org/cuneiform/bloodstone
+:bloodstone rdf:type owl:NamedIndividual ,
+                     :Material ;
+            owl:sameAs <https://www.wikidata.org/entity/Q430174> ;
+            rdfs:label "bloodstone" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "chalcedony variety" .
+
+
+###  http://www.purl.org/cuneiform/calcite
+:calcite rdf:type owl:NamedIndividual ,
+                  :Material ;
+         owl:sameAs <https://www.wikidata.org/entity/Q171917> ;
+         rdfs:label "calcite" ;
+         <http://www.w3.org/2004/02/skos/core#definition> "carbonate mineral" .
+
+
+###  http://www.purl.org/cuneiform/carnelian
+:carnelian rdf:type owl:NamedIndividual ,
+                    :Material ;
+           owl:sameAs <https://www.wikidata.org/wiki/Q324369> ;
+           rdfs:label "carnelian" ;
+           <http://www.w3.org/2004/02/skos/core#definition> "yellow-red chalcedony variety, used as a semi-precious gemstone" .
+
+
+###  http://www.purl.org/cuneiform/ceramic
+:ceramic rdf:type owl:NamedIndividual ,
+                  :Material ;
+         owl:sameAs <https://www.wikidata.org/wiki/Q45621> ;
+         rdfs:label "ceramic" ;
+         <http://www.w3.org/2004/02/skos/core#definition> "inorganic, nonmetallic solid prepared by the action of heat" .
+
+
+###  http://www.purl.org/cuneiform/chlorite
+:chlorite rdf:type owl:NamedIndividual ,
+                   :Material ;
+          owl:sameAs <https://www.wikidata.org/wiki/Q407495> ;
+          rdfs:label "chlorite" ;
+          <http://www.w3.org/2004/02/skos/core#definition> "chemical compound" .
+
+
+###  http://www.purl.org/cuneiform/clay
+:clay rdf:type owl:NamedIndividual ,
+               :Material ;
+      owl:sameAs <https://www.wikidata.org/wiki/Q42302> ;
+      rdfs:label "clay" ;
+      <http://www.w3.org/2004/02/skos/core#definition> "soft rock based compound often used for sculpture and tools" .
+
+
+###  http://www.purl.org/cuneiform/copper
+:copper rdf:type owl:NamedIndividual ,
+                 :Material ;
+        owl:sameAs <https://www.wikidata.org/wiki/Q753> ;
+        rdfs:label "copper" ;
+        <http://www.w3.org/2004/02/skos/core#definition> "chemical element with symbol Cu and atomic number 29" .
+
+
+###  http://www.purl.org/cuneiform/dolomite
+:dolomite rdf:type owl:NamedIndividual ,
+                   :Material ;
+          owl:sameAs <https://www.wikidata.org/wiki/Q167741> ;
+          rdfs:label "dolomite" ;
+          <http://www.w3.org/2004/02/skos/core#definition> "carbonate mineral - CaMg(CO₃)₂" .
+
+
+###  http://www.purl.org/cuneiform/faience
+:faience rdf:type owl:NamedIndividual ,
+                  :Material ;
+         owl:sameAs <https://www.wikidata.org/wiki/Q209671> ;
+         rdfs:label "faience" ;
+         <http://www.w3.org/2004/02/skos/core#definition> "tin-glazed pottery" .
+
+
+###  http://www.purl.org/cuneiform/feldspar
+:feldspar rdf:type owl:NamedIndividual ,
+                   :Material ;
+          owl:sameAs <https://www.wikidata.org/wiki/Q170258> ;
+          rdfs:label "feldspar" ;
+          <http://www.w3.org/2004/02/skos/core#definition> "mineral group" .
+
+
+###  http://www.purl.org/cuneiform/flint
+:flint rdf:type owl:NamedIndividual ,
+                :Material ;
+       owl:sameAs <https://www.wikidata.org/wiki/Q83087> ;
+       rdfs:label "flint" ;
+       <http://www.w3.org/2004/02/skos/core#definition> "sedimentary rock, chert variety" .
+
+
 ###  http://www.purl.org/cuneiform/gneiss
 :gneiss rdf:type owl:NamedIndividual ;
         owl:sameAs <https://www.wikidata.org/wiki/Q166409> ;
         rdfs:label "gneiss" .
 
 
+###  https://www.wikidata.org/entity/Q143447
+<https://www.wikidata.org/entity/Q143447> rdf:type owl:NamedIndividual ,
+                                                   :Material ;
+                                          rdfs:label "Wikidata: alabaster" .
+
+
+###  https://www.wikidata.org/entity/Q171917
+<https://www.wikidata.org/entity/Q171917> rdf:type owl:NamedIndividual ;
+                                          rdfs:label "Wikidata: calcite" .
+
+
+###  https://www.wikidata.org/entity/Q23775
+<https://www.wikidata.org/entity/Q23775> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Wikidata: aragonite" .
+
+
+###  https://www.wikidata.org/entity/Q430174
+<https://www.wikidata.org/entity/Q430174> rdf:type owl:NamedIndividual ;
+                                          rdfs:label "Wikidata: heliotrope" .
+
+
 ###  https://www.wikidata.org/wiki/Q166409
 <https://www.wikidata.org/wiki/Q166409> rdf:type owl:NamedIndividual ,
                                                  :WikidataInstance ;
                                         rdfs:label "Wikidata: gneiss" .
+
+
+###  https://www.wikidata.org/wiki/Q167741
+<https://www.wikidata.org/wiki/Q167741> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: Dolomite" .
+
+
+###  https://www.wikidata.org/wiki/Q170258
+<https://www.wikidata.org/wiki/Q170258> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: feldspar" .
+
+
+###  https://www.wikidata.org/wiki/Q209671
+<https://www.wikidata.org/wiki/Q209671> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: faience" .
+
+
+###  https://www.wikidata.org/wiki/Q324369
+<https://www.wikidata.org/wiki/Q324369> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: carnelian" .
+
+
+###  https://www.wikidata.org/wiki/Q407495
+<https://www.wikidata.org/wiki/Q407495> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: cholorous acid" .
+
+
+###  https://www.wikidata.org/wiki/Q42302
+<https://www.wikidata.org/wiki/Q42302> rdf:type owl:NamedIndividual ;
+                                       rdfs:label "Wikidata: clay" .
+
+
+###  https://www.wikidata.org/wiki/Q45621
+<https://www.wikidata.org/wiki/Q45621> rdf:type owl:NamedIndividual ;
+                                       rdfs:label "Wikidata: ceramic" .
+
+
+###  https://www.wikidata.org/wiki/Q753
+<https://www.wikidata.org/wiki/Q753> rdf:type owl:NamedIndividual ;
+                                     rdfs:label "Wikidata: copper" .
+
+
+###  https://www.wikidata.org/wiki/Q83087
+<https://www.wikidata.org/wiki/Q83087> rdf:type owl:NamedIndividual ;
+                                       rdfs:label "Wikidata: flint" .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
