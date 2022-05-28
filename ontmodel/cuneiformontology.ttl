@@ -1417,7 +1417,8 @@ cunei:glazed rdf:type owl:NamedIndividual ,
 ###  http://www.purl.org/cuneiform/gneiss
 cunei:gneiss rdf:type owl:NamedIndividual ,
                       cunei:Material ;
-             rdfs:label "gneiss" .
+             rdfs:label "gneiss" ;
+             <http://www.w3.org/2004/02/skos/core#definition> "common and widely distributed type of rock" .
 
 
 ###  http://www.purl.org/cuneiform/gypsum

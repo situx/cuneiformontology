@@ -151,7 +151,24 @@
 ###  http://www.purl.org/cuneiform/gneiss
 :gneiss rdf:type owl:NamedIndividual ;
         owl:sameAs <https://www.wikidata.org/wiki/Q166409> ;
-        rdfs:label "gneiss" .
+        rdfs:label "gneiss" ;
+        <http://www.w3.org/2004/02/skos/core#definition> "common and widely distributed type of rock" .
+
+
+###  http://www.purl.org/cuneiform/gypsum
+:gypsum rdf:type owl:NamedIndividual ,
+                 :Material ;
+        owl:sameAs <https://www.wikidata.org/wiki/Q82658> ;
+        rdfs:label "gypsum" ;
+        <http://www.w3.org/2004/02/skos/core#definition> "mineral, calcium sulfate with bounded water" .
+
+
+###  http://www.purl.org/cuneiform/iron
+:iron rdf:type owl:NamedIndividual ,
+               :Material ;
+      owl:sameAs <https://www.wikidata.org/wiki/Q677> ;
+      rdfs:label "iron" ;
+      <http://www.w3.org/2004/02/skos/core#definition> "chemical element with symbol Fe and atomic number 26" .
 
 
 ###  https://www.wikidata.org/entity/Q143447
@@ -216,9 +233,19 @@
                                        rdfs:label "Wikidata: ceramic" .
 
 
+###  https://www.wikidata.org/wiki/Q677
+<https://www.wikidata.org/wiki/Q677> rdf:type owl:NamedIndividual ;
+                                     rdfs:label "Wikidata: iron" .
+
+
 ###  https://www.wikidata.org/wiki/Q753
 <https://www.wikidata.org/wiki/Q753> rdf:type owl:NamedIndividual ;
                                      rdfs:label "Wikidata: copper" .
+
+
+###  https://www.wikidata.org/wiki/Q82658
+<https://www.wikidata.org/wiki/Q82658> rdf:type owl:NamedIndividual ;
+                                       rdfs:label "Wikidata: gypsum" .
 
 
 ###  https://www.wikidata.org/wiki/Q83087
