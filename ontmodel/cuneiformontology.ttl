@@ -1096,7 +1096,9 @@ cunei:Ebla rdf:type owl:NamedIndividual ,
 
 ###  http://www.purl.org/cuneiform/Eblaite
 cunei:Eblaite rdf:type owl:NamedIndividual ,
-                       cunei:language .
+                       cunei:language ;
+              rdfs:label "Eblaite" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Extinct Semitic language spoken in Ebla" .
 
 
 ###  http://www.purl.org/cuneiform/EdIIIa
@@ -1251,6 +1253,13 @@ cunei:UrIII rdf:type owl:NamedIndividual ,
             <http://www.w3.org/2004/02/skos/core#definition> "archaeological culture and historical period in Mesopotamia" .
 
 
+###  http://www.purl.org/cuneiform/UrIIIDynasty
+cunei:UrIIIDynasty rdf:type owl:NamedIndividual ,
+                            cunei:Dynasty ;
+                   rdfs:label "Ur III dynasty" ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "royal dynasty in Mesopotamia" .
+
+
 ###  http://www.purl.org/cuneiform/Urartian
 cunei:Urartian rdf:type owl:NamedIndividual ,
                         cunei:language ;
@@ -1284,7 +1293,9 @@ cunei:Uruk5 rdf:type owl:NamedIndividual ,
 
 ###  http://www.purl.org/cuneiform/agate
 cunei:agate rdf:type owl:NamedIndividual ,
-                     cunei:Material .
+                     cunei:Material ;
+            rdfs:label "agate" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "chalcedony variety" .
 
 
 ###  http://www.purl.org/cuneiform/alabaster
@@ -1321,6 +1332,13 @@ cunei:banded rdf:type owl:NamedIndividual ,
                       cunei:MaterialAspect .
 
 
+###  http://www.purl.org/cuneiform/basalt
+cunei:basalt rdf:type owl:NamedIndividual ,
+                      cunei:Material ;
+             rdfs:label "basalt" ;
+             <http://www.w3.org/2004/02/skos/core#definition> "mafic igneous rock" .
+
+
 ###  http://www.purl.org/cuneiform/bitumen
 cunei:bitumen rdf:type owl:NamedIndividual ,
                        cunei:Material .
@@ -1331,6 +1349,13 @@ cunei:bloodstone rdf:type owl:NamedIndividual ,
                           cunei:Material ;
                  rdfs:label "bloodstone" ;
                  <http://www.w3.org/2004/02/skos/core#definition> "chalcedony variety" .
+
+
+###  http://www.purl.org/cuneiform/breccia
+cunei:breccia rdf:type owl:NamedIndividual ,
+                       cunei:Material ;
+              rdfs:label "breccia" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "rock composed of broken fragments in a matrix" .
 
 
 ###  http://www.purl.org/cuneiform/burnt
@@ -1390,6 +1415,13 @@ cunei:copper rdf:type owl:NamedIndividual ,
              <http://www.w3.org/2004/02/skos/core#definition> "chemical element with symbol Cu and atomic number 29" .
 
 
+###  http://www.purl.org/cuneiform/diorite
+cunei:diorite rdf:type owl:NamedIndividual ,
+                       cunei:Material ;
+              rdfs:label "diorite" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Deep igneous rocks made of equal amounts of alkali feldspar and intermediate plagioclase, the most common stained ingredients are amphibole, biotite and pyroxene, and accessory minerals apatite and sfen; volcanic equivalent: tackle" .
+
+
 ###  http://www.purl.org/cuneiform/dolomite
 cunei:dolomite rdf:type owl:NamedIndividual ,
                         cunei:Material ;
@@ -1409,6 +1441,13 @@ cunei:feldspar rdf:type owl:NamedIndividual ,
                         cunei:Material ;
                rdfs:label "feldspar" ;
                <http://www.w3.org/2004/02/skos/core#definition> "mineral group" .
+
+
+###  http://www.purl.org/cuneiform/felsite
+cunei:felsite rdf:type owl:NamedIndividual ,
+                       cunei:Material ;
+              rdfs:label "felsite" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "very fine grained volcanic rock that may or may not contain larger crystals" .
 
 
 ###  http://www.purl.org/cuneiform/flint
@@ -1449,11 +1488,24 @@ cunei:iron rdf:type owl:NamedIndividual ,
            <http://www.w3.org/2004/02/skos/core#definition> "chemical element with symbol Fe and atomic number 26" .
 
 
+###  http://www.purl.org/cuneiform/irondioxide
+cunei:irondioxide rdf:type owl:NamedIndividual ,
+                           cunei:Material ;
+                  rdfs:label "iron dioxide" .
+
+
 ###  http://www.purl.org/cuneiform/ivory
 cunei:ivory rdf:type owl:NamedIndividual ,
                      cunei:Material ;
             rdfs:label "ivory" ;
             <http://www.w3.org/2004/02/skos/core#definition> "material derived from the tusks and teeth of animals" .
+
+
+###  http://www.purl.org/cuneiform/jade
+cunei:jade rdf:type owl:NamedIndividual ,
+                    cunei:Material ;
+           rdfs:label "jade" ;
+           <http://www.w3.org/2004/02/skos/core#definition> "ornamental stone" .
 
 
 ###  http://www.purl.org/cuneiform/jadelike
@@ -1501,6 +1553,13 @@ cunei:marble rdf:type owl:NamedIndividual ,
              <http://www.w3.org/2004/02/skos/core#definition> "non-foliated metamorphic rock commonly used for sculpture and as a building material" .
 
 
+###  http://www.purl.org/cuneiform/nephrite
+cunei:nephrite rdf:type owl:NamedIndividual ,
+                        cunei:Material ;
+               rdfs:label "nephrite" ;
+               <http://www.w3.org/2004/02/skos/core#definition> "variety of ferro-actinolite - tremolite solid solution series" .
+
+
 ###  http://www.purl.org/cuneiform/obsidian
 cunei:obsidian rdf:type owl:NamedIndividual ,
                         cunei:Material ;
@@ -1528,6 +1587,13 @@ cunei:plasma rdf:type owl:NamedIndividual ,
 cunei:plaster rdf:type owl:NamedIndividual ,
                        cunei:MaterialAspect ;
               rdfs:label "plaster" .
+
+
+###  http://www.purl.org/cuneiform/quartz
+cunei:quartz rdf:type owl:NamedIndividual ,
+                      cunei:Material ;
+             rdfs:label "quartz" ;
+             <http://www.w3.org/2004/02/skos/core#definition> "mineral composed of silicon and oxygen atoms in a continuous framework of SiO₄ silicon–oxygen tetrahedra, with each oxygen being shared between two tetrahedra, giving an overall chemical formula of SiO₂" .
 
 
 ###  http://www.purl.org/cuneiform/sandstone
@@ -1568,6 +1634,13 @@ cunei:shell rdf:type owl:NamedIndividual ,
 ###  http://www.purl.org/cuneiform/shiny
 cunei:shiny rdf:type owl:NamedIndividual ,
                      cunei:MaterialAspect .
+
+
+###  http://www.purl.org/cuneiform/slate
+cunei:slate rdf:type owl:NamedIndividual ,
+                     cunei:Material ;
+            rdfs:label "slate" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "fine-grained, foliated, homogeneous, low-grade metamorphic rock" .
 
 
 ###  http://www.purl.org/cuneiform/stalagmite

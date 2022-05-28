@@ -39,6 +39,11 @@
 :WikidataInstance rdf:type owl:Class .
 
 
+###  http://www.purl.org/cuneiform/dynasty
+:dynasty rdf:type owl:Class ;
+         rdfs:label "dynasty" .
+
+
 ###  http://www.purl.org/cuneiform/language
 :language rdf:type owl:Class ;
           rdfs:label "language" .
@@ -54,6 +59,14 @@
           owl:sameAs <https://www.wikidata.org/wiki/Q35518> ;
           rdfs:label "Akkadian" ;
           <http://www.w3.org/2004/02/skos/core#definition> "extinct Semitic language of Mesopotamia" .
+
+
+###  http://www.purl.org/cuneiform/Eblaite
+:Eblaite rdf:type owl:NamedIndividual ,
+                  :language ;
+         owl:sameAs <https://www.wikidata.org/wiki/Q35345> ;
+         rdfs:label "Eblaite" ;
+         <http://www.w3.org/2004/02/skos/core#definition> "Extinct Semitic language spoken in Ebla" .
 
 
 ###  http://www.purl.org/cuneiform/Hittite
@@ -80,12 +93,28 @@
        <http://www.w3.org/2004/02/skos/core#definition> "archaeological culture and historical period in Mesopotamia" .
 
 
+###  http://www.purl.org/cuneiform/UrIIIDynasty
+:UrIIIDynasty rdf:type owl:NamedIndividual ,
+                       :dynasty ;
+              owl:sameAs <https://www.wikidata.org/wiki/Q723587> ;
+              rdfs:label "Ur III dynasty" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "royal dynasty in Mesopotamia" .
+
+
 ###  http://www.purl.org/cuneiform/Urartian
 :Urartian rdf:type owl:NamedIndividual ,
                    :language ;
           owl:sameAs <https://www.wikidata.org/wiki/Q36934> ;
           rdfs:label "Urartian" ;
           <http://www.w3.org/2004/02/skos/core#definition> "extinct language of Urartu" .
+
+
+###  http://www.purl.org/cuneiform/agate
+:agate rdf:type owl:NamedIndividual ,
+                :Material ;
+       owl:sameAs <https://www.wikidata.org/wiki/Q123314> ;
+       rdfs:label "agate" ;
+       <http://www.w3.org/2004/02/skos/core#definition> "chalcedony variety" .
 
 
 ###  http://www.purl.org/cuneiform/alabaster
@@ -110,12 +139,28 @@
            <http://www.w3.org/2004/02/skos/core#definition> "carbonate mineral" .
 
 
+###  http://www.purl.org/cuneiform/basalt
+:basalt rdf:type owl:NamedIndividual ,
+                 :Material ;
+        owl:sameAs <https://www.wikidata.org/wiki/Q43338> ;
+        rdfs:label "basalt" ;
+        <http://www.w3.org/2004/02/skos/core#definition> "mafic igneous rock" .
+
+
 ###  http://www.purl.org/cuneiform/bloodstone
 :bloodstone rdf:type owl:NamedIndividual ,
                      :Material ;
             owl:sameAs <https://www.wikidata.org/entity/Q430174> ;
             rdfs:label "bloodstone" ;
             <http://www.w3.org/2004/02/skos/core#definition> "chalcedony variety" .
+
+
+###  http://www.purl.org/cuneiform/breccia
+:breccia rdf:type owl:NamedIndividual ,
+                  :Material ;
+         owl:sameAs <https://www.wikidata.org/wiki/Q191250> ;
+         rdfs:label "breccia" ;
+         <http://www.w3.org/2004/02/skos/core#definition> "rock composed of broken fragments in a matrix" .
 
 
 ###  http://www.purl.org/cuneiform/calcite
@@ -166,6 +211,14 @@
         <http://www.w3.org/2004/02/skos/core#definition> "chemical element with symbol Cu and atomic number 29" .
 
 
+###  http://www.purl.org/cuneiform/diorite
+:diorite rdf:type owl:NamedIndividual ,
+                  :Material ;
+         owl:sameAs <https://www.wikidata.org/wiki/Q187408> ;
+         rdfs:label "diorite" ;
+         <http://www.w3.org/2004/02/skos/core#definition> "Deep igneous rocks made of equal amounts of alkali feldspar and intermediate plagioclase, the most common stained ingredients are amphibole, biotite and pyroxene, and accessory minerals apatite and sfen; volcanic equivalent: tackle" .
+
+
 ###  http://www.purl.org/cuneiform/dolomite
 :dolomite rdf:type owl:NamedIndividual ,
                    :Material ;
@@ -188,6 +241,14 @@
           owl:sameAs <https://www.wikidata.org/wiki/Q170258> ;
           rdfs:label "feldspar" ;
           <http://www.w3.org/2004/02/skos/core#definition> "mineral group" .
+
+
+###  http://www.purl.org/cuneiform/felsite
+:felsite rdf:type owl:NamedIndividual ,
+                  :Material ;
+         owl:sameAs <https://www.wikidata.org/wiki/Q2662981> ;
+         rdfs:label "felsite" ;
+         <http://www.w3.org/2004/02/skos/core#definition> "very fine grained volcanic rock that may or may not contain larger crystals" .
 
 
 ###  http://www.purl.org/cuneiform/flint
@@ -213,6 +274,14 @@
         <http://www.w3.org/2004/02/skos/core#definition> "mineral, calcium sulfate with bounded water" .
 
 
+###  http://www.purl.org/cuneiform/hornfels
+:hornfels rdf:type owl:NamedIndividual ,
+                   :Material ;
+          owl:sameAs <https://www.wikidata.org/wiki/Q847702> ;
+          rdfs:label "hornfels" ;
+          <http://www.w3.org/2004/02/skos/core#definition> "series of contact metamorphic rocks that have been baked and indurated by the heat of intrusive igneous masses" .
+
+
 ###  http://www.purl.org/cuneiform/iron
 :iron rdf:type owl:NamedIndividual ,
                :Material ;
@@ -227,6 +296,14 @@
        owl:sameAs <https://www.wikidata.org/wiki/Q82001> ;
        rdfs:label "ivory" ;
        <http://www.w3.org/2004/02/skos/core#definition> "material derived from the tusks and teeth of animals" .
+
+
+###  http://www.purl.org/cuneiform/jade
+:jade rdf:type owl:NamedIndividual ,
+               :Material ;
+      owl:sameAs <https://www.wikidata.org/wiki/Q175089> ;
+      rdfs:label "jade" ;
+      <http://www.w3.org/2004/02/skos/core#definition> "ornamental stone" .
 
 
 ###  http://www.purl.org/cuneiform/lapislazuli
@@ -261,6 +338,14 @@
         <http://www.w3.org/2004/02/skos/core#definition> "non-foliated metamorphic rock commonly used for sculpture and as a building material" .
 
 
+###  http://www.purl.org/cuneiform/nephrite
+:nephrite rdf:type owl:NamedIndividual ,
+                   :Material ;
+          owl:sameAs <https://www.wikidata.org/wiki/Q138979> ;
+          rdfs:label "nephrite" ;
+          <http://www.w3.org/2004/02/skos/core#definition> "variety of ferro-actinolite - tremolite solid solution series" .
+
+
 ###  http://www.purl.org/cuneiform/obsidian
 :obsidian rdf:type owl:NamedIndividual ,
                    :Material ;
@@ -275,6 +360,14 @@
       owl:sameAs <https://www.wikidata.org/wiki/Q180884> ;
       rdfs:label "onyx" ;
       <http://www.w3.org/2004/02/skos/core#definition> "banded variety of the mineral chalcedony" .
+
+
+###  http://www.purl.org/cuneiform/quartz
+:quartz rdf:type owl:NamedIndividual ,
+                 :Material ;
+        owl:sameAs <https://www.wikidata.org/wiki/Q43010> ;
+        rdfs:label "quartz" ;
+        <http://www.w3.org/2004/02/skos/core#definition> "mineral composed of silicon and oxygen atoms in a continuous framework of SiO₄ silicon–oxygen tetrahedra, with each oxygen being shared between two tetrahedra, giving an overall chemical formula of SiO₂" .
 
 
 ###  http://www.purl.org/cuneiform/sandstone
@@ -314,6 +407,14 @@
        owl:sameAs <https://www.wikidata.org/wiki/Q213096> ;
        rdfs:label "shell" ;
        <http://www.w3.org/2004/02/skos/core#definition> "hard, protective outer layer created by an animal that lives in the sea" .
+
+
+###  http://www.purl.org/cuneiform/slate
+:slate rdf:type owl:NamedIndividual ,
+                :Material ;
+       owl:sameAs <https://www.wikidata.org/wiki/Q207079> ;
+       rdfs:label "slate" ;
+       <http://www.w3.org/2004/02/skos/core#definition> "fine-grained, foliated, homogeneous, low-grade metamorphic rock" .
 
 
 ###  http://www.purl.org/cuneiform/stalagmite
@@ -382,9 +483,19 @@
                                            rdfs:label "Wikidata: UrIII" .
 
 
+###  https://www.wikidata.org/wiki/Q123314
+<https://www.wikidata.org/wiki/Q123314> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: agate" .
+
+
 ###  https://www.wikidata.org/wiki/Q13085
 <https://www.wikidata.org/wiki/Q13085> rdf:type owl:NamedIndividual ;
                                        rdfs:label "Wikidata: sandstone" .
+
+
+###  https://www.wikidata.org/wiki/Q138979
+<https://www.wikidata.org/wiki/Q138979> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: nephrite" .
 
 
 ###  https://www.wikidata.org/wiki/Q15315
@@ -408,6 +519,11 @@
                                         rdfs:label "Wikidata: feldspar" .
 
 
+###  https://www.wikidata.org/wiki/Q175089
+<https://www.wikidata.org/wiki/Q175089> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: jade" .
+
+
 ###  https://www.wikidata.org/wiki/Q180884
 <https://www.wikidata.org/wiki/Q180884> rdf:type owl:NamedIndividual ,
                                                  :WikidataInstance ;
@@ -417,6 +533,22 @@
 ###  https://www.wikidata.org/wiki/Q181312
 <https://www.wikidata.org/wiki/Q181312> rdf:type owl:NamedIndividual ;
                                         rdfs:label "Wikidata: stalagmite" .
+
+
+###  https://www.wikidata.org/wiki/Q187408
+<https://www.wikidata.org/wiki/Q187408> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: diorite" .
+
+
+###  https://www.wikidata.org/wiki/Q191250
+<https://www.wikidata.org/wiki/Q191250> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: breccia" .
+
+
+###  https://www.wikidata.org/wiki/Q207079
+<https://www.wikidata.org/wiki/Q207079> rdf:type owl:NamedIndividual ,
+                                                 :Material ;
+                                        rdfs:label "Wikidata: slate" .
 
 
 ###  https://www.wikidata.org/wiki/Q209671
@@ -446,6 +578,11 @@
                                        rdfs:label "Wikidata: limestone" .
 
 
+###  https://www.wikidata.org/wiki/Q2662981
+<https://www.wikidata.org/wiki/Q2662981> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Wikidata: felsite" .
+
+
 ###  https://www.wikidata.org/wiki/Q287
 <https://www.wikidata.org/wiki/Q287> rdf:type owl:NamedIndividual ;
                                      rdfs:label "Wikidata: wood" .
@@ -464,6 +601,11 @@
 ###  https://www.wikidata.org/wiki/Q335249
 <https://www.wikidata.org/wiki/Q335249> rdf:type owl:NamedIndividual ;
                                         rdfs:label "Wikidata: serpentine" .
+
+
+###  https://www.wikidata.org/wiki/Q35345
+<https://www.wikidata.org/wiki/Q35345> rdf:type owl:NamedIndividual ;
+                                       rdfs:label "Wikidata: Eblaite" .
 
 
 ###  https://www.wikidata.org/wiki/Q35518
@@ -502,6 +644,16 @@
                                        rdfs:label "Wikidata: clay" .
 
 
+###  https://www.wikidata.org/wiki/Q43010
+<https://www.wikidata.org/wiki/Q43010> rdf:type owl:NamedIndividual ;
+                                       rdfs:label "Wikidata: quartz" .
+
+
+###  https://www.wikidata.org/wiki/Q43338
+<https://www.wikidata.org/wiki/Q43338> rdf:type owl:NamedIndividual ;
+                                       rdfs:label "Wikidata: basalt" .
+
+
 ###  https://www.wikidata.org/wiki/Q45621
 <https://www.wikidata.org/wiki/Q45621> rdf:type owl:NamedIndividual ;
                                        rdfs:label "Wikidata: ceramic" .
@@ -529,6 +681,11 @@
                                      rdfs:label "Wikidata: lead" .
 
 
+###  https://www.wikidata.org/wiki/Q723587
+<https://www.wikidata.org/wiki/Q723587> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: Ur III dynasty" .
+
+
 ###  https://www.wikidata.org/wiki/Q751300
 <https://www.wikidata.org/wiki/Q751300> rdf:type owl:NamedIndividual ;
                                         rdfs:label "Wikidata: shale" .
@@ -553,6 +710,11 @@
 ###  https://www.wikidata.org/wiki/Q83087
 <https://www.wikidata.org/wiki/Q83087> rdf:type owl:NamedIndividual ;
                                        rdfs:label "Wikidata: flint" .
+
+
+###  https://www.wikidata.org/wiki/Q847702
+<https://www.wikidata.org/wiki/Q847702> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: hornfels" .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
