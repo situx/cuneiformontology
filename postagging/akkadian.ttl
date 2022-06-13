@@ -64,7 +64,7 @@ system:hasTier rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.org/olia/akkadian.owl#Adjective
 :Adjective rdf:type owl:Class ;
-           rdfs:subClassOf :PartOfSpeech ;
+           rdfs:subClassOf :Nominal ;
            rdfs:label "adjective"@en ;
            <http://www.w3.org/2004/02/skos/core#definition> "part of speech that describes a noun or pronoun"@en .
 
@@ -87,7 +87,7 @@ system:hasTier rdf:type owl:DatatypeProperty ;
 :Case rdf:type owl:Class ;
       rdfs:subClassOf :PartOfSpeech ;
       rdfs:label "case"@en ;
-      <http://www.w3.org/2004/02/skos/core#definition> "grammatical case"@en .
+      <http://www.w3.org/2004/02/skos/core#definition> "grammatical category indicating the relationship between a substantive and the other parts of the sentence"@en .
 
 
 ###  http://purl.org/olia/akkadian.owl#Cohortative
@@ -115,14 +115,14 @@ system:hasTier rdf:type owl:DatatypeProperty ;
 :Dative rdf:type owl:Class ;
         rdfs:subClassOf :Case ;
         rdfs:label "dative"@en ;
-        <http://www.w3.org/2004/02/skos/core#definition> "grammatical case generally used to indicate the noun to which something is given"@en .
+        <http://www.w3.org/2004/02/skos/core#definition> "grammatical case indicating the indirect object of a sentence"@en .
 
 
 ###  http://purl.org/olia/akkadian.owl#DemonstrativePronoun
 :DemonstrativePronoun rdf:type owl:Class ;
                       rdfs:subClassOf :Pronoun ;
                       rdfs:label "demonstrative pronoun"@en ;
-                      <http://www.w3.org/2004/02/skos/core#definition> "A demonstrative pronoun is a pronoun that is used to point to something specific within a sentence"@en .
+                      <http://www.w3.org/2004/02/skos/core#definition> "pronoun referring to / emphasizing specific persons or objects"@en .
 
 
 ###  http://purl.org/olia/akkadian.owl#Determinative
@@ -142,7 +142,8 @@ system:hasTier rdf:type owl:DatatypeProperty ;
 ###  http://purl.org/olia/akkadian.owl#DistributiveNumeral
 :DistributiveNumeral rdf:type owl:Class ;
                      rdfs:subClassOf :Numeral ;
-                     rdfs:label "distributive numeral"@en .
+                     rdfs:label "distributive numeral"@en ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "Reference to the individual elements of a set" .
 
 
 ###  http://purl.org/olia/akkadian.owl#DivineName
@@ -170,7 +171,7 @@ system:hasTier rdf:type owl:DatatypeProperty ;
 :EnclicticPersonalPronoun rdf:type owl:Class ;
                           rdfs:subClassOf :PersonalPronoun ;
                           rdfs:label "independent personal pronoun"@en ;
-                          <http://www.w3.org/2004/02/skos/core#definition> "personal pronoun that consists as a single word entity"@en .
+                          <http://www.w3.org/2004/02/skos/core#definition> "pronoun used to refer to / to emphazise the speaker"@en .
 
 
 ###  http://purl.org/olia/akkadian.owl#Feminine
@@ -203,7 +204,7 @@ system:hasTier rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.org/olia/akkadian.owl#Gender
 :Gender rdf:type owl:Class ;
-        rdfs:subClassOf :PartOfSpeech ;
+        rdfs:subClassOf system:UnitOfAnnotation ;
         rdfs:label "gender"@en .
 
 
@@ -211,7 +212,7 @@ system:hasTier rdf:type owl:DatatypeProperty ;
 :Genitive rdf:type owl:Class ;
           rdfs:subClassOf :Case ;
           rdfs:label "genitive"@en ;
-          <http://www.w3.org/2004/02/skos/core#definition> "grammatical case that marks a word as modifying another word, indicating possession, composition, etc."@en .
+          <http://www.w3.org/2004/02/skos/core#definition> "grammatical case marking the attribute of noun"@en .
 
 
 ###  http://purl.org/olia/akkadian.owl#GeographicalName
@@ -239,7 +240,7 @@ system:hasTier rdf:type owl:DatatypeProperty ;
 :Infinitive rdf:type owl:Class ;
             rdfs:subClassOf :VerbCase ;
             rdfs:label "infinitive"@en ;
-            <http://www.w3.org/2004/02/skos/core#definition> "grammatical form of a typically non-conjugated verb"@en .
+            <http://www.w3.org/2004/02/skos/core#definition> "verbal noun"@en .
 
 
 ###  http://purl.org/olia/akkadian.owl#Interjection
@@ -253,7 +254,7 @@ system:hasTier rdf:type owl:DatatypeProperty ;
 :InterrogativePronoun rdf:type owl:Class ;
                       rdfs:subClassOf :Pronoun ;
                       rdfs:label "interrogative pronoun"@en ;
-                      <http://www.w3.org/2004/02/skos/core#definition> "pronoun announcing a question"@en .
+                      <http://www.w3.org/2004/02/skos/core#definition> "pronoun introducing a question"@en .
 
 
 ###  http://purl.org/olia/akkadian.owl#Locative
@@ -278,7 +279,7 @@ system:hasTier rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.org/olia/akkadian.owl#Mood
 :Mood rdf:type owl:Class ;
-      rdfs:subClassOf :PartOfSpeech ;
+      rdfs:subClassOf system:UnitOfAnnotation ;
       rdfs:label "mood"@en ;
       <http://www.w3.org/2004/02/skos/core#definition> "grammatical mood"@en .
 
@@ -303,23 +304,29 @@ system:hasTier rdf:type owl:DatatypeProperty ;
           <http://www.w3.org/2004/02/skos/core#definition> "Akkadian verb Ntn stem"@en .
 
 
+###  http://purl.org/olia/akkadian.owl#Nominal
+:Nominal rdf:type owl:Class ;
+         rdfs:subClassOf :PartOfSpeech ;
+         rdfs:label "nominal" .
+
+
 ###  http://purl.org/olia/akkadian.owl#Nominative
 :Nominative rdf:type owl:Class ;
             rdfs:subClassOf :Case ;
             rdfs:label "nominative"@en ;
-            <http://www.w3.org/2004/02/skos/core#definition> "grammatical case that is use for a noun or pronoun that is the subject of a verb"@en .
+            <http://www.w3.org/2004/02/skos/core#definition> "grammatical case indicating the subject of a sentence"@en .
 
 
 ###  http://purl.org/olia/akkadian.owl#Noun
 :Noun rdf:type owl:Class ;
-      rdfs:subClassOf :PartOfSpeech ;
+      rdfs:subClassOf :Nominal ;
       rdfs:label "noun"@en ;
       <http://www.w3.org/2004/02/skos/core#definition> "part of speech in grammar denoting a figurative or real thing or person"@en .
 
 
 ###  http://purl.org/olia/akkadian.owl#Number
 :Number rdf:type owl:Class ;
-        rdfs:subClassOf :PartOfSpeech ;
+        rdfs:subClassOf system:UnitOfAnnotation ;
         rdfs:label "number"@en ;
         <http://www.w3.org/2004/02/skos/core#definition> "grammatical number"@en .
 
@@ -347,7 +354,7 @@ system:hasTier rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.org/olia/akkadian.owl#OrthographicElement
 :OrthographicElement rdf:type owl:Class ;
-                     rdfs:subClassOf :PartOfSpeech ;
+                     rdfs:subClassOf system:UnitOfAnnotation ;
                      rdfs:label "orthographic element" .
 
 
@@ -377,7 +384,7 @@ system:hasTier rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.org/olia/akkadian.owl#Person
 :Person rdf:type owl:Class ;
-        rdfs:subClassOf :PartOfSpeech ;
+        rdfs:subClassOf system:UnitOfAnnotation ;
         rdfs:label "person"@en ;
         <http://www.w3.org/2004/02/skos/core#definition> "grammatical person"@en .
 
@@ -558,7 +565,7 @@ system:hasTier rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.org/olia/akkadian.owl#Tense
 :Tense rdf:type owl:Class ;
-       rdfs:subClassOf :PartOfSpeech ;
+       rdfs:subClassOf system:UnitOfAnnotation ;
        rdfs:label "tense"@en ;
        <http://www.w3.org/2004/02/skos/core#definition> "grammatical tense"@en .
 
@@ -593,7 +600,7 @@ system:hasTier rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.org/olia/akkadian.owl#VerbCase
 :VerbCase rdf:type owl:Class ;
-          rdfs:subClassOf :PartOfSpeech ;
+          rdfs:subClassOf system:UnitOfAnnotation ;
           rdfs:label "verb case" .
 
 

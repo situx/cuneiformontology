@@ -21,6 +21,7 @@ jobs:
          sudo apt-get install python3-dev python3-pip python3-venv python3-wheel -y
          sudo pip3 install wheel pylode==2.13.2 rdflib
          pylode -i ontmodel/cuneiformontology.ttl -o docs/ontology.html
+         pylode -i interlinks/cuneiformontology_interlinks.ttl -o docs/ontologyinterlinks.html
          pylode -i postagging/akkadian.ttl -o docs/postagging_akkadian.html
          pylode -i postagging/hittite.ttl -o docs/postagging_hittite.html
     - name: Deploy 🚀
