@@ -1096,7 +1096,7 @@ cunei:transliteration_wordoccurence rdf:type owl:Class ;
 ###  http://www.purl.org/cuneiform/Akkadian
 cunei:Akkadian rdf:type owl:NamedIndividual ,
                         cunei:language ;
-               rdfs:label "Akkadian" ;
+               rdfs:label "Akkadian language" ;
                <http://www.w3.org/2004/02/skos/core#definition> "extinct Semitic language of Mesopotamia" .
 
 
@@ -1104,36 +1104,53 @@ cunei:Akkadian rdf:type owl:NamedIndividual ,
 cunei:Aramaic rdf:type owl:NamedIndividual .
 
 
+###  http://www.purl.org/cuneiform/AshurDynasty
+cunei:AshurDynasty rdf:type owl:NamedIndividual ,
+                            cunei:Dynasty ;
+                   rdfs:label "Ashur dynasty"@en .
+
+
+###  http://www.purl.org/cuneiform/BaziDynasty
+cunei:BaziDynasty rdf:type owl:NamedIndividual ,
+                           cunei:Dynasty ;
+                  rdfs:label "Bazi dynasty"@en .
+
+
 ###  http://www.purl.org/cuneiform/Ebla
 cunei:Ebla rdf:type owl:NamedIndividual ,
-                    cunei:Epoch .
+                    cunei:Epoch ;
+           rdfs:label "Ebla time period"@en .
 
 
 ###  http://www.purl.org/cuneiform/Eblaite
 cunei:Eblaite rdf:type owl:NamedIndividual ,
                        cunei:language ;
-              rdfs:label "Eblaite" ;
+              rdfs:label "Eblaite language" ;
               <http://www.w3.org/2004/02/skos/core#definition> "Extinct Semitic language spoken in Ebla" .
 
 
 ###  http://www.purl.org/cuneiform/EdIIIa
 cunei:EdIIIa rdf:type owl:NamedIndividual ,
-                      cunei:Epoch .
+                      cunei:Epoch ;
+             rdfs:label "EdIIIa time period"@en .
 
 
 ###  http://www.purl.org/cuneiform/EdIIIb
 cunei:EdIIIb rdf:type owl:NamedIndividual ,
-                      cunei:Epoch .
+                      cunei:Epoch ;
+             rdfs:label "EdIIIb time period"@en .
 
 
 ###  http://www.purl.org/cuneiform/Egyptian
 cunei:Egyptian rdf:type owl:NamedIndividual ,
-                        cunei:language .
+                        cunei:language ;
+               rdfs:label "Egyptian language"@en .
 
 
 ###  http://www.purl.org/cuneiform/Elamite
 cunei:Elamite rdf:type owl:NamedIndividual ,
-                       cunei:language .
+                       cunei:language ;
+              rdfs:label "Elamite language"@en .
 
 
 ###  http://www.purl.org/cuneiform/Greek
@@ -1141,36 +1158,65 @@ cunei:Greek rdf:type owl:NamedIndividual ,
                      cunei:language .
 
 
+###  http://www.purl.org/cuneiform/GutiDynasty
+cunei:GutiDynasty rdf:type owl:NamedIndividual ,
+                           cunei:Dynasty ;
+                  rdfs:label "Guti dynasty"@en .
+
+
 ###  http://www.purl.org/cuneiform/Harappan
 cunei:Harappan rdf:type owl:NamedIndividual ,
-                        cunei:language .
+                        cunei:language ;
+               rdfs:label "Harappan language"@en .
 
 
 ###  http://www.purl.org/cuneiform/Hebrew
 cunei:Hebrew rdf:type owl:NamedIndividual ,
-                      cunei:language .
+                      cunei:language ;
+             rdfs:label "Hebrew language"@en .
 
 
 ###  http://www.purl.org/cuneiform/Hellenistic
 cunei:Hellenistic rdf:type owl:NamedIndividual ,
-                           cunei:Epoch .
+                           cunei:Epoch ;
+                  rdfs:label "Hellenistic time period"@en .
 
 
 ###  http://www.purl.org/cuneiform/Hittite
 cunei:Hittite rdf:type owl:NamedIndividual ,
                        cunei:language ;
-              rdfs:label "Hittite" ;
+              rdfs:label "Hittite language" ;
               <http://www.w3.org/2004/02/skos/core#definition> "Ancient extinct language of the Middle East" .
 
 
 ###  http://www.purl.org/cuneiform/Hurrian
 cunei:Hurrian rdf:type owl:NamedIndividual ,
-                       cunei:language .
+                       cunei:language ;
+              rdfs:label "Hurrian language"@en .
 
 
-###  http://www.purl.org/cuneiform/Kish
-cunei:Kish rdf:type owl:NamedIndividual ,
-                    cunei:Dynasty .
+###  http://www.purl.org/cuneiform/IsinDynasty
+cunei:IsinDynasty rdf:type owl:NamedIndividual ,
+                           cunei:Dynasty ;
+                  rdfs:label "Isin dynasty"@en .
+
+
+###  http://www.purl.org/cuneiform/KassiteDynasty
+cunei:KassiteDynasty rdf:type owl:NamedIndividual ,
+                              cunei:Dynasty ;
+                     rdfs:label "Kassite dynasty"@en .
+
+
+###  http://www.purl.org/cuneiform/KishDynasty
+cunei:KishDynasty rdf:type owl:NamedIndividual ,
+                           cunei:Dynasty ;
+                  rdfs:label "Kish dynasty"@en .
+
+
+###  http://www.purl.org/cuneiform/LagashDynasty
+cunei:LagashDynasty rdf:type owl:NamedIndividual ,
+                             cunei:Dynasty ;
+                    rdfs:label "Lagash Dynasty"@en .
 
 
 ###  http://www.purl.org/cuneiform/LinearElamite
@@ -1181,7 +1227,14 @@ cunei:LinearElamite rdf:type owl:NamedIndividual ,
 
 ###  http://www.purl.org/cuneiform/Mandaic
 cunei:Mandaic rdf:type owl:NamedIndividual ,
-                       cunei:language .
+                       cunei:language ;
+              rdfs:label "Mandaic language"@en .
+
+
+###  http://www.purl.org/cuneiform/Mari
+cunei:Mari rdf:type owl:NamedIndividual ,
+                    cunei:Dynasty ;
+           rdfs:label "Mari dynasty" .
 
 
 ###  http://www.purl.org/cuneiform/MiddleAssyrian
@@ -1205,34 +1258,46 @@ cunei:MiddleHittite rdf:type owl:NamedIndividual ,
                              cunei:Epoch .
 
 
+###  http://www.purl.org/cuneiform/Mitanni
+cunei:Mitanni rdf:type owl:NamedIndividual ,
+                       cunei:Dynasty ;
+              rdfs:label "Mitanni dynasty"@en .
+
+
 ###  http://www.purl.org/cuneiform/NeoAssyrian
 cunei:NeoAssyrian rdf:type owl:NamedIndividual ,
-                           cunei:Epoch .
+                           cunei:Epoch ;
+                  rdfs:label "Neo Assyrian time epoch"@en .
 
 
 ###  http://www.purl.org/cuneiform/NeoElamite
 cunei:NeoElamite rdf:type owl:NamedIndividual ,
-                          cunei:Epoch .
+                          cunei:Epoch ;
+                 rdfs:label "Neo Elamite time epoch"@en .
 
 
 ###  http://www.purl.org/cuneiform/OldAssyrian
 cunei:OldAssyrian rdf:type owl:NamedIndividual ,
-                           cunei:Epoch .
+                           cunei:Epoch ;
+                  rdfs:label "Old Assyrian time epoch"@en .
 
 
 ###  http://www.purl.org/cuneiform/OldBabylonian
 cunei:OldBabylonian rdf:type owl:NamedIndividual ,
-                             cunei:Epoch .
+                             cunei:Epoch ;
+                    rdfs:label "Old Babylonian time epoch"@en .
 
 
 ###  http://www.purl.org/cuneiform/OldElamite
 cunei:OldElamite rdf:type owl:NamedIndividual ,
-                          cunei:Epoch .
+                          cunei:Epoch ;
+                 rdfs:label "Old Elamite time epoch"@en .
 
 
 ###  http://www.purl.org/cuneiform/Persian
 cunei:Persian rdf:type owl:NamedIndividual ,
-                       cunei:language .
+                       cunei:language ;
+              rdfs:label "Persian language"@en .
 
 
 ###  http://www.purl.org/cuneiform/Phoenician
@@ -1242,29 +1307,33 @@ cunei:Phoenician rdf:type owl:NamedIndividual .
 ###  http://www.purl.org/cuneiform/Sumerian
 cunei:Sumerian rdf:type owl:NamedIndividual ,
                         cunei:language ;
-               rdfs:label "Sumerian" ;
+               rdfs:label "Sumerian language" ;
                <http://www.w3.org/2004/02/skos/core#definition> "language of ancient Sumer" .
 
 
 ###  http://www.purl.org/cuneiform/Ugaritic
 cunei:Ugaritic rdf:type owl:NamedIndividual ,
-                        cunei:language .
+                        cunei:language ;
+               rdfs:label "Ugaritic language"@en .
 
 
 ###  http://www.purl.org/cuneiform/UncertainPeriod
 cunei:UncertainPeriod rdf:type owl:NamedIndividual ,
-                               cunei:Epoch .
+                               cunei:Epoch ;
+                      rdfs:label "Uncertain time period"@en ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "Unspecified time period"@en .
 
 
 ###  http://www.purl.org/cuneiform/Ur
 cunei:Ur rdf:type owl:NamedIndividual ,
-                  cunei:Dynasty .
+                  cunei:Dynasty ;
+         rdfs:label "Ur dynasty"@en .
 
 
 ###  http://www.purl.org/cuneiform/UrIII
 cunei:UrIII rdf:type owl:NamedIndividual ,
                      cunei:Epoch ;
-            rdfs:label "UrIII Period" ;
+            rdfs:label "Ur III time period" ;
             <http://www.w3.org/2004/02/skos/core#definition> "archaeological culture and historical period in Mesopotamia" .
 
 
@@ -1278,7 +1347,7 @@ cunei:UrIIIDynasty rdf:type owl:NamedIndividual ,
 ###  http://www.purl.org/cuneiform/Urartian
 cunei:Urartian rdf:type owl:NamedIndividual ,
                         cunei:language ;
-               rdfs:label "Urartian" ;
+               rdfs:label "Urartian language" ;
                <http://www.w3.org/2004/02/skos/core#definition> "extinct language of Urartu" .
 
 
@@ -1291,19 +1360,31 @@ cunei:Uruk rdf:type owl:NamedIndividual ,
 ###  http://www.purl.org/cuneiform/Uruk3
 cunei:Uruk3 rdf:type owl:NamedIndividual ,
                      cunei:Epoch ;
-            rdfs:label "Uruk3 Period" .
+            rdfs:label "Uruk III time period" .
 
 
 ###  http://www.purl.org/cuneiform/Uruk4
 cunei:Uruk4 rdf:type owl:NamedIndividual ,
                      cunei:Epoch ;
-            rdfs:label "Uruk4 Period" .
+            rdfs:label "Uruk IV time period" .
 
 
 ###  http://www.purl.org/cuneiform/Uruk5
 cunei:Uruk5 rdf:type owl:NamedIndividual ,
                      cunei:Epoch ;
-            rdfs:label "Uruk5 Period" .
+            rdfs:label "Uruk V time period" .
+
+
+###  http://www.purl.org/cuneiform/UrukIIDynasty
+cunei:UrukIIDynasty rdf:type owl:NamedIndividual ,
+                             cunei:Dynasty ;
+                    rdfs:label "Uruk II dynasty"@en .
+
+
+###  http://www.purl.org/cuneiform/UrukIIIDynasty
+cunei:UrukIIIDynasty rdf:type owl:NamedIndividual ,
+                              cunei:Dynasty ;
+                     rdfs:label "Uruk III dynasty"@en .
 
 
 ###  http://www.purl.org/cuneiform/agate
@@ -1492,7 +1573,8 @@ cunei:gypsum rdf:type owl:NamedIndividual ,
 
 
 ###  http://www.purl.org/cuneiform/invoryfossil
-cunei:invoryfossil rdf:type owl:NamedIndividual ;
+cunei:invoryfossil rdf:type owl:NamedIndividual ,
+                            cunei:Material ;
                    rdfs:label "ivoryfossil" .
 
 
