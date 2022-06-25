@@ -77,12 +77,27 @@
          <http://www.w3.org/2004/02/skos/core#definition> "Ancient extinct language of the Middle East" .
 
 
+###  http://www.purl.org/cuneiform/SeleucidDynasty
+:SeleucidDynasty rdf:type owl:NamedIndividual ,
+                          :dynasty ;
+                 owl:sameAs <https://www.wikidata.org/wiki/Q705904> ;
+                 rdfs:label "Seleucid Dynasty" .
+
+
 ###  http://www.purl.org/cuneiform/Sumerian
 :Sumerian rdf:type owl:NamedIndividual ,
                    :language ;
           owl:sameAs <https://www.wikidata.org/wiki/Q36790> ;
           rdfs:label "Sumerian" ;
           <http://www.w3.org/2004/02/skos/core#definition> "language of ancient Sumer" .
+
+
+###  http://www.purl.org/cuneiform/Ugaritic
+:Ugaritic rdf:type owl:NamedIndividual ,
+                   :language ;
+          owl:sameAs <https://www.wikidata.org/wiki/Q36928> ;
+          rdfs:label "Ugaritic language" ;
+          <http://www.w3.org/2004/02/skos/core#definition> "Ancient Semitic language spoken in nowadays-Syria" .
 
 
 ###  http://www.purl.org/cuneiform/UrIII
@@ -623,6 +638,12 @@
                                        rdfs:label "Wikidata: Sumerian" .
 
 
+###  https://www.wikidata.org/wiki/Q36928
+<https://www.wikidata.org/wiki/Q36928> rdf:type owl:NamedIndividual ,
+                                                :WikidataInstance ;
+                                       rdfs:label "Wikidata: Ugaritic" .
+
+
 ###  https://www.wikidata.org/wiki/Q36934
 <https://www.wikidata.org/wiki/Q36934> rdf:type owl:NamedIndividual ;
                                        rdfs:label "Wikidata: Urartian" .
@@ -673,6 +694,12 @@
 ###  https://www.wikidata.org/wiki/Q677
 <https://www.wikidata.org/wiki/Q677> rdf:type owl:NamedIndividual ;
                                      rdfs:label "Wikidata: iron" .
+
+
+###  https://www.wikidata.org/wiki/Q705904
+<https://www.wikidata.org/wiki/Q705904> rdf:type owl:NamedIndividual ,
+                                                 :WikidataInstance ;
+                                        rdfs:label "Wikidata: Seleucid" .
 
 
 ###  https://www.wikidata.org/wiki/Q708
