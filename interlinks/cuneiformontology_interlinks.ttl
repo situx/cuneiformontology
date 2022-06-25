@@ -35,6 +35,11 @@
           rdfs:label "material" .
 
 
+###  http://www.purl.org/cuneiform/MaterialAspect
+:MaterialAspect rdf:type owl:Class ;
+                rdfs:label "material aspect" .
+
+
 ###  http://www.purl.org/cuneiform/WikidataInstance
 :WikidataInstance rdf:type owl:Class .
 
@@ -69,12 +74,54 @@
          <http://www.w3.org/2004/02/skos/core#definition> "Extinct Semitic language spoken in Ebla" .
 
 
+###  http://www.purl.org/cuneiform/Harappan
+:Harappan rdf:type owl:NamedIndividual ,
+                   :language ;
+          owl:sameAs <http://www.wikidata.org/entity/Q3428279> ;
+          rdfs:label "Harappan language" .
+
+
+###  http://www.purl.org/cuneiform/Hebrew
+:Hebrew rdf:type owl:NamedIndividual ,
+                 :language ;
+        owl:sameAs <http://www.wikidata.org/entity/Q9288> ;
+        rdfs:label "Hebrew language" .
+
+
 ###  http://www.purl.org/cuneiform/Hittite
 :Hittite rdf:type owl:NamedIndividual ,
                   :language ;
          owl:sameAs <http://www.wikidata.org/entity/Q35668> ;
          rdfs:label "Hittite" ;
          <http://www.w3.org/2004/02/skos/core#definition> "Ancient extinct language of the Middle East" .
+
+
+###  http://www.purl.org/cuneiform/Mandaic
+:Mandaic rdf:type owl:NamedIndividual ,
+                  :language ;
+         owl:sameAs <https://www.wikidata.org/entity/Q33500> ;
+         rdfs:label "Mandaic language" .
+
+
+###  http://www.purl.org/cuneiform/MiddleBabylonianPeriod
+:MiddleBabylonianPeriod rdf:type owl:NamedIndividual ,
+                                 :Epoch ;
+                        owl:sameAs <http://www.wikidata.org/entity/Q16530848> ;
+                        rdfs:label "Middle Babylonian time epoch" .
+
+
+###  http://www.purl.org/cuneiform/MiddleElamitePeriod
+:MiddleElamitePeriod rdf:type owl:NamedIndividual ,
+                              :Epoch ;
+                     owl:sameAs <http://www.wikidata.org/entity/Q29297151> ;
+                     rdfs:label "Middle Elamite time epoch" .
+
+
+###  http://www.purl.org/cuneiform/Persian
+:Persian rdf:type owl:NamedIndividual ,
+                  :language ;
+         owl:sameAs <http://www.wikidata.org/entity/Q9168> ;
+         rdfs:label "Persian" .
 
 
 ###  http://www.purl.org/cuneiform/SeleucidDynasty
@@ -424,6 +471,13 @@
        <http://www.w3.org/2004/02/skos/core#definition> "hard, protective outer layer created by an animal that lives in the sea" .
 
 
+###  http://www.purl.org/cuneiform/shiny
+:shiny rdf:type owl:NamedIndividual ,
+                :MaterialAspect ;
+       owl:sameAs <http://www.wikidata.org/entity/Q1079524> ;
+       rdfs:label "shiny" .
+
+
 ###  http://www.purl.org/cuneiform/slate
 :slate rdf:type owl:NamedIndividual ,
                 :Material ;
@@ -472,6 +526,287 @@
       <http://www.w3.org/2004/02/skos/core#definition> "fibrous material from trees or other plants" .
 
 
+###  http://www.wikidata.org/entity/Q1079524
+<http://www.wikidata.org/entity/Q1079524> rdf:type owl:NamedIndividual ;
+                                          rdfs:label "Wikidata: shiny" .
+
+
+###  http://www.wikidata.org/entity/Q109384761
+<http://www.wikidata.org/entity/Q109384761> rdf:type owl:NamedIndividual ;
+                                            rdfs:label "Wikidata: UrIII" .
+
+
+###  http://www.wikidata.org/entity/Q123314
+<http://www.wikidata.org/entity/Q123314> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Wikidata: agate" .
+
+
+###  http://www.wikidata.org/entity/Q13085
+<http://www.wikidata.org/entity/Q13085> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: sandstone" .
+
+
+###  http://www.wikidata.org/entity/Q138979
+<http://www.wikidata.org/entity/Q138979> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Wikidata: nephrite" .
+
+
+###  http://www.wikidata.org/entity/Q15315
+<http://www.wikidata.org/entity/Q15315> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: schist" .
+
+
+###  http://www.wikidata.org/entity/Q16530848
+<http://www.wikidata.org/entity/Q16530848> rdf:type owl:NamedIndividual ;
+                                           rdfs:label "Wikidata: Middle Babylonian Period" .
+
+
+###  http://www.wikidata.org/entity/Q166409
+<http://www.wikidata.org/entity/Q166409> rdf:type owl:NamedIndividual ,
+                                                  :WikidataInstance ;
+                                         rdfs:label "Wikidata: gneiss" .
+
+
+###  http://www.wikidata.org/entity/Q167741
+<http://www.wikidata.org/entity/Q167741> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Wikidata: Dolomite" .
+
+
+###  http://www.wikidata.org/entity/Q170258
+<http://www.wikidata.org/entity/Q170258> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Wikidata: feldspar" .
+
+
+###  http://www.wikidata.org/entity/Q175089
+<http://www.wikidata.org/entity/Q175089> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Wikidata: jade" .
+
+
+###  http://www.wikidata.org/entity/Q180884
+<http://www.wikidata.org/entity/Q180884> rdf:type owl:NamedIndividual ,
+                                                  :WikidataInstance ;
+                                         rdfs:label "Wikidata: onyx" .
+
+
+###  http://www.wikidata.org/entity/Q181312
+<http://www.wikidata.org/entity/Q181312> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Wikidata: stalagmite" .
+
+
+###  http://www.wikidata.org/entity/Q187408
+<http://www.wikidata.org/entity/Q187408> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Wikidata: diorite" .
+
+
+###  http://www.wikidata.org/entity/Q191250
+<http://www.wikidata.org/entity/Q191250> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Wikidata: breccia" .
+
+
+###  http://www.wikidata.org/entity/Q207079
+<http://www.wikidata.org/entity/Q207079> rdf:type owl:NamedIndividual ,
+                                                  :Material ;
+                                         rdfs:label "Wikidata: slate" .
+
+
+###  http://www.wikidata.org/entity/Q209671
+<http://www.wikidata.org/entity/Q209671> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Wikidata: faience" .
+
+
+###  http://www.wikidata.org/entity/Q213096
+<http://www.wikidata.org/entity/Q213096> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Wikidata: shell" .
+
+
+###  http://www.wikidata.org/entity/Q216798
+<http://www.wikidata.org/entity/Q216798> rdf:type owl:NamedIndividual ,
+                                                  :WikidataInstance ;
+                                         rdfs:label "Wikidata: lapis lazuli" .
+
+
+###  http://www.wikidata.org/entity/Q22731
+<http://www.wikidata.org/entity/Q22731> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: stone" .
+
+
+###  http://www.wikidata.org/entity/Q23757
+<http://www.wikidata.org/entity/Q23757> rdf:type owl:NamedIndividual ,
+                                                 :WikidataInstance ;
+                                        rdfs:label "Wikidata: limestone" .
+
+
+###  http://www.wikidata.org/entity/Q2662981
+<http://www.wikidata.org/entity/Q2662981> rdf:type owl:NamedIndividual ;
+                                          rdfs:label "Wikidata: felsite" .
+
+
+###  http://www.wikidata.org/entity/Q287
+<http://www.wikidata.org/entity/Q287> rdf:type owl:NamedIndividual ;
+                                      rdfs:label "Wikidata: wood" .
+
+
+###  http://www.wikidata.org/entity/Q29297151
+<http://www.wikidata.org/entity/Q29297151> rdf:type owl:NamedIndividual ;
+                                           rdfs:label "Wikidata: Middle Elamite period" .
+
+
+###  http://www.wikidata.org/entity/Q324369
+<http://www.wikidata.org/entity/Q324369> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Wikidata: carnelian" .
+
+
+###  http://www.wikidata.org/entity/Q329118
+<http://www.wikidata.org/entity/Q329118> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Wikidata: syenite" .
+
+
+###  http://www.wikidata.org/entity/Q335249
+<http://www.wikidata.org/entity/Q335249> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Wikidata: serpentine" .
+
+
+###  http://www.wikidata.org/entity/Q3428279
+<http://www.wikidata.org/entity/Q3428279> rdf:type owl:NamedIndividual ;
+                                          rdfs:label "Wikidata: Harappan" .
+
+
+###  http://www.wikidata.org/entity/Q35345
+<http://www.wikidata.org/entity/Q35345> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: Eblaite" .
+
+
+###  http://www.wikidata.org/entity/Q35518
+<http://www.wikidata.org/entity/Q35518> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: Akkadian" .
+
+
+###  http://www.wikidata.org/entity/Q35668
+<http://www.wikidata.org/entity/Q35668> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: Hittite" .
+
+
+###  http://www.wikidata.org/entity/Q36790
+<http://www.wikidata.org/entity/Q36790> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: Sumerian" .
+
+
+###  http://www.wikidata.org/entity/Q36928
+<http://www.wikidata.org/entity/Q36928> rdf:type owl:NamedIndividual ,
+                                                 :WikidataInstance ;
+                                        rdfs:label "Wikidata: Ugaritic" .
+
+
+###  http://www.wikidata.org/entity/Q36934
+<http://www.wikidata.org/entity/Q36934> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: Urartian" .
+
+
+###  http://www.wikidata.org/entity/Q407495
+<http://www.wikidata.org/entity/Q407495> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Wikidata: cholorous acid" .
+
+
+###  http://www.wikidata.org/entity/Q40861
+<http://www.wikidata.org/entity/Q40861> rdf:type owl:NamedIndividual ,
+                                                 :WikidataInstance ;
+                                        rdfs:label "Wikidata: marble" .
+
+
+###  http://www.wikidata.org/entity/Q42302
+<http://www.wikidata.org/entity/Q42302> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: clay" .
+
+
+###  http://www.wikidata.org/entity/Q43010
+<http://www.wikidata.org/entity/Q43010> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: quartz" .
+
+
+###  http://www.wikidata.org/entity/Q43338
+<http://www.wikidata.org/entity/Q43338> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: basalt" .
+
+
+###  http://www.wikidata.org/entity/Q45621
+<http://www.wikidata.org/entity/Q45621> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: ceramic" .
+
+
+###  http://www.wikidata.org/entity/Q484924
+<http://www.wikidata.org/entity/Q484924> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Wikidata: tuff" .
+
+
+###  http://www.wikidata.org/entity/Q53754
+<http://www.wikidata.org/entity/Q53754> rdf:type owl:NamedIndividual ,
+                                                 :WikidataInstance ;
+                                        rdfs:label "Wikidata: obsidian" .
+
+
+###  http://www.wikidata.org/entity/Q677
+<http://www.wikidata.org/entity/Q677> rdf:type owl:NamedIndividual ;
+                                      rdfs:label "Wikidata: iron" .
+
+
+###  http://www.wikidata.org/entity/Q705904
+<http://www.wikidata.org/entity/Q705904> rdf:type owl:NamedIndividual ,
+                                                  :WikidataInstance ;
+                                         rdfs:label "Wikidata: Seleucid" .
+
+
+###  http://www.wikidata.org/entity/Q708
+<http://www.wikidata.org/entity/Q708> rdf:type owl:NamedIndividual ,
+                                               :WikidataInstance ;
+                                      rdfs:label "Wikidata: lead" .
+
+
+###  http://www.wikidata.org/entity/Q723587
+<http://www.wikidata.org/entity/Q723587> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Wikidata: Ur III dynasty" .
+
+
+###  http://www.wikidata.org/entity/Q751300
+<http://www.wikidata.org/entity/Q751300> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Wikidata: shale" .
+
+
+###  http://www.wikidata.org/entity/Q753
+<http://www.wikidata.org/entity/Q753> rdf:type owl:NamedIndividual ;
+                                      rdfs:label "Wikidata: copper" .
+
+
+###  http://www.wikidata.org/entity/Q82001
+<http://www.wikidata.org/entity/Q82001> rdf:type owl:NamedIndividual ,
+                                                 :WikidataInstance ;
+                                        rdfs:label "Wikidata: ivory" .
+
+
+###  http://www.wikidata.org/entity/Q82658
+<http://www.wikidata.org/entity/Q82658> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: gypsum" .
+
+
+###  http://www.wikidata.org/entity/Q83087
+<http://www.wikidata.org/entity/Q83087> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: flint" .
+
+
+###  http://www.wikidata.org/entity/Q847702
+<http://www.wikidata.org/entity/Q847702> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Wikidata: hornfels" .
+
+
+###  http://www.wikidata.org/entity/Q9168
+<http://www.wikidata.org/entity/Q9168> rdf:type owl:NamedIndividual ;
+                                       rdfs:label "Wikidata: Persian language" .
+
+
+###  http://www.wikidata.org/entity/Q9288
+<http://www.wikidata.org/entity/Q9288> rdf:type owl:NamedIndividual ;
+                                       rdfs:label "Wikidata: Hebrew" .
+
+
 ###  https://www.wikidata.org/entity/Q143447
 <https://www.wikidata.org/entity/Q143447> rdf:type owl:NamedIndividual ,
                                                    :WikidataInstance ;
@@ -488,260 +823,14 @@
                                          rdfs:label "Wikidata: aragonite" .
 
 
+###  https://www.wikidata.org/entity/Q33500
+<https://www.wikidata.org/entity/Q33500> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Wikidata: Mandaic" .
+
+
 ###  https://www.wikidata.org/entity/Q430174
 <https://www.wikidata.org/entity/Q430174> rdf:type owl:NamedIndividual ;
                                           rdfs:label "Wikidata: heliotrope" .
-
-
-###  http://www.wikidata.org/entity/Q109384761
-<http://www.wikidata.org/entity/Q109384761> rdf:type owl:NamedIndividual ;
-                                           rdfs:label "Wikidata: UrIII" .
-
-
-###  http://www.wikidata.org/entity/Q123314
-<http://www.wikidata.org/entity/Q123314> rdf:type owl:NamedIndividual ;
-                                        rdfs:label "Wikidata: agate" .
-
-
-###  http://www.wikidata.org/entity/Q13085
-<http://www.wikidata.org/entity/Q13085> rdf:type owl:NamedIndividual ;
-                                       rdfs:label "Wikidata: sandstone" .
-
-
-###  http://www.wikidata.org/entity/Q138979
-<http://www.wikidata.org/entity/Q138979> rdf:type owl:NamedIndividual ;
-                                        rdfs:label "Wikidata: nephrite" .
-
-
-###  http://www.wikidata.org/entity/Q15315
-<http://www.wikidata.org/entity/Q15315> rdf:type owl:NamedIndividual ;
-                                       rdfs:label "Wikidata: schist" .
-
-
-###  http://www.wikidata.org/entity/Q166409
-<http://www.wikidata.org/entity/Q166409> rdf:type owl:NamedIndividual ,
-                                                 :WikidataInstance ;
-                                        rdfs:label "Wikidata: gneiss" .
-
-
-###  http://www.wikidata.org/entity/Q167741
-<http://www.wikidata.org/entity/Q167741> rdf:type owl:NamedIndividual ;
-                                        rdfs:label "Wikidata: Dolomite" .
-
-
-###  http://www.wikidata.org/entity/Q170258
-<http://www.wikidata.org/entity/Q170258> rdf:type owl:NamedIndividual ;
-                                        rdfs:label "Wikidata: feldspar" .
-
-
-###  http://www.wikidata.org/entity/Q175089
-<http://www.wikidata.org/entity/Q175089> rdf:type owl:NamedIndividual ;
-                                        rdfs:label "Wikidata: jade" .
-
-
-###  http://www.wikidata.org/entity/Q180884
-<http://www.wikidata.org/entity/Q180884> rdf:type owl:NamedIndividual ,
-                                                 :WikidataInstance ;
-                                        rdfs:label "Wikidata: onyx" .
-
-
-###  http://www.wikidata.org/entity/Q181312
-<http://www.wikidata.org/entity/Q181312> rdf:type owl:NamedIndividual ;
-                                        rdfs:label "Wikidata: stalagmite" .
-
-
-###  http://www.wikidata.org/entity/Q187408
-<http://www.wikidata.org/entity/Q187408> rdf:type owl:NamedIndividual ;
-                                        rdfs:label "Wikidata: diorite" .
-
-
-###  http://www.wikidata.org/entity/Q191250
-<http://www.wikidata.org/entity/Q191250> rdf:type owl:NamedIndividual ;
-                                        rdfs:label "Wikidata: breccia" .
-
-
-###  http://www.wikidata.org/entity/Q207079
-<http://www.wikidata.org/entity/Q207079> rdf:type owl:NamedIndividual ,
-                                                 :Material ;
-                                        rdfs:label "Wikidata: slate" .
-
-
-###  http://www.wikidata.org/entity/Q209671
-<http://www.wikidata.org/entity/Q209671> rdf:type owl:NamedIndividual ;
-                                        rdfs:label "Wikidata: faience" .
-
-
-###  http://www.wikidata.org/entity/Q213096
-<http://www.wikidata.org/entity/Q213096> rdf:type owl:NamedIndividual ;
-                                        rdfs:label "Wikidata: shell" .
-
-
-###  http://www.wikidata.org/entity/Q216798
-<http://www.wikidata.org/entity/Q216798> rdf:type owl:NamedIndividual ,
-                                                 :WikidataInstance ;
-                                        rdfs:label "Wikidata: lapis lazuli" .
-
-
-###  http://www.wikidata.org/entity/Q22731
-<http://www.wikidata.org/entity/Q22731> rdf:type owl:NamedIndividual ;
-                                       rdfs:label "Wikidata: stone" .
-
-
-###  http://www.wikidata.org/entity/Q23757
-<http://www.wikidata.org/entity/Q23757> rdf:type owl:NamedIndividual ,
-                                                :WikidataInstance ;
-                                       rdfs:label "Wikidata: limestone" .
-
-
-###  http://www.wikidata.org/entity/Q2662981
-<http://www.wikidata.org/entity/Q2662981> rdf:type owl:NamedIndividual ;
-                                         rdfs:label "Wikidata: felsite" .
-
-
-###  http://www.wikidata.org/entity/Q287
-<http://www.wikidata.org/entity/Q287> rdf:type owl:NamedIndividual ;
-                                     rdfs:label "Wikidata: wood" .
-
-
-###  http://www.wikidata.org/entity/Q324369
-<http://www.wikidata.org/entity/Q324369> rdf:type owl:NamedIndividual ;
-                                        rdfs:label "Wikidata: carnelian" .
-
-
-###  http://www.wikidata.org/entity/Q329118
-<http://www.wikidata.org/entity/Q329118> rdf:type owl:NamedIndividual ;
-                                        rdfs:label "Wikidata: syenite" .
-
-
-###  http://www.wikidata.org/entity/Q335249
-<http://www.wikidata.org/entity/Q335249> rdf:type owl:NamedIndividual ;
-                                        rdfs:label "Wikidata: serpentine" .
-
-
-###  http://www.wikidata.org/entity/Q35345
-<http://www.wikidata.org/entity/Q35345> rdf:type owl:NamedIndividual ;
-                                       rdfs:label "Wikidata: Eblaite" .
-
-
-###  http://www.wikidata.org/entity/Q35518
-<http://www.wikidata.org/entity/Q35518> rdf:type owl:NamedIndividual ;
-                                       rdfs:label "Wikidata: Akkadian" .
-
-
-###  http://www.wikidata.org/entity/Q35668
-<http://www.wikidata.org/entity/Q35668> rdf:type owl:NamedIndividual ;
-                                       rdfs:label "Wikidata: Hittite" .
-
-
-###  http://www.wikidata.org/entity/Q36790
-<http://www.wikidata.org/entity/Q36790> rdf:type owl:NamedIndividual ;
-                                       rdfs:label "Wikidata: Sumerian" .
-
-
-###  http://www.wikidata.org/entity/Q36928
-<http://www.wikidata.org/entity/Q36928> rdf:type owl:NamedIndividual ,
-                                                :WikidataInstance ;
-                                       rdfs:label "Wikidata: Ugaritic" .
-
-
-###  http://www.wikidata.org/entity/Q36934
-<http://www.wikidata.org/entity/Q36934> rdf:type owl:NamedIndividual ;
-                                       rdfs:label "Wikidata: Urartian" .
-
-
-###  http://www.wikidata.org/entity/Q407495
-<http://www.wikidata.org/entity/Q407495> rdf:type owl:NamedIndividual ;
-                                        rdfs:label "Wikidata: cholorous acid" .
-
-
-###  http://www.wikidata.org/entity/Q40861
-<http://www.wikidata.org/entity/Q40861> rdf:type owl:NamedIndividual ,
-                                                :WikidataInstance ;
-                                       rdfs:label "Wikidata: marble" .
-
-
-###  http://www.wikidata.org/entity/Q42302
-<http://www.wikidata.org/entity/Q42302> rdf:type owl:NamedIndividual ;
-                                       rdfs:label "Wikidata: clay" .
-
-
-###  http://www.wikidata.org/entity/Q43010
-<http://www.wikidata.org/entity/Q43010> rdf:type owl:NamedIndividual ;
-                                       rdfs:label "Wikidata: quartz" .
-
-
-###  http://www.wikidata.org/entity/Q43338
-<http://www.wikidata.org/entity/Q43338> rdf:type owl:NamedIndividual ;
-                                       rdfs:label "Wikidata: basalt" .
-
-
-###  http://www.wikidata.org/entity/Q45621
-<http://www.wikidata.org/entity/Q45621> rdf:type owl:NamedIndividual ;
-                                       rdfs:label "Wikidata: ceramic" .
-
-
-###  http://www.wikidata.org/entity/Q484924
-<http://www.wikidata.org/entity/Q484924> rdf:type owl:NamedIndividual ;
-                                        rdfs:label "Wikidata: tuff" .
-
-
-###  http://www.wikidata.org/entity/Q53754
-<http://www.wikidata.org/entity/Q53754> rdf:type owl:NamedIndividual ,
-                                                :WikidataInstance ;
-                                       rdfs:label "Wikidata: obsidian" .
-
-
-###  http://www.wikidata.org/entity/Q677
-<http://www.wikidata.org/entity/Q677> rdf:type owl:NamedIndividual ;
-                                     rdfs:label "Wikidata: iron" .
-
-
-###  http://www.wikidata.org/entity/Q705904
-<http://www.wikidata.org/entity/Q705904> rdf:type owl:NamedIndividual ,
-                                                 :WikidataInstance ;
-                                        rdfs:label "Wikidata: Seleucid" .
-
-
-###  http://www.wikidata.org/entity/Q708
-<http://www.wikidata.org/entity/Q708> rdf:type owl:NamedIndividual ,
-                                              :WikidataInstance ;
-                                     rdfs:label "Wikidata: lead" .
-
-
-###  http://www.wikidata.org/entity/Q723587
-<http://www.wikidata.org/entity/Q723587> rdf:type owl:NamedIndividual ;
-                                        rdfs:label "Wikidata: Ur III dynasty" .
-
-
-###  http://www.wikidata.org/entity/Q751300
-<http://www.wikidata.org/entity/Q751300> rdf:type owl:NamedIndividual ;
-                                        rdfs:label "Wikidata: shale" .
-
-
-###  http://www.wikidata.org/entity/Q753
-<http://www.wikidata.org/entity/Q753> rdf:type owl:NamedIndividual ;
-                                     rdfs:label "Wikidata: copper" .
-
-
-###  http://www.wikidata.org/entity/Q82001
-<http://www.wikidata.org/entity/Q82001> rdf:type owl:NamedIndividual ,
-                                                :WikidataInstance ;
-                                       rdfs:label "Wikidata: ivory" .
-
-
-###  http://www.wikidata.org/entity/Q82658
-<http://www.wikidata.org/entity/Q82658> rdf:type owl:NamedIndividual ;
-                                       rdfs:label "Wikidata: gypsum" .
-
-
-###  http://www.wikidata.org/entity/Q83087
-<http://www.wikidata.org/entity/Q83087> rdf:type owl:NamedIndividual ;
-                                       rdfs:label "Wikidata: flint" .
-
-
-###  http://www.wikidata.org/entity/Q847702
-<http://www.wikidata.org/entity/Q847702> rdf:type owl:NamedIndividual ;
-                                        rdfs:label "Wikidata: hornfels" .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
