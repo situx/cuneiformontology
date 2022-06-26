@@ -69,9 +69,9 @@ cidoc:P138_represents rdf:type owl:ObjectProperty ;
                                   cunei:Line ,
                                   cunei:Sentence ,
                                   cunei:WordForm ;
-                      rdfs:range cunei:TransliterationSentence ,
+                      rdfs:range cunei:TransliterationLine ,
+                                 cunei:TransliterationSentence ,
                                  cunei:transliteration_charoccurrence ,
-                                 cunei:transliteration_line ,
                                  cunei:transliteration_wordoccurence ;
                       rdfs:label "represents" .
 
@@ -122,7 +122,7 @@ cidoc:TXP9_is_encoded_by rdf:type owl:ObjectProperty ;
 
 ###  http://www.purl.org/cuneiform/hasDamagedArea
 cunei:hasDamagedArea rdf:type owl:ObjectProperty ;
-                     rdfs:domain cunei:TabletSide ;
+                     rdfs:domain cunei:TabletSurface ;
                      rdfs:range cunei:DamagedArea ;
                      rdfs:label "has damaged area" ;
                      <http://www.w3.org/2004/02/skos/core#definition> "Associates a tablet feature with a damaged area" .
@@ -130,7 +130,7 @@ cunei:hasDamagedArea rdf:type owl:ObjectProperty ;
 
 ###  http://www.purl.org/cuneiform/hasErasure
 cunei:hasErasure rdf:type owl:ObjectProperty ;
-                 rdfs:domain cunei:TabletSide ;
+                 rdfs:domain cunei:TabletSurface ;
                  rdfs:range cunei:Erasure ;
                  rdfs:label "has erasure" ;
                  <http://www.w3.org/2004/02/skos/core#definition> "Associates a tablet feature with an erasure area" .
@@ -138,7 +138,7 @@ cunei:hasErasure rdf:type owl:ObjectProperty ;
 
 ###  http://www.purl.org/cuneiform/hasFiringHole
 cunei:hasFiringHole rdf:type owl:ObjectProperty ;
-                    rdfs:domain cunei:TabletSide ;
+                    rdfs:domain cunei:TabletSurface ;
                     rdfs:range cunei:FiringHole ;
                     rdfs:label "has firing hole" ;
                     <http://www.w3.org/2004/02/skos/core#definition> "Associates a tablet feature with a firing hole location on a cuneiform tablet" .
@@ -154,7 +154,7 @@ cunei:hasGenre rdf:type owl:ObjectProperty ;
 
 ###  http://www.purl.org/cuneiform/hasPictoralElement
 cunei:hasPictoralElement rdf:type owl:ObjectProperty ;
-                         rdfs:domain cunei:TabletSide ;
+                         rdfs:domain cunei:TabletSurface ;
                          rdfs:range cunei:PictoralElement ;
                          rdfs:label "has pictoral element" ;
                          <http://www.w3.org/2004/02/skos/core#definition> "Associates a tablet feature with a pictoral element" .
@@ -162,7 +162,7 @@ cunei:hasPictoralElement rdf:type owl:ObjectProperty ;
 
 ###  http://www.purl.org/cuneiform/hasRuling
 cunei:hasRuling rdf:type owl:ObjectProperty ;
-                rdfs:domain cunei:TabletSide ;
+                rdfs:domain cunei:TabletSurface ;
                 rdfs:range cunei:HorizontalRuling ,
                            cunei:Ruling ,
                            cunei:VerticalRuling ;
@@ -172,7 +172,7 @@ cunei:hasRuling rdf:type owl:ObjectProperty ;
 
 ###  http://www.purl.org/cuneiform/hasSeal
 cunei:hasSeal rdf:type owl:ObjectProperty ;
-              rdfs:domain cunei:TabletSide ;
+              rdfs:domain cunei:TabletSurface ;
               rdfs:range cunei:Seal ;
               rdfs:label "has seal" ;
               <http://www.w3.org/2004/02/skos/core#definition> "Associates a tablet feature with a seal inscription" .
@@ -187,7 +187,7 @@ cunei:hasSide rdf:type owl:ObjectProperty ;
                          cunei:ObverseSide ,
                          cunei:ReverseSide ,
                          cunei:RightSide ,
-                         cunei:TabletSide ,
+                         cunei:TabletSurface ,
                          cunei:TopSide ;
               rdfs:label "has side" ;
               <http://www.w3.org/2004/02/skos/core#definition> "Associates a cuneiform artifact with a side present on its surface" .
@@ -238,7 +238,7 @@ cunei:isRepresentedBy rdf:type owl:ObjectProperty ;
                       rdfs:domain cunei:Bulla ,
                                   cunei:Tablet ,
                                   cunei:TabletFeature ,
-                                  cunei:TabletSide ,
+                                  cunei:TabletSurface ,
                                   cunei:envelope ;
                       rdfs:range cunei:Image ,
                                  cunei:PointCloud ,
@@ -247,6 +247,14 @@ cunei:isRepresentedBy rdf:type owl:ObjectProperty ;
                                  <http://www.purl.org/cuneiform/3DRendering> ;
                       rdfs:label "is represented by" ;
                       <http://www.w3.org/2004/02/skos/core#definition> "Associates a tablet feature with a representation in a different media" .
+
+
+###  http://www.purl.org/cuneiform/material
+cunei:material rdf:type owl:ObjectProperty ;
+               rdfs:domain cidoc:E22_ManMadeObject ;
+               rdfs:range cunei:Material ;
+               rdfs:label "material" ;
+               <http://www.w3.org/2004/02/skos/core#definition> "The material a cuneiform artifact is comprised of" .
 
 
 ###  http://www.purl.org/cuneiform/nextLine
@@ -349,8 +357,18 @@ cunei:width rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
+###  http://www.purl.org/cuneiform/CDLINumber
+cunei:CDLINumber rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf cunei:artifactNumber ;
+                 rdfs:domain cidoc:E22_ManMadeObject ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "CDLI number" .
+
+
 ###  http://www.purl.org/cuneiform/artifactNumber
 cunei:artifactNumber rdf:type owl:DatatypeProperty ;
+                     rdfs:domain cidoc:E22_ManMadeObject ;
+                     rdfs:range xsd:string ;
                      rdfs:label "artifact number" ;
                      <http://www.w3.org/2004/02/skos/core#definition> "An identifier of the cuneiform artifact" .
 
@@ -374,7 +392,7 @@ cunei:isDamaged rdf:type owl:DatatypeProperty ;
                             cunei:RightSide ,
                             cunei:Sentence ,
                             cunei:Tablet ,
-                            cunei:TabletSide ,
+                            cunei:TabletSurface ,
                             cunei:TopSide ,
                             cunei:WordForm ,
                             cunei:envelope ;
@@ -407,6 +425,12 @@ cunei:sealNumber rdf:type owl:DatatypeProperty ;
                  rdfs:range xsd:string ;
                  rdfs:label "seal number" ;
                  <http://www.w3.org/2004/02/skos/core#definition> "Identifier of a seal on a cuneiform artifact" .
+
+
+###  http://www.purl.org/cuneiform/transliterationNumber
+cunei:transliterationNumber rdf:type owl:DatatypeProperty ;
+                            rdfs:label "transliteration number" ;
+                            <http://www.w3.org/2004/02/skos/core#definition> "Identifier of a transliteration describing a text on a cuneiform tablet" .
 
 
 #################################################################
@@ -534,7 +558,7 @@ cunei:Block rdf:type owl:Class ;
 
 ###  http://www.purl.org/cuneiform/BottomSide
 cunei:BottomSide rdf:type owl:Class ;
-                 rdfs:subClassOf cunei:TabletSide ;
+                 rdfs:subClassOf cunei:TabletSurface ;
                  rdfs:label "bottom side"@en ;
                  <http://www.w3.org/2004/02/skos/core#definition> "The bottom side of a cuneiform tablet"@en .
 
@@ -680,7 +704,7 @@ cunei:LawCollection rdf:type owl:Class ;
 
 ###  http://www.purl.org/cuneiform/LeftSide
 cunei:LeftSide rdf:type owl:Class ;
-               rdfs:subClassOf cunei:TabletSide ;
+               rdfs:subClassOf cunei:TabletSurface ;
                rdfs:label "left side"@en ;
                <http://www.w3.org/2004/02/skos/core#definition> "The left side of a cuneiform tablet"@en .
 
@@ -730,7 +754,7 @@ cunei:Narrative rdf:type owl:Class ;
 
 ###  http://www.purl.org/cuneiform/ObverseSide
 cunei:ObverseSide rdf:type owl:Class ;
-                  rdfs:subClassOf cunei:TabletSide ;
+                  rdfs:subClassOf cunei:TabletSurface ;
                   rdfs:label "obverse side"@en ;
                   <http://www.w3.org/2004/02/skos/core#definition> "The obverse side of a cuneiform tablet"@en .
 
@@ -830,14 +854,14 @@ cunei:Recipe rdf:type owl:Class ;
 
 ###  http://www.purl.org/cuneiform/ReverseSide
 cunei:ReverseSide rdf:type owl:Class ;
-                  rdfs:subClassOf cunei:TabletSide ;
+                  rdfs:subClassOf cunei:TabletSurface ;
                   rdfs:label "reverse side"@en ;
                   <http://www.w3.org/2004/02/skos/core#definition> "The reverse side of a cuneiform tablet"@en .
 
 
 ###  http://www.purl.org/cuneiform/RightSide
 cunei:RightSide rdf:type owl:Class ;
-                rdfs:subClassOf cunei:TabletSide ;
+                rdfs:subClassOf cunei:TabletSurface ;
                 rdfs:label "right side"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "The right side of a cuneiform tablet"@en .
 
@@ -887,13 +911,6 @@ cunei:TabletFeature rdf:type owl:Class ;
                     <http://www.w3.org/2004/02/skos/core#definition> "A feature physically represented on a cuneiform tablet"@en .
 
 
-###  http://www.purl.org/cuneiform/TabletSide
-cunei:TabletSide rdf:type owl:Class ;
-                 rdfs:subClassOf cidoc:TX4_WritingField ;
-                 rdfs:label "tablet side"@en ;
-                 <http://www.w3.org/2004/02/skos/core#definition> "The side of a cuneiform artifact, usually one of obverse, reverse, left, right, top, bottom"@en .
-
-
 ###  http://www.purl.org/cuneiform/TabletSide3DRendering
 cunei:TabletSide3DRendering rdf:type owl:Class ;
                             rdfs:subClassOf <http://www.purl.org/cuneiform/3DRendering> ;
@@ -908,6 +925,13 @@ cunei:TabletSideImage rdf:type owl:Class ;
                       <http://www.w3.org/2004/02/skos/core#definition> "An image representing a side of a cuneiform tablet"@en .
 
 
+###  http://www.purl.org/cuneiform/TabletSurface
+cunei:TabletSurface rdf:type owl:Class ;
+                    rdfs:subClassOf cidoc:TX4_WritingField ;
+                    rdfs:label "tablet surface"@en ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "The side of a cuneiform artifact, usually one of obverse, reverse, left, right, top, bottom"@en .
+
+
 ###  http://www.purl.org/cuneiform/Tag
 cunei:Tag rdf:type owl:Class ;
           rdfs:subClassOf cidoc:E22_ManMadeObject ;
@@ -916,7 +940,7 @@ cunei:Tag rdf:type owl:Class ;
 
 ###  http://www.purl.org/cuneiform/TopSide
 cunei:TopSide rdf:type owl:Class ;
-              rdfs:subClassOf cunei:TabletSide ;
+              rdfs:subClassOf cunei:TabletSurface ;
               rdfs:label "top side"@en ;
               <http://www.w3.org/2004/02/skos/core#definition> "The top side of a cuneiform tablet"@en .
 
@@ -939,6 +963,13 @@ cunei:TransliterationColumn rdf:type owl:Class ;
                             rdfs:subClassOf cunei:Transliteration ;
                             rdfs:label "Transliteration Column"@en ;
                             <http://www.w3.org/2004/02/skos/core#definition> "A representation of a column on a cuneiform tablet in a transliteration"@en .
+
+
+###  http://www.purl.org/cuneiform/TransliterationLine
+cunei:TransliterationLine rdf:type owl:Class ;
+                          rdfs:subClassOf cunei:Transliteration ;
+                          rdfs:label "Transliteration Line"@en ;
+                          <http://www.w3.org/2004/02/skos/core#definition> "A representation of a line present on a cuneiform tablet in its transliteration"@en .
 
 
 ###  http://www.purl.org/cuneiform/TransliterationSentence
@@ -1021,13 +1052,6 @@ cunei:transliteration_charoccurrence rdf:type owl:Class ;
                                      rdfs:subClassOf cunei:Transliteration ;
                                      rdfs:label "Transliteration CharOccurance"@en ;
                                      <http://www.w3.org/2004/02/skos/core#definition> "The occurrence of a character description in a transliteration of a cuneiform tablet"@en .
-
-
-###  http://www.purl.org/cuneiform/transliteration_line
-cunei:transliteration_line rdf:type owl:Class ;
-                           rdfs:subClassOf cunei:Transliteration ;
-                           rdfs:label "Transliteration Line"@en ;
-                           <http://www.w3.org/2004/02/skos/core#definition> "A representation of a line present on a cuneiform tablet in its transliteration"@en .
 
 
 ###  http://www.purl.org/cuneiform/transliteration_wordoccurence

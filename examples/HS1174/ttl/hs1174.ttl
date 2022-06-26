@@ -16,13 +16,113 @@
 #    Object Properties
 #################################################################
 
+###  http://lemon-model.net/lemon#entry
+lemon:entry rdf:type owl:ObjectProperty ;
+            rdfs:label "entry" .
+
+
+###  http://lemon-model.net/lemon#form
+lemon:form rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://lemon-model.net/lemon#language
+lemon:language rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://lemon-model.net/lemon#reference
+lemon:reference rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://lemon-model.net/lemon#sense
+lemon:sense rdf:type owl:ObjectProperty ;
+            rdfs:label "sense" .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/TXP3_is_rendered_by
+cidoc:TXP3_is_rendered_by rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf owl:topObjectProperty ;
+                          rdfs:label "is rendered by" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#TXP2_includes
-<http://www.co-ode.org/ontologies/ont.owl#TXP2_includes> rdf:type owl:ObjectProperty .
+<http://www.co-ode.org/ontologies/ont.owl#TXP2_includes> rdf:type owl:ObjectProperty ;
+                                                         rdfs:label "includes" .
+
+
+###  http://www.purl.org/cuneiform/hasGenre
+cunei:hasGenre rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:label "has genre" .
+
+
+###  http://www.purl.org/cuneiform/hasSurface
+cunei:hasSurface rdf:type owl:ObjectProperty .
+
+
+###  http://www.purl.org/cuneiform/isRepresentedBy
+cunei:isRepresentedBy rdf:type owl:ObjectProperty ;
+                      rdfs:label "is represented by" .
+
+
+###  http://www.purl.org/cuneiform/material
+cunei:material rdf:type owl:ObjectProperty ;
+               rdfs:label "material" .
+
+
+###  http://www.purl.org/cuneiform/nextLine
+cunei:nextLine rdf:type owl:ObjectProperty .
+
+
+###  http://www.purl.org/cuneiform/nextWord
+cunei:nextWord rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.purl.org/cuneiform/prevLine
+cunei:prevLine rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.purl.org/cuneiform/prevWord
+cunei:prevWord rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.purl.org/cuneiform/CDLINumber
+cunei:CDLINumber rdf:type owl:DatatypeProperty ;
+                 rdfs:label "CDLI number" .
+
+
+###  http://www.purl.org/cuneiform/museumNumber
+cunei:museumNumber rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:label "museum number" .
 
 
 #################################################################
 #    Classes
 #################################################################
+
+###  http://lemon-model.net/lemon#LexicalEntity
+lemon:LexicalEntity rdf:type owl:Class ;
+                    rdfs:label "lexical entity" .
+
 
 ###  http://lemon-model.net/lemon#LexicalForm
 lemon:LexicalForm rdf:type owl:Class .
@@ -33,15 +133,29 @@ lemon:LexicalSense rdf:type owl:Class .
 
 
 ###  http://lemon-model.net/lemon#Lexicon
-lemon:Lexicon rdf:type owl:Class .
+lemon:Lexicon rdf:type owl:Class ;
+              rdfs:label "lexicon" .
+
+
+###  http://lemon-model.net/lemon#Word
+lemon:Word rdf:type owl:Class ;
+           rdfs:subClassOf lemon:LexicalEntity ;
+           rdfs:label "word" .
+
+
+###  http://lemon-model.net/lemon#WordForm
+lemon:WordForm rdf:type owl:Class ;
+               rdfs:subClassOf lemon:LexicalForm .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/E22_ManMadeObject
-cidoc:E22_ManMadeObject rdf:type owl:Class .
+cidoc:E22_ManMadeObject rdf:type owl:Class ;
+                        rdfs:label "man made object" .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/TX1_WrittenText
-cidoc:TX1_WrittenText rdf:type owl:Class .
+cidoc:TX1_WrittenText rdf:type owl:Class ;
+                      rdfs:label "written text" .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/TX2_Writing
@@ -49,30 +163,99 @@ cidoc:TX2_Writing rdf:type owl:Class .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/TX4_WritingField
-cidoc:TX4_WritingField rdf:type owl:Class .
+cidoc:TX4_WritingField rdf:type owl:Class ;
+                       rdfs:subClassOf cunei:TabletFeature ;
+                       rdfs:label "writing field" .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/TX5_Reading
+cidoc:TX5_Reading rdf:type owl:Class ;
+                  rdfs:label "reading" .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/TX6_Transcription
-cidoc:TX6_Transcription rdf:type owl:Class .
+cidoc:TX6_Transcription rdf:type owl:Class ;
+                        rdfs:label "transcription" .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme
-cidoc:TX8_Grapheme rdf:type owl:Class .
+cidoc:TX8_Grapheme rdf:type owl:Class ;
+                   rdfs:label "grapheme" .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph
 cidoc:TX9_Glyph rdf:type owl:Class ;
-                rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment> .
+                rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment> ;
+                rdfs:label "glyph" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#Image
+<http://www.co-ode.org/ontologies/ont.owl#Image> rdf:type owl:Class ;
+                                                 rdfs:label "image" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment
 <http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment> rdf:type owl:Class ;
-                                                                   rdfs:subClassOf cidoc:TX1_WrittenText .
+                                                                   rdfs:subClassOf cidoc:TX1_WrittenText ;
+                                                                   rdfs:label "written text fragment" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence
+<http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf cunei:Transliteration ;
+                                                                         rdfs:label "Transliteration CharOccurance" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence
+<http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf cunei:Transliteration ;
+                                                                         rdfs:label "Transliteration Word Occurance" .
+
+
+###  http://www.purl.org/cuneiform/BottomSide
+cunei:BottomSide rdf:type owl:Class ;
+                 rdfs:subClassOf cunei:TabletSurface ;
+                 rdfs:label "bottom side" .
+
+
+###  http://www.purl.org/cuneiform/CuneiformArtifactCollection
+cunei:CuneiformArtifactCollection rdf:type owl:Class ;
+                                  rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Collection> ;
+                                  rdfs:label "cuneiform artifact collection" .
+
+
+###  http://www.purl.org/cuneiform/LeftSide
+cunei:LeftSide rdf:type owl:Class ;
+               rdfs:subClassOf cunei:TabletSurface ;
+               rdfs:label "left side" .
 
 
 ###  http://www.purl.org/cuneiform/Line
 cunei:Line rdf:type owl:Class ;
            rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment> .
+
+
+###  http://www.purl.org/cuneiform/Material
+cunei:Material rdf:type owl:Class ;
+               rdfs:label "material" .
+
+
+###  http://www.purl.org/cuneiform/ObverseSide
+cunei:ObverseSide rdf:type owl:Class ;
+                  rdfs:subClassOf cunei:TabletSurface ;
+                  rdfs:label "obverse side" .
+
+
+###  http://www.purl.org/cuneiform/ReverseSide
+cunei:ReverseSide rdf:type owl:Class ;
+                  rdfs:subClassOf cunei:TabletSurface ;
+                  rdfs:label "reverse side" .
+
+
+###  http://www.purl.org/cuneiform/RightSide
+cunei:RightSide rdf:type owl:Class ;
+                rdfs:subClassOf cunei:TabletSurface ;
+                rdfs:label "right side" .
 
 
 ###  http://www.purl.org/cuneiform/Sentence
@@ -85,19 +268,57 @@ cunei:Tablet rdf:type owl:Class ;
              rdfs:subClassOf cidoc:E22_ManMadeObject .
 
 
-###  http://www.purl.org/cuneiform/TabletSide
-cunei:TabletSide rdf:type owl:Class ;
-                 rdfs:subClassOf cidoc:TX4_WritingField .
+###  http://www.purl.org/cuneiform/TabletFeature
+cunei:TabletFeature rdf:type owl:Class ;
+                    rdfs:label "tablet feature" .
+
+
+###  http://www.purl.org/cuneiform/TabletSurface
+cunei:TabletSurface rdf:type owl:Class ;
+                    rdfs:subClassOf cidoc:TX4_WritingField .
+
+
+###  http://www.purl.org/cuneiform/TopSide
+cunei:TopSide rdf:type owl:Class ;
+              rdfs:subClassOf cunei:TabletSurface ;
+              rdfs:label "top side" .
 
 
 ###  http://www.purl.org/cuneiform/Transliteration
 cunei:Transliteration rdf:type owl:Class ;
-                      rdfs:subClassOf cidoc:TX6_Transcription .
+                      rdfs:subClassOf cidoc:TX6_Transcription ;
+                      rdfs:label "transliteration" .
+
+
+###  http://www.purl.org/cuneiform/TransliterationLine
+cunei:TransliterationLine rdf:type owl:Class ;
+                          rdfs:subClassOf cunei:Transliteration ;
+                          rdfs:label "transliteration line" .
 
 
 ###  http://www.purl.org/cuneiform/WordForm
 cunei:WordForm rdf:type owl:Class ;
                rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#TX7_WrittenTextFragment> .
+
+
+###  http://www.purl.org/cuneiform/language
+cunei:language rdf:type owl:Class ;
+               rdfs:label "language" .
+
+
+###  http://www.purl.org/cuneiform/3DMesh
+<http://www.purl.org/cuneiform/3DMesh> rdf:type owl:Class ;
+                                       rdfs:label "3d mesh" .
+
+
+###  http://www.purl.org/cuneiform/3DRendering
+<http://www.purl.org/cuneiform/3DRendering> rdf:type owl:Class ;
+                                            rdfs:label "3d rendering" .
+
+
+###  http://www.w3.org/2004/02/skos/core#Collection
+<http://www.w3.org/2004/02/skos/core#Collection> rdf:type owl:Class ;
+                                                 rdfs:label "collection" .
 
 
 ###  http://www.w3.org/ns/anno.jsonldAnnotation
@@ -112,49 +333,855 @@ anno:TextualBody rdf:type owl:Class .
 #    Individuals
 #################################################################
 
+###  http://www.co-ode.org/ontologies/ont.owl#e2-gal_sense
+<http://www.co-ode.org/ontologies/ont.owl#e2-gal_sense> rdf:type owl:NamedIndividual ,
+                                                                 lemon:LexicalSense ;
+                                                        lemon:reference <http://www.wikidata.org/entity/Q16560> ;
+                                                        rdfs:label "Word Sense: e2-gal" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#e2-gal_word
+<http://www.co-ode.org/ontologies/ont.owl#e2-gal_word> rdf:type owl:NamedIndividual ,
+                                                                lemon:Word ;
+                                                       lemon:sense <http://www.co-ode.org/ontologies/ont.owl#e2-gal_sense> ;
+                                                       rdfs:label "Word: e2-gal" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#e2-gal_wordform1
+<http://www.co-ode.org/ontologies/ont.owl#e2-gal_wordform1> rdf:type owl:NamedIndividual ,
+                                                                     lemon:WordForm ;
+                                                            rdfs:label "Wordform: e2-gal" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#e2_a_form
+<http://www.co-ode.org/ontologies/ont.owl#e2_a_form> rdf:type owl:NamedIndividual ,
+                                                              lemon:LexicalForm ;
+                                                     rdfs:label "Wordform: e2-a" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#e2_sense
+<http://www.co-ode.org/ontologies/ont.owl#e2_sense> rdf:type owl:NamedIndividual ,
+                                                             lemon:LexicalSense ;
+                                                    rdfs:label "Word Sense: e2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#e2_word
+<http://www.co-ode.org/ontologies/ont.owl#e2_word> rdf:type owl:NamedIndividual ,
+                                                            lemon:Word ;
+                                                   lemon:form <http://www.co-ode.org/ontologies/ont.owl#e2_a_form> ;
+                                                   lemon:sense <http://www.co-ode.org/ontologies/ont.owl#e2_sense> ;
+                                                   rdfs:label "Word: e2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#gurusz_word
+<http://www.co-ode.org/ontologies/ont.owl#gurusz_word> rdf:type owl:NamedIndividual ,
+                                                                lemon:Word ;
+                                                       rdfs:label "Word: gurusz" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#hs1174
 <http://www.co-ode.org/ontologies/ont.owl#hs1174> rdf:type owl:NamedIndividual ,
-                                                           cunei:Tablet .
+                                                           cunei:Tablet ;
+                                                  cunei:hasSurface <http://www.co-ode.org/ontologies/ont.owl#hs1174_bottom> ,
+                                                                   <http://www.co-ode.org/ontologies/ont.owl#hs1174_left> ,
+                                                                   <http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse> ,
+                                                                   <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse> ,
+                                                                   <http://www.co-ode.org/ontologies/ont.owl#hs1174_right> ;
+                                                  cunei:material cunei:clay ;
+                                                  cunei:CDLINumber "P134485"^^xsd:string ;
+                                                  cunei:museumNumber "HS 1174"^^xsd:string ;
+                                                  rdfs:label "HS 1174 cuneiform artifact" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#hs1174_bottom
 <http://www.co-ode.org/ontologies/ont.owl#hs1174_bottom> rdf:type owl:NamedIndividual ,
-                                                                  cunei:TabletSide .
+                                                                  cunei:BottomSide ;
+                                                         cunei:isRepresentedBy <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113346:577531/full/full/0/default.jpg> ;
+                                                         rdfs:label "HS 1174 bottom side" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#hs1174_left
 <http://www.co-ode.org/ontologies/ont.owl#hs1174_left> rdf:type owl:NamedIndividual ,
-                                                                cunei:TabletSide .
+                                                                cunei:LeftSide ;
+                                                       cunei:isRepresentedBy <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113343:577528/full/full/0/default.jpg> ;
+                                                       rdfs:label "HS 1174 left side" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_lexicon
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_lexicon> rdf:type owl:NamedIndividual ,
+                                                                   lemon:Lexicon ;
+                                                          lemon:entry <http://www.co-ode.org/ontologies/ont.owl#e2_word> ,
+                                                                      <http://www.co-ode.org/ontologies/ont.owl#3(disz)_word> ,
+                                                                      <http://www.co-ode.org/ontologies/ont.owl#3(u)_word> ,
+                                                                      <http://www.co-ode.org/ontologies/ont.owl#9(disz)_word> ;
+                                                          lemon:language cunei:Sumerian ;
+                                                          rdfs:label "Lexicon for tablet HS 1174" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse
 <http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse> rdf:type owl:NamedIndividual ,
-                                                                   cunei:TabletSide .
+                                                                   cunei:ObverseSide ;
+                                                          cunei:isRepresentedBy <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113344:577529/full/full/0/default.jpg> ;
+                                                          rdfs:label "HS 1174 obverse side" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line1
 <http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line1> rdf:type owl:NamedIndividual ,
-                                                                         cunei:Line .
+                                                                         cunei:Line ;
+                                                                cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line2> ;
+                                                                rdfs:label "HS 1174 obverse side line 1" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line2
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line2> rdf:type owl:NamedIndividual ,
+                                                                         cunei:Line ;
+                                                                cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line3> ;
+                                                                cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line1> ;
+                                                                rdfs:label "HS 1174 observe side line 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line3
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line3> rdf:type owl:NamedIndividual ,
+                                                                         cunei:Line ;
+                                                                rdfs:label "HS 1174 obverse side line 3" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line4
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line4> rdf:type owl:NamedIndividual ,
+                                                                         cunei:Line ;
+                                                                rdfs:label "HS 1174 obverse side line 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_writtentext
 <http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_writtentext> rdf:type owl:NamedIndividual ,
-                                                                               cidoc:TX1_WrittenText .
+                                                                               cidoc:TX1_WrittenText ;
+                                                                      rdfs:label "HS 1174 obverse side written text" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_reading1
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_reading1> rdf:type owl:NamedIndividual ,
+                                                                    cidoc:TX5_Reading ;
+                                                           cidoc:TXP3_is_rendered_by <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1> ;
+                                                           rdfs:label "HS 1174 reading 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse
 <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse> rdf:type owl:NamedIndividual ,
-                                                                   cunei:TabletSide .
+                                                                   cunei:ReverseSide ;
+                                                          cunei:isRepresentedBy <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113347:577532/full/full/0/default.jpg> ;
+                                                          rdfs:label "HS 1174 reverse side" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line1
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line1> rdf:type owl:NamedIndividual ,
+                                                                         cunei:Line ;
+                                                                cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line2> ;
+                                                                rdfs:label "HS 1174 reverse side line 1" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line2
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line2> rdf:type owl:NamedIndividual ,
+                                                                         cunei:Line ;
+                                                                cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line3> ;
+                                                                cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line1> ;
+                                                                rdfs:label "HS 1174 reverse side line 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line3
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line3> rdf:type owl:NamedIndividual ,
+                                                                         cunei:Line ;
+                                                                cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line4> ;
+                                                                cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line2> ;
+                                                                rdfs:label "HS 1174 reverse side line 3" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line4
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line4> rdf:type owl:NamedIndividual ,
+                                                                         cunei:Line ;
+                                                                cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line5> ;
+                                                                cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line3> ;
+                                                                rdfs:label "HS 1174 reverse side line 4" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line5
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line5> rdf:type owl:NamedIndividual ,
+                                                                         cunei:Line ;
+                                                                cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line4> ;
+                                                                rdfs:label "HS 1174 reverse side line 5" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#hs1174_right
 <http://www.co-ode.org/ontologies/ont.owl#hs1174_right> rdf:type owl:NamedIndividual ,
-                                                                 cunei:TabletSide .
+                                                                 cunei:RightSide ;
+                                                        cunei:isRepresentedBy <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113345:577530/full/full/0/default.jpg> ;
+                                                        rdfs:label "HS 1174 right side" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#hs1174_top
 <http://www.co-ode.org/ontologies/ont.owl#hs1174_top> rdf:type owl:NamedIndividual ,
-                                                               cunei:TabletSide .
+                                                               cunei:TopSide ;
+                                                      cunei:isRepresentedBy <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113342:577527/full/full/0/default.jpg> ;
+                                                      rdfs:label "HS 1174 top side" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1> rdf:type owl:NamedIndividual ,
+                                                                            cunei:Transliteration ;
+                                                                   <http://purl.org/dc/elements/1.1/creator> "cdlistaff" ;
+                                                                   <http://purl.org/dc/terms/created> "2006-10-12T12:28:12"^^xsd:dateTime ;
+                                                                   rdfs:label "HS 1174 transliteration 1" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line1
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line1> rdf:type owl:NamedIndividual ,
+                                                                                          cunei:TransliterationLine ;
+                                                                                 rdfs:label "HS 1174 transliteration 1 obverse line 1" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line1_char1
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line1_char1> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 1 char 1" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line1_char2
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line1_char2> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 1 char 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line1_char3
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line1_char3> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 1 char 3" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line1_char4
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line1_char4> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 1 char 4" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line1_char5
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line1_char5> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 1 char 5" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line1_char6
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line1_char6> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 1 char 6" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line1_word1
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line1_word1> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line1_word2> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 1 word 1" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line1_word2
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line1_word2> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line1_word3> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 1 word 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line1_word3
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line1_word3> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 1 word 3" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line1_word4
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line1_word4> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 1 word 4" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line1_word5
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line1_word5> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 1 word 5" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2> rdf:type owl:NamedIndividual ,
+                                                                                          cunei:TransliterationLine ;
+                                                                                 rdfs:label "HS 1174 transliteration 1 obverse line 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2_char1
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2_char1> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 2 char 1" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2_char2
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2_char2> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 2 char 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2_char3
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2_char3> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 2 char 3" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2_char4
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2_char4> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 2 char 4" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2_char5
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2_char5> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 2 char 5" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2_char6
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2_char6> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 2 char 6" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2_char7
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2_char7> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 2 char 7" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2_char8
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2_char8> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 2 char 8" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2_word1
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2_word1> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2_word2> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 2 word 1" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2_word2
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2_word2> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2_word3> ;
+                                                                                       cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2_word1> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 2 word 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2_word3
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2_word3> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line2_word2> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 2 word 3" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line3
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line3> rdf:type owl:NamedIndividual ,
+                                                                                          cunei:TransliterationLine ;
+                                                                                 rdfs:label "HS 1174 transliteration 1 obverse line 3" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line3_char1
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line3_char1> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 3 char 1" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line3_char2
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line3_char2> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 3 char 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line3_char3
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line3_char3> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 3 char 3" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line3_char4
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line3_char4> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 3 char 4" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line3_word1
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line3_word1> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line3_word2> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 3 word 1" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line3_word2
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line3_word2> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line3_word1> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 3 word 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4> rdf:type owl:NamedIndividual ,
+                                                                                          cunei:TransliterationLine ;
+                                                                                 rdfs:label "HS 1174 transliteration 1 obverse line 4" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_char1
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_char1> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 4 char 1" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_char2
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_char2> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 4 char 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_char3
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_char3> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 4 char 3" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_char4
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_char4> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 4 char 4" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_char5
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_char5> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 4 char 5" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_word1
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_word1> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_word2> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 4 word 1" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_word2
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_word2> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_word3> ;
+                                                                                       cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_word1> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 4 word 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_word3
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_word3> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_word4> ;
+                                                                                       cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_word2> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 4 word 3" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_word4
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_word4> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_word5> ;
+                                                                                       cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_word3> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 4 word 4" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_word5
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_word5> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_word4> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 obverse line 4 word 5" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line1_char1
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line1_char1> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 1 char 1" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line1_char2
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line1_char2> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 1 char 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line1_char3
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line1_char3> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 1 char 3" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line1_char4
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line1_char4> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 1 char 4" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line1_word1
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line1_word1> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line1_word2> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 1 word 1" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line1_word2
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line1_word2> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line1_word1> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 1 word 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line2_char1
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line2_char1> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 2 char 1" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line2_char2
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line2_char2> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 2 char 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line2_char3
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line2_char3> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 2 char 3" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line2_char4
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line2_char4> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 2 char 4" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line2_char5
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line2_char5> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 2 char 5" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line2_word1
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line2_word1> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line1_word2> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 2 word 1" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line2_word2
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line2_word2> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line1_word1> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 2 word 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line3_char1
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line3_char1> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 3 char 1" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line3_char2
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line3_char2> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 3 char 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line3_char3
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line3_char3> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 3 char 3" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line3_char4
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line3_char4> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 3 char 4" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line3_word1
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line3_word1> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line3_word2> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 3 word 1" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line3_word2
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line3_word2> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line3_word1> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 3 word 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line4_char1
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line4_char1> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 4 char 1" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line4_char2
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line4_char2> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 4 char 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line4_char3
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line4_char3> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 4 char 3" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line4_word1
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line4_word1> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line4_word2> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 4 word 1" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line4_word2
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line4_word2> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line4_word1> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 4 word 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5_char1
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5_char1> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 5 char 1" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5_char2
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5_char2> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 5 char 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5_char3
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5_char3> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 5 char 3" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5_char4
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5_char4> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 5 char 4" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5_char5
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5_char5> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 5 char 5" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5_word1
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5_word1> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5_word2> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 5 word 1" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5_word2
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5_word2> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5_word3> ;
+                                                                                       cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5_word1> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 5 word 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5_word3
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5_word3> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5_word4> ;
+                                                                                       cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5_word3> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 5 word 3" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5_word4
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5_word4> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                       cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5_word3> ;
+                                                                                       rdfs:label "HS 1174 transliteration 1 reverse line 5 word 4" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#lu2_sense
+<http://www.co-ode.org/ontologies/ont.owl#lu2_sense> rdf:type owl:NamedIndividual ,
+                                                              lemon:LexicalSense ;
+                                                     rdfs:label "Word Sense: lu2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#lu2_word
+<http://www.co-ode.org/ontologies/ont.owl#lu2_word> rdf:type owl:NamedIndividual ,
+                                                             lemon:LexicalSense ;
+                                                    rdfs:label "Word: lu2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#szesz_sense
+<http://www.co-ode.org/ontologies/ont.owl#szesz_sense> rdf:type owl:NamedIndividual ,
+                                                                lemon:LexicalSense ;
+                                                       rdfs:label "Word Sense: szesz" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#szesz_word
+<http://www.co-ode.org/ontologies/ont.owl#szesz_word> rdf:type owl:NamedIndividual ,
+                                                               lemon:Word ;
+                                                      rdfs:label "Word: szesz" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#szu_word
+<http://www.co-ode.org/ontologies/ont.owl#szu_word> rdf:type owl:NamedIndividual ,
+                                                             lemon:Word ;
+                                                    rdfs:label "Word: szu" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ugula_sense
+<http://www.co-ode.org/ontologies/ont.owl#ugula_sense> rdf:type owl:NamedIndividual ,
+                                                                lemon:LexicalSense ;
+                                                       lemon:reference <http://www.wikidata.org/entity/Q16358610> ;
+                                                       rdfs:label "Word Sense: ugula" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ugula_word
+<http://www.co-ode.org/ontologies/ont.owl#ugula_word> rdf:type owl:NamedIndividual ,
+                                                               lemon:Word ;
+                                                      rdfs:label "Word: ugula" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#3(disz)_sense
+<http://www.co-ode.org/ontologies/ont.owl#3(disz)_sense> rdf:type owl:NamedIndividual ,
+                                                                  lemon:LexicalSense ;
+                                                         lemon:reference <http://www.wikidata.org/entity/Q201> ;
+                                                         rdfs:label "Word Sense: 3(disz)" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#3(disz)_word
+<http://www.co-ode.org/ontologies/ont.owl#3(disz)_word> rdf:type owl:NamedIndividual ,
+                                                                 lemon:Word ;
+                                                        lemon:sense <http://www.co-ode.org/ontologies/ont.owl#3(disz)_sense> ;
+                                                        rdfs:label "Word: 3(disz)" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#3(u)_sense
+<http://www.co-ode.org/ontologies/ont.owl#3(u)_sense> rdf:type owl:NamedIndividual ,
+                                                               lemon:LexicalSense ;
+                                                      lemon:reference <http://www.wikidata.org/enity/Q42817> ;
+                                                      rdfs:label "Word Sense: 3(u)" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#3(u)_word
+<http://www.co-ode.org/ontologies/ont.owl#3(u)_word> rdf:type owl:NamedIndividual ,
+                                                              lemon:Word ;
+                                                     lemon:form <http://www.co-ode.org/ontologies/ont.owl#3(u)_wordform1> ;
+                                                     lemon:sense <http://www.co-ode.org/ontologies/ont.owl#3(u)_sense> ;
+                                                     rdfs:label "Word: 3(u)" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#3(u)_wordform1
+<http://www.co-ode.org/ontologies/ont.owl#3(u)_wordform1> rdf:type owl:NamedIndividual ,
+                                                                   lemon:WordForm ;
+                                                          rdfs:label "Wordform: 3(u)" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9(disz)_sense
+<http://www.co-ode.org/ontologies/ont.owl#9(disz)_sense> rdf:type owl:NamedIndividual ,
+                                                                  lemon:LexicalSense ;
+                                                         lemon:reference <http://www.wikidata.org/entity/Q19108> ;
+                                                         rdfs:label "Word Sense: 9(disz)" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9(disz)_word
+<http://www.co-ode.org/ontologies/ont.owl#9(disz)_word> rdf:type owl:NamedIndividual ,
+                                                                 lemon:Word ;
+                                                        lemon:sense <http://www.co-ode.org/ontologies/ont.owl#9(disz)_sense> ;
+                                                        rdfs:label "Word: 9(disz)" .
+
+
+###  http://www.purl.org/cuneiform/Sumerian
+cunei:Sumerian rdf:type owl:NamedIndividual ,
+                        cunei:language ;
+               rdfs:label "Sumerian language" .
+
+
+###  http://www.purl.org/cuneiform/clay
+cunei:clay rdf:type owl:NamedIndividual ,
+                    cunei:Material ;
+           lemon:entry <http://www.co-ode.org/ontologies/ont.owl#3(disz)_word> ,
+                       <http://www.co-ode.org/ontologies/ont.owl#3(u)_word> ;
+           rdfs:label "clay" .
+
+
+###  http://www.wikidata.org/enity/Q42817
+<http://www.wikidata.org/enity/Q42817> rdf:type owl:NamedIndividual ;
+                                       rdfs:label "Wikidata: 30" .
+
+
+###  http://www.wikidata.org/entity/Q16358610
+<http://www.wikidata.org/entity/Q16358610> rdf:type owl:NamedIndividual ;
+                                           rdfs:label "Wikidata: instructor" .
+
+
+###  http://www.wikidata.org/entity/Q16560
+<http://www.wikidata.org/entity/Q16560> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: Palace" .
+
+
+###  http://www.wikidata.org/entity/Q19108
+<http://www.wikidata.org/entity/Q19108> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: 9" .
+
+
+###  http://www.wikidata.org/entity/Q201
+<http://www.wikidata.org/entity/Q201> rdf:type owl:NamedIndividual ;
+                                      rdfs:label "Wikidata: 3" .
+
+
+###  http://www.wikidata.org/entity/Q3947
+<http://www.wikidata.org/entity/Q3947> rdf:type owl:NamedIndividual ;
+                                       rdfs:label "Wikidata: house" .
+
+
+###  https://heidicon.ub.uni-heidelberg.de/iiif/2/1113342:577527/full/full/0/default.jpg
+<https://heidicon.ub.uni-heidelberg.de/iiif/2/1113342:577527/full/full/0/default.jpg> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.purl.org/cuneiform/3DRendering> ;
+                                                                                      rdfs:label "HS 1174 01 top rendering" .
+
+
+###  https://heidicon.ub.uni-heidelberg.de/iiif/2/1113343:577528/full/full/0/default.jpg
+<https://heidicon.ub.uni-heidelberg.de/iiif/2/1113343:577528/full/full/0/default.jpg> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.purl.org/cuneiform/3DRendering> ;
+                                                                                      rdfs:label "HS 1174 02 left rendering" .
+
+
+###  https://heidicon.ub.uni-heidelberg.de/iiif/2/1113344:577529/full/full/0/default.jpg
+<https://heidicon.ub.uni-heidelberg.de/iiif/2/1113344:577529/full/full/0/default.jpg> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.purl.org/cuneiform/3DRendering> ;
+                                                                                      rdfs:label "HS 1174 03 front rendering" .
+
+
+###  https://heidicon.ub.uni-heidelberg.de/iiif/2/1113345:577530/full/full/0/default.jpg
+<https://heidicon.ub.uni-heidelberg.de/iiif/2/1113345:577530/full/full/0/default.jpg> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.purl.org/cuneiform/3DRendering> ;
+                                                                                      rdfs:label "HS 1174 04 right rendering" .
+
+
+###  https://heidicon.ub.uni-heidelberg.de/iiif/2/1113346:577531/full/full/0/default.jpg
+<https://heidicon.ub.uni-heidelberg.de/iiif/2/1113346:577531/full/full/0/default.jpg> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.purl.org/cuneiform/3DRendering> ;
+                                                                                      rdfs:label "HS 1174 05 bottom rendering" .
+
+
+###  https://heidicon.ub.uni-heidelberg.de/iiif/2/1113347:577532/full/full/0/default.jpg
+<https://heidicon.ub.uni-heidelberg.de/iiif/2/1113347:577532/full/full/0/default.jpg> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.purl.org/cuneiform/3DRendering> ;
+                                                                                      rdfs:label "HS 1174 06 back rendering" .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
