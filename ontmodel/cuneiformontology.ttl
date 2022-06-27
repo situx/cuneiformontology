@@ -373,6 +373,20 @@ cunei:artifactNumber rdf:type owl:DatatypeProperty ;
                      <http://www.w3.org/2004/02/skos/core#definition> "An identifier of the cuneiform artifact" .
 
 
+###  http://www.purl.org/cuneiform/charIndex
+cunei:charIndex rdf:type owl:DatatypeProperty ;
+                rdfs:label "character index" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Character index relative to a line as designated in a given transliteration" .
+
+
+###  http://www.purl.org/cuneiform/columnNumber
+cunei:columnNumber rdf:type owl:DatatypeProperty ;
+                   rdfs:domain cunei:TransliterationColumn ;
+                   rdfs:range xsd:integer ;
+                   rdfs:label "column number" ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "Numbering of a column as represented in a given transliteration" .
+
+
 ###  http://www.purl.org/cuneiform/compositeNumber
 cunei:compositeNumber rdf:type owl:DatatypeProperty ;
                       rdfs:range xsd:string ;
@@ -408,6 +422,14 @@ cunei:isReconstructed rdf:type owl:DatatypeProperty ;
                       <http://www.w3.org/2004/02/skos/core#definition> "Describes if a given entity has been reconstructed by an interpreation process of a scholar, i.e. has no physical exact representation on the cuneiform artifact" .
 
 
+###  http://www.purl.org/cuneiform/lineNumber
+cunei:lineNumber rdf:type owl:DatatypeProperty ;
+                 rdfs:domain cunei:TransliterationLine ;
+                 rdfs:range xsd:integer ;
+                 rdfs:label "line number" ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Numbering of a line as designated in a given transliteration" .
+
+
 ###  http://www.purl.org/cuneiform/museumNumber
 cunei:museumNumber rdf:type owl:DatatypeProperty ;
                    rdfs:label "museum number" ;
@@ -431,6 +453,14 @@ cunei:sealNumber rdf:type owl:DatatypeProperty ;
 cunei:transliterationNumber rdf:type owl:DatatypeProperty ;
                             rdfs:label "transliteration number" ;
                             <http://www.w3.org/2004/02/skos/core#definition> "Identifier of a transliteration describing a text on a cuneiform tablet" .
+
+
+###  http://www.purl.org/cuneiform/wordIndex
+cunei:wordIndex rdf:type owl:DatatypeProperty ;
+                rdfs:domain cunei:transliteration_wordoccurence ;
+                rdfs:range xsd:integer ;
+                rdfs:label "word index" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Index of a word relative to a line as designated in a given transliteration" .
 
 
 #################################################################
