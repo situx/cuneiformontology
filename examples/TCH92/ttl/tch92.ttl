@@ -22,6 +22,10 @@
 <http://lemon-model.net/lemon#form> rdf:type owl:ObjectProperty .
 
 
+###  http://lemon-model.net/lemon#reference
+<http://lemon-model.net/lemon#reference> rdf:type owl:ObjectProperty .
+
+
 ###  http://lemon-model.net/lemon#sense
 <http://lemon-model.net/lemon#sense> rdf:type owl:ObjectProperty ;
                                      rdfs:subPropertyOf owl:topObjectProperty .
@@ -81,6 +85,32 @@ cunei:wordIndex rdf:type owl:DatatypeProperty .
 #    Classes
 #################################################################
 
+###  http://lemon-model.net/lemon#LexicalEntity
+<http://lemon-model.net/lemon#LexicalEntity> rdf:type owl:Class .
+
+
+###  http://lemon-model.net/lemon#LexicalForm
+<http://lemon-model.net/lemon#LexicalForm> rdf:type owl:Class .
+
+
+###  http://lemon-model.net/lemon#LexicalSense
+<http://lemon-model.net/lemon#LexicalSense> rdf:type owl:Class .
+
+
+###  http://lemon-model.net/lemon#Lexicon
+<http://lemon-model.net/lemon#Lexicon> rdf:type owl:Class .
+
+
+###  http://lemon-model.net/lemon#Word
+<http://lemon-model.net/lemon#Word> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://lemon-model.net/lemon#LexicalEntity> .
+
+
+###  http://lemon-model.net/lemon#Wordform
+<http://lemon-model.net/lemon#Wordform> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://lemon-model.net/lemon#LexicalForm> .
+
+
 ###  http://www.purl.org/cuneiform/Tablet
 cunei:Tablet rdf:type owl:Class .
 
@@ -104,6 +134,26 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#ban_character
 <http://www.co-ode.org/ontologies/ont.owl#ban_character> rdf:type owl:NamedIndividual ;
                                                          rdfs:label "Character: BAN" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ban_word
+<http://www.co-ode.org/ontologies/ont.owl#ban_word> rdf:type owl:NamedIndividual ;
+                                                    <http://lemon-model.net/lemon#form> <http://www.co-ode.org/ontologies/ont.owl#ban_wordform1> ;
+                                                    <http://lemon-model.net/lemon#sense> <http://www.co-ode.org/ontologies/ont.owl#ban_wordsense> ;
+                                                    rdfs:label "Word: BAN" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ban_wordform1
+<http://www.co-ode.org/ontologies/ont.owl#ban_wordform1> rdf:type owl:NamedIndividual ,
+                                                                  <http://lemon-model.net/lemon#Wordform> ;
+                                                         rdfs:label "Wordform: BAN" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ban_wordsense
+<http://www.co-ode.org/ontologies/ont.owl#ban_wordsense> rdf:type owl:NamedIndividual ,
+                                                                  <http://lemon-model.net/lemon#LexicalSense> ;
+                                                         <http://lemon-model.net/lemon#reference> <http://www.wikidata.org/entry/Q890527> ;
+                                                         rdfs:label "Wordsense: BAN" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#dam_character
@@ -138,12 +188,36 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
                                                           rdfs:label "Character: Gaba" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#ka_character
+<http://www.co-ode.org/ontologies/ont.owl#ka_character> rdf:type owl:NamedIndividual ;
+                                                        <http://lemon-model.net/lemon#writtenRep> "𒅗" ;
+                                                        cunei:transliteration "KA" ;
+                                                        cunei:unicodeCodePoint "U+12157" ;
+                                                        rdfs:label "Character: KA" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#kam_character
+<http://www.co-ode.org/ontologies/ont.owl#kam_character> rdf:type owl:NamedIndividual ;
+                                                         <http://lemon-model.net/lemon#writtenRep> "𒄰" ;
+                                                         cunei:transliteration "KAM" ;
+                                                         cunei:unicodeCodePoint "U+12130" ;
+                                                         rdfs:label "Character: KAM" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#ki_character
 <http://www.co-ode.org/ontologies/ont.owl#ki_character> rdf:type owl:NamedIndividual ;
                                                         <http://lemon-model.net/lemon#writtenRep> "𒆠" ;
                                                         cunei:transliteration "KI" ;
                                                         cunei:unicodeCodePoint "U+121A0" ;
                                                         rdfs:label "Character: KI" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#kin_character
+<http://www.co-ode.org/ontologies/ont.owl#kin_character> rdf:type owl:NamedIndividual ;
+                                                         <http://lemon-model.net/lemon#writtenRep> "𒆥" ;
+                                                         cunei:transliteration "KIN" ;
+                                                         cunei:unicodeCodePoint "U+121A5" ;
+                                                         rdfs:label "Character: KIN" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#min_character
@@ -173,6 +247,22 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#nigida_character
 <http://www.co-ode.org/ontologies/ont.owl#nigida_character> rdf:type owl:NamedIndividual ;
                                                             rdfs:label "Character: NIGIDA" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#sila3_character
+<http://www.co-ode.org/ontologies/ont.owl#sila3_character> rdf:type owl:NamedIndividual ;
+                                                           <http://lemon-model.net/lemon#writtenRep> "𒋡" ;
+                                                           cunei:transliteration "SILA3" ;
+                                                           cunei:unicodeCodePoint "U+122E1" ;
+                                                           rdfs:label "Character: SILA3" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#sze_character
+<http://www.co-ode.org/ontologies/ont.owl#sze_character> rdf:type owl:NamedIndividual ;
+                                                         <http://lemon-model.net/lemon#writtenRep> "𒊺" ;
+                                                         cunei:transliteration "sze" ;
+                                                         cunei:unicodeCodePoint "U+122BA" ;
+                                                         rdfs:label "Character: SZE" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92
@@ -830,837 +920,958 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line16_char1> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 1 ;
-                                                                      cunei:lineNumber 16 .
+                                                                      cunei:lineNumber 16 ;
+                                                                      rdfs:label "TCH92 obverse line 16 char 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line16_char2
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line16_char2> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 2 ;
-                                                                      cunei:lineNumber 16 .
+                                                                      cunei:lineNumber 16 ;
+                                                                      rdfs:label "TCH92 obverse line 16 char 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line16_char3
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line16_char3> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 3 ;
-                                                                      cunei:lineNumber 16 .
+                                                                      cunei:lineNumber 16 ;
+                                                                      rdfs:label "TCH92 obverse line 16 char 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line16_char4
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line16_char4> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 4 ;
-                                                                      cunei:lineNumber 16 .
+                                                                      cunei:lineNumber 16 ;
+                                                                      rdfs:label "TCH92 obverse line 16 char 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line16_char5
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line16_char5> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 5 ;
-                                                                      cunei:lineNumber 16 .
+                                                                      cunei:lineNumber 16 ;
+                                                                      rdfs:label "TCH92 obverse line 16 char 5" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line16_word1
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line16_word1> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 16 ;
-                                                                      cunei:wordIndex 1 .
+                                                                      cunei:wordIndex 1 ;
+                                                                      rdfs:label "TCH92 obverse line 16 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line16_word2
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line16_word2> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 16 ;
-                                                                      cunei:wordIndex 2 .
+                                                                      cunei:wordIndex 2 ;
+                                                                      rdfs:label "TCH92 obverse line 16 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17> rdf:type owl:NamedIndividual ,
                                                                          cunei:TransliterationLine ;
-                                                                cunei:lineNumber 17 .
+                                                                cunei:lineNumber 17 ;
+                                                                rdfs:label "TCH92 obverse line 17" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_char1
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_char1> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 1 ;
-                                                                      cunei:lineNumber 17 .
+                                                                      cunei:lineNumber 17 ;
+                                                                      rdfs:label "TCH92 obverse line 17 char 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_char10
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_char10> rdf:type owl:NamedIndividual ,
                                                                                 cunei:TransliterationCharOccurance ;
                                                                        cunei:charIndex 10 ;
-                                                                       cunei:lineNumber 17 .
+                                                                       cunei:lineNumber 17 ;
+                                                                       rdfs:label "TCH92 obverse line 17 char 10" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_char2
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_char2> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 2 ;
-                                                                      cunei:lineNumber 17 .
+                                                                      cunei:lineNumber 17 ;
+                                                                      rdfs:label "TCH92 obverse line 17 char 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_char3
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_char3> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 3 ;
-                                                                      cunei:lineNumber 17 .
+                                                                      cunei:lineNumber 17 ;
+                                                                      rdfs:label "TCH92 obverse line 17 char 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_char4
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_char4> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 4 ;
-                                                                      cunei:lineNumber 17 .
+                                                                      cunei:lineNumber 17 ;
+                                                                      rdfs:label "TCH92 obverse line 17 char 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_char5
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_char5> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 5 ;
-                                                                      cunei:lineNumber 17 .
+                                                                      cunei:lineNumber 17 ;
+                                                                      rdfs:label "TCH92 obverse line 17 char 5" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_char6
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_char6> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 6 ;
-                                                                      cunei:lineNumber 17 .
+                                                                      cunei:lineNumber 17 ;
+                                                                      rdfs:label "TCH92 obverse line 17 char 6" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_char7
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_char7> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 7 ;
-                                                                      cunei:lineNumber 17 .
+                                                                      cunei:lineNumber 17 ;
+                                                                      rdfs:label "TCH92 obverse line 17 char 7" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_char8
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_char8> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 8 ;
-                                                                      cunei:lineNumber 17 .
+                                                                      cunei:lineNumber 17 ;
+                                                                      rdfs:label "TCH92 obverse line 17 char 8" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_char9
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_char9> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 9 ;
-                                                                      cunei:lineNumber 17 .
+                                                                      cunei:lineNumber 17 ;
+                                                                      rdfs:label "TCH92 obverse line 17 char 9" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_word1
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_word1> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 17 ;
-                                                                      cunei:wordIndex 1 .
+                                                                      cunei:wordIndex 1 ;
+                                                                      rdfs:label "TCH92 obverse line 17 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_word2
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_word2> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 17 ;
-                                                                      cunei:wordIndex 2 .
+                                                                      cunei:wordIndex 2 ;
+                                                                      rdfs:label "TCH92 obverse line 17 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_word3
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_word3> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 17 ;
-                                                                      cunei:wordIndex 3 .
+                                                                      cunei:wordIndex 3 ;
+                                                                      rdfs:label "TCH92 obverse line 17 word 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_word4
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_word4> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 17 ;
-                                                                      cunei:wordIndex 4 .
+                                                                      cunei:wordIndex 4 ;
+                                                                      rdfs:label "TCH92 obverse line 17 word 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line18
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line18> rdf:type owl:NamedIndividual ,
                                                                          cunei:TransliterationLine ;
-                                                                cunei:lineNumber 18 .
+                                                                cunei:lineNumber 18 ;
+                                                                rdfs:label "TCH92 obverse line 18" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line18_char1
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line18_char1> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 1 ;
-                                                                      cunei:lineNumber 18 .
+                                                                      cunei:lineNumber 18 ;
+                                                                      rdfs:label "TCH92 obverse line 18 char 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line18_char2
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line18_char2> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 2 ;
-                                                                      cunei:lineNumber 18 .
+                                                                      cunei:lineNumber 18 ;
+                                                                      rdfs:label "TCH92 obverse line 18 char 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line18_char3
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line18_char3> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 3 ;
-                                                                      cunei:lineNumber 18 .
+                                                                      cunei:lineNumber 18 ;
+                                                                      rdfs:label "TCH92 obverse line 18 char 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line18_char4
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line18_char4> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 4 ;
-                                                                      cunei:lineNumber 18 .
+                                                                      cunei:lineNumber 18 ;
+                                                                      rdfs:label "TCH92 obverse line 18 char 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line18_char5
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line18_char5> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 5 ;
-                                                                      cunei:lineNumber 18 .
+                                                                      cunei:lineNumber 18 ;
+                                                                      rdfs:label "TCH92 obverse line 18 char 5" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line18_char6
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line18_char6> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 6 ;
-                                                                      cunei:lineNumber 18 .
+                                                                      cunei:lineNumber 18 ;
+                                                                      rdfs:label "TCH92 obverse line 18 char 6" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line18_char7
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line18_char7> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 7 ;
-                                                                      cunei:lineNumber 18 .
+                                                                      cunei:lineNumber 18 ;
+                                                                      rdfs:label "TCH92 obverse line 18 char 7" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line18_char8
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line18_char8> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 8 ;
-                                                                      cunei:lineNumber 18 .
+                                                                      cunei:lineNumber 18 ;
+                                                                      rdfs:label "TCH92 obverse line 18 char 8" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line18_word1
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line18_word1> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 18 ;
-                                                                      cunei:wordIndex 1 .
+                                                                      cunei:wordIndex 1 ;
+                                                                      rdfs:label "TCH92 obverse line 18 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line18_word2
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line18_word2> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 18 ;
-                                                                      cunei:wordIndex 2 .
+                                                                      cunei:wordIndex 2 ;
+                                                                      rdfs:label "TCH92 obverse line 18 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line18_word3
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line18_word3> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 18 ;
-                                                                      cunei:wordIndex 3 .
+                                                                      cunei:wordIndex 3 ;
+                                                                      rdfs:label "TCH92 obverse line 18 word 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19> rdf:type owl:NamedIndividual ,
                                                                          cunei:TransliterationLine ;
-                                                                cunei:lineNumber 19 .
+                                                                cunei:lineNumber 19 ;
+                                                                rdfs:label "TCH92 obverse line 19" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_char1
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_char1> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 1 ;
-                                                                      cunei:lineNumber 19 .
+                                                                      cunei:lineNumber 19 ;
+                                                                      rdfs:label "TCH92 obverse line 19 char 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_char10
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_char10> rdf:type owl:NamedIndividual ,
                                                                                 cunei:TransliterationCharOccurance ;
                                                                        cunei:charIndex 10 ;
-                                                                       cunei:lineNumber 19 .
+                                                                       cunei:lineNumber 19 ;
+                                                                       rdfs:label "TCH92 obverse line 19 char 10" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_char11
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_char11> rdf:type owl:NamedIndividual ,
                                                                                 cunei:TransliterationCharOccurance ;
                                                                        cunei:charIndex 11 ;
-                                                                       cunei:lineNumber 19 .
+                                                                       cunei:lineNumber 19 ;
+                                                                       rdfs:label "TCH92 obverse line 19 char 11" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_char2
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_char2> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 2 ;
-                                                                      cunei:lineNumber 19 .
+                                                                      cunei:lineNumber 19 ;
+                                                                      rdfs:label "TCH92 obverse line 19 char 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_char3
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_char3> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 3 ;
-                                                                      cunei:lineNumber 19 .
+                                                                      cunei:lineNumber 19 ;
+                                                                      rdfs:label "TCH92 obverse line 19 char 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_char4
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_char4> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 4 ;
-                                                                      cunei:lineNumber 19 .
+                                                                      cunei:lineNumber 19 ;
+                                                                      rdfs:label "TCH92 obverse line 19 char 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_char5
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_char5> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 5 ;
-                                                                      cunei:lineNumber 19 .
+                                                                      cunei:lineNumber 19 ;
+                                                                      rdfs:label "TCH92 obverse line 19 char 5" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_char6
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_char6> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 6 ;
-                                                                      cunei:lineNumber 19 .
+                                                                      cunei:lineNumber 19 ;
+                                                                      rdfs:label "TCH92 obverse line 19 char 6" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_char7
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_char7> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 7 ;
-                                                                      cunei:lineNumber 19 .
+                                                                      cunei:lineNumber 19 ;
+                                                                      rdfs:label "TCH92 obverse line 19 char 7" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_char8
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_char8> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 8 ;
-                                                                      cunei:lineNumber 19 .
+                                                                      cunei:lineNumber 19 ;
+                                                                      rdfs:label "TCH92 obverse line 19 char 8" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_char9
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_char9> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 9 ;
-                                                                      cunei:lineNumber 19 .
+                                                                      cunei:lineNumber 19 ;
+                                                                      rdfs:label "TCH92 obverse line 19 char 9" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_word1
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_word1> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 19 ;
-                                                                      cunei:wordIndex 1 .
+                                                                      cunei:wordIndex 1 ;
+                                                                      rdfs:label "TCH92 obverse line 19 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_word2
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_word2> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 19 ;
-                                                                      cunei:wordIndex 2 .
+                                                                      cunei:wordIndex 2 ;
+                                                                      rdfs:label "TCH92 obverse line 19 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_word3
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19_word3> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 19 ;
-                                                                      cunei:wordIndex 3 .
+                                                                      cunei:wordIndex 3 ;
+                                                                      rdfs:label "TCH92 obverse line 19 word 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_char1
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_char1> rdf:type owl:NamedIndividual ,
                                                                               cunei:TransliterationCharOccurance ;
                                                                      cunei:charIndex 1 ;
-                                                                     cunei:lineNumber 1 .
+                                                                     cunei:lineNumber 1 ;
+                                                                     rdfs:label "TCH92 obverse line 1 char 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_char2
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_char2> rdf:type owl:NamedIndividual ,
                                                                               cunei:TransliterationCharOccurance ;
                                                                      cunei:charIndex 2 ;
-                                                                     cunei:lineNumber 1 .
+                                                                     cunei:lineNumber 1 ;
+                                                                     rdfs:label "TCH92 obverse line 1 char 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_char3
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_char3> rdf:type owl:NamedIndividual ,
                                                                               cunei:TransliterationCharOccurance ;
                                                                      cunei:charIndex 3 ;
-                                                                     cunei:lineNumber 1 .
+                                                                     cunei:lineNumber 1 ;
+                                                                     rdfs:label "TCH92 obverse line 1 char 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_char4
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_char4> rdf:type owl:NamedIndividual ,
                                                                               cunei:TransliterationCharOccurance ;
                                                                      cunei:charIndex 4 ;
-                                                                     cunei:lineNumber 1 .
+                                                                     cunei:lineNumber 1 ;
+                                                                     rdfs:label "TCH92 obverse line 1 char 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_char5
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_char5> rdf:type owl:NamedIndividual ,
                                                                               cunei:TransliterationCharOccurance ;
                                                                      cunei:charIndex 5 ;
-                                                                     cunei:lineNumber 1 .
+                                                                     cunei:lineNumber 1 ;
+                                                                     rdfs:label "TCH92 obverse line 1 char 5" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_char6
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_char6> rdf:type owl:NamedIndividual ,
                                                                               cunei:TransliterationCharOccurance ;
                                                                      cunei:charIndex 6 ;
-                                                                     cunei:lineNumber 1 .
+                                                                     cunei:lineNumber 1 ;
+                                                                     rdfs:label "TCH92 obverse line 1 char 6" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_word1
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_word1> rdf:type owl:NamedIndividual ,
                                                                               cunei:TransliterationWordOccurance ;
                                                                      cunei:lineNumber 1 ;
-                                                                     cunei:wordIndex 1 .
+                                                                     cunei:wordIndex 1 ;
+                                                                     rdfs:label "TCH92 obverse line 1 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_word2
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_word2> rdf:type owl:NamedIndividual ,
                                                                               cunei:TransliterationWordOccurance ;
                                                                      cunei:lineNumber 1 ;
-                                                                     cunei:wordIndex 1 .
+                                                                     cunei:wordIndex 1 ;
+                                                                     rdfs:label "TCH92 obverse line 1 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line2
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line2> rdf:type owl:NamedIndividual ,
                                                                         cunei:TransliterationLine ;
-                                                               cunei:lineNumber 2 .
+                                                               cunei:lineNumber 2 ;
+                                                               rdfs:label "TCH92 obverse line 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line20
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line20> rdf:type owl:NamedIndividual ,
                                                                          cunei:TransliterationLine ;
-                                                                cunei:lineNumber 20 .
+                                                                cunei:lineNumber 20 ;
+                                                                rdfs:label "TCH92 obverse line 20" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line20_char1
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line20_char1> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 1 ;
-                                                                      cunei:lineNumber 20 .
+                                                                      cunei:lineNumber 20 ;
+                                                                      rdfs:label "TCH92 obverse line 20 char 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line20_char2
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line20_char2> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 2 ;
-                                                                      cunei:lineNumber 20 .
+                                                                      cunei:lineNumber 20 ;
+                                                                      rdfs:label "TCH92 obverse line 20 char 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line20_char3
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line20_char3> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 3 ;
-                                                                      cunei:lineNumber 20 .
+                                                                      cunei:lineNumber 20 ;
+                                                                      rdfs:label "TCH92 obverse line 20 char 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line20_char4
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line20_char4> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 4 ;
-                                                                      cunei:lineNumber 20 .
+                                                                      cunei:lineNumber 20 ;
+                                                                      rdfs:label "TCH92 obverse line 20 char 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line20_word1
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line20_word1> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 20 ;
-                                                                      cunei:wordIndex 1 .
+                                                                      cunei:wordIndex 1 ;
+                                                                      rdfs:label "TCH92 obverse line 20 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line20_word2
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line20_word2> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 20 ;
-                                                                      cunei:wordIndex 2 .
+                                                                      cunei:wordIndex 2 ;
+                                                                      rdfs:label "TCH92 obverse line 20 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line20_word3
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line20_word3> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 20 ;
-                                                                      cunei:wordIndex 3 .
+                                                                      cunei:wordIndex 3 ;
+                                                                      rdfs:label "TCH92 obverse line 20 word 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line20_word4
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line20_word4> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 20 ;
-                                                                      cunei:wordIndex 4 .
+                                                                      cunei:wordIndex 4 ;
+                                                                      rdfs:label "TCH92 obverse line 20 word 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line21
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line21> rdf:type owl:NamedIndividual ,
                                                                          cunei:TransliterationLine ;
-                                                                cunei:lineNumber 21 .
+                                                                cunei:lineNumber 21 ;
+                                                                rdfs:label "TCH92 obverse line 21" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line21_char1
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line21_char1> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 1 ;
-                                                                      cunei:lineNumber 21 .
+                                                                      cunei:lineNumber 21 ;
+                                                                      rdfs:label "TCH92 obverse line 21 char 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line21_char2
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line21_char2> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 2 ;
-                                                                      cunei:lineNumber 21 .
+                                                                      cunei:lineNumber 21 ;
+                                                                      rdfs:label "TCH92 obverse line 21 char 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line21_char3
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line21_char3> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 3 ;
-                                                                      cunei:lineNumber 21 .
+                                                                      cunei:lineNumber 21 ;
+                                                                      rdfs:label "TCH92 obverse line 21 char 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line21_char4
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line21_char4> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 4 ;
-                                                                      cunei:lineNumber 21 .
+                                                                      cunei:lineNumber 21 ;
+                                                                      rdfs:label "TCH92 obverse line 21 char 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line21_char5
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line21_char5> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 5 ;
-                                                                      cunei:lineNumber 21 .
+                                                                      cunei:lineNumber 21 ;
+                                                                      rdfs:label "TCH92 obverse line 21 char 5" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line21_char6
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line21_char6> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 6 ;
-                                                                      cunei:lineNumber 21 .
+                                                                      cunei:lineNumber 21 ;
+                                                                      rdfs:label "TCH92 obverse line 21 char 6" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line21_char7
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line21_char7> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 7 ;
-                                                                      cunei:lineNumber 21 .
+                                                                      cunei:lineNumber 21 ;
+                                                                      rdfs:label "TCH92 obverse line 21 char 7" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line21_char8
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line21_char8> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 8 ;
-                                                                      cunei:lineNumber 21 .
+                                                                      cunei:lineNumber 21 ;
+                                                                      rdfs:label "TCH92 obverse line 21 char 8" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line21_char9
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line21_char9> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 9 ;
-                                                                      cunei:lineNumber 21 .
+                                                                      cunei:lineNumber 21 ;
+                                                                      rdfs:label "TCH92 obverse line 21 char 9" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line21_word1
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line21_word1> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 21 ;
-                                                                      cunei:wordIndex 1 .
+                                                                      cunei:wordIndex 1 ;
+                                                                      rdfs:label "TCH92 obverse line 21 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line21_word2
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line21_word2> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 21 ;
-                                                                      cunei:wordIndex 2 .
+                                                                      cunei:wordIndex 2 ;
+                                                                      rdfs:label "TCH92 obverse line 21 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22> rdf:type owl:NamedIndividual ,
                                                                          cunei:TransliterationLine ;
-                                                                cunei:lineNumber 22 .
+                                                                cunei:lineNumber 22 ;
+                                                                rdfs:label "TCH92 obverse line 22" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_char1
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_char1> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 1 ;
-                                                                      cunei:lineNumber 22 .
+                                                                      cunei:lineNumber 22 ;
+                                                                      rdfs:label "TCH92 obverse line 22 char 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_char10
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_char10> rdf:type owl:NamedIndividual ,
                                                                                 cunei:TransliterationCharOccurance ;
                                                                        cunei:charIndex 10 ;
-                                                                       cunei:lineNumber 22 .
+                                                                       cunei:lineNumber 22 ;
+                                                                       rdfs:label "TCH92 obverse line 22 char 10" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_char2
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_char2> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 2 ;
-                                                                      cunei:lineNumber 22 .
+                                                                      cunei:lineNumber 22 ;
+                                                                      rdfs:label "TCH92 obverse line 22 char 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_char3
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_char3> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 3 ;
-                                                                      cunei:lineNumber 22 .
+                                                                      cunei:lineNumber 22 ;
+                                                                      rdfs:label "TCH92 obverse line 22 char 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_char4
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_char4> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 4 ;
-                                                                      cunei:lineNumber 22 .
+                                                                      cunei:lineNumber 22 ;
+                                                                      rdfs:label "TCH92 obverse line 22 char 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_char5
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_char5> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 5 ;
-                                                                      cunei:lineNumber 22 .
+                                                                      cunei:lineNumber 22 ;
+                                                                      rdfs:label "TCH92 obverse line 22 char 5" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_char6
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_char6> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 6 ;
-                                                                      cunei:lineNumber 22 .
+                                                                      cunei:lineNumber 22 ;
+                                                                      rdfs:label "TCH92 obverse line 22 char 6" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_char7
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_char7> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 7 ;
-                                                                      cunei:lineNumber 22 .
+                                                                      cunei:lineNumber 22 ;
+                                                                      rdfs:label "TCH92 obverse line 22 char 7" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_char8
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_char8> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 8 ;
-                                                                      cunei:lineNumber 22 .
+                                                                      cunei:lineNumber 22 ;
+                                                                      rdfs:label "TCH92 obverse line 22 char 8" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_char9
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_char9> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 9 ;
-                                                                      cunei:lineNumber 22 .
+                                                                      cunei:lineNumber 22 ;
+                                                                      rdfs:label "TCH92 obverse line 22 char 9" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_word1
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_word1> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 22 ;
-                                                                      cunei:wordIndex 1 .
+                                                                      cunei:wordIndex 1 ;
+                                                                      rdfs:label "TCH92 obverse line 22 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_word2
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_word2> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 22 ;
-                                                                      cunei:wordIndex 2 .
+                                                                      cunei:wordIndex 2 ;
+                                                                      rdfs:label "TCH92 obverse line 22 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_word3
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_word3> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 22 ;
-                                                                      cunei:wordIndex 3 .
+                                                                      cunei:wordIndex 3 ;
+                                                                      rdfs:label "TCH92 obverse line 22 word 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_word4
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22_word4> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 22 ;
-                                                                      cunei:wordIndex 4 .
+                                                                      cunei:wordIndex 4 ;
+                                                                      rdfs:label "TCH92 obverse line 22 word 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23> rdf:type owl:NamedIndividual ,
                                                                          cunei:TransliterationLine ;
-                                                                cunei:lineNumber 23 .
+                                                                cunei:lineNumber 23 ;
+                                                                rdfs:label "TCH92 obverse line 23" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_char1
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_char1> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 1 ;
-                                                                      cunei:lineNumber 23 .
+                                                                      cunei:lineNumber 23 ;
+                                                                      rdfs:label "TCH92 obverse line 23 char 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_char10
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_char10> rdf:type owl:NamedIndividual ,
                                                                                 cunei:TransliterationCharOccurance ;
                                                                        cunei:charIndex 10 ;
-                                                                       cunei:lineNumber 23 .
+                                                                       cunei:lineNumber 23 ;
+                                                                       rdfs:label "TCH92 obverse line 23 char 10" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_char11
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_char11> rdf:type owl:NamedIndividual ,
                                                                                 cunei:TransliterationCharOccurance ;
                                                                        cunei:charIndex 11 ;
-                                                                       cunei:lineNumber 23 .
+                                                                       cunei:lineNumber 23 ;
+                                                                       rdfs:label "TCH92 obverse line 23 char 11" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_char12
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_char12> rdf:type owl:NamedIndividual ,
                                                                                 cunei:TransliterationCharOccurance ;
                                                                        cunei:charIndex 12 ;
-                                                                       cunei:lineNumber 23 .
+                                                                       cunei:lineNumber 23 ;
+                                                                       rdfs:label "TCH92 obverse line 23 char 12" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_char2
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_char2> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 2 ;
-                                                                      cunei:lineNumber 23 .
+                                                                      cunei:lineNumber 23 ;
+                                                                      rdfs:label "TCH92 obverse line 23 char 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_char3
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_char3> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 3 ;
-                                                                      cunei:lineNumber 23 .
+                                                                      cunei:lineNumber 23 ;
+                                                                      rdfs:label "TCH92 obverse line 23 char 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_char4
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_char4> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 4 ;
-                                                                      cunei:lineNumber 23 .
+                                                                      cunei:lineNumber 23 ;
+                                                                      rdfs:label "TCH92 obverse line 23 char 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_char5
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_char5> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 5 ;
-                                                                      cunei:lineNumber 23 .
+                                                                      cunei:lineNumber 23 ;
+                                                                      rdfs:label "TCH92 obverse line 23 char 5" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_char6
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_char6> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 6 ;
-                                                                      cunei:lineNumber 23 .
+                                                                      cunei:lineNumber 23 ;
+                                                                      rdfs:label "TCH92 obverse line 23 char 6" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_char7
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_char7> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 7 ;
-                                                                      cunei:lineNumber 23 .
+                                                                      cunei:lineNumber 23 ;
+                                                                      rdfs:label "TCH92 obverse line 23 char 7" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_char8
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_char8> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 8 ;
-                                                                      cunei:lineNumber 23 .
+                                                                      cunei:lineNumber 23 ;
+                                                                      rdfs:label "TCH92 obverse line 23 char 8" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_char9
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_char9> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 9 ;
-                                                                      cunei:lineNumber 23 .
+                                                                      cunei:lineNumber 23 ;
+                                                                      rdfs:label "TCH92 obverse line 23 char 9" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_word1
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_word1> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 23 ;
-                                                                      cunei:wordIndex 1 .
+                                                                      cunei:wordIndex 1 ;
+                                                                      rdfs:label "TCH92 obverse line 23 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_word2
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_word2> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 23 ;
-                                                                      cunei:wordIndex 2 .
+                                                                      cunei:wordIndex 2 ;
+                                                                      rdfs:label "TCH92 obverse line 23 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_word3
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_word3> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 23 ;
-                                                                      cunei:wordIndex 3 .
+                                                                      cunei:wordIndex 3 ;
+                                                                      rdfs:label "TCH92 obverse line 23 word 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_word4
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23_word4> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 23 ;
-                                                                      cunei:wordIndex 4 .
+                                                                      cunei:wordIndex 4 ;
+                                                                      rdfs:label "TCH92 obverse line 23 word 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line24
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line24> rdf:type owl:NamedIndividual ,
                                                                          cunei:TransliterationLine ;
-                                                                cunei:lineNumber 24 .
+                                                                cunei:lineNumber 24 ;
+                                                                rdfs:label "TCH92 obverse line 24" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line24_char1
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line24_char1> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 1 ;
-                                                                      cunei:lineNumber 24 .
+                                                                      cunei:lineNumber 24 ;
+                                                                      rdfs:label "TCH92 obverse line 24 char 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line24_char2
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line24_char2> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 2 ;
-                                                                      cunei:lineNumber 24 .
+                                                                      cunei:lineNumber 24 ;
+                                                                      rdfs:label "TCH92 obverse line 24 char 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line24_char3
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line24_char3> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 3 ;
-                                                                      cunei:lineNumber 24 .
+                                                                      cunei:lineNumber 24 ;
+                                                                      rdfs:label "TCH92 obverse line 24 char 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line24_char4
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line24_char4> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationCharOccurance ;
                                                                       cunei:charIndex 4 ;
-                                                                      cunei:lineNumber 24 .
+                                                                      cunei:lineNumber 24 ;
+                                                                      rdfs:label "TCH92 obverse line 24 char 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line24_word1
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line24_word1> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 24 ;
-                                                                      cunei:wordIndex 1 .
+                                                                      cunei:wordIndex 1 ;
+                                                                      rdfs:label "TCH92 obverse line 24 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line24_word2
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line24_word2> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 24 ;
-                                                                      cunei:wordIndex 2 .
+                                                                      cunei:wordIndex 2 ;
+                                                                      rdfs:label "TCH92 obverse line 24 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line24_word3
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line24_word3> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 24 ;
-                                                                      cunei:wordIndex 3 .
+                                                                      cunei:wordIndex 3 ;
+                                                                      rdfs:label "TCH92 obverse line 24 word 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line24_word4
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line24_word4> rdf:type owl:NamedIndividual ,
                                                                                cunei:TransliterationWordOccurance ;
                                                                       cunei:lineNumber 24 ;
-                                                                      cunei:wordIndex 4 .
+                                                                      cunei:wordIndex 4 ;
+                                                                      rdfs:label "TCH92 obverse line 24 word 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line25
 <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line25> rdf:type owl:NamedIndividual ,
                                                                          cunei:TransliterationLine ;
-                                                                cunei:lineNumber 25 .
+                                                                cunei:lineNumber 25 ;
+                                                                rdfs:label "TCH92 obverse line 25" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line25_char1
@@ -2741,6 +2952,11 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
                                                                               cunei:TransliterationWordOccurance ;
                                                                      cunei:lineNumber 9 ;
                                                                      cunei:wordIndex 4 .
+
+
+###  http://www.wikidata.org/entry/Q890527
+<http://www.wikidata.org/entry/Q890527> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: Archer" .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
