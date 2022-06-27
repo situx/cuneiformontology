@@ -57,6 +57,26 @@ cunei:prevWord rdf:type owl:ObjectProperty ;
 
 
 #################################################################
+#    Data properties
+#################################################################
+
+###  http://www.purl.org/cuneiform/charIndex
+cunei:charIndex rdf:type owl:DatatypeProperty .
+
+
+###  http://www.purl.org/cuneiform/columnNumber
+cunei:columnNumber rdf:type owl:DatatypeProperty .
+
+
+###  http://www.purl.org/cuneiform/lineNumber
+cunei:lineNumber rdf:type owl:DatatypeProperty .
+
+
+###  http://www.purl.org/cuneiform/wordIndex
+cunei:wordIndex rdf:type owl:DatatypeProperty .
+
+
+#################################################################
 #    Classes
 #################################################################
 
@@ -159,11 +179,16 @@ cunei:TransliterationLine rdf:type owl:Class .
                                                                                          cunei:TransliterationLine ;
                                                                                 cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line11> ;
                                                                                 cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line9> ;
+                                                                                cunei:lineNumber 10 ;
                                                                                 rdfs:label "O147 transliteration 1 obverse line 10" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line10_word1
-<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line10_word1> rdf:type owl:NamedIndividual .
+<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line10_word1> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                      cunei:lineNumber 10 ;
+                                                                                      cunei:wordIndex 1 ;
+                                                                                      rdfs:label "O147 transliteration 1 obverse line 10 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line11
@@ -171,15 +196,26 @@ cunei:TransliterationLine rdf:type owl:Class .
                                                                                          cunei:TransliterationLine ;
                                                                                 cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line12> ;
                                                                                 cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line10> ;
+                                                                                cunei:lineNumber 11 ;
                                                                                 rdfs:label "O147 transliteration 1 obverse line 11" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line11_word1
-<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line11_word1> rdf:type owl:NamedIndividual .
+<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line11_word1> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                      cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line11_word2> ;
+                                                                                      cunei:lineNumber 11 ;
+                                                                                      cunei:wordIndex 1 ;
+                                                                                      rdfs:label "O147 transliteration 1 obverse line 11 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line11_word2
-<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line11_word2> rdf:type owl:NamedIndividual .
+<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line11_word2> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                      cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line11_word1> ;
+                                                                                      cunei:lineNumber 11 ;
+                                                                                      cunei:wordIndex 2 ;
+                                                                                      rdfs:label "O147 transliteration 1 obverse line 11 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line12
@@ -187,11 +223,16 @@ cunei:TransliterationLine rdf:type owl:Class .
                                                                                          cunei:TransliterationLine ;
                                                                                 cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line13> ;
                                                                                 cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line11> ;
+                                                                                cunei:lineNumber 12 ;
                                                                                 rdfs:label "O147 transliteration 1 obverse line 12" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line12_word1
-<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line12_word1> rdf:type owl:NamedIndividual .
+<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line12_word1> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                      cunei:lineNumber 12 ;
+                                                                                      cunei:wordIndex 1 ;
+                                                                                      rdfs:label "O147 transliteration 1 obverse line 12 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line13
@@ -199,11 +240,16 @@ cunei:TransliterationLine rdf:type owl:Class .
                                                                                          cunei:TransliterationLine ;
                                                                                 cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line14> ;
                                                                                 cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line12> ;
+                                                                                cunei:lineNumber 13 ;
                                                                                 rdfs:label "O147 transliteration 1 obverse line 13" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line13_word1
-<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line13_word1> rdf:type owl:NamedIndividual .
+<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line13_word1> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                      cunei:lineNumber 13 ;
+                                                                                      cunei:wordIndex 1 ;
+                                                                                      rdfs:label "O147 transliteration 1 obverse line 13 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line14
@@ -211,6 +257,7 @@ cunei:TransliterationLine rdf:type owl:Class .
                                                                                          cunei:TransliterationLine ;
                                                                                 cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line15> ;
                                                                                 cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line13> ;
+                                                                                cunei:lineNumber 14 ;
                                                                                 rdfs:label "O147 transliteration 1 obverse line 14" .
 
 
@@ -219,208 +266,303 @@ cunei:TransliterationLine rdf:type owl:Class .
                                                                                          cunei:TransliterationLine ;
                                                                                 cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line16> ;
                                                                                 cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line14> ;
+                                                                                cunei:lineNumber 15 ;
                                                                                 rdfs:label "O147 transliteration 1 obverse line 15" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line16
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line16> rdf:type owl:NamedIndividual ,
                                                                                          cunei:TransliterationLine ;
+                                                                                cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line17> ;
                                                                                 cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line15> ;
+                                                                                cunei:lineNumber 16 ;
                                                                                 rdfs:label "O147 transliteration 1 obverse line 16" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line17
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line17> rdf:type owl:NamedIndividual ,
                                                                                          cunei:TransliterationLine ;
+                                                                                cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line16> ;
+                                                                                cunei:lineNumber 17 ;
                                                                                 rdfs:label "O147 transliteration 1 obverse line 17" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_char1
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_char1> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 1 ;
+                                                                                     cunei:lineNumber 1 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 1 char 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_char2
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_char2> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 2 ;
+                                                                                     cunei:lineNumber 1 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 1 char 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_char3
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_char3> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 3 ;
+                                                                                     cunei:lineNumber 1 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 1 char 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_char4
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_char4> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 4 ;
+                                                                                     cunei:lineNumber 1 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 1 char 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_char5
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_char5> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 5 ;
+                                                                                     cunei:lineNumber 1 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 1 char 5" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_char6
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_char6> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 6 ;
+                                                                                     cunei:lineNumber 1 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 1 char 6" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_word1
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_word1> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
-                                                                                     cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_word2> .
+                                                                                     cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_word2> ;
+                                                                                     cunei:lineNumber 1 ;
+                                                                                     cunei:wordIndex 1 ;
+                                                                                     rdfs:label "O147 transliteration 1 obverse line 1 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_word2
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_word2> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
                                                                                      cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_word3> ;
-                                                                                     cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_word1> .
+                                                                                     cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_word1> ;
+                                                                                     cunei:lineNumber 1 ;
+                                                                                     cunei:wordIndex 2 ;
+                                                                                     rdfs:label "O147 transliteration 1 obverse line 1 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_word3
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_word3> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
                                                                                      cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_word4> ;
-                                                                                     cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_word2> .
+                                                                                     cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_word2> ;
+                                                                                     cunei:lineNumber 1 ;
+                                                                                     cunei:wordIndex 3 ;
+                                                                                     rdfs:label "O147 transliteration 1 obverse line 1 word 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_word4
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_word4> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
-                                                                                     cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_word3> .
+                                                                                     cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_word3> ;
+                                                                                     cunei:lineNumber 1 ;
+                                                                                     cunei:wordIndex 4 ;
+                                                                                     rdfs:label "O147 transliteration 1 obverse line 1 word 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2> rdf:type owl:NamedIndividual ,
                                                                                         cunei:TransliterationLine ;
+                                                                               cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3> ;
+                                                                               cunei:lineNumber 2 ;
                                                                                rdfs:label "O147 transliteration 1 obverse line 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_char1
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_char1> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 1 ;
+                                                                                     cunei:lineNumber 2 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 2 char 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_char10
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_char10> rdf:type owl:NamedIndividual ,
                                                                                                <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                      cunei:charIndex 10 ;
+                                                                                      cunei:lineNumber 2 ;
                                                                                       rdfs:label "O147 transliteration 1 obverse line 2 char 10" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_char2
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_char2> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 2 ;
+                                                                                     cunei:lineNumber 2 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 2 char 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_char3
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_char3> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 3 ;
+                                                                                     cunei:lineNumber 2 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 2 char 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_char4
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_char4> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 4 ;
+                                                                                     cunei:lineNumber 2 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 2 char 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_char5
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_char5> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 5 ;
+                                                                                     cunei:lineNumber 2 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 2 char 5" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_char6
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_char6> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 6 ;
+                                                                                     cunei:lineNumber 2 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 2 char 6" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_char7
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_char7> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 7 ;
+                                                                                     cunei:lineNumber 2 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 2 char 7" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_char8
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_char8> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 8 ;
+                                                                                     cunei:lineNumber 2 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 2 char 8" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_char9
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_char9> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 9 ;
+                                                                                     cunei:lineNumber 2 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 2 char 9" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_word1
-<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_word1> rdf:type owl:NamedIndividual .
+<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_word1> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_word2> ;
+                                                                                     cunei:lineNumber 2 ;
+                                                                                     cunei:wordIndex 1 ;
+                                                                                     rdfs:label "O147 transliteration 1 obverse line 2 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_word2
-<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_word2> rdf:type owl:NamedIndividual .
+<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_word2> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_word3> ;
+                                                                                     cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_word1> ;
+                                                                                     cunei:lineNumber 2 ;
+                                                                                     cunei:wordIndex 2 ;
+                                                                                     rdfs:label "O147 transliteration 1 obverse line 2 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_word3
-<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_word3> rdf:type owl:NamedIndividual .
+<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_word3> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:lineNumber 2 ;
+                                                                                     cunei:wordIndex 3 ;
+                                                                                     rdfs:label "O147 transliteration 1 obverse line 2 word 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3> rdf:type owl:NamedIndividual ,
                                                                                         cunei:TransliterationLine ;
+                                                                               cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4> ;
+                                                                               cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2> ;
+                                                                               cunei:lineNumber 3 ;
                                                                                rdfs:label "O147 transliteration 1 obverse line 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3_char1
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3_char1> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 1 ;
+                                                                                     cunei:lineNumber 3 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 3 char 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3_char2
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3_char2> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 2 ;
+                                                                                     cunei:lineNumber 3 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 3 char 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3_char3
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3_char3> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 3 ;
+                                                                                     cunei:lineNumber 3 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 3 char 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3_char4
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3_char4> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 4 ;
+                                                                                     cunei:lineNumber 3 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 3 char 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3_char5
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3_char5> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 5 ;
+                                                                                     cunei:lineNumber 3 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 3 char 5" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3_word1
-<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3_word1> rdf:type owl:NamedIndividual .
+<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3_word1> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3_word2> ,
+                                                                                                    <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3_word3> ;
+                                                                                     cunei:lineNumber 3 ;
+                                                                                     cunei:wordIndex 1 ;
+                                                                                     rdfs:label "O147 transliteration 1 obverse line 3 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3_word2
-<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3_word2> rdf:type owl:NamedIndividual .
+<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3_word2> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3_word1> ;
+                                                                                     cunei:lineNumber 3 ;
+                                                                                     cunei:wordIndex 2 ;
+                                                                                     rdfs:label "O147 transliteration 1 obverse line 3 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3_word3
-<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3_word3> rdf:type owl:NamedIndividual .
+<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3_word3> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3_word2> ;
+                                                                                     cunei:lineNumber 3 ;
+                                                                                     cunei:wordIndex 3 ;
+                                                                                     rdfs:label "O147 transliteration 1 obverse line 3 word 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4
@@ -428,131 +570,203 @@ cunei:TransliterationLine rdf:type owl:Class .
                                                                                         cunei:TransliterationLine ;
                                                                                cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5> ;
                                                                                cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line3> ;
+                                                                               cunei:lineNumber 4 ;
                                                                                rdfs:label "O147 transliteration 1 obverse line 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_char1
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_char1> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 1 ;
+                                                                                     cunei:lineNumber 4 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 4 char 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_char2
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_char2> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 2 ;
+                                                                                     cunei:lineNumber 4 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 4 char 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_char3
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_char3> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 3 ;
+                                                                                     cunei:lineNumber 4 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 4 char 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_char4
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_char4> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 4 ;
+                                                                                     cunei:lineNumber 4 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 4 char 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_char5
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_char5> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 5 ;
+                                                                                     cunei:lineNumber 4 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 4 char 5" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_char6
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_char6> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 6 ;
+                                                                                     cunei:lineNumber 4 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 4 char 6" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_char7
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_char7> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 7 ;
+                                                                                     cunei:lineNumber 4 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 4 char 7" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_word1
-<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_word1> rdf:type owl:NamedIndividual .
+<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_word1> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_word2> ;
+                                                                                     cunei:lineNumber 4 ;
+                                                                                     cunei:wordIndex 1 ;
+                                                                                     rdfs:label "O147 transliteration 1 obverse line 4 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_word2
-<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_word2> rdf:type owl:NamedIndividual .
+<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_word2> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_word3> ;
+                                                                                     cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_word1> ;
+                                                                                     cunei:lineNumber 4 ;
+                                                                                     cunei:wordIndex 2 ;
+                                                                                     rdfs:label "O147 transliteration 1 obverse line 4 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_word3
-<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_word3> rdf:type owl:NamedIndividual .
+<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_word3> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_word2> ;
+                                                                                     cunei:lineNumber 4 ;
+                                                                                     cunei:wordIndex 3 ;
+                                                                                     rdfs:label "O147 transliteration 1 obverse line 4 word 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5> rdf:type owl:NamedIndividual ,
                                                                                         cunei:TransliterationLine ;
+                                                                               cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6> ;
+                                                                               cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4> ;
+                                                                               cunei:lineNumber 5 ;
                                                                                rdfs:label "O147 transliteration 1 obverse line 5" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_char1
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_char1> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 1 ;
+                                                                                     cunei:lineNumber 5 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 5 char 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_char2
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_char2> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 2 ;
+                                                                                     cunei:lineNumber 5 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 5 char 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_char3
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_char3> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 3 ;
+                                                                                     cunei:lineNumber 5 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 5 char 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_char4
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_char4> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 4 ;
+                                                                                     cunei:lineNumber 5 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 5 char 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_char5
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_char5> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 5 ;
+                                                                                     cunei:lineNumber 5 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 5 char 5" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_char6
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_char6> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 6 ;
+                                                                                     cunei:lineNumber 5 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 5 char 6" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_char7
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_char7> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 7 ;
+                                                                                     cunei:lineNumber 5 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 5 char 7" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_char8
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_char8> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 8 ;
+                                                                                     cunei:lineNumber 5 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 5 char 8" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_word1
-<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_word1> rdf:type owl:NamedIndividual .
+<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_word1> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_word2> ;
+                                                                                     cunei:lineNumber 5 ;
+                                                                                     cunei:wordIndex 1 ;
+                                                                                     rdfs:label "O147 transliteration 1 obverse line 5 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_word2
-<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_word2> rdf:type owl:NamedIndividual .
+<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_word2> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_word3> ;
+                                                                                     cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_word1> ;
+                                                                                     cunei:lineNumber 5 ;
+                                                                                     cunei:wordIndex 2 ;
+                                                                                     rdfs:label "O147 transliteration 1 obverse line 5 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_word3
-<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_word3> rdf:type owl:NamedIndividual .
+<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_word3> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_word4> ;
+                                                                                     cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_word2> ;
+                                                                                     cunei:lineNumber 5 ;
+                                                                                     cunei:wordIndex 3 ;
+                                                                                     rdfs:label "O147 transliteration 1 obverse line 5 word 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_word4
-<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_word4> rdf:type owl:NamedIndividual .
+<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_word4> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5_word3> ;
+                                                                                     cunei:lineNumber 5 ;
+                                                                                     cunei:wordIndex 4 ;
+                                                                                     rdfs:label "O147 transliteration 1 obverse line 5 word 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6
@@ -560,51 +774,74 @@ cunei:TransliterationLine rdf:type owl:Class .
                                                                                         cunei:TransliterationLine ;
                                                                                cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7> ;
                                                                                cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line5> ;
+                                                                               cunei:lineNumber 6 ;
                                                                                rdfs:label "O147 transliteration 1 obverse line 6" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6_char1
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6_char1> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 1 ;
+                                                                                     cunei:lineNumber 6 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 6 char 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6_char2
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6_char2> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 2 ;
+                                                                                     cunei:lineNumber 6 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 6 char 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6_char3
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6_char3> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 3 ;
+                                                                                     cunei:lineNumber 6 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 6 char 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6_char4
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6_char4> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 4 ;
+                                                                                     cunei:lineNumber 6 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 6 char 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6_char5
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6_char5> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 5 ;
+                                                                                     cunei:lineNumber 6 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 6 char 5" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6_char6
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6_char6> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 6 ;
+                                                                                     cunei:lineNumber 6 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 6 char 6" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6_word1
-<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6_word1> rdf:type owl:NamedIndividual .
+<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6_word1> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6_word2> ;
+                                                                                     cunei:lineNumber 6 ;
+                                                                                     cunei:wordIndex 1 ;
+                                                                                     rdfs:label "O147 transliteration 1 obverse line 6 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6_word2
-<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6_word2> rdf:type owl:NamedIndividual .
+<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6_word2> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6_word1> ;
+                                                                                     cunei:lineNumber 6 ;
+                                                                                     cunei:wordIndex 2 ;
+                                                                                     rdfs:label "O147 transliteration 1 obverse line 6 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7
@@ -612,57 +849,82 @@ cunei:TransliterationLine rdf:type owl:Class .
                                                                                         cunei:TransliterationLine ;
                                                                                cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line8> ;
                                                                                cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6> ;
+                                                                               cunei:lineNumber 7 ;
                                                                                rdfs:label "O147 transliteration 1 obverse line 7" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7_char1
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7_char1> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 1 ;
+                                                                                     cunei:lineNumber 7 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 7 char 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7_char2
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7_char2> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 2 ;
+                                                                                     cunei:lineNumber 7 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 7 char 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7_char3
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7_char3> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 3 ;
+                                                                                     cunei:lineNumber 7 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 7 char 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7_char4
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7_char4> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 4 ;
+                                                                                     cunei:lineNumber 7 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 7 char 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7_char5
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7_char5> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 5 ;
+                                                                                     cunei:lineNumber 7 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 7 char 5" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7_char6
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7_char6> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 6 ;
+                                                                                     cunei:lineNumber 7 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 7 char 6" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7_char7
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7_char7> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 7 ;
+                                                                                     cunei:lineNumber 7 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 7 char 7" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7_word1
-<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7_word1> rdf:type owl:NamedIndividual .
+<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7_word1> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7_word2> ;
+                                                                                     cunei:lineNumber 7 ;
+                                                                                     cunei:wordIndex 1 ;
+                                                                                     rdfs:label "O147 transliteration 1 obverse line 7 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7_word2
-<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7_word2> rdf:type owl:NamedIndividual .
+<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7_word2> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7_word1> ;
+                                                                                     cunei:lineNumber 7 ;
+                                                                                     cunei:wordIndex 2 ;
+                                                                                     rdfs:label "O147 transliteration 1 obverse line 7 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line8
@@ -670,228 +932,401 @@ cunei:TransliterationLine rdf:type owl:Class .
                                                                                         cunei:TransliterationLine ;
                                                                                cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line9> ;
                                                                                cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7> ;
+                                                                               cunei:lineNumber 8 ;
                                                                                rdfs:label "O147 transliteration 1 obverse line 8" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line8_char1
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line8_char1> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 1 ;
+                                                                                     cunei:lineNumber 8 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 8 char 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line8_char2
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line8_char2> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 2 ;
+                                                                                     cunei:lineNumber 8 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 8 char 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line8_char3
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line8_char3> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 3 ;
+                                                                                     cunei:lineNumber 8 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 8 char 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line8_char4
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line8_char4> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     cunei:charIndex 4 ;
+                                                                                     cunei:lineNumber 8 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 8 char 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line8_word1
-<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line8_word1> rdf:type owl:NamedIndividual .
+<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line8_word1> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:lineNumber 8 ;
+                                                                                     cunei:wordIndex 1 ;
+                                                                                     rdfs:label "O147 transliteration 1 obverse line 8 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line9
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line9> rdf:type owl:NamedIndividual ,
-                                                                                        cunei:TransliterationLine .
+                                                                                        cunei:TransliterationLine ;
+                                                                               cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line10> ;
+                                                                               cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line8> ;
+                                                                               cunei:lineNumber 9 ;
+                                                                               rdfs:label "O147 transliteration 1 obverse line 9" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line9_word1
-<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line9_word1> rdf:type owl:NamedIndividual .
+<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line9_word1> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line9_word2> ;
+                                                                                     cunei:lineNumber 9 ;
+                                                                                     cunei:wordIndex 1 ;
+                                                                                     rdfs:label "O147 transliteration 1 obverse line 9 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line9_word2
-<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line9_word2> rdf:type owl:NamedIndividual .
+<http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line9_word2> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line9_word1> ;
+                                                                                     cunei:lineNumber 9 ;
+                                                                                     cunei:wordIndex 2 ;
+                                                                                     rdfs:label "O147 transliteration 1 obverse line 9 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line1
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line1> rdf:type owl:NamedIndividual ,
-                                                                                        cunei:TransliterationLine .
+                                                                                        cunei:TransliterationLine ;
+                                                                               cunei:lineNumber 1 ;
+																			   cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line2> ;
+                                                                               rdfs:label "O147 transliteration 1 reverse line 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line10
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line10> rdf:type owl:NamedIndividual ,
-                                                                                         cunei:TransliterationLine .
+                                                                                         cunei:TransliterationLine ;
+                                                                                cunei:lineNumber 10 ;
+																				cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line9> ;
+																			    cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line11> ;
+                                                                                rdfs:label "O147 transliteration 1 reverse line 10" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line10_word1
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line10_word1> rdf:type owl:NamedIndividual ,
-                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> .
+                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                      cunei:lineNumber 10 ;
+                                                                                      cunei:wordIndex 1 ;
+                                                                                      rdfs:label "O147 transliteration 1 reverse line 10 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line10_word2
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line10_word2> rdf:type owl:NamedIndividual ,
-                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> .
+                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                      cunei:lineNumber 10 ;
+                                                                                      cunei:wordIndex 2 ;
+                                                                                      rdfs:label "O147 transliteration 1 reverse line 10 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line11
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line11> rdf:type owl:NamedIndividual ,
-                                                                                         cunei:TransliterationLine .
+                                                                                         cunei:TransliterationLine ;
+                                                                                cunei:lineNumber 11 ;
+																				cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line10> ;
+																			    cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line12> ;
+                                                                                rdfs:label "O147 transliteration 1 reverse line 11" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line11_word1
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line11_word1> rdf:type owl:NamedIndividual ,
-                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> .
+                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+																					  cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line11_word2> ;
+                                                                                      cunei:lineNumber 11 ;
+                                                                                      cunei:wordIndex 1 ;
+                                                                                      rdfs:label "O147 transliteration 1 reverse line 11 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line11_word2
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line11_word2> rdf:type owl:NamedIndividual ,
-                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> .
+                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+																					  cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line11_word1> ;
+                                                                                      cunei:lineNumber 11 ;
+                                                                                      cunei:wordIndex 2 ;
+                                                                                      rdfs:label "O147 transliteration 1 reverse line 11 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line12
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line12> rdf:type owl:NamedIndividual ,
-                                                                                         cunei:TransliterationLine .
+                                                                                         cunei:TransliterationLine ;
+                                                                                cunei:lineNumber 12 ;
+																				cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line11> ;
+                                                                                rdfs:label "O147 transliteration 1 reverse line 12" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line1_word1
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line1_word1> rdf:type owl:NamedIndividual ,
-                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> .
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+																					 cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line1_word1> ;
+                                                                                     cunei:lineNumber 1 ;
+                                                                                     cunei:wordIndex 1 ;
+                                                                                     rdfs:label "O147 transliteration 1 reverse line 1 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line1_word2
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line1_word2> rdf:type owl:NamedIndividual ,
-                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> .
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+																					 cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line1_word1> ;
+																					 cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line1_word3> ;
+                                                                                     cunei:lineNumber 1 ;
+                                                                                     cunei:wordIndex 2 ;
+                                                                                     rdfs:label "O147 transliteration 1 reverse line 1 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line1_word3
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line1_word3> rdf:type owl:NamedIndividual ,
-                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> .
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+																					 cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line1_word2> ;
+																					 cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line1_word4> ;
+                                                                                     cunei:lineNumber 1 ;
+                                                                                     cunei:wordIndex 3 ;
+                                                                                     rdfs:label "O147 transliteration 1 reverse line 1 word 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line1_word4
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line1_word4> rdf:type owl:NamedIndividual ,
-                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> .
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+																					 cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line1_word3> ;
+                                                                                     cunei:lineNumber 1 ;
+                                                                                     cunei:wordIndex 4 ;
+                                                                                     rdfs:label "O147 transliteration 1 reverse line 1 word 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line2
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line2> rdf:type owl:NamedIndividual ,
-                                                                                        cunei:TransliterationLine .
+                                                                                        cunei:TransliterationLine ;
+                                                                               cunei:lineNumber 2 ;
+																			   cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line1> ;
+																			   cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line3> ;
+                                                                               rdfs:label "O147 transliteration 1 reverse line 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line2_word1
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line2_word1> rdf:type owl:NamedIndividual ,
-                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> .
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:lineNumber 2 ;
+                                                                                     cunei:wordIndex 1 ;
+																					 cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line2_word2> ;
+                                                                                     rdfs:label "O147 transliteration 1 reverse line 2 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line2_word2
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line2_word2> rdf:type owl:NamedIndividual ,
-                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> .
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:lineNumber 2 ;
+                                                                                     cunei:wordIndex 2 ;
+																					 cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line1_word1> ;
+                                                                                     rdfs:label "O147 transliteration 1 reverse line 2 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line3
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line3> rdf:type owl:NamedIndividual ,
-                                                                                        cunei:TransliterationLine .
+                                                                                        cunei:TransliterationLine ;
+                                                                               cunei:lineNumber 3 ;
+																			   cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line2> ;
+																			   cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line4> ;
+                                                                               rdfs:label "O147 transliteration 1 reverse line 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line3_word1
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line3_word1> rdf:type owl:NamedIndividual ,
-                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> .
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:lineNumber 3 ;
+                                                                                     cunei:wordIndex 1 ;
+                                                                                     rdfs:label "O147 transliteration 1 reverse line 3 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line4
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line4> rdf:type owl:NamedIndividual ,
-                                                                                        cunei:TransliterationLine .
+                                                                                        cunei:TransliterationLine ;
+                                                                               cunei:lineNumber 4 ;
+																			   cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line3> ;
+																			   cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line5> ;
+                                                                               rdfs:label "O147 transliteration 1 reverse line 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line4_word1
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line4_word1> rdf:type owl:NamedIndividual ,
-                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> .
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:lineNumber 4 ;
+                                                                                     cunei:wordIndex 1 ;
+																					 cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line4_word2> ;
+                                                                                     rdfs:label "O147 transliteration 1 reverse line 4 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line4_word2
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line4_word2> rdf:type owl:NamedIndividual ,
-                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> .
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:lineNumber 4 ;
+                                                                                     cunei:wordIndex 2 ;
+																					 cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line4_word1> ;
+																					 cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line4_word3> ;
+                                                                                     rdfs:label "O147 transliteration 1 reverse line 4 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line4_word3
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line4_word3> rdf:type owl:NamedIndividual ,
-                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> .
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:lineNumber 4 ;
+                                                                                     cunei:wordIndex 3 ;
+																					 cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line4_word2> ;
+																					 cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line4_word4> ;
+                                                                                     rdfs:label "O147 transliteration 1 reverse line 4 word 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line4_word4
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line4_word4> rdf:type owl:NamedIndividual ,
-                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> .
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:lineNumber 4 ;
+                                                                                     cunei:wordIndex 4 ;
+																					 cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line4_word3> ;
+																					 cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line4_word5> ;
+                                                                                     rdfs:label "O147 transliteration 1 reverse line 4 word 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line4_word5
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line4_word5> rdf:type owl:NamedIndividual ,
-                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> .
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:lineNumber 4 ;
+                                                                                     cunei:wordIndex 5 ;
+																					 cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line4_word4> ;
+                                                                                     rdfs:label "O147 transliteration 1 reverse line 4 word 5" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line5
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line5> rdf:type owl:NamedIndividual ,
-                                                                                        cunei:TransliterationLine .
+                                                                                        cunei:TransliterationLine ;
+                                                                               cunei:lineNumber 5 ;
+																			   cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line4> ;
+																			   cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line6> ;
+                                                                               rdfs:label "O147 transliteration 1 reverse line 5" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line5_word1
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line5_word1> rdf:type owl:NamedIndividual ,
-                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> .
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:lineNumber 5 ;
+                                                                                     cunei:wordIndex 1 ;
+																					 cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line5_word2> ;
+                                                                                     rdfs:label "O147 transliteration 1 reverse line 5 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line5_word2
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line5_word2> rdf:type owl:NamedIndividual ,
-                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> .
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:lineNumber 5 ;
+                                                                                     cunei:wordIndex 2 ;
+																					 cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line5_word1> ;
+																					 cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line5_word3> ;
+                                                                                     rdfs:label "O147 transliteration 1 reverse line 5 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line5_word3
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line5_word3> rdf:type owl:NamedIndividual ,
-                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> .
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:lineNumber 5 ;
+                                                                                     cunei:wordIndex 3 ;
+																					 cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line5_word2> ;
+																					 cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line5_word4> ;
+                                                                                     rdfs:label "O147 transliteration 1 reverse line 5 word 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line5_word4
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line5_word4> rdf:type owl:NamedIndividual ,
-                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> .
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:lineNumber 5 ;
+                                                                                     cunei:wordIndex 4 ;
+																					 cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line5_word3> ;
+                                                                                     rdfs:label "O147 transliteration 1 reverse line 5 word 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line6
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line6> rdf:type owl:NamedIndividual ,
-                                                                                        cunei:TransliterationLine .
+                                                                                        cunei:TransliterationLine ;
+                                                                               cunei:lineNumber 6 ;
+																			   cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line5> ;
+																			   cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line7> ;
+                                                                               rdfs:label "O147 transliteration 1 reverse line 6" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line6_word1
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line6_word1> rdf:type owl:NamedIndividual ,
-                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> .
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:lineNumber 6 ;
+                                                                                     cunei:wordIndex 1 ;
+																					 cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line6_word2> ;
+                                                                                     rdfs:label "O147 transliteration 1 reverse line 6 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line6_word2
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line6_word2> rdf:type owl:NamedIndividual ,
-                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> .
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:lineNumber 6 ;
+                                                                                     cunei:wordIndex 2 ;
+																					 cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line6_word1> ;
+                                                                                     rdfs:label "O147 transliteration 1 reverse line 6 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line7
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line7> rdf:type owl:NamedIndividual ,
-                                                                                        cunei:TransliterationLine .
+                                                                                        cunei:TransliterationLine ;
+                                                                               cunei:lineNumber 7 ;
+																			   cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line6> ;
+																			   cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line8> ;
+                                                                               rdfs:label "O147 transliteration 1 reverse line 7" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line8
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line8> rdf:type owl:NamedIndividual ,
-                                                                                        cunei:TransliterationLine .
+                                                                                        cunei:TransliterationLine ;
+                                                                               cunei:lineNumber 8 ;
+																			   cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line7> ;
+																			   cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line9> ;
+                                                                               rdfs:label "O147 transliteration 1 reverse line 8" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line9
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line9> rdf:type owl:NamedIndividual ,
-                                                                                        cunei:TransliterationLine .
+                                                                                        cunei:TransliterationLine ;
+                                                                               cunei:lineNumber 9 ;
+																			   cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line8> ;
+																			   cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line10> ;
+                                                                               rdfs:label "O147 transliteration 1 reverse line 9" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line9_word1
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line9_word1> rdf:type owl:NamedIndividual ,
-                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> .
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:lineNumber 9 ;
+                                                                                     cunei:wordIndex 1 ;
+																					 cunei:nextWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line9_word2> ;
+                                                                                     rdfs:label "O147 transliteration 1 reverse line 9 word 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line9_word2
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line9_word2> rdf:type owl:NamedIndividual ,
-                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> .
+                                                                                              <http://www.co-ode.org/ontologies/ont.owl#TransliterationWordOccurrence> ;
+                                                                                     cunei:lineNumber 9 ;
+                                                                                     cunei:wordIndex 2 ;
+																					 cunei:prevWord <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_reverse_line9_word1> ;
+                                                                                     rdfs:label "O147 transliteration 1 reverse line 9 word 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#1(u)_sense
