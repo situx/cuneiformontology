@@ -1,0 +1,201 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cunei: <http://www.purl.org/cuneiform/> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.purl.org/cuneiform/Tablet
+cunei:Tablet rdf:type owl:Class .
+
+
+###  http://www.purl.org/cuneiform/TransliterationCharOccurance
+cunei:TransliterationCharOccurance rdf:type owl:Class .
+
+
+###  http://www.purl.org/cuneiform/TransliterationLine
+cunei:TransliterationLine rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92
+<http://www.co-ode.org/ontologies/ont.owl#tch92> rdf:type owl:NamedIndividual ,
+                                                          cunei:Tablet .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1> rdf:type owl:NamedIndividual ,
+                                                                        cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line10
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line10> rdf:type owl:NamedIndividual ,
+                                                                         cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line11
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line11> rdf:type owl:NamedIndividual ,
+                                                                         cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line12
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line12> rdf:type owl:NamedIndividual ,
+                                                                         cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line13
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line13> rdf:type owl:NamedIndividual ,
+                                                                         cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line14
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line14> rdf:type owl:NamedIndividual ,
+                                                                         cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line15
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line15> rdf:type owl:NamedIndividual ,
+                                                                         cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line16
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line16> rdf:type owl:NamedIndividual ,
+                                                                         cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17> rdf:type owl:NamedIndividual ,
+                                                                         cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line18
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line18> rdf:type owl:NamedIndividual ,
+                                                                         cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line19> rdf:type owl:NamedIndividual ,
+                                                                         cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_char1
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_char1> rdf:type owl:NamedIndividual .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_char2
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_char2> rdf:type owl:NamedIndividual .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_char3
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_char3> rdf:type owl:NamedIndividual .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_char4
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_char4> rdf:type owl:NamedIndividual .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_char5
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_char5> rdf:type owl:NamedIndividual .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_char6
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line1_char6> rdf:type owl:NamedIndividual .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line2
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line2> rdf:type owl:NamedIndividual ,
+                                                                        cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line20
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line20> rdf:type owl:NamedIndividual ,
+                                                                         cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line21
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line21> rdf:type owl:NamedIndividual ,
+                                                                         cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line22> rdf:type owl:NamedIndividual ,
+                                                                         cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line23> rdf:type owl:NamedIndividual ,
+                                                                         cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line24
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line24> rdf:type owl:NamedIndividual ,
+                                                                         cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line25
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line25> rdf:type owl:NamedIndividual ,
+                                                                         cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line26
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line26> rdf:type owl:NamedIndividual ,
+                                                                         cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line27
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line27> rdf:type owl:NamedIndividual ,
+                                                                         cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line28
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line28> rdf:type owl:NamedIndividual ,
+                                                                         cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line3
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line3> rdf:type owl:NamedIndividual ,
+                                                                        cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line4
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line4> rdf:type owl:NamedIndividual ,
+                                                                        cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line5
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line5> rdf:type owl:NamedIndividual ,
+                                                                        cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line6
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line6> rdf:type owl:NamedIndividual ,
+                                                                        cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line7
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line7> rdf:type owl:NamedIndividual ,
+                                                                        cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line8
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line8> rdf:type owl:NamedIndividual ,
+                                                                        cunei:TransliterationLine .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line9
+<http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line9> rdf:type owl:NamedIndividual ,
+                                                                        cunei:TransliterationLine .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
