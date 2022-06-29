@@ -468,6 +468,8 @@ anno:TextualBody rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line3
 <http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line3> rdf:type owl:NamedIndividual ,
                                                                          cunei:Line ;
+                                                                cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line4> ;
+                                                                cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line2> ;
                                                                 cunei:lineNumber 3 ;
                                                                 rdfs:label "HS 1174 obverse side line 3" .
 
@@ -475,6 +477,7 @@ anno:TextualBody rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line4
 <http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line4> rdf:type owl:NamedIndividual ,
                                                                          cunei:Line ;
+                                                                cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line3> ;
                                                                 cunei:lineNumber 4 ;
                                                                 rdfs:label "HS 1174 obverse side line 4" .
 
