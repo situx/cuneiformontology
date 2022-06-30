@@ -24,6 +24,7 @@ jobs:
          pylode -i interlinks/cuneiformontology_interlinks.ttl -o docs/ontologyinterlinks.html
          pylode -i postagging/akkadian.ttl -o docs/postagging_akkadian.html
          pylode -i postagging/hittite.ttl -o docs/postagging_hittite.html
+         pylode -i examples/hs1174/ttl/hs1174.ttl -o docs/hs1174_example.html
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.3.3
       with:
