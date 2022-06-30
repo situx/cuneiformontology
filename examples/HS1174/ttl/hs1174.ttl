@@ -166,6 +166,11 @@ lemon:writtenRep rdf:type owl:DatatypeProperty ;
                                    rdfs:subPropertyOf owl:topDataProperty .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#hasExtendedGottsteinCode
+<http://www.co-ode.org/ontologies/ont.owl#hasExtendedGottsteinCode> rdf:type owl:DatatypeProperty ;
+                                                                    rdfs:subPropertyOf graphemon:hasGottsteinCode .
+
+
 ###  http://www.purl.org/cuneiform/CDLINumber
 cunei:CDLINumber rdf:type owl:DatatypeProperty ;
                  rdfs:label "CDLI number" .
@@ -523,6 +528,7 @@ anno:TextualBody rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#a_character
 <http://www.co-ode.org/ontologies/ont.owl#a_character> rdf:type owl:NamedIndividual ,
                                                                 cidoc:TX8_Grapheme ;
+                                                       graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#a_charvariant1> ;
                                                        graphemon:abzl 470 ;
                                                        graphemon:hasUnicodeCodePoint "U+12000" ;
                                                        graphemon:hasUnicodeRepresentation "𒀀" ;
@@ -534,18 +540,19 @@ anno:TextualBody rdf:type owl:Class .
                                                        rdfs:label "Character: A" .
 
 
-###  http://www.co-ode.org/ontologies/ont.owl#a_charvar1
-<http://www.co-ode.org/ontologies/ont.owl#a_charvar1> rdf:type owl:NamedIndividual ,
-                                                               graphemon:GraphemeVariant ;
-                                                      cidoc:P62_depicted_by <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line1_char4_glyph> ;
-                                                      graphemon:hasGottsteinCode "a2"^^graphemon:gottsteinLiteral ;
-                                                      graphemon:hasPaleoCode "a-a"^^graphemon:paleocodeLiteral ;
-                                                      rdfs:label "Grapheme Variant 1: A" .
+###  http://www.co-ode.org/ontologies/ont.owl#a_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#a_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                   graphemon:GraphemeVariant ;
+                                                          cidoc:P62_depicted_by <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line1_char4_glyph> ;
+                                                          graphemon:hasGottsteinCode "a2"^^graphemon:gottsteinLiteral ;
+                                                          graphemon:hasPaleoCode "a-a"^^graphemon:paleocodeLiteral ;
+                                                          rdfs:label "Grapheme Variant 1: A" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ak_character
 <http://www.co-ode.org/ontologies/ont.owl#ak_character> rdf:type owl:NamedIndividual ,
                                                                  cidoc:TX8_Grapheme ;
+                                                        graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#ak_charvariant1> ;
                                                         graphemon:abzl 052 ;
                                                         graphemon:hasUnicodeCodePoint "U+1201D" ;
                                                         graphemon:hasUnicodeRepresentation "𒀝" ;
@@ -555,10 +562,16 @@ anno:TextualBody rdf:type owl:Class .
                                                         rdfs:label "Character: AK" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#ak_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#ak_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                    graphemon:GraphemeVariant ;
+                                                           rdfs:label "Grapheme Variant 1: AK" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#da_character
 <http://www.co-ode.org/ontologies/ont.owl#da_character> rdf:type owl:NamedIndividual ,
                                                                  cidoc:TX8_Grapheme ;
-                                                        graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#pa_charvar1> ;
+                                                        graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#da_charvariant1> ;
                                                         graphemon:abzl 229 ;
                                                         graphemon:hasUnicodeCodePoint "U+12055" ;
                                                         graphemon:hasUnicodeRepresentation "𒁕" ;
@@ -569,9 +582,16 @@ anno:TextualBody rdf:type owl:Class .
                                                         rdfs:label "Character: DA" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#da_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#da_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                    graphemon:GraphemeVariant ;
+                                                           rdfs:label "Grapheme Variant 1: DA" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#dim2_character
 <http://www.co-ode.org/ontologies/ont.owl#dim2_character> rdf:type owl:NamedIndividual ,
                                                                    cidoc:TX8_Grapheme ;
+                                                          graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#dim2_charvariant1> ;
                                                           graphemon:abzl 067 ;
                                                           graphemon:hasUnicodeCodePoint "U+12076" ;
                                                           graphemon:hasUnicodeRepresentation "𒁶" ;
@@ -582,9 +602,16 @@ anno:TextualBody rdf:type owl:Class .
                                                           rdfs:label "Character: DIM2" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#dim2_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#dim2_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                      graphemon:GraphemeVariant ;
+                                                             rdfs:label "Grapheme Variant 1: DIM2" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#du6_character
 <http://www.co-ode.org/ontologies/ont.owl#du6_character> rdf:type owl:NamedIndividual ,
                                                                   cidoc:TX8_Grapheme ;
+                                                         graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#du6_charvariant1> ;
                                                          graphemon:abzl 311 ;
                                                          graphemon:hasUnicodeCodePoint "U+121EF" ;
                                                          graphemon:hasUnicodeRepresentation "𒇯" ;
@@ -592,6 +619,12 @@ anno:TextualBody rdf:type owl:Class .
                                                          graphemon:meszl 721 ;
                                                          graphemon:slha "459a" ;
                                                          rdfs:label "Character: DU6" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#du6_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#du6_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                     graphemon:GraphemeVariant ;
+                                                            rdfs:label "Grapheme Variant 1: DU6" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#e2-gal_sense
@@ -623,6 +656,7 @@ anno:TextualBody rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#e2_character
 <http://www.co-ode.org/ontologies/ont.owl#e2_character> rdf:type owl:NamedIndividual ,
                                                                  cidoc:TX8_Grapheme ;
+                                                        graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#e2_charvariant1> ;
                                                         graphemon:abzl 107 ;
                                                         graphemon:hasUnicodeCodePoint "U+1208D" ;
                                                         graphemon:hasUnicodeRepresentation "𒂍" ;
@@ -631,6 +665,12 @@ anno:TextualBody rdf:type owl:Class .
                                                         graphemon:signName "E2" ;
                                                         graphemon:slha 324 ;
                                                         rdfs:label "Character: E2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#e2_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#e2_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                    graphemon:GraphemeVariant ;
+                                                           rdfs:label "Grapheme Variant 1: E2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#e2_sense
@@ -661,6 +701,7 @@ anno:TextualBody rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#ga_character
 <http://www.co-ode.org/ontologies/ont.owl#ga_character> rdf:type owl:NamedIndividual ,
                                                                  cidoc:TX8_Grapheme ;
+                                                        graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#ga_charvariant1> ;
                                                         graphemon:abzl 201 ;
                                                         graphemon:hasUnicodeCodePoint "U+120B5" ;
                                                         graphemon:hasUnicodeRepresentation "𒂵" ;
@@ -670,9 +711,16 @@ anno:TextualBody rdf:type owl:Class .
                                                         rdfs:label "Character: GA" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#ga_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#ga_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                    graphemon:GraphemeVariant ;
+                                                           rdfs:label "Grapheme Variant 1: GA" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#gal_character
 <http://www.co-ode.org/ontologies/ont.owl#gal_character> rdf:type owl:NamedIndividual ,
                                                                   cidoc:TX8_Grapheme ;
+                                                         graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#gal_charvariant1> ;
                                                          graphemon:abzl 213 ;
                                                          graphemon:hasUnicodeCodePoint "U+120F2" ;
                                                          graphemon:hasUnicodeRepresentation "𒃲" ;
@@ -683,9 +731,16 @@ anno:TextualBody rdf:type owl:Class .
                                                          rdfs:label "Character: GAL" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#gal_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#gal_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                     graphemon:GraphemeVariant ;
+                                                            rdfs:label "Grapheme Variant 1: GAL" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#gurusz_character
 <http://www.co-ode.org/ontologies/ont.owl#gurusz_character> rdf:type owl:NamedIndividual ,
                                                                      cidoc:TX8_Grapheme ;
+                                                            graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#gurusz_charvariant1> ;
                                                             graphemon:abzl 176 ;
                                                             graphemon:hasUnicodeCodePoint "U+12128" ;
                                                             graphemon:hasUnicodeRepresentation "𒄨" ;
@@ -694,6 +749,12 @@ anno:TextualBody rdf:type owl:Class .
                                                             graphemon:signName "GURUSZ" ;
                                                             graphemon:slha 322 ;
                                                             rdfs:label "Character: GURUSZ" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#gurusz_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#gurusz_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                        graphemon:GraphemeVariant ;
+                                                               rdfs:label "Grapheme Variant 1: GURUSZ" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#gurusz_word
@@ -756,10 +817,22 @@ anno:TextualBody rdf:type owl:Class .
                                                                 rdfs:label "HS 1174 obverse side line 1" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line1_char1_glyph
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line1_char1_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 obverse side line 1 char 1" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line1_char2_glyph
 <http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line1_char2_glyph> rdf:type owl:NamedIndividual ,
                                                                                      cidoc:TX9_Glyph ;
-                                                                            rdfs:label "Glyph at HS1174 obverse line 1 char 2" .
+                                                                            rdfs:label "Glyph at HS1174 obverse side line 1 char 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line1_char4_glyph
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line1_char4_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 obverse side line 1 char 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line2
@@ -779,12 +852,24 @@ anno:TextualBody rdf:type owl:Class .
                                                                 rdfs:label "HS 1174 obverse side line 3" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line3_char1_glyph
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line3_char1_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 obverse side line 3 char 1" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line4
 <http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line4> rdf:type owl:NamedIndividual ,
                                                                          cunei:Line ;
                                                                 cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line3> ;
                                                                 cunei:lineNumber 4 ;
                                                                 rdfs:label "HS 1174 obverse side line 4" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line4_char1_glyph
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line4_char1_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 obverse side line 4 char 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_writtentext
@@ -1596,6 +1681,7 @@ anno:TextualBody rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#ka_character
 <http://www.co-ode.org/ontologies/ont.owl#ka_character> rdf:type owl:NamedIndividual ,
                                                                  cidoc:TX8_Grapheme ;
+                                                        graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#ka_charvariant1> ;
                                                         graphemon:abzl 312 ;
                                                         graphemon:hasUnicodeCodePoint "U+12157" ;
                                                         graphemon:hasUnicodeRepresentation "𒅗" ;
@@ -1605,9 +1691,16 @@ anno:TextualBody rdf:type owl:Class .
                                                         rdfs:label "Character: KA" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#ka_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#ka_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                    graphemon:GraphemeVariant ;
+                                                           rdfs:label "Grapheme Variant 1: KA" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#ku3_character
 <http://www.co-ode.org/ontologies/ont.owl#ku3_character> rdf:type owl:NamedIndividual ,
                                                                   cidoc:TX8_Grapheme ;
+                                                         graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#ku3_charvariant1> ;
                                                          graphemon:abzl 428 ;
                                                          graphemon:hasUnicodeCodePoint "U+121AC" ;
                                                          graphemon:hasUnicodeRepresentation "𒆬" ;
@@ -1618,9 +1711,16 @@ anno:TextualBody rdf:type owl:Class .
                                                          rdfs:label "Character: KU3" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#ku3_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#ku3_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                     graphemon:GraphemeVariant ;
+                                                            rdfs:label "Grapheme Variant 1: KU3" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#ku_character
 <http://www.co-ode.org/ontologies/ont.owl#ku_character> rdf:type owl:NamedIndividual ,
                                                                  cidoc:TX8_Grapheme ;
+                                                        graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#ku_charvariant1> ;
                                                         graphemon:abzl 415 ;
                                                         graphemon:altSignName "DUR2" ,
                                                                               "TUKUL" ,
@@ -1634,9 +1734,16 @@ anno:TextualBody rdf:type owl:Class .
                                                         rdfs:label "Character: KU" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#ku_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#ku_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                    graphemon:GraphemeVariant ;
+                                                           rdfs:label "Grapheme Variant 1: KU" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#lu2_character
 <http://www.co-ode.org/ontologies/ont.owl#lu2_character> rdf:type owl:NamedIndividual ,
                                                                   cidoc:TX8_Grapheme ;
+                                                         graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#lu2_charvariant1> ;
                                                          graphemon:abzl 253 ;
                                                          graphemon:hasUnicodeCodePoint "U+121FD" ;
                                                          graphemon:hasUnicodeRepresentation "𒇽" ;
@@ -1645,6 +1752,12 @@ anno:TextualBody rdf:type owl:Class .
                                                          graphemon:signName "LU2" ;
                                                          graphemon:slha 330 ;
                                                          rdfs:label "Character: lu2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#lu2_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#lu2_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                     graphemon:GraphemeVariant ;
+                                                            rdfs:label "Grapheme Variant 1: LU2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#lu2_sense
@@ -1662,6 +1775,7 @@ anno:TextualBody rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#ma_character
 <http://www.co-ode.org/ontologies/ont.owl#ma_character> rdf:type owl:NamedIndividual ,
                                                                  cidoc:TX8_Grapheme ;
+                                                        graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#ma_charvariant1> ;
                                                         graphemon:abzl 166 ;
                                                         graphemon:hasUnicodeCodePoint "U+12220" ;
                                                         graphemon:hasUnicodeRepresentation "𒈠" ;
@@ -1672,9 +1786,16 @@ anno:TextualBody rdf:type owl:Class .
                                                         rdfs:label "Character: MA" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#ma_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#ma_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                    graphemon:GraphemeVariant ;
+                                                           rdfs:label "Grapheme Variant 1: MA" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#nu_character
 <http://www.co-ode.org/ontologies/ont.owl#nu_character> rdf:type owl:NamedIndividual ,
                                                                  cidoc:TX8_Grapheme ;
+                                                        graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#nu_charvariant1> ;
                                                         graphemon:abzl 019 ;
                                                         graphemon:hasUnicodeCodePoint "U+12261" ;
                                                         graphemon:hasUnicodeRepresentation "𒉡" ;
@@ -1684,9 +1805,16 @@ anno:TextualBody rdf:type owl:Class .
                                                         rdfs:label "Character: NU" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#nu_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#nu_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                    graphemon:GraphemeVariant ;
+                                                           rdfs:label "Grapheme Variant 1: NU" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#pa_character
 <http://www.co-ode.org/ontologies/ont.owl#pa_character> rdf:type owl:NamedIndividual ,
                                                                  cidoc:TX8_Grapheme ;
+                                                        graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#pa_charvariant1> ;
                                                         graphemon:abzl 143 ;
                                                         graphemon:hasUnicodeCodePoint "U+1227A" ;
                                                         graphemon:hasUnicodeRepresentation "𒉺" ;
@@ -1697,16 +1825,19 @@ anno:TextualBody rdf:type owl:Class .
                                                         rdfs:label "Character: PA" .
 
 
-###  http://www.co-ode.org/ontologies/ont.owl#pa_charvar1
-<http://www.co-ode.org/ontologies/ont.owl#pa_charvar1> rdf:type owl:NamedIndividual ,
-                                                                graphemon:GraphemeVariant ;
-                                                       cidoc:P62_depicted_by <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line1_char1_glyph> ;
-                                                       graphemon:hasGottsteinCode "a1b2"^^graphemon:gottsteinLiteral ;
-                                                       rdfs:label "Grapheme Variant 1: PA" .
+###  http://www.co-ode.org/ontologies/ont.owl#pa_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#pa_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                    graphemon:GraphemeVariant ;
+                                                           cidoc:P62_depicted_by <http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line3_char1_glyph> ,
+                                                                                 <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line1_char1_glyph> ;
+                                                           graphemon:hasGottsteinCode "a1b2"^^graphemon:gottsteinLiteral ;
+                                                           rdfs:label "Grapheme Variant 1: PA" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ru_character
-<http://www.co-ode.org/ontologies/ont.owl#ru_character> rdf:type owl:NamedIndividual ;
+<http://www.co-ode.org/ontologies/ont.owl#ru_character> rdf:type owl:NamedIndividual ,
+                                                                 cidoc:TX8_Grapheme ;
+                                                        graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#ru_charvariant1> ;
                                                         graphemon:abzl 060 ;
                                                         graphemon:hasUnicodeCodePoint "U+12292" ;
                                                         graphemon:hasUnicodeRepresentation "𒊒" ;
@@ -1716,9 +1847,16 @@ anno:TextualBody rdf:type owl:Class .
                                                         rdfs:label "Character: RU" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#ru_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#ru_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                    graphemon:GraphemeVariant ;
+                                                           rdfs:label "Grapheme Variant 1: RU" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#sa6_character
 <http://www.co-ode.org/ontologies/ont.owl#sa6_character> rdf:type owl:NamedIndividual ,
                                                                   cidoc:TX8_Grapheme ;
+                                                         graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#sa6_charvariant1> ;
                                                          graphemon:abzl 228 ;
                                                          graphemon:hasUnicodeCodePoint "U+122B7" ;
                                                          graphemon:hasUnicodeRepresentation "𒊷" ;
@@ -1728,9 +1866,16 @@ anno:TextualBody rdf:type owl:Class .
                                                          rdfs:label "Character: SA6" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#sa6_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#sa6_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                     graphemon:GraphemeVariant ;
+                                                            rdfs:label "Grapheme Variant 1: SA6" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#szesz_character
 <http://www.co-ode.org/ontologies/ont.owl#szesz_character> rdf:type owl:NamedIndividual ,
                                                                     cidoc:TX8_Grapheme ;
+                                                           graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#szesz_charvariant1> ;
                                                            graphemon:abzl "021b" ;
                                                            graphemon:hasUnicodeCodePoint "U+122C0" ;
                                                            graphemon:hasUnicodeRepresentation "𒋀" ;
@@ -1738,6 +1883,12 @@ anno:TextualBody rdf:type owl:Class .
                                                            graphemon:meszl 535 ;
                                                            graphemon:slha 331 ;
                                                            rdfs:label "Character: SZESZ" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#szesz_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#szesz_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                       graphemon:GraphemeVariant ;
+                                                              rdfs:label "Grapheme Variant 1: SZESZ" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#szesz_sense
@@ -1755,6 +1906,7 @@ anno:TextualBody rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#szu_character
 <http://www.co-ode.org/ontologies/ont.owl#szu_character> rdf:type owl:NamedIndividual ,
                                                                   cidoc:TX8_Grapheme ;
+                                                         graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#szu_charvariant1> ;
                                                          graphemon:abzl 225 ;
                                                          graphemon:altSignName "SHU"^^graphemon:asciiTransliterationLiteral ;
                                                          graphemon:hasUnicodeCodePoint "U+122D7" ;
@@ -1766,6 +1918,13 @@ anno:TextualBody rdf:type owl:Class .
                                                          rdfs:label "Character: SZU" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#szu_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#szu_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                     graphemon:GraphemeVariant ;
+                                                            cidoc:P62_depicted_by <http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line1_char4_glyph> ;
+                                                            rdfs:label "Grapheme Variant 1: SZU" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#szu_word
 <http://www.co-ode.org/ontologies/ont.owl#szu_word> rdf:type owl:NamedIndividual ,
                                                              lemon:Word ;
@@ -1775,6 +1934,7 @@ anno:TextualBody rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tum_character
 <http://www.co-ode.org/ontologies/ont.owl#tum_character> rdf:type owl:NamedIndividual ,
                                                                   cidoc:TX8_Grapheme ;
+                                                         graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#tum_charvariant1> ;
                                                          graphemon:abzl 075 ;
                                                          graphemon:hasUnicodeCodePoint "U+12308" ;
                                                          graphemon:hasUnicodeRepresentation "𒌈" ;
@@ -1787,9 +1947,16 @@ anno:TextualBody rdf:type owl:Class .
                                                          <http://www.w3.org/2004/02/skos/core#altLabel> "Character: IB2" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#tum_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#tum_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                     graphemon:GraphemeVariant ;
+                                                            rdfs:label "Grapheme Variant 1: TUM" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#tur_character
 <http://www.co-ode.org/ontologies/ont.owl#tur_character> rdf:type owl:NamedIndividual ,
                                                                   cidoc:TX8_Grapheme ;
+                                                         graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#tur_charvariant1> ;
                                                          graphemon:abzl 393 ;
                                                          graphemon:hasUnicodeCodePoint "U+12309" ;
                                                          graphemon:hasUnicodeRepresentation "𒌉" ;
@@ -1799,9 +1966,16 @@ anno:TextualBody rdf:type owl:Class .
                                                          rdfs:label "Character: TUR" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#tur_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#tur_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                     graphemon:GraphemeVariant ;
+                                                            rdfs:label "Grapheme Variant 1: TUR" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#ud_character
 <http://www.co-ode.org/ontologies/ont.owl#ud_character> rdf:type owl:NamedIndividual ,
                                                                  cidoc:TX8_Grapheme ;
+                                                        graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#ud_charvariant1> ;
                                                         graphemon:abzl 332 ;
                                                         graphemon:hasUnicodeCodePoint "U+12313" ;
                                                         graphemon:hasUnicodeRepresentation "𒌓" ;
@@ -1809,6 +1983,12 @@ anno:TextualBody rdf:type owl:Class .
                                                         graphemon:meszl 596 ;
                                                         graphemon:slha 381 ;
                                                         rdfs:label "Character: UD" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ud_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#ud_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                    graphemon:GraphemeVariant ;
+                                                           rdfs:label "Grapheme Variant 1: UD" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ugula_sense
@@ -1827,6 +2007,7 @@ anno:TextualBody rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#um_character
 <http://www.co-ode.org/ontologies/ont.owl#um_character> rdf:type owl:NamedIndividual ,
                                                                  cidoc:TX8_Grapheme ;
+                                                        graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#um_charvariant1> ;
                                                         graphemon:abzl 113 ;
                                                         graphemon:hasUnicodeCodePoint "U+1231D" ;
                                                         graphemon:hasUnicodeRepresentation "𒌝" ;
@@ -1836,9 +2017,16 @@ anno:TextualBody rdf:type owl:Class .
                                                         rdfs:label "Character: UM" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#um_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#um_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                    graphemon:GraphemeVariant ;
+                                                           rdfs:label "Grapheme Variant 1: UM" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#za_character
 <http://www.co-ode.org/ontologies/ont.owl#za_character> rdf:type owl:NamedIndividual ,
                                                                  cidoc:TX8_Grapheme ;
+                                                        graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#za_charvariant1> ;
                                                         graphemon:abzl 474 ;
                                                         graphemon:hasUnicodeCodePoint "U+1235D" ;
                                                         graphemon:hasUnicodeRepresentation "𒍝" ;
@@ -1846,6 +2034,12 @@ anno:TextualBody rdf:type owl:Class .
                                                         graphemon:meszl 851 ;
                                                         graphemon:slha 586 ;
                                                         rdfs:label "Character: ZA" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#za_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#za_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                    graphemon:GraphemeVariant ;
+                                                           rdfs:label "Grapheme Variant 1: ZA" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#3(disz)_character
@@ -1900,6 +2094,8 @@ anno:TextualBody rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#3(u)_charvariant1
 <http://www.co-ode.org/ontologies/ont.owl#3(u)_charvariant1> rdf:type owl:NamedIndividual ,
                                                                       graphemon:GraphemeVariant ;
+                                                             graphemon:hasGottsteinCode "c3"^^graphemon:gottsteinLiteral ;
+                                                             graphemon:hasPaleoCode "w-w-w"^^graphemon:paleocodeLiteral ;
                                                              rdfs:label "Grapheme Variant 1: 3(u)" .
 
 
@@ -1940,7 +2136,8 @@ anno:TextualBody rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#9(disz)_charvariant1
 <http://www.co-ode.org/ontologies/ont.owl#9(disz)_charvariant1> rdf:type owl:NamedIndividual ,
                                                                          graphemon:GraphemeVariant ;
-                                                                cidoc:P62_depicted_by <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line5_char5_glyph> ;
+                                                                cidoc:P62_depicted_by <http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line4_char1_glyph> ,
+                                                                                      <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line5_char5_glyph> ;
                                                                 graphemon:hasGottsteinCode "a9"^^graphemon:gottsteinLiteral ;
                                                                 graphemon:hasPaleoCode "a:a-a:a-a:a-a:a-a"^^graphemon:paleocodeLiteral ;
                                                                 rdfs:label "Grapheme Variant 1: 9(disz)" .
