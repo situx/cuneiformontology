@@ -86,13 +86,6 @@ cidoc:TXP3_is_rendered_by rdf:type owl:ObjectProperty ;
                                                          rdfs:label "includes" .
 
 
-###  http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading
-<http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> rdf:type owl:ObjectProperty ;
-                                                              rdfs:domain cidoc:TX8_Grapheme ;
-                                                              rdfs:range graphemon:GraphemeReading ;
-                                                              rdfs:label "has grapheme reading" .
-
-
 ###  http://www.purl.org/cuneiform/hasGenre
 cunei:hasGenre rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf owl:topObjectProperty ;
@@ -144,6 +137,10 @@ cunei:prevWord rdf:type owl:ObjectProperty ;
 
 ###  http://www.purl.org/graphemon/contains
 graphemon:contains rdf:type owl:ObjectProperty .
+
+
+###  http://www.purl.org/graphemon/hasGraphemeReading
+graphemon:hasGraphemeReading rdf:type owl:ObjectProperty .
 
 
 ###  http://www.purl.org/graphemon/isComposedOf
@@ -268,6 +265,10 @@ graphemon:hethzl rdf:type owl:DatatypeProperty ;
 ###  http://www.purl.org/graphemon/meszl
 graphemon:meszl rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf graphemon:hasCuneiformIdentifier .
+
+
+###  http://www.purl.org/graphemon/readingValue
+graphemon:readingValue rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.purl.org/graphemon/signName
@@ -2064,6 +2065,7 @@ anno:TextualBody rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#za_character_reading1
 <http://www.co-ode.org/ontologies/ont.owl#za_character_reading1> rdf:type owl:NamedIndividual ,
                                                                           graphemon:GraphemeReading ;
+                                                                 graphemon:readingValue "SZA3"^^graphemon:asciiTransliterationLiteral ;
                                                                  rdfs:label "Character ZA Reading 1: SZA3" .
 
 
