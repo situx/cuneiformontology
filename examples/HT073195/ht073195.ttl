@@ -11,6 +11,26 @@
  ] .
 
 #################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.purl.org/graphemon/asciiTransliterationLiteral
+graphemon:asciiTransliterationLiteral rdf:type rdfs:Datatype .
+
+
+###  http://www.purl.org/graphemon/gottsteinLiteral
+graphemon:gottsteinLiteral rdf:type rdfs:Datatype .
+
+
+###  http://www.purl.org/graphemon/paleocodeLiteral
+graphemon:paleocodeLiteral rdf:type rdfs:Datatype .
+
+
+###  http://www.purl.org/graphemon/unicodeTransliterationLiteral
+graphemon:unicodeTransliterationLiteral rdf:type rdfs:Datatype .
+
+
+#################################################################
 #    Object Properties
 #################################################################
 
@@ -247,6 +267,7 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
 <http://www.co-ode.org/ontologies/ont.owl#babbar_character> rdf:type owl:NamedIndividual ,
                                                                      <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
                                                             cunei:occurance <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char7> ;
+                                                            graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#babbar_charvariant1> ;
                                                             <http://lemon-model.net/lemon#writtenRep> "𒌓" ;
                                                             cunei:transliteration "babbar" ;
                                                             rdfs:label "Character: BABBAR" .
@@ -263,6 +284,7 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
 <http://www.co-ode.org/ontologies/ont.owl#dingir_character> rdf:type owl:NamedIndividual ,
                                                                      <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
                                                             cunei:occurance <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char4> ;
+                                                            graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#dingir_charvariant1> ;
                                                             cunei:transliteration "d" ,
                                                                                   "dingir" ;
                                                             rdfs:label "Character: dingir" .
@@ -279,8 +301,8 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                  <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
                                                         cunei:occurance <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line2_char5> ;
                                                         graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#gi_charvariant1> ;
-                                                        <http://lemon-model.net/lemon#writtenRep> "𒄀" ;
-                                                        cunei:transliteration "GI" ;
+                                                        graphemon:hasUnicodeRepresentation "𒄀" ;
+                                                        graphemon:signName "GI" ;
                                                         rdfs:label "Character: GI" .
 
 
@@ -295,8 +317,9 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                   <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
                                                          cunei:occurance <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char3> ,
                                                                          <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char6> ;
-                                                         <http://lemon-model.net/lemon#writtenRep> "𒄯" ;
-                                                         cunei:transliteration "HAR" ;
+                                                         graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#har_charvariant1> ;
+                                                         graphemon:hasUnicodeRepresentation "𒄯" ;
+                                                         graphemon:signName "HAR" ;
                                                          rdfs:label "Character: HAR" .
 
 
@@ -750,8 +773,8 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
 <http://www.co-ode.org/ontologies/ont.owl#isz_character> rdf:type owl:NamedIndividual ,
                                                                   <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
                                                          cunei:occurance <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char6> ;
-                                                         <http://lemon-model.net/lemon#writtenRep> "𒅖" ;
                                                          cunei:transliteration "isz" ;
+                                                         graphemon:hasUnicodeRepresentation "𒅖" ;
                                                          rdfs:label "Character: ISZ" .
 
 
@@ -760,8 +783,9 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                   <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
                                                          cunei:occurance <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char6> ,
                                                                          <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line2_char4> ;
-                                                         <http://lemon-model.net/lemon#writtenRep> "𒆬" ;
-                                                         cunei:transliteration "ku3" ;
+                                                         graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#ku3_charvariant1> ;
+                                                         graphemon:hasUnicodeRepresentation "𒆬" ;
+                                                         graphemon:signName "ku3" ;
                                                          rdfs:label "Character: KU3" .
 
 
@@ -798,6 +822,7 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
 <http://www.co-ode.org/ontologies/ont.owl#lagab_character> rdf:type owl:NamedIndividual ,
                                                                     <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
                                                            cunei:occurance <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char2> ;
+                                                           graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#lagab_charvariant1> ;
                                                            cunei:transliteration "lagab" ,
                                                                                  "nigin2" ;
                                                            rdfs:label "Character: LAGAB" .
@@ -860,6 +885,7 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                           cunei:occurance <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char5> ,
                                                                           <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line2_char3> ,
                                                                           <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char1> ;
+                                                          graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#sza3_charvariant1> ;
                                                           <http://lemon-model.net/lemon#writtenRep> "𒊮" ;
                                                           cunei:transliteration "sza3" ;
                                                           rdfs:label "Character: SZA3" .
