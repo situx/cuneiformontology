@@ -25,9 +25,9 @@ jobs:
          pylode -i postagging/akkadian.ttl -o docs/postagging_akkadian.html
          pylode -i postagging/hittite.ttl -o docs/postagging_hittite.html
          pylode -i examples/HS1174/ttl/hs1174.ttl -o docs/example_hs1174.html
-         pylode -i examples/examples/HT073195/ht073195.ttl -o docs/example_ht073195.html
-         pylode -i examples/examples/O149/ttl/o147.ttl -o docs/example_o147.html
-         pylode -i examples/examples/TCH92/ttl/tch92.ttl -o docs/example_tch92.html
+         pylode -i examples/HT073195/ht073195.ttl -o docs/example_ht073195.html
+         pylode -i examples/O149/ttl/o147.ttl -o docs/example_o147.html
+         pylode -i examples/TCH92/ttl/tch92.ttl -o docs/example_tch92.html
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.3.3
       with:
