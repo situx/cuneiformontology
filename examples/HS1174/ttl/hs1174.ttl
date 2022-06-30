@@ -86,6 +86,13 @@ cidoc:TXP3_is_rendered_by rdf:type owl:ObjectProperty ;
                                                          rdfs:label "includes" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading
+<http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> rdf:type owl:ObjectProperty ;
+                                                              rdfs:domain cidoc:TX8_Grapheme ;
+                                                              rdfs:range graphemon:GraphemeReading ;
+                                                              rdfs:label "has grapheme reading" .
+
+
 ###  http://www.purl.org/cuneiform/hasGenre
 cunei:hasGenre rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf owl:topObjectProperty ;
@@ -496,6 +503,11 @@ graphemon:GraphemePart rdf:type owl:Class ;
                        rdfs:label "grapheme part" .
 
 
+###  http://www.purl.org/graphemon/GraphemeReading
+graphemon:GraphemeReading rdf:type owl:Class ;
+                          rdfs:label "grapheme reading" .
+
+
 ###  http://www.purl.org/graphemon/GraphemeVariant
 graphemon:GraphemeVariant rdf:type owl:Class ;
                           rdfs:subClassOf cidoc:TX8_Grapheme ;
@@ -685,6 +697,12 @@ anno:TextualBody rdf:type owl:Class .
                                                    lemon:form <http://www.co-ode.org/ontologies/ont.owl#e2_a_form> ;
                                                    lemon:sense <http://www.co-ode.org/ontologies/ont.owl#e2_sense> ;
                                                    rdfs:label "Word: e2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#e2_wordform1
+<http://www.co-ode.org/ontologies/ont.owl#e2_wordform1> rdf:type owl:NamedIndividual ,
+                                                                 lemon:WordForm ;
+                                                        rdfs:label "Wordform 1: e2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ensi2_charactercomp
@@ -2001,7 +2019,14 @@ anno:TextualBody rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#ugula_word
 <http://www.co-ode.org/ontologies/ont.owl#ugula_word> rdf:type owl:NamedIndividual ,
                                                                lemon:Word ;
+                                                      lemon:form <http://www.co-ode.org/ontologies/ont.owl#ugula_wordform> ;
                                                       rdfs:label "Word: ugula" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ugula_wordform
+<http://www.co-ode.org/ontologies/ont.owl#ugula_wordform> rdf:type owl:NamedIndividual ,
+                                                                   lemon:WordForm ;
+                                                          rdfs:label "Wordform: Ugula" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#um_character
@@ -2034,6 +2059,12 @@ anno:TextualBody rdf:type owl:Class .
                                                         graphemon:meszl 851 ;
                                                         graphemon:slha 586 ;
                                                         rdfs:label "Character: ZA" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#za_character_reading1
+<http://www.co-ode.org/ontologies/ont.owl#za_character_reading1> rdf:type owl:NamedIndividual ,
+                                                                          graphemon:GraphemeReading ;
+                                                                 rdfs:label "Character ZA Reading 1: SZA3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#za_charvariant1
@@ -2076,6 +2107,12 @@ anno:TextualBody rdf:type owl:Class .
                                                                  lemon:Word ;
                                                         lemon:sense <http://www.co-ode.org/ontologies/ont.owl#3(disz)_sense> ;
                                                         rdfs:label "Word: 3(disz)" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#3(disz)_wordform
+<http://www.co-ode.org/ontologies/ont.owl#3(disz)_wordform> rdf:type owl:NamedIndividual ,
+                                                                     lemon:WordForm ;
+                                                            rdfs:label "Wordform: 3(disz)" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#3(u)_character
