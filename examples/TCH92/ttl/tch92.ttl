@@ -51,6 +51,11 @@
                                      rdfs:subPropertyOf owl:topObjectProperty .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading
+<http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> rdf:type owl:ObjectProperty ;
+                                                              rdfs:label "has grapheme reading" .
+
+
 ###  http://www.purl.org/cuneiform/nextChar
 cunei:nextChar rdf:type owl:ObjectProperty .
 
@@ -77,6 +82,10 @@ cunei:prevLine rdf:type owl:ObjectProperty .
 
 ###  http://www.purl.org/cuneiform/prevWord
 cunei:prevWord rdf:type owl:ObjectProperty .
+
+
+###  http://www.purl.org/graphemon/variant
+<http://www.purl.org/graphemon/variant> rdf:type owl:ObjectProperty .
 
 
 #################################################################
@@ -172,6 +181,10 @@ cunei:wordIndex rdf:type owl:DatatypeProperty .
                                       rdfs:subPropertyOf <http://www.purl.org/graphemon/hasCuneiformIdentifier> .
 
 
+###  http://www.purl.org/graphemon/readingValue
+<http://www.purl.org/graphemon/readingValue> rdf:type owl:DatatypeProperty .
+
+
 ###  http://www.purl.org/graphemon/signName
 <http://www.purl.org/graphemon/signName> rdf:type owl:DatatypeProperty ;
                                          rdfs:subPropertyOf <http://www.purl.org/graphemon/hasCuneiformIdentifier> .
@@ -245,9 +258,70 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 #    Individuals
 #################################################################
 
+###  http://www.co-ode.org/ontologies/ont.owl#an_character
+<http://www.co-ode.org/ontologies/ont.owl#an_character> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                        <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#an_character_reading_d> ,
+                                                                                                                      <http://www.co-ode.org/ontologies/ont.owl#an_character_reading_dingir> ;
+                                                        <http://www.purl.org/graphemon/abzl> "009"^^<http://www.purl.org/graphemon/asciiTransliterationLiteral> ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+1202D" ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒀭" ;
+                                                        <http://www.purl.org/graphemon/hethzl> "8"^^<http://www.purl.org/graphemon/asciiTransliterationLiteral> ;
+                                                        <http://www.purl.org/graphemon/meszl> 10 ;
+                                                        <http://www.purl.org/graphemon/signName> "AN" ;
+                                                        <http://www.purl.org/graphemon/slha> "013"^^<http://www.purl.org/graphemon/asciiTransliterationLiteral> ;
+                                                        rdfs:label "Character: AN" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#an_character_reading_d
+<http://www.co-ode.org/ontologies/ont.owl#an_character_reading_d> rdf:type owl:NamedIndividual ,
+                                                                           <http://www.purl.org/graphemon/GraphemeReading> ;
+                                                                  rdfs:label "Character AN Reading D" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#an_character_reading_dingir
+<http://www.co-ode.org/ontologies/ont.owl#an_character_reading_dingir> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.purl.org/graphemon/GraphemeReading> ;
+                                                                       <http://www.purl.org/graphemon/readingValue> "dingir"^^<http://www.purl.org/graphemon/asciiTransliterationLiteral> ;
+                                                                       rdfs:label "Character AN Reading Dingir" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#an_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#an_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                    <http://www.purl.org/graphemon/GraphemeVariant> ;
+                                                           rdfs:label "Grapheme Variant 1: AN" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ba_character
+<http://www.co-ode.org/ontologies/ont.owl#ba_character> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                        <http://www.purl.org/graphemon/variant> <http://www.co-ode.org/ontologies/ont.owl#ba_charvariant1> ;
+                                                        <http://www.purl.org/graphemon/abzl> 303 ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12040" ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒁀" ;
+                                                        <http://www.purl.org/graphemon/hethzl> 205 ;
+                                                        <http://www.purl.org/graphemon/meszl> 14 ;
+                                                        <http://www.purl.org/graphemon/signName> "BA" ;
+                                                        <http://www.purl.org/graphemon/slha> 005 ;
+                                                        rdfs:label "Character: BA" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ba_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#ba_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                    <http://www.purl.org/graphemon/GraphemeVariant> ;
+                                                           rdfs:label "Grapheme Variant 1: BA" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#ban_character
 <http://www.co-ode.org/ontologies/ont.owl#ban_character> rdf:type owl:NamedIndividual ,
                                                                   <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                         <http://www.purl.org/graphemon/abzl> 029 ;
+                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+1244F" ;
+                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒑏" ;
+                                                         <http://www.purl.org/graphemon/hethzl> 20 ;
+                                                         <http://www.purl.org/graphemon/meszl> 122 ;
+                                                         <http://www.purl.org/graphemon/signName> "BAN2"^^<http://www.purl.org/graphemon/asciiTransliterationLiteral> ;
+                                                         <http://www.purl.org/graphemon/slha> 74 ;
                                                          rdfs:label "Character: BAN" .
 
 
@@ -274,28 +348,58 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#dam_character
 <http://www.co-ode.org/ontologies/ont.owl#dam_character> rdf:type owl:NamedIndividual ,
                                                                   <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                         <http://www.purl.org/graphemon/abzl> 454 ;
                                                          <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+1206E" ;
                                                          <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒁮" ;
+                                                         <http://www.purl.org/graphemon/hethzl> 298 ;
+                                                         <http://www.purl.org/graphemon/meszl> 889 ;
                                                          <http://www.purl.org/graphemon/signName> "DAM" ;
+                                                         <http://www.purl.org/graphemon/slha> 557 ;
                                                          rdfs:label "Character: DAM" .
-
-
-###  http://www.co-ode.org/ontologies/ont.owl#dingir_character
-<http://www.co-ode.org/ontologies/ont.owl#dingir_character> rdf:type owl:NamedIndividual ,
-                                                                     <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
-                                                            <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+1202D" ;
-                                                            <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒀭" ;
-                                                            <http://www.purl.org/graphemon/signName> "dingir" ;
-                                                            rdfs:label "Character: dingir" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#dumu_character
 <http://www.co-ode.org/ontologies/ont.owl#dumu_character> rdf:type owl:NamedIndividual ,
                                                                    <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                          <http://www.purl.org/graphemon/abzl> 393 ;
                                                           <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12309" ;
                                                           <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒌉" ;
+                                                          <http://www.purl.org/graphemon/hethzl> 237 ;
+                                                          <http://www.purl.org/graphemon/meszl> 255 ;
                                                           <http://www.purl.org/graphemon/signName> "dumu" ;
+                                                          <http://www.purl.org/graphemon/slha> 144 ;
                                                           rdfs:label "Character: Dumu" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#el_character
+<http://www.co-ode.org/ontologies/ont.owl#el_character> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                        <http://www.purl.org/graphemon/abzl> 455 ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12096" ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒂖" ;
+                                                        <http://www.purl.org/graphemon/hethzl> 307 ;
+                                                        <http://www.purl.org/graphemon/meszl> 899 ;
+                                                        <http://www.purl.org/graphemon/signName> "EL" ;
+                                                        <http://www.purl.org/graphemon/slha> 564 ;
+                                                        rdfs:label "Character: EL" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#el_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#el_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                    <http://www.purl.org/graphemon/GraphemeVariant> ;
+                                                           rdfs:label "Grapheme Variant 1: EL" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#en_character
+<http://www.co-ode.org/ontologies/ont.owl#en_character> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                        <http://www.purl.org/graphemon/abzl> 062 ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12097" ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒂗" ;
+                                                        <http://www.purl.org/graphemon/hethzl> 40 ;
+                                                        <http://www.purl.org/graphemon/meszl> 164 ;
+                                                        <http://www.purl.org/graphemon/slha> 099 ;
+                                                        rdfs:label "Character: EN" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#gaba_character
@@ -305,6 +409,26 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
                                                           <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒃮" ;
                                                           <http://www.purl.org/graphemon/signName> "GABA" ;
                                                           rdfs:label "Character: Gaba" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ib_character
+<http://www.co-ode.org/ontologies/ont.owl#ib_character> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                        <http://www.purl.org/graphemon/abzl> 394 ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12141" ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒅁" ;
+                                                        <http://www.purl.org/graphemon/hethzl> 44 ;
+                                                        <http://www.purl.org/graphemon/meszl> 807 ;
+                                                        <http://www.purl.org/graphemon/signName> "IB"^^<http://www.purl.org/graphemon/asciiTransliterationLiteral> ;
+                                                        <http://www.purl.org/graphemon/slha> 535 ;
+                                                        rdfs:label "Character: IB" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ib_character_reading_urta
+<http://www.co-ode.org/ontologies/ont.owl#ib_character_reading_urta> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.purl.org/graphemon/GraphemeReading> ;
+                                                                     <http://www.purl.org/graphemon/readingValue> "urta" ;
+                                                                     rdfs:label "Grapheme Reading IB: URTA" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#igi_character
@@ -331,6 +455,12 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
                                                         <http://www.purl.org/graphemon/signName> "KA" ;
                                                         <http://www.purl.org/graphemon/slha> 015 ;
                                                         rdfs:label "Character: KA" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ka_charvariant1
+<http://www.co-ode.org/ontologies/ont.owl#ka_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                    <http://www.purl.org/graphemon/GraphemeVariant> ;
+                                                           rdfs:label "Grapheme Variant 1: KA" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#kam_character
@@ -362,10 +492,31 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#kin_character
 <http://www.co-ode.org/ontologies/ont.owl#kin_character> rdf:type owl:NamedIndividual ,
                                                                   <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                         <http://www.purl.org/graphemon/abzl> 447 ;
                                                          <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+121A5" ;
                                                          <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒆥" ;
+                                                         <http://www.purl.org/graphemon/hethzl> 47 ;
+                                                         <http://www.purl.org/graphemon/meszl> 815 ;
                                                          <http://www.purl.org/graphemon/signName> "KIN" ;
+                                                         <http://www.purl.org/graphemon/slha> 538 ;
                                                          rdfs:label "Character: KIN" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#kin_character_reading_qi
+<http://www.co-ode.org/ontologies/ont.owl#kin_character_reading_qi> rdf:type owl:NamedIndividual ,
+                                                                             <http://www.purl.org/graphemon/GraphemeReading> ;
+                                                                    <http://www.purl.org/graphemon/readingValue> "qi" ;
+                                                                    rdfs:label "Grapheme Reading KIN: QI" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ku_character
+<http://www.co-ode.org/ontologies/ont.owl#ku_character> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+121AA" ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒆪" ;
+                                                        <http://www.purl.org/graphemon/meszl> 808 ;
+                                                        <http://www.purl.org/graphemon/signName> "KU" ;
+                                                        rdfs:label "Character: KU" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#lu2_character
@@ -378,6 +529,45 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
                                                          <http://www.purl.org/graphemon/meszl> 514 ;
                                                          <http://www.purl.org/graphemon/slha> 330 ;
                                                          rdfs:label "Character: LU2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ma_character
+<http://www.co-ode.org/ontologies/ont.owl#ma_character> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                        <http://www.purl.org/graphemon/abzl> 166 ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12220" ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒈠" ;
+                                                        <http://www.purl.org/graphemon/hethzl> 208 ;
+                                                        <http://www.purl.org/graphemon/meszl> 552 ;
+                                                        <http://www.purl.org/graphemon/signName> "MA" ;
+                                                        <http://www.purl.org/graphemon/slha> 342 ;
+                                                        rdfs:label "Character: MA" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#mar_character
+<http://www.co-ode.org/ontologies/ont.owl#mar_character> rdf:type owl:NamedIndividual ,
+                                                                  <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                         <http://www.purl.org/graphemon/abzl> 144 ;
+                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12225" ;
+                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒈥" ;
+                                                         <http://www.purl.org/graphemon/hethzl> 191 ;
+                                                         <http://www.purl.org/graphemon/meszl> 483 ;
+                                                         <http://www.purl.org/graphemon/signName> "MAR" ;
+                                                         <http://www.purl.org/graphemon/slha> 307 ;
+                                                         rdfs:label "Character: MAR" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#me_character
+<http://www.co-ode.org/ontologies/ont.owl#me_character> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                        <http://www.purl.org/graphemon/abzl> 392 ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12228" ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒈨" ;
+                                                        <http://www.purl.org/graphemon/hethzl> 357 ;
+                                                        <http://www.purl.org/graphemon/meszl> 753 ;
+                                                        <http://www.purl.org/graphemon/signName> "ME" ;
+                                                        <http://www.purl.org/graphemon/slha> 532 ;
+                                                        rdfs:label "Character: ME" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#min_character
@@ -396,6 +586,19 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
                                                            <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒊩" ;
                                                            <http://www.purl.org/graphemon/signName> "munus" ;
                                                            rdfs:label "Character: munus" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#na_character
+<http://www.co-ode.org/ontologies/ont.owl#na_character> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                        <http://www.purl.org/graphemon/abzl> 024 ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+1223E" ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒈾" ;
+                                                        <http://www.purl.org/graphemon/hethzl> 15 ;
+                                                        <http://www.purl.org/graphemon/meszl> 110 ;
+                                                        <http://www.purl.org/graphemon/signName> "NA" ;
+                                                        <http://www.purl.org/graphemon/slha> 070 ;
+                                                        rdfs:label "Character: NA" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ne_character
@@ -3911,6 +4114,31 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
                                                                      rdfs:label "TCH92 obverse line 9 word 4" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#te_character
+<http://www.co-ode.org/ontologies/ont.owl#te_character> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                        <http://www.purl.org/graphemon/abzl> 289 ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+122FC" ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒋼" ;
+                                                        <http://www.purl.org/graphemon/hethzl> 249 ;
+                                                        <http://www.purl.org/graphemon/meszl> 589 ;
+                                                        <http://www.purl.org/graphemon/slha> 376 ;
+                                                        rdfs:label "Character: TE" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#tu_character
+<http://www.co-ode.org/ontologies/ont.owl#tu_character> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                        <http://www.purl.org/graphemon/abzl> 382 ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12305" ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒌅" ;
+                                                        <http://www.purl.org/graphemon/hethzl> 346 ;
+                                                        <http://www.purl.org/graphemon/meszl> 86 ;
+                                                        <http://www.purl.org/graphemon/signName> "TU" ;
+                                                        <http://www.purl.org/graphemon/slha> 058 ;
+                                                        rdfs:label "Character: TU" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#3(disz)_character
 <http://www.co-ode.org/ontologies/ont.owl#3(disz)_character> rdf:type owl:NamedIndividual ,
                                                                       <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
@@ -3921,6 +4149,36 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 <http://www.co-ode.org/ontologies/ont.owl#5(disz)_character> rdf:type owl:NamedIndividual ,
                                                                       <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
                                                              rdfs:label "Character: 5(disz)" .
+
+
+###  http://www.wikidata.org/entity/Q1340307
+<http://www.wikidata.org/entity/Q1340307> rdf:type owl:NamedIndividual ;
+                                          rdfs:label "Wikidata: toddler" .
+
+
+###  http://www.wikidata.org/entity/Q1492760
+<http://www.wikidata.org/entity/Q1492760> rdf:type owl:NamedIndividual ;
+                                          rdfs:label "Wikidata: teenager" .
+
+
+###  http://www.wikidata.org/entity/Q177232
+<http://www.wikidata.org/entity/Q177232> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Wikidata: son" .
+
+
+###  http://www.wikidata.org/entity/Q188830
+<http://www.wikidata.org/entity/Q188830> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Wikidata: wife" .
+
+
+###  http://www.wikidata.org/entity/Q308194
+<http://www.wikidata.org/entity/Q308194> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Wikidata: daughter" .
+
+
+###  http://www.wikidata.org/entity/Q61665121
+<http://www.wikidata.org/entity/Q61665121> rdf:type owl:NamedIndividual ;
+                                           rdfs:label "Wikidata: barley" .
 
 
 ###  http://www.wikidata.org/entry/Q890527
