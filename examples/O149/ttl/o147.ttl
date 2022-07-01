@@ -449,6 +449,25 @@ cunei:TransliterationLine rdf:type owl:Class .
                                                          rdfs:label "Character: GA2" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#ge23_character
+<http://www.co-ode.org/ontologies/ont.owl#ge23_character> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                          <http://www.purl.org/graphemon/altSignName> "DISZ-tenu" ;
+                                                          <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12039" ;
+                                                          <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒀹" ;
+                                                          <http://www.purl.org/graphemon/meszl> 575 ;
+                                                          <http://www.purl.org/graphemon/signName> "GE23" ;
+                                                          <http://www.purl.org/graphemon/slha> 360 ;
+                                                          rdfs:label "Character: GE23" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ge23_character_reading_isz8
+<http://www.co-ode.org/ontologies/ont.owl#ge23_character_reading_isz8> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.purl.org/graphemon/GraphemeReading> ;
+                                                                       <http://www.purl.org/graphemon/readingValue> "isz8" ;
+                                                                       rdfs:label "Grapheme Reading GE23: ISZ8" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#gisz_character
 <http://www.co-ode.org/ontologies/ont.owl#gisz_character> rdf:type owl:NamedIndividual ,
                                                                    <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
@@ -1195,6 +1214,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_char1> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line1_char2> ;
+                                                                                     <http://www.purl.org/graphemon/hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#5(disz)_character_reading_5(disz)> ;
                                                                                      cunei:charIndex 1 ;
                                                                                      cunei:lineNumber 1 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 1 char 1" .
@@ -3435,6 +3455,13 @@ cunei:TransliterationLine rdf:type owl:Class .
                                                         <http://lemon-model.net/lemon#form> <http://www.co-ode.org/ontologies/ont.owl#5(disz)_wordform_5(disz)> ;
                                                         <http://lemon-model.net/lemon#sense> <http://www.co-ode.org/ontologies/ont.owl#5(disz)_sense> ;
                                                         rdfs:label "Word: 5(disz)" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#5(disz)_character_reading_5(disz)
+<http://www.co-ode.org/ontologies/ont.owl#5(disz)_character_reading_5(disz)> rdf:type owl:NamedIndividual ,
+                                                                                      <http://www.purl.org/graphemon/GraphemeReading> ;
+                                                                             <http://www.purl.org/graphemon/readingValue> "5(disz)" ;
+                                                                             rdfs:label "Grapheme Reading 5(disz): 5(disz)" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#5(disz)_wordform_5(disz)
