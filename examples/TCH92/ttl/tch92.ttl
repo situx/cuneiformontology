@@ -384,6 +384,34 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
                                                          rdfs:label "Character: DAM" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#dam_word
+<http://www.co-ode.org/ontologies/ont.owl#dam_word> rdf:type owl:NamedIndividual ,
+                                                             <http://lemon-model.net/lemon#Word> ;
+                                                    <http://lemon-model.net/lemon#form> <http://www.co-ode.org/ontologies/ont.owl#dam_wordform_dam> ,
+                                                                                        <http://www.co-ode.org/ontologies/ont.owl#dam_wordform_dam_su> ;
+                                                    <http://lemon-model.net/lemon#sense> <http://www.co-ode.org/ontologies/ont.owl#dam_wordsense> ;
+                                                    rdfs:label "Word: DAM" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#dam_wordform_dam
+<http://www.co-ode.org/ontologies/ont.owl#dam_wordform_dam> rdf:type owl:NamedIndividual ,
+                                                                     <http://lemon-model.net/lemon#Wordform> ;
+                                                            rdfs:label "Wordform: DAM" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#dam_wordform_dam_su
+<http://www.co-ode.org/ontologies/ont.owl#dam_wordform_dam_su> rdf:type owl:NamedIndividual ,
+                                                                        <http://lemon-model.net/lemon#Wordform> ;
+                                                               rdfs:label "Wordform: DAM-SU" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#dam_wordsense
+<http://www.co-ode.org/ontologies/ont.owl#dam_wordsense> rdf:type owl:NamedIndividual ,
+                                                                  <http://lemon-model.net/lemon#LexicalSense> ;
+                                                         <http://lemon-model.net/lemon#reference> <http://www.wikidata.org/entity/Q188830> ;
+                                                         rdfs:label "Wordsense: DAM" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#dumu_character
 <http://www.co-ode.org/ontologies/ont.owl#dumu_character> rdf:type owl:NamedIndividual ,
                                                                    <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
@@ -488,6 +516,36 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
                                                                       rdfs:label "Wordsense: F-Puttumeri" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#f-ta-ki-szu_word
+<http://www.co-ode.org/ontologies/ont.owl#f-ta-ki-szu_word> rdf:type owl:NamedIndividual ,
+                                                                     <http://lemon-model.net/lemon#Word> ;
+                                                            rdfs:label "Word: F-Takiszu" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#f-ta-ki-szu_wordform_f_ta_ki_szu
+<http://www.co-ode.org/ontologies/ont.owl#f-ta-ki-szu_wordform_f_ta_ki_szu> rdf:type owl:NamedIndividual ,
+                                                                                     <http://lemon-model.net/lemon#Wordform> ;
+                                                                            rdfs:label "Wordform: F-Takiszu" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#f_a_na_ru_qi_al_si_szi_word
+<http://www.co-ode.org/ontologies/ont.owl#f_a_na_ru_qi_al_si_szi_word> rdf:type owl:NamedIndividual ,
+                                                                                <http://lemon-model.net/lemon#Word> ;
+                                                                       rdfs:label "Word: F-Ana-quri-alszisi" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#f_a_na_ru_qi_al_si_szi_wordform_f_a_na_ru_qi_al_si_szi
+<http://www.co-ode.org/ontologies/ont.owl#f_a_na_ru_qi_al_si_szi_wordform_f_a_na_ru_qi_al_si_szi> rdf:type owl:NamedIndividual ,
+                                                                                                           <http://lemon-model.net/lemon#Wordform> ;
+                                                                                                  rdfs:label "Wordform: F_ana-quri-alszisi" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#f_a_na_ru_qi_al_si_szi_wordsense
+<http://www.co-ode.org/ontologies/ont.owl#f_a_na_ru_qi_al_si_szi_wordsense> rdf:type owl:NamedIndividual ,
+                                                                                     <http://lemon-model.net/lemon#LexicalSense> ;
+                                                                            rdfs:label "Wordsense: F-Ana-quri-alszisi" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#f_ba_bi-szar_ri_word
 <http://www.co-ode.org/ontologies/ont.owl#f_ba_bi-szar_ri_word> rdf:type owl:NamedIndividual ,
                                                                          <http://lemon-model.net/lemon#Word> ;
@@ -528,6 +586,64 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
                                                                          rdfs:label "Wordsense: F-Immate-ammar" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#f_ki_di_ni_tu_word
+<http://www.co-ode.org/ontologies/ont.owl#f_ki_di_ni_tu_word> rdf:type owl:NamedIndividual ,
+                                                                       <http://lemon-model.net/lemon#Word> ;
+                                                              <http://lemon-model.net/lemon#form> <http://www.co-ode.org/ontologies/ont.owl#f_ki_di_ni_tu_wordform_f_ki_di_ni_tu> ;
+                                                              <http://lemon-model.net/lemon#sense> <http://www.co-ode.org/ontologies/ont.owl#f_ki_di_ni_tu_wordsense> ;
+                                                              rdfs:label "Word: F-Kidinitu" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#f_ki_di_ni_tu_wordform_f_ki_di_ni_tu
+<http://www.co-ode.org/ontologies/ont.owl#f_ki_di_ni_tu_wordform_f_ki_di_ni_tu> rdf:type owl:NamedIndividual ,
+                                                                                         <http://lemon-model.net/lemon#Wordform> ;
+                                                                                rdfs:label "Wordform: F-Kidinitu" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#f_ki_di_ni_tu_wordsense
+<http://www.co-ode.org/ontologies/ont.owl#f_ki_di_ni_tu_wordsense> rdf:type owl:NamedIndividual ,
+                                                                            <http://lemon-model.net/lemon#LexicalSense> ;
+                                                                   rdfs:label "Wordsense: F-Kidinitu" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#f_la_ka_ma_asz_sze_word
+<http://www.co-ode.org/ontologies/ont.owl#f_la_ka_ma_asz_sze_word> rdf:type owl:NamedIndividual ,
+                                                                            <http://lemon-model.net/lemon#Word> ;
+                                                                   rdfs:label "Word: F-Lakamaszsze" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#f_la_ka_ma_asz_sze_wordform_f_la_ka_ma_asz_sze
+<http://www.co-ode.org/ontologies/ont.owl#f_la_ka_ma_asz_sze_wordform_f_la_ka_ma_asz_sze> rdf:type owl:NamedIndividual ,
+                                                                                                   <http://lemon-model.net/lemon#Wordform> ;
+                                                                                          rdfs:label "Wordform: F-Lakamaszsze" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#f_la_ka_ma_asz_sze_wordsense
+<http://www.co-ode.org/ontologies/ont.owl#f_la_ka_ma_asz_sze_wordsense> rdf:type owl:NamedIndividual ,
+                                                                                 <http://lemon-model.net/lemon#LexicalSense> ;
+                                                                        rdfs:label "Wordsense: F-Lakamaszsze" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#f_me_e_na_ma_gi_word
+<http://www.co-ode.org/ontologies/ont.owl#f_me_e_na_ma_gi_word> rdf:type owl:NamedIndividual ,
+                                                                         <http://lemon-model.net/lemon#Word> ;
+                                                                <http://lemon-model.net/lemon#form> <http://www.co-ode.org/ontologies/ont.owl#f_me_e_na_ma_gi_wordform_f_me_e_na_ma_gi> ;
+                                                                <http://lemon-model.net/lemon#sense> <http://www.co-ode.org/ontologies/ont.owl#f_me_e_na_ma_gi_wordsense> ;
+                                                                rdfs:label "Word: F-Menamagi" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#f_me_e_na_ma_gi_wordform_f_me_e_na_ma_gi
+<http://www.co-ode.org/ontologies/ont.owl#f_me_e_na_ma_gi_wordform_f_me_e_na_ma_gi> rdf:type owl:NamedIndividual ,
+                                                                                             <http://lemon-model.net/lemon#Wordform> ;
+                                                                                    rdfs:label "Wordform: F-Menamagi" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#f_me_e_na_ma_gi_wordsense
+<http://www.co-ode.org/ontologies/ont.owl#f_me_e_na_ma_gi_wordsense> rdf:type owl:NamedIndividual ,
+                                                                              <http://lemon-model.net/lemon#LexicalSense> ;
+                                                                     rdfs:label "Wordsense: F-Menamagi" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#f_pi_il_ha_tu_word
 <http://www.co-ode.org/ontologies/ont.owl#f_pi_il_ha_tu_word> rdf:type owl:NamedIndividual ,
                                                                        <http://lemon-model.net/lemon#Word> ;
@@ -547,6 +663,12 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 <http://www.co-ode.org/ontologies/ont.owl#f_pi_il_ha_tu_wordsense> rdf:type owl:NamedIndividual ,
                                                                             <http://lemon-model.net/lemon#LexicalSense> ;
                                                                    rdfs:label "Wordsense: F-Pilhatu" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#f_ta_ki_szu_wordsense
+<http://www.co-ode.org/ontologies/ont.owl#f_ta_ki_szu_wordsense> rdf:type owl:NamedIndividual ,
+                                                                          <http://lemon-model.net/lemon#LexicalSense> ;
+                                                                 rdfs:label "Wordsense: F-Takiszu" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#gaba_character
@@ -901,6 +1023,25 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
                                                          <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒊺" ;
                                                          <http://www.purl.org/graphemon/signName> "sze" ;
                                                          rdfs:label "Character: SZE" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#sze_word
+<http://www.co-ode.org/ontologies/ont.owl#sze_word> rdf:type owl:NamedIndividual ,
+                                                             <http://lemon-model.net/lemon#Word> ;
+                                                    rdfs:label "Word: SZE" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#sze_wordform_sze
+<http://www.co-ode.org/ontologies/ont.owl#sze_wordform_sze> rdf:type owl:NamedIndividual ,
+                                                                     <http://lemon-model.net/lemon#Wordform> ;
+                                                            rdfs:label "Wordform: SZE" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#sze_wordsense
+<http://www.co-ode.org/ontologies/ont.owl#sze_wordsense> rdf:type owl:NamedIndividual ,
+                                                                  <http://lemon-model.net/lemon#LexicalSense> ;
+                                                         <http://lemon-model.net/lemon#reference> <http://www.wikidata.org/entity/Q61665121> ;
+                                                         rdfs:label "Wordsense: SZE" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#szu_character
@@ -4440,16 +4581,97 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
                                                         rdfs:label "Character: UM" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#1(disz)_word
+<http://www.co-ode.org/ontologies/ont.owl#1(disz)_word> rdf:type owl:NamedIndividual ,
+                                                                 <http://lemon-model.net/lemon#Word> ;
+                                                        rdfs:label "Word: 1(disz)" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#1(disz)_wordsense
+<http://www.co-ode.org/ontologies/ont.owl#1(disz)_wordsense> rdf:type owl:NamedIndividual ,
+                                                                      <http://lemon-model.net/lemon#LexicalSense> ;
+                                                             rdfs:label "Wordsense: 1(disz)" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#1(disz)_wordform_1(disz)
+<http://www.co-ode.org/ontologies/ont.owl#1(disz)_wordform_1(disz)> rdf:type owl:NamedIndividual ,
+                                                                             <http://lemon-model.net/lemon#Wordform> ;
+                                                                    rdfs:label "Wordform: 1(disz)" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#2(disz)_word
+<http://www.co-ode.org/ontologies/ont.owl#2(disz)_word> rdf:type owl:NamedIndividual ,
+                                                                 <http://lemon-model.net/lemon#Word> ;
+                                                        <http://lemon-model.net/lemon#form> <http://www.co-ode.org/ontologies/ont.owl#2(disz)_wordform_2(disz)> ;
+                                                        <http://lemon-model.net/lemon#sense> <http://www.co-ode.org/ontologies/ont.owl#2(disz)_wordsense> ;
+                                                        rdfs:label "Word: 2(disz)" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#2(disz)_wordsense
+<http://www.co-ode.org/ontologies/ont.owl#2(disz)_wordsense> rdf:type owl:NamedIndividual ,
+                                                                      <http://lemon-model.net/lemon#LexicalSense> ;
+                                                             <http://lemon-model.net/lemon#reference> <http://www.wikidata.org/entity/Q200> ;
+                                                             rdfs:label "Wordsense: 2(disz)" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#2(disz)_wordform_2(disz)
+<http://www.co-ode.org/ontologies/ont.owl#2(disz)_wordform_2(disz)> rdf:type owl:NamedIndividual ,
+                                                                             <http://lemon-model.net/lemon#Wordform> ;
+                                                                    rdfs:label "Wordform: 2(disz)" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#3(disz)_character
 <http://www.co-ode.org/ontologies/ont.owl#3(disz)_character> rdf:type owl:NamedIndividual ,
                                                                       <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
                                                              rdfs:label "Character: 3(disz)" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#3(disz)_word
+<http://www.co-ode.org/ontologies/ont.owl#3(disz)_word> rdf:type owl:NamedIndividual ,
+                                                                 <http://lemon-model.net/lemon#Word> ;
+                                                        <http://lemon-model.net/lemon#form> <http://www.co-ode.org/ontologies/ont.owl#3(disz)_wordform_3(disz)> ;
+                                                        <http://lemon-model.net/lemon#sense> <http://www.co-ode.org/ontologies/ont.owl#3(disz)_wordsense> ;
+                                                        rdfs:label "Word: 3(disz)" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#3(disz)_wordsense
+<http://www.co-ode.org/ontologies/ont.owl#3(disz)_wordsense> rdf:type owl:NamedIndividual ,
+                                                                      <http://lemon-model.net/lemon#LexicalSense> ;
+                                                             <http://lemon-model.net/lemon#reference> <http://www.wikidata.org/entity/Q201> ;
+                                                             rdfs:label "Wordsense: 3(disz)" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#3(disz)_wordform_3(disz)
+<http://www.co-ode.org/ontologies/ont.owl#3(disz)_wordform_3(disz)> rdf:type owl:NamedIndividual ,
+                                                                             <http://lemon-model.net/lemon#Wordform> ;
+                                                                    rdfs:label "Wordform: 3(disz)" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#5(disz)_character
 <http://www.co-ode.org/ontologies/ont.owl#5(disz)_character> rdf:type owl:NamedIndividual ,
                                                                       <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
                                                              rdfs:label "Character: 5(disz)" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#5(disz)_word
+<http://www.co-ode.org/ontologies/ont.owl#5(disz)_word> rdf:type owl:NamedIndividual ,
+                                                                 <http://lemon-model.net/lemon#Word> ;
+                                                        <http://lemon-model.net/lemon#form> <http://www.co-ode.org/ontologies/ont.owl#5(disz)_wordform_5(disz)> ;
+                                                        <http://lemon-model.net/lemon#sense> <http://www.co-ode.org/ontologies/ont.owl#5(disz)_wordsense> ;
+                                                        rdfs:label "Word: 5(disz)" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#5(disz)_wordsense
+<http://www.co-ode.org/ontologies/ont.owl#5(disz)_wordsense> rdf:type owl:NamedIndividual ,
+                                                                      <http://lemon-model.net/lemon#LexicalSense> ;
+                                                             <http://lemon-model.net/lemon#reference> <http://www.wikidata.org/entity/Q203> ;
+                                                             rdfs:label "Wordsense: 5(disz)" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#5(disz)_wordform_5(disz)
+<http://www.co-ode.org/ontologies/ont.owl#5(disz)_wordform_5(disz)> rdf:type owl:NamedIndividual ,
+                                                                             <http://lemon-model.net/lemon#Wordform> ;
+                                                                    rdfs:label "Wordform: 5(disz)" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#mi_character_reading_s,il2
@@ -4477,6 +4699,21 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.wikidata.org/entity/Q188830
 <http://www.wikidata.org/entity/Q188830> rdf:type owl:NamedIndividual ;
                                          rdfs:label "Wikidata: wife" .
+
+
+###  http://www.wikidata.org/entity/Q200
+<http://www.wikidata.org/entity/Q200> rdf:type owl:NamedIndividual ;
+                                      rdfs:label "Wikidata: 2" .
+
+
+###  http://www.wikidata.org/entity/Q201
+<http://www.wikidata.org/entity/Q201> rdf:type owl:NamedIndividual ;
+                                      rdfs:label "Wikidata: 3" .
+
+
+###  http://www.wikidata.org/entity/Q203
+<http://www.wikidata.org/entity/Q203> rdf:type owl:NamedIndividual ;
+                                      rdfs:label "Wikidata: 5" .
 
 
 ###  http://www.wikidata.org/entity/Q308194
