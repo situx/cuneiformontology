@@ -468,6 +468,45 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
                                                                         rdfs:label "Grapheme Reading ERIN2: PIR2" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#f-pu-ut-tu-me-ri_word
+<http://www.co-ode.org/ontologies/ont.owl#f-pu-ut-tu-me-ri_word> rdf:type owl:NamedIndividual ,
+                                                                          <http://lemon-model.net/lemon#Word> ;
+                                                                 <http://lemon-model.net/lemon#form> <http://www.co-ode.org/ontologies/ont.owl#f-pu-ut-tu-me-ri_wordform_f-pu-ut-tu-me-ri> ;
+                                                                 rdfs:label "Word: F-Puttumeri" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#f-pu-ut-tu-me-ri_wordform_f-pu-ut-tu-me-ri
+<http://www.co-ode.org/ontologies/ont.owl#f-pu-ut-tu-me-ri_wordform_f-pu-ut-tu-me-ri> rdf:type owl:NamedIndividual ,
+                                                                                               <http://lemon-model.net/lemon#Wordform> ;
+                                                                                      cunei:occurance <http://www.co-ode.org/ontologies/ont.owl#tch92_obverse_line17_word1> ;
+                                                                                      rdfs:label "Wordform: F-Puttumeri" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#f-pu-ut-tu-me-ri_wordsense
+<http://www.co-ode.org/ontologies/ont.owl#f-pu-ut-tu-me-ri_wordsense> rdf:type owl:NamedIndividual ,
+                                                                               <http://lemon-model.net/lemon#LexicalSense> ;
+                                                                      rdfs:label "Wordsense: F-Puttumeri" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#f_ba_bi-szar_ri_word
+<http://www.co-ode.org/ontologies/ont.owl#f_ba_bi-szar_ri_word> rdf:type owl:NamedIndividual ,
+                                                                         <http://lemon-model.net/lemon#Word> ;
+                                                                <http://lemon-model.net/lemon#form> <http://www.co-ode.org/ontologies/ont.owl#f_ba_bi-szar_ri_wordform_f_ba_bi-szar_ri> ;
+                                                                rdfs:label "Word: F-Babi-Szarri" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#f_ba_bi-szar_ri_wordform_f_ba_bi-szar_ri
+<http://www.co-ode.org/ontologies/ont.owl#f_ba_bi-szar_ri_wordform_f_ba_bi-szar_ri> rdf:type owl:NamedIndividual ,
+                                                                                             <http://lemon-model.net/lemon#Wordform> ;
+                                                                                    rdfs:label "Wordform: F-Babi-Szarri" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#f_ba_bi-szar_ri_wordsense
+<http://www.co-ode.org/ontologies/ont.owl#f_ba_bi-szar_ri_wordsense> rdf:type owl:NamedIndividual ,
+                                                                              <http://lemon-model.net/lemon#LexicalSense> ;
+                                                                     rdfs:label "Wordsense: F-Babi-Szarri" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#f_im_ma_te_a_am_mar_word
 <http://www.co-ode.org/ontologies/ont.owl#f_im_ma_te_a_am_mar_word> rdf:type owl:NamedIndividual ,
                                                                              <http://lemon-model.net/lemon#Word> ;
@@ -517,6 +556,27 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
                                                           <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒃮" ;
                                                           <http://www.purl.org/graphemon/signName> "GABA" ;
                                                           rdfs:label "Character: Gaba" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#gaba_word
+<http://www.co-ode.org/ontologies/ont.owl#gaba_word> rdf:type owl:NamedIndividual ,
+                                                              <http://lemon-model.net/lemon#Word> ;
+                                                     <http://lemon-model.net/lemon#form> <http://www.co-ode.org/ontologies/ont.owl#gaba_wordform_gaba> ;
+                                                     <http://lemon-model.net/lemon#sense> <http://www.co-ode.org/ontologies/ont.owl#gaba_wordsense> ;
+                                                     rdfs:label "Word: GABA" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#gaba_wordform_gaba
+<http://www.co-ode.org/ontologies/ont.owl#gaba_wordform_gaba> rdf:type owl:NamedIndividual ,
+                                                                       <http://lemon-model.net/lemon#Wordform> ;
+                                                              rdfs:label "Wordform: GABA" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#gaba_wordsense
+<http://www.co-ode.org/ontologies/ont.owl#gaba_wordsense> rdf:type owl:NamedIndividual ,
+                                                                   <http://lemon-model.net/lemon#LexicalSense> ;
+                                                          <http://lemon-model.net/lemon#reference> <http://www.wikidata.org/entity/Q1340307> ;
+                                                          rdfs:label "Wordsense: GABA" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ib_character
