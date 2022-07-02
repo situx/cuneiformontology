@@ -591,6 +591,12 @@ cunei:TransliterationLine rdf:type owl:Class .
                                                          rdfs:label "Character: KAM" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#kam_character_reading_kam
+<http://www.co-ode.org/ontologies/ont.owl#kam_character_reading_kam> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.purl.org/graphemon/GraphemeReading> ;
+                                                                     rdfs:label "Grapheme Reading KAM: kam" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#ku3_character
 <http://www.co-ode.org/ontologies/ont.owl#ku3_character> rdf:type owl:NamedIndividual ,
                                                                   <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
@@ -640,6 +646,12 @@ cunei:TransliterationLine rdf:type owl:Class .
 <http://www.co-ode.org/ontologies/ont.owl#lu2_character> rdf:type owl:NamedIndividual ,
                                                                   <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
                                                          rdfs:label "Character: LU2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#lu2_character_reading_lu2
+<http://www.co-ode.org/ontologies/ont.owl#lu2_character_reading_lu2> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.purl.org/graphemon/GraphemeReading> ;
+                                                                     rdfs:label "Grapheme Reading LU2: lu2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#mar_character
@@ -1413,6 +1425,7 @@ cunei:TransliterationLine rdf:type owl:Class .
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_char8> ;
                                                                                      cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line2_char6> ;
+                                                                                     <http://www.purl.org/graphemon/hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#sag_character_reading_sag> ;
                                                                                      cunei:charIndex 7 ;
                                                                                      cunei:lineNumber 2 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 2 char 7" .
@@ -1584,6 +1597,7 @@ cunei:TransliterationLine rdf:type owl:Class .
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_char4> ;
                                                                                      cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line4_char2> ;
+                                                                                     <http://www.purl.org/graphemon/hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#lu2_character_reading_lu2> ;
                                                                                      cunei:charIndex 3 ;
                                                                                      cunei:lineNumber 4 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 4 char 3" .
@@ -1776,6 +1790,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6_char1
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6_char1> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     <http://www.purl.org/graphemon/hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#sag_character_reading_sag> ;
                                                                                      cunei:charIndex 1 ;
                                                                                      cunei:lineNumber 6 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 6 char 1" .
@@ -1800,6 +1815,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6_char4
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line6_char4> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
+                                                                                     <http://www.purl.org/graphemon/hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#kam_character_reading_kam> ;
                                                                                      cunei:charIndex 4 ;
                                                                                      cunei:lineNumber 6 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 6 char 4" .
@@ -1852,6 +1868,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7_char1> rdf:type owl:NamedIndividual ,
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7_char2> ;
+                                                                                     <http://www.purl.org/graphemon/hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#sag_character_reading_sag> ;
                                                                                      cunei:charIndex 1 ;
                                                                                      cunei:lineNumber 7 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 7 char 1" .
@@ -1882,6 +1899,7 @@ cunei:TransliterationLine rdf:type owl:Class .
                                                                                               <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7_char5> ;
                                                                                      cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#o147_transliteration1_obverse_line7_char3> ;
+                                                                                     <http://www.purl.org/graphemon/hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#kam_character_reading_kam> ;
                                                                                      cunei:charIndex 4 ;
                                                                                      cunei:lineNumber 7 ;
                                                                                      rdfs:label "O147 transliteration 1 obverse line 7 char 4" .
@@ -3317,6 +3335,13 @@ cunei:TransliterationLine rdf:type owl:Class .
                                                          <http://www.purl.org/graphemon/meszl> 184 ;
                                                          <http://www.purl.org/graphemon/slha> 115 ;
                                                          rdfs:label "Character: SAG" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#sag_character_reading_sag
+<http://www.co-ode.org/ontologies/ont.owl#sag_character_reading_sag> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.purl.org/graphemon/GraphemeReading> ;
+                                                                     <http://www.purl.org/graphemon/readingValue> "sag" ;
+                                                                     rdfs:label "Grapheme Reading SAG: sag" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#sar_character
