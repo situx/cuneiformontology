@@ -552,6 +552,7 @@ anno:TextualBody rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#a_character
 <http://www.co-ode.org/ontologies/ont.owl#a_character> rdf:type owl:NamedIndividual ,
                                                                 cidoc:TX8_Grapheme ;
+                                                       graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#a_character_reading_a> ;
                                                        graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#a_charvariant1> ;
                                                        graphemon:abzl 470 ;
                                                        graphemon:hasUnicodeCodePoint "U+12000" ;
@@ -583,6 +584,7 @@ anno:TextualBody rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#ak_character
 <http://www.co-ode.org/ontologies/ont.owl#ak_character> rdf:type owl:NamedIndividual ,
                                                                  cidoc:TX8_Grapheme ;
+                                                        graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#ak_character_reading_ak> ;
                                                         graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#ak_charvariant1> ;
                                                         graphemon:abzl 052 ;
                                                         graphemon:hasUnicodeCodePoint "U+1201D" ;
@@ -609,6 +611,7 @@ anno:TextualBody rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#al_character
 <http://www.co-ode.org/ontologies/ont.owl#al_character> rdf:type owl:NamedIndividual ,
                                                                  cidoc:TX8_Grapheme ;
+                                                        graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#al_character_reading_al> ;
                                                         graphemon:abzl 108 ;
                                                         graphemon:hasUnicodeCodePoint "U+12020" ;
                                                         graphemon:hasUnicodeRepresentation "𒀠" ;
@@ -619,9 +622,17 @@ anno:TextualBody rdf:type owl:Class .
                                                         rdfs:label "Character: AL" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#al_character_reading_al
+<http://www.co-ode.org/ontologies/ont.owl#al_character_reading_al> rdf:type owl:NamedIndividual ,
+                                                                            graphemon:GraphemeReading ;
+                                                                   graphemon:readingValue "al" ;
+                                                                   rdfs:label "Grapheme Reading AL: al" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#da_character
 <http://www.co-ode.org/ontologies/ont.owl#da_character> rdf:type owl:NamedIndividual ,
                                                                  cidoc:TX8_Grapheme ;
+                                                        graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#da_character_reading_da> ;
                                                         graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#da_charvariant1> ;
                                                         graphemon:abzl 229 ;
                                                         graphemon:hasUnicodeCodePoint "U+12055" ;
@@ -669,6 +680,7 @@ anno:TextualBody rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#du6_character
 <http://www.co-ode.org/ontologies/ont.owl#du6_character> rdf:type owl:NamedIndividual ,
                                                                   cidoc:TX8_Grapheme ;
+                                                         graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#du6_character_reading_du6> ;
                                                          graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#du6_charvariant1> ;
                                                          graphemon:abzl 311 ;
                                                          graphemon:hasUnicodeCodePoint "U+121EF" ;
@@ -677,6 +689,13 @@ anno:TextualBody rdf:type owl:Class .
                                                          graphemon:meszl 721 ;
                                                          graphemon:slha "459a" ;
                                                          rdfs:label "Character: DU6" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#du6_character_reading_du6
+<http://www.co-ode.org/ontologies/ont.owl#du6_character_reading_du6> rdf:type owl:NamedIndividual ,
+                                                                              graphemon:GraphemeReading ;
+                                                                     graphemon:readingValue "du6" ;
+                                                                     rdfs:label "Grapheme Reading DU6: du6" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#du6_charvariant1
@@ -714,6 +733,7 @@ anno:TextualBody rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#e2_character
 <http://www.co-ode.org/ontologies/ont.owl#e2_character> rdf:type owl:NamedIndividual ,
                                                                  cidoc:TX8_Grapheme ;
+                                                        graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#e2_character_reading_e2> ;
                                                         graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#e2_charvariant1> ;
                                                         graphemon:abzl 107 ;
                                                         graphemon:hasUnicodeCodePoint "U+1208D" ;
@@ -772,6 +792,7 @@ anno:TextualBody rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#ga_character
 <http://www.co-ode.org/ontologies/ont.owl#ga_character> rdf:type owl:NamedIndividual ,
                                                                  cidoc:TX8_Grapheme ;
+                                                        graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#ga_character_reading_ga> ;
                                                         graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#ga_charvariant1> ;
                                                         graphemon:abzl 201 ;
                                                         graphemon:hasUnicodeCodePoint "U+120B5" ;
@@ -798,6 +819,7 @@ anno:TextualBody rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#gal_character
 <http://www.co-ode.org/ontologies/ont.owl#gal_character> rdf:type owl:NamedIndividual ,
                                                                   cidoc:TX8_Grapheme ;
+                                                         graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#gal_character_reading_gal> ;
                                                          graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#gal_charvariant1> ;
                                                          graphemon:abzl 213 ;
                                                          graphemon:hasUnicodeCodePoint "U+120F2" ;
@@ -809,6 +831,13 @@ anno:TextualBody rdf:type owl:Class .
                                                          rdfs:label "Character: GAL" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#gal_character_reading_gal
+<http://www.co-ode.org/ontologies/ont.owl#gal_character_reading_gal> rdf:type owl:NamedIndividual ,
+                                                                              graphemon:GraphemeReading ;
+                                                                     graphemon:readingValue "gal" ;
+                                                                     rdfs:label "Grapheme Reading GAL: gal" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#gal_charvariant1
 <http://www.co-ode.org/ontologies/ont.owl#gal_charvariant1> rdf:type owl:NamedIndividual ,
                                                                      graphemon:GraphemeVariant ;
@@ -818,6 +847,7 @@ anno:TextualBody rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#gurusz_character
 <http://www.co-ode.org/ontologies/ont.owl#gurusz_character> rdf:type owl:NamedIndividual ,
                                                                      cidoc:TX8_Grapheme ;
+                                                            graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#gurusz_character_reading_gurusz> ;
                                                             graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#gurusz_charvariant1> ;
                                                             graphemon:abzl 176 ;
                                                             graphemon:hasUnicodeCodePoint "U+12128" ;
@@ -1355,6 +1385,7 @@ anno:TextualBody rdf:type owl:Class .
                                                                                                 <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line3_char3> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line3_char1> ;
+                                                                                       graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#szesz_character_reading_szesz> ;
                                                                                        cunei:charIndex 2 ;
                                                                                        cunei:lineNumber 3 ;
                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 3 char 2" .
@@ -1365,6 +1396,7 @@ anno:TextualBody rdf:type owl:Class .
                                                                                                 <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line3_char4> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line3_char2> ;
+                                                                                       graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#da_character_reading_da> ;
                                                                                        cunei:charIndex 3 ;
                                                                                        cunei:lineNumber 3 ;
                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 3 char 3" .
@@ -1374,6 +1406,7 @@ anno:TextualBody rdf:type owl:Class .
 <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line3_char4> rdf:type owl:NamedIndividual ,
                                                                                                 <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line3_char3> ;
+                                                                                       graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#da_character_reading_da> ;
                                                                                        cunei:charIndex 4 ;
                                                                                        cunei:lineNumber 3 ;
                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 3 char 4" .
@@ -1419,6 +1452,7 @@ anno:TextualBody rdf:type owl:Class .
                                                                                                 <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_char3> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_obverse_line4_char1> ;
+                                                                                       graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#gurusz_character_reading_gurusz> ;
                                                                                        cunei:charIndex 2 ;
                                                                                        cunei:lineNumber 4 ;
                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 4 char 2" .
@@ -1561,6 +1595,7 @@ anno:TextualBody rdf:type owl:Class .
 <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line2_char1> rdf:type owl:NamedIndividual ,
                                                                                                 <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line2_char2> ;
+                                                                                       graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#nu_character_reading_nu> ;
                                                                                        cunei:charIndex 1 ;
                                                                                        cunei:lineNumber 2 ;
                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 2 char 1" .
@@ -1600,6 +1635,7 @@ anno:TextualBody rdf:type owl:Class .
 <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line2_char5> rdf:type owl:NamedIndividual ,
                                                                                                 <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line2_char4> ;
+                                                                                       graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#ga_character_reading_ga> ;
                                                                                        cunei:charIndex 5 ;
                                                                                        cunei:lineNumber 2 ;
                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 2 char 5" .
@@ -1626,6 +1662,7 @@ anno:TextualBody rdf:type owl:Class .
 <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line3_char1> rdf:type owl:NamedIndividual ,
                                                                                                 <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line3_char2> ;
+                                                                                       graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#e2_character_reading_e2> ;
                                                                                        cunei:charIndex 1 ;
                                                                                        cunei:lineNumber 3 ;
                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 3 char 1" .
@@ -1636,6 +1673,7 @@ anno:TextualBody rdf:type owl:Class .
                                                                                                 <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line3_char3> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line3_char1> ;
+                                                                                       graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#gal_character_reading_gal> ;
                                                                                        cunei:charIndex 2 ;
                                                                                        cunei:lineNumber 3 ;
                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 3 char 2" .
@@ -1655,6 +1693,7 @@ anno:TextualBody rdf:type owl:Class .
 <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line3_char4> rdf:type owl:NamedIndividual ,
                                                                                                 <http://www.co-ode.org/ontologies/ont.owl#TransliterationCharOccurrence> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line3_char3> ;
+                                                                                       graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#ka_character_reading_ka> ;
                                                                                        cunei:charIndex 4 ;
                                                                                        cunei:lineNumber 3 ;
                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 3 char 4" .
@@ -1813,6 +1852,7 @@ anno:TextualBody rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#ka_character
 <http://www.co-ode.org/ontologies/ont.owl#ka_character> rdf:type owl:NamedIndividual ,
                                                                  cidoc:TX8_Grapheme ;
+                                                        graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#ka_character_reading_ka> ;
                                                         graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#ka_charvariant1> ;
                                                         graphemon:abzl 312 ;
                                                         graphemon:hasUnicodeCodePoint "U+12157" ;
@@ -1821,6 +1861,13 @@ anno:TextualBody rdf:type owl:Class .
                                                         graphemon:meszl 24 ;
                                                         graphemon:slha 015 ;
                                                         rdfs:label "Character: KA" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ka_character_reading_ka
+<http://www.co-ode.org/ontologies/ont.owl#ka_character_reading_ka> rdf:type owl:NamedIndividual ,
+                                                                            graphemon:GraphemeReading ;
+                                                                   graphemon:readingValue "ka" ;
+                                                                   rdfs:label "Grapheme Reading KA: ka" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ka_charvariant1
@@ -1907,6 +1954,7 @@ anno:TextualBody rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#ma_character
 <http://www.co-ode.org/ontologies/ont.owl#ma_character> rdf:type owl:NamedIndividual ,
                                                                  cidoc:TX8_Grapheme ;
+                                                        graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#ma_character_reading_ma> ;
                                                         graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#ma_charvariant1> ;
                                                         graphemon:abzl 166 ;
                                                         graphemon:hasUnicodeCodePoint "U+12220" ;
@@ -1918,6 +1966,13 @@ anno:TextualBody rdf:type owl:Class .
                                                         rdfs:label "Character: MA" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#ma_character_reading_ma
+<http://www.co-ode.org/ontologies/ont.owl#ma_character_reading_ma> rdf:type owl:NamedIndividual ,
+                                                                            graphemon:GraphemeReading ;
+                                                                   graphemon:readingValue "ma" ;
+                                                                   rdfs:label "Grapheme Reading MA: ma" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#ma_charvariant1
 <http://www.co-ode.org/ontologies/ont.owl#ma_charvariant1> rdf:type owl:NamedIndividual ,
                                                                     graphemon:GraphemeVariant ;
@@ -1927,6 +1982,7 @@ anno:TextualBody rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#nu_character
 <http://www.co-ode.org/ontologies/ont.owl#nu_character> rdf:type owl:NamedIndividual ,
                                                                  cidoc:TX8_Grapheme ;
+                                                        graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#nu_character_reading_nu> ;
                                                         graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#nu_charvariant1> ;
                                                         graphemon:abzl 019 ;
                                                         graphemon:hasUnicodeCodePoint "U+12261" ;
@@ -1935,6 +1991,13 @@ anno:TextualBody rdf:type owl:Class .
                                                         graphemon:meszl 112 ;
                                                         graphemon:slha 075 ;
                                                         rdfs:label "Character: NU" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#nu_character_reading_nu
+<http://www.co-ode.org/ontologies/ont.owl#nu_character_reading_nu> rdf:type owl:NamedIndividual ,
+                                                                            graphemon:GraphemeReading ;
+                                                                   graphemon:readingValue "nu" ;
+                                                                   rdfs:label "Grapheme Reading NU: nu" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#nu_charvariant1
@@ -2035,6 +2098,13 @@ anno:TextualBody rdf:type owl:Class .
                                                            graphemon:meszl 535 ;
                                                            graphemon:slha 331 ;
                                                            rdfs:label "Character: SZESZ" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#szesz_character_reading_szesz
+<http://www.co-ode.org/ontologies/ont.owl#szesz_character_reading_szesz> rdf:type owl:NamedIndividual ,
+                                                                                  graphemon:GraphemeReading ;
+                                                                         graphemon:readingValue "szesz" ;
+                                                                         rdfs:label "Grapheme Reading SZESZ: szesz" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#szesz_charvariant1
