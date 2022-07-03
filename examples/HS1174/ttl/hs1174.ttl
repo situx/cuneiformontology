@@ -1,3 +1,4 @@
+@prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -158,6 +159,32 @@ rdfs:member rdf:type owl:ObjectProperty ;
             rdfs:label "member" .
 
 
+###  http://www.w3.org/ns/oa#hasBody
+oa:hasBody rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.w3.org/ns/oa#hasPurpose
+oa:hasPurpose rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/oa#hasSelector
+oa:hasSelector rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/oa#hasSource
+oa:hasSource rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.w3.org/ns/oa#hasTarget
+oa:hasTarget rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/oa#motivatedBy
+oa:motivatedBy rdf:type owl:ObjectProperty .
+
+
 #################################################################
 #    Data properties
 #################################################################
@@ -285,6 +312,10 @@ graphemon:signName rdf:type owl:DatatypeProperty ;
 ###  http://www.purl.org/graphemon/slha
 graphemon:slha rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf graphemon:hasCuneiformIdentifier .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+rdf:value rdf:type owl:DatatypeProperty .
 
 
 #################################################################
@@ -537,12 +568,20 @@ graphemon:Stroketyped rdf:type owl:Class ;
                                                  rdfs:label "collection" .
 
 
-###  http://www.w3.org/ns/anno.jsonldAnnotation
-anno:Annotation rdf:type owl:Class .
+###  http://www.w3.org/ns/oa#Annotation
+oa:Annotation rdf:type owl:Class .
 
 
-###  http://www.w3.org/ns/anno.jsonldTextualBody
-anno:TextualBody rdf:type owl:Class .
+###  http://www.w3.org/ns/oa#SpecificResource
+oa:SpecificResource rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/oa#SvgSelector
+oa:SvgSelector rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/oa#TextualBody
+oa:TextualBody rdf:type owl:Class .
 
 
 #################################################################
@@ -967,6 +1006,11 @@ anno:TextualBody rdf:type owl:Class .
 <http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line1_char2_glyph> rdf:type owl:NamedIndividual ,
                                                                                      cidoc:TX9_Glyph ;
                                                                             rdfs:label "Glyph at HS1174 obverse side line 1 char 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line1_char3_glyph
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line1_char3_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line1_char4_glyph
@@ -2003,6 +2047,7 @@ anno:TextualBody rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#lu2_character
 <http://www.co-ode.org/ontologies/ont.owl#lu2_character> rdf:type owl:NamedIndividual ,
                                                                   cidoc:TX8_Grapheme ;
+                                                         graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#lu2_character_reading_lu2> ;
                                                          graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#lu2_charvariant1> ;
                                                          graphemon:abzl 253 ;
                                                          graphemon:hasUnicodeCodePoint "U+121FD" ;
@@ -2543,6 +2588,32 @@ anno:TextualBody rdf:type owl:Class .
                                                                              rdfs:label "Grapheme Reading 9(disz): 9(disz)" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1
+<http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1> rdf:type owl:NamedIndividual ,
+                                                                                         oa:Annotation ;
+                                                                                oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1> ;
+                                                                                oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
+<http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1> rdf:type owl:NamedIndividual ,
+                                                                                               oa:SpecificResource ;
+                                                                                      oa:hasSource <http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line1_char2_glyph> ;
+                                                                                      oa:motivatedBy oa:identifying .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target
+<http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target> rdf:type owl:NamedIndividual ;
+                                                                                       oa:hasSelector <http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target_selector> ;
+                                                                                       oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113344:577529/full/full/0/default.jpg> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target_selector
+<http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target_selector> rdf:type owl:NamedIndividual ,
+                                                                                                         oa:SvgSelector ;
+                                                                                                rdf:value "<svg><polygon points=\\\"397.853515625,33.87583541870117 253.30181884765625,32.370086669921875 241.25584411621094,160.3585662841797 382.7960510253906,161.8643035888672\\\"></polygon></svg>" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#esz_character_reading_3(u)
 <http://www.co-ode.org/ontologies/ont.owl#esz_character_reading_3(u)> rdf:type owl:NamedIndividual ,
                                                                                graphemon:GraphemeReading ;
@@ -2562,6 +2633,10 @@ cunei:clay rdf:type owl:NamedIndividual ,
            lemon:entry <http://www.co-ode.org/ontologies/ont.owl#3(disz)_word> ,
                        <http://www.co-ode.org/ontologies/ont.owl#3(u)_word> ;
            rdfs:label "clay" .
+
+
+###  http://www.w3.org/ns/oa#identifying
+oa:identifying rdf:type owl:NamedIndividual .
 
 
 ###  http://www.wikidata.org/enity/Q42817
