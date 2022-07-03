@@ -174,6 +174,10 @@ graphemon:meszl rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf graphemon:hasCuneiformIdentifier .
 
 
+###  http://www.purl.org/graphemon/readingValue
+graphemon:readingValue rdf:type owl:DatatypeProperty .
+
+
 ###  http://www.purl.org/graphemon/signName
 graphemon:signName rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf graphemon:hasCuneiformIdentifier .
@@ -206,6 +210,11 @@ graphemon:slha rdf:type owl:DatatypeProperty ;
 
 ###  http://lemon-model.net/lemon#Wordform
 <http://lemon-model.net/lemon#Wordform> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph
+<http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> rdf:type owl:Class ;
+                                               rdfs:label "glyph" .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme
@@ -257,10 +266,37 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                        rdfs:label "Character: A" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#a_character_reading_a
+<http://www.co-ode.org/ontologies/ont.owl#a_character_reading_a> rdf:type owl:NamedIndividual ,
+                                                                          graphemon:GraphemeReading ;
+                                                                 graphemon:readingValue "a" ;
+                                                                 rdfs:label "Grapheme Reading A: a" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#a_charvariant1
 <http://www.co-ode.org/ontologies/ont.owl#a_charvariant1> rdf:type owl:NamedIndividual ,
                                                                    graphemon:GraphemeVariant ;
                                                           rdfs:label "Grapheme Variant 1: A" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#an_character
+<http://www.co-ode.org/ontologies/ont.owl#an_character> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                        graphemon:abzl 009 ;
+                                                        graphemon:hasUnicodeCodePoint "U+1202D" ;
+                                                        graphemon:hasUnicodeRepresentation "𒀭" ;
+                                                        graphemon:hethzl 8 ;
+                                                        graphemon:meszl 10 ;
+                                                        graphemon:signName "AN" ;
+                                                        graphemon:slha 013 ;
+                                                        rdfs:label "Character: AN" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#an_character_reading_d
+<http://www.co-ode.org/ontologies/ont.owl#an_character_reading_d> rdf:type owl:NamedIndividual ,
+                                                                           graphemon:GraphemeReading ;
+                                                                  graphemon:readingValue "d" ;
+                                                                  rdfs:label "Grapheme Reading AN: d" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#babbar_character
@@ -268,8 +304,8 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                      <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
                                                             cunei:occurance <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char7> ;
                                                             graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#babbar_charvariant1> ;
-                                                            <http://lemon-model.net/lemon#writtenRep> "𒌓" ;
                                                             cunei:transliteration "babbar" ;
+                                                            graphemon:hasUnicodeRepresentation "𒌓" ;
                                                             rdfs:label "Character: BABBAR" .
 
 
@@ -294,6 +330,16 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
 <http://www.co-ode.org/ontologies/ont.owl#dingir_charvariant1> rdf:type owl:NamedIndividual ,
                                                                         graphemon:GraphemeVariant ;
                                                                rdfs:label "Grapheme Variant 1: dingir" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#disz_character
+<http://www.co-ode.org/ontologies/ont.owl#disz_character> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                          cunei:occurance <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char3> ;
+                                                          graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#1(disz)_charvariant1> ;
+                                                          <http://lemon-model.net/lemon#writtenRep> "𒁹" ;
+                                                          cunei:transliteration "1(disz)" ;
+                                                          rdfs:label "Character: 1(disz)" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#gi_character
@@ -341,9 +387,16 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
 <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char1> rdf:type owl:NamedIndividual ,
                                                                                  cunei:TransliterationCharOccurance ;
                                                                         cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char2> ;
+                                                                        graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#9(u)_character_reading_9(u)> ;
                                                                         cunei:charIndex 1 ;
                                                                         cunei:lineNumber 1 ;
                                                                         rdfs:label "HT 07-31-95 obverse line 1 char 1" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char1_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char1_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 1 char 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char2
@@ -351,9 +404,16 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                                  cunei:TransliterationCharOccurance ;
                                                                         cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char3> ;
                                                                         cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char1> ;
+                                                                        graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#2(disz)_character_reading_2(disz)> ;
                                                                         cunei:charIndex 2 ;
                                                                         cunei:lineNumber 1 ;
                                                                         rdfs:label "HT 07-31-95 obverse line 1 char 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char2_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char2_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 1 char 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char3
@@ -366,6 +426,12 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                         rdfs:label "HT 07-31-95 obverse line 1 char 3" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char3_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char3_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 1 char 3" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char4
 <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char4> rdf:type owl:NamedIndividual ,
                                                                                  cunei:TransliterationCharOccurance ;
@@ -374,6 +440,12 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                         cunei:charIndex 4 ;
                                                                         cunei:lineNumber 1 ;
                                                                         rdfs:label "HT 07-31-95 obverse line 1 char 4" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char4_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char4_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 1 char 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char5
@@ -386,6 +458,12 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                         rdfs:label "HT 07-31-95 obverse line 1 char 5" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char5_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char5_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 1 char 5" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char6
 <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char6> rdf:type owl:NamedIndividual ,
                                                                                  cunei:TransliterationCharOccurance ;
@@ -396,6 +474,12 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                         rdfs:label "HT 07-31-95 obverse line 1 char 6" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char6_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char6_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 1 char 6" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char7
 <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char7> rdf:type owl:NamedIndividual ,
                                                                                  cunei:TransliterationCharOccurance ;
@@ -403,6 +487,12 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                         cunei:charIndex 7 ;
                                                                         cunei:lineNumber 1 ;
                                                                         rdfs:label "HT 07-31-95 obverse line 1 char 7" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char7_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char7_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 1 char 7" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_word1
@@ -466,9 +556,16 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
 <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line2_char1> rdf:type owl:NamedIndividual ,
                                                                                  cunei:TransliterationCharOccurance ;
                                                                         cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line2_char2> ;
+                                                                        graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#U_character_reading_1(u)> ;
                                                                         cunei:charIndex 1 ;
                                                                         cunei:lineNumber 2 ;
                                                                         rdfs:label "HT 07-31-95 obverse line 2 char 1" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line2_char1_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line2_char1_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 2 char 1" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line2_char2
@@ -476,9 +573,16 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                                  cunei:TransliterationCharOccurance ;
                                                                         cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line2_char3> ;
                                                                         cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line2_char1> ;
+                                                                        graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#6(disz)_character_reading_6(disz)> ;
                                                                         cunei:charIndex 2 ;
                                                                         cunei:lineNumber 2 ;
                                                                         rdfs:label "HT 07-31-95 obverse line 2 char 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line2_char2_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line2_char2_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 2 char 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line2_char3
@@ -491,6 +595,12 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                         rdfs:label "HT 07-31-95 obverse line 2 char 3" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line2_char3_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line2_char3_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 2 char 3" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line2_char4
 <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line2_char4> rdf:type owl:NamedIndividual ,
                                                                                  cunei:TransliterationCharOccurance ;
@@ -501,6 +611,12 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                         rdfs:label "HT 07-31-95 obverse line 2 char 4" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line2_char4_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line2_char4_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 2 char 4" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line2_char5
 <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line2_char5> rdf:type owl:NamedIndividual ,
                                                                                  cunei:TransliterationCharOccurance ;
@@ -508,6 +624,12 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                         cunei:charIndex 5 ;
                                                                         cunei:lineNumber 2 ;
                                                                         rdfs:label "HT 07-31-95 obverse line 2 char 5" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line2_char5_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line2_char5_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 2 char 5" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line2_word1
@@ -566,6 +688,12 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                         rdfs:label "HT 07-31-95 obverse line 3 char 1" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char1_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char1_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 3 char 1" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char2
 <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char2> rdf:type owl:NamedIndividual ,
                                                                                  cunei:TransliterationCharOccurance ;
@@ -574,6 +702,12 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                         cunei:charIndex 2 ;
                                                                         cunei:lineNumber 3 ;
                                                                         rdfs:label "HT 07-31-95 obverse line 3 char 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char2_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char2_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 3 char 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char3
@@ -586,14 +720,27 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                         rdfs:label "HT 07-31-95 obverse line 3 char 3" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char3_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char3_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 3 char 3" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char4
 <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char4> rdf:type owl:NamedIndividual ,
                                                                                  cunei:TransliterationCharOccurance ;
                                                                         cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char5> ;
                                                                         cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char3> ;
+                                                                        graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#me_character_reading_me> ;
                                                                         cunei:charIndex 4 ;
                                                                         cunei:lineNumber 3 ;
                                                                         rdfs:label "HT 07-31-95 obverse line 3 char 4" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char4_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char4_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 3 char 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char5
@@ -601,9 +748,16 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                                  cunei:TransliterationCharOccurance ;
                                                                         cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char6> ;
                                                                         cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char4> ;
+                                                                        graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#8(disz)_character_reading_8(disz)> ;
                                                                         cunei:charIndex 5 ;
                                                                         cunei:lineNumber 3 ;
                                                                         rdfs:label "HT 07-31-95 obverse line 3 char 5" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char5_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char5_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 3 char 5" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char6
@@ -616,6 +770,12 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                         rdfs:label "HT 07-31-95 obverse line 3 char 6" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char6_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char6_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 3 char 6" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char7
 <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char7> rdf:type owl:NamedIndividual ,
                                                                                  cunei:TransliterationCharOccurance ;
@@ -623,6 +783,12 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                         cunei:charIndex 7 ;
                                                                         cunei:lineNumber 3 ;
                                                                         rdfs:label "HT 07-31-95 obverse line 3 char 7" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char7_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char7_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 3 char 7" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_word1
@@ -676,14 +842,27 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                         rdfs:label "HT 07-31-95 obverse line 4 char 1" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char1_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char1_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 4 char 1" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char2
 <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char2> rdf:type owl:NamedIndividual ,
                                                                                  cunei:TransliterationCharOccurance ;
                                                                         cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char3> ;
                                                                         cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char1> ;
+                                                                        graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#a_character_reading_a> ;
                                                                         cunei:charIndex 2 ;
                                                                         cunei:lineNumber 4 ;
                                                                         rdfs:label "HT 07-31-95 obverse line 4 char 2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char2_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char2_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 4 char 2" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char3
@@ -691,9 +870,16 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                                  cunei:TransliterationCharOccurance ;
                                                                         cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char4> ;
                                                                         cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char2> ;
+                                                                        graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#mar_character_reading_mar> ;
                                                                         cunei:charIndex 3 ;
                                                                         cunei:lineNumber 4 ;
                                                                         rdfs:label "HT 07-31-95 obverse line 4 char 3" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char3_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char3_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 4 char 3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char4
@@ -701,9 +887,16 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                                  cunei:TransliterationCharOccurance ;
                                                                         cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char5> ;
                                                                         cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char3> ;
+                                                                        graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#an_character_reading_d> ;
                                                                         cunei:charIndex 4 ;
                                                                         cunei:lineNumber 4 ;
                                                                         rdfs:label "HT 07-31-95 obverse line 4 char 4" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char4_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char4_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 4 char 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char5
@@ -711,9 +904,16 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                                  cunei:TransliterationCharOccurance ;
                                                                         cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char6> ;
                                                                         cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char4> ;
+                                                                        graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#ud_character_reading_utu> ;
                                                                         cunei:charIndex 5 ;
                                                                         cunei:lineNumber 4 ;
                                                                         rdfs:label "HT 07-31-95 obverse line 4 char 5" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char5_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char5_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 4 char 5" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char6
@@ -721,9 +921,16 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                                  cunei:TransliterationCharOccurance ;
                                                                         cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char7> ;
                                                                         cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char5> ;
+                                                                        graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#isz_character_reading_isz> ;
                                                                         cunei:charIndex 6 ;
                                                                         cunei:lineNumber 4 ;
                                                                         rdfs:label "HT 07-31-95 obverse line 4 char 6" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char6_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char6_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 4 char 6" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char7
@@ -731,18 +938,32 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                                  cunei:TransliterationCharOccurance ;
                                                                         cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char8> ;
                                                                         cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char6> ;
+                                                                        graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#szu_character_reading_szu> ;
                                                                         cunei:charIndex 4 ;
                                                                         cunei:lineNumber 7 ;
                                                                         rdfs:label "HT 07-31-95 obverse line 4 char 7" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char7_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char7_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 4 char 7" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char8
 <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char8> rdf:type owl:NamedIndividual ,
                                                                                  cunei:TransliterationCharOccurance ;
                                                                         cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char7> ;
+                                                                        graphemon:hasGraphemeReading <http://www.co-ode.org/ontologies/ont.owl#u2_character_reading_u2> ;
                                                                         cunei:charIndex 8 ;
                                                                         cunei:lineNumber 4 ;
                                                                         rdfs:label "HT 07-31-95 obverse line 4 char 8" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char8_glyph
+<http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char8_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 4 char 8" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_word1
@@ -778,6 +999,13 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                          rdfs:label "Character: ISZ" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#isz_character_reading_isz
+<http://www.co-ode.org/ontologies/ont.owl#isz_character_reading_isz> rdf:type owl:NamedIndividual ,
+                                                                              graphemon:GraphemeReading ;
+                                                                     graphemon:readingValue "isz" ;
+                                                                     rdfs:label "Grapheme Reading ISZ: isz" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#ku3_character
 <http://www.co-ode.org/ontologies/ont.owl#ku3_character> rdf:type owl:NamedIndividual ,
                                                                   <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
@@ -787,6 +1015,13 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                          graphemon:hasUnicodeRepresentation "𒆬" ;
                                                          graphemon:signName "ku3" ;
                                                          rdfs:label "Character: KU3" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ku3_character_reading_ku3
+<http://www.co-ode.org/ontologies/ont.owl#ku3_character_reading_ku3> rdf:type owl:NamedIndividual ,
+                                                                              graphemon:GraphemeReading ;
+                                                                     graphemon:readingValue "ku3" ;
+                                                                     rdfs:label "Grapheme Reading KU3: ku3" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#ku3_charvariant1
@@ -843,9 +1078,16 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
 <http://www.co-ode.org/ontologies/ont.owl#mar_character> rdf:type owl:NamedIndividual ,
                                                                   <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
                                                          cunei:occurance <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char3> ;
-                                                         <http://lemon-model.net/lemon#writtenRep> "mar" ,
-                                                                                                   "𒈥" ;
-                                                         rdfs:label "Character: mar" .
+                                                         graphemon:hasUnicodeRepresentation "𒈥" ;
+                                                         graphemon:signName "MAR" ;
+                                                         rdfs:label "Character: MAR" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#mar_character_reading_mar
+<http://www.co-ode.org/ontologies/ont.owl#mar_character_reading_mar> rdf:type owl:NamedIndividual ,
+                                                                              graphemon:GraphemeReading ;
+                                                                     graphemon:readingValue "mar" ;
+                                                                     rdfs:label "Grapheme Reading MAR: mar" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#me_character
@@ -855,6 +1097,13 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                         graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#me_charvariant1> ;
                                                         cunei:transliteration "ME" ;
                                                         rdfs:label "Character: ME" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#me_character_reading_me
+<http://www.co-ode.org/ontologies/ont.owl#me_character_reading_me> rdf:type owl:NamedIndividual ,
+                                                                            graphemon:GraphemeReading ;
+                                                                   graphemon:readingValue "me" ;
+                                                                   rdfs:label "Grapheme Reading ME: me" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#me_charvariant1
@@ -886,8 +1135,8 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                           <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line2_char3> ,
                                                                           <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char1> ;
                                                           graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#sza3_charvariant1> ;
-                                                          <http://lemon-model.net/lemon#writtenRep> "𒊮" ;
                                                           cunei:transliteration "sza3" ;
+                                                          graphemon:hasUnicodeRepresentation "𒊮" ;
                                                           rdfs:label "Character: SZA3" .
 
 
@@ -902,33 +1151,59 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                   <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
                                                          cunei:occurance <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char1> ,
                                                                          <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char7> ;
-                                                         <http://lemon-model.net/lemon#writtenRep> "𒋗" ;
                                                          cunei:transliteration "szu" ;
+                                                         graphemon:hasUnicodeRepresentation "𒋗" ;
                                                          rdfs:label "Character: SZU" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#szu_character_reading_szu
+<http://www.co-ode.org/ontologies/ont.owl#szu_character_reading_szu> rdf:type owl:NamedIndividual ,
+                                                                              graphemon:GraphemeReading ;
+                                                                     graphemon:readingValue "szu" ;
+                                                                     rdfs:label "Grapheme Reading SZU: szu" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#u2_character
 <http://www.co-ode.org/ontologies/ont.owl#u2_character> rdf:type owl:NamedIndividual ,
                                                                  <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
                                                         cunei:occurance <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line4_char8> ;
-                                                        <http://lemon-model.net/lemon#writtenRep> "𒌓" ;
                                                         cunei:transliteration "U2" ;
+                                                        graphemon:hasUnicodeRepresentation "𒌓" ;
                                                         rdfs:label "Character: U2" .
 
 
-###  http://www.co-ode.org/ontologies/ont.owl#1(disz)_character
-<http://www.co-ode.org/ontologies/ont.owl#1(disz)_character> rdf:type owl:NamedIndividual ,
-                                                                      <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
-                                                             cunei:occurance <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line3_char3> ;
-                                                             graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#1(disz)_charvariant1> ;
-                                                             <http://lemon-model.net/lemon#writtenRep> "𒁹" ;
-                                                             cunei:transliteration "1(disz)" ;
-                                                             rdfs:label "Character: 1(disz)" .
+###  http://www.co-ode.org/ontologies/ont.owl#u2_character_reading_u2
+<http://www.co-ode.org/ontologies/ont.owl#u2_character_reading_u2> rdf:type owl:NamedIndividual ,
+                                                                            graphemon:GraphemeReading ;
+                                                                   graphemon:readingValue "u2" ;
+                                                                   rdfs:label "Grapheme Reading U2: u2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ud_character
+<http://www.co-ode.org/ontologies/ont.owl#ud_character> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                        graphemon:abzl 332 ;
+                                                        graphemon:hasUnicodeCodePoint "U+12313" ;
+                                                        graphemon:hasUnicodeRepresentation "𒌓" ;
+                                                        graphemon:hethzl 316 ;
+                                                        graphemon:meszl 596 ;
+                                                        graphemon:signName "UD" ;
+                                                        graphemon:slha 381 ;
+                                                        rdfs:label "Character: UD" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ud_character_reading_utu
+<http://www.co-ode.org/ontologies/ont.owl#ud_character_reading_utu> rdf:type owl:NamedIndividual ,
+                                                                             graphemon:GraphemeReading ;
+                                                                    graphemon:readingValue "utu" ;
+                                                                    rdfs:label "Grapheme Reading UD: utu" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#1(disz)_charvariant1
 <http://www.co-ode.org/ontologies/ont.owl#1(disz)_charvariant1> rdf:type owl:NamedIndividual ,
                                                                          graphemon:GraphemeVariant ;
+                                                                graphemon:hasGottsteinCode "a1"^^graphemon:gottsteinLiteral ;
+                                                                graphemon:hasPaleoCode "a"^^graphemon:paleocodeLiteral ;
                                                                 rdfs:label "Grapheme Variant 1: 1(disz)" .
 
 
@@ -994,6 +1269,8 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
 ###  http://www.co-ode.org/ontologies/ont.owl#2(disz)_charvariant1
 <http://www.co-ode.org/ontologies/ont.owl#2(disz)_charvariant1> rdf:type owl:NamedIndividual ,
                                                                          graphemon:GraphemeVariant ;
+                                                                graphemon:hasGottsteinCode "a2"^^graphemon:gottsteinLiteral ;
+                                                                graphemon:hasPaleoCode "a-a"^^graphemon:paleocodeLiteral ;
                                                                 rdfs:label "Grapheme Variant 1: 2(disz)" .
 
 
@@ -1008,6 +1285,12 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                       <http://lemon-model.net/lemon#LexicalSense> ;
                                                              <http://lemon-model.net/lemon#reference> <http://www.wikidata.org/entity/Q200> ;
                                                              rdfs:label "Wordsense: 2(disz)" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#2(disz)_character_reading_2(disz)
+<http://www.co-ode.org/ontologies/ont.owl#2(disz)_character_reading_2(disz)> rdf:type owl:NamedIndividual ,
+                                                                                      graphemon:GraphemeReading ;
+                                                                             rdfs:label "Grapheme Reading 2(disz): 2(disz)" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#2(disz)_wordform_2(disz)
@@ -1047,6 +1330,13 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                              rdfs:label "Wordsense: 6(disz)" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#6(disz)_character_reading_6(disz)
+<http://www.co-ode.org/ontologies/ont.owl#6(disz)_character_reading_6(disz)> rdf:type owl:NamedIndividual ,
+                                                                                      graphemon:GraphemeReading ;
+                                                                             graphemon:readingValue "6(disz)" ;
+                                                                             rdfs:label "Grapheme Reading 6(disz): 6(disz)" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#6(disz)_wordform_6(disz)
 <http://www.co-ode.org/ontologies/ont.owl#6(disz)_wordform_6(disz)> rdf:type owl:NamedIndividual ,
                                                                              <http://lemon-model.net/lemon#Wordform> ;
@@ -1083,6 +1373,13 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                         rdfs:label "Word: 8(disz)" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#8(disz)_character_reading_8(disz)
+<http://www.co-ode.org/ontologies/ont.owl#8(disz)_character_reading_8(disz)> rdf:type owl:NamedIndividual ,
+                                                                                      graphemon:GraphemeReading ;
+                                                                             graphemon:readingValue "8(disz)" ;
+                                                                             rdfs:label "Grapheme Reading 8(disz): 8(disz)" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#8(disz)_wordform_8(disz)
 <http://www.co-ode.org/ontologies/ont.owl#8(disz)_wordform_8(disz)> rdf:type owl:NamedIndividual ,
                                                                              <http://lemon-model.net/lemon#Wordform> ;
@@ -1091,13 +1388,13 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                     rdfs:label "Wordform: 8(disz)" .
 
 
-###  http://www.co-ode.org/ontologies/ont.owl#9(u)_char
-<http://www.co-ode.org/ontologies/ont.owl#9(u)_char> rdf:type owl:NamedIndividual ,
-                                                              <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
-                                                     cunei:occurance <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char1> ;
-                                                     graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#9(u)_charvariant1> ;
-                                                     cunei:transliteration "9(u)" ;
-                                                     rdfs:label "Character: 9(u)" .
+###  http://www.co-ode.org/ontologies/ont.owl#9(u)_character
+<http://www.co-ode.org/ontologies/ont.owl#9(u)_character> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                          cunei:occurance <http://www.co-ode.org/ontologies/ont.owl#ht073195_obverse_line1_char1> ;
+                                                          graphemon:variant <http://www.co-ode.org/ontologies/ont.owl#9(u)_charvariant1> ;
+                                                          cunei:transliteration "9(u)" ;
+                                                          rdfs:label "Character: 9(u)" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#9(u)_charvariant1
@@ -1121,12 +1418,31 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                      rdfs:label "Word: 9(u)" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#9(u)_character_reading_9(u)
+<http://www.co-ode.org/ontologies/ont.owl#9(u)_character_reading_9(u)> rdf:type owl:NamedIndividual ,
+                                                                                graphemon:GraphemeReading ;
+                                                                       graphemon:readingValue "9(u)" ;
+                                                                       rdfs:label "Grapheme Reading 9(u): 9(u)" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#9(u)_wordform_9(u)
 <http://www.co-ode.org/ontologies/ont.owl#9(u)_wordform_9(u)> rdf:type owl:NamedIndividual ,
                                                                        <http://lemon-model.net/lemon#Wordform> ;
                                                               <http://lemon-model.net/lemon#writtenRep> "𒐔" ;
                                                               cunei:transliteration "9(u)" ;
                                                               rdfs:label "Wordform: 9(u)" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#U_character_reading_1(u)
+<http://www.co-ode.org/ontologies/ont.owl#U_character_reading_1(u)> rdf:type owl:NamedIndividual ,
+                                                                             graphemon:GraphemeReading ;
+                                                                    graphemon:readingValue "1(u)" ;
+                                                                    rdfs:label "Grapheme Reading U: 1(u)" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#disz_character_reading_1(disz)
+<http://www.co-ode.org/ontologies/ont.owl#disz_character_reading_1(disz)> rdf:type owl:NamedIndividual ;
+                                                                          rdfs:label "Grapheme Reading DISZ: 1(disz)" .
 
 
 ###  http://www.wikidata.org/entity/Q1090
