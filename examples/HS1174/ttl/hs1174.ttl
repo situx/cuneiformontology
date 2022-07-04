@@ -1,5 +1,6 @@
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -49,6 +50,10 @@ graphemon:unicodeTransliterationLiteral rdf:type rdfs:Datatype .
 ###  http://lemon-model.net/lemon#entry
 lemon:entry rdf:type owl:ObjectProperty ;
             rdfs:label "entry" .
+
+dc:creator rdf:type owl:ObjectProperty .
+
+dc:rights rdf:type owl:DatatypeProperty .
 
 
 ###  http://lemon-model.net/lemon#form
@@ -1111,6 +1116,29 @@ oa:TextualBody rdf:type owl:Class .
                                                                                      cidoc:TX9_Glyph ;
                                                                             rdfs:label "Glyph at HS1174 obverse side line 2 char 2" .
 
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line2_char3_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 obverse side line 2 char 3" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line2_char4_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 obverse side line 2 char 4" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line2_char5_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 obverse side line 2 char 5" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line2_char6_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 obverse side line 2 char 6" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line2_char7_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 obverse side line 2 char 7" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line2_char8_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 obverse side line 2 char 8" .
 
 ###  http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line3
 <http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line3> rdf:type owl:NamedIndividual ,
@@ -1125,6 +1153,18 @@ oa:TextualBody rdf:type owl:Class .
 <http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line3_char1_glyph> rdf:type owl:NamedIndividual ,
                                                                                      cidoc:TX9_Glyph ;
                                                                             rdfs:label "Glyph at HS1174 obverse side line 3 char 1" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line3_char2_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 obverse side line 3 char 2" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line3_char3_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 obverse side line 3 char 3" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line3_char4_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 obverse side line 3 char 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line4
@@ -1139,10 +1179,101 @@ oa:TextualBody rdf:type owl:Class .
 <http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line4_char1_glyph> rdf:type owl:NamedIndividual ,
                                                                                      cidoc:TX9_Glyph ;
                                                                             rdfs:label "Glyph at HS1174 obverse side line 4 char 1" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line4_char2_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 obverse side line 4 char 2" .
 
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line4_char3_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 obverse side line 4 char 3" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line4_char4_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 obverse side line 4 char 4" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line4_char5_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 obverse side line 4 char 5" .
 
 ###  http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line4_char2_glyph
 <http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_line4_char2_glyph> rdf:type owl:NamedIndividual .
+
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line1_char2_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 reverse side line 1 char 2" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line1_char3_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 reverse side line 1 char 3" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line1_char4_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 reverse side line 1 char 4" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line2_char1_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 reverse side line 2 char 1" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line2_char2_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 reverse side line 2 char 2" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line2_char3_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 reverse side line 2 char 3" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line2_char4_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 reverse side line 2 char 4" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line2_char5_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 reverse side line 2 char 5" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line3_char1_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 reverse side line 3 char 1" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line3_char2_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 reverse side line 3 char 2" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line3_char3_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 reverse side line 3 char 3" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line3_char4_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 reverse side line 3 char 4" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line4_char1_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 reverse side line 4 char 1" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line4_char2_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 reverse side line 4 char 2" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line4_char3_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 reverse side line 4 char 3" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line5_char1_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 reverse side line 5 char 1" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line5_char2_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 reverse side line 5 char 2" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line5_char3_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 reverse side line 5 char 3" .
+																			
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line5_char4_glyph> rdf:type owl:NamedIndividual ,
+                                                                                     cidoc:TX9_Glyph ;
+                                                                            rdfs:label "Glyph at HS1174 reverse side line 5 char 4" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#hs1174_obverse_writtentext
@@ -2683,7 +2814,9 @@ oa:TextualBody rdf:type owl:Class .
                                                                                          oa:Annotation ;
                                                                                 oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1> ;
                                                                                 oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target> ;
-                                                                                rdfs:label "Annotation of Glyph at HS 1174 obverse line 1 char 2 on 3D rendering" .
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 obverse line 1 char 2 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
@@ -2713,7 +2846,9 @@ oa:TextualBody rdf:type owl:Class .
                                                                                          oa:Annotation ;
                                                                                 oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#4776df65-3c46-4ae6-a868-1f416c8a544b_body1> ;
                                                                                 oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#4776df65-3c46-4ae6-a868-1f416c8a544b_target> ;
-                                                                                rdfs:label "Annotation of Glyph at HS 1174 obverse line 3 char 1 on 3D rendering" .
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 obverse line 3 char 1 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
@@ -2743,7 +2878,9 @@ oa:TextualBody rdf:type owl:Class .
                                                                                          oa:Annotation ;
                                                                                 oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#d48fef72-5219-4b73-bf9d-534c60c62956_body1> ;
                                                                                 oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#d48fef72-5219-4b73-bf9d-534c60c62956_target> ;
-                                                                                rdfs:label "Annotation of Glyph at HS 1174 obverse line 1 char 3 on 3D rendering" .
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 obverse line 1 char 3 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
@@ -2772,7 +2909,9 @@ oa:TextualBody rdf:type owl:Class .
                                                                                          oa:Annotation ;
                                                                                 oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#0e7063b6-b4a2-4ade-8ad8-a2bf842709d8_body1> ;
                                                                                 oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#0e7063b6-b4a2-4ade-8ad8-a2bf842709d8_target> ;
-                                                                                rdfs:label "Annotation of Glyph at HS 1174 obverse line 1 char 4 on 3D rendering" .
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 obverse line 1 char 4 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
@@ -2803,7 +2942,9 @@ oa:TextualBody rdf:type owl:Class .
                                                                                          oa:Annotation ;
                                                                                 oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#aaf1409a-87bb-4dc4-aac6-880be041ad64_body1> ;
                                                                                 oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#aaf1409a-87bb-4dc4-aac6-880be041ad64_target> ;
-                                                                                rdfs:label "Annotation of Glyph at HS 1174 obverse line 3 char 3 on 3D rendering" .
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 obverse line 3 char 3 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
@@ -2832,7 +2973,9 @@ oa:TextualBody rdf:type owl:Class .
                                                                                          oa:Annotation ;
                                                                                 oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#9a3572bc-d972-43e5-8aa3-b18876e717fd_body1> ;
                                                                                 oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#9a3572bc-d972-43e5-8aa3-b18876e717fd_target> ;
-                                                                                rdfs:label "Annotation of Glyph at HS 1174 obverse line 2 char 1 on 3D rendering" .
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 obverse line 2 char 1 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
@@ -2863,7 +3006,9 @@ oa:TextualBody rdf:type owl:Class .
                                                                                          oa:Annotation ;
                                                                                 oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#45e343c9-c3a5-4417-ae16-7fa1fb3c0eec_body1> ;
                                                                                 oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#45e343c9-c3a5-4417-ae16-7fa1fb3c0eec_target> ;
-                                                                                rdfs:label "Annotation of Glyph at HS 1174 obverse line 2 char 2 on 3D rendering" .
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 obverse line 2 char 2 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#45e343c9-c3a5-4417-ae16-7fa1fb3c0eec_body1
@@ -2922,7 +3067,9 @@ oa:TextualBody rdf:type owl:Class .
                                                                                          oa:Annotation ;
                                                                                 oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#1c74c217-b7cb-4ac8-92d8-86051e811659_body1> ;
                                                                                 oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#1c74c217-b7cb-4ac8-92d8-86051e811659_target> ;
-                                                                                rdfs:label "Annotation of Glyph at HS 1174 obverse line 3 char 2 on 3D rendering" .
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 obverse line 3 char 2 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
@@ -2952,7 +3099,9 @@ oa:TextualBody rdf:type owl:Class .
                                                                                          oa:Annotation ;
                                                                                 oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#09a66ef9-8b3c-488b-ad51-d280404f2a7f_body1> ;
                                                                                 oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#09a66ef9-8b3c-488b-ad51-d280404f2a7f_target> ;
-                                                                                rdfs:label "Annotation of Glyph at HS 1174 obverse line 2 char 8 on 3D rendering" .
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 obverse line 2 char 8 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
@@ -2982,7 +3131,9 @@ oa:TextualBody rdf:type owl:Class .
                                                                                          oa:Annotation ;
                                                                                 oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#28b2e58a-c464-462e-aa73-a369ffaee903_body1> ;
                                                                                 oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#28b2e58a-c464-462e-aa73-a369ffaee903_target> ;
-                                                                                rdfs:label "Annotation of Glyph at HS 1174 obverse line 2 char 7 on 3D rendering" .
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 obverse line 2 char 7 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
@@ -3012,7 +3163,9 @@ oa:TextualBody rdf:type owl:Class .
                                                                                          oa:Annotation ;
                                                                                 oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#4daae4c2-bd2a-4911-86e0-31dfeea22595_body1> ;
                                                                                 oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#4daae4c2-bd2a-4911-86e0-31dfeea22595_target> ;
-                                                                                rdfs:label "Annotation of Glyph at HS 1174 obverse line 1 char 1 on 3D rendering" .
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 obverse line 1 char 1 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
@@ -3042,7 +3195,9 @@ oa:TextualBody rdf:type owl:Class .
                                                                                          oa:Annotation ;
                                                                                 oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#47fdacc5-6576-4c1e-8743-f93be32e998b_body1> ;
                                                                                 oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#47fdacc5-6576-4c1e-8743-f93be32e998b_target> ;
-                                                                                rdfs:label "Annotation of Glyph at HS 1174 obverse line 4 char 3 on 3D rendering" .
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 obverse line 4 char 3 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
@@ -3065,6 +3220,637 @@ oa:TextualBody rdf:type owl:Class .
                                                                                                          oa:SvgSelector ;
                                                                                                 rdf:value "<svg><polygon points=\"425.1458435058594,559.1844482421875 522.4185791015625,558.2753295898438 508.7822265625,701.9117431640625 397.8731384277344,696.4571533203125\"></polygon></svg>" ;
                                                                                                 rdfs:label "Annotation target selector of Annotation of Glyph at HS 1174 obverse line 4 char 3 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1
+<http://www.co-ode.org/ontologies/ont.owl#010a9fdd-d84f-435b-9736-9c1f9489aeb8> rdf:type owl:NamedIndividual ,
+                                                                                         oa:Annotation ;
+                                                                                oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#010a9fdd-d84f-435b-9736-9c1f9489aeb8_body1> ;
+                                                                                oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#010a9fdd-d84f-435b-9736-9c1f9489aeb8_target> ;
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 reverse line 5 char 5 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
+<http://www.co-ode.org/ontologies/ont.owl#010a9fdd-d84f-435b-9736-9c1f9489aeb8_body1> rdf:type owl:NamedIndividual ,
+                                                                                               oa:SpecificResource ;
+                                                                                      oa:hasSource <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line5_char5_glyph> ;
+                                                                                      oa:motivatedBy oa:identifying ;
+                                                                                      rdfs:label "Annotation body of Annotation of Glyph at HS 1174 reverse line 5 char 5 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target
+<http://www.co-ode.org/ontologies/ont.owl#010a9fdd-d84f-435b-9736-9c1f9489aeb8_target> rdf:type owl:NamedIndividual ;
+                                                                                       oa:hasSelector <http://www.co-ode.org/ontologies/ont.owl#010a9fdd-d84f-435b-9736-9c1f9489aeb8_target_selector> ;
+                                                                                       oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113344:577529/full/full/0/default.jpg> ;
+                                                                                       rdfs:label "Annotation target of Annotation of Glyph at HS 1174 reverse line 5 char 5 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target_selector
+<http://www.co-ode.org/ontologies/ont.owl#010a9fdd-d84f-435b-9736-9c1f9489aeb8_target_selector> rdf:type owl:NamedIndividual ,
+                                                                                                         oa:SvgSelector ;
+                                                                                                rdf:value "<svg><polygon points=\"534.9620361328125,524.4517211914062 684.031005859375,529.8724365234375 686.7413940429688,634.220703125 541.7379150390625,631.5103149414062\"></polygon></svg>" ;
+                                                                                                rdfs:label "Annotation target selector of Annotation of Glyph at HS 1174 reverse line 5 char 5 on 3D rendering" .
+
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1
+<http://www.co-ode.org/ontologies/ont.owl#c9e827a4-65cc-48b2-a38d-d02ff44328eb> rdf:type owl:NamedIndividual ,
+                                                                                         oa:Annotation ;
+                                                                                oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#c9e827a4-65cc-48b2-a38d-d02ff44328eb_body1> ;
+                                                                                oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#c9e827a4-65cc-48b2-a38d-d02ff44328eb_target> ;
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 reverse line 5 char 4 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
+<http://www.co-ode.org/ontologies/ont.owl#c9e827a4-65cc-48b2-a38d-d02ff44328eb_body1> rdf:type owl:NamedIndividual ,
+                                                                                               oa:SpecificResource ;
+                                                                                      oa:hasSource <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line5_char4_glyph> ;
+                                                                                      oa:motivatedBy oa:identifying ;
+                                                                                      rdfs:label "Annotation body of Annotation of Glyph at HS 1174 reverse line 5 char 4 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target
+<http://www.co-ode.org/ontologies/ont.owl#c9e827a4-65cc-48b2-a38d-d02ff44328eb_target> rdf:type owl:NamedIndividual ;
+                                                                                       oa:hasSelector <http://www.co-ode.org/ontologies/ont.owl#c9e827a4-65cc-48b2-a38d-d02ff44328eb_target_selector> ;
+                                                                                       oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113344:577529/full/full/0/default.jpg> ;
+                                                                                       rdfs:label "Annotation target of Annotation of Glyph at HS 1174 reverse line 5 char 4 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target_selector
+<http://www.co-ode.org/ontologies/ont.owl#c9e827a4-65cc-48b2-a38d-d02ff44328eb_target_selector> rdf:type owl:NamedIndividual ,
+                                                                                                         oa:SvgSelector ;
+                                                                                                rdf:value "<svg><polygon points=\"433.3241271972656,548.8448486328125 532.251708984375,547.4896240234375 536.3172607421875,653.193115234375 438.74481201171875,653.193115234375\"></polygon></svg>" ;
+                                                                                                rdfs:label "Annotation target selector of Annotation of Glyph at HS 1174 reverse line 5 char 4 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1
+<http://www.co-ode.org/ontologies/ont.owl#7002d072-d708-43ed-9f7b-fbe5d9d8b600> rdf:type owl:NamedIndividual ,
+                                                                                         oa:Annotation ;
+                                                                                oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#7002d072-d708-43ed-9f7b-fbe5d9d8b600_body1> ;
+                                                                                oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#7002d072-d708-43ed-9f7b-fbe5d9d8b600_target> ;
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 reverse line 1 char 2 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
+<http://www.co-ode.org/ontologies/ont.owl#7002d072-d708-43ed-9f7b-fbe5d9d8b600_body1> rdf:type owl:NamedIndividual ,
+                                                                                               oa:SpecificResource ;
+                                                                                      oa:hasSource <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line1_char2_glyph> ;
+                                                                                      oa:motivatedBy oa:identifying ;
+                                                                                      rdfs:label "Annotation body of Annotation of Glyph at HS 1174 reverse line 1 char 2 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target
+<http://www.co-ode.org/ontologies/ont.owl#7002d072-d708-43ed-9f7b-fbe5d9d8b600_target> rdf:type owl:NamedIndividual ;
+                                                                                       oa:hasSelector <http://www.co-ode.org/ontologies/ont.owl#7002d072-d708-43ed-9f7b-fbe5d9d8b600_target_selector> ;
+                                                                                       oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113344:577529/full/full/0/default.jpg> ;
+                                                                                       rdfs:label "Annotation target of Annotation of Glyph at HS 1174 reverse line 1 char 2 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target_selector
+<http://www.co-ode.org/ontologies/ont.owl#7002d072-d708-43ed-9f7b-fbe5d9d8b600_target_selector> rdf:type owl:NamedIndividual ,
+                                                                                                         oa:SvgSelector ;
+                                                                                                rdf:value "<svg><polygon points=\"155.5137939453125,25.748275756835938 412.9965515136719,9.486207008361816 411.6413879394531,124.67586517333984 151.44827270507812,138.2275848388672\"></polygon></svg>" ;
+                                                                                                rdfs:label "Annotation target selector of Annotation of Glyph at HS 1174 reverse line 1 char 2 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1
+<http://www.co-ode.org/ontologies/ont.owl#3fed3d50-4a59-4364-99bd-16808d1bb666> rdf:type owl:NamedIndividual ,
+                                                                                         oa:Annotation ;
+                                                                                oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#3fed3d50-4a59-4364-99bd-16808d1bb666_body1> ;
+                                                                                oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#3fed3d50-4a59-4364-99bd-16808d1bb666_target> ;
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 reverse line 1 char 4 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
+<http://www.co-ode.org/ontologies/ont.owl#3fed3d50-4a59-4364-99bd-16808d1bb666_body1> rdf:type owl:NamedIndividual ,
+                                                                                               oa:SpecificResource ;
+                                                                                      oa:hasSource <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line1_char4_glyph> ;
+                                                                                      oa:motivatedBy oa:identifying ;
+                                                                                      rdfs:label "Annotation body of Annotation of Glyph at HS 1174 reverse line 1 char 4 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target
+<http://www.co-ode.org/ontologies/ont.owl#3fed3d50-4a59-4364-99bd-16808d1bb666_target> rdf:type owl:NamedIndividual ;
+                                                                                       oa:hasSelector <http://www.co-ode.org/ontologies/ont.owl#3fed3d50-4a59-4364-99bd-16808d1bb666_target_selector> ;
+                                                                                       oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113344:577529/full/full/0/default.jpg> ;
+                                                                                       rdfs:label "Annotation target of Annotation of Glyph at HS 1174 reverse line 1 char 4 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target_selector
+<http://www.co-ode.org/ontologies/ont.owl#3fed3d50-4a59-4364-99bd-16808d1bb666_target_selector> rdf:type owl:NamedIndividual ,
+                                                                                                         oa:SvgSelector ;
+                                                                                                rdf:value "<svg><polygon points=\"593.2344970703125,13.551724433898926 673.1896362304688,20.327585220336914 670.4793090820312,126.03103637695312 605.4310302734375,121.96551513671875\"></polygon></svg>" ;
+                                                                                                rdfs:label "Annotation target selector of Annotation of Glyph at HS 1174 reverse line 1 char 4 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1
+<http://www.co-ode.org/ontologies/ont.owl#c8fb100a-3ce3-4418-9812-93c7d5c14624> rdf:type owl:NamedIndividual ,
+                                                                                         oa:Annotation ;
+                                                                                oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#c8fb100a-3ce3-4418-9812-93c7d5c14624_body1> ;
+                                                                                oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#c8fb100a-3ce3-4418-9812-93c7d5c14624_target> ;
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 reverse line 1 char 3 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
+<http://www.co-ode.org/ontologies/ont.owl#c8fb100a-3ce3-4418-9812-93c7d5c14624_body1> rdf:type owl:NamedIndividual ,
+                                                                                               oa:SpecificResource ;
+                                                                                      oa:hasSource <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line1_char3_glyph> ;
+                                                                                      oa:motivatedBy oa:identifying ;
+                                                                                      rdfs:label "Annotation body of Annotation of Glyph at HS 1174 reverse line 1 char 3 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target
+<http://www.co-ode.org/ontologies/ont.owl#c8fb100a-3ce3-4418-9812-93c7d5c14624_target> rdf:type owl:NamedIndividual ;
+                                                                                       oa:hasSelector <http://www.co-ode.org/ontologies/ont.owl#c8fb100a-3ce3-4418-9812-93c7d5c14624_target_selector> ;
+                                                                                       oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113344:577529/full/full/0/default.jpg> ;
+                                                                                       rdfs:label "Annotation target of Annotation of Glyph at HS 1174 reverse line 1 char 3 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target_selector
+<http://www.co-ode.org/ontologies/ont.owl#c8fb100a-3ce3-4418-9812-93c7d5c14624_target_selector> rdf:type owl:NamedIndividual ,
+                                                                                                         oa:SvgSelector ;
+                                                                                                rdf:value "<svg><polygon points=\"419.77239990234375,5.420689582824707 574.2620849609375,5.420689582824707 578.3275756835938,130.0965576171875 412.9965515136719,135.51724243164062\"></polygon></svg>" ;
+                                                                                                rdfs:label "Annotation target selector of Annotation of Glyph at HS 1174 reverse line 1 char 3 on 3D rendering" .
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1
+<http://www.co-ode.org/ontologies/ont.owl#4331eca8-605d-40cb-a6cd-8783a3f932ef> rdf:type owl:NamedIndividual ,
+                                                                                         oa:Annotation ;
+                                                                                oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#4331eca8-605d-40cb-a6cd-8783a3f932ef_body1> ;
+                                                                                oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#4331eca8-605d-40cb-a6cd-8783a3f932ef_target> ;
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 reverse line 2 char 1 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
+<http://www.co-ode.org/ontologies/ont.owl#4331eca8-605d-40cb-a6cd-8783a3f932ef_body1> rdf:type owl:NamedIndividual ,
+                                                                                               oa:SpecificResource ;
+                                                                                      oa:hasSource <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line2_char1_glyph> ;
+                                                                                      oa:motivatedBy oa:identifying ;
+                                                                                      rdfs:label "Annotation body of Annotation of Glyph at HS 1174 reverse line 2 char 1 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target
+<http://www.co-ode.org/ontologies/ont.owl#4331eca8-605d-40cb-a6cd-8783a3f932ef_target> rdf:type owl:NamedIndividual ;
+                                                                                       oa:hasSelector <http://www.co-ode.org/ontologies/ont.owl#4331eca8-605d-40cb-a6cd-8783a3f932ef_target_selector> ;
+                                                                                       oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113344:577529/full/full/0/default.jpg> ;
+                                                                                       rdfs:label "Annotation target of Annotation of Glyph at HS 1174 reverse line 2 char 1 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target_selector
+<http://www.co-ode.org/ontologies/ont.owl#4331eca8-605d-40cb-a6cd-8783a3f932ef_target_selector> rdf:type owl:NamedIndividual ,
+                                                                                                         oa:SvgSelector ;
+                                                                                                rdf:value "<svg><polygon points=\"91.82068634033203,170.75172424316406 7.8000006675720215,173.46206665039062 14.575862884521484,294.0724182128906 93.17586517333984,292.7172546386719\"></polygon></svg>" ;
+                                                                                                rdfs:label "Annotation target selector of Annotation of Glyph at HS 1174 reverse line 2 char 1 on 3D rendering" .
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1
+<http://www.co-ode.org/ontologies/ont.owl#926bd425-fbcf-4b4a-b532-72083fd53346> rdf:type owl:NamedIndividual ,
+                                                                                         oa:Annotation ;
+                                                                                oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#926bd425-fbcf-4b4a-b532-72083fd53346_body1> ;
+                                                                                oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#926bd425-fbcf-4b4a-b532-72083fd53346_target> ;
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 reverse line 2 char 2 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
+<http://www.co-ode.org/ontologies/ont.owl#926bd425-fbcf-4b4a-b532-72083fd53346_body1> rdf:type owl:NamedIndividual ,
+                                                                                               oa:SpecificResource ;
+                                                                                      oa:hasSource <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line2_char2_glyph> ;
+                                                                                      oa:motivatedBy oa:identifying ;
+                                                                                      rdfs:label "Annotation body of Annotation of Glyph at HS 1174 reverse line 2 char 2 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target
+<http://www.co-ode.org/ontologies/ont.owl#926bd425-fbcf-4b4a-b532-72083fd53346_target> rdf:type owl:NamedIndividual ;
+                                                                                       oa:hasSelector <http://www.co-ode.org/ontologies/ont.owl#926bd425-fbcf-4b4a-b532-72083fd53346_target_selector> ;
+                                                                                       oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113344:577529/full/full/0/default.jpg> ;
+                                                                                       rdfs:label "Annotation target of Annotation of Glyph at HS 1174 reverse line 2 char 2 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target_selector
+<http://www.co-ode.org/ontologies/ont.owl#926bd425-fbcf-4b4a-b532-72083fd53346_target_selector> rdf:type owl:NamedIndividual ,
+                                                                                                         oa:SvgSelector ;
+                                                                                                rdf:value "<svg><polygon points=\"289.6758728027344,150.42413330078125 95.8862075805664,155.84483337402344 98.59654998779297,290.00689697265625 276.1241455078125,281.8758544921875\"></polygon></svg>" ;
+                                                                                                rdfs:label "Annotation target selector of Annotation of Glyph at HS 1174 reverse line 2 char 2 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1
+<http://www.co-ode.org/ontologies/ont.owl#d0404773-7f6d-4aa8-84ee-b7450e97ebc6> rdf:type owl:NamedIndividual ,
+                                                                                         oa:Annotation ;
+                                                                                oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#d0404773-7f6d-4aa8-84ee-b7450e97ebc6_body1> ;
+                                                                                oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#d0404773-7f6d-4aa8-84ee-b7450e97ebc6_target> ;
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 reverse line 2 char 3 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
+<http://www.co-ode.org/ontologies/ont.owl#d0404773-7f6d-4aa8-84ee-b7450e97ebc6_body1> rdf:type owl:NamedIndividual ,
+                                                                                               oa:SpecificResource ;
+                                                                                      oa:hasSource <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line2_char3_glyph> ;
+                                                                                      oa:motivatedBy oa:identifying ;
+                                                                                      rdfs:label "Annotation body of Annotation of Glyph at HS 1174 reverse line 2 char 3 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target
+<http://www.co-ode.org/ontologies/ont.owl#d0404773-7f6d-4aa8-84ee-b7450e97ebc6_target> rdf:type owl:NamedIndividual ;
+                                                                                       oa:hasSelector <http://www.co-ode.org/ontologies/ont.owl#d0404773-7f6d-4aa8-84ee-b7450e97ebc6_target_selector> ;
+                                                                                       oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113344:577529/full/full/0/default.jpg> ;
+                                                                                       rdfs:label "Annotation target of Annotation of Glyph at HS 1174 reverse line 2 char 3 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target_selector
+<http://www.co-ode.org/ontologies/ont.owl#d0404773-7f6d-4aa8-84ee-b7450e97ebc6_target_selector> rdf:type owl:NamedIndividual ,
+                                                                                                         oa:SvgSelector ;
+                                                                                                rdf:value "<svg><polygon points=\"414.3517150878906,145.00344848632812 284.2551574707031,146.35862731933594 276.1241455078125,280.52069091796875 412.9965515136719,277.8103332519531\"></polygon></svg>" ;
+                                                                                                rdfs:label "Annotation target selector of Annotation of Glyph at HS 1174 reverse line 2 char 3 on 3D rendering" .
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1
+<http://www.co-ode.org/ontologies/ont.owl#be0ac301-f23e-47d3-b567-3c618a52bc3d> rdf:type owl:NamedIndividual ,
+                                                                                         oa:Annotation ;
+                                                                                oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#be0ac301-f23e-47d3-b567-3c618a52bc3d_body1> ;
+                                                                                oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#be0ac301-f23e-47d3-b567-3c618a52bc3d_target> ;
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 reverse line 2 char 4 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
+<http://www.co-ode.org/ontologies/ont.owl#be0ac301-f23e-47d3-b567-3c618a52bc3d_body1> rdf:type owl:NamedIndividual ,
+                                                                                               oa:SpecificResource ;
+                                                                                      oa:hasSource <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line2_char4_glyph> ;
+                                                                                      oa:motivatedBy oa:identifying ;
+                                                                                      rdfs:label "Annotation body of Annotation of Glyph at HS 1174 reverse line 2 char 4 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target
+<http://www.co-ode.org/ontologies/ont.owl#be0ac301-f23e-47d3-b567-3c618a52bc3d_target> rdf:type owl:NamedIndividual ;
+                                                                                       oa:hasSelector <http://www.co-ode.org/ontologies/ont.owl#be0ac301-f23e-47d3-b567-3c618a52bc3d_target_selector> ;
+                                                                                       oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113344:577529/full/full/0/default.jpg> ;
+                                                                                       rdfs:label "Annotation target of Annotation of Glyph at HS 1174 reverse line 2 char 4 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target_selector
+<http://www.co-ode.org/ontologies/ont.owl#be0ac301-f23e-47d3-b567-3c618a52bc3d_target_selector> rdf:type owl:NamedIndividual ,
+                                                                                                         oa:SvgSelector ;
+                                                                                                rdf:value "<svg><polygon points=\"665.05859375,134.1620635986328 412.9965515136719,136.87240600585938 415.7069091796875,276.4551696777344 655.5723876953125,262.9034423828125\"></polygon></svg>" ;
+                                                                                                rdfs:label "Annotation target selector of Annotation of Glyph at HS 1174 reverse line 2 char 4 on 3D rendering" .
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1
+<http://www.co-ode.org/ontologies/ont.owl#6b1b7aed-0dea-4987-8138-03bb786ce80c> rdf:type owl:NamedIndividual ,
+                                                                                         oa:Annotation ;
+                                                                                oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#6b1b7aed-0dea-4987-8138-03bb786ce80c_body1> ;
+                                                                                oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#6b1b7aed-0dea-4987-8138-03bb786ce80c_target> ;
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 reverse line 3 char 1 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
+<http://www.co-ode.org/ontologies/ont.owl#6b1b7aed-0dea-4987-8138-03bb786ce80c_body1> rdf:type owl:NamedIndividual ,
+                                                                                               oa:SpecificResource ;
+                                                                                      oa:hasSource <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line3_char1_glyph> ;
+                                                                                      oa:motivatedBy oa:identifying ;
+                                                                                      rdfs:label "Annotation body of Annotation of Glyph at HS 1174 reverse line 3 char 1 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target
+<http://www.co-ode.org/ontologies/ont.owl#6b1b7aed-0dea-4987-8138-03bb786ce80c_target> rdf:type owl:NamedIndividual ;
+                                                                                       oa:hasSelector <http://www.co-ode.org/ontologies/ont.owl#6b1b7aed-0dea-4987-8138-03bb786ce80c_target_selector> ;
+                                                                                       oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113344:577529/full/full/0/default.jpg> ;
+                                                                                       rdfs:label "Annotation target of Annotation of Glyph at HS 1174 reverse line 3 char 1 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target_selector
+<http://www.co-ode.org/ontologies/ont.owl#6b1b7aed-0dea-4987-8138-03bb786ce80c_target_selector> rdf:type owl:NamedIndividual ,
+                                                                                                         oa:SvgSelector ;
+                                                                                                rdf:value "<svg><polygon points=\"151.44827270507812,299.49310302734375 19.996553421020508,295.4275817871094 28.127586364746094,403.84136962890625 133.83103942871094,403.84136962890625\"></polygon></svg>" ;
+                                                                                                rdfs:label "Annotation target selector of Annotation of Glyph at HS 1174 reverse line 3 char 1 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1
+<http://www.co-ode.org/ontologies/ont.owl#fb9c9d65-e2f6-4ed2-bb8c-620adc0533b1> rdf:type owl:NamedIndividual ,
+                                                                                         oa:Annotation ;
+                                                                                oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#fb9c9d65-e2f6-4ed2-bb8c-620adc0533b1_body1> ;
+                                                                                oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#fb9c9d65-e2f6-4ed2-bb8c-620adc0533b1_target> ;
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 reverse line 3 char 2 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
+<http://www.co-ode.org/ontologies/ont.owl#fb9c9d65-e2f6-4ed2-bb8c-620adc0533b1_body1> rdf:type owl:NamedIndividual ,
+                                                                                               oa:SpecificResource ;
+                                                                                      oa:hasSource <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line3_char2_glyph> ;
+                                                                                      oa:motivatedBy oa:identifying ;
+                                                                                      rdfs:label "Annotation body of Annotation of Glyph at HS 1174 reverse line 3 char 2 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target
+<http://www.co-ode.org/ontologies/ont.owl#fb9c9d65-e2f6-4ed2-bb8c-620adc0533b1_target> rdf:type owl:NamedIndividual ;
+                                                                                       oa:hasSelector <http://www.co-ode.org/ontologies/ont.owl#fb9c9d65-e2f6-4ed2-bb8c-620adc0533b1_target_selector> ;
+                                                                                       oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113344:577529/full/full/0/default.jpg> ;
+                                                                                       rdfs:label "Annotation target of Annotation of Glyph at HS 1174 reverse line 3 char 2 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target_selector
+<http://www.co-ode.org/ontologies/ont.owl#fb9c9d65-e2f6-4ed2-bb8c-620adc0533b1_target_selector> rdf:type owl:NamedIndividual ,
+                                                                                                         oa:SvgSelector ;
+                                                                                                rdf:value "<svg><polygon points=\"281.5448303222656,285.9413757324219 147.38275146484375,285.9413757324219 133.83103942871094,407.9068908691406 269.3482666015625,407.9068908691406\"></polygon></svg>" ;
+                                                                                                rdfs:label "Annotation target selector of Annotation of Glyph at HS 1174 reverse line 3 char 2 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1
+<http://www.co-ode.org/ontologies/ont.owl#29405e81-a80b-457c-849b-9168ff597157> rdf:type owl:NamedIndividual ,
+                                                                                         oa:Annotation ;
+                                                                                oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#29405e81-a80b-457c-849b-9168ff597157_body1> ;
+                                                                                oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#29405e81-a80b-457c-849b-9168ff597157_target> ;
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 reverse line 4 char 1 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
+<http://www.co-ode.org/ontologies/ont.owl#29405e81-a80b-457c-849b-9168ff597157_body1> rdf:type owl:NamedIndividual ,
+                                                                                               oa:SpecificResource ;
+                                                                                      oa:hasSource <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line4_char1_glyph> ;
+                                                                                      oa:motivatedBy oa:identifying ;
+                                                                                      rdfs:label "Annotation body of Annotation of Glyph at HS 1174 reverse line 4 char 1 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target
+<http://www.co-ode.org/ontologies/ont.owl#29405e81-a80b-457c-849b-9168ff597157_target> rdf:type owl:NamedIndividual ;
+                                                                                       oa:hasSelector <http://www.co-ode.org/ontologies/ont.owl#29405e81-a80b-457c-849b-9168ff597157_target_selector> ;
+                                                                                       oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113344:577529/full/full/0/default.jpg> ;
+                                                                                       rdfs:label "Annotation target of Annotation of Glyph at HS 1174 reverse line 4 char 1 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target_selector
+<http://www.co-ode.org/ontologies/ont.owl#29405e81-a80b-457c-849b-9168ff597157_target_selector> rdf:type owl:NamedIndividual ,
+                                                                                                         oa:SvgSelector ;
+                                                                                                rdf:value "<svg><polygon points=\"178.55172729492188,418.7482604980469 19.996553421020508,416.0379333496094 24.062068939208984,536.6482543945312 163.6448211669922,540.7138061523438\"></polygon></svg>" ;
+                                                                                                rdfs:label "Annotation target selector of Annotation of Glyph at HS 1174 reverse line 4 char 1 on 3D rendering" .
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1
+<http://www.co-ode.org/ontologies/ont.owl#78089804-7a01-470c-b28c-830bf8d5ac8f> rdf:type owl:NamedIndividual ,
+                                                                                         oa:Annotation ;
+                                                                                oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#78089804-7a01-470c-b28c-830bf8d5ac8f_body1> ;
+                                                                                oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#78089804-7a01-470c-b28c-830bf8d5ac8f_target> ;
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 reverse line 4 char 2 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
+<http://www.co-ode.org/ontologies/ont.owl#78089804-7a01-470c-b28c-830bf8d5ac8f_body1> rdf:type owl:NamedIndividual ,
+                                                                                               oa:SpecificResource ;
+                                                                                      oa:hasSource <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line4_char2_glyph> ;
+                                                                                      oa:motivatedBy oa:identifying ;
+                                                                                      rdfs:label "Annotation body of Annotation of Glyph at HS 1174 reverse line 4 char 2 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target
+<http://www.co-ode.org/ontologies/ont.owl#78089804-7a01-470c-b28c-830bf8d5ac8f_target> rdf:type owl:NamedIndividual ;
+                                                                                       oa:hasSelector <http://www.co-ode.org/ontologies/ont.owl#78089804-7a01-470c-b28c-830bf8d5ac8f_target_selector> ;
+                                                                                       oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113344:577529/full/full/0/default.jpg> ;
+                                                                                       rdfs:label "Annotation target of Annotation of Glyph at HS 1174 reverse line 4 char 2 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target_selector
+<http://www.co-ode.org/ontologies/ont.owl#78089804-7a01-470c-b28c-830bf8d5ac8f_target_selector> rdf:type owl:NamedIndividual ,
+                                                                                                         oa:SvgSelector ;
+                                                                                                rdf:value "<svg><polygon points=\"488.8861999511719,416.0379333496094 249.02069091796875,421.4586181640625 253.08621215820312,544.779296875 479.3999938964844,535.2930908203125\"></polygon></svg>" ;
+                                                                                                rdfs:label "Annotation target selector of Annotation of Glyph at HS 1174 reverse line 4 char 2 on 3D rendering" .
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1
+<http://www.co-ode.org/ontologies/ont.owl#2f800280-da53-498f-9ef0-7f080c120a41> rdf:type owl:NamedIndividual ,
+                                                                                         oa:Annotation ;
+                                                                                oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#2f800280-da53-498f-9ef0-7f080c120a41_body1> ;
+                                                                                oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#2f800280-da53-498f-9ef0-7f080c120a41_target> ;
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 reverse line 5 char 1 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
+<http://www.co-ode.org/ontologies/ont.owl#2f800280-da53-498f-9ef0-7f080c120a41_body1> rdf:type owl:NamedIndividual ,
+                                                                                               oa:SpecificResource ;
+                                                                                      oa:hasSource <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line5_char1_glyph> ;
+                                                                                      oa:motivatedBy oa:identifying ;
+                                                                                      rdfs:label "Annotation body of Annotation of Glyph at HS 1174 reverse line 5 char 1 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target
+<http://www.co-ode.org/ontologies/ont.owl#2f800280-da53-498f-9ef0-7f080c120a41_target> rdf:type owl:NamedIndividual ;
+                                                                                       oa:hasSelector <http://www.co-ode.org/ontologies/ont.owl#2f800280-da53-498f-9ef0-7f080c120a41_target_selector> ;
+                                                                                       oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113344:577529/full/full/0/default.jpg> ;
+                                                                                       rdfs:label "Annotation target of Annotation of Glyph at HS 1174 reverse line 5 char 1 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target_selector
+<http://www.co-ode.org/ontologies/ont.owl#2f800280-da53-498f-9ef0-7f080c120a41_target_selector> rdf:type owl:NamedIndividual ,
+                                                                                                         oa:SvgSelector ;
+                                                                                                rdf:value "<svg><polygon points=\"170.42068481445312,532.582763671875 37.613792419433594,528.5172119140625 26.772415161132812,674.8758544921875 146.027587890625,683.0068969726562\"></polygon></svg>" ;
+                                                                                                rdfs:label "Annotation target selector of Annotation of Glyph at HS 1174 reverse line 5 char 1 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1
+<http://www.co-ode.org/ontologies/ont.owl#4aff6617-073c-4153-822d-6760d644ee12> rdf:type owl:NamedIndividual ,
+                                                                                         oa:Annotation ;
+                                                                                oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#4aff6617-073c-4153-822d-6760d644ee12_body1> ;
+                                                                                oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#4aff6617-073c-4153-822d-6760d644ee12_target> ;
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 reverse line 5 char 2 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
+<http://www.co-ode.org/ontologies/ont.owl#4aff6617-073c-4153-822d-6760d644ee12_body1> rdf:type owl:NamedIndividual ,
+                                                                                               oa:SpecificResource ;
+                                                                                      oa:hasSource <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line5_char2_glyph> ;
+                                                                                      oa:motivatedBy oa:identifying ;
+                                                                                      rdfs:label "Annotation body of Annotation of Glyph at HS 1174 reverse line 5 char 2 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target
+<http://www.co-ode.org/ontologies/ont.owl#4aff6617-073c-4153-822d-6760d644ee12_target> rdf:type owl:NamedIndividual ;
+                                                                                       oa:hasSelector <http://www.co-ode.org/ontologies/ont.owl#4aff6617-073c-4153-822d-6760d644ee12_target_selector> ;
+                                                                                       oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113344:577529/full/full/0/default.jpg> ;
+                                                                                       rdfs:label "Annotation target of Annotation of Glyph at HS 1174 reverse line 5 char 2 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target_selector
+<http://www.co-ode.org/ontologies/ont.owl#4aff6617-073c-4153-822d-6760d644ee12_target_selector> rdf:type owl:NamedIndividual ,
+                                                                                                         oa:SvgSelector ;
+                                                                                                rdf:value "<svg><polygon points=\"299.1620788574219,548.8448486328125 170.42068481445312,540.7138061523438 148.73793029785156,662.6793212890625 270.7034606933594,670.8103637695312\"></polygon></svg>" ;
+                                                                                                rdfs:label "Annotation target selector of Annotation of Glyph at HS 1174 reverse line 5 char 2 on 3D rendering" .
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1
+<http://www.co-ode.org/ontologies/ont.owl#8d1ad8c9-3d87-4f25-8aa8-ab8b12e9a5cf> rdf:type owl:NamedIndividual ,
+                                                                                         oa:Annotation ;
+                                                                                oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#8d1ad8c9-3d87-4f25-8aa8-ab8b12e9a5cf_body1> ;
+                                                                                oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#8d1ad8c9-3d87-4f25-8aa8-ab8b12e9a5cf_target> ;
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 reverse line 5 char 3 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
+<http://www.co-ode.org/ontologies/ont.owl#8d1ad8c9-3d87-4f25-8aa8-ab8b12e9a5cf_body1> rdf:type owl:NamedIndividual ,
+                                                                                               oa:SpecificResource ;
+                                                                                      oa:hasSource <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line5_char3_glyph> ;
+                                                                                      oa:motivatedBy oa:identifying ;
+                                                                                      rdfs:label "Annotation body of Annotation of Glyph at HS 1174 reverse line 5 char 3 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target
+<http://www.co-ode.org/ontologies/ont.owl#8d1ad8c9-3d87-4f25-8aa8-ab8b12e9a5cf_target> rdf:type owl:NamedIndividual ;
+                                                                                       oa:hasSelector <http://www.co-ode.org/ontologies/ont.owl#8d1ad8c9-3d87-4f25-8aa8-ab8b12e9a5cf_target_selector> ;
+                                                                                       oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113344:577529/full/full/0/default.jpg> ;
+                                                                                       rdfs:label "Annotation target of Annotation of Glyph at HS 1174 reverse line 5 char 3 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target_selector
+<http://www.co-ode.org/ontologies/ont.owl#8d1ad8c9-3d87-4f25-8aa8-ab8b12e9a5cf_target_selector> rdf:type owl:NamedIndividual ,
+                                                                                                         oa:SvgSelector ;
+                                                                                                rdf:value "<svg><polygon points=\"431.9689636230469,544.779296875 293.74139404296875,540.7138061523438 269.3482666015625,672.16552734375 437.3896484375,662.6793212890625\"></polygon></svg>" ;
+                                                                                                rdfs:label "Annotation target selector of Annotation of Glyph at HS 1174 reverse line 5 char 3 on 3D rendering" .
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1
+<http://www.co-ode.org/ontologies/ont.owl#04e1a518-d95f-404b-ba1c-346e651a8985> rdf:type owl:NamedIndividual ,
+                                                                                         oa:Annotation ;
+                                                                                oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#04e1a518-d95f-404b-ba1c-346e651a8985_body1> ;
+                                                                                oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#04e1a518-d95f-404b-ba1c-346e651a8985_target> ;
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 reverse line 4 char 3 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
+<http://www.co-ode.org/ontologies/ont.owl#04e1a518-d95f-404b-ba1c-346e651a8985_body1> rdf:type owl:NamedIndividual ,
+                                                                                               oa:SpecificResource ;
+                                                                                      oa:hasSource <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line4_char3_glyph> ;
+                                                                                      oa:motivatedBy oa:identifying ;
+                                                                                      rdfs:label "Annotation body of Annotation of Glyph at HS 1174 reverse line 4 char 3 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target
+<http://www.co-ode.org/ontologies/ont.owl#04e1a518-d95f-404b-ba1c-346e651a8985_target> rdf:type owl:NamedIndividual ;
+                                                                                       oa:hasSelector <http://www.co-ode.org/ontologies/ont.owl#04e1a518-d95f-404b-ba1c-346e651a8985_target_selector> ;
+                                                                                       oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113344:577529/full/full/0/default.jpg> ;
+                                                                                       rdfs:label "Annotation target of Annotation of Glyph at HS 1174 reverse line 4 char 3 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target_selector
+<http://www.co-ode.org/ontologies/ont.owl#04e1a518-d95f-404b-ba1c-346e651a8985_target_selector> rdf:type owl:NamedIndividual ,
+                                                                                                         oa:SvgSelector ;
+                                                                                                rdf:value "<svg><polygon points=\"703.00341796875,405.1965637207031 487.5310363769531,416.0379333496094 484.8206787109375,533.9379272460938 700.2930908203125,529.8724365234375\"></polygon></svg>" ;
+                                                                                                rdfs:label "Annotation target selector of Annotation of Glyph at HS 1174 reverse line 4 char 3 on 3D rendering" .
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1
+<http://www.co-ode.org/ontologies/ont.owl#4de7e5c7-2270-4359-a7b7-1fbb91988454> rdf:type owl:NamedIndividual ,
+                                                                                         oa:Annotation ;
+                                                                                oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#4de7e5c7-2270-4359-a7b7-1fbb91988454_body1> ;
+                                                                                oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#4de7e5c7-2270-4359-a7b7-1fbb91988454_target> ;
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 reverse line 1 char 1 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
+<http://www.co-ode.org/ontologies/ont.owl#4de7e5c7-2270-4359-a7b7-1fbb91988454_body1> rdf:type owl:NamedIndividual ,
+                                                                                               oa:SpecificResource ;
+                                                                                      oa:hasSource <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line1_char1_glyph> ;
+                                                                                      oa:motivatedBy oa:identifying ;
+                                                                                      rdfs:label "Annotation body of Annotation of Glyph at HS 1174 reverse line 1 char 1 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target
+<http://www.co-ode.org/ontologies/ont.owl#4de7e5c7-2270-4359-a7b7-1fbb91988454_target> rdf:type owl:NamedIndividual ;
+                                                                                       oa:hasSelector <http://www.co-ode.org/ontologies/ont.owl#4de7e5c7-2270-4359-a7b7-1fbb91988454_target_selector> ;
+                                                                                       oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113344:577529/full/full/0/default.jpg> ;
+                                                                                       rdfs:label "Annotation target of Annotation of Glyph at HS 1174 reverse line 1 char 1 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target_selector
+<http://www.co-ode.org/ontologies/ont.owl#4de7e5c7-2270-4359-a7b7-1fbb91988454_target_selector> rdf:type owl:NamedIndividual ,
+                                                                                                         oa:SvgSelector ;
+                                                                                                rdf:value "<svg><polygon points=\"137.89654541015625,37.944828033447266 48.455169677734375,37.944828033447266 19.99654769897461,162.6206817626953 135.1862030029297,162.6206817626953\"></polygon></svg>" ;
+                                                                                                rdfs:label "Annotation target selector of Annotation of Glyph at HS 1174 reverse line 1 char 1 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1
+<http://www.co-ode.org/ontologies/ont.owl#22174ad2-aa62-4696-9539-81830707ed89> rdf:type owl:NamedIndividual ,
+                                                                                         oa:Annotation ;
+                                                                                oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#22174ad2-aa62-4696-9539-81830707ed89_body1> ;
+                                                                                oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#22174ad2-aa62-4696-9539-81830707ed89_target> ;
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 reverse line 3 char 3 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
+<http://www.co-ode.org/ontologies/ont.owl#22174ad2-aa62-4696-9539-81830707ed89_body1> rdf:type owl:NamedIndividual ,
+                                                                                               oa:SpecificResource ;
+                                                                                      oa:hasSource <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line3_char3_glyph> ;
+                                                                                      oa:motivatedBy oa:identifying ;
+                                                                                      rdfs:label "Annotation body of Annotation of Glyph at HS 1174 reverse line 3 char 3 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target
+<http://www.co-ode.org/ontologies/ont.owl#22174ad2-aa62-4696-9539-81830707ed89_target> rdf:type owl:NamedIndividual ;
+                                                                                       oa:hasSelector <http://www.co-ode.org/ontologies/ont.owl#22174ad2-aa62-4696-9539-81830707ed89_target_selector> ;
+                                                                                       oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113344:577529/full/full/0/default.jpg> ;
+                                                                                       rdfs:label "Annotation target of Annotation of Glyph at HS 1174 reverse line 3 char 3 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target_selector
+<http://www.co-ode.org/ontologies/ont.owl#22174ad2-aa62-4696-9539-81830707ed89_target_selector> rdf:type owl:NamedIndividual ,
+                                                                                                         oa:SvgSelector ;
+                                                                                                rdf:value "<svg><polygon points=\"633.8896484375,272.3896484375 276.1241455078125,280.52069091796875 272.0586242675781,409.2620544433594 637.9552001953125,407.9068908691406\"></polygon></svg>" ;
+                                                                                                rdfs:label "Annotation target selector of Annotation of Glyph at HS 1174 reverse line 3 char 3 on 3D rendering" .
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1
+<http://www.co-ode.org/ontologies/ont.owl#4472679d-dc81-4c16-9a47-210efe111429> rdf:type owl:NamedIndividual ,
+                                                                                         oa:Annotation ;
+                                                                                oa:hasBody <http://www.co-ode.org/ontologies/ont.owl#4472679d-dc81-4c16-9a47-210efe111429_body1> ;
+                                                                                oa:hasTarget <http://www.co-ode.org/ontologies/ont.owl#4472679d-dc81-4c16-9a47-210efe111429_target> ;
+                                                                                rdfs:label "Annotation of Glyph at HS 1174 reverse line 3 char 4 on 3D rendering" ;
+																				dc:rights "https://creativecommons.org/publicdomain/zero/1.0/" ;
+																				dc:creator <https://orcid.org/0000-0002-9499-5840> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_body1
+<http://www.co-ode.org/ontologies/ont.owl#4472679d-dc81-4c16-9a47-210efe111429_body1> rdf:type owl:NamedIndividual ,
+                                                                                               oa:SpecificResource ;
+                                                                                      oa:hasSource <http://www.co-ode.org/ontologies/ont.owl#hs1174_reverse_line3_char4_glyph> ;
+                                                                                      oa:motivatedBy oa:identifying ;
+                                                                                      rdfs:label "Annotation body of Annotation of Glyph at HS 1174 reverse line 3 char 4 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target
+<http://www.co-ode.org/ontologies/ont.owl#4472679d-dc81-4c16-9a47-210efe111429_target> rdf:type owl:NamedIndividual ;
+                                                                                       oa:hasSelector <http://www.co-ode.org/ontologies/ont.owl#4472679d-dc81-4c16-9a47-210efe111429_target_selector> ;
+                                                                                       oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113344:577529/full/full/0/default.jpg> ;
+                                                                                       rdfs:label "Annotation target of Annotation of Glyph at HS 1174 reverse line 3 char 4 on 3D rendering" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#9249bcca-57c7-4bce-bc99-f1c4416702b1_target_selector
+<http://www.co-ode.org/ontologies/ont.owl#4472679d-dc81-4c16-9a47-210efe111429_target_selector> rdf:type owl:NamedIndividual ,
+                                                                                                         oa:SvgSelector ;
+                                                                                                rdf:value "<svg><polygon points=\"707.0689697265625,275.1000061035156 633.8896484375,272.3896484375 635.2448120117188,399.7758483886719 711.1344604492188,405.1965637207031\"></polygon></svg>" ;
+                                                                                                rdfs:label "Annotation target selector of Annotation of Glyph at HS 1174 reverse line 3 char 4 on 3D rendering" .
 
 
 
