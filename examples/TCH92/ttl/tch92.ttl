@@ -250,6 +250,10 @@ cunei:TransliterationLine rdf:type owl:Class .
 cunei:TransliterationWordOccurance rdf:type owl:Class .
 
 
+###  http://www.purl.org/graphemon/GraphemeComposition
+<http://www.purl.org/graphemon/GraphemeComposition> rdf:type owl:Class .
+
+
 ###  http://www.purl.org/graphemon/GraphemeReading
 <http://www.purl.org/graphemon/GraphemeReading> rdf:type owl:Class .
 
@@ -419,6 +423,13 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
                                                         rdfs:label "Character: BA" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#ba_character_reading_ba
+<http://www.co-ode.org/ontologies/ont.owl#ba_character_reading_ba> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.purl.org/graphemon/GraphemeReading> ;
+                                                                   <http://www.purl.org/graphemon/readingValue> "ba" ;
+                                                                   rdfs:label "Grapheme Reading BA: ba" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#ba_charvariant1
 <http://www.co-ode.org/ontologies/ont.owl#ba_charvariant1> rdf:type owl:NamedIndividual ,
                                                                     <http://www.purl.org/graphemon/GraphemeVariant> ;
@@ -498,10 +509,64 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
                                                         rdfs:label "Character: BI" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#bi_character_reading_bi
+<http://www.co-ode.org/ontologies/ont.owl#bi_character_reading_bi> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.purl.org/graphemon/GraphemeReading> ;
+                                                                   <http://www.purl.org/graphemon/readingValue> "bi" ;
+                                                                   rdfs:label "Grapheme Reading BI: bi" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#bu_character
+<http://www.co-ode.org/ontologies/ont.owl#bu_character> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                        <http://www.purl.org/graphemon/abzl> 265 ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+1204D" ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒁍" ;
+                                                        <http://www.purl.org/graphemon/hethzl> 339 ;
+                                                        <http://www.purl.org/graphemon/meszl> 580 ;
+                                                        <http://www.purl.org/graphemon/signName> "BU" ;
+                                                        <http://www.purl.org/graphemon/slha> 371 ;
+                                                        rdfs:label "Character: BU" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#bu_character_reading_bu
+<http://www.co-ode.org/ontologies/ont.owl#bu_character_reading_bu> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.purl.org/graphemon/GraphemeReading> ;
+                                                                   <http://www.purl.org/graphemon/readingValue> "bu" ;
+                                                                   rdfs:label "Grapheme Reading BU: bu" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#character_a_reading_a
 <http://www.co-ode.org/ontologies/ont.owl#character_a_reading_a> rdf:type owl:NamedIndividual ,
                                                                           <http://www.purl.org/graphemon/GraphemeReading> ;
                                                                  rdfs:label "Grapheme Reading A: a" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#da_character
+<http://www.co-ode.org/ontologies/ont.owl#da_character> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                        <http://www.purl.org/graphemon/abzl> 229 ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12055" ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒁕" ;
+                                                        <http://www.purl.org/graphemon/hethzl> 214 ;
+                                                        <http://www.purl.org/graphemon/meszl> 561 ;
+                                                        <http://www.purl.org/graphemon/signName> "DA" ;
+                                                        <http://www.purl.org/graphemon/slha> 335 ;
+                                                        rdfs:label "Character: DA" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#da_character_reading_da
+<http://www.co-ode.org/ontologies/ont.owl#da_character_reading_da> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.purl.org/graphemon/GraphemeReading> ;
+                                                                   <http://www.purl.org/graphemon/readingValue> "da" ;
+                                                                   rdfs:label "Grapheme Reading DA: da" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#da_character_reading_t_a
+<http://www.co-ode.org/ontologies/ont.owl#da_character_reading_t_a> rdf:type owl:NamedIndividual ,
+                                                                             <http://www.purl.org/graphemon/GraphemeReading> ;
+                                                                    <http://www.purl.org/graphemon/readingValue> "t,a" ;
+                                                                    rdfs:label "Grapheme Reading DA: t,a" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#dam_character
@@ -570,6 +635,27 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
                                                                                <http://www.purl.org/graphemon/GraphemeReading> ;
                                                                       <http://www.purl.org/graphemon/readingValue> "tar2" ;
                                                                       rdfs:label "Grapheme Reading DAR: tar2" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#du_character
+<http://www.co-ode.org/ontologies/ont.owl#du_character> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                        <http://www.purl.org/graphemon/abzl> 064 ,
+                                                                                             197 ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+1207A" ;
+                                                        <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒁺" ;
+                                                        <http://www.purl.org/graphemon/hethzl> 128 ;
+                                                        <http://www.purl.org/graphemon/meszl> 350 ;
+                                                        <http://www.purl.org/graphemon/signName> "DU" ;
+                                                        <http://www.purl.org/graphemon/slha> 206 ;
+                                                        rdfs:label "Character: DU" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#du_character_reading_du
+<http://www.co-ode.org/ontologies/ont.owl#du_character_reading_du> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.purl.org/graphemon/GraphemeReading> ;
+                                                                   <http://www.purl.org/graphemon/readingValue> "du" ;
+                                                                   rdfs:label "Grapheme Reading DU: du" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#dumu_character
@@ -1102,6 +1188,21 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
                                                          rdfs:label "Character: KAM" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#kar_charactercomp
+<http://www.co-ode.org/ontologies/ont.owl#kar_charactercomp> rdf:type owl:NamedIndividual ,
+                                                                      <http://www.purl.org/graphemon/GraphemeComposition> ;
+                                                             <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒋼𒀀" ;
+                                                             <http://www.purl.org/graphemon/signName> "KAR" ;
+                                                             rdfs:label "Character Composition: KAR" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#kar_charactercomp_reading_kar
+<http://www.co-ode.org/ontologies/ont.owl#kar_charactercomp_reading_kar> rdf:type owl:NamedIndividual ,
+                                                                                  <http://www.purl.org/graphemon/GraphemeReading> ;
+                                                                         <http://www.purl.org/graphemon/readingValue> "kar" ;
+                                                                         rdfs:label "Grapheme Composition Reading KAR: kar" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#ki_character
 <http://www.co-ode.org/ontologies/ont.owl#ki_character> rdf:type owl:NamedIndividual ,
                                                                  <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
@@ -1508,6 +1609,13 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
                                                                    rdfs:label "Grapheme Reading RI: RE" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#ri_character_reading_ri
+<http://www.co-ode.org/ontologies/ont.owl#ri_character_reading_ri> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.purl.org/graphemon/GraphemeReading> ;
+                                                                   <http://www.purl.org/graphemon/readingValue> "ri" ;
+                                                                   rdfs:label "Grapheme Reading RI: ri" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#ri_character_reading_tal
 <http://www.co-ode.org/ontologies/ont.owl#ri_character_reading_tal> rdf:type owl:NamedIndividual ,
                                                                              <http://www.purl.org/graphemon/GraphemeReading> ;
@@ -1532,6 +1640,27 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
                                                         <http://www.purl.org/graphemon/meszl> 111 ;
                                                         <http://www.purl.org/graphemon/slha> 068 ;
                                                         rdfs:label "Character: RU" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#sar_character
+<http://www.co-ode.org/ontologies/ont.owl#sar_character> rdf:type owl:NamedIndividual ,
+                                                                  <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                         <http://www.purl.org/graphemon/abzl> 385 ;
+                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+122AC" ;
+                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒊬" ;
+                                                         <http://www.purl.org/graphemon/hethzl> 353 ;
+                                                         <http://www.purl.org/graphemon/meszl> 541 ;
+                                                         <http://www.purl.org/graphemon/signName> "SAR" ;
+                                                         <http://www.purl.org/graphemon/slha> "152iv" ,
+                                                                                              "331e" ;
+                                                         rdfs:label "Character: SAR" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#sar_character_reading_sar
+<http://www.co-ode.org/ontologies/ont.owl#sar_character_reading_sar> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.purl.org/graphemon/GraphemeReading> ;
+                                                                     <http://www.purl.org/graphemon/readingValue> "szar" ;
+                                                                     rdfs:label "Grapheme Reading SAR: szar" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#si_character
@@ -3173,6 +3302,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line10_char5
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line10_char5> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#kar_charactercomp_reading_kar> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line10_char6> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line10_char4> ;
                                                                                        cunei:charIndex 5 ;
@@ -3183,6 +3313,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line10_char6
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line10_char6> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#du_character_reading_du> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line10_char7> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line10_char5> ;
                                                                                        cunei:charIndex 6 ;
@@ -3193,6 +3324,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line10_char7
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line10_char7> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#dumu_character_reading_dumu> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line10_char8> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line10_char6> ;
                                                                                        cunei:charIndex 7 ;
@@ -3203,6 +3335,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line10_char8
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line10_char8> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#szu_character_reading_szu> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line10_char9> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line10_char7> ;
                                                                                        cunei:charIndex 8 ;
@@ -3213,6 +3346,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line10_char9
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line10_char9> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#sza_character_reading_sza> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line10_char8> ;
                                                                                        cunei:charIndex 9 ;
                                                                                        cunei:lineNumber 10 ;
@@ -3259,6 +3393,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char1
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char1> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#DISZ_character_reading_1(disz)> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char2> ;
                                                                                        cunei:charIndex 1 ;
                                                                                        cunei:lineNumber 11 ;
@@ -3268,6 +3403,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char10
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char10> rdf:type owl:NamedIndividual ,
                                                                                                  cunei:TransliterationCharOccurance ;
+                                                                                        <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#ku_character_reading_ku> ;
                                                                                         cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char11> ;
                                                                                         cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char9> ;
                                                                                         cunei:charIndex 10 ;
@@ -3278,6 +3414,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char11
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char11> rdf:type owl:NamedIndividual ,
                                                                                                  cunei:TransliterationCharOccurance ;
+                                                                                        <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#gul_character_reading_kul2> ;
                                                                                         cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char12> ;
                                                                                         cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char10> ;
                                                                                         cunei:charIndex 11 ;
@@ -3288,6 +3425,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char12
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char12> rdf:type owl:NamedIndividual ,
                                                                                                  cunei:TransliterationCharOccurance ;
+                                                                                        <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#li_character_reading_li> ;
                                                                                         cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char11> ;
                                                                                         cunei:charIndex 12 ;
                                                                                         cunei:lineNumber 11 ;
@@ -3297,6 +3435,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char2
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char2> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#kabi_character_reading_ka> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char3> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char1> ;
                                                                                        cunei:charIndex 2 ;
@@ -3307,6 +3446,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char3
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char3> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#szu_character_reading_szu> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char4> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char2> ;
                                                                                        cunei:charIndex 3 ;
@@ -3317,6 +3457,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char4
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char4> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#da_character_reading_t_a> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char5> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char3> ;
                                                                                        cunei:charIndex 4 ;
@@ -3327,6 +3468,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char5
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char5> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#character_a_reading_a> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char6> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char4> ;
                                                                                        cunei:charIndex 5 ;
@@ -3337,6 +3479,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char6
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char6> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#bu_character_reading_bu> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char7> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char5> ;
                                                                                        cunei:charIndex 6 ;
@@ -3347,6 +3490,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char7
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char7> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#dumu_character_reading_dumu> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char8> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char6> ;
                                                                                        cunei:charIndex 7 ;
@@ -3357,6 +3501,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char8
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char8> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#szu_character_reading_szu> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char9> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char7> ;
                                                                                        cunei:charIndex 8 ;
@@ -3367,6 +3512,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char9
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char9> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#sza_character_reading_sza> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char10> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line11_char8> ;
                                                                                        cunei:charIndex 9 ;
@@ -3404,6 +3550,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char1
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char1> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#munus_character_reading_f> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char2> ;
                                                                                        cunei:charIndex 1 ;
                                                                                        cunei:lineNumber 12 ;
@@ -3413,6 +3560,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char10
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char10> rdf:type owl:NamedIndividual ,
                                                                                                  cunei:TransliterationCharOccurance ;
+                                                                                        <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#mi_character_reading_mi> ;
                                                                                         cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char11> ;
                                                                                         cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char9> ;
                                                                                         cunei:charIndex 10 ;
@@ -3423,6 +3571,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char11
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char11> rdf:type owl:NamedIndividual ,
                                                                                                  cunei:TransliterationCharOccurance ;
+                                                                                        <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#tu_character_reading_tu> ;
                                                                                         cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char10> ;
                                                                                         cunei:charIndex 11 ;
                                                                                         cunei:lineNumber 12 ;
@@ -3432,6 +3581,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char2
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char2> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#ba_character_reading_ba> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char3> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char1> ;
                                                                                        cunei:charIndex 2 ;
@@ -3442,6 +3592,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char3
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char3> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#bi_character_reading_bi> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char4> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char2> ;
                                                                                        cunei:charIndex 3 ;
@@ -3452,6 +3603,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char4
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char4> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#sar_character_reading_sar> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char5> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char3> ;
                                                                                        cunei:charIndex 4 ;
@@ -3462,6 +3614,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char5
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char5> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#ri_character_reading_ri> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char6> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char4> ;
                                                                                        cunei:charIndex 5 ;
@@ -3472,6 +3625,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char6
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char6> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#dumu_character_reading_dumu> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char7> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char5> ;
                                                                                        cunei:charIndex 6 ;
@@ -3482,6 +3636,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char7
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char7> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#munus_character_reading_munus> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char8> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char6> ;
                                                                                        cunei:charIndex 7 ;
@@ -3492,6 +3647,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char8
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char8> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#su_character_reading_su> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char9> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char7> ;
                                                                                        cunei:charIndex 8 ;
@@ -3502,6 +3658,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char9
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char9> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#ri_character_reading_tal> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char10> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line12_char8> ;
                                                                                        cunei:charIndex 9 ;
@@ -3539,6 +3696,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char1
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char1> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#munus_character_reading_f> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char2> ;
                                                                                        cunei:charIndex 1 ;
                                                                                        cunei:lineNumber 13 ;
@@ -3548,6 +3706,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char10
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char10> rdf:type owl:NamedIndividual ,
                                                                                                  cunei:TransliterationCharOccurance ;
+                                                                                        <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#su_character_reading_su> ;
                                                                                         cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char9> ;
                                                                                         cunei:charIndex 10 ;
                                                                                         cunei:lineNumber 13 ;
@@ -3557,6 +3716,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char2
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char2> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#nab_character_reading_nap> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char3> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char1> ;
                                                                                        cunei:charIndex 2 ;
@@ -3567,6 +3727,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char3
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char3> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#sze_character_reading_sze> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char4> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char2> ;
                                                                                        cunei:charIndex 3 ;
@@ -3577,6 +3738,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char4
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char4> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#ri_character_reading_ri> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char5> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char3> ;
                                                                                        cunei:charIndex 4 ;
@@ -3587,6 +3749,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char5
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char5> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#um_character_reading_um> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char6> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char4> ;
                                                                                        cunei:charIndex 5 ;
@@ -3597,6 +3760,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char6
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char6> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#mi_character_reading_mi> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char7> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char5> ;
                                                                                        cunei:charIndex 6 ;
@@ -3607,6 +3771,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char7
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char7> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#ki_character_reading_ki> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char8> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char6> ;
                                                                                        cunei:charIndex 7 ;
@@ -3617,6 +3782,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char8
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char8> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#min_character_reading_min> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char9> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char7> ;
                                                                                        cunei:charIndex 8 ;
@@ -3627,6 +3793,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char9
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char9> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#erin2_character_reading_pir2> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char10> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line13_char8> ;
                                                                                        cunei:charIndex 9 ;
@@ -3674,6 +3841,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line14_char1
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line14_char1> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#DISZ_character_reading_1(disz)> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line14_char2> ;
                                                                                        cunei:charIndex 1 ;
                                                                                        cunei:lineNumber 14 ;
@@ -3683,6 +3851,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line14_char2
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line14_char2> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#an_character_reading_d> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line14_char3> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line14_char1> ;
                                                                                        cunei:charIndex 2 ;
@@ -3794,6 +3963,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line15_char1
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line15_char1> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#DISZ_character_reading_1(disz)> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line15_char2> ;
                                                                                        cunei:charIndex 1 ;
                                                                                        cunei:lineNumber 15 ;
@@ -3803,6 +3973,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line15_char2
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line15_char2> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#ansze_character_reading_ansze> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line15_char3> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line15_char1> ;
                                                                                        cunei:charIndex 2 ;
@@ -3813,6 +3984,7 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
 ###  http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line15_char3
 <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line15_char3> rdf:type owl:NamedIndividual ,
                                                                                                 cunei:TransliterationCharOccurance ;
+                                                                                       <http://www.co-ode.org/ontologies/ont.owl#hasGraphemeReading> <http://www.co-ode.org/ontologies/ont.owl#3(disz)_character_reading_3(disz)> ;
                                                                                        cunei:nextChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line15_char4> ;
                                                                                        cunei:prevChar <http://www.co-ode.org/ontologies/ont.owl#tch92_transliteration1_obverse_line15_char2> ;
                                                                                        cunei:charIndex 3 ;
@@ -6728,6 +6900,13 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
                                                         rdfs:label "Character: UM" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#um_character_reading_um
+<http://www.co-ode.org/ontologies/ont.owl#um_character_reading_um> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.purl.org/graphemon/GraphemeReading> ;
+                                                                   <http://www.purl.org/graphemon/readingValue> "um" ;
+                                                                   rdfs:label "Grapheme Reading UM: um" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#uz_character
 <http://www.co-ode.org/ontologies/ont.owl#uz_character> rdf:type owl:NamedIndividual ,
                                                                  <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
@@ -6805,6 +6984,13 @@ cunei:TransliterationWordOccurance rdf:type owl:Class .
                                                                       <http://lemon-model.net/lemon#LexicalSense> ;
                                                              <http://lemon-model.net/lemon#reference> <http://www.wikidata.org/entity/Q201> ;
                                                              rdfs:label "Wordsense: 3(disz)" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#3(disz)_character_reading_3(disz)
+<http://www.co-ode.org/ontologies/ont.owl#3(disz)_character_reading_3(disz)> rdf:type owl:NamedIndividual ,
+                                                                                      <http://www.purl.org/graphemon/GraphemeReading> ;
+                                                                             <http://www.purl.org/graphemon/readingValue> "3(disz)" ;
+                                                                             rdfs:label "Grapheme Reading 3(disz): 3(disz)" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#3(disz)_wordform_3(disz)
