@@ -55,6 +55,7 @@ with open('../signlist/signlist.ttl', mode='w', encoding="utf-8") as f:
     f.write("@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n")
     f.write("@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n")
     f.write("@prefix owl: <http://www.w3.org/2002/07/owl#> .\n")
+    f.write("graphemon:SignlistOntology rdf:type owl:Ontology .\n")
     f.write("graphemon:GraphemeReading rdf:type owl:Class .\n")
     f.write("graphemon:Grapheme rdf:type owl:Class .\n")
     f.write("graphemon:hasGraphemeReading rdf:type owl:ObjectProperty .\n")
