@@ -49,13 +49,12 @@ sensesmap={
     "leatherworker":"http://www.wikidata.org/entity/Q16402902",
     "tongue":"http://www.wikidata.org/entity/Q9614",
     "linen":"http://www.wikidata.org/entity/Q1426327",
-    "milk":"http://www.wikidata.org/entity/Q8495"
-    
-    
+    "milk":"http://www.wikidata.org/entity/Q8495",
+    "thread":"http://www.wikidata.org/entity/Q1391831"  
 }
 
 def cleanString(strr):
-    return strr.lower().replace("š","sz").replace("Š","SZ").replace("%","_").replace(" ","_").replace("'","_").replace("\"","").replace(",","_").replace("|","_").replace("/","_").replace("-","_").replace("+","_").replace("%","_").replace("(","_").replace(")","_").replace(".","_").replace(":","_").replace("₄","4").replace("₂","2").replace("₃","3").replace("₅","5").replace("₆","6").replace("₈","8").replace("₉","9").replace("₁","1").replace("₀","0")
+    return strr.lower().replace("š","sz").replace("Š","SZ").replace("%","_").replace("{","_").replace("}","_").replace(" ","_").replace("'","_").replace("\"","").replace(",","_").replace("|","_").replace("/","_").replace("-","_").replace("+","_").replace("%","_").replace("(","_").replace(")","_").replace(".","_").replace(":","_").replace("₄","4").replace("₂","2").replace("₃","3").replace("₅","5").replace("₆","6").replace("₈","8").replace("₉","9").replace("₁","1").replace("₀","0")
 
 def toASCII(strr):
     return strr.replace("₄","4").replace("₂","2").replace("₃","3").replace("₅","5").replace("₇","7").replace("₆","6").replace("₈","8").replace("₉","9").replace("₁","1").replace("₀","0").replace("%","_").replace("š","sz").replace("Š","SZ")
@@ -69,9 +68,10 @@ def convertToRDF(cuneiformsigndict,nuolenna,aasigndict,rdfset):
         signnameToURI[toASCII(str(entry["signname"])).replace("\"","")]="http://purl.org/cuneiform/signlist/character_"+str(signuri)
         if "unicodename" in entry and len(entry["unicodename"])>1:
             rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> rdf:type graphemon:GraphemeComposition .\n ")
+            rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> rdfs:label \"Character Composition: "+toASCII(str(entry["signname"])).replace("\"","")+"\" .\n ")
         else:
             rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> rdf:type graphemon:Grapheme .\n ")
-        rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> rdfs:label \"Character: "+toASCII(str(entry["signname"])).replace("\"","")+"\" .\n ")
+            rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> rdfs:label \"Character: "+toASCII(str(entry["signname"])).replace("\"","")+"\" .\n ")
         rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> graphemon:meszl \""+str(entry["meszl"]).replace("\"","")+"\" .\n ")
         rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> graphemon:slha \""+str(entry["slha"]).replace("\"","")+"\" .\n")
         rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> graphemon:hethzl \""+str(entry["hethzl"]).replace("\"","")+"\" .\n ")
@@ -93,6 +93,11 @@ def convertToRDF(cuneiformsigndict,nuolenna,aasigndict,rdfset):
             rdfset.add("<"+readinguri+"> rdfs:label \"Grapheme Reading "+str(cursignname)+": "+toASCII(str(item)).replace("\"","")+"\" .\n ")
             rdfset.add("<"+readinguri+"> graphemon:readingValue \""+toASCII(str(item)).replace("\"","")+"\" .\n ")
             nuolennamatchcounter+=1
+        else:
+            rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> rdf:type graphemon:GraphemeComposition .\n ")
+            rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> rdfs:label \"Character: "+toASCII(str(item)).replace("\"","")+"\" .\n ")
+            rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> graphemon:unicodeRepresentation \""+str(nuolenna[item]).replace("\"","")+"\" .\n ")
+            unicodeToURI[item]={"uri":"http://purl.org/cuneiform/signlist/character_"+cleanString(str(item)),"signname":toASCII(str(item)).replace("\"","")}
     print("Matched "+str(nuolennamatchcounter)+" items in nuolenna!")
     aalistmatchcounter=0
     for entry in aasigndict:
