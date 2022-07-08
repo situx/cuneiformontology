@@ -1,3 +1,4 @@
+# coding=utf8
 import csv
 import rdflib
 import json
@@ -51,51 +52,236 @@ sensesmap={
     "linen":"http://www.wikidata.org/entity/Q1426327",
     "milk":"http://www.wikidata.org/entity/Q8495",
     "thread":"http://www.wikidata.org/entity/Q1391831",
-    "festival":"https://www.wikidata.org/wiki/Q132241",
-    "spouse":"https://www.wikidata.org/wiki/Q1196129",
-    "sea":"https://www.wikidata.org/wiki/Q165",
-    "song":"https://www.wikidata.org/wiki/Q7366",
-    "one":"https://www.wikidata.org/wiki/Q199",
-    "beer":"https://www.wikidata.org/wiki/Q44",
-    "reed":"https://www.wikidata.org/wiki/Q2734060",
-    "insult":"https://www.wikidata.org/wiki/Q571571",
-    "place":"https://www.wikidata.org/wiki/Q98929991",
-    "netherworld":"https://www.wikidata.org/wiki/Q154365",
-    "hailstone":"https://www.wikidata.org/wiki/Q37602",
-    "orchard":"https://www.wikidata.org/wiki/Q236371",
-    "owner":"https://www.wikidata.org/wiki/Q16869121",
-    "grain in general":"https://www.wikidata.org/wiki/Q2995529",
-    "young man":"https://www.wikidata.org/wiki/Q1716875",
-    "thigh":"https://www.wikidata.org/wiki/Q129757",
-    "onion":"https://www.wikidata.org/wiki/Q3406628",
-    "quay":"https://www.wikidata.org/wiki/Q828909",
-    "man":"https://www.wikidata.org/wiki/Q8441",
-    "tooth":"https://www.wikidata.org/wiki/Q553",
-    "month":"https://www.wikidata.org/wiki/Q5151",
-    "fear":"https://www.wikidata.org/wiki/Q44619",
-    "fruit":"https://www.wikidata.org/wiki/Q3314483",
-    "levee":"https://www.wikidata.org/wiki/Q105190",
-    "judgement":"https://www.wikidata.org/wiki/Q12621536",
-    "hoe":"https://www.wikidata.org/wiki/Q131154",
-    "vegetable":"https://www.wikidata.org/wiki/Q11004",
-    "skin":"https://www.wikidata.org/wiki/Q1074",
-    "fat":"https://www.wikidata.org/wiki/Q127980",
-    "palm tree":"https://www.wikidata.org/wiki/Q14080",
-    "native land":"https://www.wikidata.org/wiki/Q16513600",
-    "cut of meat":"https://www.wikidata.org/wiki/Q6418247",
-    "praise":"https://www.wikidata.org/wiki/Q1208425",
-    "pigeon":"https://www.wikidata.org/wiki/Q2984138",
-    "sinew":"https://www.wikidata.org/wiki/Q64309527",
-    "seed":"https://www.wikidata.org/wiki/Q4076",
-    "black":"https://www.wikidata.org/wiki/Q23445",
-    "wind":"https://www.wikidata.org/wiki/Q8094",
-    "box":"https://www.wikidata.org/wiki/Q987767"
-    
-    
+    "festival":"http://www.wikidata.org/entity/Q132241",
+    "spouse":"http://www.wikidata.org/entity/Q1196129",
+    "sea":"http://www.wikidata.org/entity/Q165",
+    "song":"http://www.wikidata.org/entity/Q7366",
+    "one":"http://www.wikidata.org/entity/Q199",
+    "beer":"http://www.wikidata.org/entity/Q44",
+    "reed":"http://www.wikidata.org/entity/Q2734060",
+    "insult":"http://www.wikidata.org/entity/Q571571",
+    "place":"http://www.wikidata.org/entity/Q98929991",
+    "netherworld":"http://www.wikidata.org/entity/Q154365",
+    "hailstone":"http://www.wikidata.org/entity/Q37602",
+    "orchard":"http://www.wikidata.org/entity/Q236371",
+    "owner":"http://www.wikidata.org/entity/Q16869121",
+    "grain in general":"http://www.wikidata.org/entity/Q2995529",
+    "young man":"http://www.wikidata.org/entity/Q1716875",
+    "thigh":"http://www.wikidata.org/entity/Q129757",
+    "onion":"http://www.wikidata.org/entity/Q3406628",
+    "quay":"http://www.wikidata.org/entity/Q828909",
+    "man":"http://www.wikidata.org/entity/Q8441",
+    "tooth":"http://www.wikidata.org/entity/Q553",
+    "month":"http://www.wikidata.org/entity/Q5151",
+    "fear":"http://www.wikidata.org/entity/Q44619",
+    "fruit":"http://www.wikidata.org/entity/Q3314483",
+    "levee":"http://www.wikidata.org/entity/Q105190",
+    "judgement":"http://www.wikidata.org/entity/Q12621536",
+    "hoe":"http://www.wikidata.org/entity/Q131154",
+    "vegetable":"http://www.wikidata.org/entity/Q11004",
+    "skin":"http://www.wikidata.org/entity/Q1074",
+    "fat":"http://www.wikidata.org/entity/Q127980",
+    "palm tree":"http://www.wikidata.org/entity/Q14080",
+    "native land":"http://www.wikidata.org/entity/Q16513600",
+    "cut of meat":"http://www.wikidata.org/entity/Q6418247",
+    "praise":"http://www.wikidata.org/entity/Q1208425",
+    "pigeon":"http://www.wikidata.org/entity/Q2984138",
+    "sinew":"http://www.wikidata.org/entity/Q64309527",
+    "seed":"http://www.wikidata.org/entity/Q4076",
+    "black":"http://www.wikidata.org/entity/Q23445",
+    "wind":"http://www.wikidata.org/entity/Q8094",
+    "box":"http://www.wikidata.org/entity/Q987767",
+    "crown":"http://www.wikidata.org/entity/Q170984",
+    "mother":"http://www.wikidata.org/entity/Q7560",
+    "donkey":"http://www.wikidata.org/entity/Q3537778",
+    "bear":"http://www.wikidata.org/entity/Q30090244",
+    "plow":"http://www.wikidata.org/entity/Q11464",
+    "portion":"http://www.wikidata.org/entity/Q15989253",
+    "blood":"http://www.wikidata.org/entity/Q7873",
+    "sack":"http://www.wikidata.org/entity/Q1323314",
+    "throne":"http://www.wikidata.org/entity/Q189233",
+    "knowledge":"http://www.wikidata.org/entity/Q9081",
+    "surplus":"http://www.wikidata.org/entity/Q268617",
+    "temple":"http://www.wikidata.org/entity/Q44539",
+    "plain":"http://www.wikidata.org/entity/Q160091",
+    "cedar":"http://www.wikidata.org/entity/Q128550",
+    "breast":"http://www.wikidata.org/entity/Q9103",
+    "nail":"http://www.wikidata.org/entity/Q37077",
+    "river bank":"http://www.wikidata.org/entity/Q2897058",
+    "fish":"http://www.wikidata.org/entity/Q152",
+    "eye":"http://www.wikidata.org/entity/Q7364",
+    "nose":"http://www.wikidata.org/entity/Q7363",
+    "tooth":"http://www.wikidata.org/entity/Q553",
+    "courtyard":"http://www.wikidata.org/entity/Q309250",
+    "buttocks":"http://www.wikidata.org/entity/Q42165",
+    "weapon":"http://www.wikidata.org/entity/Q728",
+    "honey":"http://www.wikidata.org/entity/Q10987",
+    "gentleman":"http://www.wikidata.org/entity/Q749212",
+    "corpse":"http://www.wikidata.org/entity/Q48422",
+    "quarrel":"http://www.wikidata.org/entity/Q891691",
+    "sheep":"http://www.wikidata.org/entity/Q7368",
+    "envoy":"http://www.wikidata.org/entity/Q11051391",
+    "liar":"http://www.wikidata.org/entity/Q62122629",
+    "singer":"http://www.wikidata.org/entity/Q177220",
+    "boat":"http://www.wikidata.org/entity/Q35872",
+    "kid":"http://www.wikidata.org/entity/Q7569",
+    "battle":"http://www.wikidata.org/entity/Q178561",
+    "herald":"http://www.wikidata.org/entity/Q696819",
+    "star":"http://www.wikidata.org/entity/Q523",
+    "woman":"http://www.wikidata.org/entity/Q467",
+    "stone":"http://www.wikidata.org/entity/Q22731",
+    "thirst":"http://www.wikidata.org/entity/Q474187",
+    "carpenter":"http://www.wikidata.org/entity/Q154549",
+    "sister":"http://www.wikidata.org/entity/Q595094",
+    "pouch":"http://www.wikidata.org/entity/Q29480005",
+    "lion":"http://www.wikidata.org/entity/Q140",
+    "head":"http://www.wikidata.org/entity/Q23640",
+    "gate":"https://www.wikidata.org/wiki/Q53060",
+    "dust":"https://www.wikidata.org/wiki/Q165632",
+    "individual":"http://www.wikidata.org/entity/Q795052",
+    "brick":"http://www.wikidata.org/entity/Q40089",
+    "brickwork":"http://www.wikidata.org/entity/Q1131313",
+    "wool":"http://www.wikidata.org/entity/Q42329",
+    "lamb":"http://www.wikidata.org/entity/Q4575936",
+    "beard":"http://www.wikidata.org/entity/Q42804",
+    "skin":"http://www.wikidata.org/entity/Q1074",
+    "body":"http://www.wikidata.org/entity/Q170494",
+    "hide":"http://www.wikidata.org/entity/Q3291230",
+    "forest":"http://www.wikidata.org/entity/Q4421",
+    "well":"http://www.wikidata.org/entity/Q43483",
+    "son":"http://www.wikidata.org/entity/Q177232",
+    "food":"http://www.wikidata.org/entity/Q2095",
+    "plant":"http://www.wikidata.org/entity/Q756",
+    "ewe":"http://www.wikidata.org/entity/Q7368",
+    "admiration":"http://www.wikidata.org/entity/Q2824657",
+    "day":"http://www.wikidata.org/entity/Q573",
+    "storm":"http://www.wikidata.org/entity/Q81054",
+    "weather":"http://www.wikidata.org/entity/Q11663",
+    "pleasure":"http://www.wikidata.org/entity/Q208195",
+    "satisfaction":"http://www.wikidata.org/entity/Q12050977",
+    "town":"http://www.wikidata.org/entity/Q3957",
+    "copper":"http://www.wikidata.org/entity/Q753",
+    "male":"http://www.wikidata.org/entity/Q6581097",
+    "border":"http://www.wikidata.org/entity/Q133346",
+    "thigh":"http://www.wikidata.org/entity/Q129757",
+    "advice":"http://www.wikidata.org/entity/Q2132873",
+    "magazine":"http://www.wikidata.org/entity/Q148958",
+    "wine":"http://www.wikidata.org/entity/Q282",
+    "dagger":"http://www.wikidata.org/entity/Q182780",
+    "knife":"http://www.wikidata.org/entity/Q324892",
+    "foot":"http://www.wikidata.org/entity/Q15807",
+    "path":"http://www.wikidata.org/entity/Q5004679",
+    "oar":"http://www.wikidata.org/entity/Q2003749",
+    "tree":"http://www.wikidata.org/entity/Q10884",
+    "heart":"http://www.wikidata.org/entity/Q1072",
+    "rope":"http://www.wikidata.org/entity/Q31029",
+    "flour":"http://www.wikidata.org/entity/Q36465",
+    "deer":"http://www.wikidata.org/entity/Q23390",
+    "brother":"http://www.wikidata.org/entity/Q10861465",  
+    "1":"http://www.wikidata.org/entity/Q199",
+    "2":"http://www.wikidata.org/entity/Q200",
+    "3":"http://www.wikidata.org/entity/Q201",
+    "4":"http://www.wikidata.org/entity/Q202",
+    "5":"http://www.wikidata.org/entity/Q203",
+    "6":"http://www.wikidata.org/entity/Q23488",
+    "7":"http://www.wikidata.org/entity/Q23350",
+    "8":"http://www.wikidata.org/entity/Q23355",
+    "9":"http://www.wikidata.org/entity/Q19108",
+    "10":"http://www.wikidata.org/entity/Q23806",
+    "11":"http://www.wikidata.org/entity/Q37136",
+    "12":"http://www.wikidata.org/entity/Q36977",
+    "13":"http://www.wikidata.org/entity/Q37141",
+    "14":"http://www.wikidata.org/entity/Q38582",
+    "15":"http://www.wikidata.org/entity/Q38701",
+    "16":"http://www.wikidata.org/entity/Q40254",
+    "17":"http://www.wikidata.org/entity/Q40118",
+    "18":"http://www.wikidata.org/entity/Q40118",
+    "19":"http://www.wikidata.org/entity/Q39850",
+    "20":"http://www.wikidata.org/entity/Q40292",
+    "21":"http://www.wikidata.org/entity/Q712477",
+    "22":"http://www.wikidata.org/entity/Q712488",
+    "23":"http://www.wikidata.org/entity/Q48240",
+    "24":"http://www.wikidata.org/entity/Q79988",
+    "25":"http://www.wikidata.org/entity/Q79986",
+    "26":"http://www.wikidata.org/entity/Q83264",
+    "27":"http://www.wikidata.org/entity/Q433353",
+    "28":"http://www.wikidata.org/entity/Q587465",
+    "29":"http://www.wikidata.org/entity/Q543929",
+    "30":"http://www.wikidata.org/entity/Q42817",
+    "31":"http://www.wikidata.org/entity/Q712692",
+    "32":"http://www.wikidata.org/entity/Q712701",
+    "33":"http://www.wikidata.org/entity/Q712661",
+    "34":"http://www.wikidata.org/entity/Q712639",
+    "35":"http://www.wikidata.org/entity/Q434712",
+    "36":"http://www.wikidata.org/entity/Q712794",
+    "37":"http://www.wikidata.org/entity/Q712770",
+    "38":"http://www.wikidata.org/entity/Q600809",
+    "39":"http://www.wikidata.org/entity/Q712782",
+    "40":"http://www.wikidata.org/entity/Q42317",
+    "41":"http://www.wikidata.org/entity/Q71262",
+    "42":"http://www.wikidata.org/entity/Q812996",
+    "43":"http://www.wikidata.org/entity/Q282113",
+    "44":"http://www.wikidata.org/entity/Q712706",
+    "45":"http://www.wikidata.org/entity/Q627861",
+    "46":"http://www.wikidata.org/entity/Q712744",
+    "47":"http://www.wikidata.org/entity/Q712687",
+    "48":"http://www.wikidata.org/entity/Q712764",
+    "49":"http://www.wikidata.org/entity/Q712758",
+    "50":"http://www.wikidata.org/entity/Q712519",
+    "51":"http://www.wikidata.org/entity/Q895860",
+    "52":"http://www.wikidata.org/entity/Q712995",
+    "53":"http://www.wikidata.org/entity/Q712808",
+    "54":"http://www.wikidata.org/entity/Q290669",
+    "55":"http://www.wikidata.org/entity/Q686819",
+    "56":"http://www.wikidata.org/entity/Q522994",
+    "57":"http://www.wikidata.org/entity/Q713133",
+    "58":"http://www.wikidata.org/entity/Q241673",
+    "59":"http://www.wikidata.org/entity/Q593011",
+    "60":"http://www.wikidata.org/entity/Q79998",
+    "61":"http://www.wikidata.org/entity/Q774689",
+    "62":"http://www.wikidata.org/entity/Q593966",
+    "63":"http://www.wikidata.org/entity/Q712986",
+    "64":"http://www.wikidata.org/entity/Q435660",
+    "65":"http://www.wikidata.org/entity/Q645260",
+    "66":"http://www.wikidata.org/entity/Q712966",
+    "67":"http://www.wikidata.org/entity/Q713157",
+    "68":"http://www.wikidata.org/entity/Q661982",
+    "69":"http://www.wikidata.org/entity/Q713048",
+    "70":"http://www.wikidata.org/entity/Q712514",
+    "71":"http://www.wikidata.org/entity/Q586651",
+    "72":"http://www.wikidata.org/entity/Q243817",
+    "73":"http://www.wikidata.org/entity/Q713122",
+    "74":"http://www.wikidata.org/entity/Q713143",
+    "75":"http://www.wikidata.org/entity/Q601660",
+    "76":"http://www.wikidata.org/entity/Q543190",
+    "77":"http://www.wikidata.org/entity/Q713167",
+    "78":"http://www.wikidata.org/entity/Q713229",
+    "79":"http://www.wikidata.org/entity/Q713148",
+    "80":"http://www.wikidata.org/entity/Q712467",
+    "81":"http://www.wikidata.org/entity/Q712876",
+    "82":"http://www.wikidata.org/entity/Q713217",
+    "83":"http://www.wikidata.org/entity/Q713181",
+    "84":"http://www.wikidata.org/entity/Q279264",
+    "85":"http://www.wikidata.org/entity/Q427730",
+    "86":"http://www.wikidata.org/entity/Q713221",
+    "87":"http://www.wikidata.org/entity/Q285042",
+    "88":"http://www.wikidata.org/entity/Q341102",
+    "89":"http://www.wikidata.org/entity/Q535061",
+    "90":"http://www.wikidata.org/entity/Q239346",
+    "91":"http://www.wikidata.org/entity/Q690992",
+    "92":"http://www.wikidata.org/entity/Q277312",
+    "93":"http://www.wikidata.org/entity/Q31118",
+    "94":"http://www.wikidata.org/entity/Q683782",
+    "95":"http://www.wikidata.org/entity/Q595170",
+    "96":"http://www.wikidata.org/entity/Q280167",
+    "97":"http://www.wikidata.org/entity/Q673849",
+    "98":"http://www.wikidata.org/entity/Q713239",
+    "99":"http://www.wikidata.org/entity/Q435673",
+    "100":"http://www.wikidata.org/entity/Q37413"
 }
 
 def cleanString(strr):
-    return strr.lower().replace("š","sz").replace("Š","SZ").replace("%","_").replace("{","_").replace("}","_").replace(" ","_").replace("'","_").replace("\"","").replace(",","_").replace("|","_").replace("/","_").replace("-","_").replace("+","_").replace("%","_").replace("(","_").replace(")","_").replace(".","_").replace(":","_").replace("₄","4").replace("₂","2").replace("₃","3").replace("₅","5").replace("₆","6").replace("₈","8").replace("₉","9").replace("₁","1").replace("₀","0")
+    return strr.lower().replace("š","sz").replace("Š","SZ").replace("[","_").replace("]","_").replace("%","_").replace("{","_").replace("}","_").replace(" ","_").replace("'","_").replace("\"","").replace(",","_").replace("|","_").replace("/","_").replace("-","_").replace("+","_").replace("%","_").replace("(","_").replace(")","_").replace(".","_").replace(":","_").replace("₄","4").replace("₂","2").replace("₃","3").replace("₅","5").replace("₆","6").replace("₈","8").replace("₉","9").replace("₁","1").replace("₀","0")
 
 def toASCII(strr):
     return strr.replace("₄","4").replace("₂","2").replace("₃","3").replace("₅","5").replace("₇","7").replace("₆","6").replace("₈","8").replace("₉","9").replace("₁","1").replace("₀","0").replace("%","_").replace("š","sz").replace("Š","SZ")
@@ -113,10 +299,14 @@ def convertToRDF(cuneiformsigndict,nuolenna,aasigndict,rdfset):
         else:
             rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> rdf:type graphemon:Grapheme .\n ")
             rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> rdfs:label \"Character: "+toASCII(str(entry["signname"])).replace("\"","")+"\" .\n ")
-        rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> graphemon:meszl \""+str(entry["meszl"]).replace("\"","")+"\" .\n ")
-        rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> graphemon:slha \""+str(entry["slha"]).replace("\"","")+"\" .\n")
-        rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> graphemon:hethzl \""+str(entry["hethzl"]).replace("\"","")+"\" .\n ")
-        rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> graphemon:abzl \""+str(entry["abzl"]).replace("\"","")+"\" .\n ")
+        if entry["meszl"]!="":
+            rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> graphemon:meszl \""+str(entry["meszl"]).replace("\"","")+"\" .\n ")
+        if entry["slha"]!="":
+            rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> graphemon:slha \""+str(entry["slha"]).replace("\"","")+"\" .\n")
+        if entry["hethzl"]!="":
+            rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> graphemon:hethzl \""+str(entry["hethzl"]).replace("\"","")+"\" .\n ")
+        if entry["abzl"]!="":
+            rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> graphemon:abzl \""+str(entry["abzl"]).replace("\"","")+"\" .\n ")
         rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> graphemon:unicodeCodepoint \""+str(entry["unicode"]).replace("\"","")+"\" .\n ")
         rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> graphemon:unicodeRepresentation \""+str(entry["unicodename"]).replace("\"","")+"\" .\n ")
         unicodeToURI[entry["unicodename"]]={"uri":"http://purl.org/cuneiform/signlist/character_"+str(signuri),"signname":toASCII(str(entry["signname"])).replace("\"","")}
@@ -135,9 +325,26 @@ def convertToRDF(cuneiformsigndict,nuolenna,aasigndict,rdfset):
             rdfset.add("<"+readinguri+"> graphemon:readingValue \""+toASCII(str(item)).replace("\"","")+"\" .\n ")
             nuolennamatchcounter+=1
         else:
-            rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> rdf:type graphemon:GraphemeComposition .\n ")
-            rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> rdfs:label \"Character Composition: "+toASCII(str(item)).replace("\"","")+"\" .\n ")
-            rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> graphemon:unicodeRepresentation \""+str(nuolenna[item]).replace("\"","")+"\" .\n ")
+            if len(nuolenna[item])>1:
+                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> rdf:type graphemon:GraphemeComposition .\n ")
+                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> rdfs:label \"Character Composition: "+toASCII(str(item)).replace("\"","")+"\" .\n ")
+                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> graphemon:hasGraphemeReading <http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> .\n ")
+                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> rdf:type graphemon:GraphemeReading .\n ")
+                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> rdfs:label \"Grapheme Reading "+toASCII(str(item)).replace("\"","")+": "+toASCII(str(item)).replace("\"","")+"\" .\n ")
+                for chara in nuolenna[item]:
+                    if chara in unicodeToURI:
+                        rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> graphemon:isComposedOf <"+str(unicodeToURI[chara]["uri"])+"> .\n ")
+                        rdfset.add("<"+str(unicodeToURI[chara]["uri"])+"> graphemon:partOf <http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> .\n ")  
+            else:
+                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> rdf:type graphemon:Grapheme .\n ")
+                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> rdfs:label \"Character: "+toASCII(str(item)).replace("\"","")+"\" .\n ")               
+            rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> graphemon:unicodeRepresentation \""+str(nuolenna[item]).replace("\"","")+"\" .\n ")     
+            if toASCII(str(item)).replace("\"","").isdigit() and toASCII(str(item)).replace("\"","") in sensesmap:
+                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> lemon:sense <http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_sense_"+str(toASCII(str(item)).replace("\"",""))+"> .\n")
+                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_sense_"+str(toASCII(str(item)).replace("\"",""))+"> rdf:type graphemon:GraphemeSense .\n")
+                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_sense_"+str(toASCII(str(item)).replace("\"",""))+"> rdfs:label \"Grapheme Sense "+str(toASCII(str(item)).replace("\"",""))+": "+str(toASCII(str(item)).replace("\"",""))+"\" .\n")
+                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_sense_"+str(toASCII(str(item)).replace("\"",""))+"> lemon:reference <"+sensesmap[toASCII(str(item)).replace("\"","")]+"> .\n")
+                rdfset.add("<"+sensesmap[toASCII(str(item)).replace("\"","")]+"> rdfs:label \"Wikidata: "+str(toASCII(str(item)).replace("\"",""))+"\" .\n")
             unicodeToURI[item]={"uri":"http://purl.org/cuneiform/signlist/character_"+cleanString(str(item)),"signname":toASCII(str(item)).replace("\"","")}
     print("Matched "+str(nuolennamatchcounter)+" items in nuolenna!")
     aalistmatchcounter=0
@@ -146,9 +353,12 @@ def convertToRDF(cuneiformsigndict,nuolenna,aasigndict,rdfset):
         #print(sname)
         if sname in unicodeToURI:
             cururi=unicodeToURI[sname]["uri"]
-            rdfset.add("<"+str(cururi)+"> graphemon:labat \""+str(entry["labat"])+"\" .\n ")
-            rdfset.add("<"+str(cururi)+"> graphemon:obo \""+str(entry["obo"])+"\" .\n ")
-            rdfset.add("<"+str(cururi)+"> graphemon:lak \""+str(entry["lak"])+"\" .\n ")
+            if entry["labat"]!="":
+                rdfset.add("<"+str(cururi)+"> graphemon:labat \""+str(entry["labat"])+"\" .\n ")
+            if entry["obo"]!="":
+                rdfset.add("<"+str(cururi)+"> graphemon:obo \""+str(entry["obo"])+"\" .\n ")
+            if entry["lak"]!="":
+                rdfset.add("<"+str(cururi)+"> graphemon:lak \""+str(entry["lak"])+"\" .\n ")
             if "meaning" in entry and entry["meaning"]!="":
                 meanings=entry["meaning"].replace("v.","").replace("n.","")
                 if ";" in entry["meaning"]:
@@ -237,6 +447,8 @@ with open('../signlist/signlist.ttl', mode='w', encoding="utf-8") as f:
     f.write("cunei:Epoch rdf:type owl:Class .\n ")
     f.write("graphemon:GraphemeComposition rdf:type owl:Class .\n ")
     f.write("graphemon:hasGraphemeReading rdf:type owl:ObjectProperty .\n ")
+    f.write("graphemon:isComposedOf rdf:type owl:ObjectProperty .\n ")
+    f.write("graphemon:partOf rdf:type owl:ObjectProperty .\n ")
     f.write("graphemon:hethzl rdf:type owl:DatatypeProperty .\n ")
     f.write("lemon:writtenRep rdf:type owl:DatatypeProperty .\n ")
     f.write("lemon:sense rdf:type owl:ObjectProperty .\n ")    
