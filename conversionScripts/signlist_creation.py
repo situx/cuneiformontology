@@ -2,6 +2,7 @@
 import csv
 import rdflib
 import json
+import string
 from rdflib import Graph
 
 rdfset=set()
@@ -281,7 +282,7 @@ sensesmap={
 }
 
 def cleanString(strr):
-    return strr.lower().replace("š","sz").replace("Š","SZ").replace("[","_").replace("]","_").replace("%","_").replace("{","_").replace("}","_").replace(" ","_").replace("'","_").replace("\"","").replace(",","_").replace("|","_").replace("/","_").replace("-","_").replace("+","_").replace("%","_").replace("(","_").replace(")","_").replace(".","_").replace(":","_").replace("₄","4").replace("₂","2").replace("₃","3").replace("₅","5").replace("₆","6").replace("₈","8").replace("₉","9").replace("₁","1").replace("₀","0")
+    return strr.lower().replace("š","sz").replace("Š","SZ").replace("[","_").replace("]","_").replace("%","_").replace("{","_").replace("}","_").replace(" ","_").replace("'","_").replace("\"","").replace(",","_").replace("|","_").replace("/","_").replace("-","_").replace("+","_").replace("%","_").replace("(","_").replace(")","_").replace(".","_").replace(":","_").replace("₄","4").replace("₂","2").replace("₃","3").replace("₅","5").replace("₆","6").replace("₇","7").replace("₈","8").replace("₉","9").replace("₁","1").replace("₀","0")
 
 def toASCII(strr):
     return strr.replace("₄","4").replace("₂","2").replace("₃","3").replace("₅","5").replace("₇","7").replace("₆","6").replace("₈","8").replace("₉","9").replace("₁","1").replace("₀","0").replace("%","_").replace("š","sz").replace("Š","SZ")
@@ -330,6 +331,7 @@ def convertToRDF(cuneiformsigndict,nuolenna,aasigndict,rdfset):
                 rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> rdfs:label \"Character Composition: "+toASCII(str(item)).replace("\"","")+"\" .\n ")
                 rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> graphemon:hasGraphemeReading <http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> .\n ")
                 rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> rdf:type graphemon:GraphemeReading .\n ")
+                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> graphemon:readingValue \""+toASCII(str(item)).replace("\"","")+"\" .\n ")
                 rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> rdfs:label \"Grapheme Reading "+toASCII(str(item)).replace("\"","")+": "+toASCII(str(item)).replace("\"","")+"\" .\n ")
                 for chara in nuolenna[item]:
                     if chara in unicodeToURI:
@@ -384,12 +386,16 @@ def convertToRDF(cuneiformsigndict,nuolenna,aasigndict,rdfset):
                         readings=[entry[term["term"]]]
                     #print(readings)
                     for reading in readings:
-                        if reading.replace("__","_").replace("__","_").strip()=="":
+                        if reading.replace("__","_").replace("__","_").replace(",","").strip()=="":
                             continue
-                        #print(str(cururi)+"_sense_"+cleanString(str(mean)))
-                        readinguri=(str(cururi)+"_reading_"+cleanString(str(reading))).replace("__","_").replace("__","_")
-                        if readinguri[-1]=="_":
-                            readinguri=readinguri[0:-1]
+                        readinguri=(str(cururi)+"_reading_"+cleanString(reading)).replace("__","_").replace("__","_")
+                        if readinguri.endswith("_"):
+                            readinguri=readinguri[:-1]
+                        readinguri=readinguri.rstrip(string.digits)
+                        if readinguri.endswith("_"):
+                            readinguri=readinguri[:-1]
+                        print(reading)
+                        print(readinguri)
                         if "uri" in term:
                             rdfset.add("<"+readinguri+"> graphemon:epoch <"+str(term["uri"])+"> .\n ")
                             rdfset.add("<"+str(term["uri"])+"> rdf:type cunei:Epoch .\n ")
