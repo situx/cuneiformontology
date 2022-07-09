@@ -199,6 +199,7 @@ sensesmap={
     "18":"http://www.wikidata.org/entity/Q40118",
     "19":"http://www.wikidata.org/entity/Q39850",
     "20":"http://www.wikidata.org/entity/Q40292",
+    "020":"http://www.wikidata.org/entity/Q40292",
     "21":"http://www.wikidata.org/entity/Q712477",
     "22":"http://www.wikidata.org/entity/Q712488",
     "23":"http://www.wikidata.org/entity/Q48240",
@@ -248,6 +249,7 @@ sensesmap={
     "67":"http://www.wikidata.org/entity/Q713157",
     "68":"http://www.wikidata.org/entity/Q661982",
     "69":"http://www.wikidata.org/entity/Q713048",
+    "070":"http://www.wikidata.org/entity/Q712514",
     "70":"http://www.wikidata.org/entity/Q712514",
     "71":"http://www.wikidata.org/entity/Q586651",
     "72":"http://www.wikidata.org/entity/Q243817",
@@ -406,6 +408,8 @@ def convertToRDF(cuneiformsigndict,nuolenna,aasigndict,rdfset):
                         else:
                             rdfset.add("<"+readinguri+"> graphemon:epochId \""+str(term["term"])+"\" .\n ")
             aalistmatchcounter+=1
+    with open('../signlist/signmapping.json', mode='w', encoding="utf-8") as f:
+        json.dump(unicodeToURI,f,indent=2)
     print("Matched "+str(aalistmatchcounter)+" items in aalist")
 
 with open('../signlist/nuolenna.json', encoding="utf-8") as f:
