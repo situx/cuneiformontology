@@ -2,6 +2,7 @@
 import csv
 import rdflib
 import json
+import re
 import string
 from rdflib import Graph
 
@@ -19,6 +20,13 @@ sensesmap={
     "branch":"http://www.wikidata.org/entity/Q2923673",
     "water":"http://www.wikidata.org/entity/Q283",
     "fire":"http://www.wikidata.org/entity/Q3196",
+    "green":"http://www.wikidata.org/entity/Q3133",
+    "yellow":"http://www.wikidata.org/entity/Q943",
+    "religious ceremony":"http://www.wikidata.org/entity/Q13537604",
+    "foundation":"http://www.wikidata.org/entity/Q191360",
+    "base":"http://www.wikidata.org/entity/Q82383",
+    "garment":"http://www.wikidata.org/entity/Q11460",
+    "roof":"http://www.wikidata.org/entity/Q83180",
     "prince":"http://www.wikidata.org/entity/Q2747456",
     "morning":"http://www.wikidata.org/entity/Q7722",
     "breath":"http://www.wikidata.org/entity/Q13428325",
@@ -120,6 +128,17 @@ sensesmap={
     "gentleman":"http://www.wikidata.org/entity/Q749212",
     "corpse":"http://www.wikidata.org/entity/Q48422",
     "quarrel":"http://www.wikidata.org/entity/Q891691",
+    "female":"http://www.wikidata.org/entity/Q6581072",
+    "face":"http://www.wikidata.org/entity/Q37017",
+    "musician":"http://www.wikidata.org/entity/Q639669",
+    "fox":"http://www.wikidata.org/entity/Q8331",
+    "courage":"http://www.wikidata.org/entity/Q208160",
+    "mace":"http://www.wikidata.org/entity/Q272990",
+    "tambourine":"http://www.wikidata.org/entity/Q193666",
+    "drum":"http://www.wikidata.org/entity/Q11404",
+    "reed mat":"http://www.wikidata.org/entity/Q7306720",
+    "mouth":"http://www.wikidata.org/entity/Q9635",
+    "northwind":"http://www.wikidata.org/entity/Q21332443",
     "sheep":"http://www.wikidata.org/entity/Q7368",
     "envoy":"http://www.wikidata.org/entity/Q11051391",
     "liar":"http://www.wikidata.org/entity/Q62122629",
@@ -137,8 +156,8 @@ sensesmap={
     "pouch":"http://www.wikidata.org/entity/Q29480005",
     "lion":"http://www.wikidata.org/entity/Q140",
     "head":"http://www.wikidata.org/entity/Q23640",
-    "gate":"https://www.wikidata.org/wiki/Q53060",
-    "dust":"https://www.wikidata.org/wiki/Q165632",
+    "gate":"http://www.wikidata.org/entity/Q53060",
+    "dust":"http://www.wikidata.org/entity/Q165632",
     "individual":"http://www.wikidata.org/entity/Q795052",
     "brick":"http://www.wikidata.org/entity/Q40089",
     "brickwork":"http://www.wikidata.org/entity/Q1131313",
@@ -175,9 +194,19 @@ sensesmap={
     "oar":"http://www.wikidata.org/entity/Q2003749",
     "tree":"http://www.wikidata.org/entity/Q10884",
     "heart":"http://www.wikidata.org/entity/Q1072",
+    "knee":"http://www.wikidata.org/entity/Q37425",
+    "bracelet":"http://www.wikidata.org/entity/Q201664",
+    "silo":"http://www.wikidata.org/entity/Q213643",
+    "flax":"http://www.wikidata.org/entity/Q47089651",
+    "hunger":"http://www.wikidata.org/entity/Q165947",
+    "neck":"http://www.wikidata.org/entity/Q9633",
+    "virgin":"http://www.wikidata.org/entity/Q32859833",
+    "tablet":"http://www.wikidata.org/entity/Q16744570",
+    "farmer":"http://www.wikidata.org/entity/Q131512",
     "rope":"http://www.wikidata.org/entity/Q31029",
     "flour":"http://www.wikidata.org/entity/Q36465",
     "deer":"http://www.wikidata.org/entity/Q23390",
+    "calf":"https://www.wikidata.org/wiki/Q2935",
     "brother":"http://www.wikidata.org/entity/Q10861465",  
     "1":"http://www.wikidata.org/entity/Q199",
     "2":"http://www.wikidata.org/entity/Q200",
@@ -284,7 +313,12 @@ sensesmap={
 }
 
 def cleanString(strr):
-    return strr.lower().replace("š","sz").replace("Š","SZ").replace("[","_").replace("]","_").replace("%","_").replace("{","_").replace("}","_").replace(" ","_").replace("'","_").replace("\"","").replace(",","_").replace("|","_").replace("/","_").replace("-","_").replace("+","_").replace("%","_").replace("(","_").replace(")","_").replace(".","_").replace(":","_").replace("₄","4").replace("₂","2").replace("₃","3").replace("₅","5").replace("₆","6").replace("₇","7").replace("₈","8").replace("₉","9").replace("₁","1").replace("₀","0")
+    retstr=strr.lower().replace("š","sz").replace("Š","SZ").replace("[","_").replace("]","_").replace("%","_").replace("{","_").replace("}","_").replace(" ","_").replace("'","_").replace("\"","").replace(",","_").replace("|","_").replace("/","_").replace("-","_").replace("+","_").replace("%","_").replace("(","_").replace(")","_").replace(".","_").replace(":","_").replace("₄","4").replace("₂","2").replace("₃","3").replace("₅","5").replace("₆","6").replace("₇","7").replace("₈","8").replace("₉","9").replace("₁","1").replace("₀","0")
+    if retstr.endswith("_"):
+        retstr=retstr[:-1]
+    if retstr.startswith("_"):
+        retstr=retstr[1:]
+    return retstr
 
 def toASCII(strr):
     return strr.replace("₄","4").replace("₂","2").replace("₃","3").replace("₅","5").replace("₇","7").replace("₆","6").replace("₈","8").replace("₉","9").replace("₁","1").replace("₀","0").replace("%","_").replace("š","sz").replace("Š","SZ")
@@ -292,27 +326,29 @@ def toASCII(strr):
 def convertToRDF(cuneiformsigndict,nuolenna,aasigndict,rdfset):
     unicodeToURI={}
     signnameToURI={}
+    sensescounter=0
+    charsensecounter=0
     for entry in cuneiformsigndict:
         print(entry)
-        signuri=cleanString(entry["signname"])
-        signnameToURI[toASCII(str(entry["signname"])).replace("\"","")]="http://purl.org/cuneiform/signlist/character_"+str(signuri)
+        signuri=("http://purl.org/cuneiform/signlist/character_"+cleanString(entry["signname"])).replace("__","_")
+        signnameToURI[toASCII(str(entry["signname"])).replace("\"","")]=str(signuri)
         if "unicodename" in entry and len(entry["unicodename"])>1:
-            rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> rdf:type graphemon:GraphemeComposition .\n ")
-            rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> rdfs:label \"Character Composition: "+toASCII(str(entry["signname"])).replace("\"","")+"\" .\n ")
+            rdfset.add("<"+str(signuri)+"> rdf:type graphemon:GraphemeComposition .\n ")
+            rdfset.add("<"+str(signuri)+"> rdfs:label \"Character Composition: "+toASCII(str(entry["signname"])).replace("\"","")+"\" .\n ")
         else:
-            rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> rdf:type graphemon:Grapheme .\n ")
-            rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> rdfs:label \"Character: "+toASCII(str(entry["signname"])).replace("\"","")+"\" .\n ")
+            rdfset.add("<"+str(signuri)+"> rdf:type graphemon:Grapheme .\n ")
+            rdfset.add("<"+str(signuri)+"> rdfs:label \"Character: "+toASCII(str(entry["signname"])).replace("\"","")+"\" .\n ")
         if entry["meszl"]!="":
-            rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> graphemon:meszl \""+str(entry["meszl"]).replace("\"","")+"\" .\n ")
+            rdfset.add("<"+str(signuri)+"> graphemon:meszl \""+str(entry["meszl"]).replace("\"","")+"\" .\n ")
         if entry["slha"]!="":
-            rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> graphemon:slha \""+str(entry["slha"]).replace("\"","")+"\" .\n")
+            rdfset.add("<"+str(signuri)+"> graphemon:slha \""+str(entry["slha"]).replace("\"","")+"\" .\n")
         if entry["hethzl"]!="":
-            rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> graphemon:hethzl \""+str(entry["hethzl"]).replace("\"","")+"\" .\n ")
+            rdfset.add("<"+str(signuri)+"> graphemon:hethzl \""+str(entry["hethzl"]).replace("\"","")+"\" .\n ")
         if entry["abzl"]!="":
-            rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> graphemon:abzl \""+str(entry["abzl"]).replace("\"","")+"\" .\n ")
-        rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> graphemon:unicodeCodepoint \""+str(entry["unicode"]).replace("\"","")+"\" .\n ")
-        rdfset.add("<http://purl.org/cuneiform/signlist/character_"+str(signuri)+"> graphemon:unicodeRepresentation \""+str(entry["unicodename"]).replace("\"","")+"\" .\n ")
-        unicodeToURI[entry["unicodename"]]={"uri":"http://purl.org/cuneiform/signlist/character_"+str(signuri),"signname":toASCII(str(entry["signname"])).replace("\"","")}
+            rdfset.add("<"+str(signuri)+"> graphemon:abzl \""+str(entry["abzl"]).replace("\"","")+"\" .\n ")
+        rdfset.add("<"+str(signuri)+"> graphemon:unicodeCodepoint \""+str(entry["unicode"]).replace("\"","")+"\" .\n ")
+        rdfset.add("<"+str(signuri)+"> graphemon:unicodeRepresentation \""+str(entry["unicodename"]).replace("\"","")+"\" .\n ")
+        unicodeToURI[entry["unicodename"]]={"uri":str(signuri),"signname":toASCII(str(entry["signname"])).replace("\"","")}
     #print(unicodeToURI)
     nuolennamatchcounter=0
     for item in nuolenna:
@@ -341,7 +377,15 @@ def convertToRDF(cuneiformsigndict,nuolenna,aasigndict,rdfset):
                         rdfset.add("<"+str(unicodeToURI[chara]["uri"])+"> graphemon:partOf <http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> .\n ")  
             else:
                 rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> rdf:type graphemon:Grapheme .\n ")
-                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> rdfs:label \"Character: "+toASCII(str(item)).replace("\"","")+"\" .\n ")               
+                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> rdfs:label \"Character: "+toASCII(str(item)).replace("\"","")+"\" .\n ")
+                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> graphemon:hasGraphemeReading <http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> .\n ")
+                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> rdf:type graphemon:GraphemeReading .\n ")
+                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> graphemon:readingValue \""+toASCII(str(item)).replace("\"","")+"\" .\n ")
+                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> rdfs:label \"Grapheme Reading "+toASCII(str(item)).replace("\"","")+": "+toASCII(str(item)).replace("\"","")+"\" .\n ")
+                for chara in nuolenna[item]:
+                    if chara in unicodeToURI:
+                        rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> graphemon:isComposedOf <"+str(unicodeToURI[chara]["uri"])+"> .\n ")
+                        rdfset.add("<"+str(unicodeToURI[chara]["uri"])+"> graphemon:partOf <http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> .\n ")
             rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> graphemon:unicodeRepresentation \""+str(nuolenna[item]).replace("\"","")+"\" .\n ")     
             if toASCII(str(item)).replace("\"","").isdigit() and toASCII(str(item)).replace("\"","") in sensesmap:
                 rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> lemon:sense <http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_sense_"+str(toASCII(str(item)).replace("\"",""))+"> .\n")
@@ -370,13 +414,15 @@ def convertToRDF(cuneiformsigndict,nuolenna,aasigndict,rdfset):
                 else:
                     meanings=[entry["meaning"]]
                 for mean in meanings:
-                    rdfset.add("<"+str(cururi)+"> lemon:sense <"+str(cururi)+"_sense_"+cleanString(str(mean))+"> .\n ")
-                    rdfset.add("<"+str(cururi)+"_sense_"+cleanString(str(mean))+"> rdfs:label \"Grapheme Sense "+str(entry["unicode"])+": "+str(mean).replace("\"","").strip()+"\" .\n ")
-                    rdfset.add("<"+str(cururi)+"_sense_"+cleanString(str(mean))+"> rdf:type graphemon:GraphemeSense .\n ")
-                    #print(str(mean).replace("\"","").strip())
-                    if str(mean).replace("\"","").strip() in sensesmap:
-                        rdfset.add("<"+str(cururi)+"_sense_"+cleanString(str(mean))+"> lemon:reference <"+str(sensesmap[str(mean).replace("\"","").strip()])+"> .\n ")
-                        rdfset.add("<"+str(sensesmap[str(mean).replace("\"","").strip()])+"> rdfs:label \"Wikidata: "+str(mean).replace("\"","").strip()+"\" .\n ")
+                    if mean.strip()!="n." and mean.strip()!="v." and mean.strip()!="adj.":
+                        rdfset.add("<"+str(cururi)+"> lemon:sense <"+str(cururi)+"_sense_"+cleanString(str(mean)).replace("n.","").replace("v.","").replace("adj.","")+"> .\n ")
+                        rdfset.add("<"+str(cururi)+"_sense_"+cleanString(str(mean))+"> rdfs:label \"Grapheme Sense "+str(entry["unicode"])+": "+str(mean).replace("\"","").strip().replace("n.","").replace("v.","").replace("adj.","")+"\" .\n ")
+                        rdfset.add("<"+str(cururi)+"_sense_"+cleanString(str(mean)).replace("n.","").replace("v.","").replace("adj.","")+"> rdf:type graphemon:GraphemeSense .\n ")
+                        #print(str(mean).replace("\"","").strip())
+                        if str(mean).replace("\"","").strip() in sensesmap:
+                            sensescounter+=1
+                            rdfset.add("<"+str(cururi)+"_sense_"+cleanString(str(mean)).replace("n.","").replace("v.","").replace("adj.","")+"> lemon:reference <"+str(sensesmap[str(mean).replace("\"","").strip()])+"> .\n ")
+                            rdfset.add("<"+str(sensesmap[str(mean).replace("\"","").strip()])+"> rdfs:label \"Wikidata: "+str(mean).replace("\"","").strip()+"\" .\n ")
             terms=[{"term":"oldbab","label":"Old Babylonian","uri":"http://www.wikidata.org/entity/Q733897"},{"term":"lagasz2","label":"Lagasz2","uri":""},{"term":"edIII","label":"EdIII","uri":"http://www.wikidata.org/entity/Q110209565"},{"term":"oldass","label":"Old Assyrian","uri":"http://www.wikidata.org/entity/Q22948607"},{"term":"middleass","label":"Middle Assyrian","uri":""},{"term":"middlebab","label":"Middle Babylonian","uri":"http://www.wikidata.org/entity/Q16530848"}]
             for term in terms:
                 #print(term["term"])
@@ -390,16 +436,26 @@ def convertToRDF(cuneiformsigndict,nuolenna,aasigndict,rdfset):
                     for reading in readings:
                         if reading.replace("__","_").replace("__","_").replace(",","").strip()=="":
                             continue
-                        readinguri=(str(cururi)+"_reading_"+cleanString(reading)).replace("__","_").replace("__","_")
+                        readinguri=(str(cururi)+"_reading_"+cleanString(reading)).replace("__","_").replace("__","_").replace(" ","")
                         if readinguri.endswith("_"):
                             readinguri=readinguri[:-1]
-                        readinguri=readinguri.rstrip(string.digits)
+                        pattern=re.compile("^.*_[0-9]+$")
+                        if pattern.search(readinguri)!=None:
+                            readinguri=readinguri.rstrip(string.digits)
                         if readinguri.endswith("_"):
                             readinguri=readinguri[:-1]
+                        if reading.replace("__","_").replace("__","_").replace(",","").strip()=="":
+                            continue
                         print(reading)
                         print(readinguri)
                         if "uri" in term:
                             rdfset.add("<"+readinguri+"> graphemon:epoch <"+str(term["uri"])+"> .\n ")
+                            rdfset.add("<"+readinguri+"> rdf:type graphemon:GraphemeReading .\n ")
+                            if "(" in reading:
+                                rdfset.add("<"+readinguri+"> rdfs:label \"Grapheme Reading "+str(unicodeToURI[sname]["signname"])+": "+toASCII(str(reading)[0:reading.index("(")]).strip()+"\" .\n ")
+                            else:
+                                rdfset.add("<"+readinguri+"> rdfs:label \"Grapheme Reading "+str(unicodeToURI[sname]["signname"])+": "+toASCII(str(reading)).strip()+"\" .\n ")
+                            rdfset.add("<"+readinguri[0:readinguri.index("_reading_")].replace("__","_")+"> graphemon:hasGraphemeReading <"+readinguri+"> .\n ")
                             rdfset.add("<"+str(term["uri"])+"> rdf:type cunei:Epoch .\n ")
                             if "label" in term and term["label"]!="":
                                 rdfset.add("<"+str(term["uri"])+"> rdfs:label \"Wikidata: "+str(term["label"])+"\" .\n ")
@@ -411,6 +467,7 @@ def convertToRDF(cuneiformsigndict,nuolenna,aasigndict,rdfset):
     with open('../signlist/signmapping.json', mode='w', encoding="utf-8") as f:
         json.dump(unicodeToURI,f,indent=2)
     print("Matched "+str(aalistmatchcounter)+" items in aalist")
+    print("Matched "+str(sensescounter)+" senses")
 
 with open('../signlist/nuolenna.json', encoding="utf-8") as f:
    nuolenna = json.load(f)
