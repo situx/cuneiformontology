@@ -188,6 +188,7 @@ sensesmap={
     "magazine":"http://www.wikidata.org/entity/Q148958",
     "wine":"http://www.wikidata.org/entity/Q282",
     "dagger":"http://www.wikidata.org/entity/Q182780",
+    "statue":"https://www.wikidata.org/wiki/Q179700",
     "knife":"http://www.wikidata.org/entity/Q324892",
     "foot":"http://www.wikidata.org/entity/Q15807",
     "path":"http://www.wikidata.org/entity/Q5004679",
@@ -200,13 +201,27 @@ sensesmap={
     "flax":"http://www.wikidata.org/entity/Q47089651",
     "hunger":"http://www.wikidata.org/entity/Q165947",
     "neck":"http://www.wikidata.org/entity/Q9633",
+    "totality":"http://www.wikidata.org/entity/Q2445511",
+    "harvest":"http://www.wikidata.org/entity/Q213753",
+    "deer":"http://www.wikidata.org/entity/Q29838690",
+    "man":"http://www.wikidata.org/entity/Q8441",
+    "front":"http://www.wikidata.org/entity/Q68345460",
+    "hill":"http://www.wikidata.org/entity/Q54050",
+    "red":"http://www.wikidata.org/entity/Q3142",
+    "trial":"http://www.wikidata.org/entity/Q8016240",
+    "share":"http://www.wikidata.org/entity/Q11692",
+    "strength":"http://www.wikidata.org/entity/Q29713396",
+    "bird":"http://www.wikidata.org/entity/Q5113",
+    "companion":"http://www.wikidata.org/entity/Q98949102",
+    "friend":"http://www.wikidata.org/entity/Q17297777",
+    "peg":"http://www.wikidata.org/entity/Q15247824",
     "virgin":"http://www.wikidata.org/entity/Q32859833",
     "tablet":"http://www.wikidata.org/entity/Q16744570",
     "farmer":"http://www.wikidata.org/entity/Q131512",
     "rope":"http://www.wikidata.org/entity/Q31029",
     "flour":"http://www.wikidata.org/entity/Q36465",
     "deer":"http://www.wikidata.org/entity/Q23390",
-    "calf":"https://www.wikidata.org/wiki/Q2935",
+    "calf":"http://www.wikidata.org/entity/Q2935",
     "brother":"http://www.wikidata.org/entity/Q10861465",  
     "1":"http://www.wikidata.org/entity/Q199",
     "2":"http://www.wikidata.org/entity/Q200",
@@ -309,7 +324,19 @@ sensesmap={
     "97":"http://www.wikidata.org/entity/Q673849",
     "98":"http://www.wikidata.org/entity/Q713239",
     "99":"http://www.wikidata.org/entity/Q435673",
-    "100":"http://www.wikidata.org/entity/Q37413"
+    "100":"http://www.wikidata.org/entity/Q37413",
+    "102":"http://www.wikidata.org/entity/Q715437",
+    "104":"http://www.wikidata.org/entity/Q715425",
+    "150":"http://www.wikidata.org/entity/Q644336",
+    "200":"http://www.wikidata.org/entity/Q713744",
+    "400":"http://www.wikidata.org/entity/Q1535396",
+    "510":"http://www.wikidata.org/entity/Q857664",
+    "520":"http://www.wikidata.org/entity/Q580062",
+    "700":"http://www.wikidata.org/entity/Q721126",
+    "800":"http://www.wikidata.org/entity/Q746396",
+    "840":"http://www.wikidata.org/entity/Q828726",
+    "850":"http://www.wikidata.org/entity/Q1492396"
+    
 }
 
 def cleanString(strr):
@@ -530,7 +557,7 @@ with open('../signlist/signlist.ttl', mode='w', encoding="utf-8") as f:
     f.write("graphemon:slha rdf:type owl:DatatypeProperty .\n ")
     f.write("graphemon:unicodeCodepoint rdf:type owl:DatatypeProperty .\n ")
     f.write("graphemon:unicodeRepresentation rdf:type owl:DatatypeProperty .\n ")
-    f.write("".join(rdfset))
+    f.write("".join(sorted(list(dict.fromkeys(rdfset)))))
 
 g = Graph()
 g.parse("../signlist/signlist.ttl")

@@ -1,5 +1,7 @@
 import json
 import os
+import rdflib
+from rdflib import Graph
 
 ttlresult=set()
 ttlresult.add("cunei:Tablet rdf:type owl:Class .\n <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> rdf:type owl:Class . lemon:Sense rdf:type owl:Class .\n <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> rdfs:label \"Glyph\"@en .\n")
@@ -14,6 +16,9 @@ lexicons=[]
 
 with open("cuneify.json",encoding='utf-8') as f:
     cuneify = json.load(f)
+
+with open("signmapping.json",encoding='utf-8') as f:
+    signmapping = json.load(f)
 
 def replaceNonURIChars(myuri):
     return myuri.replace("$","_").replace("{","_").replace("}","_").replace("̌","_").replace(";","_").replace("̄","_").replace("ʾ","_").replace("̆","_").replace(",","_").replace("'","_").replace("/","_").replace("+","_").replace("(","_").replace(")","_").replace("|","_").replace("@","_").replace("×","_").replace("&","_").replace("+","_").replace(".","_")
@@ -43,8 +48,14 @@ def format_ascii(word):
     print(word)
     return word
 
-def cuneifyWord(word):
+def cuneifyWord(word,worduri,ttlresult):
     if word in cuneify:
+        unicodeword=cuneify[word]
+        for chara in unicodeword:
+            if chara in signmapping:
+                ttlresult.add(""+str(worduri)+" cunei:contains <"+str(signmapping[chara]["uri"])+"> .\n")
+                ttlresult.add("<"+str(signmapping[chara]["uri"])+"> rdf:type graphemon:Grapheme . \n")
+                ttlresult.add("<"+str(signmapping[chara]["uri"])+"> rdfs:label \"Character: "+str(signmapping[chara]["signname"])+"\" . \n")
         return cuneify[word]
 
 def handleLineElements(data,ttlresult,currentside,currentsentence,currenttabletid):
@@ -73,14 +84,14 @@ def handleLineElements(data,ttlresult,currentside,currentsentence,currenttableti
             print(lineitem)
             ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+" rdf:type cunei:Line .\n")
             if "f" in lineitem and "form" in lineitem["f"]:
-                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_word rdf:type cunei:WordFormOccurance .\n")
+                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_wordformocc rdf:type cunei:WordFormOccurance .\n")
                 if "norm" in lineitem["f"]:
                     ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["norm"]))+"_word rdf:type cunei:Word.\n")
-                    ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["norm"]))+"_word lemon:form "+str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_form .\n")
+                    ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["norm"]))+"_word lemon:form "+str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform .\n")
                     ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["norm"]))+"_word rdfs:label \"Word: "+replaceNonURIChars(str(lineitem["f"]["norm"]))+"\" .\n")
                 else:
                     ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word rdf:type cunei:Word.\n")
-                    ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word lemon:form "+str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_form .\n")
+                    ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word lemon:form "+str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform .\n")
                     ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word rdfs:label \"Word: "+replaceNonURIChars(str(lineitem["f"]["form"]))+"\" .\n")
                 if "pos" in lineitem["f"]:
                     ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word <http://lexinfo.net/ontology/2.0/lexinfo#partOfSpeech> \""+str(lineitem["f"]["pos"])+"\".\n")
@@ -88,21 +99,21 @@ def handleLineElements(data,ttlresult,currentside,currentsentence,currenttableti
                     ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word lemon:sense "+str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word_sense .\n")
                     ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word_sense rdf:type lemon:Sense .\n")
                     ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word_sense rdfs:label \"WordSense: "+str(lineitem["f"]["sense"])+" ("+str(lineitem["f"]["form"])+")\" .\n")
-                ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_form rdf:type cunei:WordForm .\n")
-                ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_form lemon:writtenRep \""+str(lineitem["f"]["form"])+"\" .\n")
-                ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_form rdfs:label \"WordForm: "+str(lineitem["f"]["form"])+"\" .\n")
-                ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_form cunei:isAttested "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_word .\n")
-                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+" cunei:consistsOf "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_word .\n")
-                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_word rdfs:label \""+str(lineitem["f"]["form"])+" ("+str(currenttabletid)+"["+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"])\" .\n")
-                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_word lemon:writtenRep \""+str(lineitem["f"]["form"])+"\" .\n")
-                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_word lemon:writtenRepUnicode \""+str(cuneifyWord(str(lineitem["f"]["form"])))+"\" .\n")
-                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_word lemon:writtenRepASCII \""+str(format_ascii(str(lineitem["f"]["form"])))+"\" .\n")
-                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_word cunei:Line \""+str(currentline)+"\"^^xsd:integer .\n")
-                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_word cunei:locatedIn  "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+".\n")
+                ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform rdf:type cunei:WordForm .\n")
+                ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform lemon:writtenRep \""+str(lineitem["f"]["form"])+"\" .\n")
+                ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform rdfs:label \"WordForm: "+str(lineitem["f"]["form"])+"\" .\n")
+                ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform lemon:writtenRep \""+str(lineitem["f"]["form"])+"\" .\n")
+                ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform lemon:writtenRepUnicode \""+str(cuneifyWord(str(lineitem["f"]["form"]),str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_wordformocc",ttlresult))+"\" .\n")
+                ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform lemon:writtenRepASCII \""+str(format_ascii(str(lineitem["f"]["form"])))+"\" .\n")
+                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_wordformocc cunei:Line \""+str(currentline)+"\"^^xsd:integer .\n")
+                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_wordformocc cunei:locatedIn  "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+".\n")
+                ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform cunei:isAttested "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_wordformocc .\n")
+                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+" cunei:consistsOf "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_wordformocc .\n")
+                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_wordformocc rdfs:label \" WordForm Occurrence: "+str(lineitem["f"]["form"])+" ("+str(currenttabletid)+"["+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"])\" .\n")
                 if currentwordindex>0:
-                    ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_word cunei:prevWord "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex-1)+"_word .\n")
+                    ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_wordformocc cunei:prevWord "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex-1)+"_wordformocc .\n")
                 if currentwordindex<=len(data["cdl"]):
-                    ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_word cunei:nextWord "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex+1)+"_word .\n")              
+                    ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_wordformocc cunei:nextWord "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex+1)+"_wordformocc .\n")              
                 currentwordindex+=1
                 currentrelcharindex=0
                 if "gdl" in lineitem["f"]:
@@ -113,9 +124,9 @@ def handleLineElements(data,ttlresult,currentside,currentsentence,currenttableti
                                 ttlresult.add("cunei:Akk lemon:language \"Akkadian\" .\n")  
                                 ttlresult.add("cunei:Akk lemon:entry "+str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word .\n")                                
                         if "v" in charr:
-                            ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(charr["v"]))+"_char rdf:type cunei:Char .\n")
-                            ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(charr["v"]))+"_char rdfs:label \"Char: "+str(charr["v"])+"\" .\n")
-                            ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(charr["v"]))+"_char lemon:form "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_char .\n")
+                            ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(charr["v"]))+"_character rdf:type cunei:Grapheme .\n")
+                            ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(charr["v"]))+"_character rdfs:label \"Character: "+str(charr["v"])+"\" .\n")
+                            ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(charr["v"]))+"_character lemon:form "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_char .\n")
                             ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_glyph rdf:type cidoc:TX9_Glyph .\n")
                             if "break" in charr and "damaged" in charr["break"]:
                                 ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_glyph cunei:isDamaged \"true\"^^xsd:boolean .\n")
@@ -125,25 +136,25 @@ def handleLineElements(data,ttlresult,currentside,currentsentence,currenttableti
                             ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_glyph rdfs:label \"Glyph at "+str(currenttabletid)+"["+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"])\" .\n")
                             ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_glyph <http://www.cidoc-crm.org/cidoc-crm/P56_isFoundOn> "+namespaceshort+":"+currenttabletid+" .\n")
                             ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_glyph <http://www.cidoc-crm.org/cidoc-crm/P138_represents> "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_char .\n")
-                            ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_word cunei:consistsOf "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_char .\n")
-                            ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_char rdf:type cunei:CharForm .\n")
-                            ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_char rdfs:label \"CharForm: "+str(charr["v"])+" ("+str(currenttabletid)+"["+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"])\" .\n")
-                            ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_char lemon:writtenRep \""+str(charr["v"])+"\" .\n")
-                            ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_char lemon:writtenRepUnicode \""+str(cuneifyWord(str(charr["v"])))+"\" .\n")
-                            ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_char lemon:writtenRepASCII \""+str(format_ascii(str(charr["v"])))+"\" .\n")
-                            ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_char cunei:partOf "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_word .\n")
-                            ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_char cunei:positionOnTabletSide \""+str(currentcharindex)+"\"^^xsd:integer .\n")
-                            ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_char cunei:Line \""+str(currentline)+"\"^^xsd:integer .\n")
-                            ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_char cunei:positionInWord \""+str(currentrelcharindex)+"\"^^xsd:integer .\n")
+                            ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_wordform cunei:consistsOf "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_char .\n")
+                            ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_charocc rdf:type cunei:TransliterationCharOccurrence .\n")
+                            ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_charocc rdfs:label \"Char Occurrence: "+str(charr["v"])+" ("+str(currenttabletid)+"["+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"])\" .\n")
+                            ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_charocc lemon:writtenRep \""+str(charr["v"])+"\" .\n")
+                            ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_charocc lemon:writtenRepUnicode \""+str(cuneifyWord(str(charr["v"]),str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_charocc",ttlresult))+"\" .\n")
+                            ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_charocc lemon:writtenRepASCII \""+str(format_ascii(str(charr["v"])))+"\" .\n")
+                            ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_charocc cunei:partOf "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_wordformocc .\n")
+                            ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_charocc cunei:positionOnTabletSide \""+str(currentcharindex)+"\"^^xsd:integer .\n")
+                            ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_charocc cunei:Line \""+str(currentline)+"\"^^xsd:integer .\n")
+                            ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_charocc cunei:positionInWord \""+str(currentrelcharindex)+"\"^^xsd:integer .\n")
                             if currentcharindex>0:
-                                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_char cunei:prevInWord "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex-1)+"_char .\n")
+                                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_charocc cunei:prevInWord "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex-1)+"_char .\n")
                                 ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_glyph cunei:prevInWord "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex-1)+"_glyph .\n")
-                                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_char cunei:prev "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex-1)+"_char .\n")
+                                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_charocc cunei:prev "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex-1)+"_char .\n")
                                 ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_glyph cunei:prev "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex-1)+"_glyph .\n")
                             if currentrelcharindex<=len(lineitem["f"]["gdl"]):
-                                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_char cunei:next "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex+1)+"_char .\n")
+                                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_charocc cunei:next "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex+1)+"_char .\n")
                                 ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_glyph cunei:next "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex+1)+"_glyph .\n")
-                                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_char cunei:nextInWord "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex+1)+"_char .\n")
+                                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_charocc cunei:nextInWord "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex+1)+"_char .\n")
                                 ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_glyph cunei:nextInWord "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex+1)+"_glyph .\n")
                             currentcharindex+=1
                             currentrelcharindex+=1
@@ -218,7 +229,7 @@ def analyzeTablet(data,ttlresult):
                                         
     return ttlresult
     
-header="""@prefix xsd:<http://www.w3.org/2001/XMLSchema#> .\n@prefix cunei:<http://www.example.org/cunei/> .\n@prefix cuneidict:<http://www.example.org/cuneiform/dict/> .\n@prefix cidoc:<http://www.cidoc-crm.org/cidoc-crm/> .\n@prefix owl:<http://www.w3.org/2002/07/owl#> .\n@prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#> .\n@prefix lemon:<http://lemon-model.net/lemon#> .\n"""
+header="""@prefix xsd:<http://www.w3.org/2001/XMLSchema#> .\n@prefix graphemon:<http://purl.org/graphemon/> .\n@prefix cunei:<http://www.example.org/cunei/> .\n@prefix cuneidict:<http://www.example.org/cuneiform/dict/> .\n@prefix cidoc:<http://www.cidoc-crm.org/cidoc-crm/> .\n@prefix owl:<http://www.w3.org/2002/07/owl#> .\n@prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#> .\n@prefix lemon:<http://lemon-model.net/lemon#> .\n"""
 ontology="""cunei:isDamaged rdf:type owl:DatatypeProperty .\n<http://lexinfo.net/ontology/2.0/lexinfo#partOfSpeech> rdf:type owl:ObjectProperty .\ncunei:hasLine rdf:type owl:ObjectProperty.\ncidoc:P56_found_on rdf:type owl:ObjectProperty.\ncidoc:TXP10_read_by rdf:type owl:ObjectProperty.\ncidoc:TXP3_is_rendered_by rdf:type owl:ObjectProperty .\ncunei:writtenText rdf:type owl:ObjectProperty .\ncunei:hasSide rdf:type owl:ObjectProperty .\ncunei:partOf rdf:type owl:ObjectProperty .\ncunei:next rdf:type owl:ObjectProperty .\ncunei:prevLine rdf:type owl:ObjectProperty .\ncunei:nextLine rdf:type owl:ObjectProperty .\ncunei:prevSentence rdf:type owl:ObjectProperty .\ncunei:nextSentence rdf:type owl:ObjectProperty .\ncunei:nextWord rdf:type owl:ObjectProperty .\ncunei:consistsOf rdf:type owl:ObjectProperty .\ncunei:prevWord rdf:type owl:ObjectProperty .\ncunei:prevInWord rdf:type owl:ObjectProperty .\ncunei:nextInWord rdf:type owl:ObjectProperty .\ncunei:prev rdf:type owl:ObjectProperty .\nlemon:sense rdf:type owl:ObjectProperty .\nlemon:pos rdf:type owl:ObjectProperty .\nlemon:entry rdf:type owl:ObjectProperty .\nlemon:writtenRepUnicode rdf:type owl:DatatypeProperty .\n lemon:writtenRepASCII rdf:type owl:DatatypeProperty .\n<http://www.cidoc-crm.org/cidoc-crm/TXP8_is_component_of> rdf:type owl:ObjectProperty .<http://www.cidoc-crm.org/cidoc-crm/P56_isFoundOn> rdf:type owl:ObjectProperty .\n<http://www.cidoc-crm.org/cidoc-crm/P138_represents> rdf:type owl:ObjectProperty .\n lemon:writtenRep rdf:type owl:DatatypeProperty .\ncunei:positionOnTabletSide rdf:type owl:DatatypeProperty .\ncunei:locatedIn rdf:type owl:ObjectProperty .\nlemon:form rdf:type owl:ObjectProperty .\ncunei:positionInWord rdf:type owl:DatatypeProperty .\ncunei:Line rdf:type owl:DatatypeProperty .\ncunei:isAttested rdf:type owl:ObjectProperty .\n"""
 
 corpusid="ccpo"
@@ -247,5 +258,8 @@ with open(corpusid+'.ttl', 'w', encoding='utf-8') as f:
   f.write(ontology)
   f.write("".join(sorted(list(dict.fromkeys(ttlresult)))))
   f.close()
+g = Graph()
+g.parse(corpusid+'.ttl')
+g.serialize(destination=corpusid+'.ttl')
 
 
