@@ -375,7 +375,10 @@ def convertToRDF(cuneiformsigndict,nuolenna,aasigndict,rdfset):
             rdfset.add("<"+str(signuri)+"> graphemon:abzl \""+str(entry["abzl"]).replace("\"","")+"\" .\n ")
         rdfset.add("<"+str(signuri)+"> graphemon:unicodeCodepoint \""+str(entry["unicode"]).replace("\"","")+"\" .\n ")
         rdfset.add("<"+str(signuri)+"> graphemon:unicodeRepresentation \""+str(entry["unicodename"]).replace("\"","")+"\" .\n ")
-        unicodeToURI[entry["unicodename"]]={"uri":str(signuri),"signname":toASCII(str(entry["signname"])).replace("\"","")}
+        if "unicodename" in entry and len(entry["unicodename"])>1:
+            unicodeToURI[entry["unicodename"]]={"uri":str(signuri),"signname":toASCII(str(entry["signname"])).replace("\"",""),"type":"Character"}
+        else:
+            unicodeToURI[entry["unicodename"]]={"uri":str(signuri),"signname":toASCII(str(entry["signname"])).replace("\"",""),"type":"CharacterComposition"}
     #print(unicodeToURI)
     nuolennamatchcounter=0
     for item in nuolenna:

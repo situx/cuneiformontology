@@ -9,53 +9,75 @@ sensesmap={
     "flesh":"http://www.wikidata.org/entity/Q13119823",
     "throat":"http://www.wikidata.org/entity/Q16364",
     "country":"http://www.wikidata.org/entity/Q6256",
-    "goose":"https://www.wikidata.org/wiki/Q16529344",
-    "god":"https://www.wikidata.org/wiki/Q178885",
-    "goatfish":"https://www.wikidata.org/wiki/Q6604812",
-    "frog":"https://www.wikidata.org/wiki/Q3116510",
-    "fibre":"https://www.wikidata.org/wiki/Q161",
-    "fever":"https://www.wikidata.org/wiki/Q38933",
-    "fetter":"https://www.wikidata.org/wiki/Q1478548",
-    "father":"https://www.wikidata.org/wiki/Q7565",
-    "famine":"https://www.wikidata.org/wiki/Q168247",
-    "fainting":"https://www.wikidata.org/wiki/Q180007",
-    "evil":"https://www.wikidata.org/wiki/Q15292",
-    "Euphrates":"https://www.wikidata.org/wiki/Q34589",
-    "era":"https://www.wikidata.org/wiki/Q6428674",
-    "esteem":"https://www.wikidata.org/wiki/Q104602026",
-    "equipment":"https://www.wikidata.org/wiki/Q10273457",
-    "eponym":"https://www.wikidata.org/wiki/Q204335",
-    "dragon":"https://www.wikidata.org/wiki/Q7559",
-    "enemy":"https://www.wikidata.org/wiki/Q289891",
-    "employee":"https://www.wikidata.org/wiki/Q703534",
-    "ebony":"https://www.wikidata.org/wiki/Q156005",
-    "east":"https://www.wikidata.org/wiki/Q684",
-    "dusk":"https://www.wikidata.org/wiki/Q11288132",
-    "drum":"https://www.wikidata.org/wiki/Q11404",
+    "goose":"http://www.wikidata.org/entity/Q16529344",
+    "god":"http://www.wikidata.org/entity/Q178885",
+    "goatfish":"http://www.wikidata.org/entity/Q6604812",
+    "frog":"http://www.wikidata.org/entity/Q3116510",
+    "fibre":"http://www.wikidata.org/entity/Q161",
+    "fever":"http://www.wikidata.org/entity/Q38933",
+    "fetter":"http://www.wikidata.org/entity/Q1478548",
+    "father":"http://www.wikidata.org/entity/Q7565",
+    "arm":"https://www.wikidata.org/wiki/Q43471",
+    "appropriation":"https://www.wikidata.org/wiki/Q212468",
+    "army":"https://www.wikidata.org/wiki/Q8473",
+    "arousal":"https://www.wikidata.org/wiki/Q379784",
+    "arrow":"https://www.wikidata.org/wiki/Q45922",
+    "ashes":"https://www.wikidata.org/wiki/Q152079",
+    "attack":"https://www.wikidata.org/wiki/Q1174599",
+    "badger":"https://www.wikidata.org/wiki/Q638105",
+    "bandage":"https://www.wikidata.org/wiki/Q376724",
+    "bandit":"https://www.wikidata.org/wiki/Q16144978",
+    "basket":"https://www.wikidata.org/wiki/Q201097",
+    "bat":"https://www.wikidata.org/wiki/Q28425",
+    "battle cry":"https://www.wikidata.org/wiki/Q1433428",
+    "bedroom":"https://www.wikidata.org/wiki/Q193837",
+    "billy goat":"https://www.wikidata.org/wiki/Q2912137",
+    "bow":"https://www.wikidata.org/wiki/Q46311",
+    "pelican":"https://www.wikidata.org/wiki/Q19413",
+    "peace":"https://www.wikidata.org/wiki/Q454",
+    "penis":"https://www.wikidata.org/wiki/Q58",
+    "physiognomy":"https://www.wikidata.org/wiki/Q841933",
+    "pillage":"https://www.wikidata.org/wiki/Q19841484",
+    "planet":"https://www.wikidata.org/wiki/Q634",
+    "famine":"http://www.wikidata.org/entity/Q168247",
+    "fainting":"http://www.wikidata.org/entity/Q180007",
+    "evil":"http://www.wikidata.org/entity/Q15292",
+    "Euphrates":"http://www.wikidata.org/entity/Q34589",
+    "era":"http://www.wikidata.org/entity/Q6428674",
+    "esteem":"http://www.wikidata.org/entity/Q104602026",
+    "equipment":"http://www.wikidata.org/entity/Q10273457",
+    "eponym":"http://www.wikidata.org/entity/Q204335",
+    "dragon":"http://www.wikidata.org/entity/Q7559",
+    "enemy":"http://www.wikidata.org/entity/Q289891",
+    "employee":"http://www.wikidata.org/entity/Q703534",
+    "ebony":"http://www.wikidata.org/entity/Q156005",
+    "east":"http://www.wikidata.org/entity/Q684",
+    "dusk":"http://www.wikidata.org/entity/Q11288132",
+    "drum":"http://www.wikidata.org/entity/Q11404",
     "barley":"http://www.wikidata.org/entity/Q61665121",
     "raisin":"http://www.wikidata.org/entity/Q13186",
-    "seizure":"https://www.wikidata.org/wiki/Q6279182",
-    "scholar":"https://www.wikidata.org/wiki/Q2248623",
-    "saying":"https://www.wikidata.org/wiki/Q3026787",
-    "sailor":"https://www.wikidata.org/wiki/Q45199",
-    "saffron":"https://www.wikidata.org/wiki/Q25434",
-    "grain":"https://www.wikidata.org/wiki/Q2995529",
-    "sacrifice":"https://www.wikidata.org/wiki/Q179723",
-    "saliva":"https://www.wikidata.org/wiki/Q155925",
-    "roar":"https://www.wikidata.org/wiki/Q3177438",
-    "robber":"https://www.wikidata.org/wiki/Q10659189",
-    "voice":"https://www.wikidata.org/wiki/Q7390",
-    "vomit":"https://www.wikidata.org/wiki/Q127076",
-    "vinegar":"https://www.wikidata.org/wiki/Q41354",
-    "victory":"https://www.wikidata.org/wiki/Q50000",
-    "vein":"https://www.wikidata.org/wiki/Q9609",
-    "urine":"https://www.wikidata.org/wiki/Q40924",
-    "universe":"https://www.wikidata.org/wiki/Q1",
-    "undertaking":"https://www.wikidata.org/wiki/Q20921345",
-    "room":"https://www.wikidata.org/wiki/Q180516",
-    "seat":"https://www.wikidata.org/wiki/Q2207370",
-    "scribe":"https://www.wikidata.org/wiki/Q916292",
-    "scorpion":"https://www.wikidata.org/wiki/Q19125",
+    "seizure":"http://www.wikidata.org/entity/Q6279182",
+    "scholar":"http://www.wikidata.org/entity/Q2248623",
+    "saying":"http://www.wikidata.org/entity/Q3026787",
+    "sailor":"http://www.wikidata.org/entity/Q45199",
+    "saffron":"http://www.wikidata.org/entity/Q25434",
+    "grain":"http://www.wikidata.org/entity/Q2995529",
+    "sacrifice":"http://www.wikidata.org/entity/Q179723",
+    "saliva":"http://www.wikidata.org/entity/Q155925",
+    "roar":"http://www.wikidata.org/entity/Q3177438",
+    "robber":"http://www.wikidata.org/entity/Q10659189",
+    "voice":"http://www.wikidata.org/entity/Q7390",
+    "vomit":"http://www.wikidata.org/entity/Q127076",
+    "vinegar":"http://www.wikidata.org/entity/Q41354",
+    "victory":"http://www.wikidata.org/entity/Q50000",
+    "vein":"http://www.wikidata.org/entity/Q9609",
+    "urine":"http://www.wikidata.org/entity/Q40924",
+    "universe":"http://www.wikidata.org/entity/Q1",
+    "undertaking":"http://www.wikidata.org/entity/Q20921345",
+    "room":"http://www.wikidata.org/entity/Q180516",
+    "seat":"http://www.wikidata.org/entity/Q2207370",
+    "scribe":"http://www.wikidata.org/entity/Q916292",
+    "scorpion":"http://www.wikidata.org/entity/Q19125",
     "wing":"http://www.wikidata.org/entity/Q161358",
     "branch":"http://www.wikidata.org/entity/Q2923673",
     "water":"http://www.wikidata.org/entity/Q283",
@@ -166,6 +188,97 @@ sensesmap={
     "weapon":"http://www.wikidata.org/entity/Q728",
     "honey":"http://www.wikidata.org/entity/Q10987",
     "gentleman":"http://www.wikidata.org/entity/Q749212",
+    "similarity":"http://www.wikidata.org/entity/Q105227892",
+    "silver":"http://www.wikidata.org/entity/Q1090",
+    "silence":"http://www.wikidata.org/entity/Q502261",
+    "gazelle":"http://www.wikidata.org/entity/Q29001815",
+    "gathering":"http://www.wikidata.org/entity/Q108634029",
+    "garlic":"http://www.wikidata.org/entity/Q23400",
+    "furrow":"http://www.wikidata.org/entity/Q1474839",
+    "gall bladder":"http://www.wikidata.org/entity/Q64386",
+    "fringe":"http://www.wikidata.org/entity/Q1353860",
+    "emmer":"http://www.wikidata.org/entity/Q167339",
+    "effigy":"http://www.wikidata.org/entity/Q20899864",
+    "ear":"http://www.wikidata.org/entity/Q7362",
+    "duststorm":"http://www.wikidata.org/entity/Q182878",
+    "dropsy":"http://www.wikidata.org/entity/Q152234",
+    "dog":"http://www.wikidata.org/entity/Q144",
+    "dignity":"http://www.wikidata.org/entity/Q274782",
+    "diarrhoea":"http://www.wikidata.org/entity/Q40878",
+    "desecendant":"http://www.wikidata.org/entity/Q183905",
+    "forehead":"http://www.wikidata.org/entity/Q41055",
+    "foam":"http://www.wikidata.org/entity/Q215414",
+    "flower":"http://www.wikidata.org/entity/Q506",
+    "flute":"http://www.wikidata.org/entity/Q11405",
+    "fly":"http://www.wikidata.org/entity/Q859257",
+    "flood":"http://www.wikidata.org/entity/Q8068",
+    "flock":"http://www.wikidata.org/entity/Q120997",
+    "flint":"http://www.wikidata.org/entity/Q83087",
+    "finger":"http://www.wikidata.org/entity/Q620207",
+    "field":"http://www.wikidata.org/entity/Q188869",
+    "fennel":"http://www.wikidata.org/entity/Q43511",
+    "fatherhood":"http://www.wikidata.org/entity/Q4540608",
+    "fate":"http://www.wikidata.org/entity/Q216774",
+    "family":"http://www.wikidata.org/entity/Q8436",
+    "falsehood":"http://www.wikidata.org/entity/Q17949",
+    "fabric":"http://www.wikidata.org/entity/Q28823",
+    "expert":"http://www.wikidata.org/entity/Q381160",
+    "extent":"http://www.wikidata.org/entity/Q28733284",
+    "excrement":"http://www.wikidata.org/entity/Q496",
+    "evening":"http://www.wikidata.org/entity/Q7725",
+    "epidemic":"http://www.wikidata.org/entity/Q44512",
+    "enmity":"http://www.wikidata.org/entity/Q5275945",
+    "sieve":"http://www.wikidata.org/entity/Q381155",
+    "shout":"http://www.wikidata.org/entity/Q1932016",
+    "shoulder":"http://www.wikidata.org/entity/Q16363",
+    "shortfall":"http://www.wikidata.org/entity/Q2184645",
+    "shepherd":"http://www.wikidata.org/entity/Q81710",
+    "poverty":"http://www.wikidata.org/entity/Q10294",
+    "potash":"http://www.wikidata.org/entity/Q10564271",
+    "possessor":"http://www.wikidata.org/entity/Q16869121",
+    "poplar":"http://www.wikidata.org/entity/Q30456678",
+    "poison":"http://www.wikidata.org/entity/Q40867",
+    "plum":"http://www.wikidata.org/entity/Q12372598",
+    "plant":"http://www.wikidata.org/entity/Q756",
+    "pine cone":"http://www.wikidata.org/entity/Q22710",
+    "pig":"http://www.wikidata.org/entity/Q787",
+    "physician":"http://www.wikidata.org/entity/Q39631",
+    "persecution":"http://www.wikidata.org/entity/Q851824",
+    "spleen":"http://www.wikidata.org/entity/Q9371",
+    "spider":"http://www.wikidata.org/entity/Q1357",
+    "speech":"http://www.wikidata.org/entity/Q52946",
+    "sow":"http://www.wikidata.org/entity/Q25929307",
+    "south":"http://www.wikidata.org/entity/Q667",
+    "sorrow":"http://www.wikidata.org/entity/Q2809148",
+    "sorcery":"http://www.wikidata.org/entity/Q9198102",
+    "goddess":"http://www.wikidata.org/entity/Q178885",
+    "girl":"http://www.wikidata.org/entity/Q3031",
+    "gift":"http://www.wikidata.org/entity/Q184303",
+    "ghost":"http://www.wikidata.org/entity/Q45529",
+    "phlegm":"http://www.wikidata.org/entity/Q3746560",
+    "perforation":"http://www.wikidata.org/entity/Q1508510",
+    "shelter":"http://www.wikidata.org/entity/Q7493941",
+    "shade":"http://www.wikidata.org/entity/Q1062554",
+    "seller":"http://www.wikidata.org/entity/Q685433",
+    "seaweed":"http://www.wikidata.org/entity/Q237169",
+    "Saturn":"http://www.wikidata.org/entity/Q193",
+    "saltpetre":"http://www.wikidata.org/entity/Q177836",
+    "ruler":"http://www.wikidata.org/entity/Q1097498",
+    "root":"http://www.wikidata.org/entity/Q41500",
+    "river":"http://www.wikidata.org/entity/Q4022",
+    "rival":"http://www.wikidata.org/entity/Q64025582",
+    "rite":"http://www.wikidata.org/entity/Q628455",
+    "rib":"http://www.wikidata.org/entity/Q196672",
+    "revolt":"http://www.wikidata.org/entity/Q6107280",
+    "retreat":"http://www.wikidata.org/entity/Q1760704",
+    "rebellion":"http://www.wikidata.org/entity/Q124734",
+    "rear":"http://www.wikidata.org/entity/Q68345931",
+    "ram":"http://www.wikidata.org/entity/Q7368",
+    "rainbow":"http://www.wikidata.org/entity/Q1052",
+    "rain":"http://www.wikidata.org/entity/Q7925",
+    "radiance":"http://www.wikidata.org/entity/Q1411145",
+    "profit":"http://www.wikidata.org/entity/Q2112073",
+    "prayer":"http://www.wikidata.org/entity/Q40953",
     "corpse":"http://www.wikidata.org/entity/Q48422",
     "quarrel":"http://www.wikidata.org/entity/Q891691",
     "female":"http://www.wikidata.org/entity/Q6581072",
@@ -228,7 +341,7 @@ sensesmap={
     "magazine":"http://www.wikidata.org/entity/Q148958",
     "wine":"http://www.wikidata.org/entity/Q282",
     "dagger":"http://www.wikidata.org/entity/Q182780",
-    "statue":"https://www.wikidata.org/wiki/Q179700",
+    "statue":"http://www.wikidata.org/entity/Q179700",
     "knife":"http://www.wikidata.org/entity/Q324892",
     "foot":"http://www.wikidata.org/entity/Q15807",
     "path":"http://www.wikidata.org/entity/Q5004679",
@@ -262,7 +375,7 @@ sensesmap={
     "flour":"http://www.wikidata.org/entity/Q36465",
     "deer":"http://www.wikidata.org/entity/Q23390",
     "calf":"http://www.wikidata.org/entity/Q2935",
-    "brother":"http://www.wikidata.org/entity/Q10861465",  
+    "brother":"http://www.wikidata.org/entity/Q10861465",
     "1":"http://www.wikidata.org/entity/Q199",
     "2":"http://www.wikidata.org/entity/Q200",
     "3":"http://www.wikidata.org/entity/Q201",
@@ -380,10 +493,12 @@ sensesmap={
 
 ttlresult=set()
 ttlresult.add("cunei:Tablet rdf:type owl:Class .\n <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> rdf:type owl:Class . lemon:Sense rdf:type owl:Class .\n <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> rdfs:label \"Glyph\"@en .\n")
-namespace="http://www.example.org/cuneiform"
-namespacedict="http://www.example.org/cuneiform/dict/"
+namespace="http://purl.org/cuneiform"
+namespacedict="http://purl.org/cuneiform/dict/"
+namespacesignlist="http://purl.org/cuneiform/signlist/"
 namespaceshort="cunei"
 namespaceshortdict="cuneidict"
+namespaceshortsignlist="cuneisignlist"
 currentproject=""
 currenttabletid=""
 currenttableturi=""
@@ -396,26 +511,31 @@ with open("signmapping.json",encoding='utf-8') as f:
     signmapping = json.load(f)
 
 def replaceNonURIChars(myuri):
-    return myuri.replace("$","_").replace("{","_").replace("}","_").replace("̌","_").replace(";","_").replace("̄","_").replace("ʾ","_").replace("̆","_").replace(",","_").replace("'","_").replace("/","_").replace("+","_").replace("(","_").replace(")","_").replace("|","_").replace("@","_").replace("×","_").replace("&","_").replace("+","_").replace(".","_")
+    res=myuri.replace("$","_").replace("{","_").replace("}","_").replace("̌","_").replace(";","_").replace("̄","_").replace("ʾ","_").replace("̆","_").replace(",","_").replace("'","_").replace("/","_").replace("+","_").replace("(","_").replace(")","_").replace("|","_").replace("@","_").replace("×","_").replace("&","_").replace("+","_").replace(".","_")
+    if res.startswith("_"):
+        res=res[1:]
+    if res.endswith("_"):
+        res=res[0:-1]
+    return res
 
 def format_ascii(word):
     ascii_replacements = {
         'Á' : 'A2','À' : 'A3',
         'á' : 'a2','à' : 'a3',
         'É' : 'E2','È' : 'E3',
-        'é' : 'e2','è' : 'e3', 
+        'é' : 'e2','è' : 'e3',
         'Í' : 'I2','Ì' : 'I3',
-        'í' : 'i2','ì' : 'i3', 
+        'í' : 'i2','ì' : 'i3',
         'Ú' : 'U2','Ù' : 'U3',
-        'ú' : 'u2','ù' : 'u3', 
+        'ú' : 'u2','ù' : 'u3',
         'Ṭ' : 'T,', 'j' : 'i',
         'ĝ' : 'g', 'ṭ' : 't,',
         'ḫ' : 'h', 'Ḫ' : 'H',
         'š' : 'sz', 'Š' : 'SZ',
         'ṣ' : 's,', 'Ṣ' : 'S,',
-        '₀' : '0', '₁' : '1',    
-        '₂' : '2', '₃' : '3', 
-        '₄' : '4', '₅' : '5', 
+        '₀' : '0', '₁' : '1',
+        '₂' : '2', '₃' : '3',
+        '₄' : '4', '₅' : '5',
         '₆' : '6', '₇' : '7',
         '₈' : '8', '₉' : '9'}
     for rep, initial in ascii_replacements.items():
@@ -426,11 +546,19 @@ def format_ascii(word):
 def cuneifyWord(word,worduri,ttlresult):
     if word in cuneify:
         unicodeword=cuneify[word]
+        chars=word.split("-")
+        counter=0
         for chara in unicodeword:
             if chara in signmapping:
                 ttlresult.add(""+str(worduri)+" cunei:contains <"+str(signmapping[chara]["uri"])+"> .\n")
                 ttlresult.add("<"+str(signmapping[chara]["uri"])+"> rdf:type graphemon:Grapheme . \n")
                 ttlresult.add("<"+str(signmapping[chara]["uri"])+"> rdfs:label \"Character: "+str(signmapping[chara]["signname"])+"\" . \n")
+            if counter<len(chars):
+                ttlresult.add(str(worduri)+" graphemon:hasGraphemeReading <"+str(signmapping[chara]["uri"])+"_reading_"+str(chars[counter])+"> .\n")
+                ttlresult.add("<"+str(signmapping[chara]["uri"])+"_reading_"+str(chars[counter])+"> rdfs:label \"Grapheme Reading "+str(signmapping[chara]["signname"])+": "+str(chars[counter])+"\" .\n")
+                ttlresult.add("<"+str(signmapping[chara]["uri"])+"_reading_"+str(chars[counter])+"> rdf:type graphemon:GraphemeReading .\n")
+                ttlresult.add("<"+str(signmapping[chara]["uri"])+"> graphemon:hasGraphemeReading <"+str(signmapping[chara]["uri"])+"_reading_"+str(chars[counter])+"> .\n")
+            counter+=1
         return cuneify[word]
 
 def handleLineElements(data,ttlresult,currentside,currentsentence,currenttabletid):
@@ -475,7 +603,7 @@ def handleLineElements(data,ttlresult,currentside,currentsentence,currenttableti
                     ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word_sense rdf:type lemon:Sense .\n")
                     print(lineitem["f"]["sense"])
                     if str(lineitem["f"]["sense"]) in sensesmap:
-                        ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word_sense lemon:reference <"+str(sensesmap[str(lineitem["f"]["sense"])])+"> .\n") 
+                        ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word_sense lemon:reference <"+str(sensesmap[str(lineitem["f"]["sense"])])+"> .\n")
                         ttlresult.add("<"+str(sensesmap[str(lineitem["f"]["sense"])])+"> rdfs:label \"Wikidata: "+str(lineitem["f"]["sense"])+"\".\n")
                     ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word_sense rdfs:label \"WordSense: "+str(lineitem["f"]["sense"])+" ("+str(lineitem["f"]["form"])+")\" .\n")
                 ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform rdf:type cunei:WordForm .\n")
@@ -492,7 +620,7 @@ def handleLineElements(data,ttlresult,currentside,currentsentence,currenttableti
                 if currentwordindex>0:
                     ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_wordformocc cunei:prevWord "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex-1)+"_wordformocc .\n")
                 if currentwordindex<=len(data["cdl"]):
-                    ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_wordformocc cunei:nextWord "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex+1)+"_wordformocc .\n")              
+                    ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_wordformocc cunei:nextWord "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex+1)+"_wordformocc .\n")
                 currentwordindex+=1
                 currentrelcharindex=0
                 if "gdl" in lineitem["f"]:
@@ -500,12 +628,12 @@ def handleLineElements(data,ttlresult,currentside,currentsentence,currenttableti
                         if "lang" in lineitem["f"]:
                             if "akk" in lineitem["f"]["lang"]:
                                 ttlresult.add("cunei:Akk rdf:type lemon:Dictionary .\n")
-                                ttlresult.add("cunei:Akk lemon:language \"Akkadian\" .\n")  
-                                ttlresult.add("cunei:Akk lemon:entry "+str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word .\n")                                
+                                ttlresult.add("cunei:Akk lemon:language \"Akkadian\" .\n")
+                                ttlresult.add("cunei:Akk lemon:entry "+str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word .\n")
                         if "v" in charr:
-                            ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(charr["v"]))+"_character rdf:type graphemon:Grapheme .\n")
-                            ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(charr["v"]))+"_character rdfs:label \"Character: "+str(charr["v"])+"\" .\n")
-                            ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(charr["v"]))+"_character lemon:form "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_character .\n")
+                            #ttlresult.add(str(namespaceshortsignlist)+":character_"+replaceNonURIChars(str(charr["v"]))+" rdf:type graphemon:Grapheme .\n")
+                            #ttlresult.add(str(namespaceshortsignlist)+":character_"+replaceNonURIChars(str(charr["v"]))+" rdfs:label \"Character: "+str(charr["v"])+"\" .\n")
+                            #ttlresult.add(str(namespaceshortsignlist)+":character_"+replaceNonURIChars(str(charr["v"]))+"_reading_"+replaceNonURIChars(str(charr["v"]))+" graphemon:occurrence "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_character .\n")
                             ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_glyph rdf:type cidoc:TX9_Glyph .\n")
                             if "break" in charr and "damaged" in charr["break"]:
                                 ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_glyph cunei:isDamaged \"true\"^^xsd:boolean .\n")
@@ -605,32 +733,38 @@ def analyzeTablet(data,ttlresult):
                                 ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_sentence_"+str(currentsentence)+" rdfs:label \"Sentence "+str(currentsentence)+" on "+str(currenttabletid)+"\" .\n")
                                 ttlresult=handleLineElements(textitem,ttlresult,currentside,currentsentence,currenttabletid)
                                 currentsentence+=1
-                                        
+
     return ttlresult
-    
-header="""@prefix xsd:<http://www.w3.org/2001/XMLSchema#> .\n@prefix graphemon:<http://purl.org/graphemon/> .\n@prefix cunei:<http://www.example.org/cunei/> .\n@prefix cuneidict:<http://www.example.org/cuneiform/dict/> .\n@prefix cidoc:<http://www.cidoc-crm.org/cidoc-crm/> .\n@prefix owl:<http://www.w3.org/2002/07/owl#> .\n@prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#> .\n@prefix lemon:<http://lemon-model.net/lemon#> .\n"""
-ontology="""cunei:isDamaged rdf:type owl:DatatypeProperty .\n<http://lexinfo.net/ontology/2.0/lexinfo#partOfSpeech> rdf:type owl:ObjectProperty .\ncunei:hasLine rdf:type owl:ObjectProperty.\ncidoc:P56_found_on rdf:type owl:ObjectProperty.\ncidoc:TXP10_read_by rdf:type owl:ObjectProperty.\ncidoc:TXP3_is_rendered_by rdf:type owl:ObjectProperty .\ncunei:writtenText rdf:type owl:ObjectProperty .\ncunei:hasSide rdf:type owl:ObjectProperty .\ncunei:partOf rdf:type owl:ObjectProperty .\ncunei:next rdf:type owl:ObjectProperty .\ncunei:prevLine rdf:type owl:ObjectProperty .\ncunei:nextLine rdf:type owl:ObjectProperty .\ncunei:prevSentence rdf:type owl:ObjectProperty .\nlemon:reference rdf:type owl:ObjectProperty .\ncunei:nextSentence rdf:type owl:ObjectProperty .\ncunei:nextWord rdf:type owl:ObjectProperty .\ncunei:consistsOf rdf:type owl:ObjectProperty .\ncunei:prevWord rdf:type owl:ObjectProperty .\ncunei:prevInWord rdf:type owl:ObjectProperty .\ncunei:nextInWord rdf:type owl:ObjectProperty .\ncunei:prev rdf:type owl:ObjectProperty .\nlemon:sense rdf:type owl:ObjectProperty .\nlemon:pos rdf:type owl:ObjectProperty .\nlemon:entry rdf:type owl:ObjectProperty .\nlemon:writtenRepUnicode rdf:type owl:DatatypeProperty .\n lemon:writtenRepASCII rdf:type owl:DatatypeProperty .\n<http://www.cidoc-crm.org/cidoc-crm/TXP8_is_component_of> rdf:type owl:ObjectProperty .<http://www.cidoc-crm.org/cidoc-crm/P56_isFoundOn> rdf:type owl:ObjectProperty .\n<http://www.cidoc-crm.org/cidoc-crm/P138_represents> rdf:type owl:ObjectProperty .\n lemon:writtenRep rdf:type owl:DatatypeProperty .\ncunei:positionOnTabletSide rdf:type owl:DatatypeProperty .\ncunei:locatedIn rdf:type owl:ObjectProperty .\nlemon:form rdf:type owl:ObjectProperty .\ncunei:positionInWord rdf:type owl:DatatypeProperty .\ncunei:Line rdf:type owl:DatatypeProperty .\ncunei:isAttested rdf:type owl:ObjectProperty .\n"""
+
+header="""@prefix xsd:<http://www.w3.org/2001/XMLSchema#> .\n@prefix graphemon:<http://purl.org/graphemon/> .\n@prefix cunei:<http://purl.org/cuneiform/> .\n@prefix cuneidict:<http://purl.org/cuneiform/dict/> .\n@prefix cuneisignlist:<http://purl.org/cuneiform/signlist/> .\n@prefix cidoc:<http://www.cidoc-crm.org/cidoc-crm/> .\n@prefix owl:<http://www.w3.org/2002/07/owl#> .\n@prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#> .\n@prefix lemon:<http://lemon-model.net/lemon#> .\n"""
+ontology="""cunei:isDamaged rdf:type owl:DatatypeProperty .\ngraphemon:hasGraphemeReading rdf:type owl:ObjectProperty .\n<http://lexinfo.net/ontology/2.0/lexinfo#partOfSpeech> rdf:type owl:ObjectProperty .\ncunei:hasLine rdf:type owl:ObjectProperty.\ncidoc:P56_found_on rdf:type owl:ObjectProperty.\ncidoc:TXP10_read_by rdf:type owl:ObjectProperty.\ncidoc:TXP3_is_rendered_by rdf:type owl:ObjectProperty .\ncunei:writtenText rdf:type owl:ObjectProperty .\ncunei:hasSide rdf:type owl:ObjectProperty .\ncunei:partOf rdf:type owl:ObjectProperty .\ncunei:next rdf:type owl:ObjectProperty .\ncunei:prevLine rdf:type owl:ObjectProperty .\ncunei:nextLine rdf:type owl:ObjectProperty .\ncunei:prevSentence rdf:type owl:ObjectProperty .\nlemon:reference rdf:type owl:ObjectProperty .\ncunei:nextSentence rdf:type owl:ObjectProperty .\ncunei:nextWord rdf:type owl:ObjectProperty .\ncunei:consistsOf rdf:type owl:ObjectProperty .\ncunei:prevWord rdf:type owl:ObjectProperty .\ncunei:prevInWord rdf:type owl:ObjectProperty .\ncunei:nextInWord rdf:type owl:ObjectProperty .\ncunei:prev rdf:type owl:ObjectProperty .\nlemon:sense rdf:type owl:ObjectProperty .\nlemon:pos rdf:type owl:ObjectProperty .\nlemon:entry rdf:type owl:ObjectProperty .\nlemon:writtenRepUnicode rdf:type owl:DatatypeProperty .\n lemon:writtenRepASCII rdf:type owl:DatatypeProperty .\n<http://www.cidoc-crm.org/cidoc-crm/TXP8_is_component_of> rdf:type owl:ObjectProperty .<http://www.cidoc-crm.org/cidoc-crm/P56_isFoundOn> rdf:type owl:ObjectProperty .\n<http://www.cidoc-crm.org/cidoc-crm/P138_represents> rdf:type owl:ObjectProperty .\n lemon:writtenRep rdf:type owl:DatatypeProperty .\ncunei:positionOnTabletSide rdf:type owl:DatatypeProperty .\ncunei:locatedIn rdf:type owl:ObjectProperty .\nlemon:form rdf:type owl:ObjectProperty .\ncunei:positionInWord rdf:type owl:DatatypeProperty .\ncunei:Line rdf:type owl:DatatypeProperty .\ncunei:isAttested rdf:type owl:ObjectProperty .\n"""
 
 corpusid="ccpo"
 subdircorp=""
 if subdircorp!="":
     rootdir="cams-gkab/cams/gkab/corpusjson"
 else:
-    rootdir=str(corpusid)+"/"+str(corpusid)+"/corpusjson"
+    rootdir=str(corpusid)+"/corpusjson/"
 
+print(cuneify)
+print(rootdir)
+print(list(os.walk(rootdir)))
 counter=1
 for subdir, dirs, files in os.walk(rootdir):
+    print(subdir)
+    print(dirs)
+    print(files)
     if subdir==".":
         continue
     subdirs=str(subdir).replace(".\\","")
-    for file in files:
+    for filee in files:
         try:
-            with open(subdir+"/"+file,encoding='utf-8') as f:
+            with open(subdir+"/"+filee,encoding='utf-8') as f:
               data = json.load(f)
         except Exception as e:
-            print(e)      
+            print(e)
         ttlresult=analyzeTablet(data,ttlresult)
-
+print("ready")
 
 with open(corpusid+'.ttl', 'w', encoding='utf-8') as f:
   f.write(header)
