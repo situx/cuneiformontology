@@ -2,67 +2,177 @@ import json
 import os
 import rdflib
 from rdflib import Graph
+from rdflib import URIRef
 
-htmltemplate="""<html><head><title>{{title}}</title><style>* {
-    box-sizing: border-box;
-    font-family: "Avenir", "Helvetica", sans-serif;
+htmltemplate="""
+<div id="mySidenav" class="sidenav" style="overflow:auto;">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  GeoClasses: <input type="checkbox" id="geoclasses"/><br/>
+  Search:<input type="text" id="classsearch"><br/>
+  <div id="jstree"></div>
+</div>
+<html><head><title>{{title}}</title>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.1.1/themes/default/style.min.css" />
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="{{scriptfolderpath}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.9/jstree.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<script>
+  var baseurl={{baseurl}}
+  $( function() {
+    var availableTags = Object.keys(search)
+    $( "#search" ).autocomplete({
+      source: availableTags
+    });
+  } );
+
+function loadClasses(){
+	if($('#geoclasses').prop('checked')){
+		getAllClasses();
+	}else{
+		getClassHierarchy([]);
+	}
+}
+function openNav() {
+  document.getElementById("mySidenav").style.width = "400px";
 }
 
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+function followLink(){
+    rest=search[document.getElementById('search').value].replace(baseurl,"")
+    count=location.href.split("/").length-1
+    counter=0
+    while(counter<count){
+        rest="../"+rest
+        counter+=1
+    }  
+    location.href=rest
+}
+
+</script>
+<style>html { margin: 0; padding: 0; }
+body { font-family: sans-serif; font-size: 80%; margin: 0; padding: 1.2em 2em; }
+#rdficon { float: right; position: relative; top: -28px; }
+#header { border-bottom: 2px solid #696; margin: 0 0 1.2em; padding: 0 0 0.3em; }
+#footer { border-top: 2px solid #696; margin: 1.2em 0 0; padding: 0.3em 0 0; }
+#homelink { display: inline; }
+#homelink, #homelink a { color: #666; }
+#homelink a { font-weight: bold; text-decoration: none; }
+#homelink a:hover { color: red; text-decoration: underline; }
+h1 { display: inline; font-weight: normal; font-size: 200%; margin: 0; text-align: left; }
+h2 { font-weight: normal; font-size: 124%; margin: 1.2em 0 0.2em; }
+.page-resource-uri { font-size: 116%; margin: 0.2em 0; }
+.page-resource-uri a { color: #666; text-decoration: none; }
+.page-resource-uri a:hover { color: red; text-decoration: underline; }
+img { border: none; }
+table.description { border-collapse: collapse; clear: left; font-size: 100%; margin: 0 0 1em; width: 100%; }
+table.description th { background: white; text-align: left; }
+table.description td, table.description th { line-height: 1.2em; padding: 0.3em 0.5em; vertical-align: top; }
+table.description ul { margin: 0; padding-left: 1.4em; }
+table.description li { list-style-position: outside; list-style-type: square; margin-left: 0; padding-left: 0; }
+table.description .property-column { width: 13em; }
+.ui-autocomplete {
+    max-height: 100px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+  }
+.uri { white-space: nowrap; }
+.uri a, a.uri { text-decoration: none; }
+.unbound { color: #888; }
+table.description a small, .metadata-table a small  { font-size: 100%; color: #55a; }
+table.description small, .metadata-table a small  { font-size: 100%; color: #666; }
+table.description .property { white-space: nowrap; padding-right: 1.5em; }
+h1, h2 { color: #810; }
+body { background: #cec; }
+table.description .container > td { background: #c0e2c0; padding: 0.2em 0.8em; }
+table.description .even td { background: #d4f6d4; }
+table.description .odd td { background: #f0fcf0; }
+.image { background: white; float: left; margin: 0 1.5em 1.5em 0; padding: 2px; }
+a.expander { text-decoration: none; }
+
+.metadata-label {
+	font-size: 100%;
+	background: #f0fcf0;
+	padding: 3px;
+}
+
+.metadata-table {
+	font-size: 100%;
+	border-left: 3px solid #f0fcf0;
+	border-bottom: 3px solid #f0fcf0;
+	border-right: 3px solid #f0fcf0;
+	background: #d4f6d4;
+	border-top: 0px solid none;
+	margin: 0px;
+}
+
+.metadata-table td {
+	padding: 3px;
+}
 body {
-    background-color: #f9f9f9;
+  font-family: "Lato", sans-serif;
 }
 
-/* Default table styles for this demo */
-table {
-    border-collapse: collapse;
-    text-align: left;
-    width: 100%;
-}
-table tr {
-    background: white;
-    border-bottom: 1px solid
-}
-table th, table td {
-    padding: 10px 20px;
-}
-table td span {
-    background: #eee;
-    color: dimgrey;
-    display: none;
-    font-size: 10px;
-    font-weight: bold;
-    padding: 5px;
-    position: absolute;
-    text-transform: uppercase;
-    top: 0;
-    left: 0;
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #FFF;
+  overflow-x: hidden;
+  transition: 0.5s;
 }
 
-/* Simple CSS for flexbox table on mobile */
-@media(max-width: 800px) {
-    table thead {
-        left: -9999px;
-        position: absolute;
-        visibility: hidden;
-    }
-    table tr {
-        border-bottom: 0;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-bottom: 40px;
-    }
-    table td {
-        border: 1px solid;
-        margin: 0 -1px -1px 0;
-        padding-top: 35px;
-        position: relative;
-        width: 50%;
-    }
-    table td span {
-        display: block;
-    }
-}</style></head><body><h1 align=center>{{title}}</h1><p>{{description}}</p><table border=1 width=100%><tr><th>Property</th><th>Value</th></tr>{{tablecontent}}</table></body></html>"""
+.sidenav a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #818181;
+  transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#jstree {
+	font-size: 12px;
+	background-color:white;
+	z-index: 2;
+}
+
+.jstree-contextmenu {
+z-index: 10;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style></head><body>    <div id="header">
+        <h1 id="title">{{title}}</h1></div> <div class="page-resource-uri"><a href="https://digits.mainzed.org/geopubby/">https://digits.mainzed.org/geopubby/</a> <b>powered by <a href="https://github.com/i3mainz/geopubby" title="GeoPubby Static" target="_blank">GeoPubby Static<img src="https://digits.mainzed.org/geopubby/static/geopubby_logo.png" alt="GeoPubby" /></a></b></div>
+      </div><div id="rdficon"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div> <div class="search">
+    <div class="ui-widget">Search: <input id="search" size="50"><button id="gotosearch" onclick="followLink()">Go</button></div>
+</div>
+<div class="container-fluid">
+<div class="row-fluid" id="main-wrapper">
+<p>{{description}}</p><table border=1 width=100% class=description><tr><th>Property</th><th>Value</th></tr>{{tablecontent}}</table>    <div id="footer">
+     <div class="container-fluid">
+</div></div></body></html>"""
+
+
 
 jtfcontext={
 	  "cunei": "http://www.purl.org/cuneiform/",
@@ -114,6 +224,7 @@ ttlresult=set()
 ttldictresult=set()
 ttlsignlistresult=set()
 labeltouri={}
+prefixes={}
 ttlresult.add("cunei:Tablet rdf:type owl:Class .\n <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> rdf:type owl:Class . lemon:Sense rdf:type owl:Class .\n <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> rdfs:label \"Glyph\"@en .\n")
 namespace="http://purl.org/cuneiform/"
 namespacedict="http://purl.org/cuneiform/dict/"
@@ -134,25 +245,174 @@ with open("signmapping.json",encoding='utf-8') as f:
     
 with open('oraccsenses.json', encoding="utf-8") as f:
     sensesmap = json.load(f)
+    
+with open('prefixes.json', encoding="utf-8") as f:
+    prefixes = json.load(f)
 
-def createHTML(savepath,predobjs,subject):
+def getClassTree(graph):
+    classquery="PREFIX owl: <http://www.w3.org/2002/07/owl#>\n"
+    +"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n"
+    +"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n"
+    +"SELECT DISTINCT ?subject ?label ?supertype\n"
+    +"WHERE {\n"
+    +"   { ?individual rdf:type ?subject . } UNION { ?subject rdf:type owl:Class . } .\n"
+    +"   OPTIONAL { ?subject rdfs:subClassOf ?supertype } .\n"
+    +"   OPTIONAL { ?subject rdfs:label ?label. filter(langMatches(lang(?label),\"en\")) }"
+    +"   OPTIONAL { ?subject rdfs:label ?label }.\n"
+    +"    FILTER (\n"
+    +"        (\n"
+    +"        ?subject != owl:Class &&\n"
+    +"        ?subject != rdf:List &&\n"
+    +"        ?subject != rdf:Property &&\n"
+    +"        ?subject != rdfs:Class &&\n"
+    +"        ?subject != rdfs:Datatype &&\n"
+    +"        ?subject != rdfs:ContainerMembershipProperty &&\n"
+    +"        ?subject != owl:DatatypeProperty &&\n"
+    +"        ?subject != owl:AnnotationProperty &&\n"
+    +"        ?subject != owl:Restriction &&\n"
+    +"        ?subject != owl:ObjectProperty &&\n"
+    +"        ?subject != owl:NamedIndividual &&\n"
+    +"        ?subject != owl:Ontology) )\n"
+    +"}"
+    results = g.query(classquery)
+    result=[]
+    result.append({ "id" : "http://www.w3.org/2002/07/owl#Thing", "icon" : "static/icons/class.png","parent" : "#", "type":"class", "text" : "owl:Thing" })
+    ress={}
+    classeswithinstances={}
+    for res in results:
+        print(res)
+        if "_:" not in results[res]["subject"].includes("_:") and results[res]["subject"].startsWith("http"):
+            print("")
+            #ress[results[res]["subject"]]={"super":(("supertype" in results[res] and results[res]["supertype"]!=None and "_:" not in results[res]["supertype"] and results[res]["supertype"].startsWith("http"))?results[res]["supertype"]:"http://www.w3.org/2002/07/owl#Thing"),"count":"","type":"class","label":(results[res]["label"]!=null?results[res]["label"]:"")}#results[res]["indidivualc"]
+        #if results[res]["supertype"]!=None and !(results[res]["supertype"] in classeswithinstances) and !(results[res]["supertype"].includes("_:")) and results[res]["supertype"].startsWith("http") ){
+        #    classeswithinstances[results[res]["supertype"]]=True
+    superMap={}
+    for clss in ress:
+        if cls in ress and "super" in ress[cls]:
+            superMap[ress[cls]["super"]]=True
+    for cls in superMap:
+        if cls not in clsMap:
+                result.append({ "id" : cls, "parent" : "#", 
+                "type":"class",
+                "icon" : baseurl+"static/icons/class.png", 
+            "text" : cls })
+    print(result)
+
+def replaceNameSpacesInLabel(uri):
+    for ns in prefixes["reversed"]:
+        if ns in uri:
+            return {"uri":str(prefixes["reversed"][ns])+":"+str(uri.replace(ns,prefixes["reversed"][ns])),"ns":prefixes["reversed"][ns]}
+    return None
+
+def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename):
     tablecontents=""
+    isodd=False
+    checkdepth=savepath.replace(baseurl,"").count("/")
+    foundlabel=""
     for tup in predobjs:
-        tablecontents+="<tr><td><a href=\""+str(tup[0])+"\">"+str(tup[0][tup[0].rfind('/')+1:])+"</a></td>"
+        if isodd:
+            tablecontents+="<tr class=\"odd\">"
+        else:
+            tablecontents+="<tr class=\"even\">"
+        if baseurl in tup[0]:
+            rellink=str(tup[0]).replace(baseurl,"")
+            for i in range(0,checkdepth):
+                rellink="../"+rellink
+            rellink+="/index.html"
+            tablecontents+="<td class=\"property\"><span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+rellink+"\">"+str(tup[0][tup[0].rfind('/')+1:])+"</a></span></td>"
+        else:
+            res=replaceNameSpacesInLabel(tup[1])
+            if res!=None:
+                tablecontents+="<td class=\"property\"><span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+str(tup[0])+"\">"+str(tup[0][tup[0].rfind('/')+1:])+" ("+res["uri"]+")</a></span></td>"                  
+            else:
+                tablecontents+="<td class=\"property\"><span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+str(tup[0])+"\">"+str(tup[0][tup[0].rfind('/')+1:])+"</a></span></td>"
+        if str(tup[0])=="http://www.w3.org/2000/01/rdf-schema#label":
+            foundlabel=tup[1]
         if len(tup)>0:
             if "http" in tup[1]:
-                tablecontents+="<td><a href=\""+str(tup[1])+"\">"+str(tup[1][tup[1].rfind('/')+1:])+"</a></td>"
+                if baseurl in tup[1]:
+                    rellink=str(tup[1]).replace(baseurl,"")
+                    for i in range(0,checkdepth):
+                        rellink="../"+rellink
+                    rellink+="/index.html"
+                    label=str(tup[1][tup[1].rfind('/')+1:])
+                    #print(str(subject)+",http://www.w3.org/2000/01/rdf-schema#label")
+                    for obj in graph.objects(tup[1],URIRef("http://www.w3.org/2000/01/rdf-schema#label")):
+                        label=str(obj)
+                        #print(obj)
+                    tablecontents+="<td class=\"wrapword\"><a href=\""+rellink+"\">"+label+" ("+namespaceshort+":"+str(str(tup[1][tup[1].rfind('/')+1:]))+")</a></td>"
+                else:
+                    res=replaceNameSpacesInLabel(tup[1])
+                    if res!=None:
+                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[1])+"\">"+str(tup[1][tup[1].rfind('/')+1:])+" ("+res["uri"]+")</a></td>"                  
+                    else:
+                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[1])+"\">"+str(tup[1][tup[1].rfind('/')+1:])+"</a></td>"
             else:
-                tablecontents+="<td>"+str(tup[1])+"</td>"
+                if tup[1].datatype!=None:
+                    tablecontents+="<td class=\"wrapword\">"+str(tup[1])+" <small>(<a style=\"color: #666;\" target=\"_blank\" href=\""+str(tup[1].datatype)+"\">"+str(tup[1].datatype[tup[1].datatype.rfind('/')+1:])+"</a>)</small></td>"
+                else:
+                    tablecontents+="<td class=\"wrapword\">"+str(tup[1])+"</td>"
         else:
-            tablecontents+="<td></td>"
+            tablecontents+="<td class=\"wrapword\"></td>"
         tablecontents+="</tr>"
+        isodd=not isodd
+    for tup in subpreds:
+        if isodd:
+            tablecontents+="<tr class=\"odd\">"
+        else:
+            tablecontents+="<tr class=\"even\">"
+        if baseurl in tup[1]:
+            rellink=str(tup[1]).replace(baseurl,"")
+            for i in range(0,checkdepth):
+                rellink="../"+rellink
+            rellink+="/index.html"
+            tablecontents+="<td class=\"property\">Is <span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+rellink+"\">"+str(tup[1][tup[1].rfind('/')+1:])+"</a></span> of</td>"
+        else:
+            res=replaceNameSpacesInLabel(tup[1])
+            if res!=None:
+                tablecontents+="<td class=\"property\">Is <span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+str(tup[1])+"\">"+str(tup[1][tup[1].rfind('/')+1:])+" ("+res["uri"]+")</a></span> of</td>"                  
+            else:
+                tablecontents+="<td class=\"property\">Is <span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+str(tup[1])+"\">"+str(tup[1][tup[1].rfind('/')+1:])+"</a></span> of</td>"
+        if len(tup)>0:
+            if "http" in tup[0]:
+                if baseurl in tup[0]:
+                    rellink=str(tup[0]).replace(baseurl,"")
+                    for i in range(0,checkdepth):
+                        rellink="../"+rellink
+                    rellink+="/index.html"
+                    label=str(tup[0][tup[0].rfind('/')+1:])
+                    #print(str(subject)+",http://www.w3.org/2000/01/rdf-schema#label")
+                    for obj in graph.objects(tup[0],URIRef("http://www.w3.org/2000/01/rdf-schema#label")):
+                        label=str(obj)
+                        #print(obj)
+                    tablecontents+="<td class=\"wrapword\"><a href=\""+rellink+"\">"+label+"</a></td>"
+                else:
+                    res=replaceNameSpacesInLabel(tup[0])
+                    if res!=None:
+                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[0])+"\">"+str(tup[0][tup[0].rfind('/')+1:])+" ("+res["uri"]+")</a></td>"                  
+                    else:
+                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[0])+"\">"+str(tup[0][tup[0].rfind('/')+1:])+"</a></td>"
+            else:
+                if tup[0].datatype!=None:
+                    tablecontents+="<td class=\"wrapword\">"+str(tup[0])+" <small>(<a style=\"color: #666;\" target=\"_blank\" href=\""+str(tup[0].datatype)+"\">"+str(tup[0].datatype[tup[0].datatype.rfind('/')+1:])+"</a>)</small></td>"
+                else:
+                    tablecontents+="<td class=\"wrapword\">"+str(tup[0])+"</td>"
+        else:
+            tablecontents+="<td class=\"wrapword\"></td>"
+        tablecontents+="</tr>"
+        isodd=not isodd
     with open(savepath+"/index.html", 'w', encoding='utf-8') as f:
-        f.write(htmltemplate.replace("{{title}}","<a href=\""+str(subject)+"\">"+str(subject[subject.rfind("/")+1:])+"</a>").replace("{{tablecontent}}",tablecontents).replace("{{description}}",""))
+        rellink=searchfilename
+        for i in range(0,checkdepth):
+            rellink="../"+rellink
+        if foundlabel!="":
+            f.write(htmltemplate.replace("{{title}}","<a href=\""+str(subject)+"\">"+str(foundlabel)+"</a>").replace("{{baseurl}}","\"+"+baseurl+"\"").replace("{{tablecontent}}",tablecontents).replace("{{description}}","").replace("{{scriptfolderpath}}",rellink))
+        else:
+            f.write(htmltemplate.replace("{{title}}","<a href=\""+str(subject)+"\">"+str(subject[subject.rfind("/")+1:])+"</a>").replace("{{baseurl}}","\"+"+baseurl+"\"").replace("{{tablecontent}}",tablecontents).replace("{{description}}","").replace("{{scriptfolderpath}}",rellink))
         f.close()
 
 def replaceNonURIChars(myuri):
-    res=myuri.replace("$","_").replace("{","_").replace("=","_").replace("-","_").replace("^","_").replace("*","_").replace("}","_").replace("̌","_").replace(";","_").replace("̄","_").replace("ʾ","_").replace("̆","_").replace(",","_").replace("'","_").replace("/","_").replace("+","_").replace("(","_").replace(")","_").replace("|","_").replace("@","_").replace("×","_").replace("&","_").replace("+","_").replace(".","_")
+    res=myuri.replace("$","_").replace("{","_").replace("+","_").replace("=","_").replace("-","_").replace("^","_").replace("*","_").replace("}","_").replace("̌","_").replace(";","_").replace("̄","_").replace("ʾ","_").replace("̆","_").replace(",","_").replace("'","_").replace("/","_").replace("+","_").replace("(","_").replace(")","_").replace("|","_").replace("@","_").replace("×","_").replace("&","_").replace("+","_").replace(".","_")
     if res.startswith("_"):
         res=res[1:]
     if res.endswith("_"):
@@ -202,7 +462,7 @@ def cuneifyWord(word,worduri,ttlresult):
         counter=0
         for chara in unicodeword:
             if chara in signmapping:
-                ttlresult.add(""+str(worduri)+" cunei:contains <"+replaceNonURIChars(str(signmapping[chara]["uri"]))+"> .\n")
+                ttlresult.add(""+str(worduri)+" cunei:contains <"+str(signmapping[chara]["uri"])+"> .\n")
                 ttlresult.add("<"+replaceNonURIChars(str(signmapping[chara]["uri"]))+"> rdf:type graphemon:Grapheme . \n")
                 ttlresult.add("<"+replaceNonURIChars(str(signmapping[chara]["uri"]))+"> rdfs:label \"Character: "+str(signmapping[chara]["signname"])+"\" . \n")
                 labeltouri["Character: "+str(signmapping[chara]["signname"])]=str(signmapping[chara]["uri"])
@@ -214,6 +474,7 @@ def cuneifyWord(word,worduri,ttlresult):
                 ttlresult.add("<"+replaceNonURIChars(str(signmapping[chara]["uri"]))+"> graphemon:hasGraphemeReading <"+replaceNonURIChars(str(signmapping[chara]["uri"])+"_reading_"+str(chars[counter]))+"> .\n")
             counter+=1
         return cuneify[word]
+    return ""
 
 def handleLineElements(data,ttlresult,currentside,currentsentence,currenttabletid,jtfldrep):
     currentline=-1
@@ -244,30 +505,37 @@ def handleLineElements(data,ttlresult,currentside,currentsentence,currenttableti
             #print(lineitem)
         if "node" in lineitem and lineitem["node"]=="l":
             #print(lineitem)
-            ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+" rdf:type cunei:Line .\n")
+            ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+" rdf:type cunei:Line .\n")
             if "f" in lineitem and "form" in lineitem["f"]:
-                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_wordformocc rdf:type cunei:WordFormOccurance .\n")
+                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc rdf:type cunei:WordFormOccurance .\n")
                 if "norm" in lineitem["f"]:
                     ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["norm"]))+"_word rdf:type cunei:Word .\n")
                     ttldictresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["norm"]))+"_word rdf:type cunei:Word .\n")
+                    labeltouri["Word: "+replaceNonURIChars(str(lineitem["f"]["norm"]))]=namespace+replaceNonURIChars(str(lineitem["f"]["norm"]))+"_word"
+                    ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word lemon:writtenRepUnicode \""+str(cuneifyWord(str(lineitem["f"]["norm"]),str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_wordformocc",ttlresult))+"\" .\n")
+                    ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word lemon:writtenRepASCII \""+str(format_ascii(str(lineitem["f"]["norm"])))+"\" .\n")
                     ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["norm"]))+"_word lemon:form "+str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform .\n")
                     ttldictresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["norm"]))+"_word lemon:form "+str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform .\n")
                     ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["norm"]))+"_word rdfs:label \"Word: "+replaceNonURIChars(str(lineitem["f"]["norm"]))+"\" .\n")
                     ttldictresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["norm"]))+"_word rdfs:label \"Word: "+replaceNonURIChars(str(lineitem["f"]["norm"]))+"\" .\n")
-                    curseq={"_class":"sequence","@id":str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_wordformocc","lemma":replaceNonURIChars(str(lineitem["f"]["norm"])),"form":replaceNonURIChars(str(lineitem["f"]["form"])),"@type":"short","children":[]}
+                    curseq={"_class":"sequence","@id":str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc","lemma":replaceNonURIChars(str(lineitem["f"]["norm"])),"form":replaceNonURIChars(str(lineitem["f"]["form"])),"@type":"short","children":[]}
                 else:
                     ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word rdf:type cunei:Word.\n")
                     ttldictresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word rdf:type cunei:Word.\n")
+                    labeltouri["Word: "+replaceNonURIChars(str(lineitem["f"]["form"]))]=namespace+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word"
+                    ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word lemon:writtenRepUnicode \""+str(cuneifyWord(str(lineitem["f"]["form"]),str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_wordformocc",ttlresult))+"\" .\n")
+                    ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word lemon:writtenRepASCII \""+str(format_ascii(str(lineitem["f"]["form"])))+"\" .\n")
                     ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word lemon:form "+str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform .\n")
                     ttldictresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word lemon:form "+str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform .\n")
                     ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word rdfs:label \"Word: "+replaceNonURIChars(str(lineitem["f"]["form"]))+"\" .\n")
                     ttldictresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word rdfs:label \"Word: "+replaceNonURIChars(str(lineitem["f"]["form"]))+"\" .\n")
-                    curseq={"_class":"sequence","@id":str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_wordformocc","lemma":replaceNonURIChars(str(lineitem["f"]["form"])),"form":replaceNonURIChars(str(lineitem["f"]["form"])),"@type":"short","children":[]}
+                    curseq={"_class":"sequence","@id":str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc","lemma":replaceNonURIChars(str(lineitem["f"]["form"])),"form":replaceNonURIChars(str(lineitem["f"]["form"])),"@type":"short","children":[]}
                 curjtfline["children"].append(curseq)
                 if "pos" in lineitem["f"]:
                     curseq["pos"]=str(lineitem["f"]["pos"])
-                    ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word <http://lexinfo.net/ontology/2.0/lexinfo#partOfSpeech> \""+str(lineitem["f"]["pos"])+"\".\n")
-                    ttldictresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word <http://lexinfo.net/ontology/2.0/lexinfo#partOfSpeech> \""+str(lineitem["f"]["pos"])+"\".\n")
+                    #<http://lexinfo.net/ontology/2.0/lexinfo#partOfSpeech>
+                    ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word cunei:partOfSpeech \""+str(lineitem["f"]["pos"])+"\".\n")
+                    ttldictresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word cunei:partOfSpeech \""+str(lineitem["f"]["pos"])+"\".\n")
                 if "sense" in lineitem["f"]:
                     ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word lemon:sense "+str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word_sense .\n")
                     ttldictresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word lemon:sense "+str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word_sense .\n")
@@ -292,18 +560,18 @@ def handleLineElements(data,ttlresult,currentside,currentsentence,currenttableti
                 ttldictresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform rdfs:label \"WordForm: "+str(lineitem["f"]["form"])+"\" .\n")
                 ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform lemon:writtenRep \""+str(lineitem["f"]["form"])+"\" .\n")
                 ttldictresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform lemon:writtenRep \""+str(lineitem["f"]["form"])+"\" .\n")
-                ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform lemon:writtenRepUnicode \""+str(cuneifyWord(str(lineitem["f"]["form"]),str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_wordformocc",ttlresult))+"\" .\n")
+                ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform lemon:writtenRepUnicode \""+str(cuneifyWord(str(lineitem["f"]["form"]),str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_wordformocc",ttlresult))+"\" .\n")
                 ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform lemon:writtenRepASCII \""+str(format_ascii(str(lineitem["f"]["form"])))+"\" .\n")
                 ttldictresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform lemon:writtenRepASCII \""+str(format_ascii(str(lineitem["f"]["form"])))+"\" .\n")
-                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_wordformocc cunei:Line \""+str(currentline)+"\"^^xsd:integer .\n")
-                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_wordformocc cunei:locatedIn "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+".\n")
-                ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform cunei:isAttested "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_wordformocc .\n")
-                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+" cunei:consistsOf "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"_wordformocc .\n")
-                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc rdfs:label \" WordForm Occurrence: "+str(lineitem["f"]["form"])+" ("+str(currenttabletid)+"["+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex)+"])\" .\n")
+                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc cunei:Line \""+str(currentline)+"\"^^xsd:string .\n")
+                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc cunei:locatedIn "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+".\n")
+                ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform cunei:isAttested "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc .\n")
+                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+" cunei:consistsOf "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc .\n")
+                ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc rdfs:label \" WordForm Occurrence: "+str(lineitem["f"]["form"])+" ("+str(currenttabletid)+"["+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"])\" .\n")
                 if currentwordindex>0:
-                    ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc cunei:prevWord "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex-1)+"_wordformocc .\n")
+                    ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc cunei:prevWord "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex-1)+"_wordformocc .\n")
                 if currentwordindex<=len(data["cdl"]):
-                    ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc cunei:nextWord "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentwordindex+1)+"_wordformocc .\n")
+                    ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc cunei:nextWord "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex+1)+"_wordformocc .\n")
                 currentwordindex+=1
                 currentrelcharindex=0
                 if "gdl" in lineitem["f"]:
@@ -313,6 +581,10 @@ def handleLineElements(data,ttlresult,currentside,currentsentence,currenttableti
                                 ttlresult.add("cunei:Akk rdf:type lemon:Dictionary .\n")
                                 ttlresult.add("cunei:Akk lemon:language \"Akkadian\" .\n")
                                 ttlresult.add("cunei:Akk lemon:entry "+str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word .\n")
+                            if "sux" in lineitem["f"]["lang"]:
+                                ttlresult.add("cunei:Sum rdf:type lemon:Dictionary .\n")
+                                ttlresult.add("cunei:Sum lemon:language \"Sumerian\" .\n")
+                                ttlresult.add("cunei:Sum lemon:entry "+str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word .\n")
                         if "v" in charr:
                             graphemeobj=getGraphemeReadingURI(str(charr["v"]))
                             if "@id" in graphemeobj:
@@ -323,7 +595,7 @@ def handleLineElements(data,ttlresult,currentside,currentsentence,currenttableti
                             curseq["children"].append(curchar)
                             #ttlresult.add(str(namespaceshortsignlist)+":character_"+replaceNonURIChars(str(charr["v"]))+" rdf:type graphemon:Grapheme .\n")
                             #ttlresult.add(str(namespaceshortsignlist)+":character_"+replaceNonURIChars(str(charr["v"]))+" rdfs:label \"Character: "+str(charr["v"])+"\" .\n")
-                            #ttlresult.add(str(namespaceshortsignlist)+":character_"+replaceNonURIChars(str(charr["v"]))+"_reading_"+replaceNonURIChars(str(charr["v"]))+" graphemon:occurrence "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+str(currentline).replace("'","_")+"_"+str(currentcharindex)+"_character .\n")
+                            #ttlresult.add(str(namespaceshortsignlist)+":character_"+replaceNonURIChars(str(charr["v"]))+"_reading_"+replaceNonURIChars(str(charr["v"]))+" graphemon:occurrence "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_character .\n")
                             ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph rdf:type cidoc:TX9_Glyph .\n")
                             if "break" in charr and "damaged" in charr["break"]:
                                 ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph cunei:isDamaged \"true\"^^xsd:boolean .\n")
@@ -331,6 +603,7 @@ def handleLineElements(data,ttlresult,currentside,currentsentence,currenttableti
                                 ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph cunei:isDamaged \"false\"^^xsd:boolean .\n")
                             ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph <http://www.cidoc-crm.org/cidoc-crm/TXP8_is_component_of> cunei:"+str(currenttabletid)+"_writtenText .\n")
                             ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph rdfs:label \"Glyph at "+str(currenttabletid)+"["+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"])\" .\n")
+                            labeltouri["Glyph at "+str(currenttabletid)+"["+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"])"]=namespace+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph"
                             ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph <http://www.cidoc-crm.org/cidoc-crm/P56_isFoundOn> "+namespaceshort+":"+currenttabletid+" .\n")
                             ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph <http://www.cidoc-crm.org/cidoc-crm/P138_represents> "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc .\n")
                             ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc cunei:consistsOf "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc .\n")
@@ -342,7 +615,7 @@ def handleLineElements(data,ttlresult,currentside,currentsentence,currenttableti
                             ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc lemon:writtenRepASCII \""+str(format_ascii(str(charr["v"])))+"\" .\n")
                             ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc cunei:partOf "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc .\n")
                             ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc cunei:positionOnTabletSide \""+str(currentcharindex)+"\"^^xsd:integer .\n")
-                            ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc cunei:Line \""+str(currentline)+"\"^^xsd:integer .\n")
+                            ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc cunei:Line \""+str(currentline)+"\"^^xsd:string .\n")
                             ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc cunei:positionInWord \""+str(currentrelcharindex)+"\"^^xsd:integer .\n")
                             if currentcharindex>0:
                                 ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc cunei:prevInWord "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex-1)+"_charocc .\n")
@@ -374,11 +647,14 @@ def analyzeTablet(data,ttlresult):
     if data["type"]=="cdl":
         ttlresult.add(namespaceshort+":"+data["textid"]+" rdf:type cunei:Tablet .\n")
         ttlresult.add(namespaceshort+":"+data["textid"]+" rdfs:label \"Cuneiform Artifact: "+str(data["textid"])+"\" .\n")
+        labeltouri["Cuneiform Artifact: "+str(data["textid"])]=str(namespace)+data["textid"]
         ttlresult.add(namespaceshort+":"+data["textid"]+"_transliteration rdf:type cunei:Transliteration .\n")
         ttlresult.add(namespaceshort+":"+data["textid"]+"_transliteration rdfs:label \"Transliteration: "+str(data["textid"])+"\" .\n")
+        labeltouri["Transliteration: "+str(data["textid"])]=str(namespace)+data["textid"]+"_transliteration"
         ttlresult.add(namespaceshort+":"+data["textid"]+" cunei:writtenText "+namespaceshort+":"+str(data["textid"])+"_writtenText .\n")
         ttlresult.add(namespaceshort+":"+data["textid"]+"_writtenText rdf:type cidoc:TX1_WrittenText .\n")
         ttlresult.add(namespaceshort+":"+data["textid"]+"_writtenText rdfs:label \"Written Text on "+str(data["textid"])+"\" .\n")
+        labeltouri["Written Text on "+str(data["textid"])]=str(namespace)+data["textid"]+"_writtenText"
         ttlresult.add(namespaceshort+":"+data["textid"]+"_writtenText cidoc:P56_found_on "+namespaceshort+":"+str(data["textid"])+" .\n")
         ttlresult.add(namespaceshort+":"+data["textid"]+"_writtenText cidoc:TXP10_read_by "+namespaceshort+":"+str(data["textid"])+"_writtenText_reading .\n")
         ttlresult.add(namespaceshort+":"+data["textid"]+"_writtenText_reading rdf:type cidoc:TX5_Reading .\n")
@@ -446,12 +722,12 @@ def analyzeTablet(data,ttlresult):
 header="""@prefix xsd:<http://www.w3.org/2001/XMLSchema#> .\n@prefix graphemon:<http://purl.org/graphemon/> .\n@prefix cunei:<http://purl.org/cuneiform/> .\n@prefix cuneidict:<http://purl.org/cuneiform/dict/> .\n@prefix cuneisignlist:<http://purl.org/cuneiform/signlist/> .\n@prefix cidoc:<http://www.cidoc-crm.org/cidoc-crm/> .\n@prefix owl:<http://www.w3.org/2002/07/owl#> .\n@prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#> .\n@prefix lemon:<http://lemon-model.net/lemon#> .\n"""
 ontology="""cunei:isDamaged rdf:type owl:DatatypeProperty .\ngraphemon:hasGraphemeReading rdf:type owl:ObjectProperty .\n<http://lexinfo.net/ontology/2.0/lexinfo#partOfSpeech> rdf:type owl:ObjectProperty .\ncunei:hasLine rdf:type owl:ObjectProperty.\ncidoc:P56_found_on rdf:type owl:ObjectProperty.\ncidoc:TXP10_read_by rdf:type owl:ObjectProperty.\ncidoc:TXP3_is_rendered_by rdf:type owl:ObjectProperty .\ncunei:writtenText rdf:type owl:ObjectProperty .\ncunei:hasSide rdf:type owl:ObjectProperty .\ncunei:partOf rdf:type owl:ObjectProperty .\ncunei:next rdf:type owl:ObjectProperty .\ncunei:prevLine rdf:type owl:ObjectProperty .\ncunei:nextLine rdf:type owl:ObjectProperty .\ncunei:prevSentence rdf:type owl:ObjectProperty .\nlemon:reference rdf:type owl:ObjectProperty .\ncunei:nextSentence rdf:type owl:ObjectProperty .\ncunei:nextWord rdf:type owl:ObjectProperty .\ncunei:consistsOf rdf:type owl:ObjectProperty .\ncunei:prevWord rdf:type owl:ObjectProperty .\ncunei:prevInWord rdf:type owl:ObjectProperty .\ncunei:nextInWord rdf:type owl:ObjectProperty .\ncunei:prev rdf:type owl:ObjectProperty .\nlemon:sense rdf:type owl:ObjectProperty .\nlemon:pos rdf:type owl:ObjectProperty .\nlemon:entry rdf:type owl:ObjectProperty .\nlemon:writtenRepUnicode rdf:type owl:DatatypeProperty .\n lemon:writtenRepASCII rdf:type owl:DatatypeProperty .\n<http://www.cidoc-crm.org/cidoc-crm/TXP8_is_component_of> rdf:type owl:ObjectProperty .<http://www.cidoc-crm.org/cidoc-crm/P56_isFoundOn> rdf:type owl:ObjectProperty .\n<http://www.cidoc-crm.org/cidoc-crm/P138_represents> rdf:type owl:ObjectProperty .\n lemon:writtenRep rdf:type owl:DatatypeProperty .\ncunei:positionOnTabletSide rdf:type owl:DatatypeProperty .\ncunei:locatedIn rdf:type owl:ObjectProperty .\nlemon:form rdf:type owl:ObjectProperty .\ncunei:positionInWord rdf:type owl:DatatypeProperty .\ncunei:Line rdf:type owl:DatatypeProperty .\ncunei:isAttested rdf:type owl:ObjectProperty .\n"""
 
-corpusid="ccpo"
+corpusid="hbtin"
 subdircorp=""
 if subdircorp!="":
     rootdir="cams-gkab/cams/gkab/corpusjson"
 else:
-    rootdir=str(corpusid)+"/"+str(corpusid)+"/corpusjson/"
+    rootdir=str(corpusid)+"/corpusjson/"
 
 print(cuneify)
 print(rootdir)
@@ -477,7 +753,7 @@ for subdir, dirs, files in os.walk(rootdir):
         ttlresult=analyzeTablet(data,ttlresult)
 print("ready")
 
-with open(corpusid+'_search.js', 'w', encoding='utf-8') as f:
+with open(str(corpusid)+"_htmls/"+corpusid+'_search.js', 'w', encoding='utf-8') as f:
     f.write("var search="+json.dumps(labeltouri,indent=2))
     f.close()
 
@@ -500,6 +776,8 @@ for sub in g.subjects():
         subjectstorender.append(sub)
 pathmap={}
 paths={}
+subtorenderlen=len(subjectstorender)
+subtorencounter=0
 for subj in subjectstorender:
     path=subj.replace("http://purl.org/cuneiform/","")
     if "/" in path:
@@ -508,7 +786,6 @@ for subj in subjectstorender:
             addpath+=pathelem+"/"
             if not os.path.isdir(str(corpusid)+"_htmls/"+addpath):
                 os.mkdir(str(corpusid)+"_htmls/"+addpath)
-            print(addpath)
         if str(corpusid)+"_htmls/"+path[0:path.rfind('/')]+"/" not in paths:
             paths[str(corpusid)+"_htmls/"+path[0:path.rfind('/')]+"/"]=[]
         paths[str(corpusid)+"_htmls/"+path[0:path.rfind('/')]+"/"].append(addpath[0:addpath.rfind('/')])
@@ -518,7 +795,9 @@ for subj in subjectstorender:
         if str(corpusid)+"_htmls/" not in paths:
             paths[str(corpusid)+"_htmls/"]=[]
         paths[str(corpusid)+"_htmls/"].append(path+"/index.html")
-    createHTML(str(corpusid)+"_htmls/"+path,g.predicate_objects(subj),subj)  
+    createHTML(str(corpusid)+"_htmls/"+path,g.predicate_objects(subj),subj,prefixnamespace,g.subject_predicates(subj),g,str(corpusid)+"_search.js")  
+    subtorencounter+=1
+    print(str(subtorencounter)+"/"+str(subtorenderlen))
 #print(paths)
 for path in paths:
     indexhtml="<html><head></head><body><h1>"+str(path)+"</h1><ul style=\"height: 100%; overflow: auto\">"
