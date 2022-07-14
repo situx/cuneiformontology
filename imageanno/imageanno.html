@@ -1,6 +1,7 @@
 <html>
 <head>
 <script src="js/transliterations.js"></script>
+<script src="js/annotatorfunctions.js"></script>
 <script src="js/newurls.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -39,6 +40,7 @@ Tablet: <select id="images" onchange="loadVariants()"></select> Side: <select id
 periods={}
 languages={}
 hs2CDLI={}
+mlVocabulary={}
 const queryString = window.location.search;
 console.log(queryString);
 const urlParams = new URLSearchParams(queryString);
@@ -188,56 +190,6 @@ $(document).ready(function () {
       }
     }
   }
-function loadVariants() {
-    console.log($('#images option:selected').val())
-    console.log(transliterations)
-    toappend = ""
-    if ($('#images option:selected').val() in periods) {
-        toappend += periods[$('#images option:selected').val()] + " " //$('#period').html(periods[$('#images option:selected').val()])
-    }
-    if ($('#images option:selected').val() in languages) {
-        toappend += languages[$('#images option:selected').val()]["language"] + " " + languages[$('#images option:selected').val()]["genre"]
-        if (languages[$('#images option:selected').val()]["subgenre"] != "") {
-            toappend += "<br/>" + languages[$('#images option:selected').val()]["subgenre"]
-        }
-        if (languages[$('#images option:selected').val()]["provenience"] != "") {
-            toappend += "<br/>Provenience: " + languages[$('#images option:selected').val()]["provenience"]
-        }
-    }
-    if ($('#images option:selected').val() in transliterations) {
-        console.log(transliterations[$('#images option:selected').val()])
-        if (transliterations[$('#images option:selected').val()] == "" || transliterations[$('#images option:selected').val()] == "@Tablet") {
-            $('#transliterationtextarea').html("No transliteration available for text " + $('#images option:selected').val())
-            if ($('#images option:selected').val() in hs2CDLI) {
-                $('#textid').html("" + $('#images option:selected').val() + " - <a target=\"_blank\" href=\"https://cdli.ucla.edu/search/search_results.php?SearchMode=Text&ObjectID=" + hs2CDLI[$('#images option:selected').val()] + "\">" + hs2CDLI[$('#images option:selected').val()] + "</a>")
-                $('#cdlilink').html("<a target=\"_blank\" href=\"https://cdli.ucla.edu/search/search_results.php?SearchMode=Text&ObjectID=" + hs2CDLI[$('#images option:selected').val()] + "\">" + hs2CDLI[$('#images option:selected').val()] + "</a>")
-            } else {
-                $('#textid').html("" + $('#images option:selected').val() + "")
-            }
-        } else {
-            if ($('#images option:selected').val() in hs2CDLI) {
-                $('#textid').html("" + $('#images option:selected').val() + " - <a target=\"_blank\" href=\"https://cdli.ucla.edu/search/search_results.php?SearchMode=Text&ObjectID=" + hs2CDLI[$('#images option:selected').val()] + "\">" + hs2CDLI[$('#images option:selected').val()] + "</a>")
-                $('#cdlilink').html("<a target=\"_blank\" href=\"https://cdli.ucla.edu/search/search_results.php?SearchMode=Text&ObjectID=" + hs2CDLI[$('#images option:selected').val()] + "\">" + hs2CDLI[$('#images option:selected').val()] + "</a>")
-            } else {
-                $('#textid').html("" + $('#images option:selected').val() + "")
-            }
-        }
-    } else {
-        $('#textid').html("" + $('#images option:selected').val() + "")
-        $('#transliterationtextarea').html("No transliteration available for text " + $('#images option:selected').val())
-    }
-    imgside = ""
-    for (obj of urls[$('#images option:selected').val()]["variants"]) {
-        if (obj["label"].includes("front")) {
-            imgside += "<option value=\"" + obj["url"] + "\" selected=\"selected\">" + obj["label"] + "</option>"
-        } else {
-            imgside += "<option value=\"" + obj["url"] + "\">" + obj["label"] + "</option>"
-        }
-    }
-    $('#imageside').html(imgside)
-    $('#period').html(toappend)
-    reinit("abc");
-}
 
 </script>
 <div>
