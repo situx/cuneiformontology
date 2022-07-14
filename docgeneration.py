@@ -300,7 +300,7 @@ if len(sys.argv)>2:
     outpath=sys.argv[2]
 if len(sys.argv)>3:
     prefixnamespace=sys.argv[3]
-corpusid=filepath[fílepath.rfind('/')+1:filepath.rfind('.')-1]
+corpusid=filepath[filepath.rfind('/')+1:filepath.rfind('.')-1]
 namespaceshort="cuneisignlist"
 if not os.path.isdir(outpath):
     os.mkdir(outpath)
