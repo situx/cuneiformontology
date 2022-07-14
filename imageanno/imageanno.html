@@ -40,6 +40,7 @@ Tablet: <select id="images" onchange="loadVariants()"></select> Side: <select id
 periods={}
 languages={}
 hs2CDLI={}
+approvals={}
 mlVocabulary={}
 const queryString = window.location.search;
 console.log(queryString);
@@ -208,9 +209,6 @@ $(document).ready(function () {
 <div class="col-md-6">
   3DModel:<br/>
 <select id="3dimages" onchange="setup3dhop()"><option value="https://heidicon.ub.uni-heidelberg.de/eas/partitions/3/0/592000/592202/adce42325842648a219d9f43d7f86da8744a84b1/application/x-ply/HS_1198b_HeiCuBeDa_GigaMesh.ply">Cuneiform Tablet HS 1032B_1</option></select>Data Format:<select id="dataformaturl" onchange="reload3DURLs()"><option value="ply_url">PLY</option><option value="nxz_url">NXZ</option></select>
-<button id="saveAnnotations3D" onclick="saveTextAsFile(JSON.stringify(curanno),'json','anno')">Save 3D Annotations</button>
-<button id="saveInGit3D" onclick="commitData()">Save 3D Annotation in Gitlab</button>
-<button id="synch2D3DButton" onClick="sync2D3D()">Synchronize 3D and 2D View</button>
 <dialog id="transliterationdialog" class="modal-body" style="z-index: 1000 !important ;height: 550px; overflow: auto;">
     <h3>Transliteration View <span id="textid"></span></h3>
     <span id="transliterationdialogmessage"></span><br/>
