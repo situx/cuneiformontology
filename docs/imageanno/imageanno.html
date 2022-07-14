@@ -35,7 +35,7 @@
 <div class="container-fluid">
     <div class="row">
       <div class="col-md-6" role="main">
-Tablet: <select id="images" onchange="loadVariants()"></select> Side: <select id="imageside" onchange="reinit(null)"></select>
+Tablet: <select id="images" onchange="loadVariants()"></select> Side: <select id="imageside" onchange="reinit(null)"></select><button id="showTransliteration" onClick='document.getElementById("transliterationdialog").show();'>Transliteration</button>
 <script>
 periods={}
 languages={}
@@ -196,9 +196,7 @@ $(document).ready(function () {
 <div>
     <div id="my-toolbar-container"></div>
 <div id="openseadragon" style="width: 640px; height: 580px;"></div>
-<button id="leftimage" style="cursor: pointer;left:-5;transition: 0.6s ease;position:absolute;top:50%;margin-top:-80px;padding:16px;border-radius: 0 3px 3px 0;" onclick="loadLeft()">&lt;</button>
-<button id="leftimage" style="cursor: pointer;left:-5;transition: 0.6s ease;position:absolute;top:50%;margin-top:-22px;padding:16px;border-radius: 0 3px 3px 0;" onclick="loadLeftRendering()">&lt;&lt;</button><button id="rightimage" onclick="loadRight()" style="cursor: pointer;position:absolute;transition: 0.6s ease;top:50%;margin-top:-80px;padding:16px;right:0;border-radius:3px 0 0 3px;">&gt;</button><button id="rightimage" onclick="loadRightRendering()" style="cursor: pointer;position:absolute;transition: 0.6s ease;top:50%;margin-top:-22px;padding:16px;right:0;border-radius:3px 0 0 3px;">&gt;&gt;</button>
-      </div>
+</div>
 <a id="metadata" onClick="getEXIFData('openseadragon','metadatafield')">
 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path></svg>
 </a>
