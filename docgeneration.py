@@ -290,7 +290,7 @@ with open('signlist/prefixes.json', encoding="utf-8") as f:
     prefixes = json.load(f)
     
 prefixnamespace="http://purl.org/cuneiform/"
-outpath=str(corpusid)+"_htmls/"
+outpath="signlist_htmls/"
 if len(sys.argv)<=1:
     print("No TTL file to process has been given as a parameter")
     exit()
