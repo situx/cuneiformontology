@@ -215,7 +215,7 @@ z-index: 10;
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }</style></head><body><div id="header">
-        <h1 id="title">{{title}}</h1></div><div class="page-resource-uri"><a href="{{baseurl}}">{{baseurl}}</a><b>powered by Static Pubby</b></div>
+        <h1 id="title">{{title}}</h1></div><div class="page-resource-uri"><a href="{{baseurl}}">{{baseurl}}</a> <b>powered by Static Pubby</b></div>
       </div><div id="rdficon"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div> <div class="search">
     <div class="ui-widget">Search: <input id="search" size="50"><button id="gotosearch" onclick="followLink()">Go</button></div>
 </div><div class="container-fluid"><div class="row-fluid" id="main-wrapper"><table border=1 width=100% class=description><tr><th>Property</th><th>Value</th></tr>{{tablecontent}}</table><div id="footer"><div class="container-fluid"></div></div></body></html>"""
@@ -290,7 +290,7 @@ def getClassTree(graph,uritolabel):
 def replaceNameSpacesInLabel(uri):
     for ns in prefixes["reversed"]:
         if ns in uri:
-            return {"uri":str(prefixes["reversed"][ns])+":"+str(uri.replace(ns,prefixes["reversed"][ns])),"ns":prefixes["reversed"][ns]}
+            return {"uri":str(prefixes["reversed"][ns])+":"+str(uri.replace(ns,"")),"ns":prefixes["reversed"][ns]}
     return None
 
 def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename,classtreename):
@@ -317,9 +317,9 @@ def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename,c
             label=rellink.replace("/index.html","")
             tablecontents+="<td class=\"property\"><span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+rellink+"\">"+label+"</a></span></td>"
         else:
-            res=replaceNameSpacesInLabel(tup[1])
+            res=replaceNameSpacesInLabel(tup[0])
             if res!=None:
-                tablecontents+="<td class=\"property\"><span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+str(tup[0])+"\">"+str(tup[0][tup[0].rfind('/')+1:])+" ("+res["uri"]+")</a></span></td>"                  
+                tablecontents+="<td class=\"property\"><span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+str(tup[0])+"\">"+str(tup[0][tup[0].rfind('/')+1:])+" <span style=\"color: #666;\">("+res["uri"]+")</span></a></span></td>"                  
             else:
                 tablecontents+="<td class=\"property\"><span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+str(tup[0])+"\">"+str(tup[0][tup[0].rfind('/')+1:])+"</a></span></td>"
         if str(tup[0])=="http://www.w3.org/2000/01/rdf-schema#label":
@@ -336,18 +336,18 @@ def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename,c
                     for obj in graph.objects(tup[1],URIRef("http://www.w3.org/2000/01/rdf-schema#label")):
                         label=str(obj)
                         #print(obj)
-                    tablecontents+="<td class=\"wrapword\"><a href=\""+rellink+"\">"+label+" ("+namespaceshort+":"+str(str(tup[1][tup[1].rfind('/')+1:]))+")</a></td>"
+                    tablecontents+="<td class=\"wrapword\"><a href=\""+rellink+"\">"+label+" <span style=\"color: #666;\">("+namespaceshort+":"+str(str(tup[1][tup[1].rfind('/')+1:]))+")</span></a></td>"
                 else:
                     res=replaceNameSpacesInLabel(tup[1])
                     if res!=None:
-                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[1])+"\">"+str(tup[1][tup[1].rfind('/')+1:])+" ("+res["uri"]+")</a></td>"                  
+                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[1])+"\">"+str(tup[1][tup[1].rfind('/')+1:])+" <span style=\"color: #666;\">("+res["uri"]+")</span></a></td>"                  
                     else:
                         tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[1])+"\">"+str(tup[1][tup[1].rfind('/')+1:])+"</a></td>"
             else:
                 if not isinstance(tup[1], URIRef) and tup[1].datatype!=None:
                     tablecontents+="<td class=\"wrapword\">"+str(tup[1])+" <small>(<a style=\"color: #666;\" target=\"_blank\" href=\""+str(tup[1].datatype)+"\">"+str(tup[1].datatype[tup[1].datatype.rfind('/')+1:])+"</a>)</small></td>"
                 else:
-                    tablecontents+="<td class=\"wrapword\">"+str(tup[1])+"</td>"
+                    tablecontents+="<td class=\"wrapword\">"+str(tup[1])+" <small>(<a style=\"color: #666;\" target=\"_blank\" href=\"http://www.w3.org/2001/XMLSchema#string\">xsd:string</a>)</small></td>"
         else:
             tablecontents+="<td class=\"wrapword\"></td>"
         tablecontents+="</tr>"
@@ -363,11 +363,11 @@ def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename,c
                 rellink="../"+rellink
             rellink+="/index.html"
             label=rellink.replace("/index.html","")
-            tablecontents+="<td class=\"property\">Is <span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+rellink+"\">"+label+"</a></span> of</td>"
+            tablecontents+="<td class=\"property\">Is <span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+rellink+"\">"+label+" <span style=\"color: #666;\">("+namespaceshort+":"+str(str(tup[1][tup[1].rfind('/')+1:]))+")</span></a></span> of</td>"
         else:
             res=replaceNameSpacesInLabel(tup[1])
             if res!=None:
-                tablecontents+="<td class=\"property\">Is <span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+str(tup[1])+"\">"+str(tup[1][tup[1].rfind('/')+1:])+" ("+res["uri"]+")</a></span> of</td>"                  
+                tablecontents+="<td class=\"property\">Is <span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+str(tup[1])+"\">"+str(tup[1][tup[1].rfind('/')+1:])+" <span style=\"color: #666;\">("+res["uri"]+")</span></a></span> of</td>"                  
             else:
                 tablecontents+="<td class=\"property\">Is <span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+str(tup[1])+"\">"+str(tup[1][tup[1].rfind('/')+1:])+"</a></span> of</td>"
         if len(tup)>0:
@@ -382,11 +382,11 @@ def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename,c
                     for obj in graph.objects(tup[0],URIRef("http://www.w3.org/2000/01/rdf-schema#label")):
                         label=str(obj)
                         #print(obj)
-                    tablecontents+="<td class=\"wrapword\"><a href=\""+rellink+"\">"+label+"</a></td>"
+                    tablecontents+="<td class=\"wrapword\"><a href=\""+rellink+"\">"+label+" <span style=\"color: #666;\">("+namespaceshort+":"+str(str(tup[0][tup[0].rfind('/')+1:]))+")</span></a></td>"
                 else:
                     res=replaceNameSpacesInLabel(tup[0])
                     if res!=None:
-                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[0])+"\">"+str(tup[0][tup[0].rfind('/')+1:])+" ("+res["uri"]+")</a></td>"                  
+                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[0])+"\">"+str(tup[0][tup[0].rfind('/')+1:])+" <span style=\"color: #666;\">("+res["uri"]+")</span></a></td>"                  
                     else:
                         tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[0])+"\">"+str(tup[0][tup[0].rfind('/')+1:])+"</a></td>"
             else:
@@ -413,7 +413,9 @@ def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename,c
 
 with open('signlist/prefixes.json', encoding="utf-8") as f:
     prefixes = json.load(f)
-    
+   
+prefixes["reversed"]["http://purl.org/cuneiform/"]="cunei"
+prefixes["reversed"]["http://purl.org/graphemon/"]="graphemon"
 prefixnamespace="http://purl.org/cuneiform/"
 outpath="signlist_htmls/"
 if len(sys.argv)<=1:
