@@ -21,7 +21,7 @@ htmltemplate="""
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.9/jstree.min.js"></script>
 <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
 <script>
-  var baseurl={{baseurl}}
+  var baseurl="{{baseurl}}"
   $( function() {
     var availableTags = Object.keys(search)
     $( "#search" ).autocomplete({
@@ -52,17 +52,18 @@ function rewriteLink(thelink){
     }else{
         rest=thelink.replace(baseurl,"")
     }
-    count=location.href.split("/").length-1
+    count=rest.split("/").length
     counter=0
     while(counter<count){
         rest="../"+rest
         counter+=1
     }
+    rest+="/index.html"
     return rest
 }
 
 function followLink(thelink=null){
-    rewriteLink(thelink) 
+    rest=rewriteLink(thelink) 
     location.href=rest
 }
 
@@ -71,61 +72,20 @@ function setupJSTree(){
     tree["contextmenu"]={}
     tree["core"]["check_callback"]=true
     tree["contextmenu"]["items"]=function (node) {
-                    return {
-                        "instancecount": {
-                            "separator_before": false,
-                            "separator_after": false,
-                            "icon": baseurl+"static/icons/instancecount.png",
-                            "label": "Check instance count",
-                            "action": function (obj) {
-                                getInstanceCount(node)      
-                            }
-                        },
-                        "showinstances": {
-                            "separator_before": false,
-                            "separator_after": false,
-                            "label": "Show instances in GeoPubby",
-                            "icon": baseurl+"static/icons/queryinstances.png",
-                            "action": function (obj) {
-                                getInstances(node)                              
-                            }
-                        },
-                        "querydataschema": {
-                            "separator_before": false,
-                            "separator_after": false,
-                            "icon": baseurl+"static/icons/classschema.png",
-                            "label": "Query data (schema)",
-                            "action": function (obj) {
-                                if(node.icon.includes("class.png")){
-                                    getDatasetSchema(node)                                  	
-                                }else if(node.icon.includes("instance.png")){
-                                    getInstanceData(node)  
-                                }
-                            }
-                        },
-                        "show in map view": {
-                            "separator_before": false,
-                            "separator_after": false,
-                            "label": "Show instances in Map View",
-                            "action": function (obj) {
-                                console.log(node)
-                                console.log("Show instances in map view")  
-                                var win = window.open("https://digits.mainzed.org/geopubby/"+"values/-rdf:type/"+node.id.substring(node.id.lastIndexOf('/')+1), '_blank');
-                                win.focus();                                   
-                            }
-                        },
-                        "lookupdefinition": {
-                            "separator_before": false,
-                            "separator_after": false,
-                            "label": "Lookup definition",
-                            "icon": baseurl+"static/icons/classlink.png",
-                            "action": function (obj) {
-                                newlink=rewriteLink(node.id) 
-                                var win = window.open(newlink, '_blank');
-                                win.focus();                                 
-                            }
-                        }
-                    };
+        return {
+            "lookupdefinition": {
+                "separator_before": false,
+                "separator_after": false,
+                "label": "Lookup definition",
+                "icon": baseurl+"static/icons/classlink.png",
+                "action": function (obj) {
+                    newlink=rewriteLink(node.id) 
+                    console.log(newlink)
+                    var win = window.open(newlink, '_blank');
+                    win.focus();                                 
+                }
+            }
+        };
     }
     $('#jstree').jstree(tree);
     $('#jstree').bind("dblclick.jstree", function (event) {
@@ -255,7 +215,7 @@ z-index: 10;
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }</style></head><body><div id="header">
-        <h1 id="title">{{title}}</h1></div><div class="page-resource-uri"><a href="{{baseurl}}">{{baseurl}}</a><b>powered by <a href="https://github.com/i3mainz/geopubby" title="Static Pubby" target="_blank">Static Pubby<img src="https://digits.mainzed.org/geopubby/static/geopubby_logo.png" alt="GeoPubby" /></a></b></div>
+        <h1 id="title">{{title}}</h1></div><div class="page-resource-uri"><a href="{{baseurl}}">{{baseurl}}</a><b>powered by Static Pubby</b></div>
       </div><div id="rdficon"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div> <div class="search">
     <div class="ui-widget">Search: <input id="search" size="50"><button id="gotosearch" onclick="followLink()">Go</button></div>
 </div><div class="container-fluid"><div class="row-fluid" id="main-wrapper"><table border=1 width=100% class=description><tr><th>Property</th><th>Value</th></tr>{{tablecontent}}</table><div id="footer"><div class="container-fluid"></div></div></body></html>"""
@@ -446,9 +406,9 @@ def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename,c
         for i in range(0,checkdepth):
             rellink2="../"+rellink2
         if foundlabel!="":
-            f.write(htmltemplate.replace("{{prefixpath}}",prefixnamespace).replace("{{title}}","<a href=\""+str(subject)+"\">"+str(foundlabel)+"</a>").replace("{{baseurl}}","\""+baseurl+"\"").replace("{{tablecontent}}",tablecontents).replace("{{description}}","").replace("{{scriptfolderpath}}",rellink).replace("{{classtreefolderpath}}",rellink2))
+            f.write(htmltemplate.replace("{{prefixpath}}",prefixnamespace).replace("{{title}}","<a href=\""+str(subject)+"\">"+str(foundlabel)+"</a>").replace("{{baseurl}}",baseurl).replace("{{tablecontent}}",tablecontents).replace("{{description}}","").replace("{{scriptfolderpath}}",rellink).replace("{{classtreefolderpath}}",rellink2))
         else:
-            f.write(htmltemplate.replace("{{prefixpath}}",prefixnamespace).replace("{{title}}","<a href=\""+str(subject)+"\">"+str(subject[subject.rfind("/")+1:])+"</a>").replace("{{baseurl}}","\""+baseurl+"\"").replace("{{tablecontent}}",tablecontents).replace("{{description}}","").replace("{{scriptfolderpath}}",rellink).replace("{{classtreefolderpath}}",rellink2))
+            f.write(htmltemplate.replace("{{prefixpath}}",prefixnamespace).replace("{{title}}","<a href=\""+str(subject)+"\">"+str(subject[subject.rfind("/")+1:])+"</a>").replace("{{baseurl}}",baseurl).replace("{{tablecontent}}",tablecontents).replace("{{description}}","").replace("{{scriptfolderpath}}",rellink).replace("{{classtreefolderpath}}",rellink2))
         f.close()
 
 with open('signlist/prefixes.json', encoding="utf-8") as f:
