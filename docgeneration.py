@@ -45,7 +45,8 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
-function followLink(thelink=null){
+
+function rewriteLink(thelink){
     if(thelink==null){
         rest=search[document.getElementById('search').value].replace(baseurl,"")
     }else{
@@ -56,13 +57,19 @@ function followLink(thelink=null){
     while(counter<count){
         rest="../"+rest
         counter+=1
-    }  
+    }
+    return rest
+}
+
+function followLink(thelink=null){
+    rewriteLink(thelink) 
     location.href=rest
 }
 
 function setupJSTree(){
     console.log("setupJSTree")
     tree["contextmenu"]={}
+    tree["core"]["check_callback"]=true
     tree["contextmenu"]["items"]=function (node) {
                     return {
                         "instancecount": {
@@ -113,7 +120,8 @@ function setupJSTree(){
                             "label": "Lookup definition",
                             "icon": baseurl+"static/icons/classlink.png",
                             "action": function (obj) {
-                                var win = window.open(node.id, '_blank');
+                                newlink=rewriteLink(node.id) 
+                                var win = window.open(newlink, '_blank');
                                 win.focus();                                 
                             }
                         }
@@ -126,7 +134,7 @@ function setupJSTree(){
         console.log(data)
         console.log(node)
         if(data.includes("{{prefixpath}}")){
-            followLink()
+            followLink(data)
         }
         window.open(data, '_blank');
     });
@@ -346,7 +354,8 @@ def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename,c
             for i in range(0,checkdepth):
                 rellink="../"+rellink
             rellink+="/index.html"
-            tablecontents+="<td class=\"property\"><span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+rellink+"\">"+str(tup[0][tup[0].rfind('/')+1:])+"</a></span></td>"
+            label=rellink.replace("/index.html","")
+            tablecontents+="<td class=\"property\"><span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+rellink+"\">"+label+"</a></span></td>"
         else:
             res=replaceNameSpacesInLabel(tup[1])
             if res!=None:
@@ -393,7 +402,8 @@ def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename,c
             for i in range(0,checkdepth):
                 rellink="../"+rellink
             rellink+="/index.html"
-            tablecontents+="<td class=\"property\">Is <span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+rellink+"\">"+str(tup[1][tup[1].rfind('/')+1:])+"</a></span> of</td>"
+            label=rellink.replace("/index.html","")
+            tablecontents+="<td class=\"property\">Is <span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+rellink+"\">"+label+"</a></span> of</td>"
         else:
             res=replaceNameSpacesInLabel(tup[1])
             if res!=None:
@@ -508,7 +518,8 @@ for subj in subjectstorender:
 for path in paths:
     indexhtml="<html><head></head><body><h1>"+str(path)+"</h1><ul style=\"height: 100%; overflow: auto\">"
     for pathlink in paths[path]:
-        indexhtml+="<li><a href=\""+str(pathlink)+"\">"+str(pathlink[pathlink.rfind('/')+1:])+"</a></li>"
+        label=pathlink.replace("/index.html","")
+        indexhtml+="<li><a href=\""+str(pathlink)+"\">"+label+"</a></li>"
     indexhtml+="</ul></body></html>"
     print(path)
     with open(path+"index.html", 'w', encoding='utf-8') as f:
