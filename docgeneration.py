@@ -9,17 +9,15 @@ htmltemplate="""
 <div id="mySidenav" class="sidenav" style="overflow:auto;">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   GeoClasses: <input type="checkbox" id="geoclasses"/><br/>
-  Search:<input type="text" id="classsearch"><br/>
-  <div id="jstree"></div>
-</div>
-<html><head><title>{{title}}</title>
+  Search:<input type="text" id="classsearch"><br/><div id="jstree"></div>
+</div><html><head><title>{{title}}</title>
 <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
 <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.1.1/themes/default/style.min.css" />
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="{{scriptfolderpath}}"></script>
+<script src="{{scriptfolderpath}}"></script><script src="{{classtreefolderpath}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.9/jstree.min.js"></script>
 <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
 <script>
@@ -29,6 +27,8 @@ htmltemplate="""
     $( "#search" ).autocomplete({
       source: availableTags
     });
+    console.log(availableTags)
+    setupJSTree()
   } );
 
 function loadClasses(){
@@ -45,8 +45,12 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
-function followLink(){
-    rest=search[document.getElementById('search').value].replace(baseurl,"")
+function followLink(thelink=null){
+    if(thelink==null){
+        rest=search[document.getElementById('search').value].replace(baseurl,"")
+    }else{
+        rest=thelink.replace(baseurl,"")
+    }
     count=location.href.split("/").length-1
     counter=0
     while(counter<count){
@@ -54,6 +58,87 @@ function followLink(){
         counter+=1
     }  
     location.href=rest
+}
+
+function setupJSTree(){
+    console.log("setupJSTree")
+    tree["contextmenu"]={}
+    tree["contextmenu"]["items"]=function (node) {
+                    return {
+                        "instancecount": {
+                            "separator_before": false,
+                            "separator_after": false,
+                            "icon": baseurl+"static/icons/instancecount.png",
+                            "label": "Check instance count",
+                            "action": function (obj) {
+                                getInstanceCount(node)      
+                            }
+                        },
+                        "showinstances": {
+                            "separator_before": false,
+                            "separator_after": false,
+                            "label": "Show instances in GeoPubby",
+                            "icon": baseurl+"static/icons/queryinstances.png",
+                            "action": function (obj) {
+                                getInstances(node)                              
+                            }
+                        },
+                        "querydataschema": {
+                            "separator_before": false,
+                            "separator_after": false,
+                            "icon": baseurl+"static/icons/classschema.png",
+                            "label": "Query data (schema)",
+                            "action": function (obj) {
+                                if(node.icon.includes("class.png")){
+                                    getDatasetSchema(node)                                  	
+                                }else if(node.icon.includes("instance.png")){
+                                    getInstanceData(node)  
+                                }
+                            }
+                        },
+                        "show in map view": {
+                            "separator_before": false,
+                            "separator_after": false,
+                            "label": "Show instances in Map View",
+                            "action": function (obj) {
+                                console.log(node)
+                                console.log("Show instances in map view")  
+                                var win = window.open("https://digits.mainzed.org/geopubby/"+"values/-rdf:type/"+node.id.substring(node.id.lastIndexOf('/')+1), '_blank');
+                                win.focus();                                   
+                            }
+                        },
+                        "lookupdefinition": {
+                            "separator_before": false,
+                            "separator_after": false,
+                            "label": "Lookup definition",
+                            "icon": baseurl+"static/icons/classlink.png",
+                            "action": function (obj) {
+                                var win = window.open(node.id, '_blank');
+                                win.focus();                                 
+                            }
+                        }
+                    };
+    }
+    $('#jstree').jstree(tree);
+    $('#jstree').bind("dblclick.jstree", function (event) {
+        var node = $(event.target).closest("li");
+        var data = node[0].id
+        console.log(data)
+        console.log(node)
+        if(data.includes("{{prefixpath}}")){
+            followLink()
+        }
+        window.open(data, '_blank');
+    });
+    var to = false;
+	$('#classsearch').keyup(function () {
+		console.log("KEY UP")
+        if(to) { clearTimeout(to); }
+        to = setTimeout(function () {
+            var v = $('#classsearch').val();
+            $('#jstree').jstree(true).search(v,false,true);
+        });
+    });
 }
 
 </script>
@@ -161,17 +246,78 @@ z-index: 10;
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
-</style></head><body>    <div id="header">
-        <h1 id="title">{{title}}</h1></div> <div class="page-resource-uri"><a href="https://digits.mainzed.org/geopubby/">https://digits.mainzed.org/geopubby/</a> <b>powered by <a href="https://github.com/i3mainz/geopubby" title="GeoPubby Static" target="_blank">GeoPubby Static<img src="https://digits.mainzed.org/geopubby/static/geopubby_logo.png" alt="GeoPubby" /></a></b></div>
+}</style></head><body><div id="header">
+        <h1 id="title">{{title}}</h1></div><div class="page-resource-uri"><a href="{{baseurl}}">{{baseurl}}</a><b>powered by <a href="https://github.com/i3mainz/geopubby" title="Static Pubby" target="_blank">Static Pubby<img src="https://digits.mainzed.org/geopubby/static/geopubby_logo.png" alt="GeoPubby" /></a></b></div>
       </div><div id="rdficon"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div> <div class="search">
     <div class="ui-widget">Search: <input id="search" size="50"><button id="gotosearch" onclick="followLink()">Go</button></div>
-</div>
-<div class="container-fluid">
-<div class="row-fluid" id="main-wrapper">
-<p>{{description}}</p><table border=1 width=100% class=description><tr><th>Property</th><th>Value</th></tr>{{tablecontent}}</table>    <div id="footer">
-     <div class="container-fluid">
-</div></div></body></html>"""
+</div><div class="container-fluid"><div class="row-fluid" id="main-wrapper"><table border=1 width=100% class=description><tr><th>Property</th><th>Value</th></tr>{{tablecontent}}</table><div id="footer"><div class="container-fluid"></div></div></body></html>"""
+
+def getClassTree(graph,uritolabel):
+    classquery="""PREFIX owl: <http://www.w3.org/2002/07/owl#>\n
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n
+    SELECT DISTINCT ?subject ?label ?supertype\n
+    WHERE {\n
+       { ?individual rdf:type ?subject . } UNION { ?subject rdf:type owl:Class . } .\n
+       OPTIONAL { ?subject rdfs:subClassOf ?supertype } .\n
+       OPTIONAL { ?subject rdfs:label ?label. filter(langMatches(lang(?label),\"en\")) }
+       OPTIONAL { ?subject rdfs:label ?label }.\n
+        FILTER (\n
+            (\n
+            ?subject != owl:Class &&\n
+            ?subject != rdf:List &&\n
+            ?subject != rdf:Property &&\n
+            ?subject != rdfs:Class &&\n
+            ?subject != rdfs:Datatype &&\n
+            ?subject != rdfs:ContainerMembershipProperty &&\n
+            ?subject != owl:DatatypeProperty &&\n
+            ?subject != owl:AnnotationProperty &&\n
+            ?subject != owl:Restriction &&\n
+            ?subject != owl:ObjectProperty &&\n
+            ?subject != owl:NamedIndividual &&\n
+            ?subject != owl:Ontology) )\n
+    }"""
+    results = g.query(classquery)
+    tree={ "plugins": ["search","sort","state","types","contextmenu"],"search": {},"types":{
+        	"class":{"icon":"https://raw.githubusercontent.com/i3mainz/geopubby/master/public/icons/class.png"},
+        	"geoclass":{"icon":"static/icons/geoclass.png"},
+        	"instance":{"icon": "https://raw.githubusercontent.com/i3mainz/geopubby/master/public/icons/instance.png"},
+        	"geoinstance":{"icon":"static/icons/geoinstance.png"}
+        },
+         "core": { "check_callback":True, "data" :[]}}
+    result=[]
+    ress={}
+    classeswithinstances={}
+    for res in results:
+        print(res)
+        if "_:" not in str(res["subject"]) and str(res["subject"]).startswith("http"):
+            ress[str(res["subject"])]={"super":res["supertype"],"label":res["label"]}
+    print(ress)
+    for cls in ress:
+        for obj in graph.subjects(URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(cls)):
+            if str(obj) in uritolabel:
+                result.append({ "id" : str(obj), "parent" : cls, 
+                "type":"instance",
+                "text" : uritolabel[str(obj)]+" ("+str(obj)[str(obj).rfind('/')+1:]+")"})
+            else:
+                result.append({ "id" : str(obj), "parent" : cls, 
+                "type":"instance",
+                "text" : str(obj)[str(obj).rfind('/')+1:] })
+        if ress[cls]["super"]==None:
+                result.append({ "id" : cls, "parent" : "#", 
+                "type":"class",
+                "text" : cls[cls.rfind('/')+1:] })
+        else:
+            if cls["label"]!=None:
+                result.append({ "id" : cls, "parent" : ress[cls]["super"], 
+                "type" : "class",
+                "text" : ress[cls]["label"]+" ("+cls[cls.rfind('/')+1:]+")"})
+            else:
+                result.append({ "id" : cls, "parent" : "#", 
+                    "type":"class",
+                "text" : cls[cls.rfind('/')+1:] })
+    tree["core"]["data"]=result
+    return "var tree="+json.dumps(tree,indent=2)
 
 def replaceNameSpacesInLabel(uri):
     for ns in prefixes["reversed"]:
@@ -179,17 +325,23 @@ def replaceNameSpacesInLabel(uri):
             return {"uri":str(prefixes["reversed"][ns])+":"+str(uri.replace(ns,prefixes["reversed"][ns])),"ns":prefixes["reversed"][ns]}
     return None
 
-def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename):
+def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename,classtreename):
     tablecontents=""
     isodd=False
-    checkdepth=savepath.replace(baseurl,"").count("/")
+    savepath=savepath.replace("\\","/")
+    if savepath.endswith("/"):
+        checkdepth=savepath.replace(baseurl,"").count("/")-1
+    else:
+        checkdepth=savepath.replace(baseurl,"").count("/")
+    checkdepth-=1
+    print("Checkdepth: "+str(checkdepth))
     foundlabel=""
     for tup in predobjs:
         if isodd:
             tablecontents+="<tr class=\"odd\">"
         else:
             tablecontents+="<tr class=\"even\">"
-        if baseurl in tup[0]:
+        if baseurl in str(tup[0]):
             rellink=str(tup[0]).replace(baseurl,"")
             for i in range(0,checkdepth):
                 rellink="../"+rellink
@@ -236,7 +388,7 @@ def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename):
             tablecontents+="<tr class=\"odd\">"
         else:
             tablecontents+="<tr class=\"even\">"
-        if baseurl in tup[1]:
+        if baseurl in str(tup[1]):
             rellink=str(tup[1]).replace(baseurl,"")
             for i in range(0,checkdepth):
                 rellink="../"+rellink
@@ -280,10 +432,13 @@ def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename):
         rellink=searchfilename
         for i in range(0,checkdepth):
             rellink="../"+rellink
+        rellink2=classtreename
+        for i in range(0,checkdepth):
+            rellink2="../"+rellink2
         if foundlabel!="":
-            f.write(htmltemplate.replace("{{title}}","<a href=\""+str(subject)+"\">"+str(foundlabel)+"</a>").replace("{{baseurl}}","\"+"+baseurl+"\"").replace("{{tablecontent}}",tablecontents).replace("{{description}}","").replace("{{scriptfolderpath}}",rellink))
+            f.write(htmltemplate.replace("{{prefixpath}}",prefixnamespace).replace("{{title}}","<a href=\""+str(subject)+"\">"+str(foundlabel)+"</a>").replace("{{baseurl}}","\""+baseurl+"\"").replace("{{tablecontent}}",tablecontents).replace("{{description}}","").replace("{{scriptfolderpath}}",rellink).replace("{{classtreefolderpath}}",rellink2))
         else:
-            f.write(htmltemplate.replace("{{title}}","<a href=\""+str(subject)+"\">"+str(subject[subject.rfind("/")+1:])+"</a>").replace("{{baseurl}}","\"+"+baseurl+"\"").replace("{{tablecontent}}",tablecontents).replace("{{description}}","").replace("{{scriptfolderpath}}",rellink))
+            f.write(htmltemplate.replace("{{prefixpath}}",prefixnamespace).replace("{{title}}","<a href=\""+str(subject)+"\">"+str(subject[subject.rfind("/")+1:])+"</a>").replace("{{baseurl}}","\""+baseurl+"\"").replace("{{tablecontent}}",tablecontents).replace("{{description}}","").replace("{{scriptfolderpath}}",rellink).replace("{{classtreefolderpath}}",rellink2))
         f.close()
 
 with open('signlist/prefixes.json', encoding="utf-8") as f:
@@ -300,29 +455,34 @@ if len(sys.argv)>2:
     outpath=sys.argv[2]
 if len(sys.argv)>3:
     prefixnamespace=sys.argv[3]
-corpusid=filepath[filepath.rfind('/')+1:filepath.rfind('.')-1]
+corpusid=filepath[filepath.rfind('/')+1:filepath.rfind('.')]
 namespaceshort="cuneisignlist"
 if not os.path.isdir(outpath):
     os.mkdir(outpath)
 labeltouri={}
+uritolabel={}
 g = Graph()
 g.parse(filepath)
-prefixnamespace="http://purl.org/cuneiform/"
-subjectstorender=[]
+prefixnamespace="http://purl.org/cuneiform/signlist/"
+subjectstorender=set()
 for sub in g.subjects():
     if prefixnamespace in sub:
-        subjectstorender.append(sub)
-        for obj in g.objects(sub,URIRef("http://www.w3.org/2000/01/rdf-schema#")):
+        subjectstorender.add(sub)
+        for obj in g.objects(sub,URIRef("http://www.w3.org/2000/01/rdf-schema#label")):
             labeltouri[str(obj)]=str(sub)
+            uritolabel[str(sub)]=str(obj)
 with open(outpath+corpusid+'_search.js', 'w', encoding='utf-8') as f:
     f.write("var search="+json.dumps(labeltouri,indent=2))
+    f.close()
+with open(outpath+corpusid+"_classtree.js", 'w', encoding='utf-8') as f:
+    f.write(getClassTree(g,uritolabel))
     f.close()
 pathmap={}
 paths={}
 subtorenderlen=len(subjectstorender)
 subtorencounter=0
 for subj in subjectstorender:
-    path=subj.replace("http://purl.org/cuneiform/","")
+    path=subj.replace(prefixnamespace,"")
     try:
         if "/" in path:
             addpath=""
@@ -339,9 +499,9 @@ for subj in subjectstorender:
             if outpath not in paths:
                 paths[outpath]=[]
             paths[outpath].append(path+"/index.html")
-        createHTML(outpath+path,g.predicate_objects(subj),subj,prefixnamespace,g.subject_predicates(subj),g,str(corpusid)+"_search.js")  
+        createHTML(outpath+path,g.predicate_objects(subj),subj,prefixnamespace,g.subject_predicates(subj),g,str(corpusid)+"_search.js",str(corpusid)+"_classtree.js")  
         subtorencounter+=1
-        print(str(subtorencounter)+"/"+str(subtorenderlen))
+        print(str(subtorencounter)+"/"+str(subtorenderlen)+" "+str(outpath+path))
     except:
         print("error")
 #print(paths)
