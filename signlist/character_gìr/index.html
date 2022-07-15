@@ -1,0 +1,246 @@
+
+<div id="mySidenav" class="sidenav" style="overflow:auto;">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  GeoClasses: <input type="checkbox" id="geoclasses"/><br/>
+  Search:<input type="text" id="classsearch"><br/><div id="jstree"></div>
+</div><html><head><title><a href="http://purl.org/cuneiform/signlist/character_gìr">Character: GÌR</a></title>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.1.1/themes/default/style.min.css" />
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="../signlist_search.js"></script><script src="../signlist_classtree.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.9/jstree.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<script>
+  var baseurl="http://purl.org/cuneiform/signlist/"
+  $( function() {
+    var availableTags = Object.keys(search)
+    $( "#search" ).autocomplete({
+      source: availableTags
+    });
+    console.log(availableTags)
+    setupJSTree()
+  } );
+
+function loadClasses(){
+	if($('#geoclasses').prop('checked')){
+		getAllClasses();
+	}else{
+		getClassHierarchy([]);
+	}
+}
+function openNav() {
+  document.getElementById("mySidenav").style.width = "400px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+function followLink(thelink=null){
+    if(thelink==null){
+        rest=search[document.getElementById('search').value].replace(baseurl,"")
+    }else{
+        rest=thelink.replace(baseurl,"")
+    }
+    count=location.href.split("/").length-1
+    counter=0
+    while(counter<count){
+        rest="../"+rest
+        counter+=1
+    }  
+    location.href=rest
+}
+
+function setupJSTree(){
+    console.log("setupJSTree")
+    tree["contextmenu"]={}
+    tree["contextmenu"]["items"]=function (node) {
+                    return {
+                        "instancecount": {
+                            "separator_before": false,
+                            "separator_after": false,
+                            "icon": baseurl+"static/icons/instancecount.png",
+                            "label": "Check instance count",
+                            "action": function (obj) {
+                                getInstanceCount(node)      
+                            }
+                        },
+                        "showinstances": {
+                            "separator_before": false,
+                            "separator_after": false,
+                            "label": "Show instances in GeoPubby",
+                            "icon": baseurl+"static/icons/queryinstances.png",
+                            "action": function (obj) {
+                                getInstances(node)                              
+                            }
+                        },
+                        "querydataschema": {
+                            "separator_before": false,
+                            "separator_after": false,
+                            "icon": baseurl+"static/icons/classschema.png",
+                            "label": "Query data (schema)",
+                            "action": function (obj) {
+                                if(node.icon.includes("class.png")){
+                                    getDatasetSchema(node)                                  	
+                                }else if(node.icon.includes("instance.png")){
+                                    getInstanceData(node)  
+                                }
+                            }
+                        },
+                        "show in map view": {
+                            "separator_before": false,
+                            "separator_after": false,
+                            "label": "Show instances in Map View",
+                            "action": function (obj) {
+                                console.log(node)
+                                console.log("Show instances in map view")  
+                                var win = window.open("https://digits.mainzed.org/geopubby/"+"values/-rdf:type/"+node.id.substring(node.id.lastIndexOf('/')+1), '_blank');
+                                win.focus();                                   
+                            }
+                        },
+                        "lookupdefinition": {
+                            "separator_before": false,
+                            "separator_after": false,
+                            "label": "Lookup definition",
+                            "icon": baseurl+"static/icons/classlink.png",
+                            "action": function (obj) {
+                                var win = window.open(node.id, '_blank');
+                                win.focus();                                 
+                            }
+                        }
+                    };
+    }
+    $('#jstree').jstree(tree);
+    $('#jstree').bind("dblclick.jstree", function (event) {
+        var node = $(event.target).closest("li");
+        var data = node[0].id
+        console.log(data)
+        console.log(node)
+        if(data.includes("http://purl.org/cuneiform/signlist/")){
+            followLink()
+        }
+        window.open(data, '_blank');
+    });
+    var to = false;
+	$('#classsearch').keyup(function () {
+		console.log("KEY UP")
+        if(to) { clearTimeout(to); }
+        to = setTimeout(function () {
+            var v = $('#classsearch').val();
+            $('#jstree').jstree(true).search(v,false,true);
+        });
+    });
+}
+
+</script>
+<style>html { margin: 0; padding: 0; }
+body { font-family: sans-serif; font-size: 80%; margin: 0; padding: 1.2em 2em; }
+#rdficon { float: right; position: relative; top: -28px; }
+#header { border-bottom: 2px solid #696; margin: 0 0 1.2em; padding: 0 0 0.3em; }
+#footer { border-top: 2px solid #696; margin: 1.2em 0 0; padding: 0.3em 0 0; }
+#homelink { display: inline; }
+#homelink, #homelink a { color: #666; }
+#homelink a { font-weight: bold; text-decoration: none; }
+#homelink a:hover { color: red; text-decoration: underline; }
+h1 { display: inline; font-weight: normal; font-size: 200%; margin: 0; text-align: left; }
+h2 { font-weight: normal; font-size: 124%; margin: 1.2em 0 0.2em; }
+.page-resource-uri { font-size: 116%; margin: 0.2em 0; }
+.page-resource-uri a { color: #666; text-decoration: none; }
+.page-resource-uri a:hover { color: red; text-decoration: underline; }
+img { border: none; }
+table.description { border-collapse: collapse; clear: left; font-size: 100%; margin: 0 0 1em; width: 100%; }
+table.description th { background: white; text-align: left; }
+table.description td, table.description th { line-height: 1.2em; padding: 0.3em 0.5em; vertical-align: top; }
+table.description ul { margin: 0; padding-left: 1.4em; }
+table.description li { list-style-position: outside; list-style-type: square; margin-left: 0; padding-left: 0; }
+table.description .property-column { width: 13em; }
+.ui-autocomplete {
+    max-height: 100px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+  }
+.uri { white-space: nowrap; }
+.uri a, a.uri { text-decoration: none; }
+.unbound { color: #888; }
+table.description a small, .metadata-table a small  { font-size: 100%; color: #55a; }
+table.description small, .metadata-table a small  { font-size: 100%; color: #666; }
+table.description .property { white-space: nowrap; padding-right: 1.5em; }
+h1, h2 { color: #810; }
+body { background: #cec; }
+table.description .container > td { background: #c0e2c0; padding: 0.2em 0.8em; }
+table.description .even td { background: #d4f6d4; }
+table.description .odd td { background: #f0fcf0; }
+.image { background: white; float: left; margin: 0 1.5em 1.5em 0; padding: 2px; }
+a.expander { text-decoration: none; }
+
+.metadata-label {
+	font-size: 100%;
+	background: #f0fcf0;
+	padding: 3px;
+}
+
+.metadata-table {
+	font-size: 100%;
+	border-left: 3px solid #f0fcf0;
+	border-bottom: 3px solid #f0fcf0;
+	border-right: 3px solid #f0fcf0;
+	background: #d4f6d4;
+	border-top: 0px solid none;
+	margin: 0px;
+}
+
+.metadata-table td {
+	padding: 3px;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #FFF;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #818181;
+  transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#jstree {
+	font-size: 12px;
+	background-color:white;
+	z-index: 2;
+}
+
+.jstree-contextmenu {
+z-index: 10;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}</style></head><body><div id="header">
+        <h1 id="title"><a href="http://purl.org/cuneiform/signlist/character_gìr">Character: GÌR</a></h1></div><div class="page-resource-uri"><a href=""http://purl.org/cuneiform/signlist/"">"http://purl.org/cuneiform/signlist/"</a><b>powered by <a href="https://github.com/i3mainz/geopubby" title="Static Pubby" target="_blank">Static Pubby<img src="https://digits.mainzed.org/geopubby/static/geopubby_logo.png" alt="GeoPubby" /></a></b></div>
+      </div><div id="rdficon"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div> <div class="search">
+    <div class="ui-widget">Search: <input id="search" size="50"><button id="gotosearch" onclick="followLink()">Go</button></div>
+</div><div class="container-fluid"><div class="row-fluid" id="main-wrapper"><table border=1 width=100% class=description><tr><th>Property</th><th>Value</th></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">22-rdf-syntax-ns#type</a></span></td><td class="wrapword"><a target="_blank" href="http://purl.org/graphemon/Grapheme">Grapheme</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://www.w3.org/2000/01/rdf-schema#label">rdf-schema#label</a></span></td><td class="wrapword">Character: GÌR</td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://lemon-model.net/lemon#sense">lemon#sense</a></span></td><td class="wrapword"><a href="../character_gìr_sense__ne3___vigor/index.html">Grapheme Sense PIRIĜ (NE3): (ne3): vigor (cuneisignlist:character_gìr_sense__ne3___vigor)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://lemon-model.net/lemon#sense">lemon#sense</a></span></td><td class="wrapword"><a href="../character_gìr_sense_foot/index.html">Grapheme Sense ĜIR3: foot (cuneisignlist:character_gìr_sense_foot)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://lemon-model.net/lemon#sense">lemon#sense</a></span></td><td class="wrapword"><a href="../character_gìr_sense_lion/index.html">Grapheme Sense PIRIĜ (NE3): lion (cuneisignlist:character_gìr_sense_lion)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://lemon-model.net/lemon#sense">lemon#sense</a></span></td><td class="wrapword"><a href="../character_gìr_sense_path/index.html">Grapheme Sense ĜIR3: path (cuneisignlist:character_gìr_sense_path)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/abzl">abzl</a></span></td><td class="wrapword">291b</td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_ansze2/index.html">Grapheme Reading GÌR: ansze2 (cuneisignlist:character_gìr_reading_ansze2)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_anszu2/index.html">Grapheme Reading GÌR: anszu2 (cuneisignlist:character_gìr_reading_anszu2)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_az/index.html">Grapheme Reading GÌR: az- (cuneisignlist:character_gìr_reading_az)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_er9/index.html">Grapheme Reading GÌR: er9 (cuneisignlist:character_gìr_reading_er9)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_ger3/index.html">Grapheme Reading GÌR: ger3 (cuneisignlist:character_gìr_reading_ger3)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_gir3/index.html">Grapheme Reading GÌR: gir3 (cuneisignlist:character_gìr_reading_gir3)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_gir3_gir3/index.html">Grapheme Reading GÌR: GIR3,GIR3 (cuneisignlist:character_gìr_reading_gir3_gir3)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_giri3/index.html">Grapheme Reading GÌR: giri3 (cuneisignlist:character_gìr_reading_giri3)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_giru3/index.html">Grapheme Reading GÌR: giru3 (cuneisignlist:character_gìr_reading_giru3)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_husz2/index.html">Grapheme Reading GÌR: husz2 (cuneisignlist:character_gìr_reading_husz2)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_imeriₓ/index.html">Grapheme Reading GÌR: imeriₓ (cuneisignlist:character_gìr_reading_imeriₓ)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_ir9/index.html">Grapheme Reading GÌR: ir9 (cuneisignlist:character_gìr_reading_ir9)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_irra/index.html">Grapheme Reading GÌR: irra (cuneisignlist:character_gìr_reading_irra)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_kir10/index.html">Grapheme Reading GÌR: kir10 (cuneisignlist:character_gìr_reading_kir10)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_kiri5/index.html">Grapheme Reading GÌR: kiri5 (cuneisignlist:character_gìr_reading_kiri5)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_kuszux_k/index.html">Grapheme Reading GÌR:  (cuneisignlist:character_gìr_reading_kuszux_k)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_merₓ/index.html">Grapheme Reading GÌR: merₓ (cuneisignlist:character_gìr_reading_merₓ)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_miriₓ/index.html">Grapheme Reading GÌR: miriₓ (cuneisignlist:character_gìr_reading_miriₓ)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_ne3/index.html">Grapheme Reading GÌR: ne3 (cuneisignlist:character_gìr_reading_ne3)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_ne3_ne3/index.html">Grapheme Reading GÌR: ne3,ne3 (cuneisignlist:character_gìr_reading_ne3_ne3)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_niskum/index.html">Grapheme Reading GÌR: niskum (cuneisignlist:character_gìr_reading_niskum)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_pirig/index.html">Grapheme Reading GÌR: PIRIG (cuneisignlist:character_gìr_reading_pirig)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_piriĝ/index.html">Grapheme Reading GÌR: piriĝ (cuneisignlist:character_gìr_reading_piriĝ)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_piriŋ/index.html">Grapheme Reading GÌR: piriŋ (cuneisignlist:character_gìr_reading_piriŋ)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_qir7/index.html">Grapheme Reading GÌR: qir7 (cuneisignlist:character_gìr_reading_qir7)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_sakkan/index.html">Grapheme Reading GÌR: sakkan (cuneisignlist:character_gìr_reading_sakkan)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_sumugan/index.html">Grapheme Reading GÌR: sumugan (cuneisignlist:character_gìr_reading_sumugan)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_sumugga/index.html">Grapheme Reading GÌR: sumugga (cuneisignlist:character_gìr_reading_sumugga)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_sumukan/index.html">Grapheme Reading GÌR: sumukan (cuneisignlist:character_gìr_reading_sumukan)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_sumuqan/index.html">Grapheme Reading GÌR: sumuqan (cuneisignlist:character_gìr_reading_sumuqan)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_szakan2/index.html">Grapheme Reading GÌR: szakan2 (cuneisignlist:character_gìr_reading_szakan2)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_szakkan2/index.html">Grapheme Reading GÌR: szakkan2 (cuneisignlist:character_gìr_reading_szakkan2)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_ug/index.html">Grapheme Reading GÌR: ug- (cuneisignlist:character_gìr_reading_ug)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_ug2/index.html">Grapheme Reading GÌR: [ug2], (cuneisignlist:character_gìr_reading_ug2)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_wir/index.html">Grapheme Reading GÌR: wir (cuneisignlist:character_gìr_reading_wir)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_ĝir3_ir9_ra/index.html">Grapheme Reading GÌR:  (cuneisignlist:character_gìr_reading_ĝir3_ir9_ra)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_ĝiri3/index.html">Grapheme Reading GÌR: ĝiri3 (cuneisignlist:character_gìr_reading_ĝiri3)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_ŋir3/index.html">Grapheme Reading GÌR: ŋir3 (cuneisignlist:character_gìr_reading_ŋir3)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_gìr_reading_ŋiri3/index.html">Grapheme Reading GÌR: ŋiri3 (cuneisignlist:character_gìr_reading_ŋiri3)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hethzl">hethzl</a></span></td><td class="wrapword">301</td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/lak">lak</a></span></td><td class="wrapword">178</td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/lak">lak</a></span></td><td class="wrapword">291.2</td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/meszl">meszl</a></span></td><td class="wrapword">701</td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/obo">obo</a></span></td><td class="wrapword">701.1</td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/obo">obo</a></span></td><td class="wrapword">701.2</td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/partOf">partOf</a></span></td><td class="wrapword"><a href="../character_gir3_arad/index.html">Character Composition: |gir3.arad| (cuneisignlist:character_gir3_arad)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/partOf">partOf</a></span></td><td class="wrapword"><a href="../character_gir3_bar/index.html">Character Composition: |gir3.bar| (cuneisignlist:character_gir3_bar)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/partOf">partOf</a></span></td><td class="wrapword"><a href="../character_gir3_ga2×pa_a_an/index.html">Character Composition: |gir3.ga2×pa.a.an| (cuneisignlist:character_gir3_ga2×pa_a_an)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/partOf">partOf</a></span></td><td class="wrapword"><a href="../character_gir3_szu_ig/index.html">Character Composition: |gir3.szu.ig| (cuneisignlist:character_gir3_szu_ig)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/partOf">partOf</a></span></td><td class="wrapword"><a href="../character_gir3_za@t/index.html">Character Composition: |gir3.za@t| (cuneisignlist:character_gir3_za@t)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/partOf">partOf</a></span></td><td class="wrapword"><a href="../character_hi_gir3/index.html">Character Composition: |hi.gir3| (cuneisignlist:character_hi_gir3)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/partOf">partOf</a></span></td><td class="wrapword"><a href="../character_hisz4/index.html">Character Composition: hisz4 (cuneisignlist:character_hisz4)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/partOf">partOf</a></span></td><td class="wrapword"><a href="../character_hubud/index.html">Character Composition: hubud (cuneisignlist:character_hubud)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/partOf">partOf</a></span></td><td class="wrapword"><a href="../character_husz/index.html">Character Composition: husz (cuneisignlist:character_husz)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/partOf">partOf</a></span></td><td class="wrapword"><a href="../character_husza/index.html">Character Composition: husza (cuneisignlist:character_husza)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/partOf">partOf</a></span></td><td class="wrapword"><a href="../character_huszuₓ/index.html">Character Composition: huszuₓ (cuneisignlist:character_huszuₓ)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/partOf">partOf</a></span></td><td class="wrapword"><a href="../character_husz⁻/index.html">Character Composition: husz⁻ (cuneisignlist:character_husz⁻)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/partOf">partOf</a></span></td><td class="wrapword"><a href="../character_irgi/index.html">Character Composition: irgi (cuneisignlist:character_irgi)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/partOf">partOf</a></span></td><td class="wrapword"><a href="../character_kiszer/index.html">Character Composition: kiszer (cuneisignlist:character_kiszer)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/partOf">partOf</a></span></td><td class="wrapword"><a href="../character_rusz/index.html">Character Composition: rusz (cuneisignlist:character_rusz)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/partOf">partOf</a></span></td><td class="wrapword"><a href="../character_sakkan2/index.html">Character Composition: sakkan2 (cuneisignlist:character_sakkan2)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/partOf">partOf</a></span></td><td class="wrapword"><a href="../character_szagana/index.html">Character Composition: szagana (cuneisignlist:character_szagana)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/partOf">partOf</a></span></td><td class="wrapword"><a href="../character_szaggin/index.html">Character Composition: szaggin (cuneisignlist:character_szaggin)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/partOf">partOf</a></span></td><td class="wrapword"><a href="../character_szaggina/index.html">Character Composition: szaggina (cuneisignlist:character_szaggina)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/partOf">partOf</a></span></td><td class="wrapword"><a href="../character_szagina/index.html">Character Composition: szagina (cuneisignlist:character_szagina)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/partOf">partOf</a></span></td><td class="wrapword"><a href="../character_szakan6/index.html">Character Composition: szakan6 (cuneisignlist:character_szakan6)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/partOf">partOf</a></span></td><td class="wrapword"><a href="../character_szakkana/index.html">Character Composition: szakkana (cuneisignlist:character_szakkana)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/partOf">partOf</a></span></td><td class="wrapword"><a href="../character_szer11/index.html">Character Composition: szer11 (cuneisignlist:character_szer11)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/slha">slha</a></span></td><td class="wrapword">444</td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/unicodeCodepoint">unicodeCodepoint</a></span></td><td class="wrapword">U+1210A</td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/unicodeRepresentation">unicodeRepresentation</a></span></td><td class="wrapword">𒄊</td></tr><tr class="even"><td class="property">Is <span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/isComposedOf">isComposedOf</a></span> of</td><td class="wrapword"><a href="../character_gir3_arad/index.html">Character Composition: |gir3.arad|</a></td></tr><tr class="odd"><td class="property">Is <span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/isComposedOf">isComposedOf</a></span> of</td><td class="wrapword"><a href="../character_gir3_bar/index.html">Character Composition: |gir3.bar|</a></td></tr><tr class="even"><td class="property">Is <span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/isComposedOf">isComposedOf</a></span> of</td><td class="wrapword"><a href="../character_gir3_za@t/index.html">Character Composition: |gir3.za@t|</a></td></tr><tr class="odd"><td class="property">Is <span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/isComposedOf">isComposedOf</a></span> of</td><td class="wrapword"><a href="../character_hi_gir3/index.html">Character Composition: |hi.gir3|</a></td></tr><tr class="even"><td class="property">Is <span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/isComposedOf">isComposedOf</a></span> of</td><td class="wrapword"><a href="../character_hisz4/index.html">Character Composition: hisz4</a></td></tr><tr class="odd"><td class="property">Is <span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/isComposedOf">isComposedOf</a></span> of</td><td class="wrapword"><a href="../character_husz/index.html">Character Composition: husz</a></td></tr><tr class="even"><td class="property">Is <span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/isComposedOf">isComposedOf</a></span> of</td><td class="wrapword"><a href="../character_husza/index.html">Character Composition: husza</a></td></tr><tr class="odd"><td class="property">Is <span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/isComposedOf">isComposedOf</a></span> of</td><td class="wrapword"><a href="../character_huszuₓ/index.html">Character Composition: huszuₓ</a></td></tr><tr class="even"><td class="property">Is <span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/isComposedOf">isComposedOf</a></span> of</td><td class="wrapword"><a href="../character_husz⁻/index.html">Character Composition: husz⁻</a></td></tr><tr class="odd"><td class="property">Is <span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/isComposedOf">isComposedOf</a></span> of</td><td class="wrapword"><a href="../character_irgi/index.html">Character Composition: irgi</a></td></tr><tr class="even"><td class="property">Is <span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/isComposedOf">isComposedOf</a></span> of</td><td class="wrapword"><a href="../character_kiszer/index.html">Character Composition: kiszer</a></td></tr><tr class="odd"><td class="property">Is <span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/isComposedOf">isComposedOf</a></span> of</td><td class="wrapword"><a href="../character_rusz/index.html">Character Composition: rusz</a></td></tr><tr class="even"><td class="property">Is <span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/isComposedOf">isComposedOf</a></span> of</td><td class="wrapword"><a href="../character_szagana/index.html">Character Composition: szagana</a></td></tr><tr class="odd"><td class="property">Is <span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/isComposedOf">isComposedOf</a></span> of</td><td class="wrapword"><a href="../character_szaggin/index.html">Character Composition: szaggin</a></td></tr><tr class="even"><td class="property">Is <span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/isComposedOf">isComposedOf</a></span> of</td><td class="wrapword"><a href="../character_szaggina/index.html">Character Composition: szaggina</a></td></tr><tr class="odd"><td class="property">Is <span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/isComposedOf">isComposedOf</a></span> of</td><td class="wrapword"><a href="../character_szagina/index.html">Character Composition: szagina</a></td></tr><tr class="even"><td class="property">Is <span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/isComposedOf">isComposedOf</a></span> of</td><td class="wrapword"><a href="../character_szakan6/index.html">Character Composition: szakan6</a></td></tr><tr class="odd"><td class="property">Is <span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/isComposedOf">isComposedOf</a></span> of</td><td class="wrapword"><a href="../character_szakkana/index.html">Character Composition: szakkana</a></td></tr><tr class="even"><td class="property">Is <span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/isComposedOf">isComposedOf</a></span> of</td><td class="wrapword"><a href="../character_szer11/index.html">Character Composition: szer11</a></td></tr><tr class="odd"><td class="property">Is <span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/isComposedOf">isComposedOf</a></span> of</td><td class="wrapword"><a href="../character_gir3_szu_ig/index.html">Character Composition: |gir3.szu.ig|</a></td></tr><tr class="even"><td class="property">Is <span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/isComposedOf">isComposedOf</a></span> of</td><td class="wrapword"><a href="../character_hubud/index.html">Character Composition: hubud</a></td></tr><tr class="odd"><td class="property">Is <span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/isComposedOf">isComposedOf</a></span> of</td><td class="wrapword"><a href="../character_gir3_ga2×pa_a_an/index.html">Character Composition: |gir3.ga2×pa.a.an|</a></td></tr><tr class="even"><td class="property">Is <span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/isComposedOf">isComposedOf</a></span> of</td><td class="wrapword"><a href="../character_sakkan2/index.html">Character Composition: sakkan2</a></td></tr></table><div id="footer"><div class="container-fluid"></div></div></body></html>
