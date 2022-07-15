@@ -38,79 +38,47 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
-function followLink(thelink=null){
+
+function rewriteLink(thelink){
     if(thelink==null){
         rest=search[document.getElementById('search').value].replace(baseurl,"")
     }else{
         rest=thelink.replace(baseurl,"")
     }
-    count=location.href.split("/").length-1
+    count=rest.split("/").length
     counter=0
     while(counter<count){
         rest="../"+rest
         counter+=1
-    }  
+    }
+    rest+="/index.html"
+    return rest
+}
+
+function followLink(thelink=null){
+    rest=rewriteLink(thelink) 
     location.href=rest
 }
 
 function setupJSTree(){
     console.log("setupJSTree")
     tree["contextmenu"]={}
+    tree["core"]["check_callback"]=true
     tree["contextmenu"]["items"]=function (node) {
-                    return {
-                        "instancecount": {
-                            "separator_before": false,
-                            "separator_after": false,
-                            "icon": baseurl+"static/icons/instancecount.png",
-                            "label": "Check instance count",
-                            "action": function (obj) {
-                                getInstanceCount(node)      
-                            }
-                        },
-                        "showinstances": {
-                            "separator_before": false,
-                            "separator_after": false,
-                            "label": "Show instances in GeoPubby",
-                            "icon": baseurl+"static/icons/queryinstances.png",
-                            "action": function (obj) {
-                                getInstances(node)                              
-                            }
-                        },
-                        "querydataschema": {
-                            "separator_before": false,
-                            "separator_after": false,
-                            "icon": baseurl+"static/icons/classschema.png",
-                            "label": "Query data (schema)",
-                            "action": function (obj) {
-                                if(node.icon.includes("class.png")){
-                                    getDatasetSchema(node)                                  	
-                                }else if(node.icon.includes("instance.png")){
-                                    getInstanceData(node)  
-                                }
-                            }
-                        },
-                        "show in map view": {
-                            "separator_before": false,
-                            "separator_after": false,
-                            "label": "Show instances in Map View",
-                            "action": function (obj) {
-                                console.log(node)
-                                console.log("Show instances in map view")  
-                                var win = window.open("https://digits.mainzed.org/geopubby/"+"values/-rdf:type/"+node.id.substring(node.id.lastIndexOf('/')+1), '_blank');
-                                win.focus();                                   
-                            }
-                        },
-                        "lookupdefinition": {
-                            "separator_before": false,
-                            "separator_after": false,
-                            "label": "Lookup definition",
-                            "icon": baseurl+"static/icons/classlink.png",
-                            "action": function (obj) {
-                                var win = window.open(node.id, '_blank');
-                                win.focus();                                 
-                            }
-                        }
-                    };
+        return {
+            "lookupdefinition": {
+                "separator_before": false,
+                "separator_after": false,
+                "label": "Lookup definition",
+                "icon": baseurl+"static/icons/classlink.png",
+                "action": function (obj) {
+                    newlink=rewriteLink(node.id) 
+                    console.log(newlink)
+                    var win = window.open(newlink, '_blank');
+                    win.focus();                                 
+                }
+            }
+        };
     }
     $('#jstree').jstree(tree);
     $('#jstree').bind("dblclick.jstree", function (event) {
@@ -119,7 +87,7 @@ function setupJSTree(){
         console.log(data)
         console.log(node)
         if(data.includes("http://purl.org/cuneiform/signlist/")){
-            followLink()
+            followLink(data)
         }
         window.open(data, '_blank');
     });
@@ -240,7 +208,7 @@ z-index: 10;
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }</style></head><body><div id="header">
-        <h1 id="title"><a href="http://purl.org/cuneiform/signlist/character_szab_pa_ib">Character Composition: SZAB (PA.IB)</a></h1></div><div class="page-resource-uri"><a href=""http://purl.org/cuneiform/signlist/"">"http://purl.org/cuneiform/signlist/"</a><b>powered by <a href="https://github.com/i3mainz/geopubby" title="Static Pubby" target="_blank">Static Pubby<img src="https://digits.mainzed.org/geopubby/static/geopubby_logo.png" alt="GeoPubby" /></a></b></div>
+        <h1 id="title"><a href="http://purl.org/cuneiform/signlist/character_szab_pa_ib">Character Composition: SZAB (PA.IB)</a></h1></div><div class="page-resource-uri"><a href="http://purl.org/cuneiform/signlist/">http://purl.org/cuneiform/signlist/</a> <b>powered by Static Pubby</b></div>
       </div><div id="rdficon"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div> <div class="search">
     <div class="ui-widget">Search: <input id="search" size="50"><button id="gotosearch" onclick="followLink()">Go</button></div>
-</div><div class="container-fluid"><div class="row-fluid" id="main-wrapper"><table border=1 width=100% class=description><tr><th>Property</th><th>Value</th></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">22-rdf-syntax-ns#type</a></span></td><td class="wrapword"><a target="_blank" href="http://purl.org/graphemon/GraphemeComposition">GraphemeComposition</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://www.w3.org/2000/01/rdf-schema#label">rdf-schema#label</a></span></td><td class="wrapword">Character Composition: SZAB (PA.IB)</td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_hamanzer/index.html">Grapheme Reading SZAB (PA.IB): hamanzer (cuneisignlist:character_szab_pa_ib_reading_hamanzer)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_pa_ib/index.html">Grapheme Reading SZAB (PA.IB): |pa.ib| (cuneisignlist:character_szab_pa_ib_reading_pa_ib)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_sab/index.html">Grapheme Reading SZAB (PA.IB): sab (cuneisignlist:character_szab_pa_ib_reading_sab)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_saba/index.html">Grapheme Reading SZAB (PA.IB): saba (cuneisignlist:character_szab_pa_ib_reading_saba)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_sap/index.html">Grapheme Reading SZAB (PA.IB): sap (cuneisignlist:character_szab_pa_ib_reading_sap)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_sip4/index.html">Grapheme Reading SZAB (PA.IB): sip4 (cuneisignlist:character_szab_pa_ib_reading_sip4)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_sipa2/index.html">Grapheme Reading SZAB (PA.IB): sipa2 (cuneisignlist:character_szab_pa_ib_reading_sipa2)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_szab/index.html">Grapheme Reading SZAB (PA.IB): szab (cuneisignlist:character_szab_pa_ib_reading_szab)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_szaba/index.html">Grapheme Reading SZAB (PA.IB): szaba (cuneisignlist:character_szab_pa_ib_reading_szaba)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_szap/index.html">Grapheme Reading SZAB (PA.IB): szap (cuneisignlist:character_szab_pa_ib_reading_szap)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_szib3/index.html">Grapheme Reading SZAB (PA.IB): szib3 (cuneisignlist:character_szab_pa_ib_reading_szib3)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_szip3/index.html">Grapheme Reading SZAB (PA.IB): szip3 (cuneisignlist:character_szab_pa_ib_reading_szip3)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_szub3/index.html">Grapheme Reading SZAB (PA.IB): szub3 (cuneisignlist:character_szab_pa_ib_reading_szub3)</a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading</a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_szup3/index.html">Grapheme Reading SZAB (PA.IB): szup3 (cuneisignlist:character_szab_pa_ib_reading_szup3)</a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hethzl">hethzl</a></span></td><td class="wrapword">175</td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/meszl">meszl</a></span></td><td class="wrapword">466</td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/slha">slha</a></span></td><td class="wrapword">295k</td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/unicodeCodepoint">unicodeCodepoint</a></span></td><td class="wrapword">U+1227A U+12141</td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/unicodeRepresentation">unicodeRepresentation</a></span></td><td class="wrapword">𒉺𒅁</td></tr></table><div id="footer"><div class="container-fluid"></div></div></body></html>
+</div><div class="container-fluid"><div class="row-fluid" id="main-wrapper"><table border=1 width=100% class=description><tr><th>Property</th><th>Value</th></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">22-rdf-syntax-ns#type <span style="color: #666;">(rdf:type)</span></a></span></td><td class="wrapword"><a target="_blank" href="http://purl.org/graphemon/GraphemeComposition">GraphemeComposition <span style="color: #666;">(graphemon:GraphemeComposition)</span></a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://www.w3.org/2000/01/rdf-schema#label">rdf-schema#label <span style="color: #666;">(rdfs:label)</span></a></span></td><td class="wrapword">Character Composition: SZAB (PA.IB) <small>(<a style="color: #666;" target="_blank" href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a>)</small></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading <span style="color: #666;">(graphemon:hasGraphemeReading)</span></a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_hamanzer/index.html">Grapheme Reading SZAB (PA.IB): hamanzer <span style="color: #666;">(cuneisignlist:character_szab_pa_ib_reading_hamanzer)</span></a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading <span style="color: #666;">(graphemon:hasGraphemeReading)</span></a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_pa_ib/index.html">Grapheme Reading SZAB (PA.IB): |pa.ib| <span style="color: #666;">(cuneisignlist:character_szab_pa_ib_reading_pa_ib)</span></a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading <span style="color: #666;">(graphemon:hasGraphemeReading)</span></a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_sab/index.html">Grapheme Reading SZAB (PA.IB): sab <span style="color: #666;">(cuneisignlist:character_szab_pa_ib_reading_sab)</span></a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading <span style="color: #666;">(graphemon:hasGraphemeReading)</span></a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_saba/index.html">Grapheme Reading SZAB (PA.IB): saba <span style="color: #666;">(cuneisignlist:character_szab_pa_ib_reading_saba)</span></a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading <span style="color: #666;">(graphemon:hasGraphemeReading)</span></a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_sap/index.html">Grapheme Reading SZAB (PA.IB): sap <span style="color: #666;">(cuneisignlist:character_szab_pa_ib_reading_sap)</span></a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading <span style="color: #666;">(graphemon:hasGraphemeReading)</span></a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_sip4/index.html">Grapheme Reading SZAB (PA.IB): sip4 <span style="color: #666;">(cuneisignlist:character_szab_pa_ib_reading_sip4)</span></a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading <span style="color: #666;">(graphemon:hasGraphemeReading)</span></a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_sipa2/index.html">Grapheme Reading SZAB (PA.IB): sipa2 <span style="color: #666;">(cuneisignlist:character_szab_pa_ib_reading_sipa2)</span></a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading <span style="color: #666;">(graphemon:hasGraphemeReading)</span></a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_szab/index.html">Grapheme Reading SZAB (PA.IB): szab <span style="color: #666;">(cuneisignlist:character_szab_pa_ib_reading_szab)</span></a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading <span style="color: #666;">(graphemon:hasGraphemeReading)</span></a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_szaba/index.html">Grapheme Reading SZAB (PA.IB): szaba <span style="color: #666;">(cuneisignlist:character_szab_pa_ib_reading_szaba)</span></a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading <span style="color: #666;">(graphemon:hasGraphemeReading)</span></a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_szap/index.html">Grapheme Reading SZAB (PA.IB): szap <span style="color: #666;">(cuneisignlist:character_szab_pa_ib_reading_szap)</span></a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading <span style="color: #666;">(graphemon:hasGraphemeReading)</span></a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_szib3/index.html">Grapheme Reading SZAB (PA.IB): szib3 <span style="color: #666;">(cuneisignlist:character_szab_pa_ib_reading_szib3)</span></a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading <span style="color: #666;">(graphemon:hasGraphemeReading)</span></a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_szip3/index.html">Grapheme Reading SZAB (PA.IB): szip3 <span style="color: #666;">(cuneisignlist:character_szab_pa_ib_reading_szip3)</span></a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading <span style="color: #666;">(graphemon:hasGraphemeReading)</span></a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_szub3/index.html">Grapheme Reading SZAB (PA.IB): szub3 <span style="color: #666;">(cuneisignlist:character_szab_pa_ib_reading_szub3)</span></a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading <span style="color: #666;">(graphemon:hasGraphemeReading)</span></a></span></td><td class="wrapword"><a href="../character_szab_pa_ib_reading_szup3/index.html">Grapheme Reading SZAB (PA.IB): szup3 <span style="color: #666;">(cuneisignlist:character_szab_pa_ib_reading_szup3)</span></a></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hethzl">hethzl <span style="color: #666;">(graphemon:hethzl)</span></a></span></td><td class="wrapword">175 <small>(<a style="color: #666;" target="_blank" href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a>)</small></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/meszl">meszl <span style="color: #666;">(graphemon:meszl)</span></a></span></td><td class="wrapword">466 <small>(<a style="color: #666;" target="_blank" href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a>)</small></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/slha">slha <span style="color: #666;">(graphemon:slha)</span></a></span></td><td class="wrapword">295k <small>(<a style="color: #666;" target="_blank" href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a>)</small></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/unicodeCodepoint">unicodeCodepoint <span style="color: #666;">(graphemon:unicodeCodepoint)</span></a></span></td><td class="wrapword">U+1227A U+12141 <small>(<a style="color: #666;" target="_blank" href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a>)</small></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/unicodeRepresentation">unicodeRepresentation <span style="color: #666;">(graphemon:unicodeRepresentation)</span></a></span></td><td class="wrapword">𒉺𒅁 <small>(<a style="color: #666;" target="_blank" href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a>)</small></td></tr></table><div id="footer"><div class="container-fluid"></div></div></body></html>
