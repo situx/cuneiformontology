@@ -312,6 +312,11 @@ subjectstorender=[]
 for sub in g.subjects():
     if prefixnamespace in sub:
         subjectstorender.append(sub)
+        for obj in g.objects(sub,URIRef("http://www.w3.org/2000/01/rdf-schema#")):
+            labeltouri[str(obj)]=str(sub)
+with open(outpath+corpusid+'_search.js', 'w', encoding='utf-8') as f:
+    f.write("var search="+json.dumps(labeltouri,indent=2))
+    f.close()
 pathmap={}
 paths={}
 subtorenderlen=len(subjectstorender)
@@ -331,7 +336,7 @@ for subj in subjectstorender:
         else:
             if not os.path.isdir(outpath+path):
                  os.mkdir(outpath+path)
-            if str(corpusid)+"_htmls/" not in paths:
+            if outpath not in paths:
                 paths[outpath]=[]
             paths[outpath].append(path+"/index.html")
         createHTML(outpath+path,g.predicate_objects(subj),subj,prefixnamespace,g.subject_predicates(subj),g,str(corpusid)+"_search.js")  
