@@ -326,23 +326,21 @@ def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename,c
             foundlabel=tup[1]
         if len(tup)>0:
             if "http" in tup[1]:
+                label=str(tup[1][tup[1].rfind('/')+1:])
+                for obj in graph.objects(tup[1],URIRef("http://www.w3.org/2000/01/rdf-schema#label")):
+                    label=str(obj)
                 if baseurl in tup[1]:
                     rellink=str(tup[1]).replace(baseurl,"")
                     for i in range(0,checkdepth):
                         rellink="../"+rellink
                     rellink+="/index.html"
-                    label=str(tup[1][tup[1].rfind('/')+1:])
-                    #print(str(subject)+",http://www.w3.org/2000/01/rdf-schema#label")
-                    for obj in graph.objects(tup[1],URIRef("http://www.w3.org/2000/01/rdf-schema#label")):
-                        label=str(obj)
-                        #print(obj)
                     tablecontents+="<td class=\"wrapword\"><a href=\""+rellink+"\">"+label+" <span style=\"color: #666;\">("+namespaceshort+":"+str(str(tup[1][tup[1].rfind('/')+1:]))+")</span></a></td>"
                 else:
                     res=replaceNameSpacesInLabel(tup[1])
                     if res!=None:
-                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[1])+"\">"+str(tup[1][tup[1].rfind('/')+1:])+" <span style=\"color: #666;\">("+res["uri"]+")</span></a></td>"                  
+                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[1])+"\">"+label+" <span style=\"color: #666;\">("+res["uri"]+")</span></a></td>"                  
                     else:
-                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[1])+"\">"+str(tup[1][tup[1].rfind('/')+1:])+"</a></td>"
+                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[1])+"\">"+label+"</a></td>"
             else:
                 if not isinstance(tup[1], URIRef) and tup[1].datatype!=None:
                     tablecontents+="<td class=\"wrapword\">"+str(tup[1])+" <small>(<a style=\"color: #666;\" target=\"_blank\" href=\""+str(tup[1].datatype)+"\">"+str(tup[1].datatype[tup[1].datatype.rfind('/')+1:])+"</a>)</small></td>"
@@ -372,23 +370,21 @@ def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename,c
                 tablecontents+="<td class=\"property\">Is <span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+str(tup[1])+"\">"+str(tup[1][tup[1].rfind('/')+1:])+"</a></span> of</td>"
         if len(tup)>0:
             if "http" in tup[0]:
+                label=str(tup[0][tup[0].rfind('/')+1:])
+                for obj in graph.objects(tup[0],URIRef("http://www.w3.org/2000/01/rdf-schema#label")):
+                    label=str(obj)
                 if baseurl in tup[0]:
                     rellink=str(tup[0]).replace(baseurl,"")
                     for i in range(0,checkdepth):
                         rellink="../"+rellink
                     rellink+="/index.html"
-                    label=str(tup[0][tup[0].rfind('/')+1:])
-                    #print(str(subject)+",http://www.w3.org/2000/01/rdf-schema#label")
-                    for obj in graph.objects(tup[0],URIRef("http://www.w3.org/2000/01/rdf-schema#label")):
-                        label=str(obj)
-                        #print(obj)
                     tablecontents+="<td class=\"wrapword\"><a href=\""+rellink+"\">"+label+" <span style=\"color: #666;\">("+namespaceshort+":"+str(str(tup[0][tup[0].rfind('/')+1:]))+")</span></a></td>"
                 else:
                     res=replaceNameSpacesInLabel(tup[0])
                     if res!=None:
-                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[0])+"\">"+str(tup[0][tup[0].rfind('/')+1:])+" <span style=\"color: #666;\">("+res["uri"]+")</span></a></td>"                  
+                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[0])+"\">"+label+" <span style=\"color: #666;\">("+res["uri"]+")</span></a></td>"                  
                     else:
-                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[0])+"\">"+str(tup[0][tup[0].rfind('/')+1:])+"</a></td>"
+                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[0])+"\">"+label+"</a></td>"
             else:
                 if not isinstance(tup[0], URIRef) and tup[0].datatype!=None:
                     tablecontents+="<td class=\"wrapword\">"+str(tup[0])+" <small>(<a style=\"color: #666;\" target=\"_blank\" href=\""+str(tup[0].datatype)+"\">"+str(tup[0].datatype[tup[0].datatype.rfind('/')+1:])+"</a>)</small></td>"
@@ -444,7 +440,7 @@ for sub in g.subjects():
             labeltouri[str(obj)]=str(sub)
             uritolabel[str(sub)]=str(obj)
 with open(outpath+corpusid+'_search.js', 'w', encoding='utf-8') as f:
-    f.write("var search="+json.dumps(labeltouri,indent=2))
+    f.write("var search="+json.dumps(labeltouri,indent=2,sort=True))
     f.close()
 with open(outpath+corpusid+"_classtree.js", 'w', encoding='utf-8') as f:
     f.write(getClassTree(g,uritolabel))

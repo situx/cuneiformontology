@@ -22,6 +22,7 @@ def toASCII(strr):
 def convertToRDF(cuneiformsigndict,nuolenna,aasigndict,rdfset,unicodetowikidata):
     unicodeToURI={}
     signnameToURI={}
+    tocheckforUnicode={}
     sensescounter=0
     charsensecounter=0
     for entry in cuneiformsigndict:
@@ -36,6 +37,8 @@ def convertToRDF(cuneiformsigndict,nuolenna,aasigndict,rdfset,unicodetowikidata)
             rdfset.add("<"+str(signuri)+"> rdfs:label \"Character: "+toASCII(str(entry["signname"])).replace("\"","")+"\" .\n ")
             if entry["unicodename"] in unicodetowikidata:
                 rdfset.add("<"+str(signuri)+"> owl:sameAs <"+str(unicodetowikidata[entry["unicodename"]])+"> .\n ")
+                rdfset.add("<"+str(unicodetowikidata[entry["unicodename"]])+"> rdfs:label \"Wikidata: "+str(entry["unicodename"])+" ("+str(entry["unicode"]).replace("\"","")+")\" .\n ")
+            tocheckforUnicode[str(signuri)]=str(entry["unicode"]).replace("\"","")
         if entry["meszl"]!="":
             rdfset.add("<"+str(signuri)+"> graphemon:meszl \""+str(entry["meszl"]).replace("\"","")+"\" .\n ")
         if entry["slha"]!="":
@@ -72,6 +75,7 @@ def convertToRDF(cuneiformsigndict,nuolenna,aasigndict,rdfset,unicodetowikidata)
                 rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> rdf:type graphemon:GraphemeReading .\n ")
                 rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> graphemon:readingValue \""+toASCII(str(item)).replace("\"","")+"\" .\n ")
                 rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> rdfs:label \"Grapheme Reading "+toASCII(str(item)).replace("\"","")+": "+toASCII(str(item)).replace("\"","")+"\" .\n ")
+                tocheckforUnicode[str("http://purl.org/cuneiform/signlist/character_"+cleanString(str(item)))]=item
                 for chara in nuolenna[item]:
                     if chara in unicodeToURI and "uri" in unicodeToURI[chara]:
                         rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> graphemon:isComposedOf <"+str(unicodeToURI[chara]["uri"])+"> .\n ")
@@ -98,6 +102,11 @@ def convertToRDF(cuneiformsigndict,nuolenna,aasigndict,rdfset,unicodetowikidata)
                 unicodeToURI[item]={"@id":"http://purl.org/cuneiform/signlist/character_"+cleanString(str(item)),"signname":toASCII(str(item)).replace("\"",""),"@type":"GraphemeComposition"}
             else:
                 unicodeToURI[item]={"@id":"http://purl.org/cuneiform/signlist/character_"+cleanString(str(item)),"signname":toASCII(str(item)).replace("\"",""),"@type":"Grapheme"}
+    for uri in tocheckforUnicode:
+        for chara in tocheckforUnicode[uri]:
+            if chara in unicodeToURI and "uri" in unicodeToURI[chara]:
+                rdfset.add("<"+str(uri)+"> graphemon:isComposedOf <"+str(unicodeToURI[chara]["uri"])+"> .\n ")
+                rdfset.add("<"+str(unicodeToURI[chara]["@id"])+"> graphemon:partOf <http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> .\n ")  
     print("Matched "+str(nuolennamatchcounter)+" items in nuolenna!")
     aalistmatchcounter=0
     for entry in aasigndict:
