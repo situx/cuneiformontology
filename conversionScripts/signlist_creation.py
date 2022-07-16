@@ -25,10 +25,13 @@ def convertToRDF(cuneiformsigndict,nuolenna,aasigndict,rdfset,unicodetowikidata)
     tocheckforUnicode={}
     sensescounter=0
     charsensecounter=0
+    rdfset.add("<http://purl.org/cuneiform/signlist/signlist_cuneiform> rdf:type graphemon:GraphemeList .\n ")
+    rdfset.add("<http://purl.org/cuneiform/signlist/signlist_cuneiform> rdfs:label \"Cuneiform Sign List\" .\n ")
     for entry in cuneiformsigndict:
         print(entry)
         signuri=("http://purl.org/cuneiform/signlist/character_"+cleanString(entry["signname"])).replace("__","_")
         signnameToURI[toASCII(str(entry["signname"])).replace("\"","")]=str(signuri)
+        rdfset.add("<http://purl.org/cuneiform/signlist/signlist_cuneiform> rdfs:member <"+str(signuri)+"> .\n ")
         if "unicodename" in entry and len(entry["unicodename"])>1:
             rdfset.add("<"+str(signuri)+"> rdf:type graphemon:GraphemeComposition .\n ")
             rdfset.add("<"+str(signuri)+"> rdfs:label \"Character Composition: "+toASCII(str(entry["signname"])).replace("\"","")+"\" .\n ")
@@ -229,6 +232,7 @@ with open('../signlist/signlist.ttl', mode='w', encoding="utf-8") as f:
     f.write("@prefix owl: <http://www.w3.org/2002/07/owl#> .\n ")
     f.write("graphemon:SignlistOntology rdf:type owl:Ontology .\n ")
     f.write("graphemon:GraphemeReading rdf:type owl:Class .\n ")
+    f.write("graphemon:GraphemeList rdf:type owl:Class .\n ")
     f.write("graphemon:Grapheme rdf:type owl:Class .\n ")
     f.write("cunei:Epoch rdf:type owl:Class .\n ")
     f.write("graphemon:GraphemeComposition rdf:type owl:Class .\n ")
