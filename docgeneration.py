@@ -440,7 +440,7 @@ for sub in g.subjects():
             labeltouri[str(obj)]=str(sub)
             uritolabel[str(sub)]=str(obj)
 with open(outpath+corpusid+'_search.js', 'w', encoding='utf-8') as f:
-    f.write("var search="+json.dumps(labeltouri,indent=2,sort=True))
+    f.write("var search="+json.dumps(labeltouri,indent=2,sort_keys=True))
     f.close()
 with open(outpath+corpusid+"_classtree.js", 'w', encoding='utf-8') as f:
     f.write(getClassTree(g,uritolabel))
