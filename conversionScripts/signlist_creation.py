@@ -38,7 +38,7 @@ def convertToRDF(cuneiformsigndict,nuolenna,aasigndict,rdfset,unicodetowikidata)
             if entry["unicodename"] in unicodetowikidata:
                 rdfset.add("<"+str(signuri)+"> owl:sameAs <"+str(unicodetowikidata[entry["unicodename"]])+"> .\n ")
                 rdfset.add("<"+str(unicodetowikidata[entry["unicodename"]])+"> rdfs:label \"Wikidata: "+str(entry["unicodename"])+" ("+str(entry["unicode"]).replace("\"","")+")\" .\n ")
-            tocheckforUnicode[str(signuri)]=str(entry["unicode"]).replace("\"","")
+            tocheckforUnicode[str(signuri)]=str(entry["unicodename"]).replace("\"","")
         if entry["meszl"]!="":
             rdfset.add("<"+str(signuri)+"> graphemon:meszl \""+str(entry["meszl"]).replace("\"","")+"\" .\n ")
         if entry["slha"]!="":
@@ -75,7 +75,7 @@ def convertToRDF(cuneiformsigndict,nuolenna,aasigndict,rdfset,unicodetowikidata)
                 rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> rdf:type graphemon:GraphemeReading .\n ")
                 rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> graphemon:readingValue \""+toASCII(str(item)).replace("\"","")+"\" .\n ")
                 rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> rdfs:label \"Grapheme Reading "+toASCII(str(item)).replace("\"","")+": "+toASCII(str(item)).replace("\"","")+"\" .\n ")
-                tocheckforUnicode[str("http://purl.org/cuneiform/signlist/character_"+cleanString(str(item)))]=item
+                tocheckforUnicode[str("http://purl.org/cuneiform/signlist/character_"+cleanString(str(item)))]=nuolenna[item]
                 for chara in nuolenna[item]:
                     if chara in unicodeToURI and "uri" in unicodeToURI[chara]:
                         rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> graphemon:isComposedOf <"+str(unicodeToURI[chara]["uri"])+"> .\n ")
@@ -159,8 +159,8 @@ def convertToRDF(cuneiformsigndict,nuolenna,aasigndict,rdfset,unicodetowikidata)
                             readinguri=readinguri[:-1]
                         if reading.replace("__","_").replace("__","_").replace(",","").strip()=="":
                             continue
-                        print(reading)
-                        print(readinguri)
+                        #print(reading)
+                        #print(readinguri)
                         if "uri" in term:
                             rdfset.add("<"+readinguri+"> graphemon:epoch <"+str(term["uri"])+"> .\n ")
                             rdfset.add("<"+readinguri+"> rdf:type graphemon:GraphemeReading .\n ")
