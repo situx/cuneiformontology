@@ -9,15 +9,42 @@ from rdflib import Graph
 rdfset=set()
 
 def cleanString(strr):
-    retstr=strr.lower().replace("š","sz").replace("Š","SZ").replace("[","_").replace("]","_").replace("%","_").replace("{","_").replace("}","_").replace(" ","_").replace("'","_").replace("\"","").replace(",","_").replace("|","_").replace("/","_").replace("-","_").replace("+","_").replace("%","_").replace("(","_").replace(")","_").replace(".","_").replace(":","_").replace("₄","4").replace("₂","2").replace("₃","3").replace("₅","5").replace("₆","6").replace("₇","7").replace("₈","8").replace("₉","9").replace("₁","1").replace("₀","0")
+    retstr=toASCII(strr)
+    retstr=retstr.lower().replace("š","sz").replace("Š","SZ").replace("[","_").replace("]","_").replace("%","_").replace("{","_").replace("}","_").replace(" ","_").replace("'","_").replace("\"","").replace(",","_").replace("|","_").replace("/","_").replace("-","_").replace("+","_").replace("%","_").replace("(","_").replace(")","_").replace(".","_").replace(":","_").replace("₄","4").replace("₂","2").replace("₃","3").replace("₅","5").replace("₆","6").replace("₇","7").replace("₈","8").replace("₉","9").replace("₁","1").replace("₀","0")
     if retstr.endswith("_"):
         retstr=retstr[:-1]
     if retstr.startswith("_"):
         retstr=retstr[1:]
     return retstr
 
-def toASCII(strr):
-    return strr.replace("₄","4").replace("₂","2").replace("₃","3").replace("₅","5").replace("₇","7").replace("₆","6").replace("₈","8").replace("₉","9").replace("₁","1").replace("₀","0").replace("%","_").replace("š","sz").replace("Š","SZ")
+#def toASCII(strr):
+#    return strr.replace("₄","4").replace("₂","2").replace("₃","3").replace("₅","5").replace("₇","7").replace("₆","6").replace("₈","8").replace("₉","9").replace("₁","1").replace("₀","0").replace("%","_").replace("š","sz").replace("Š","SZ")
+
+def toASCII(word):
+    ascii_replacements = {
+        'Á' : 'A2','À' : 'A3',
+        'á' : 'a2','à' : 'a3',
+        'É' : 'E2','È' : 'E3',
+        'é' : 'e2','è' : 'e3',
+        'Í' : 'I2','Ì' : 'I3',
+        'í' : 'i2','ì' : 'i3',
+        'Ú' : 'U2','Ù' : 'U3',
+        'ú' : 'u2','ù' : 'u3',
+        'Ṭ' : 'T,', 'j' : 'i',
+        'ĝ' : 'g', 'ṭ' : 't,',
+        'ḫ' : 'h', 'Ḫ' : 'H',
+        'š' : 'sz', 'Š' : 'SZ',
+        'ṣ' : 's,', 'Ṣ' : 'S,',
+        '₀' : '0', '₁' : '1',
+        '₂' : '2', '₃' : '3',
+        '₄' : '4', '₅' : '5',
+        '₆' : '6', '₇' : '7',
+        '₈' : '8', '₉' : '9'}
+    for rep, initial in ascii_replacements.items():
+        word = word.replace(rep.lower(), initial)
+    #print(word)
+    return word
+
 
 def convertToRDF(cuneiformsigndict,nuolenna,aasigndict,rdfset,unicodetowikidata):
     unicodeToURI={}

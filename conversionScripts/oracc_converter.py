@@ -8,26 +8,26 @@ htmltemplate="""
 <div id="mySidenav" class="sidenav" style="overflow:auto;">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   GeoClasses: <input type="checkbox" id="geoclasses"/><br/>
-  Search:<input type="text" id="classsearch"><br/>
-  <div id="jstree"></div>
-</div>
-<html><head><title>{{title}}</title>
+  Search:<input type="text" id="classsearch"><br/><div id="jstree"></div>
+</div><html><head><title>{{title}}</title>
 <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
 <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.1.1/themes/default/style.min.css" />
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="{{scriptfolderpath}}"></script>
+<script src="{{scriptfolderpath}}"></script><script src="{{classtreefolderpath}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.9/jstree.min.js"></script>
 <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
 <script>
-  var baseurl={{baseurl}}
+  var baseurl="{{baseurl}}"
   $( function() {
     var availableTags = Object.keys(search)
     $( "#search" ).autocomplete({
       source: availableTags
     });
+    console.log(availableTags)
+    setupJSTree()
   } );
 
 function loadClasses(){
@@ -44,15 +44,68 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
-function followLink(){
-    rest=search[document.getElementById('search').value].replace(baseurl,"")
-    count=location.href.split("/").length-1
+
+function rewriteLink(thelink){
+    if(thelink==null){
+        rest=search[document.getElementById('search').value].replace(baseurl,"")
+    }else{
+        rest=thelink.replace(baseurl,"")
+    }
+    count=rest.split("/").length
     counter=0
     while(counter<count){
         rest="../"+rest
         counter+=1
     }
+    rest+="/index.html"
+    return rest
+}
+
+function followLink(thelink=null){
+    rest=rewriteLink(thelink) 
     location.href=rest
+}
+
+function setupJSTree(){
+    console.log("setupJSTree")
+    tree["contextmenu"]={}
+    tree["core"]["check_callback"]=true
+    tree["contextmenu"]["items"]=function (node) {
+        return {
+            "lookupdefinition": {
+                "separator_before": false,
+                "separator_after": false,
+                "label": "Lookup definition",
+                "icon": baseurl+"static/icons/classlink.png",
+                "action": function (obj) {
+                    newlink=rewriteLink(node.id) 
+                    console.log(newlink)
+                    var win = window.open(newlink, '_blank');
+                    win.focus();                                 
+                }
+            }
+        };
+    }
+    $('#jstree').jstree(tree);
+    $('#jstree').bind("dblclick.jstree", function (event) {
+        var node = $(event.target).closest("li");
+        var data = node[0].id
+        console.log(data)
+        console.log(node)
+        if(data.includes("{{prefixpath}}")){
+            followLink(data)
+        }
+        window.open(data, '_blank');
+    });
+    var to = false;
+	$('#classsearch').keyup(function () {
+		console.log("KEY UP")
+        if(to) { clearTimeout(to); }
+        to = setTimeout(function () {
+            var v = $('#classsearch').val();
+            $('#jstree').jstree(true).search(v,false,true);
+        });
+    });
 }
 
 </script>
@@ -160,17 +213,12 @@ z-index: 10;
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
-</style></head><body>    <div id="header">
-        <h1 id="title">{{title}}</h1></div> <div class="page-resource-uri"><a href="https://digits.mainzed.org/geopubby/">https://digits.mainzed.org/geopubby/</a> <b>powered by <a href="https://github.com/i3mainz/geopubby" title="GeoPubby Static" target="_blank">GeoPubby Static<img src="https://digits.mainzed.org/geopubby/static/geopubby_logo.png" alt="GeoPubby" /></a></b></div>
+}</style></head><body><div id="header">
+        <h1 id="title">{{title}}</h1></div><div class="page-resource-uri"><a href="{{baseurl}}">{{baseurl}}</a> <b>powered by Static Pubby</b></div>
       </div><div id="rdficon"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div> <div class="search">
     <div class="ui-widget">Search: <input id="search" size="50"><button id="gotosearch" onclick="followLink()">Go</button></div>
-</div>
-<div class="container-fluid">
-<div class="row-fluid" id="main-wrapper">
-<p>{{description}}</p><table border=1 width=100% class=description><tr><th>Property</th><th>Value</th></tr>{{tablecontent}}</table>    <div id="footer">
-     <div class="container-fluid">
-</div></div></body></html>"""
+</div><div class="container-fluid"><div class="row-fluid" id="main-wrapper"><table border=1 width=100% class=description><tr><th>Property</th><th>Value</th></tr>{{tablecontent}}</table><div id="footer"><div class="container-fluid"></div></div></body></html>"""
+
 
 
 
@@ -224,6 +272,7 @@ ttlresult=set()
 ttldictresult=set()
 ttlsignlistresult=set()
 labeltouri={}
+uritolabel={}
 prefixes={}
 ttlresult.add("cunei:Tablet rdf:type owl:Class .\n <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> rdf:type owl:Class . lemon:Sense rdf:type owl:Class .\n <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> rdfs:label \"Glyph\"@en .\n")
 namespace="http://purl.org/cuneiform/"
@@ -242,61 +291,79 @@ with open("cuneify.json",encoding='utf-8') as f:
 
 with open("signmapping.json",encoding='utf-8') as f:
     signmapping = json.load(f)
-
+    
 with open('oraccsenses.json', encoding="utf-8") as f:
     sensesmap = json.load(f)
-
+    
 with open('prefixes.json', encoding="utf-8") as f:
     prefixes = json.load(f)
 
-def getClassTree(graph):
-    classquery="PREFIX owl: <http://www.w3.org/2002/07/owl#>\n"
-    +"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n"
-    +"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n"
-    +"SELECT DISTINCT ?subject ?label ?supertype\n"
-    +"WHERE {\n"
-    +"   { ?individual rdf:type ?subject . } UNION { ?subject rdf:type owl:Class . } .\n"
-    +"   OPTIONAL { ?subject rdfs:subClassOf ?supertype } .\n"
-    +"   OPTIONAL { ?subject rdfs:label ?label. filter(langMatches(lang(?label),\"en\")) }"
-    +"   OPTIONAL { ?subject rdfs:label ?label }.\n"
-    +"    FILTER (\n"
-    +"        (\n"
-    +"        ?subject != owl:Class &&\n"
-    +"        ?subject != rdf:List &&\n"
-    +"        ?subject != rdf:Property &&\n"
-    +"        ?subject != rdfs:Class &&\n"
-    +"        ?subject != rdfs:Datatype &&\n"
-    +"        ?subject != rdfs:ContainerMembershipProperty &&\n"
-    +"        ?subject != owl:DatatypeProperty &&\n"
-    +"        ?subject != owl:AnnotationProperty &&\n"
-    +"        ?subject != owl:Restriction &&\n"
-    +"        ?subject != owl:ObjectProperty &&\n"
-    +"        ?subject != owl:NamedIndividual &&\n"
-    +"        ?subject != owl:Ontology) )\n"
-    +"}"
+def getClassTree(graph,uritolabel):
+    classquery="""PREFIX owl: <http://www.w3.org/2002/07/owl#>\n
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n
+    SELECT DISTINCT ?subject ?label ?supertype\n
+    WHERE {\n
+       { ?individual rdf:type ?subject . } UNION { ?subject rdf:type owl:Class . } .\n
+       OPTIONAL { ?subject rdfs:subClassOf ?supertype } .\n
+       OPTIONAL { ?subject rdfs:label ?label. filter(langMatches(lang(?label),\"en\")) }
+       OPTIONAL { ?subject rdfs:label ?label }.\n
+        FILTER (\n
+            (\n
+            ?subject != owl:Class &&\n
+            ?subject != rdf:List &&\n
+            ?subject != rdf:Property &&\n
+            ?subject != rdfs:Class &&\n
+            ?subject != rdfs:Datatype &&\n
+            ?subject != rdfs:ContainerMembershipProperty &&\n
+            ?subject != owl:DatatypeProperty &&\n
+            ?subject != owl:AnnotationProperty &&\n
+            ?subject != owl:Restriction &&\n
+            ?subject != owl:ObjectProperty &&\n
+            ?subject != owl:NamedIndividual &&\n
+            ?subject != owl:Ontology) )\n
+    }"""
     results = g.query(classquery)
+    tree={ "plugins": ["search","sort","state","types","contextmenu"],"search": {},"types":{
+        	"class":{"icon":"https://raw.githubusercontent.com/i3mainz/geopubby/master/public/icons/class.png"},
+        	"geoclass":{"icon":"static/icons/geoclass.png"},
+        	"instance":{"icon": "https://raw.githubusercontent.com/i3mainz/geopubby/master/public/icons/instance.png"},
+        	"geoinstance":{"icon":"static/icons/geoinstance.png"}
+        },
+         "core": { "check_callback":True, "data" :[]}}
     result=[]
-    result.append({ "id" : "http://www.w3.org/2002/07/owl#Thing", "icon" : "static/icons/class.png","parent" : "#", "type":"class", "text" : "owl:Thing" })
     ress={}
     classeswithinstances={}
     for res in results:
         print(res)
-        if "_:" not in results[res]["subject"].includes("_:") and results[res]["subject"].startsWith("http"):
-            print("")
-            #ress[results[res]["subject"]]={"super":(("supertype" in results[res] and results[res]["supertype"]!=None and "_:" not in results[res]["supertype"] and results[res]["supertype"].startsWith("http"))?results[res]["supertype"]:"http://www.w3.org/2002/07/owl#Thing"),"count":"","type":"class","label":(results[res]["label"]!=null?results[res]["label"]:"")}#results[res]["indidivualc"]
-        #if results[res]["supertype"]!=None and !(results[res]["supertype"] in classeswithinstances) and !(results[res]["supertype"].includes("_:")) and results[res]["supertype"].startsWith("http") ){
-        #    classeswithinstances[results[res]["supertype"]]=True
-    superMap={}
-    for clss in ress:
-        if cls in ress and "super" in ress[cls]:
-            superMap[ress[cls]["super"]]=True
-    for cls in superMap:
-        if cls not in clsMap:
-                result.append({ "id" : cls, "parent" : "#",
+        if "_:" not in str(res["subject"]) and str(res["subject"]).startswith("http"):
+            ress[str(res["subject"])]={"super":res["supertype"],"label":res["label"]}
+    print(ress)
+    for cls in ress:
+        for obj in graph.subjects(URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(cls)):
+            if str(obj) in uritolabel:
+                result.append({ "id" : str(obj), "parent" : cls, 
+                "type":"instance",
+                "text" : uritolabel[str(obj)]+" ("+str(obj)[str(obj).rfind('/')+1:]+")"})
+            else:
+                result.append({ "id" : str(obj), "parent" : cls, 
+                "type":"instance",
+                "text" : str(obj)[str(obj).rfind('/')+1:] })
+        if ress[cls]["super"]==None:
+                result.append({ "id" : cls, "parent" : "#", 
                 "type":"class",
-                "icon" : baseurl+"static/icons/class.png",
-            "text" : cls })
-    print(result)
+                "text" : cls[cls.rfind('/')+1:] })
+        else:
+            if cls["label"]!=None:
+                result.append({ "id" : cls, "parent" : ress[cls]["super"], 
+                "type" : "class",
+                "text" : ress[cls]["label"]+" ("+cls[cls.rfind('/')+1:]+")"})
+            else:
+                result.append({ "id" : cls, "parent" : "#", 
+                    "type":"class",
+                "text" : cls[cls.rfind('/')+1:] })
+    tree["core"]["data"]=result
+    return "var tree="+json.dumps(tree,indent=2)
 
 def replaceNameSpacesInLabel(uri):
     for ns in prefixes["reversed"]:
@@ -304,54 +371,59 @@ def replaceNameSpacesInLabel(uri):
             return {"uri":str(prefixes["reversed"][ns])+":"+str(uri.replace(ns,"")),"ns":prefixes["reversed"][ns]}
     return None
 
-def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename):
+
+def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename,classtreename,uritolabel):
     tablecontents=""
     isodd=False
-    checkdepth=savepath.replace(baseurl,"").count("/")
+    savepath=savepath.replace("\\","/")
+    if savepath.endswith("/"):
+        checkdepth=savepath.replace(baseurl,"").count("/")-1
+    else:
+        checkdepth=savepath.replace(baseurl,"").count("/")
+    print("Checkdepth: "+str(checkdepth))
     foundlabel=""
     for tup in predobjs:
         if isodd:
             tablecontents+="<tr class=\"odd\">"
         else:
             tablecontents+="<tr class=\"even\">"
-        if baseurl in tup[0]:
+        if baseurl in str(tup[0]):
             rellink=str(tup[0]).replace(baseurl,"")
             for i in range(0,checkdepth):
                 rellink="../"+rellink
             rellink+="/index.html"
-            tablecontents+="<td class=\"property\"><span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+rellink+"\">"+str(namespaceshort)+":"+str(tup[0][tup[0].rfind('/')+1:])+"</a></span></td>"
+            label=rellink.replace("/index.html","")
+            tablecontents+="<td class=\"property\"><span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+rellink+"\">"+label+"</a></span></td>"
         else:
-            res=replaceNameSpacesInLabel(str(tup[0]))
+            res=replaceNameSpacesInLabel(tup[0])
             if res!=None:
-                tablecontents+="<td class=\"property\"><span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+str(tup[0])+"\">"+str(tup[0][tup[0].rfind('/')+1:])+" ("+res["uri"]+")</a></span></td>"
+                tablecontents+="<td class=\"property\"><span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+str(tup[0])+"\">"+str(tup[0][tup[0].rfind('/')+1:])+" <span style=\"color: #666;\">("+res["uri"]+")</span></a></span></td>"                  
             else:
                 tablecontents+="<td class=\"property\"><span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+str(tup[0])+"\">"+str(tup[0][tup[0].rfind('/')+1:])+"</a></span></td>"
         if str(tup[0])=="http://www.w3.org/2000/01/rdf-schema#label":
             foundlabel=tup[1]
         if len(tup)>0:
-            if "http" in str(tup[1]):
+            if "http" in tup[1]:
+                label=str(tup[1][tup[1].rfind('/')+1:])
+                for obj in graph.objects(tup[1],URIRef("http://www.w3.org/2000/01/rdf-schema#label")):
+                    label=str(obj)
                 if baseurl in tup[1]:
                     rellink=str(tup[1]).replace(baseurl,"")
                     for i in range(0,checkdepth):
                         rellink="../"+rellink
                     rellink+="/index.html"
-                    label=str(tup[1][tup[1].rfind('/')+1:])
-                    #print(str(subject)+",http://www.w3.org/2000/01/rdf-schema#label")
-                    for obj in graph.objects(tup[1],URIRef("http://www.w3.org/2000/01/rdf-schema#label")):
-                        label=str(obj)
-                        #print(obj)
-                    tablecontents+="<td class=\"wrapword\"><a href=\""+rellink+"\">"+label+" ("+str(namespaceshort)+":"+str(str(tup[1][tup[1].rfind('/')+1:]))+")</a></td>"
+                    tablecontents+="<td class=\"wrapword\"><a href=\""+rellink+"\">"+label+" <span style=\"color: #666;\">("+namespaceshort+":"+str(str(tup[1][tup[1].rfind('/')+1:]))+")</span></a></td>"
                 else:
-                    res=replaceNameSpacesInLabel(str(tup[1]))
+                    res=replaceNameSpacesInLabel(tup[1])
                     if res!=None:
-                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[1])+"\">"+str(tup[1][tup[1].rfind('/')+1:])+" ("+res["uri"]+")</a></td>"
+                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[1])+"\">"+label+" <span style=\"color: #666;\">("+res["uri"]+")</span></a></td>"                  
                     else:
-                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[1])+"\">"+str(tup[1][tup[1].rfind('/')+1:])+"</a></td>"
+                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[1])+"\">"+label+"</a></td>"
             else:
-                if not isinstance(tup[1],URIRef) and tup[1].datatype!=None:
+                if not isinstance(tup[1], URIRef) and tup[1].datatype!=None:
                     tablecontents+="<td class=\"wrapword\">"+str(tup[1])+" <small>(<a style=\"color: #666;\" target=\"_blank\" href=\""+str(tup[1].datatype)+"\">"+str(tup[1].datatype[tup[1].datatype.rfind('/')+1:])+"</a>)</small></td>"
                 else:
-                    tablecontents+="<td class=\"wrapword\">"+str(tup[1])+"</td>"
+                    tablecontents+="<td class=\"wrapword\">"+str(tup[1])+" <small>(<a style=\"color: #666;\" target=\"_blank\" href=\"http://www.w3.org/2001/XMLSchema#string\">xsd:string</a>)</small></td>"
         else:
             tablecontents+="<td class=\"wrapword\"></td>"
         tablecontents+="</tr>"
@@ -361,39 +433,38 @@ def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename):
             tablecontents+="<tr class=\"odd\">"
         else:
             tablecontents+="<tr class=\"even\">"
-        if baseurl in tup[1]:
+        if baseurl in str(tup[1]):
             rellink=str(tup[1]).replace(baseurl,"")
             for i in range(0,checkdepth):
                 rellink="../"+rellink
             rellink+="/index.html"
-            tablecontents+="<td class=\"property\">Is <span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+rellink+"\">"+str(namespaceshort)+":"+str(tup[1][tup[1].rfind('/')+1:])+"</a></span> of</td>"
+            label=rellink.replace("/index.html","")
+            tablecontents+="<td class=\"property\">Is <span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+rellink+"\">"+label+" <span style=\"color: #666;\">("+namespaceshort+":"+str(str(tup[1][tup[1].rfind('/')+1:]))+")</span></a></span> of</td>"
         else:
-            res=replaceNameSpacesInLabel(str(tup[1]))
+            res=replaceNameSpacesInLabel(tup[1])
             if res!=None:
-                tablecontents+="<td class=\"property\">Is <span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+str(tup[1])+"\">"+str(tup[1][tup[1].rfind('/')+1:])+" ("+res["uri"]+")</a></span> of</td>"
+                tablecontents+="<td class=\"property\">Is <span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+str(tup[1])+"\">"+str(tup[1][tup[1].rfind('/')+1:])+" <span style=\"color: #666;\">("+res["uri"]+")</span></a></span> of</td>"                  
             else:
                 tablecontents+="<td class=\"property\">Is <span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+str(tup[1])+"\">"+str(tup[1][tup[1].rfind('/')+1:])+"</a></span> of</td>"
         if len(tup)>0:
-            if "http" in str(tup[0]):
+            if "http" in tup[0]:
+                label=str(tup[0][tup[0].rfind('/')+1:])
+                for obj in graph.objects(tup[0],URIRef("http://www.w3.org/2000/01/rdf-schema#label")):
+                    label=str(obj)
                 if baseurl in tup[0]:
                     rellink=str(tup[0]).replace(baseurl,"")
                     for i in range(0,checkdepth):
                         rellink="../"+rellink
                     rellink+="/index.html"
-                    label=str(tup[0][tup[0].rfind('/')+1:])
-                    #print(str(subject)+",http://www.w3.org/2000/01/rdf-schema#label")
-                    for obj in graph.objects(tup[0],URIRef("http://www.w3.org/2000/01/rdf-schema#label")):
-                        label=str(obj)
-                        #print(obj)
-                    tablecontents+="<td class=\"wrapword\"><a href=\""+rellink+"\">"+label+" ("+str(namespaceshort)+":"+str(tup[0][tup[0].rfind('/')+1:])+")</a></td>"
+                    tablecontents+="<td class=\"wrapword\"><a href=\""+rellink+"\">"+label+" <span style=\"color: #666;\">("+namespaceshort+":"+str(str(tup[0][tup[0].rfind('/')+1:]))+")</span></a></td>"
                 else:
-                    res=replaceNameSpacesInLabel(str(tup[0]))
+                    res=replaceNameSpacesInLabel(tup[0])
                     if res!=None:
-                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[0])+"\">"+str(tup[0][tup[0].rfind('/')+1:])+" ("+res["uri"]+")</a></td>"
+                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[0])+"\">"+label+" <span style=\"color: #666;\">("+res["uri"]+")</span></a></td>"                  
                     else:
-                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[0])+"\">"+str(tup[0][tup[0].rfind('/')+1:])+"</a></td>"
+                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[0])+"\">"+label+"</a></td>"
             else:
-                if not isinstance(tup[0],URIRef) and tup[0].datatype!=None:
+                if not isinstance(tup[0], URIRef) and tup[0].datatype!=None:
                     tablecontents+="<td class=\"wrapword\">"+str(tup[0])+" <small>(<a style=\"color: #666;\" target=\"_blank\" href=\""+str(tup[0].datatype)+"\">"+str(tup[0].datatype[tup[0].datatype.rfind('/')+1:])+"</a>)</small></td>"
                 else:
                     tablecontents+="<td class=\"wrapword\">"+str(tup[0])+"</td>"
@@ -405,10 +476,13 @@ def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename):
         rellink=searchfilename
         for i in range(0,checkdepth):
             rellink="../"+rellink
+        rellink2=classtreename
+        for i in range(0,checkdepth):
+            rellink2="../"+rellink2
         if foundlabel!="":
-            f.write(htmltemplate.replace("{{title}}","<a href=\""+str(subject)+"\">"+str(foundlabel)+"</a>").replace("{{baseurl}}","\"+"+baseurl+"\"").replace("{{tablecontent}}",tablecontents).replace("{{description}}","").replace("{{scriptfolderpath}}",rellink))
+            f.write(htmltemplate.replace("{{prefixpath}}",prefixnamespace).replace("{{title}}","<a href=\""+str(subject)+"\">"+str(foundlabel)+"</a>").replace("{{baseurl}}",baseurl).replace("{{tablecontent}}",tablecontents).replace("{{description}}","").replace("{{scriptfolderpath}}",rellink).replace("{{classtreefolderpath}}",rellink2))
         else:
-            f.write(htmltemplate.replace("{{title}}","<a href=\""+str(subject)+"\">"+str(subject[subject.rfind("/")+1:])+"</a>").replace("{{baseurl}}","\"+"+baseurl+"\"").replace("{{tablecontent}}",tablecontents).replace("{{description}}","").replace("{{scriptfolderpath}}",rellink))
+            f.write(htmltemplate.replace("{{prefixpath}}",prefixnamespace).replace("{{title}}","<a href=\""+str(subject)+"\">"+str(subject[subject.rfind("/")+1:])+"</a>").replace("{{baseurl}}",baseurl).replace("{{tablecontent}}",tablecontents).replace("{{description}}","").replace("{{scriptfolderpath}}",rellink).replace("{{classtreefolderpath}}",rellink2))
         f.close()
 
 def replaceNonURIChars(myuri):
@@ -560,7 +634,7 @@ def handleLineElements(data,ttlresult,currentside,currentsentence,currenttableti
                 ttldictresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform rdfs:label \"WordForm: "+str(lineitem["f"]["form"])+"\" .\n")
                 ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform lemon:writtenRep \""+str(lineitem["f"]["form"])+"\" .\n")
                 ttldictresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform lemon:writtenRep \""+str(lineitem["f"]["form"])+"\" .\n")
-                ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform lemon:writtenRepUnicode \""+str(cuneifyWord(str(lineitem["f"]["form"]),str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_wordformocc",ttlresult))+"\" .\n")
+                ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform lemon:writtenRepUnicode \""+str(cuneifyWord(str(lineitem["f"]["form"]),str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc",ttlresult))+"\" .\n")
                 ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform lemon:writtenRepASCII \""+str(format_ascii(str(lineitem["f"]["form"])))+"\" .\n")
                 ttldictresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform lemon:writtenRepASCII \""+str(format_ascii(str(lineitem["f"]["form"])))+"\" .\n")
                 ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc cunei:Line \""+str(currentline)+"\"^^xsd:string .\n")
@@ -590,7 +664,7 @@ def handleLineElements(data,ttlresult,currentside,currentsentence,currenttableti
                             if "@id" in graphemeobj:
                                 curchar={"_class":"chr","@id":str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc","@type":"TransliterationCharOccurrence","reading":{"@type":"graphemon:GraphemeReading","label":"Grapheme Reading "+str(graphemeobj["signname"])+": "+str(charr["v"]),"graphemon:readingValue":str(charr["v"]),"@id":graphemeobj["@id"]+"_reading_"+str(charr["v"])},"grapheme":graphemeobj}
                             else:
-                                curchar={"_class":"chr","@id":str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc","@type":"TransliterationCharOccurrence","reading":str(charr["v"]),"grapheme":getGraphemeReadingURI(str(charr["v"]))}
+                                curchar={"_class":"chr","@id":str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc","@type":"TransliterationCharOccurrence","reading":str(charr["v"]),"grapheme":getGraphemeReadingURI(str(charr["v"]))}                            
                             #,"grapheme":getGraphemeReadingURI(str(charr["v"]))
                             curseq["children"].append(curchar)
                             #ttlresult.add(str(namespaceshortsignlist)+":character_"+replaceNonURIChars(str(charr["v"]))+" rdf:type graphemon:Grapheme .\n")
@@ -719,17 +793,21 @@ def analyzeTablet(data,ttlresult):
         f.close()
     return ttlresult
 
+
+prefixes["reversed"]["http://purl.org/cuneiform/"]="cunei"
+prefixes["reversed"]["http://purl.org/cuneiform/signlist/"]="cuneisignlist"
+prefixes["reversed"]["http://purl.org/graphemon/"]="graphemon"
+prefixnamespace="http://purl.org/cuneiform/"
 header="""@prefix xsd:<http://www.w3.org/2001/XMLSchema#> .\n@prefix graphemon:<http://purl.org/graphemon/> .\n@prefix cunei:<http://purl.org/cuneiform/> .\n@prefix cuneidict:<http://purl.org/cuneiform/dict/> .\n@prefix cuneisignlist:<http://purl.org/cuneiform/signlist/> .\n@prefix cidoc:<http://www.cidoc-crm.org/cidoc-crm/> .\n@prefix owl:<http://www.w3.org/2002/07/owl#> .\n@prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#> .\n@prefix lemon:<http://lemon-model.net/lemon#> .\n"""
 ontology="""cunei:isDamaged rdf:type owl:DatatypeProperty .\ngraphemon:hasGraphemeReading rdf:type owl:ObjectProperty .\n<http://lexinfo.net/ontology/2.0/lexinfo#partOfSpeech> rdf:type owl:ObjectProperty .\ncunei:hasLine rdf:type owl:ObjectProperty.\ncidoc:P56_found_on rdf:type owl:ObjectProperty.\ncidoc:TXP10_read_by rdf:type owl:ObjectProperty.\ncidoc:TXP3_is_rendered_by rdf:type owl:ObjectProperty .\ncunei:writtenText rdf:type owl:ObjectProperty .\ncunei:hasSide rdf:type owl:ObjectProperty .\ncunei:partOf rdf:type owl:ObjectProperty .\ncunei:next rdf:type owl:ObjectProperty .\ncunei:prevLine rdf:type owl:ObjectProperty .\ncunei:nextLine rdf:type owl:ObjectProperty .\ncunei:prevSentence rdf:type owl:ObjectProperty .\nlemon:reference rdf:type owl:ObjectProperty .\ncunei:nextSentence rdf:type owl:ObjectProperty .\ncunei:nextWord rdf:type owl:ObjectProperty .\ncunei:consistsOf rdf:type owl:ObjectProperty .\ncunei:prevWord rdf:type owl:ObjectProperty .\ncunei:prevInWord rdf:type owl:ObjectProperty .\ncunei:nextInWord rdf:type owl:ObjectProperty .\ncunei:prev rdf:type owl:ObjectProperty .\nlemon:sense rdf:type owl:ObjectProperty .\nlemon:pos rdf:type owl:ObjectProperty .\nlemon:entry rdf:type owl:ObjectProperty .\nlemon:writtenRepUnicode rdf:type owl:DatatypeProperty .\n lemon:writtenRepASCII rdf:type owl:DatatypeProperty .\n<http://www.cidoc-crm.org/cidoc-crm/TXP8_is_component_of> rdf:type owl:ObjectProperty .<http://www.cidoc-crm.org/cidoc-crm/P56_isFoundOn> rdf:type owl:ObjectProperty .\n<http://www.cidoc-crm.org/cidoc-crm/P138_represents> rdf:type owl:ObjectProperty .\n lemon:writtenRep rdf:type owl:DatatypeProperty .\ncunei:positionOnTabletSide rdf:type owl:DatatypeProperty .\ncunei:locatedIn rdf:type owl:ObjectProperty .\nlemon:form rdf:type owl:ObjectProperty .\ncunei:positionInWord rdf:type owl:DatatypeProperty .\ncunei:Line rdf:type owl:DatatypeProperty .\ncunei:isAttested rdf:type owl:ObjectProperty .\n"""
 
-
-corpusid="ccpo"
+corpusid="hbtin"
 subdircorp=""
 if subdircorp!="":
     rootdir="cams-gkab/cams/gkab/corpusjson"
 else:
     rootdir=str(corpusid)+"/corpusjson/"
-
+outpath=str(corpusid)+"_htmls/"
 print(cuneify)
 print(rootdir)
 print(list(os.walk(rootdir)))
@@ -768,47 +846,59 @@ with open(corpusid+'_dict.ttl', 'w', encoding='utf-8') as f:
   f.write(ontology)
   f.write("".join(ttldictresult))
   f.close()
-
-#corpusid="signlist"
 g = Graph()
-g.parse(corpusid+'2.ttl')
+g.parse(corpusid+'.ttl')
 prefixnamespace="http://purl.org/cuneiform/"
-subjectstorender=[]
+subjectstorender=set()
 for sub in g.subjects():
     if prefixnamespace in sub:
-        subjectstorender.append(sub)
+        subjectstorender.add(sub)
+        for obj in g.objects(sub,URIRef("http://www.w3.org/2000/01/rdf-schema#label")):
+            labeltouri[str(obj)]=str(sub)
+            uritolabel[str(sub)]=str(obj)
+with open(outpath+corpusid+'_search.js', 'w', encoding='utf-8') as f:
+    f.write("var search="+json.dumps(labeltouri,indent=2))
+    f.close()
+with open(outpath+corpusid+"_classtree.js", 'w', encoding='utf-8') as f:
+    f.write(getClassTree(g,uritolabel))
+    f.close()
 pathmap={}
 paths={}
 subtorenderlen=len(subjectstorender)
 subtorencounter=0
 for subj in subjectstorender:
-    path=subj.replace("http://purl.org/cuneiform/","")
+    path=subj.replace(prefixnamespace,"")
+    #try:
     if "/" in path:
         addpath=""
         for pathelem in path.split("/"):
             addpath+=pathelem+"/"
-            if not os.path.isdir(str(corpusid)+"_htmls/"+addpath):
-                os.mkdir(str(corpusid)+"_htmls/"+addpath)
-        if str(corpusid)+"_htmls/"+path[0:path.rfind('/')]+"/" not in paths:
-            paths[str(corpusid)+"_htmls/"+path[0:path.rfind('/')]+"/"]=[]
-        paths[str(corpusid)+"_htmls/"+path[0:path.rfind('/')]+"/"].append(addpath[0:addpath.rfind('/')])
+            if not os.path.isdir(outpath+addpath):
+                os.mkdir(outpath+addpath)
+        if outpath+path[0:path.rfind('/')]+"/" not in paths:
+            paths[outpath+path[0:path.rfind('/')]+"/"]=[]
+        paths[outpath+path[0:path.rfind('/')]+"/"].append(addpath[0:addpath.rfind('/')])
     else:
-        if not os.path.isdir(str(corpusid)+"_htmls/"+path):
-             os.mkdir(str(corpusid)+"_htmls/"+path)
-        if str(corpusid)+"_htmls/" not in paths:
-            paths[str(corpusid)+"_htmls/"]=[]
-        paths[str(corpusid)+"_htmls/"].append(path+"/index.html")
-    createHTML(str(corpusid)+"_htmls/"+path,g.predicate_objects(subj),subj,prefixnamespace,g.subject_predicates(subj),g,str(corpusid)+"_search.js")
+        if not os.path.isdir(outpath+path):
+             os.mkdir(outpath+path)
+        if outpath not in paths:
+            paths[outpath]=[]
+        paths[outpath].append(path+"/index.html")
+    createHTML(outpath+path,g.predicate_objects(subj),subj,prefixnamespace,g.subject_predicates(subj),g,str(corpusid)+"_search.js",str(corpusid)+"_classtree.js",uritolabel)  
     subtorencounter+=1
-    print(str(subtorencounter)+"/"+str(subtorenderlen))
+    print(str(subtorencounter)+"/"+str(subtorenderlen)+" "+str(outpath+path))
+    #except:
+    #    print("error")
 #print(paths)
 for path in paths:
     indexhtml="<html><head></head><body><h1>"+str(path)+"</h1><ul style=\"height: 100%; overflow: auto\">"
     for pathlink in paths[path]:
-        indexhtml+="<li><a href=\""+str(pathlink)+"\">"+str(pathlink[pathlink.rfind('/')+1:])+"</a></li>"
+        label=pathlink.replace("/index.html","")
+        indexhtml+="<li><a href=\""+str(pathlink)+"\">"+label+"</a></li>"
     indexhtml+="</ul></body></html>"
     print(path)
     with open(path+"index.html", 'w', encoding='utf-8') as f:
         f.write(indexhtml)
         f.close()
 g.serialize(destination=corpusid+'.ttl')
+
