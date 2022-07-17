@@ -1,0 +1,106 @@
+
+<div id="mySidenav" class="sidenav" style="overflow:auto;">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  GeoClasses: <input type="checkbox" id="geoclasses"/><br/>
+  Search:<input type="text" id="classsearch"><br/><div id="jstree"></div>
+</div><html><head><title>Grapheme Reading NÌGIN (U.UD.KID): niŋ6</title>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.1.1/themes/default/style.min.css" />
+<link rel="stylesheet" type="text/css" href="../../style.css"/>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="../../signlist_search.js"></script><script src="../../signlist_classtree.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.9/jstree.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<script src="
+  var baseurl="http://purl.org/cuneiform/dict/"
+  $( function() {
+    var availableTags = Object.keys(search)
+    $( "#search" ).autocomplete({
+      source: availableTags
+    });
+    console.log(availableTags)
+    setupJSTree()
+  } );
+
+function loadClasses(){
+	if($('#geoclasses').prop('checked')){
+		getAllClasses();
+	}else{
+		getClassHierarchy([]);
+	}
+}
+function openNav() {
+  document.getElementById("mySidenav").style.width = "400px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+function rewriteLink(thelink){
+    if(thelink==null){
+        rest=search[document.getElementById('search').value].replace(baseurl,"")
+    }else{
+        rest=thelink.replace(baseurl,"")
+    }
+    count=rest.split("/").length
+    counter=0
+    while(counter<count){
+        rest="../"+rest
+        counter+=1
+    }
+    rest+="/index.html"
+    return rest
+}
+
+function followLink(thelink=null){
+    rest=rewriteLink(thelink)
+    location.href=rest
+}
+
+function setupJSTree(){
+    console.log("setupJSTree")
+    tree["contextmenu"]={}
+    tree["core"]["check_callback"]=true
+    tree["contextmenu"]["items"]=function (node) {
+        return {
+            "lookupdefinition": {
+                "separator_before": false,
+                "separator_after": false,
+                "label": "Lookup definition",
+                "icon": baseurl+"static/icons/classlink.png",
+                "action": function (obj) {
+                    newlink=rewriteLink(node.id)
+                    console.log(newlink)
+                    var win = window.open(newlink, '_blank');
+                    win.focus();
+                }
+            }
+        };
+    }
+    $('#jstree').jstree(tree);
+    $('#jstree').bind("dblclick.jstree", function (event) {
+        var node = $(event.target).closest("li");
+        var data = node[0].id
+        console.log(data)
+        console.log(node)
+        if(data.includes("http://purl.org/cuneiform/dict/")){
+            followLink(data)
+        }
+        window.open(data, '_blank');
+    });
+    var to = false;
+	$('#classsearch').keyup(function () {
+		console.log("KEY UP")
+        if(to) { clearTimeout(to); }
+        to = setTimeout(function () {
+            var v = $('#classsearch').val();
+            $('#jstree').jstree(true).search(v,false,true);
+        });
+    });
+}
+"></script>
+</head><body><div id="header"><h1 id="title"><a href="http://purl.org/cuneiform/signlist/character_nìgin_u_ud_kid_reading_niŋ6">Grapheme Reading NÌGIN (U.UD.KID): niŋ6</a></h1></div><div class="page-resource-uri"><a href="http://purl.org/cuneiform/">http://purl.org/cuneiform/</a> <b>powered by Static Pubby</b></div>
+</div><div id="rdficon"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div> <div class="search"><div class="ui-widget">Search: <input id="search" size="50"><button id="gotosearch" onclick="followLink()">Go</button></div></div><div class="container-fluid"><div class="row-fluid" id="main-wrapper"><table border=1 width=100% class=description><tr><th>Property</th><th>Value</th></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">22-rdf-syntax-ns#type <span style="color: #666;">(rdf:type)</span></a></span></td><td class="wrapword"><a target="_blank" href="http://purl.org/graphemon/GraphemeReading">GraphemeReading <span style="color: #666;">(graphemon:GraphemeReading)</span></a></td></tr><tr class="odd"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://www.w3.org/2000/01/rdf-schema#label">rdf-schema#label <span style="color: #666;">(rdfs:label)</span></a></span></td><td class="wrapword">Grapheme Reading NÌGIN (U.UD.KID): niŋ6 <small>(<a style="color: #666;" target="_blank" href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a>)</small></td></tr><tr class="even"><td class="property"><span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/readingValue">readingValue <span style="color: #666;">(graphemon:readingValue)</span></a></span></td><td class="wrapword">niŋ6 <small>(<a style="color: #666;" target="_blank" href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a>)</small></td></tr><tr class="odd"><td class="property">Is <span class="property-name"><a class="uri" target="_blank" href="http://purl.org/graphemon/hasGraphemeReading">hasGraphemeReading <span style="color: #666;">(graphemon:hasGraphemeReading)</span></a></span> of</td><td class="wrapword"><a href="../../signlist/character_nìgin_u_ud_kid/index.html">Character Composition: NÌGIN (U.UD.KID) <span style="color: #666;">(cuneidict:character_nìgin_u_ud_kid)</span></a></td></tr></table><div id="footer"><div class="container-fluid"></div></div></body></html>
