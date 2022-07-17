@@ -900,5 +900,5 @@ for path in paths:
     with open(path+"index.html", 'w', encoding='utf-8') as f:
         f.write(indexhtml)
         f.close()
-g.serialize(destination=corpusid+'.ttl')
+#g.serialize(destination=corpusid+'.ttl')
 
