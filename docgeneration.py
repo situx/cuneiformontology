@@ -217,7 +217,7 @@ htmltemplate="""
 <script src="{{scriptfolderpath}}"></script><script src="{{classtreefolderpath}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.9/jstree.min.js"></script>
 <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-<script src="{{startscripts}}"></script>
+<script src="{{startscriptpath}}"></script>
 </head><body><div id="header"><h1 id="title">{{title}}</h1></div><div class="page-resource-uri"><a href="{{baseurl}}">{{baseurl}}</a> <b>powered by Static Pubby</b></div>
 </div><div id="rdficon"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div> <div class="search"><div class="ui-widget">Search: <input id="search" size="50"><button id="gotosearch" onclick="followLink()">Go</button></div></div><div class="container-fluid"><div class="row-fluid" id="main-wrapper"><table border=1 width=100% class=description><tr><th>Property</th><th>Value</th></tr>{{tablecontent}}</table><div id="footer"><div class="container-fluid"></div></div></body></html>"""
 
@@ -406,10 +406,13 @@ def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename,c
         rellink3="style.css"
         for i in range(0,checkdepth):
             rellink3="../"+rellink3
+        rellink4="startscripts.css"
+        for i in range(0,checkdepth):
+            rellink4="../"+rellink4
         if foundlabel!="":
-            f.write(htmltemplate.replace("{{prefixpath}}",prefixnamespace).replace("{{toptitle}}",foundlabel).replace("{{startscripts}}",startscripts).replace("{{stylepath}}",rellink3).replace("{{title}}","<a href=\""+str(subject)+"\">"+str(foundlabel)+"</a>").replace("{{baseurl}}",baseurl).replace("{{tablecontent}}",tablecontents).replace("{{description}}","").replace("{{scriptfolderpath}}",rellink).replace("{{classtreefolderpath}}",rellink2))
+            f.write(htmltemplate.replace("{{prefixpath}}",prefixnamespace).replace("{{toptitle}}",foundlabel).replace("{{startscriptpath}}",rellink4).replace("{{stylepath}}",rellink3).replace("{{title}}","<a href=\""+str(subject)+"\">"+str(foundlabel)+"</a>").replace("{{baseurl}}",baseurl).replace("{{tablecontent}}",tablecontents).replace("{{description}}","").replace("{{scriptfolderpath}}",rellink).replace("{{classtreefolderpath}}",rellink2))
         else:
-            f.write(htmltemplate.replace("{{prefixpath}}",prefixnamespace).replace("{{toptitle}}",str(subject[subject.rfind("/")+1:])).replace("{{startscripts}}",startscripts).replace("{{stylepath}}",rellink3).replace("{{title}}","<a href=\""+str(subject)+"\">"+str(subject[subject.rfind("/")+1:])+"</a>").replace("{{baseurl}}",baseurl).replace("{{tablecontent}}",tablecontents).replace("{{description}}","").replace("{{scriptfolderpath}}",rellink).replace("{{classtreefolderpath}}",rellink2))
+            f.write(htmltemplate.replace("{{prefixpath}}",prefixnamespace).replace("{{toptitle}}",str(subject[subject.rfind("/")+1:])).replace("{{startscriptpath}}",rellink4).replace("{{stylepath}}",rellink3).replace("{{title}}","<a href=\""+str(subject)+"\">"+str(subject[subject.rfind("/")+1:])+"</a>").replace("{{baseurl}}",baseurl).replace("{{tablecontent}}",tablecontents).replace("{{description}}","").replace("{{scriptfolderpath}}",rellink).replace("{{classtreefolderpath}}",rellink2))
         f.close()
 
 with open('signlist/prefixes.json', encoding="utf-8") as f:
