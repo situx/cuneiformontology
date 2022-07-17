@@ -5,23 +5,8 @@ import os
 import json
 import sys
 
-htmltemplate="""
-<div id="mySidenav" class="sidenav" style="overflow:auto;">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  GeoClasses: <input type="checkbox" id="geoclasses"/><br/>
-  Search:<input type="text" id="classsearch"><br/><div id="jstree"></div>
-</div><html><head><title>{{title}}</title>
-<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
-<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.1.1/themes/default/style.min.css" />
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="{{scriptfolderpath}}"></script><script src="{{classtreefolderpath}}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.9/jstree.min.js"></script>
-<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-<script>
-  var baseurl="{{baseurl}}"
+startscripts="""
+  var baseurl="http://purl.org/cuneiform/dict/"
   $( function() {
     var availableTags = Object.keys(search)
     $( "#search" ).autocomplete({
@@ -63,7 +48,7 @@ function rewriteLink(thelink){
 }
 
 function followLink(thelink=null){
-    rest=rewriteLink(thelink) 
+    rest=rewriteLink(thelink)
     location.href=rest
 }
 
@@ -79,10 +64,10 @@ function setupJSTree(){
                 "label": "Lookup definition",
                 "icon": baseurl+"static/icons/classlink.png",
                 "action": function (obj) {
-                    newlink=rewriteLink(node.id) 
+                    newlink=rewriteLink(node.id)
                     console.log(newlink)
                     var win = window.open(newlink, '_blank');
-                    win.focus();                                 
+                    win.focus();
                 }
             }
         };
@@ -93,7 +78,7 @@ function setupJSTree(){
         var data = node[0].id
         console.log(data)
         console.log(node)
-        if(data.includes("{{prefixpath}}")){
+        if(data.includes("http://purl.org/cuneiform/dict/")){
             followLink(data)
         }
         window.open(data, '_blank');
@@ -108,9 +93,10 @@ function setupJSTree(){
         });
     });
 }
+"""
 
-</script>
-<style>html { margin: 0; padding: 0; }
+stylesheet="""
+html { margin: 0; padding: 0; }
 body { font-family: sans-serif; font-size: 80%; margin: 0; padding: 1.2em 2em; }
 #rdficon { float: right; position: relative; top: -28px; }
 #header { border-bottom: 2px solid #696; margin: 0 0 1.2em; padding: 0 0 0.3em; }
@@ -214,11 +200,27 @@ z-index: 10;
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}</style></head><body><div id="header">
-        <h1 id="title">{{title}}</h1></div><div class="page-resource-uri"><a href="{{baseurl}}">{{baseurl}}</a> <b>powered by Static Pubby</b></div>
-      </div><div id="rdficon"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div> <div class="search">
-    <div class="ui-widget">Search: <input id="search" size="50"><button id="gotosearch" onclick="followLink()">Go</button></div>
-</div><div class="container-fluid"><div class="row-fluid" id="main-wrapper"><table border=1 width=100% class=description><tr><th>Property</th><th>Value</th></tr>{{tablecontent}}</table><div id="footer"><div class="container-fluid"></div></div></body></html>"""
+}"""
+
+htmltemplate="""
+<div id="mySidenav" class="sidenav" style="overflow:auto;">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  GeoClasses: <input type="checkbox" id="geoclasses"/><br/>
+  Search:<input type="text" id="classsearch"><br/><div id="jstree"></div>
+</div><html><head><title>{{toptitle}}</title>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.1.1/themes/default/style.min.css" />
+<link rel="stylesheet" type="text/css" href="{{stylepath}}"/>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="{{scriptfolderpath}}"></script><script src="{{classtreefolderpath}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.9/jstree.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<script src="{{startscripts}}"></script>
+</head><body><div id="header"><h1 id="title">{{title}}</h1></div><div class="page-resource-uri"><a href="{{baseurl}}">{{baseurl}}</a> <b>powered by Static Pubby</b></div>
+</div><div id="rdficon"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div> <div class="search"><div class="ui-widget">Search: <input id="search" size="50"><button id="gotosearch" onclick="followLink()">Go</button></div></div><div class="container-fluid"><div class="row-fluid" id="main-wrapper"><table border=1 width=100% class=description><tr><th>Property</th><th>Value</th></tr>{{tablecontent}}</table><div id="footer"><div class="container-fluid"></div></div></body></html>"""
+
 
 def getClassTree(graph,uritolabel):
     classquery="""PREFIX owl: <http://www.w3.org/2002/07/owl#>\n
@@ -401,10 +403,13 @@ def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename,c
         rellink2=classtreename
         for i in range(0,checkdepth):
             rellink2="../"+rellink2
+        rellink3="style.css"
+        for i in range(0,checkdepth):
+            rellink3="../"+rellink3
         if foundlabel!="":
-            f.write(htmltemplate.replace("{{prefixpath}}",prefixnamespace).replace("{{title}}","<a href=\""+str(subject)+"\">"+str(foundlabel)+"</a>").replace("{{baseurl}}",baseurl).replace("{{tablecontent}}",tablecontents).replace("{{description}}","").replace("{{scriptfolderpath}}",rellink).replace("{{classtreefolderpath}}",rellink2))
+            f.write(htmltemplate.replace("{{prefixpath}}",prefixnamespace).replace("{{toptitle}}",foundlabel).replace("{{startscripts}}",startscripts).replace("{{stylepath}}",rellink3).replace("{{title}}","<a href=\""+str(subject)+"\">"+str(foundlabel)+"</a>").replace("{{baseurl}}",baseurl).replace("{{tablecontent}}",tablecontents).replace("{{description}}","").replace("{{scriptfolderpath}}",rellink).replace("{{classtreefolderpath}}",rellink2))
         else:
-            f.write(htmltemplate.replace("{{prefixpath}}",prefixnamespace).replace("{{title}}","<a href=\""+str(subject)+"\">"+str(subject[subject.rfind("/")+1:])+"</a>").replace("{{baseurl}}",baseurl).replace("{{tablecontent}}",tablecontents).replace("{{description}}","").replace("{{scriptfolderpath}}",rellink).replace("{{classtreefolderpath}}",rellink2))
+            f.write(htmltemplate.replace("{{prefixpath}}",prefixnamespace).replace("{{toptitle}}",str(subject[subject.rfind("/")+1:])).replace("{{startscripts}}",startscripts).replace("{{stylepath}}",rellink3).replace("{{title}}","<a href=\""+str(subject)+"\">"+str(subject[subject.rfind("/")+1:])+"</a>").replace("{{baseurl}}",baseurl).replace("{{tablecontent}}",tablecontents).replace("{{description}}","").replace("{{scriptfolderpath}}",rellink).replace("{{classtreefolderpath}}",rellink2))
         f.close()
 
 with open('signlist/prefixes.json', encoding="utf-8") as f:
@@ -412,6 +417,7 @@ with open('signlist/prefixes.json', encoding="utf-8") as f:
    
 prefixes["reversed"]["http://purl.org/cuneiform/"]="cunei"
 prefixes["reversed"]["http://purl.org/graphemon/"]="graphemon"
+namespaceshort="cuneidict"
 prefixnamespace="http://purl.org/cuneiform/"
 outpath="signlist_htmls/"
 if len(sys.argv)<=1:
@@ -423,15 +429,15 @@ if len(sys.argv)>2:
     outpath=sys.argv[2]
 if len(sys.argv)>3:
     prefixnamespace=sys.argv[3]
+if len(sys.argv)>4:
+    namespaceshort=sys.argv[4]
 corpusid=filepath[filepath.rfind('/')+1:filepath.rfind('.')]
-namespaceshort="cuneisignlist"
 if not os.path.isdir(outpath):
     os.mkdir(outpath)
 labeltouri={}
 uritolabel={}
 g = Graph()
 g.parse(filepath)
-prefixnamespace="http://purl.org/cuneiform/signlist/"
 subjectstorender=set()
 for sub in g.subjects():
     if prefixnamespace in sub:
@@ -444,6 +450,12 @@ with open(outpath+corpusid+'_search.js', 'w', encoding='utf-8') as f:
     f.close()
 with open(outpath+corpusid+"_classtree.js", 'w', encoding='utf-8') as f:
     f.write(getClassTree(g,uritolabel))
+    f.close()
+with open(outpath+"style.css", 'w', encoding='utf-8') as f:
+    f.write(stylesheet)
+    f.close()
+with open(outpath+"startscripts.js", 'w', encoding='utf-8') as f:
+    f.write(startscripts)
     f.close()
 pathmap={}
 paths={}
@@ -483,4 +495,4 @@ for path in paths:
     with open(path+"index.html", 'w', encoding='utf-8') as f:
         f.write(indexhtml)
         f.close()
-g.serialize(destination=corpusid+'.ttl')
+#g.serialize(destination=corpusid+'.ttl')
