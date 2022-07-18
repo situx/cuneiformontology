@@ -117,10 +117,6 @@ def convertToRDF(cuneiformsigndict,nuolenna,aasigndict,rdfset,unicodetowikidata)
                 rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> rdf:type graphemon:GraphemeReading .\n ")
                 rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> graphemon:readingValue \""+toASCII(str(item)).replace("\"","")+"\" .\n ")
                 rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> rdfs:label \"Grapheme Reading "+toASCII(str(item)).replace("\"","")+": "+toASCII(str(item)).replace("\"","")+"\" .\n ")
-                for chara in nuolenna[item]:
-                    if chara in unicodeToURI:
-                        rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> graphemon:isComposedOf <"+str(unicodeToURI[chara]["uri"])+"> .\n ")
-                        rdfset.add("<"+str(unicodeToURI[chara]["@id"])+"> graphemon:partOf <http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> .\n ")
             rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> graphemon:unicodeRepresentation \""+str(nuolenna[item]).replace("\"","")+"\" .\n ")     
             if toASCII(str(item)).replace("\"","").isdigit() and toASCII(str(item)).replace("\"","") in sensesmap:
                 rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> lemon:sense <http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_sense_"+str(toASCII(str(item)).replace("\"",""))+"> .\n")
