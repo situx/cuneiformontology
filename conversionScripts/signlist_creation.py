@@ -251,7 +251,7 @@ with open('../signlist/aa_signlist.csv', mode='r', encoding="utf-8") as inp:
     reader = csv.reader(inp)
     counter=0
     for rows in reader:
-        aasigndict.append({"meszl":rows[10],"labat":rows[9],"obo":rows[8],"rec":rows[7],"lak":rows[6],"unicode":rows[13],"unicodename":rows[11],"edIII":rows[14]+";"+rows[15],"lagasz2":rows[16]+";"+rows[17],"oldbab":rows[19]+","+rows[28],"meaning":rows[20],"akkword":rows[22],"oldass":rows[29],"middleass":rows[32]+","+rows[33],"middlebab":rows[34]+","+rows[35]})
+        aasigndict.append({"meszl":rows[8],"labat":rows[7],"obo":rows[6],"rec":rows[5],"lak":rows[4],"unicode":rows[13],"unicodename":rows[11],"edIII":rows[14]+";"+rows[15],"lagasz2":rows[16]+";"+rows[17],"oldbab":rows[19]+","+rows[28],"meaning":rows[20],"akkword":rows[22],"oldass":rows[29],"middleass":rows[32]+","+rows[33],"middlebab":rows[34]+","+rows[35]})
 
 print(aasigndict)
 
