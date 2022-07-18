@@ -406,7 +406,7 @@ def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename,c
         rellink3="style.css"
         for i in range(0,checkdepth):
             rellink3="../"+rellink3
-        rellink4="startscripts.css"
+        rellink4="startscripts.js"
         for i in range(0,checkdepth):
             rellink4="../"+rellink4
         if foundlabel!="":
