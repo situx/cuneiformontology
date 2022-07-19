@@ -51,9 +51,11 @@ jtfcontext={
 
 
 ttlresult=set()
+wordformresult=set()
 ttlresult.add("cunei:Tablet rdf:type owl:Class .\n <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> rdf:type owl:Class . lemon:Sense rdf:type owl:Class .\n <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> rdfs:label \"Glyph\"@en .\n")
 namespace="https://cdli.ucla.edu/"
 namespaceprefix="cdli"
+namespaceshortdictprefix="cuneidict"
 materials={"agate":"http://www.wikidata.org/entity/Q123314",
 "alabaster":"http://www.wikidata.org/entity/Q143447",
 "aragonite":"http://www.wikidata.org/entity/Q23775",
@@ -84,6 +86,7 @@ cuneify={}
 signmapping={}
 sensesmap={}
 prefixes={}
+wordsplit="-|~|\."
 
 with open("cuneify.json",encoding='utf-8') as f:
     cuneify = json.load(f)
@@ -99,38 +102,42 @@ with open('prefixes.json', encoding="utf-8") as f:
 
 def getGraphemeReadingURI(word):
     if word!=None and word!="" and word in cuneify:
-        print(str(word)+" - "+str(word in cuneify))
+        #print(str(word)+" - "+str(word in cuneify))
         unicodeword=cuneify[word]
         chars=word.split("-")
         counter=0
         for chara in unicodeword:
             if chara in signmapping:
-                return {"@type":signmapping[chara]["type"],"@id":signmapping[chara]["uri"],"signname":str(signmapping[chara]["signname"]),"label":"Grapheme: "+str(signmapping[chara]["signname"])}
+                return {"@type":signmapping[chara]["@type"],"@id":signmapping[chara]["@id"],"signname":str(signmapping[chara]["signname"]),"label":"Grapheme: "+str(signmapping[chara]["signname"])}
     return {}
 
-def cuneifyWord(word,worduri,ttlresult):
-    if word in cuneify:
-        unicodeword=cuneify[word]
-        chars=word.split("-")
+def cuneifyWord(ufword,worduri,ttlresult):
+    word=format_unicode(cleanForCharLookup(ufword))
+    #print("cuneifyWord "+str(word))
+    if word!="" and word!="," and word.lower() in cuneify:
+        unicodeword=cuneify[word.lower()]
+        chars=re.split(wordsplit,word)
         counter=0
+        #print(chars)
         for chara in unicodeword:
             if chara in signmapping:
-                ttlresult.add("<"+str(worduri)+"> cunei:contains <"+str(signmapping[chara]["uri"])+"> .\n")
-                ttlresult.add("<"+str(signmapping[chara]["uri"])+"> rdf:type graphemon:Grapheme . \n")
-                ttlresult.add("<"+str(signmapping[chara]["uri"])+"> rdfs:label \"Character: "+str(signmapping[chara]["signname"])+"\" . \n")
-                labeltouri["Character: "+str(signmapping[chara]["signname"])]=str(signmapping[chara]["uri"])
+                #print(str(chara)+" - "+str(signmapping[chara]))
+                ttlresult.add("<"+str(worduri)+"> cunei:contains <"+str(signmapping[chara]["@id"])+"> .\n")
+                ttlresult.add("<"+str(signmapping[chara]["@id"])+"> rdf:type graphemon:Grapheme . \n")
+                ttlresult.add("<"+str(signmapping[chara]["@id"])+"> rdfs:label \"Character: "+str(signmapping[chara]["signname"])+"\" . \n")
+                #labeltouri["Character: "+str(signmapping[chara]["signname"])]=str(signmapping[chara]["@id"])
             if counter<len(chars) and chara in signmapping:
-                ttlresult.add("<"+str(worduri)+"> graphemon:hasGraphemeReading <"+str(signmapping[chara]["uri"])+"_reading_"+str(chars[counter])+"> .\n")
-                ttlresult.add("<"+str(signmapping[chara]["uri"])+"_reading_"+str(chars[counter])+"> rdfs:label \"Grapheme Reading "+str(signmapping[chara]["signname"])+": "+str(chars[counter])+"\" .\n")
-                labeltouri["Grapheme Reading "+str(signmapping[chara]["signname"])+": "+str(chars[counter])]=str(signmapping[chara]["uri"])+"_reading_"+str(chars[counter])
-                ttlresult.add("<"+str(signmapping[chara]["uri"])+"_reading_"+str(chars[counter])+"> rdf:type graphemon:GraphemeReading .\n")
-                ttlresult.add("<"+str(signmapping[chara]["uri"])+"> graphemon:hasGraphemeReading <"+replaceNonURIChars(str(signmapping[chara]["uri"])+"_reading_"+str(chars[counter]))+"> .\n")
+                ttlresult.add("<"+str(worduri)+"> graphemon:hasGraphemeReading <"+str(signmapping[chara]["@id"])+"_reading_"+str(chars[counter])+"> .\n")
+                ttlresult.add("<"+str(signmapping[chara]["@id"])+"_reading_"+str(chars[counter])+"> rdfs:label \"Grapheme Reading "+str(signmapping[chara]["signname"])+": "+str(chars[counter])+"\" .\n")
+                #labeltouri["Grapheme Reading "+str(signmapping[chara]["signname"])+": "+str(chars[counter])]=str(signmapping[chara]["@id"])+"_reading_"+str(chars[counter])
+                ttlresult.add("<"+str(signmapping[chara]["@id"])+"_reading_"+str(chars[counter])+"> rdf:type graphemon:GraphemeReading .\n")
+                ttlresult.add("<"+str(signmapping[chara]["@id"])+"> graphemon:hasGraphemeReading <"+str(signmapping[chara]["@id"])+"_reading_"+str(chars[counter])+"> .\n")
             counter+=1
         return cuneify[word]
     return ""
 
 def replaceNonURIChars(myuri):
-    res=myuri.replace("$","_").replace("[","_").replace("]","_").replace("\"","_").replace("{","_").replace("?","_").replace("!","_").replace("+","_").replace(" ","_").replace("=","_").replace("-","_").replace("^","_").replace("*","_").replace("}","_").replace("̌","_").replace(";","_").replace("̄","_").replace("ʾ","_").replace("̆","_").replace(",","_").replace("'","_").replace("/","_").replace("+","_").replace("(","_").replace(")","_").replace("|","_").replace("@","_").replace("×","_").replace("&","_").replace("+","_").replace(".","_")
+    res=myuri.replace("$","_").replace("#","").replace("~","_").replace("[","_").replace("]","_").replace("\"","_").replace("{","_").replace("?","_").replace("!","_").replace("+","_").replace(" ","_").replace("=","_").replace("-","_").replace("^","_").replace("*","_").replace("}","_").replace("̌","_").replace(";","_").replace("̄","_").replace("ʾ","_").replace("̆","_").replace(",","_").replace("'","_").replace("/","_").replace("+","_").replace("(","_").replace(")","_").replace("|","_").replace("@","_").replace("×","_").replace("&","_").replace("+","_").replace(".","_")
     if res.startswith("_"):
         res=res[1:]
     if res.endswith("_"):
@@ -138,7 +145,32 @@ def replaceNonURIChars(myuri):
     return res.strip()
 
 def cleanForCharLookup(charr):
-    return charr.replace("#","").replace("?","").replace("!","").lower()
+    return charr.replace("_","").replace("#","").replace("?","").replace("!","").replace("|","").replace(",","").replace("]","").replace("[","").lower()
+
+def format_unicode(word):
+    unicode_replacements = {
+            'A2':'Á',  'A3': 'À',
+            'a2':'á',  'a3': 'à',
+            'E2':'É',  'E3':'È',
+            'e2':'é', 'e3':'è',
+            'I2':'Í', 'I3':'Ì',
+            'i2':'í', 'i3':'ì',
+            'U2':'Ú', 'U3':'Ù',
+            'u2':'ú', 'u3':'ù',
+            'T,':'Ṭ',  'i':'j',
+            'g':'ĝ',  't,':'ṭ',
+            'h':'ḫ', 'H':'Ḫ',
+            'sz':'š', 'SZ':'Š',
+            's,':'ṣ', 'S,':'Ṣ',
+            '0':'₀',  '1':'₁',
+            '2':'₂',  '3':'₃',
+            '4':'₄',  '5':'₅',
+            '6':'₆',  '7':'₇',
+            '8':'₈',  '9':'₉'}
+    for rep, initial in unicode_replacements.items():
+        word = word.replace(rep.lower(), initial)
+    #print(word)
+    return word
 
 def format_ascii(word):
     ascii_replacements = {
@@ -243,10 +275,10 @@ with open('cdli_cat.csv', newline='', encoding="utf-8") as csvfile:
                 ttlresult.add("<"+period[row["period"]]+"> cunei:cdli_key \""+str(row["period"])+"\"^^xsd:string .\n")
             else:
                 ttlresult.add(namespaceprefix+":P"+row["id"]+" cunei:period \""+row["period"]+"\"^^xsd:string .\n")                   
-            print(row["id"])
+            #print(row["id"])
         counter+=1
 header="""@prefix dc:<http://purl.org/dc/terms/> .\n@prefix cdli:<https://cdli.ucla.edu/> .\n@prefix graphemon:<https://purl.org/graphemon/> .\n@prefix qudt:<http://qudt.org/schema/qudt/> .\n@prefix xsd:<http://www.w3.org/2001/XMLSchema#> .\n@prefix cunei:<http://www.example.org/cunei/> .\n@prefix cuneidict:<http://www.example.org/cuneiform/dict/> .\n@prefix cidoc:<http://www.cidoc-crm.org/cidoc-crm/> .\n@prefix owl:<http://www.w3.org/2002/07/owl#> .\n@prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#> .\n@prefix lemon:<http://lemon-model.net/lemon#> .\n"""
-ontology="""cunei:isDamaged rdf:type owl:DatatypeProperty .\ncunei:positionOnTabletSide rdf:type owl:DatatypeProperty .\ncunei:positionInWord rdf:type owl:DatatypeProperty .\ncunei:consistsOf rdf:type owl:ObjectProperty .\nrdfs:member rdf:type owl:ObjectProperty .\ncunei:language rdf:type owl:ObjectProperty .\ncunei:period rdf:type owl:ObjectProperty .\ncunei:cdli_key rdf:type owl:ObjectProperty .\ncunei:compositeNumber rdf:type owl:ObjectProperty .\ncunei:museumNumber rdf:type owl:ObjectProperty .\ncunei:collection rdf:type owl:ObjectProperty .\nrdf:value rdf:type owl:ObjectProperty .\nqudt:unit rdf:type owl:ObjectProperty .\ncunei:thickness rdf:type owl:ObjectProperty .\ncunei:width rdf:type owl:ObjectProperty .\ncunei:height rdf:type owl:ObjectProperty .\ncunei:material rdf:type owl:ObjectProperty .\ncunei:isDamaged rdf:type owl:ObjectProperty .\n<http://lexinfo.net/ontology/2.0/lexinfo#partOfSpeech> rdf:type owl:ObjectProperty .\ncunei:hasLine rdf:type owl:ObjectProperty.\ncidoc:P56_found_on rdf:type owl:ObjectProperty.\ncidoc:TXP10_read_by rdf:type owl:ObjectProperty.\ncidoc:TXP3_is_rendered_by rdf:type owl:ObjectProperty .\ncunei:writtenText rdf:type owl:ObjectProperty .\ncunei:hasSide rdf:type owl:ObjectProperty .\ncunei:partOf rdf:type owl:ObjectProperty .\ncunei:next rdf:type owl:ObjectProperty .\ncunei:prevLine rdf:type owl:ObjectProperty .\ncunei:nextLine rdf:type owl:ObjectProperty .\ncunei:prevSentence rdf:type owl:ObjectProperty .\ncunei:nextSentence rdf:type owl:ObjectProperty .\ncunei:nextWord rdf:type owl:ObjectProperty .\ncunei:consistsOf rdf:type owl:ObjectProperty .\ncunei:prevWord rdf:type owl:ObjectProperty .\ncunei:prevInWord rdf:type owl:ObjectProperty .\ncunei:nextInWord rdf:type owl:ObjectProperty .\ncunei:prev rdf:type owl:ObjectProperty .\nlemon:sense rdf:type owl:ObjectProperty .\nlemon:pos rdf:type owl:ObjectProperty .\nlemon:entry rdf:type owl:ObjectProperty .\nlemon:writtenRepUnicode rdf:type owl:ObjectProperty .\n lemon:writtenRepASCII rdf:type owl:ObjectProperty .\n<http://www.cidoc-crm.org/cidoc-crm/TXP8_is_component_of> rdf:type owl:ObjectProperty .<http://www.cidoc-crm.org/cidoc-crm/P56_isFoundOn> rdf:type owl:ObjectProperty .\n<http://www.cidoc-crm.org/cidoc-crm/P138_represents> rdf:type owl:ObjectProperty .\n lemon:writtenRep rdf:type owl:ObjectProperty .\ncunei:positionOnTabletSide rdf:type owl:ObjectProperty .\ncunei:locatedIn rdf:type owl:ObjectProperty .\nlemon:form rdf:type owl:ObjectProperty .\ncunei:positionInWord rdf:type owl:ObjectProperty .\ncunei:Line rdf:type owl:ObjectProperty .\ncunei:isAttested rdf:type owl:ObjectProperty .\n"""
+ontology="""graphemon:contains rdf:type owl:ObjectProperty .\ngraphemon:hasGraphemeReading rdf:type owl:ObjectProperty.\ncunei:isDamaged rdf:type owl:DatatypeProperty .\ncunei:positionOnTabletSide rdf:type owl:DatatypeProperty .\ncunei:positionInWord rdf:type owl:DatatypeProperty .\ncunei:consistsOf rdf:type owl:ObjectProperty .\nrdfs:member rdf:type owl:ObjectProperty .\ncunei:language rdf:type owl:ObjectProperty .\ncunei:period rdf:type owl:ObjectProperty .\ncunei:cdli_key rdf:type owl:ObjectProperty .\ncunei:compositeNumber rdf:type owl:ObjectProperty .\ncunei:museumNumber rdf:type owl:ObjectProperty .\ncunei:collection rdf:type owl:ObjectProperty .\nrdf:value rdf:type owl:ObjectProperty .\nqudt:unit rdf:type owl:ObjectProperty .\ncunei:thickness rdf:type owl:ObjectProperty .\ncunei:width rdf:type owl:ObjectProperty .\ncunei:height rdf:type owl:ObjectProperty .\ncunei:material rdf:type owl:ObjectProperty .\ncunei:isDamaged rdf:type owl:ObjectProperty .\n<http://lexinfo.net/ontology/2.0/lexinfo#partOfSpeech> rdf:type owl:ObjectProperty .\ncunei:hasLine rdf:type owl:ObjectProperty.\ncidoc:P56_found_on rdf:type owl:ObjectProperty.\ncidoc:TXP10_read_by rdf:type owl:ObjectProperty.\ncidoc:TXP3_is_rendered_by rdf:type owl:ObjectProperty .\ncunei:writtenText rdf:type owl:ObjectProperty .\ncunei:hasSide rdf:type owl:ObjectProperty .\ncunei:partOf rdf:type owl:ObjectProperty .\ncunei:next rdf:type owl:ObjectProperty .\ncunei:prevLine rdf:type owl:ObjectProperty .\ncunei:nextLine rdf:type owl:ObjectProperty .\ncunei:prevSentence rdf:type owl:ObjectProperty .\ncunei:nextSentence rdf:type owl:ObjectProperty .\ncunei:nextWord rdf:type owl:ObjectProperty .\ncunei:consistsOf rdf:type owl:ObjectProperty .\ncunei:prevWord rdf:type owl:ObjectProperty .\ncunei:prevInWord rdf:type owl:ObjectProperty .\ncunei:nextInWord rdf:type owl:ObjectProperty .\ncunei:prev rdf:type owl:ObjectProperty .\nlemon:sense rdf:type owl:ObjectProperty .\nlemon:pos rdf:type owl:ObjectProperty .\nlemon:entry rdf:type owl:ObjectProperty .\nlemon:writtenRepUnicode rdf:type owl:ObjectProperty .\n lemon:writtenRepASCII rdf:type owl:ObjectProperty .\n<http://www.cidoc-crm.org/cidoc-crm/TXP8_is_component_of> rdf:type owl:ObjectProperty .<http://www.cidoc-crm.org/cidoc-crm/P56_isFoundOn> rdf:type owl:ObjectProperty .\n<http://www.cidoc-crm.org/cidoc-crm/P138_represents> rdf:type owl:ObjectProperty .\n lemon:writtenRep rdf:type owl:ObjectProperty .\ncunei:positionOnTabletSide rdf:type owl:ObjectProperty .\ncunei:locatedIn rdf:type owl:ObjectProperty .\nlemon:form rdf:type owl:ObjectProperty .\ncunei:positionInWord rdf:type owl:ObjectProperty .\ncunei:Line rdf:type owl:ObjectProperty .\ncunei:isAttested rdf:type owl:ObjectProperty .\n"""
 
 corpusid="cdli"
 if not os.path.isdir(str(corpusid)+"_jtfs"):
@@ -265,9 +297,9 @@ cdlitabs=set()
 with open('cdliatf_unblocked.atf', encoding="utf-8") as atffile:
     atfs=atffile.read()
     atfss=atfs.split("&P")
+    atfamount=len(atfss)
+    atfcounter=0
     for atf in atfss:
-        if testcounter>2:
-            continue
         atfsslines=atf.split("\n")
         currenttabletid="P"+atfsslines[0][0:atfsslines[0].find("=")-1].strip()
         cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+" rdf:type cunei:Tablet .\n")
@@ -309,15 +341,20 @@ with open('cdliatf_unblocked.atf', encoding="utf-8") as atffile:
                     linespl=line.split(" ")
                     linelen=len(linespl)
                     for word in linespl:
+                        if word=="":
+                            continue
                         if currentwordindex==0:
                             currentwordindex+=1
                             continue
                         cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc rdf:type cunei:WordformOccurance .\n")
                         cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc rdfs:label \" WordForm Occurrence: "+str(word)+" ("+str(currenttabletid)+"["+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"])\" .\n")
                         cdlitabs.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform rdf:type cunei:WordForm .\n")
+                        wordformresult.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform rdf:type cunei:WordForm .\n")
+                        wordformresult.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform rdfs:label \"WordForm: "+replaceNonURIChars(str(word)).replace("\"","")+"\" .\n")
                         cdlitabs.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform rdfs:label \"WordForm: "+str(word).replace("\"","")+"\" .\n")
-                        cdlitabs.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform lemon:writtenRepUnicode \""+str(cuneifyWord(str(word),str(namespace)+""+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc",cdlitabs)).replace("\"","")+"\" .\n")
+                        #cdlitabs.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform lemon:writtenRepUnicode \""+str(cuneifyWord(str(word),str(namespace)+""+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc",cdlitabs)).replace("\"","")+"\" .\n")
                         cdlitabs.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform lemon:writtenRepASCII \""+str(format_ascii(str(word))).replace("\"","")+"\" .\n")
+                        wordformresult.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform lemon:writtenRepASCII \""+str(format_ascii(str(word))).replace("\"","")+"\" .\n")
                         curseq={"_class":"sequence","@id":str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc","form":word,"@type":"short","children":[]}
                         curjtfline["children"].append(curseq)
                         cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+" cunei:consistsOf "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc .\n")
@@ -325,20 +362,23 @@ with open('cdliatf_unblocked.atf', encoding="utf-8") as atffile:
                             cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc cunei:prevWord "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex-1)+"_wordformocc .\n")
                         if currentwordindex<=linelen:
                             cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc cunei:nextWord "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex+1)+"_wordformocc .\n")
-                        currentwordindex+=1
                         currentrelcharindex=0
-                        wordspl=word.split("-")
+                        wordspl=re.split(wordsplit,word)
                         wordspllen=len(wordspl)
                         for charr in wordspl:
+                            if charr=="":
+                                continue
                             cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc rdf:type cunei:TransliterationCharOccurrence .\n")
                             cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc rdfs:label \"Char Occurrence: "+str(charr)+" ("+str(currenttabletid)+"["+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"])\" .\n")
                             cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph rdf:type cidoc:TX9_Glyph .\n")
                             cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph <http://www.cidoc-crm.org/cidoc-crm/TXP8_is_component_of> cunei:"+str(currenttabletid)+"_writtenText .\n")
                             cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph rdfs:label \"Glyph at "+str(currenttabletid)+"["+str(currentside)+" "+replaceNonURIChars(str(currentline))+" "+str(currentcharindex)+"])\" .\n")
+                            #cdlitabs.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform cunei:isAttested "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc .\n")
                             cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc cunei:consistsOf "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc .\n")
                             cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc cunei:partOf "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc .\n")
                             cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc cunei:positionOnTabletSide \""+str(currentcharindex)+"\"^^xsd:integer .\n")
                             cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc cunei:positionInWord \""+str(currentrelcharindex)+"\"^^xsd:integer .\n")
+                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc lemon:writtenRepUnicode \""+str(cuneifyWord(str(charr),str(namespace)+""+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc",cdlitabs))+"\" .\n")
                             if "#" in charr:
                                 cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph cunei:isDamaged \"true\"^^xsd:boolean .\n")
                             else:
@@ -357,17 +397,23 @@ with open('cdliatf_unblocked.atf', encoding="utf-8") as atffile:
                                 cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph cunei:nextInWord "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex+1)+"_glyph .\n")
                             currentrelcharindex+=1
                             currentcharindex+=1
-            with open("cdli_jtfs/"+replaceNonURIChars(currenttabletid)+'.jtf', 'w', encoding='utf-8') as f:
-                f.write(json.dumps(jtfldrep,indent=2))
-                f.close()
-            testcounter+=1
+                        currentwordindex+=1
+            #with open("cdli_jtfs/"+replaceNonURIChars(currenttabletid)+'.jtf', 'w', encoding='utf-8') as f:
+            #    f.write(json.dumps(jtfldrep,indent=2))
+            #    f.close()
         except:
             print("except")
+        testcounter+=1
+        atfcounter+=1
+        print(str(atfcounter)+"/"+str(atfamount))
+with open("cdliwordforms.ttl", 'w', encoding='utf-8') as f:
+    f.write(header)
+    f.write(ontology)
+    f.write("".join(wordformresult))
+    f.close()
 with open("cdlitabs.ttl", 'w', encoding='utf-8') as f:
     f.write(header)
     f.write(ontology)
     f.write("".join(cdlitabs))
     f.close()
-
-
 
