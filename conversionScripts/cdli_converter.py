@@ -168,7 +168,7 @@ def format_unicode(word):
             '6':'₆',  '7':'₇',
             '8':'₈',  '9':'₉'}
     for rep, initial in unicode_replacements.items():
-        word = word.replace(rep.lower(), initial)
+        word = word.replace(rep, initial)
     #print(word)
     return word
 
@@ -193,7 +193,7 @@ def format_ascii(word):
         '₆' : '6', '₇' : '7',
         '₈' : '8', '₉' : '9'}
     for rep, initial in ascii_replacements.items():
-        word = word.replace(rep.lower(), initial)
+        word = word.replace(rep, initial)
     #print(word)
     return word
 
@@ -299,6 +299,7 @@ with open('cdliatf_unblocked.atf', encoding="utf-8") as atffile:
     atfss=atfs.split("&P")
     atfamount=len(atfss)
     atfcounter=0
+    filecounter=0
     for atf in atfss:
         atfsslines=atf.split("\n")
         currenttabletid="P"+atfsslines[0][0:atfsslines[0].find("=")-1].strip()
@@ -313,107 +314,110 @@ with open('cdliatf_unblocked.atf', encoding="utf-8") as atffile:
         cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_writtenText_reading cidoc:TXP3_is_rendered_by "+namespaceprefix+":"+str(currenttabletid)+"_transliteration  .\n")
         currentside=""
         jtfldrep={"@context":jtfcontext,"@graph":{"_class":"object", "@id":"P"+atfsslines[0],"@type":"tablet","children":[]}}
-        currentsidejtf=None
+        currentsidejtf={"_class":"surface","@id":str(currenttabletid)+"_tablet","@type":"tablet","children":[]}
         currentline=0
         currentwordindex=0
         currentrelcharindex=0
-        try:
-            for line in atfsslines:
-                if line.startswith("#") or line.startswith("$") or line.startswith("@tablet"):
-                    continue
-                elif line.startswith("@"):
-                    currentside=line.replace("@","").strip()
-                    currentsideuri=replaceNonURIChars(str(currentside))
-                    currentsidejtf={"_class":"surface","@id":str(currenttabletid)+"_"+currentsideuri,"@type":currentside,"children":[]}
-                    cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+" rdf:type cunei:Side .\n")
-                    cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+" rdfs:label \""+str(currenttabletid)+": "+str(currentside)+"\" .\n")
-                    cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+" cunei:hasSide "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+" .\n")
-                    jtfldrep["@graph"]["children"].append(currentsidejtf)
-                    currentline=0
-                    currentcharindex=0
-                elif re.match("^[0-9]+\.",line):
-                    currentline+=1
-                    curjtfline={"_class":"line","@id":str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline)),"children":[]}
-                    cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+" rdf:type cunei:TransliterationLine .\n")
-                    cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+" rdfs:label \"Line: "+str(currentline)+" ["+str(currenttabletid)+"_"+str(currentside)+"]\" .\n")
-                    currentsidejtf["children"].append(curjtfline)
-                    currentwordindex=0
-                    linespl=line.split(" ")
-                    linelen=len(linespl)
-                    for word in linespl:
-                        if word=="":
-                            continue
-                        if currentwordindex==0:
-                            currentwordindex+=1
-                            continue
-                        cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc rdf:type cunei:WordformOccurance .\n")
-                        cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc rdfs:label \" WordForm Occurrence: "+str(word)+" ("+str(currenttabletid)+"["+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"])\" .\n")
-                        cdlitabs.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform rdf:type cunei:WordForm .\n")
-                        wordformresult.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform rdf:type cunei:WordForm .\n")
-                        wordformresult.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform rdfs:label \"WordForm: "+replaceNonURIChars(str(word)).replace("\"","")+"\" .\n")
-                        cdlitabs.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform rdfs:label \"WordForm: "+str(word).replace("\"","")+"\" .\n")
-                        #cdlitabs.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform lemon:writtenRepUnicode \""+str(cuneifyWord(str(word),str(namespace)+""+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc",cdlitabs)).replace("\"","")+"\" .\n")
-                        cdlitabs.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform lemon:writtenRepASCII \""+str(format_ascii(str(word))).replace("\"","")+"\" .\n")
-                        wordformresult.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform lemon:writtenRepASCII \""+str(format_ascii(str(word))).replace("\"","")+"\" .\n")
-                        curseq={"_class":"sequence","@id":str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc","form":word,"@type":"short","children":[]}
-                        curjtfline["children"].append(curseq)
-                        cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+" cunei:consistsOf "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc .\n")
-                        if currentwordindex>0:
-                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc cunei:prevWord "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex-1)+"_wordformocc .\n")
-                        if currentwordindex<=linelen:
-                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc cunei:nextWord "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex+1)+"_wordformocc .\n")
-                        currentrelcharindex=0
-                        wordspl=re.split(wordsplit,word)
-                        wordspllen=len(wordspl)
-                        for charr in wordspl:
-                            if charr=="":
-                                continue
-                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc rdf:type cunei:TransliterationCharOccurrence .\n")
-                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc rdfs:label \"Char Occurrence: "+str(charr)+" ("+str(currenttabletid)+"["+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"])\" .\n")
-                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph rdf:type cidoc:TX9_Glyph .\n")
-                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph <http://www.cidoc-crm.org/cidoc-crm/TXP8_is_component_of> cunei:"+str(currenttabletid)+"_writtenText .\n")
-                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph rdfs:label \"Glyph at "+str(currenttabletid)+"["+str(currentside)+" "+replaceNonURIChars(str(currentline))+" "+str(currentcharindex)+"])\" .\n")
-                            #cdlitabs.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform cunei:isAttested "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc .\n")
-                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc cunei:consistsOf "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc .\n")
-                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc cunei:partOf "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc .\n")
-                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc cunei:positionOnTabletSide \""+str(currentcharindex)+"\"^^xsd:integer .\n")
-                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc cunei:positionInWord \""+str(currentrelcharindex)+"\"^^xsd:integer .\n")
-                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc lemon:writtenRepUnicode \""+str(cuneifyWord(str(charr),str(namespace)+""+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc",cdlitabs))+"\" .\n")
-                            if "#" in charr:
-                                cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph cunei:isDamaged \"true\"^^xsd:boolean .\n")
-                            else:
-                                cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph cunei:isDamaged \"false\"^^xsd:boolean .\n")
-                            curchar={"_class":"chr","@id":str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc","@type":"TransliterationCharOccurrence","reading":str(charr),"grapheme":getGraphemeReadingURI(cleanForCharLookup(str(charr)))}                            
-                            curseq["children"].append(curchar)
-                            if currentcharindex>0:
-                                cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc cunei:prevInWord "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex-1)+"_charocc .\n")
-                                cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph cunei:prevInWord "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex-1)+"_glyph .\n")
-                                cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc cunei:prev "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex-1)+"_charocc .\n")
-                                cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph cunei:prev "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex-1)+"_glyph .\n")
-                            if currentrelcharindex<=wordspllen:
-                                cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc cunei:next "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex+1)+"_charocc .\n")
-                                cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph cunei:next "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex+1)+"_glyph .\n")
-                                cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc cunei:nextInWord "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex+1)+"_charocc .\n")
-                                cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph cunei:nextInWord "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex+1)+"_glyph .\n")
-                            currentrelcharindex+=1
-                            currentcharindex+=1
+        #try:
+        for line in atfsslines:
+            if line.startswith("#") or line.startswith("$") or line.startswith("@tablet"):
+                continue
+            elif line.startswith("@"):
+                currentside=line.replace("@","").strip()
+                currentsideuri=replaceNonURIChars(str(currentside))
+                currentsidejtf={"_class":"surface","@id":str(currenttabletid)+"_"+currentsideuri,"@type":currentside,"children":[]}
+                cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+" rdf:type cunei:Side .\n")
+                cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+" rdfs:label \""+str(currenttabletid)+": "+str(currentside)+"\" .\n")
+                cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+" cunei:hasSide "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+" .\n")
+                jtfldrep["@graph"]["children"].append(currentsidejtf)
+                currentline=0
+                currentcharindex=0
+            elif re.match("^[0-9]+\.",line):
+                currentline+=1
+                curjtfline={"_class":"line","@id":str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline)),"children":[]}
+                cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+" rdf:type cunei:TransliterationLine .\n")
+                cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+" rdfs:label \"Line: "+str(currentline)+" ["+str(currenttabletid)+"_"+str(currentside)+"]\" .\n")
+                currentsidejtf["children"].append(curjtfline)
+                currentwordindex=0
+                linespl=line.split(" ")
+                linelen=len(linespl)
+                for word in linespl:
+                    if word=="":
+                        continue
+                    if currentwordindex==0:
                         currentwordindex+=1
-            #with open("cdli_jtfs/"+replaceNonURIChars(currenttabletid)+'.jtf', 'w', encoding='utf-8') as f:
-            #    f.write(json.dumps(jtfldrep,indent=2))
-            #    f.close()
-        except:
-            print("except")
+                        continue
+                    cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc rdf:type cunei:WordformOccurance .\n")
+                    cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc rdfs:label \" WordForm Occurrence: "+str(word)+" ("+str(currenttabletid)+"["+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"])\" .\n")
+                    cdlitabs.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform rdf:type cunei:WordForm .\n")
+                    wordformresult.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform rdf:type cunei:WordForm .\n")
+                    wordformresult.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform rdfs:label \"WordForm: "+replaceNonURIChars(str(word)).replace("\"","")+"\" .\n")
+                    cdlitabs.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform rdfs:label \"WordForm: "+str(word).replace("\"","")+"\" .\n")
+                    #cdlitabs.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform lemon:writtenRepUnicode \""+str(cuneifyWord(str(word),str(namespace)+""+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc",cdlitabs)).replace("\"","")+"\" .\n")
+                    cdlitabs.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform lemon:writtenRepASCII \""+str(format_ascii(str(word))).replace("\"","")+"\" .\n")
+                    wordformresult.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform lemon:writtenRepASCII \""+str(format_ascii(str(word))).replace("\"","")+"\" .\n")
+                    curseq={"_class":"sequence","@id":str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc","form":word,"@type":"short","children":[]}
+                    curjtfline["children"].append(curseq)
+                    cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+" cunei:consistsOf "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc .\n")
+                    if currentwordindex>0:
+                        cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc cunei:prevWord "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex-1)+"_wordformocc .\n")
+                    if currentwordindex<=linelen:
+                        cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc cunei:nextWord "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex+1)+"_wordformocc .\n")
+                    currentrelcharindex=0
+                    wordspl=re.split(wordsplit,word)
+                    wordspllen=len(wordspl)
+                    for charr in wordspl:
+                        if charr=="":
+                            continue
+                        cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc rdf:type cunei:TransliterationCharOccurrence .\n")
+                        cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc rdfs:label \"Char Occurrence: "+str(charr)+" ("+str(currenttabletid)+"["+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"])\" .\n")
+                        cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph rdf:type cidoc:TX9_Glyph .\n")
+                        cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph <http://www.cidoc-crm.org/cidoc-crm/TXP8_is_component_of> cunei:"+str(currenttabletid)+"_writtenText .\n")
+                        cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph rdfs:label \"Glyph at "+str(currenttabletid)+"["+str(currentside)+" "+replaceNonURIChars(str(currentline))+" "+str(currentcharindex)+"])\" .\n")
+                        #cdlitabs.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_wordform cunei:isAttested "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc .\n")
+                        cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc cunei:consistsOf "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc .\n")
+                        cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc cunei:partOf "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_wordformocc .\n")
+                        cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc cunei:positionOnTabletSide \""+str(currentcharindex)+"\"^^xsd:integer .\n")
+                        cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc cunei:positionInWord \""+str(currentrelcharindex)+"\"^^xsd:integer .\n")
+                        cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc lemon:writtenRepUnicode \""+str(cuneifyWord(str(charr),str(namespace)+""+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc",cdlitabs))+"\" .\n")
+                        if "#" in charr:
+                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph cunei:isDamaged \"true\"^^xsd:boolean .\n")
+                        else:
+                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph cunei:isDamaged \"false\"^^xsd:boolean .\n")
+                        curchar={"_class":"chr","@id":str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc","@type":"TransliterationCharOccurrence","reading":str(charr),"grapheme":getGraphemeReadingURI(cleanForCharLookup(str(charr)))}                            
+                        curseq["children"].append(curchar)
+                        if currentcharindex>0:
+                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc cunei:prevInWord "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex-1)+"_charocc .\n")
+                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph cunei:prevInWord "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex-1)+"_glyph .\n")
+                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc cunei:prev "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex-1)+"_charocc .\n")
+                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph cunei:prev "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex-1)+"_glyph .\n")
+                        if currentrelcharindex<=wordspllen:
+                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc cunei:next "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex+1)+"_charocc .\n")
+                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph cunei:next "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex+1)+"_glyph .\n")
+                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc cunei:nextInWord "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex+1)+"_charocc .\n")
+                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph cunei:nextInWord "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex+1)+"_glyph .\n")
+                        currentrelcharindex+=1
+                        currentcharindex+=1
+                    currentwordindex+=1
+        with open("cdli_jtfs/"+replaceNonURIChars(currenttabletid)+'.jtf', 'w', encoding='utf-8') as f:
+            f.write(json.dumps(jtfldrep,indent=2))
+            f.close()
+        #except:
+        #    print("except")
         testcounter+=1
         atfcounter+=1
+        if atfcounter%20000==0:
+            with open("cdlitabs"+str(filecounter)+".ttl", 'w', encoding='utf-8') as f:
+                f.write(header)
+                f.write(ontology)
+                f.write("".join(cdlitabs))
+                f.close()
+                cdlitabs.clear()
+                cdlitabs=set()
+                filecounter+=1
         print(str(atfcounter)+"/"+str(atfamount))
 with open("cdliwordforms.ttl", 'w', encoding='utf-8') as f:
     f.write(header)
     f.write(ontology)
     f.write("".join(wordformresult))
     f.close()
-with open("cdlitabs.ttl", 'w', encoding='utf-8') as f:
-    f.write(header)
-    f.write(ontology)
-    f.write("".join(cdlitabs))
-    f.close()
-
