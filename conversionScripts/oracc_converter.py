@@ -4,23 +4,8 @@ import rdflib
 from rdflib import Graph
 from rdflib import URIRef
 
-htmltemplate="""
-<div id="mySidenav" class="sidenav" style="overflow:auto;">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  GeoClasses: <input type="checkbox" id="geoclasses"/><br/>
-  Search:<input type="text" id="classsearch"><br/><div id="jstree"></div>
-</div><html><head><title>{{title}}</title>
-<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
-<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.1.1/themes/default/style.min.css" />
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="{{scriptfolderpath}}"></script><script src="{{classtreefolderpath}}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.9/jstree.min.js"></script>
-<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-<script>
-  var baseurl="{{baseurl}}"
+startscripts="""
+  var baseurl="http://purl.org/cuneiform/dict/"
   $( function() {
     var availableTags = Object.keys(search)
     $( "#search" ).autocomplete({
@@ -62,7 +47,7 @@ function rewriteLink(thelink){
 }
 
 function followLink(thelink=null){
-    rest=rewriteLink(thelink) 
+    rest=rewriteLink(thelink)
     location.href=rest
 }
 
@@ -78,10 +63,10 @@ function setupJSTree(){
                 "label": "Lookup definition",
                 "icon": baseurl+"static/icons/classlink.png",
                 "action": function (obj) {
-                    newlink=rewriteLink(node.id) 
+                    newlink=rewriteLink(node.id)
                     console.log(newlink)
                     var win = window.open(newlink, '_blank');
-                    win.focus();                                 
+                    win.focus();
                 }
             }
         };
@@ -92,7 +77,7 @@ function setupJSTree(){
         var data = node[0].id
         console.log(data)
         console.log(node)
-        if(data.includes("{{prefixpath}}")){
+        if(data.includes("http://purl.org/cuneiform/dict/")){
             followLink(data)
         }
         window.open(data, '_blank');
@@ -107,9 +92,10 @@ function setupJSTree(){
         });
     });
 }
+"""
 
-</script>
-<style>html { margin: 0; padding: 0; }
+stylesheet="""
+html { margin: 0; padding: 0; }
 body { font-family: sans-serif; font-size: 80%; margin: 0; padding: 1.2em 2em; }
 #rdficon { float: right; position: relative; top: -28px; }
 #header { border-bottom: 2px solid #696; margin: 0 0 1.2em; padding: 0 0 0.3em; }
@@ -213,13 +199,26 @@ z-index: 10;
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}</style></head><body><div id="header">
-        <h1 id="title">{{title}}</h1></div><div class="page-resource-uri"><a href="{{baseurl}}">{{baseurl}}</a> <b>powered by Static Pubby</b></div>
-      </div><div id="rdficon"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div> <div class="search">
-    <div class="ui-widget">Search: <input id="search" size="50"><button id="gotosearch" onclick="followLink()">Go</button></div>
-</div><div class="container-fluid"><div class="row-fluid" id="main-wrapper"><table border=1 width=100% class=description><tr><th>Property</th><th>Value</th></tr>{{tablecontent}}</table><div id="footer"><div class="container-fluid"></div></div></body></html>"""
+}"""
 
-
+htmltemplate="""
+<div id="mySidenav" class="sidenav" style="overflow:auto;">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  GeoClasses: <input type="checkbox" id="geoclasses"/><br/>
+  Search:<input type="text" id="classsearch"><br/><div id="jstree"></div>
+</div><html><head><title>{{toptitle}}</title>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.1.1/themes/default/style.min.css" />
+<link rel="stylesheet" type="text/css" href="{{stylepath}}"/>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="{{scriptfolderpath}}"></script><script src="{{classtreefolderpath}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.9/jstree.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<script src="{{startscripts}}"></script>
+</head><body><div id="header"><h1 id="title">{{title}}</h1></div><div class="page-resource-uri"><a href="{{baseurl}}">{{baseurl}}</a> <b>powered by Static Pubby</b></div>
+</div><div id="rdficon"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div> <div class="search"><div class="ui-widget">Search: <input id="search" size="50"><button id="gotosearch" onclick="followLink()">Go</button></div></div><div class="container-fluid"><div class="row-fluid" id="main-wrapper"><table border=1 width=100% class=description><tr><th>Property</th><th>Value</th></tr>{{tablecontent}}</table><div id="footer"><div class="container-fluid"></div></div></body></html>"""
 
 
 jtfcontext={
@@ -291,10 +290,10 @@ with open("cuneify.json",encoding='utf-8') as f:
 
 with open("signmapping.json",encoding='utf-8') as f:
     signmapping = json.load(f)
-    
+
 with open('oraccsenses.json', encoding="utf-8") as f:
     sensesmap = json.load(f)
-    
+
 with open('prefixes.json', encoding="utf-8") as f:
     prefixes = json.load(f)
 
@@ -335,31 +334,31 @@ def getClassTree(graph,uritolabel):
     ress={}
     classeswithinstances={}
     for res in results:
-        print(res)
+        #print(res)
         if "_:" not in str(res["subject"]) and str(res["subject"]).startswith("http"):
             ress[str(res["subject"])]={"super":res["supertype"],"label":res["label"]}
-    print(ress)
+    #print(ress)
     for cls in ress:
         for obj in graph.subjects(URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(cls)):
             if str(obj) in uritolabel:
-                result.append({ "id" : str(obj), "parent" : cls, 
+                result.append({ "id" : str(obj), "parent" : cls,
                 "type":"instance",
                 "text" : uritolabel[str(obj)]+" ("+str(obj)[str(obj).rfind('/')+1:]+")"})
             else:
-                result.append({ "id" : str(obj), "parent" : cls, 
+                result.append({ "id" : str(obj), "parent" : cls,
                 "type":"instance",
                 "text" : str(obj)[str(obj).rfind('/')+1:] })
         if ress[cls]["super"]==None:
-                result.append({ "id" : cls, "parent" : "#", 
+                result.append({ "id" : cls, "parent" : "#",
                 "type":"class",
                 "text" : cls[cls.rfind('/')+1:] })
         else:
             if cls["label"]!=None:
-                result.append({ "id" : cls, "parent" : ress[cls]["super"], 
+                result.append({ "id" : cls, "parent" : ress[cls]["super"],
                 "type" : "class",
                 "text" : ress[cls]["label"]+" ("+cls[cls.rfind('/')+1:]+")"})
             else:
-                result.append({ "id" : cls, "parent" : "#", 
+                result.append({ "id" : cls, "parent" : "#",
                     "type":"class",
                 "text" : cls[cls.rfind('/')+1:] })
     tree["core"]["data"]=result
@@ -380,7 +379,7 @@ def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename,c
         checkdepth=savepath.replace(baseurl,"").count("/")-1
     else:
         checkdepth=savepath.replace(baseurl,"").count("/")
-    print("Checkdepth: "+str(checkdepth))
+    #print("Checkdepth: "+str(checkdepth))
     foundlabel=""
     for tup in predobjs:
         if isodd:
@@ -397,7 +396,7 @@ def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename,c
         else:
             res=replaceNameSpacesInLabel(tup[0])
             if res!=None:
-                tablecontents+="<td class=\"property\"><span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+str(tup[0])+"\">"+str(tup[0][tup[0].rfind('/')+1:])+" <span style=\"color: #666;\">("+res["uri"]+")</span></a></span></td>"                  
+                tablecontents+="<td class=\"property\"><span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+str(tup[0])+"\">"+str(tup[0][tup[0].rfind('/')+1:])+" <span style=\"color: #666;\">("+res["uri"]+")</span></a></span></td>"
             else:
                 tablecontents+="<td class=\"property\"><span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+str(tup[0])+"\">"+str(tup[0][tup[0].rfind('/')+1:])+"</a></span></td>"
         if str(tup[0])=="http://www.w3.org/2000/01/rdf-schema#label":
@@ -416,7 +415,7 @@ def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename,c
                 else:
                     res=replaceNameSpacesInLabel(tup[1])
                     if res!=None:
-                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[1])+"\">"+label+" <span style=\"color: #666;\">("+res["uri"]+")</span></a></td>"                  
+                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[1])+"\">"+label+" <span style=\"color: #666;\">("+res["uri"]+")</span></a></td>"
                     else:
                         tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[1])+"\">"+label+"</a></td>"
             else:
@@ -443,7 +442,7 @@ def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename,c
         else:
             res=replaceNameSpacesInLabel(tup[1])
             if res!=None:
-                tablecontents+="<td class=\"property\">Is <span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+str(tup[1])+"\">"+str(tup[1][tup[1].rfind('/')+1:])+" <span style=\"color: #666;\">("+res["uri"]+")</span></a></span> of</td>"                  
+                tablecontents+="<td class=\"property\">Is <span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+str(tup[1])+"\">"+str(tup[1][tup[1].rfind('/')+1:])+" <span style=\"color: #666;\">("+res["uri"]+")</span></a></span> of</td>"
             else:
                 tablecontents+="<td class=\"property\">Is <span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\""+str(tup[1])+"\">"+str(tup[1][tup[1].rfind('/')+1:])+"</a></span> of</td>"
         if len(tup)>0:
@@ -460,7 +459,7 @@ def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename,c
                 else:
                     res=replaceNameSpacesInLabel(tup[0])
                     if res!=None:
-                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[0])+"\">"+label+" <span style=\"color: #666;\">("+res["uri"]+")</span></a></td>"                  
+                        tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[0])+"\">"+label+" <span style=\"color: #666;\">("+res["uri"]+")</span></a></td>"
                     else:
                         tablecontents+="<td class=\"wrapword\"><a target=\"_blank\" href=\""+str(tup[0])+"\">"+label+"</a></td>"
             else:
@@ -479,14 +478,17 @@ def createHTML(savepath,predobjs,subject,baseurl,subpreds,graph,searchfilename,c
         rellink2=classtreename
         for i in range(0,checkdepth):
             rellink2="../"+rellink2
+        rellink3="style.css"
+        for i in range(0,checkdepth):
+            rellink3="../"+rellink3
         if foundlabel!="":
-            f.write(htmltemplate.replace("{{prefixpath}}",prefixnamespace).replace("{{title}}","<a href=\""+str(subject)+"\">"+str(foundlabel)+"</a>").replace("{{baseurl}}",baseurl).replace("{{tablecontent}}",tablecontents).replace("{{description}}","").replace("{{scriptfolderpath}}",rellink).replace("{{classtreefolderpath}}",rellink2))
+            f.write(htmltemplate.replace("{{prefixpath}}",prefixnamespace).replace("{{toptitle}}",foundlabel).replace("{{startscripts}}",startscripts).replace("{{stylepath}}",rellink3).replace("{{title}}","<a href=\""+str(subject)+"\">"+str(foundlabel)+"</a>").replace("{{baseurl}}",baseurl).replace("{{tablecontent}}",tablecontents).replace("{{description}}","").replace("{{scriptfolderpath}}",rellink).replace("{{classtreefolderpath}}",rellink2))
         else:
-            f.write(htmltemplate.replace("{{prefixpath}}",prefixnamespace).replace("{{title}}","<a href=\""+str(subject)+"\">"+str(subject[subject.rfind("/")+1:])+"</a>").replace("{{baseurl}}",baseurl).replace("{{tablecontent}}",tablecontents).replace("{{description}}","").replace("{{scriptfolderpath}}",rellink).replace("{{classtreefolderpath}}",rellink2))
+            f.write(htmltemplate.replace("{{prefixpath}}",prefixnamespace).replace("{{toptitle}}",str(subject[subject.rfind("/")+1:])).replace("{{startscripts}}",startscripts).replace("{{stylepath}}",rellink3).replace("{{title}}","<a href=\""+str(subject)+"\">"+str(subject[subject.rfind("/")+1:])+"</a>").replace("{{baseurl}}",baseurl).replace("{{tablecontent}}",tablecontents).replace("{{description}}","").replace("{{scriptfolderpath}}",rellink).replace("{{classtreefolderpath}}",rellink2))
         f.close()
 
 def replaceNonURIChars(myuri):
-    res=myuri.replace("$","_").replace("{","_").replace("+","_").replace("=","_").replace("-","_").replace("^","_").replace("*","_").replace("}","_").replace("̌","_").replace(";","_").replace("̄","_").replace("ʾ","_").replace("̆","_").replace(",","_").replace("'","_").replace("/","_").replace("+","_").replace("(","_").replace(")","_").replace("|","_").replace("@","_").replace("×","_").replace("&","_").replace("+","_").replace(".","_")
+    res=myuri.replace("$","_").replace("{","_").replace("+","_").replace("=","_").replace("°","_").replace("-","_").replace("^","_").replace("*","_").replace("}","_").replace("̌","_").replace(";","_").replace("̄","_").replace("ʾ","_").replace("̆","_").replace(",","_").replace("'","_").replace("/","_").replace("!","_").replace("?","_").replace("+","_").replace("(","_").replace(")","_").replace("|","_").replace("@","_").replace("×","_").replace("&","_").replace("+","_").replace(".","_").replace("[","_").replace("]","_").replace("’","_").replace("∼","_").replace("\"","_")
     if res.startswith("_"):
         res=res[1:]
     if res.endswith("_"):
@@ -526,7 +528,7 @@ def getGraphemeReadingURI(word):
         counter=0
         for chara in unicodeword:
             if chara in signmapping:
-                return {"@type":signmapping[chara]["type"],"@id":signmapping[chara]["uri"],"signname":str(signmapping[chara]["signname"]),"label":"Grapheme: "+str(signmapping[chara]["signname"])}
+                return {"@type":signmapping[chara]["@type"],"@id":signmapping[chara]["@id"],"signname":str(signmapping[chara]["signname"]),"label":"Grapheme: "+str(signmapping[chara]["signname"])}
     return {}
 
 def cuneifyWord(word,worduri,ttlresult):
@@ -536,16 +538,16 @@ def cuneifyWord(word,worduri,ttlresult):
         counter=0
         for chara in unicodeword:
             if chara in signmapping:
-                ttlresult.add(""+str(worduri)+" cunei:contains <"+str(signmapping[chara]["uri"])+"> .\n")
-                ttlresult.add("<"+replaceNonURIChars(str(signmapping[chara]["uri"]))+"> rdf:type graphemon:Grapheme . \n")
-                ttlresult.add("<"+replaceNonURIChars(str(signmapping[chara]["uri"]))+"> rdfs:label \"Character: "+str(signmapping[chara]["signname"])+"\" . \n")
-                labeltouri["Character: "+str(signmapping[chara]["signname"])]=str(signmapping[chara]["uri"])
+                ttlresult.add(""+str(worduri)+" cunei:contains <"+str(signmapping[chara]["@id"])+"> .\n")
+                ttlresult.add("<"+replaceNonURIChars(str(signmapping[chara]["@id"]))+"> rdf:type graphemon:Grapheme . \n")
+                ttlresult.add("<"+replaceNonURIChars(str(signmapping[chara]["@id"]))+"> rdfs:label \"Character: "+str(signmapping[chara]["signname"])+"\" . \n")
+                labeltouri["Character: "+str(signmapping[chara]["signname"])]=str(signmapping[chara]["@id"])
             if counter<len(chars) and chara in signmapping:
-                ttlresult.add(str(worduri)+" graphemon:hasGraphemeReading <"+str(signmapping[chara]["uri"])+"_reading_"+str(chars[counter])+"> .\n")
-                ttlresult.add("<"+replaceNonURIChars(str(signmapping[chara]["uri"]))+"_reading_"+str(chars[counter])+"> rdfs:label \"Grapheme Reading "+str(signmapping[chara]["signname"])+": "+str(chars[counter])+"\" .\n")
-                labeltouri["Grapheme Reading "+str(signmapping[chara]["signname"])+": "+str(chars[counter])]=str(signmapping[chara]["uri"])+"_reading_"+str(chars[counter])
-                ttlresult.add("<"+replaceNonURIChars(str(signmapping[chara]["uri"]))+"_reading_"+str(chars[counter])+"> rdf:type graphemon:GraphemeReading .\n")
-                ttlresult.add("<"+replaceNonURIChars(str(signmapping[chara]["uri"]))+"> graphemon:hasGraphemeReading <"+replaceNonURIChars(str(signmapping[chara]["uri"])+"_reading_"+str(chars[counter]))+"> .\n")
+                ttlresult.add(str(worduri)+" graphemon:hasGraphemeReading <"+str(signmapping[chara]["@id"])+"_reading_"+str(chars[counter])+"> .\n")
+                ttlresult.add("<"+replaceNonURIChars(str(signmapping[chara]["@id"]))+"_reading_"+str(chars[counter])+"> rdfs:label \"Grapheme Reading "+str(signmapping[chara]["signname"])+": "+str(chars[counter])+"\" .\n")
+                labeltouri["Grapheme Reading "+str(signmapping[chara]["signname"])+": "+str(chars[counter])]=str(signmapping[chara]["@id"])+"_reading_"+str(chars[counter])
+                ttlresult.add("<"+replaceNonURIChars(str(signmapping[chara]["@id"]))+"_reading_"+str(chars[counter])+"> rdf:type graphemon:GraphemeReading .\n")
+                ttlresult.add("<"+replaceNonURIChars(str(signmapping[chara]["@id"]))+"> graphemon:hasGraphemeReading <"+replaceNonURIChars(str(signmapping[chara]["@id"])+"_reading_"+str(chars[counter]))+"> .\n")
             counter+=1
         return cuneify[word]
     return ""
@@ -615,7 +617,7 @@ def handleLineElements(data,ttlresult,currentside,currentsentence,currenttableti
                     ttldictresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word lemon:sense "+str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word_sense .\n")
                     ttlresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word_sense rdf:type lemon:Sense .\n")
                     ttldictresult.add(str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word_sense rdf:type lemon:Sense .\n")
-                    print(lineitem["f"]["sense"])
+                    #print(lineitem["f"]["sense"])
                     if str(lineitem["f"]["sense"]) in sensesmap:
                         sensescounter+=1
                         curseq["sense"]={"@id":str(sensesmap[str(lineitem["f"]["sense"])]),"@type":"lemon:Sense","label":str(lineitem["f"]["sense"])}
@@ -652,10 +654,16 @@ def handleLineElements(data,ttlresult,currentside,currentsentence,currenttableti
                     for charr in lineitem["f"]["gdl"]:
                         if "lang" in lineitem["f"]:
                             if "akk" in lineitem["f"]["lang"]:
+                                ttldictresult.add("cunei:Akk rdf:type lemon:Dictionary .\n")
+                                ttldictresult.add("cunei:Akk lemon:language \"Akkadian\" .\n")
+                                ttldictresult.add("cunei:Akk lemon:entry "+str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word .\n")
                                 ttlresult.add("cunei:Akk rdf:type lemon:Dictionary .\n")
                                 ttlresult.add("cunei:Akk lemon:language \"Akkadian\" .\n")
                                 ttlresult.add("cunei:Akk lemon:entry "+str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word .\n")
                             if "sux" in lineitem["f"]["lang"]:
+                                ttldictresult.add("cunei:Sum rdf:type lemon:Dictionary .\n")
+                                ttldictresult.add("cunei:Sum lemon:language \"Sumerian\" .\n")
+                                ttldictresult.add("cunei:Sum lemon:entry "+str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word .\n")
                                 ttlresult.add("cunei:Sum rdf:type lemon:Dictionary .\n")
                                 ttlresult.add("cunei:Sum lemon:language \"Sumerian\" .\n")
                                 ttlresult.add("cunei:Sum lemon:entry "+str(namespaceshortdict)+":"+replaceNonURIChars(str(lineitem["f"]["form"]))+"_word .\n")
@@ -664,7 +672,7 @@ def handleLineElements(data,ttlresult,currentside,currentsentence,currenttableti
                             if "@id" in graphemeobj:
                                 curchar={"_class":"chr","@id":str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc","@type":"TransliterationCharOccurrence","reading":{"@type":"graphemon:GraphemeReading","label":"Grapheme Reading "+str(graphemeobj["signname"])+": "+str(charr["v"]),"graphemon:readingValue":str(charr["v"]),"@id":graphemeobj["@id"]+"_reading_"+str(charr["v"])},"grapheme":graphemeobj}
                             else:
-                                curchar={"_class":"chr","@id":str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc","@type":"TransliterationCharOccurrence","reading":str(charr["v"]),"grapheme":getGraphemeReadingURI(str(charr["v"]))}                            
+                                curchar={"_class":"chr","@id":str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_charocc","@type":"TransliterationCharOccurrence","reading":str(charr["v"]),"grapheme":getGraphemeReadingURI(str(charr["v"]))}
                             #,"grapheme":getGraphemeReadingURI(str(charr["v"]))
                             curseq["children"].append(curchar)
                             #ttlresult.add(str(namespaceshortsignlist)+":character_"+replaceNonURIChars(str(charr["v"]))+" rdf:type graphemon:Grapheme .\n")
@@ -703,7 +711,7 @@ def handleLineElements(data,ttlresult,currentside,currentsentence,currenttableti
                                 ttlresult.add(str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_glyph cunei:nextInWord "+str(namespaceshort)+":"+str(currenttabletid)+"_"+str(currentside)+"_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex+1)+"_glyph .\n")
                             currentcharindex+=1
                             currentrelcharindex+=1
-    print("Assigned "+str(sensescounter)+" senses!")
+    #print("Assigned "+str(sensescounter)+" senses!")
     return ttlresult
 
 def getCurrentSideFromJTF(jtfldrep,side):
@@ -801,104 +809,151 @@ prefixnamespace="http://purl.org/cuneiform/"
 header="""@prefix xsd:<http://www.w3.org/2001/XMLSchema#> .\n@prefix graphemon:<http://purl.org/graphemon/> .\n@prefix cunei:<http://purl.org/cuneiform/> .\n@prefix cuneidict:<http://purl.org/cuneiform/dict/> .\n@prefix cuneisignlist:<http://purl.org/cuneiform/signlist/> .\n@prefix cidoc:<http://www.cidoc-crm.org/cidoc-crm/> .\n@prefix owl:<http://www.w3.org/2002/07/owl#> .\n@prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#> .\n@prefix lemon:<http://lemon-model.net/lemon#> .\n"""
 ontology="""cunei:isDamaged rdf:type owl:DatatypeProperty .\ngraphemon:hasGraphemeReading rdf:type owl:ObjectProperty .\n<http://lexinfo.net/ontology/2.0/lexinfo#partOfSpeech> rdf:type owl:ObjectProperty .\ncunei:hasLine rdf:type owl:ObjectProperty.\ncidoc:P56_found_on rdf:type owl:ObjectProperty.\ncidoc:TXP10_read_by rdf:type owl:ObjectProperty.\ncidoc:TXP3_is_rendered_by rdf:type owl:ObjectProperty .\ncunei:writtenText rdf:type owl:ObjectProperty .\ncunei:hasSide rdf:type owl:ObjectProperty .\ncunei:partOf rdf:type owl:ObjectProperty .\ncunei:next rdf:type owl:ObjectProperty .\ncunei:prevLine rdf:type owl:ObjectProperty .\ncunei:nextLine rdf:type owl:ObjectProperty .\ncunei:prevSentence rdf:type owl:ObjectProperty .\nlemon:reference rdf:type owl:ObjectProperty .\ncunei:nextSentence rdf:type owl:ObjectProperty .\ncunei:nextWord rdf:type owl:ObjectProperty .\ncunei:consistsOf rdf:type owl:ObjectProperty .\ncunei:prevWord rdf:type owl:ObjectProperty .\ncunei:prevInWord rdf:type owl:ObjectProperty .\ncunei:nextInWord rdf:type owl:ObjectProperty .\ncunei:prev rdf:type owl:ObjectProperty .\nlemon:sense rdf:type owl:ObjectProperty .\nlemon:pos rdf:type owl:ObjectProperty .\nlemon:entry rdf:type owl:ObjectProperty .\nlemon:writtenRepUnicode rdf:type owl:DatatypeProperty .\n lemon:writtenRepASCII rdf:type owl:DatatypeProperty .\n<http://www.cidoc-crm.org/cidoc-crm/TXP8_is_component_of> rdf:type owl:ObjectProperty .<http://www.cidoc-crm.org/cidoc-crm/P56_isFoundOn> rdf:type owl:ObjectProperty .\n<http://www.cidoc-crm.org/cidoc-crm/P138_represents> rdf:type owl:ObjectProperty .\n lemon:writtenRep rdf:type owl:DatatypeProperty .\ncunei:positionOnTabletSide rdf:type owl:DatatypeProperty .\ncunei:locatedIn rdf:type owl:ObjectProperty .\nlemon:form rdf:type owl:ObjectProperty .\ncunei:positionInWord rdf:type owl:DatatypeProperty .\ncunei:Line rdf:type owl:DatatypeProperty .\ncunei:isAttested rdf:type owl:ObjectProperty .\n"""
 
-corpusid="hbtin"
-subdircorp=""
-if subdircorp!="":
-    rootdir="cams-gkab/cams/gkab/corpusjson"
-else:
-    rootdir=str(corpusid)+"/corpusjson/"
-outpath=str(corpusid)+"_htmls/"
-print(cuneify)
-print(rootdir)
-print(list(os.walk(rootdir)))
-if not os.path.isdir(str(corpusid)+"_jtfs"):
-    os.mkdir(str(corpusid)+"_jtfs")
-if not os.path.isdir(str(corpusid)+"_htmls"):
-    os.mkdir(str(corpusid)+"_htmls")
-counter=1
-for subdir, dirs, files in os.walk(rootdir):
-    print(subdir)
-    print(dirs)
-    print(files)
-    if subdir==".":
-        continue
-    subdirs=str(subdir).replace(".\\","")
-    for filee in files:
-        try:
-            with open(subdir+"/"+filee,encoding='utf-8') as f:
-              data = json.load(f)
-        except Exception as e:
-            print(e)
-        ttlresult=analyzeTablet(data,ttlresult)
-print("ready")
-
-with open(str(corpusid)+"_htmls/"+corpusid+'_search.js', 'w', encoding='utf-8') as f:
-    f.write("var search="+json.dumps(labeltouri,indent=2))
-    f.close()
-
-with open(corpusid+'.ttl', 'w', encoding='utf-8') as f:
-  f.write(header)
-  f.write(ontology)
-  f.write("".join(ttlresult))
-  f.close()
-with open(corpusid+'_dict.ttl', 'w', encoding='utf-8') as f:
-  f.write(header)
-  f.write(ontology)
-  f.write("".join(ttldictresult))
-  f.close()
-g = Graph()
-g.parse(corpusid+'.ttl')
-prefixnamespace="http://purl.org/cuneiform/"
-subjectstorender=set()
-for sub in g.subjects():
-    if prefixnamespace in sub:
-        subjectstorender.add(sub)
-        for obj in g.objects(sub,URIRef("http://www.w3.org/2000/01/rdf-schema#label")):
-            labeltouri[str(obj)]=str(sub)
-            uritolabel[str(sub)]=str(obj)
-with open(outpath+corpusid+'_search.js', 'w', encoding='utf-8') as f:
-    f.write("var search="+json.dumps(labeltouri,indent=2))
-    f.close()
-with open(outpath+corpusid+"_classtree.js", 'w', encoding='utf-8') as f:
-    f.write(getClassTree(g,uritolabel))
-    f.close()
-pathmap={}
-paths={}
-subtorenderlen=len(subjectstorender)
-subtorencounter=0
-for subj in subjectstorender:
-    path=subj.replace(prefixnamespace,"")
-    #try:
-    if "/" in path:
-        addpath=""
-        for pathelem in path.split("/"):
-            addpath+=pathelem+"/"
-            if not os.path.isdir(outpath+addpath):
-                os.mkdir(outpath+addpath)
-        if outpath+path[0:path.rfind('/')]+"/" not in paths:
-            paths[outpath+path[0:path.rfind('/')]+"/"]=[]
-        paths[outpath+path[0:path.rfind('/')]+"/"].append(addpath[0:addpath.rfind('/')])
+corpusids=["anzu","barutu","blms","babylon2","babylon3","babylon4","babylon5","babylon6","babylon7","babylon8","babylon9","babylon10","ccpo","ckst","ctij","dcclt","dccmt","etana","etcsri","gkab","glass","hbtin","lacost","ludlul","selbi","obmc","opta","ogsl","riao","saa01","saa02","saa03","saa04","saa05","saa06","saa07","saa08","saa09","saa10","saa11","saa12","saa13","saa14","saa15","saa16","saa17","saa18","saa19","rimanum","suhu"]
+for corpusid in corpusids:
+    htmldoc=False
+    subdircorp=""
+    if subdircorp!="":
+        rootdir="cams-gkab/cams/gkab/corpusjson"
     else:
-        if not os.path.isdir(outpath+path):
-             os.mkdir(outpath+path)
-        if outpath not in paths:
-            paths[outpath]=[]
-        paths[outpath].append(path+"/index.html")
-    createHTML(outpath+path,g.predicate_objects(subj),subj,prefixnamespace,g.subject_predicates(subj),g,str(corpusid)+"_search.js",str(corpusid)+"_classtree.js",uritolabel)  
-    subtorencounter+=1
-    print(str(subtorencounter)+"/"+str(subtorenderlen)+" "+str(outpath+path))
-    #except:
-    #    print("error")
-#print(paths)
-for path in paths:
-    indexhtml="<html><head></head><body><h1>"+str(path)+"</h1><ul style=\"height: 100%; overflow: auto\">"
-    for pathlink in paths[path]:
-        label=pathlink.replace("/index.html","")
-        indexhtml+="<li><a href=\""+str(pathlink)+"\">"+label+"</a></li>"
-    indexhtml+="</ul></body></html>"
-    print(path)
-    with open(path+"index.html", 'w', encoding='utf-8') as f:
-        f.write(indexhtml)
-        f.close()
-#g.serialize(destination=corpusid+'.ttl')
+        rootdir=str(corpusid)+"/corpusjson/"
+    outpath=str(corpusid)+"_htmls/"
+    print(cuneify)
+    print(rootdir)
+    print(list(os.walk(rootdir)))
+    if not os.path.isdir(str(corpusid)+"_jtfs"):
+        os.mkdir(str(corpusid)+"_jtfs")
+    if not os.path.isdir(str(corpusid)+"_htmls"):
+        os.mkdir(str(corpusid)+"_htmls")
+    counter=1
+    for subdir, dirs, files in os.walk(rootdir):
+        print(subdir)
+        print(dirs)
+        print(files)
+        if subdir==".":
+            continue
+        subdirs=str(subdir).replace(".\\","")
+        for filee in files:
+            try:
+                with open(subdir+"/"+filee,encoding='utf-8') as f:
+                    data = json.load(f)
+            except Exception as e:
+                print(e)
+            ttlresult=analyzeTablet(data,ttlresult)
+    print("ready")
 
+    #with open(str(corpusid)+"_htmls/"+corpusid+'_search.js', 'w', encoding='utf-8') as f:
+    #    f.write("var search="+json.dumps(labeltouri,indent=2))
+    #    f.close()
+
+    with open(corpusid+'.ttl', 'w', encoding='utf-8') as f:
+        f.write(header)
+        f.write(ontology)
+        for item in ttlresult:
+            f.write(item)
+        f.close()
+    with open(corpusid+'_dict.ttl', 'w', encoding='utf-8') as f:
+        f.write(header)
+        f.write(ontology)
+        for item in ttldictresult:
+            f.write(item)
+        f.close()
+    if htmldoc:
+        prefixnamespace="http://purl.org/cuneiform/"
+        subjectstorender=set()
+        for sub in g.subjects():
+            if prefixnamespace in sub:
+                subjectstorender.add(sub)
+                for obj in g.objects(sub,URIRef("http://www.w3.org/2000/01/rdf-schema#label")):
+                    labeltouri[str(obj)]=str(sub)
+                    uritolabel[str(sub)]=str(obj)
+        with open(outpath+corpusid+'_search.js', 'w', encoding='utf-8') as f:
+            f.write("var search="+json.dumps(labeltouri,indent=2))
+            f.close()
+        with open(outpath+corpusid+"_classtree.js", 'w', encoding='utf-8') as f:
+            f.write(getClassTree(g,uritolabel))
+            f.close()
+        with open(outpath+"style.css", 'w', encoding='utf-8') as f:
+            f.write(stylesheet)
+            f.close()
+        with open(outpath+"startscripts.js", 'w', encoding='utf-8') as f:
+            f.write(startscripts)
+            f.close()
+        pathmap={}
+        paths={}
+        subtorenderlen=len(subjectstorender)
+        subtorencounter=0
+        for subj in subjectstorender:
+            path=subj.replace(prefixnamespace,"")
+            #try:
+            if "/" in path:
+                addpath=""
+                for pathelem in path.split("/"):
+                    addpath+=pathelem+"/"
+                    if not os.path.isdir(outpath+addpath):
+                        os.mkdir(outpath+addpath)
+                if outpath+path[0:path.rfind('/')]+"/" not in paths:
+                    paths[outpath+path[0:path.rfind('/')]+"/"]=[]
+                paths[outpath+path[0:path.rfind('/')]+"/"].append(addpath[0:addpath.rfind('/')])
+            else:
+                if not os.path.isdir(outpath+path):
+                    os.mkdir(outpath+path)
+                if outpath not in paths:
+                    paths[outpath]=[]
+                paths[outpath].append(path+"/index.html")
+            createHTML(outpath+path,g.predicate_objects(subj),subj,prefixnamespace,g.subject_predicates(subj),g,str(corpusid)+"_search.js",str(corpusid)+"_classtree.js",uritolabel)
+            subtorencounter+=1
+            print(str(subtorencounter)+"/"+str(subtorenderlen)+" "+str(outpath+path))
+            #except:
+            #    print("error")
+        #print(paths)
+        for path in paths:
+            indexhtml="<html><head></head><body><h1>"+str(path)+"</h1><ul style=\"height: 100%; overflow: auto\">"
+            for pathlink in paths[path]:
+                label=pathlink.replace("/index.html","")
+                indexhtml+="<li><a href=\""+str(pathlink)+"\">"+label+"</a></li>"
+            indexhtml+="</ul></body></html>"
+            #print(path)
+            with open(path+"index.html", 'w', encoding='utf-8') as f:
+                f.write(indexhtml)
+                f.close()
+        g.serialize(destination=corpusid+'.ttl')
+
+prefixset=set()
+dataset=set()
+for corpusid in corpusids:
+    file1 = open(corpusid+"_dict.ttl", 'r')
+    Lines = file1.readlines()
+    for line in Lines:
+        if line.startswith("@prefix"):
+            prefixset.add(line)
+        else:
+            dataset.add(line)
+    file1.close()
+    #try:
+    #    g = Graph()
+    #   g.parse(corpusid+'.ttl')
+    #   g.serialize(destination=corpusid+'.ttl')
+    #except Exception as e:
+    #   print("The error raised is: ", e)
+    #   print("Could not serialize "+str(corpusid+".ttl"))
+    try:
+        g = Graph()
+        g.parse(corpusid+'_dict.ttl')
+        g.serialize(destination=corpusid+'_dict.ttl')
+    except Exception as e:
+        print("The error raised is: ", e)
+        print("Could not serialize "+str(corpusid+"_dict.ttl"))
+with open('oracc_dict.ttl', 'w', encoding='utf-8') as f:
+    for item in prefixset:
+        f.write(item)
+    for item in dataset:
+        f.write(item)
+    f.close()
+try:
+    g = Graph()
+    g.parse('oracc_dict.ttl')
+    g.serialize(destination=corpusid+'oracc_dict.ttl')
+except Exception as e:
+  print("The error raised is: ", e)
+  print("Could not serialize "+str("oracc_dict.ttl"))
