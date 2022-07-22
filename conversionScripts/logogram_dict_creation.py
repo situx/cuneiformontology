@@ -12,7 +12,7 @@ dictabbToURI={
 }
 
 def cleanString(mystr):
-    return mystr.replace(" ","_").replace(".","_").replace("”","_").replace("=","_").replace("-","_").replace("+","_").replace("’","_").replace(",","_").replace("š","sz").replace("Š","SZ").replace("\"","_").replace("'","_").replace("(","_").replace(")","_").replace("[","_").replace("]","_").replace("/","_").replace(";","_").replace("×","_").replace("","_").replace("˘","_")
+    return mystr.replace(" ","_").replace(".","_").replace("”","_").replace("=","_").replace("-","_").replace("+","_").replace("’","_").replace(",","_").replace("š","sz").replace("Š","SZ").replace("\"","_").replace("'","_").replace("(","_").replace(")","_").replace("[","_").replace("]","_").replace("/","_").replace(";","_").replace("×","_").replace("","_").replace("˘","_").replace("?","_").replace("!","_")
 
 def resolveReferences(refstring,wordformuri,ttlresult):
     even=True
