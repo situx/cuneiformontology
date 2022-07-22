@@ -12,7 +12,7 @@ dictabbToURI={
 }
 
 def cleanString(mystr):
-    return mystr.replace(" ","_").replace(".","_").replace("”","_").replace("=","_").replace("-","_").replace("+","_").replace("’","_").replace(",","_").replace("š","sz").replace("Š","SZ").replace("\"","_").replace("'","_").replace("(","_").replace(")","_").replace("[","_").replace("]","_")
+    return mystr.replace(" ","_").replace(".","_").replace("”","_").replace("=","_").replace("-","_").replace("+","_").replace("’","_").replace(",","_").replace("š","sz").replace("Š","SZ").replace("\"","_").replace("'","_").replace("(","_").replace(")","_").replace("[","_").replace("]","_").replace("/","_").replace(";","_").replace("×","_").replace("","_").replace("˘","_")
 
 def resolveReferences(refstring,wordformuri,ttlresult):
     even=True
@@ -33,7 +33,7 @@ ttlresult.add("cuneidict:Akk rdf:type lemon:Lexicon .\n")
 ttlresult.add("cuneidict:Sum rdf:type lemon:Lexicon .\n")
 counter=0
 for log in logograms:
-    if counter<100 and "ref" in log and log["ref"]!="":
+    if counter<9000 and "ref" in log and log["ref"]!="":
         ttlresult.add("cuneidict:"+cleanString(str(log["logogram"]))+"_wordform rdf:type lemon:WordForm .\n")
         ttlresult.add("cuneidict:Sum lemon:entry cuneidict:"+cleanString(str(log["logogram"]))+" .\n")
         ttlresult.add("cuneidict:"+cleanString(str(log["origvalue"]).replace("-",""))+" rdf:type lemon:Word .\n")
