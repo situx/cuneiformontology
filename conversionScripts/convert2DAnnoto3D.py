@@ -3,9 +3,14 @@ import sys
 import os
 import copy
 import numpy as np
+import pandas as pd
 from PIL import Image
 from plyfile import PlyData
 from sklearn.decomposition import PCA
+
+reduce_factors=[1]
+
+reduce_factor = 1
 
 def findZCoordinate():
     print("Find Z coordinates for points")
@@ -82,13 +87,13 @@ def do_PCA(mesh):
   pca.fit(mesh)
   PCA(copy=True, n_components=3, whiten=False)
   print("Fake Annotation: [ 1 1 1 ]")
-  f.write("Vector "+meshname+"\n")
+  #f.write("Vector "+meshname+"\n")
   counter=1
   resultmatrix=[0,1,2,3]
   length=[]
   for variance, vector in zip(pca.explained_variance_, pca.components_):
     v = vector * 3 * np.sqrt(variance)
-    f.write("["+str(pca.mean_)+","+str(pca.mean_+v)+"] Length: "+str(np.linalg.norm(pca.mean_-(pca.mean_+v)))+"\n")
+    #f.write("["+str(pca.mean_)+","+str(pca.mean_+v)+"] Length: "+str(np.linalg.norm(pca.mean_-(pca.mean_+v)))+"\n")
     length.append(str(np.linalg.norm(pca.mean_-(pca.mean_+v))))
     resultmatrix[0]=pca.mean_
     resultmatrix[counter]=pca.mean_+v
@@ -179,12 +184,31 @@ meshfile="../examples/HS1174/mesh/HS_1174_HeiCuBeDa_GigaMesh.ply"
 imagefile="../examples/HS1174/images/front.jpg" 
 print("Loading Mesh "+str(meshfile))
 mesh = PlyData.read(meshfile)
+meshframe = pd.DataFrame({
+'x':mesh['vertex']['x'][::reduce_factor],
+'y':mesh['vertex']['y'][::reduce_factor],
+'z':mesh['vertex']['z'][::reduce_factor]
+})
 print("Calculating BBOX of "+str(meshfile))
 meshbbox=getMeshBBOX(mesh)
 print(meshbbox)
 print("Calulating PCA vectors of mesh")
-pca = do_PCA(mesh)
+pca = do_PCA(meshframe)
 print(pca)
+p0_pca_A = pca[2][0]
+p1_pca_A = pca[2][1]
+p2_pca_A = pca[2][2]
+p3_pca_A = pca[2][3]
+# pca-Koordinaten
+p0_pca_B= np.array([0,0,0])
+p1_pca_B= np.subtract(p1_pca_A, p0_pca_A)
+p2_pca_B= np.subtract(p2_pca_A, p0_pca_A)
+p3_pca_B= np.subtract(p3_pca_A, p0_pca_A)
+# Matrizen
+A = np.matrix([p0_pca_A , p1_pca_A, p2_pca_A, p3_pca_A])
+B = np.matrix([p0_pca_B , p1_pca_B, p2_pca_B, p3_pca_B])
+print(A)
+print(B)
 print("Getting Image BBOX")
 imgbbox=getImageBBOX(imagefile)
 print(imgbbox)
