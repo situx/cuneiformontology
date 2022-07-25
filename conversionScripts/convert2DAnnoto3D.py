@@ -146,10 +146,11 @@ class AnnotationProcessor:
         return {"charannos":charannos,"wedgeannos":{}}
     
     @staticmethod
-    def create3DAnnotationWithPCA(anno,anno3d,meshsource,pca,match_target,ret_t,ret_R,s):
+    def create3DAnnotationWithPCA(anno,anno3d,enrichedcoords,pcamean,meshsource,pca,match_target,ret_t,ret_R,s):
         anno["target"]["selector"]["type"]="WKTSelector"
         annovalue=str(anno3d)
         anno["target"]["selector"]["value"]=annovalue
+        anno["target"]["selector"]["pcaValue"]=str(Polygon(PCAUtils.coordinatesToPCASystem(enrichedcoords,pcamean)))
         anno["target"]["source"]=meshsource
         anno["target"]["selector"]["computingReference"]=[]
         anno["target"]["selector"]["coordinateSystem"]=PCAUtils.csToWKT()
@@ -168,6 +169,8 @@ class PCAUtils:
     ret_R=None
     
     s=None
+    
+    pcamean=[]
     
     def rigid_transform_3D(self,A, B, scale):
         assert len(A) == len(B)
@@ -220,6 +223,15 @@ class PCAUtils:
             return False
         return True
     
+    @staticmethod
+    def coordinatesToPCASystem(coordlist,pcamean):
+        print("Convert PCA: "+str(pcamean))
+        for coord in coordlist:
+            coord[0]=coord[0]+pcamean[0]
+            coord[1]=coord[1]+pcamean[1]
+            coord[2]=coord[2]+pcamean[2]
+        return coordlist    
+    
     def do_PCA(self,mesh): 
         pca = PCA()
         pca.fit(mesh)
@@ -239,6 +251,7 @@ class PCAUtils:
             counter+=1
         print("Resultmatrix "+str(resultmatrix))
         print("PCA Vector: "+str("["+str(pca.mean_)+","+str(pca.mean_+v)+"] Length: "+str(np.linalg.norm(pca.mean_-(pca.mean_+v)))+"]"))
+        self.pcamean=[pca.mean_[0],pca.mean_[1],pca.mean_[2]]
         print("Fake Annotation Translated: [ "+str(1+pca.mean_[0])+" "+str(1+pca.mean_[1])+" "+str(1+pca.mean_[2])+" ]")
         print("Fake Annotation Translated: [ "+str(1+pca.mean_[0])+" "+str(1+pca.mean_[1])+" "+str(1+pca.mean_[2])+" ]")
         reducedMesh = pca.transform(mesh)
@@ -381,8 +394,9 @@ for pbox in pointsinbboxes:
 i=0
 for transanno in transannos:
     print("Create 3D BBOX From Min Max Z Index")
-    enrichedanno=Polygon(AnnotationProcessor.create3DBBOXFromMinMaxZIndex(transanno,pboxres[i]["minZ"],pboxres[i]["maxZ"]))
-    webanno3d=AnnotationProcessor.create3DAnnotationWithPCA(processed2DAnnotations["charannos"][i]["anno"],enrichedanno,meshfile,pcautil.pca,pcautil.match_target,pcautil.ret_t,pcautil.ret_R,pcautil.s)
+    enrichedcoords=AnnotationProcessor.create3DBBOXFromMinMaxZIndex(transanno,pboxres[i]["minZ"],pboxres[i]["maxZ"])
+    enrichedanno=Polygon(enrichedcoords)
+    webanno3d=AnnotationProcessor.create3DAnnotationWithPCA(processed2DAnnotations["charannos"][i]["anno"],enrichedanno,enrichedcoords,pcautil.pcamean,meshfile,pcautil.pca,pcautil.match_target,pcautil.ret_t,pcautil.ret_R,pcautil.s)
     annoresjson[anno["id"]]=webanno3d
     i+=1
 with open('convertedannos.json', 'w') as f:
