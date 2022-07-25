@@ -148,11 +148,7 @@ class AnnotationProcessor:
     @staticmethod
     def create3DAnnotationWithPCA(anno,anno3d,meshsource,pca,match_target,ret_t,ret_R,s):
         anno["target"]["selector"]["type"]="WKTSelector"
-        annovalue="POLYGON Z(("
-        for coord in anno3d:
-            annovalue+=str(coord[0]).strip()+" "+str(coord[1]).strip()+" 0, "
-        annovalue=annovalue[0:-2]
-        annovalue+="))"
+        annovalue=str(anno3d)
         anno["target"]["selector"]["value"]=annovalue
         anno["target"]["source"]=meshsource
         anno["target"]["selector"]["computingReference"]=[]
@@ -385,8 +381,8 @@ for pbox in pointsinbboxes:
 i=0
 for transanno in transannos:
     print("Create 3D BBOX From Min Max Z Index")
-    AnnotationProcessor.create3DBBOXFromMinMaxZIndex(transanno,pboxres[i]["minZ"],pboxres[i]["maxZ"])
-    webanno3d=AnnotationProcessor.create3DAnnotationWithPCA(processed2DAnnotations["charannos"][i]["anno"],transanno,meshfile,pcautil.pca,pcautil.match_target,pcautil.ret_t,pcautil.ret_R,pcautil.s)
+    enrichedanno=Polygon(AnnotationProcessor.create3DBBOXFromMinMaxZIndex(transanno,pboxres[i]["minZ"],pboxres[i]["maxZ"]))
+    webanno3d=AnnotationProcessor.create3DAnnotationWithPCA(processed2DAnnotations["charannos"][i]["anno"],enrichedanno,meshfile,pcautil.pca,pcautil.match_target,pcautil.ret_t,pcautil.ret_R,pcautil.s)
     annoresjson[anno["id"]]=webanno3d
     i+=1
 with open('convertedannos.json', 'w') as f:
