@@ -105,7 +105,8 @@ class AnnotationProcessor:
         result=[]
         for point in bbox2d:
             point[2]=minZ
-            bbox2d.append([point[0], point[1],maxZ])
+        for i in range(0,len(bbox2d)):
+            bbox2d.append([bbox2d[i][0], bbox2d[i][1],maxZ])
         print(bbox2d)
         return bbox2d
     
