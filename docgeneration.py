@@ -1173,13 +1173,13 @@ class OntDocGeneration:
                 foundlabel = str(predobjmap[tup][0])
             if str(tup) in commentproperties:
                 comment = str(predobjmap[tup][0])
-            if list(filter(str(tup).endswith, imageextensions)) != []:
-                foundimages.append(str(predobjmap[tup][0]))
             if len(predobjmap[tup]) > 0:
                 if len(predobjmap[tup])>1:
                     tablecontents+="<td class=\"wrapword\"><ul>"
                     for item in predobjmap[tup]:
                         tablecontents+="<li>"
+                        if filter(item.endswith, imageextensions)!=[]:
+                            foundimages.append(item)
                         res=self.createHTMLTableValueEntry(subject, tup, item, ttlf, tablecontents, graph,
                                               baseurl, checkdepth,geojsonrep)
                         tablecontents = res["html"]
@@ -1187,6 +1187,8 @@ class OntDocGeneration:
                         tablecontents += "</li>"
                     tablecontents+="</ul></td>"
                 else:
+                    if filter(str(predobjmap[tup]).endswith, imageextensions) != []:
+                        foundimages.append(str(predobjmap[tup]))
                     tablecontents+="<td class=\"wrapword\">"
                     res=self.createHTMLTableValueEntry(subject, tup, predobjmap[tup][0], ttlf, tablecontents, graph,
                                               baseurl, checkdepth,geojsonrep)
