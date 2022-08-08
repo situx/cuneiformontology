@@ -30,6 +30,8 @@ jobs:
          pylode -i examples/O149/ttl/o147.ttl -o docs/example_o147.html
          pylode -i examples/TCH92/ttl/tch92.ttl -o docs/example_tch92.html
          mkdir docs/examples/
+         mkdir docs/examples/HS1174/
+         cp -r examples/HS1174/images/ docs/examples/HS1174/images/ 
          python3 docgeneration.py signlist/signlist.ttl docs/signlist/ http://purl.org/cuneiform/signlist/ cuneisignlist
          python3 docgeneration.py examples/HS1174/ttl/hs1174.ttl docs/examples/ https://situx.github.io/cuneiformontology/examples/ cuneiex
          python3 docgeneration.py examples/HT073195/ttl/ht073195.ttl docs/examples/ https://situx.github.io/cuneiformontology/examples/ cuneiex
