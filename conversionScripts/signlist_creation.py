@@ -49,7 +49,7 @@ def analyzeSignName(signname,signuri,rdfset):
     res=[]
     spl=re.split('times|\.|over|×|x|/|plus|, |_|-|!', signname.lower())
     for sl in spl:
-        signparturi=("http://purl.org/cuneiform/signlist/character_"+cleanString(sl)).replace("__","_")
+        signparturi=("https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(sl)).replace("__","_")
         rdfset.add("<"+str(signuri)+"> graphemon:hasPart <"+str(signparturi)+"> .\n")
 
 
@@ -59,16 +59,16 @@ def convertToRDF(cuneiformsigndict,nuolenna,aasigndict,rdfset,unicodetowikidata)
     tocheckforUnicode={}
     sensescounter=0
     charsensecounter=0
-    rdfset.add("<http://purl.org/cuneiform/signlist/signlist_cuneiform> rdf:type graphemon:GraphemeList .\n ")
-    rdfset.add("<http://purl.org/cuneiform/signlist/signlist_cuneiform> rdfs:label \"Cuneiform Sign List\" .\n ")
+    rdfset.add("<https://situx.github.io/cuneiformontology/signlist/signlist_cuneiform> rdf:type graphemon:GraphemeList .\n ")
+    rdfset.add("<https://situx.github.io/cuneiformontology/signlist/signlist_cuneiform> rdfs:label \"Cuneiform Sign List\" .\n ")
     for entry in cuneiformsigndict:
         print(entry)
         if "(" in entry["signname"] and ")" in entry["signname"]:
-            signuri=("http://purl.org/cuneiform/signlist/character_"+cleanString(entry["signname"][0:entry["signname"].find("(")])).replace("__","_")
+            signuri=("https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(entry["signname"][0:entry["signname"].find("(")])).replace("__","_")
         else:
-            signuri=("http://purl.org/cuneiform/signlist/character_"+cleanString(entry["signname"])).replace("__","_")
+            signuri=("https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(entry["signname"])).replace("__","_")
         signnameToURI[toASCII(str(entry["signname"])).replace("\"","")]=str(signuri)
-        rdfset.add("<http://purl.org/cuneiform/signlist/signlist_cuneiform> rdfs:member <"+str(signuri)+"> .\n ")
+        rdfset.add("<https://situx.github.io/cuneiformontology/signlist/signlist_cuneiform> rdfs:member <"+str(signuri)+"> .\n ")
         if "unicodename" in entry and len(entry["unicodename"])>1:
             rdfset.add("<"+str(signuri)+"> rdf:type graphemon:GraphemeComposition .\n ")
             rdfset.add("<"+str(signuri)+"> rdfs:label \"Character Composition: "+toASCII(str(entry["signname"])).replace("\"","")+"\" .\n ")
@@ -111,40 +111,40 @@ def convertToRDF(cuneiformsigndict,nuolenna,aasigndict,rdfset,unicodetowikidata)
             nuolennamatchcounter+=1
         else:
             if len(nuolenna[item])>1:
-                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> rdf:type graphemon:GraphemeComposition .\n ")
-                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> rdfs:label \"Character Composition: "+toASCII(str(item)).replace("\"","")+"\" .\n ")
-                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> graphemon:hasGraphemeReading <http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> .\n ")
-                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> rdf:type graphemon:GraphemeReading .\n ")
-                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> graphemon:readingValue \""+toASCII(str(item)).replace("\"","")+"\" .\n ")
-                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> rdfs:label \"Grapheme Reading "+toASCII(str(item)).replace("\"","")+": "+toASCII(str(item)).replace("\"","")+"\" .\n ")
-                tocheckforUnicode[str("http://purl.org/cuneiform/signlist/character_"+cleanString(str(item)))]=nuolenna[item]
+                rdfset.add("<https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(str(item))+"> rdf:type graphemon:GraphemeComposition .\n ")
+                rdfset.add("<https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(str(item))+"> rdfs:label \"Character Composition: "+toASCII(str(item)).replace("\"","")+"\" .\n ")
+                rdfset.add("<https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(str(item))+"> graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> .\n ")
+                rdfset.add("<https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> rdf:type graphemon:GraphemeReading .\n ")
+                rdfset.add("<https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> graphemon:readingValue \""+toASCII(str(item)).replace("\"","")+"\" .\n ")
+                rdfset.add("<https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> rdfs:label \"Grapheme Reading "+toASCII(str(item)).replace("\"","")+": "+toASCII(str(item)).replace("\"","")+"\" .\n ")
+                tocheckforUnicode[str("https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(str(item)))]=nuolenna[item]
                 for chara in nuolenna[item]:
                     if chara in unicodeToURI and "uri" in unicodeToURI[chara]:
-                        rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> graphemon:isComposedOf <"+str(unicodeToURI[chara]["@id"])+"> .\n ")
-                        rdfset.add("<"+str(unicodeToURI[chara]["@id"])+"> graphemon:partOf <http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> .\n ")  
+                        rdfset.add("<https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(str(item))+"> graphemon:isComposedOf <"+str(unicodeToURI[chara]["@id"])+"> .\n ")
+                        rdfset.add("<"+str(unicodeToURI[chara]["@id"])+"> graphemon:partOf <https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(str(item))+"> .\n ")  
             else:
-                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> rdf:type graphemon:Grapheme .\n ")
-                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> rdfs:label \"Character: "+toASCII(str(item)).replace("\"","")+"\" .\n ")
-                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> graphemon:hasGraphemeReading <http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> .\n ")
-                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> rdf:type graphemon:GraphemeReading .\n ")
-                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> graphemon:readingValue \""+toASCII(str(item)).replace("\"","")+"\" .\n ")
-                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> rdfs:label \"Grapheme Reading "+toASCII(str(item)).replace("\"","")+": "+toASCII(str(item)).replace("\"","")+"\" .\n ")
-            rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> graphemon:unicodeRepresentation \""+str(nuolenna[item]).replace("\"","")+"\" .\n ")     
+                rdfset.add("<https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(str(item))+"> rdf:type graphemon:Grapheme .\n ")
+                rdfset.add("<https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(str(item))+"> rdfs:label \"Character: "+toASCII(str(item)).replace("\"","")+"\" .\n ")
+                rdfset.add("<https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(str(item))+"> graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> .\n ")
+                rdfset.add("<https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> rdf:type graphemon:GraphemeReading .\n ")
+                rdfset.add("<https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> graphemon:readingValue \""+toASCII(str(item)).replace("\"","")+"\" .\n ")
+                rdfset.add("<https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(str(item))+"_reading_"+cleanString(str(item))+"> rdfs:label \"Grapheme Reading "+toASCII(str(item)).replace("\"","")+": "+toASCII(str(item)).replace("\"","")+"\" .\n ")
+            rdfset.add("<https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(str(item))+"> graphemon:unicodeRepresentation \""+str(nuolenna[item]).replace("\"","")+"\" .\n ")     
             if toASCII(str(item)).replace("\"","").isdigit() and toASCII(str(item)).replace("\"","") in sensesmap:
-                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> lemon:sense <http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_sense_"+str(toASCII(str(item)).replace("\"",""))+"> .\n")
-                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_sense_"+str(toASCII(str(item)).replace("\"",""))+"> rdf:type graphemon:GraphemeSense .\n")
-                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_sense_"+str(toASCII(str(item)).replace("\"",""))+"> rdfs:label \"Grapheme Sense "+str(toASCII(str(item)).replace("\"",""))+": "+str(toASCII(str(item)).replace("\"",""))+"\" .\n")
-                rdfset.add("<http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"_sense_"+str(toASCII(str(item)).replace("\"",""))+"> lemon:reference <"+sensesmap[toASCII(str(item)).replace("\"","")]+"> .\n")
+                rdfset.add("<https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(str(item))+"> lemon:sense <https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(str(item))+"_sense_"+str(toASCII(str(item)).replace("\"",""))+"> .\n")
+                rdfset.add("<https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(str(item))+"_sense_"+str(toASCII(str(item)).replace("\"",""))+"> rdf:type graphemon:GraphemeSense .\n")
+                rdfset.add("<https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(str(item))+"_sense_"+str(toASCII(str(item)).replace("\"",""))+"> rdfs:label \"Grapheme Sense "+str(toASCII(str(item)).replace("\"",""))+": "+str(toASCII(str(item)).replace("\"",""))+"\" .\n")
+                rdfset.add("<https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(str(item))+"_sense_"+str(toASCII(str(item)).replace("\"",""))+"> lemon:reference <"+sensesmap[toASCII(str(item)).replace("\"","")]+"> .\n")
                 rdfset.add("<"+sensesmap[toASCII(str(item)).replace("\"","")]+"> rdfs:label \"Wikidata: "+str(toASCII(str(item)).replace("\"",""))+"\" .\n")
             if len(nuolenna[item])>1:
-                unicodeToURI[item]={"@id":"http://purl.org/cuneiform/signlist/character_"+cleanString(str(item)),"signname":toASCII(str(item)).replace("\"",""),"@type":"GraphemeComposition"}
+                unicodeToURI[item]={"@id":"https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(str(item)),"signname":toASCII(str(item)).replace("\"",""),"@type":"GraphemeComposition"}
             else:
-                unicodeToURI[item]={"@id":"http://purl.org/cuneiform/signlist/character_"+cleanString(str(item)),"signname":toASCII(str(item)).replace("\"",""),"@type":"Grapheme"}
+                unicodeToURI[item]={"@id":"https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(str(item)),"signname":toASCII(str(item)).replace("\"",""),"@type":"Grapheme"}
     for uri in tocheckforUnicode:
         for chara in tocheckforUnicode[uri]:
             if len(chara)>1 and chara in unicodeToURI and "@id" in unicodeToURI[chara]:
                 rdfset.add("<"+str(uri)+"> graphemon:isComposedOf <"+str(unicodeToURI[chara]["@id"])+"> .\n ")
-                rdfset.add("<"+str(unicodeToURI[chara]["@id"])+"> graphemon:partOf <http://purl.org/cuneiform/signlist/character_"+cleanString(str(item))+"> .\n ")  
+                rdfset.add("<"+str(unicodeToURI[chara]["@id"])+"> graphemon:partOf <https://situx.github.io/cuneiformontology/signlist/character_"+cleanString(str(item))+"> .\n ")  
     print("Matched "+str(nuolennamatchcounter)+" items in nuolenna!")
     aalistmatchcounter=0
     for entry in aasigndict:
@@ -262,7 +262,7 @@ with open('../signlist/signlist.ttl', mode='w', encoding="utf-8") as f:
     f.write("@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n ")
     f.write("@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n ")
     f.write("@prefix lemon: <http://lemon-model.net/lemon#> .\n ")
-    f.write("@prefix cuneisignlist: <http://purl.org/cuneiform/signlist/> .\n ")
+    f.write("@prefix cuneisignlist: <https://situx.github.io/cuneiformontology/signlist/> .\n ")
     f.write("@prefix cunei: <http://purl.org/cuneiform/> .\n ")
     f.write("@prefix owl: <http://www.w3.org/2002/07/owl#> .\n ")
     f.write("graphemon:SignlistOntology rdf:type owl:Ontology .\n ")
@@ -290,7 +290,8 @@ with open('../signlist/signlist.ttl', mode='w', encoding="utf-8") as f:
     f.write("graphemon:slha rdf:type owl:DatatypeProperty .\n ")
     f.write("graphemon:unicodeCodepoint rdf:type owl:DatatypeProperty .\n ")
     f.write("graphemon:unicodeRepresentation rdf:type owl:DatatypeProperty .\n ")
-    f.write("".join(sorted(list(dict.fromkeys(rdfset)))))
+    for item in sorted(list(dict.fromkeys(rdfset))):
+        f.write(item)
 
 g = Graph()
 g.parse("../signlist/signlist.ttl")
