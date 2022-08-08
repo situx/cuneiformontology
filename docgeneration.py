@@ -1179,7 +1179,7 @@ class OntDocGeneration:
                     for item in predobjmap[tup]:
                         tablecontents+="<li>"
                         if filter(item.endswith, imageextensions)!=[]:
-                            foundimages.append(item)
+                            foundimages.append(str(item))
                         res=self.createHTMLTableValueEntry(subject, tup, item, ttlf, tablecontents, graph,
                                               baseurl, checkdepth,geojsonrep)
                         tablecontents = res["html"]
@@ -1301,7 +1301,7 @@ class OntDocGeneration:
                                                                                                "").replace(
                     "{{scriptfolderpath}}", rellink).replace("{{classtreefolderpath}}", rellink2).replace("{{exports}}",myexports).replace("{{subject}}",str(subject)))
             for image in foundimages:
-                f.write(imagestemplate.replace("{{image}}",image))
+                f.write(imagestemplate.replace("{{image}}",str(image)))
             if comment!=None:
                 f.write(htmlcommenttemplate.replace("{{comment}}",comment))
             if geojsonrep!=None and not isgeocollection:
