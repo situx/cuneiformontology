@@ -74,7 +74,7 @@ geoproperties={
                "http://www.wikidata.org/prop/direct/P3896": "DatatypeProperty"
 }
 
-imageextensions=[".jpg",".png",".gif",".tif"]
+imageextensions=[".jpg",".png",".gif",".tif",".svg","<svg"]
 
 startscripts = """var namespaces={"rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","xsd":"http://www.w3.org/2001/XMLSchema#","geo":"http://www.opengis.net/ont/geosparql#","rdfs":"http://www.w3.org/2000/01/rdf-schema#","owl":"http://www.w3.org/2002/07/owl#","dc":"http://purl.org/dc/terms/","skos":"http://www.w3.org/2004/02/skos/core#"}
 var annotationnamespaces=["http://www.w3.org/2004/02/skos/core#","http://www.w3.org/2000/01/rdf-schema#","http://purl.org/dc/terms/"]
@@ -626,6 +626,12 @@ imagestemplate="""
 </div>
 """
 
+imagestemplatesvg="""
+<div class="image" style="max-width:500px;max-height:500px">
+{{image}}
+</div>
+"""
+
 nongeoexports="""
 <option value="csv">Comma Separated Values (CSV)</option>
 <option value="cipher">Cypher Neo4J (Cypher)</option>
@@ -1080,7 +1086,7 @@ class OntDocGeneration:
                     ttlf.write("<" + str(subject) + "> <" + str(pred) + "> \"" + str(object) + "\"^^<" + str(
                     object.datatype) + "> .\n")
                 tablecontents += "<span property=\"" + str(pred) + "\" content=\"" + str(
-                    object) + "\" datatype=\"" + str(object.datatype) + "\">" + str(
+                    object).replace("<","&lt").replace(">","&gt;").replace("\"","'") + "\" datatype=\"" + str(object.datatype) + "\">" + str(
                     object) + " <small>(<a style=\"color: #666;\" target=\"_blank\" href=\"" + str(
                     object.datatype) + "\">" + str(
                     object.datatype[object.datatype.rfind('/') + 1:]) + "</a>)</small></span>"
@@ -1305,7 +1311,10 @@ class OntDocGeneration:
                                                                                                "").replace(
                     "{{scriptfolderpath}}", rellink).replace("{{classtreefolderpath}}", rellink2).replace("{{exports}}",myexports).replace("{{subject}}",str(subject)))
             for image in foundimages:
-                f.write(imagestemplate.replace("{{image}}",str(image)))
+                if "<svg" in image:
+                    f.write(imagestemplatesvg.replace("{{image}}",str(image)))
+                else:
+                    f.write(imagestemplate.replace("{{image}}",str(image)))
             if comment!=None:
                 f.write(htmlcommenttemplate.replace("{{comment}}",comment))
             if geojsonrep!=None and not isgeocollection:
