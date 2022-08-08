@@ -916,7 +916,7 @@ class OntDocGeneration:
         paths = {}
         subtorenderlen = len(subjectstorender)
         subtorencounter = 0
-        print(uritotreeitem)
+        #print(uritotreeitem)
         for subj in subjectstorender:
             path = subj.replace(prefixnamespace, "").replace("?","").replace("*","")
             #try:
@@ -947,7 +947,7 @@ class OntDocGeneration:
         with open(outpath + corpusid + "_classtree.js", 'w', encoding='utf-8') as f:
             f.write("var tree=" + json.dumps(tree, indent=2))
             f.close()
-        print("BaseURL " + str(uritotreeitem))
+        #print("BaseURL " + str(uritotreeitem))
         for path in paths:
             indexhtml = htmltemplate.replace("{{toptitle}}","Index page for " + str(prefixnamespace)).replace("{{title}}","Index page for " + str(prefixnamespace)).replace(
                     "{{startscriptpath}}", "startscripts.js").replace("{{stylepath}}", "style.css").replace("{{classtreefolderpath}}", outpath + corpusid + "_classtree.js").replace(
@@ -1109,7 +1109,7 @@ class OntDocGeneration:
             checkdepth = subject.replace(baseurl, "").count("/")
         #print("Checkdepth: " + str(checkdepth), "OntdocGeneration", Qgis.Info)
         checkdepth+=1
-        print("Checkdepth: " + str(checkdepth))
+        #print("Checkdepth: " + str(checkdepth))
         foundlabel = ""
         predobjmap={}
         isgeocollection=False
@@ -1178,9 +1178,9 @@ class OntDocGeneration:
                     tablecontents+="<td class=\"wrapword\"><ul>"
                     for item in predobjmap[tup]:
                         tablecontents+="<li>"
-                        if str(item).startswith("http"):
+                        if "http" in str(item):
                             for ext in imageextensions:
-                                if str(item).endswith(ext):
+                                if ext in str(item):                             
                                     foundimages.append(str(item))                      
                         res=self.createHTMLTableValueEntry(subject, tup, item, ttlf, tablecontents, graph,
                                               baseurl, checkdepth,geojsonrep)
@@ -1189,10 +1189,10 @@ class OntDocGeneration:
                         tablecontents += "</li>"
                     tablecontents+="</ul></td>"
                 else:
-                    if str(predobjmap[tup]).startswith("http"):
+                    if "http" in str(predobjmap[tup]):
                         for ext in imageextensions:
-                            if str(predobjmap[tup]).endswith(ext):
-                                foundimages.append(str(predobjmap[tup]))
+                            if ext in str(predobjmap[tup]):
+                                foundimages.append(str(predobjmap[tup][0]))
                     tablecontents+="<td class=\"wrapword\">"
                     res=self.createHTMLTableValueEntry(subject, tup, predobjmap[tup][0], ttlf, tablecontents, graph,
                                               baseurl, checkdepth,geojsonrep)
