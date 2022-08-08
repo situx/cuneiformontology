@@ -29,7 +29,16 @@ jobs:
          pylode -i examples/HT073195/ht073195.ttl -o docs/example_ht073195.html
          pylode -i examples/O149/ttl/o147.ttl -o docs/example_o147.html
          pylode -i examples/TCH92/ttl/tch92.ttl -o docs/example_tch92.html
+         mkdir docs/examples/
+         mkdir docs/examples/HS1174
+         mkdir docs/examples/HT073195
+         mkdir docs/examples/O149
+         mkdir docs/examples/TCH92
          python3 docgeneration.py signlist/signlist.ttl docs/signlist/ http://purl.org/cuneiform/signlist/ cuneisignlist
+         python3 docgeneration.py examples/HS1174/ttl/hs1174.ttl docs/examples/HS1174/ https://situx.github.io/cuneiformontology/examples/ cuneiex
+         python3 docgeneration.py examples/HT073195/ttl/ht073195.ttl docs/examples/HT073195/ https://situx.github.io/cuneiformontology/examples/ cuneiex
+         python3 docgeneration.py examples/O149/ttl/o149.ttl docs/examples/O149/ https://situx.github.io/cuneiformontology/examples/ cuneiex
+         python3 docgeneration.py examples/TCH92/ttl/tch92.ttl docs/examples/TCH92/ https://situx.github.io/cuneiformontology/examples/ cuneiex
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.3.3
       with:
