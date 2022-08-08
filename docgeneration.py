@@ -1178,8 +1178,10 @@ class OntDocGeneration:
                     tablecontents+="<td class=\"wrapword\"><ul>"
                     for item in predobjmap[tup]:
                         tablecontents+="<li>"
-                        if filter(item.endswith, imageextensions)!=[]:
-                            foundimages.append(str(item))
+                        if str(item).startswith("http"):
+                            for ext in imageextensions:
+                                if str(item).endswith(ext):
+                                    foundimages.append(str(item))                      
                         res=self.createHTMLTableValueEntry(subject, tup, item, ttlf, tablecontents, graph,
                                               baseurl, checkdepth,geojsonrep)
                         tablecontents = res["html"]
@@ -1187,8 +1189,10 @@ class OntDocGeneration:
                         tablecontents += "</li>"
                     tablecontents+="</ul></td>"
                 else:
-                    if filter(str(predobjmap[tup]).endswith, imageextensions) != []:
-                        foundimages.append(str(predobjmap[tup]))
+                    if str(predobjmap[tup]).startswith("http"):
+                        for ext in imageextensions:
+                            if str(predobjmap[tup]).endswith(ext):
+                                foundimages.append(str(predobjmap[tup]))
                     tablecontents+="<td class=\"wrapword\">"
                     res=self.createHTMLTableValueEntry(subject, tup, predobjmap[tup][0], ttlf, tablecontents, graph,
                                               baseurl, checkdepth,geojsonrep)
