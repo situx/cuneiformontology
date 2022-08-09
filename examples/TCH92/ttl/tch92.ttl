@@ -267,8 +267,8 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 #################################################################
 #    Individuals
-#################################################################
 
+#################################################################
 
 <https://situx.github.io/cuneiformontology/examples/tch92/tch92_signlist> rdf:type owl:NamedIndividual ,
                                                                                      graphemon:GraphemeCollection ;
@@ -1889,9 +1889,48 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
                                                                      rdfs:label "Grapheme Reading TAR: SIL" .
 
 
-###  https://situx.github.io/cuneiformontology/examples/tch92/tch92
-<https://situx.github.io/cuneiformontology/examples/tch92/tch92> rdf:type owl:NamedIndividual ,
-                                                          cunei:Tablet .
+														  
+<https://situx.github.io/cuneiformontology/examples/tch92/tch92> rdf:type 
+                                                                            cunei:Tablet ;
+                                                                   cunei:hasSurface <https://situx.github.io/cuneiformontology/examples/tch92/tch92_bottom> ,
+                                                                                    <https://situx.github.io/cuneiformontology/examples/tch92/tch92_left> ,
+                                                                                    <https://situx.github.io/cuneiformontology/examples/tch92/tch92_obverse> ,
+                                                                                    <https://situx.github.io/cuneiformontology/examples/tch92/tch92_reverse> ,
+                                                                                    <https://situx.github.io/cuneiformontology/examples/tch92/tch92_right> ;
+                                                                   cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/tch92/tch92_3dmesh1> ;
+                                                                   cunei:material cunei:clay ;
+                                                                   cunei:museumNumber "TCH92"^^xsd:string ;
+                                                                   rdfs:label "TCH92 cuneiform artifact" .
+
+###  https://situx.github.io/cuneiformontology/examples/tch92/tch92_bottom
+<https://situx.github.io/cuneiformontology/examples/tch92/tch92_bottom> rdf:type owl:NamedIndividual ,
+                                                                                   cunei:BottomSide ;
+                                                                          rdfs:label "TCH92 bottom side" .
+
+###  https://situx.github.io/cuneiformontology/examples/tch92/tch92_left
+<https://situx.github.io/cuneiformontology/examples/tch92/tch92_left> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:LeftSide ;
+                                                                        rdfs:label "TCH92 left side" .
+																		
+###  https://situx.github.io/cuneiformontology/examples/tch92/tch92_right
+<https://situx.github.io/cuneiformontology/examples/tch92/tch92_right> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:RightSide ;
+                                                                        rdfs:label "TCH92 right side" .
+																		
+###  https://situx.github.io/cuneiformontology/examples/tch92/tch92_front
+<https://situx.github.io/cuneiformontology/examples/tch92/tch92_front> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:ObverseSide ;
+                                                                        rdfs:label "TCH92 obverse side" .
+																		
+###  https://situx.github.io/cuneiformontology/examples/tch92/tch92_back
+<https://situx.github.io/cuneiformontology/examples/tch92/tch92_back> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:ReverseSide ;
+                                                                        rdfs:label "TCH92 reverse side" .
+																		
+###  https://situx.github.io/cuneiformontology/examples/tch92/tch92_top
+<https://situx.github.io/cuneiformontology/examples/tch92/tch92_top> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TopSide ;
+                                                                        rdfs:label "TCH92 top side" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/tch92/tch92_obverse_line10_char1_glyph

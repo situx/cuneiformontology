@@ -262,8 +262,8 @@ cunei:TransliterationLine rdf:type owl:Class .
 #    Individuals
 #################################################################
 
-<https://situx.github.io/cuneiformontology/examples/o147/o147_signlist> rdf:type owl:NamedIndividual ,
-                                                                                     graphemon:GraphemeCollection ;
+<https://situx.github.io/cuneiformontology/examples/o147/o147_signlist> rdf:type graphemon:GraphemeCollection ;
+																			rdfs:label "Signlist of cuneiform tablet O147" ;
                                                                             rdfs:member <https://situx.github.io/cuneiformontology/examples/signlist/character_u> ,
 											<https://situx.github.io/cuneiformontology/examples/signlist/character_a> ,
 											<https://situx.github.io/cuneiformontology/examples/signlist/character_ab> ,
@@ -324,11 +324,6 @@ cunei:TransliterationLine rdf:type owl:Class .
                                                                                              <https://situx.github.io/cuneiformontology/examples/dict/1(u)_word> ,
                                                                                              <https://situx.github.io/cuneiformontology/examples/dict/5(disz)_word> ;
                                                         rdfs:label "Lexicon: O147" .
-
-
-###  https://situx.github.io/cuneiformontology/examples/o147/O147_signlist
-<https://situx.github.io/cuneiformontology/examples/o147/O147_signlist> rdf:type owl:NamedIndividual ,
-                                                                  <http://www.purl.org/graphemon/GraphemeCollection> .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/character_U
@@ -1314,11 +1309,48 @@ cunei:TransliterationLine rdf:type owl:Class .
                                                                    <http://www.purl.org/graphemon/readingValue> "nu" ;
                                                                    rdfs:label "Grapheme Reading NU: nu" .
 
+												
+<https://situx.github.io/cuneiformontology/examples/o147/o147> rdf:type 
+                                                                            cunei:Tablet ;
+                                                                   cunei:hasSurface <https://situx.github.io/cuneiformontology/examples/o147/o147_bottom> ,
+                                                                                    <https://situx.github.io/cuneiformontology/examples/o147/o147_left> ,
+                                                                                    <https://situx.github.io/cuneiformontology/examples/o147/o147_obverse> ,
+                                                                                    <https://situx.github.io/cuneiformontology/examples/o147/o147_reverse> ,
+                                                                                    <https://situx.github.io/cuneiformontology/examples/o147/o147_right> ;
+                                                                   cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/o147/o147_3dmesh1> ;
+                                                                   cunei:material cunei:clay ;
+                                                                   cunei:museumNumber "O147"^^xsd:string ;
+                                                                   rdfs:label "O147 cuneiform artifact" .
 
-###  https://situx.github.io/cuneiformontology/examples/o147/o147
-<https://situx.github.io/cuneiformontology/examples/o147/o147> rdf:type owl:NamedIndividual ,
-                                                         cunei:Tablet ;
-                                                rdfs:label "O147 cuneiform tablet" .
+###  https://situx.github.io/cuneiformontology/examples/o147/o147_bottom
+<https://situx.github.io/cuneiformontology/examples/o147/o147_bottom> rdf:type owl:NamedIndividual ,
+                                                                                   cunei:BottomSide ;
+                                                                          rdfs:label "O147 bottom side" .
+
+###  https://situx.github.io/cuneiformontology/examples/o147/o147_left
+<https://situx.github.io/cuneiformontology/examples/o147/o147_left> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:LeftSide ;
+                                                                        rdfs:label "O147 left side" .
+																		
+###  https://situx.github.io/cuneiformontology/examples/o147/o147_right
+<https://situx.github.io/cuneiformontology/examples/o147/o147_right> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:RightSide ;
+                                                                        rdfs:label "O147 right side" .
+																		
+###  https://situx.github.io/cuneiformontology/examples/o147/o147_front
+<https://situx.github.io/cuneiformontology/examples/o147/o147_front> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:ObverseSide ;
+                                                                        rdfs:label "O147 obverse side" .
+																		
+###  https://situx.github.io/cuneiformontology/examples/o147/o147_back
+<https://situx.github.io/cuneiformontology/examples/o147/o147_back> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:ReverseSide ;
+                                                                        rdfs:label "O147 reverse side" .
+																		
+###  https://situx.github.io/cuneiformontology/examples/o147/o147_top
+<https://situx.github.io/cuneiformontology/examples/o147/o147_top> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TopSide ;
+                                                                        rdfs:label "O147 top side" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_obverse_line10_char1_glyph
