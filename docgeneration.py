@@ -74,7 +74,7 @@ geoproperties={
                "http://www.wikidata.org/prop/direct/P3896": "DatatypeProperty"
 }
 
-imageextensions=[".jpg",".png",".gif",".tif",".svg","<svg"]
+imageextensions=[".apng",".bmp",".cur",".ico",".jpg",".jpeg",".png",".gif",".tif",".svg","<svg"]
 
 startscripts = """var namespaces={"rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","xsd":"http://www.w3.org/2001/XMLSchema#","geo":"http://www.opengis.net/ont/geosparql#","rdfs":"http://www.w3.org/2000/01/rdf-schema#","owl":"http://www.w3.org/2002/07/owl#","dc":"http://purl.org/dc/terms/","skos":"http://www.w3.org/2004/02/skos/core#"}
 var annotationnamespaces=["http://www.w3.org/2004/02/skos/core#","http://www.w3.org/2000/01/rdf-schema#","http://purl.org/dc/terms/"]
@@ -925,29 +925,29 @@ class OntDocGeneration:
         #print(uritotreeitem)
         for subj in subjectstorender:
             path = subj.replace(prefixnamespace, "").replace("?","").replace("*","")
-            #try:
-            if "/" in path:
-                addpath = ""
-                for pathelem in path.split("/"):
-                    addpath += pathelem + "/"
-                    if not os.path.isdir(outpath + addpath):
-                        os.mkdir(outpath + addpath)
-                if outpath + path[0:path.rfind('/')] + "/" not in paths:
-                    paths[outpath + path[0:path.rfind('/')] + "/"] = []
-                paths[outpath + path[0:path.rfind('/')] + "/"].append(addpath[0:addpath.rfind('/')])
-            else:
-                if not os.path.isdir(outpath + path):
-                    os.mkdir(outpath + path)
-                if outpath not in paths:
-                    paths[outpath] = []
-                paths[outpath].append(path + "/index.html")
-            self.createHTML(outpath + path, self.graph.predicate_objects(subj), subj, prefixnamespace, self.graph.subject_predicates(subj),
-                       self.graph,str(corpusid) + "_search.js", str(corpusid) + "_classtree.js",uritotreeitem,curlicense)
-            subtorencounter += 1
-            print(str(subtorencounter) + "/" + str(subtorenderlen) + " " + str(outpath + path))
-            #except Exception as e:
-            #    print(e)
-            #    print("Exception occured " + str(e), "OntdocGeneration", Qgis.Info)
+            try:
+                if "/" in path:
+                    addpath = ""
+                    for pathelem in path.split("/"):
+                        addpath += pathelem + "/"
+                        if not os.path.exists(outpath + addpath) and not os.path.isdir(outpath + addpath):
+                            os.mkdir(outpath + addpath)
+                    if outpath + path[0:path.rfind('/')] + "/" not in paths:
+                        paths[outpath + path[0:path.rfind('/')] + "/"] = []
+                    paths[outpath + path[0:path.rfind('/')] + "/"].append(addpath[0:addpath.rfind('/')])
+                else:
+                    if not os.path.exists(outpath + path) and not os.path.isdir(outpath + path):
+                        os.mkdir(outpath + path)
+                    if outpath not in paths:
+                        paths[outpath] = []
+                    paths[outpath].append(path + "/index.html")
+                self.createHTML(outpath + path, self.graph.predicate_objects(subj), subj, prefixnamespace, self.graph.subject_predicates(subj),
+                           self.graph,str(corpusid) + "_search.js", str(corpusid) + "_classtree.js",uritotreeitem,curlicense)
+                subtorencounter += 1
+                print(str(subtorencounter) + "/" + str(subtorenderlen) + " " + str(outpath + path))
+            except Exception as e:
+                print(e)
+                print("Exception occured " + str(e))
         # print(paths)
         self.assignGeoClassesToTree(tree)
         with open(outpath + corpusid + "_classtree.js", 'w', encoding='utf-8') as f:
