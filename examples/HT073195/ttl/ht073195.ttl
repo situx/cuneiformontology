@@ -256,6 +256,55 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195> rdf:type 
+                                                                            cunei:Tablet ;
+                                                                   cunei:hasSurface <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_bottom> ,
+                                                                                    <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_left> ,
+                                                                                    <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse> ,
+                                                                                    <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_reverse> ,
+                                                                                    <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_right> ;
+                                                                   cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_3dmesh1> ;
+                                                                   cunei:material cunei:clay ;
+                                                                   cunei:museumNumber "HT 07-31-95"^^xsd:string ;
+                                                                   rdfs:label "HT 07-31-95 cuneiform artifact" .
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_bottom
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_bottom> rdf:type owl:NamedIndividual ,
+                                                                                   cunei:BottomSide ;
+                                                                          cunei:isRepresentedBy <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611839:841083/full/full/0/default.jpg> ;
+                                                                          rdfs:label "HT 07-31-95 bottom side" .
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_left
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_left> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:LeftSide ;
+                                                                        cunei:isRepresentedBy <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611836:841080/full/full/0/default.jpg> ;
+                                                                        rdfs:label "HT 07-31-95 left side" .
+																		
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_right
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_right> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:RightSide ;
+                                                                        cunei:isRepresentedBy <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611838:841082/full/full/0/default.jpg> ;
+                                                                        rdfs:label "HT 07-31-95 right side" .
+																		
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_front
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_front> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:ObverseSide ;
+                                                                        cunei:isRepresentedBy <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611837:841081/full/full/0/default.jpg> ;
+                                                                        rdfs:label "HT 07-31-95 obverse side" .
+																		
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_back
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_back> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:ReverseSide ;
+                                                                        cunei:isRepresentedBy <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611840:841084/full/full/0/default.jpg> ;
+                                                                        rdfs:label "HT 07-31-95 reverse side" .
+																		
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_top
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_top> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TopSide ;
+                                                                        cunei:isRepresentedBy <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611835:841079/full/full/0/default.jpg> ;
+                                                                        rdfs:label "HT 07-31-95 top side" .
+
+
 <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_signlist> rdf:type owl:NamedIndividual ,
                                                                                      graphemon:GraphemeCollection ;
 																			rdfs:label "Signlist of cuneiform tablet HT 07-31-95" ;
