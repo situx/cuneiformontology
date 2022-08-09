@@ -207,8 +207,8 @@ cunei:wordIndex rdf:type owl:DatatypeProperty .
                                                    rdfs:label "grapheme" .
 
 
-###  https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence
-<https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> rdf:type owl:Class .
+###  http://www.purl.org/cuneiform/TransliterationCharOccurrence
+<http://www.purl.org/cuneiform/TransliterationCharOccurrence> rdf:type owl:Class .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/TransliterationWordOccurrence
@@ -2909,7 +2909,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line1_char1
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line1_char1> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line1_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/5(disz)_character_reading_5(disz)> ;
                                                                                      cunei:charIndex 1 ;
@@ -2919,7 +2919,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line1_char2
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line1_char2> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line1_char3> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line1_char1> ;
                                                                                      cunei:charIndex 2 ;
@@ -2929,7 +2929,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line1_char3
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line1_char3> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line1_char4> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line1_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/sar_character_reading_sar> ;
@@ -2940,7 +2940,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line1_char4
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line1_char4> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line1_char5> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line1_char3> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/e2_character_reading_e2> ;
@@ -2951,7 +2951,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line1_char5
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line1_char5> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line1_char6> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line1_char4> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/gag_character_reading_du3> ;
@@ -2962,7 +2962,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line1_char6
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line1_char6> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line1_char5> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/a_character_reading_a> ;
                                                                                      cunei:charIndex 6 ;
@@ -3034,7 +3034,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char1
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char1> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/gisz_character_reading_gisz> ;
                                                                                      cunei:charIndex 1 ;
@@ -3053,7 +3053,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char2
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char2> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char3> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char1> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/ezen_character_reading_kesz2> ;
@@ -3064,7 +3064,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char3
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char3> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char4> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/da_character_reading_da> ;
@@ -3075,7 +3075,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char4
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char4> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char5> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char3> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/gisz_character_reading_gisz> ;
@@ -3086,7 +3086,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char5
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char5> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char6> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char4> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/ig_character_reading_ig> ;
@@ -3097,7 +3097,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char6
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char6> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char7> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char5> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/gisz_character_reading_gisz> ;
@@ -3108,7 +3108,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char7
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char7> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char8> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char6> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/sag_character_reading_sag> ;
@@ -3119,7 +3119,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char8
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char8> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char9> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char7> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/kul_character_reading_kul> ;
@@ -3130,7 +3130,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char9
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char9> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char10> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line2_char8> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/du_character_reading_gub> ;
@@ -3177,7 +3177,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line3_char1
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line3_char1> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line3_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/U_character_reading_1(u)> ;
                                                                                      cunei:charIndex 1 ;
@@ -3187,7 +3187,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line3_char2
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line3_char2> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line3_char3> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line3_char1> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/sar_character_reading_sar> ;
@@ -3198,7 +3198,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line3_char3
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line3_char3> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line3_char4> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line3_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/e2_character_reading_e2> ;
@@ -3209,7 +3209,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line3_char4
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line3_char4> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line3_char5> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line3_char3> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/ki_character_reading_ki> ;
@@ -3220,7 +3220,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line3_char5
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line3_char5> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line3_char4> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/ud_character_reading_ud> ;
                                                                                      cunei:charIndex 5 ;
@@ -3267,7 +3267,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line4_char1
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line4_char1> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line4_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/da_character_reading_da> ;
                                                                                      cunei:charIndex 1 ;
@@ -3277,7 +3277,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line4_char2
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line4_char2> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line4_char3> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line4_char1> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/e2_character_reading_e2> ;
@@ -3288,7 +3288,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line4_char3
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line4_char3> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line4_char4> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line4_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/lu2_character_reading_lu2> ;
@@ -3299,7 +3299,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line4_char4
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line4_char4> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line4_char5> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line4_char3> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/an_character_reading_d> ;
@@ -3310,7 +3310,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line4_char5
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line4_char5> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line4_char6> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line4_char4> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/ud_character_reading_utu> ;
@@ -3321,7 +3321,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line4_char6
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line4_char6> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line4_char7> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line4_char5> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/asz_character_reading_asz> ;
@@ -3332,7 +3332,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line4_char7
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line4_char7> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line4_char6> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/sar_character_reading_szar> ;
                                                                                      cunei:charIndex 7 ;
@@ -3379,7 +3379,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char1
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char1> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/u3_character_reading_u3> ;
                                                                                      cunei:charIndex 1 ;
@@ -3389,7 +3389,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char2
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char2> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char3> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char1> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/da_character_reading_da> ;
@@ -3400,7 +3400,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char3
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char3> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char4> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/e2_character_reading_e2> ;
@@ -3411,7 +3411,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char4
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char4> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char5> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char3> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/isz_character_reading_isz> ;
@@ -3422,7 +3422,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char5
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char5> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char6> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char4> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/du_character_reading_du> ;
@@ -3433,7 +3433,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char6
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char6> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char7> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char5> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/ki_character_reading_ki> ;
@@ -3444,7 +3444,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char7
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char7> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char8> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char6> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/nu_character_reading_nu> ;
@@ -3455,7 +3455,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char8
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char8> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line5_char7> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/um_character_reading_um> ;
                                                                                      cunei:charIndex 8 ;
@@ -3512,7 +3512,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line6_char1
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line6_char1> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line6_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/sag_character_reading_sag> ;
                                                                                      cunei:charIndex 1 ;
@@ -3522,7 +3522,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line6_char2
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line6_char2> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line6_char3> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line6_char1> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/bi_character_reading_bi> ;
@@ -3533,7 +3533,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line6_char3
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line6_char3> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line6_char4> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line6_char2> ;
                                                                                      cunei:charIndex 3 ;
@@ -3543,7 +3543,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line6_char4
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line6_char4> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line6_char5> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line6_char3> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/kam_character_reading_kam> ;
@@ -3554,7 +3554,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line6_char5
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line6_char5> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line6_char6> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line6_char4> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/tar_character_reading_sila> ;
@@ -3565,7 +3565,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line6_char6
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line6_char6> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line6_char5> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/ama_character_reading_dagal> ;
                                                                                      cunei:charIndex 6 ;
@@ -3602,7 +3602,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line7_char1
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line7_char1> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line7_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/sag_character_reading_sag> ;
                                                                                      cunei:charIndex 1 ;
@@ -3612,7 +3612,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line7_char2
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line7_char2> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line7_char3> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line7_char1> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/bi_character_reading_bi> ;
@@ -3623,7 +3623,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line7_char3
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line7_char3> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line7_char4> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line7_char2> ;
                                                                                      cunei:charIndex 3 ;
@@ -3633,7 +3633,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line7_char4
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line7_char4> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line7_char5> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line7_char3> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/kam_character_reading_kam> ;
@@ -3644,7 +3644,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line7_char5
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line7_char5> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line7_char6> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line7_char4> ;
                                                                                      cunei:charIndex 5 ;
@@ -3654,7 +3654,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line7_char6
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line7_char6> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line7_char7> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line7_char5> ;
                                                                                      cunei:charIndex 6 ;
@@ -3664,7 +3664,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line7_char7
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line7_char7> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line7_char6> ;
                                                                                      cunei:charIndex 7 ;
                                                                                      cunei:lineNumber 7 ;
@@ -3700,7 +3700,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line8_char1
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line8_char1> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line8_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/ki_character_reading_ki> ;
                                                                                      cunei:charIndex 1 ;
@@ -3710,7 +3710,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line8_char2
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line8_char2> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line8_char3> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line8_char1> ;
                                                                                      cunei:charIndex 2 ;
@@ -3720,7 +3720,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line8_char3
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line8_char3> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line8_char4> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line8_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/gisz_character_reading_is> ;
@@ -3731,7 +3731,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line8_char4
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line8_char4> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line8_char3> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/tul2_character_reading_pu2> ;
                                                                                      cunei:charIndex 4 ;
@@ -3758,7 +3758,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line9_char1
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line9_char1> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line9_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/dumu_character_reading_dumu> ;
                                                                                      cunei:charIndex 1 ;
@@ -3768,7 +3768,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line9_char2
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line9_char2> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line9_char3> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line9_char1> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/a_character_reading_a> ;
@@ -3779,7 +3779,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line9_char3
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line9_char3> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line9_char4> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line9_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/ab_character_reading_ap> ;
@@ -3790,7 +3790,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line9_char4
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line9_char4> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line9_char5> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line9_char3> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/pa_character_reading_pa> ;
@@ -3801,7 +3801,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line9_char5
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line9_char5> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line9_char6> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line9_char4> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/ta_character_reading_ta> ;
@@ -3812,7 +3812,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line9_char6
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line9_char6> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line9_char7> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line9_char5> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/nu_character_reading_nu> ;
@@ -3823,7 +3823,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line9_char7
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line9_char7> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line9_char6> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/um_character_reading_um> ;
                                                                                      cunei:charIndex 7 ;
@@ -4020,7 +4020,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line12_char10
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line12_char10> rdf:type owl:NamedIndividual ,
-                                                                                                <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                                <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                        cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line12_char11> ;
                                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line12_char9> ;
                                                                                        cunei:charIndex 10 ;
@@ -4030,7 +4030,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line12_char11
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line12_char11> rdf:type owl:NamedIndividual ,
-                                                                                                <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                                <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                        cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line12_char12> ;
                                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line12_char10> ;
                                                                                        cunei:charIndex 11 ;
@@ -4040,7 +4040,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line12_char12
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line12_char12> rdf:type owl:NamedIndividual ,
-                                                                                                <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                                <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                        cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line12_char13> ;
                                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line12_char11> ;
                                                                                        cunei:charIndex 12 ;
@@ -4050,7 +4050,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line12_char13
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line12_char13> rdf:type owl:NamedIndividual ,
-                                                                                                <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                                <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line12_char12> ;
                                                                                        cunei:charIndex 13 ;
                                                                                        cunei:lineNumber 12 ;
@@ -4133,7 +4133,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char1
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char1> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/mu_character_reading_mu> ;
                                                                                      cunei:charIndex 1 ;
@@ -4143,7 +4143,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char2
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char2> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char3> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char1> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/an_character_reading_d> ;
@@ -4154,7 +4154,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char3
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char3> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char4> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/ud_character_reading_utu> ;
@@ -4165,7 +4165,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char4
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char4> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char5> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char3> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/an_character_reading_d> ;
@@ -4176,7 +4176,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char5
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char5> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char6> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char4> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/a_character_reading_a> ;
@@ -4187,7 +4187,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char6
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char6> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char7> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char5> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/a_character_reading_a> ;
@@ -4198,7 +4198,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char7
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char7> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char8> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char6> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/an_character_reading_d> ;
@@ -4209,7 +4209,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char8
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char8> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char9> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char7> ;
                                                                                      cunei:charIndex 8 ;
@@ -4219,7 +4219,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char9
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char9> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line1_char8> ;
                                                                                      cunei:charIndex 9 ;
                                                                                      cunei:lineNumber 1 ;
@@ -4275,7 +4275,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line2_char1
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line2_char1> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line2_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/u3_character_reading_u3> ;
                                                                                      cunei:charIndex 1 ;
@@ -4285,7 +4285,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line2_char2
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line2_char2> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line2_char3> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line2_char1> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/sa_character_reading_sa> ;
@@ -4296,7 +4296,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line2_char3
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line2_char3> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line2_char4> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line2_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/am_character_reading_am> ;
@@ -4307,7 +4307,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line2_char4
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line2_char4> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line2_char5> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line2_char3> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/zu_character_reading_su2> ;
@@ -4318,7 +4318,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line2_char5
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line2_char5> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line2_char6> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line2_char4> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/i_character_reading_i> ;
@@ -4329,7 +4329,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line2_char6
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line2_char6> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line2_char7> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line2_char5> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/lu_character_reading_lu> ;
@@ -4340,7 +4340,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line2_char7
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line2_char7> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line2_char6> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/na_character_reading_na> ;
                                                                                      cunei:charIndex 7 ;
@@ -4377,7 +4377,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line3_char1
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line3_char1> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line3_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/in_character_reading_in> ;
                                                                                      cunei:charIndex 1 ;
@@ -4387,7 +4387,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line3_char2
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line3_char2> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line3_char3> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line3_char1> ;
                                                                                      cunei:charIndex 2 ;
@@ -4397,7 +4397,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line3_char3
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line3_char3> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line3_char4> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line3_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/ne_character_reading_de3> ;
@@ -4408,7 +4408,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line3_char4
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line3_char4> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line3_char3> ;
                                                                                      cunei:charIndex 4 ;
                                                                                      cunei:lineNumber 3 ;
@@ -4434,7 +4434,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char1
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char1> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/igi_character_reading_igi> ;
                                                                                      cunei:charIndex 1 ;
@@ -4461,7 +4461,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char2
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char2> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char3> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char1> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/ka_character_reading_pi4> ;
@@ -4472,7 +4472,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char3
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char3> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char4> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/ka_character_reading_pi4> ;
@@ -4483,7 +4483,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char4
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char4> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char5> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char3> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/an_character_reading_d> ;
@@ -4494,7 +4494,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char5
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char5> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char6> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char4> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/a_character_reading_a> ;
@@ -4505,7 +4505,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char6
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char6> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char7> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char5> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/a_character_reading_a> ;
@@ -4516,7 +4516,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char7
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char7> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char8> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char6> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/szid_character_reading_sanga> ;
@@ -4527,7 +4527,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char8
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char8> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char9> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char7> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/an_character_reading_d> ;
@@ -4538,7 +4538,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char9
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char9> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line4_char8> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/ud_character_reading_utu> ;
                                                                                      cunei:charIndex 9 ;
@@ -4605,7 +4605,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line5_char1
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line5_char1> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line5_char1> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/igi_character_reading_igi> ;
                                                                                      cunei:charIndex 1 ;
@@ -4615,7 +4615,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line5_char2
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line5_char2> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line5_char3> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line5_char1> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/isz_character_reading_isz> ;
@@ -4626,7 +4626,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line5_char3
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line5_char3> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line5_char4> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line5_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/me_character_reading_me> ;
@@ -4637,7 +4637,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line5_char4
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line5_char4> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line5_char5> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line5_char3> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/esz_character_reading_sin> ;
@@ -4648,7 +4648,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line5_char5
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line5_char5> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line5_char6> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line5_char4> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/szid_character_reading_sanga> ;
@@ -4659,7 +4659,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line5_char6
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line5_char6> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line5_char7> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line5_char5> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/an_character_reading_d> ;
@@ -4670,7 +4670,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line5_char7
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line5_char7> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line5_char6> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/ud_character_reading_utu> ;
                                                                                      cunei:charIndex 7 ;
@@ -4727,7 +4727,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char1
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char1> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/igi_character_reading_igi> ;
                                                                                      cunei:charIndex 1 ;
@@ -4737,7 +4737,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char2
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char2> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char3> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char1> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/an_character_reading_d> ;
@@ -4748,7 +4748,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char3
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char3> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char4> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char2> ;
                                                                                      cunei:charIndex 3 ;
@@ -4758,7 +4758,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char4
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char4> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char5> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char3> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/la_character_reading_la> ;
@@ -4769,7 +4769,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char5
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char5> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char6> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char4> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/ma_character_reading_ma> ;
@@ -4780,7 +4780,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char6
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char6> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char7> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char5> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/za_character_reading_sa3> ;
@@ -4791,7 +4791,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char7
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char7> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char8> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char6> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/szu_character_reading_szu> ;
@@ -4802,7 +4802,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char8
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char8> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line6_char7> ;
                                                                                      cunei:charIndex 8 ;
                                                                                      cunei:lineNumber 6 ;
@@ -4838,7 +4838,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char1
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char1> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/igi_character_reading_igi> ;
                                                                                      cunei:charIndex 1 ;
@@ -4865,7 +4865,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char2
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char2> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char3> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char1> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/ra_character_reading_ra> ;
@@ -4876,7 +4876,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char3
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char3> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char4> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/asz_character_reading_asz> ;
@@ -4887,7 +4887,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char4
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char4> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char5> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char3> ;
                                                                                      cunei:charIndex 4 ;
@@ -4897,7 +4897,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char5
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char5> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char6> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char4> ;
                                                                                      cunei:charIndex 5 ;
@@ -4907,7 +4907,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char6
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char6> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char7> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char5> ;
                                                                                      cunei:charIndex 6 ;
@@ -4917,7 +4917,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char7
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char7> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char8> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char6> ;
                                                                                      cunei:charIndex 7 ;
@@ -4927,7 +4927,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char8
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char8> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char9> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char7> ;
                                                                                      cunei:charIndex 8 ;
@@ -4937,7 +4937,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char9
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char9> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line7_char8> ;
                                                                                      cunei:charIndex 9 ;
                                                                                      cunei:lineNumber 7 ;
@@ -4955,7 +4955,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line8_char1
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line8_char1> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line8_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/igi_character_reading_igi> ;
                                                                                      cunei:charIndex 1 ;
@@ -4965,7 +4965,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line8_char2
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line8_char2> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line8_char3> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line8_char1> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/nu_character_reading_nu> ;
@@ -4976,7 +4976,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line8_char3
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line8_char3> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line8_char4> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line8_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/ur2_character_reading_ur2> ;
@@ -4987,7 +4987,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line8_char4
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line8_char4> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line8_char5> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line8_char3> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/an_character_reading_an> ;
@@ -4998,7 +4998,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line8_char5
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line8_char5> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line8_char4> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/dim_character_reading_tim> ;
                                                                                      cunei:charIndex 5 ;
@@ -5017,7 +5017,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line9_char1
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line9_char1> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line9_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/dumu_character_reading_dumu> ;
                                                                                      cunei:charIndex 1 ;
@@ -5027,7 +5027,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line9_char2
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line9_char2> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line9_char3> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line9_char1> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/an_character_reading_dingir> ;
@@ -5038,7 +5038,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line9_char3
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line9_char3> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line9_char4> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line9_char2> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/szu_character_reading_szu> ;
@@ -5049,7 +5049,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line9_char4
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line9_char4> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line9_char5> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line9_char3> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/a_character_reading_a> ;
@@ -5060,7 +5060,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line9_char5
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line9_char5> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:nextChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line9_char6> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line9_char4> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/bu_character_reading_bu> ;
@@ -5071,7 +5071,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line9_char6
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line9_char6> rdf:type owl:NamedIndividual ,
-                                                                                              <https://situx.github.io/cuneiformontology/examples/o147/TransliterationCharOccurrence> ;
+                                                                                              <http://www.purl.org/cuneiform/TransliterationCharOccurrence> ;
                                                                                      cunei:prevChar <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_reverse_line9_char5> ;
                                                                                      <http://www.purl.org/graphemon/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/signlist/szu_character_reading_szu> ;
                                                                                      cunei:charIndex 6 ;
