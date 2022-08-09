@@ -690,6 +690,54 @@ oa:TextualBody rdf:type owl:Class .
                                                                rdfs:label "HS 1174 Grapheme Variant Collection" .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line1
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line1> rdf:type owl:NamedIndividual ,
+                                                                                          cunei:TransliterationLine ;
+                                                                                 cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line2> ;
+                                                                                 cunei:lineNumber 1 ;
+                                                                                 rdfs:label "HS 1174 transliteration 1 reverse line 1" ;
+                                                                                 <http://www.w3.org/2004/02/skos/core#definition> "1. ugula lu2-ga-a" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line2
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line2> rdf:type owl:NamedIndividual ,
+                                                                                          cunei:TransliterationLine ;
+                                                                                 cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line3> ;
+                                                                                 cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line1> ;
+                                                                                 cunei:lineNumber 2 ;
+                                                                                 rdfs:label "HS 1174 transliteration 1 reverse line 2" ;
+                                                                                 <http://www.w3.org/2004/02/skos/core#definition> "2. nu-banda3 ku3-sa6-ga" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line3
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line3> rdf:type owl:NamedIndividual ,
+                                                                                          cunei:TransliterationLine ;
+                                                                                 cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line4> ;
+                                                                                 cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line2> ;
+                                                                                 cunei:lineNumber 3 ;
+                                                                                 rdfs:label "HS 1174 transliteration 1 reverse line 3" ;
+                                                                                 <http://www.w3.org/2004/02/skos/core#definition> "3. e2-gal ensi2-ka" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line4
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line4> rdf:type owl:NamedIndividual ,
+                                                                                          cunei:TransliterationLine ;
+                                                                                 cunei:nextLine <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5> ;
+                                                                                 cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line3> ;
+                                                                                 cunei:lineNumber 4 ;
+                                                                                 rdfs:label "HS 1174 transliteration 1 reverse line 4" ;
+                                                                                 <http://www.w3.org/2004/02/skos/core#definition> "4. sza3 tum-al!(TA)" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5
+<http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line5> rdf:type owl:NamedIndividual ,
+                                                                                          cunei:TransliterationLine ;
+                                                                                 cunei:prevLine <http://www.co-ode.org/ontologies/ont.owl#hs1174_transliteration1_reverse_line4> ;
+                                                                                 cunei:lineNumber 5 ;
+                                                                                 rdfs:label "HS 1174 transliteration 1 reverse line 5" ;
+                                                                                 <http://www.w3.org/2004/02/skos/core#definition> "5. iti du6-ku3 u4 9(disz)" .
+
+
 ###  http://www.purl.org/cuneiform/Sumerian
 cunei:Sumerian rdf:type owl:NamedIndividual ,
                         cunei:language ;
@@ -1970,7 +2018,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/ak_character_reading_ak> ;
                                                                                                         cunei:charIndex 2 ;
                                                                                                         cunei:lineNumber 2 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 2 char 2" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 2 char 2" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "ak" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line2_char3
@@ -1981,7 +2030,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/ru_character_reading_ru> ;
                                                                                                         cunei:charIndex 3 ;
                                                                                                         cunei:lineNumber 2 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 2 char 3" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 2 char 3" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "ru" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line2_char4
@@ -1992,7 +2042,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/um_character_reading_um> ;
                                                                                                         cunei:charIndex 4 ;
                                                                                                         cunei:lineNumber 2 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 2 char 4" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 2 char 4" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "um" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line2_char5
@@ -2003,7 +2054,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/e2_character_reading_e2> ;
                                                                                                         cunei:charIndex 5 ;
                                                                                                         cunei:lineNumber 2 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 2 char 5" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 2 char 5" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "e2" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line2_char6
@@ -2014,7 +2066,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/a_character_reading_a> ;
                                                                                                         cunei:charIndex 6 ;
                                                                                                         cunei:lineNumber 2 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 2 char 6" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 2 char 6" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "a" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line2_char7
@@ -2025,7 +2078,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/tum_character_reading_ib2> ;
                                                                                                         cunei:charIndex 7 ;
                                                                                                         cunei:lineNumber 2 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 2 char 7" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 2 char 7" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "ib2" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line2_char8
@@ -2035,7 +2089,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/ku_character_reading_dab5> ;
                                                                                                         cunei:charIndex 8 ;
                                                                                                         cunei:lineNumber 2 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 2 char 8" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 2 char 8" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "dab5" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line2_word1
@@ -2044,7 +2099,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         cunei:nextWord <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line2_word2> ;
                                                                                                         cunei:lineNumber 2 ;
                                                                                                         cunei:wordIndex 1 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 2 word 1" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 2 word 1" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "da-ak-ru-um" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line2_word2
@@ -2054,7 +2110,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         cunei:prevWord <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line2_word1> ;
                                                                                                         cunei:lineNumber 2 ;
                                                                                                         cunei:wordIndex 2 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 2 word 2" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 2 word 2" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "e2-a" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line2_word3
@@ -2063,7 +2120,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         cunei:prevWord <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line2_word2> ;
                                                                                                         cunei:lineNumber 2 ;
                                                                                                         cunei:wordIndex 3 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 2 word 3" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 2 word 3" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "ib2-dab5" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line3
@@ -2072,7 +2130,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                   cunei:nextLine <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line4> ;
                                                                                                   cunei:prevLine <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line2> ;
                                                                                                   cunei:lineNumber 3 ;
-                                                                                                  rdfs:label "HS 1174 transliteration 1 obverse line 3" .
+                                                                                                  rdfs:label "HS 1174 transliteration 1 obverse line 3" ;
+                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "3. ugula szesz-da-da" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line3_char1
@@ -2082,7 +2141,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/ugula_character_reading_ugula> ;
                                                                                                         cunei:charIndex 1 ;
                                                                                                         cunei:lineNumber 3 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 3 char 1" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 3 char 1" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "ugula" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line3_char2
@@ -2093,7 +2153,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/szesz_character_reading_szesz> ;
                                                                                                         cunei:charIndex 2 ;
                                                                                                         cunei:lineNumber 3 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 3 char 2" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 3 char 2" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "szesz" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line3_char3
@@ -2104,7 +2165,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/da_character_reading_da> ;
                                                                                                         cunei:charIndex 3 ;
                                                                                                         cunei:lineNumber 3 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 3 char 3" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 3 char 3" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "da" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line3_char4
@@ -2114,7 +2176,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/da_character_reading_da> ;
                                                                                                         cunei:charIndex 4 ;
                                                                                                         cunei:lineNumber 3 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 3 char 4" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 3 char 4" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "da" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line3_word1
@@ -2123,7 +2186,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         cunei:nextWord <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line3_word2> ;
                                                                                                         cunei:lineNumber 3 ;
                                                                                                         cunei:wordIndex 1 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 3 word 1" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 3 word 1" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "ugula" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line3_word2
@@ -2132,7 +2196,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         cunei:prevWord <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line3_word1> ;
                                                                                                         cunei:lineNumber 3 ;
                                                                                                         cunei:wordIndex 2 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 3 word 2" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 3 word 2" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "szesz-da-da" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line4
@@ -2140,7 +2205,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                            cunei:TransliterationLine ;
                                                                                                   cunei:prevLine <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line3> ;
                                                                                                   cunei:lineNumber 4 ;
-                                                                                                  rdfs:label "HS 1174 transliteration 1 obverse line 4" .
+                                                                                                  rdfs:label "HS 1174 transliteration 1 obverse line 4" ;
+                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "4. 9(disz) gurusz szu dim2-ma" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line4_char1
@@ -2150,7 +2216,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/9(disz)_character_reading_9(disz)> ;
                                                                                                         cunei:charIndex 1 ;
                                                                                                         cunei:lineNumber 4 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 4 char 1" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 4 char 1" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "9(disz)" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line4_char2
@@ -2161,7 +2228,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/gurusz_character_reading_gurusz> ;
                                                                                                         cunei:charIndex 2 ;
                                                                                                         cunei:lineNumber 4 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 4 char 2" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 4 char 2" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "gurusz" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line4_char3
@@ -2172,7 +2240,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/szu_character_reading_szu> ;
                                                                                                         cunei:charIndex 3 ;
                                                                                                         cunei:lineNumber 4 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 4 char 3" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 4 char 3" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "szu" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line4_char4
@@ -2183,7 +2252,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/gim_character_reading_dim2> ;
                                                                                                         cunei:charIndex 4 ;
                                                                                                         cunei:lineNumber 4 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 4 char 4" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 4 char 4" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "dim2" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line4_char5
@@ -2193,7 +2263,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/ma_character_reading_ma> ;
                                                                                                         cunei:charIndex 5 ;
                                                                                                         cunei:lineNumber 4 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 4 char 5" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 4 char 5" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "ma" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line4_word1
@@ -2202,7 +2273,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         cunei:nextWord <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line4_word2> ;
                                                                                                         cunei:lineNumber 4 ;
                                                                                                         cunei:wordIndex 1 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 4 word 1" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 4 word 1" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "9(disz)" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line4_word2
@@ -2212,7 +2284,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         cunei:prevWord <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line4_word1> ;
                                                                                                         cunei:lineNumber 4 ;
                                                                                                         cunei:wordIndex 2 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 4 word 2" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 4 word 2" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "gurusz" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line4_word3
@@ -2222,7 +2295,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         cunei:prevWord <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line4_word2> ;
                                                                                                         cunei:lineNumber 4 ;
                                                                                                         cunei:wordIndex 3 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 4 word 3" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 4 word 3" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "szu" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line4_word4
@@ -2232,7 +2306,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         cunei:prevWord <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line4_word3> ;
                                                                                                         cunei:lineNumber 4 ;
                                                                                                         cunei:wordIndex 4 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 4 word 4" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 obverse line 4 word 4" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "dim2-ma" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_obverse_line4_word5
@@ -2251,7 +2326,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/ugula_character_reading_ugula> ;
                                                                                                         cunei:charIndex 1 ;
                                                                                                         cunei:lineNumber 1 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 1 char 1" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 1 char 1" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "ugula" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line1_char2
@@ -2262,7 +2338,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/lu2_character_reading_lu2> ;
                                                                                                         cunei:charIndex 2 ;
                                                                                                         cunei:lineNumber 1 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 1 char 2" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 1 char 2" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "lu2" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line1_char3
@@ -2273,7 +2350,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/ga_character_reading_ga> ;
                                                                                                         cunei:charIndex 3 ;
                                                                                                         cunei:lineNumber 1 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 1 char 3" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 1 char 3" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "ga" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line1_char4
@@ -2283,7 +2361,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/a_character_reading_a> ;
                                                                                                         cunei:charIndex 4 ;
                                                                                                         cunei:lineNumber 1 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 1 char 4" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 1 char 4" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "a" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line1_word1
@@ -2292,7 +2371,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         cunei:nextWord <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line1_word2> ;
                                                                                                         cunei:lineNumber 1 ;
                                                                                                         cunei:wordIndex 1 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 1 word 1" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 1 word 1" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "ugula" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line1_word2
@@ -2301,7 +2381,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         cunei:prevWord <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line1_word1> ;
                                                                                                         cunei:lineNumber 1 ;
                                                                                                         cunei:wordIndex 2 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 1 word 2" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 1 word 2" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "lu2-ga-a" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line2_char1
@@ -2311,7 +2392,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/nu_character_reading_nu> ;
                                                                                                         cunei:charIndex 1 ;
                                                                                                         cunei:lineNumber 2 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 2 char 1" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 2 char 1" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "nu" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line2_char2
@@ -2322,7 +2404,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/tur_character_reading_banda3> ;
                                                                                                         cunei:charIndex 2 ;
                                                                                                         cunei:lineNumber 2 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 2 char 2" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 2 char 2" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "banda3" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line2_char3
@@ -2333,7 +2416,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/ku3_character_reading_ku3> ;
                                                                                                         cunei:charIndex 3 ;
                                                                                                         cunei:lineNumber 2 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 2 char 3" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 2 char 3" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "ku3" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line2_char4
@@ -2344,7 +2428,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/sa6_character_reading_sa6> ;
                                                                                                         cunei:charIndex 4 ;
                                                                                                         cunei:lineNumber 2 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 2 char 4" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 2 char 4" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "sa6" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line2_char5
@@ -2354,7 +2439,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/ga_character_reading_ga> ;
                                                                                                         cunei:charIndex 5 ;
                                                                                                         cunei:lineNumber 2 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 2 char 5" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 2 char 5" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "ga" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line2_word1
@@ -2363,7 +2449,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         cunei:nextWord <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line1_word2> ;
                                                                                                         cunei:lineNumber 2 ;
                                                                                                         cunei:wordIndex 2 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 2 word 1" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 2 word 1" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "nu-banda3" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line2_word2
@@ -2371,7 +2458,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                                  cunei:TransliterationWordOccurrence ;
                                                                                                         cunei:prevWord <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line1_word1> ;
                                                                                                         cunei:wordIndex 1 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 2 word 2" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 2 word 2" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "ku3-sa6-ga" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line3_char1
@@ -2381,7 +2469,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/e2_character_reading_e2> ;
                                                                                                         cunei:charIndex 1 ;
                                                                                                         cunei:lineNumber 3 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 3 char 1" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 3 char 1" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "e2" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line3_char2
@@ -2392,7 +2481,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/gal_character_reading_gal> ;
                                                                                                         cunei:charIndex 2 ;
                                                                                                         cunei:lineNumber 3 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 3 char 2" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 3 char 2" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "gal" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line3_char3
@@ -2403,7 +2493,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/ensi2_charactercomp_reading_ensi2> ;
                                                                                                         cunei:charIndex 3 ;
                                                                                                         cunei:lineNumber 3 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 3 char 3" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 3 char 3" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "ensi2" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line3_char4
@@ -2413,7 +2504,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/ka_character_reading_ka> ;
                                                                                                         cunei:charIndex 4 ;
                                                                                                         cunei:lineNumber 3 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 3 char 4" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 3 char 4" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "ka" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line3_word1
@@ -2422,7 +2514,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         cunei:nextWord <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line3_word2> ;
                                                                                                         cunei:lineNumber 3 ;
                                                                                                         cunei:wordIndex 1 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 3 word 1" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 3 word 1" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "e2-gal" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line3_word2
@@ -2431,7 +2524,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         cunei:prevWord <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line3_word1> ;
                                                                                                         cunei:lineNumber 3 ;
                                                                                                         cunei:wordIndex 2 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 3 word 2" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 3 word 2" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "ensi2-ka" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line4_char1
@@ -2441,7 +2535,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/za_character_reading_sza3> ;
                                                                                                         cunei:charIndex 1 ;
                                                                                                         cunei:lineNumber 4 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 4 char 1" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 4 char 1" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "sza3" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line4_char2
@@ -2452,7 +2547,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/tum_character_reading_tum> ;
                                                                                                         cunei:charIndex 2 ;
                                                                                                         cunei:lineNumber 4 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 4 char 2" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 4 char 2" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "tum" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line4_char3
@@ -2461,7 +2557,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         cunei:prevChar <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line4_char2> ;
                                                                                                         cunei:charIndex 3 ;
                                                                                                         cunei:lineNumber 4 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 4 char 3" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 4 char 3" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "al!(TA)" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line4_word1
@@ -2470,7 +2567,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         cunei:nextWord <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line4_word2> ;
                                                                                                         cunei:lineNumber 4 ;
                                                                                                         cunei:wordIndex 1 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 4 word 1" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 4 word 1" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "sza3" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line4_word2
@@ -2479,7 +2577,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         cunei:prevWord <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line4_word1> ;
                                                                                                         cunei:lineNumber 4 ;
                                                                                                         cunei:wordIndex 2 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 4 word 2" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 4 word 2" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "tum-al!(TA)" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line5_char1
@@ -2489,7 +2588,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/iti_character_reading_iti> ;
                                                                                                         cunei:charIndex 1 ;
                                                                                                         cunei:lineNumber 5 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 5 char 1" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 5 char 1" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "iti" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line5_char2
@@ -2500,7 +2600,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/du6_character_reading_du6> ;
                                                                                                         cunei:charIndex 2 ;
                                                                                                         cunei:lineNumber 5 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 5 char 2" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 5 char 2" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "du6" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line5_char3
@@ -2511,7 +2612,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/ku3_character_reading_ku3> ;
                                                                                                         cunei:charIndex 3 ;
                                                                                                         cunei:lineNumber 5 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 5 char 3" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 5 char 3" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "ku3" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line5_char4
@@ -2522,7 +2624,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/ud_character_reading_u4> ;
                                                                                                         cunei:charIndex 4 ;
                                                                                                         cunei:lineNumber 5 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 5 char 4" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 5 char 4" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "u4" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line5_char5
@@ -2532,7 +2635,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/hs1174/signlist/9(disz)_character_reading_9(disz)> ;
                                                                                                         cunei:charIndex 5 ;
                                                                                                         cunei:lineNumber 5 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 5 char 5" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 5 char 5" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "9(disz)" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line5_word1
@@ -2541,7 +2645,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         cunei:nextWord <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line5_word2> ;
                                                                                                         cunei:lineNumber 5 ;
                                                                                                         cunei:wordIndex 1 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 5 word 1" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 5 word 1" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "iti" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line5_word2
@@ -2551,7 +2656,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         cunei:prevWord <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line5_word1> ;
                                                                                                         cunei:lineNumber 5 ;
                                                                                                         cunei:wordIndex 2 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 5 word 2" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 5 word 2" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "du6-ku3" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line5_word3
@@ -2561,7 +2667,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         cunei:prevWord <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line5_word3> ;
                                                                                                         cunei:lineNumber 5 ;
                                                                                                         cunei:wordIndex 3 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 5 word 3" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 5 word 3" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "u4" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line5_word4
@@ -2570,7 +2677,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         cunei:prevWord <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_reverse_line5_word3> ;
                                                                                                         cunei:lineNumber 5 ;
                                                                                                         cunei:wordIndex 4 ;
-                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 5 word 4" .
+                                                                                                        rdfs:label "HS 1174 transliteration 1 reverse line 5 word 4" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "9(disz)" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs_1174_3dmesh1
