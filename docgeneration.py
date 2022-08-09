@@ -941,6 +941,11 @@ class OntDocGeneration:
                     if outpath not in paths:
                         paths[outpath] = []
                     paths[outpath].append(path + "/index.html")
+                if os.path.exists(outpath + path+"/index.ttl"):
+                    try:
+                        self.graph.parse(outpath + path+"/index.ttl")
+                    except Exception as e:
+                        print(e)
                 self.createHTML(outpath + path, self.graph.predicate_objects(subj), subj, prefixnamespace, self.graph.subject_predicates(subj),
                            self.graph,str(corpusid) + "_search.js", str(corpusid) + "_classtree.js",uritotreeitem,curlicense)
                 subtorencounter += 1
@@ -1102,25 +1107,31 @@ class OntDocGeneration:
                     object) + "\" datatype=\"http://www.w3.org/2001/XMLSchema#string\">" + str(object) + " <small>(<a style=\"color: #666;\" target=\"_blank\" href=\"http://www.w3.org/2001/XMLSchema#string\">xsd:string</a>)</small></span>"
         return {"html":tablecontents,"geojson":geojsonrep}
 
-    def formatPredicate(self,tup,baseurl,checkdepth,tablecontents,graph):
+    def formatPredicate(self,tup,baseurl,checkdepth,tablecontents,graph,reverse):
         label = str(str(tup)[str(tup).rfind('/') + 1:])
         for obj in graph.objects(tup, URIRef("http://www.w3.org/2000/01/rdf-schema#label")):
             label = str(obj)
+        tablecontents += "<td class=\"property\">"
+        if reverse:
+            tablecontents+="Is "
         if baseurl in str(tup):
             rellink = str(tup).replace(baseurl, "")
             for i in range(0, checkdepth):
                 rellink = "../" + rellink
             rellink += "/index.html"
-            tablecontents += "<td class=\"property\"><span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\"" + rellink + "\">" + label + "</a></span></td>"
+            tablecontents += "<span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\"" + rellink + "\">" + label + "</a></span>"
         else:
             res = self.replaceNameSpacesInLabel(tup)
             if res != None:
-                tablecontents += "<td class=\"property\"><span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\"" + str(
+                tablecontents += "<span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\"" + str(
                     tup) + "\">" + label + " <span style=\"color: #666;\">(" + res[
-                                     "uri"] + ")</span></a></span></td>"
+                                     "uri"] + ")</span></a></span>"
             else:
-                tablecontents += "<td class=\"property\"><span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\"" + str(
-                    tup[0]) + "\">" + label + "</a></span></td>"
+                tablecontents += "<span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\"" + str(
+                    tup[0]) + "\">" + label + "</a></span>"
+        if reverse:
+            tablecontents+=" of"
+        tablecontents += "</td>"
         return tablecontents
 
     def createHTML(self,savepath, predobjs, subject, baseurl, subpreds, graph, searchfilename, classtreename,uritotreeitem,curlicense):
@@ -1183,7 +1194,7 @@ class OntDocGeneration:
             elif str(tup)=="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" and URIRef("http://www.opengis.net/ont/geosparql#GeometryCollection") in predobjmap[tup]:
                 isgeocollection=True
                 uritotreeitem["http://www.opengis.net/ont/geosparql#GeometryCollection"]["instancecount"] += 1
-            tablecontents=self.formatPredicate(tup, baseurl, checkdepth, tablecontents, graph)
+            tablecontents=self.formatPredicate(tup, baseurl, checkdepth, tablecontents, graph,False)
             if str(tup) == "http://www.w3.org/2000/01/rdf-schema#label":
                 foundlabel = str(predobjmap[tup][0])
             if str(tup) in commentproperties:
@@ -1237,7 +1248,7 @@ class OntDocGeneration:
                 tablecontents += "<tr class=\"odd\">"
             else:
                 tablecontents += "<tr class=\"even\">"
-            tablecontents=self.formatPredicate(tup, baseurl, checkdepth, tablecontents, graph)
+            tablecontents=self.formatPredicate(tup, baseurl, checkdepth, tablecontents, graph,True)
             if len(subpredsmap[tup]) > 0:
                 if len(subpredsmap[tup]) > 1:
                     tablecontents += "<td class=\"wrapword\"><ul>"
