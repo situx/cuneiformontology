@@ -941,6 +941,11 @@ class OntDocGeneration:
                     if outpath not in paths:
                         paths[outpath] = []
                     paths[outpath].append(path + "/index.html")
+                if os.path.exists(outpath + path+"/index.ttl"):
+                    try:
+                        self.graph.parse(outpath + path+"/index.ttl")
+                    except Exception as e:
+                        print(e)
                 self.createHTML(outpath + path, self.graph.predicate_objects(subj), subj, prefixnamespace, self.graph.subject_predicates(subj),
                            self.graph,str(corpusid) + "_search.js", str(corpusid) + "_classtree.js",uritotreeitem,curlicense)
                 subtorencounter += 1
