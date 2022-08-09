@@ -265,9 +265,16 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
                                                                                     <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_reverse> ,
                                                                                     <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_right> ;
                                                                    cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_3dmesh1> ;
+																   cunei:transliteration <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_transliteration1> ;
                                                                    cunei:material cunei:clay ;
                                                                    cunei:museumNumber "HT 07-31-95"^^xsd:string ;
                                                                    rdfs:label "HT 07-31-95 cuneiform artifact" .
+																   
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_transliteration1> rdf:type owl:NamedIndividual ,
+                                                                          cunei:Transliteration ;
+																cunei:signs      <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_signlist> ;
+																cunei:signreadings      <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_signreadinglist> ;
+                                                                rdfs:label "Transliteration 1 of HT 07-31-95 tablet" .
 
 ###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_bottom
 <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_bottom> rdf:type owl:NamedIndividual ,
@@ -325,6 +332,21 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
 											<https://situx.github.io/cuneiformontology/examples/signlist/character_disz> ,
 											<https://situx.github.io/cuneiformontology/examples/signlist/character_gi> ,
 											<https://situx.github.io/cuneiformontology/examples/signlist/character_har> .
+											
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_signreadinglist> rdf:type owl:NamedIndividual ,
+                                                                                     graphemon:GraphemeReadingCollection ;
+																			rdfs:label "Sign Readings of cuneiform tablet HT 07-31-95" ;
+                                                                            rdfs:member <https://situx.github.io/cuneiformontology/examples/signlist/character_isz_reading_isz> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_ku3_reading_ku3> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_lagab_reading1> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_mar_reading_mar> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_me_reading_me> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_szu_reading_szu> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_u2_reading_u2> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_ud_reading_utu> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_a_reading_a> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_an_reading_d> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_disz_reading_1>  .
 
 
 ###  http://www.purl.org/cuneiform/TabletSurface
@@ -1379,6 +1401,7 @@ cunei:LeftSide rdf:type owl:Class ;
 ###  https://situx.github.io/cuneiformontology/examples/ht073195/2(disz)_charvariant1
 <https://situx.github.io/cuneiformontology/examples/ht073195/2(disz)_charvariant1> rdf:type owl:NamedIndividual ,
                                                                          graphemon:GraphemeVariant ;
+																graphemon:asSVG "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"170\" height=\"80\"><defs/><g stroke=\"#000000\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" fill=\"#000000\"><path fill=\"#000000\" stroke=\"#000000\" paint-order=\"fill stroke markers\" d=\" M 25 20 L 35 20 L 30 30 L 25 20 M 30 30 L 30 60 M 35 20 L 45 20 L 40 30 L 35 20 M 40 30 L 40 60\" stroke-miterlimit=\"10\" stroke-dasharray=\"\"/></g></svg>"^^graphemon:svgLiteral .
                                                                 graphemon:hasGottsteinCode "a2"^^graphemon:gottsteinLiteral ;
                                                                 graphemon:hasPaleoCode "a-a"^^graphemon:paleocodeLiteral ;
                                                                 rdfs:label "Grapheme Variant 1: 2(disz)" .

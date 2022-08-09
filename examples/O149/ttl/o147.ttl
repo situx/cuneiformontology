@@ -315,6 +315,59 @@ cunei:TransliterationLine rdf:type owl:Class .
 											<https://situx.github.io/cuneiformontology/examples/signlist/character_nincomp> ,
 											<https://situx.github.io/cuneiformontology/examples/signlist/character_nin> ,
 											<https://situx.github.io/cuneiformontology/examples/signlist/character_nu> .
+											
+<https://situx.github.io/cuneiformontology/examples/o147/o147_signreadinglist> rdf:type graphemon:GraphemeCollection ;
+																			rdfs:label "Sign Readings of cuneiform tablet O147" ;
+                                                                            rdfs:member 
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_a_reading_a> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_ab_reading_ap> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_am_reading_am> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_ama_reading_dagal> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_an_reading_an> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_an_reading_d> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_an_reading_dingir> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_asz_reading_asz> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_ba_reading_ba> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_bi_reading_bi> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_bu_reading_bu> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_da_reading_da> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_dim_reading_tim> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_du_reading_du> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_du_reading_gub> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_dumu_reading_dumu> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_e2_reading_e2> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_esz_reading_esz> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_esz_reading_sin> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_ezen_reading_kesz2> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_gag_reading_du3> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_ge23_reading_isz8> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_gisz_reading_gisz> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_gisz_reading_is> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_i_reading_i> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_ig_reading_ig> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_igi_reading_igi> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_in_reading_in> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_isz_reading_isz> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_iti_reading_iti> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_ka_reading_inim> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_ka_reading_pi4> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_kal_reading_kal> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_kam_reading_kam> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_ki_reading_ki> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_kul_reading_kul> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_la_reading_la> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_lu2_reading_lu2> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_lu_reading_lu> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_ma_reading_ma> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_mar_reading_mar> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_me_reading_me> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_mu_reading_mu> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_musz2_reading_innin> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_na_reading_na> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_ne_reading_de3> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_ni_reading_ni> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_nincomp_reading_nin> ,
+											<https://situx.github.io/cuneiformontology/examples/signlist/character_nu_reading_nu> .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/O147_lexicon
@@ -1358,6 +1411,7 @@ cunei:LeftSide rdf:type owl:Class ;
                                                                                     <https://situx.github.io/cuneiformontology/examples/o147/o147_reverse> ,
                                                                                     <https://situx.github.io/cuneiformontology/examples/o147/o147_right> ;
                                                                    cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/o147/o147_3dmesh1> ;
+																   cunei:transliteration <https://situx.github.io/cuneiformontology/examples/o147/transliteration1> ;
                                                                    cunei:material cunei:clay ;
                                                                    cunei:museumNumber "O147"^^xsd:string ;
                                                                    rdfs:label "O147 cuneiform artifact" .
@@ -2560,7 +2614,9 @@ cunei:LeftSide rdf:type owl:Class ;
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1
 <https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1> rdf:type owl:NamedIndividual ,
                                                                           cunei:Transliteration ;
-                                                                 rdfs:label "Transliteration 1 of O147 tablet" .
+																cunei:signs      <https://situx.github.io/cuneiformontology/examples/o147/o147_signlist> ;
+																cunei:signreadings      <https://situx.github.io/cuneiformontology/examples/o147/o147_signreadinglist> ;
+                                                                rdfs:label "Transliteration 1 of O147 tablet" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/o147_transliteration1_obverse_line10

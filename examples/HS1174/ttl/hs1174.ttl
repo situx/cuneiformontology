@@ -1320,6 +1320,7 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                     <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse> ,
                                                                                     <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_right> ;
                                                                    cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/hs_1174_3dmesh1> ;
+																   cunei:transliteration <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1> ;
                                                                    cunei:material cunei:clay ;
                                                                    cunei:CDLINumber "P134485"^^xsd:string ;
                                                                    cunei:museumNumber "HS 1174"^^xsd:string ;
@@ -1569,6 +1570,7 @@ oa:identifying rdf:type owl:NamedIndividual .
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3_char4_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3_char4_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
+																							 cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_3_4_da_HS_1174_03_front.jpg> ;
                                                                                              rdfs:label "Glyph at HS1174 obverse side line 3 char 4" .
 
 
@@ -1901,6 +1903,40 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                         <https://situx.github.io/cuneiformontology/examples/signlist/character_9(disz)> ;
                                                                             rdfs:label "HS 1174 Signlist" .
 
+###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_signreadinglist
+<https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_signreadinglist> rdf:type owl:NamedIndividual ,
+                                                                                     graphemon:GraphemeReadingCollection ;
+                                                                            rdfs:member <https://situx.github.io/cuneiformontology/examples/signlist/character_a_reading_a> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_ak_reading_ak> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_al_reading_al> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_da_reading_da> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_du6_reading_du6> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_e2_reading_e2> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_esz_reading_3> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_ga_reading_ga> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_gal_reading_gal> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_gim_reading_dim2> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_gurusz_reading_gurusz> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_ka_reading_ka> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_ku3_reading_ku3> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_ku_reading_dab5> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_lu2_reading_lu2> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_ma_reading_ma> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_nu_reading_nu> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_ru_reading_ru> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_sa6_reading_sa6> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_szesz_reading_szesz> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_szu_reading_szu> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_tum_reading_ib2> ,
+																						<https://situx.github.io/cuneiformontology/examples/signlist/character_tum_reading_tum> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_tur_reading_banda3> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_ud_reading_u4> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_um_reading_um> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_za_reading_sza3> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_3(disz)_reading_3> ,
+                                                                                        <https://situx.github.io/cuneiformontology/examples/signlist/character_9(disz)_reading_9> ;
+                                                                            rdfs:label "HS 1174 Sign Readings" .
+
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_top
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_top> rdf:type owl:NamedIndividual ,
@@ -1914,6 +1950,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                              cunei:Transliteration ;
                                                                                     <http://purl.org/dc/elements/1.1/creator> "cdlistaff" ;
                                                                                     <http://purl.org/dc/terms/created> "2006-10-12T12:28:12"^^xsd:dateTime ;
+																					cunei:signs      <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_signlist> ;
+																					cunei:signreadings      <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_signreadinglist> ;
                                                                                     rdfs:label "HS 1174 transliteration 1" .
 
 
