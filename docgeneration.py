@@ -936,7 +936,7 @@ class OntDocGeneration:
                     paths[outpath + path[0:path.rfind('/')] + "/"] = []
                 paths[outpath + path[0:path.rfind('/')] + "/"].append(addpath[0:addpath.rfind('/')])
             else:
-                if not os.path.exists(outpath + addpath) not os.path.isdir(outpath + path):
+                if not os.path.exists(outpath + addpath) and not os.path.isdir(outpath + path):
                     os.mkdir(outpath + path)
                 if outpath not in paths:
                     paths[outpath] = []
