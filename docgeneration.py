@@ -1035,7 +1035,7 @@ class OntDocGeneration:
                 classlist[item["parent"]]["geoitems"]+=1
         for item in classlist:
             if classlist[item]["items"]>0:
-                if classlist[item]["text"].endswith("]"):
+                if classlist[item]["item"]["text"].endswith("]"):
                     classlist[item]["item"]["text"]=classlist[item]["item"]["text"][0:classlist[item]["item"]["text"].rfind("[")-1]+" ["+str(classlist[item]["items"])+"]"
                 else:
                     classlist[item]["item"]["text"]=classlist[item]["item"]["text"]+" ["+str(classlist[item]["items"])+"]"
