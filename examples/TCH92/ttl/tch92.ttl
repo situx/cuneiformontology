@@ -230,8 +230,8 @@ cunei:wordIndex rdf:type owl:DatatypeProperty .
                                                rdfs:label "glyph" .
 
 
-###  http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme
-<http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> rdf:type owl:Class .
+###  http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme
+<http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> rdf:type owl:Class .
 
 
 ###  http://www.purl.org/cuneiform/Tablet
@@ -261,7 +261,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  http://www.purl.org/graphemon/GraphemeVariant
 <http://www.purl.org/graphemon/GraphemeVariant> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> .
+                                                rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> .
 
 
 #################################################################
@@ -270,7 +270,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/DISZ_character
 <https://situx.github.io/cuneiformontology/examples/signlist/DISZ_character> rdf:type owl:NamedIndividual ,
-                                                                   <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                   <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                           <http://www.purl.org/graphemon/abzl> 390 ;
                                                           <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12079" ;
                                                           <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒁹" ;
@@ -283,7 +283,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/a_character
 <https://situx.github.io/cuneiformontology/examples/signlist/a_character> rdf:type owl:NamedIndividual ,
-                                                                <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                        <https://situx.github.io/cuneiformontology/examples/tch92/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/tch92/character_a_reading_a> ;
                                                        <http://www.purl.org/graphemon/variant> <https://situx.github.io/cuneiformontology/examples/tch92/character_a_reading_a> ;
                                                        rdfs:label "Character: A" .
@@ -299,7 +299,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/al_character
 <https://situx.github.io/cuneiformontology/examples/signlist/al_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 108 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12020" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒀠" ;
@@ -319,7 +319,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/am_character
 <https://situx.github.io/cuneiformontology/examples/signlist/am_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 119 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12120" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒄠" ;
@@ -338,7 +338,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/an_character
 <https://situx.github.io/cuneiformontology/examples/signlist/an_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <https://situx.github.io/cuneiformontology/examples/signlist/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/tch92/an_character_reading_d> ,
                                                                                                                       <https://situx.github.io/cuneiformontology/examples/signlist/an_character_reading_dingir> ;
                                                         <http://www.purl.org/graphemon/abzl> "009"^^<http://www.purl.org/graphemon/asciiTransliterationLiteral> ;
@@ -378,7 +378,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/ansze_character
 <https://situx.github.io/cuneiformontology/examples/signlist/ansze_character> rdf:type owl:NamedIndividual ,
-                                                                    <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                    <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                            <http://www.purl.org/graphemon/abzl> 292 ;
                                                            <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12032" ;
                                                            <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒀲" ;
@@ -398,7 +398,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/asz2_character
 <https://situx.github.io/cuneiformontology/examples/signlist/asz2_character> rdf:type owl:NamedIndividual ,
-                                                                   <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                   <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                           <http://www.purl.org/graphemon/abzl> 211 ;
                                                           <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+1203E" ;
                                                           <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒀾" ;
@@ -418,7 +418,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/ba_character
 <https://situx.github.io/cuneiformontology/examples/signlist/ba_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/variant> <https://situx.github.io/cuneiformontology/examples/tch92/ba_charvariant1> ;
                                                         <http://www.purl.org/graphemon/abzl> 303 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12040" ;
@@ -445,7 +445,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/bad_character
 <https://situx.github.io/cuneiformontology/examples/signlist/bad_character> rdf:type owl:NamedIndividual ,
-                                                                  <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                  <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                          <http://www.purl.org/graphemon/abzl> 025 ;
                                                          <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12041" ;
                                                          <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒁁" ;
@@ -465,7 +465,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/ban_character
 <https://situx.github.io/cuneiformontology/examples/signlist/ban_character> rdf:type owl:NamedIndividual ,
-                                                                  <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                  <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                          <http://www.purl.org/graphemon/abzl> 029 ;
                                                          <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+1244F" ;
                                                          <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒑏" ;
@@ -505,7 +505,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/bi_character
 <https://situx.github.io/cuneiformontology/examples/signlist/bi_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 079 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12049" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒁉" ;
@@ -525,7 +525,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/bu_character
 <https://situx.github.io/cuneiformontology/examples/signlist/bu_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 265 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+1204D" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒁍" ;
@@ -551,7 +551,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/da_character
 <https://situx.github.io/cuneiformontology/examples/signlist/da_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 229 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12055" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒁕" ;
@@ -578,7 +578,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/dam_character
 <https://situx.github.io/cuneiformontology/examples/signlist/dam_character> rdf:type owl:NamedIndividual ,
-                                                                  <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                  <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                          <http://www.purl.org/graphemon/abzl> 454 ;
                                                          <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+1206E" ;
                                                          <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒁮" ;
@@ -626,7 +626,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/dar_character
 <https://situx.github.io/cuneiformontology/examples/signlist/dar_character> rdf:type owl:NamedIndividual ,
-                                                                  <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                  <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                          <http://www.purl.org/graphemon/abzl> 037 ;
                                                          <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+1206F" ;
                                                          <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒁯" ;
@@ -646,7 +646,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/du_character
 <https://situx.github.io/cuneiformontology/examples/signlist/du_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 064 ,
                                                                                              197 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+1207A" ;
@@ -667,7 +667,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/dumu_character
 <https://situx.github.io/cuneiformontology/examples/signlist/dumu_character> rdf:type owl:NamedIndividual ,
-                                                                   <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                   <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                           <http://www.purl.org/graphemon/abzl> 393 ;
                                                           <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12309" ;
                                                           <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒌉" ;
@@ -707,7 +707,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/el_character
 <https://situx.github.io/cuneiformontology/examples/signlist/el_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 455 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12096" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒂖" ;
@@ -733,7 +733,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/en_character
 <https://situx.github.io/cuneiformontology/examples/signlist/en_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 062 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12097" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒂗" ;
@@ -745,7 +745,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/erin2_character
 <https://situx.github.io/cuneiformontology/examples/signlist/erin2_character> rdf:type owl:NamedIndividual ,
-                                                                    <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                    <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                            <http://www.purl.org/graphemon/abzl> 247 ;
                                                            <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+1209F" ;
                                                            <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒂟" ;
@@ -940,7 +940,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/gab_character
 <https://situx.github.io/cuneiformontology/examples/signlist/gab_character> rdf:type owl:NamedIndividual ,
-                                                                  <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                  <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                          <http://www.purl.org/graphemon/abzl> 141 ;
                                                          <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+120EE" ;
                                                          <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒃮" ;
@@ -960,7 +960,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/gaba_character
 <https://situx.github.io/cuneiformontology/examples/signlist/gaba_character> rdf:type owl:NamedIndividual ,
-                                                                   <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                   <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                           <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+120EE" ;
                                                           <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒃮" ;
                                                           <http://www.purl.org/graphemon/signName> "GABA" ;
@@ -990,7 +990,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/ge23_character
 <https://situx.github.io/cuneiformontology/examples/signlist/ge23_character> rdf:type owl:NamedIndividual ,
-                                                                   <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                   <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                           <https://situx.github.io/cuneiformontology/examples/signlist/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/tch92/ge23_character_reading_isz8> ;
                                                           <http://www.purl.org/graphemon/altSignName> "DISZ-tenu" ;
                                                           <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12039" ;
@@ -1010,7 +1010,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/gul_character
 <https://situx.github.io/cuneiformontology/examples/signlist/gul_character> rdf:type owl:NamedIndividual ,
-                                                                  <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                  <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                          <http://www.purl.org/graphemon/abzl> 343 ;
                                                          <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12122" ;
                                                          <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒄢" ;
@@ -1030,7 +1030,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/ha_character
 <https://situx.github.io/cuneiformontology/examples/signlist/ha_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 475 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12129" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒄩" ;
@@ -1050,7 +1050,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/ia_character
 <https://situx.github.io/cuneiformontology/examples/signlist/ia_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 193 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12140" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒅀" ;
@@ -1070,7 +1070,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/ib_character
 <https://situx.github.io/cuneiformontology/examples/signlist/ib_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 394 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12141" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒅁" ;
@@ -1090,7 +1090,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/igi_character
 <https://situx.github.io/cuneiformontology/examples/signlist/igi_character> rdf:type owl:NamedIndividual ,
-                                                                  <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                  <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                          <http://www.purl.org/graphemon/abzl> 233 ;
                                                          <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12146" ;
                                                          <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒅆" ;
@@ -1110,7 +1110,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/il_character
 <https://situx.github.io/cuneiformontology/examples/signlist/il_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 078 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+1214B" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒅋" ;
@@ -1130,7 +1130,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/im_character
 <https://situx.github.io/cuneiformontology/examples/signlist/im_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 297 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+1214E" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒅎" ;
@@ -1150,7 +1150,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/ka_character
 <https://situx.github.io/cuneiformontology/examples/signlist/ka_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 312 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12157" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒅗" ;
@@ -1169,7 +1169,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/kabi_character
 <https://situx.github.io/cuneiformontology/examples/signlist/kabi_character> rdf:type owl:NamedIndividual ,
-                                                                   <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                   <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                           <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+1215F" ;
                                                           <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒅟" ;
                                                           rdfs:label "Character: KABI" .
@@ -1184,7 +1184,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/kam_character
 <https://situx.github.io/cuneiformontology/examples/signlist/kam_character> rdf:type owl:NamedIndividual ,
-                                                                  <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                  <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                          <http://www.purl.org/graphemon/abzl> 279 ;
                                                          <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12130" ;
                                                          <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒄰" ;
@@ -1212,7 +1212,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/ki_character
 <https://situx.github.io/cuneiformontology/examples/signlist/ki_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 432 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+121A0" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒆠" ;
@@ -1232,7 +1232,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/kin_character
 <https://situx.github.io/cuneiformontology/examples/signlist/kin_character> rdf:type owl:NamedIndividual ,
-                                                                  <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                  <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                          <http://www.purl.org/graphemon/abzl> 447 ;
                                                          <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+121A5" ;
                                                          <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒆥" ;
@@ -1272,7 +1272,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/ku_character
 <https://situx.github.io/cuneiformontology/examples/signlist/ku_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+121AA" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒆪" ;
                                                         <http://www.purl.org/graphemon/meszl> 808 ;
@@ -1289,7 +1289,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/la_character
 <https://situx.github.io/cuneiformontology/examples/signlist/la_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 177 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+121B7" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒆷" ;
@@ -1309,7 +1309,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/li_character
 <https://situx.github.io/cuneiformontology/examples/signlist/li_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 381 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+121F7" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒇷" ;
@@ -1328,7 +1328,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/lu2_character
 <https://situx.github.io/cuneiformontology/examples/signlist/lu2_character> rdf:type owl:NamedIndividual ,
-                                                                  <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                  <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                          <http://www.purl.org/graphemon/abzl> 253 ;
                                                          <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+121FD" ;
                                                          <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒇽" ;
@@ -1340,7 +1340,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/ma_character
 <https://situx.github.io/cuneiformontology/examples/signlist/ma_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 166 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12220" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒈠" ;
@@ -1360,7 +1360,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/mar_character
 <https://situx.github.io/cuneiformontology/examples/signlist/mar_character> rdf:type owl:NamedIndividual ,
-                                                                  <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                  <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                          <http://www.purl.org/graphemon/abzl> 144 ;
                                                          <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12225" ;
                                                          <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒈥" ;
@@ -1380,7 +1380,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/masz_character
 <https://situx.github.io/cuneiformontology/examples/signlist/masz_character> rdf:type owl:NamedIndividual ,
-                                                                   <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                   <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                           <http://www.purl.org/graphemon/abzl> 029 ;
                                                           <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12226" ;
                                                           <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒈦" ;
@@ -1400,7 +1400,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/me_character
 <https://situx.github.io/cuneiformontology/examples/signlist/me_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 392 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12228" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒈨" ;
@@ -1413,7 +1413,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/mi_character
 <https://situx.github.io/cuneiformontology/examples/signlist/mi_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 348 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+1222A" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒈪" ;
@@ -1433,7 +1433,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/min_character
 <https://situx.github.io/cuneiformontology/examples/signlist/min_character> rdf:type owl:NamedIndividual ,
-                                                                  <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                  <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                          <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+1222B" ;
                                                          <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒈫" ;
                                                          <http://www.purl.org/graphemon/signName> "MIN" ;
@@ -1449,7 +1449,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/munus_character
 <https://situx.github.io/cuneiformontology/examples/signlist/munus_character> rdf:type owl:NamedIndividual ,
-                                                                    <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                    <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                            <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+122A9" ;
                                                            <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒊩" ;
                                                            <http://www.purl.org/graphemon/signName> "munus" ;
@@ -1472,7 +1472,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/na_character
 <https://situx.github.io/cuneiformontology/examples/signlist/na_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 024 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+1223E" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒈾" ;
@@ -1492,7 +1492,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/nab_character
 <https://situx.github.io/cuneiformontology/examples/signlist/nab_character> rdf:type owl:NamedIndividual ,
-                                                                  <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                  <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                          <http://www.purl.org/graphemon/altSignName> "AN over AN" ;
                                                          <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+1202E" ;
                                                          <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒀮" ;
@@ -1512,7 +1512,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/ne_character
 <https://situx.github.io/cuneiformontology/examples/signlist/ne_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <https://situx.github.io/cuneiformontology/examples/signlist/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/tch92/ne_character_reading_ne> ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12248" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒉈" ;
@@ -1529,7 +1529,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/nig2_character
 <https://situx.github.io/cuneiformontology/examples/signlist/nig2_character> rdf:type owl:NamedIndividual ,
-                                                                   <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                   <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                           <http://www.purl.org/graphemon/abzl> 473 ;
                                                           <http://www.purl.org/graphemon/altSignName> "GAR" ,
                                                                                                       "NINDA" ;
@@ -1551,13 +1551,13 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/nigida_character
 <https://situx.github.io/cuneiformontology/examples/signlist/nigida_character> rdf:type owl:NamedIndividual ,
-                                                                     <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                     <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                             rdfs:label "Character: NIGIDA" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/pi_character
 <https://situx.github.io/cuneiformontology/examples/signlist/pi_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 370 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+1227F" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒉿" ;
@@ -1577,7 +1577,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/ra_character
 <https://situx.github.io/cuneiformontology/examples/signlist/ra_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 192 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+1228F" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒊏" ;
@@ -1597,7 +1597,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/ri_character
 <https://situx.github.io/cuneiformontology/examples/signlist/ri_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <https://situx.github.io/cuneiformontology/examples/signlist/hasGraphemeReading> <https://situx.github.io/cuneiformontology/examples/tch92/ri_character_reading_re> ,
                                                                                                                       <https://situx.github.io/cuneiformontology/examples/signlist/ri_character_reading_tal> ;
                                                         <http://www.purl.org/graphemon/abzl> 039 ;
@@ -1639,7 +1639,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/ru_character
 <https://situx.github.io/cuneiformontology/examples/signlist/ru_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 060 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12292" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒊒" ;
@@ -1651,7 +1651,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/sar_character
 <https://situx.github.io/cuneiformontology/examples/signlist/sar_character> rdf:type owl:NamedIndividual ,
-                                                                  <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                  <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                          <http://www.purl.org/graphemon/abzl> 385 ;
                                                          <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+122AC" ;
                                                          <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒊬" ;
@@ -1672,7 +1672,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/si_character
 <https://situx.github.io/cuneiformontology/examples/signlist/si_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 164 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+122DB" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒋛" ;
@@ -1692,7 +1692,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/sila3_character
 <https://situx.github.io/cuneiformontology/examples/signlist/sila3_character> rdf:type owl:NamedIndividual ,
-                                                                    <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                    <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                            <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+122E1" ;
                                                            <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒋡" ;
                                                            <http://www.purl.org/graphemon/signName> "SILA3" ;
@@ -1708,7 +1708,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/su_character
 <https://situx.github.io/cuneiformontology/examples/signlist/su_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 305 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+122E2" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒋢" ;
@@ -1728,7 +1728,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/sza_character
 <https://situx.github.io/cuneiformontology/examples/signlist/sza_character> rdf:type owl:NamedIndividual ,
-                                                                  <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                  <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                          <http://www.purl.org/graphemon/abzl> 203 ;
                                                          <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+122AD" ;
                                                          <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒊭" ;
@@ -1748,7 +1748,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/sze_character
 <https://situx.github.io/cuneiformontology/examples/signlist/sze_character> rdf:type owl:NamedIndividual ,
-                                                                  <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                  <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                          <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+122BA" ;
                                                          <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒊺" ;
                                                          <http://www.purl.org/graphemon/signName> "sze" ;
@@ -1783,7 +1783,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/szu_character
 <https://situx.github.io/cuneiformontology/examples/signlist/szu_character> rdf:type owl:NamedIndividual ,
-                                                                  <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                  <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                          <http://www.purl.org/graphemon/abzl> 225 ;
                                                          <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+122D7" ;
                                                          <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒋗" ;
@@ -1802,7 +1802,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/tar_character
 <https://situx.github.io/cuneiformontology/examples/signlist/tar_character> rdf:type owl:NamedIndividual ,
-                                                                  <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                  <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                          <http://www.purl.org/graphemon/abzl> 231 ;
                                                          <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+122FB" ;
                                                          <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒋻" ;
@@ -11381,7 +11381,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/te_character
 <https://situx.github.io/cuneiformontology/examples/signlist/te_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 289 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+122FC" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒋼" ;
@@ -11400,7 +11400,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/tu_character
 <https://situx.github.io/cuneiformontology/examples/signlist/tu_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 382 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+12305" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒌅" ;
@@ -11420,7 +11420,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/um_character
 <https://situx.github.io/cuneiformontology/examples/signlist/um_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 113 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+1231D" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒌝" ;
@@ -11440,7 +11440,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/uz_character
 <https://situx.github.io/cuneiformontology/examples/signlist/uz_character> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                         <http://www.purl.org/graphemon/abzl> 379 ;
                                                         <http://www.purl.org/graphemon/hasUnicodeCodePoint> "U+122BB" ;
                                                         <http://www.purl.org/graphemon/hasUnicodeRepresentation> "𒊻" ;
@@ -11498,7 +11498,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/3(disz)_character
 <https://situx.github.io/cuneiformontology/examples/signlist/3(disz)_character> rdf:type owl:NamedIndividual ,
-                                                                      <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                      <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                              rdfs:label "Character: 3(disz)" .
 
 
@@ -11532,7 +11532,7 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/5(disz)_character
 <https://situx.github.io/cuneiformontology/examples/signlist/5(disz)_character> rdf:type owl:NamedIndividual ,
-                                                                      <http://www.cidoc-crm.org/cidoc-crm/TXP9_Grapheme> ;
+                                                                      <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                              rdfs:label "Character: 5(disz)" .
 
 
