@@ -947,7 +947,7 @@ class OntDocGeneration:
                 print(str(subtorencounter) + "/" + str(subtorenderlen) + " " + str(outpath + path))
             except Exception as e:
                 print(e)
-                print("Exception occured " + str(e), "OntdocGeneration", Qgis.Info)
+                print("Exception occured " + str(e))
         # print(paths)
         self.assignGeoClassesToTree(tree)
         with open(outpath + corpusid + "_classtree.js", 'w', encoding='utf-8') as f:
