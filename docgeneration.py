@@ -4,6 +4,7 @@ from rdflib import URIRef, Literal
 from rdflib.plugins.sparql import prepareQuery
 import shapely.geometry
 import shapely.wkt
+import geojson
 import os
 import json
 import sys
@@ -659,7 +660,8 @@ imagestemplatesvg="""
 </div>
 """
 
-image3dtemplate="""<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/spidergl.js"></script>
+image3dtemplate="""<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/css/3dhop.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/spidergl.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/presenter.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/nexus.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/ply.js"></script>
