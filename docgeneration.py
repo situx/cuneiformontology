@@ -1401,7 +1401,7 @@ class OntDocGeneration:
                     "{{scriptfolderpath}}", rellink).replace("{{classtreefolderpath}}", rellink2).replace("{{exports}}",myexports).replace("{{subject}}",str(subject)))
             if comment!=None:
                 f.write(htmlcommenttemplate.replace("{{comment}}",comment))
-            if found3dimages!=[]:
+            if len(found3dimages)>0:
                 for curitem in found3dimages:
                     curitem=iter(found3dimages).next()
                     format="ply"
