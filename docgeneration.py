@@ -14,6 +14,7 @@ labelproperties={
     "https://schema.org/name": "DatatypeProperty",
     "https://schema.org/alternateName": "DatatypeProperty",
     "http://purl.org/dc/terms/title": "DatatypeProperty",
+    "http://purl.org/dc/elements/1.1/title":"DatatypeProperty",
     "http://www.w3.org/2004/02/skos/core#altSymbol": "DatatypeProperty",
     "http://www.w3.org/2004/02/skos/core#hiddenLabel": "DatatypeProperty",
     "http://www.w3.org/2000/01/rdf-schema#label": "DatatypeProperty"
@@ -1274,7 +1275,7 @@ class OntDocGeneration:
                 isgeocollection=True
                 uritotreeitem["http://www.opengis.net/ont/geosparql#GeometryCollection"]["instancecount"] += 1
             tablecontents=self.formatPredicate(tup, baseurl, checkdepth, tablecontents, graph,False)
-            if str(tup) == "http://www.w3.org/2000/01/rdf-schema#label":
+            if str(tup) in labelproperties:
                 foundlabel = str(predobjmap[tup][0])
             if str(tup) in commentproperties:
                 comment = str(predobjmap[tup][0])
