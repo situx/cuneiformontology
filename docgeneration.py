@@ -660,9 +660,13 @@ imagestemplatesvg="""
 """
 
 image3dtemplate="""<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/spidergl.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/ply.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/nexus.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/presenter.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/nexus.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/ply.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/trackball_turntable.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/trackball_turntable_pan.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/trackball_pantilt.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/trackball_sphere.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/init.js"></script>
 <div id="3dhop" class="tdhop" onmousedown="if (event.preventDefault) event.preventDefault()">
 <canvas id="draw-canvas"/></div><script>start3dhop("{{meshurl}}","{{meshformat}}")</script>"""
