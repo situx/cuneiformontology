@@ -1,0 +1,1483 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cunei: <http://www.purl.org/cuneiform/> .
+@prefix graphemon: <http://www.purl.org/graphemon/> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.purl.org/graphemon/asciiTransliterationLiteral
+graphemon:asciiTransliterationLiteral rdf:type rdfs:Datatype .
+
+
+###  http://www.purl.org/graphemon/gottsteinLiteral
+graphemon:gottsteinLiteral rdf:type rdfs:Datatype .
+
+
+###  http://www.purl.org/graphemon/paleocodeLiteral
+graphemon:paleocodeLiteral rdf:type rdfs:Datatype .
+
+
+###  http://www.purl.org/graphemon/unicodeTransliterationLiteral
+graphemon:unicodeTransliterationLiteral rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://lemon-model.net/lemon#entry
+<http://lemon-model.net/lemon#entry> rdf:type owl:ObjectProperty .
+
+
+###  http://lemon-model.net/lemon#form
+<http://lemon-model.net/lemon#form> rdf:type owl:ObjectProperty .
+
+
+###  http://lemon-model.net/lemon#reference
+<http://lemon-model.net/lemon#reference> rdf:type owl:ObjectProperty .
+
+
+###  http://lemon-model.net/lemon#sense
+<http://lemon-model.net/lemon#sense> rdf:type owl:ObjectProperty .
+
+
+###  http://www.purl.org/cuneiform/nextChar
+cunei:nextChar rdf:type owl:ObjectProperty .
+
+
+###  http://www.purl.org/cuneiform/nextLine
+cunei:nextLine rdf:type owl:ObjectProperty .
+
+
+###  http://www.purl.org/cuneiform/nextWord
+cunei:nextWord rdf:type owl:ObjectProperty .
+
+
+###  http://www.purl.org/cuneiform/Occurrence
+cunei:Occurrence rdf:type owl:ObjectProperty .
+
+
+###  http://www.purl.org/cuneiform/prevChar
+cunei:prevChar rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.purl.org/cuneiform/prevLine
+cunei:prevLine rdf:type owl:ObjectProperty .
+
+
+###  http://www.purl.org/cuneiform/prevWord
+cunei:prevWord rdf:type owl:ObjectProperty .
+
+
+###  http://www.purl.org/graphemon/hasGraphemeReading
+graphemon:hasGraphemeReading rdf:type owl:ObjectProperty .
+
+
+###  http://www.purl.org/graphemon/variant
+graphemon:variant rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://lemon-model.net/lemon#writtenRep
+<http://lemon-model.net/lemon#writtenRep> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.purl.org/cuneiform/charIndex
+cunei:charIndex rdf:type owl:DatatypeProperty .
+
+
+###  http://www.purl.org/cuneiform/lineNumber
+cunei:lineNumber rdf:type owl:DatatypeProperty .
+
+
+###  http://www.purl.org/cuneiform/transliteration
+cunei:transliteration rdf:type owl:DatatypeProperty .
+
+
+###  http://www.purl.org/cuneiform/wordIndex
+cunei:wordIndex rdf:type owl:DatatypeProperty .
+
+
+###  http://www.purl.org/graphemon/abzl
+graphemon:abzl rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf graphemon:hasCuneiformIdentifier .
+
+
+###  http://www.purl.org/graphemon/altSignName
+graphemon:altSignName rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf graphemon:signName .
+
+
+###  http://www.purl.org/graphemon/hasCuneiformGraphemeDescription
+graphemon:hasCuneiformGraphemeDescription rdf:type owl:DatatypeProperty ;
+                                          rdfs:subPropertyOf graphemon:hasGraphemeDescription .
+
+
+###  http://www.purl.org/graphemon/hasCuneiformIdentifier
+graphemon:hasCuneiformIdentifier rdf:type owl:DatatypeProperty ;
+                                 rdfs:subPropertyOf graphemon:hasIdentifier .
+
+
+###  http://www.purl.org/graphemon/hasExtendedGottsteinCode
+graphemon:hasExtendedGottsteinCode rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf graphemon:hasGottsteinCode .
+
+
+###  http://www.purl.org/graphemon/hasGottsteinCode
+graphemon:hasGottsteinCode rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf graphemon:hasCuneiformGraphemeDescription .
+
+
+###  http://www.purl.org/graphemon/hasGraphemeDescription
+graphemon:hasGraphemeDescription rdf:type owl:DatatypeProperty .
+
+
+###  http://www.purl.org/graphemon/hasIdentifier
+graphemon:hasIdentifier rdf:type owl:DatatypeProperty .
+
+
+###  http://www.purl.org/graphemon/hasPaleoCode
+graphemon:hasPaleoCode rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf graphemon:hasCuneiformGraphemeDescription .
+
+
+###  http://www.purl.org/graphemon/hasUnicodeCodePoint
+graphemon:hasUnicodeCodePoint rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf graphemon:hasIdentifier .
+
+
+###  http://www.purl.org/graphemon/hasUnicodeRepresentation
+graphemon:hasUnicodeRepresentation rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf graphemon:hasIdentifier .
+
+
+###  http://www.purl.org/graphemon/hethzl
+graphemon:hethzl rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf graphemon:hasCuneiformIdentifier .
+
+
+###  http://www.purl.org/graphemon/meszl
+graphemon:meszl rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf graphemon:hasCuneiformIdentifier .
+
+
+###  http://www.purl.org/graphemon/readingValue
+graphemon:readingValue rdf:type owl:DatatypeProperty .
+
+
+###  http://www.purl.org/graphemon/signName
+graphemon:signName rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf graphemon:hasCuneiformIdentifier .
+
+
+###  http://www.purl.org/graphemon/slha
+graphemon:slha rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf graphemon:hasCuneiformIdentifier .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://lemon-model.net/lemon#LexicalEntity
+<http://lemon-model.net/lemon#LexicalEntity> rdf:type owl:Class .
+
+
+###  http://lemon-model.net/lemon#LexicalForm
+<http://lemon-model.net/lemon#LexicalForm> rdf:type owl:Class .
+
+
+###  http://lemon-model.net/lemon#LexicalSense
+<http://lemon-model.net/lemon#LexicalSense> rdf:type owl:Class .
+
+
+###  http://lemon-model.net/lemon#Lexicon
+<http://lemon-model.net/lemon#Lexicon> rdf:type owl:Class .
+
+
+###  http://lemon-model.net/lemon#WordForm
+<http://lemon-model.net/lemon#WordForm> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph
+<http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> rdf:type owl:Class ;
+                                               rdfs:label "glyph" .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme
+<http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> rdf:type owl:Class ;
+                                                   rdfs:label "grapheme" .
+
+
+###  http://www.purl.org/cuneiform/Tablet
+cunei:Tablet rdf:type owl:Class .
+
+
+###  http://www.purl.org/cuneiform/TransliterationCharOccurrence
+cunei:TransliterationCharOccurrence rdf:type owl:Class .
+
+
+###  http://www.purl.org/cuneiform/TransliterationLine
+cunei:TransliterationLine rdf:type owl:Class .
+
+
+###  http://www.purl.org/cuneiform/TransliterationWordOccurrence
+cunei:TransliterationWordOccurrence rdf:type owl:Class .
+
+
+###  http://www.purl.org/cuneiform/3DRendering
+<http://www.purl.org/cuneiform/3DRendering> rdf:type owl:Class .
+
+
+###  http://www.purl.org/graphemon/GraphemeReading
+graphemon:GraphemeReading rdf:type owl:Class ;
+                          rdfs:label "grapheme reading" .
+
+
+###  http://www.purl.org/graphemon/GraphemeVariant
+graphemon:GraphemeVariant rdf:type owl:Class ;
+                          rdfs:label "grapheme variant" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_A
+<https://situx.github.io/cuneiformontology/examples/signlist/character_A> rdf:type owl:NamedIndividual ,
+                                                                <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+                                                       cunei:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char2> ;
+                                                       graphemon:variant <https://situx.github.io/cuneiformontology/examples/ht073195/a_charvariant1> ;
+                                                       <http://lemon-model.net/lemon#writtenRep> "𒀀" ;
+                                                       cunei:transliteration "a" ;
+                                                       rdfs:label "Character: A" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_a_reading_a
+<https://situx.github.io/cuneiformontology/examples/signlist/character_a_reading_a> rdf:type owl:NamedIndividual ,
+                                                                          graphemon:GraphemeReading ;
+                                                                 graphemon:readingValue "a" ;
+                                                                 rdfs:label "Grapheme Reading A: a" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/a_charvariant1
+<https://situx.github.io/cuneiformontology/examples/ht073195/a_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                   graphemon:GraphemeVariant ;
+                                                          rdfs:label "Grapheme Variant 1: A" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_an
+<https://situx.github.io/cuneiformontology/examples/signlist/character_an> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+                                                        graphemon:abzl 009 ;
+                                                        graphemon:hasUnicodeCodePoint "U+1202D" ;
+                                                        graphemon:hasUnicodeRepresentation "𒀭" ;
+                                                        graphemon:hethzl 8 ;
+                                                        graphemon:meszl 10 ;
+                                                        graphemon:signName "AN" ;
+                                                        graphemon:slha 013 ;
+                                                        rdfs:label "Character: AN" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_an_reading_d
+<https://situx.github.io/cuneiformontology/examples/signlist/character_an_reading_d> rdf:type owl:NamedIndividual ,
+                                                                           graphemon:GraphemeReading ;
+                                                                  graphemon:readingValue "d" ;
+                                                                  rdfs:label "Grapheme Reading AN: d" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_babbar
+<https://situx.github.io/cuneiformontology/examples/signlist/character_babbar> rdf:type owl:NamedIndividual ,
+                                                                     <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+                                                            cunei:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char7> ;
+                                                            graphemon:variant <https://situx.github.io/cuneiformontology/examples/ht073195/babbar_charvariant1> ;
+                                                            cunei:transliteration "babbar" ;
+                                                            graphemon:hasUnicodeRepresentation "𒌓" ;
+                                                            rdfs:label "Character: BABBAR" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/babbar_charvariant1
+<https://situx.github.io/cuneiformontology/examples/ht073195/babbar_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                        graphemon:GraphemeVariant ;
+                                                               graphemon:variant <https://situx.github.io/cuneiformontology/examples/ht073195/babbar_charvariant1> ;
+                                                               rdfs:label "Grapheme Variant 1: BABBAR" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_dingir
+<https://situx.github.io/cuneiformontology/examples/signlist/character_dingir> rdf:type owl:NamedIndividual ,
+                                                                     <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+                                                            cunei:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char4> ;
+                                                            graphemon:variant <https://situx.github.io/cuneiformontology/examples/ht073195/dingir_charvariant1> ;
+                                                            cunei:transliteration "d" ,
+                                                                                  "dingir" ;
+                                                            rdfs:label "Character: dingir" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/dingir_charvariant1
+<https://situx.github.io/cuneiformontology/examples/ht073195/dingir_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                        graphemon:GraphemeVariant ;
+                                                               rdfs:label "Grapheme Variant 1: dingir" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_disz
+<https://situx.github.io/cuneiformontology/examples/signlist/character_disz> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+                                                          cunei:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char3> ;
+                                                          graphemon:variant <https://situx.github.io/cuneiformontology/examples/ht073195/1(disz)_charvariant1> ;
+                                                          <http://lemon-model.net/lemon#writtenRep> "𒁹" ;
+                                                          cunei:transliteration "1(disz)" ;
+                                                          rdfs:label "Character: 1(disz)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_gi
+<https://situx.github.io/cuneiformontology/examples/signlist/character_gi> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+                                                        cunei:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char5> ;
+                                                        graphemon:variant <https://situx.github.io/cuneiformontology/examples/ht073195/gi_charvariant1> ;
+                                                        graphemon:hasUnicodeRepresentation "𒄀" ;
+                                                        graphemon:signName "GI" ;
+                                                        rdfs:label "Character: GI" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/gi_charvariant1
+<https://situx.github.io/cuneiformontology/examples/ht073195/gi_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                    graphemon:GraphemeVariant ;
+                                                           rdfs:label "Grapheme Variant 1: GI" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_signlist/har
+<https://situx.github.io/cuneiformontology/examples/signlist/character_har> rdf:type owl:NamedIndividual ,
+                                                                  <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+                                                         cunei:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char3> ,
+                                                                         <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char6> ;
+                                                         graphemon:variant <https://situx.github.io/cuneiformontology/examples/ht073195/har_charvariant1> ;
+                                                         graphemon:hasUnicodeRepresentation "𒄯" ;
+                                                         graphemon:signName "HAR" ;
+                                                         rdfs:label "Character: HAR" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/har_charvariant1
+<https://situx.github.io/cuneiformontology/examples/ht073195/har_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                     graphemon:GraphemeVariant ;
+                                                            rdfs:label "Grapheme Variant 1: HAR" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1> rdf:type owl:NamedIndividual ,
+                                                                           cunei:TransliterationLine ;
+                                                                  cunei:nextLine <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2> ;
+                                                                  cunei:lineNumber 1 ;
+                                                                  rdfs:label "HT 07-31-95 obverse line 1" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char1
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char1> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char2> ;
+                                                                        graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_9(u)_reading_9(u)> ;
+                                                                        cunei:charIndex 1 ;
+                                                                        cunei:lineNumber 1 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 1 char 1" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char1_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char1_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 1 char 1" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char2
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char2> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char3> ;
+                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char1> ;
+                                                                        graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_2(disz)_reading_2(disz)> ;
+                                                                        cunei:charIndex 2 ;
+                                                                        cunei:lineNumber 1 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 1 char 2" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char2_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char2_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 1 char 2" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char3
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char3> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char4> ;
+                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char2> ;
+                                                                        cunei:charIndex 3 ;
+                                                                        cunei:lineNumber 1 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 1 char 3" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char3_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char3_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 1 char 3" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char4
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char4> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char5> ;
+                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char3> ;
+                                                                        cunei:charIndex 4 ;
+                                                                        cunei:lineNumber 1 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 1 char 4" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char4_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char4_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 1 char 4" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char5
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char5> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char6> ;
+                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char4> ;
+                                                                        cunei:charIndex 5 ;
+                                                                        cunei:lineNumber 1 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 1 char 5" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char5_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char5_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 1 char 5" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char6
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char6> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char7> ;
+                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char5> ;
+                                                                        cunei:charIndex 6 ;
+                                                                        cunei:lineNumber 1 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 1 char 6" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char6_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char6_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 1 char 6" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char7
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char7> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char6> ;
+                                                                        cunei:charIndex 7 ;
+                                                                        cunei:lineNumber 1 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 1 char 7" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char7_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char7_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 1 char 7" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line1_word1
+<https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line1_word1> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationWordOccurrence ;
+                                                                        cunei:nextWord <https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line1_word2> ;
+                                                                        cunei:lineNumber 1 ;
+                                                                        cunei:wordIndex 1 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 1 word 1" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line1_word2
+<https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line1_word2> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationWordOccurrence ;
+                                                                        cunei:nextWord <https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line1_word3> ;
+                                                                        cunei:prevWord <https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line1_word1> ;
+                                                                        cunei:lineNumber 1 ;
+                                                                        cunei:wordIndex 2 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 1 word 2" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line1_word3
+<https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line1_word3> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationWordOccurrence ;
+                                                                        cunei:nextWord <https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line1_word4> ;
+                                                                        cunei:prevWord <https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line1_word2> ;
+                                                                        cunei:lineNumber 1 ;
+                                                                        cunei:wordIndex 3 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 1 word 3" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line1_word4
+<https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line1_word4> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationWordOccurrence ;
+                                                                        cunei:nextWord <https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line1_word5> ;
+                                                                        cunei:prevWord <https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line1_word3> ;
+                                                                        cunei:lineNumber 1 ;
+                                                                        cunei:wordIndex 4 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 1 word 4" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line1_word5
+<https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line1_word5> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationWordOccurrence ;
+                                                                        cunei:prevWord <https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line1_word4> ;
+                                                                        cunei:lineNumber 1 ;
+                                                                        cunei:wordIndex 5 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 1 word 5" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2> rdf:type owl:NamedIndividual ,
+                                                                           cunei:TransliterationLine ;
+                                                                  cunei:nextLine <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3> ;
+                                                                  cunei:prevLine <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1> ;
+                                                                  cunei:lineNumber 2 ;
+                                                                  rdfs:label "HT 07-31-95 obverse line 2" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char1
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char1> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char2> ;
+                                                                        graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_U_reading_1(u)> ;
+                                                                        cunei:charIndex 1 ;
+                                                                        cunei:lineNumber 2 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 2 char 1" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char1_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char1_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 2 char 1" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char2
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char2> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char3> ;
+                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char1> ;
+                                                                        graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_6(disz)_reading_6(disz)> ;
+                                                                        cunei:charIndex 2 ;
+                                                                        cunei:lineNumber 2 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 2 char 2" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char2_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char2_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 2 char 2" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char3
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char3> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char4> ;
+                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char2> ;
+                                                                        cunei:charIndex 3 ;
+                                                                        cunei:lineNumber 2 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 2 char 3" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char3_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char3_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 2 char 3" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char4
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char4> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char5> ;
+                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char3> ;
+                                                                        cunei:charIndex 4 ;
+                                                                        cunei:lineNumber 2 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 2 char 4" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char4_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char4_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 2 char 4" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char5
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char5> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char4> ;
+                                                                        cunei:charIndex 5 ;
+                                                                        cunei:lineNumber 2 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 2 char 5" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char5_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char5_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 2 char 5" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line2_word1
+<https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line2_word1> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationWordOccurrence ;
+                                                                        cunei:nextWord <https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line2_word2> ;
+                                                                        cunei:lineNumber 2 ;
+                                                                        cunei:wordIndex 1 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 2 word 1" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line2_word2
+<https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line2_word2> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationWordOccurrence ;
+                                                                        cunei:nextWord <https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line2_word3> ;
+                                                                        cunei:prevWord <https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line2_word1> ;
+                                                                        cunei:lineNumber 2 ;
+                                                                        cunei:wordIndex 2 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 2 word 2" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line2_word3
+<https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line2_word3> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationWordOccurrence ;
+                                                                        cunei:nextWord <https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line2_word4> ;
+                                                                        cunei:prevWord <https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line2_word2> ;
+                                                                        cunei:lineNumber 2 ;
+                                                                        cunei:wordIndex 3 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 2 word 3" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line2_word4
+<https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line2_word4> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationWordOccurrence ;
+                                                                        cunei:prevWord <https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line1_word3> ;
+                                                                        cunei:lineNumber 2 ;
+                                                                        cunei:wordIndex 4 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 2 word 4" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3> rdf:type owl:NamedIndividual ,
+                                                                           cunei:TransliterationLine ;
+                                                                  cunei:nextLine <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4> ;
+                                                                  cunei:prevLine <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2> ;
+                                                                  cunei:lineNumber 3 ;
+                                                                  rdfs:label "HT 07-31-95 obverse line 3" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char1
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char1> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char2> ;
+                                                                        cunei:charIndex 1 ;
+                                                                        cunei:lineNumber 3 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 3 char 1" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char1_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char1_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 3 char 1" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char2
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char2> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char3> ;
+                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char1> ;
+                                                                        cunei:charIndex 2 ;
+                                                                        cunei:lineNumber 3 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 3 char 2" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char2_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char2_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 3 char 2" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char3
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char3> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char4> ;
+                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char2> ;
+                                                                        cunei:charIndex 3 ;
+                                                                        cunei:lineNumber 3 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 3 char 3" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char3_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char3_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 3 char 3" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char4
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char4> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char5> ;
+                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char3> ;
+                                                                        graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_me_reading_me> ;
+                                                                        cunei:charIndex 4 ;
+                                                                        cunei:lineNumber 3 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 3 char 4" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char4_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char4_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 3 char 4" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char5
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char5> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char6> ;
+                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char4> ;
+                                                                        graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_8(disz)_reading_8(disz)> ;
+                                                                        cunei:charIndex 5 ;
+                                                                        cunei:lineNumber 3 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 3 char 5" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char5_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char5_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 3 char 5" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char6
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char6> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char7> ;
+                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char5> ;
+                                                                        cunei:charIndex 6 ;
+                                                                        cunei:lineNumber 3 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 3 char 6" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char6_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char6_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 3 char 6" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char7
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char7> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char6> ;
+                                                                        cunei:charIndex 7 ;
+                                                                        cunei:lineNumber 3 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 3 char 7" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char7_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char7_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 3 char 7" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line3_word1
+<https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line3_word1> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationWordOccurrence ;
+                                                                        cunei:nextWord <https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line3_word2> ;
+                                                                        cunei:lineNumber 3 ;
+                                                                        cunei:wordIndex 1 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 3 word 1" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line3_word2
+<https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line3_word2> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationWordOccurrence ;
+                                                                        cunei:prevWord <https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line3_word1> ;
+                                                                        cunei:lineNumber 3 ;
+                                                                        cunei:wordIndex 2 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 3 word 2" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line3_word3
+<https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line3_word3> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationWordOccurrence ;
+                                                                        cunei:lineNumber 3 ;
+                                                                        cunei:wordIndex 3 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 3 word 3" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line3_word4
+<https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line3_word4> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationWordOccurrence ;
+                                                                        cunei:lineNumber 3 ;
+                                                                        cunei:wordIndex 4 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 3 word 4" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4> rdf:type owl:NamedIndividual ,
+                                                                           cunei:TransliterationLine ;
+                                                                  cunei:prevLine <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3> ;
+                                                                  cunei:lineNumber 4 ;
+                                                                  rdfs:label "HT 07-31-95 obverse line 4" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char1
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char1> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char2> ;
+                                                                        cunei:charIndex 1 ;
+                                                                        cunei:lineNumber 4 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 4 char 1" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char1_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char1_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 4 char 1" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char2
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char2> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char3> ;
+                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char1> ;
+                                                                        graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_a_reading_a> ;
+                                                                        cunei:charIndex 2 ;
+                                                                        cunei:lineNumber 4 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 4 char 2" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char2_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char2_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 4 char 2" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char3
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char3> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char4> ;
+                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char2> ;
+                                                                        graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_mar_reading_mar> ;
+                                                                        cunei:charIndex 3 ;
+                                                                        cunei:lineNumber 4 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 4 char 3" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char3_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char3_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 4 char 3" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char4
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char4> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char5> ;
+                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char3> ;
+                                                                        graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_an_reading_d> ;
+                                                                        cunei:charIndex 4 ;
+                                                                        cunei:lineNumber 4 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 4 char 4" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char4_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char4_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 4 char 4" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char5
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char5> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char6> ;
+                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char4> ;
+                                                                        graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_ud_reading_utu> ;
+                                                                        cunei:charIndex 5 ;
+                                                                        cunei:lineNumber 4 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 4 char 5" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char5_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char5_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 4 char 5" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char6
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char6> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char7> ;
+                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char5> ;
+                                                                        graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_isz_reading_isz> ;
+                                                                        cunei:charIndex 6 ;
+                                                                        cunei:lineNumber 4 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 4 char 6" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char6_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char6_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 4 char 6" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char7
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char7> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char8> ;
+                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char6> ;
+                                                                        graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_szu_reading_szu> ;
+                                                                        cunei:charIndex 4 ;
+                                                                        cunei:lineNumber 7 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 4 char 7" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char7_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char7_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 4 char 7" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char8
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char8> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationCharOccurrence ;
+                                                                        cunei:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char7> ;
+                                                                        graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_u2_reading_u2> ;
+                                                                        cunei:charIndex 8 ;
+                                                                        cunei:lineNumber 4 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 4 char 8" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char8_glyph
+<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char8_glyph> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+                                                                              rdfs:label "Glyph at HT 07-31-95 obverse side line 4 char 8" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line4_word1
+<https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line4_word1> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationWordOccurrence ;
+                                                                        cunei:lineNumber 4 ;
+                                                                        cunei:wordIndex 1 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 4 word 1" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line4_word2
+<https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line4_word2> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationWordOccurrence ;
+                                                                        cunei:lineNumber 4 ;
+                                                                        cunei:wordIndex 2 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 4 word 2" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line4_word3
+<https://situx.github.io/cuneiformontology/examples/dict/ht073195_obverse_line4_word3> rdf:type owl:NamedIndividual ,
+                                                                                 cunei:TransliterationWordOccurrence ;
+                                                                        cunei:lineNumber 4 ;
+                                                                        cunei:wordIndex 3 ;
+                                                                        rdfs:label "HT 07-31-95 obverse line 4 word 3" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_isz
+<https://situx.github.io/cuneiformontology/examples/signlist/character_isz> rdf:type owl:NamedIndividual ,
+                                                                  <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+                                                         cunei:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char6> ;
+                                                         cunei:transliteration "isz" ;
+                                                         graphemon:hasUnicodeRepresentation "𒅖" ;
+                                                         rdfs:label "Character: ISZ" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_isz_reading_isz
+<https://situx.github.io/cuneiformontology/examples/signlist/character_isz_reading_isz> rdf:type owl:NamedIndividual ,
+                                                                              graphemon:GraphemeReading ;
+                                                                     graphemon:readingValue "isz" ;
+                                                                     rdfs:label "Grapheme Reading ISZ: isz" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_ku3
+<https://situx.github.io/cuneiformontology/examples/signlist/character_ku3> rdf:type owl:NamedIndividual ,
+                                                                  <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+                                                         cunei:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char6> ,
+                                                                         <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char4> ;
+                                                         graphemon:variant <https://situx.github.io/cuneiformontology/examples/ht073195/ku3_charvariant1> ;
+                                                         graphemon:hasUnicodeRepresentation "𒆬" ;
+                                                         graphemon:signName "ku3" ;
+                                                         rdfs:label "Character: KU3" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_ku3_reading_ku3
+<https://situx.github.io/cuneiformontology/examples/signlist/character_ku3_reading_ku3> rdf:type owl:NamedIndividual ,
+                                                                              graphemon:GraphemeReading ;
+                                                                     graphemon:readingValue "ku3" ;
+                                                                     rdfs:label "Grapheme Reading KU3: ku3" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/ku3_charvariant1
+<https://situx.github.io/cuneiformontology/examples/ht073195/ku3_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                     graphemon:GraphemeVariant ;
+                                                            rdfs:label "Grapheme Variant 1: KU3" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/ku3babbar_word
+<https://situx.github.io/cuneiformontology/examples/dict/ku3babbar_word> rdf:type owl:NamedIndividual ,
+                                                                   <http://lemon-model.net/lemon#Word> ;
+                                                          <http://lemon-model.net/lemon#form> <https://situx.github.io/cuneiformontology/examples/dict/ku3babbar_wordform_ku3babbar> ;
+                                                          <http://lemon-model.net/lemon#sense> <https://situx.github.io/cuneiformontology/examples/dict/ku3babbar_wordsense> ;
+                                                          rdfs:label "Word: KU3.BABBAR" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/ku3babbar_wordform_ku3babbar
+<https://situx.github.io/cuneiformontology/examples/dict/ku3babbar_wordform_ku3babbar> rdf:type owl:NamedIndividual ,
+                                                                       <http://lemon-model.net/lemon#WordForm> ;
+                                                              <http://lemon-model.net/lemon#writtenRep> "𒆬𒌓" ;
+                                                              cunei:transliteration "KU3.BABBAR" ;
+                                                              rdfs:label "Wordform: KU3.BABBAR" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/ku3babbar_wordsense
+<https://situx.github.io/cuneiformontology/examples/dict/ku3babbar_wordsense> rdf:type owl:NamedIndividual ,
+                                                                        <http://lemon-model.net/lemon#LexicalSense> ;
+                                                               <http://lemon-model.net/lemon#reference> <http://www.wikidata.org/entity/Q1090> ;
+                                                               rdfs:label "Wordsense: KU3.BABBAR" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_lagab
+<https://situx.github.io/cuneiformontology/examples/signlist/character_lagab> rdf:type owl:NamedIndividual ,
+                                                                    <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+                                                           cunei:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char2> ;
+                                                           graphemon:variant <https://situx.github.io/cuneiformontology/examples/ht073195/lagab_charvariant1> ;
+                                                           cunei:transliteration "lagab" ,
+                                                                                 "nigin2" ;
+                                                           rdfs:label "Character: LAGAB" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_lagab_reading1
+<https://situx.github.io/cuneiformontology/examples/signlist/character_lagab_reading1> rdf:type owl:NamedIndividual ,
+                                                                             graphemon:GraphemeReading .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/lagab_charvariant1
+<https://situx.github.io/cuneiformontology/examples/ht073195/lagab_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                       graphemon:GraphemeVariant ;
+                                                              rdfs:label "Grapheme Variant 1: LAGAB" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_mar
+<https://situx.github.io/cuneiformontology/examples/signlist/character_mar> rdf:type owl:NamedIndividual ,
+                                                                  <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+                                                         cunei:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char3> ;
+                                                         graphemon:hasUnicodeRepresentation "𒈥" ;
+                                                         graphemon:signName "MAR" ;
+                                                         rdfs:label "Character: MAR" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_mar_reading_mar
+<https://situx.github.io/cuneiformontology/examples/signlist/character_mar_reading_mar> rdf:type owl:NamedIndividual ,
+                                                                              graphemon:GraphemeReading ;
+                                                                     graphemon:readingValue "mar" ;
+                                                                     rdfs:label "Grapheme Reading MAR: mar" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_me
+<https://situx.github.io/cuneiformontology/examples/signlist/character_me> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+                                                        cunei:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char4> ;
+                                                        graphemon:variant <https://situx.github.io/cuneiformontology/examples/ht073195/me_charvariant1> ;
+                                                        cunei:transliteration "ME" ;
+                                                        rdfs:label "Character: ME" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_me_reading_me
+<https://situx.github.io/cuneiformontology/examples/signlist/character_me_reading_me> rdf:type owl:NamedIndividual ,
+                                                                            graphemon:GraphemeReading ;
+                                                                   graphemon:readingValue "me" ;
+                                                                   rdfs:label "Grapheme Reading ME: me" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/me_charvariant1
+<https://situx.github.io/cuneiformontology/examples/ht073195/me_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                    graphemon:GraphemeVariant ;
+                                                           rdfs:label "Grapheme Variant 1: ME" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_mesz
+<https://situx.github.io/cuneiformontology/examples/signlist/character_mesz> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+                                                          cunei:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char4> ,
+                                                                          <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char7> ;
+                                                          graphemon:variant <https://situx.github.io/cuneiformontology/examples/ht073195/mesz_charvariant1> ;
+                                                          cunei:transliteration "mesz" ;
+                                                          rdfs:label "Character: Mesz" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/mesz_charvariant1
+<https://situx.github.io/cuneiformontology/examples/ht073195/mesz_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                      graphemon:GraphemeVariant ;
+                                                             rdfs:label "Grapheme Variant 1: MESZ" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_sza3
+<https://situx.github.io/cuneiformontology/examples/signlist/character_sza3> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+                                                          cunei:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char5> ,
+                                                                          <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char3> ,
+                                                                          <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char1> ;
+                                                          graphemon:variant <https://situx.github.io/cuneiformontology/examples/ht073195/sza3_charvariant1> ;
+                                                          cunei:transliteration "sza3" ;
+                                                          graphemon:hasUnicodeRepresentation "𒊮" ;
+                                                          rdfs:label "Character: SZA3" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/sza3_charvariant1
+<https://situx.github.io/cuneiformontology/examples/ht073195/sza3_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                      graphemon:GraphemeVariant ;
+                                                             rdfs:label "Grapheme Variant 1: SZA3" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_szu
+<https://situx.github.io/cuneiformontology/examples/signlist/character_szu> rdf:type owl:NamedIndividual ,
+                                                                  <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+                                                         cunei:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char1> ,
+                                                                         <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char7> ;
+                                                         cunei:transliteration "szu" ;
+                                                         graphemon:hasUnicodeRepresentation "𒋗" ;
+                                                         rdfs:label "Character: SZU" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_szu_reading_szu
+<https://situx.github.io/cuneiformontology/examples/signlist/character_szu_reading_szu> rdf:type owl:NamedIndividual ,
+                                                                              graphemon:GraphemeReading ;
+                                                                     graphemon:readingValue "szu" ;
+                                                                     rdfs:label "Grapheme Reading SZU: szu" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_u2
+<https://situx.github.io/cuneiformontology/examples/signlist/character_u2> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+                                                        cunei:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char8> ;
+                                                        cunei:transliteration "U2" ;
+                                                        graphemon:hasUnicodeRepresentation "𒌓" ;
+                                                        rdfs:label "Character: U2" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_u2_reading_u2
+<https://situx.github.io/cuneiformontology/examples/signlist/character_u2_reading_u2> rdf:type owl:NamedIndividual ,
+                                                                            graphemon:GraphemeReading ;
+                                                                   graphemon:readingValue "u2" ;
+                                                                   rdfs:label "Grapheme Reading U2: u2" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_ud
+<https://situx.github.io/cuneiformontology/examples/signlist/character_ud> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+                                                        graphemon:abzl 332 ;
+                                                        graphemon:hasUnicodeCodePoint "U+12313" ;
+                                                        graphemon:hasUnicodeRepresentation "𒌓" ;
+                                                        graphemon:hethzl 316 ;
+                                                        graphemon:meszl 596 ;
+                                                        graphemon:signName "UD" ;
+                                                        graphemon:slha 381 ;
+                                                        rdfs:label "Character: UD" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_ud_reading_utu
+<https://situx.github.io/cuneiformontology/examples/signlist/character_ud_reading_utu> rdf:type owl:NamedIndividual ,
+                                                                             graphemon:GraphemeReading ;
+                                                                    graphemon:readingValue "utu" ;
+                                                                    rdfs:label "Grapheme Reading UD: utu" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/1(disz)_charvariant1
+<https://situx.github.io/cuneiformontology/examples/ht073195/1(disz)_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                         graphemon:GraphemeVariant ;
+                                                                graphemon:hasGottsteinCode "a1"^^graphemon:gottsteinLiteral ;
+                                                                graphemon:hasPaleoCode "a"^^graphemon:paleocodeLiteral ;
+                                                                rdfs:label "Grapheme Variant 1: 1(disz)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/1(disz)me_word
+<https://situx.github.io/cuneiformontology/examples/dict/1(disz)me_word> rdf:type owl:NamedIndividual ,
+                                                                   <http://lemon-model.net/lemon#Word> ;
+                                                          rdfs:label "Word: 1(disz)-ME" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/1(disz)me_wordsense
+<https://situx.github.io/cuneiformontology/examples/dict/1(disz)me_wordsense> rdf:type owl:NamedIndividual ,
+                                                                        <http://lemon-model.net/lemon#LexicalSense> ;
+                                                               <http://lemon-model.net/lemon#reference> <http://www.wikidata.org/entity/Q37413> ;
+                                                               rdfs:label "Wordsense: 1(disz)-ME" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/1(disz)me_wordform_1(disz)_me
+<https://situx.github.io/cuneiformontology/examples/dict/1(disz)me_wordform_1(disz)_me> rdf:type owl:NamedIndividual ,
+                                                                                  <http://lemon-model.net/lemon#WordForm> ;
+                                                                         rdfs:label "Wordform: 1(disz)-ME" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_1(u)
+<https://situx.github.io/cuneiformontology/examples/signlist/character_1(u)> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+                                                          cunei:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char1> ;
+                                                          cunei:transliteration "1(u)" ;
+                                                          rdfs:label "Character: U" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/1(u)_word
+<https://situx.github.io/cuneiformontology/examples/dict/1(u)_word> rdf:type owl:NamedIndividual ,
+                                                              <http://lemon-model.net/lemon#Word> ;
+                                                     <http://lemon-model.net/lemon#form> <https://situx.github.io/cuneiformontology/examples/dict/1(u)_wordform_1(u)> ;
+                                                     <http://lemon-model.net/lemon#sense> <https://situx.github.io/cuneiformontology/examples/dict/1(u)_wordsense> ;
+                                                     rdfs:label "Word: 1(u)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/1(u)_wordsense
+<https://situx.github.io/cuneiformontology/examples/dict/1(u)_wordsense> rdf:type owl:NamedIndividual ,
+                                                                   <http://lemon-model.net/lemon#LexicalSense> ;
+                                                          <http://lemon-model.net/lemon#reference> <http://www.wikidata.org/entity/Q23806> ;
+                                                          rdfs:label "Wordsense: 1(u)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/1(u)_wordform_1(u)
+<https://situx.github.io/cuneiformontology/examples/dict/1(u)_wordform_1(u)> rdf:type owl:NamedIndividual ,
+                                                                       <http://lemon-model.net/lemon#WordForm> ;
+                                                              <http://lemon-model.net/lemon#writtenRep> "𒌋" ;
+                                                              cunei:transliteration "1(u)" ;
+                                                              rdfs:label "Wordform: 1(u)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_2(disz)
+<https://situx.github.io/cuneiformontology/examples/signlist/character_2(disz)> rdf:type owl:NamedIndividual ,
+                                                                      <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+                                                             cunei:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char2> ;
+                                                             graphemon:variant <https://situx.github.io/cuneiformontology/examples/ht073195/2(disz)_charvariant1> ;
+                                                             cunei:transliteration "2(disz)" ;
+                                                             rdfs:label "Character: 2(disz)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/2(disz)_charvariant1
+<https://situx.github.io/cuneiformontology/examples/ht073195/2(disz)_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                         graphemon:GraphemeVariant ;
+                                                                graphemon:hasGottsteinCode "a2"^^graphemon:gottsteinLiteral ;
+                                                                graphemon:hasPaleoCode "a-a"^^graphemon:paleocodeLiteral ;
+                                                                rdfs:label "Grapheme Variant 1: 2(disz)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/2(disz)_word
+<https://situx.github.io/cuneiformontology/examples/dict/2(disz)_word> rdf:type owl:NamedIndividual ,
+                                                                 <http://lemon-model.net/lemon#Word> ;
+                                                        rdfs:label "Word: 2(disz)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/2(disz)_wordsense
+<https://situx.github.io/cuneiformontology/examples/dict/2(disz)_wordsense> rdf:type owl:NamedIndividual ,
+                                                                      <http://lemon-model.net/lemon#LexicalSense> ;
+                                                             <http://lemon-model.net/lemon#reference> <http://www.wikidata.org/entity/Q200> ;
+                                                             rdfs:label "Wordsense: 2(disz)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_2(disz)_reading_2(disz)
+<https://situx.github.io/cuneiformontology/examples/signlist/character_2(disz)_reading_2(disz)> rdf:type owl:NamedIndividual ,
+                                                                                      graphemon:GraphemeReading ;
+                                                                             rdfs:label "Grapheme Reading 2(disz): 2(disz)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/2(disz)_wordform_2(disz)
+<https://situx.github.io/cuneiformontology/examples/dict/2(disz)_wordform_2(disz)> rdf:type owl:NamedIndividual ,
+                                                                             <http://lemon-model.net/lemon#WordForm> ;
+                                                                    <http://lemon-model.net/lemon#writtenRep> "𒈫" ;
+                                                                    cunei:transliteration "2(disz)" ;
+                                                                    rdfs:label "Wordform: 2(disz)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_6(disz)
+<https://situx.github.io/cuneiformontology/examples/signlist/character_6(disz)> rdf:type owl:NamedIndividual ,
+                                                                      <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+                                                             cunei:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char2> ;
+                                                             graphemon:variant <https://situx.github.io/cuneiformontology/examples/ht073195/6(disz)_charvariant1> ;
+                                                             rdfs:label "Character: 6(disz)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/6(disz)_charvariant1
+<https://situx.github.io/cuneiformontology/examples/ht073195/6(disz)_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                         graphemon:GraphemeVariant ;
+                                                                rdfs:label "Grapheme Variant 1: 6(disz)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/6(disz)_word
+<https://situx.github.io/cuneiformontology/examples/dict/6(disz)_word> rdf:type owl:NamedIndividual ,
+                                                                 <http://lemon-model.net/lemon#Word> ;
+                                                        <http://lemon-model.net/lemon#form> <https://situx.github.io/cuneiformontology/examples/dict/6(disz)_wordform_6(disz)> ;
+                                                        <http://lemon-model.net/lemon#sense> <https://situx.github.io/cuneiformontology/examples/dict/6(disz)_wordsense> ;
+                                                        rdfs:label "Word: 6(disz)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/6(disz)_wordsense
+<https://situx.github.io/cuneiformontology/examples/dict/6(disz)_wordsense> rdf:type owl:NamedIndividual ,
+                                                                      <http://lemon-model.net/lemon#LexicalSense> ;
+                                                             <http://lemon-model.net/lemon#reference> <http://www.wikidata.org/entity/Q23488> ;
+                                                             rdfs:label "Wordsense: 6(disz)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_6(disz)_reading_6(disz)
+<https://situx.github.io/cuneiformontology/examples/signlist/character_6(disz)_reading_6(disz)> rdf:type owl:NamedIndividual ,
+                                                                                      graphemon:GraphemeReading ;
+                                                                             graphemon:readingValue "6(disz)" ;
+                                                                             rdfs:label "Grapheme Reading 6(disz): 6(disz)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/6(disz)_wordform_6(disz)
+<https://situx.github.io/cuneiformontology/examples/dict/6(disz)_wordform_6(disz)> rdf:type owl:NamedIndividual ,
+                                                                             <http://lemon-model.net/lemon#WordForm> ;
+                                                                    <http://lemon-model.net/lemon#writtenRep> "𒐋" ;
+                                                                    cunei:transliteration "6(disz)" ;
+                                                                    rdfs:label "Wordform: 6(disz)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_8(disz)
+<https://situx.github.io/cuneiformontology/examples/signlist/character_8(disz)> rdf:type owl:NamedIndividual ,
+                                                                      <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+                                                             cunei:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char5> ;
+                                                             graphemon:variant <https://situx.github.io/cuneiformontology/examples/ht073195/8(disz)_charvariant1> ;
+                                                             cunei:transliteration "8(disz)" ;
+                                                             rdfs:label "Character: 8(disz)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/8(disz)_charvariant1
+<https://situx.github.io/cuneiformontology/examples/ht073195/8(disz)_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                         graphemon:GraphemeVariant ;
+                                                                rdfs:label "Grapheme Variant 1: 8(disz)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/8(disz)_wordsense
+<https://situx.github.io/cuneiformontology/examples/dict/8(disz)_wordsense> rdf:type owl:NamedIndividual ,
+                                                                  <http://lemon-model.net/lemon#LexicalSense> ;
+                                                         <http://lemon-model.net/lemon#reference> <http://www.wikidata.org/entity/Q23355> ;
+                                                         rdfs:label "Wordsense: 8(disz)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/8(disz)_word
+<https://situx.github.io/cuneiformontology/examples/dict/8(disz)_word> rdf:type owl:NamedIndividual ,
+                                                                 <http://lemon-model.net/lemon#Word> ;
+                                                        rdfs:label "Word: 8(disz)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_8(disz)_reading_8(disz)
+<https://situx.github.io/cuneiformontology/examples/signlist/character_8(disz)_reading_8(disz)> rdf:type owl:NamedIndividual ,
+                                                                                      graphemon:GraphemeReading ;
+                                                                             graphemon:readingValue "8(disz)" ;
+                                                                             rdfs:label "Grapheme Reading 8(disz): 8(disz)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/8(disz)_wordform_8(disz)
+<https://situx.github.io/cuneiformontology/examples/dict/8(disz)_wordform_8(disz)> rdf:type owl:NamedIndividual ,
+                                                                             <http://lemon-model.net/lemon#WordForm> ;
+                                                                    <http://lemon-model.net/lemon#writtenRep> "𒐍" ;
+                                                                    cunei:transliteration "8(disz)" ;
+                                                                    rdfs:label "Wordform: 8(disz)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_9(u)
+<https://situx.github.io/cuneiformontology/examples/signlist/character_9(u)> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+                                                          cunei:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char1> ;
+                                                          graphemon:variant <https://situx.github.io/cuneiformontology/examples/ht073195/9(u)_charvariant1> ;
+                                                          cunei:transliteration "9(u)" ;
+                                                          rdfs:label "Character: 9(u)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/ht073195/9(u)_charvariant1
+<https://situx.github.io/cuneiformontology/examples/ht073195/9(u)_charvariant1> rdf:type owl:NamedIndividual ,
+                                                                      graphemon:GraphemeVariant ;
+                                                             rdfs:label "Grapheme Variant 1: 9(u)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/9(u)_wordsense
+<https://situx.github.io/cuneiformontology/examples/dict/9(u)_wordsense> rdf:type owl:NamedIndividual ,
+                                                               <http://lemon-model.net/lemon#LexicalSense> ;
+                                                      <http://lemon-model.net/lemon#reference> <http://www.wikidata.org/entity/Q239346> ;
+                                                      rdfs:label "Wordsense: 9(u)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/9(u)_word
+<https://situx.github.io/cuneiformontology/examples/dict/9(u)_word> rdf:type owl:NamedIndividual ,
+                                                              <http://lemon-model.net/lemon#Word> ;
+                                                     <http://lemon-model.net/lemon#form> <https://situx.github.io/cuneiformontology/examples/dict/9(u)_wordform_9(u)> ;
+                                                     <http://lemon-model.net/lemon#sense> <https://situx.github.io/cuneiformontology/examples/dict/9(u)_wordsense> ;
+                                                     rdfs:label "Word: 9(u)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_9(u)_reading_9(u)
+<https://situx.github.io/cuneiformontology/examples/signlist/character_9(u)_reading_9(u)> rdf:type owl:NamedIndividual ,
+                                                                                graphemon:GraphemeReading ;
+                                                                       graphemon:readingValue "9(u)" ;
+                                                                       rdfs:label "Grapheme Reading 9(u): 9(u)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/dict/9(u)_wordform_9(u)
+<https://situx.github.io/cuneiformontology/examples/dict/9(u)_wordform_9(u)> rdf:type owl:NamedIndividual ,
+                                                                       <http://lemon-model.net/lemon#WordForm> ;
+                                                              <http://lemon-model.net/lemon#writtenRep> "𒐔" ;
+                                                              cunei:transliteration "9(u)" ;
+                                                              rdfs:label "Wordform: 9(u)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_U_reading_1(u)
+<https://situx.github.io/cuneiformontology/examples/signlist/character_U_reading_1(u)> rdf:type owl:NamedIndividual ,
+                                                                             graphemon:GraphemeReading ;
+                                                                    graphemon:readingValue "1(u)" ;
+                                                                    rdfs:label "Grapheme Reading U: 1(u)" .
+
+
+###  https://situx.github.io/cuneiformontology/examples/signlist/character_disz_reading_1(disz)
+<https://situx.github.io/cuneiformontology/examples/signlist/character_disz_reading_1(disz)> rdf:type owl:NamedIndividual ;
+                                                                          rdfs:label "Grapheme Reading DISZ: 1(disz)" .
+
+
+###  http://www.wikidata.org/entity/Q1090
+<http://www.wikidata.org/entity/Q1090> rdf:type owl:NamedIndividual ;
+                                       rdfs:label "Wikidata: silver" .
+
+
+###  http://www.wikidata.org/entity/Q200
+<http://www.wikidata.org/entity/Q200> rdf:type owl:NamedIndividual ;
+                                      rdfs:label "Wikidata: 2" .
+
+
+###  http://www.wikidata.org/entity/Q23355
+<http://www.wikidata.org/entity/Q23355> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: 8" .
+
+
+###  http://www.wikidata.org/entity/Q23488
+<http://www.wikidata.org/entity/Q23488> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: 6" .
+
+
+###  http://www.wikidata.org/entity/Q23806
+<http://www.wikidata.org/entity/Q23806> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: 10" .
+
+
+###  http://www.wikidata.org/entity/Q239346
+<http://www.wikidata.org/entity/Q239346> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Wikidata: 90" .
+
+
+###  http://www.wikidata.org/entity/Q37413
+<http://www.wikidata.org/entity/Q37413> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Wikidata: 100" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
