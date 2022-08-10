@@ -956,7 +956,7 @@ class OntDocGeneration:
         curlicense=self.processLicense()
         subjectstorender = set()
         for sub in self.graph.subjects():
-            if prefixnamespace in sub:
+            if prefixnamespace in sub or isinstance(sub,BNode):
                 subjectstorender.add(sub)
                 for tup in self.graph.predicate_objects(sub):
                     if str(tup[0]) in labelproperties:
