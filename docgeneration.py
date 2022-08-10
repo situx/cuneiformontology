@@ -890,7 +890,7 @@ class OntDocGeneration:
                 self.outpath += "/"
         #prefixes["reversed"]["http://purl.org/suni/"] = "suni"
 
-    def processLiteral(self,literal, literaltype, reproject,currentlayergeojson=None,triplestoreconf=None):
+    def processLiteral(self,literal, literaltype, reproject,currentlayergeojson=None,triplestoreconf=None):     
         return {}
 
 
@@ -1129,7 +1129,7 @@ class OntDocGeneration:
             if str(pred) in geopointerproperties:
                 for geotup in graph.predicate_objects(object):
                     if str(geotup[0]) in geoproperties and isinstance(geotup[1],Literal):
-                        geojsonrep = processLiteral(str(geotup[1]), geotup[1].datatype, "")
+                        geojsonrep = self.processLiteral(str(geotup[1]), geotup[1].datatype, "")
             label = str(str(object)[str(object).rfind('/') + 1:])
             for obj in graph.objects(object, URIRef("http://www.w3.org/2000/01/rdf-schema#label")):
                 label = str(obj)
@@ -1162,7 +1162,7 @@ class OntDocGeneration:
                     object.datatype) + "\">" + str(
                     object.datatype[object.datatype.rfind('/') + 1:]) + "</a>)</small></span>"
                 if str(pred) in geoproperties and isinstance(object,Literal):
-                    geojsonrep = processLiteral(str(object), object.datatype, "")
+                    geojsonrep = self.processLiteral(str(object), object.datatype, "")
             else:
                 if ttlf!=None:
                     ttlf.write("<" + str(subject) + "> <" + str(pred) + "> \"" + str(object) + "\" .\n")
@@ -1407,13 +1407,13 @@ class OntDocGeneration:
                     for geoinstance in graph.predicate_objects(memberid):
                         geojsonrep=None
                         if str(geoinstance[0]) in geoproperties and isinstance(geoinstance[1],Literal):
-                            geojsonrep = processLiteral(str(geoinstance[1]), geoinstance[1].datatype, "")
+                            geojsonrep = self.processLiteral(str(geoinstance[1]), geoinstance[1].datatype, "")
                             uritotreeitem[str(subject)]["type"] = "geocollection"
                         elif str(geoinstance[0]) in geopointerproperties:
                             uritotreeitem[str(subject)]["type"] = "featurecollection"
                             for geotup in graph.predicate_objects(geoinstance[1]):
                                 if str(geotup[0]) in geoproperties and isinstance(geotup[1],Literal):
-                                    geojsonrep = processLiteral(str(geotup[1]), geotup[1].datatype, "")
+                                    geojsonrep = self.processLiteral(str(geotup[1]), geotup[1].datatype, "")
                         if geojsonrep!=None:
                             featcoll["features"].append({"type": "Feature", 'id':str(memberid), 'properties': {}, "geometry": geojsonrep})
                 f.write(maptemplate.replace("{{myfeature}}",json.dumps(featcoll)))
