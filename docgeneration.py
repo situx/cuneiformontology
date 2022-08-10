@@ -14,6 +14,7 @@ labelproperties={
     "https://schema.org/name": "DatatypeProperty",
     "https://schema.org/alternateName": "DatatypeProperty",
     "http://purl.org/dc/terms/title": "DatatypeProperty",
+    "http://purl.org/dc/elements/1.1/title":"DatatypeProperty",
     "http://www.w3.org/2004/02/skos/core#altSymbol": "DatatypeProperty",
     "http://www.w3.org/2004/02/skos/core#hiddenLabel": "DatatypeProperty",
     "http://www.w3.org/2000/01/rdf-schema#label": "DatatypeProperty"
