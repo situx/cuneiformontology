@@ -2,6 +2,8 @@
 from rdflib import Graph
 from rdflib import URIRef, Literal
 from rdflib.plugins.sparql import prepareQuery
+import shapely.geometry
+import shapely.wkt
 import os
 import json
 import sys
@@ -891,6 +893,11 @@ class OntDocGeneration:
         #prefixes["reversed"]["http://purl.org/suni/"] = "suni"
 
     def processLiteral(self,literal, literaltype, reproject,currentlayergeojson=None,triplestoreconf=None):     
+        if "wkt" in literaltype.lower():
+            g1=shapely.wkt.loads(literal)
+            return g1
+        if "geojson" in literaltype.lower():
+            return literal
         return {}
 
 
