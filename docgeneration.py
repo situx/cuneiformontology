@@ -1216,8 +1216,8 @@ class OntDocGeneration:
         tablecontents = ""
         isodd = False
         geojsonrep=None
-        foundimages=[]
-        found3dimages=[]
+        foundimages=set()
+        found3dimages=set()
         savepath = savepath.replace("\\", "/")
         #print("BaseURL " + str(baseurl), "OntdocGeneration", Qgis.Info)
         #print("SavePath " + str(savepath), "OntdocGeneration", Qgis.Info)
@@ -1286,10 +1286,10 @@ class OntDocGeneration:
                         if "http" in str(item):
                             for ext in imageextensions:
                                 if ext in str(item):                             
-                                    foundimages.append(str(item))        
+                                    foundimages.add(str(item))        
                             for ext in meshextensions:
                                 if ext in str(item):
-                                    found3dimages.append(str(item))                                    
+                                    found3dimages.add(str(item))                                    
                         res=self.createHTMLTableValueEntry(subject, tup, item, ttlf, tablecontents, graph,
                                               baseurl, checkdepth,geojsonrep)
                         tablecontents = res["html"]
@@ -1300,10 +1300,10 @@ class OntDocGeneration:
                     if "http" in str(predobjmap[tup]):
                         for ext in imageextensions:
                             if ext in str(predobjmap[tup]):
-                                foundimages.append(str(predobjmap[tup][0]))
+                                foundimages.add(str(predobjmap[tup][0]))
                         for ext in meshextensions:
                             if ext in str(predobjmap[tup]):
-                                found3dimages.append(str(predobjmap[tup][0]))
+                                found3dimages.add(str(predobjmap[tup][0]))
                     tablecontents+="<td class=\"wrapword\">"
                     res=self.createHTMLTableValueEntry(subject, tup, predobjmap[tup][0], ttlf, tablecontents, graph,
                                               baseurl, checkdepth,geojsonrep)
