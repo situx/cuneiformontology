@@ -1402,6 +1402,7 @@ class OntDocGeneration:
             if comment!=None:
                 f.write(htmlcommenttemplate.replace("{{comment}}",comment))
             if len(found3dimages)>0:
+                print("Found 3D Model: "+str(foundimages))
                 for curitem in found3dimages:
                     curitem=iter(found3dimages).next()
                     format="ply"
