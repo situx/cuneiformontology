@@ -899,9 +899,9 @@ class OntDocGeneration:
     def processLiteral(self,literal, literaltype, reproject,currentlayergeojson=None,triplestoreconf=None):     
         print("Process literal: " + str(literal) + " --- " + str(literaltype))
         if "wkt" in literaltype.lower():
-            g1=shapely.wkt.loads(literal)
-            print(g1)
-            return g1.mapping()
+            g1=shapely.wkt.loads(literal)  
+            print(shapely.geometry.mapping(g1))
+            return shapely.geometry.mapping(g1)
         if "geojson" in literaltype.lower():
             return literal
         return {}
