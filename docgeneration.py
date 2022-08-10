@@ -1402,10 +1402,11 @@ class OntDocGeneration:
             if comment!=None:
                 f.write(htmlcommenttemplate.replace("{{comment}}",comment))
             if found3dimages!=[]:
+                curitem=next(iter(found3dimages))
                 format="ply"
-                if ".nxs" in found3dimages[0] or ".nxz" in found3dimages[0]:
+                if ".nxs" in curitem or ".nxz" in curitem:
                     format="nexus"
-                f.write(image3dtemplate.replace("{{meshurl}}",found3dimages[0]).replace("{{meshformat}}",format))
+                f.write(image3dtemplate.replace("{{meshurl}}",curitem).replace("{{meshformat}}",format))
             for image in foundimages:
                 if "<svg" in image:
                     f.write(imagestemplatesvg.replace("{{image}}",str(image)))
