@@ -903,7 +903,7 @@ class OntDocGeneration:
         print("Process literal: " + str(literal) + " --- " + str(literaltype))
         if "wkt" in literaltype.lower(): 
             print(convert.wkt_to_geojson(literal))
-            return convert.wkt_to_geojson(literal)
+            return json.loads(convert.wkt_to_geojson(literal))
         if "geojson" in literaltype.lower():
             return literal
         return {}
