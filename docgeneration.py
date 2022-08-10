@@ -873,6 +873,29 @@ class OntDocGeneration:
         else:
             return """All rights reserved."""
 
+    def processSubjectPath(self,outpath,paths,path):
+        if "/" in path:
+            addpath = ""
+            for pathelem in path.split("/"):
+                addpath += pathelem + "/"
+                if not os.path.isdir(outpath + addpath):
+                    os.mkdir(outpath + addpath)
+            if outpath + path[0:path.rfind('/')] + "/" not in paths:
+                paths[outpath + path[0:path.rfind('/')] + "/"] = []
+            paths[outpath + path[0:path.rfind('/')] + "/"].append(addpath[0:addpath.rfind('/')])
+        else:
+            if not os.path.isdir(outpath + path):
+                os.mkdir(outpath + path)
+            if outpath not in paths:
+                paths[outpath] = []
+            paths[outpath].append(path + "/index.html")
+        if os.path.exists(outpath + path + "/index.ttl"):
+            try:
+                self.graph.parse(outpath + path + "/index.ttl")
+            except Exception as e:
+                print(e)
+        return paths
+
     def generateOntDocForNameSpace(self, prefixnamespace,dataformat="HTML"):
         outpath=self.outpath
         corpusid=self.namespaceshort
@@ -920,35 +943,42 @@ class OntDocGeneration:
             f.close()
         pathmap = {}
         paths = {}
+        postprocessing=Graph()
         subtorenderlen = len(subjectstorender)
         subtorencounter = 0
         #print(uritotreeitem)
         for subj in subjectstorender:
             path = subj.replace(prefixnamespace, "").replace("?","").replace("*","")
             try:
-                if "/" in path:
-                    addpath = ""
-                    for pathelem in path.split("/"):
-                        addpath += pathelem + "/"
-                        if not os.path.exists(outpath + addpath) and not os.path.isdir(outpath + addpath):
-                            os.mkdir(outpath + addpath)
-                    if outpath + path[0:path.rfind('/')] + "/" not in paths:
-                        paths[outpath + path[0:path.rfind('/')] + "/"] = []
-                    paths[outpath + path[0:path.rfind('/')] + "/"].append(addpath[0:addpath.rfind('/')])
-                else:
-                    if not os.path.exists(outpath + path) and not os.path.isdir(outpath + path):
-                        os.mkdir(outpath + path)
-                    if outpath not in paths:
-                        paths[outpath] = []
-                    paths[outpath].append(path + "/index.html")
+                paths=self.processSubjectPath(outpath,paths,path)
                 if os.path.exists(outpath + path+"/index.ttl"):
                     try:
                         self.graph.parse(outpath + path+"/index.ttl")
                     except Exception as e:
                         print(e)
                 self.createHTML(outpath + path, self.graph.predicate_objects(subj), subj, prefixnamespace, self.graph.subject_predicates(subj),
-                           self.graph,str(corpusid) + "_search.js", str(corpusid) + "_classtree.js",uritotreeitem,curlicense)
+                           self.graph,str(corpusid) + "_search.js", str(corpusid) + "_classtree.js",uritotreeitem,curlicense,subjectstorender,postprocessing)
                 subtorencounter += 1
+                if subtorencounter%500==0:
+                    subtorenderlen=len(subjectstorender)+len(postprocessing)
+                print(str(subtorencounter) + "/" + str(subtorenderlen) + " " + str(outpath + path))
+            except Exception as e:
+                print(e)
+                print("Exception occured " + str(e))
+        for subj in subjectstorender:
+            path = subj.replace(prefixnamespace, "").replace("?","").replace("*","")
+            try:
+                self.processSubjectPath(outpath,paths,path)
+                if os.path.exists(outpath + path+"/index.ttl"):
+                    try:
+                        self.graph.parse(outpath + path+"/index.ttl")
+                    except Exception as e:
+                        print(e)
+                self.createHTML(outpath + path, self.graph.predicate_objects(subj), subj, prefixnamespace, self.graph.subject_predicates(subj),
+                           self.graph,str(corpusid) + "_search.js", str(corpusid) + "_classtree.js",uritotreeitem,curlicense,subjectstorender,postprocessing)
+                subtorencounter += 1
+                if subtorencounter%500==0:
+                    subtorenderlen=len(subjectstorender)+len(postprocessing)
                 print(str(subtorencounter) + "/" + str(subtorenderlen) + " " + str(outpath + path))
             except Exception as e:
                 print(e)
