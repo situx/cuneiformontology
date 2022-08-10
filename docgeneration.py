@@ -659,13 +659,13 @@ imagestemplatesvg="""
 </div>
 """
 
-image3dtemplate="""<script src="https://raw.githubusercontent.com/cnr-isti-vclab/3DHOP/master/minimal/js/spidergl.js"></script>
-<script src="https://raw.githubusercontent.com/cnr-isti-vclab/3DHOP/master/minimal/js/ply.js"></script>
-<script src="https://raw.githubusercontent.com/cnr-isti-vclab/3DHOP/master/minimal/js/nexus.js"></script>
-<script src="https://raw.githubusercontent.com/cnr-isti-vclab/3DHOP/master/minimal/js/presenter.js"></script>
-<script src="https://raw.githubusercontent.com/cnr-isti-vclab/3DHOP/master/minimal/js/init.js"></script>
+image3dtemplate="""<script type="text/javascript" src="https://raw.githubusercontent.com/cnr-isti-vclab/3DHOP/master/minimal/js/spidergl.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/cnr-isti-vclab/3DHOP/master/minimal/js/ply.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/cnr-isti-vclab/3DHOP/master/minimal/js/nexus.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/cnr-isti-vclab/3DHOP/master/minimal/js/presenter.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/cnr-isti-vclab/3DHOP/master/minimal/js/init.js"></script>
 <div id="3dhop" class="tdhop" onmousedown="if (event.preventDefault) event.preventDefault()">
-<canvas id="draw-canvas"/></div><script>start3dhop({{meshurl}},{{meshformat}})</script>"""
+<canvas id="draw-canvas"/></div><script>start3dhop("{{meshurl}}","{{meshformat}}")</script>"""
 
 nongeoexports="""
 <option value="csv">Comma Separated Values (CSV)</option>
