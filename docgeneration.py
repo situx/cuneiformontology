@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 from rdflib import Graph
-from rdflib import URIRef, Literal
+from rdflib import URIRef, Literal, BNode
 from rdflib.plugins.sparql import prepareQuery
 import geodaisy.converters as convert
 import os
@@ -956,11 +956,13 @@ class OntDocGeneration:
         curlicense=self.processLicense()
         subjectstorender = set()
         for sub in self.graph.subjects():
-            if prefixnamespace in sub:
+            if prefixnamespace in sub or isinstance(sub,BNode):
                 subjectstorender.add(sub)
-                for obj in self.graph.objects(sub, URIRef("http://www.w3.org/2000/01/rdf-schema#label")):
-                    labeltouri[str(obj)] = str(sub)
-                    uritolabel[str(sub)] = {"label":str(obj)}
+                for tup in self.graph.predicate_objects(sub):
+                    if str(tup[0]) in labelproperties:
+                        labeltouri[str(tup[1])] = str(sub)
+                        uritolabel[str(sub)] = {"label":str(tup[1])}
+                        break
         if os.path.exists(outpath + corpusid + '_search.js'):
             try:
                 with open(outpath + corpusid + '_search.js', 'r', encoding='utf-8') as f:
@@ -1147,8 +1149,10 @@ class OntDocGeneration:
                     if str(geotup[0]) in geoproperties and isinstance(geotup[1],Literal):
                         geojsonrep = self.processLiteral(str(geotup[1]), geotup[1].datatype, "")
             label = str(str(object)[str(object).rfind('/') + 1:])
-            for obj in graph.objects(object, URIRef("http://www.w3.org/2000/01/rdf-schema#label")):
-                label = str(obj)
+            for tup in graph.predicate_objects(object):
+                if str(tup[0]) in labelproperties:
+                    label = str(tup[1])
+                    break
             if baseurl in str(object):
                 rellink = str(object).replace(baseurl, "")
                 for i in range(0, checkdepth):
@@ -1188,8 +1192,10 @@ class OntDocGeneration:
 
     def formatPredicate(self,tup,baseurl,checkdepth,tablecontents,graph,reverse):
         label = str(str(tup)[str(tup).rfind('/') + 1:])
-        for obj in graph.objects(tup, URIRef("http://www.w3.org/2000/01/rdf-schema#label")):
-            label = str(obj)
+        for obj in graph.predicate_objects(object):
+            if str(obj[0]) in SPARQLUtils.labelproperties:
+                label = str(obj[1])
+                break
         tablecontents += "<td class=\"property\">"
         if reverse:
             tablecontents+="Is "
