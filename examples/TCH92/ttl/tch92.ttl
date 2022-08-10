@@ -2,6 +2,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix cunei: <http://www.purl.org/cuneiform/> .
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/> .
@@ -270,6 +271,8 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class .
 #    Individuals
 
 #################################################################
+
+graphemon:GraphemeCollection rdfs:subClassOf skos:Collection .
 
 ###  https://situx.github.io/cuneiformontology/examples/tch92/tch92_transliteration1
 <https://situx.github.io/cuneiformontology/examples/tch92/tch92_transliteration1> rdf:type owl:NamedIndividual ,

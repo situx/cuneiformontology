@@ -587,6 +587,10 @@ graphemon:GraphemeAtomicPartCollection rdf:type owl:Class ;
 graphemon:GraphemeCollection rdf:type owl:Class ;
                              rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Collection> ;
                              rdfs:label "grapheme collection" .
+							 
+graphemon:GraphemeReadingCollection rdf:type owl:Class ;
+                             rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Collection> ;
+                             rdfs:label "grapheme reading collection" .
 
 
 ###  http://www.purl.org/graphemon/GraphemeComposition
