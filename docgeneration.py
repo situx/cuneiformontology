@@ -42,6 +42,17 @@ geopointerproperties={
     "http://rdfs.co/juso/geometry": "ObjectProperty"
 }
 
+geolatlonproperties={
+   "http://www.w3.org/2003/01/geo/wgs84_pos#lat":"DatatypeProperty",
+   "http://www.w3.org/2003/01/geo/wgs84_pos#long": "DatatypeProperty",
+   "http://www.semanticweb.org/ontologies/2015/1/EPNet-ONTOP_Ontology#hasLatitude": "DatatypeProperty",
+   "http://www.semanticweb.org/ontologies/2015/1/EPNet-ONTOP_Ontology#hasLongitude": "DatatypeProperty",
+   "http://schema.org/longitude": "DatatypeProperty",
+   "https://schema.org/longitude": "DatatypeProperty",
+   "http://schema.org/latitude": "DatatypeProperty",
+   "https://schema.org/latitude": "DatatypeProperty",
+}
+
 geoproperties={
                "http://www.opengis.net/ont/geosparql#asWKT":"DatatypeProperty",
                "http://www.opengis.net/ont/geosparql#asGML": "DatatypeProperty",
@@ -52,18 +63,10 @@ geoproperties={
                "http://www.w3.org/2003/01/geo/wgs84_pos#geometry": "ObjectProperty",
                "http://www.georss.org/georss/point": "DatatypeProperty",
                "http://www.w3.org/2006/vcard/ns#hasGeo": "ObjectProperty",
-               "http://www.w3.org/2003/01/geo/wgs84_pos#lat":"DatatypeProperty",
-               "http://www.w3.org/2003/01/geo/wgs84_pos#long": "DatatypeProperty",
-               "http://www.semanticweb.org/ontologies/2015/1/EPNet-ONTOP_Ontology#hasLatitude": "DatatypeProperty",
-               "http://www.semanticweb.org/ontologies/2015/1/EPNet-ONTOP_Ontology#hasLongitude": "DatatypeProperty",
                "http://schema.org/geo": "ObjectProperty",
                "https://schema.org/geo": "ObjectProperty",
                "http://purl.org/dc/terms/coverage":"DatatypeProperty",
                "http://purl.org/dc/terms/spatial":"DatatypeProperty",
-               "http://schema.org/longitude": "DatatypeProperty",
-               "https://schema.org/longitude": "DatatypeProperty",
-               "http://schema.org/latitude": "DatatypeProperty",
-               "https://schema.org/latitude": "DatatypeProperty",
                "http://schema.org/polygon": "DatatypeProperty",
                "https://schema.org/polygon": "DatatypeProperty",
                "http://geovocab.org/geometry#geometry": "ObjectProperty",
