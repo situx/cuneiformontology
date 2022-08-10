@@ -958,9 +958,11 @@ class OntDocGeneration:
         for sub in self.graph.subjects():
             if prefixnamespace in sub:
                 subjectstorender.add(sub)
-                for obj in self.graph.objects(sub, URIRef("http://www.w3.org/2000/01/rdf-schema#label")):
-                    labeltouri[str(obj)] = str(sub)
-                    uritolabel[str(sub)] = {"label":str(obj)}
+                for tup in self.graph.predicates_objects(sub):
+                    if str(tup[0]) in SPARQLUtils.labelproperties:
+                        labeltouri[str(tup[1])] = str(sub)
+                        uritolabel[str(sub)] = {"label":str(tup[1])}
+                        break
         if os.path.exists(outpath + corpusid + '_search.js'):
             try:
                 with open(outpath + corpusid + '_search.js', 'r', encoding='utf-8') as f:
