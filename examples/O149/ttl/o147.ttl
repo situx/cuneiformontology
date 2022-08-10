@@ -219,7 +219,8 @@ cunei:wordIndex rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.purl.org/cuneiform/Tablet
-cunei:Tablet rdf:type owl:Class .
+cunei:Tablet rdf:type owl:Class ;
+             rdfs:subClassOf cidoc:E22_ManMadeObject .
 
 
 ###  http://www.purl.org/cuneiform/TabletSurface
@@ -375,6 +376,7 @@ cunei:TransliterationLine rdf:type owl:Class .
 											<https://situx.github.io/cuneiformontology/examples/signlist/character_nincomp_reading_nin> ,
 											<https://situx.github.io/cuneiformontology/examples/signlist/character_nu_reading_nu> .
 
+<http://lemon-model.net/lemon#Lexicon> rdfs:subClassOf skos:Collection .
 
 ###  https://situx.github.io/cuneiformontology/examples/o147/O147_lexicon
 <https://situx.github.io/cuneiformontology/examples/o147/O147_lexicon> rdf:type owl:NamedIndividual ,

@@ -3,6 +3,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix lemon: <http://lemon-model.net/lemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix cunei: <http://www.purl.org/cuneiform/> .
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/> .
@@ -89,6 +90,14 @@ cunei:prevWord rdf:type owl:ObjectProperty .
 
 ###  http://www.purl.org/graphemon/variant
 <http://www.purl.org/graphemon/variant> rdf:type owl:ObjectProperty .
+
+lemon:Lexicon rdfs:subClassOf skos:Collection .
+
+###  https://situx.github.io/cuneiformontology/examples/tch92/tch92_lexicon
+<https://situx.github.io/cuneiformontology/examples/tch92/tch92_lexicon> rdf:type 
+                                                                                    lemon:Lexicon ;
+                                                                           lemon:language cunei:Sumerian ;
+                                                                           rdfs:label "Lexicon for tablet TCH92" .
 
 
 #################################################################
@@ -238,7 +247,8 @@ cunei:wordIndex rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.purl.org/cuneiform/Tablet
-cunei:Tablet rdf:type owl:Class .
+cunei:Tablet rdf:type owl:Class ;
+             rdfs:subClassOf cidoc:E22_ManMadeObject .
 
 
 ###  http://www.purl.org/cuneiform/TransliterationCharOccurrence

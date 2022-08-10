@@ -387,6 +387,7 @@ lemon:LexicalSense rdf:type owl:Class .
 
 ###  http://lemon-model.net/lemon#Lexicon
 lemon:Lexicon rdf:type owl:Class ;
+			  rdfs:subClassOf skos:Collection ;
               rdfs:label "lexicon" .
 
 
@@ -550,7 +551,7 @@ cunei:language rdf:type owl:Class ;
 
 
 ###  http://www.purl.org/cuneiform/representation
-cunei:representation rdf:type owl:Class .
+cunei:Representation rdf:type owl:Class .
 
 
 ###  http://www.purl.org/cuneiform/3DMesh
@@ -1344,6 +1345,7 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                  cunei:LeftSide ;
                                                                         cunei:isRepresentedBy <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113343:577528/full/full/0/default.jpg> ;
                                                                         rdfs:label "HS 1174 left side" .
+
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_lexicon
