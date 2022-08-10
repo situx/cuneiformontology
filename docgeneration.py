@@ -76,6 +76,8 @@ geoproperties={
 
 imageextensions=[".apng",".bmp",".cur",".ico",".jpg",".jpeg",".png",".gif",".tif",".svg","<svg"]
 
+meshextensions=[".ply",".nxs",".nxz"]
+
 startscripts = """var namespaces={"rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","xsd":"http://www.w3.org/2001/XMLSchema#","geo":"http://www.opengis.net/ont/geosparql#","rdfs":"http://www.w3.org/2000/01/rdf-schema#","owl":"http://www.w3.org/2002/07/owl#","dc":"http://purl.org/dc/terms/","skos":"http://www.w3.org/2004/02/skos/core#"}
 var annotationnamespaces=["http://www.w3.org/2004/02/skos/core#","http://www.w3.org/2000/01/rdf-schema#","http://purl.org/dc/terms/"]
 var geoproperties={
@@ -227,6 +229,29 @@ function shortenURI(uri){
 		return prefix+uri.substring(uri.lastIndexOf("/")+1)
 	}
 	return uri
+}
+
+var presenter = null;
+function setup3dhop(meshurl,meshformat) { 
+  presenter = new Presenter("draw-canvas");  
+  presenter.setScene({
+    meshes: {
+			"mesh_1" : { url: meshurl,  mType: format}
+		},
+		modelInstances : {
+			"model_1" : { 
+				mesh  : "mesh_1",
+				color : [0.8, 0.7, 0.75]
+			}
+		}
+  });
+}
+
+function start3dhop(meshurl,meshformat){
+    init3dhop();
+	setup3dhop(meshurl,meshformat);
+	resizeCanvas(640,480);
+  	moveToolbar(20,20);  
 }
 
 function labelFromURI(uri,label){
@@ -632,6 +657,14 @@ imagestemplatesvg="""
 </div>
 """
 
+image3dtemplate="""<script src="https://raw.githubusercontent.com/cnr-isti-vclab/3DHOP/master/minimal/js/spidergl.js"></script>
+<script src="https://raw.githubusercontent.com/cnr-isti-vclab/3DHOP/master/minimal/js/ply.js"></script>
+<script src="https://raw.githubusercontent.com/cnr-isti-vclab/3DHOP/master/minimal/js/nexus.js"></script>
+<script src="https://raw.githubusercontent.com/cnr-isti-vclab/3DHOP/master/minimal/js/presenter.js"></script>
+<script src="https://raw.githubusercontent.com/cnr-isti-vclab/3DHOP/master/minimal/js/init.js"></script>
+<div id="3dhop" class="tdhop" onmousedown="if (event.preventDefault) event.preventDefault()">
+<canvas id="draw-canvas"/></div><script>start3dhop({{meshurl}},{{meshformat}})</script>"""
+
 nongeoexports="""
 <option value="csv">Comma Separated Values (CSV)</option>
 <option value="cipher">Cypher Neo4J (Cypher)</option>
@@ -957,7 +990,7 @@ class OntDocGeneration:
                     except Exception as e:
                         print(e)
                 self.createHTML(outpath + path, self.graph.predicate_objects(subj), subj, prefixnamespace, self.graph.subject_predicates(subj),
-                           self.graph,str(corpusid) + "_search.js", str(corpusid) + "_classtree.js",uritotreeitem,curlicense,subjectstorender,postprocessing)
+                           self.graph,str(corpusid) + "_search.js", str(corpusid) + "_classtree.js",uritotreeitem,curlicense)
                 subtorencounter += 1
                 if subtorencounter%500==0:
                     subtorenderlen=len(subjectstorender)+len(postprocessing)
@@ -975,7 +1008,7 @@ class OntDocGeneration:
                     except Exception as e:
                         print(e)
                 self.createHTML(outpath + path, self.graph.predicate_objects(subj), subj, prefixnamespace, self.graph.subject_predicates(subj),
-                           self.graph,str(corpusid) + "_search.js", str(corpusid) + "_classtree.js",uritotreeitem,curlicense,subjectstorender,postprocessing)
+                           self.graph,str(corpusid) + "_search.js", str(corpusid) + "_classtree.js",uritotreeitem,curlicense)
                 subtorencounter += 1
                 if subtorencounter%500==0:
                     subtorenderlen=len(subjectstorender)+len(postprocessing)
@@ -1169,6 +1202,7 @@ class OntDocGeneration:
         isodd = False
         geojsonrep=None
         foundimages=[]
+        found3dimages=[]
         savepath = savepath.replace("\\", "/")
         #print("BaseURL " + str(baseurl), "OntdocGeneration", Qgis.Info)
         #print("SavePath " + str(savepath), "OntdocGeneration", Qgis.Info)
@@ -1237,7 +1271,10 @@ class OntDocGeneration:
                         if "http" in str(item):
                             for ext in imageextensions:
                                 if ext in str(item):                             
-                                    foundimages.append(str(item))                      
+                                    foundimages.append(str(item))        
+                            for ext in meshextensions:
+                                if ext in str(item):
+                                    found3dimages.append(str(item))                                    
                         res=self.createHTMLTableValueEntry(subject, tup, item, ttlf, tablecontents, graph,
                                               baseurl, checkdepth,geojsonrep)
                         tablecontents = res["html"]
@@ -1249,6 +1286,9 @@ class OntDocGeneration:
                         for ext in imageextensions:
                             if ext in str(predobjmap[tup]):
                                 foundimages.append(str(predobjmap[tup][0]))
+                        for ext in meshextensions:
+                            if ext in str(predobjmap[tup]):
+                                found3dimages.append(str(predobjmap[tup][0]))
                     tablecontents+="<td class=\"wrapword\">"
                     res=self.createHTMLTableValueEntry(subject, tup, predobjmap[tup][0], ttlf, tablecontents, graph,
                                               baseurl, checkdepth,geojsonrep)
@@ -1344,13 +1384,18 @@ class OntDocGeneration:
                     "{{baseurl}}", baseurl).replace("{{description}}",
                                                                                                "").replace(
                     "{{scriptfolderpath}}", rellink).replace("{{classtreefolderpath}}", rellink2).replace("{{exports}}",myexports).replace("{{subject}}",str(subject)))
+            if comment!=None:
+                f.write(htmlcommenttemplate.replace("{{comment}}",comment))
+            if found3dimages!=[]:
+                format="ply"
+                if ".nxs" in found3dimages[0] or ".nxz" in found3dimages[0]:
+                    format="nexus"
+                f.write(image3dtemplate.replace("{{meshurl}}",found3dimages[0]).replace("{{meshformat}}",format))
             for image in foundimages:
                 if "<svg" in image:
                     f.write(imagestemplatesvg.replace("{{image}}",str(image)))
                 else:
                     f.write(imagestemplate.replace("{{image}}",str(image)))
-            if comment!=None:
-                f.write(htmlcommenttemplate.replace("{{comment}}",comment))
             if geojsonrep!=None and not isgeocollection:
                 if str(subject) in uritotreeitem:
                     uritotreeitem[str(subject)]["type"]="geoinstance"
