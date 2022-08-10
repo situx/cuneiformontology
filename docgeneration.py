@@ -2,6 +2,7 @@
 from rdflib import Graph
 from rdflib import URIRef, Literal
 from rdflib.plugins.sparql import prepareQuery
+import geodaisy.converters as convert
 import os
 import json
 import sys
@@ -41,6 +42,17 @@ geopointerproperties={
     "http://rdfs.co/juso/geometry": "ObjectProperty"
 }
 
+geolatlonproperties={
+   "http://www.w3.org/2003/01/geo/wgs84_pos#lat":"DatatypeProperty",
+   "http://www.w3.org/2003/01/geo/wgs84_pos#long": "DatatypeProperty",
+   "http://www.semanticweb.org/ontologies/2015/1/EPNet-ONTOP_Ontology#hasLatitude": "DatatypeProperty",
+   "http://www.semanticweb.org/ontologies/2015/1/EPNet-ONTOP_Ontology#hasLongitude": "DatatypeProperty",
+   "http://schema.org/longitude": "DatatypeProperty",
+   "https://schema.org/longitude": "DatatypeProperty",
+   "http://schema.org/latitude": "DatatypeProperty",
+   "https://schema.org/latitude": "DatatypeProperty",
+}
+
 geoproperties={
                "http://www.opengis.net/ont/geosparql#asWKT":"DatatypeProperty",
                "http://www.opengis.net/ont/geosparql#asGML": "DatatypeProperty",
@@ -51,18 +63,10 @@ geoproperties={
                "http://www.w3.org/2003/01/geo/wgs84_pos#geometry": "ObjectProperty",
                "http://www.georss.org/georss/point": "DatatypeProperty",
                "http://www.w3.org/2006/vcard/ns#hasGeo": "ObjectProperty",
-               "http://www.w3.org/2003/01/geo/wgs84_pos#lat":"DatatypeProperty",
-               "http://www.w3.org/2003/01/geo/wgs84_pos#long": "DatatypeProperty",
-               "http://www.semanticweb.org/ontologies/2015/1/EPNet-ONTOP_Ontology#hasLatitude": "DatatypeProperty",
-               "http://www.semanticweb.org/ontologies/2015/1/EPNet-ONTOP_Ontology#hasLongitude": "DatatypeProperty",
                "http://schema.org/geo": "ObjectProperty",
                "https://schema.org/geo": "ObjectProperty",
                "http://purl.org/dc/terms/coverage":"DatatypeProperty",
                "http://purl.org/dc/terms/spatial":"DatatypeProperty",
-               "http://schema.org/longitude": "DatatypeProperty",
-               "https://schema.org/longitude": "DatatypeProperty",
-               "http://schema.org/latitude": "DatatypeProperty",
-               "https://schema.org/latitude": "DatatypeProperty",
                "http://schema.org/polygon": "DatatypeProperty",
                "https://schema.org/polygon": "DatatypeProperty",
                "http://geovocab.org/geometry#geometry": "ObjectProperty",
@@ -657,13 +661,18 @@ imagestemplatesvg="""
 </div>
 """
 
-image3dtemplate="""<script src="https://raw.githubusercontent.com/cnr-isti-vclab/3DHOP/master/minimal/js/spidergl.js"></script>
-<script src="https://raw.githubusercontent.com/cnr-isti-vclab/3DHOP/master/minimal/js/ply.js"></script>
-<script src="https://raw.githubusercontent.com/cnr-isti-vclab/3DHOP/master/minimal/js/nexus.js"></script>
-<script src="https://raw.githubusercontent.com/cnr-isti-vclab/3DHOP/master/minimal/js/presenter.js"></script>
-<script src="https://raw.githubusercontent.com/cnr-isti-vclab/3DHOP/master/minimal/js/init.js"></script>
+image3dtemplate="""<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/stylesheet/3dhop.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/spidergl.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/presenter.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/nexus.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/ply.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/trackball_turntable.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/trackball_turntable_pan.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/trackball_pantilt.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/trackball_sphere.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/init.js"></script>
 <div id="3dhop" class="tdhop" onmousedown="if (event.preventDefault) event.preventDefault()">
-<canvas id="draw-canvas"/></div><script>start3dhop({{meshurl}},{{meshformat}})</script>"""
+<canvas id="draw-canvas"/></div><script>$(document).ready(function(){start3dhop("{{meshurl}}","{{meshformat}}")});</script>"""
 
 nongeoexports="""
 <option value="csv">Comma Separated Values (CSV)</option>
@@ -890,7 +899,13 @@ class OntDocGeneration:
                 self.outpath += "/"
         #prefixes["reversed"]["http://purl.org/suni/"] = "suni"
 
-    def processLiteral(self,literal, literaltype, reproject,currentlayergeojson=None,triplestoreconf=None):
+    def processLiteral(self,literal, literaltype, reproject,currentlayergeojson=None,triplestoreconf=None):     
+        print("Process literal: " + str(literal) + " --- " + str(literaltype))
+        if "wkt" in literaltype.lower(): 
+            print(convert.wkt_to_geojson(literal))
+            return json.loads(convert.wkt_to_geojson(literal))
+        if "geojson" in literaltype.lower():
+            return literal
         return {}
 
 
@@ -1129,7 +1144,7 @@ class OntDocGeneration:
             if str(pred) in geopointerproperties:
                 for geotup in graph.predicate_objects(object):
                     if str(geotup[0]) in geoproperties and isinstance(geotup[1],Literal):
-                        geojsonrep = processLiteral(str(geotup[1]), geotup[1].datatype, "")
+                        geojsonrep = self.processLiteral(str(geotup[1]), geotup[1].datatype, "")
             label = str(str(object)[str(object).rfind('/') + 1:])
             for obj in graph.objects(object, URIRef("http://www.w3.org/2000/01/rdf-schema#label")):
                 label = str(obj)
@@ -1162,7 +1177,7 @@ class OntDocGeneration:
                     object.datatype) + "\">" + str(
                     object.datatype[object.datatype.rfind('/') + 1:]) + "</a>)</small></span>"
                 if str(pred) in geoproperties and isinstance(object,Literal):
-                    geojsonrep = processLiteral(str(object), object.datatype, "")
+                    geojsonrep = self.processLiteral(str(object), object.datatype, "")
             else:
                 if ttlf!=None:
                     ttlf.write("<" + str(subject) + "> <" + str(pred) + "> \"" + str(object) + "\" .\n")
@@ -1201,8 +1216,8 @@ class OntDocGeneration:
         tablecontents = ""
         isodd = False
         geojsonrep=None
-        foundimages=[]
-        found3dimages=[]
+        foundimages=set()
+        found3dimages=set()
         savepath = savepath.replace("\\", "/")
         #print("BaseURL " + str(baseurl), "OntdocGeneration", Qgis.Info)
         #print("SavePath " + str(savepath), "OntdocGeneration", Qgis.Info)
@@ -1271,10 +1286,10 @@ class OntDocGeneration:
                         if "http" in str(item):
                             for ext in imageextensions:
                                 if ext in str(item):                             
-                                    foundimages.append(str(item))        
+                                    foundimages.add(str(item))        
                             for ext in meshextensions:
                                 if ext in str(item):
-                                    found3dimages.append(str(item))                                    
+                                    found3dimages.add(str(item))                                    
                         res=self.createHTMLTableValueEntry(subject, tup, item, ttlf, tablecontents, graph,
                                               baseurl, checkdepth,geojsonrep)
                         tablecontents = res["html"]
@@ -1285,10 +1300,10 @@ class OntDocGeneration:
                     if "http" in str(predobjmap[tup]):
                         for ext in imageextensions:
                             if ext in str(predobjmap[tup]):
-                                foundimages.append(str(predobjmap[tup][0]))
+                                foundimages.add(str(predobjmap[tup][0]))
                         for ext in meshextensions:
                             if ext in str(predobjmap[tup]):
-                                found3dimages.append(str(predobjmap[tup][0]))
+                                found3dimages.add(str(predobjmap[tup][0]))
                     tablecontents+="<td class=\"wrapword\">"
                     res=self.createHTMLTableValueEntry(subject, tup, predobjmap[tup][0], ttlf, tablecontents, graph,
                                               baseurl, checkdepth,geojsonrep)
@@ -1386,11 +1401,15 @@ class OntDocGeneration:
                     "{{scriptfolderpath}}", rellink).replace("{{classtreefolderpath}}", rellink2).replace("{{exports}}",myexports).replace("{{subject}}",str(subject)))
             if comment!=None:
                 f.write(htmlcommenttemplate.replace("{{comment}}",comment))
-            if found3dimages!=[]:
-                format="ply"
-                if ".nxs" in found3dimages[0] or ".nxz" in found3dimages[0]:
-                    format="nexus"
-                f.write(image3dtemplate.replace("{{meshurl}}",found3dimages[0]).replace("{{meshformat}}",format))
+            if len(found3dimages)>0:
+                print("Found 3D Model: "+str(foundimages))
+                for curitem in found3dimages:
+                    curitem=iter(found3dimages).next()
+                    format="ply"
+                    if ".nxs" in curitem or ".nxz" in curitem:
+                        format="nexus"
+                    f.write(image3dtemplate.replace("{{meshurl}}",curitem).replace("{{meshformat}}",format))
+                    break
             for image in foundimages:
                 if "<svg" in image:
                     f.write(imagestemplatesvg.replace("{{image}}",str(image)))
@@ -1407,13 +1426,13 @@ class OntDocGeneration:
                     for geoinstance in graph.predicate_objects(memberid):
                         geojsonrep=None
                         if str(geoinstance[0]) in geoproperties and isinstance(geoinstance[1],Literal):
-                            geojsonrep = processLiteral(str(geoinstance[1]), geoinstance[1].datatype, "")
+                            geojsonrep = self.processLiteral(str(geoinstance[1]), geoinstance[1].datatype, "")
                             uritotreeitem[str(subject)]["type"] = "geocollection"
                         elif str(geoinstance[0]) in geopointerproperties:
                             uritotreeitem[str(subject)]["type"] = "featurecollection"
                             for geotup in graph.predicate_objects(geoinstance[1]):
                                 if str(geotup[0]) in geoproperties and isinstance(geotup[1],Literal):
-                                    geojsonrep = processLiteral(str(geotup[1]), geotup[1].datatype, "")
+                                    geojsonrep = self.processLiteral(str(geotup[1]), geotup[1].datatype, "")
                         if geojsonrep!=None:
                             featcoll["features"].append({"type": "Feature", 'id':str(memberid), 'properties': {}, "geometry": geojsonrep})
                 f.write(maptemplate.replace("{{myfeature}}",json.dumps(featcoll)))

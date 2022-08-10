@@ -17,7 +17,7 @@ jobs:
          sudo apt-get install gcc libpq-dev -y
          sudo apt-get install python3-dev python3-pip -y
          sudo apt-get install python3-venv python3-wheel -y
-         sudo pip3 install wheel pylode==2.13.2 rdflib
+         sudo pip3 install wheel pylode==2.13.2 rdflib geodaisy
          pylode -i ontmodel/cuneiformontology.ttl -o docs/ontology.html
          pylode -i interlinks/cuneiformontology_interlinks.ttl -o docs/ontologyinterlinks.html
          pylode -i signlist/signlist.ttl -o docs/signlist.html
