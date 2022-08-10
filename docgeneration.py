@@ -1402,7 +1402,7 @@ class OntDocGeneration:
             if comment!=None:
                 f.write(htmlcommenttemplate.replace("{{comment}}",comment))
             if found3dimages!=[]:
-                curitem=next(iter(found3dimages))
+                curitem=iter(found3dimages).next()
                 format="ply"
                 if ".nxs" in curitem or ".nxz" in curitem:
                     format="nexus"
