@@ -997,22 +997,22 @@ class OntDocGeneration:
         #print(uritotreeitem)
         for subj in subjectstorender:
             path = subj.replace(prefixnamespace, "").replace("?","").replace("*","")
-            #try:
-            paths=self.processSubjectPath(outpath,paths,path)
-            if os.path.exists(outpath + path+"/index.ttl"):
-                try:
-                    self.graph.parse(outpath + path+"/index.ttl")
-                except Exception as e:
-                    print(e)
-            self.createHTML(outpath + path, self.graph.predicate_objects(subj), subj, prefixnamespace, self.graph.subject_predicates(subj),
-                       self.graph,str(corpusid) + "_search.js", str(corpusid) + "_classtree.js",uritotreeitem,curlicense)
-            subtorencounter += 1
-            if subtorencounter%500==0:
-                subtorenderlen=len(subjectstorender)+len(postprocessing)
-            print(str(subtorencounter) + "/" + str(subtorenderlen) + " " + str(outpath + path))
-            #except Exception as e:
-            #    print(e)
-            #    print("Exception occured " + str(e))
+            try:
+                paths=self.processSubjectPath(outpath,paths,path)
+                if os.path.exists(outpath + path+"/index.ttl"):
+                    try:
+                        self.graph.parse(outpath + path+"/index.ttl")
+                    except Exception as e:
+                        print(e)
+                self.createHTML(outpath + path, self.graph.predicate_objects(subj), subj, prefixnamespace, self.graph.subject_predicates(subj),
+                           self.graph,str(corpusid) + "_search.js", str(corpusid) + "_classtree.js",uritotreeitem,curlicense)
+                subtorencounter += 1
+                if subtorencounter%500==0:
+                    subtorenderlen=len(subjectstorender)+len(postprocessing)
+                print(str(subtorencounter) + "/" + str(subtorenderlen) + " " + str(outpath + path))
+            except Exception as e:
+                print(e)
+                print("Exception occured " + str(e))
         for subj in subjectstorender:
             path = subj.replace(prefixnamespace, "").replace("?","").replace("*","")
             try:
