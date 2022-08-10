@@ -669,7 +669,7 @@ image3dtemplate="""<script type="text/javascript" src="https://cdn.jsdelivr.net/
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/trackball_sphere.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/init.js"></script>
 <div id="3dhop" class="tdhop" onmousedown="if (event.preventDefault) event.preventDefault()">
-<canvas id="draw-canvas"/></div><script>start3dhop("{{meshurl}}","{{meshformat}}")</script>"""
+<canvas id="draw-canvas"/></div><script>$(document).ready(function(){start3dhop("{{meshurl}}","{{meshformat}}")});</script>"""
 
 nongeoexports="""
 <option value="csv">Comma Separated Values (CSV)</option>
