@@ -958,7 +958,7 @@ class OntDocGeneration:
         for sub in self.graph.subjects():
             if prefixnamespace in sub:
                 subjectstorender.add(sub)
-                for tup in self.graph.predicates_objects(sub):
+                for tup in self.graph.predicate_objects(sub):
                     if str(tup[0]) in SPARQLUtils.labelproperties:
                         labeltouri[str(tup[1])] = str(sub)
                         uritolabel[str(sub)] = {"label":str(tup[1])}
