@@ -2,9 +2,7 @@
 from rdflib import Graph
 from rdflib import URIRef, Literal
 from rdflib.plugins.sparql import prepareQuery
-import shapely.geometry
-import shapely.wkt
-import geojson
+import geodaisy.converters as convert
 import os
 import json
 import sys
@@ -900,10 +898,9 @@ class OntDocGeneration:
 
     def processLiteral(self,literal, literaltype, reproject,currentlayergeojson=None,triplestoreconf=None):     
         print("Process literal: " + str(literal) + " --- " + str(literaltype))
-        if "wkt" in literaltype.lower():
-            g1=shapely.wkt.loads(literal)  
-            print(shapely.geometry.mapping(g1))
-            return shapely.geometry.mapping(g1)
+        if "wkt" in literaltype.lower(): 
+            print(convert.wkt_to_geojson(literal))
+            return convert.wkt_to_geojson(literal)
         if "geojson" in literaltype.lower():
             return literal
         return {}
