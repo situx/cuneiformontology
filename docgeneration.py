@@ -1095,29 +1095,46 @@ class OntDocGeneration:
         print(ress)
         for cls in ress:
             for obj in graph.subjects(URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"), URIRef(cls)):
+                res = self.replaceNameSpacesInLabel(str(obj))
                 if str(obj) in uritolabel:
+                    restext= uritolabel[str(obj)]["label"] + " (" + str(obj)[str(obj).rfind('/') + 1:] + ")"
+                    if res!=None:
+                        restext=uritolabel[str(obj)]["label"] + " (" + res["uri"] + ")"
                     result.append({"id": str(obj), "parent": cls,
                                    "type": "instance",
-                                   "text": uritolabel[str(obj)]["label"] + " (" + str(obj)[str(obj).rfind('/') + 1:] + ")", "data":{}})
+                                   "text": restext, "data":{}})
                 else:
+                    restext= str(obj)[str(obj).rfind('/') + 1:]
+                    if res!=None:
+                        restext=str(obj)[str(obj).rfind('/') + 1:] + " (" + res["uri"] + ")"
                     result.append({"id": str(obj), "parent": cls,
                                    "type": "instance",
-                                   "text": str(obj)[str(obj).rfind('/') + 1:],"data":{}})
+                                   "text": restext,"data":{}})
                 uritotreeitem[str(obj)] = result[-1]
                 classidset.add(str(obj))
+            res = self.replaceNameSpacesInLabel(str(obj))
             if ress[cls]["super"] == None:
+                restext = cls[cls.rfind('/') + 1:]
+                if res != None:
+                    restext = cls[cls.rfind('/') + 1:] + " (" + res["uri"] + ")"
                 result.append({"id": cls, "parent": "#",
                                "type": "class",
-                               "text": cls[cls.rfind('/') + 1:],"data":{}})
+                               "text": restext,"data":{}})
             else:
                 if "label" in cls and cls["label"] != None:
+                    restext = ress[cls]["label"] + " (" + cls[cls.rfind('/') + 1:] + ")"
+                    if res != None:
+                        restext = ress[cls]["label"] + " (" + res["uri"] + ")"
                     result.append({"id": cls, "parent": ress[cls]["super"],
                                    "type": "class",
-                                   "text": ress[cls]["label"] + " (" + cls[cls.rfind('/') + 1:] + ")","data":{}})
+                                   "text": restext + ")","data":{}})
                 else:
+                    restext = cls[cls.rfind('/') + 1:]
+                    if res != None:
+                        restext = cls[cls.rfind('/') + 1:] + " (" + res["uri"] + ")"
                     result.append({"id": cls, "parent": ress[cls]["super"],
                                    "type": "class",
-                                   "text": cls[cls.rfind('/') + 1:],"data":{}})
+                                   "text": restext,"data":{}})
                 uritotreeitem[str(cls)] = result[-1]
             classidset.add(str(cls))
         tree["core"]["data"] = result
