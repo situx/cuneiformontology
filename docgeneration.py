@@ -631,7 +631,8 @@ htmltemplate = """<html about=\"{{subject}}\"><head><title>{{toptitle}}</title>
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.1.1/themes/default/style.min.css" />
 <link rel="stylesheet" type="text/css" href="{{stylepath}}"/>
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 <script src="{{scriptfolderpath}}"></script><script src="{{classtreefolderpath}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/jstree.min.js"></script>
@@ -667,10 +668,10 @@ image3dtemplate="""<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cnr-
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/presenter.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/nexus.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/ply.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/trackball_sphere.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/trackball_turntable.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/trackball_turntable_pan.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/trackball_pantilt.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/trackball_sphere.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/init.js"></script>
 <div id="3dhop" class="tdhop" onmousedown="if (event.preventDefault) event.preventDefault()">
 <canvas id="draw-canvas"/></div><script>$(document).ready(function(){start3dhop("{{meshurl}}","{{meshformat}}")});</script>"""
