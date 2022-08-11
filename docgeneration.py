@@ -1411,7 +1411,6 @@ class OntDocGeneration:
             if len(found3dimages)>0:
                 print("Found 3D Model: "+str(foundimages))
                 for curitem in found3dimages:
-                    curitem=iter(found3dimages).next()
                     format="ply"
                     if ".nxs" in curitem or ".nxz" in curitem:
                         format="nexus"
