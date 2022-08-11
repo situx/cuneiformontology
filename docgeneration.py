@@ -1112,7 +1112,7 @@ class OntDocGeneration:
                                    "text": restext,"data":{}})
                 uritotreeitem[str(obj)] = result[-1]
                 classidset.add(str(obj))
-            res = self.replaceNameSpacesInLabel(str(obj))
+            res = self.replaceNameSpacesInLabel(str(cls))
             if ress[cls]["super"] == None:
                 restext = cls[cls.rfind('/') + 1:]
                 if res != None:
