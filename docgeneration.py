@@ -1183,13 +1183,13 @@ class OntDocGeneration:
         if str(object).startswith("http") or isinstance(object,BNode):
             if ttlf != None:
                 ttlf.write("<" + str(subject) + "> <" + str(pred) + "> <" + str(object) + "> .\n")
-            if str(pred) in SPARQLUtils.geopointerproperties:
+            if str(pred) in geopointerproperties:
                 for geotup in graph.predicate_objects(object):
-                    if str(geotup[0]) in SPARQLUtils.geoproperties and isinstance(geotup[1],Literal):
-                        geojsonrep = LayerUtils.processLiteral(str(geotup[1]), geotup[1].datatype, "")
+                    if str(geotup[0]) in geoproperties and isinstance(geotup[1],Literal):
+                        geojsonrep = self.processLiteral(str(geotup[1]), geotup[1].datatype, "")
             label = str(self.shortenURI(str(object)))
             for tup in graph.predicate_objects(object):
-                if str(tup[0]) in SPARQLUtils.labelproperties:
+                if str(tup[0]) in labelproperties:
                     label = str(tup[1])
                     break
             if baseurl in str(object) or isinstance(object,BNode):
@@ -1219,8 +1219,8 @@ class OntDocGeneration:
                     object).replace("<","&lt").replace(">","&gt;").replace("\"","'") + "\" datatype=\"" + str(object.datatype) + "\">" + str(
                     object) + " <small>(<a style=\"color: #666;\" target=\"_blank\" href=\"" + str(
                     object.datatype) + "\">" + self.shortenURI(str(object.datatype)) + "</a>)</small></span>"
-                if str(pred) in SPARQLUtils.geoproperties and isinstance(object,Literal):
-                    geojsonrep = LayerUtils.processLiteral(str(object), object.datatype, "")
+                if str(pred) in geoproperties and isinstance(object,Literal):
+                    geojsonrep = self.processLiteral(str(object), object.datatype, "")
             else:
                 if ttlf!=None:
                     ttlf.write("<" + str(subject) + "> <" + str(pred) + "> \"" + str(object) + "\" .\n")
@@ -1231,7 +1231,7 @@ class OntDocGeneration:
     def formatPredicate(self,tup,baseurl,checkdepth,tablecontents,graph,reverse):
         label = self.shortenURI(str(tup))
         for obj in graph.predicate_objects(object):
-            if str(obj[0]) in SPARQLUtils.labelproperties:
+            if str(obj[0]) in labelproperties:
                 label = str(obj[1])
                 break
         tablecontents += "<td class=\"property\">"
