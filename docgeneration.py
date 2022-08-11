@@ -1053,7 +1053,7 @@ class OntDocGeneration:
                     indexhtml+="<td>"+str(item["instancecount"])+"</td>"
                     for item2 in tree["core"]["data"]:
                         if item2["parent"]==item["id"]:
-                            indexhtml+="<td><img src=\""+tree["types"][item2["type"]]["icon"]+"\" height=\"25\" width=\"25\" alt=\""+item2["type"]+"\"/><a href=\""+str(item2["id"])+"\">"+str(item2["text"])+"</a></td>"
+                            indexhtml+="<td><img src=\""+tree["types"][item2["type"]]["icon"]+"\" height=\"25\" width=\"25\" alt=\""+item2["type"]+"\"/><a href=\""+str(item2["id"]).replace(prefixnamespace,"")+"/index.html\">"+str(item2["text"])+"</a></td>"
                             break
                     indexhtml+="</tr>"
             indexhtml += "</tbody></table>"
