@@ -1097,16 +1097,16 @@ class OntDocGeneration:
             for obj in graph.subjects(URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"), URIRef(cls)):
                 res = self.replaceNameSpacesInLabel(str(obj))
                 if str(obj) in uritolabel:
-                    restext= uritolabel[str(obj)]["label"] + " (" + str(obj)[str(obj).rfind('/') + 1:] + ")"
+                    restext= uritolabel[str(obj)]["label"] + " (" + self.shortenURI(str(obj)) + ")"
                     if res!=None:
                         restext=uritolabel[str(obj)]["label"] + " (" + res["uri"] + ")"
                     result.append({"id": str(obj), "parent": cls,
                                    "type": "instance",
                                    "text": restext, "data":{}})
                 else:
-                    restext= str(obj)[str(obj).rfind('/') + 1:]
+                    restext= self.shortenURI(str(obj))
                     if res!=None:
-                        restext=str(obj)[str(obj).rfind('/') + 1:] + " (" + res["uri"] + ")"
+                        restext+= " (" + res["uri"] + ")"
                     result.append({"id": str(obj), "parent": cls,
                                    "type": "instance",
                                    "text": restext,"data":{}})
@@ -1114,24 +1114,24 @@ class OntDocGeneration:
                 classidset.add(str(obj))
             res = self.replaceNameSpacesInLabel(str(cls))
             if ress[cls]["super"] == None:
-                restext = cls[cls.rfind('/') + 1:]
+                restext = self.shortenURI(str(cls))
                 if res != None:
-                    restext = cls[cls.rfind('/') + 1:] + " (" + res["uri"] + ")"
+                    restext += " (" + res["uri"] + ")"
                 result.append({"id": cls, "parent": "#",
                                "type": "class",
                                "text": restext,"data":{}})
             else:
                 if "label" in cls and cls["label"] != None:
-                    restext = ress[cls]["label"] + " (" + cls[cls.rfind('/') + 1:] + ")"
+                    restext = ress[cls]["label"] + " (" + self.shortenURI(str(cls)) + ")"
                     if res != None:
                         restext = ress[cls]["label"] + " (" + res["uri"] + ")"
                     result.append({"id": cls, "parent": ress[cls]["super"],
                                    "type": "class",
                                    "text": restext + ")","data":{}})
                 else:
-                    restext = cls[cls.rfind('/') + 1:]
+                    restext = self.shortenURI(str(cls))
                     if res != None:
-                        restext = cls[cls.rfind('/') + 1:] + " (" + res["uri"] + ")"
+                        restext += " (" + res["uri"] + ")"
                     result.append({"id": cls, "parent": ress[cls]["super"],
                                    "type": "class",
                                    "text": restext,"data":{}})
@@ -1172,17 +1172,24 @@ class OntDocGeneration:
                         "ns": self.prefixes["reversed"][ns]}
         return None
 
+    def shortenURI(self,uri):
+        if uri!=None and "#" in uri:
+            return uri[uri.rfind('#')+1:]
+        if uri!=None and "/" in uri:
+            return uri[uri.rfind('/')+1:]
+        return uri
+
     def createHTMLTableValueEntry(self,subject,pred,object,ttlf,tablecontents,graph,baseurl,checkdepth,geojsonrep):
-        if str(object).startswith("http"):
+        if str(object).startswith("http") or isinstance(object,BNode):
             if ttlf != None:
                 ttlf.write("<" + str(subject) + "> <" + str(pred) + "> <" + str(object) + "> .\n")
-            if str(pred) in geopointerproperties:
+            if str(pred) in SPARQLUtils.geopointerproperties:
                 for geotup in graph.predicate_objects(object):
-                    if str(geotup[0]) in geoproperties and isinstance(geotup[1],Literal):
-                        geojsonrep = self.processLiteral(str(geotup[1]), geotup[1].datatype, "")
-            label = str(str(object)[str(object).rfind('/') + 1:])
+                    if str(geotup[0]) in SPARQLUtils.geoproperties and isinstance(geotup[1],Literal):
+                        geojsonrep = LayerUtils.processLiteral(str(geotup[1]), geotup[1].datatype, "")
+            label = str(self.shortenURI(str(object)))
             for tup in graph.predicate_objects(object):
-                if str(tup[0]) in labelproperties:
+                if str(tup[0]) in SPARQLUtils.labelproperties:
                     label = str(tup[1])
                     break
             if baseurl in str(object) or isinstance(object,BNode):
@@ -1190,8 +1197,8 @@ class OntDocGeneration:
                 for i in range(0, checkdepth):
                     rellink = "../" + rellink
                 rellink += "/index.html"
-                tablecontents += "<span><a property=\"" + str(pred) + "\" resource=\"" + str(object) + "\" href=\"" + rellink + "\">" + label + " <span style=\"color: #666;\">(" + self.namespaceshort + ":" + str(
-                    str(str(object)[str(object).rfind('/') + 1:])) + ")</span></a></span>"
+                tablecontents += "<span><a property=\"" + str(pred) + "\" resource=\"" + str(object) + "\" href=\"" + rellink + "\">" \
+                    + label + " <span style=\"color: #666;\">(" + self.namespaceshort + ":" + str(self.shortenURI(str(object))) + ")</span></a></span>"
             else:
                 res = self.replaceNameSpacesInLabel(str(object))
                 if res != None:
@@ -1211,10 +1218,9 @@ class OntDocGeneration:
                 tablecontents += "<span property=\"" + str(pred) + "\" content=\"" + str(
                     object).replace("<","&lt").replace(">","&gt;").replace("\"","'") + "\" datatype=\"" + str(object.datatype) + "\">" + str(
                     object) + " <small>(<a style=\"color: #666;\" target=\"_blank\" href=\"" + str(
-                    object.datatype) + "\">" + str(
-                    object.datatype[object.datatype.rfind('/') + 1:]) + "</a>)</small></span>"
-                if str(pred) in geoproperties and isinstance(object,Literal):
-                    geojsonrep = self.processLiteral(str(object), object.datatype, "")
+                    object.datatype) + "\">" + self.shortenURI(str(object.datatype)) + "</a>)</small></span>"
+                if str(pred) in SPARQLUtils.geoproperties and isinstance(object,Literal):
+                    geojsonrep = LayerUtils.processLiteral(str(object), object.datatype, "")
             else:
                 if ttlf!=None:
                     ttlf.write("<" + str(subject) + "> <" + str(pred) + "> \"" + str(object) + "\" .\n")
@@ -1223,7 +1229,7 @@ class OntDocGeneration:
         return {"html":tablecontents,"geojson":geojsonrep}
 
     def formatPredicate(self,tup,baseurl,checkdepth,tablecontents,graph,reverse):
-        label = str(str(tup)[str(tup).rfind('/') + 1:])
+        label = self.shortenURI(str(tup))
         for obj in graph.predicate_objects(object):
             if str(obj[0]) in SPARQLUtils.labelproperties:
                 label = str(obj[1])
