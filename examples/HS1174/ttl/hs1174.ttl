@@ -523,21 +523,23 @@ cunei:Transliteration rdf:type owl:Class ;
                       rdfs:label "transliteration" .
 
 
+cunei:Transliteration rdfs:subClassOf cunei:Representation .
+
 ###  http://www.purl.org/cuneiform/TransliterationCharOccurrence
 cunei:TransliterationCharOccurrence rdf:type owl:Class ;
-                                    rdfs:subClassOf cunei:Transliteration ;
+                                    rdfs:subClassOf cunei:TransliterationPart ;
                                     rdfs:label "Transliteration CharOccurrence" .
 
 
 ###  http://www.purl.org/cuneiform/TransliterationLine
 cunei:TransliterationLine rdf:type owl:Class ;
-                          rdfs:subClassOf cunei:Transliteration ;
+                          rdfs:subClassOf cunei:TransliterationPart ;
                           rdfs:label "transliteration line" .
 
 
 ###  http://www.purl.org/cuneiform/TransliterationWordOccurrence
 cunei:TransliterationWordOccurrence rdf:type owl:Class ;
-                                    rdfs:subClassOf cunei:Transliteration ;
+                                    rdfs:subClassOf cunei:TransliterationPart ;
                                     rdfs:label "Transliteration Word Occurrence" .
 
 

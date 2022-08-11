@@ -250,18 +250,24 @@ cunei:wordIndex rdf:type owl:DatatypeProperty .
 cunei:Tablet rdf:type owl:Class ;
              rdfs:subClassOf cidoc:E22_ManMadeObject .
 
+###  http://www.purl.org/cuneiform/Transliteration
+cunei:Transliteration rdf:type owl:Class ;
+                      rdfs:subClassOf cidoc:TX6_Transcription ;
+                      rdfs:label "transliteration" .
+
+
+cunei:Transliteration rdfs:subClassOf cunei:Representation .
 
 ###  http://www.purl.org/cuneiform/TransliterationCharOccurrence
-cunei:TransliterationCharOccurrence rdf:type owl:Class ;
-                                   rdfs:comment "TCH92 reverse line 8 char 2" .
+cunei:TransliterationCharOccurrence rdf:type owl:Class ; rdfs:subClassOf cunei:TransliterationPart .
 
 
 ###  http://www.purl.org/cuneiform/TransliterationLine
-cunei:TransliterationLine rdf:type owl:Class .
+cunei:TransliterationLine rdf:type owl:Class ; rdfs:subClassOf cunei:TransliterationPart .
 
 
 ###  http://www.purl.org/cuneiform/TransliterationWordOccurrence
-cunei:TransliterationWordOccurrence rdf:type owl:Class .
+cunei:TransliterationWordOccurrence rdf:type owl:Class ; rdfs:subClassOf cunei:TransliterationPart .
 
 
 ###  http://www.purl.org/graphemon#GraphemeComposition
@@ -358,6 +364,10 @@ graphemon:GraphemeCollection rdfs:subClassOf skos:Collection .
 											<https://situx.github.io/cuneiformontology/examples/signlist/character_ha> ,
 											<https://situx.github.io/cuneiformontology/examples/signlist/character_ku> ,
 											<https://situx.github.io/cuneiformontology/examples/signlist/character_a> .
+
+graphemon:GraphemeReadingCollection rdf:type owl:Class ;
+                             rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Collection> ;
+                             rdfs:label "grapheme reading collection" .
 											
 <https://situx.github.io/cuneiformontology/examples/tch92/tch92_signreadinglist> rdf:type owl:NamedIndividual ,
                                                                                      graphemon:GraphemeReadingCollection ;

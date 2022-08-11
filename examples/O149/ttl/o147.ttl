@@ -209,15 +209,6 @@ cunei:wordIndex rdf:type owl:DatatypeProperty .
 <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> rdf:type owl:Class ;
                                                    rdfs:label "grapheme" .
 
-
-###  http://www.purl.org/cuneiform/TransliterationCharOccurrence
-<http://www.purl.org/cuneiform/TransliterationCharOccurrence> rdf:type owl:Class .
-
-
-###  http://www.purl.org/cuneiform/TransliterationWordOccurrence
-<http://www.purl.org/cuneiform/TransliterationWordOccurrence> rdf:type owl:Class .
-
-
 ###  http://www.purl.org/cuneiform/Tablet
 cunei:Tablet rdf:type owl:Class ;
              rdfs:subClassOf cidoc:E22_ManMadeObject .
@@ -228,11 +219,23 @@ cunei:TabletSurface rdf:type owl:Class .
 
 
 ###  http://www.purl.org/cuneiform/Transliteration
-cunei:Transliteration rdf:type owl:Class .
+cunei:Transliteration rdf:type owl:Class ;
+                      rdfs:subClassOf cidoc:TX6_Transcription ;
+                      rdfs:label "transliteration" .
+
+
+cunei:Transliteration rdfs:subClassOf cunei:Representation .
+
+###  http://www.purl.org/cuneiform/TransliterationCharOccurrence
+cunei:TransliterationCharOccurrence rdf:type owl:Class ; rdfs:subClassOf cunei:TransliterationPart .
 
 
 ###  http://www.purl.org/cuneiform/TransliterationLine
-cunei:TransliterationLine rdf:type owl:Class .
+cunei:TransliterationLine rdf:type owl:Class ; rdfs:subClassOf cunei:TransliterationPart .
+
+
+###  http://www.purl.org/cuneiform/TransliterationWordOccurrence
+cunei:TransliterationWordOccurrence rdf:type owl:Class ; rdfs:subClassOf cunei:TransliterationPart .
 
 
 ###  http://www.purl.org/cuneiform/3DRendering
