@@ -1500,7 +1500,11 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
 
 gsp:Feature rdfs:subClassOf gsp:SpatialObject .
 
+gsp:SpatialObject rdfs:label "spatial object" .
+
 sf:Polygon rdfs:subClassOf gsp:Geometry .
+
+gsp:Geometry rdfs:label "geometry" .
 
 gsp:Geometry rdfs:subClassOf gsp:SpatialObject .
 
