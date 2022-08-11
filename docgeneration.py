@@ -1076,7 +1076,7 @@ class OntDocGeneration:
 
     def getClassTree(self,graph, uritolabel,classidset,uritotreeitem):
         results = graph.query(self.preparedclassquery)
-        tree = {"plugins": ["search", "sort", "state", "types", "contextmenu"], "search": {}, "types": {
+        tree = {"plugins": ["search", "sort", "state", "types", "contextmenu"], "search": {"show_only_matches":True}, "types": {
             "class": {"icon": "https://raw.githubusercontent.com/i3mainz/geopubby/master/public/icons/class.png"},
             "geoclass": {"icon": "https://raw.githubusercontent.com/i3mainz/geopubby/master/public/icons/geoclass.png"},
             "halfgeoclass": {"icon": "https://raw.githubusercontent.com/i3mainz/geopubby/master/public/icons/halfgeoclass.png"},
