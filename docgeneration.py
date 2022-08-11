@@ -20,6 +20,15 @@ labelproperties={
     "http://www.w3.org/2000/01/rdf-schema#label": "DatatypeProperty"
 }
 
+valueproperties={
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value":"DatatypeProperty",
+    "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue":"DatatypeProperty"
+}
+
+unitproperties={
+    "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit":"ObjectProperty"
+}
+
 commentproperties={
     "http://www.w3.org/2004/02/skos/core#definition":"DatatypeProperty",
     "http://www.w3.org/2004/02/skos/core#note": "DatatypeProperty",
@@ -1047,7 +1056,7 @@ class OntDocGeneration:
                     "{{baseurl}}", prefixnamespace).replace(
                     "{{scriptfolderpath}}", outpath + corpusid + '_search.js').replace("{{indexpage}}","true")
             indexhtml+="<p>This page shows information about linked data resources in HTML. Choose the classtree navigation or search to browse the data</p>"
-            indexhtml+="<table class=\"description\" style =\"height: 100%; overflow: auto\" border=1><thead><tr><th>Class</th><th>Number of instances</th></tr></thead><tbody>"
+            indexhtml+="<table class=\"description\" style =\"height: 100%; overflow: auto\" border=1 id=indextable><thead><tr><th>Class</th><th>Number of instances</th><th><th>Instance Example</th></tr></thead><tbody>"
             for item in tree["core"]["data"]:
                 if (item["type"]=="geoclass" or item["type"]=="class" or item["type"]=="featurecollection" or item["type"]=="geocollection") and "instancecount" in item and item["instancecount"]>0:
                     indexhtml+="<tr><td><img src=\""+tree["types"][item["type"]]["icon"]+"\" height=\"25\" width=\"25\" alt=\""+item["type"]+"\"/><a href=\""+str(item["id"])+"\" target=\"_blank\">"+str(item["text"])+"</a></td>"
@@ -1057,7 +1066,7 @@ class OntDocGeneration:
                             indexhtml+="<td><img src=\""+tree["types"][item2["type"]]["icon"]+"\" height=\"25\" width=\"25\" alt=\""+item2["type"]+"\"/><a href=\""+str(item2["id"]).replace(prefixnamespace,"")+"/index.html\">"+str(item2["text"])+"</a></td>"
                             break
                     indexhtml+="</tr>"
-            indexhtml += "</tbody></table>"
+            indexhtml += "</tbody></table><script>$('#indextable').DataTable();</script>""
             indexhtml+=htmlfooter.replace("{{license}}",curlicense)
             print(path)
             with open(path + "index.html", 'w', encoding='utf-8') as f:
