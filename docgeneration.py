@@ -1050,7 +1050,12 @@ class OntDocGeneration:
             for item in tree["core"]["data"]:
                 if (item["type"]=="geoclass" or item["type"]=="class" or item["type"]=="featurecollection" or item["type"]=="geocollection") and "instancecount" in item and item["instancecount"]>0:
                     indexhtml+="<tr><td><img src=\""+tree["types"][item["type"]]["icon"]+"\" height=\"25\" width=\"25\" alt=\""+item["type"]+"\"/><a href=\""+str(item["id"])+"\" target=\"_blank\">"+str(item["text"])+"</a></td>"
-                    indexhtml+="<td>"+str(item["instancecount"])+"</td></tr>"
+                    indexhtml+="<td>"+str(item["instancecount"])+"</td>"
+                    for item2 in tree["core"]["data"]:
+                        if item2["parent"]==item["id"]:
+                            indexhtml+="<td><img src=\""+tree["types"][item2["type"]]["icon"]+"\" height=\"25\" width=\"25\" alt=\""+item2["type"]+"\"/><a href=\""+str(item2["id"])+"\">"+str(item2["text"])+"</a></td>"
+                            break
+                    indexhtml+="</tr>"
             indexhtml += "</tbody></table>"
             indexhtml+=htmlfooter.replace("{{license}}",curlicense)
             print(path)
