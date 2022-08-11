@@ -241,7 +241,7 @@ function setup3dhop(meshurl,meshformat) {
   presenter = new Presenter("draw-canvas");  
   presenter.setScene({
     meshes: {
-			"mesh_1" : { url: meshurl,  mType: format}
+			"mesh_1" : { url: meshurl,  mType: meshformat}
 		},
 		modelInstances : {
 			"model_1" : { 
