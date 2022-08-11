@@ -1066,7 +1066,7 @@ class OntDocGeneration:
                             indexhtml+="<td><img src=\""+tree["types"][item2["type"]]["icon"]+"\" height=\"25\" width=\"25\" alt=\""+item2["type"]+"\"/><a href=\""+str(item2["id"]).replace(prefixnamespace,"")+"/index.html\">"+str(item2["text"])+"</a></td>"
                             break
                     indexhtml+="</tr>"
-            indexhtml += "</tbody></table><script>$('#indextable').DataTable();</script>""
+            indexhtml += "</tbody></table><script>$('#indextable').DataTable();</script>"
             indexhtml+=htmlfooter.replace("{{license}}",curlicense)
             print(path)
             with open(path + "index.html", 'w', encoding='utf-8') as f:
