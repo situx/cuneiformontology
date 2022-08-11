@@ -1422,7 +1422,9 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/character/3(u)_6_1_1_1_HS_1174_03_front.jpg> ,
                                                                                                                    <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_1_2_3(disz)_HS_1174_03_front.jpg> ;
-                                                                                             rdfs:label "Glyph at HS1174 obverse side line 1 char 2" .
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char1_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char3_glyph> ;
+																							 rdfs:label "Glyph at HS1174 obverse side line 1 char 2" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char2_wedge1_glyph
@@ -1447,25 +1449,33 @@ oa:identifying rdf:type owl:NamedIndividual .
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char3_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_1_3_gurusz_HS_1174_03_front.jpg> ;
-                                                                                             rdfs:label "Glyph at HS1174 obverse side line 1 char 3" .
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char2_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char4_glyph> ;
+																							 rdfs:label "Glyph at HS1174 obverse side line 1 char 3" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char4_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char4_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_1_4_szu_HS_1174_03_front.jpg> ;
-                                                                                             rdfs:label "Glyph at HS1174 obverse side line 1 char 4" .
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char3_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char5_glyph> ;                                                                                            
+																							rdfs:label "Glyph at HS1174 obverse side line 1 char 4" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char5_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char5_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char4_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char6_glyph> ;
                                                                                              rdfs:label "Glyph at HS1174 obverse side line 1 char 5" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char6_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char6_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char5_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char7_glyph> ;
                                                                                              rdfs:label "Glyph at HS1174 obverse side line 1 char 6" .
 
 
@@ -1490,27 +1500,33 @@ oa:identifying rdf:type owl:NamedIndividual .
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char1_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_2_1_da_HS_1174_03_front.jpg> ;
-                                                                                             rdfs:label "Glyph at HS1174 obverse side line 2 char 1" .
+                                                                                             graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char2_glyph> ;
+																							 rdfs:label "Glyph at HS1174 obverse side line 2 char 1" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char2_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char2_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_2_2_ak_HS_1174_03_front.jpg> ;
-                                                                                             rdfs:label "Glyph at HS1174 obverse side line 2 char 2" .
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char1_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char3_glyph> ;
+																							 rdfs:label "Glyph at HS1174 obverse side line 2 char 2" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char3_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char3_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_2_3_ru_HS_1174_03_front.jpg> ;
-                                                                                             rdfs:label "Glyph at HS1174 obverse side line 2 char 3" .
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char2_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char4_glyph> ;
+																							 rdfs:label "Glyph at HS1174 obverse side line 2 char 3" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char4_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char4_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
-																									  
+																							 graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char3_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char5_glyph> ;		  
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_2_4_um_HS_1174_03_front.jpg> ;
                                                                                              rdfs:label "Glyph at HS1174 obverse side line 2 char 4" .
 
@@ -1519,25 +1535,32 @@ oa:identifying rdf:type owl:NamedIndividual .
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char5_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_2_5_ib2_HS_1174_03_front.jpg> ;
-                                                                                             rdfs:label "Glyph at HS1174 obverse side line 2 char 5" .
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char4_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char6_glyph> ;
+																							 rdfs:label "Glyph at HS1174 obverse side line 2 char 5" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char6_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char6_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
-                                                                                             cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_2_6_dab5_HS_1174_03_front.jpg> ;
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char5_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char7_glyph> ;
+																							 cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_2_6_dab5_HS_1174_03_front.jpg> ;
                                                                                              rdfs:label "Glyph at HS1174 obverse side line 2 char 6" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char7_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char7_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char6_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char8_glyph> ;
                                                                                              rdfs:label "Glyph at HS1174 obverse side line 2 char 7" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char8_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char8_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char7_glyph> ;
                                                                                              rdfs:label "Glyph at HS1174 obverse side line 2 char 8" .
 
 
@@ -1558,26 +1581,33 @@ oa:identifying rdf:type owl:NamedIndividual .
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3_char1_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3_char1_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
-                                                                                             cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_3_1_ugula_HS_1174_03_front.jpg> ;
-                                                                                             rdfs:label "Glyph at HS1174 obverse side line 3 char 1" .
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3_char2_glyph> ;
+																							 cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_3_1_ugula_HS_1174_03_front.jpg> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3_char2_glyph> ;
+																							 rdfs:label "Glyph at HS1174 obverse side line 3 char 1" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3_char2_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3_char2_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_3_2_szesz_HS_1174_03_front.jpg> ;
-                                                                                             rdfs:label "Glyph at HS1174 obverse side line 3 char 2" .
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3_char1_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3_char3_glyph> ;
+																							 rdfs:label "Glyph at HS1174 obverse side line 3 char 2" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3_char3_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3_char3_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
+																							 graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3_char2_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3_char4_glyph> ;
                                                                                              rdfs:label "Glyph at HS1174 obverse side line 3 char 3" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3_char4_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3_char4_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
+																							 graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3_char3_glyph> ;
 																							 cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_3_4_da_HS_1174_03_front.jpg> ;
                                                                                              rdfs:label "Glyph at HS1174 obverse side line 3 char 4" .
 
@@ -1600,13 +1630,16 @@ oa:identifying rdf:type owl:NamedIndividual .
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4_char1_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_4_1_9(disz)_HS_1174_03_front.jpg> ;
-                                                                                             rdfs:label "Glyph at HS1174 obverse side line 4 char 1" .
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4_char2_glyph> ;
+																							 rdfs:label "Glyph at HS1174 obverse side line 4 char 1" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4_char2_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4_char2_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_4_2_gurusz_HS_1174_03_front.jpg> ;
+																							 graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4_char1_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4_char3_glyph> ;
                                                                                              rdfs:label "Glyph at HS1174 obverse side line 4 char 2" .
 
 
@@ -1614,6 +1647,8 @@ oa:identifying rdf:type owl:NamedIndividual .
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4_char3_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_4_3_szu_HS_1174_03_front.jpg> ;
+																							 graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4_char2_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4_char4_glyph> ;
                                                                                              rdfs:label "Glyph at HS1174 obverse side line 4 char 3" .
 
 
@@ -1621,6 +1656,8 @@ oa:identifying rdf:type owl:NamedIndividual .
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4_char4_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_4_4_dim2_HS_1174_03_front.jpg> ;
+																							 graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4_char3_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4_char5_glyph> ;
                                                                                              rdfs:label "Glyph at HS1174 obverse side line 4 char 4" .
 
 
@@ -1628,7 +1665,8 @@ oa:identifying rdf:type owl:NamedIndividual .
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4_char5_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_4_5_ma_HS_1174_03_front.jpg> ;
-                                                                                             rdfs:label "Glyph at HS1174 obverse side line 4 char 5" .
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4_char4_glyph> ;
+																							 rdfs:label "Glyph at HS1174 obverse side line 4 char 5" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_writtentext
@@ -1673,13 +1711,16 @@ oa:identifying rdf:type owl:NamedIndividual .
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line1_char1_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_1_1_ugula_HS_1174_06_back.jpg> ;
-                                                                                             rdfs:label "Glyph at HS1174 reverse side line 1 char 1" .
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line1_char2_glyph> ;
+																							 rdfs:label "Glyph at HS1174 reverse side line 1 char 1" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line1_char2_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line1_char2_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_1_2_lu2_HS_1174_06_back.jpg> ;
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line1_char1_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line1_char3_glyph> ;
                                                                                              rdfs:label "Glyph at HS1174 reverse side line 1 char 2" .
 
 
@@ -1687,6 +1728,8 @@ oa:identifying rdf:type owl:NamedIndividual .
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line1_char3_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_1_3_ga_HS_1174_06_back.jpg> ;
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line1_char2_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line1_char4_glyph> ;
                                                                                              rdfs:label "Glyph at HS1174 reverse side line 1 char 3" .
 
 
@@ -1694,6 +1737,7 @@ oa:identifying rdf:type owl:NamedIndividual .
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line1_char4_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_1_4_a_HS_1174_06_back.jpg> ;
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line1_char3_glyph> ;
                                                                                              rdfs:label "Glyph at HS1174 reverse side line 1 char 4" .
 
 
@@ -1716,31 +1760,39 @@ oa:identifying rdf:type owl:NamedIndividual .
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char1_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_2_1_nu_HS_1174_06_back.jpg> ;
-                                                                                             rdfs:label "Glyph at HS1174 reverse side line 2 char 1" .
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char2_glyph> ;
+																							 rdfs:label "Glyph at HS1174 reverse side line 2 char 1" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char2_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char2_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_2_2_banda3_HS_1174_06_back.jpg> ;
-                                                                                             rdfs:label "Glyph at HS1174 reverse side line 2 char 2" .
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char1_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char3_glyph> ;
+																							 rdfs:label "Glyph at HS1174 reverse side line 2 char 2" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char3_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char3_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char2_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char4_glyph> ;
                                                                                              rdfs:label "Glyph at HS1174 reverse side line 2 char 3" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char4_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char4_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char3_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char5_glyph> ;
                                                                                              rdfs:label "Glyph at HS1174 reverse side line 2 char 4" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char5_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char5_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char4_glyph> ;
                                                                                              rdfs:label "Glyph at HS1174 reverse side line 2 char 5" .
 
 
@@ -1762,28 +1814,34 @@ oa:identifying rdf:type owl:NamedIndividual .
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line3_char1_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_3_1_e2_HS_1174_06_back.jpg> ;
-                                                                                             rdfs:label "Glyph at HS1174 reverse side line 3 char 1" .
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line3_char2_glyph> ;
+																							 rdfs:label "Glyph at HS1174 reverse side line 3 char 1" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line3_char2_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line3_char2_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_3_2_gal_HS_1174_06_back.jpg> ;
-                                                                                             rdfs:label "Glyph at HS1174 reverse side line 3 char 2" .
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line3_char1_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line3_char3_glyph> ;
+																							 rdfs:label "Glyph at HS1174 reverse side line 3 char 2" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line3_char3_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line3_char3_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_3_3_ensi_HS_1174_06_back.jpg> ;
-                                                                                             rdfs:label "Glyph at HS1174 reverse side line 3 char 3" .
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line3_char2_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line3_char4_glyph> ;
+																							 rdfs:label "Glyph at HS1174 reverse side line 3 char 3" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line3_char4_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line3_char4_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_3_4_ka_HS_1174_06_back.jpg> ;
-                                                                                             rdfs:label "Glyph at HS1174 reverse side line 3 char 4" .
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line3_char3_glyph> ;
+																							 rdfs:label "Glyph at HS1174 reverse side line 3 char 4" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line4
@@ -1803,20 +1861,24 @@ oa:identifying rdf:type owl:NamedIndividual .
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line4_char1_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_4_1_sza3_HS_1174_06_back.jpg> ;
-                                                                                             rdfs:label "Glyph at HS1174 reverse side line 4 char 1" .
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line4_char2_glyph> ;
+																							 rdfs:label "Glyph at HS1174 reverse side line 4 char 1" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line4_char2_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line4_char2_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_4_2_tum_HS_1174_06_back.jpg> ;
-                                                                                             rdfs:label "Glyph at HS1174 reverse side line 4 char 2" .
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line4_char1_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line4_char3_glyph> ;
+																							 rdfs:label "Glyph at HS1174 reverse side line 4 char 2" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line4_char3_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line4_char3_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_4_3_al_HS_1174_06_back.jpg> ;
+																							 graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line4_char2_glyph> ;
                                                                                              rdfs:label "Glyph at HS1174 reverse side line 4 char 3" .
 
 
@@ -1838,34 +1900,42 @@ oa:identifying rdf:type owl:NamedIndividual .
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char1_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_5_1_iti_HS_1174_06_back.jpg> ;
-                                                                                             rdfs:label "Glyph at HS1174 reverse side line 5 char 1" .
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char2_glyph> ;
+																							 rdfs:label "Glyph at HS1174 reverse side line 5 char 1" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char2_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char2_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_5_2_du6_HS_1174_06_back.jpg> ;
-                                                                                             rdfs:label "Glyph at HS1174 reverse side line 5 char 2" .
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char1_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char3_glyph> ;
+																							 rdfs:label "Glyph at HS1174 reverse side line 5 char 2" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char3_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char3_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
                                                                                              cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_5_3_ku3_HS_1174_06_back.jpg> ;
-                                                                                             rdfs:label "Glyph at HS1174 reverse side line 5 char 3" .
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char2_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char4_glyph> ;
+																							 rdfs:label "Glyph at HS1174 reverse side line 5 char 3" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char4_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char4_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
-                                                                                             cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_5_4_u4_HS_1174_06_back.jpg> ;
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char3_glyph> ;
+																							 graphemon:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char5_glyph> ;
+																							 cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_5_4_u4_HS_1174_06_back.jpg> ;
                                                                                              rdfs:label "Glyph at HS1174 reverse side line 5 char 4" .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char5_glyph
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char5_glyph> rdf:type owl:NamedIndividual ,
                                                                                                       cidoc:TX9_Glyph ;
-                                                                                             cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_5_5_9(disz)_HS_1174_06_back.jpg> ;
+                                                                                             graphemon:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char4_glyph> ;
+																							 cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_5_5_9(disz)_HS_1174_06_back.jpg> ;
                                                                                              rdfs:label "Glyph at HS1174 reverse side line 5 char 5" .
 
 
