@@ -1498,6 +1498,12 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
 														foaf:givenname: "Eva-Maria" ;
 														foaf:name: "Eva-Maria Huber" .
 
+gsp:Feature rdfs:subClassOf gsp:SpatialObject .
+
+sf:Polygon rdfs:subClassOf gsp:Geometry .
+
+gsp:Geometry rdfs:subClassOf gsp:SpatialObject .
+
 <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_excavloc> rdf:type gsp:Feature ;
 														rdfs:label "HT 07-31-95 Excavation Location" ;
 														geo:lat 32.0807663774 ;
