@@ -10,7 +10,7 @@
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix cunei: <http://www.purl.org/cuneiform/> .
 @prefix lemon: <http://lemon-model.net/lemon#> .
-@prefix graphemon: <http://www.purl.org/graphemon/> .
+@prefix graphemon: <http://www.purl.org/graphemon#> .
 @base <http://www.w3.org/2002/07/owl#> .
 
 [ rdf:type owl:Ontology
@@ -20,7 +20,7 @@
 #    Annotation properties
 #################################################################
 
-###  http://www.purl.org/graphemon/asSVG
+###  http://www.purl.org/graphemon#asSVG
 graphemon:asSVG rdf:type owl:AnnotationProperty .
 
 
@@ -37,23 +37,23 @@ graphemon:asSVG rdf:type owl:AnnotationProperty .
 #    Datatypes
 #################################################################
 
-###  http://www.purl.org/graphemon/asciiTransliterationLiteral
+###  http://www.purl.org/graphemon#asciiTransliterationLiteral
 graphemon:asciiTransliterationLiteral rdf:type rdfs:Datatype .
 
 
-###  http://www.purl.org/graphemon/gottsteinLiteral
+###  http://www.purl.org/graphemon#gottsteinLiteral
 graphemon:gottsteinLiteral rdf:type rdfs:Datatype .
 
 
-###  http://www.purl.org/graphemon/paleocodeLiteral
+###  http://www.purl.org/graphemon#paleocodeLiteral
 graphemon:paleocodeLiteral rdf:type rdfs:Datatype .
 
 
-###  http://www.purl.org/graphemon/svgLiteral
+###  http://www.purl.org/graphemon#svgLiteral
 graphemon:svgLiteral rdf:type rdfs:Datatype .
 
 
-###  http://www.purl.org/graphemon/unicodeTransliterationLiteral
+###  http://www.purl.org/graphemon#unicodeTransliterationLiteral
 graphemon:unicodeTransliterationLiteral rdf:type rdfs:Datatype .
 
 
@@ -155,44 +155,44 @@ cunei:prevWord rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf owl:topObjectProperty .
 
 
-###  http://www.purl.org/graphemon/above
+###  http://www.purl.org/graphemon#above
 graphemon:above rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf graphemon:directionProperty .
 
 
-###  http://www.purl.org/graphemon/below
+###  http://www.purl.org/graphemon#below
 graphemon:below rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf graphemon:directionProperty .
 
 
-###  http://www.purl.org/graphemon/contains
+###  http://www.purl.org/graphemon#contains
 graphemon:contains rdf:type owl:ObjectProperty .
 
 
-###  http://www.purl.org/graphemon/directionProperty
+###  http://www.purl.org/graphemon#directionProperty
 graphemon:directionProperty rdf:type owl:ObjectProperty .
 
 
-###  http://www.purl.org/graphemon/hasGraphemeReading
+###  http://www.purl.org/graphemon#hasGraphemeReading
 graphemon:hasGraphemeReading rdf:type owl:ObjectProperty .
 
 
-###  http://www.purl.org/graphemon/isComposedOf
+###  http://www.purl.org/graphemon#isComposedOf
 graphemon:isComposedOf rdf:type owl:ObjectProperty ;
                        rdfs:label "is composed of" .
 
 
-###  http://www.purl.org/graphemon/leftOf
+###  http://www.purl.org/graphemon#leftOf
 graphemon:leftOf rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf graphemon:directionProperty .
 
 
-###  http://www.purl.org/graphemon/rightOf
+###  http://www.purl.org/graphemon#rightOf
 graphemon:rightOf rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf graphemon:directionProperty .
 
 
-###  http://www.purl.org/graphemon/variant
+###  http://www.purl.org/graphemon#variant
 graphemon:variant rdf:type owl:ObjectProperty .
 
 
@@ -288,74 +288,74 @@ cunei:wordIndex rdf:type owl:DatatypeProperty ;
                 rdfs:label "word index" .
 
 
-###  http://www.purl.org/graphemon/abzl
+###  http://www.purl.org/graphemon#abzl
 graphemon:abzl rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf graphemon:hasCuneiformIdentifier .
 
 
-###  http://www.purl.org/graphemon/altSignName
+###  http://www.purl.org/graphemon#altSignName
 graphemon:altSignName rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf graphemon:signName .
 
 
-###  http://www.purl.org/graphemon/hasCuneiformGraphemeDescription
+###  http://www.purl.org/graphemon#hasCuneiformGraphemeDescription
 graphemon:hasCuneiformGraphemeDescription rdf:type owl:DatatypeProperty ;
                                           rdfs:subPropertyOf graphemon:hasGraphemeDescription .
 
 
-###  http://www.purl.org/graphemon/hasCuneiformIdentifier
+###  http://www.purl.org/graphemon#hasCuneiformIdentifier
 graphemon:hasCuneiformIdentifier rdf:type owl:DatatypeProperty ;
                                  rdfs:subPropertyOf graphemon:hasIdentifier .
 
 
-###  http://www.purl.org/graphemon/hasGottsteinCode
+###  http://www.purl.org/graphemon#hasGottsteinCode
 graphemon:hasGottsteinCode rdf:type owl:DatatypeProperty ;
                            rdfs:subPropertyOf graphemon:hasCuneiformGraphemeDescription .
 
 
-###  http://www.purl.org/graphemon/hasGraphemeDescription
+###  http://www.purl.org/graphemon#hasGraphemeDescription
 graphemon:hasGraphemeDescription rdf:type owl:DatatypeProperty .
 
 
-###  http://www.purl.org/graphemon/hasIdentifier
+###  http://www.purl.org/graphemon#hasIdentifier
 graphemon:hasIdentifier rdf:type owl:DatatypeProperty .
 
 
-###  http://www.purl.org/graphemon/hasPaleoCode
+###  http://www.purl.org/graphemon#hasPaleoCode
 graphemon:hasPaleoCode rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf graphemon:hasCuneiformGraphemeDescription .
 
 
-###  http://www.purl.org/graphemon/hasUnicodeCodePoint
+###  http://www.purl.org/graphemon#hasUnicodeCodePoint
 graphemon:hasUnicodeCodePoint rdf:type owl:DatatypeProperty ;
                               rdfs:subPropertyOf graphemon:hasIdentifier .
 
 
-###  http://www.purl.org/graphemon/hasUnicodeRepresentation
+###  http://www.purl.org/graphemon#hasUnicodeRepresentation
 graphemon:hasUnicodeRepresentation rdf:type owl:DatatypeProperty ;
                                    rdfs:subPropertyOf graphemon:hasIdentifier .
 
 
-###  http://www.purl.org/graphemon/hethzl
+###  http://www.purl.org/graphemon#hethzl
 graphemon:hethzl rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf graphemon:hasCuneiformIdentifier .
 
 
-###  http://www.purl.org/graphemon/meszl
+###  http://www.purl.org/graphemon#meszl
 graphemon:meszl rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf graphemon:hasCuneiformIdentifier .
 
 
-###  http://www.purl.org/graphemon/readingValue
+###  http://www.purl.org/graphemon#readingValue
 graphemon:readingValue rdf:type owl:DatatypeProperty .
 
 
-###  http://www.purl.org/graphemon/signName
+###  http://www.purl.org/graphemon#signName
 graphemon:signName rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf graphemon:hasCuneiformIdentifier .
 
 
-###  http://www.purl.org/graphemon/slha
+###  http://www.purl.org/graphemon#slha
 graphemon:slha rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf graphemon:hasCuneiformIdentifier .
 
@@ -567,25 +567,25 @@ cunei:Representation rdf:type owl:Class .
                                             rdfs:label "3d rendering" .
 
 
-###  http://www.purl.org/graphemon/CuneiformWedge
+###  http://www.purl.org/graphemon#CuneiformWedge
 graphemon:CuneiformWedge rdf:type owl:Class ;
                          rdfs:subClassOf graphemon:Stroketyped ;
                          rdfs:label "cuneiform wedge" .
 
 
-###  http://www.purl.org/graphemon/GraphemeAtomicPart
+###  http://www.purl.org/graphemon#GraphemeAtomicPart
 graphemon:GraphemeAtomicPart rdf:type owl:Class ;
                              rdfs:subClassOf graphemon:GraphemePart ;
                              rdfs:label "grapheme atomic part" .
 
 
-###  http://www.purl.org/graphemon/GraphemeAtomicPartCollection
+###  http://www.purl.org/graphemon#GraphemeAtomicPartCollection
 graphemon:GraphemeAtomicPartCollection rdf:type owl:Class ;
                                        rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Collection> ;
                                        rdfs:label "grapheme atomic part collection" .
 
 
-###  http://www.purl.org/graphemon/GraphemeCollection
+###  http://www.purl.org/graphemon#GraphemeCollection
 graphemon:GraphemeCollection rdf:type owl:Class ;
                              rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Collection> ;
                              rdfs:label "grapheme collection" .
@@ -595,35 +595,35 @@ graphemon:GraphemeReadingCollection rdf:type owl:Class ;
                              rdfs:label "grapheme reading collection" .
 
 
-###  http://www.purl.org/graphemon/GraphemeComposition
+###  http://www.purl.org/graphemon#GraphemeComposition
 graphemon:GraphemeComposition rdf:type owl:Class ;
                               rdfs:label "grapheme composition" .
 
 
-###  http://www.purl.org/graphemon/GraphemePart
+###  http://www.purl.org/graphemon#GraphemePart
 graphemon:GraphemePart rdf:type owl:Class ;
                        rdfs:label "grapheme part" .
 
 
-###  http://www.purl.org/graphemon/GraphemeReading
+###  http://www.purl.org/graphemon#GraphemeReading
 graphemon:GraphemeReading rdf:type owl:Class ;
                           rdfs:subClassOf cidoc:TX5_Reading ;
                           rdfs:label "grapheme reading" .
 
 
-###  http://www.purl.org/graphemon/GraphemeVariant
+###  http://www.purl.org/graphemon#GraphemeVariant
 graphemon:GraphemeVariant rdf:type owl:Class ;
                           rdfs:subClassOf cidoc:TX8_Grapheme ;
                           rdfs:label "grapheme variant" .
 
 
-###  http://www.purl.org/graphemon/GraphemeVariantCollection
+###  http://www.purl.org/graphemon#GraphemeVariantCollection
 graphemon:GraphemeVariantCollection rdf:type owl:Class ;
                                     rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Collection> ;
                                     rdfs:label "grapheme variant collection" .
 
 
-###  http://www.purl.org/graphemon/Stroketyped
+###  http://www.purl.org/graphemon#Stroketyped
 graphemon:Stroketyped rdf:type owl:Class ;
                       rdfs:subClassOf graphemon:GraphemeAtomicPart ;
                       rdfs:label "stroke-typed" .
@@ -1369,10 +1369,10 @@ oa:identifying rdf:type owl:NamedIndividual .
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse> rdf:type owl:NamedIndividual ,
                                                                                     cunei:ObverseSide ;
                                                                            cunei:isRepresentedBy <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113344:577529/full/full/0/default.jpg> ;
-																		   <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1> ;
-																		   <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2> ;
-																		   <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3> ;
-																		   <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4> ;
+																		   <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1> ;
+																		   <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2> ;
+																		   <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3> ;
+																		   <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4> ;
                                                                            rdfs:label "HS 1174 obverse side" .
 
 
@@ -1381,12 +1381,12 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                           cunei:Line ;
                                                                                  cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/line/line_1_HS_1174_03_front.jpg> ;
                                                                                  cunei:nextLine <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char1_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char2_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char3_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char4_glyph> ; 
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char5_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char6_glyph> ; 																				 
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char1_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char2_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char3_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char4_glyph> ; 
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char5_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char6_glyph> ; 																				 
                                                                                  cunei:lineNumber 1 ;
                                                                                  rdfs:label "HS 1174 obverse side line 1" .
 
@@ -1485,14 +1485,14 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                  cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/line/line_2_HS_1174_03_front.jpg> ;
                                                                                  cunei:nextLine <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3> ;
                                                                                  cunei:prevLine <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char1_glyph> ; 
-                                                                                 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char2_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char3_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char4_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char5_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char6_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char7_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char8_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char1_glyph> ; 
+                                                                                 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char2_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char3_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char4_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char5_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char6_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char7_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char8_glyph> ;
 																				 rdfs:label "HS 1174 observe side line 2" .
 
 
@@ -1570,10 +1570,10 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                  cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/line/line_3_HS_1174_03_front.jpg> ;
                                                                                  cunei:nextLine <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4> ;
                                                                                  cunei:prevLine <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3_char1_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3_char2_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3_char3_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3_char4_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3_char1_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3_char2_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3_char3_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3_char4_glyph> ;
                                                                                  cunei:lineNumber 3 ;
                                                                                  rdfs:label "HS 1174 obverse side line 3" .
 
@@ -1617,11 +1617,11 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                           cunei:Line ;
                                                                                  cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/line/line_4_HS_1174_03_front.jpg> ;
                                                                                  cunei:prevLine <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line3> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4_char1_glyph> ;
-                                                                                 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4_char2_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4_char3_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4_char4_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4_char5_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4_char1_glyph> ;
+                                                                                 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4_char2_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4_char3_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4_char4_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line4_char5_glyph> ;
 																				 cunei:lineNumber 4 ;
                                                                                  rdfs:label "HS 1174 obverse side line 4" .
 
@@ -1686,11 +1686,11 @@ oa:identifying rdf:type owl:NamedIndividual .
 <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse> rdf:type owl:NamedIndividual ,
                                                                                     cunei:ReverseSide ;
                                                                            cunei:isRepresentedBy <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113347:577532/full/full/0/default.jpg> ;
-																		   <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line1> ;
-																		   <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2> ;
-																		   <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line3> ;
-																		   <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line4> ;
-																		   <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5> ;
+																		   <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line1> ;
+																		   <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2> ;
+																		   <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line3> ;
+																		   <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line4> ;
+																		   <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5> ;
                                                                            rdfs:label "HS 1174 reverse side" .
 
 
@@ -1699,10 +1699,10 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                           cunei:Line ;
                                                                                  cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/line/line_2_HS_1174_06_back.jpg> ;
                                                                                  cunei:nextLine <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line1_char1_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line1_char2_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line1_char3_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line1_char4_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line1_char1_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line1_char2_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line1_char3_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line1_char4_glyph> ;
                                                                                  cunei:lineNumber 1 ;
                                                                                  rdfs:label "HS 1174 reverse side line 1" .
 
@@ -1747,11 +1747,11 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                  cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/line/line_2_HS_1174_06_back.jpg> ;
                                                                                  cunei:nextLine <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line3> ;
                                                                                  cunei:prevLine <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line1> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char1_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char2_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char3_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char4_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char5_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char1_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char2_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char3_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char4_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2_char5_glyph> ;
                                                                                  cunei:lineNumber 2 ;
                                                                                  rdfs:label "HS 1174 reverse side line 2" .
 
@@ -1802,10 +1802,10 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                  cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/line/line_3_HS_1174_06_back.jpg> ;
                                                                                  cunei:nextLine <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line4> ;
                                                                                  cunei:prevLine <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line2> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line3_char1_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line3_char2_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line3_char3_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line3_char4_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line3_char1_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line3_char2_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line3_char3_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line3_char4_glyph> ;
                                                                                  cunei:lineNumber 3 ;
                                                                                  rdfs:label "HS 1174 reverse side line 3" .
 
@@ -1850,9 +1850,9 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                  cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/line/line_4_HS_1174_06_back.jpg> ;
                                                                                  cunei:nextLine <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5> ;
                                                                                  cunei:prevLine <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line3> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line4_char1_glyph> ;
-                                                                                 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line4_char2_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line4_char3_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line4_char1_glyph> ;
+                                                                                 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line4_char2_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line4_char3_glyph> ;
 																				 cunei:lineNumber 4 ;
                                                                                  rdfs:label "HS 1174 reverse side line 4" .
 
@@ -1887,11 +1887,11 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                           cunei:Line ;
                                                                                  cunei:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/line/line_5_HS_1174_06_back.jpg> ;
                                                                                  cunei:prevLine <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line4> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char1_glyph> ;
-                                                                                 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char2_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char3_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char4_glyph> ;
-																				 <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char5_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char1_glyph> ;
+                                                                                 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char2_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char3_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char4_glyph> ;
+																				 <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_reverse_line5_char5_glyph> ;
 																				 cunei:lineNumber 5 ;
                                                                                  rdfs:label "HS 1174 reverse side line 5" .
 
@@ -2117,7 +2117,7 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         cunei:nextWord <https://situx.github.io/cuneiformontology/examples/dict/hs1174_transliteration1_obverse_line1_word2> ;
                                                                                                         cunei:lineNumber 1 ;
                                                                                                         cunei:wordIndex 1 ;
-                                                                                                        <http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char1> ;
+                                                                                                        <http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char1> ;
 																										rdfs:label "HS 1174 transliteration 1 obverse line 1 word 1" ;
                                                                                                         <http://www.w3.org/2004/02/skos/core#definition> "3(u)" .
 
@@ -2129,7 +2129,7 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         cunei:prevWord <https://situx.github.io/cuneiformontology/examples/dict/hs1174_transliteration1_obverse_line1_word1> ;
                                                                                                         cunei:lineNumber 1 ;
                                                                                                         cunei:wordIndex 2 ;
-																										<http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char2> ;
+																										<http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char2> ;
                                                                                                         rdfs:label "HS 1174 transliteration 1 obverse line 1 word 2" ;
                                                                                                         <http://www.w3.org/2004/02/skos/core#definition> "3(disz)" .
 
@@ -2139,7 +2139,7 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                                  cunei:TransliterationWordOccurrence ;
                                                                                                         cunei:nextWord <https://situx.github.io/cuneiformontology/examples/dict/hs1174_transliteration1_obverse_line1_word4> ;
                                                                                                         cunei:prevWord <https://situx.github.io/cuneiformontology/examples/dict/hs1174_transliteration1_obverse_line1_word2> ;
-																										<http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char3> ;
+																										<http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char3> ;
                                                                                                         cunei:lineNumber 1 ;
                                                                                                         cunei:wordIndex 3 ;
                                                                                                         rdfs:label "HS 1174 transliteration 1 obverse line 1 word 3" ;
@@ -2151,7 +2151,7 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                                  cunei:TransliterationWordOccurrence ;
                                                                                                         cunei:lineNumber 1 ;
                                                                                                         cunei:wordIndex 4 ;
-																										<http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char4> ;
+																										<http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char4> ;
                                                                                                         rdfs:label "HS 1174 transliteration 1 obverse line 1 word 4" ;
                                                                                                         <http://www.w3.org/2004/02/skos/core#definition> "szu" .
 
@@ -2161,8 +2161,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                                  cunei:TransliterationWordOccurrence ;
                                                                                                         cunei:lineNumber 1 ;
                                                                                                         cunei:wordIndex 5 ;
-																										<http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char5> ;
-																										<http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char6> ;
+																										<http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char5> ;
+																										<http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line1_char6> ;
                                                                                                         rdfs:label "HS 1174 transliteration 1 obverse line 1 word 5" ;
                                                                                                         <http://www.w3.org/2004/02/skos/core#definition> "dim2-ma" .
 
@@ -2277,10 +2277,10 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         cunei:nextWord <https://situx.github.io/cuneiformontology/examples/dict/hs1174_transliteration1_obverse_line2_word2> ;
                                                                                                         cunei:lineNumber 2 ;
                                                                                                         cunei:wordIndex 1 ;
-																										<http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char1> ;
-																										<http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char2> ;
-																										<http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char3> ;
-																										<http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char4> ;
+																										<http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char1> ;
+																										<http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char2> ;
+																										<http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char3> ;
+																										<http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char4> ;
                                                                                                         rdfs:label "HS 1174 transliteration 1 obverse line 2 word 1" ;
                                                                                                         <http://www.w3.org/2004/02/skos/core#definition> "da-ak-ru-um" .
 
@@ -2290,8 +2290,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                                  cunei:TransliterationWordOccurrence ;
                                                                                                         cunei:nextWord <https://situx.github.io/cuneiformontology/examples/dict/hs1174_transliteration1_obverse_line2_word3> ;
                                                                                                         cunei:prevWord <https://situx.github.io/cuneiformontology/examples/dict/hs1174_transliteration1_obverse_line2_word1> ;
-																										<http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char5> ;
-																										<http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char6> ;
+																										<http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char5> ;
+																										<http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char6> ;
                                                                                                         cunei:lineNumber 2 ;
                                                                                                         cunei:wordIndex 2 ;
                                                                                                         rdfs:label "HS 1174 transliteration 1 obverse line 2 word 2" ;
@@ -2304,8 +2304,8 @@ oa:identifying rdf:type owl:NamedIndividual .
                                                                                                         cunei:prevWord <https://situx.github.io/cuneiformontology/examples/dict/hs1174_transliteration1_obverse_line2_word2> ;
                                                                                                         cunei:lineNumber 2 ;
                                                                                                         cunei:wordIndex 3 ;
-																										<http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char7> ;
-																										<http://www.purl.org/graphemon/contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char8> ;
+																										<http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char7> ;
+																										<http://www.purl.org/graphemon#contains> <https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_line2_char8> ;
                                                                                                         rdfs:label "HS 1174 transliteration 1 obverse line 2 word 3" ;
                                                                                                         <http://www.w3.org/2004/02/skos/core#definition> "ib2-dab5" .
 
