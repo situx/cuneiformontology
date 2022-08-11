@@ -1159,7 +1159,7 @@ class OntDocGeneration:
                 if str(tup[0]) in labelproperties:
                     label = str(tup[1])
                     break
-            if baseurl in str(object):
+            if baseurl in str(object) or isinstance(object,BNode):
                 rellink = str(object).replace(baseurl, "")
                 for i in range(0, checkdepth):
                     rellink = "../" + rellink
