@@ -1233,12 +1233,12 @@ class OntDocGeneration:
         return {"geojsonrep":geojsonrep,"label":label}
 
 
-    def createHTMLTableValueEntry(self,subject,pred,object,ttlf,tablecontents,graph,baseurl,checkdepth,geojsonrep,foundimages,found3dimages):
+    def createHTMLTableValueEntry(self,subject,pred,object,ttlf,tablecontents,graph,baseurl,checkdepth,geojsonrep):
         if str(object).startswith("http") or isinstance(object,BNode):
             if ttlf != None:
                 ttlf.write("<" + str(subject) + "> <" + str(pred) + "> <" + str(object) + "> .\n")
             label = str(self.shortenURI(str(object)))
-            mydata=self.searchObjectConnectionsForAggregateData(graph,object,pred,geojsonrep,foundimages,found3dimages,label)
+            mydata=self.searchObjectConnectionsForAggregateData(graph,object,pred,geojsonrep,[],[],label)
             label=mydata["label"]
             geojsonrep=mydata["geojsonrep"]
             if baseurl in str(object) or isinstance(object,BNode):
@@ -1385,7 +1385,7 @@ class OntDocGeneration:
                                     found3dimages.add(str(item))
                         tablecontents+="<li>"
                         res=self.createHTMLTableValueEntry(subject, tup, item, ttlf, tablecontents, graph,
-                                              baseurl, checkdepth,geojsonrep,foundimages,found3dimages)
+                                              baseurl, checkdepth,geojsonrep)
                         tablecontents = res["html"]
                         geojsonrep = res["geojson"]
                         tablecontents += "</li>"
@@ -1401,7 +1401,7 @@ class OntDocGeneration:
                             if str(predobjmap[tup]).endswith(ext):
                                 found3dimages.add(str(predobjmap[tup]))
                     res=self.createHTMLTableValueEntry(subject, tup, predobjmap[tup][0], ttlf, tablecontents, graph,
-                                              baseurl, checkdepth,geojsonrep,foundimages,found3dimages)
+                                              baseurl, checkdepth,geojsonrep)
                     tablecontents=res["html"]
                     geojsonrep=res["geojson"]
                     tablecontents+="</td>"
@@ -1438,7 +1438,7 @@ class OntDocGeneration:
                             print("Postprocessing: " + str(item)+" - "+str(tup)+" - "+str(subject))
                             postprocessing.add((item,URIRef(tup),subject))
                         res = self.createHTMLTableValueEntry(subject, tup, item, None, tablecontents, graph,
-                                                             baseurl, checkdepth, geojsonrep,foundimages,found3dimages)
+                                                             baseurl, checkdepth, geojsonrep)
                         tablecontents = res["html"]
                         tablecontents += "</li>"
                     tablecontents += "</ul></td>"
@@ -1448,7 +1448,7 @@ class OntDocGeneration:
                         print("Postprocessing: " + str(subpredsmap[tup][0]) + " - " + str(tup) + " - " + str(subject))
                         postprocessing.add((subpredsmap[tup][0], URIRef(tup), subject))
                     res = self.createHTMLTableValueEntry(subject, tup, subpredsmap[tup][0], None, tablecontents, graph,
-                                                         baseurl, checkdepth, geojsonrep,foundimages,found3dimages)
+                                                         baseurl, checkdepth, geojsonrep)
                     tablecontents = res["html"]
                     tablecontents += "</td>"
             else:
