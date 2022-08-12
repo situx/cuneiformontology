@@ -1378,7 +1378,6 @@ class OntDocGeneration:
                         if "http" in str(item):
                             for ext in imageextensions:
                                 if ext in str(item):
-                                    print("Checking.... "+ext+" "+ str(item))
                                     foundimages.add(str(item))
                             for ext in meshextensions:
                                 if ext in str(item):
@@ -1395,11 +1394,10 @@ class OntDocGeneration:
                     if "http" in str(predobjmap[tup]):
                         for ext in imageextensions:
                             if ext in str(predobjmap[tup]):
-                                print("Checking.... "+ext+" "+ str(predobjmap[tup]))
-                                foundimages.add(str(predobjmap[tup]))
+                                foundimages.add(str(predobjmap[tup][0]))
                         for ext in meshextensions:
                             if ext in str(predobjmap[tup]):
-                                found3dimages.add(str(predobjmap[tup]))
+                                found3dimages.add(str(predobjmap[tup][0]))
                     res=self.createHTMLTableValueEntry(subject, tup, predobjmap[tup][0], ttlf, tablecontents, graph,
                                               baseurl, checkdepth,geojsonrep)
                     tablecontents=res["html"]
@@ -1409,7 +1407,6 @@ class OntDocGeneration:
                 tablecontents += "<td class=\"wrapword\"></td>"
             tablecontents += "</tr>"
             isodd = not isodd
-        print("FOUND IMAGES for "+str(subject)+": "+str(foundimages)+" - "+str(found3dimages))
         subpredsmap={}
         for tup in sorted(subpreds,key=lambda tup: tup[0]):
             if str(tup[1]) not in subpredsmap:
