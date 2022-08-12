@@ -1409,6 +1409,7 @@ class OntDocGeneration:
                 tablecontents += "<td class=\"wrapword\"></td>"
             tablecontents += "</tr>"
             isodd = not isodd
+        print("FOUND IMAGES for "+str(subject)+": "+str(foundimages)+" - "+str(found3dimages))
         subpredsmap={}
         for tup in sorted(subpreds,key=lambda tup: tup[0]):
             if str(tup[1]) not in subpredsmap:
