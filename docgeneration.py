@@ -1378,10 +1378,10 @@ class OntDocGeneration:
                         if str(item).startswith("http"):
                             print("Finding images..... "+str(item))
                             for ext in imageextensions:
-                                if str(item).endswith(ext):
+                                if ext in str(item):
                                     foundimages.add(str(item))
                             for ext in meshextensions:
-                                if str(item).endswith(ext):
+                                if ext in str(item):
                                     found3dimages.add(str(item))
                         tablecontents+="<li>"
                         res=self.createHTMLTableValueEntry(subject, tup, item, ttlf, tablecontents, graph,
@@ -1395,10 +1395,10 @@ class OntDocGeneration:
                     if str(predobjmap[tup]).startswith("http"):
                         print("Finding images..... "+str(predobjmap[tup]))
                         for ext in imageextensions:
-                            if str(predobjmap[tup]).endswith(ext):
+                            if ext in str(predobjmap[tup]):
                                 foundimages.add(str(predobjmap[tup]))
                         for ext in meshextensions:
-                            if str(predobjmap[tup]).endswith(ext):
+                            if ext in str(predobjmap[tup]):
                                 found3dimages.add(str(predobjmap[tup]))
                     res=self.createHTMLTableValueEntry(subject, tup, predobjmap[tup][0], ttlf, tablecontents, graph,
                                               baseurl, checkdepth,geojsonrep)
