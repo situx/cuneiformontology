@@ -20,6 +20,11 @@ labelproperties={
     "http://www.w3.org/2000/01/rdf-schema#label": "DatatypeProperty"
 }
 
+collectionrelationproperties={
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value":"DatatypeProperty",
+}
+
+
 valueproperties={
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#value":"DatatypeProperty",
     "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue":"DatatypeProperty"
@@ -1203,9 +1208,9 @@ class OntDocGeneration:
     def searchObjectConnectionsForAggregateData(self,graph,object,pred,geojsonrep,foundimages,found3dimages,label):
         geoprop=False
         incollection=False
-        if pred in SPARQLUtils.geopointerproperties:
+        if pred in geopointerproperties:
             geoprop=True
-        if pred in SPARQLUtils.collectionrelationproperties:
+        if pred in collectionrelationproperties:
             incollection=True
         foundval=None
         foundunit=None
