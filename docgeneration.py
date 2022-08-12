@@ -1030,7 +1030,7 @@ class OntDocGeneration:
                 subtorencounter += 1
                 if subtorencounter%500==0:
                     subtorenderlen=len(subjectstorender)+len(postprocessing)
-            print(str(subtorencounter) + "/" + str(subtorenderlen) + " " + str(outpath + path))
+                print(str(subtorencounter) + "/" + str(subtorenderlen) + " " + str(outpath + path))
             except Exception as e:
                 print(e)
             #    QgsMessageLog.logMessage("Exception occured " + str(e), "OntdocGeneration", Qgis.Info)
