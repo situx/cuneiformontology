@@ -697,7 +697,8 @@ image3dtemplate="""<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cnr-
 <img id="light"    title="Enable Light Control"  src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP@4.3/minimal/skins/dark/lightcontrol.png"    /><br/>
 <img id="full_on"  title="Exit Full Screen"      src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP@4.3/minimal/skins/dark/full_on.png"         style="position:absolute; visibility:hidden;"/>
 <img id="full"     title="Full Screen"           src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP@4.3/minimal/skins/dark/full.png"            />
-</div><canvas id="draw-canvas" style="background-color:white"></canvas></div>"""
+</div><canvas id="draw-canvas" style="background-color:white"></canvas></div><script>$(document).ready(function(){
+start3dhop("{{meshurl}}","{{meshformat}}")});</script>"""
 
 nongeoexports="""
 <option value="csv">Comma Separated Values (CSV)</option>
@@ -1241,10 +1242,7 @@ class OntDocGeneration:
             label=mydata["label"]
             geojsonrep=mydata["geojsonrep"]
             if baseurl in str(object) or isinstance(object,BNode):
-                rellink = str(object).replace(baseurl, "")
-                for i in range(0, checkdepth):
-                    rellink = "../" + rellink
-                rellink += "/index.html"
+	            rellink = self.generateRelativeLinkFromGivenDepth(baseurl,checkdepth,str(object),True)
                 tablecontents += "<span><a property=\"" + str(pred) + "\" resource=\"" + str(object) + "\" href=\"" + rellink + "\">" \
                     + label + " <span style=\"color: #666;\">(" + self.namespaceshort + ":" + str(self.shortenURI(str(object))) + ")</span></a></span>"
             else:
@@ -1286,10 +1284,7 @@ class OntDocGeneration:
         if reverse:
             tablecontents+="Is "
         if baseurl in str(tup):
-            rellink = str(tup).replace(baseurl, "")
-            for i in range(0, checkdepth):
-                rellink = "../" + rellink
-            rellink += "/index.html"
+            rellink = self.generateRelativeLinkFromGivenDepth(baseurl, checkdepth,str(tup),True)
             tablecontents += "<span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\"" + rellink + "\">" + label + "</a></span>"
         else:
             res = self.replaceNameSpacesInLabel(tup)
