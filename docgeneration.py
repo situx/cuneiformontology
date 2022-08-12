@@ -969,7 +969,7 @@ class OntDocGeneration:
             if prefixnamespace in sub or isinstance(sub,BNode):
                 subjectstorender.add(sub)
                 for tup in self.graph.predicate_objects(sub):
-                    if str(tup[0]) in labelproperties:
+                    if str(tup[0]) in SPARQLUtils.labelproperties:
                         labeltouri[str(tup[1])] = str(sub)
                         uritolabel[str(sub)] = {"label":str(tup[1])}
                         break
@@ -1000,61 +1000,64 @@ class OntDocGeneration:
             f.write(stylesheet)
             f.close()
         with open(outpath + "startscripts.js", 'w', encoding='utf-8') as f:
-            f.write(startscripts.replace("{{baseurl}}",prefixnamespace))
+            f.write(startscripts)
             f.close()
         pathmap = {}
         paths = {}
         postprocessing=Graph()
         subtorenderlen = len(subjectstorender)
         subtorencounter = 0
-        #print(uritotreeitem)
         for subj in subjectstorender:
-            path = subj.replace(prefixnamespace, "").replace("?","").replace("*","")
-            try:
-                paths=self.processSubjectPath(outpath,paths,path)
-                if os.path.exists(outpath + path+"/index.ttl"):
-                    try:
-                        self.graph.parse(outpath + path+"/index.ttl")
-                    except Exception as e:
-                        print(e)
-                self.createHTML(outpath + path, self.graph.predicate_objects(subj), subj, prefixnamespace, self.graph.subject_predicates(subj),
-                           self.graph,str(corpusid) + "_search.js", str(corpusid) + "_classtree.js",uritotreeitem,curlicense)
-                subtorencounter += 1
-                if subtorencounter%500==0:
-                    subtorenderlen=len(subjectstorender)+len(postprocessing)
-                print(str(subtorencounter) + "/" + str(subtorenderlen) + " " + str(outpath + path))
-            except Exception as e:
-                print(e)
-                print("Exception occured " + str(e))
-        for subj in subjectstorender:
-            path = subj.replace(prefixnamespace, "").replace("?","").replace("*","")
-            try:
-                self.processSubjectPath(outpath,paths,path)
-                if os.path.exists(outpath + path+"/index.ttl"):
-                    try:
-                        self.graph.parse(outpath + path+"/index.ttl")
-                    except Exception as e:
-                        print(e)
-                self.createHTML(outpath + path, self.graph.predicate_objects(subj), subj, prefixnamespace, self.graph.subject_predicates(subj),
-                           self.graph,str(corpusid) + "_search.js", str(corpusid) + "_classtree.js",uritotreeitem,curlicense)
-                subtorencounter += 1
-                if subtorencounter%500==0:
-                    subtorenderlen=len(subjectstorender)+len(postprocessing)
-                print(str(subtorencounter) + "/" + str(subtorenderlen) + " " + str(outpath + path))
-            except Exception as e:
-                print(e)
-                print("Exception occured " + str(e))
-        # print(paths)
+            path = subj.replace(prefixnamespace, "")
+            paths=self.processSubjectPath(outpath,paths,path)
+            if os.path.exists(outpath + path+"/index.ttl"):
+                try:
+                    self.graph.parse(outpath + path+"/index.ttl")
+                except Exception as e:
+                    print(e)
+            self.createHTML(outpath + path, self.graph.predicate_objects(subj), subj, prefixnamespace, self.graph.subject_predicates(subj),
+                       self.graph,str(corpusid) + "_search.js", str(corpusid) + "_classtree.js",uritotreeitem,curlicense,subjectstorender,postprocessing)
+            subtorencounter += 1
+            if subtorencounter%500==0:
+                subtorenderlen=len(subjectstorender)+len(postprocessing)
+                self.updateProgressBar(subtorencounter,subtorenderlen)
+            print(str(subtorencounter) + "/" + str(subtorenderlen) + " " + str(outpath + path))
+            #except Exception as e:
+            #    print(e)
+            #    QgsMessageLog.logMessage("Exception occured " + str(e), "OntdocGeneration", Qgis.Info)
+        print("Postprocessing " + str(postprocessing.subjects()))
+        for subj in postprocessing.subjects():
+            path = str(subj).replace(prefixnamespace, "")
+            paths=self.processSubjectPath(outpath,paths,path)
+            if os.path.exists(outpath + path+"/index.ttl"):
+                try:
+                    self.graph.parse(outpath + path+"/index.ttl")
+                except Exception as e:
+                    print(e)
+            self.createHTML(outpath + path, self.graph.predicate_objects(subj), subj, prefixnamespace, self.graph.subject_predicates(subj),
+                       self.graph,str(corpusid) + "_search.js", str(corpusid) + "_classtree.js",uritotreeitem,curlicense,subjectstorender,postprocessing)
+            subtorencounter += 1
+            if subtorencounter%500==0:
+                subtorenderlen=len(subjectstorender)+len(postprocessing)
+                self.updateProgressBar(subtorencounter,subtorenderlen)
+            print(str(subtorencounter) + "/" + str(subtorenderlen) + " " + str(outpath + path))
         self.assignGeoClassesToTree(tree)
         with open(outpath + corpusid + "_classtree.js", 'w', encoding='utf-8') as f:
             f.write("var tree=" + json.dumps(tree, indent=2))
             f.close()
-        #print("BaseURL " + str(uritotreeitem))
         for path in paths:
-            indexhtml = htmltemplate.replace("{{toptitle}}","Index page for " + str(prefixnamespace)).replace("{{title}}","Index page for " + str(prefixnamespace)).replace(
-                    "{{startscriptpath}}", "startscripts.js").replace("{{stylepath}}", "style.css").replace("{{classtreefolderpath}}", outpath + corpusid + "_classtree.js").replace(
-                    "{{baseurl}}", prefixnamespace).replace(
-                    "{{scriptfolderpath}}", outpath + corpusid + '_search.js').replace("{{indexpage}}","true")
+            checkdepth = self.checkDepthFromPath(path, outpath, path)-1
+            sfilelink=self.generateRelativeLinkFromGivenDepth(prefixnamespace,checkdepth,corpusid + '_search.js',False)
+            classtreelink = self.generateRelativeLinkFromGivenDepth(prefixnamespace,checkdepth,corpusid + "_classtree.js",False)
+            stylelink =self.generateRelativeLinkFromGivenDepth(prefixnamespace,checkdepth,"style.css",False)
+            scriptlink = self.generateRelativeLinkFromGivenDepth(prefixnamespace, checkdepth, "startscripts.js", False)
+            nslink=prefixnamespace+str(self.getAccessFromBaseURL(str(outpath),str(path)))
+            indexhtml = htmltemplate.replace("{{baseurl}}", prefixnamespace).replace("{{toptitle}}","Index page for " + nslink).replace("{{title}}","Index page for " + nslink).replace("{{startscriptpath}}", scriptlink).replace("{{stylepath}}", stylelink)\
+                .replace("{{classtreefolderpath}}",classtreelink).replace("{{baseurlhtml}}", nslink).replace("{{scriptfolderpath}}", sfilelink)
+            if nslink==prefixnamespace:
+                indexhtml=indexhtml.replace("{{indexpage}}","true")
+            else:
+                indexhtml = indexhtml.replace("{{indexpage}}", "false")
             indexhtml+="<p>This page shows information about linked data resources in HTML. Choose the classtree navigation or search to browse the data</p>"
             indexhtml+="<table class=\"description\" style =\"height: 100%; overflow: auto\" border=1 id=indextable><thead><tr><th>Class</th><th>Number of instances</th><th>Instance Example</th></tr></thead><tbody>"
             for item in tree["core"]["data"]:
@@ -1063,7 +1066,8 @@ class OntDocGeneration:
                     indexhtml+="<td>"+str(item["instancecount"])+"</td>"
                     for item2 in tree["core"]["data"]:
                         if item2["parent"]==item["id"]:
-                            indexhtml+="<td><img src=\""+tree["types"][item2["type"]]["icon"]+"\" height=\"25\" width=\"25\" alt=\""+item2["type"]+"\"/><a href=\""+str(item2["id"]).replace(prefixnamespace,"")+"/index.html\">"+str(item2["text"])+"</a></td>"
+                            checkdepth = self.checkDepthFromPath(path, prefixnamespace, item2["id"])-1
+                            indexhtml+="<td><img src=\""+tree["types"][item2["type"]]["icon"]+"\" height=\"25\" width=\"25\" alt=\""+item2["type"]+"\"/><a href=\""+self.generateRelativeLinkFromGivenDepth(prefixnamespace,checkdepth,str(item2["id"]),True)+"\">"+str(item2["text"])+"</a></td>"
                             break
                     indexhtml+="</tr>"
             indexhtml += "</tbody></table><script>$('#indextable').DataTable();</script>"
@@ -1165,6 +1169,13 @@ class OntDocGeneration:
                 classlist[item]["item"]["type"] = "class"
 
 
+    def shortenURI(self,uri):
+        if uri!=None and "#" in uri:
+            return uri[uri.rfind('#')+1:]
+        if uri!=None and "/" in uri:
+            return uri[uri.rfind('/')+1:]
+        return uri
+
     def replaceNameSpacesInLabel(self,uri):
         for ns in self.prefixes["reversed"]:
             if ns in uri:
@@ -1172,12 +1183,15 @@ class OntDocGeneration:
                         "ns": self.prefixes["reversed"][ns]}
         return None
 
-    def shortenURI(self,uri):
-        if uri!=None and "#" in uri:
-            return uri[uri.rfind('#')+1:]
-        if uri!=None and "/" in uri:
-            return uri[uri.rfind('/')+1:]
-        return uri
+    def generateRelativeLinkFromGivenDepth(self,baseurl,checkdepth,item,withindex):
+        rellink = str(item).replace(baseurl, "")
+        for i in range(0, checkdepth):
+            rellink = "../" + rellink
+        if withindex:
+            rellink += "/index.html"
+        #QgsMessageLog.logMessage("Relative Link from Given Depth: " + rellink,"OntdocGeneration", Qgis.Info)
+        return rellink
+
 
     def createHTMLTableValueEntry(self,subject,pred,object,ttlf,tablecontents,graph,baseurl,checkdepth,geojsonrep):
         if str(object).startswith("http") or isinstance(object,BNode):
@@ -1256,6 +1270,18 @@ class OntDocGeneration:
             tablecontents+=" of"
         tablecontents += "</td>"
         return tablecontents
+
+    def checkDepthFromPath(self,savepath,baseurl,subject):
+        if savepath.endswith("/"):
+            checkdepth = subject.replace(baseurl, "").count("/")
+        else:
+            checkdepth = subject.replace(baseurl, "").count("/")
+        checkdepth+=1
+        print("Checkdepth: " + str(checkdepth))
+        return checkdepth
+
+    def getAccessFromBaseURL(self,baseurl,savepath):
+        return savepath.replace(baseurl, "")
 
     def createHTML(self,savepath, predobjs, subject, baseurl, subpreds, graph, searchfilename, classtreename,uritotreeitem,curlicense):
         tablecontents = ""
