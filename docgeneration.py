@@ -1375,7 +1375,7 @@ class OntDocGeneration:
                 if len(predobjmap[tup])>1:
                     tablecontents+="<td class=\"wrapword\"><ul>"
                     for item in predobjmap[tup]:
-                        if str(item).startswith("http"):
+                        if "http" in str(item):
                             for ext in imageextensions:
                                 if ext in str(item):
                                     print("Checking.... "+ext+" "+ str(item))
@@ -1392,7 +1392,7 @@ class OntDocGeneration:
                     tablecontents+="</ul></td>"
                 else:
                     tablecontents+="<td class=\"wrapword\">"
-                    if str(predobjmap[tup]).startswith("http"):
+                    if "http" in str(predobjmap[tup]):
                         for ext in imageextensions:
                             if ext in str(predobjmap[tup]):
                                 print("Checking.... "+ext+" "+ str(predobjmap[tup]))
