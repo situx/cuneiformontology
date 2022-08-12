@@ -30,8 +30,10 @@ jobs:
          mkdir docs/examples/
          mkdir docs/examples/hs1174/
          mkdir docs/examples/tch92/
+         mkdir docs/examples/o147/
          cp -r examples/HS1174/images/ docs/examples/hs1174/images/ 
          cp -r examples/TCH92/images/ docs/examples/tch92/images/ 
+         cp -r examples/O149/images/ docs/examples/o147/images/ 
          python3 docgeneration.py signlist/signlist.ttl docs/signlist/ http://purl.org/cuneiform/signlist/ cuneisignlist
          python3 docgeneration.py examples/HS1174/ttl/hs1174.ttl docs/examples/ https://situx.github.io/cuneiformontology/examples/ cuneiex
          python3 docgeneration.py examples/HT073195/ttl/ht073195.ttl docs/examples/ https://situx.github.io/cuneiformontology/examples/ cuneiex
