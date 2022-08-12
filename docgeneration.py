@@ -1283,24 +1283,14 @@ class OntDocGeneration:
     def getAccessFromBaseURL(self,baseurl,savepath):
         return savepath.replace(baseurl, "")
 
-    def createHTML(self,savepath, predobjs, subject, baseurl, subpreds, graph, searchfilename, classtreename,uritotreeitem,curlicense):
+    def createHTML(self,savepath, predobjs, subject, baseurl, subpreds, graph, searchfilename, classtreename,uritotreeitem,curlicense,subjectstorender,postprocessing):
         tablecontents = ""
         isodd = False
         geojsonrep=None
         foundimages=set()
         found3dimages=set()
         savepath = savepath.replace("\\", "/")
-        #print("BaseURL " + str(baseurl), "OntdocGeneration", Qgis.Info)
-        #print("SavePath " + str(savepath), "OntdocGeneration", Qgis.Info)
-        if savepath.endswith("/"):
-            savepath+="/"
-        if savepath.endswith("/"):
-            checkdepth = subject.replace(baseurl, "").count("/")
-        else:
-            checkdepth = subject.replace(baseurl, "").count("/")
-        #print("Checkdepth: " + str(checkdepth), "OntdocGeneration", Qgis.Info)
-        checkdepth+=1
-        #print("Checkdepth: " + str(checkdepth))
+        checkdepth=self.checkDepthFromPath(savepath, baseurl, subject)
         foundlabel = ""
         predobjmap={}
         isgeocollection=False
@@ -1311,7 +1301,7 @@ class OntDocGeneration:
             if parentclass not in uritotreeitem:
                 uritotreeitem[parentclass]={"id": parentclass, "parent": "#",
                                    "type": "class",
-                                   "text": str(parentclass)[str(parentclass).rfind('/') + 1:],"data":{}}
+                                   "text": self.shortenURI(str(parentclass)),"data":{}}
             uritotreeitem[parentclass]["instancecount"]=0
         ttlf = open(savepath + "/index.ttl", "w", encoding="utf-8")
         if parentclass!=None:
@@ -1353,14 +1343,14 @@ class OntDocGeneration:
                 if len(predobjmap[tup])>1:
                     tablecontents+="<td class=\"wrapword\"><ul>"
                     for item in predobjmap[tup]:
-                        tablecontents+="<li>"
-                        if "http" in str(item):
+                        if str(item).startswith("http"):
                             for ext in imageextensions:
-                                if ext in str(item):                             
-                                    foundimages.add(str(item))        
+                                if str(item).endswith(ext):
+                                    foundimages.add(str(item))
                             for ext in meshextensions:
-                                if ext in str(item):
-                                    found3dimages.add(str(item))                                    
+                                if str(item).endswith(ext):
+                                    found3dimages.add(str(item))
+                        tablecontents+="<li>"
                         res=self.createHTMLTableValueEntry(subject, tup, item, ttlf, tablecontents, graph,
                                               baseurl, checkdepth,geojsonrep)
                         tablecontents = res["html"]
@@ -1368,14 +1358,14 @@ class OntDocGeneration:
                         tablecontents += "</li>"
                     tablecontents+="</ul></td>"
                 else:
-                    if "http" in str(predobjmap[tup]):
-                        for ext in imageextensions:
-                            if ext in str(predobjmap[tup]):
-                                foundimages.add(str(predobjmap[tup][0]))
-                        for ext in meshextensions:
-                            if ext in str(predobjmap[tup]):
-                                found3dimages.add(str(predobjmap[tup][0]))
                     tablecontents+="<td class=\"wrapword\">"
+                    if str(predobjmap[tup]).startswith("http"):
+                        for ext in imageextensions:
+                            if str(predobjmap[tup]).endswith(ext):
+                                foundimages.add(str(predobjmap[tup]))
+                            for ext in meshextensions:
+                                if str(predobjmap[tup]).endswith(ext):
+                                    found3dimages.add(str(predobjmap[tup]))
                     res=self.createHTMLTableValueEntry(subject, tup, predobjmap[tup][0], ttlf, tablecontents, graph,
                                               baseurl, checkdepth,geojsonrep)
                     tablecontents=res["html"]
@@ -1410,6 +1400,9 @@ class OntDocGeneration:
                     tablecontents += "<td class=\"wrapword\"><ul>"
                     for item in subpredsmap[tup]:
                         tablecontents += "<li>"
+                        if item not in subjectstorender and baseurl in str(item):
+                            print("Postprocessing: " + str(item)+" - "+str(tup)+" - "+str(subject))
+                            postprocessing.add((item,URIRef(tup),subject))
                         res = self.createHTMLTableValueEntry(subject, tup, item, None, tablecontents, graph,
                                                              baseurl, checkdepth, geojsonrep)
                         tablecontents = res["html"]
@@ -1417,6 +1410,9 @@ class OntDocGeneration:
                     tablecontents += "</ul></td>"
                 else:
                     tablecontents += "<td class=\"wrapword\">"
+                    if subpredsmap[tup][0] not in subjectstorender and baseurl in str(subpredsmap[tup][0]):
+                        print("Postprocessing: " + str(subpredsmap[tup][0]) + " - " + str(tup) + " - " + str(subject))
+                        postprocessing.add((subpredsmap[tup][0], URIRef(tup), subject))
                     res = self.createHTMLTableValueEntry(subject, tup, subpredsmap[tup][0], None, tablecontents, graph,
                                                          baseurl, checkdepth, geojsonrep)
                     tablecontents = res["html"]
@@ -1432,24 +1428,16 @@ class OntDocGeneration:
             f.write(json.dumps(predobjmap))
             f.close()
         with open(savepath + "/index.html", 'w', encoding='utf-8') as f:
-            rellink = searchfilename
-            for i in range(0, checkdepth):
-                rellink = "../" + rellink
-            rellink2 = classtreename
-            for i in range(0, checkdepth):
-                rellink2 = "../" + rellink2
-            rellink3 = "style.css"
-            for i in range(0, checkdepth):
-                rellink3 = "../" + rellink3
-            rellink4 = "startscripts.js"
-            for i in range(0, checkdepth):
-                rellink4 = "../" + rellink4
+            rellink=self.generateRelativeLinkFromGivenDepth(baseurl,checkdepth,searchfilename,False)
+            rellink2 = self.generateRelativeLinkFromGivenDepth(baseurl,checkdepth,classtreename,False)
+            rellink3 =self.generateRelativeLinkFromGivenDepth(baseurl,checkdepth,"style.css",False)
+            rellink4 = self.generateRelativeLinkFromGivenDepth(baseurl, checkdepth, "startscripts.js", False)
             if geojsonrep != None:
                 myexports=geoexports
             else:
                 myexports=nongeoexports
             if foundlabel != "":
-                f.write(htmltemplate.replace("{{prefixpath}}", self.prefixnamespace).replace("{{toptitle}}", foundlabel).replace(
+                f.write(htmltemplate.replace("{{baseurl}}",baseurl).replace("{{prefixpath}}", self.prefixnamespace).replace("{{toptitle}}", foundlabel).replace(
                     "{{startscriptpath}}", rellink4).replace("{{stylepath}}", rellink3).replace("{{indexpage}}","false").replace("{{title}}",
                                                                                                 "<a href=\"" + str(
                                                                                                     subject) + "\">" + str(
@@ -1458,15 +1446,8 @@ class OntDocGeneration:
                                                                                                "").replace(
                     "{{scriptfolderpath}}", rellink).replace("{{classtreefolderpath}}", rellink2).replace("{{exports}}",myexports).replace("{{subject}}",str(subject)))
             else:
-                f.write(htmltemplate.replace("{{prefixpath}}", self.prefixnamespace).replace("{{indexpage}}","false").replace("{{toptitle}}", str(subject[
-                                                                                                            subject.rfind(
-                                                                                                                "/") + 1:])).replace(
-                    "{{startscriptpath}}", rellink4).replace("{{stylepath}}", rellink3).replace("{{title}}",
-                                                                                                "<a href=\"" + str(
-                                                                                                    subject) + "\">" + str(
-                                                                                                    subject[
-                                                                                                    subject.rfind(
-                                                                                                        "/") + 1:]) + "</a>").replace(
+                f.write(htmltemplate.replace("{{baseurl}}",baseurl).replace("{{prefixpath}}", self.prefixnamespace).replace("{{indexpage}}","false").replace("{{toptitle}}", self.shortenURI(str(subject))).replace(
+                    "{{startscriptpath}}", rellink4).replace("{{stylepath}}", rellink3).replace("{{title}}","<a href=\"" + str(subject) + "\">" + self.shortenURI(str(subject)) + "</a>").replace(
                     "{{baseurl}}", baseurl).replace("{{description}}",
                                                                                                "").replace(
                     "{{scriptfolderpath}}", rellink).replace("{{classtreefolderpath}}", rellink2).replace("{{exports}}",myexports).replace("{{subject}}",str(subject)))
