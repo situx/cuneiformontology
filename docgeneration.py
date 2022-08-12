@@ -1235,7 +1235,7 @@ class OntDocGeneration:
             if str(tup[0]) in labelproperties:
                 label=str(tup[1])
             if geoprop and str(tup[0]) in geoproperties and isinstance(tup[1], Literal):
-                geojsonrep = LayerUtils.processLiteral(str(tup[1]), tup[1].datatype, "")
+                geojsonrep = self.processLiteral(str(tup[1]), tup[1].datatype, "")
             if incollection and str(tup[0]) in imageextensions:
                 foundimages.add(str(tup[1]))
             if incollection and str(tup[0]) in meshextensions:
@@ -1291,7 +1291,7 @@ class OntDocGeneration:
                         object.datatype) + "\">" + objstring + " <small>(<a style=\"color: #666;\" target=\"_blank\" href=\"" + str(
                         object.datatype) + "\">" + self.shortenURI(str(object.datatype)) + "</a>)</small></span>"
                 if str(pred) in geoproperties and isinstance(object,Literal):
-                    geojsonrep = LayerUtils.processLiteral(str(object), object.datatype, "")
+                    geojsonrep = self.processLiteral(str(object), object.datatype, "")
             else:
                 if ttlf!=None:
                     ttlf.write("<" + str(subject) + "> <" + str(pred) + "> \"" + str(object) + "\" .\n")
