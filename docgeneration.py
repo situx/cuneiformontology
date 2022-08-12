@@ -645,14 +645,14 @@ htmltemplate = """<html about=\"{{subject}}\"><head><title>{{toptitle}}</title>
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.1.1/themes/default/style.min.css" />
 <link rel="stylesheet" type="text/css" href="{{stylepath}}"/>
-<meta http-equiv="Content-Security-Policy" img-src https://*; child-src '*'; worker-src 'self';">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 <script src="{{scriptfolderpath}}"></script><script src="{{classtreefolderpath}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/jstree.min.js"></script>
 <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-<script src="{{startscriptpath}}"></script></head>
+<script src="{{startscriptpath}}"></script>
+</head>
 <div id="mySidenav" class="sidenav" style="overflow:auto;">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   GeoClasses: <input type="checkbox" id="geoclasses"/><br/>
@@ -1258,15 +1258,25 @@ class OntDocGeneration:
                         object) + "\">" + label + "</a></span>"
         else:
             if isinstance(object, Literal) and object.datatype != None:
+                res = self.replaceNameSpacesInLabel(str(object.datatype))
                 if ttlf!=None:
                     ttlf.write("<" + str(subject) + "> <" + str(pred) + "> \"" + str(object) + "\"^^<" + str(
                     object.datatype) + "> .\n")
-                tablecontents += "<span property=\"" + str(pred) + "\" content=\"" + str(
-                    object).replace("<","&lt").replace(">","&gt;").replace("\"","'") + "\" datatype=\"" + str(object.datatype) + "\">" + str(
-                    object).replace("<","&lt").replace(">","&gt;").replace("\"","'") + " <small>(<a style=\"color: #666;\" target=\"_blank\" href=\"" + str(
-                    object.datatype) + "\">" + self.shortenURI(str(object.datatype)) + "</a>)</small></span>"
-                if str(pred) in geoproperties and isinstance(object,Literal):
-                    geojsonrep = self.processLiteral(str(object), object.datatype, "")
+                objstring=str(object)
+                if str(object.datatype)=="http://www.w3.org/2001/XMLSchema#anyURI":
+                    objstring="<a href=\""+str(object)+"\">"+str(object)+"</a>"
+                if res != None:
+                    tablecontents += "<span property=\"" + str(pred) + "\" content=\"" + str(
+                        object).replace("<", "&lt").replace(">", "&gt;").replace("\"", "'") + "\" datatype=\"" + str(
+                        object.datatype) + "\">" + objstring + " <small>(<a style=\"color: #666;\" target=\"_blank\" href=\"" + str(
+                        object.datatype) + "\">" + res["uri"]+ "</a>)</small></span>"
+                else:
+                    tablecontents += "<span property=\"" + str(pred) + "\" content=\"" + str(
+                        object).replace("<", "&lt").replace(">", "&gt;").replace("\"", "'") + "\" datatype=\"" + str(
+                        object.datatype) + "\">" + objstring + " <small>(<a style=\"color: #666;\" target=\"_blank\" href=\"" + str(
+                        object.datatype) + "\">" + self.shortenURI(str(object.datatype)) + "</a>)</small></span>"
+                if str(pred) in SPARQLUtils.geoproperties and isinstance(object,Literal):
+                    geojsonrep = LayerUtils.processLiteral(str(object), object.datatype, "")
             else:
                 if ttlf!=None:
                     ttlf.write("<" + str(subject) + "> <" + str(pred) + "> \"" + str(object) + "\" .\n")
