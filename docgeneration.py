@@ -672,18 +672,27 @@ imagestemplatesvg="""
 </div>
 """
 
-image3dtemplate="""<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/stylesheet/3dhop.css"/>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/spidergl.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/presenter.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/nexus.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/ply.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/trackball_sphere.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/trackball_turntable.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/trackball_turntable_pan.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/trackball_pantilt.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP/minimal/js/init.js"></script>
-<div id="3dhop" class="tdhop" onmousedown="if (event.preventDefault) event.preventDefault()">
-<canvas id="draw-canvas"></canvas></div><script>$(document).ready(function(){start3dhop("{{meshurl}}","{{meshformat}}")});</script>"""
+image3dtemplate="""<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP@4.3/minimal/stylesheet/3dhop.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP@4.3/minimal/js/spidergl.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP@4.3/minimal/js/corto.em.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP@4.3/minimal/js/corto.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP@4.3/minimal/js/presenter.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP@4.3/minimal/js/nexus.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP@4.3/minimal/js/ply.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP@4.3/minimal/js/trackball_sphere.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP@4.3/minimal/js/trackball_turntable.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP@4.3/minimal/js/trackball_turntable_pan.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP@4.3/minimal/js/trackball_pantilt.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP@4.3/minimal/js/init.js"></script>
+<div id="3dhop" class="tdhop" onmousedown="if (event.preventDefault) event.preventDefault()"><div id="tdhlg"></div>
+<div id="toolbar"><img id="home"     title="Home"                  src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP@4.3/minimal/skins/dark/home.png"            /><br/>
+<img id="zoomin"   title="Zoom In"               src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP@4.3/minimal/skins/dark/zoomin.png"          /><br/>
+<img id="zoomout"  title="Zoom Out"              src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP@4.3/minimal/skins/dark/zoomout.png"         /><br/>
+<img id="light_on" title="Disable Light Control" src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP@4.3/minimal/skins/dark/lightcontrol_on.png" style="position:absolute; visibility:hidden;"/>
+<img id="light"    title="Enable Light Control"  src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP@4.3/minimal/skins/dark/lightcontrol.png"    /><br/>
+<img id="full_on"  title="Exit Full Screen"      src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP@4.3/minimal/skins/dark/full_on.png"         style="position:absolute; visibility:hidden;"/>
+<img id="full"     title="Full Screen"           src="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP@4.3/minimal/skins/dark/full.png"            />
+</div><canvas id="draw-canvas" style="background-color:white"></canvas></div>"""
 
 nongeoexports="""
 <option value="csv">Comma Separated Values (CSV)</option>
@@ -1191,20 +1200,40 @@ class OntDocGeneration:
         #QgsMessageLog.logMessage("Relative Link from Given Depth: " + rellink,"OntdocGeneration", Qgis.Info)
         return rellink
 
+    def searchObjectConnectionsForAggregateData(self,graph,object,pred,geojsonrep,foundimages,found3dimages,label):
+        geoprop=False
+        incollection=False
+        if pred in SPARQLUtils.geopointerproperties:
+            geoprop=True
+        if pred in SPARQLUtils.collectionrelationproperties:
+            incollection=True
+        foundval=None
+        foundunit=None
+        for tup in graph.predicate_objects(object):
+            if str(tup[0]) in SPARQLUtils.labelproperties:
+                label=str(tup[1])
+            if geoprop and str(tup[0]) in SPARQLUtils.geoproperties and isinstance(tup[1], Literal):
+                geojsonrep = LayerUtils.processLiteral(str(tup[1]), tup[1].datatype, "")
+            if incollection and str(tup[0]) in SPARQLUtils.imageextensions:
+                foundimages.add(str(tup[1]))
+            if incollection and str(tup[0]) in SPARQLUtils.meshextensions:
+                found3dimages.add(str(tup[1]))
+            if str(tup[0]) in SPARQLUtils.valueproperties and isinstance(tup[1],Literal):
+                foundval=tup[1]
+            if str(tup[0]) in SPARQLUtils.unitproperties and isinstance(tup[1],URIRef):
+                foundunit=str(tup[1])
+        if foundunit!=None and foundval!=None:
+            label+=" "+str(foundval)+" ["+str(self.shortenURI(foundunit))+"]"
+        return {"geojsonrep":geojsonrep,"label":label}
 
-    def createHTMLTableValueEntry(self,subject,pred,object,ttlf,tablecontents,graph,baseurl,checkdepth,geojsonrep):
+
+    def createHTMLTableValueEntry(self,subject,pred,object,ttlf,tablecontents,graph,baseurl,checkdepth,geojsonrep,foundimages,found3dimages):
         if str(object).startswith("http") or isinstance(object,BNode):
             if ttlf != None:
                 ttlf.write("<" + str(subject) + "> <" + str(pred) + "> <" + str(object) + "> .\n")
-            if str(pred) in geopointerproperties:
-                for geotup in graph.predicate_objects(object):
-                    if str(geotup[0]) in geoproperties and isinstance(geotup[1],Literal):
-                        geojsonrep = self.processLiteral(str(geotup[1]), geotup[1].datatype, "")
-            label = str(self.shortenURI(str(object)))
-            for tup in graph.predicate_objects(object):
-                if str(tup[0]) in labelproperties:
-                    label = str(tup[1])
-                    break
+            mydata=self.searchObjectConnectionsForAggregateData(graph,object,pred,geojsonrep,foundimages,found3dimages,label)
+            label=mydata["label"]
+            geojsonrep=mydata["geojsonrep"]
             if baseurl in str(object) or isinstance(object,BNode):
                 rellink = str(object).replace(baseurl, "")
                 for i in range(0, checkdepth):
@@ -1351,7 +1380,7 @@ class OntDocGeneration:
                                     found3dimages.add(str(item))
                         tablecontents+="<li>"
                         res=self.createHTMLTableValueEntry(subject, tup, item, ttlf, tablecontents, graph,
-                                              baseurl, checkdepth,geojsonrep)
+                                              baseurl, checkdepth,geojsonrep,foundimages,found3dimages)
                         tablecontents = res["html"]
                         geojsonrep = res["geojson"]
                         tablecontents += "</li>"
@@ -1366,7 +1395,7 @@ class OntDocGeneration:
                                 if str(predobjmap[tup]).endswith(ext):
                                     found3dimages.add(str(predobjmap[tup]))
                     res=self.createHTMLTableValueEntry(subject, tup, predobjmap[tup][0], ttlf, tablecontents, graph,
-                                              baseurl, checkdepth,geojsonrep)
+                                              baseurl, checkdepth,geojsonrep,foundimages,found3dimages)
                     tablecontents=res["html"]
                     geojsonrep=res["geojson"]
                     tablecontents+="</td>"
@@ -1403,7 +1432,7 @@ class OntDocGeneration:
                             print("Postprocessing: " + str(item)+" - "+str(tup)+" - "+str(subject))
                             postprocessing.add((item,URIRef(tup),subject))
                         res = self.createHTMLTableValueEntry(subject, tup, item, None, tablecontents, graph,
-                                                             baseurl, checkdepth, geojsonrep)
+                                                             baseurl, checkdepth, geojsonrep,foundimages,found3dimages)
                         tablecontents = res["html"]
                         tablecontents += "</li>"
                     tablecontents += "</ul></td>"
@@ -1413,7 +1442,7 @@ class OntDocGeneration:
                         print("Postprocessing: " + str(subpredsmap[tup][0]) + " - " + str(tup) + " - " + str(subject))
                         postprocessing.add((subpredsmap[tup][0], URIRef(tup), subject))
                     res = self.createHTMLTableValueEntry(subject, tup, subpredsmap[tup][0], None, tablecontents, graph,
-                                                         baseurl, checkdepth, geojsonrep)
+                                                         baseurl, checkdepth, geojsonrep,foundimages,found3dimages)
                     tablecontents = res["html"]
                     tablecontents += "</td>"
             else:
