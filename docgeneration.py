@@ -969,7 +969,7 @@ class OntDocGeneration:
             if prefixnamespace in sub or isinstance(sub,BNode):
                 subjectstorender.add(sub)
                 for tup in self.graph.predicate_objects(sub):
-                    if str(tup[0]) in SPARQLUtils.labelproperties:
+                    if str(tup[0]) in labelproperties:
                         labeltouri[str(tup[1])] = str(sub)
                         uritolabel[str(sub)] = {"label":str(tup[1])}
                         break
