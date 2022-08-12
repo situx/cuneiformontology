@@ -1376,8 +1376,8 @@ class OntDocGeneration:
                     tablecontents+="<td class=\"wrapword\"><ul>"
                     for item in predobjmap[tup]:
                         if str(item).startswith("http"):
-                            print("Finding images..... "+str(item))
                             for ext in imageextensions:
+                                print("Checking.... "+ext+" "+ str(item))
                                 if ext in str(item):
                                     foundimages.add(str(item))
                             for ext in meshextensions:
@@ -1393,8 +1393,8 @@ class OntDocGeneration:
                 else:
                     tablecontents+="<td class=\"wrapword\">"
                     if str(predobjmap[tup]).startswith("http"):
-                        print("Finding images..... "+str(predobjmap[tup]))
                         for ext in imageextensions:
+                            print("Checking.... "+ext+" "+ str(predobjmap[tup]))
                             if ext in str(predobjmap[tup]):
                                 foundimages.add(str(predobjmap[tup]))
                         for ext in meshextensions:
