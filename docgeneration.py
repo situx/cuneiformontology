@@ -1039,7 +1039,7 @@ class OntDocGeneration:
                 print(str(subtorencounter) + "/" + str(subtorenderlen) + " " + str(outpath + path))
             except Exception as e:
                 print(e)
-                QgsMessageLog.logMessage("Exception occured " + str(e), "OntdocGeneration", Qgis.Info)
+                #QgsMessageLog.logMessage("Exception occured " + str(e), "OntdocGeneration", Qgis.Info)
         print("Postprocessing " + str(len(postprocessing)))
         for subj in postprocessing.subjects():
             path = str(subj).replace(prefixnamespace, "")
