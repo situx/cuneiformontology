@@ -1215,17 +1215,17 @@ class OntDocGeneration:
         foundval=None
         foundunit=None
         for tup in graph.predicate_objects(object):
-            if str(tup[0]) in SPARQLUtils.labelproperties:
+            if str(tup[0]) in labelproperties:
                 label=str(tup[1])
-            if geoprop and str(tup[0]) in SPARQLUtils.geoproperties and isinstance(tup[1], Literal):
+            if geoprop and str(tup[0]) in geoproperties and isinstance(tup[1], Literal):
                 geojsonrep = LayerUtils.processLiteral(str(tup[1]), tup[1].datatype, "")
-            if incollection and str(tup[0]) in SPARQLUtils.imageextensions:
+            if incollection and str(tup[0]) in imageextensions:
                 foundimages.add(str(tup[1]))
-            if incollection and str(tup[0]) in SPARQLUtils.meshextensions:
+            if incollection and str(tup[0]) in meshextensions:
                 found3dimages.add(str(tup[1]))
-            if str(tup[0]) in SPARQLUtils.valueproperties and isinstance(tup[1],Literal):
+            if str(tup[0]) in valueproperties and isinstance(tup[1],Literal):
                 foundval=tup[1]
-            if str(tup[0]) in SPARQLUtils.unitproperties and isinstance(tup[1],URIRef):
+            if str(tup[0]) in unitproperties and isinstance(tup[1],URIRef):
                 foundunit=str(tup[1])
         if foundunit!=None and foundval!=None and label!=None:
             label+=" "+str(foundval)+" ["+str(self.shortenURI(foundunit))+"]"
