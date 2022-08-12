@@ -1088,7 +1088,7 @@ class OntDocGeneration:
                     for tup in self.graph.predicate_objects(sub):
                         if isinstance(tup[1],Literal):
                             if tup[1].datatype!=None:
-                                ttlf.write("<" + str(sub) + "> <" + str(tup[0]) + "> \"" + str(tup[1]) + "\"^^<"+str(datattype)+"> .\n")
+                                ttlf.write("<" + str(sub) + "> <" + str(tup[0]) + "> \"" + str(tup[1]) + "\"^^<"+str(tup[1].datatype)+"> .\n")
                             else:
                                 ttlf.write("<" + str(sub) + "> <" + str(tup[0]) + "> \"" + str(tup[1]) + "\" .\n")
                         elif isinstance(tup[1],URIRef):
