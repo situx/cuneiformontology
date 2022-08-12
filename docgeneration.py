@@ -1040,7 +1040,7 @@ class OntDocGeneration:
             except Exception as e:
                 print(e)
             #    QgsMessageLog.logMessage("Exception occured " + str(e), "OntdocGeneration", Qgis.Info)
-        print("Postprocessing " + str(postprocessing.subjects()))
+        print("Postprocessing " + str(len(postprocessing.subjects())))
         for subj in postprocessing.subjects():
             path = str(subj).replace(prefixnamespace, "")
             paths=self.processSubjectPath(outpath,paths,path)
@@ -1373,6 +1373,7 @@ class OntDocGeneration:
                     tablecontents+="<td class=\"wrapword\"><ul>"
                     for item in predobjmap[tup]:
                         if str(item).startswith("http"):
+                            print("Check for IMGS.....")
                             for ext in imageextensions:
                                 if str(item).endswith(ext):
                                     foundimages.add(str(item))
@@ -1389,6 +1390,7 @@ class OntDocGeneration:
                 else:
                     tablecontents+="<td class=\"wrapword\">"
                     if str(predobjmap[tup]).startswith("http"):
+                        print("Check for IMGS.....")
                         for ext in imageextensions:
                             if str(predobjmap[tup]).endswith(ext):
                                 foundimages.add(str(predobjmap[tup]))
