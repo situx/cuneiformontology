@@ -1309,7 +1309,7 @@ class OntDocGeneration:
         else:
             checkdepth = subject.replace(baseurl, "").count("/")
         checkdepth+=1
-        print("Checkdepth: " + str(checkdepth))
+        #print("Checkdepth: " + str(checkdepth))
         return checkdepth
 
     def getAccessFromBaseURL(self,baseurl,savepath):
@@ -1376,6 +1376,7 @@ class OntDocGeneration:
                     tablecontents+="<td class=\"wrapword\"><ul>"
                     for item in predobjmap[tup]:
                         if str(item).startswith("http"):
+                            print("Finding images..... "+str(item))
                             for ext in imageextensions:
                                 if str(item).endswith(ext):
                                     foundimages.add(str(item))
@@ -1392,6 +1393,7 @@ class OntDocGeneration:
                 else:
                     tablecontents+="<td class=\"wrapword\">"
                     if str(predobjmap[tup]).startswith("http"):
+                        print("Finding images..... "+str(predobjmap[tup]))
                         for ext in imageextensions:
                             if str(predobjmap[tup]).endswith(ext):
                                 foundimages.add(str(predobjmap[tup]))
