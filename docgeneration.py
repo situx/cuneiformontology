@@ -1275,7 +1275,7 @@ class OntDocGeneration:
                         object).replace("<", "&lt").replace(">", "&gt;").replace("\"", "'") + "\" datatype=\"" + str(
                         object.datatype) + "\">" + objstring + " <small>(<a style=\"color: #666;\" target=\"_blank\" href=\"" + str(
                         object.datatype) + "\">" + self.shortenURI(str(object.datatype)) + "</a>)</small></span>"
-                if str(pred) in SPARQLUtils.geoproperties and isinstance(object,Literal):
+                if str(pred) in geoproperties and isinstance(object,Literal):
                     geojsonrep = LayerUtils.processLiteral(str(object), object.datatype, "")
             else:
                 if ttlf!=None:
