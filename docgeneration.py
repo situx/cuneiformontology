@@ -745,7 +745,7 @@ nongeoexports="""
 <option value="csv">Comma Separated Values (CSV)</option>
 <option value="geojson">(Geo)JSON</option>
 <option value="json">JSON-LD</option>
-<option value="ttl">Turtle (TTL)</option>
+<option value="ttl" selected>Turtle (TTL)</option>
 """
 
 geoexports="""
@@ -1076,12 +1076,24 @@ class OntDocGeneration:
             f.write("var tree=" + json.dumps(tree, indent=2))
             f.close()
         for path in paths:
+            ttlf = open(path + "index.ttl", "w", encoding="utf-8")
             checkdepth = self.checkDepthFromPath(path, outpath, path)-1
             sfilelink=self.generateRelativeLinkFromGivenDepth(prefixnamespace,checkdepth,corpusid + '_search.js',False)
             classtreelink = self.generateRelativeLinkFromGivenDepth(prefixnamespace,checkdepth,corpusid + "_classtree.js",False)
             stylelink =self.generateRelativeLinkFromGivenDepth(prefixnamespace,checkdepth,"style.css",False)
             scriptlink = self.generateRelativeLinkFromGivenDepth(prefixnamespace, checkdepth, "startscripts.js", False)
             nslink=prefixnamespace+str(self.getAccessFromBaseURL(str(outpath),str(path)))
+            for sub in self.graph.subjects():
+                if nslink in sub:
+                    for tup in self.graph.predicate_objects(sub):
+                        if isinstance(tup[1],Literal):
+                            if tup[1].datatype!=None:
+                                ttlf.write("<" + str(sub) + "> <" + str(tup[0]) + "> \"" + str(tup[1]) + "\"^^<"+str(datattype)+"> .\n")
+                            else:
+                                ttlf.write("<" + str(sub) + "> <" + str(tup[0]) + "> \"" + str(tup[1]) + "\" .\n")
+                        elif isinstance(tup[1],URIRef):
+                            ttlf.write("<"+str(sub)+"> <"+str(tup[0])+"> <"+str(tup[1])+"> .\n")
+            ttlf.close()
             indexhtml = htmltemplate.replace("{{baseurl}}", prefixnamespace).replace("{{toptitle}}","Index page for " + nslink).replace("{{title}}","Index page for " + nslink).replace("{{startscriptpath}}", scriptlink).replace("{{stylepath}}", stylelink)\
                 .replace("{{classtreefolderpath}}",classtreelink).replace("{{baseurlhtml}}", nslink).replace("{{scriptfolderpath}}", sfilelink)
             if nslink==prefixnamespace:
