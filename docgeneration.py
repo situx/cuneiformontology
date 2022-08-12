@@ -1258,15 +1258,25 @@ class OntDocGeneration:
                         object) + "\">" + label + "</a></span>"
         else:
             if isinstance(object, Literal) and object.datatype != None:
+                res = self.replaceNameSpacesInLabel(str(object.datatype))
                 if ttlf!=None:
                     ttlf.write("<" + str(subject) + "> <" + str(pred) + "> \"" + str(object) + "\"^^<" + str(
                     object.datatype) + "> .\n")
-                tablecontents += "<span property=\"" + str(pred) + "\" content=\"" + str(
-                    object).replace("<","&lt").replace(">","&gt;").replace("\"","'") + "\" datatype=\"" + str(object.datatype) + "\">" + str(
-                    object).replace("<","&lt").replace(">","&gt;").replace("\"","'") + " <small>(<a style=\"color: #666;\" target=\"_blank\" href=\"" + str(
-                    object.datatype) + "\">" + self.shortenURI(str(object.datatype)) + "</a>)</small></span>"
-                if str(pred) in geoproperties and isinstance(object,Literal):
-                    geojsonrep = self.processLiteral(str(object), object.datatype, "")
+                objstring=str(object)
+                if str(object.datatype)=="http://www.w3.org/2001/XMLSchema#anyURI":
+                    objstring="<a href=\""+str(object)+"\">"+str(object)+"</a>"
+                if res != None:
+                    tablecontents += "<span property=\"" + str(pred) + "\" content=\"" + str(
+                        object).replace("<", "&lt").replace(">", "&gt;").replace("\"", "'") + "\" datatype=\"" + str(
+                        object.datatype) + "\">" + objstring + " <small>(<a style=\"color: #666;\" target=\"_blank\" href=\"" + str(
+                        object.datatype) + "\">" + res["uri"]+ "</a>)</small></span>"
+                else:
+                    tablecontents += "<span property=\"" + str(pred) + "\" content=\"" + str(
+                        object).replace("<", "&lt").replace(">", "&gt;").replace("\"", "'") + "\" datatype=\"" + str(
+                        object.datatype) + "\">" + objstring + " <small>(<a style=\"color: #666;\" target=\"_blank\" href=\"" + str(
+                        object.datatype) + "\">" + self.shortenURI(str(object.datatype)) + "</a>)</small></span>"
+                if str(pred) in SPARQLUtils.geoproperties and isinstance(object,Literal):
+                    geojsonrep = LayerUtils.processLiteral(str(object), object.datatype, "")
             else:
                 if ttlf!=None:
                     ttlf.write("<" + str(subject) + "> <" + str(pred) + "> \"" + str(object) + "\" .\n")
