@@ -1020,7 +1020,6 @@ class OntDocGeneration:
             subtorencounter += 1
             if subtorencounter%500==0:
                 subtorenderlen=len(subjectstorender)+len(postprocessing)
-                self.updateProgressBar(subtorencounter,subtorenderlen)
             print(str(subtorencounter) + "/" + str(subtorenderlen) + " " + str(outpath + path))
             #except Exception as e:
             #    print(e)
@@ -1039,7 +1038,6 @@ class OntDocGeneration:
             subtorencounter += 1
             if subtorencounter%500==0:
                 subtorenderlen=len(subjectstorender)+len(postprocessing)
-                self.updateProgressBar(subtorencounter,subtorenderlen)
             print(str(subtorencounter) + "/" + str(subtorenderlen) + " " + str(outpath + path))
         self.assignGeoClassesToTree(tree)
         with open(outpath + corpusid + "_classtree.js", 'w', encoding='utf-8') as f:
