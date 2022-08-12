@@ -652,7 +652,6 @@ htmltemplate = """<html about=\"{{subject}}\"><head><title>{{toptitle}}</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/jstree.min.js"></script>
 <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
 <script src="{{startscriptpath}}"></script>
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdn.jsdelivr.net/*; img-src https://*; child-src https://*;">
 </head>
 <div id="mySidenav" class="sidenav" style="overflow:auto;">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
