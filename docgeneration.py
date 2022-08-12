@@ -174,7 +174,7 @@ function saveTextAsFile(tosave,fileext){
 }
 
 function download(){
-    format=$('#format').value()
+    format=$('#format').val()
     if(format=="geojson"){
         exportGeoJSON()
     }else if(format=="ttl"){
