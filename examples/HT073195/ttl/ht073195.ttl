@@ -1487,13 +1487,13 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
 			  
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_cont_tbrandes> rdf:type foaf:Person ;
-														rdfs:label "Tim Brandes"@en .
+														rdfs:label "Tim Brandes"@en ;
 														foaf:family_name: "Brandes" ;
 														foaf:givenname: "Tim" ;
 														foaf:name: "Tim Brandes" .
 														
 <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_cont_ehuber> rdf:type foaf:Person ;
-														rdfs:label "Eva-Maria Huber"@en .
+														rdfs:label "Eva-Maria Huber"@en ;
 														foaf:family_name: "Huber" ;
 														foaf:givenname: "Eva-Maria" ;
 														foaf:name: "Eva-Maria Huber" .
@@ -1509,14 +1509,14 @@ gsp:Geometry rdfs:label "geometry"@en .
 gsp:Geometry rdfs:subClassOf gsp:SpatialObject .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_excavloc> rdf:type gsp:Feature ;
-														rdfs:label "HT 07-31-95 Excavation Location"@en .
+														rdfs:label "HT 07-31-95 Excavation Location"@en ;
 														geo:lat 32.0807663774 ;
 														geo:long 48.3289329982 ;
 														gsp:hasGeometry <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_excavloc_geometry> ;
 														owl:sameAs <https://pleiades.stoa.org/places/379400932/> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_excavloc_geometry> rdf:type sf:Polygon ;
-														rdfs:label "Geometry of excavation site of HT 07-31-95"@en .
+														rdfs:label "Geometry of excavation site of HT 07-31-95"@en ;
 														gsp:asWKT "POLYGON ((48.3291942999999975 32.0794295999999974, 48.3299882000000025 32.0798160000000010, 48.3307982999999979 32.0805432000000010, 48.3296126999999984 32.0816385999999980, 48.3285130000000009 32.0823977000000014, 48.3277513000000027 32.0816931999999966, 48.3276224999999968 32.0814023000000006, 48.3276439999999994 32.0798387000000034, 48.3291942999999975 32.0794295999999974))"^^gsp:wktLiteral .
 
 
@@ -1582,7 +1582,7 @@ cunei:TransliterationPart rdfs:subClassOf cunei:Transliteration .
 graphemon:GraphemeCollection rdfs:subClassOf skos:Collection .
 <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_signlist> rdf:type
                                                                                      graphemon:GraphemeCollection ;
-																			rdfs:label "Signlist of cuneiform tablet HT 07-31-95"@en .
+																			rdfs:label "Signlist of cuneiform tablet HT 07-31-95"@en ;
                                                                             rdfs:member <https://situx.github.io/cuneiformontology/examples/signlist/character_isz> ,
 											<https://situx.github.io/cuneiformontology/examples/signlist/character_ku3> ,
 											<https://situx.github.io/cuneiformontology/examples/signlist/character_lagab> ,
@@ -1608,7 +1608,7 @@ graphemon:GraphemeReadingCollection rdf:type owl:Class ;
 graphemon:GraphemeReadingCollection rdfs:subClassOf skos:Collection .											
 <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_signreadinglist> rdf:type
                                                                                      graphemon:GraphemeReadingCollection ;
-																			rdfs:label "Sign Readings of cuneiform tablet HT 07-31-95"@en .
+																			rdfs:label "Sign Readings of cuneiform tablet HT 07-31-95"@en ;
                                                                             rdfs:member <https://situx.github.io/cuneiformontology/examples/signlist/character_isz_reading_isz> ,
 											<https://situx.github.io/cuneiformontology/examples/signlist/character_ku3_reading_ku3> ,
 											<https://situx.github.io/cuneiformontology/examples/signlist/character_lagab_reading1> ,
@@ -1625,7 +1625,7 @@ graphemon:CharOccurrenceCollection rdfs:subClassOf skos:Collection .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_charoccurrences> rdf:type
                                                                                      graphemon:CharOccurrenceCollection ;
-																			rdfs:label "Char occurrences of cuneiform tablet HT 07-31-95"@en .
+																			rdfs:label "Char occurrences of cuneiform tablet HT 07-31-95"@en ;
 																			rdfs:member <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char1> ,
 																			<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char2> ,
 																			<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char3> ,
@@ -1638,7 +1638,7 @@ graphemon:WordOccurrenceCollection rdfs:subClassOf skos:Collection .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_wordoccurrences> rdf:type
                                                                                      graphemon:WordOccurrenceCollection ;
-																			rdfs:label "Word occurrences of cuneiform tablet HT 07-31-95"@en .
+																			rdfs:label "Word occurrences of cuneiform tablet HT 07-31-95"@en ;
 																			rdfs:member <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_word1> ,
 																			<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_word2> ,
 																			<https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_word3> ,
