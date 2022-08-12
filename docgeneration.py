@@ -1040,7 +1040,7 @@ class OntDocGeneration:
             except Exception as e:
                 print(e)
             #    QgsMessageLog.logMessage("Exception occured " + str(e), "OntdocGeneration", Qgis.Info)
-        print("Postprocessing " + str(len(postprocessing.subjects())))
+        print("Postprocessing " + str(len(postprocessing)))
         for subj in postprocessing.subjects():
             path = str(subj).replace(prefixnamespace, "")
             paths=self.processSubjectPath(outpath,paths,path)
