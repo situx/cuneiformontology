@@ -645,14 +645,15 @@ htmltemplate = """<html about=\"{{subject}}\"><head><title>{{toptitle}}</title>
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.1.1/themes/default/style.min.css" />
 <link rel="stylesheet" type="text/css" href="{{stylepath}}"/>
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdn.jsdelivr.net; img-src https://*; child-src https://*;">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 <script src="{{scriptfolderpath}}"></script><script src="{{classtreefolderpath}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/jstree.min.js"></script>
 <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-<script src="{{startscriptpath}}"></script></head>
+<script src="{{startscriptpath}}"></script>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdn.jsdelivr.net/*; img-src https://*; child-src https://*;">
+</head>
 <div id="mySidenav" class="sidenav" style="overflow:auto;">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   GeoClasses: <input type="checkbox" id="geoclasses"/><br/>
