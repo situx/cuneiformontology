@@ -144,6 +144,46 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
+function exportGeoJSON(){
+    if(typeof(feature) !== "undefined"){
+        saveTextAsFile(JSON.stringify(feature),"geojson")
+    }
+}
+
+function downloadFile(filePath){
+    var link=document.createElement('a');
+    link.href = filePath;
+    link.download = filePath.substr(filePath.lastIndexOf('/') + 1);
+    link.click();
+}
+
+function saveTextAsFile(tosave,fileext){
+    var a = document.createElement('a');
+    a.style = "display: none";  
+    var blob= new Blob([tosave], {type:'text/plain'});
+    var url = window.URL.createObjectURL(blob);
+    var filename = "res."+fileext;
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function(){
+        document.body.removeChild(a);
+        window.URL.revokeObjectURL(url);  
+    }, 1000);
+}
+
+function download(){
+    format=$('#format').value()
+    if(format=="geojson"){
+        exportGeoJSON()
+    }else if(format=="ttl"){
+        downloadFile("index.ttl")
+    }else if(format=="json"){
+        downloadFile("index.json")
+    }
+}
+
 function rewriteLink(thelink){
     console.log(thelink)
     if(thelink==null){
@@ -703,32 +743,9 @@ start3dhop("{{meshurl}}","{{meshformat}}")});</script>"""
 
 nongeoexports="""
 <option value="csv">Comma Separated Values (CSV)</option>
-<option value="cipher">Cypher Neo4J (Cypher)</option>
-<option value="exijson">EXI4JSON</option>
-<option value="gdf">Graph Definition File (GDF)</option>
 <option value="geojson">(Geo)JSON</option>
-<option value="gexf">Graph Exchange XML Format (GEXF)</option>
-<option value="gml2">Graph Modeling Language (GML)</option>
-<option value="graphml">Graph Markup Language (GraphML)</option>
-<option value="gxl">Graph Exchange Language (GXL)</option>
 <option value="json">JSON-LD</option>
-<option value="jsonp">JSONP</option>
-<option value="hextuples">HexTuples RDF</option>
-<option value="n3">Notation3 (N3)</option>
-<option value="nq">NQuads (NQ)</option>
-<option value="nt">NTriples (NT)</option>
-<option value="rdfexi">RDF/EXI (EXI)</option>
-<option value="rdfjson">RDF/JSON</option>
-<option value="rt">RDF/Thrift (RT)</option>
-<option value="xml">RDF/XML</option>
-<option value="tgf">Trivial Graph Format (TGF)</option>
-<option value="tlp">Tulip File Format (TLP)</option>
 <option value="ttl">Turtle (TTL)</option>
-<option value="trig">RDF TriG</option>
-<option value="trix">Triples in XML (TriX)</option>
-<option value="xls">MS Excel (XLS)</option>
-<option value="xlsx">Excel Spreadsheet (XLSX)</option>
-<option value="yaml">YAML Ain't Markup Language (YAML)</option>
 """
 
 geoexports="""
@@ -778,8 +795,6 @@ geoexports="""
 <option value="wkt">Well-Known-Text (WKT)</option>
 <option value="ewkt">Extended Well-Known-Text (EWKT)</option>
 <option value="x3d">X3D Format (X3D)</option>
-<option value="xls">MS Excel (XLS)</option>
-<option value="xlsx">Excel Spreadsheet (XLSX)</option>
 <option value="xyz">XYZ ASCII Format (XYZ)</option>
 <option value="yaml">YAML Ain't Markup Language (YAML)</option>
 """
