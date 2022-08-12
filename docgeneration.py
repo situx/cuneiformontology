@@ -1222,7 +1222,7 @@ class OntDocGeneration:
                 foundval=tup[1]
             if str(tup[0]) in SPARQLUtils.unitproperties and isinstance(tup[1],URIRef):
                 foundunit=str(tup[1])
-        if foundunit!=None and foundval!=None:
+        if foundunit!=None and foundval!=None and label!=None:
             label+=" "+str(foundval)+" ["+str(self.shortenURI(foundunit))+"]"
         return {"geojsonrep":geojsonrep,"label":label}
 
