@@ -1243,8 +1243,7 @@ class OntDocGeneration:
             geojsonrep=mydata["geojsonrep"]
             if baseurl in str(object) or isinstance(object,BNode):
 	            rellink = self.generateRelativeLinkFromGivenDepth(baseurl,checkdepth,str(object),True)
-                tablecontents += "<span><a property=\"" + str(pred) + "\" resource=\"" + str(object) + "\" href=\"" + rellink + "\">" \
-                    + label + " <span style=\"color: #666;\">(" + self.namespaceshort + ":" + str(self.shortenURI(str(object))) + ")</span></a></span>"
+                tablecontents += "<span><a property=\"" + str(pred) + "\" resource=\"" + str(object) + "\" href=\"" + rellink + "\">"+ label + " <span style=\"color: #666;\">(" + self.namespaceshort + ":" + str(self.shortenURI(str(object))) + ")</span></a></span>"
             else:
                 res = self.replaceNameSpacesInLabel(str(object))
                 if res != None:
