@@ -154,50 +154,50 @@ function exportCSV(){
     if(typeof(feature)!=="undefined"){
         if("features" in feature){
            for(feat of feature["features"]){
-                rescsv+="\""+feat["geometry"]["type"].toUpperCase()+"("
+                rescsv+="\\""+feat["geometry"]["type"].toUpperCase()+"("
                 feat["geometry"].coordinates.forEach(function(p,i){
                 //	console.log(p)
                     if(i<input_json.coordinates.length-1)rescsv =  rescsv + p[0] + ' ' + p[1] + ', ';
                     else rescsv =  rescsv + p[0] + ' ' + p[1] + ')';
                 })
-                reswkt+=")\","
+                reswkt+=")\\","
                 if("properties" in feat){
                     if(gottitle==false){
-                       rescsvtitle="\"the_geom\","
+                       rescsvtitle="\\"the_geom\\","
                        for(prop in feat){
-                          rescsvtitle+="\""+prop+"\",
+                          rescsvtitle+="\\""+prop+"\\",
                        }
                        rescsvtitle+="\n"
                        rescsv=rescsvtitle+rescsv
                        gottitle=true
                     }
                     for(prop of feat){
-                        rescsv+="\""+prop+"\",
+                        rescsv+="\\""+prop+"\\",
                     }
                 }
                 rescsv+="\n"
            }
         }else{
             gottitle=false
-            rescsv+="\""+feat["geometry"]["type"].toUpperCase()+"("
+            rescsv+="\\""+feat["geometry"]["type"].toUpperCase()+"("
             feat["geometry"].coordinates.forEach(function(p,i){
             //	console.log(p)
                 if(i<input_json.coordinates.length-1)rescsv =  rescsv + p[0] + ' ' + p[1] + ', ';
                 else rescsv =  rescsv + p[0] + ' ' + p[1] + ')';
             })
-            reswkt+=")\","
+            reswkt+=")\\","
             if("properties" in feat){
                 if(gottitle==false){
                    rescsvtitle=""
                    for(prop in feat){
-                      rescsvtitle+="\""+prop+"\",
+                      rescsvtitle+="\\""+prop+"\\",
                    }
                    rescsvtitle+="\n"
                    rescsv=rescsvtitle+rescsv
                    gottitle=true
                 }
                 for(prop of feat){
-                    rescsv+="\""+prop+"\",
+                    rescsv+="\\""+prop+"\\",
                 }
             }
         }
@@ -207,16 +207,16 @@ function exportCSV(){
            for(feat of nongeofeature["features"]){
                 if("properties" in feat){
                     if(gottitle==false){
-                       rescsvtitle="\"the_geom\","
+                       rescsvtitle="\\"the_geom\\","
                        for(prop in feat){
-                          rescsvtitle+="\""+prop+"\",
+                          rescsvtitle+="\\""+prop+"\\",
                        }
                        rescsvtitle+="\n"
                        rescsv=rescsvtitle+rescsv
                        gottitle=true
                     }
                     for(prop of feat){
-                        rescsv+="\""+prop+"\",
+                        rescsv+="\\""+prop+"\\",
                     }
                 }
                 rescsv+="\n"
@@ -227,14 +227,14 @@ function exportCSV(){
                 if(gottitle==false){
                    rescsvtitle=""
                    for(prop in feat){
-                      rescsvtitle+="\""+prop+"\",
+                      rescsvtitle+="\\""+prop+"\\",
                    }
                    rescsvtitle+="\n"
                    rescsv=rescsvtitle+rescsv
                    gottitle=true
                 }
                 for(prop of feat){
-                    rescsv+="\""+prop+"\",
+                    rescsv+="\\""+prop+"\\",
                 }
             }
         }
