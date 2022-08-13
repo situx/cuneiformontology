@@ -160,14 +160,14 @@ function exportCSV(){
                     if(i<input_json.coordinates.length-1)rescsv =  rescsv + p[0] + ' ' + p[1] + ', ';
                     else rescsv =  rescsv + p[0] + ' ' + p[1] + ')';
                 })
-                reswkt+=")\\","
+                rescsv+=")\\","
                 if("properties" in feat){
                     if(gottitle==false){
                        rescsvtitle="\\"the_geom\\","
                        for(prop in feat){
                           rescsvtitle+="\\""+prop+"\\","
                        }
-                       rescsvtitle+="\n"
+                       rescsvtitle+="\\n"
                        rescsv=rescsvtitle+rescsv
                        gottitle=true
                     }
@@ -175,7 +175,7 @@ function exportCSV(){
                         rescsv+="\\""+prop+"\\","
                     }
                 }
-                rescsv+="\n"
+                rescsv+="\\n"
            }
         }else{
             gottitle=false
@@ -185,14 +185,14 @@ function exportCSV(){
                 if(i<input_json.coordinates.length-1)rescsv =  rescsv + p[0] + ' ' + p[1] + ', ';
                 else rescsv =  rescsv + p[0] + ' ' + p[1] + ')';
             })
-            reswkt+=")\\","
+            rescsv+=")\\","
             if("properties" in feat){
                 if(gottitle==false){
                    rescsvtitle=""
                    for(prop in feat){
                       rescsvtitle+="\\""+prop+"\\","
                    }
-                   rescsvtitle+="\n"
+                   rescsvtitle+="\\n"
                    rescsv=rescsvtitle+rescsv
                    gottitle=true
                 }
@@ -219,7 +219,7 @@ function exportCSV(){
                         rescsv+="\\""+prop+"\\","
                     }
                 }
-                rescsv+="\n"
+                rescsv+="\\n"
            }
         }else{
             gottitle=false
@@ -229,7 +229,7 @@ function exportCSV(){
                    for(prop in feat){
                       rescsvtitle+="\\""+prop+"\\","
                    }
-                   rescsvtitle+="\n"
+                   rescsvtitle+="\\n"
                    rescsv=rescsvtitle+rescsv
                    gottitle=true
                 }
