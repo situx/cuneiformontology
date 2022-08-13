@@ -249,9 +249,9 @@ function setSVGDimensions(){
         console.log($(obj).children().first()[0])
         svgbbox=$(obj).children().first()[0].getBoundingClientRect();
         newviewport=""+svgbbox.x+" "+svgbbox.y+" "+svgbbox.width+" "+svgbbox.height
-        obj.attr("viewBox",newviewport)
-        obj.attr("width",svgbbox.width+10)
-        obj.attr("height",svgbbox.height+10)
+        $(obj).attr("viewBox",newviewport)
+        $(obj).attr("width",svgbbox.width+10)
+        $(obj).attr("height",svgbbox.height+10)
     });
 }
 
