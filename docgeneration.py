@@ -151,6 +151,7 @@ function exportGeoJSON(){
 }
 
 function exportCSV(){
+    rescsv=""
     if(typeof(feature)!=="undefined"){
         if("features" in feature){
            for(feat of feature["features"]){
