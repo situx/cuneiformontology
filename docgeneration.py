@@ -1106,7 +1106,7 @@ class OntDocGeneration:
                 if (item["type"]=="geoclass" or item["type"]=="class" or item["type"]=="featurecollection" or item["type"]=="geocollection") and "instancecount" in item and item["instancecount"]>0:
                     exitem=None
                     for item2 in tree["core"]["data"]:
-                        if item2["parent"]==item["id"] and nslink in item2["id"]:
+                        if item2["parent"]==item["id"] and (item2["type"]=="instance" or item2["type"]=="geoinstance") and nslink in item2["id"]:
                             checkdepth = self.checkDepthFromPath(path, prefixnamespace, item2["id"])-1
                             exitem="<td><img src=\""+tree["types"][item2["type"]]["icon"]+"\" height=\"25\" width=\"25\" alt=\""+item2["type"]+"\"/><a href=\""+self.generateRelativeLinkFromGivenDepth(prefixnamespace,checkdepth,str(item2["id"]),True)+"\">"+str(item2["text"])+"</a></td>"
                             break
