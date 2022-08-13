@@ -256,7 +256,7 @@ function exportWKT(){
                 for(coord of feat["geometry"]["coordinates"]){
                     reswkt+=""
                 }
-                reswkt+=")\n"
+                reswkt+=")\\n"
             }
         }else{
                 reswkt+=feature["geometry"]["type"].toUpperCase()+"("
@@ -267,7 +267,7 @@ function exportWKT(){
                 for(coord of feature["geometry"]["coordinates"]){
                     reswkt+=""
                 }
-                reswkt+=")\n"
+                reswkt+=")\\n"
         }
         saveTextAsFile(reswkt,".wkt")
     }
