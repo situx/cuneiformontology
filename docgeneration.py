@@ -211,7 +211,7 @@ function exportCSV(){
                        for(prop in feat){
                           rescsvtitle+="\\""+prop+"\\","
                        }
-                       rescsvtitle+="\n"
+                       rescsvtitle+="\\n"
                        rescsv=rescsvtitle+rescsv
                        gottitle=true
                     }
