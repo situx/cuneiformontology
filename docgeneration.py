@@ -165,14 +165,14 @@ function exportCSV(){
                     if(gottitle==false){
                        rescsvtitle="\\"the_geom\\","
                        for(prop in feat){
-                          rescsvtitle+="\\""+prop+"\\",
+                          rescsvtitle+="\\""+prop+"\\","
                        }
                        rescsvtitle+="\n"
                        rescsv=rescsvtitle+rescsv
                        gottitle=true
                     }
                     for(prop of feat){
-                        rescsv+="\\""+prop+"\\",
+                        rescsv+="\\""+prop+"\\","
                     }
                 }
                 rescsv+="\n"
@@ -190,14 +190,14 @@ function exportCSV(){
                 if(gottitle==false){
                    rescsvtitle=""
                    for(prop in feat){
-                      rescsvtitle+="\\""+prop+"\\",
+                      rescsvtitle+="\\""+prop+"\\","
                    }
                    rescsvtitle+="\n"
                    rescsv=rescsvtitle+rescsv
                    gottitle=true
                 }
                 for(prop of feat){
-                    rescsv+="\\""+prop+"\\",
+                    rescsv+="\\""+prop+"\\","
                 }
             }
         }
@@ -209,14 +209,14 @@ function exportCSV(){
                     if(gottitle==false){
                        rescsvtitle="\\"the_geom\\","
                        for(prop in feat){
-                          rescsvtitle+="\\""+prop+"\\",
+                          rescsvtitle+="\\""+prop+"\\","
                        }
                        rescsvtitle+="\n"
                        rescsv=rescsvtitle+rescsv
                        gottitle=true
                     }
                     for(prop of feat){
-                        rescsv+="\\""+prop+"\\",
+                        rescsv+="\\""+prop+"\\","
                     }
                 }
                 rescsv+="\n"
@@ -227,14 +227,14 @@ function exportCSV(){
                 if(gottitle==false){
                    rescsvtitle=""
                    for(prop in feat){
-                      rescsvtitle+="\\""+prop+"\\",
+                      rescsvtitle+="\\""+prop+"\\","
                    }
                    rescsvtitle+="\n"
                    rescsv=rescsvtitle+rescsv
                    gottitle=true
                 }
                 for(prop of feat){
-                    rescsv+="\\""+prop+"\\",
+                    rescsv+="\\""+prop+"\\","
                 }
             }
         }
