@@ -246,7 +246,7 @@ function exportCSV(){
 function setSVGDimensions(){ 
     $('.svgview').each(function(i, obj) {
         console.log(obj)
-        svgbbox=obj.children().first().getBBOX()
+        svgbbox=$(obj).children().first().getBBOX()
         newviewport=""+svgbbox.x+" "+svgbbox.y+" "+svgbbox.width+" "+svgbbox.height
         obj.attr("viewBox",newviewport)
         obj.attr("width",svgbbox.width+10)
