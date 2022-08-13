@@ -248,7 +248,7 @@ function setSVGDimensions(){
         console.log(obj)
         console.log($(obj).children().first()[0])
         svgbbox=$(obj).children().first()[0].getBoundingClientRect();
-        newviewport=""+svgbbox.x+" "+svgbbox.y+" "+svgbbox.width+" "+svgbbox.height
+        newviewport=""+svgbbox.x-5+" "+svgbbox.y-5+" "+(svgbbox.width+5)+" "+(svgbbox.height+5)
         $(obj).attr("viewBox",newviewport)
         $(obj).attr("width",svgbbox.width+10)
         $(obj).attr("height",svgbbox.height+10)
