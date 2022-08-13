@@ -150,6 +150,130 @@ function exportGeoJSON(){
     }
 }
 
+function exportCSV(){
+    rescsv=""
+    if(typeof(feature)!=="undefined"){
+        if("features" in feature){
+           for(feat of feature["features"]){
+                rescsv+="\\""+feat["geometry"]["type"].toUpperCase()+"("
+                feat["geometry"].coordinates.forEach(function(p,i){
+                //	console.log(p)
+                    if(i<feat["geometry"].coordinates.length-1)rescsv =  rescsv + p[0] + ' ' + p[1] + ', ';
+                    else rescsv =  rescsv + p[0] + ' ' + p[1] + ')';
+                })
+                rescsv+=")\\","
+                if("properties" in feat){
+                    if(gottitle==false){
+                       rescsvtitle="\\"the_geom\\","
+                       for(prop in feat["properties"]){
+                          rescsvtitle+="\\""+prop+"\\","
+                       }
+                       rescsvtitle+="\\n"
+                       rescsv=rescsvtitle+rescsv
+                       gottitle=true
+                    }
+                    for(prop of feat["properties"]){
+                        rescsv+="\\""+prop+"\\","
+                    }
+                }
+                rescsv+="\\n"
+           }
+        }else{
+            gottitle=false
+            rescsv+="\\""+feature["geometry"]["type"].toUpperCase()+"("
+            feature["geometry"].coordinates.forEach(function(p,i){
+            //	console.log(p)
+                if(i<feature["geometry"].coordinates.length-1)rescsv =  rescsv + p[0] + ' ' + p[1] + ', ';
+                else rescsv =  rescsv + p[0] + ' ' + p[1] + ')';
+            })
+            rescsv+=")\\","
+            if("properties" in feature){
+                if(gottitle==false){
+                   rescsvtitle=""
+                   for(prop in feature["properties"]){
+                      rescsvtitle+="\\""+prop+"\\","
+                   }
+                   rescsvtitle+="\\n"
+                   rescsv=rescsvtitle+rescsv
+                   gottitle=true
+                }
+                for(prop of feature["properties"]){
+                    rescsv+="\\""+prop+"\\","
+                }
+            }
+        }
+        saveTextAsFile(rescsv,".csv")
+    }else if(typeof(nongeofeature)!=="undefined"){
+        if("features" in nongeofeature){
+           for(feat of nongeofeature["features"]){
+                if("properties" in feat){
+                    if(gottitle==false){
+                       rescsvtitle="\\"the_geom\\","
+                       for(prop in feat["properties"]){
+                          rescsvtitle+="\\""+prop+"\\","
+                       }
+                       rescsvtitle+="\\n"
+                       rescsv=rescsvtitle+rescsv
+                       gottitle=true
+                    }
+                    for(prop of feat["properties"]){
+                        rescsv+="\\""+prop+"\\","
+                    }
+                }
+                rescsv+="\\n"
+           }
+        }else{
+            gottitle=false
+            if("properties" in nongeofeature){
+                if(gottitle==false){
+                   rescsvtitle=""
+                   for(prop in nongeofeature["properties"]){
+                      rescsvtitle+="\\""+prop+"\\","
+                   }
+                   rescsvtitle+="\\n"
+                   rescsv=rescsvtitle+rescsv
+                   gottitle=true
+                }
+                for(prop of nongeofeature["properties"]){
+                    rescsv+="\\""+prop+"\\","
+                }
+            }
+        }
+        saveTextAsFile(rescsv,".csv")
+    }
+}
+
+function exportWKT(){
+    if(typeof(feature)!=="undefined"){
+        reswkt=""
+        if("features" in feature){
+            for(feat of feature["features"]){
+                reswkt+=feat["geometry"]["type"].toUpperCase()+"("
+                feat["geometry"].coordinates.forEach(function(p,i){
+                //	console.log(p)
+                    if(i<feat["geometry"].coordinates.length-1)reswkt =  reswkt + p[0] + ' ' + p[1] + ', ';
+                    else reswkt =  reswkt + p[0] + ' ' + p[1] + ')';
+                })
+                for(coord of feat["geometry"]["coordinates"]){
+                    reswkt+=""
+                }
+                reswkt+=")\\n"
+            }
+        }else{
+                reswkt+=feature["geometry"]["type"].toUpperCase()+"("
+                feature["geometry"].coordinates.forEach(function(p,i){
+                    if(i<feature["geometry"].coordinates.length-1)reswkt =  reswkt + p[0] + ' ' + p[1] + ', ';
+                    else reswkt =  reswkt + p[0] + ' ' + p[1] + ')';
+                })
+                for(coord of feature["geometry"]["coordinates"]){
+                    reswkt+=""
+                }
+                reswkt+=")\\n"
+        }
+        saveTextAsFile(reswkt,".wkt")
+    }
+}
+
 function downloadFile(filePath){
     var link=document.createElement('a');
     link.href = filePath;
@@ -181,6 +305,10 @@ function download(){
         downloadFile("index.ttl")
     }else if(format=="json"){
         downloadFile("index.json")
+    }else if(format=="wkt"){
+        exportWKT()
+    }else if(format=="csv"){
+        exportCSV()
     }
 }
 
@@ -751,16 +879,16 @@ nongeoexports="""
 geoexports="""
 <option value="csv">Comma Separated Values (CSV)</option>
 <option value="geojson">(Geo)JSON</option>
-<option value="geojsonld">GeoJSON-LD</option>
+<!--<option value="geojsonld">GeoJSON-LD</option>
 <option value="geouri">GeoURI</option> 
 <option value="json">JSON-LD</option>
 <option value="kml">Keyhole Markup Language (KML)</option>
 <option value="latlontext">LatLonText</option>
 <option value="mapml">Map Markup Language (MapML)</option>
-<option value="osmlink">OSM Link</option>
+<option value="osmlink">OSM Link</option>-->
 <option value="ttl" selected>Turtle (TTL)</option>
 <option value="wkt">Well-Known-Text (WKT)</option>
-<option value="xyz">XYZ ASCII Format (XYZ)</option>
+<!--<option value="xyz">XYZ ASCII Format (XYZ)</option>-->
 """
 
 maptemplate="""
