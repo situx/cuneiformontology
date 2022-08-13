@@ -1113,7 +1113,7 @@ class OntDocGeneration:
                             break
                     indexhtml+="</tr>"
             indexhtml += "</tbody></table><script>$('#indextable').DataTable();</script>"
-            indexhtml+=htmlfooter.replace("{{license}}",curlicense)
+            indexhtml+=htmlfooter.replace("{{license}}",curlicense).replace("{{exports}}",nongeoexports)
             print(path)
             with open(path + "index.html", 'w', encoding='utf-8') as f:
                 f.write(indexhtml)
