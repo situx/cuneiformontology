@@ -180,7 +180,7 @@ function exportCSV(){
         }else{
             gottitle=false
             rescsv+="\\""+feature["geometry"]["type"].toUpperCase()+"("
-            feat["geometry"].coordinates.forEach(function(p,i){
+            feature["geometry"].coordinates.forEach(function(p,i){
             //	console.log(p)
                 if(i<feature["geometry"].coordinates.length-1)rescsv =  rescsv + p[0] + ' ' + p[1] + ', ';
                 else rescsv =  rescsv + p[0] + ' ' + p[1] + ')';
@@ -261,7 +261,7 @@ function exportWKT(){
         }else{
                 reswkt+=feature["geometry"]["type"].toUpperCase()+"("
                 feature["geometry"].coordinates.forEach(function(p,i){
-                    if(i<feat["geometry"].coordinates.length-1)reswkt =  reswkt + p[0] + ' ' + p[1] + ', ';
+                    if(i<feature["geometry"].coordinates.length-1)reswkt =  reswkt + p[0] + ' ' + p[1] + ', ';
                     else reswkt =  reswkt + p[0] + ' ' + p[1] + ')';
                 })
                 for(coord of feature["geometry"]["coordinates"]){
