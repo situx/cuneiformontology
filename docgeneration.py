@@ -172,8 +172,8 @@ function exportCSV(){
                        rescsv=rescsvtitle+rescsv
                        gottitle=true
                     }
-                    for(prop of feat["properties"]){
-                        rescsv+="\\""+prop+"\\","
+                    for(prop in feat["properties"]){
+                        rescsv+="\\""+feat["properties"][prop]+"\\","
                     }
                 }
                 rescsv+="\\n"
@@ -197,8 +197,8 @@ function exportCSV(){
                    rescsv=rescsvtitle+rescsv
                    gottitle=true
                 }
-                for(prop of feature["properties"]){
-                    rescsv+="\\""+prop+"\\","
+                for(prop in feature["properties"]){
+                    rescsv+="\\""+feature["properties"][prop]+"\\","
                 }
             }
         }
@@ -216,8 +216,8 @@ function exportCSV(){
                        rescsv=rescsvtitle+rescsv
                        gottitle=true
                     }
-                    for(prop of feat["properties"]){
-                        rescsv+="\\""+prop+"\\","
+                    for(prop in feat["properties"]){
+                        rescsv+="\\""+feat["properties"][prop]+"\\","
                     }
                 }
                 rescsv+="\\n"
@@ -234,8 +234,8 @@ function exportCSV(){
                    rescsv=rescsvtitle+rescsv
                    gottitle=true
                 }
-                for(prop of nongeofeature["properties"]){
-                    rescsv+="\\""+prop+"\\","
+                for(prop in nongeofeature["properties"]){
+                    rescsv+="\\""+nongeofeature["properties"][prop]+"\\","
                 }
             }
         }
@@ -254,9 +254,6 @@ function exportWKT(){
                     if(i<feat["geometry"].coordinates.length-1)reswkt =  reswkt + p[0] + ' ' + p[1] + ', ';
                     else reswkt =  reswkt + p[0] + ' ' + p[1] + ')';
                 })
-                for(coord of feat["geometry"]["coordinates"]){
-                    reswkt+=""
-                }
                 reswkt+=")\\n"
             }
         }else{
@@ -265,9 +262,6 @@ function exportWKT(){
                     if(i<feature["geometry"].coordinates.length-1)reswkt =  reswkt + p[0] + ' ' + p[1] + ', ';
                     else reswkt =  reswkt + p[0] + ' ' + p[1] + ')';
                 })
-                for(coord of feature["geometry"]["coordinates"]){
-                    reswkt+=""
-                }
                 reswkt+=")\\n"
         }
         saveTextAsFile(reswkt,".wkt")
