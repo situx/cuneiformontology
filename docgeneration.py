@@ -243,6 +243,18 @@ function exportCSV(){
     }
 }
 
+function setSVGDimensions(){ 
+    $('.svgview').each(function(i, obj) {
+        console.log(obj)
+        console.log($(obj).children().first())
+        svgbbox=$(obj).children().first()[0].getBBOX()
+        newviewport=""+svgbbox.x+" "+svgbbox.y+" "+svgbbox.width+" "+svgbbox.height
+        obj.attr("viewBox",newviewport)
+        obj.attr("width",svgbbox.width+10)
+        obj.attr("height",svgbbox.height+10)
+    });
+}
+
 function exportWKT(){
     if(typeof(feature)!=="undefined"){
         reswkt=""
@@ -975,7 +987,7 @@ htmltabletemplate="""
 htmlfooter="""<div id="footer"><div class="container-fluid"><b>Download Options:</b>&nbsp;Format:<select id="format" onchange="changeDefLink()">	
 {{exports}}
 </select><a id="formatlink2" href="#" target="_blank"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg></a>&nbsp;
-<button id="downloadButton" onclick="download()">Download</button>{{license}}</div></div></body></html>"""
+<button id="downloadButton" onclick="download()">Download</button>{{license}}</div></div></body><script>setSVGDimensions()</script></html>"""
 
 licensetemplate=""""""
 
@@ -1620,7 +1632,10 @@ class OntDocGeneration:
                     break
             for image in foundimages:
                 if "<svg" in image:
-                    f.write(imagestemplatesvg.replace("{{image}}",str(image)))
+                    if "<svg>" in image:
+                        f.write(imagestemplatesvg.replace("{{image}}", str(image.replace("<svg>","<svg class=\"svgview\">"))))
+                    else:
+                        f.write(imagestemplatesvg.replace("{{image}}",str(image)))
                 else:
                     f.write(imagestemplate.replace("{{image}}",str(image)))
             if geojsonrep!=None and not isgeocollection:
