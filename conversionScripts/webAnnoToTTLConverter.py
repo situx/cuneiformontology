@@ -22,12 +22,20 @@ for tabname in tabletnames:
     for side in tabletsides:
         origtabletside=side
         filename="../examples/"+str(tabname)+"/ttl/"+str(tabname)+"_"+str(origtabletside)+".png.json"
+        filename3d="../examples/"+str(tabname)+"/ttl/"+str(tabname)+"_"+str(origtabletside)+".png_3D.json"
         print(filename)
+        print(filename3d)
+        data3d={}
         if not os.path.exists(filename):
             continue
+        if os.path.exists(filename3d):
+            print("Found 3d annos")
+            f = open(filename3d,'r')
+            data3d = json.load(f)
         print(tabname+" "+side)
         f = open(filename,'r')
         data = json.load(f)
+
 
         res = open(filename.replace(".json",".ttl"),'w')
         res.write("""
@@ -98,6 +106,15 @@ for tabname in tabletnames:
             res.write("<"+str(indid)+"_body_translit> oa:motivatedBy oa:identifying .\n")
             res.write("<"+str(indid)+"_body_translit> rdf:value \""+str(curtranslit)+"\" .\n")
             res.write("<"+str(indid)+"_body_translit> rdfs:label  \"Annotation body referencing transliteration char occurrence at "+str(tabletname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on "+str(material)+"\"@en .\n")
+            if key in data3d and "target" in data3d[key] and "selector" in data3d[key]["target"]:
+                res.write("<"+str(indid)+"> oa:hasTarget <"+str(indid)+"_target3d> .\n")
+                res.write("<"+str(indid)+"_target3d> rdf:type owl:NamedIndividual .\n")
+                res.write("<"+str(indid)+"_target3d> oa:hasSource <"+str(data3d[key]["target"]["source"])+"> .\n")
+                res.write("<"+str(indid)+"_target3d> oa:hasSelector <"+str(indid)+"_target3d_selector> .\n")
+                res.write("<"+str(indid)+"_target3d> rdfs:label \"3D Annotation target of Annotation of Glyph at "+str(tabletname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on "+str(material)+"\"@en .\n")
+                res.write("<"+str(indid)+"_target3d_selector> rdf:type oa:WKTSelector .\n")
+                res.write("<"+str(indid)+"_target3d_selector> rdf:value \""+str(data3d[key]["target"]["selector"]["value"])+"\" .\n")
+                res.write("<"+str(indid)+"_target3d_selector> rdfs:label \"3D Annotation target selector of Annotation of Glyph at "+str(tabletname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on "+str(material)+"\"@en .\n")
             res.write("<"+str(indid)+"_target1> rdf:type owl:NamedIndividual .\n")
             res.write("<"+str(indid)+"_target1> oa:hasSelector <"+str(indid)+"_target1_selector> .\n")
             if "/raw" in str(source):

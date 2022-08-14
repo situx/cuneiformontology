@@ -58,18 +58,21 @@ class MeshUtils:
     def getPointsinBBOX(mesh,bboxes):
         vresult=[]
         pboxes=[]
-        for bbox in bboxes:
-            pboxes.append(Polygon(bbox))
-            vresult.append([])
-        for coordinate in mesh.elements[0]:
-            temppoint=Point(coordinate[0],coordinate[1])
-            i=0
-            for bbox in pboxes:
-                #print("BBOX: "+str(bbox))
-                if bbox.contains(temppoint):
-                    vresult[i].append(coordinate)
-                i+=1
-            #print(temppoint)
+        try:
+            for bbox in bboxes:
+                pboxes.append(Polygon(bbox))
+                vresult.append([])
+            for coordinate in mesh.elements[0]:
+                temppoint=Point(coordinate[0],coordinate[1])
+                i=0
+                for bbox in pboxes:
+                    #print("BBOX: "+str(bbox))
+                    if bbox.contains(temppoint):
+                        vresult[i].append(coordinate)
+                    i+=1
+                #print(temppoint)
+        except Exception as e:
+            print(e)
         return vresult
 
     @staticmethod
@@ -166,6 +169,11 @@ class AnnotationProcessor:
             annopolygon=None
             if "body" in annojson[anno]:
                 for bodyitem in annojson[anno]["body"]:
+                    print(bodyitem)
+                    if "purpose" in bodyitem and bodyitem["purpose"]=="tagging" and "value" in bodyitem and bodyitem["value"]=="Character":
+                        annotype="Character"
+                    if "purpose" in bodyitem and bodyitem["purpose"]=="tagging" and "value" in bodyitem and bodyitem["value"]=="Wedge":
+                        annotype="Wedge"
                     if "type" in bodyitem and bodyitem["type"]=="SpecificResource":
                         annotype=bodyitem["source"]["label"]
             if "target" in annojson[anno]:
@@ -394,45 +402,107 @@ def findZCoordinate():
 
 if len(sys.argv)>1:
     annotationfile=sys.argv[1]
-annotationfile="../examples/HS1174/ttl/annotations_front.json"  
-meshfile="../examples/HS1174/mesh/HS_1174_HeiCuBeDa_GigaMesh.ply"
-imagefile="../examples/HS1174/images/front.jpg" 
-print("Loading Mesh "+str(meshfile))
-mesh = PlyData.read(meshfile)
-meshframe = pd.DataFrame({
-'x':mesh['vertex']['x'][::reduce_factor],
-'y':mesh['vertex']['y'][::reduce_factor],
-'z':mesh['vertex']['z'][::reduce_factor]
-})
-with open(annotationfile,"r",encoding="utf-8") as json_file:
-    annotations = json.load(json_file)   
-processed2DAnnotations=AnnotationProcessor.process2DAnnotations(annotations)
-print("Calculating BBOX of "+str(meshfile))
-meshbbox=MeshUtils.getMeshBBOX(mesh)
-#print(processed2DAnnotations)
-imgbbox=AnnotationProcessor.getImageBBOX(imagefile)
-pcautil=PCAUtils()
-pcautil.do_PCA(meshframe)
-annoresjson={}
-transannos=[]
-for anno in processed2DAnnotations["charannos"]:
-    #print(anno["polygon"])
-    transannos.append(MeshUtils.transform2Dto3DCoordinateSystem(imgbbox,meshbbox,anno["polygon"],"front"))
-print("Getting BBOXes from 3D Mesh....")
-pointsinbboxes=MeshUtils.getPointsinBBOX(mesh,transannos)
-print(len(pointsinbboxes))
-pboxres=[]
-for pbox in pointsinbboxes:
-    res=MeshUtils.createZValue("front",pbox,"")
-    pboxres.append(res)
-i=0
-for transanno in transannos:
-    print("Create 3D BBOX From Min Max Z Index")
-    enrichedcoords=AnnotationProcessor.create3DBBOXFromMinMaxZIndex(transanno,pboxres[i]["minZ"],pboxres[i]["maxZ"])
-    enrichedanno=Polygon(enrichedcoords)
-    webanno3d=AnnotationProcessor.create3DAnnotationWithPCA(processed2DAnnotations["charannos"][i]["anno"],enrichedanno,enrichedcoords,pcautil.pcamean,meshfile,pcautil.pca,pcautil.match_target,pcautil.ret_t,pcautil.ret_R,pcautil.s)
-    annoresjson[anno["id"]]=webanno3d
-    i+=1
-with open('convertedannos.json', 'w') as f:
-    f.write(json.dumps(annoresjson, indent=2,sort_keys=True))
-    f.close()
+    
+    
+    
+origtabletside="front"
+tabletnames=["HS1174","HT073195","O147"]#,"TCH92]
+tabletsides=["front","back","left","right","bottom","top"]
+tabletname="HS1174"
+material="3D rendering"
+creatormap={"O147":"https://orcid.org/0000-0001-6690-9098"}
+creator="https://orcid.org/0000-0002-9499-5840"
+namespace="https://situx.github.io/cuneiformontology/examples/"+str(tabletname).lower()+"/imgannotations/"
+namespaceitems="https://situx.github.io/cuneiformontology/examples/"+str(tabletname).lower()+"/"
+filename="../examples/"+str(tabletname)+"/ttl/"+str(tabletname)+"_"+str(origtabletside)+".png.json"
+withlines=False
+withcharoccs=False
+withglyphs=False
+
+
+for tabname in tabletnames:
+    print(tabname)
+    for side in tabletsides:
+        annotationfile="../examples/"+str(tabname)+"/ttl/"+str(tabname)+"_"+str(side)+".png.json"  
+        meshfile="../examples/"+str(tabname)+"/mesh/"+str(tabname)+"_mesh.ply"
+        imagefile="../examples/"+str(tabname)+"/images/sides/"+str(tabname)+"_"+str(side)+".png" 
+        print(annotationfile+" "+str(os.path.exists(annotationfile))+" - "+meshfile+" "+str(os.path.exists(meshfile))+"  - "+imagefile+" "+str(os.path.exists(imagefile)))
+        if not os.path.exists(meshfile) or not os.path.exists(imagefile) or not os.path.exists(annotationfile):
+            continue
+        print("Loading Mesh "+str(meshfile))
+        mesh = PlyData.read(meshfile)
+        meshframe = pd.DataFrame({
+        'x':mesh['vertex']['x'][::reduce_factor],
+        'y':mesh['vertex']['y'][::reduce_factor],
+        'z':mesh['vertex']['z'][::reduce_factor]
+        })
+        with open(annotationfile,"r",encoding="utf-8") as json_file:
+            annotations = json.load(json_file)   
+        processed2DAnnotations=AnnotationProcessor.process2DAnnotations(annotations)
+        print("Calculating BBOX of "+str(meshfile))
+        #print("2D Annotations: "+str(processed2DAnnotations))
+        meshbbox=MeshUtils.getMeshBBOX(mesh)
+        #print(processed2DAnnotations)
+        imgbbox=AnnotationProcessor.getImageBBOX(imagefile)
+        pcautil=PCAUtils()
+        pcautil.do_PCA(meshframe)
+        annoresjson={}
+        chartransannos=[]
+        for anno in processed2DAnnotations["charannos"]:
+            #print(anno["polygon"])
+            chartransannos.append(MeshUtils.transform2Dto3DCoordinateSystem(imgbbox,meshbbox,anno["polygon"],"front"))
+        wedgetransannos=[]
+        for anno in processed2DAnnotations["charannos"]:
+            #print(anno["polygon"])
+            wedgetransannos.append(MeshUtils.transform2Dto3DCoordinateSystem(imgbbox,meshbbox,anno["polygon"],"front"))
+        print("Getting BBOXes from 3D Mesh....")
+        charpointsinbboxes=MeshUtils.getPointsinBBOX(mesh,chartransannos)
+        wedgepointsinbboxes=MeshUtils.getPointsinBBOX(mesh,wedgetransannos)
+        print("Charannos: "+str(len(charpointsinbboxes)))
+        print("Wedgeannos: "+str(len(wedgepointsinbboxes)))
+        charpboxres=[]
+        for pbox in charpointsinbboxes:
+            res=MeshUtils.createZValue(side,pbox,"")
+            charpboxres.append(res)
+        wedgepboxres=[]
+        for pbox in wedgepointsinbboxes:
+            try:
+                res=MeshUtils.createZValue(side,pbox,"")
+                wedgepboxres.append(res)
+            except Exception as e:
+                print(e)
+        i=0
+        for transanno in chartransannos:
+            try:
+                print("Create 3D BBOX From Min Max Z Index")
+                print(transanno)
+                enrichedcoords=AnnotationProcessor.create3DBBOXFromMinMaxZIndex(transanno,charpboxres[i]["minZ"],charpboxres[i]["maxZ"])
+                #print(enrichedcoords)
+                enrichedanno=Polygon(enrichedcoords)
+                #print(enrichedanno)
+                webanno3d=AnnotationProcessor.create3DAnnotationWithPCA(processed2DAnnotations["charannos"][i]["anno"],enrichedanno,enrichedcoords,pcautil.pcamean,meshfile,pcautil.pca,pcautil.match_target,pcautil.ret_t,pcautil.ret_R,pcautil.s)
+                #print(webanno3d)
+                annoresjson[processed2DAnnotations["charannos"][i]["id"]]=webanno3d
+            except Exception as e:
+                print(e)
+            i+=1
+        for transanno in wedgetransannos:
+            try:
+                print("Create 3D BBOX From Min Max Z Index")
+                print(transanno)
+                enrichedcoords=AnnotationProcessor.create3DBBOXFromMinMaxZIndex(transanno,wedgepboxres[i]["minZ"],wedgepboxres[i]["maxZ"])
+                #print(enrichedcoords)
+                enrichedanno=Polygon(enrichedcoords)
+                #print(enrichedanno)
+                webanno3d=AnnotationProcessor.create3DAnnotationWithPCA(processed2DAnnotations["wedgeannos"][i]["anno"],enrichedanno,enrichedcoords,pcautil.pcamean,meshfile,pcautil.pca,pcautil.match_target,pcautil.ret_t,pcautil.ret_R,pcautil.s)
+                #print(webanno3d)
+                annoresjson[processed2DAnnotations["wedgeannos"][i]["id"]]=webanno3d
+            except Exception as e:
+                print(e)
+            i+=1
+        print("Saving new annotation file: "+str(annotationfile.replace(".json","_3D.json")))
+        #print(annoresjson)
+        with open(annotationfile.replace(".json","_3D.json"), 'w') as f:
+            print("writing annotation file....")
+            f.write(json.dumps(annoresjson, indent=2,sort_keys=True))
+            f.close()
