@@ -21,7 +21,8 @@ for tabname in tabletnames:
     print(tabname)
     for side in tabletsides:
         origtabletside=side
-        filename="../examples/"+str(tabletname)+"/ttl/"+str(tabletname)+"_"+str(origtabletside)+".png.json"
+        filename="../examples/"+str(tabname)+"/ttl/"+str(tabname)+"_"+str(origtabletside)+".png.json"
+        print(filename)
         if not os.path.exists(filename):
             continue
         print(tabname+" "+side)
