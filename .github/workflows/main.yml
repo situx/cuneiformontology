@@ -25,7 +25,7 @@ jobs:
          pylode -i postagging/hittite.ttl -o docs/postagging_hittite.html
          pylode -i examples/HS1174/ttl/hs1174.ttl -o docs/example_hs1174.html
          pylode -i examples/HT073195/ttl/ht073195.ttl -o docs/example_ht073195.html
-         pylode -i examples/O_0147/ttl/o147.ttl -o docs/example_o147.html
+         pylode -i examples/O147/ttl/o147.ttl -o docs/example_o147.html
          pylode -i examples/TCH92/ttl/tch92.ttl -o docs/example_tch92.html
          mkdir docs/examples/
          mkdir docs/examples/hs1174/
@@ -33,18 +33,18 @@ jobs:
          mkdir docs/examples/o147/
          cp -r examples/HS1174/images/ docs/examples/hs1174/images/ 
          cp -r examples/TCH92/images/ docs/examples/tch92/images/ 
-         cp -r examples/O149/images/ docs/examples/o147/images/ 
+         cp -r examples/O147/images/ docs/examples/o147/images/ 
          python3 docgeneration.py signlist/signlist.ttl docs/signlist/ http://purl.org/cuneiform/signlist/ cuneisignlist
          python3 docgeneration.py examples/HS1174/ttl/hs1174.ttl docs/examples/ https://situx.github.io/cuneiformontology/examples/ cuneiex
          python3 docgeneration.py examples/HS1174/ttl/HS1174_front.png.ttl docs/examples/ https://situx.github.io/cuneiformontology/examples/ cuneiex
          python3 docgeneration.py examples/HS1174/ttl/HS1174_back.png.ttl docs/examples/ https://situx.github.io/cuneiformontology/examples/ cuneiex
          python3 docgeneration.py examples/HT073195/ttl/ht073195.ttl docs/examples/ https://situx.github.io/cuneiformontology/examples/ cuneiex
          python3 docgeneration.py examples/HT073195/ttl/HT073195_front.png.ttl docs/examples/ https://situx.github.io/cuneiformontology/examples/ cuneiex
-         python3 docgeneration.py examples/O_0147/ttl/o147.ttl docs/examples/ https://situx.github.io/cuneiformontology/examples/ cuneiex
-         python3 docgeneration.py examples/O_0147/ttl/O_0147_front.png.ttl docs/examples/ https://situx.github.io/cuneiformontology/examples/ cuneiex
-         python3 docgeneration.py examples/O_0147/ttl/O_0147_back.png.ttl docs/examples/ https://situx.github.io/cuneiformontology/examples/ cuneiex
-         python3 docgeneration.py examples/O_0147/ttl/O_0147_right.png.ttl docs/examples/ https://situx.github.io/cuneiformontology/examples/ cuneiex
-         python3 docgeneration.py examples/O_0147/ttl/O_0147_bottom.png.ttl docs/examples/ https://situx.github.io/cuneiformontology/examples/ cuneiex
+         python3 docgeneration.py examples/O147/ttl/o147.ttl docs/examples/ https://situx.github.io/cuneiformontology/examples/ cuneiex
+         python3 docgeneration.py examples/O147/ttl/O147_front.png.ttl docs/examples/ https://situx.github.io/cuneiformontology/examples/ cuneiex
+         python3 docgeneration.py examples/O147/ttl/O147_back.png.ttl docs/examples/ https://situx.github.io/cuneiformontology/examples/ cuneiex
+         python3 docgeneration.py examples/O147/ttl/O147_right.png.ttl docs/examples/ https://situx.github.io/cuneiformontology/examples/ cuneiex
+         python3 docgeneration.py examples/O147/ttl/O147_bottom.png.ttl docs/examples/ https://situx.github.io/cuneiformontology/examples/ cuneiex
          python3 docgeneration.py examples/TCH92/ttl/tch92.ttl docs/examples/ https://situx.github.io/cuneiformontology/examples/ cuneiex
          python3 docgeneration.py examples/TCH92/ttl/TCH92_front.png.ttl docs/examples/ https://situx.github.io/cuneiformontology/examples/ cuneiex
          python3 docgeneration.py examples/TCH92/ttl/TCH92_back.png.ttl docs/examples/ https://situx.github.io/cuneiformontology/examples/ cuneiex

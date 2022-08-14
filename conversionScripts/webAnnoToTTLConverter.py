@@ -1,8 +1,8 @@
 import json
 from rdflib import Graph
 
-origtabletside="back"
-tabletname="TCH92"
+origtabletside="bottom"
+tabletname="O147"
 material="3D rendering"
 creator="https://orcid.org/0000-0001-6690-9098" #https://orcid.org/0000-0001-6690-9098 https://orcid.org/0000-0002-9499-5840
 namespace="https://situx.github.io/cuneiformontology/examples/"+str(tabletname).lower()+"/imgannotations/"
@@ -68,8 +68,9 @@ for key in data:
     res.write("<https://github.com/recogito/annotorious-openseadragon> foaf:name \"Annotorious-OpenSeaDragon\" .\n")
     res.write("<https://github.com/recogito/annotorious-openseadragon> foaf:homepage \"https://github.com/recogito/annotorious-openseadragon\" .\n")
     res.write("<"+str(indid)+"> <http://purl.org/dc/terms/creator> <"+creator+"> .\n")
-    res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body1> .\n")
-    res.write("<"+str(indid)+"> oa:hasTarget <"+str(indid)+"_target> .\n")
+    res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_glyph> .\n")
+    res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_translit> .\n")
+    res.write("<"+str(indid)+"> oa:hasTarget <"+str(indid)+"_target1> .\n")
     res.write("<"+str(indid)+"> <http://purl.org/dc/terms/rights> \"https://creativecommons.org/publicdomain/zero/1.0/\" .\n")
     res.write("<"+str(indid)+"> rdfs:label \"Annotation of Glyph at "+str(tabletname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on "+str(material)+"\"@en .\n")	
     res.write("<"+str(indid)+"_body_glyph> rdf:type oa:SpecificResource .\n")
@@ -83,7 +84,7 @@ for key in data:
     res.write("<"+str(indid)+"_body_translit> rdfs:label  \"Annotation body referencing transliteration char occurrence at "+str(tabletname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on "+str(material)+"\"@en .\n")
     res.write("<"+str(indid)+"_target1> rdf:type owl:NamedIndividual .\n")
     res.write("<"+str(indid)+"_target1> oa:hasSelector <"+str(indid)+"_target1_selector> .\n")
-    res.write("<"+str(indid)+"_target1> oa:hasSource <"+str(source)+"> .\n")
+    res.write("<"+str(indid)+"_target1> oa:hasSource <"+str(source)[0:str(source).rfind("/")]+"> .\n")
     res.write("<"+str(indid)+"_target1> rdfs:label \"Annotation target1 of Annotation of Glyph at "+str(tabletname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on "+str(material)+"\"@en .\n")
     res.write("<"+str(indid)+"_target1_selector> rdf:type oa:"+str(selectortype)+" .\n")
     res.write("<"+str(indid)+"_target1_selector> rdf:value \""+str(selectorval).replace("\"","\\\\")+"\" .\n")
