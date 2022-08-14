@@ -1,5 +1,6 @@
 import json
 from rdflib import Graph
+import os
 
 origtabletside="front"
 tabletnames=["HS1174","HT073195","TCH92","O147"]
@@ -17,11 +18,13 @@ withglyphs=False
 
 
 for tabname in tabletnames:
+    print(tabname)
     for side in tabletsides:
         origtabletside=side
         filename="../examples/"+str(tabletname)+"/ttl/"+str(tabletname)+"_"+str(origtabletside)+".png.json"
         if not os.path.exists(filename):
             continue
+        print(tabname+" "+side)
         f = open(filename,'r')
         data = json.load(f)
 
@@ -96,7 +99,10 @@ for tabname in tabletnames:
             res.write("<"+str(indid)+"_body_translit> rdfs:label  \"Annotation body referencing transliteration char occurrence at "+str(tabletname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on "+str(material)+"\"@en .\n")
             res.write("<"+str(indid)+"_target1> rdf:type owl:NamedIndividual .\n")
             res.write("<"+str(indid)+"_target1> oa:hasSelector <"+str(indid)+"_target1_selector> .\n")
-            res.write("<"+str(indid)+"_target1> oa:hasSource <"+str(source)[0:str(source).rfind("/")]+"> .\n")
+            if "/raw" in str(source):
+                res.write("<"+str(indid)+"_target1> oa:hasSource <"+str(source)[0:str(source).rfind("/")].replace("https://gitlab.rlp.net/api/v4/projects/28015/repository/files/renderings%2F"+str(tabletname)+"%2F","https://situx.github.io/cuneiformontology/examples/"+str(tabletname).lower()+"/images/")+"> .\n")
+            else:
+                res.write("<"+str(indid)+"_target1> oa:hasSource <"+str(source).replace("https://gitlab.rlp.net/api/v4/projects/28015/repository/files/renderings%2F"+str(tabletname)+"%2F","https://situx.github.io/cuneiformontology/examples/"+str(tabletname).lower()+"/images/")+"> .\n")              
             res.write("<"+str(indid)+"_target1> rdfs:label \"Annotation target1 of Annotation of Glyph at "+str(tabletname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on "+str(material)+"\"@en .\n")
             res.write("<"+str(indid)+"_target1_selector> rdf:type oa:"+str(selectortype)+" .\n")
             res.write("<"+str(indid)+"_target1_selector> rdf:value \""+str(selectorval).replace('"','\\"')+"\" .\n")
