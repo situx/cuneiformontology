@@ -97,6 +97,11 @@ imageextensions=[".apng",".bmp",".cur",".ico",".jpg",".jpeg",".png",".gif",".tif
 
 meshextensions=[".ply",".nxs",".nxz"]
 
+videoextensions=[".avi",".mp4",".ogv"]
+
+audioextensions=[".aac",".mp3",".mkv",".ogg",".opus",".wav"]
+
+
 startscripts = """var namespaces={"rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","xsd":"http://www.w3.org/2001/XMLSchema#","geo":"http://www.opengis.net/ont/geosparql#","rdfs":"http://www.w3.org/2000/01/rdf-schema#","owl":"http://www.w3.org/2002/07/owl#","dc":"http://purl.org/dc/terms/","skos":"http://www.w3.org/2004/02/skos/core#"}
 var annotationnamespaces=["http://www.w3.org/2004/02/skos/core#","http://www.w3.org/2000/01/rdf-schema#","http://purl.org/dc/terms/"]
 var geoproperties={
@@ -148,6 +153,21 @@ function exportGeoJSON(){
     if(typeof(feature) !== "undefined"){
         saveTextAsFile(JSON.stringify(feature),"geojson")
     }
+}
+
+function parseWKTStringToJSON(wktstring){
+    wktstring=wktstring.substring(wktstring.lastIndexOf('(')+1,wktstring.lastIndexOf(')')-1)
+    resjson=[]
+    for(coordset of wktstring.split(",")){
+        curobject={}
+        coords=coordset.split(" ")
+        if(coords.length==3){
+            resjson.append({"x":coords[0],"y":coords[1],"z":coords[2]})
+        }else{
+            resjson.append({"x":coords[0],"y":coords[1]})
+        }
+    }
+    return resjson
 }
 
 function exportCSV(){
@@ -446,6 +466,38 @@ function start3dhop(meshurl,meshformat){
 	resizeCanvas(640,480);
   	moveToolbar(20,20);  
 }
+
+
+let camera, scene, renderer;
+
+function init(domelement,verts) {
+    camera = new THREE.PerspectiveCamera( 90, window.innerWidth / window.innerHeight, 0.1, 100 );
+    camera.position.z = 145;
+    scene = new THREE.Scene();
+	vertarray=[]
+    for(vert in verts){
+        vertarray.append(vert["x"])
+        vertarray.append(vert["y"])
+        vertarray.append(vert["z"])
+    }
+    vertices=new Float32Array(vertarray)
+    const geometry =new THREE.BufferGeometry( ); 
+    geometry.setAttribute( 'position', new THREE.BufferAttribute( vertices, 3 ) );    
+    const material = new THREE.MeshBasicMaterial( { color: 0xFFFFFF } );
+    const mesh = new THREE.Mesh( geometry, material );
+    scene.add( mesh );
+    renderer = new THREE.WebGLRenderer( { antialias: false } );
+		renderer.setPixelRatio( window.devicePixelRatio );
+    renderer.setSize( window.innerWidth, window.innerHeight );
+    document.querySelector(domelement).appendChild( renderer.domElement );		
+	const controls = new THREE.OrbitControls( camera, renderer.domElement );
+}
+
+function animate() {
+    requestAnimationFrame( animate );
+    renderer.render( scene, camera );
+}
+
 
 function labelFromURI(uri,label){
         if(uri.includes("#")){
@@ -822,6 +874,7 @@ htmltemplate = """<html about=\"{{subject}}\"><head><title>{{toptitle}}</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r99/three.min.js"></script>
 <script src="{{scriptfolderpath}}"></script><script src="{{classtreefolderpath}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/jstree.min.js"></script>
 <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
@@ -849,6 +902,30 @@ imagestemplate="""
 imagestemplatesvg="""
 <div class="image" style="max-width:500px;max-height:500px">
 {{image}}
+</div>
+"""
+
+videotemplate="""
+<div class="video">
+<video width="320" height="240" controls>
+  <source src="{{video}}">
+Your browser does not support the video tag.
+</video>
+</div>
+"""
+
+audiotemplate="""
+<div class="audio">
+<audio controls>
+  <source src="{{audio}}">
+Your browser does not support the audio element.
+</audio>
+</div>
+"""
+
+threejstemplate="""
+<div class="threejscontainer">
+
 </div>
 """
 
