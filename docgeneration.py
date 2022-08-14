@@ -1535,6 +1535,8 @@ class OntDocGeneration:
         geojsonrep=None
         foundimages=set()
         found3dimages=set()
+        foundaudio=set()
+        foundvideo=set()
         savepath = savepath.replace("\\", "/")
         checkdepth=self.checkDepthFromPath(savepath, baseurl, subject)
         foundlabel = ""
@@ -1596,6 +1598,12 @@ class OntDocGeneration:
                             for ext in meshextensions:
                                 if ext in str(item):
                                     found3dimages.add(str(item))
+                            for ext in audioextensions:
+                                if ext in str(item):
+                                    foundaudio.add(str(item))
+                            for ext in videoextensions:
+                                if ext in str(item):
+                                    foundaudio.add(str(item))
                         tablecontents+="<li>"
                         res=self.createHTMLTableValueEntry(subject, tup, item, ttlf, tablecontents, graph,
                                               baseurl, checkdepth,geojsonrep)
@@ -1612,6 +1620,12 @@ class OntDocGeneration:
                         for ext in meshextensions:
                             if ext in str(predobjmap[tup]):
                                 found3dimages.add(str(predobjmap[tup][0]))
+                        for ext in audioextensions:
+                            if ext in str(predobjmap[tup]):
+                                foundaudio.add(str(predobjmap[tup][0]))
+                        for ext in videoextensions:
+                            if ext in str(predobjmap[tup]):
+                                foundaudio.add(str(predobjmap[tup][0]))
                     res=self.createHTMLTableValueEntry(subject, tup, predobjmap[tup][0], ttlf, tablecontents, graph,
                                               baseurl, checkdepth,geojsonrep)
                     tablecontents=res["html"]
