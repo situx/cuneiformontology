@@ -97,6 +97,39 @@ class MeshUtils:
         #print(zValues)
         return {"minZ":minZ,"maxZ":maxZ,"zValues":zValues}
 
+class MeshExportUtils:
+    
+    def exportPly(filename,mesh,faces=True):
+        plyfile = open(filename, 'w')
+        plyfile.write('ply\n'
+                   'format ascii 1.0\n' +
+                   'element vertex ' + str(len(mesh.coordinates)) + '\n'
+                   'property float x\n'
+                   'property float y\n'
+                   'property float z\n'
+                   'property uchar red\n'
+                   'property uchar green\n'
+                   'property uchar blue\n'
+                   'element face ' + str(len(mesh.faces)) + '\n'
+                   'property list uchar int vertex_indices\n'
+                   'end_header\n')
+        for coordinate in mesh.coordinates:
+            plyfile.write(str(coordinate).replace('[', '').replace(']', '').replace(',', '') + ' 0 255 245 '  + '\n')
+        if faces:
+            for coordinate in mesh.faces:
+                plyfile.write('3 ' + str(coordinate).replace('[', '').replace(']', '').replace(',', '').replace('.0', '') + '\n')
+        plyfile.close()
+        
+    def exportSpiderGL(filename,mesh):
+        spiderglexport={"vertices":[],"colors":[]}
+        for coordinate in mesh.coordinates:
+            spiderglexport["vertices"].append(coordinate[0])
+            spiderglexport["vertices"].append(coordinate[1])
+            spiderglexport["vertices"].append(coordinate[2])
+            spiderglexport["colors"].append(0.0)
+            spiderglexport["colors"].append(0.0)
+            spiderglexport["colors"].append(1.0)
+        
 
 class AnnotationProcessor:
     
@@ -157,6 +190,7 @@ class AnnotationProcessor:
         compref=anno["target"]["selector"]["computingReference"]
         compref.append({"type":"PCA","value":str(pca[2][0])+" "+str(pca[2][1])+" "+str(pca[2][2])+" "+str(pca[2][3]),"transformationmatrix":str(match_target),"wktTransformation":str(PCAUtils.pcaToWKT(ret_t,ret_R,s)),"stable":PCAUtils.isPCAStable(pca)})
         return anno
+
 
 class PCAUtils:
     

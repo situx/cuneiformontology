@@ -1,0 +1,63 @@
+{
+  "#28b2e58a-c464-462e-aa73-a369ffaee903": {
+    "@context": "http://www.w3.org/ns/anno.jsonld",
+    "body": [
+      {
+        "purpose": "tagging",
+        "source": {
+          "id": "http://purl.org/cuneiform/Character",
+          "label": "Character"
+        },
+        "type": "SpecificResource"
+      },
+      {
+        "dimensions": {
+          "x": 723,
+          "y": 786
+        },
+        "purpose": "Transliteration",
+        "type": "TextualBody",
+        "value": "ib2"
+      },
+      {
+        "purpose": "Line",
+        "type": "TextualBody",
+        "value": "2"
+      },
+      {
+        "dimensions": {
+          "x": 723,
+          "y": 786
+        },
+        "purpose": "Charindex",
+        "type": "TextualBody",
+        "value": "7"
+      },
+      {
+        "purpose": "Wordindex",
+        "type": "TextualBody",
+        "value": "3"
+      }
+    ],
+    "id": "#28b2e58a-c464-462e-aa73-a369ffaee903",
+    "target": {
+      "selector": {
+        "computingReference": [
+          {
+            "stable": true,
+            "transformationmatrix": "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01]\n [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01]\n [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01]\n [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]",
+            "type": "PCA",
+            "value": "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]",
+            "wktTransformation": "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],\n        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],\n        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],\n        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],\n        AREA[\"Object extent\"],\n        BBOX[-43.7, 112.85, -9.87, 153.68]]"
+          }
+        ],
+        "coordinateSystem": "CS[\"cartesian\",3],AXIS[\"X\", \"geocentricX\", ORDER[1],\n            LENGTHUNIT[\"millimetre\",1],\n            ANGLEUNIT[\"degree\", 0.0174532925199433]\n        ],\n        AXIS[\"Y\", \"geocentricY\", ORDER[2],\n            LENGTHUNIT[\"millimetre\",1],\n            ANGLEUNIT[\"degree\", 0.0174532925199433]\n        ],\n        AXIS[\"Z\", \"geocentricZ\", ORDER[3],\n            LENGTHUNIT[\"millimetre\",1]\n        ]]",
+        "pcaValue": "POLYGON Z ((6.523981932543265 35.99988514406238 5.592082023620605, -2.55159499045075 35.91610483404324 5.592082023620605, -2.05527461921004 30.47036780805194 5.592082023620605, 6.736692533204771 31.18250184944353 5.592082023620605, 6.523981932543265 35.99988514406238 7.705985546112061, -2.55159499045075 35.91610483404324 7.705985546112061, -2.05527461921004 30.47036780805194 7.705985546112061, 6.736692533204771 31.18250184944353 7.705985546112061, 6.523981932543265 35.99988514406238 5.592082023620605))",
+        "type": "WKTSelector",
+        "value": "POLYGON Z ((6.668054137371527 19.06921726686511 5.262694358825684, -2.407522785622488 18.98543695684598 5.262694358825684, -1.911202414381778 13.53969993085467 5.262694358825684, 6.880764738033033 14.25183397224627 5.262694358825684, 6.668054137371527 19.06921726686511 7.376597881317139, -2.407522785622488 18.98543695684598 7.376597881317139, -1.911202414381778 13.53969993085467 7.376597881317139, 6.880764738033033 14.25183397224627 7.376597881317139, 6.668054137371527 19.06921726686511 5.262694358825684))"
+      },
+      "source": "../examples/HS1174/mesh/HS_1174_HeiCuBeDa_GigaMesh.ply"
+    },
+    "type": "Annotation"
+  }
+}
