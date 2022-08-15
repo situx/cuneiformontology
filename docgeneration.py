@@ -1637,7 +1637,7 @@ class OntDocGeneration:
                         if "<svg" in str(item):
                             foundmedia["image"].add(str(item))
                         elif "http" in str(item):
-                            ext="."+str(item).split(".")[-1]
+                            ext="."+''.join(filter(str.isalpha,str(item).split(".")[-1]))
                             print("EXT: "+str(ext))
                             if ext in fileextensionmap:
                                 foundmedia[fileextensionmap[ext]].add(str(item))
@@ -1653,7 +1653,7 @@ class OntDocGeneration:
                     if "<svg" in str(predobjmap[tup]):
                         foundmedia["image"].add(str(predobjmap[tup][0]))
                     elif "http" in str(item):
-                        ext = "." + str(predobjmap[tup]).split(".")[-1]
+                        ext = "." + ''.join(filter(str.isalpha, str(predobjmap[tup]).split(".")[-1]))
                         print("EXT: "+str(ext))
                         if ext in fileextensionmap:
                             foundmedia[fileextensionmap[ext]].add(str(predobjmap[tup][0]))
