@@ -267,8 +267,26 @@ function setSVGDimensions(){
     $('.svgview').each(function(i, obj) {
         console.log(obj)
         console.log($(obj).children().first()[0])
-        svgbbox=$(obj).children().first()[0].getBoundingClientRect();
-        newviewport=""+(svgbbox.x-5)+" "+(svgbbox.y-5)+" "+(svgbbox.width+5)+" "+(svgbbox.height+5)
+        maxx=Number.MIN_VALUE
+        maxy=Number.MIN_VALUE
+        minx=Number.MAX_VALUE
+        miny=Number.MAX_VALUE
+        svgbbox=$(obj).children().each(function(i){
+            currect=$(this)[0].getBoundingClientRect()
+            if(svgbbox.x+width>maxx){
+                maxx=svgbox.x+width
+            }
+            if(svgbbox.y+height>maxy){
+                maxy=svgbox.y
+            }
+            if(svgbbox.y<miny){
+                miny=svgbox.y
+            }
+            if(svgbbox.x<minx){
+                minx=svgbox.x
+            }
+        });
+        newviewport=""+(minx-5)+" "+(miny-5)+" "+(maxx+5)+" "+(maxy+5)
         $(obj).attr("viewBox",newviewport)
         $(obj).attr("width",svgbbox.width+10)
         $(obj).attr("height",svgbbox.height+10)
