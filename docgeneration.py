@@ -313,11 +313,11 @@ function setSVGDimensions(){
                 minx=svgbbox.x
             }
         });
-        console.log(""+(minx-25)+" "+(miny+25)+" "+((maxx-minx)+25)+" "+((maxy-miny)+25))
-        newviewport=""+(minx-25)+" "+(miny+25)+" "+((maxx-minx)+25)+" "+((maxy-miny)+25)
+        console.log(""+(minx-(maxx-minx))+" "+(miny+(maxy-miny))+" "+((maxx-minx)+25)+" "+((maxy-miny)+25))
+        newviewport=""+(minx-(maxx-minx))+" "+(miny+(maxy-miny))+" "+((maxx-minx)+25)+" "+((maxy-miny)+25)
         $(obj).attr("viewBox",newviewport)
-        $(obj).attr("width",((maxx)+10))
-        $(obj).attr("height",((maxy)+10))
+        $(obj).attr("width",((maxx-minx))+10)
+        $(obj).attr("height",((maxy-miny)+10))
     });
 }
 
