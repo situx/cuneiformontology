@@ -1636,8 +1636,8 @@ class OntDocGeneration:
                             foundmedia["image"].add(str(item))
                         elif "http" in str(item):
                             ext="."+str(item).split(".")[-1]
-                            if ext in SPARQLUtils.filextensionmap:
-                                foundmedia[SPARQLUtils.filextensionmap[ext]].add(str(item))
+                            if ext in filextensionmap:
+                                foundmedia[filextensionmap[ext]].add(str(item))
                         tablecontents+="<li>"
                         res=self.createHTMLTableValueEntry(subject, tup, item, ttlf, tablecontents, graph,
                                               baseurl, checkdepth,geojsonrep)
@@ -1651,8 +1651,8 @@ class OntDocGeneration:
                         foundmedia["image"].add(str(predobjmap[tup][0]))
                     elif "http" in str(item):
                         ext = "." + str(predobjmap[tup]).split(".")[-1]
-                        if ext in SPARQLUtils.filextensionmap:
-                            foundmedia[SPARQLUtils.filextensionmap[ext]].add(str(predobjmap[tup][0]))
+                        if ext in filextensionmap:
+                            foundmedia[filextensionmap[ext]].add(str(predobjmap[tup][0]))
                     res=self.createHTMLTableValueEntry(subject, tup, predobjmap[tup][0], ttlf, tablecontents, graph,
                                               baseurl, checkdepth,geojsonrep)
                     tablecontents=res["html"]
