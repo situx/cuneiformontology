@@ -273,11 +273,11 @@ function setSVGDimensions(){
         miny=Number.MAX_VALUE
         $(obj).children().each(function(i){
             svgbbox=$(this)[0].getBoundingClientRect()
-            if(svgbbox.x+width>maxx){
-                maxx=svgbox.x+width
+            if(svgbbox.x+svgbbox.width>maxx){
+                maxx=svgbox.x+svgbbox.width
             }
-            if(svgbbox.y+height>maxy){
-                maxy=svgbox.y+height
+            if(svgbbox.y+svgbbox.height>maxy){
+                maxy=svgbox.y+svgbbox.height
             }
             if(svgbbox.y<miny){
                 miny=svgbox.y
