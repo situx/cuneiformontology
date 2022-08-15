@@ -277,7 +277,7 @@ function setSVGDimensions(){
                 maxx=svgbox.x+width
             }
             if(svgbbox.y+height>maxy){
-                maxy=svgbox.y
+                maxy=svgbox.y+height
             }
             if(svgbbox.y<miny){
                 miny=svgbox.y
