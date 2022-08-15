@@ -316,8 +316,8 @@ function setSVGDimensions(){
         console.log(""+(minx-5)+" "+(miny-5)+" "+((maxx-minx)+5)+" "+((maxy-miny)+5))
         newviewport=""+(minx-5)+" "+(miny-5)+" "+((maxx-minx)+5)+" "+((maxy-miny)+5)
         $(obj).attr("viewBox",newviewport)
-        $(obj).attr("width",svgbbox.width+10)
-        $(obj).attr("height",svgbbox.height+10)
+        $(obj).attr("width",((maxx-minx)+10))
+        $(obj).attr("height",((maxy-miny)+10))
     });
 }
 
@@ -1638,7 +1638,6 @@ class OntDocGeneration:
                             foundmedia["image"].add(str(item))
                         elif "http" in str(item):
                             ext="."+''.join(filter(str.isalpha,str(item).split(".")[-1]))
-                            print("EXT: "+str(ext))
                             if ext in fileextensionmap:
                                 foundmedia[fileextensionmap[ext]].add(str(item))
                         tablecontents+="<li>"
@@ -1654,7 +1653,6 @@ class OntDocGeneration:
                         foundmedia["image"].add(str(predobjmap[tup][0]))
                     elif "http" in str(item):
                         ext = "." + ''.join(filter(str.isalpha, str(predobjmap[tup]).split(".")[-1]))
-                        print("EXT: "+str(ext))
                         if ext in fileextensionmap:
                             foundmedia[fileextensionmap[ext]].add(str(predobjmap[tup][0]))
                     res=self.createHTMLTableValueEntry(subject, tup, predobjmap[tup][0], ttlf, tablecontents, graph,
