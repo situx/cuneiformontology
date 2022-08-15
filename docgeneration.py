@@ -101,7 +101,7 @@ videoextensions=[".avi",".mp4",".ogv"]
 
 audioextensions=[".aac",".mp3",".mkv",".ogg",".opus",".wav"]
 
-filextensionmap={
+fileextensionmap={
     ".apng":"image",
     ".bmp":"image",
     ".cur":"image",
@@ -299,6 +299,7 @@ function setSVGDimensions(){
         miny=Number.MAX_VALUE
         $(obj).children().each(function(i){
             svgbbox=$(this)[0].getBoundingClientRect()
+            console.log(svgbbox)
             if(svgbbox.x+svgbbox.width>maxx){
                 maxx=svgbbox.x+svgbbox.width
             }
@@ -312,6 +313,7 @@ function setSVGDimensions(){
                 minx=svgbbox.x
             }
         });
+        console.log(""+(minx-5)+" "+(miny-5)+" "+(maxx+5)+" "+(maxy+5))
         newviewport=""+(minx-5)+" "+(miny-5)+" "+(maxx+5)+" "+(maxy+5)
         $(obj).attr("viewBox",newviewport)
         $(obj).attr("width",svgbbox.width+10)
@@ -1636,8 +1638,9 @@ class OntDocGeneration:
                             foundmedia["image"].add(str(item))
                         elif "http" in str(item):
                             ext="."+str(item).split(".")[-1]
-                            if ext in filextensionmap:
-                                foundmedia[filextensionmap[ext]].add(str(item))
+                            print("EXT: "+str(ext))
+                            if ext in fileextensionmap:
+                                foundmedia[fileextensionmap[ext]].add(str(item))
                         tablecontents+="<li>"
                         res=self.createHTMLTableValueEntry(subject, tup, item, ttlf, tablecontents, graph,
                                               baseurl, checkdepth,geojsonrep)
@@ -1651,8 +1654,9 @@ class OntDocGeneration:
                         foundmedia["image"].add(str(predobjmap[tup][0]))
                     elif "http" in str(item):
                         ext = "." + str(predobjmap[tup]).split(".")[-1]
-                        if ext in filextensionmap:
-                            foundmedia[filextensionmap[ext]].add(str(predobjmap[tup][0]))
+                        print("EXT: "+str(ext))
+                        if ext in fileextensionmap:
+                            foundmedia[fileextensionmap[ext]].add(str(predobjmap[tup][0]))
                     res=self.createHTMLTableValueEntry(subject, tup, predobjmap[tup][0], ttlf, tablecontents, graph,
                                               baseurl, checkdepth,geojsonrep)
                     tablecontents=res["html"]
