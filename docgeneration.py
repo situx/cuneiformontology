@@ -313,8 +313,8 @@ function setSVGDimensions(){
                 minx=svgbbox.x
             }
         });
-        console.log(""+(minx-5)+" "+(miny-5)+" "+((maxx-minx)+5)+" "+((maxy-miny)+5))
-        newviewport=""+(minx-5)+" "+(miny-5)+" "+((maxx-minx)+5)+" "+((maxy-miny)+5)
+        console.log(""+(minx-25)+" "+(miny+25)+" "+((maxx-minx)+25)+" "+((maxy-miny)+25))
+        newviewport=""+(minx-25)+" "+(miny+25)+" "+((maxx-minx)+25)+" "+((maxy-miny)+25)
         $(obj).attr("viewBox",newviewport)
         $(obj).attr("width",((maxx)+10))
         $(obj).attr("height",((maxy)+10))
