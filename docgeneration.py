@@ -316,8 +316,8 @@ function setSVGDimensions(){
         console.log(""+(minx-5)+" "+(miny-5)+" "+((maxx-minx)+5)+" "+((maxy-miny)+5))
         newviewport=""+(minx-5)+" "+(miny-5)+" "+((maxx-minx)+5)+" "+((maxy-miny)+5)
         $(obj).attr("viewBox",newviewport)
-        $(obj).attr("width",((maxx-minx)+10))
-        $(obj).attr("height",((maxy-miny)+10))
+        $(obj).attr("width",((maxx)+10))
+        $(obj).attr("height",((maxy)+10))
     });
 }
 
