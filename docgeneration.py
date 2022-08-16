@@ -941,18 +941,18 @@ htmltemplate = """<html about=\"{{subject}}\"><head><title>{{toptitle}}</title>
 
 imagestemplate="""
 <div class="image">
-<img src="{{image}}" style="max-width:500px;max-height:500px" alt="{{image}}" title="{{imagetitle}}" />
+<img src="{{image}}" style="max-width:485px;max-height:500px" alt="{{image}}" title="{{imagetitle}}" />
 </div>
 """
 
 imageswithannotemplate="""<div class="image">
-<img src="{{image}}" style="max-width:500px;max-height:500px" alt="{{image}}" title="{{imagetitle}}" />
+<img src="{{image}}" style="max-width:485px;max-height:500px" alt="{{image}}" title="{{imagetitle}}" />
 {{svganno}}
 </div>
 """
 
 imagestemplatesvg="""
-<div class="image" style="max-width:500px;max-height:500px">
+<div class="image" style="max-width:485px;max-height:500px">
 {{image}}
 </div>
 """
@@ -1462,7 +1462,7 @@ class OntDocGeneration:
         #QgsMessageLog.logMessage("Relative Link from Given Depth: " + rellink,"OntdocGeneration", Qgis.Info)
         return rellink
 
-    def searchObjectConnectionsForAggregateData(self,graph,object,pred,geojsonrep,foundmedia,label):
+    def searchObjectConnectionsForAggregateData(self,graph,object,pred,geojsonrep,foundmedia,imageannos,label):
         geoprop=False
         incollection=False
         if pred in geopointerproperties:
@@ -1471,7 +1471,6 @@ class OntDocGeneration:
             incollection=True
         foundval=None
         foundunit=None
-        imageannos=set()
         for tup in graph.predicate_objects(object):
             if str(tup[0]) in labelproperties:
                 label=str(tup[1])
@@ -1499,7 +1498,7 @@ class OntDocGeneration:
             if ttlf != None:
                 ttlf.write("<" + str(subject) + "> <" + str(pred) + "> <" + str(object) + "> .\n")
             label = str(self.shortenURI(str(object)))
-            mydata=self.searchObjectConnectionsForAggregateData(graph,object,pred,geojsonrep,foundmedia,label)
+            mydata=self.searchObjectConnectionsForAggregateData(graph,object,pred,geojsonrep,foundmedia,imageannos,label)
             label=mydata["label"]
             geojsonrep=mydata["geojsonrep"]
             foundmedia=mydata["foundmedia"]
@@ -1764,7 +1763,6 @@ class OntDocGeneration:
                     "{{scriptfolderpath}}", rellink).replace("{{classtreefolderpath}}", rellink2).replace("{{exports}}",myexports).replace("{{subject}}",str(subject)))
             if comment!=None:
                 f.write(htmlcommenttemplate.replace("{{comment}}",comment))
-            print(foundmedia)
             if len(foundmedia["mesh"])>0:
                 print("Found 3D Model: "+str(foundmedia["mesh"]))
                 for curitem in foundmedia["mesh"]:
