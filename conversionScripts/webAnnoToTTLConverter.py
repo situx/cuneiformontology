@@ -58,9 +58,9 @@ for tabname in tabletnames:
         creator="https://orcid.org/0000-0002-9499-5840"
         if tabletname in creatormap:
             creator=creatormap[tabletname]
-        res.write("<"+str(tabname)+"_"+str(side)+"_annotations> rdf:type as:Collection .\n")
-        res.write("<"+str(tabname)+"_"+str(side)+"_annotations> rdfs:subClassOf skos:Collection .\n")
-        res.write("<"+str(tabname)+"_"+str(side)+"_annotations> rdfs:label \"Image annotations on "+str(tabname)+" "+str(side)+" on medium "+str(material)+"\"@en .\n")
+        res.write("<"+str(namespace)+str(tabname)+"_"+str(side)+"_annotations> rdf:type as:Collection .\n")
+        res.write("<"+str(namespace)+str(tabname)+"_"+str(side)+"_annotations> rdfs:subClassOf skos:Collection .\n")
+        res.write("<"+str(namespace)+str(tabname)+"_"+str(side)+"_annotations> rdfs:label \"Image annotations on "+str(tabname)+" "+str(side)+" on medium "+str(material)+"\"@en .\n")
         for key in data:
             if "http" not in key and key.startswith("#"):
                 indid=str(namespace)+str(key).replace("#","")

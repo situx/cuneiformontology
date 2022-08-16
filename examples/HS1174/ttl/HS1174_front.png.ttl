@@ -9,9 +9,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<file:///C:/Users/timohomburg/git/cuneiformontology/examples/HS1174/ttl/HS1174_front_annotations> a as:Collection ;
-    rdfs:label "Image annotations on HS1174 front on medium 3D rendering"@en ;
-    rdfs:member <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/00cda0d2-a7fb-4e22-b367-242a7c8119fc>,
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/HS1174/ttl/HS1174_front_annotations> rdfs:member <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/00cda0d2-a7fb-4e22-b367-242a7c8119fc>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/059d6ee0-b203-4059-a996-767b25994eb7>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0753a90c-1198-4ddd-b818-571579b2a7cf>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0821f61c-c8f6-4d7e-8f32-976f25af4bb9>,
@@ -125,7 +123,10 @@
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f8aed9e2-4e01-4ea0-abe9-26bddf84f1b6>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f968847c-2649-4225-8499-8c048c086f96>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb1d478f-d4d1-484f-8bc2-66a50fe6f6fa>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb75638a-5db1-415f-9d86-bc88d8a3c4dc> ;
+        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb75638a-5db1-415f-9d86-bc88d8a3c4dc> .
+
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/HS1174_front_annotations> a as:Collection ;
+    rdfs:label "Image annotations on HS1174 front on medium 3D rendering"@en ;
     rdfs:subClassOf skos:Collection .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/00cda0d2-a7fb-4e22-b367-242a7c8119fc> a oa:Annotation ;

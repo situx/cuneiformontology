@@ -9,9 +9,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<file:///C:/Users/timohomburg/git/cuneiformontology/examples/HS1174/ttl/HS1174_back_annotations> a as:Collection ;
-    rdfs:label "Image annotations on HS1174 back on medium 3D rendering"@en ;
-    rdfs:member <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/010a9fdd-d84f-435b-9736-9c1f9489aeb8>,
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/HS1174/ttl/HS1174_back_annotations> rdfs:member <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/010a9fdd-d84f-435b-9736-9c1f9489aeb8>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/04e1a518-d95f-404b-ba1c-346e651a8985>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/22174ad2-aa62-4696-9539-81830707ed89>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/29405e81-a80b-457c-849b-9168ff597157>,
@@ -31,7 +29,10 @@
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c9e827a4-65cc-48b2-a38d-d02ff44328eb>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d0404773-7f6d-4aa8-84ee-b7450e97ebc6>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d690cfb7-5851-4f80-85fe-630fb7079cc5>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb9c9d65-e2f6-4ed2-bb8c-620adc0533b1> ;
+        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb9c9d65-e2f6-4ed2-bb8c-620adc0533b1> .
+
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/HS1174_back_annotations> a as:Collection ;
+    rdfs:label "Image annotations on HS1174 back on medium 3D rendering"@en ;
     rdfs:subClassOf skos:Collection .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/010a9fdd-d84f-435b-9736-9c1f9489aeb8> a oa:Annotation ;

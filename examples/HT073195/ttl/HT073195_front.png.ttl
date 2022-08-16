@@ -9,9 +9,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<file:///C:/Users/timohomburg/git/cuneiformontology/examples/HT073195/ttl/HT073195_front_annotations> a as:Collection ;
-    rdfs:label "Image annotations on HT073195 front on medium 3D rendering"@en ;
-    rdfs:member <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/11b957da-50e2-487b-9501-3be9638eab44>,
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/HT073195/ttl/HT073195_front_annotations> rdfs:member <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/11b957da-50e2-487b-9501-3be9638eab44>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14>,
@@ -29,7 +27,10 @@
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794> ;
+        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794> .
+
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/HT073195_front_annotations> a as:Collection ;
+    rdfs:label "Image annotations on HT073195 front on medium 3D rendering"@en ;
     rdfs:subClassOf skos:Collection .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/11b957da-50e2-487b-9501-3be9638eab44> a oa:Annotation ;
