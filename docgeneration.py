@@ -318,6 +318,18 @@ function setSVGDimensions(){
         $(obj).attr("viewBox",newviewport)
         $(obj).attr("width",((maxx-minx))+10)
         $(obj).attr("height",((maxy-miny)+10))
+        if($(obj).hasClass("svgoverlay")){
+            $(obj).css("top",miny)
+            $(obj).css("left",minx)
+            //naturalClickPosX = (naturalWidth / currentWidth) * currentClickPosX;
+            //naturalClickPosY = (naturalHeight / currentHeight) * currentClickPosY;
+        }
+    });
+    $('.svgoverlay').each(function(i,obj){
+        $(obj).children().each(function(i){
+            
+        });
+        
     });
 }
 
@@ -1793,7 +1805,7 @@ class OntDocGeneration:
                 for image in foundmedia["image"]:
                     annostring=""
                     for anno in imageannos:
-                        annostring+=anno.replace("<svg>","<svg style=\"position: absolute;top: 0;left: 0;\" class=\"svgview\" fill=\"#044B94\" fill-opacity=\"0.4\">")
+                        annostring+=anno.replace("<svg>","<svg style=\"position: absolute;top: 0;left: 0;\" class=\"svgview svgoverlay\" fill=\"#044B94\" fill-opacity=\"0.4\">")
                     f.write(imageswithannotemplate.replace("{{carousel}}",carousel+"\" style=\"position: relative;display: inline-block;").replace("{{image}}",str(image)).replace("{{svganno}}",annostring).replace("{{imagetitle}}",str(image)[0:str(image).rfind('.')]))
                     if len(foundmedia["image"])>3:
                         carousel="carousel-item"                  
