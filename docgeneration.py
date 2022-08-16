@@ -941,18 +941,18 @@ htmltemplate = """<html about=\"{{subject}}\"><head><title>{{toptitle}}</title>
 
 imagestemplate="""
 <div class="image">
-<img src="{{image}}" style="max-width:33.33%;max-height:500px" alt="{{image}}" title="{{imagetitle}}" />
+<img src="{{image}}" style="max-width:485px;max-height:500px" alt="{{image}}" title="{{imagetitle}}" />
 </div>
 """
 
 imageswithannotemplate="""<div class="image">
-<img src="{{image}}" style="max-width:33.33%;max-height:500px" alt="{{image}}" title="{{imagetitle}}" />
+<img src="{{image}}" style="max-width:485px;max-height:500px" alt="{{image}}" title="{{imagetitle}}" />
 {{svganno}}
 </div>
 """
 
 imagestemplatesvg="""
-<div class="image" style="max-width:33.33%;max-height:500px">
+<div class="image" style="max-width:485px;max-height:500px">
 {{image}}
 </div>
 """
