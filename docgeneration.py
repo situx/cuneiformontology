@@ -1492,7 +1492,7 @@ class OntDocGeneration:
                         imageannos.add(str(svglit))
             if geoprop and str(tup[0]) in geoproperties and isinstance(tup[1], Literal):
                 geojsonrep = self.processLiteral(str(tup[1]), tup[1].datatype, "")
-            if incollection and "<svg" in str(tup[1]);
+            if incollection and "<svg" in str(tup[1]):
                  foundmedia["image"].add(str(tup[1]))
             elif incollection and "http" in str(tup[1]):
                 ext="."+''.join(filter(str.isalpha,str(tup[1]).split(".")[-1]))
