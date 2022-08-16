@@ -1486,13 +1486,15 @@ class OntDocGeneration:
         for tup in graph.predicate_objects(object):
             if str(tup[0]) in labelproperties:
                 label=str(tup[1])
-            if pred=="http://www.w3.org/ns/oa#hasSelector" and tup[0]==URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type") and tup[1]==URIRef("http://www.w3.org/ns/oa#SVGSelector"):
+            if pred=="http://www.w3.org/ns/oa#hasSelector" and tup[0]==URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type") and tup[1]==URIRef("http://www.w3.org/ns/oa#SvgSelector"):
                 for svglit in graph.objects(object,URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#value")):
                     if "<svg" in str(svglit):
                         imageannos.add(str(svglit))
             if geoprop and str(tup[0]) in geoproperties and isinstance(tup[1], Literal):
                 geojsonrep = self.processLiteral(str(tup[1]), tup[1].datatype, "")
-            if incollection and "." in str(tup[1]):
+            if incollection and "<svg" in str(tup[1]);
+                 foundmedia["image"].add(str(tup[1]))
+            elif incollection and "http" in str(tup[1]):
                 ext="."+''.join(filter(str.isalpha,str(tup[1]).split(".")[-1]))
                 if ext in fileextensionmap:
                     foundmedia[fileextensionmap[ext]].add(str(tup[1]))
