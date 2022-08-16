@@ -941,7 +941,13 @@ htmltemplate = """<html about=\"{{subject}}\"><head><title>{{toptitle}}</title>
 
 imagestemplate="""
 <div class="image">
-<img src="{{image}}" style="max-width:500px;max-height:500px" alt="Depiction of $resource.label" title="Depiction of {{title}}" />
+<img src="{{image}}" style="max-width:500px;max-height:500px" alt="{{image}}" title="{{imagetitle}}" />
+</div>
+"""
+
+imageswithannotemplate="""<div class="image">
+<img src="{{image}}" style="max-width:500px;max-height:500px" alt="{{image}}" title="{{imagetitle}}" />
+{{svganno}}
 </div>
 """
 
@@ -1465,9 +1471,14 @@ class OntDocGeneration:
             incollection=True
         foundval=None
         foundunit=None
+        imageannos=set()
         for tup in graph.predicate_objects(object):
             if str(tup[0]) in labelproperties:
                 label=str(tup[1])
+            if pred=="http://www.w3.org/ns/oa#hasSelector" and tup[0]==URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type") and tup[1]==URIRef("http://www.w3.org/ns/oa#SVGSelector"):
+                for svglit in graph.objects(object,URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#value")):
+                    if "<svg" in str(svglit):
+                        imageannos.add(str(svglit))
             if geoprop and str(tup[0]) in geoproperties and isinstance(tup[1], Literal):
                 geojsonrep = self.processLiteral(str(tup[1]), tup[1].datatype, "")
             if incollection and str(tup[0]) in imageextensions:
@@ -1480,10 +1491,10 @@ class OntDocGeneration:
                 foundunit=str(tup[1])
         if foundunit!=None and foundval!=None and label!=None:
             label+=" "+str(foundval)+" ["+str(self.shortenURI(foundunit))+"]"
-        return {"geojsonrep":geojsonrep,"label":label}
+        return {"geojsonrep":geojsonrep,"label":label,"foundmedia":foundmedia,"imageannos":imageannos}
 
 
-    def createHTMLTableValueEntry(self,subject,pred,object,ttlf,tablecontents,graph,baseurl,checkdepth,geojsonrep):
+    def createHTMLTableValueEntry(self,subject,pred,object,ttlf,tablecontents,graph,baseurl,checkdepth,geojsonrep,foundmedia,imageannos):
         if isinstance(object,URIRef) or isinstance(object,BNode):
             if ttlf != None:
                 ttlf.write("<" + str(subject) + "> <" + str(pred) + "> <" + str(object) + "> .\n")
@@ -1491,6 +1502,8 @@ class OntDocGeneration:
             mydata=self.searchObjectConnectionsForAggregateData(graph,object,pred,geojsonrep,[],label)
             label=mydata["label"]
             geojsonrep=mydata["geojsonrep"]
+            foundmedia=mydata["foundmedia"]
+            imageannos=mydata["imageannos"]
             if baseurl in str(object) or isinstance(object,BNode):
                 rellink = self.generateRelativeLinkFromGivenDepth(baseurl,checkdepth,str(object),True)
                 tablecontents += "<span><a property=\"" + str(pred) + "\" resource=\"" + str(object) + "\" href=\"" + rellink + "\">"+ label + " <span style=\"color: #666;\">(" + self.namespaceshort + ":" + str(self.shortenURI(str(object))) + ")</span></a></span>"
@@ -1535,7 +1548,7 @@ class OntDocGeneration:
                 else:
                     tablecontents += "<span property=\"" + str(pred) + "\" content=\"" + str(
                         object).replace("<","&lt").replace(">","&gt;").replace("\"","'") + "\" datatype=\"http://www.w3.org/2001/XMLSchema#string\">" + str(object).replace("<","&lt").replace(">","&gt;").replace("\"","'") + " <small>(<a style=\"color: #666;\" target=\"_blank\" href=\"http://www.w3.org/2001/XMLSchema#string\">xsd:string</a>)</small></span>"
-        return {"html":tablecontents,"geojson":geojsonrep}
+        return {"html":tablecontents,"geojson":geojsonrep,"foundmedia":foundmedia,"imageannos":imageannos}
 
     def formatPredicate(self,tup,baseurl,checkdepth,tablecontents,graph,reverse):
         label = self.shortenURI(str(tup))
@@ -1583,6 +1596,7 @@ class OntDocGeneration:
         savepath = savepath.replace("\\", "/")
         checkdepth=self.checkDepthFromPath(savepath, baseurl, subject)
         foundlabel = ""
+        imageannos=set()
         predobjmap={}
         isgeocollection=False
         comment=None
@@ -1642,9 +1656,11 @@ class OntDocGeneration:
                                 foundmedia[fileextensionmap[ext]].add(str(item))
                         tablecontents+="<li>"
                         res=self.createHTMLTableValueEntry(subject, tup, item, ttlf, tablecontents, graph,
-                                              baseurl, checkdepth,geojsonrep)
+                                              baseurl, checkdepth,geojsonrep,foundmedia,imageannos)
                         tablecontents = res["html"]
                         geojsonrep = res["geojson"]
+                        foundmedia = res["foundmedia"]
+                        imageannos=res["imageannos"]
                         tablecontents += "</li>"
                     tablecontents+="</ul></td>"
                 else:
@@ -1656,9 +1672,11 @@ class OntDocGeneration:
                         if ext in fileextensionmap:
                             foundmedia[fileextensionmap[ext]].add(str(predobjmap[tup][0]))
                     res=self.createHTMLTableValueEntry(subject, tup, predobjmap[tup][0], ttlf, tablecontents, graph,
-                                              baseurl, checkdepth,geojsonrep)
+                                              baseurl, checkdepth,geojsonrep,foundmedia,imageannos)
                     tablecontents=res["html"]
                     geojsonrep=res["geojson"]
+                    foundmedia = res["foundmedia"]
+                    imageannos=res["imageannos"]
                     tablecontents+="</td>"
             else:
                 tablecontents += "<td class=\"wrapword\"></td>"
@@ -1693,8 +1711,10 @@ class OntDocGeneration:
                             print("Postprocessing: " + str(item)+" - "+str(tup)+" - "+str(subject))
                             postprocessing.add((item,URIRef(tup),subject))
                         res = self.createHTMLTableValueEntry(subject, tup, item, None, tablecontents, graph,
-                                                             baseurl, checkdepth, geojsonrep)
+                                                             baseurl, checkdepth, geojsonrep,foundmedia,imageannos)
                         tablecontents = res["html"]
+                        foundmedia = res["foundmedia"]
+                        imageannos=res["imageannos"]
                         tablecontents += "</li>"
                     tablecontents += "</ul></td>"
                 else:
@@ -1703,8 +1723,10 @@ class OntDocGeneration:
                         print("Postprocessing: " + str(subpredsmap[tup][0]) + " - " + str(tup) + " - " + str(subject))
                         postprocessing.add((subpredsmap[tup][0], URIRef(tup), subject))
                     res = self.createHTMLTableValueEntry(subject, tup, subpredsmap[tup][0], None, tablecontents, graph,
-                                                         baseurl, checkdepth, geojsonrep)
+                                                         baseurl, checkdepth, geojsonrep,foundmedia,imageannos)
                     tablecontents = res["html"]
+                    foundmedia = res["foundmedia"]
+                    imageannos=res["imageannos"]
                     tablecontents += "</td>"
             else:
                 tablecontents += "<td class=\"wrapword\"></td>"
@@ -1750,14 +1772,21 @@ class OntDocGeneration:
                         format="nexus"
                     f.write(image3dtemplate.replace("{{meshurl}}",curitem).replace("{{meshformat}}",format))
                     break
-            for image in foundmedia["image"]:
-                if "<svg" in image:
-                    if "<svg>" in image:
-                        f.write(imagestemplatesvg.replace("{{image}}", str(image.replace("<svg>","<svg class=\"svgview\">"))))
+            if len(imageannos)>0 and len(foundmedia["image"])>0:
+                for image in foundmedia["image"]:
+                    annostring=""
+                    for anno in imageannos:
+                        annostring+=anno.replace("<svg>","<svg class=\"svgview\" fill=\"#044B94\" fill-opacity=\"0.4\">")
+                    f.write(imageswithannotemplate.replace("{{image}}",str(image)).replace("{{svganno}}",annostring))
+            else:
+                for image in foundmedia["image"]:
+                    if "<svg" in image:
+                        if "<svg>" in image:
+                            f.write(imagestemplatesvg.replace("{{image}}", str(image.replace("<svg>","<svg class=\"svgview\">"))))
+                        else:
+                            f.write(imagestemplatesvg.replace("{{image}}",str(image)))
                     else:
-                        f.write(imagestemplatesvg.replace("{{image}}",str(image)))
-                else:
-                    f.write(imagestemplate.replace("{{image}}",str(image)))
+                        f.write(imagestemplate.replace("{{image}}",str(image)))
             for audio in foundmedia["audio"]:
                 f.write(audiotemplate.replace("{{audio}}",str(audio)))
             for video in foundmedia["video"]:
