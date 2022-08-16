@@ -939,20 +939,32 @@ htmltemplate = """<html about=\"{{subject}}\"><head><title>{{toptitle}}</title>
 <div class="container-fluid"><div class="row-fluid" id="main-wrapper">
 """
 
-imagestemplate="""
-<div class="image">
+
+imagecarouselheader="""<div id="imagecarousel" class="carousel slide" data-ride="carousel"><div class="carousel-inner">"""
+
+imagecarouselfooter="""</div> <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a></div>"""
+
+imagestemplate="""<div class="image {{carousel}}">
 <img src="{{image}}" style="max-width:485px;max-height:500px" alt="{{image}}" title="{{imagetitle}}" />
 </div>
 """
 
-imageswithannotemplate="""<div class="image">
+imageswithannotemplate="""<div class="image {{carousel}}">
 <img src="{{image}}" style="max-width:485px;max-height:500px" alt="{{image}}" title="{{imagetitle}}" />
 {{svganno}}
 </div>
 """
 
+
 imagestemplatesvg="""
-<div class="image" style="max-width:485px;max-height:500px">
+<div class="image {{carousel}}" style="max-width:485px;max-height:500px">
 {{image}}
 </div>
 """
@@ -1771,21 +1783,24 @@ class OntDocGeneration:
                         format="nexus"
                     f.write(image3dtemplate.replace("{{meshurl}}",curitem).replace("{{meshformat}}",format))
                     break
+            carousel=""
+            if len(foundmedia["image"])>3:
+                carousel="carousel-item active"
             if len(imageannos)>0 and len(foundmedia["image"])>0:
                 for image in foundmedia["image"]:
                     annostring=""
                     for anno in imageannos:
                         annostring+=anno.replace("<svg>","<svg class=\"svgview\" fill=\"#044B94\" fill-opacity=\"0.4\">")
-                    f.write(imageswithannotemplate.replace("{{image}}",str(image)).replace("{{svganno}}",annostring))
+                    f.write(imageswithannotemplate.replace("{{carousel}}",carousel).replace("{{image}}",str(image)).replace("{{svganno}}",annostring).replace("{{imagetitle}}",str(image)[0:str(image).rfind('.')]))
             else:
                 for image in foundmedia["image"]:
                     if "<svg" in image:
                         if "<svg>" in image:
-                            f.write(imagestemplatesvg.replace("{{image}}", str(image.replace("<svg>","<svg class=\"svgview\">"))))
+                            f.write(imagestemplatesvg.replace("{{carousel}}",carousel).replace("{{image}}", str(image.replace("<svg>","<svg class=\"svgview\">"))).replace("{{imagetitle}}",str(image)[0:str(image).rfind('.')]))
                         else:
-                            f.write(imagestemplatesvg.replace("{{image}}",str(image)))
+                            f.write(imagestemplatesvg.replace("{{carousel}}",carousel).replace("{{image}}",str(image)).replace("{{imagetitle}}",str(image)[0:str(image).rfind('.')]))
                     else:
-                        f.write(imagestemplate.replace("{{image}}",str(image)))
+                        f.write(imagestemplate.replace("{{carousel}}",carousel).replace("{{image}}",str(image)).replace("{{imagetitle}}",str(image)[0:str(image).rfind('.')]))
             for audio in foundmedia["audio"]:
                 f.write(audiotemplate.replace("{{audio}}",str(audio)))
             for video in foundmedia["video"]:
