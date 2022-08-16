@@ -318,18 +318,19 @@ function setSVGDimensions(){
         $(obj).attr("viewBox",newviewport)
         $(obj).attr("width",((maxx-minx))+10)
         $(obj).attr("height",((maxy-miny)+10))
+        console.log($(obj).hasClass("svgoverlay"))
         if($(obj).hasClass("svgoverlay")){
+            naturalWidth=$(obj).prev()[0].naturalWidth
+            naturalHeight=$(obj).prev()[0].naturalHeight
+            currentWidth=$(obj).prev()[0].width
+            currentHeight=$(obj).prev()[0].height
+            console.log(naturalWidth+" - "+naturalHeight+" - "+currentWidth+" - "+currentHeight)
+            overlayposX = (currentWidth/naturalWidth) * minx;
+            overlayposY = (currentHeight/naturalHeight) * miny;
+            console.log(overlayposX+" - "+overlayposY)
             $(obj).css("top",miny)
             $(obj).css("left",minx)
-            //naturalClickPosX = (naturalWidth / currentWidth) * currentClickPosX;
-            //naturalClickPosY = (naturalHeight / currentHeight) * currentClickPosY;
         }
-    });
-    $('.svgoverlay').each(function(i,obj){
-        $(obj).children().each(function(i){
-            
-        });
-        
     });
 }
 
