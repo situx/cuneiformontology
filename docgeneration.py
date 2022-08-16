@@ -1494,7 +1494,7 @@ class OntDocGeneration:
         return {"geojsonrep":geojsonrep,"label":label,"foundmedia":foundmedia,"imageannos":imageannos}
 
 
-    def createHTMLTableValueEntry(self,subject,pred,object,ttlf,tablecontents,graph,baseurl,checkdepth,geojsonrep,foundmedia):
+    def createHTMLTableValueEntry(self,subject,pred,object,ttlf,tablecontents,graph,baseurl,checkdepth,geojsonrep,foundmedia,imageannos):
         if isinstance(object,URIRef) or isinstance(object,BNode):
             if ttlf != None:
                 ttlf.write("<" + str(subject) + "> <" + str(pred) + "> <" + str(object) + "> .\n")
@@ -1656,7 +1656,7 @@ class OntDocGeneration:
                                 foundmedia[fileextensionmap[ext]].add(str(item))
                         tablecontents+="<li>"
                         res=self.createHTMLTableValueEntry(subject, tup, item, ttlf, tablecontents, graph,
-                                              baseurl, checkdepth,geojsonrep,foundmedia)
+                                              baseurl, checkdepth,geojsonrep,foundmedia,imageannos)
                         tablecontents = res["html"]
                         geojsonrep = res["geojson"]
                         foundmedia = res["foundmedia"]
@@ -1672,7 +1672,7 @@ class OntDocGeneration:
                         if ext in fileextensionmap:
                             foundmedia[fileextensionmap[ext]].add(str(predobjmap[tup][0]))
                     res=self.createHTMLTableValueEntry(subject, tup, predobjmap[tup][0], ttlf, tablecontents, graph,
-                                              baseurl, checkdepth,geojsonrep,foundmedia)
+                                              baseurl, checkdepth,geojsonrep,foundmedia,imageannos)
                     tablecontents=res["html"]
                     geojsonrep=res["geojson"]
                     foundmedia = res["foundmedia"]
@@ -1711,7 +1711,7 @@ class OntDocGeneration:
                             print("Postprocessing: " + str(item)+" - "+str(tup)+" - "+str(subject))
                             postprocessing.add((item,URIRef(tup),subject))
                         res = self.createHTMLTableValueEntry(subject, tup, item, None, tablecontents, graph,
-                                                             baseurl, checkdepth, geojsonrep,foundmedia)
+                                                             baseurl, checkdepth, geojsonrep,foundmedia,imageannos)
                         tablecontents = res["html"]
                         foundmedia = res["foundmedia"]
                         imageannos=res["imageannos"]
@@ -1723,7 +1723,7 @@ class OntDocGeneration:
                         print("Postprocessing: " + str(subpredsmap[tup][0]) + " - " + str(tup) + " - " + str(subject))
                         postprocessing.add((subpredsmap[tup][0], URIRef(tup), subject))
                     res = self.createHTMLTableValueEntry(subject, tup, subpredsmap[tup][0], None, tablecontents, graph,
-                                                         baseurl, checkdepth, geojsonrep,foundmedia)
+                                                         baseurl, checkdepth, geojsonrep,foundmedia,imageannos)
                     tablecontents = res["html"]
                     foundmedia = res["foundmedia"]
                     imageannos=res["imageannos"]
