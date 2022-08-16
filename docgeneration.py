@@ -1793,6 +1793,9 @@ class OntDocGeneration:
                     for anno in imageannos:
                         annostring+=anno.replace("<svg>","<svg class=\"svgview\" fill=\"#044B94\" fill-opacity=\"0.4\">")
                     f.write(imageswithannotemplate.replace("{{carousel}}",carousel).replace("{{image}}",str(image)).replace("{{svganno}}",annostring).replace("{{imagetitle}}",str(image)[0:str(image).rfind('.')]))
+                    if len(foundmedia["image"])>3:
+                        carousel="carousel-item"
+                    
             else:
                 for image in foundmedia["image"]:
                     if "<svg" in image:
@@ -1802,6 +1805,8 @@ class OntDocGeneration:
                             f.write(imagestemplatesvg.replace("{{carousel}}",carousel).replace("{{image}}",str(image)).replace("{{imagetitle}}",str(image)[0:str(image).rfind('.')]))
                     else:
                         f.write(imagestemplate.replace("{{carousel}}",carousel).replace("{{image}}",str(image)).replace("{{imagetitle}}",str(image)[0:str(image).rfind('.')]))
+                    if len(foundmedia["image"])>3:
+                        carousel="carousel-item"
             if len(foundmedia["image"])>3:
                 f.write(imagecarouselfooter)
             for audio in foundmedia["audio"]:
