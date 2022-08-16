@@ -1492,10 +1492,10 @@ class OntDocGeneration:
                         imageannos.add(str(svglit))
             if geoprop and str(tup[0]) in geoproperties and isinstance(tup[1], Literal):
                 geojsonrep = self.processLiteral(str(tup[1]), tup[1].datatype, "")
-            if incollection and str(tup[0]) in imageextensions:
-                foundmedia["image"].add(str(tup[1]))
-            if incollection and str(tup[0]) in meshextensions:
-                foundmedia["mesh"].add(str(tup[1]))
+            if incollection:
+                ext="."+''.join(filter(str.isalpha,str(tup[1]).split(".")[-1]))
+                if ext in fileextensionmap:
+                    foundmedia[fileextensionmap[ext]].add(str(tup[1]))
             if str(tup[0]) in valueproperties and isinstance(tup[1],Literal):
                 foundval=tup[1]
             if str(tup[0]) in unitproperties and isinstance(tup[1],URIRef):
