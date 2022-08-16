@@ -127,7 +127,7 @@ for tabname in tabletnames:
             res.write("<"+str(indid)+"_target1> rdf:type owl:NamedIndividual .\n")
             res.write("<"+str(indid)+"_target1> oa:hasSelector <"+str(indid)+"_target1_selector> .\n")
             if "/raw" in str(source):
-                res.write("<"+str(indid)+"_target1> oa:hasSource <"+str(source)[0:str(source).rfind("/")].replace("https://gitlab.rlp.net/api/v4/projects/28015/repository/files/renderings%2F"+str(tabname)+"%2F","https://situx.github.io/cuneiformontology/examples/"+str(tabname).lower()+"/images/")+"> .\n")
+                res.write("<"+str(indid)+"_target1> oa:hasSource <"+str(source)[0:str(source).rfind("/")].replace("https://gitlab.rlp.net/api/v4/projects/28015/repository/files/renderings%2F"+str(tabname)+"%2F","https://situx.github.io/cuneiformontology/examples/"+str(tabname).lower()+"/images/sides/")+"> .\n")
             else:
                 res.write("<"+str(indid)+"_target1> oa:hasSource <"+str(source).replace("https://gitlab.rlp.net/api/v4/projects/28015/repository/files/renderings%2F"+str(tabname)+"%2F","https://situx.github.io/cuneiformontology/examples/"+str(tabname).lower()+"/images/")+"> .\n")              
             res.write("<"+str(indid)+"_target1> rdfs:label \"Annotation target1 of Annotation of Glyph at "+str(tabname)+" "+str(side)+" line "+str(lineindex)+" char "+str(charindex)+" on "+str(material)+"\"@en .\n")
