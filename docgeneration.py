@@ -1793,11 +1793,10 @@ class OntDocGeneration:
                 for image in foundmedia["image"]:
                     annostring=""
                     for anno in imageannos:
-                        annostring+=anno.replace("<svg>","<svg class=\"svgview\" fill=\"#044B94\" fill-opacity=\"0.4\">")
+                        annostring+=anno.replace("<svg>","<svg style=\"position: absolute;top: 0;left: 0;\" class=\"svgview\" fill=\"#044B94\" fill-opacity=\"0.4\">")
                     f.write(imageswithannotemplate.replace("{{carousel}}",carousel).replace("{{image}}",str(image)).replace("{{svganno}}",annostring).replace("{{imagetitle}}",str(image)[0:str(image).rfind('.')]))
                     if len(foundmedia["image"])>3:
-                        carousel="carousel-item"
-                    
+                        carousel="carousel-item"                  
             else:
                 for image in foundmedia["image"]:
                     if "<svg" in image:
