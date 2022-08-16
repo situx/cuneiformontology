@@ -951,12 +951,12 @@ imagecarouselfooter="""</div> <a class="carousel-control-prev" href="#carouselEx
     <span class="sr-only">Next</span>
   </a></div>"""
 
-imagestemplate="""<div class="image {{carousel}}">
+imagestemplate="""<div class="{{carousel}}">
 <img src="{{image}}" style="max-width:485px;max-height:500px" alt="{{image}}" title="{{imagetitle}}" />
 </div>
 """
 
-imageswithannotemplate="""<div class="image {{carousel}}">
+imageswithannotemplate="""<div class="{{carousel}}">
 <img src="{{image}}" style="max-width:485px;max-height:500px" alt="{{image}}" title="{{imagetitle}}" />
 {{svganno}}
 </div>
@@ -964,7 +964,7 @@ imageswithannotemplate="""<div class="image {{carousel}}">
 
 
 imagestemplatesvg="""
-<div class="image {{carousel}}" style="max-width:485px;max-height:500px">
+<div class="{{carousel}}" style="max-width:485px;max-height:500px">
 {{image}}
 </div>
 """
@@ -1783,7 +1783,7 @@ class OntDocGeneration:
                         format="nexus"
                     f.write(image3dtemplate.replace("{{meshurl}}",curitem).replace("{{meshformat}}",format))
                     break
-            carousel=""
+            carousel="image"
             if len(foundmedia["image"])>3:
                 carousel="carousel-item active"
                 f.write(imagecarouselheader)
