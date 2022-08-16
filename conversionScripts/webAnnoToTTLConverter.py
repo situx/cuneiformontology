@@ -59,7 +59,10 @@ for tabname in tabletnames:
         if tabletname in creatormap:
             creator=creatormap[tabletname]
         for key in data:
-            indid=str(namespace)+str(key).replace("#","")
+            if "http" not in key and key.startswith("#"):
+                indid=str(namespace)+str(key).replace("#","")
+            else:
+                indid=key
             charindex=0
             lineindex=0
             curtranslit=""
@@ -113,7 +116,7 @@ for tabname in tabletnames:
                 res.write("<"+str(indid)+"_target3d> oa:hasSelector <"+str(indid)+"_target3d_selector> .\n")
                 res.write("<"+str(indid)+"_target3d> rdfs:label \"3D Annotation target of Annotation of Glyph at "+str(tabletname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on "+str(material)+"\"@en .\n")
                 res.write("<"+str(indid)+"_target3d_selector> rdf:type oa:WKTSelector .\n")
-                res.write("<"+str(indid)+"_target3d_selector> rdf:value \""+str(data3d[key]["target"]["selector"]["value"])+"\" .\n")
+                res.write("<"+str(indid)+"_target3d_selector> rdf:value \""+str(data3d[key]["target"]["selector"]["value"])+"\"^^oa:wktLiteral .\n")
                 res.write("<"+str(indid)+"_target3d_selector> rdfs:label \"3D Annotation target selector of Annotation of Glyph at "+str(tabletname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on "+str(material)+"\"@en .\n")
             res.write("<"+str(indid)+"_target1> rdf:type owl:NamedIndividual .\n")
             res.write("<"+str(indid)+"_target1> oa:hasSelector <"+str(indid)+"_target1_selector> .\n")
