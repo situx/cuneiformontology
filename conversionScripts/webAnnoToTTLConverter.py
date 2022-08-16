@@ -23,6 +23,8 @@ for tabname in tabletnames:
         origtabletside=side
         filename="../examples/"+str(tabname)+"/ttl/"+str(tabname)+"_"+str(origtabletside)+".png.json"
         filename3d="../examples/"+str(tabname)+"/ttl/"+str(tabname)+"_"+str(origtabletside)+".png_3D.json"
+        namespace="https://situx.github.io/cuneiformontology/examples/"+str(tabname).lower()+"/imgannotations/"
+        namespaceitems="https://situx.github.io/cuneiformontology/examples/"+str(tabname).lower()+"/"
         print(filename)
         print(filename3d)
         data3d={}
@@ -93,7 +95,7 @@ for tabname in tabletnames:
                     selectortype=data[key]["target"]["selector"]["type"]
                     selectorval=data[key]["target"]["selector"]["value"]
             res.write("<"+str(indid)+"> rdf:type oa:Annotation .\n")
-            res.write("<"+str(tabname)+"_"+str(side)+"_annotations> rdfs:member <"+str(indid)+"> .\n")
+            res.write("<"+str(namespace)+str(tabname)+"_"+str(side)+"_annotations> rdfs:member <"+str(indid)+"> .\n")
             res.write("<"+str(indid)+"> as:generator <https://github.com/recogito/annotorious-openseadragon> .\n")
             res.write("<https://github.com/recogito/annotorious-openseadragon> rdf:type dc:Software .\n")
             res.write("<https://github.com/recogito/annotorious-openseadragon> foaf:name \"Annotorious-OpenSeaDragon\" .\n")
