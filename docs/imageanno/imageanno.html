@@ -37,6 +37,14 @@
       <div class="col-md-6" role="main">
 Tablet: <select id="images" onchange="loadVariants()"></select> Side: <select id="imageside" onchange="reinit(null)"></select><button id="showTransliteration" onClick='document.getElementById("transliterationdialog").show();'>Transliteration</button>
 <script>
+var mappings={"PaleoCode":{"inputtype":"text","regex":"","handler":null,"paleocodage":true,"uri":curnamespace+"PaleoCode"},
+"TabletSide":{"inputtype":"select","regex":"","handler":null,"uri":curnamespace+"TabletSide","data":{"selected":"selected","front":"front","back":"back","left":"left","right":"right","top":"top","bottom":"bottom"}},
+"Transliteration":{"inputtype":"text","regex":"","handler":null,"uri":curnamespace+"Transliteration"},
+"Column":{"inputtype":"number","regex":"","handler":null,"uri":curnamespace+"Column"},
+"Line":{"inputtype":"number","regex":"","handler":null,"uri":curnamespace+"Line"},
+"Charindex":{"inputtype":"number","regex":"","handler":null,"uri":curnamespace+"Charindex"},
+"Wordindex":{"inputtype":"number","regex":"","handler":null,"uri":curnamespace+"Wordindex"}
+}
 periods={}
 languages={}
 hs2CDLI={}
