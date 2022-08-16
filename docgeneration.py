@@ -1786,6 +1786,7 @@ class OntDocGeneration:
             carousel=""
             if len(foundmedia["image"])>3:
                 carousel="carousel-item active"
+                f.write(imagecarouselheader)
             if len(imageannos)>0 and len(foundmedia["image"])>0:
                 for image in foundmedia["image"]:
                     annostring=""
@@ -1801,6 +1802,8 @@ class OntDocGeneration:
                             f.write(imagestemplatesvg.replace("{{carousel}}",carousel).replace("{{image}}",str(image)).replace("{{imagetitle}}",str(image)[0:str(image).rfind('.')]))
                     else:
                         f.write(imagestemplate.replace("{{carousel}}",carousel).replace("{{image}}",str(image)).replace("{{imagetitle}}",str(image)[0:str(image).rfind('.')]))
+            if len(foundmedia["image"])>3:
+                f.write(imagecarouselfooter)
             for audio in foundmedia["audio"]:
                 f.write(audiotemplate.replace("{{audio}}",str(audio)))
             for video in foundmedia["video"]:
