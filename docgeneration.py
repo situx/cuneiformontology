@@ -331,8 +331,8 @@ function setSVGDimensions(){
             overlayposHeight = ((currentHeight/naturalHeight) * maxy)-overlayposY;
             console.log(overlayposX+" - "+overlayposY+" - "+overlayposHeight+" - "+overlayposWidth)
             $(obj).css({top: overlayposY+"px", left:overlayposX+"px", position:"absolute"})
-            $(obj)[0].height=overlayposHeight
-            $(obj)[0].width=overlayposWidth
+            $(obj).attr("height",overlayposHeight)
+            $(obj).attr("width",overlayposWidth)
         }
     });
 }
