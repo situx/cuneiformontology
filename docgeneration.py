@@ -327,9 +327,12 @@ function setSVGDimensions(){
             console.log(naturalWidth+" - "+naturalHeight+" - "+currentWidth+" - "+currentHeight)
             overlayposX = (currentWidth/naturalWidth) * minx;
             overlayposY = (currentHeight/naturalHeight) * miny;
-            console.log(overlayposX+" - "+overlayposY)
-            $(obj).css("top",miny)
-            $(obj).css("left",minx)
+            overlayposWidth = ((currentWidth/naturalWidth) * maxx)-overlayposX;
+            overlayposHeight = ((currentHeight/naturalHeight) * maxy)-overlayposY;
+            console.log(overlayposX+" - "+overlayposY+" - "+overlayposHeight+" - "+overlayposWidth)
+            $(obj).css({top: overlayposY+"px", left:overlayposX+"px", position:"absolute"})
+            $(obj).attr("height",overlayposHeight)
+            $(obj).attr("width",overlayposWidth)
         }
     });
 }
