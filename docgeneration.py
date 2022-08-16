@@ -325,8 +325,8 @@ function setSVGDimensions(){
             currentWidth=$(obj).prev()[0].width
             currentHeight=$(obj).prev()[0].height
             console.log(naturalWidth+" - "+naturalHeight+" - "+currentWidth+" - "+currentHeight)
-            overlayposX = (naturalWidth / currentWidth) * minx;
-            overlayposY = (naturalHeight / currentHeight) * miny;
+            overlayposX = (currentWidth/naturalWidth) * minx;
+            overlayposY = (currentHeight/naturalHeight) * miny;
             console.log(overlayposX+" - "+overlayposY)
             $(obj).css("top",miny)
             $(obj).css("left",minx)
