@@ -193,9 +193,9 @@ function parseWKTStringToJSON(wktstring){
         console.log(coordset)
         console.log(coords)
         if(coords.length==3){
-            resjson.push({"x":coords[0],"y":coords[1],"z":coords[2]})
+            resjson.push({"x":parseFloat(coords[0]),"y":parseFloat(coords[1]),"z":parseFloat(coords[2])})
         }else{
-            resjson.push({"x":coords[0],"y":coords[1]})
+            resjson.push({"x":parseFloat(coords[0]),"y":parseFloat(coords[1])})
         }
     }
     console.log(resjson)
