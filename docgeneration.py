@@ -190,12 +190,15 @@ function parseWKTStringToJSON(wktstring){
     for(coordset of wktstring.split(",")){
         curobject={}
         coords=coordset.split(" ")
+        console.log(coordset)
+        console.log(coords)
         if(coords.length==3){
             resjson.push({"x":coords[0],"y":coords[1],"z":coords[2]})
         }else{
             resjson.push({"x":coords[0],"y":coords[1]})
         }
     }
+    console.log(resjson)
     return resjson
 }
 
@@ -542,6 +545,7 @@ function initThreeJS(domelement,verts) {
     minz=Number.MAXVALUE
     maxz=Number.MINVALUE
 	vertarray=[]
+    console.log(verts)
     var svgShape = new THREE.Shape();
     first=true
     for(vert in verts){
@@ -566,7 +570,7 @@ function initThreeJS(domelement,verts) {
     console.log(maxz)
     var axesHelper = new THREE.AxesHelper( maxz-minz );
     scene.add( axesHelper );
-    var extrudedGeometry = new THREE.ExtrudeGeometry(svgShape, {amount: maxz-minz, bevelEnabled: false});
+    var extrudedGeometry = new THREE.ExtrudeGeometry(svgShape, {depth: maxz-minz, bevelEnabled: false});
     console.log(extrudedGeometry)
     //vertices=new Float32Array(vertarray)
     //const geometry =new THREE.BufferGeometry( ); 
@@ -962,7 +966,7 @@ htmltemplate = """<html about=\"{{subject}}\"><head><title>{{toptitle}}</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r99/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three/build/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three-trackballcontrols@0.9.0/index.min.js"></script>
 <script src="{{scriptfolderpath}}"></script><script src="{{classtreefolderpath}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/jstree.min.js"></script>
