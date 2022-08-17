@@ -20,6 +20,9 @@ labelproperties={
     "http://www.w3.org/2000/01/rdf-schema#label": "DatatypeProperty"
 }
 
+collectionclasses=["http://www.opengis.net/ont/geosparql#FeatureCollection","http://www.opengis.net/ont/geosparql#GeometryCollection","http://www.opengis.net/ont/geosparql#SpatialObjectCollection","http://www.w3.org/2004/02/skos/core#Collection","http://www.w3.org/2004/02/skos/core#OrderedCollection","https://www.w3.org/ns/activitystreams#Collection","https://www.w3.org/ns/activitystreams#OrderedCollection"]
+
+
 collectionrelationproperties={
     "http://www.w3.org/2000/01/rdf-schema#member":"ObjectProperty",
 }
@@ -695,7 +698,7 @@ function getClassRelationDialog(node){
         props=node.data
      }
      console.log(nodetype)
-     if(nodetype=="class" || nodetype=="geoclass"){
+     if(nodetype=="class" || nodetype=="geoclass" || node.type=="collectionclass"){
         console.log(props)
         dialogcontent=formatHTMLTableForClassRelations(props,nodeicon,nodelabel,nodeid)
         document.getElementById("classrelationdialog").innerHTML=dialogcontent
@@ -714,7 +717,7 @@ function getDataSchemaDialog(node){
         props=node.data
      }
      console.log(nodetype)
-     if(nodetype=="class" || nodetype=="geoclass"){
+     if(nodetype=="class" || nodetype=="geoclass" || node.type=="collectionclass"){
         console.log(props)
         dialogcontent=formatHTMLTableForResult(props["to"],nodeicon)
         document.getElementById("dataschemadialog").innerHTML=dialogcontent
@@ -773,7 +776,7 @@ function setupJSTree(){
                 "icon": "https://github.com/i3mainz/geopubby/raw/master/public/icons/classlink.png",
                 "action":function(obj){
                     console.log("class relations")
-                    if(node.type=="class" || node.type=="geoclass"){
+                    if(node.type=="class" || node.type=="geoclass" || node.type=="collectionclass"){
                         getClassRelationDialog(node)
                     }
                 }    
@@ -789,7 +792,7 @@ function setupJSTree(){
                     console.log(baseurl)
                     if(node.id.includes(baseurl)){
                         getDataSchemaDialog(node) 
-                    }else if(node.type=="class" || node.type=="geoclass"){
+                    }else if(node.type=="class" || node.type=="geoclass" || node.type=="collectionclass"){
                         getDataSchemaDialog(node) 
                     }                                         
                 }
@@ -946,7 +949,8 @@ htmltemplate = """<html about=\"{{subject}}\"><head><title>{{toptitle}}</title>
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   GeoClasses: <input type="checkbox" id="geoclasses"/><br/>
   Search:<input type="text" id="classsearch"><br/><div id="jstree"></div>
-</div><script>var indexpage={{indexpage}}</script>
+</div><script>var indexpage={{indexpage}}
+var baseurl="{{baseurl}}"</script>
 <body><div id="header"><h1 id="title">{{title}}</h1></div><div class="page-resource-uri"><a href="{{baseurl}}">{{baseurl}}</a> <b>powered by Static GeoPubby</b> generated using the <a style="color:blue;font-weight:bold" target="_blank" href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS">SPARQLing Unicorn QGIS Plugin</a></div>
 </div><div id="rdficon"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div> <div class="search"><div class="ui-widget">Search: <input id="search" size="50"><button id="gotosearch" onclick="followLink()">Go</button><b>Download Options:</b>&nbsp;Format:<select id="format" onchange="changeDefLink()">	
 {{exports}}
@@ -1199,6 +1203,10 @@ class OntDocGeneration:
     def processLiteral(self,literal, literaltype, reproject,currentlayergeojson=None,triplestoreconf=None):     
         print("Process literal: " + str(literal) + " --- " + str(literaltype))
         if "wkt" in literaltype.lower(): 
+            crsuri=""
+            if "http" in literal:
+                crsuri=literal[0:literal.rfind('>')].replace("<","")
+                literal=literal[literal.rfind('>')+1:].strip()
             print(convert.wkt_to_geojson(literal))
             return json.loads(convert.wkt_to_geojson(literal))
         if "geojson" in literaltype.lower():
@@ -1382,6 +1390,7 @@ class OntDocGeneration:
             "class": {"icon": "https://raw.githubusercontent.com/i3mainz/geopubby/master/public/icons/class.png"},
             "geoclass": {"icon": "https://raw.githubusercontent.com/i3mainz/geopubby/master/public/icons/geoclass.png"},
             "halfgeoclass": {"icon": "https://raw.githubusercontent.com/i3mainz/geopubby/master/public/icons/halfgeoclass.png"},
+            "collectionclass": {"icon": "https://raw.githubusercontent.com/i3mainz/geopubby/master/public/icons/collectionclass.png"},
             "geocollection": {"icon": "https://raw.githubusercontent.com/i3mainz/geopubby/master/public/icons/geometrycollection.png"},
             "featurecollection": {"icon": "https://raw.githubusercontent.com/i3mainz/geopubby/master/public/icons/featurecollection.png"},
             "instance": {"icon": "https://raw.githubusercontent.com/i3mainz/geopubby/master/public/icons/instance.png"},
@@ -1459,7 +1468,9 @@ class OntDocGeneration:
                     classlist[item]["item"]["text"]=classlist[item]["item"]["text"][0:classlist[item]["item"]["text"].rfind("[")-1]+" ["+str(classlist[item]["items"])+"]"
                 else:
                     classlist[item]["item"]["text"]=classlist[item]["item"]["text"]+" ["+str(classlist[item]["items"])+"]"
-            if classlist[item]["items"]==classlist[item]["geoitems"] and classlist[item]["items"]>0 and classlist[item]["geoitems"]>0:
+            if item in collectionclasses:
+                classlist[item]["item"]["type"] = "collectionclass"
+            elif classlist[item]["items"]==classlist[item]["geoitems"] and classlist[item]["items"]>0 and classlist[item]["geoitems"]>0:
                 classlist[item]["item"]["type"]="geoclass"
             elif classlist[item]["items"]>classlist[item]["geoitems"] and classlist[item]["geoitems"]>0:
                 classlist[item]["item"]["type"]="halfgeoclass"
@@ -1854,9 +1865,11 @@ class OntDocGeneration:
             f.write(htmltabletemplate.replace("{{tablecontent}}", tablecontents))
             f.write(htmlfooter.replace("{{exports}}",myexports).replace("{{license}}",curlicense))
             f.close()
-
-with open('signlist/prefixes.json', encoding="utf-8") as f:
-    prefixes = json.load(f)
+            
+prefixes={"reversed":{}}
+if os.path.exists('signlist/prefixes.json'):
+    with open('signlist/prefixes.json', encoding="utf-8") as f:
+        prefixes = json.load(f)
    
 prefixes["reversed"]["http://purl.org/cuneiform/"]="cunei"
 prefixes["reversed"]["http://purl.org/graphemon/"]="graphemon"
