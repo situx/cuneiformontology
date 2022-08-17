@@ -191,9 +191,9 @@ function parseWKTStringToJSON(wktstring){
         curobject={}
         coords=coordset.split(" ")
         if(coords.length==3){
-            resjson.append({"x":coords[0],"y":coords[1],"z":coords[2]})
+            resjson.push({"x":coords[0],"y":coords[1],"z":coords[2]})
         }else{
-            resjson.append({"x":coords[0],"y":coords[1]})
+            resjson.push({"x":coords[0],"y":coords[1]})
         }
     }
     return resjson
@@ -1709,7 +1709,7 @@ class OntDocGeneration:
                 if len(predobjmap[tup])>1:
                     tablecontents+="<td class=\"wrapword\"><ul>"
                     for item in predobjmap[tup]:
-                        if "<svg" in str(item):
+                        if "<svg" in str(item) or ("POINT" in str(item).upper() or "POLYGON" in str(item).upper() or "LINESTRING" in str(item).upper()):
                             foundmedia["image"].add(str(item))
                         elif "http" in str(item):
                             ext="."+''.join(filter(str.isalpha,str(item).split(".")[-1]))
@@ -1726,7 +1726,7 @@ class OntDocGeneration:
                     tablecontents+="</ul></td>"
                 else:
                     tablecontents+="<td class=\"wrapword\">"
-                    if "<svg" in str(predobjmap[tup]):
+                    if "<svg" in str(predobjmap[tup]) or ("POINT" in str(predobjmap[tup]).upper() or "POLYGON" in str(predobjmap[tup]).upper() or "LINESTRING" in str(predobjmap[tup]).upper()):
                         foundmedia["image"].add(str(predobjmap[tup][0]))
                     elif "http" in str(predobjmap[tup]):
                         ext = "." + ''.join(filter(str.isalpha, str(predobjmap[tup]).split(".")[-1]))
