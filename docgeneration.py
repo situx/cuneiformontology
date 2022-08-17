@@ -1858,10 +1858,10 @@ class OntDocGeneration:
                         carousel="carousel-item"
             if len(foundmedia["image"])>3:
                 f.write(imagecarouselfooter)
-            if len(imageannos) > 0:
+            if len(imageannos)>0:
                 for anno in imageannos:
                     if "<svg" not in anno and ("POINT" in anno.upper() or "POLYGON" in anno.upper() or "LINESTRING" in anno.upper()):
-                        f.write(threejstemplate.replace("{{wktstring}}",anno)
+                        f.write(threejstemplate.replace("{{wktstring}}",anno))
             for audio in foundmedia["audio"]:
                 f.write(audiotemplate.replace("{{audio}}",str(audio)))
             for video in foundmedia["video"]:
