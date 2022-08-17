@@ -546,10 +546,10 @@ function initThreeJS(domelement,verts) {
     first=true
     for(vert in verts){
         if(first){
-            triangleShape.moveTo(vert["x"], vert["y"]);
+            svgShape.moveTo(vert["x"], vert["y"]);
            first=false
         }else{
-            triangleShape.lineTo(vert["x"], vert["y"]);
+            svgShape.lineTo(vert["x"], vert["y"]);
         }
         vertarray.append(vert["x"])
         vertarray.append(vert["y"])
