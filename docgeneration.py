@@ -585,6 +585,7 @@ function initThreeJS(domelement,verts) {
     renderer.setSize( window.innerWidth, window.innerHeight );
     document.getElementById(domelement).appendChild( renderer.domElement );		
 	const controls = new THREE.TrackballControls( camera, renderer.domElement );
+    animate()
 }
 
 function animate() {
