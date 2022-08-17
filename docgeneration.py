@@ -542,8 +542,8 @@ function initThreeJS(domelement,verts) {
     camera = new THREE.PerspectiveCamera( 90, window.innerWidth / window.innerHeight, 0.1, 100 );
     camera.position.z = 145;
     scene = new THREE.Scene();
-    minz=Number.MAXVALUE
-    maxz=Number.MINVALUE
+    minz=Number.MAX_VALUE
+    maxz=Number.MIN_VALUE
 	vertarray=[]
     console.log(verts)
     var svgShape = new THREE.Shape();
