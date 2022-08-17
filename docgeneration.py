@@ -536,7 +536,7 @@ function start3dhop(meshurl,meshformat){
 }
 
 
-let camera, scene, renderer;
+let camera, scene, renderer,controls;
 
 function initThreeJS(domelement,verts) {
     camera = new THREE.PerspectiveCamera( 90, window.innerWidth / window.innerHeight, 0.1, 100 );
@@ -605,12 +605,13 @@ function initThreeJS(domelement,verts) {
     document.getElementById(domelement).appendChild( renderer.domElement );
     renderer.domElement.width = 480;
     renderer.domElement.height = 500;    
-	const controls = new THREE.TrackballControls( camera, renderer.domElement );
+	controls = new THREE.TrackballControls( camera, renderer.domElement );
     animate()
 }
 
 function animate() {
     requestAnimationFrame( animate );
+    controls.update();
     renderer.render( scene, camera );
 }
 
