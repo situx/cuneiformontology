@@ -587,7 +587,7 @@ function initThreeJS(domelement,verts) {
     console.log(minz)
     console.log(maxz)
     console.log(svgShape)
-    var axesHelper = new THREE.AxesHelper( maxz-minz );
+    var axesHelper = new THREE.AxesHelper( Math.max(maxx-minx, maxy-miny, maxz-minz) );
     scene.add( axesHelper );
     console.log("Depth: "+(maxz-minz))
     var extrudedGeometry = new THREE.ExtrudeGeometry(svgShape, {depth: maxz-minz, bevelEnabled: false});
