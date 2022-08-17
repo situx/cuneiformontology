@@ -189,7 +189,7 @@ function parseWKTStringToJSON(wktstring){
     resjson=[]
     for(coordset of wktstring.split(",")){
         curobject={}
-        coords=coordset.split(" ")
+        coords=coordset.trim().split(" ")
         console.log(coordset)
         console.log(coords)
         if(coords.length==3){
