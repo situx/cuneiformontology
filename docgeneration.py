@@ -551,9 +551,9 @@ function initThreeJS(domelement,verts) {
         }else{
             svgShape.lineTo(vert["x"], vert["y"]);
         }
-        vertarray.append(vert["x"])
-        vertarray.append(vert["y"])
-        vertarray.append(vert["z"])
+        vertarray.push(vert["x"])
+        vertarray.push(vert["y"])
+        vertarray.push(vert["z"])
         if(vert["z"]>maxz){
             maxz=vert["z"]
         }
