@@ -1030,7 +1030,7 @@ threejstemplate="""
 <div id="threejs" class="threejscontainer">
 </div>
 <script>
-initThreeJS(document.getElementById('threejs'),parseWKTStringToJSON("{{wktstring}}"))
+initThreeJS('threejs',parseWKTStringToJSON("{{wktstring}}"))
 </script>
 """
 
