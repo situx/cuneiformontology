@@ -535,7 +535,7 @@ function start3dhop(meshurl,meshformat){
 
 let camera, scene, renderer;
 
-function init(domelement,verts) {
+function initThreeJS(domelement,verts) {
     camera = new THREE.PerspectiveCamera( 90, window.innerWidth / window.innerHeight, 0.1, 100 );
     camera.position.z = 145;
     scene = new THREE.Scene();
@@ -1027,9 +1027,11 @@ Your browser does not support the audio element.
 """
 
 threejstemplate="""
-<div class="threejscontainer">
-
+<div id="threejs" class="threejscontainer">
 </div>
+<script>
+initThreeJS(document.getElementById('threejs'),parseWKTStringToJSON("{{wktstring}}"))
+</script>
 """
 
 image3dtemplate="""<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP@4.3/minimal/stylesheet/3dhop.css"/>
@@ -1859,7 +1861,7 @@ class OntDocGeneration:
             if len(imageannos) > 0:
                 for anno in imageannos:
                     if "<svg" not in anno and ("POINT" in anno.upper() or "POLYGON" in anno.upper() or "LINESTRING" in anno.upper()):
-                        f.write(threejstemplate)
+                        f.write(threejstemplate.replace("{{wktstring}}",anno)
             for audio in foundmedia["audio"]:
                 f.write(audiotemplate.replace("{{audio}}",str(audio)))
             for video in foundmedia["video"]:
