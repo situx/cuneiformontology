@@ -573,7 +573,7 @@ function initThreeJS(domelement,verts) {
     renderer = new THREE.WebGLRenderer( { antialias: false } );
 		renderer.setPixelRatio( window.devicePixelRatio );
     renderer.setSize( window.innerWidth, window.innerHeight );
-    document.querySelector(domelement).appendChild( renderer.domElement );		
+    document.getElementById(domelement).appendChild( renderer.domElement );		
 	const controls = new THREE.OrbitControls( camera, renderer.domElement );
 }
 
