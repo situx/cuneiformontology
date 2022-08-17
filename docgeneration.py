@@ -548,7 +548,7 @@ function initThreeJS(domelement,verts) {
     console.log(verts)
     var svgShape = new THREE.Shape();
     first=true
-    for(vert in verts){
+    for(vert of verts){
         if(first){
             svgShape.moveTo(vert["x"], vert["y"]);
            first=false
