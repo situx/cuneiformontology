@@ -540,10 +540,11 @@ let camera, scene, renderer;
 
 function initThreeJS(domelement,verts) {
     camera = new THREE.PerspectiveCamera( 90, window.innerWidth / window.innerHeight, 0.1, 100 );
-    camera.position.z = 145;
     scene = new THREE.Scene();
     minz=Number.MAX_VALUE
     maxz=Number.MIN_VALUE
+    miny=Number.MAX_VALUE
+    maxy=Number.MIN_VALUE
 	vertarray=[]
     console.log(verts)
     var svgShape = new THREE.Shape();
@@ -564,7 +565,15 @@ function initThreeJS(domelement,verts) {
         if(vert["z"]<minz){
             minz=vert["z"]
         }
+        if(vert["y"]>maxy){
+            maxy=vert["y"]
+        }
+        if(vert["y"]<miny){
+            miny=vert["y"]
+        }
     }
+    camera.position.z = maxz;
+    camera.position.y = maxy;
     console.log(vertarray)
     console.log(minz)
     console.log(maxz)
@@ -1039,7 +1048,7 @@ Your browser does not support the audio element.
 """
 
 threejstemplate="""
-<div id="threejs" class="threejscontainer">
+<div id="threejs" class="threejscontainer" style="max-width:485px;max-height:500px">
 </div>
 <script>
 initThreeJS('threejs',parseWKTStringToJSON("{{wktstring}}"))
