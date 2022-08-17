@@ -561,9 +561,13 @@ function initThreeJS(domelement,verts) {
             minz=vert["z"]
         }
     }
+    console.log(vertarray)
+    console.log(minz)
+    console.log(maxz)
     var axesHelper = new THREE.AxesHelper( maxz-minz );
     scene.add( axesHelper );
     var extrudedGeometry = new THREE.ExtrudeGeometry(svgShape, {amount: maxz-minz, bevelEnabled: false});
+    console.log(extrudedGeometry)
     //vertices=new Float32Array(vertarray)
     //const geometry =new THREE.BufferGeometry( ); 
     //geometry.setAttribute( 'position', new THREE.BufferAttribute( vertices, 3 ) );    
