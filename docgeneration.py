@@ -539,17 +539,36 @@ function init(domelement,verts) {
     camera = new THREE.PerspectiveCamera( 90, window.innerWidth / window.innerHeight, 0.1, 100 );
     camera.position.z = 145;
     scene = new THREE.Scene();
+    minz=Number.MAXVALUE
+    maxz=Number.MINVALUE
 	vertarray=[]
+    var svgShape = new THREE.Shape();
+    first=true
     for(vert in verts){
+        if(first){
+            triangleShape.moveTo(vert["x"], vert["y"]);
+           first=false
+        }else{
+            triangleShape.lineTo(vert["x"], vert["y"]);
+        }
         vertarray.append(vert["x"])
         vertarray.append(vert["y"])
         vertarray.append(vert["z"])
+        if(vert["z"]>maxz){
+            maxz=vert["z"]
+        }
+        if(vert["z"]<minz){
+            minz=vert["z"]
+        }
     }
-    vertices=new Float32Array(vertarray)
-    const geometry =new THREE.BufferGeometry( ); 
-    geometry.setAttribute( 'position', new THREE.BufferAttribute( vertices, 3 ) );    
+    var axesHelper = new THREE.AxesHelper( maxz-minz );
+    scene.add( axesHelper );
+    var extrudedGeometry = new THREE.ExtrudeGeometry(svgShape, {amount: maxz-minz, bevelEnabled: false});
+    //vertices=new Float32Array(vertarray)
+    //const geometry =new THREE.BufferGeometry( ); 
+    //geometry.setAttribute( 'position', new THREE.BufferAttribute( vertices, 3 ) );    
     const material = new THREE.MeshBasicMaterial( { color: 0xFFFFFF } );
-    const mesh = new THREE.Mesh( geometry, material );
+    const mesh = new THREE.Mesh( extrudedGeometry, material );
     scene.add( mesh );
     renderer = new THREE.WebGLRenderer( { antialias: false } );
 		renderer.setPixelRatio( window.devicePixelRatio );
@@ -1837,6 +1856,10 @@ class OntDocGeneration:
                         carousel="carousel-item"
             if len(foundmedia["image"])>3:
                 f.write(imagecarouselfooter)
+            if len(imageannos) > 0:
+                for anno in imageannos:
+                    if "<svg" not in anno and ("POINT" in anno.upper() or "POLYGON" in anno.upper() or "LINESTRING" in anno.upper()):
+                        f.write(threejstemplate)
             for audio in foundmedia["audio"]:
                 f.write(audiotemplate.replace("{{audio}}",str(audio)))
             for video in foundmedia["video"]:
