@@ -568,8 +568,10 @@ function initThreeJS(domelement,verts) {
     console.log(vertarray)
     console.log(minz)
     console.log(maxz)
+    console.log(svgShape)
     var axesHelper = new THREE.AxesHelper( maxz-minz );
     scene.add( axesHelper );
+    console.log("Depth: "+(maxz-minz))
     var extrudedGeometry = new THREE.ExtrudeGeometry(svgShape, {depth: maxz-minz, bevelEnabled: false});
     console.log(extrudedGeometry)
     //vertices=new Float32Array(vertarray)
@@ -579,7 +581,7 @@ function initThreeJS(domelement,verts) {
     const mesh = new THREE.Mesh( extrudedGeometry, material );
     scene.add( mesh );
     renderer = new THREE.WebGLRenderer( { antialias: false } );
-		renderer.setPixelRatio( window.devicePixelRatio );
+	renderer.setPixelRatio( window.devicePixelRatio );
     renderer.setSize( window.innerWidth, window.innerHeight );
     document.getElementById(domelement).appendChild( renderer.domElement );		
 	const controls = new THREE.TrackballControls( camera, renderer.domElement );
