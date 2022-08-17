@@ -545,6 +545,8 @@ function initThreeJS(domelement,verts) {
     maxz=Number.MIN_VALUE
     miny=Number.MAX_VALUE
     maxy=Number.MIN_VALUE
+    minx=Number.MAX_VALUE
+    maxx=Number.MIN_VALUE
 	vertarray=[]
     console.log(verts)
     var svgShape = new THREE.Shape();
@@ -571,9 +573,16 @@ function initThreeJS(domelement,verts) {
         if(vert["y"]<miny){
             miny=vert["y"]
         }
+        if(vert["x"]>maxx){
+            maxy=vert["x"]
+        }
+        if(vert["x"]<minx){
+            miny=vert["x"]
+        }
     }
-    camera.position.z = maxz;
-    camera.position.y = maxy;
+    camera.position.z = maxz+25;
+    camera.position.y = maxy+25;
+    camera.position.x = minx-25;
     console.log(vertarray)
     console.log(minz)
     console.log(maxz)
@@ -592,7 +601,10 @@ function initThreeJS(domelement,verts) {
     renderer = new THREE.WebGLRenderer( { antialias: false } );
 	renderer.setPixelRatio( window.devicePixelRatio );
     renderer.setSize( window.innerWidth, window.innerHeight );
-    document.getElementById(domelement).appendChild( renderer.domElement );		
+    document.getElementById(domelement).appendChild( renderer.domElement );
+    document.getElementById(domelement).appendChild( renderer.domElement );
+    renderer.domElement.width = 480;
+    renderer.domElement.height = 500;    
 	const controls = new THREE.TrackballControls( camera, renderer.domElement );
     animate()
 }
