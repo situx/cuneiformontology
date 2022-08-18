@@ -1734,7 +1734,9 @@ class OntDocGeneration:
                 if len(predobjmap[tup])>1:
                     tablecontents+="<td class=\"wrapword\"><ul>"
                     for item in predobjmap[tup]:
-                        if "<svg" in str(item) or ("POINT" in str(item).upper() or "POLYGON" in str(item).upper() or "LINESTRING" in str(item).upper()):
+                        if ("POINT" in str(item).upper() or "POLYGON" in str(item).upper() or "LINESTRING" in str(item).upper()) and "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" in predobjmap and predobjmap["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"]=="http://www.w3.org/ns/oa#WKTSelector":
+                            imageannos.add(str(item))
+                        elif "<svg" in str(item):
                             foundmedia["image"].add(str(item))
                         elif "http" in str(item):
                             ext="."+''.join(filter(str.isalpha,str(item).split(".")[-1]))
@@ -1751,7 +1753,9 @@ class OntDocGeneration:
                     tablecontents+="</ul></td>"
                 else:
                     tablecontents+="<td class=\"wrapword\">"
-                    if "<svg" in str(predobjmap[tup]) or ("POINT" in str(predobjmap[tup]).upper() or "POLYGON" in str(predobjmap[tup]).upper() or "LINESTRING" in str(predobjmap[tup]).upper()):
+                    if ("POINT" in str(predobjmap[tup]).upper() or "POLYGON" in str(predobjmap[tup]).upper() or "LINESTRING" in str(predobjmap[tup]).upper()) and "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" in predobjmap and predobjmap["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"]=="http://www.w3.org/ns/oa#WKTSelector":
+                        imageannos.add(str(predobjmap[tup][0]))
+                    elif "<svg" in str(predobjmap[tup]):
                         foundmedia["image"].add(str(predobjmap[tup][0]))
                     elif "http" in str(predobjmap[tup]):
                         ext = "." + ''.join(filter(str.isalpha, str(predobjmap[tup]).split(".")[-1]))
