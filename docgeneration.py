@@ -550,9 +550,7 @@ function initThreeJS(domelement,verts) {
     console.log(verts)
     var svgShape = new THREE.Shape();
     first=true
-    vertarray=[]
     for(vert of verts){
-    		//console.log(vert)
         if(first){
             svgShape.moveTo(vert["x"], vert["y"]);
            first=false
@@ -581,21 +579,30 @@ function initThreeJS(domelement,verts) {
             miny=vert["x"]
         }
     }
-    camera = new THREE.PerspectiveCamera(75,window.innerWidth / window.innerHeight, 0.01, 10 );
-    camera.position.z = maxz*-1;
-    camera.position.y = (maxy*-1);
+    camera = new THREE.PerspectiveCamera(90,window.innerWidth / window.innerHeight, 0.01, 10 );
+    camera.position.z = maxz;
+    camera.position.y = (maxy)*1.5;
     camera.position.x = maxx*-1;
-    var axesHelper = new THREE.AxesHelper( Math.max(maxx, maxy, maxz) );
+    var axesHelper = new THREE.AxesHelper( Math.max(maxx, maxy, maxz)*4 );
     scene.add( axesHelper );
-    const extrudedGeometry = new THREE.ExtrudeGeometry(svgShape, {depth: maxz-minz, bevelEnabled: false}); 
-    const material = new THREE.MeshBasicMaterial( { color: 0xFFFFFF } );
+    var axesHelper = new THREE.AxesHelper( Math.max(maxx-minx, maxy-miny, maxz-minz) );
+    scene.add( axesHelper );
+    console.log("Depth: "+(maxz-minz))
+    var extrudedGeometry = new THREE.ExtrudeGeometry(svgShape, {depth: maxz-minz, bevelEnabled: false});
+    console.log(extrudedGeometry)
+    const material = new THREE.MeshBasicMaterial( { color: 0xFFFFFF, wireframe:true } );
     const mesh = new THREE.Mesh( extrudedGeometry, material );
     scene.add( mesh );
     renderer = new THREE.WebGLRenderer( { antialias: false } );
-		renderer.setPixelRatio( window.devicePixelRatio );
+	renderer.setPixelRatio( window.devicePixelRatio );
     renderer.setSize( window.innerWidth, window.innerHeight );
-    document.body.appendChild( renderer.domElement );
-    controls = new THREE.TrackballControls( camera, renderer.domElement );
+    document.getElementById(domelement).appendChild( renderer.domElement );
+    document.getElementById(domelement).appendChild( renderer.domElement );
+    renderer.domElement.width = 480;
+    renderer.domElement.height = 500;  
+    renderer.domElement.style.width = "480px";
+    renderer.domElement.style.height = "500px";     
+	controls = new THREE.TrackballControls( camera, renderer.domElement );
     animate()
 }
 
