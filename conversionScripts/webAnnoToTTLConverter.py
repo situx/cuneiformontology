@@ -123,20 +123,22 @@ for tabname in tabletnames:
                 res.write("<"+str(indid)+"_target3d> oa:hasSelector <"+str(indid)+"_target3d_selector> .\n")
                 res.write("<"+str(indid)+"_target3d> rdfs:label \"3D Annotation target of Annotation of Glyph at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on "+str(material)+"\"@en .\n")
                 res.write("<"+str(indid)+"_target3d_selector> rdf:type oa:WKTSelector .\n")
-                if "coordinateSystem" in data3d[key]:
-                    res.write("<"+str(indid)+"_target3d_selector> <http://www.opengis.net/ont/geosparql#inSRS> \""+str(data3d[key]["coordinateSystem"])+"\"^^<http://www.opengis.net/ont/geosparql/crs#wktLiteral> . \n")
-                if "pcaValue" in data3d[key]:
-                    res.write("<"+str(indid)+"_target3d_selector> <http://purl.org/meshsparql/pcaValue> \""+str(data3d[key]["pcaValue"])+"\"^^oa:wktLiteral . \n")                             
-                if "computingReference" in data3d[key]:
+                if "coordinateSystem" in data3d[key]["target"]["selector"]:
+                    print("  ")
+                    res.write("<"+str(indid)+"_target3d_selector> <http://www.opengis.net/ont/geosparql#inSRS> \"\"\""+str(data3d[key]["target"]["selector"]["coordinateSystem"]).replace("\n","").replace("\"","\\\"")+"\"\"\"^^<http://www.opengis.net/ont/geosparql/crs#wktLiteral> . \n")
+                if "pcaValue" in data3d[key]["target"]["selector"]:
+                    res.write("<"+str(indid)+"_target3d_selector> <http://purl.org/meshsparql/pcaValue> \""+str(data3d[key]["target"]["selector"]["pcaValue"]).replace("\n","")+"\"^^oa:wktLiteral . \n")                             
+                if "computingReference" in data3d[key]["target"]["selector"]:
                     i=0
-                    for compref in data3d[key]["computingReference"]:
+                    for compref in data3d[key]["target"]["selector"]["computingReference"]:
                         comprefid=str(indid)+"_target3d_selector_compref"+str(i)
-                        res.write("<"+str(indid)+"_target3d_selector> <http://purl.org/meshsparql/computingReference> <"+str(indid)+"_target3d_selector_compref"+str(i)+"> . \n")
+                        print(compref)
+                        res.write("<"+str(indid)+"_target3d_selector> <http://purl.org/meshsparql/computingReference> <"+str(comprefid)+"> . \n")
                         res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql/stable> \""+str(compref["stable"])+"\"^^xsd:boolean .\n")
-                        res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql/transformationMatrix> \""+str(compref["transformationMatrix"])+"\"^^xsd:string .\n")
+                        res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql/transformationMatrix> \""+str(compref["transformationmatrix"]).replace("\n","").replace("\\n","")+"\"^^xsd:string .\n")
                         res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql/comprefType> \""+str(compref["type"])+"\"^^xsd:string .\n")
-                        res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql/referenceVector> \""+str(compref["value"])+"\"^^xsd:string .\n")
-                        res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql/wktTransformation> \""+str(compref["wktTransformation"])+"\"^^xsd:string .\n")
+                        res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql/referenceVector> \"\"\""+str(compref["value"]).replace("\r","").replace("\n","").replace("\\n","")+"\"\"\"^^xsd:string .\n")
+                        res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql/wktTransformation> \"\"\""+str(compref["wktTransformation"]).replace("\n","").replace("\"","\\\"")+"\"\"\"^^xsd:string .\n")
                     i+=1               
                 res.write("<"+str(indid)+"_target3d_selector> rdf:type oa:WKTSelector .\n")
                 res.write("<"+str(indid)+"_target3d_selector> rdf:value \""+str(data3d[key]["target"]["selector"]["value"])+"\"^^oa:wktLiteral .\n")
