@@ -9,6 +9,8 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+oa:WKTSelector rdfs:subClassOf oa:Selector .
+
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/O147_back_annotations> rdfs:member <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/24a94cd7-0718-469c-85b6-551bc90140d1>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/433fac9c-2680-4e0a-87cd-c6cf3fc8945c>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/43e1686e-5714-49b1-8637-5f30c62d8ba3>,
@@ -1274,6 +1276,8 @@
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/ff58b089-3d57-498e-8d83-28e9bf777715_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at O147 front line 9 char 5 on 3D rendering"@en ;
     rdf:value "<svg><polygon points=\"38.56745529174805,1517.1405029296875 197.13819885253906,1464.7554931640625 229.7018280029297,1518.5562744140625 218.37535095214844,1672.879638671875 45.64650344848633,1660.1373291015625 47.06231689453125,1660.1373291015625\"></polygon></svg>" .
+
+oa:SvgSelector rdfs:subClassOf oa:Selector .
 
 <https://github.com/recogito/annotorious-openseadragon> a dc:Software ;
     foaf:homepage "https://github.com/recogito/annotorious-openseadragon"^^xsd:anyURI ;

@@ -62,6 +62,8 @@ for tabname in tabletnames:
         @prefix lemon: <http://lemon-model.net/lemon#> .
         @prefix graphemon: <http://www.purl.org/graphemon#> .
         """)
+        res.write("oa:SvgSelector rdfs:subClassOf oa:Selector .\n")
+        res.write("oa:WKTSelector rdfs:subClassOf oa:Selector .\n")
         creator="https://orcid.org/0000-0002-9499-5840"
         if tabletname in creatormap:
             creator=creatormap[tabletname]
@@ -135,6 +137,7 @@ for tabname in tabletnames:
                         print(compref)
                         res.write("<"+str(indid)+"_target3d_selector> <http://purl.org/meshsparql/computingReference> <"+str(comprefid)+"> . \n")
                         res.write("<"+str(comprefid)+"> rdf:type <http://purl.org/meshsparql/ComputingReference> .\n")
+                        res.write("<"+str(comprefid)+"> rdfs:label \"Computing Reference of 3D Annotation target selector of Annotation of Glyph at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on a 3D Mesh\" .\n")
                         res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql/stable> \""+str(compref["stable"])+"\"^^xsd:boolean .\n")
                         res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql/transformationMatrix> \""+str(compref["transformationmatrix"]).replace("\n","").replace("\\n","")+"\"^^xsd:string .\n")
                         res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql/comprefType> \""+str(compref["type"])+"\"^^xsd:string .\n")
@@ -143,7 +146,7 @@ for tabname in tabletnames:
                     i+=1               
                 res.write("<"+str(indid)+"_target3d_selector> rdf:type oa:WKTSelector .\n")
                 res.write("<"+str(indid)+"_target3d_selector> rdf:value \""+str(data3d[key]["target"]["selector"]["value"])+"\"^^oa:wktLiteral .\n")
-                res.write("<"+str(indid)+"_target3d_selector> rdfs:label \"3D Annotation target selector of Annotation of Glyph at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on "+str(material)+"\"@en .\n")
+                res.write("<"+str(indid)+"_target3d_selector> rdfs:label \"3D Annotation target selector of Annotation of Glyph at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on a 3D Mesh\"@en .\n")
             res.write("<"+str(indid)+"_target1> rdf:type owl:NamedIndividual .\n")
             res.write("<"+str(indid)+"_target1> oa:hasSelector <"+str(indid)+"_target1_selector> .\n")
             if "/raw" in str(source):
