@@ -595,12 +595,12 @@ function initThreeJS(domelement,verts) {
     scene.add( mesh );
     renderer = new THREE.WebGLRenderer( { antialias: false } );
 	renderer.setPixelRatio( window.devicePixelRatio );
-    renderer.setSize( window.innerWidth, window.innerHeight );
+    renderer.setSize( 480, 500 );
     document.getElementById(domelement).appendChild( renderer.domElement );
-    renderer.domElement.width = 480;
-    renderer.domElement.height = 500;  
-    renderer.domElement.style.width = "480px";
-    renderer.domElement.style.height = "500px";     
+    //renderer.domElement.width = 480;
+    //renderer.domElement.height = 500;  
+    //renderer.domElement.style.width = "480px";
+    //renderer.domElement.style.height = "500px";     
 	controls = new THREE.TrackballControls( camera, renderer.domElement );
     controls.maxDistance= Math.max(maxx, maxy, maxz)*2
     animate()
