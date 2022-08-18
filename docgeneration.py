@@ -585,8 +585,6 @@ function initThreeJS(domelement,verts) {
     camera.position.x = maxx*-1;
     var axesHelper = new THREE.AxesHelper( Math.max(maxx, maxy, maxz)*4 );
     scene.add( axesHelper );
-    var axesHelper = new THREE.AxesHelper( Math.max(maxx-minx, maxy-miny, maxz-minz) );
-    scene.add( axesHelper );
     console.log("Depth: "+(maxz-minz))
     var extrudedGeometry = new THREE.ExtrudeGeometry(svgShape, {depth: maxz-minz, bevelEnabled: false});
     console.log(extrudedGeometry)
