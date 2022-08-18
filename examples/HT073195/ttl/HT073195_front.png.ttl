@@ -1,7 +1,7 @@
 @prefix as: <https://www.w3.org/ns/activitystreams#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://purl.org/dc/terms/> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -9,8 +9,8 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/HT073195_front_annotations> a as:Collection ;
-    rdfs:label "Image annotations on HT073195 front on medium 3D rendering"@en ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/HT073195_obverse_annotations> a as:Collection ;
+    rdfs:label "Image annotations on HT073195 obverse on medium 3D rendering"@en ;
     rdfs:member <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/11b957da-50e2-487b-9501-3be9638eab44>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd>,
@@ -33,38 +33,38 @@
     rdfs:subClassOf skos:Collection .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/11b957da-50e2-487b-9501-3be9638eab44> a oa:Annotation ;
-    rdfs:label "Annotation of Glyph at HT073195 front line 4 char 7 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 7 on 3D rendering"@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/11b957da-50e2-487b-9501-3be9638eab44_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/11b957da-50e2-487b-9501-3be9638eab44_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/11b957da-50e2-487b-9501-3be9638eab44_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/11b957da-50e2-487b-9501-3be9638eab44_body_glyph> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing Glyph at HT073195 front line 4 char 7 on 3D rendering"@en ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_front_line4_char7_glyph> ;
+    rdfs:label "Annotation body referencing Glyph at HT073195 obverse line 4 char 7 on 3D rendering"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char7_glyph> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/11b957da-50e2-487b-9501-3be9638eab44_body_translit> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 front line 4 char 7 on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 obverse line 4 char 7 on 3D rendering"@en ;
     rdf:value "szu3" ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_front_line4_char7> ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char7> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/11b957da-50e2-487b-9501-3be9638eab44_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 front line 4 char 7 on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 4 char 7 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/11b957da-50e2-487b-9501-3be9638eab44_target1_selector> ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/images/sides/HT073195_front.png> .
+    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/11b957da-50e2-487b-9501-3be9638eab44_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 4 char 7 on 3D rendering"@en ;
     rdf:value "<svg><polygon points=\"3130.9521484375,1028.7125244140625 2755.113037109375,1036.795166015625 2763.19580078125,1465.1708984375 3151.15869140625,1469.212158203125\"></polygon></svg>" .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7> a oa:Annotation ;
-    rdfs:label "Annotation of Glyph at HT073195 front line 1 char 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    rdfs:label "Annotation of Glyph at HT073195 obverse line 1 char 1 on 3D rendering"@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_target1>,
@@ -72,38 +72,38 @@
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_body_glyph> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing Glyph at HT073195 front line 1 char 1 on 3D rendering"@en ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_front_line1_char1_glyph> ;
+    rdfs:label "Annotation body referencing Glyph at HT073195 obverse line 1 char 1 on 3D rendering"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line1_char1_glyph> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_body_translit> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 front line 1 char 1 on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 obverse line 1 char 1 on 3D rendering"@en ;
     rdf:value "9(u)" ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_front_line1_char1> ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char1> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 front line 1 char 1 on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 1 char 1 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_target1_selector> ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/images/sides/HT073195_front.png> .
+    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 1 char 1 on 3D rendering"@en ;
     rdf:value "<svg><polygon points=\"70.87147521972656,85.21820068359375 492.78118896484375,74.3067398071289 496.4183349609375,416.1990966796875 78.14578247070312,438.0220031738281\"></polygon></svg>" .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_target3d> a owl:NamedIndividual ;
-    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 front line 1 char 1 on 3D rendering"@en ;
+    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 1 char 1 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_target3d_selector> ;
     oa:hasSource <file:///C:/Users/timohomburg/git/cuneiformontology/examples/HT073195/examples/HT073195/mesh/HT073195_mesh.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_target3d_selector> a oa:WKTSelector ;
-    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 front line 1 char 1 on 3D rendering"@en ;
-    rdf:value "POLYGON Z ((-67.15131443986974 2.571348303781026 0.001232384820468724, -42.07068728551855 2.242109171865484 0.001232384820468724, -41.8544753812601 12.55826610627492 0.001232384820468724, -66.71888972428674 13.2167439096919 0.001232384820468724, -67.15131443986974 2.571348303781026 13.95966053009033, -42.07068728551855 2.242109171865484 13.95966053009033, -41.8544753812601 12.55826610627492 13.95966053009033, -66.71888972428674 13.2167439096919 13.95966053009033, -67.15131443986974 2.571348303781026 0.001232384820468724))"^^oa:wktLiteral .
+    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 1 char 1 on 3D rendering"@en ;
+    rdf:value "POLYGON Z ((-67.15131443986974 2.571348303781026 0.0012323848204687, -42.07068728551855 2.2421091718654838 0.0012323848204687, -41.8544753812601 12.558266106274923 0.0012323848204687, -66.71888972428674 13.216743909691903 0.0012323848204687, -67.15131443986974 2.571348303781026 13.959660530090332, -42.07068728551855 2.2421091718654838 13.959660530090332, -41.8544753812601 12.558266106274923 13.959660530090332, -66.71888972428674 13.216743909691903 13.959660530090332, -67.15131443986974 2.571348303781026 0.0012323848204687))"^^oa:wktLiteral .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd> a oa:Annotation ;
-    rdfs:label "Annotation of Glyph at HT073195 front line 2 char 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    rdfs:label "Annotation of Glyph at HT073195 obverse line 2 char 2 on 3D rendering"@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_target1>,
@@ -111,38 +111,38 @@
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_body_glyph> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing Glyph at HT073195 front line 2 char 2 on 3D rendering"@en ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_front_line2_char2_glyph> ;
+    rdfs:label "Annotation body referencing Glyph at HT073195 obverse line 2 char 2 on 3D rendering"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char2_glyph> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_body_translit> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 front line 2 char 2 on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 obverse line 2 char 2 on 3D rendering"@en ;
     rdf:value "6(disz)" ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_front_line2_char2> ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char2> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 front line 2 char 2 on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 2 char 2 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_target1_selector> ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/images/sides/HT073195_front.png> .
+    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 2 char 2 on 3D rendering"@en ;
     rdf:value "<svg><polygon points=\"659.9249877929688,412.0687255859375 353.5312194824219,425.1624755859375 345.67498779296875,789.168701171875 654.6874389648438,789.168701171875\"></polygon></svg>" .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_target3d> a owl:NamedIndividual ;
-    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 front line 2 char 2 on 3D rendering"@en ;
+    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 2 char 2 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_target3d_selector> ;
     oa:hasSource <file:///C:/Users/timohomburg/git/cuneiformontology/examples/HT073195/examples/HT073195/mesh/HT073195_mesh.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_target3d_selector> a oa:WKTSelector ;
-    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 front line 2 char 2 on 3D rendering"@en ;
-    rdf:value "POLYGON Z ((-32.13474326005678 12.43363753373167 9.878433227539063, -50.34846912382262 12.82872439994751 9.878433227539063, -50.81548661932501 23.81213854408503 9.878433227539063, -32.44609188532278 23.81213854408503 9.878433227539063, -32.13474326005678 12.43363753373167 19.31392860412598, -50.34846912382262 12.82872439994751 19.31392860412598, -50.81548661932501 23.81213854408503 19.31392860412598, -32.44609188532278 23.81213854408503 19.31392860412598, -32.13474326005678 12.43363753373167 9.878433227539063))"^^oa:wktLiteral .
+    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 2 char 2 on 3D rendering"@en ;
+    rdf:value "POLYGON Z ((-32.13474326005678 12.433637533731675 9.878433227539062, -50.348469123822625 12.828724399947506 9.878433227539062, -50.815486619325014 23.812138544085034 9.878433227539062, -32.44609188532278 23.812138544085034 9.878433227539062, -32.13474326005678 12.433637533731675 19.313928604125977, -50.348469123822625 12.828724399947506 19.313928604125977, -50.815486619325014 23.812138544085034 19.313928604125977, -32.44609188532278 23.812138544085034 19.313928604125977, -32.13474326005678 12.433637533731675 9.878433227539062))"^^oa:wktLiteral .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14> a oa:Annotation ;
-    rdfs:label "Annotation of Glyph at HT073195 front line 3 char 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    rdfs:label "Annotation of Glyph at HT073195 obverse line 3 char 4 on 3D rendering"@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_target1>,
@@ -150,38 +150,38 @@
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_body_glyph> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing Glyph at HT073195 front line 3 char 4 on 3D rendering"@en ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_front_line3_char4_glyph> ;
+    rdfs:label "Annotation body referencing Glyph at HT073195 obverse line 3 char 4 on 3D rendering"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char4_glyph> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_body_translit> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 front line 3 char 4 on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 obverse line 3 char 4 on 3D rendering"@en ;
     rdf:value "8(disz)" ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_front_line3_char4> ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char4> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 front line 3 char 4 on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 3 char 4 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_target1_selector> ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/images/sides/HT073195_front.png> .
+    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 3 char 4 on 3D rendering"@en ;
     rdf:value "<svg><polygon points=\"1933.0936279296875,849.020263671875 1492.9981689453125,827.1973266601562 1452.989501953125,1183.6383056640625 1856.7135009765625,1198.1868896484375\"></polygon></svg>" .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_target3d> a owl:NamedIndividual ;
-    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 front line 3 char 4 on 3D rendering"@en ;
+    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 3 char 4 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_target3d_selector> ;
     oa:hasSource <file:///C:/Users/timohomburg/git/cuneiformontology/examples/HT073195/examples/HT073195/mesh/HT073195_mesh.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_target3d_selector> a oa:WKTSelector ;
-    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 front line 3 char 4 on 3D rendering"@en ;
-    rdf:value "POLYGON Z ((43.54938281619644 25.61808155248568 18.1809196472168, 17.38769523348691 24.95960282824049 18.1809196472168, 15.00936065837958 35.7147455020777 18.1809196472168, 39.00892919850463 36.15373009047022 18.1809196472168, 43.54938281619644 25.61808155248568 23.07625579833984, 17.38769523348691 24.95960282824049 23.07625579833984, 15.00936065837958 35.7147455020777 23.07625579833984, 39.00892919850463 36.15373009047022 23.07625579833984, 43.54938281619644 25.61808155248568 18.1809196472168))"^^oa:wktLiteral .
+    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 3 char 4 on 3D rendering"@en ;
+    rdf:value "POLYGON Z ((43.54938281619644 25.61808155248568 18.180919647216797, 17.38769523348691 24.959602828240488 18.180919647216797, 15.009360658379578 35.714745502077704 18.180919647216797, 39.00892919850463 36.15373009047022 18.180919647216797, 43.54938281619644 25.61808155248568 23.076255798339844, 17.38769523348691 24.959602828240488 23.076255798339844, 15.009360658379578 35.714745502077704 23.076255798339844, 39.00892919850463 36.15373009047022 23.076255798339844, 43.54938281619644 25.61808155248568 18.180919647216797))"^^oa:wktLiteral .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691> a oa:Annotation ;
-    rdfs:label "Annotation of Glyph at HT073195 front line 4 char 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 4 on 3D rendering"@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_target1>,
@@ -189,38 +189,38 @@
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_body_glyph> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing Glyph at HT073195 front line 4 char 4 on 3D rendering"@en ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_front_line4_char4_glyph> ;
+    rdfs:label "Annotation body referencing Glyph at HT073195 obverse line 4 char 4 on 3D rendering"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char4_glyph> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_body_translit> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 front line 4 char 4 on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 obverse line 4 char 4 on 3D rendering"@en ;
     rdf:value "d" ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_front_line4_char4> ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char4> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 front line 4 char 4 on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 4 char 4 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_target1_selector> ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/images/sides/HT073195_front.png> .
+    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 4 char 4 on 3D rendering"@en ;
     rdf:value "<svg><polygon points=\"1861.93115234375,1208.168701171875 1437.6937255859375,1195.074951171875 1403.64990234375,1506.7061767578125 1830.506103515625,1511.9437255859375\"></polygon></svg>" .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_target3d> a owl:NamedIndividual ;
-    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 front line 4 char 4 on 3D rendering"@en ;
+    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 4 char 4 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_target3d_selector> ;
     oa:hasSource <file:///C:/Users/timohomburg/git/cuneiformontology/examples/HT073195/examples/HT073195/mesh/HT073195_mesh.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_target3d_selector> a oa:WKTSelector ;
-    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 front line 4 char 4 on 3D rendering"@en ;
-    rdf:value "POLYGON Z ((39.31909500957404 36.45491826299161 19.64525032043457, 14.10009582847923 36.05983139677578 19.64525032043457, 12.07634427730787 45.46289807604999 19.64525032043457, 37.45101777103569 45.62093429586145 19.64525032043457, 39.31909500957404 36.45491826299161 24.50687217712402, 14.10009582847923 36.05983139677578 24.50687217712402, 12.07634427730787 45.46289807604999 24.50687217712402, 37.45101777103569 45.62093429586145 24.50687217712402, 39.31909500957404 36.45491826299161 19.64525032043457))"^^oa:wktLiteral .
+    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 4 char 4 on 3D rendering"@en ;
+    rdf:value "POLYGON Z ((39.31909500957404 36.45491826299161 19.64525032043457, 14.100095828479226 36.059831396775785 19.64525032043457, 12.076344277307868 45.46289807604999 19.64525032043457, 37.451017771035694 45.620934295861446 19.64525032043457, 39.31909500957404 36.45491826299161 24.506872177124023, 14.100095828479226 36.059831396775785 24.506872177124023, 12.076344277307868 45.46289807604999 24.506872177124023, 37.451017771035694 45.620934295861446 24.506872177124023, 39.31909500957404 36.45491826299161 19.64525032043457))"^^oa:wktLiteral .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4> a oa:Annotation ;
-    rdfs:label "Annotation of Glyph at HT073195 front line 4 char 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 2 on 3D rendering"@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_target1>,
@@ -228,38 +228,38 @@
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_body_glyph> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing Glyph at HT073195 front line 4 char 2 on 3D rendering"@en ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_front_line4_char2_glyph> ;
+    rdfs:label "Annotation body referencing Glyph at HT073195 obverse line 4 char 2 on 3D rendering"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char2_glyph> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_body_translit> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 front line 4 char 2 on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 obverse line 4 char 2 on 3D rendering"@en ;
     rdf:value "a" ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_front_line4_char2> ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char2> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 front line 4 char 2 on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 4 char 2 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_target1_selector> ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/images/sides/HT073195_front.png> .
+    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 4 char 2 on 3D rendering"@en ;
     rdf:value "<svg><polygon points=\"665.1624755859375,1121.75 1037.02490234375,1158.4124755859375 1016.074951171875,1540.7498779296875 678.2562255859375,1535.512451171875\"></polygon></svg>" .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_target3d> a owl:NamedIndividual ;
-    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 front line 4 char 2 on 3D rendering"@en ;
+    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 4 char 2 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_target3d_selector> ;
     oa:hasSource <file:///C:/Users/timohomburg/git/cuneiformontology/examples/HT073195/examples/HT073195/mesh/HT073195_mesh.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_target3d_selector> a oa:WKTSelector ;
-    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 front line 4 char 2 on 3D rendering"@en ;
-    rdf:value "POLYGON Z ((-31.82339826305519 33.84734641929226 19.70318603515625, -9.71785630850507 34.95358890803402 19.70318603515625, -10.96323629651143 46.49012245488602 19.70318603515625, -31.04503395641901 46.33208991838738 19.70318603515625, -31.82339826305519 33.84734641929226 25.90291213989258, -9.71785630850507 34.95358890803402 25.90291213989258, -10.96323629651143 46.49012245488602 25.90291213989258, -31.04503395641901 46.33208991838738 25.90291213989258, -31.82339826305519 33.84734641929226 19.70318603515625))"^^oa:wktLiteral .
+    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 4 char 2 on 3D rendering"@en ;
+    rdf:value "POLYGON Z ((-31.82339826305519 33.84734641929226 19.70318603515625, -9.71785630850507 34.95358890803402 19.70318603515625, -10.963236296511425 46.49012245488602 19.70318603515625, -31.04503395641901 46.33208991838738 19.70318603515625, -31.82339826305519 33.84734641929226 25.902912139892578, -9.71785630850507 34.95358890803402 25.902912139892578, -10.963236296511425 46.49012245488602 25.902912139892578, -31.04503395641901 46.33208991838738 25.902912139892578, -31.82339826305519 33.84734641929226 19.70318603515625))"^^oa:wktLiteral .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39> a oa:Annotation ;
-    rdfs:label "Annotation of Glyph at HT073195 front line 4 char 5 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 5 on 3D rendering"@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_target1>,
@@ -267,67 +267,67 @@
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_body_glyph> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing Glyph at HT073195 front line 4 char 5 on 3D rendering"@en ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_front_line4_char5_glyph> ;
+    rdfs:label "Annotation body referencing Glyph at HT073195 obverse line 4 char 5 on 3D rendering"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char5_glyph> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_body_translit> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 front line 4 char 5 on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 obverse line 4 char 5 on 3D rendering"@en ;
     rdf:value "utu" ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_front_line4_char5> ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char5> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 front line 4 char 5 on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 4 char 5 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_target1_selector> ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/images/sides/HT073195_front.png> .
+    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 4 char 5 on 3D rendering"@en ;
     rdf:value "<svg><polygon points=\"2262.076904296875,1178.239990234375 1849.8662109375,1158.0335693359375 1833.701171875,1558.120361328125 2245.911865234375,1574.285400390625\"></polygon></svg>" .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_target3d> a owl:NamedIndividual ;
-    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 front line 4 char 5 on 3D rendering"@en ;
+    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 4 char 5 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_target3d_selector> ;
     oa:hasSource <file:///C:/Users/timohomburg/git/cuneiformontology/examples/HT073195/examples/HT073195/mesh/HT073195_mesh.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_target3d_selector> a oa:WKTSelector ;
-    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 front line 4 char 5 on 3D rendering"@en ;
-    rdf:value "POLYGON Z ((63.1059529205931 35.55185835928364 14.6292724609375, 38.60188872777687 34.94215590504389 14.6292724609375, 37.64095015619657 47.01425418571506 14.6292724609375, 62.1450143490128 47.50201320245661 14.6292724609375, 63.1059529205931 35.55185835928364 21.92643547058105, 38.60188872777687 34.94215590504389 21.92643547058105, 37.64095015619657 47.01425418571506 21.92643547058105, 62.1450143490128 47.50201320245661 21.92643547058105, 63.1059529205931 35.55185835928364 14.6292724609375))"^^oa:wktLiteral .
+    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 4 char 5 on 3D rendering"@en ;
+    rdf:value "POLYGON Z ((63.1059529205931 35.551858359283635 14.6292724609375, 38.60188872777687 34.94215590504389 14.6292724609375, 37.64095015619657 47.01425418571506 14.6292724609375, 62.1450143490128 47.50201320245661 14.6292724609375, 63.1059529205931 35.551858359283635 21.926435470581055, 38.60188872777687 34.94215590504389 21.926435470581055, 37.64095015619657 47.01425418571506 21.926435470581055, 62.1450143490128 47.50201320245661 21.926435470581055, 63.1059529205931 35.551858359283635 14.6292724609375))"^^oa:wktLiteral .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/796378b1-43be-4a50-8f63-ea1b5211349a> a oa:Annotation ;
-    rdfs:label "Annotation of Glyph at HT073195 front line 3 char 6 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    rdfs:label "Annotation of Glyph at HT073195 obverse line 3 char 6 on 3D rendering"@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/796378b1-43be-4a50-8f63-ea1b5211349a_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/796378b1-43be-4a50-8f63-ea1b5211349a_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/796378b1-43be-4a50-8f63-ea1b5211349a_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/796378b1-43be-4a50-8f63-ea1b5211349a_body_glyph> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing Glyph at HT073195 front line 3 char 6 on 3D rendering"@en ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_front_line3_char6_glyph> ;
+    rdfs:label "Annotation body referencing Glyph at HT073195 obverse line 3 char 6 on 3D rendering"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char6_glyph> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/796378b1-43be-4a50-8f63-ea1b5211349a_body_translit> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 front line 3 char 6 on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 obverse line 3 char 6 on 3D rendering"@en ;
     rdf:value "mesz" ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_front_line3_char6> ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char6> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/796378b1-43be-4a50-8f63-ea1b5211349a_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 front line 3 char 6 on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 3 char 6 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/796378b1-43be-4a50-8f63-ea1b5211349a_target1_selector> ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/images/sides/HT073195_front.png> .
+    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/796378b1-43be-4a50-8f63-ea1b5211349a_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 3 char 6 on 3D rendering"@en ;
     rdf:value "<svg><polygon points=\"3027.876708984375,769.0028686523438 2464.117919921875,769.0028686523438 2438.657958984375,1125.44384765625 2998.779541015625,1099.9837646484375\"></polygon></svg>" .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc> a oa:Annotation ;
-    rdfs:label "Annotation of Glyph at HT073195 front line 2 char 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    rdfs:label "Annotation of Glyph at HT073195 obverse line 2 char 3 on 3D rendering"@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_target1>,
@@ -335,38 +335,38 @@
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_body_glyph> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing Glyph at HT073195 front line 2 char 3 on 3D rendering"@en ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_front_line2_char3_glyph> ;
+    rdfs:label "Annotation body referencing Glyph at HT073195 obverse line 2 char 3 on 3D rendering"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char3_glyph> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_body_translit> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 front line 2 char 3 on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 obverse line 2 char 3 on 3D rendering"@en ;
     rdf:value "sza3" ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_front_line2_char3> ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char3> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 front line 2 char 3 on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 2 char 3 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_target1_selector> ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/images/sides/HT073195_front.png> .
+    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 2 char 3 on 3D rendering"@en ;
     rdf:value "<svg><polygon points=\"1113.6304931640625,371.37469482421875 677.1721801757812,383.49853515625 665.04833984375,695.6875 1086.3519287109375,692.656494140625\"></polygon></svg>" .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_target3d> a owl:NamedIndividual ;
-    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 front line 2 char 3 on 3D rendering"@en ;
+    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 2 char 3 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_target3d_selector> ;
     oa:hasSource <file:///C:/Users/timohomburg/git/cuneiformontology/examples/HT073195/examples/HT073195/mesh/HT073195_mesh.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_target3d_selector> a oa:WKTSelector ;
-    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 front line 2 char 3 on 3D rendering"@en ;
-    rdf:value "POLYGON Z ((-5.16399988209497 11.20574811417364 13.86563777923584, -31.10947556054605 11.5715692183862 13.86563777923584, -31.83018311749569 20.99146495393036 13.86563777923584, -6.785587349901135 20.90000829663491 13.86563777923584, -5.16399988209497 11.20574811417364 20.44284629821777, -31.10947556054605 11.5715692183862 20.44284629821777, -31.83018311749569 20.99146495393036 20.44284629821777, -6.785587349901135 20.90000829663491 20.44284629821777, -5.16399988209497 11.20574811417364 13.86563777923584))"^^oa:wktLiteral .
+    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 2 char 3 on 3D rendering"@en ;
+    rdf:value "POLYGON Z ((-5.16399988209497 11.205748114173636 13.86563777923584, -31.109475560546052 11.571569218386204 13.86563777923584, -31.830183117495686 20.99146495393036 13.86563777923584, -6.785587349901135 20.900008296634912 13.86563777923584, -5.16399988209497 11.205748114173636 20.442846298217773, -31.109475560546052 11.571569218386204 20.442846298217773, -31.830183117495686 20.99146495393036 20.442846298217773, -6.785587349901135 20.900008296634912 20.442846298217773, -5.16399988209497 11.205748114173636 13.86563777923584))"^^oa:wktLiteral .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef> a oa:Annotation ;
-    rdfs:label "Annotation of Glyph at HT073195 front line 4 char 6 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 6 on 3D rendering"@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_target1>,
@@ -374,38 +374,38 @@
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_body_glyph> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing Glyph at HT073195 front line 4 char 6 on 3D rendering"@en ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_front_line4_char6_glyph> ;
+    rdfs:label "Annotation body referencing Glyph at HT073195 obverse line 4 char 6 on 3D rendering"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char6_glyph> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_body_translit> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 front line 4 char 6 on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 obverse line 4 char 6 on 3D rendering"@en ;
     rdf:value "isz" ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_front_line4_char6> ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char6> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 front line 4 char 6 on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 4 char 6 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_target1_selector> ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/images/sides/HT073195_front.png> .
+    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 4 char 6 on 3D rendering"@en ;
     rdf:value "<svg><polygon points=\"2751.07177734375,1477.294677734375 2262.076904296875,1477.294677734375 2274.20068359375,1105.4969482421875 2751.07177734375,1085.29052734375\"></polygon></svg>" .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_target3d> a owl:NamedIndividual ;
-    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 front line 4 char 6 on 3D rendering"@en ;
+    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 4 char 6 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_target3d_selector> ;
     oa:hasSource <file:///C:/Users/timohomburg/git/cuneiformontology/examples/HT073195/examples/HT073195/mesh/HT073195_mesh.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_target3d_selector> a oa:WKTSelector ;
-    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 front line 4 char 6 on 3D rendering"@en ;
-    rdf:value "POLYGON Z ((92.17448984147333 44.57544436875606 0.0007292666123248637, 63.1059529205931 44.57544436875606 0.0007292666123248637, 63.82665684927829 33.35693173400822 0.0007292666123248637, 92.17448984147333 32.74722927976848 0.0007292666123248637, 92.17448984147333 44.57544436875606 16.18452644348145, 63.1059529205931 44.57544436875606 16.18452644348145, 63.82665684927829 33.35693173400822 16.18452644348145, 92.17448984147333 32.74722927976848 16.18452644348145, 92.17448984147333 44.57544436875606 0.0007292666123248637))"^^oa:wktLiteral .
+    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 4 char 6 on 3D rendering"@en ;
+    rdf:value "POLYGON Z ((92.17448984147333 44.57544436875606 0.0007292666123249, 63.1059529205931 44.57544436875606 0.0007292666123249, 63.826656849278294 33.35693173400822 0.0007292666123249, 92.17448984147333 32.747229279768476 0.0007292666123249, 92.17448984147333 44.57544436875606 16.184526443481445, 63.1059529205931 44.57544436875606 16.184526443481445, 63.826656849278294 33.35693173400822 16.184526443481445, 92.17448984147333 32.747229279768476 16.184526443481445, 92.17448984147333 44.57544436875606 0.0007292666123249))"^^oa:wktLiteral .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808> a oa:Annotation ;
-    rdfs:label "Annotation of Glyph at HT073195 front line 2 char 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    rdfs:label "Annotation of Glyph at HT073195 obverse line 2 char 1 on 3D rendering"@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_target1>,
@@ -413,38 +413,38 @@
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_body_glyph> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing Glyph at HT073195 front line 2 char 1 on 3D rendering"@en ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_front_line2_char1_glyph> ;
+    rdfs:label "Annotation body referencing Glyph at HT073195 obverse line 2 char 1 on 3D rendering"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char1_glyph> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_body_translit> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 front line 2 char 1 on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 obverse line 2 char 1 on 3D rendering"@en ;
     rdf:value "1(u)" ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_front_line2_char1> ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char1> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 front line 2 char 1 on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 2 char 1 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_target1_selector> ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/images/sides/HT073195_front.png> .
+    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 2 char 1 on 3D rendering"@en ;
     rdf:value "<svg><polygon points=\"59.96003341674805,445.2962951660156 354.56939697265625,419.83624267578125 336.3836364746094,776.2772216796875 67.23433685302734,754.4542846679688\"></polygon></svg>" .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_target3d> a owl:NamedIndividual ;
-    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 front line 2 char 1 on 3D rendering"@en ;
+    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 2 char 1 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_target3d_selector> ;
     oa:hasSource <file:///C:/Users/timohomburg/git/cuneiformontology/examples/HT073195/examples/HT073195/mesh/HT073195_mesh.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_target3d_selector> a oa:WKTSelector ;
-    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 front line 2 char 1 on 3D rendering"@en ;
-    rdf:value "POLYGON Z ((-67.7999503794116 13.43623620388816 6.051426887512207, -50.28675416039721 12.66801225337305 6.051426887512207, -51.36781549582166 23.42315492721026 6.051426887512207, -67.36752589059513 22.76467620296508 6.051426887512207, -67.7999503794116 13.43623620388816 16.59199714660645, -50.28675416039721 12.66801225337305 16.59199714660645, -51.36781549582166 23.42315492721026 16.59199714660645, -67.36752589059513 22.76467620296508 16.59199714660645, -67.7999503794116 13.43623620388816 6.051426887512207))"^^oa:wktLiteral .
+    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 2 char 1 on 3D rendering"@en ;
+    rdf:value "POLYGON Z ((-67.7999503794116 13.436236203888164 6.051426887512207, -50.28675416039721 12.668012253373051 6.051426887512207, -51.36781549582166 23.423154927210263 6.051426887512207, -67.36752589059513 22.764676202965077 6.051426887512207, -67.7999503794116 13.436236203888164 16.591997146606445, -50.28675416039721 12.668012253373051 16.591997146606445, -51.36781549582166 23.423154927210263 16.591997146606445, -67.36752589059513 22.764676202965077 16.591997146606445, -67.7999503794116 13.436236203888164 6.051426887512207))"^^oa:wktLiteral .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d> a oa:Annotation ;
-    rdfs:label "Annotation of Glyph at HT073195 front line 3 char 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    rdfs:label "Annotation of Glyph at HT073195 obverse line 3 char 2 on 3D rendering"@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_target1>,
@@ -452,38 +452,38 @@
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_body_glyph> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing Glyph at HT073195 front line 3 char 2 on 3D rendering"@en ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_front_line3_char2_glyph> ;
+    rdfs:label "Annotation body referencing Glyph at HT073195 obverse line 3 char 2 on 3D rendering"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char2_glyph> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_body_translit> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 front line 3 char 2 on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 obverse line 3 char 2 on 3D rendering"@en ;
     rdf:value "1(disz)" ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_front_line3_char2> ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char2> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 front line 3 char 2 on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 3 char 2 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_target1_selector> ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/images/sides/HT073195_front.png> .
+    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 3 char 2 on 3D rendering"@en ;
     rdf:value "<svg><polygon points=\"921.7999267578125,823.2124633789062 701.824951171875,810.1187133789062 683.4937133789062,1189.83740234375 906.0874633789062,1181.981201171875\"></polygon></svg>" .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_target3d> a owl:NamedIndividual ;
-    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 front line 3 char 2 on 3D rendering"@en ;
+    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 3 char 2 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_target3d_selector> ;
     oa:hasSource <file:///C:/Users/timohomburg/git/cuneiformontology/examples/HT073195/examples/HT073195/mesh/HT073195_mesh.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_target3d_selector> a oa:WKTSelector ;
-    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 front line 3 char 2 on 3D rendering"@en ;
-    rdf:value "POLYGON Z ((-16.56746075559766 24.83936476457747 19.9269905090332, -29.64397965577966 24.44427789836164 19.9269905090332, -30.73368895941742 35.90179517696432 19.9269905090332, -17.50149574660243 35.66474453055995 19.9269905090332, -16.56746075559766 24.83936476457747 23.91700172424316, -29.64397965577966 24.44427789836164 23.91700172424316, -30.73368895941742 35.90179517696432 23.91700172424316, -17.50149574660243 35.66474453055995 23.91700172424316, -16.56746075559766 24.83936476457747 19.9269905090332))"^^oa:wktLiteral .
+    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 3 char 2 on 3D rendering"@en ;
+    rdf:value "POLYGON Z ((-16.567460755597658 24.839364764577475 19.926990509033203, -29.64397965577966 24.444277898361644 19.926990509033203, -30.73368895941742 35.90179517696432 19.926990509033203, -17.50149574660243 35.66474453055995 19.926990509033203, -16.567460755597658 24.839364764577475 23.917001724243164, -29.64397965577966 24.444277898361644 23.917001724243164, -30.73368895941742 35.90179517696432 23.917001724243164, -17.50149574660243 35.66474453055995 23.917001724243164, -16.567460755597658 24.839364764577475 19.926990509033203))"^^oa:wktLiteral .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0> a oa:Annotation ;
-    rdfs:label "Annotation of Glyph at HT073195 front line 4 char 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 1 on 3D rendering"@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_target1>,
@@ -491,38 +491,38 @@
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_body_glyph> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing Glyph at HT073195 front line 4 char 1 on 3D rendering"@en ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_front_line4_char1_glyph> ;
+    rdfs:label "Annotation body referencing Glyph at HT073195 obverse line 4 char 1 on 3D rendering"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char1_glyph> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_body_translit> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 front line 4 char 1 on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 obverse line 4 char 1 on 3D rendering"@en ;
     rdf:value "sza3" ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_front_line4_char1> ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char1> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 front line 4 char 1 on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 4 char 1 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_target1_selector> ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/images/sides/HT073195_front.png> .
+    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 4 char 1 on 3D rendering"@en ;
     rdf:value "<svg><polygon points=\"57.02898406982422,1162.0938720703125 691.0048828125,1179.7744140625 680.9016723632812,1533.386474609375 74.70958709716797,1543.48974609375\"></polygon></svg>" .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_target3d> a owl:NamedIndividual ;
-    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 front line 4 char 1 on 3D rendering"@en ;
+    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 4 char 1 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_target3d_selector> ;
     oa:hasSource <file:///C:/Users/timohomburg/git/cuneiformontology/examples/HT073195/examples/HT073195/mesh/HT073195_mesh.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_target3d_selector> a oa:WKTSelector ;
-    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 front line 4 char 1 on 3D rendering"@en ;
-    rdf:value "POLYGON Z ((-67.9741880265818 35.06467025602903 8.420078277587891, -30.2871838567382 35.59815760141831 8.420078277587891, -30.8877740922403 46.26794134233189 8.420078277587891, -66.92315602151925 46.57279441110818 8.420078277587891, -67.9741880265818 35.06467025602903 23.71261215209961, -30.2871838567382 35.59815760141831 23.71261215209961, -30.8877740922403 46.26794134233189 23.71261215209961, -66.92315602151925 46.57279441110818 23.71261215209961, -67.9741880265818 35.06467025602903 8.420078277587891))"^^oa:wktLiteral .
+    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 4 char 1 on 3D rendering"@en ;
+    rdf:value "POLYGON Z ((-67.9741880265818 35.06467025602903 8.42007827758789, -30.287183856738203 35.59815760141831 8.42007827758789, -30.8877740922403 46.267941342331895 8.42007827758789, -66.92315602151925 46.572794411108184 8.42007827758789, -67.9741880265818 35.06467025602903 23.71261215209961, -30.287183856738203 35.59815760141831 23.71261215209961, -30.8877740922403 46.267941342331895 23.71261215209961, -66.92315602151925 46.572794411108184 23.71261215209961, -67.9741880265818 35.06467025602903 8.42007827758789))"^^oa:wktLiteral .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208> a oa:Annotation ;
-    rdfs:label "Annotation of Glyph at HT073195 front line 3 char 5 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    rdfs:label "Annotation of Glyph at HT073195 obverse line 3 char 5 on 3D rendering"@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_target1>,
@@ -530,38 +530,38 @@
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_body_glyph> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing Glyph at HT073195 front line 3 char 5 on 3D rendering"@en ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_front_line3_char5_glyph> ;
+    rdfs:label "Annotation body referencing Glyph at HT073195 obverse line 3 char 5 on 3D rendering"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char5_glyph> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_body_translit> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 front line 3 char 5 on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 obverse line 3 char 5 on 3D rendering"@en ;
     rdf:value "H,AR" ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_front_line3_char5> ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char5> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 front line 3 char 5 on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 3 char 5 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_target1_selector> ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/images/sides/HT073195_front.png> .
+    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 3 char 5 on 3D rendering"@en ;
     rdf:value "<svg><polygon points=\"2442.295166015625,772.6400756835938 1896.72216796875,772.6400756835938 1874.8992919921875,1158.17822265625 2424.109375,1165.4525146484375\"></polygon></svg>" .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_target3d> a owl:NamedIndividual ;
-    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 front line 3 char 5 on 3D rendering"@en ;
+    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 3 char 5 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_target3d_selector> ;
     oa:hasSource <file:///C:/Users/timohomburg/git/cuneiformontology/examples/HT073195/examples/HT073195/mesh/HT073195_mesh.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_target3d_selector> a oa:WKTSelector ;
-    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 front line 3 char 5 on 3D rendering"@en ;
-    rdf:value "POLYGON Z ((73.81911472113853 23.31340878011213 0.0007292666123248637, 41.38726377361196 23.31340878011213 0.0007292666123248637, 40.08999234806127 34.94652063073438 0.0007292666123248637, 72.73805157158188 35.16601292493064 0.0007292666123248637, 73.81911472113853 23.31340878011213 20.42397880554199, 41.38726377361196 23.31340878011213 20.42397880554199, 40.08999234806127 34.94652063073438 20.42397880554199, 72.73805157158188 35.16601292493064 20.42397880554199, 73.81911472113853 23.31340878011213 0.0007292666123248637))"^^oa:wktLiteral .
+    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 3 char 5 on 3D rendering"@en ;
+    rdf:value "POLYGON Z ((73.81911472113853 23.313408780112134 0.0007292666123249, 41.38726377361196 23.313408780112134 0.0007292666123249, 40.08999234806127 34.94652063073438 0.0007292666123249, 72.73805157158188 35.16601292493064 0.0007292666123249, 73.81911472113853 23.313408780112134 20.423978805541992, 41.38726377361196 23.313408780112134 20.423978805541992, 40.08999234806127 34.94652063073438 20.423978805541992, 72.73805157158188 35.16601292493064 20.423978805541992, 73.81911472113853 23.313408780112134 0.0007292666123249))"^^oa:wktLiteral .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1> a oa:Annotation ;
-    rdfs:label "Annotation of Glyph at HT073195 front line 2 char 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    rdfs:label "Annotation of Glyph at HT073195 obverse line 2 char 4 on 3D rendering"@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_target1>,
@@ -569,38 +569,38 @@
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_body_glyph> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing Glyph at HT073195 front line 2 char 4 on 3D rendering"@en ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_front_line2_char4_glyph> ;
+    rdfs:label "Annotation body referencing Glyph at HT073195 obverse line 2 char 4 on 3D rendering"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line2_char4_glyph> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_body_translit> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 front line 2 char 4 on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 obverse line 2 char 4 on 3D rendering"@en ;
     rdf:value "KU3.GI" ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_front_line2_char4> ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char4> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 front line 2 char 4 on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 2 char 4 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_target1_selector> ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/images/sides/HT073195_front.png> .
+    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 2 char 4 on 3D rendering"@en ;
     rdf:value "<svg><polygon points=\"2138.0166015625,297.8039245605469 1107.974853515625,323.9914245605469 1094.881103515625,742.9913940429688 2098.7353515625,751.7205810546875\"></polygon></svg>" .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_target3d> a owl:NamedIndividual ;
-    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 front line 2 char 4 on 3D rendering"@en ;
+    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 2 char 4 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_target3d_selector> ;
     oa:hasSource <file:///C:/Users/timohomburg/git/cuneiformontology/examples/HT073195/examples/HT073195/mesh/HT073195_mesh.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_target3d_selector> a oa:WKTSelector ;
-    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 front line 2 char 4 on 3D rendering"@en ;
-    rdf:value "POLYGON Z ((55.73112817451836 8.985845865500877 10.38413238525391, -5.500202118546724 9.776019597932537 10.38413238525391, -6.278566425182902 22.41879839601091 10.38413238525391, 53.39603525460983 22.68219025404027 10.38413238525391, 55.73112817451836 8.985845865500877 21.43792152404785, -5.500202118546724 9.776019597932537 21.43792152404785, -6.278566425182902 22.41879839601091 21.43792152404785, 53.39603525460983 22.68219025404027 21.43792152404785, 55.73112817451836 8.985845865500877 10.38413238525391))"^^oa:wktLiteral .
+    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 2 char 4 on 3D rendering"@en ;
+    rdf:value "POLYGON Z ((55.73112817451836 8.985845865500877 10.384132385253906, -5.500202118546724 9.776019597932537 10.384132385253906, -6.278566425182902 22.418798396010914 10.384132385253906, 53.39603525460983 22.68219025404027 10.384132385253906, 55.73112817451836 8.985845865500877 21.43792152404785, -5.500202118546724 9.776019597932537 21.43792152404785, -6.278566425182902 22.418798396010914 21.43792152404785, 53.39603525460983 22.68219025404027 21.43792152404785, 55.73112817451836 8.985845865500877 10.384132385253906))"^^oa:wktLiteral .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0> a oa:Annotation ;
-    rdfs:label "Annotation of Glyph at HT073195 front line 0 char 0 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    rdfs:label "Annotation of Glyph at HT073195 obverse line 0 char 0 on 3D rendering"@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_target1>,
@@ -608,38 +608,38 @@
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_body_glyph> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing Glyph at HT073195 front line 0 char 0 on 3D rendering"@en ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_front_line0_char0_glyph> ;
+    rdfs:label "Annotation body referencing Glyph at HT073195 obverse line 0 char 0 on 3D rendering"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line0_char0_glyph> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_body_translit> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 front line 0 char 0 on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 obverse line 0 char 0 on 3D rendering"@en ;
     rdf:value "2(disz)" ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_front_line0_char0> ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line0_char0> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 front line 0 char 0 on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 0 char 0 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_target1_selector> ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/images/sides/HT073195_front.png> .
+    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 0 char 0 on 3D rendering"@en ;
     rdf:value "<svg><polygon points=\"502.7999572753906,100.43749237060547 819.668701171875,116.14999389648438 775.1499633789062,351.8374938964844 505.4187316894531,357.0749816894531\"></polygon></svg>" .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_target3d> a owl:NamedIndividual ;
-    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 front line 0 char 0 on 3D rendering"@en ;
+    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 0 char 0 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_target3d_selector> ;
     oa:hasSource <file:///C:/Users/timohomburg/git/cuneiformontology/examples/HT073195/examples/HT073195/mesh/HT073195_mesh.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_target3d_selector> a oa:WKTSelector ;
-    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 front line 0 char 0 on 3D rendering"@en ;
-    rdf:value "POLYGON Z ((-41.4751167538231 3.030570624250418 0.0004398614400997758, -22.63870089605408 3.504674909750825 0.0004398614400997758, -25.28513881296419 10.61623850163578 0.0004398614400997758, -41.31944244119011 10.77427287979083 0.0004398614400997758, -41.4751167538231 3.030570624250418 13.41835975646973, -22.63870089605408 3.504674909750825 13.41835975646973, -25.28513881296419 10.61623850163578 13.41835975646973, -41.31944244119011 10.77427287979083 13.41835975646973, -41.4751167538231 3.030570624250418 0.0004398614400997758))"^^oa:wktLiteral .
+    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 0 char 0 on 3D rendering"@en ;
+    rdf:value "POLYGON Z ((-41.4751167538231 3.030570624250418 0.0004398614400998, -22.638700896054075 3.504674909750825 0.0004398614400998, -25.285138812964192 10.616238501635777 0.0004398614400998, -41.319442441190105 10.774272879790827 0.0004398614400998, -41.4751167538231 3.030570624250418 13.418359756469727, -22.638700896054075 3.504674909750825 13.418359756469727, -25.285138812964192 10.616238501635777 13.418359756469727, -41.319442441190105 10.774272879790827 13.418359756469727, -41.4751167538231 3.030570624250418 0.0004398614400998))"^^oa:wktLiteral .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0> a oa:Annotation ;
-    rdfs:label "Annotation of Glyph at HT073195 front line 0 char 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    rdfs:label "Annotation of Glyph at HT073195 obverse line 0 char 1 on 3D rendering"@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_target1>,
@@ -647,38 +647,38 @@
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_body_glyph> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing Glyph at HT073195 front line 0 char 1 on 3D rendering"@en ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_front_line0_char1_glyph> ;
+    rdfs:label "Annotation body referencing Glyph at HT073195 obverse line 0 char 1 on 3D rendering"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line0_char1_glyph> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_body_translit> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 front line 0 char 1 on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 obverse line 0 char 1 on 3D rendering"@en ;
     rdf:value "SZU.NIGIN2" ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_front_line0_char1> ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line0_char1> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 front line 0 char 1 on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 0 char 1 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_target1_selector> ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/images/sides/HT073195_front.png> .
+    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 0 char 1 on 3D rendering"@en ;
     rdf:value "<svg><polygon points=\"96.33155822753906,772.6400756835938 703.736083984375,805.3744506835938 692.8245849609375,1187.2755126953125 85.42009735107422,1172.726806640625\"></polygon></svg>" .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_target3d> a owl:NamedIndividual ;
-    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 front line 0 char 1 on 3D rendering"@en ;
+    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 0 char 1 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_target3d_selector> ;
     oa:hasSource <file:///C:/Users/timohomburg/git/cuneiformontology/examples/HT073195/examples/HT073195/mesh/HT073195_mesh.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_target3d_selector> a oa:WKTSelector ;
-    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 front line 0 char 1 on 3D rendering"@en ;
-    rdf:value "POLYGON Z ((-65.63782748179619 23.31340878011213 11.28398036956787, -29.5303714406777 24.30112594565171 11.28398036956787, -30.17901078171745 35.82449349083225 11.28398036956787, -66.28646455517068 35.38550521912691 11.28398036956787, -65.63782748179619 23.31340878011213 22.78508377075195, -29.5303714406777 24.30112594565171 22.78508377075195, -30.17901078171745 35.82449349083225 22.78508377075195, -66.28646455517068 35.38550521912691 22.78508377075195, -65.63782748179619 23.31340878011213 11.28398036956787))"^^oa:wktLiteral .
+    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 0 char 1 on 3D rendering"@en ;
+    rdf:value "POLYGON Z ((-65.6378274817962 23.313408780112134 11.283980369567871, -29.530371440677705 24.30112594565171 11.283980369567871, -30.17901078171745 35.824493490832246 11.283980369567871, -66.28646455517068 35.385505219126905 11.283980369567871, -65.6378274817962 23.313408780112134 22.785083770751953, -29.530371440677705 24.30112594565171 22.785083770751953, -30.17901078171745 35.824493490832246 22.785083770751953, -66.28646455517068 35.385505219126905 22.785083770751953, -65.6378274817962 23.313408780112134 11.283980369567871))"^^oa:wktLiteral .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887> a oa:Annotation ;
-    rdfs:label "Annotation of Glyph at HT073195 front line 3 char 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    rdfs:label "Annotation of Glyph at HT073195 obverse line 3 char 3 on 3D rendering"@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_target1>,
@@ -686,58 +686,58 @@
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_body_glyph> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing Glyph at HT073195 front line 3 char 3 on 3D rendering"@en ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_front_line3_char3_glyph> ;
+    rdfs:label "Annotation body referencing Glyph at HT073195 obverse line 3 char 3 on 3D rendering"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line3_char3_glyph> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_body_translit> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 front line 3 char 3 on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 obverse line 3 char 3 on 3D rendering"@en ;
     rdf:value "me" ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_front_line3_char3> ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char3> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 front line 3 char 3 on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 3 char 3 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_target1_selector> ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/images/sides/HT073195_front.png> .
+    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 3 char 3 on 3D rendering"@en ;
     rdf:value "<svg><polygon points=\"955.8436889648438,812.7374877929688 1497.9249267578125,836.3062133789062 1458.6436767578125,1187.21875 916.5624389648438,1174.125\"></polygon></svg>" .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_target3d> a owl:NamedIndividual ;
-    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 front line 3 char 3 on 3D rendering"@en ;
+    rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 3 char 3 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_target3d_selector> ;
     oa:hasSource <file:///C:/Users/timohomburg/git/cuneiformontology/examples/HT073195/examples/HT073195/mesh/HT073195_mesh.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_target3d_selector> a oa:WKTSelector ;
-    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 front line 3 char 3 on 3D rendering"@en ;
-    rdf:value "POLYGON Z ((-14.54371283269072 24.52329600826737 20.95556449890137, 17.68056873639411 25.23445163079331 20.95556449890137, 15.34547581648556 35.82278075037141 20.95556449890137, -16.87880575259925 35.42769388415558 20.95556449890137, -14.54371283269072 24.52329600826737 24.97625350952148, 17.68056873639411 25.23445163079331 24.97625350952148, 15.34547581648556 35.82278075037141 24.97625350952148, -16.87880575259925 35.42769388415558 24.97625350952148, -14.54371283269072 24.52329600826737 20.95556449890137))"^^oa:wktLiteral .
+    rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 3 char 3 on 3D rendering"@en ;
+    rdf:value "POLYGON Z ((-14.543712832690716 24.523296008267373 20.955564498901367, 17.680568736394108 25.234451630793306 20.955564498901367, 15.34547581648556 35.82278075037141 20.955564498901367, -16.87880575259925 35.42769388415558 20.955564498901367, -14.543712832690716 24.523296008267373 24.976253509521484, 17.680568736394108 25.234451630793306 24.976253509521484, 15.34547581648556 35.82278075037141 24.976253509521484, -16.87880575259925 35.42769388415558 24.976253509521484, -14.543712832690716 24.523296008267373 20.955564498901367))"^^oa:wktLiteral .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794> a oa:Annotation ;
-    rdfs:label "Annotation of Glyph at HT073195 front line 4 char 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 3 on 3D rendering"@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794_body_glyph> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing Glyph at HT073195 front line 4 char 3 on 3D rendering"@en ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_front_line4_char3_glyph> ;
+    rdfs:label "Annotation body referencing Glyph at HT073195 obverse line 4 char 3 on 3D rendering"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_obverse_line4_char3_glyph> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794_body_translit> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 front line 4 char 3 on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at HT073195 obverse line 4 char 3 on 3D rendering"@en ;
     rdf:value "mar" ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_front_line4_char3> ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char3> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 front line 4 char 3 on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 4 char 3 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794_target1_selector> ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/images/sides/HT073195_front.png> .
+    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 4 char 3 on 3D rendering"@en ;
