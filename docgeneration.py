@@ -539,7 +539,6 @@ function start3dhop(meshurl,meshformat){
 let camera, scene, renderer,controls;
 
 function initThreeJS(domelement,verts) {
-    camera = new THREE.PerspectiveCamera( 90, window.innerWidth / window.innerHeight, 0.1, 100 );
     scene = new THREE.Scene();
     minz=Number.MAX_VALUE
     maxz=Number.MIN_VALUE
@@ -551,7 +550,9 @@ function initThreeJS(domelement,verts) {
     console.log(verts)
     var svgShape = new THREE.Shape();
     first=true
+    vertarray=[]
     for(vert of verts){
+    		//console.log(vert)
         if(first){
             svgShape.moveTo(vert["x"], vert["y"]);
            first=false
@@ -580,35 +581,21 @@ function initThreeJS(domelement,verts) {
             miny=vert["x"]
         }
     }
-    camera.position.set(((minx+maxx)/2), ((miny+maxy)/2), (minz+maxz)/2);
-    //camera.position.z = maxz;
-    //camera.position.y = maxy+25;
-    //camera.position.x = minx-25;
-    console.log(vertarray)
-    console.log(minz)
-    console.log(maxz)
-    console.log(svgShape)
-    var axesHelper = new THREE.AxesHelper( Math.max(maxx-minx, maxy-miny, maxz-minz) );
+    camera = new THREE.PerspectiveCamera(75,window.innerWidth / window.innerHeight, 0.01, 10 );
+    camera.position.z = maxz*-1;
+    camera.position.y = (maxy*-1);
+    camera.position.x = maxx*-1;
+    var axesHelper = new THREE.AxesHelper( Math.max(maxx, maxy, maxz) );
     scene.add( axesHelper );
-    console.log("Depth: "+(maxz-minz))
-    var extrudedGeometry = new THREE.ExtrudeGeometry(svgShape, {depth: maxz-minz, bevelEnabled: false});
-    console.log(extrudedGeometry)
-    //vertices=new Float32Array(vertarray)
-    //const geometry =new THREE.BufferGeometry( ); 
-    //geometry.setAttribute( 'position', new THREE.BufferAttribute( vertices, 3 ) );    
+    const extrudedGeometry = new THREE.ExtrudeGeometry(svgShape, {depth: maxz-minz, bevelEnabled: false}); 
     const material = new THREE.MeshBasicMaterial( { color: 0xFFFFFF } );
     const mesh = new THREE.Mesh( extrudedGeometry, material );
     scene.add( mesh );
     renderer = new THREE.WebGLRenderer( { antialias: false } );
-	renderer.setPixelRatio( window.devicePixelRatio );
+		renderer.setPixelRatio( window.devicePixelRatio );
     renderer.setSize( window.innerWidth, window.innerHeight );
-    document.getElementById(domelement).appendChild( renderer.domElement );
-    document.getElementById(domelement).appendChild( renderer.domElement );
-    renderer.domElement.width = 480;
-    renderer.domElement.height = 500;  
-    renderer.domElement.style.width = "480px";
-    renderer.domElement.style.height = "500px";     
-	controls = new THREE.TrackballControls( camera, renderer.domElement );
+    document.body.appendChild( renderer.domElement );
+    controls = new THREE.TrackballControls( camera, renderer.domElement );
     animate()
 }
 
