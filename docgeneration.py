@@ -20,6 +20,9 @@ labelproperties={
     "http://www.w3.org/2000/01/rdf-schema#label": "DatatypeProperty"
 }
 
+collectionclasses=["http://www.opengis.net/ont/geosparql#FeatureCollection","http://www.opengis.net/ont/geosparql#GeometryCollection","http://www.opengis.net/ont/geosparql#SpatialObjectCollection","http://www.w3.org/2004/02/skos/core#Collection","http://www.w3.org/2004/02/skos/core#OrderedCollection","https://www.w3.org/ns/activitystreams#Collection","https://www.w3.org/ns/activitystreams#OrderedCollection"]
+
+
 collectionrelationproperties={
     "http://www.w3.org/2000/01/rdf-schema#member":"ObjectProperty",
 }
@@ -186,13 +189,16 @@ function parseWKTStringToJSON(wktstring){
     resjson=[]
     for(coordset of wktstring.split(",")){
         curobject={}
-        coords=coordset.split(" ")
+        coords=coordset.trim().split(" ")
+        console.log(coordset)
+        console.log(coords)
         if(coords.length==3){
-            resjson.append({"x":coords[0],"y":coords[1],"z":coords[2]})
+            resjson.push({"x":parseFloat(coords[0]),"y":parseFloat(coords[1]),"z":parseFloat(coords[2])})
         }else{
-            resjson.append({"x":coords[0],"y":coords[1]})
+            resjson.push({"x":parseFloat(coords[0]),"y":parseFloat(coords[1])})
         }
     }
+    console.log(resjson)
     return resjson
 }
 
@@ -530,33 +536,74 @@ function start3dhop(meshurl,meshformat){
 }
 
 
-let camera, scene, renderer;
+let camera, scene, renderer,controls;
 
-function init(domelement,verts) {
-    camera = new THREE.PerspectiveCamera( 90, window.innerWidth / window.innerHeight, 0.1, 100 );
-    camera.position.z = 145;
+function initThreeJS(domelement,verts) {
     scene = new THREE.Scene();
+    minz=Number.MAX_VALUE
+    maxz=Number.MIN_VALUE
+    miny=Number.MAX_VALUE
+    maxy=Number.MIN_VALUE
+    minx=Number.MAX_VALUE
+    maxx=Number.MIN_VALUE
 	vertarray=[]
-    for(vert in verts){
-        vertarray.append(vert["x"])
-        vertarray.append(vert["y"])
-        vertarray.append(vert["z"])
+    console.log(verts)
+    var svgShape = new THREE.Shape();
+    first=true
+    for(vert of verts){
+        if(first){
+            svgShape.moveTo(vert["x"], vert["y"]);
+           first=false
+        }else{
+            svgShape.lineTo(vert["x"], vert["y"]);
+        }
+        vertarray.push(vert["x"])
+        vertarray.push(vert["y"])
+        vertarray.push(vert["z"])
+        if(vert["z"]>maxz){
+            maxz=vert["z"]
+        }
+        if(vert["z"]<minz){
+            minz=vert["z"]
+        }
+        if(vert["y"]>maxy){
+            maxy=vert["y"]
+        }
+        if(vert["y"]<miny){
+            miny=vert["y"]
+        }
+        if(vert["x"]>maxx){
+            maxy=vert["x"]
+        }
+        if(vert["x"]<minx){
+            miny=vert["x"]
+        }
     }
-    vertices=new Float32Array(vertarray)
-    const geometry =new THREE.BufferGeometry( ); 
-    geometry.setAttribute( 'position', new THREE.BufferAttribute( vertices, 3 ) );    
-    const material = new THREE.MeshBasicMaterial( { color: 0xFFFFFF } );
-    const mesh = new THREE.Mesh( geometry, material );
+    camera = new THREE.PerspectiveCamera(90,window.innerWidth / window.innerHeight, 0.01, 10 );
+    camera.position.z = maxz;
+    camera.position.y = (maxy)*-1.5;
+    camera.position.x = maxx*-1;
+    var axesHelper = new THREE.AxesHelper( Math.max(maxx, maxy, maxz)*4 );
+    scene.add( axesHelper );
+    console.log("Depth: "+(maxz-minz))
+    var extrudedGeometry = new THREE.ExtrudeGeometry(svgShape, {depth: maxz-minz, bevelEnabled: false});
+    const material = new THREE.MeshBasicMaterial( { color: 0xFFFFFF, wireframe:true } );
+    const mesh = new THREE.Mesh( extrudedGeometry, material );
     scene.add( mesh );
     renderer = new THREE.WebGLRenderer( { antialias: false } );
-		renderer.setPixelRatio( window.devicePixelRatio );
-    renderer.setSize( window.innerWidth, window.innerHeight );
-    document.querySelector(domelement).appendChild( renderer.domElement );		
-	const controls = new THREE.OrbitControls( camera, renderer.domElement );
+	renderer.setPixelRatio( window.devicePixelRatio );
+    renderer.setSize( 480, 500 );
+    //renderer.setSize( window.innerWidth, window.innerHeight );
+    document.getElementById(domelement).appendChild( renderer.domElement );
+	controls = new THREE.TrackballControls( camera, renderer.domElement );
+    controls.target.set(0, ((maxy+miny)/2), ((maxz+minz)/2));
+    //controls.maxDistance= Math.max(maxx, maxy, maxz)*4
+    animate()
 }
 
 function animate() {
     requestAnimationFrame( animate );
+    controls.update();
     renderer.render( scene, camera );
 }
 
@@ -695,7 +742,7 @@ function getClassRelationDialog(node){
         props=node.data
      }
      console.log(nodetype)
-     if(nodetype=="class" || nodetype=="geoclass"){
+     if(nodetype=="class" || nodetype=="geoclass" || node.type=="collectionclass"){
         console.log(props)
         dialogcontent=formatHTMLTableForClassRelations(props,nodeicon,nodelabel,nodeid)
         document.getElementById("classrelationdialog").innerHTML=dialogcontent
@@ -714,7 +761,7 @@ function getDataSchemaDialog(node){
         props=node.data
      }
      console.log(nodetype)
-     if(nodetype=="class" || nodetype=="geoclass"){
+     if(nodetype=="class" || nodetype=="geoclass" || node.type=="collectionclass"){
         console.log(props)
         dialogcontent=formatHTMLTableForResult(props["to"],nodeicon)
         document.getElementById("dataschemadialog").innerHTML=dialogcontent
@@ -773,7 +820,7 @@ function setupJSTree(){
                 "icon": "https://github.com/i3mainz/geopubby/raw/master/public/icons/classlink.png",
                 "action":function(obj){
                     console.log("class relations")
-                    if(node.type=="class" || node.type=="geoclass"){
+                    if(node.type=="class" || node.type=="geoclass" || node.type=="collectionclass"){
                         getClassRelationDialog(node)
                     }
                 }    
@@ -789,7 +836,7 @@ function setupJSTree(){
                     console.log(baseurl)
                     if(node.id.includes(baseurl)){
                         getDataSchemaDialog(node) 
-                    }else if(node.type=="class" || node.type=="geoclass"){
+                    }else if(node.type=="class" || node.type=="geoclass" || node.type=="collectionclass"){
                         getDataSchemaDialog(node) 
                     }                                         
                 }
@@ -936,7 +983,8 @@ htmltemplate = """<html about=\"{{subject}}\"><head><title>{{toptitle}}</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r99/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three/examples/js/controls/TrackballControls.js"></script>
 <script src="{{scriptfolderpath}}"></script><script src="{{classtreefolderpath}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/jstree.min.js"></script>
 <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
@@ -946,7 +994,8 @@ htmltemplate = """<html about=\"{{subject}}\"><head><title>{{toptitle}}</title>
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   GeoClasses: <input type="checkbox" id="geoclasses"/><br/>
   Search:<input type="text" id="classsearch"><br/><div id="jstree"></div>
-</div><script>var indexpage={{indexpage}}</script>
+</div><script>var indexpage={{indexpage}}
+var baseurl="{{baseurl}}"</script>
 <body><div id="header"><h1 id="title">{{title}}</h1></div><div class="page-resource-uri"><a href="{{baseurl}}">{{baseurl}}</a> <b>powered by Static GeoPubby</b> generated using the <a style="color:blue;font-weight:bold" target="_blank" href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS">SPARQLing Unicorn QGIS Plugin</a></div>
 </div><div id="rdficon"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div> <div class="search"><div class="ui-widget">Search: <input id="search" size="50"><button id="gotosearch" onclick="followLink()">Go</button><b>Download Options:</b>&nbsp;Format:<select id="format" onchange="changeDefLink()">	
 {{exports}}
@@ -1004,9 +1053,9 @@ Your browser does not support the audio element.
 """
 
 threejstemplate="""
-<div class="threejscontainer">
-
+<div id="threejs" class="threejscontainer" style="max-width:485px;max-height:500px">
 </div>
+<script>$(document).ready(function(){initThreeJS('threejs',parseWKTStringToJSON("{{wktstring}}"))})</script>
 """
 
 image3dtemplate="""<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP@4.3/minimal/stylesheet/3dhop.css"/>
@@ -1144,7 +1193,7 @@ htmltabletemplate="""
 htmlfooter="""<div id="footer"><div class="container-fluid"><b>Download Options:</b>&nbsp;Format:<select id="format" onchange="changeDefLink()">	
 {{exports}}
 </select><a id="formatlink2" href="#" target="_blank"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg></a>&nbsp;
-<button id="downloadButton" onclick="download()">Download</button>{{license}}</div></div></body><script>setSVGDimensions()</script></html>"""
+<button id="downloadButton" onclick="download()">Download</button>{{license}}</div></div></body><script>$(document).ready(function(){setSVGDimensions()})</script></html>"""
 
 licensetemplate=""""""
 
@@ -1199,6 +1248,10 @@ class OntDocGeneration:
     def processLiteral(self,literal, literaltype, reproject,currentlayergeojson=None,triplestoreconf=None):     
         print("Process literal: " + str(literal) + " --- " + str(literaltype))
         if "wkt" in literaltype.lower(): 
+            crsuri=""
+            if "http" in literal:
+                crsuri=literal[0:literal.rfind('>')].replace("<","")
+                literal=literal[literal.rfind('>')+1:].strip()
             print(convert.wkt_to_geojson(literal))
             return json.loads(convert.wkt_to_geojson(literal))
         if "geojson" in literaltype.lower():
@@ -1382,6 +1435,7 @@ class OntDocGeneration:
             "class": {"icon": "https://raw.githubusercontent.com/i3mainz/geopubby/master/public/icons/class.png"},
             "geoclass": {"icon": "https://raw.githubusercontent.com/i3mainz/geopubby/master/public/icons/geoclass.png"},
             "halfgeoclass": {"icon": "https://raw.githubusercontent.com/i3mainz/geopubby/master/public/icons/halfgeoclass.png"},
+            "collectionclass": {"icon": "https://raw.githubusercontent.com/i3mainz/geopubby/master/public/icons/collectionclass.png"},
             "geocollection": {"icon": "https://raw.githubusercontent.com/i3mainz/geopubby/master/public/icons/geometrycollection.png"},
             "featurecollection": {"icon": "https://raw.githubusercontent.com/i3mainz/geopubby/master/public/icons/featurecollection.png"},
             "instance": {"icon": "https://raw.githubusercontent.com/i3mainz/geopubby/master/public/icons/instance.png"},
@@ -1459,7 +1513,9 @@ class OntDocGeneration:
                     classlist[item]["item"]["text"]=classlist[item]["item"]["text"][0:classlist[item]["item"]["text"].rfind("[")-1]+" ["+str(classlist[item]["items"])+"]"
                 else:
                     classlist[item]["item"]["text"]=classlist[item]["item"]["text"]+" ["+str(classlist[item]["items"])+"]"
-            if classlist[item]["items"]==classlist[item]["geoitems"] and classlist[item]["items"]>0 and classlist[item]["geoitems"]>0:
+            if item in collectionclasses:
+                classlist[item]["item"]["type"] = "collectionclass"
+            elif classlist[item]["items"]==classlist[item]["geoitems"] and classlist[item]["items"]>0 and classlist[item]["geoitems"]>0:
                 classlist[item]["item"]["type"]="geoclass"
             elif classlist[item]["items"]>classlist[item]["geoitems"] and classlist[item]["geoitems"]>0:
                 classlist[item]["item"]["type"]="halfgeoclass"
@@ -1502,9 +1558,9 @@ class OntDocGeneration:
         for tup in graph.predicate_objects(object):
             if str(tup[0]) in labelproperties:
                 label=str(tup[1])
-            if pred=="http://www.w3.org/ns/oa#hasSelector" and tup[0]==URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type") and tup[1]==URIRef("http://www.w3.org/ns/oa#SvgSelector"):
+            if pred=="http://www.w3.org/ns/oa#hasSelector" and tup[0]==URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type") and (tup[1]==URIRef("http://www.w3.org/ns/oa#SvgSelector") or tup[1]==URIRef("http://www.w3.org/ns/oa#WKTSelector")):
                 for svglit in graph.objects(object,URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#value")):
-                    if "<svg" in str(svglit):
+                    if "<svg" in str(svglit) or ("POINT" in str(svglit).upper() or "POLYGON" in str(svglit).upper() or "LINESTRING" in str(svglit).upper()):
                         imageannos.add(str(svglit))
             if geoprop and str(tup[0]) in geoproperties and isinstance(tup[1], Literal):
                 geojsonrep = self.processLiteral(str(tup[1]), tup[1].datatype, "")
@@ -1677,7 +1733,9 @@ class OntDocGeneration:
                 if len(predobjmap[tup])>1:
                     tablecontents+="<td class=\"wrapword\"><ul>"
                     for item in predobjmap[tup]:
-                        if "<svg" in str(item):
+                        if ("POINT" in str(item).upper() or "POLYGON" in str(item).upper() or "LINESTRING" in str(item).upper()) and "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" in predobjmap and URIRef("http://www.w3.org/ns/oa#WKTSelector") in predobjmap["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"]:
+                            imageannos.add(str(item))
+                        elif "<svg" in str(item):
                             foundmedia["image"].add(str(item))
                         elif "http" in str(item):
                             ext="."+''.join(filter(str.isalpha,str(item).split(".")[-1]))
@@ -1694,9 +1752,11 @@ class OntDocGeneration:
                     tablecontents+="</ul></td>"
                 else:
                     tablecontents+="<td class=\"wrapword\">"
-                    if "<svg" in str(predobjmap[tup]):
+                    if ("POINT" in str(predobjmap[tup]).upper() or "POLYGON" in str(predobjmap[tup]).upper() or "LINESTRING" in str(predobjmap[tup]).upper()) and "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" in predobjmap and URIRef("http://www.w3.org/ns/oa#WKTSelector") in predobjmap["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"]:
+                        imageannos.add(str(predobjmap[tup][0]))
+                    elif "<svg" in str(predobjmap[tup]):
                         foundmedia["image"].add(str(predobjmap[tup][0]))
-                    elif "http" in str(item):
+                    elif "http" in str(predobjmap[tup]):
                         ext = "." + ''.join(filter(str.isalpha, str(predobjmap[tup]).split(".")[-1]))
                         if ext in fileextensionmap:
                             foundmedia[fileextensionmap[ext]].add(str(predobjmap[tup][0]))
@@ -1826,6 +1886,10 @@ class OntDocGeneration:
                         carousel="carousel-item"
             if len(foundmedia["image"])>3:
                 f.write(imagecarouselfooter)
+            if len(imageannos)>0:
+                for anno in imageannos:
+                    if "<svg" not in anno and ("POINT" in anno.upper() or "POLYGON" in anno.upper() or "LINESTRING" in anno.upper()):
+                        f.write(threejstemplate.replace("{{wktstring}}",anno))
             for audio in foundmedia["audio"]:
                 f.write(audiotemplate.replace("{{audio}}",str(audio)))
             for video in foundmedia["video"]:
@@ -1854,9 +1918,11 @@ class OntDocGeneration:
             f.write(htmltabletemplate.replace("{{tablecontent}}", tablecontents))
             f.write(htmlfooter.replace("{{exports}}",myexports).replace("{{license}}",curlicense))
             f.close()
-
-with open('signlist/prefixes.json', encoding="utf-8") as f:
-    prefixes = json.load(f)
+            
+prefixes={"reversed":{}}
+if os.path.exists('signlist/prefixes.json'):
+    with open('signlist/prefixes.json', encoding="utf-8") as f:
+        prefixes = json.load(f)
    
 prefixes["reversed"]["http://purl.org/cuneiform/"]="cunei"
 prefixes["reversed"]["http://purl.org/graphemon/"]="graphemon"
