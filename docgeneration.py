@@ -581,8 +581,8 @@ function initThreeJS(domelement,verts) {
         }
     }
     camera.position.z = maxz+25;
-    camera.position.y = maxy+25;
-    camera.position.x = minx-25;
+    //camera.position.y = maxy+25;
+    //camera.position.x = minx-25;
     console.log(vertarray)
     console.log(minz)
     console.log(maxz)
@@ -604,7 +604,9 @@ function initThreeJS(domelement,verts) {
     document.getElementById(domelement).appendChild( renderer.domElement );
     document.getElementById(domelement).appendChild( renderer.domElement );
     renderer.domElement.width = 480;
-    renderer.domElement.height = 500;    
+    renderer.domElement.height = 500;  
+    renderer.domElement.style.width = "480px";
+    renderer.domElement.style.height = "500px";     
 	controls = new THREE.TrackballControls( camera, renderer.domElement );
     animate()
 }
