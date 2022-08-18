@@ -63,6 +63,11 @@ for tabname in tabletnames:
         @prefix graphemon: <http://www.purl.org/graphemon#> .
         """)
         res.write("oa:SvgSelector rdfs:subClassOf oa:Selector .\n")
+        res.write("oa:Selector rdf:type owl:Class .\n")
+        res.write("oa:SvgSelector rdf:type owl:Class .\n")
+        res.write("oa:SvgSelector rdfs:label \"Svg Selector\"@en .\n")
+        res.write("oa:WKTSelector rdf:type owl:Class .\n")
+        res.write("oa:WKTSelector rdfs:label \"WKT Selector\"@en .\n")
         res.write("oa:WKTSelector rdfs:subClassOf oa:Selector .\n")
         creator="https://orcid.org/0000-0002-9499-5840"
         if tabletname in creatormap:
