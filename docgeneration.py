@@ -581,25 +581,28 @@ function initThreeJS(domelement,verts) {
     }
     camera = new THREE.PerspectiveCamera(90,window.innerWidth / window.innerHeight, 0.01, 10 );
     camera.position.z = maxz;
-    camera.position.y = (maxy)*-1.5;
-    camera.position.x = maxx*-1;
+    camera.position.y = maxy;
+    camera.position.x = maxx;
     var axesHelper = new THREE.AxesHelper( Math.max(maxx, maxy, maxz)*4 );
     scene.add( axesHelper );
     console.log("Depth: "+(maxz-minz))
     var extrudedGeometry = new THREE.ExtrudeGeometry(svgShape, {depth: maxz-minz, bevelEnabled: false});
+    extrudedGeometry.computeBoundingBox()
+    centervec=new THREE.Vector3()
+    extrudedGeometry.boundingBox.getCenter(centervec)
+    console.log(centervec)
     const material = new THREE.MeshBasicMaterial( { color: 0xFFFFFF, wireframe:true } );
     const mesh = new THREE.Mesh( extrudedGeometry, material );
     scene.add( mesh );
     renderer = new THREE.WebGLRenderer( { antialias: false } );
 	renderer.setPixelRatio( window.devicePixelRatio );
     renderer.setSize( 480, 500 );
-    //renderer.setSize( window.innerWidth, window.innerHeight );
     document.getElementById(domelement).appendChild( renderer.domElement );
 	controls = new THREE.TrackballControls( camera, renderer.domElement );
     controls.target.copy( mesh.position );
     controls.update();
-    //controls.target.set(0, 0, maxz);
-    //controls.maxDistance= Math.max(maxx, maxy, maxz)*4
+    controls.target.set(centervec.x, centervec.y, centervec.z);
+    controls.maxDistance= Math.max(maxx, maxy, maxz)*2
     animate()
 }
 
