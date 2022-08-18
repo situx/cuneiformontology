@@ -597,7 +597,6 @@ function initThreeJS(domelement,verts) {
 	renderer.setPixelRatio( window.devicePixelRatio );
     renderer.setSize( window.innerWidth, window.innerHeight );
     document.getElementById(domelement).appendChild( renderer.domElement );
-    document.getElementById(domelement).appendChild( renderer.domElement );
     renderer.domElement.width = 480;
     renderer.domElement.height = 500;  
     renderer.domElement.style.width = "480px";
