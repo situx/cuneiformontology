@@ -581,7 +581,7 @@ function initThreeJS(domelement,verts) {
     }
     camera = new THREE.PerspectiveCamera(90,window.innerWidth / window.innerHeight, 0.01, 10 );
     camera.position.z = maxz;
-    camera.position.y = (maxy)*1.5;
+    camera.position.y = (maxy)*-1.5;
     camera.position.x = maxx*-1;
     var axesHelper = new THREE.AxesHelper( Math.max(maxx, maxy, maxz)*4 );
     scene.add( axesHelper );
@@ -596,6 +596,7 @@ function initThreeJS(domelement,verts) {
     //renderer.setSize( window.innerWidth, window.innerHeight );
     document.getElementById(domelement).appendChild( renderer.domElement );
 	controls = new THREE.TrackballControls( camera, renderer.domElement );
+    controls.target.set(0, 0, 0);
     //controls.maxDistance= Math.max(maxx, maxy, maxz)*4
     animate()
 }
