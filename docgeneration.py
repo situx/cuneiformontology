@@ -587,18 +587,14 @@ function initThreeJS(domelement,verts) {
     scene.add( axesHelper );
     console.log("Depth: "+(maxz-minz))
     var extrudedGeometry = new THREE.ExtrudeGeometry(svgShape, {depth: maxz-minz, bevelEnabled: false});
-    console.log(extrudedGeometry)
     const material = new THREE.MeshBasicMaterial( { color: 0xFFFFFF, wireframe:true } );
     const mesh = new THREE.Mesh( extrudedGeometry, material );
     scene.add( mesh );
     renderer = new THREE.WebGLRenderer( { antialias: false } );
 	renderer.setPixelRatio( window.devicePixelRatio );
-    renderer.setSize( window.innerWidth, window.innerHeight );
+    renderer.setSize( 480, 500 );
+    //renderer.setSize( window.innerWidth, window.innerHeight );
     document.getElementById(domelement).appendChild( renderer.domElement );
-    renderer.domElement.width = 480;
-    renderer.domElement.height = 500;  
-    renderer.domElement.style.width = "480px";
-    renderer.domElement.style.height = "500px";     
 	controls = new THREE.TrackballControls( camera, renderer.domElement );
     controls.maxDistance= Math.max(maxx, maxy, maxz)*2
     animate()
