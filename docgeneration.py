@@ -580,7 +580,7 @@ function initThreeJS(domelement,verts) {
             miny=vert["x"]
         }
     }
-    camera.position.z = maxz+25;
+    camera.position.z = maxz;
     //camera.position.y = maxy+25;
     //camera.position.x = minx-25;
     console.log(vertarray)
