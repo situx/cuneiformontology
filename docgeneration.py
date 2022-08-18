@@ -596,7 +596,7 @@ function initThreeJS(domelement,verts) {
     //renderer.setSize( window.innerWidth, window.innerHeight );
     document.getElementById(domelement).appendChild( renderer.domElement );
 	controls = new THREE.TrackballControls( camera, renderer.domElement );
-    controls.target.set(0, ((maxy+miny)/2), ((maxz+minz)/2));
+    controls.target.set(0, 0, maxz);
     //controls.maxDistance= Math.max(maxx, maxy, maxz)*4
     animate()
 }
