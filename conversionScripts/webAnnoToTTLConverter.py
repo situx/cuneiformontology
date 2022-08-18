@@ -134,6 +134,7 @@ for tabname in tabletnames:
                         comprefid=str(indid)+"_target3d_selector_compref"+str(i)
                         print(compref)
                         res.write("<"+str(indid)+"_target3d_selector> <http://purl.org/meshsparql/computingReference> <"+str(comprefid)+"> . \n")
+                        res.write("<"+str(comprefid)+"> rdf:type <http://purl.org/meshsparql/ComputingReference> .\n")
                         res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql/stable> \""+str(compref["stable"])+"\"^^xsd:boolean .\n")
                         res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql/transformationMatrix> \""+str(compref["transformationmatrix"]).replace("\n","").replace("\\n","")+"\"^^xsd:string .\n")
                         res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql/comprefType> \""+str(compref["type"])+"\"^^xsd:string .\n")
