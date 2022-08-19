@@ -1232,7 +1232,7 @@ var tree={
         "id": "http://www.w3.org/ns/oa#Annotation",
         "parent": "#",
         "type": "class",
-        "text": "Annotation (oa:Annotation) [701]",
+        "text": "Annotation (oa:Annotation) [722]",
         "data": {}
       },
       {
@@ -4798,6 +4798,2094 @@ var tree={
         "instancecount": 3
       },
       {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/00a7b8c0-721b-4a8c-8eea-8c8fa65f3590_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 14 char 3 on a 3D Mesh (00a7b8c0-721b-4a8c-8eea-8c8fa65f3590_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/00c5a316-757d-4bb7-bc5e-c4a6317bc50e_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 3 char 1 on a 3D Mesh (00c5a316-757d-4bb7-bc5e-c4a6317bc50e_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/020e14b5-7e2a-4961-b1e8-7ee526e6271f_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 20 char 6 on a 3D Mesh (020e14b5-7e2a-4961-b1e8-7ee526e6271f_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/03d9bf72-1d4f-41a1-a16d-fb055bba1ace_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 1 char 5 on a 3D Mesh (03d9bf72-1d4f-41a1-a16d-fb055bba1ace_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/05199128-20eb-4243-9e57-7cfa32e22f1e_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 15 char 3 on a 3D Mesh (05199128-20eb-4243-9e57-7cfa32e22f1e_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/09c879aa-ed6d-4be6-8c09-77500f06b3b4_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 7 char 4 on a 3D Mesh (09c879aa-ed6d-4be6-8c09-77500f06b3b4_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/0f8f1524-d121-4de2-aca5-1c23a6b76861_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 10 char 1 on a 3D Mesh (0f8f1524-d121-4de2-aca5-1c23a6b76861_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/10e12f2e-71d7-4593-8181-993f56e78066_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 12 char 1 on a 3D Mesh (10e12f2e-71d7-4593-8181-993f56e78066_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/10e71e39-340f-43b9-a2ce-2bf15a86a06f_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 10 char 5 on a 3D Mesh (10e71e39-340f-43b9-a2ce-2bf15a86a06f_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/12a4e952-f11e-4372-ae32-9773442b0240_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 14 char 7 on a 3D Mesh (12a4e952-f11e-4372-ae32-9773442b0240_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/15d13ec4-839e-487f-a470-e155db2d8b80_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 15 char 4 on a 3D Mesh (15d13ec4-839e-487f-a470-e155db2d8b80_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/16da1342-7b9b-4f33-af72-6b5d585ed4ba_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 14 char 4 on a 3D Mesh (16da1342-7b9b-4f33-af72-6b5d585ed4ba_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/18d73d00-12ad-401f-86aa-6333fdf778fd_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 10 char 2 on a 3D Mesh (18d73d00-12ad-401f-86aa-6333fdf778fd_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/197c6352-c196-40fb-984f-f965f2b0087e_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 21 char 3 on a 3D Mesh (197c6352-c196-40fb-984f-f965f2b0087e_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/1bfc4817-2cac-4b5a-b16e-39111cd6d574_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 2 char 7 on a 3D Mesh (1bfc4817-2cac-4b5a-b16e-39111cd6d574_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/1c0e4a3b-4789-482a-b9ee-ffd898f3ee4d_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 9 char 3 on a 3D Mesh (1c0e4a3b-4789-482a-b9ee-ffd898f3ee4d_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/1f6f60f4-a6b2-46aa-af4c-546f832df957_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 14 char 2 on a 3D Mesh (1f6f60f4-a6b2-46aa-af4c-546f832df957_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/207c65f1-6b12-4502-b34c-ad12846387f1_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 3 char 5 on a 3D Mesh (207c65f1-6b12-4502-b34c-ad12846387f1_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/226a0775-8e8f-475f-ade8-1dcb41184305_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 9 char 4 on a 3D Mesh (226a0775-8e8f-475f-ade8-1dcb41184305_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/226f75ad-5bc0-4823-a729-82efb151ebe1_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 14 char 1 on a 3D Mesh (226f75ad-5bc0-4823-a729-82efb151ebe1_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/22844720-fb5c-4030-8062-cb24263ca191_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 7 char 3 on a 3D Mesh (22844720-fb5c-4030-8062-cb24263ca191_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/24548650-6c4d-4a40-b0f6-0724bdce3fcd_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 22 char 3 on a 3D Mesh (24548650-6c4d-4a40-b0f6-0724bdce3fcd_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/25266b30-4010-4512-879c-3ebc85755e32_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 10 char 7 on a 3D Mesh (25266b30-4010-4512-879c-3ebc85755e32_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/27392816-0f1f-44bf-b60c-c3c2b6ef7b19_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 19 char 6 on a 3D Mesh (27392816-0f1f-44bf-b60c-c3c2b6ef7b19_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/2a41502e-c4cb-4cfa-92c1-e6f75f1cf2cf_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 11 char 6 on a 3D Mesh (2a41502e-c4cb-4cfa-92c1-e6f75f1cf2cf_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/2a8ff31b-172d-46b4-996b-cae048690b11_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 13 char 4 on a 3D Mesh (2a8ff31b-172d-46b4-996b-cae048690b11_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/321fc652-7b36-4555-b579-41cf3bf2de6c_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 8 char 4 on a 3D Mesh (321fc652-7b36-4555-b579-41cf3bf2de6c_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/343f8c32-ed97-4e6b-b607-50d87ced6172_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 5 char 7 on a 3D Mesh (343f8c32-ed97-4e6b-b607-50d87ced6172_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/358a8654-c6a8-41f3-bed4-9e64ac0f96f3_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 7 char 5 on a 3D Mesh (358a8654-c6a8-41f3-bed4-9e64ac0f96f3_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/35a2379d-5457-4633-bd36-e1f93a201dab_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 13 char 10 on a 3D Mesh (35a2379d-5457-4633-bd36-e1f93a201dab_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/3615bc0c-56b0-403f-8d7c-ce0944194fe3_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 17 char 1 on a 3D Mesh (3615bc0c-56b0-403f-8d7c-ce0944194fe3_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/371d1e28-7458-4afd-9293-d2fcffee1ed5_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 2 char 4 on a 3D Mesh (371d1e28-7458-4afd-9293-d2fcffee1ed5_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/3913172c-a33e-4e2f-96cd-ec18637ade3d_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 14 char 10 on a 3D Mesh (3913172c-a33e-4e2f-96cd-ec18637ade3d_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/3a8fcfb0-ef47-4d5e-8cc8-e119eabcbb36_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 14 char 11 on a 3D Mesh (3a8fcfb0-ef47-4d5e-8cc8-e119eabcbb36_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/3e49f705-eacd-48c4-a960-8093ab7dc46c_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 21 char 2 on a 3D Mesh (3e49f705-eacd-48c4-a960-8093ab7dc46c_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/40835128-aa6b-4c98-b58a-6e5ca5d586da_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 10 char 4 on a 3D Mesh (40835128-aa6b-4c98-b58a-6e5ca5d586da_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/438c8e9d-5bc3-4c42-b8fb-954a7669fdf8_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 14 char 5 on a 3D Mesh (438c8e9d-5bc3-4c42-b8fb-954a7669fdf8_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/47468c33-6c6c-4da0-99c4-9608e7fc279f_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 11 char 12 on a 3D Mesh (47468c33-6c6c-4da0-99c4-9608e7fc279f_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/49136423-d05a-4601-bbac-b89a9a14944d_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 13 char 1 on a 3D Mesh (49136423-d05a-4601-bbac-b89a9a14944d_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/49b6c4d1-1525-4f94-b172-7e0f9fd95f99_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 22 char 7 on a 3D Mesh (49b6c4d1-1525-4f94-b172-7e0f9fd95f99_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/4b133cad-92d0-4780-8287-e8c0a610b808_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 2 char 8 on a 3D Mesh (4b133cad-92d0-4780-8287-e8c0a610b808_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/4c353741-f819-43bb-a122-10fb7961e106_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 18 char 5 on a 3D Mesh (4c353741-f819-43bb-a122-10fb7961e106_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/4d816f0f-8a13-488a-8c8e-768284fd3c00_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 1 char 3 on a 3D Mesh (4d816f0f-8a13-488a-8c8e-768284fd3c00_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/5156d5ee-8cf2-49c8-9c20-aa96d0b74daa_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 21 char 2 on a 3D Mesh (5156d5ee-8cf2-49c8-9c20-aa96d0b74daa_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/518ee7ae-1d6d-4e85-94cc-9a8cc0d0d219_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 3 char 3 on a 3D Mesh (518ee7ae-1d6d-4e85-94cc-9a8cc0d0d219_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/51bc2a87-76ac-4e09-a7e4-5fea7a43d6c6_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 19 char 8 on a 3D Mesh (51bc2a87-76ac-4e09-a7e4-5fea7a43d6c6_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/5384818b-5458-413e-8e38-69d4497ccf1c_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 5 char 7 on a 3D Mesh (5384818b-5458-413e-8e38-69d4497ccf1c_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/552dea9a-31dd-4d10-b0ae-2a4e22a1cce1_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 6 char 5 on a 3D Mesh (552dea9a-31dd-4d10-b0ae-2a4e22a1cce1_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/560ac0c1-9147-4fb8-a574-fd257bc5396b_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 15 char 6 on a 3D Mesh (560ac0c1-9147-4fb8-a574-fd257bc5396b_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/5746bd27-5746-4623-a26b-d00b0f61c836_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 14 char 9 on a 3D Mesh (5746bd27-5746-4623-a26b-d00b0f61c836_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/58c96972-1ec8-484d-b301-6d5dc3c8144d_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 15 char 5 on a 3D Mesh (58c96972-1ec8-484d-b301-6d5dc3c8144d_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/59c63a7d-7caf-48aa-a54a-e843d3c18a31_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 15 char 8 on a 3D Mesh (59c63a7d-7caf-48aa-a54a-e843d3c18a31_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/5bb173fd-0c2f-4128-a1de-034a1bd02419_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 15 char 2 on a 3D Mesh (5bb173fd-0c2f-4128-a1de-034a1bd02419_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/5cc84923-c1ec-4d12-a933-da58c3d7e0ab_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 12 char 7 on a 3D Mesh (5cc84923-c1ec-4d12-a933-da58c3d7e0ab_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/5d3d8d16-4661-442f-8309-06f898403ff0_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 20 char 5 on a 3D Mesh (5d3d8d16-4661-442f-8309-06f898403ff0_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/607ab902-1560-46a2-b041-482035eaf1e6_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 8 char 3 on a 3D Mesh (607ab902-1560-46a2-b041-482035eaf1e6_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/6596944f-d0ea-49a0-b203-162285fd1ed2_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 21 char 4 on a 3D Mesh (6596944f-d0ea-49a0-b203-162285fd1ed2_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/67177bb9-8170-4fda-bfc7-009251c8a3af_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 22 char 5 on a 3D Mesh (67177bb9-8170-4fda-bfc7-009251c8a3af_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/698266dd-2356-4199-89fb-e62dd12890cc_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 9 char 5 on a 3D Mesh (698266dd-2356-4199-89fb-e62dd12890cc_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/6bc701bb-728c-4734-b9b9-d983c0c2c1e2_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 20 char 9 on a 3D Mesh (6bc701bb-728c-4734-b9b9-d983c0c2c1e2_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/6d3664a6-95e0-4f19-8ab8-d596e2f64780_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 0 char 4 on a 3D Mesh (6d3664a6-95e0-4f19-8ab8-d596e2f64780_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/6d523511-0924-4406-ab7b-d2a3251ef083_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 8 char 5 on a 3D Mesh (6d523511-0924-4406-ab7b-d2a3251ef083_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/6d5d0b3f-5565-40db-b1da-b55c301f7671_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 21 char 1 on a 3D Mesh (6d5d0b3f-5565-40db-b1da-b55c301f7671_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/6df3a6df-4ab0-4e9a-afa0-9d5fa73021dd_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 13 char 2 on a 3D Mesh (6df3a6df-4ab0-4e9a-afa0-9d5fa73021dd_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/71b9679d-99e1-4450-914e-341734b850a8_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 6 char 3 on a 3D Mesh (71b9679d-99e1-4450-914e-341734b850a8_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/72d6002b-d925-401c-91b7-413d51974d38_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 12 char 2 on a 3D Mesh (72d6002b-d925-401c-91b7-413d51974d38_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/7393abe8-0b00-4ea0-be8e-036f2bf272de_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 15 char 10 on a 3D Mesh (7393abe8-0b00-4ea0-be8e-036f2bf272de_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/73c77745-8639-49c6-bf50-00d57d52645e_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 11 char 11 on a 3D Mesh (73c77745-8639-49c6-bf50-00d57d52645e_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/7543980a-650c-4c8a-8bc5-0b01c656cc06_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 13 char 7 on a 3D Mesh (7543980a-650c-4c8a-8bc5-0b01c656cc06_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/7664f1ae-4589-4931-b480-39fd5b32d765_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 6 char 7 on a 3D Mesh (7664f1ae-4589-4931-b480-39fd5b32d765_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/822d779f-ee06-41fd-bcf7-e5eec9cb55f0_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 4 char 3 on a 3D Mesh (822d779f-ee06-41fd-bcf7-e5eec9cb55f0_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/84b5e3dd-255e-406e-a353-3ed2186ccf0a_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 19 char 1 on a 3D Mesh (84b5e3dd-255e-406e-a353-3ed2186ccf0a_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/86473fc4-86d1-47e5-bb84-e89bac31c20d_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 12 char 3 on a 3D Mesh (86473fc4-86d1-47e5-bb84-e89bac31c20d_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/8b2f5f15-6794-49e8-ac55-be85e3dc920b_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 11 char 7 on a 3D Mesh (8b2f5f15-6794-49e8-ac55-be85e3dc920b_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/8b465a8f-7ccb-411d-b05a-0b16e59edb86_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 12 char 4 on a 3D Mesh (8b465a8f-7ccb-411d-b05a-0b16e59edb86_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/8c031e74-c9ca-44a9-99e5-a541526242b7_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 15 char 7 on a 3D Mesh (8c031e74-c9ca-44a9-99e5-a541526242b7_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/90075de4-d5bf-49cd-92f6-c6c87c6ceea5_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 5 char 8 on a 3D Mesh (90075de4-d5bf-49cd-92f6-c6c87c6ceea5_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/910685c8-aac8-46f4-911b-1825d1a01c91_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 6 char 8 on a 3D Mesh (910685c8-aac8-46f4-911b-1825d1a01c91_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/994b4a45-522b-4d27-8e9c-5ccb144f6e80_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 13 char 8 on a 3D Mesh (994b4a45-522b-4d27-8e9c-5ccb144f6e80_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/9a35fbcc-f702-471f-bb4b-9e3172b5dd40_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 19 char 7 on a 3D Mesh (9a35fbcc-f702-471f-bb4b-9e3172b5dd40_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/9a4c4690-3f83-4130-a145-89b116c5b66e_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 6 char 7 on a 3D Mesh (9a4c4690-3f83-4130-a145-89b116c5b66e_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/9b70ce1b-0896-4b2f-979b-762b27deef2a_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 20 char 1 on a 3D Mesh (9b70ce1b-0896-4b2f-979b-762b27deef2a_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/9daf6ad7-9f8f-4706-8ce1-78854ec09f32_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 2 char 6 on a 3D Mesh (9daf6ad7-9f8f-4706-8ce1-78854ec09f32_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/9f7fda9a-0782-441d-b158-b65f5a031dd6_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 1 char 7 on a 3D Mesh (9f7fda9a-0782-441d-b158-b65f5a031dd6_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/a088b074-cf32-4dea-9fdd-87f4da56ff89_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 7 char 9 on a 3D Mesh (a088b074-cf32-4dea-9fdd-87f4da56ff89_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/a1602b75-35a4-4407-ae88-638025db49c8_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 14 char 8 on a 3D Mesh (a1602b75-35a4-4407-ae88-638025db49c8_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/a2665cbe-f268-4921-a207-b58a2c40c6f1_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 3 char 4 on a 3D Mesh (a2665cbe-f268-4921-a207-b58a2c40c6f1_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/a2ff7022-25f7-4205-a4d6-af47c7a8dffa_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 12 char 5 on a 3D Mesh (a2ff7022-25f7-4205-a4d6-af47c7a8dffa_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/a5fe7b5f-a377-4bcc-87db-0ce8dc818ce5_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 13 char 3 on a 3D Mesh (a5fe7b5f-a377-4bcc-87db-0ce8dc818ce5_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/a799ea8d-8b5d-48a3-bf6a-6fca99906d40_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 8 char 7 on a 3D Mesh (a799ea8d-8b5d-48a3-bf6a-6fca99906d40_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/a85f139c-e461-4b70-a757-50861d8f321d_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 20 char 7 on a 3D Mesh (a85f139c-e461-4b70-a757-50861d8f321d_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/a9cb3318-88ab-4596-8611-748dceb19370_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 4 char 5 on a 3D Mesh (a9cb3318-88ab-4596-8611-748dceb19370_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ad5cf99b-5f9f-4858-bb98-254caf19e293_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 7 char 8 on a 3D Mesh (ad5cf99b-5f9f-4858-bb98-254caf19e293_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/af8c0d61-ce35-4e42-947e-1fcfa6f15e86_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 22 char 9 on a 3D Mesh (af8c0d61-ce35-4e42-947e-1fcfa6f15e86_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b04ab1f5-9cc4-4835-b2d4-b1c7d9016ede_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 20 char 11 on a 3D Mesh (b04ab1f5-9cc4-4835-b2d4-b1c7d9016ede_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b12dda74-d758-4e34-91ed-d33d06975cdf_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 16 char 1 on a 3D Mesh (b12dda74-d758-4e34-91ed-d33d06975cdf_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b1458989-df7d-42c2-9e9d-478334f7bd37_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 11 char 5 on a 3D Mesh (b1458989-df7d-42c2-9e9d-478334f7bd37_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b1bdd499-9a91-4e32-9d18-b17aba3485fd_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 12 char 6 on a 3D Mesh (b1bdd499-9a91-4e32-9d18-b17aba3485fd_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b1d12083-04ac-4aa2-b618-f59e06d4ece5_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 22 char 1 on a 3D Mesh (b1d12083-04ac-4aa2-b618-f59e06d4ece5_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b2f4b20a-9ccf-4c77-bf4d-2db8f5ef74fc_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 5 char 4 on a 3D Mesh (b2f4b20a-9ccf-4c77-bf4d-2db8f5ef74fc_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b6fc2596-d41f-4b91-bb10-3e7138335ad0_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 20 char 3 on a 3D Mesh (b6fc2596-d41f-4b91-bb10-3e7138335ad0_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b974e185-79aa-4ed2-97d0-8aa711f5ab8e_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 6 char 6 on a 3D Mesh (b974e185-79aa-4ed2-97d0-8aa711f5ab8e_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/bcb6c9a2-1f79-4e7b-82f3-2302db5587be_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 20 char 1 on a 3D Mesh (bcb6c9a2-1f79-4e7b-82f3-2302db5587be_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/c22e3833-c204-43c2-8ccd-c01a79eac172_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 11 char 2 on a 3D Mesh (c22e3833-c204-43c2-8ccd-c01a79eac172_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/c3eec9ed-7221-416f-8d08-8199f6d94e24_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 22 char 8 on a 3D Mesh (c3eec9ed-7221-416f-8d08-8199f6d94e24_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/c73847d7-bfe8-45da-9057-2d37673d989c_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 11 char 1 on a 3D Mesh (c73847d7-bfe8-45da-9057-2d37673d989c_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/c81e1f8d-bdbe-4da6-ad20-5d1c4db2f054_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 21 char 5 on a 3D Mesh (c81e1f8d-bdbe-4da6-ad20-5d1c4db2f054_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/c9c12dff-3749-4e4f-9f71-23732102b4c5_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 15 char 9 on a 3D Mesh (c9c12dff-3749-4e4f-9f71-23732102b4c5_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ca35eb9c-a003-4fdc-8bad-d515a5fc3730_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 2 char 10 on a 3D Mesh (ca35eb9c-a003-4fdc-8bad-d515a5fc3730_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/cabafc1d-114d-48ee-b19b-c9dde92bdc49_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 2 char 9 on a 3D Mesh (cabafc1d-114d-48ee-b19b-c9dde92bdc49_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/cde67201-adfc-4e60-819f-378d27d6fdc2_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 20 char 10 on a 3D Mesh (cde67201-adfc-4e60-819f-378d27d6fdc2_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ce166d34-5e9b-4414-b47a-5eed939656a9_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 6 char 4 on a 3D Mesh (ce166d34-5e9b-4414-b47a-5eed939656a9_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/cf54e828-0c76-4a14-a128-b909272ec117_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 5 char 3 on a 3D Mesh (cf54e828-0c76-4a14-a128-b909272ec117_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d0142568-e9c1-48da-92e9-3e93104d1f33_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 0 char 0 on a 3D Mesh (d0142568-e9c1-48da-92e9-3e93104d1f33_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d049b269-8c00-4bf9-8f02-33cba9b01f57_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 13 char 6 on a 3D Mesh (d049b269-8c00-4bf9-8f02-33cba9b01f57_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d05071ed-5b2f-4895-b1ca-d971e75b9f4a_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 20 char 2 on a 3D Mesh (d05071ed-5b2f-4895-b1ca-d971e75b9f4a_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d09a2f77-e199-4a44-8e05-2f4b573004aa_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 8 char 6 on a 3D Mesh (d09a2f77-e199-4a44-8e05-2f4b573004aa_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d1977207-e2f3-4c24-9b5a-39573960a331_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 13 char 11 on a 3D Mesh (d1977207-e2f3-4c24-9b5a-39573960a331_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d533287f-a725-45ea-ab1a-3c6a9115f543_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 5 char 8 on a 3D Mesh (d533287f-a725-45ea-ab1a-3c6a9115f543_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d58bd20a-4a6a-411a-a960-8894b59869c8_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 5 char 6 on a 3D Mesh (d58bd20a-4a6a-411a-a960-8894b59869c8_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d8dd9f2a-0648-44f9-a393-4223322547cf_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 4 char 6 on a 3D Mesh (d8dd9f2a-0648-44f9-a393-4223322547cf_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/daeaad6f-239f-4bae-ae5f-31183dd5b79a_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 6 char 9 on a 3D Mesh (daeaad6f-239f-4bae-ae5f-31183dd5b79a_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/db82acf1-f66f-4dd4-b9ad-675010df19b2_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 5 char 5 on a 3D Mesh (db82acf1-f66f-4dd4-b9ad-675010df19b2_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/dbaba212-1667-4e10-a962-3c2b2ea70c5a_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 6 char 10 on a 3D Mesh (dbaba212-1667-4e10-a962-3c2b2ea70c5a_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/dbb2d8dc-3235-446a-8f23-768452a8d2d1_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 11 char 3 on a 3D Mesh (dbb2d8dc-3235-446a-8f23-768452a8d2d1_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/dc3e86e8-0cb3-4ba3-b6af-a7bbf0995969_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 19 char 5 on a 3D Mesh (dc3e86e8-0cb3-4ba3-b6af-a7bbf0995969_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/df0ca1e3-5a07-465e-b67d-aa7aa17504a4_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 3 char 2 on a 3D Mesh (df0ca1e3-5a07-465e-b67d-aa7aa17504a4_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/e04ad11c-6b92-4d04-9217-577a810dddc6_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 1 char 6 on a 3D Mesh (e04ad11c-6b92-4d04-9217-577a810dddc6_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/e1af5567-e132-49cd-81cb-3e7feb3a1daa_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 8 char 2 on a 3D Mesh (e1af5567-e132-49cd-81cb-3e7feb3a1daa_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/e4579f9b-a41e-4dba-b9fa-68ff99e415f0_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 6 char 8 on a 3D Mesh (e4579f9b-a41e-4dba-b9fa-68ff99e415f0_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/e5f2e356-7c40-46c7-b1df-908973de4756_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 4 char 4 on a 3D Mesh (e5f2e356-7c40-46c7-b1df-908973de4756_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/eb2ceaec-c589-4ecd-85b7-b486f1e2476a_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 22 char 2 on a 3D Mesh (eb2ceaec-c589-4ecd-85b7-b486f1e2476a_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ebe3051e-7d5c-4bc9-a145-74e81993641b_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 13 char 5 on a 3D Mesh (ebe3051e-7d5c-4bc9-a145-74e81993641b_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ebf6cd09-d6c8-4abb-a616-6b64e987fe80_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 15 char 1 on a 3D Mesh (ebf6cd09-d6c8-4abb-a616-6b64e987fe80_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/eccb9f57-f98e-42e7-beec-d09706b89d0e_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 10 char 3 on a 3D Mesh (eccb9f57-f98e-42e7-beec-d09706b89d0e_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ed4f3e1e-536a-48c8-b5ee-a73fac65d240_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 1 char 9 on a 3D Mesh (ed4f3e1e-536a-48c8-b5ee-a73fac65d240_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ee30c3ec-c6dd-413c-9bdb-ad67185ce43c_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 2 char 5 on a 3D Mesh (ee30c3ec-c6dd-413c-9bdb-ad67185ce43c_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ef7ab484-5ab2-4b47-b2c2-32dc7aba0244_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 22 char 4 on a 3D Mesh (ef7ab484-5ab2-4b47-b2c2-32dc7aba0244_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/f523ec24-c51a-4e71-aac8-bccd875a87cd_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 22 char 6 on a 3D Mesh (f523ec24-c51a-4e71-aac8-bccd875a87cd_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/f53a7407-afc7-4f2e-a4d7-6e5195cfa99d_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 14 char 6 on a 3D Mesh (f53a7407-afc7-4f2e-a4d7-6e5195cfa99d_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/f54aa386-2644-4b8c-beaa-5c0d7b0b09b5_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 20 char 8 on a 3D Mesh (f54aa386-2644-4b8c-beaa-5c0d7b0b09b5_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/f6875c68-d99d-44b3-bcf4-313796b60b4e_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 11 char 4 on a 3D Mesh (f6875c68-d99d-44b3-bcf4-313796b60b4e_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/f954765e-1757-4826-ab28-e3f3637d1108_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 10 char 9 on a 3D Mesh (f954765e-1757-4826-ab28-e3f3637d1108_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/fa024f68-625a-4d3c-a5ce-29aae08c7c61_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 19 char 3 on a 3D Mesh (fa024f68-625a-4d3c-a5ce-29aae08c7c61_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ff325923-d2db-4e87-b2ef-241a461cd15f_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 20 char 4 on a 3D Mesh (ff325923-d2db-4e87-b2ef-241a461cd15f_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ffe5a971-0a38-4462-ae74-1f5e9bc742e0_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 19 char 4 on a 3D Mesh (ffe5a971-0a38-4462-ae74-1f5e9bc742e0_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "http://www.w3.org/ns/oa#WKTSelector",
+        "parent": "http://www.w3.org/ns/oa#Selector",
+        "type": "class",
+        "text": "WKTSelector (oa:WKTSelector) [324]",
+        "data": {
+          "to": {
+            "http://purl.org/meshsparql/computingReference": {
+              "instancecount": 1,
+              "http://purl.org/meshsparql/ComputingReference": 1
+            },
+            "http://purl.org/meshsparql/pcaValue": {
+              "instancecount": 1
+            },
+            "http://www.opengis.net/ont/geosparql#inSRS": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            }
+          },
+          "from": {
+            "http://www.w3.org/ns/oa#hasSelector": {
+              "instancecount": 0,
+              "http://www.w3.org/2002/07/owl#NamedIndividual": 1
+            }
+          }
+        },
+        "instancecount": 6
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/00a7b8c0-721b-4a8c-8eea-8c8fa65f3590_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 14 char 3 on a 3D Mesh (00a7b8c0-721b-4a8c-8eea-8c8fa65f3590_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/00c5a316-757d-4bb7-bc5e-c4a6317bc50e_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 3 char 1 on a 3D Mesh (00c5a316-757d-4bb7-bc5e-c4a6317bc50e_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/020e14b5-7e2a-4961-b1e8-7ee526e6271f_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 20 char 6 on a 3D Mesh (020e14b5-7e2a-4961-b1e8-7ee526e6271f_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/03d9bf72-1d4f-41a1-a16d-fb055bba1ace_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 1 char 5 on a 3D Mesh (03d9bf72-1d4f-41a1-a16d-fb055bba1ace_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/05199128-20eb-4243-9e57-7cfa32e22f1e_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 15 char 3 on a 3D Mesh (05199128-20eb-4243-9e57-7cfa32e22f1e_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/09c879aa-ed6d-4be6-8c09-77500f06b3b4_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 7 char 4 on a 3D Mesh (09c879aa-ed6d-4be6-8c09-77500f06b3b4_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/0f8f1524-d121-4de2-aca5-1c23a6b76861_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 10 char 1 on a 3D Mesh (0f8f1524-d121-4de2-aca5-1c23a6b76861_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/10e12f2e-71d7-4593-8181-993f56e78066_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 12 char 1 on a 3D Mesh (10e12f2e-71d7-4593-8181-993f56e78066_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/10e71e39-340f-43b9-a2ce-2bf15a86a06f_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 10 char 5 on a 3D Mesh (10e71e39-340f-43b9-a2ce-2bf15a86a06f_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/12a4e952-f11e-4372-ae32-9773442b0240_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 14 char 7 on a 3D Mesh (12a4e952-f11e-4372-ae32-9773442b0240_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/15d13ec4-839e-487f-a470-e155db2d8b80_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 15 char 4 on a 3D Mesh (15d13ec4-839e-487f-a470-e155db2d8b80_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/16da1342-7b9b-4f33-af72-6b5d585ed4ba_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 14 char 4 on a 3D Mesh (16da1342-7b9b-4f33-af72-6b5d585ed4ba_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/18d73d00-12ad-401f-86aa-6333fdf778fd_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 10 char 2 on a 3D Mesh (18d73d00-12ad-401f-86aa-6333fdf778fd_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/197c6352-c196-40fb-984f-f965f2b0087e_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 21 char 3 on a 3D Mesh (197c6352-c196-40fb-984f-f965f2b0087e_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/1bfc4817-2cac-4b5a-b16e-39111cd6d574_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 2 char 7 on a 3D Mesh (1bfc4817-2cac-4b5a-b16e-39111cd6d574_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/1c0e4a3b-4789-482a-b9ee-ffd898f3ee4d_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 9 char 3 on a 3D Mesh (1c0e4a3b-4789-482a-b9ee-ffd898f3ee4d_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/1f6f60f4-a6b2-46aa-af4c-546f832df957_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 14 char 2 on a 3D Mesh (1f6f60f4-a6b2-46aa-af4c-546f832df957_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/207c65f1-6b12-4502-b34c-ad12846387f1_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 3 char 5 on a 3D Mesh (207c65f1-6b12-4502-b34c-ad12846387f1_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/226a0775-8e8f-475f-ade8-1dcb41184305_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 9 char 4 on a 3D Mesh (226a0775-8e8f-475f-ade8-1dcb41184305_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/226f75ad-5bc0-4823-a729-82efb151ebe1_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 14 char 1 on a 3D Mesh (226f75ad-5bc0-4823-a729-82efb151ebe1_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/22844720-fb5c-4030-8062-cb24263ca191_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 7 char 3 on a 3D Mesh (22844720-fb5c-4030-8062-cb24263ca191_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/24548650-6c4d-4a40-b0f6-0724bdce3fcd_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 22 char 3 on a 3D Mesh (24548650-6c4d-4a40-b0f6-0724bdce3fcd_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/25266b30-4010-4512-879c-3ebc85755e32_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 10 char 7 on a 3D Mesh (25266b30-4010-4512-879c-3ebc85755e32_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/27392816-0f1f-44bf-b60c-c3c2b6ef7b19_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 19 char 6 on a 3D Mesh (27392816-0f1f-44bf-b60c-c3c2b6ef7b19_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/2a41502e-c4cb-4cfa-92c1-e6f75f1cf2cf_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 11 char 6 on a 3D Mesh (2a41502e-c4cb-4cfa-92c1-e6f75f1cf2cf_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/2a8ff31b-172d-46b4-996b-cae048690b11_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 13 char 4 on a 3D Mesh (2a8ff31b-172d-46b4-996b-cae048690b11_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/321fc652-7b36-4555-b579-41cf3bf2de6c_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 8 char 4 on a 3D Mesh (321fc652-7b36-4555-b579-41cf3bf2de6c_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/343f8c32-ed97-4e6b-b607-50d87ced6172_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 5 char 7 on a 3D Mesh (343f8c32-ed97-4e6b-b607-50d87ced6172_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/358a8654-c6a8-41f3-bed4-9e64ac0f96f3_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 7 char 5 on a 3D Mesh (358a8654-c6a8-41f3-bed4-9e64ac0f96f3_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/35a2379d-5457-4633-bd36-e1f93a201dab_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 13 char 10 on a 3D Mesh (35a2379d-5457-4633-bd36-e1f93a201dab_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/3615bc0c-56b0-403f-8d7c-ce0944194fe3_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 17 char 1 on a 3D Mesh (3615bc0c-56b0-403f-8d7c-ce0944194fe3_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/371d1e28-7458-4afd-9293-d2fcffee1ed5_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 2 char 4 on a 3D Mesh (371d1e28-7458-4afd-9293-d2fcffee1ed5_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/3913172c-a33e-4e2f-96cd-ec18637ade3d_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 14 char 10 on a 3D Mesh (3913172c-a33e-4e2f-96cd-ec18637ade3d_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/3a8fcfb0-ef47-4d5e-8cc8-e119eabcbb36_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 14 char 11 on a 3D Mesh (3a8fcfb0-ef47-4d5e-8cc8-e119eabcbb36_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/3e49f705-eacd-48c4-a960-8093ab7dc46c_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 21 char 2 on a 3D Mesh (3e49f705-eacd-48c4-a960-8093ab7dc46c_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/40835128-aa6b-4c98-b58a-6e5ca5d586da_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 10 char 4 on a 3D Mesh (40835128-aa6b-4c98-b58a-6e5ca5d586da_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/438c8e9d-5bc3-4c42-b8fb-954a7669fdf8_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 14 char 5 on a 3D Mesh (438c8e9d-5bc3-4c42-b8fb-954a7669fdf8_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/47468c33-6c6c-4da0-99c4-9608e7fc279f_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 11 char 12 on a 3D Mesh (47468c33-6c6c-4da0-99c4-9608e7fc279f_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/49136423-d05a-4601-bbac-b89a9a14944d_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 13 char 1 on a 3D Mesh (49136423-d05a-4601-bbac-b89a9a14944d_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/49b6c4d1-1525-4f94-b172-7e0f9fd95f99_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 22 char 7 on a 3D Mesh (49b6c4d1-1525-4f94-b172-7e0f9fd95f99_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/4b133cad-92d0-4780-8287-e8c0a610b808_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 2 char 8 on a 3D Mesh (4b133cad-92d0-4780-8287-e8c0a610b808_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/4c353741-f819-43bb-a122-10fb7961e106_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 18 char 5 on a 3D Mesh (4c353741-f819-43bb-a122-10fb7961e106_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/4d816f0f-8a13-488a-8c8e-768284fd3c00_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 1 char 3 on a 3D Mesh (4d816f0f-8a13-488a-8c8e-768284fd3c00_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/5156d5ee-8cf2-49c8-9c20-aa96d0b74daa_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 21 char 2 on a 3D Mesh (5156d5ee-8cf2-49c8-9c20-aa96d0b74daa_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/518ee7ae-1d6d-4e85-94cc-9a8cc0d0d219_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 3 char 3 on a 3D Mesh (518ee7ae-1d6d-4e85-94cc-9a8cc0d0d219_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/51bc2a87-76ac-4e09-a7e4-5fea7a43d6c6_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 19 char 8 on a 3D Mesh (51bc2a87-76ac-4e09-a7e4-5fea7a43d6c6_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/5384818b-5458-413e-8e38-69d4497ccf1c_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 5 char 7 on a 3D Mesh (5384818b-5458-413e-8e38-69d4497ccf1c_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/552dea9a-31dd-4d10-b0ae-2a4e22a1cce1_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 6 char 5 on a 3D Mesh (552dea9a-31dd-4d10-b0ae-2a4e22a1cce1_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/560ac0c1-9147-4fb8-a574-fd257bc5396b_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 15 char 6 on a 3D Mesh (560ac0c1-9147-4fb8-a574-fd257bc5396b_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/5746bd27-5746-4623-a26b-d00b0f61c836_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 14 char 9 on a 3D Mesh (5746bd27-5746-4623-a26b-d00b0f61c836_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/58c96972-1ec8-484d-b301-6d5dc3c8144d_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 15 char 5 on a 3D Mesh (58c96972-1ec8-484d-b301-6d5dc3c8144d_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/59c63a7d-7caf-48aa-a54a-e843d3c18a31_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 15 char 8 on a 3D Mesh (59c63a7d-7caf-48aa-a54a-e843d3c18a31_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/5bb173fd-0c2f-4128-a1de-034a1bd02419_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 15 char 2 on a 3D Mesh (5bb173fd-0c2f-4128-a1de-034a1bd02419_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/5cc84923-c1ec-4d12-a933-da58c3d7e0ab_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 12 char 7 on a 3D Mesh (5cc84923-c1ec-4d12-a933-da58c3d7e0ab_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/5d3d8d16-4661-442f-8309-06f898403ff0_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 20 char 5 on a 3D Mesh (5d3d8d16-4661-442f-8309-06f898403ff0_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/607ab902-1560-46a2-b041-482035eaf1e6_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 8 char 3 on a 3D Mesh (607ab902-1560-46a2-b041-482035eaf1e6_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/6596944f-d0ea-49a0-b203-162285fd1ed2_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 21 char 4 on a 3D Mesh (6596944f-d0ea-49a0-b203-162285fd1ed2_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/67177bb9-8170-4fda-bfc7-009251c8a3af_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 22 char 5 on a 3D Mesh (67177bb9-8170-4fda-bfc7-009251c8a3af_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/698266dd-2356-4199-89fb-e62dd12890cc_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 9 char 5 on a 3D Mesh (698266dd-2356-4199-89fb-e62dd12890cc_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/6bc701bb-728c-4734-b9b9-d983c0c2c1e2_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 20 char 9 on a 3D Mesh (6bc701bb-728c-4734-b9b9-d983c0c2c1e2_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/6d3664a6-95e0-4f19-8ab8-d596e2f64780_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 0 char 4 on a 3D Mesh (6d3664a6-95e0-4f19-8ab8-d596e2f64780_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/6d523511-0924-4406-ab7b-d2a3251ef083_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 8 char 5 on a 3D Mesh (6d523511-0924-4406-ab7b-d2a3251ef083_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/6d5d0b3f-5565-40db-b1da-b55c301f7671_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 21 char 1 on a 3D Mesh (6d5d0b3f-5565-40db-b1da-b55c301f7671_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/6df3a6df-4ab0-4e9a-afa0-9d5fa73021dd_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 13 char 2 on a 3D Mesh (6df3a6df-4ab0-4e9a-afa0-9d5fa73021dd_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/71b9679d-99e1-4450-914e-341734b850a8_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 6 char 3 on a 3D Mesh (71b9679d-99e1-4450-914e-341734b850a8_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/72d6002b-d925-401c-91b7-413d51974d38_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 12 char 2 on a 3D Mesh (72d6002b-d925-401c-91b7-413d51974d38_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/7393abe8-0b00-4ea0-be8e-036f2bf272de_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 15 char 10 on a 3D Mesh (7393abe8-0b00-4ea0-be8e-036f2bf272de_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/73c77745-8639-49c6-bf50-00d57d52645e_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 11 char 11 on a 3D Mesh (73c77745-8639-49c6-bf50-00d57d52645e_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/7543980a-650c-4c8a-8bc5-0b01c656cc06_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 13 char 7 on a 3D Mesh (7543980a-650c-4c8a-8bc5-0b01c656cc06_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/7664f1ae-4589-4931-b480-39fd5b32d765_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 6 char 7 on a 3D Mesh (7664f1ae-4589-4931-b480-39fd5b32d765_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/822d779f-ee06-41fd-bcf7-e5eec9cb55f0_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 4 char 3 on a 3D Mesh (822d779f-ee06-41fd-bcf7-e5eec9cb55f0_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/84b5e3dd-255e-406e-a353-3ed2186ccf0a_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 19 char 1 on a 3D Mesh (84b5e3dd-255e-406e-a353-3ed2186ccf0a_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/86473fc4-86d1-47e5-bb84-e89bac31c20d_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 12 char 3 on a 3D Mesh (86473fc4-86d1-47e5-bb84-e89bac31c20d_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/8b2f5f15-6794-49e8-ac55-be85e3dc920b_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 11 char 7 on a 3D Mesh (8b2f5f15-6794-49e8-ac55-be85e3dc920b_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/8b465a8f-7ccb-411d-b05a-0b16e59edb86_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 12 char 4 on a 3D Mesh (8b465a8f-7ccb-411d-b05a-0b16e59edb86_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/8c031e74-c9ca-44a9-99e5-a541526242b7_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 15 char 7 on a 3D Mesh (8c031e74-c9ca-44a9-99e5-a541526242b7_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/90075de4-d5bf-49cd-92f6-c6c87c6ceea5_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 5 char 8 on a 3D Mesh (90075de4-d5bf-49cd-92f6-c6c87c6ceea5_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/910685c8-aac8-46f4-911b-1825d1a01c91_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 6 char 8 on a 3D Mesh (910685c8-aac8-46f4-911b-1825d1a01c91_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/994b4a45-522b-4d27-8e9c-5ccb144f6e80_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 13 char 8 on a 3D Mesh (994b4a45-522b-4d27-8e9c-5ccb144f6e80_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/9a35fbcc-f702-471f-bb4b-9e3172b5dd40_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 19 char 7 on a 3D Mesh (9a35fbcc-f702-471f-bb4b-9e3172b5dd40_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/9a4c4690-3f83-4130-a145-89b116c5b66e_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 6 char 7 on a 3D Mesh (9a4c4690-3f83-4130-a145-89b116c5b66e_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/9b70ce1b-0896-4b2f-979b-762b27deef2a_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 20 char 1 on a 3D Mesh (9b70ce1b-0896-4b2f-979b-762b27deef2a_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/9daf6ad7-9f8f-4706-8ce1-78854ec09f32_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 2 char 6 on a 3D Mesh (9daf6ad7-9f8f-4706-8ce1-78854ec09f32_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/9f7fda9a-0782-441d-b158-b65f5a031dd6_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 1 char 7 on a 3D Mesh (9f7fda9a-0782-441d-b158-b65f5a031dd6_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/a088b074-cf32-4dea-9fdd-87f4da56ff89_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 7 char 9 on a 3D Mesh (a088b074-cf32-4dea-9fdd-87f4da56ff89_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/a1602b75-35a4-4407-ae88-638025db49c8_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 14 char 8 on a 3D Mesh (a1602b75-35a4-4407-ae88-638025db49c8_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/a2665cbe-f268-4921-a207-b58a2c40c6f1_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 3 char 4 on a 3D Mesh (a2665cbe-f268-4921-a207-b58a2c40c6f1_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/a2ff7022-25f7-4205-a4d6-af47c7a8dffa_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 12 char 5 on a 3D Mesh (a2ff7022-25f7-4205-a4d6-af47c7a8dffa_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/a5fe7b5f-a377-4bcc-87db-0ce8dc818ce5_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 13 char 3 on a 3D Mesh (a5fe7b5f-a377-4bcc-87db-0ce8dc818ce5_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/a799ea8d-8b5d-48a3-bf6a-6fca99906d40_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 8 char 7 on a 3D Mesh (a799ea8d-8b5d-48a3-bf6a-6fca99906d40_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/a85f139c-e461-4b70-a757-50861d8f321d_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 20 char 7 on a 3D Mesh (a85f139c-e461-4b70-a757-50861d8f321d_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/a9cb3318-88ab-4596-8611-748dceb19370_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 4 char 5 on a 3D Mesh (a9cb3318-88ab-4596-8611-748dceb19370_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ad5cf99b-5f9f-4858-bb98-254caf19e293_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 7 char 8 on a 3D Mesh (ad5cf99b-5f9f-4858-bb98-254caf19e293_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/af8c0d61-ce35-4e42-947e-1fcfa6f15e86_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 22 char 9 on a 3D Mesh (af8c0d61-ce35-4e42-947e-1fcfa6f15e86_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b04ab1f5-9cc4-4835-b2d4-b1c7d9016ede_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 20 char 11 on a 3D Mesh (b04ab1f5-9cc4-4835-b2d4-b1c7d9016ede_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b12dda74-d758-4e34-91ed-d33d06975cdf_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 16 char 1 on a 3D Mesh (b12dda74-d758-4e34-91ed-d33d06975cdf_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b1458989-df7d-42c2-9e9d-478334f7bd37_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 11 char 5 on a 3D Mesh (b1458989-df7d-42c2-9e9d-478334f7bd37_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b1bdd499-9a91-4e32-9d18-b17aba3485fd_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 12 char 6 on a 3D Mesh (b1bdd499-9a91-4e32-9d18-b17aba3485fd_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b1d12083-04ac-4aa2-b618-f59e06d4ece5_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 22 char 1 on a 3D Mesh (b1d12083-04ac-4aa2-b618-f59e06d4ece5_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b2f4b20a-9ccf-4c77-bf4d-2db8f5ef74fc_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 5 char 4 on a 3D Mesh (b2f4b20a-9ccf-4c77-bf4d-2db8f5ef74fc_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b6fc2596-d41f-4b91-bb10-3e7138335ad0_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 20 char 3 on a 3D Mesh (b6fc2596-d41f-4b91-bb10-3e7138335ad0_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b974e185-79aa-4ed2-97d0-8aa711f5ab8e_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 6 char 6 on a 3D Mesh (b974e185-79aa-4ed2-97d0-8aa711f5ab8e_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/bcb6c9a2-1f79-4e7b-82f3-2302db5587be_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 20 char 1 on a 3D Mesh (bcb6c9a2-1f79-4e7b-82f3-2302db5587be_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/c22e3833-c204-43c2-8ccd-c01a79eac172_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 11 char 2 on a 3D Mesh (c22e3833-c204-43c2-8ccd-c01a79eac172_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/c3eec9ed-7221-416f-8d08-8199f6d94e24_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 22 char 8 on a 3D Mesh (c3eec9ed-7221-416f-8d08-8199f6d94e24_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/c73847d7-bfe8-45da-9057-2d37673d989c_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 11 char 1 on a 3D Mesh (c73847d7-bfe8-45da-9057-2d37673d989c_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/c81e1f8d-bdbe-4da6-ad20-5d1c4db2f054_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 21 char 5 on a 3D Mesh (c81e1f8d-bdbe-4da6-ad20-5d1c4db2f054_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/c9c12dff-3749-4e4f-9f71-23732102b4c5_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 15 char 9 on a 3D Mesh (c9c12dff-3749-4e4f-9f71-23732102b4c5_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ca35eb9c-a003-4fdc-8bad-d515a5fc3730_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 2 char 10 on a 3D Mesh (ca35eb9c-a003-4fdc-8bad-d515a5fc3730_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/cabafc1d-114d-48ee-b19b-c9dde92bdc49_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 2 char 9 on a 3D Mesh (cabafc1d-114d-48ee-b19b-c9dde92bdc49_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/cde67201-adfc-4e60-819f-378d27d6fdc2_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 20 char 10 on a 3D Mesh (cde67201-adfc-4e60-819f-378d27d6fdc2_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ce166d34-5e9b-4414-b47a-5eed939656a9_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 6 char 4 on a 3D Mesh (ce166d34-5e9b-4414-b47a-5eed939656a9_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/cf54e828-0c76-4a14-a128-b909272ec117_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 5 char 3 on a 3D Mesh (cf54e828-0c76-4a14-a128-b909272ec117_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d0142568-e9c1-48da-92e9-3e93104d1f33_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 0 char 0 on a 3D Mesh (d0142568-e9c1-48da-92e9-3e93104d1f33_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d049b269-8c00-4bf9-8f02-33cba9b01f57_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 13 char 6 on a 3D Mesh (d049b269-8c00-4bf9-8f02-33cba9b01f57_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d05071ed-5b2f-4895-b1ca-d971e75b9f4a_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 20 char 2 on a 3D Mesh (d05071ed-5b2f-4895-b1ca-d971e75b9f4a_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d09a2f77-e199-4a44-8e05-2f4b573004aa_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 8 char 6 on a 3D Mesh (d09a2f77-e199-4a44-8e05-2f4b573004aa_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d1977207-e2f3-4c24-9b5a-39573960a331_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 13 char 11 on a 3D Mesh (d1977207-e2f3-4c24-9b5a-39573960a331_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d533287f-a725-45ea-ab1a-3c6a9115f543_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 5 char 8 on a 3D Mesh (d533287f-a725-45ea-ab1a-3c6a9115f543_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d58bd20a-4a6a-411a-a960-8894b59869c8_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 5 char 6 on a 3D Mesh (d58bd20a-4a6a-411a-a960-8894b59869c8_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d8dd9f2a-0648-44f9-a393-4223322547cf_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 4 char 6 on a 3D Mesh (d8dd9f2a-0648-44f9-a393-4223322547cf_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/daeaad6f-239f-4bae-ae5f-31183dd5b79a_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 6 char 9 on a 3D Mesh (daeaad6f-239f-4bae-ae5f-31183dd5b79a_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/db82acf1-f66f-4dd4-b9ad-675010df19b2_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 5 char 5 on a 3D Mesh (db82acf1-f66f-4dd4-b9ad-675010df19b2_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/dbaba212-1667-4e10-a962-3c2b2ea70c5a_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 6 char 10 on a 3D Mesh (dbaba212-1667-4e10-a962-3c2b2ea70c5a_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/dbb2d8dc-3235-446a-8f23-768452a8d2d1_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 11 char 3 on a 3D Mesh (dbb2d8dc-3235-446a-8f23-768452a8d2d1_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/dc3e86e8-0cb3-4ba3-b6af-a7bbf0995969_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 19 char 5 on a 3D Mesh (dc3e86e8-0cb3-4ba3-b6af-a7bbf0995969_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/df0ca1e3-5a07-465e-b67d-aa7aa17504a4_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 3 char 2 on a 3D Mesh (df0ca1e3-5a07-465e-b67d-aa7aa17504a4_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/e04ad11c-6b92-4d04-9217-577a810dddc6_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 1 char 6 on a 3D Mesh (e04ad11c-6b92-4d04-9217-577a810dddc6_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/e1af5567-e132-49cd-81cb-3e7feb3a1daa_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 8 char 2 on a 3D Mesh (e1af5567-e132-49cd-81cb-3e7feb3a1daa_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/e4579f9b-a41e-4dba-b9fa-68ff99e415f0_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 6 char 8 on a 3D Mesh (e4579f9b-a41e-4dba-b9fa-68ff99e415f0_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/e5f2e356-7c40-46c7-b1df-908973de4756_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 4 char 4 on a 3D Mesh (e5f2e356-7c40-46c7-b1df-908973de4756_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/eb2ceaec-c589-4ecd-85b7-b486f1e2476a_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 22 char 2 on a 3D Mesh (eb2ceaec-c589-4ecd-85b7-b486f1e2476a_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ebe3051e-7d5c-4bc9-a145-74e81993641b_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 13 char 5 on a 3D Mesh (ebe3051e-7d5c-4bc9-a145-74e81993641b_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ebf6cd09-d6c8-4abb-a616-6b64e987fe80_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 15 char 1 on a 3D Mesh (ebf6cd09-d6c8-4abb-a616-6b64e987fe80_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/eccb9f57-f98e-42e7-beec-d09706b89d0e_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 10 char 3 on a 3D Mesh (eccb9f57-f98e-42e7-beec-d09706b89d0e_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ed4f3e1e-536a-48c8-b5ee-a73fac65d240_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 1 char 9 on a 3D Mesh (ed4f3e1e-536a-48c8-b5ee-a73fac65d240_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ee30c3ec-c6dd-413c-9bdb-ad67185ce43c_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 2 char 5 on a 3D Mesh (ee30c3ec-c6dd-413c-9bdb-ad67185ce43c_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ef7ab484-5ab2-4b47-b2c2-32dc7aba0244_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 22 char 4 on a 3D Mesh (ef7ab484-5ab2-4b47-b2c2-32dc7aba0244_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/f523ec24-c51a-4e71-aac8-bccd875a87cd_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 22 char 6 on a 3D Mesh (f523ec24-c51a-4e71-aac8-bccd875a87cd_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/f53a7407-afc7-4f2e-a4d7-6e5195cfa99d_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 14 char 6 on a 3D Mesh (f53a7407-afc7-4f2e-a4d7-6e5195cfa99d_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/f54aa386-2644-4b8c-beaa-5c0d7b0b09b5_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 20 char 8 on a 3D Mesh (f54aa386-2644-4b8c-beaa-5c0d7b0b09b5_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/f6875c68-d99d-44b3-bcf4-313796b60b4e_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 11 char 4 on a 3D Mesh (f6875c68-d99d-44b3-bcf4-313796b60b4e_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/f954765e-1757-4826-ab28-e3f3637d1108_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 10 char 9 on a 3D Mesh (f954765e-1757-4826-ab28-e3f3637d1108_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/fa024f68-625a-4d3c-a5ce-29aae08c7c61_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 19 char 3 on a 3D Mesh (fa024f68-625a-4d3c-a5ce-29aae08c7c61_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ff325923-d2db-4e87-b2ef-241a461cd15f_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 20 char 4 on a 3D Mesh (ff325923-d2db-4e87-b2ef-241a461cd15f_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ffe5a971-0a38-4462-ae74-1f5e9bc742e0_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 19 char 4 on a 3D Mesh (ffe5a971-0a38-4462-ae74-1f5e9bc742e0_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "http://purl.org/meshsparql/ComputingReference",
+        "parent": "#",
+        "type": "class",
+        "text": "ComputingReference [324]",
+        "data": {}
+      },
+      {
         "id": "https://github.com/recogito/annotorious-openseadragon",
         "parent": "http://purl.org/dc/elements/1.1/Software",
         "type": "instance",
@@ -4809,13 +6897,6 @@ var tree={
         "parent": "#",
         "type": "class",
         "text": "Software (dce:Software) [1]",
-        "data": {}
-      },
-      {
-        "id": "http://www.w3.org/ns/oa#WKTSelector",
-        "parent": "http://www.w3.org/ns/oa#Selector",
-        "type": "class",
-        "text": "WKTSelector (oa:WKTSelector) [36]",
         "data": {}
       },
       {
@@ -9222,6 +11303,1770 @@ var tree={
         "data": {}
       },
       {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/01e2d6cf-6c80-49c8-8a31-44e217d81f93_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 4 char 2 on a 3D Mesh (01e2d6cf-6c80-49c8-8a31-44e217d81f93_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/06240117-8494-45bf-af29-59c1147ccebb_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 11 char 5 on a 3D Mesh (06240117-8494-45bf-af29-59c1147ccebb_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/081c7b3e-8647-4c37-929b-a23a02925a35_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 5 char 5 on a 3D Mesh (081c7b3e-8647-4c37-929b-a23a02925a35_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/08effdf8-6872-46bb-862d-31132b3f328f_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 10 char 3 on a 3D Mesh (08effdf8-6872-46bb-862d-31132b3f328f_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/0939c2c2-8585-4c63-af0d-a6a583272fe6_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 1 char 3 on a 3D Mesh (0939c2c2-8585-4c63-af0d-a6a583272fe6_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/0b947fea-c49a-41d7-b306-d16fd2c4b992_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 3 char 3 on a 3D Mesh (0b947fea-c49a-41d7-b306-d16fd2c4b992_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/10639506-6246-47f2-8374-0cf44b42849f_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 6 char 6 on a 3D Mesh (10639506-6246-47f2-8374-0cf44b42849f_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/1105c380-381b-4ce3-88f4-01d8396b2ce6_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 6 char 10 on a 3D Mesh (1105c380-381b-4ce3-88f4-01d8396b2ce6_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/12d7ac08-aa51-4179-9441-d4ada11de20d_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 5 char 1 on a 3D Mesh (12d7ac08-aa51-4179-9441-d4ada11de20d_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/12fb8658-df30-461b-9307-fab7dea78dd8_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 19 char 4 on a 3D Mesh (12fb8658-df30-461b-9307-fab7dea78dd8_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/1423c8ae-937c-4d67-a3ce-f3484152429f_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 13 char 5 on a 3D Mesh (1423c8ae-937c-4d67-a3ce-f3484152429f_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/14e33dab-d75e-4206-8f7e-218b6ad36661_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 16 char 4 on a 3D Mesh (14e33dab-d75e-4206-8f7e-218b6ad36661_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/1718a05e-13cb-4a98-b26a-73663c6ef933_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 17 char 1 on a 3D Mesh (1718a05e-13cb-4a98-b26a-73663c6ef933_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/1949c8e9-ef8a-437b-a637-9a85ec4d2e80_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 3 char 2 on a 3D Mesh (1949c8e9-ef8a-437b-a637-9a85ec4d2e80_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/19e2812e-c6a1-4c95-8471-71359c650083_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 19 char 5 on a 3D Mesh (19e2812e-c6a1-4c95-8471-71359c650083_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/1ee4f6dd-4556-411e-a40d-1bfef254fb74_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 4 char 8 on a 3D Mesh (1ee4f6dd-4556-411e-a40d-1bfef254fb74_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/1fe53650-e1cd-46a8-b5d8-2a94f5ee5268_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 14 char 10 on a 3D Mesh (1fe53650-e1cd-46a8-b5d8-2a94f5ee5268_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/207b203a-c60d-449a-b210-d422711c3e69_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 5 char 3 on a 3D Mesh (207b203a-c60d-449a-b210-d422711c3e69_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/21cec3f8-9cdd-4611-9f26-3c8d6e7b4ccf_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 9 char 3 on a 3D Mesh (21cec3f8-9cdd-4611-9f26-3c8d6e7b4ccf_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/23a026bc-a195-40ff-ac25-de770e78f03e_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 14 char 2 on a 3D Mesh (23a026bc-a195-40ff-ac25-de770e78f03e_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/249707d4-96c3-4434-916f-8f469837a168_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 2 char 3 on a 3D Mesh (249707d4-96c3-4434-916f-8f469837a168_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/259020b5-bf51-4a3c-88e5-3a57993c7409_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 7 char 3 on a 3D Mesh (259020b5-bf51-4a3c-88e5-3a57993c7409_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/25963a64-4f61-4c2e-be60-691ce50466b7_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 19 char 2 on a 3D Mesh (25963a64-4f61-4c2e-be60-691ce50466b7_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/264e998c-462c-4840-ac00-99f3bcbd36b1_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 11 char 4 on a 3D Mesh (264e998c-462c-4840-ac00-99f3bcbd36b1_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/26904c61-5b0a-4e4f-8921-36a6c508f6d9_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 1 char 3 on a 3D Mesh (26904c61-5b0a-4e4f-8921-36a6c508f6d9_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/26b6fee7-a84b-4c80-b4aa-08ef43b17ddd_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 5 char 6 on a 3D Mesh (26b6fee7-a84b-4c80-b4aa-08ef43b17ddd_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/26f35b27-c68c-49c4-ae6d-cd9a207b01ed_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 5 char 2 on a 3D Mesh (26f35b27-c68c-49c4-ae6d-cd9a207b01ed_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/281d81f4-cb7c-4e0f-8a4a-69b4f1ff27bb_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 17 char 2 on a 3D Mesh (281d81f4-cb7c-4e0f-8a4a-69b4f1ff27bb_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/28dbe478-c4c1-4bbe-81bb-7cd2102f777a_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 7 char 6 on a 3D Mesh (28dbe478-c4c1-4bbe-81bb-7cd2102f777a_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/2a3ad4bd-0932-41f8-9984-6b54652222e3_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 3 char 5 on a 3D Mesh (2a3ad4bd-0932-41f8-9984-6b54652222e3_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/2d645ef8-822a-4145-bde1-235f0d179aba_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 11 char 2 on a 3D Mesh (2d645ef8-822a-4145-bde1-235f0d179aba_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/2ef7948c-a8b2-4bc4-a6b9-7162c2e05e90_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 7 char 2 on a 3D Mesh (2ef7948c-a8b2-4bc4-a6b9-7162c2e05e90_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/30193d77-172f-420d-bec2-41afbf32eeb1_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 11 char 3 on a 3D Mesh (30193d77-172f-420d-bec2-41afbf32eeb1_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/3529c3da-b9b6-4027-89c4-973e95268c7a_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 4 char 1 on a 3D Mesh (3529c3da-b9b6-4027-89c4-973e95268c7a_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/382c11c9-b54d-4106-9e70-c71d492b81d3_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 3 char 4 on a 3D Mesh (382c11c9-b54d-4106-9e70-c71d492b81d3_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/3835fcc3-9a78-4c1b-accf-8bb462e13ac0_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 5 char 9 on a 3D Mesh (3835fcc3-9a78-4c1b-accf-8bb462e13ac0_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/39655723-b238-43f0-8506-c65d9593a2b1_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 8 char 9 on a 3D Mesh (39655723-b238-43f0-8506-c65d9593a2b1_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/3a49a06a-f67e-4af7-9ed0-7194bf14cb39_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 6 char 11 on a 3D Mesh (3a49a06a-f67e-4af7-9ed0-7194bf14cb39_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/423c40b5-3c37-4619-8bbc-248d03099002_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 12 char 9 on a 3D Mesh (423c40b5-3c37-4619-8bbc-248d03099002_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/4532308c-cf38-429d-9998-ecc1db675b10_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 4 char 7 on a 3D Mesh (4532308c-cf38-429d-9998-ecc1db675b10_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/46b3e877-14ac-4bf3-b0dd-7c64c192b3b8_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 19 char 6 on a 3D Mesh (46b3e877-14ac-4bf3-b0dd-7c64c192b3b8_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/493ad60d-ce79-413d-9f31-e1d4f94b123b_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 10 char 5 on a 3D Mesh (493ad60d-ce79-413d-9f31-e1d4f94b123b_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/4a19e284-5ce1-4133-b1f8-d51bb17d4118_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 7 char 1 on a 3D Mesh (4a19e284-5ce1-4133-b1f8-d51bb17d4118_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/4a5325e4-5ea6-408e-9483-64e0267549a1_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 2 char 2 on a 3D Mesh (4a5325e4-5ea6-408e-9483-64e0267549a1_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/4f3863af-026c-4140-a20b-2d4ffcd70271_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 11 char 1 on a 3D Mesh (4f3863af-026c-4140-a20b-2d4ffcd70271_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/523a4443-da51-4f96-ac1f-4e7fb694c68b_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 5 char 8 on a 3D Mesh (523a4443-da51-4f96-ac1f-4e7fb694c68b_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/53c3225a-eda6-4270-abc2-e3608c0386bb_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 12 char 5 on a 3D Mesh (53c3225a-eda6-4270-abc2-e3608c0386bb_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/5431ca41-68b2-4dbe-9918-f7f8e8f43cfd_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 5 char 4 on a 3D Mesh (5431ca41-68b2-4dbe-9918-f7f8e8f43cfd_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/56240c82-81c8-47b4-bba8-bff8a038687c_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 10 char 2 on a 3D Mesh (56240c82-81c8-47b4-bba8-bff8a038687c_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/5970ba58-9766-4182-8f32-0cafdb6910f9_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 3 char 10 on a 3D Mesh (5970ba58-9766-4182-8f32-0cafdb6910f9_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/59862203-29fc-4106-84e1-2715822ae597_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 18 char 3 on a 3D Mesh (59862203-29fc-4106-84e1-2715822ae597_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/5b0df2a0-e94e-42c8-96c0-ea11195cf96b_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 15 char 2 on a 3D Mesh (5b0df2a0-e94e-42c8-96c0-ea11195cf96b_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/5b8ceaf4-df41-41b7-ba30-ffaa3791bcf2_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 6 char 3 on a 3D Mesh (5b8ceaf4-df41-41b7-ba30-ffaa3791bcf2_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/5bf05b0c-c0fa-40ea-a34a-cb127f75673b_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 17 char 8 on a 3D Mesh (5bf05b0c-c0fa-40ea-a34a-cb127f75673b_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/5d5a5c95-dc43-4248-a62a-c1896c1a42f4_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 4 char 3 on a 3D Mesh (5d5a5c95-dc43-4248-a62a-c1896c1a42f4_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/60ced722-052d-4559-9eca-9d1da2f8fdcf_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 1 char 6 on a 3D Mesh (60ced722-052d-4559-9eca-9d1da2f8fdcf_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/663c66ad-5779-4bf2-a997-b348d398fb87_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 14 char 1 on a 3D Mesh (663c66ad-5779-4bf2-a997-b348d398fb87_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/69ef9dc1-ecb3-42b7-9f3c-db61479b5760_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 9 char 8 on a 3D Mesh (69ef9dc1-ecb3-42b7-9f3c-db61479b5760_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/6a40e3e1-7bd2-40fe-b37d-d88a74ad009a_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 10 char 6 on a 3D Mesh (6a40e3e1-7bd2-40fe-b37d-d88a74ad009a_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/6ac943db-ed4b-43af-a1a3-9ad307f8579e_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 17 char 7 on a 3D Mesh (6ac943db-ed4b-43af-a1a3-9ad307f8579e_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/6cebd6e6-7683-4ad4-9e8c-20ce823835ca_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 9 char 9 on a 3D Mesh (6cebd6e6-7683-4ad4-9e8c-20ce823835ca_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/6d3bf611-260e-4112-a3ad-f8f2e5b70ac1_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 12 char 7 on a 3D Mesh (6d3bf611-260e-4112-a3ad-f8f2e5b70ac1_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/7028736c-3285-47d8-a49f-70eb7103f658_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 4 char 6 on a 3D Mesh (7028736c-3285-47d8-a49f-70eb7103f658_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/72a2bd0a-26bd-43a1-8820-753a680aa85c_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 9 char 1 on a 3D Mesh (72a2bd0a-26bd-43a1-8820-753a680aa85c_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/73c73a91-c524-4f50-ab80-8a540d2da3d2_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 6 char 1 on a 3D Mesh (73c73a91-c524-4f50-ab80-8a540d2da3d2_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/7845f7a5-c92f-4020-8895-09b6170860b3_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 18 char 2 on a 3D Mesh (7845f7a5-c92f-4020-8895-09b6170860b3_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/7b50c556-ddaf-4521-8d9e-d25b12123b4d_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 0 char 0 on a 3D Mesh (7b50c556-ddaf-4521-8d9e-d25b12123b4d_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/7b5777d3-f0c6-4835-a82f-dbb22286f0bd_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 14 char 9 on a 3D Mesh (7b5777d3-f0c6-4835-a82f-dbb22286f0bd_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/7bb98372-3f29-4c18-979a-374c73418a33_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 2 char 7 on a 3D Mesh (7bb98372-3f29-4c18-979a-374c73418a33_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/80437ba7-2e05-479a-92a6-7ff8b6627b97_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 14 char 8 on a 3D Mesh (80437ba7-2e05-479a-92a6-7ff8b6627b97_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/805c0555-1d5e-4e9e-bba9-43b43a65e926_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 6 char 5 on a 3D Mesh (805c0555-1d5e-4e9e-bba9-43b43a65e926_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/8271dcb9-ff2c-41a6-ab49-ae99e16343d5_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 16 char 3 on a 3D Mesh (8271dcb9-ff2c-41a6-ab49-ae99e16343d5_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/8339950f-863b-4b09-868f-f925888f1d52_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 0 char 8 on a 3D Mesh (8339950f-863b-4b09-868f-f925888f1d52_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/87d759ca-c922-4168-9392-afb8cf4f2143_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 12 char 3 on a 3D Mesh (87d759ca-c922-4168-9392-afb8cf4f2143_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/8e03908b-995a-4ef6-81de-8abd6814a0f4_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 3 char 9 on a 3D Mesh (8e03908b-995a-4ef6-81de-8abd6814a0f4_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/8fc47892-5189-4064-a432-946b5f989772_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 19 char 7 on a 3D Mesh (8fc47892-5189-4064-a432-946b5f989772_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/90453c3e-063b-4946-aec8-b9c996beeb62_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 2 char 5 on a 3D Mesh (90453c3e-063b-4946-aec8-b9c996beeb62_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/9160d3b2-2347-4cce-b692-a9b10eefd048_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 6 char 8 on a 3D Mesh (9160d3b2-2347-4cce-b692-a9b10eefd048_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/9623f6a2-3603-4f43-a1b6-4b8d94a7b6c5_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 9 char 2 on a 3D Mesh (9623f6a2-3603-4f43-a1b6-4b8d94a7b6c5_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/972b8dbb-62f9-4c78-9593-5722b8b98320_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 1 char 2 on a 3D Mesh (972b8dbb-62f9-4c78-9593-5722b8b98320_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/9894f48d-e283-4a5c-9e30-b095bc58016e_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 16 char 1 on a 3D Mesh (9894f48d-e283-4a5c-9e30-b095bc58016e_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/98f457f7-d471-4702-b2fb-a7db8714b3ad_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 8 char 2 on a 3D Mesh (98f457f7-d471-4702-b2fb-a7db8714b3ad_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/990fbe41-d9f2-4001-b92e-96d346ea53d7_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 6 char 9 on a 3D Mesh (990fbe41-d9f2-4001-b92e-96d346ea53d7_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/99156bb8-3b59-4ee5-a242-da28633561ce_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 17 char 4 on a 3D Mesh (99156bb8-3b59-4ee5-a242-da28633561ce_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/9b0cb5b7-1eb0-44fc-88e0-cb9d45444df6_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 12 char 1 on a 3D Mesh (9b0cb5b7-1eb0-44fc-88e0-cb9d45444df6_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/9c9b2153-7851-4a66-9b70-acdc69429e61_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 16 char 2 on a 3D Mesh (9c9b2153-7851-4a66-9b70-acdc69429e61_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/a1722196-72ec-434e-b577-0e53fcab6875_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 10 char 1 on a 3D Mesh (a1722196-72ec-434e-b577-0e53fcab6875_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/a354b877-8176-4a7a-ae86-6e6c5d4a8a18_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 18 char 1 on a 3D Mesh (a354b877-8176-4a7a-ae86-6e6c5d4a8a18_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/a57c212f-3fa9-435c-bbc0-43a122e935c2_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 2 char 1 on a 3D Mesh (a57c212f-3fa9-435c-bbc0-43a122e935c2_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/a7a32138-6cb0-4154-a7b7-7d0a023ad02b_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 9 char 4 on a 3D Mesh (a7a32138-6cb0-4154-a7b7-7d0a023ad02b_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ab0c6eda-de33-47ff-951a-14b81804ddd1_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 1 char 1 on a 3D Mesh (ab0c6eda-de33-47ff-951a-14b81804ddd1_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/abadacc1-5b06-4aea-9b11-3dfa38c31d0d_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 11 char 6 on a 3D Mesh (abadacc1-5b06-4aea-9b11-3dfa38c31d0d_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/acc56b90-a79b-4c48-bd38-2206406de3c4_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 6 char 7 on a 3D Mesh (acc56b90-a79b-4c48-bd38-2206406de3c4_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ad668545-8f22-49d0-9e5d-abd06892cbe6_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 4 char 4 on a 3D Mesh (ad668545-8f22-49d0-9e5d-abd06892cbe6_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ad9931a3-8903-47f2-b70d-6913a2639eec_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 19 char 3 on a 3D Mesh (ad9931a3-8903-47f2-b70d-6913a2639eec_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/adc6e60f-5775-4886-907a-00d270a37224_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 9 char 5 on a 3D Mesh (adc6e60f-5775-4886-907a-00d270a37224_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b095fe6b-2a30-474d-ab22-6cb4d4c791b9_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 20 char 1 on a 3D Mesh (b095fe6b-2a30-474d-ab22-6cb4d4c791b9_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b11a8452-cb34-43e5-ada7-6cd1d6becba3_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 2 char 6 on a 3D Mesh (b11a8452-cb34-43e5-ada7-6cd1d6becba3_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b184bea5-a36b-498e-90f4-e0f5277ff37c_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 13 char 4 on a 3D Mesh (b184bea5-a36b-498e-90f4-e0f5277ff37c_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b614872c-5d31-4768-8620-e6d9babb494d_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 17 char 6 on a 3D Mesh (b614872c-5d31-4768-8620-e6d9babb494d_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b6cb6c59-6884-4e3e-819b-0f51ff6ed64c_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 13 char 1 on a 3D Mesh (b6cb6c59-6884-4e3e-819b-0f51ff6ed64c_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b71f734f-9635-433d-8a38-b406323c3493_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 11 char 7 on a 3D Mesh (b71f734f-9635-433d-8a38-b406323c3493_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/bac1c18b-b790-4472-a21d-e19f38be53bf_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 4 char 5 on a 3D Mesh (bac1c18b-b790-4472-a21d-e19f38be53bf_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/c71aefb1-0edf-467d-aafa-a90560f3f85c_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 17 char 5 on a 3D Mesh (c71aefb1-0edf-467d-aafa-a90560f3f85c_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/c88d9f78-6ff4-4210-a8e9-7eb3c626b32f_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 11 char 8 on a 3D Mesh (c88d9f78-6ff4-4210-a8e9-7eb3c626b32f_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/c9393363-eb31-455c-ae64-fbae876832c0_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 16 char 5 on a 3D Mesh (c9393363-eb31-455c-ae64-fbae876832c0_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ccc55840-5bdd-4773-944c-d0ec977defb6_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 13 char 2 on a 3D Mesh (ccc55840-5bdd-4773-944c-d0ec977defb6_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/cd2b4e75-f1f9-4470-a8ae-886f45b824dd_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 19 char 1 on a 3D Mesh (cd2b4e75-f1f9-4470-a8ae-886f45b824dd_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d0525c2b-6654-4e9a-b63d-36af49c02f16_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 3 char 6 on a 3D Mesh (d0525c2b-6654-4e9a-b63d-36af49c02f16_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d05b354e-427a-4036-86f5-3e8f99395ce7_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 15 char 1 on a 3D Mesh (d05b354e-427a-4036-86f5-3e8f99395ce7_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/dc44282c-dbdd-40fa-976c-8d20ba854125_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 8 char 1 on a 3D Mesh (dc44282c-dbdd-40fa-976c-8d20ba854125_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/e04fd852-a2b2-4782-9837-ad3e184c9c22_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 3 char 7 on a 3D Mesh (e04fd852-a2b2-4782-9837-ad3e184c9c22_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/e0ecfeef-c01e-4b89-92d4-de8c3d0aa633_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 1 char 3 on a 3D Mesh (e0ecfeef-c01e-4b89-92d4-de8c3d0aa633_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/e1334941-6099-4091-a973-eeeda305fda9_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 12 char 2 on a 3D Mesh (e1334941-6099-4091-a973-eeeda305fda9_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/e22ade0e-e224-41e7-afd7-1905007e690a_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 12 char 6 on a 3D Mesh (e22ade0e-e224-41e7-afd7-1905007e690a_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/e5d327f1-4ffa-46d4-a034-970af759ec0d_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 6 char 4 on a 3D Mesh (e5d327f1-4ffa-46d4-a034-970af759ec0d_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/e7edcd67-a55b-4860-856d-6908129017b5_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 13 char 3 on a 3D Mesh (e7edcd67-a55b-4860-856d-6908129017b5_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ec544dc5-d224-4e67-becb-b3b82c294343_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 6 char 2 on a 3D Mesh (ec544dc5-d224-4e67-becb-b3b82c294343_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ec60e8ac-e735-4339-a4c8-3140ef3ad975_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 2 char 4 on a 3D Mesh (ec60e8ac-e735-4339-a4c8-3140ef3ad975_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/f4c89f5c-22c1-4a89-8aaa-6a2916ff0c7b_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 10 char 4 on a 3D Mesh (f4c89f5c-22c1-4a89-8aaa-6a2916ff0c7b_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/f614619a-2e49-4feb-9e18-cc289813f07b_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 3 char 1 on a 3D Mesh (f614619a-2e49-4feb-9e18-cc289813f07b_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/f76bbc8d-19d6-4ade-b01f-c3b2bdd44c78_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 7 char 5 on a 3D Mesh (f76bbc8d-19d6-4ade-b01f-c3b2bdd44c78_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/f78027cc-b471-4569-ad9a-4dec62b513a0_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 9 char 7 on a 3D Mesh (f78027cc-b471-4569-ad9a-4dec62b513a0_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/fb54270d-a8eb-47ed-9360-93ce54116f73_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 7 char 4 on a 3D Mesh (fb54270d-a8eb-47ed-9360-93ce54116f73_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/fbbcb208-1ee1-4c86-b504-82fb29ede8e2_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 12 char 8 on a 3D Mesh (fbbcb208-1ee1-4c86-b504-82fb29ede8e2_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/fcad5b9d-88a3-4a25-8724-ec776ea9cecc_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 9 char 6 on a 3D Mesh (fcad5b9d-88a3-4a25-8724-ec776ea9cecc_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/01e2d6cf-6c80-49c8-8a31-44e217d81f93_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 4 char 2 on a 3D Mesh (01e2d6cf-6c80-49c8-8a31-44e217d81f93_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/06240117-8494-45bf-af29-59c1147ccebb_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 11 char 5 on a 3D Mesh (06240117-8494-45bf-af29-59c1147ccebb_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/081c7b3e-8647-4c37-929b-a23a02925a35_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 5 char 5 on a 3D Mesh (081c7b3e-8647-4c37-929b-a23a02925a35_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/08effdf8-6872-46bb-862d-31132b3f328f_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 10 char 3 on a 3D Mesh (08effdf8-6872-46bb-862d-31132b3f328f_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/0939c2c2-8585-4c63-af0d-a6a583272fe6_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 1 char 3 on a 3D Mesh (0939c2c2-8585-4c63-af0d-a6a583272fe6_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/0b947fea-c49a-41d7-b306-d16fd2c4b992_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 3 char 3 on a 3D Mesh (0b947fea-c49a-41d7-b306-d16fd2c4b992_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/10639506-6246-47f2-8374-0cf44b42849f_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 6 char 6 on a 3D Mesh (10639506-6246-47f2-8374-0cf44b42849f_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/1105c380-381b-4ce3-88f4-01d8396b2ce6_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 6 char 10 on a 3D Mesh (1105c380-381b-4ce3-88f4-01d8396b2ce6_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/12d7ac08-aa51-4179-9441-d4ada11de20d_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 5 char 1 on a 3D Mesh (12d7ac08-aa51-4179-9441-d4ada11de20d_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/12fb8658-df30-461b-9307-fab7dea78dd8_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 19 char 4 on a 3D Mesh (12fb8658-df30-461b-9307-fab7dea78dd8_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/1423c8ae-937c-4d67-a3ce-f3484152429f_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 13 char 5 on a 3D Mesh (1423c8ae-937c-4d67-a3ce-f3484152429f_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/14e33dab-d75e-4206-8f7e-218b6ad36661_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 16 char 4 on a 3D Mesh (14e33dab-d75e-4206-8f7e-218b6ad36661_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/1718a05e-13cb-4a98-b26a-73663c6ef933_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 17 char 1 on a 3D Mesh (1718a05e-13cb-4a98-b26a-73663c6ef933_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/1949c8e9-ef8a-437b-a637-9a85ec4d2e80_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 3 char 2 on a 3D Mesh (1949c8e9-ef8a-437b-a637-9a85ec4d2e80_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/19e2812e-c6a1-4c95-8471-71359c650083_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 19 char 5 on a 3D Mesh (19e2812e-c6a1-4c95-8471-71359c650083_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/1ee4f6dd-4556-411e-a40d-1bfef254fb74_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 4 char 8 on a 3D Mesh (1ee4f6dd-4556-411e-a40d-1bfef254fb74_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/1fe53650-e1cd-46a8-b5d8-2a94f5ee5268_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 14 char 10 on a 3D Mesh (1fe53650-e1cd-46a8-b5d8-2a94f5ee5268_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/207b203a-c60d-449a-b210-d422711c3e69_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 5 char 3 on a 3D Mesh (207b203a-c60d-449a-b210-d422711c3e69_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/21cec3f8-9cdd-4611-9f26-3c8d6e7b4ccf_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 9 char 3 on a 3D Mesh (21cec3f8-9cdd-4611-9f26-3c8d6e7b4ccf_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/23a026bc-a195-40ff-ac25-de770e78f03e_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 14 char 2 on a 3D Mesh (23a026bc-a195-40ff-ac25-de770e78f03e_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/249707d4-96c3-4434-916f-8f469837a168_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 2 char 3 on a 3D Mesh (249707d4-96c3-4434-916f-8f469837a168_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/259020b5-bf51-4a3c-88e5-3a57993c7409_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 7 char 3 on a 3D Mesh (259020b5-bf51-4a3c-88e5-3a57993c7409_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/25963a64-4f61-4c2e-be60-691ce50466b7_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 19 char 2 on a 3D Mesh (25963a64-4f61-4c2e-be60-691ce50466b7_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/264e998c-462c-4840-ac00-99f3bcbd36b1_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 11 char 4 on a 3D Mesh (264e998c-462c-4840-ac00-99f3bcbd36b1_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/26904c61-5b0a-4e4f-8921-36a6c508f6d9_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 1 char 3 on a 3D Mesh (26904c61-5b0a-4e4f-8921-36a6c508f6d9_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/26b6fee7-a84b-4c80-b4aa-08ef43b17ddd_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 5 char 6 on a 3D Mesh (26b6fee7-a84b-4c80-b4aa-08ef43b17ddd_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/26f35b27-c68c-49c4-ae6d-cd9a207b01ed_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 5 char 2 on a 3D Mesh (26f35b27-c68c-49c4-ae6d-cd9a207b01ed_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/281d81f4-cb7c-4e0f-8a4a-69b4f1ff27bb_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 17 char 2 on a 3D Mesh (281d81f4-cb7c-4e0f-8a4a-69b4f1ff27bb_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/28dbe478-c4c1-4bbe-81bb-7cd2102f777a_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 7 char 6 on a 3D Mesh (28dbe478-c4c1-4bbe-81bb-7cd2102f777a_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/2a3ad4bd-0932-41f8-9984-6b54652222e3_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 3 char 5 on a 3D Mesh (2a3ad4bd-0932-41f8-9984-6b54652222e3_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/2d645ef8-822a-4145-bde1-235f0d179aba_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 11 char 2 on a 3D Mesh (2d645ef8-822a-4145-bde1-235f0d179aba_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/2ef7948c-a8b2-4bc4-a6b9-7162c2e05e90_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 7 char 2 on a 3D Mesh (2ef7948c-a8b2-4bc4-a6b9-7162c2e05e90_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/30193d77-172f-420d-bec2-41afbf32eeb1_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 11 char 3 on a 3D Mesh (30193d77-172f-420d-bec2-41afbf32eeb1_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/3529c3da-b9b6-4027-89c4-973e95268c7a_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 4 char 1 on a 3D Mesh (3529c3da-b9b6-4027-89c4-973e95268c7a_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/382c11c9-b54d-4106-9e70-c71d492b81d3_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 3 char 4 on a 3D Mesh (382c11c9-b54d-4106-9e70-c71d492b81d3_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/3835fcc3-9a78-4c1b-accf-8bb462e13ac0_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 5 char 9 on a 3D Mesh (3835fcc3-9a78-4c1b-accf-8bb462e13ac0_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/39655723-b238-43f0-8506-c65d9593a2b1_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 8 char 9 on a 3D Mesh (39655723-b238-43f0-8506-c65d9593a2b1_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/3a49a06a-f67e-4af7-9ed0-7194bf14cb39_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 6 char 11 on a 3D Mesh (3a49a06a-f67e-4af7-9ed0-7194bf14cb39_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/423c40b5-3c37-4619-8bbc-248d03099002_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 12 char 9 on a 3D Mesh (423c40b5-3c37-4619-8bbc-248d03099002_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/4532308c-cf38-429d-9998-ecc1db675b10_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 4 char 7 on a 3D Mesh (4532308c-cf38-429d-9998-ecc1db675b10_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/46b3e877-14ac-4bf3-b0dd-7c64c192b3b8_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 19 char 6 on a 3D Mesh (46b3e877-14ac-4bf3-b0dd-7c64c192b3b8_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/493ad60d-ce79-413d-9f31-e1d4f94b123b_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 10 char 5 on a 3D Mesh (493ad60d-ce79-413d-9f31-e1d4f94b123b_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/4a19e284-5ce1-4133-b1f8-d51bb17d4118_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 7 char 1 on a 3D Mesh (4a19e284-5ce1-4133-b1f8-d51bb17d4118_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/4a5325e4-5ea6-408e-9483-64e0267549a1_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 2 char 2 on a 3D Mesh (4a5325e4-5ea6-408e-9483-64e0267549a1_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/4f3863af-026c-4140-a20b-2d4ffcd70271_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 11 char 1 on a 3D Mesh (4f3863af-026c-4140-a20b-2d4ffcd70271_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/523a4443-da51-4f96-ac1f-4e7fb694c68b_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 5 char 8 on a 3D Mesh (523a4443-da51-4f96-ac1f-4e7fb694c68b_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/53c3225a-eda6-4270-abc2-e3608c0386bb_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 12 char 5 on a 3D Mesh (53c3225a-eda6-4270-abc2-e3608c0386bb_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/5431ca41-68b2-4dbe-9918-f7f8e8f43cfd_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 5 char 4 on a 3D Mesh (5431ca41-68b2-4dbe-9918-f7f8e8f43cfd_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/56240c82-81c8-47b4-bba8-bff8a038687c_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 10 char 2 on a 3D Mesh (56240c82-81c8-47b4-bba8-bff8a038687c_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/5970ba58-9766-4182-8f32-0cafdb6910f9_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 3 char 10 on a 3D Mesh (5970ba58-9766-4182-8f32-0cafdb6910f9_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/59862203-29fc-4106-84e1-2715822ae597_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 18 char 3 on a 3D Mesh (59862203-29fc-4106-84e1-2715822ae597_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/5b0df2a0-e94e-42c8-96c0-ea11195cf96b_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 15 char 2 on a 3D Mesh (5b0df2a0-e94e-42c8-96c0-ea11195cf96b_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/5b8ceaf4-df41-41b7-ba30-ffaa3791bcf2_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 6 char 3 on a 3D Mesh (5b8ceaf4-df41-41b7-ba30-ffaa3791bcf2_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/5bf05b0c-c0fa-40ea-a34a-cb127f75673b_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 17 char 8 on a 3D Mesh (5bf05b0c-c0fa-40ea-a34a-cb127f75673b_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/5d5a5c95-dc43-4248-a62a-c1896c1a42f4_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 4 char 3 on a 3D Mesh (5d5a5c95-dc43-4248-a62a-c1896c1a42f4_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/60ced722-052d-4559-9eca-9d1da2f8fdcf_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 1 char 6 on a 3D Mesh (60ced722-052d-4559-9eca-9d1da2f8fdcf_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/663c66ad-5779-4bf2-a997-b348d398fb87_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 14 char 1 on a 3D Mesh (663c66ad-5779-4bf2-a997-b348d398fb87_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/69ef9dc1-ecb3-42b7-9f3c-db61479b5760_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 9 char 8 on a 3D Mesh (69ef9dc1-ecb3-42b7-9f3c-db61479b5760_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/6a40e3e1-7bd2-40fe-b37d-d88a74ad009a_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 10 char 6 on a 3D Mesh (6a40e3e1-7bd2-40fe-b37d-d88a74ad009a_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/6ac943db-ed4b-43af-a1a3-9ad307f8579e_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 17 char 7 on a 3D Mesh (6ac943db-ed4b-43af-a1a3-9ad307f8579e_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/6cebd6e6-7683-4ad4-9e8c-20ce823835ca_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 9 char 9 on a 3D Mesh (6cebd6e6-7683-4ad4-9e8c-20ce823835ca_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/6d3bf611-260e-4112-a3ad-f8f2e5b70ac1_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 12 char 7 on a 3D Mesh (6d3bf611-260e-4112-a3ad-f8f2e5b70ac1_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/7028736c-3285-47d8-a49f-70eb7103f658_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 4 char 6 on a 3D Mesh (7028736c-3285-47d8-a49f-70eb7103f658_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/72a2bd0a-26bd-43a1-8820-753a680aa85c_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 9 char 1 on a 3D Mesh (72a2bd0a-26bd-43a1-8820-753a680aa85c_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/73c73a91-c524-4f50-ab80-8a540d2da3d2_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 6 char 1 on a 3D Mesh (73c73a91-c524-4f50-ab80-8a540d2da3d2_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/7845f7a5-c92f-4020-8895-09b6170860b3_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 18 char 2 on a 3D Mesh (7845f7a5-c92f-4020-8895-09b6170860b3_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/7b50c556-ddaf-4521-8d9e-d25b12123b4d_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 0 char 0 on a 3D Mesh (7b50c556-ddaf-4521-8d9e-d25b12123b4d_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/7b5777d3-f0c6-4835-a82f-dbb22286f0bd_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 14 char 9 on a 3D Mesh (7b5777d3-f0c6-4835-a82f-dbb22286f0bd_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/7bb98372-3f29-4c18-979a-374c73418a33_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 2 char 7 on a 3D Mesh (7bb98372-3f29-4c18-979a-374c73418a33_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/80437ba7-2e05-479a-92a6-7ff8b6627b97_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 14 char 8 on a 3D Mesh (80437ba7-2e05-479a-92a6-7ff8b6627b97_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/805c0555-1d5e-4e9e-bba9-43b43a65e926_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 6 char 5 on a 3D Mesh (805c0555-1d5e-4e9e-bba9-43b43a65e926_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/8271dcb9-ff2c-41a6-ab49-ae99e16343d5_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 16 char 3 on a 3D Mesh (8271dcb9-ff2c-41a6-ab49-ae99e16343d5_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/8339950f-863b-4b09-868f-f925888f1d52_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 0 char 8 on a 3D Mesh (8339950f-863b-4b09-868f-f925888f1d52_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/87d759ca-c922-4168-9392-afb8cf4f2143_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 12 char 3 on a 3D Mesh (87d759ca-c922-4168-9392-afb8cf4f2143_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/8e03908b-995a-4ef6-81de-8abd6814a0f4_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 3 char 9 on a 3D Mesh (8e03908b-995a-4ef6-81de-8abd6814a0f4_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/8fc47892-5189-4064-a432-946b5f989772_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 19 char 7 on a 3D Mesh (8fc47892-5189-4064-a432-946b5f989772_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/90453c3e-063b-4946-aec8-b9c996beeb62_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 2 char 5 on a 3D Mesh (90453c3e-063b-4946-aec8-b9c996beeb62_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/9160d3b2-2347-4cce-b692-a9b10eefd048_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 6 char 8 on a 3D Mesh (9160d3b2-2347-4cce-b692-a9b10eefd048_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/9623f6a2-3603-4f43-a1b6-4b8d94a7b6c5_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 9 char 2 on a 3D Mesh (9623f6a2-3603-4f43-a1b6-4b8d94a7b6c5_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/972b8dbb-62f9-4c78-9593-5722b8b98320_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 1 char 2 on a 3D Mesh (972b8dbb-62f9-4c78-9593-5722b8b98320_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/9894f48d-e283-4a5c-9e30-b095bc58016e_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 16 char 1 on a 3D Mesh (9894f48d-e283-4a5c-9e30-b095bc58016e_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/98f457f7-d471-4702-b2fb-a7db8714b3ad_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 8 char 2 on a 3D Mesh (98f457f7-d471-4702-b2fb-a7db8714b3ad_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/990fbe41-d9f2-4001-b92e-96d346ea53d7_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 6 char 9 on a 3D Mesh (990fbe41-d9f2-4001-b92e-96d346ea53d7_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/99156bb8-3b59-4ee5-a242-da28633561ce_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 17 char 4 on a 3D Mesh (99156bb8-3b59-4ee5-a242-da28633561ce_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/9b0cb5b7-1eb0-44fc-88e0-cb9d45444df6_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 12 char 1 on a 3D Mesh (9b0cb5b7-1eb0-44fc-88e0-cb9d45444df6_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/9c9b2153-7851-4a66-9b70-acdc69429e61_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 16 char 2 on a 3D Mesh (9c9b2153-7851-4a66-9b70-acdc69429e61_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/a1722196-72ec-434e-b577-0e53fcab6875_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 10 char 1 on a 3D Mesh (a1722196-72ec-434e-b577-0e53fcab6875_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/a354b877-8176-4a7a-ae86-6e6c5d4a8a18_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 18 char 1 on a 3D Mesh (a354b877-8176-4a7a-ae86-6e6c5d4a8a18_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/a57c212f-3fa9-435c-bbc0-43a122e935c2_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 2 char 1 on a 3D Mesh (a57c212f-3fa9-435c-bbc0-43a122e935c2_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/a7a32138-6cb0-4154-a7b7-7d0a023ad02b_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 9 char 4 on a 3D Mesh (a7a32138-6cb0-4154-a7b7-7d0a023ad02b_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ab0c6eda-de33-47ff-951a-14b81804ddd1_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 1 char 1 on a 3D Mesh (ab0c6eda-de33-47ff-951a-14b81804ddd1_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/abadacc1-5b06-4aea-9b11-3dfa38c31d0d_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 11 char 6 on a 3D Mesh (abadacc1-5b06-4aea-9b11-3dfa38c31d0d_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/acc56b90-a79b-4c48-bd38-2206406de3c4_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 6 char 7 on a 3D Mesh (acc56b90-a79b-4c48-bd38-2206406de3c4_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ad668545-8f22-49d0-9e5d-abd06892cbe6_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 4 char 4 on a 3D Mesh (ad668545-8f22-49d0-9e5d-abd06892cbe6_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ad9931a3-8903-47f2-b70d-6913a2639eec_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 19 char 3 on a 3D Mesh (ad9931a3-8903-47f2-b70d-6913a2639eec_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/adc6e60f-5775-4886-907a-00d270a37224_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 9 char 5 on a 3D Mesh (adc6e60f-5775-4886-907a-00d270a37224_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b095fe6b-2a30-474d-ab22-6cb4d4c791b9_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 20 char 1 on a 3D Mesh (b095fe6b-2a30-474d-ab22-6cb4d4c791b9_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b11a8452-cb34-43e5-ada7-6cd1d6becba3_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 2 char 6 on a 3D Mesh (b11a8452-cb34-43e5-ada7-6cd1d6becba3_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b184bea5-a36b-498e-90f4-e0f5277ff37c_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 13 char 4 on a 3D Mesh (b184bea5-a36b-498e-90f4-e0f5277ff37c_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b614872c-5d31-4768-8620-e6d9babb494d_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 17 char 6 on a 3D Mesh (b614872c-5d31-4768-8620-e6d9babb494d_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b6cb6c59-6884-4e3e-819b-0f51ff6ed64c_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 13 char 1 on a 3D Mesh (b6cb6c59-6884-4e3e-819b-0f51ff6ed64c_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/b71f734f-9635-433d-8a38-b406323c3493_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 11 char 7 on a 3D Mesh (b71f734f-9635-433d-8a38-b406323c3493_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/bac1c18b-b790-4472-a21d-e19f38be53bf_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 4 char 5 on a 3D Mesh (bac1c18b-b790-4472-a21d-e19f38be53bf_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/c71aefb1-0edf-467d-aafa-a90560f3f85c_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 17 char 5 on a 3D Mesh (c71aefb1-0edf-467d-aafa-a90560f3f85c_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/c88d9f78-6ff4-4210-a8e9-7eb3c626b32f_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 11 char 8 on a 3D Mesh (c88d9f78-6ff4-4210-a8e9-7eb3c626b32f_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/c9393363-eb31-455c-ae64-fbae876832c0_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 16 char 5 on a 3D Mesh (c9393363-eb31-455c-ae64-fbae876832c0_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ccc55840-5bdd-4773-944c-d0ec977defb6_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 13 char 2 on a 3D Mesh (ccc55840-5bdd-4773-944c-d0ec977defb6_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/cd2b4e75-f1f9-4470-a8ae-886f45b824dd_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 19 char 1 on a 3D Mesh (cd2b4e75-f1f9-4470-a8ae-886f45b824dd_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d0525c2b-6654-4e9a-b63d-36af49c02f16_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 3 char 6 on a 3D Mesh (d0525c2b-6654-4e9a-b63d-36af49c02f16_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d05b354e-427a-4036-86f5-3e8f99395ce7_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 15 char 1 on a 3D Mesh (d05b354e-427a-4036-86f5-3e8f99395ce7_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/dc44282c-dbdd-40fa-976c-8d20ba854125_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 8 char 1 on a 3D Mesh (dc44282c-dbdd-40fa-976c-8d20ba854125_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/e04fd852-a2b2-4782-9837-ad3e184c9c22_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 3 char 7 on a 3D Mesh (e04fd852-a2b2-4782-9837-ad3e184c9c22_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/e0ecfeef-c01e-4b89-92d4-de8c3d0aa633_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 1 char 3 on a 3D Mesh (e0ecfeef-c01e-4b89-92d4-de8c3d0aa633_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/e1334941-6099-4091-a973-eeeda305fda9_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 12 char 2 on a 3D Mesh (e1334941-6099-4091-a973-eeeda305fda9_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/e22ade0e-e224-41e7-afd7-1905007e690a_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 12 char 6 on a 3D Mesh (e22ade0e-e224-41e7-afd7-1905007e690a_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/e5d327f1-4ffa-46d4-a034-970af759ec0d_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 6 char 4 on a 3D Mesh (e5d327f1-4ffa-46d4-a034-970af759ec0d_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/e7edcd67-a55b-4860-856d-6908129017b5_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 13 char 3 on a 3D Mesh (e7edcd67-a55b-4860-856d-6908129017b5_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ec544dc5-d224-4e67-becb-b3b82c294343_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 6 char 2 on a 3D Mesh (ec544dc5-d224-4e67-becb-b3b82c294343_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ec60e8ac-e735-4339-a4c8-3140ef3ad975_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 2 char 4 on a 3D Mesh (ec60e8ac-e735-4339-a4c8-3140ef3ad975_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/f4c89f5c-22c1-4a89-8aaa-6a2916ff0c7b_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 10 char 4 on a 3D Mesh (f4c89f5c-22c1-4a89-8aaa-6a2916ff0c7b_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/f614619a-2e49-4feb-9e18-cc289813f07b_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 3 char 1 on a 3D Mesh (f614619a-2e49-4feb-9e18-cc289813f07b_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/f76bbc8d-19d6-4ade-b01f-c3b2bdd44c78_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 7 char 5 on a 3D Mesh (f76bbc8d-19d6-4ade-b01f-c3b2bdd44c78_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/f78027cc-b471-4569-ad9a-4dec62b513a0_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 9 char 7 on a 3D Mesh (f78027cc-b471-4569-ad9a-4dec62b513a0_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/fb54270d-a8eb-47ed-9360-93ce54116f73_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 7 char 4 on a 3D Mesh (fb54270d-a8eb-47ed-9360-93ce54116f73_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/fbbcb208-1ee1-4c86-b504-82fb29ede8e2_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 12 char 8 on a 3D Mesh (fbbcb208-1ee1-4c86-b504-82fb29ede8e2_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/fcad5b9d-88a3-4a25-8724-ec776ea9cecc_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 9 char 6 on a 3D Mesh (fcad5b9d-88a3-4a25-8724-ec776ea9cecc_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/5d60b30a-221d-4926-bb1f-fb1e5bbc40c3_target1_selector",
         "parent": "http://www.w3.org/ns/oa#FragmentSelector",
         "type": "instance",
@@ -9921,12 +13766,7 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {
-            "http://www.purl.org/graphemon#variant": {
-              "instancecount": 0,
-              "http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme": 1
-            }
-          }
+          "from": {}
         },
         "instancecount": 2
       },
@@ -10596,12 +14436,7 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {
-            "http://lemon-model.net/lemon#form": {
-              "instancecount": 0,
-              "http://www.w3.org/2002/07/owl#NamedIndividual": 1
-            }
-          }
+          "from": {}
         },
         "instancecount": 2
       },
@@ -10871,28 +14706,17 @@ var tree={
         "text": "Word (lemon:Word) [33]",
         "data": {
           "to": {
-            "http://lemon-model.net/lemon#form": {
-              "instancecount": 1,
-              "http://lemon-model.net/lemon#WordForm": 1
-            },
-            "http://lemon-model.net/lemon#sense": {
-              "instancecount": 1,
-              "http://lemon-model.net/lemon#LexicalSense": 1
-            },
-            "http://purl.org/dc/elements/1.1/license": {
-              "instancecount": 1
-            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
             },
             "http://www.w3.org/2000/01/rdf-schema#label": {
-              "instancecount": 2
+              "instancecount": 1
             }
           },
           "from": {}
         },
-        "instancecount": 6
+        "instancecount": 2
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/signlist/character_karcomp",
@@ -19142,6 +22966,10 @@ var tree={
               "instancecount": 1,
               "http://www.purl.org/cuneiform/TransliterationCharOccurrence": 1
             },
+            "http://www.purl.org/cuneiform/prevChar": {
+              "instancecount": 1,
+              "http://www.purl.org/cuneiform/TransliterationCharOccurrence": 1
+            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
@@ -19154,10 +22982,14 @@ var tree={
             "http://www.purl.org/cuneiform/prevChar": {
               "instancecount": 0,
               "http://www.purl.org/cuneiform/TransliterationCharOccurrence": 1
+            },
+            "http://www.purl.org/cuneiform/nextChar": {
+              "instancecount": 0,
+              "http://www.purl.org/cuneiform/TransliterationCharOccurrence": 1
             }
           }
         },
-        "instancecount": 5
+        "instancecount": 6
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/tch92_transliteration1_obverse_line10_word1",
@@ -19796,10 +23628,6 @@ var tree={
               "instancecount": 1,
               "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
             },
-            "http://www.purl.org/cuneiform/prevWord": {
-              "instancecount": 1,
-              "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
-            },
             "http://www.purl.org/cuneiform/wordIndex": {
               "instancecount": 1
             },
@@ -19812,9 +23640,9 @@ var tree={
             }
           },
           "from": {
-            "http://www.purl.org/cuneiform/nextWord": {
+            "http://www.purl.org/cuneiform/Occurence": {
               "instancecount": 0,
-              "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
+              "http://lemon-model.net/lemon#WordForm": 1
             },
             "http://www.purl.org/cuneiform/prevWord": {
               "instancecount": 0,
@@ -19822,7 +23650,7 @@ var tree={
             }
           }
         },
-        "instancecount": 6
+        "instancecount": 5
       },
       {
         "id": "http://lemon-model.net/lemon#LexicalEntity",
@@ -29828,13 +33656,6 @@ var tree={
         "data": {}
       },
       {
-        "id": "http://purl.org/meshsparql/ComputingReference",
-        "parent": "#",
-        "type": "class",
-        "text": "ComputingReference [36]",
-        "data": {}
-      },
-      {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/ht073195",
         "parent": "http://www.purl.org/cuneiform/Tablet",
         "type": "instance",
@@ -29856,52 +33677,52 @@ var tree={
         "data": {}
       },
       {
-        "id": "naeaa02e634e34147bdd05689818b283db2",
+        "id": "n7128888a83fe4f70ad85d54fb50ef720b2",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "naeaa02e634e34147bdd05689818b283db2",
+        "text": "n7128888a83fe4f70ad85d54fb50ef720b2",
         "data": {}
       },
       {
-        "id": "naeaa02e634e34147bdd05689818b283db3",
+        "id": "n7128888a83fe4f70ad85d54fb50ef720b3",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "naeaa02e634e34147bdd05689818b283db3",
+        "text": "n7128888a83fe4f70ad85d54fb50ef720b3",
         "data": {}
       },
       {
-        "id": "naeaa02e634e34147bdd05689818b283db4",
+        "id": "n7128888a83fe4f70ad85d54fb50ef720b4",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "naeaa02e634e34147bdd05689818b283db4",
+        "text": "n7128888a83fe4f70ad85d54fb50ef720b4",
         "data": {}
       },
       {
-        "id": "naeaa02e634e34147bdd05689818b283db5",
+        "id": "n7128888a83fe4f70ad85d54fb50ef720b5",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "naeaa02e634e34147bdd05689818b283db5",
+        "text": "n7128888a83fe4f70ad85d54fb50ef720b5",
         "data": {}
       },
       {
-        "id": "naeaa02e634e34147bdd05689818b283db6",
+        "id": "n7128888a83fe4f70ad85d54fb50ef720b6",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "naeaa02e634e34147bdd05689818b283db6",
+        "text": "n7128888a83fe4f70ad85d54fb50ef720b6",
         "data": {}
       },
       {
-        "id": "naeaa02e634e34147bdd05689818b283db7",
+        "id": "n7128888a83fe4f70ad85d54fb50ef720b7",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "naeaa02e634e34147bdd05689818b283db7",
+        "text": "n7128888a83fe4f70ad85d54fb50ef720b7",
         "data": {}
       },
       {
-        "id": "naeaa02e634e34147bdd05689818b283db8",
+        "id": "n7128888a83fe4f70ad85d54fb50ef720b8",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "naeaa02e634e34147bdd05689818b283db8",
+        "text": "n7128888a83fe4f70ad85d54fb50ef720b8",
         "data": {}
       },
       {
@@ -31027,7 +34848,7 @@ var tree={
             }
           },
           "from": {
-            "http://www.gigamesh.eu/ont#bridgeBorderFaces": {
+            "http://www.gigamesh.eu/ont#danglingBorderFaces": {
               "instancecount": 0,
               "http://purl.org/dc/elements/1.1/Image": 1,
               "http://www.gigamesh.eu/ont#Mesh": 1
@@ -33435,3223 +37256,3447 @@ var tree={
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/00cda0d2-a7fb-4e22-b367-242a7c8119fc",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/00cda0d2-a7fb-4e22-b367-242a7c8119fc",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (00cda0d2-a7fb-4e22-b367-242a7c8119fc)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/059d6ee0-b203-4059-a996-767b25994eb7",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/059d6ee0-b203-4059-a996-767b25994eb7",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (059d6ee0-b203-4059-a996-767b25994eb7)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/0753a90c-1198-4ddd-b818-571579b2a7cf",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0753a90c-1198-4ddd-b818-571579b2a7cf",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (0753a90c-1198-4ddd-b818-571579b2a7cf)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/0821f61c-c8f6-4d7e-8f32-976f25af4bb9",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0821f61c-c8f6-4d7e-8f32-976f25af4bb9",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (0821f61c-c8f6-4d7e-8f32-976f25af4bb9)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/09a66ef9-8b3c-488b-ad51-d280404f2a7f",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/09a66ef9-8b3c-488b-ad51-d280404f2a7f",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 2 char 8 on 3D rendering (09a66ef9-8b3c-488b-ad51-d280404f2a7f)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/0d375432-3447-40f2-b1ae-d82104591707",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0d375432-3447-40f2-b1ae-d82104591707",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (0d375432-3447-40f2-b1ae-d82104591707)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/0e7063b6-b4a2-4ade-8ad8-a2bf842709d8",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e7063b6-b4a2-4ade-8ad8-a2bf842709d8",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 1 char 4 on 3D rendering (0e7063b6-b4a2-4ade-8ad8-a2bf842709d8)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/0e8e1d31-9942-4cdf-8f68-e01ff4a51926",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e8e1d31-9942-4cdf-8f68-e01ff4a51926",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (0e8e1d31-9942-4cdf-8f68-e01ff4a51926)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/0f55aeec-eefc-4ac2-baf1-f5d15f762d6b",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0f55aeec-eefc-4ac2-baf1-f5d15f762d6b",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (0f55aeec-eefc-4ac2-baf1-f5d15f762d6b)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/119e80df-5bb3-4733-9840-65b48dc8a458",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/119e80df-5bb3-4733-9840-65b48dc8a458",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (119e80df-5bb3-4733-9840-65b48dc8a458)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/13b2fdfc-a233-430e-a2c6-6abeb016aaeb",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/13b2fdfc-a233-430e-a2c6-6abeb016aaeb",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (13b2fdfc-a233-430e-a2c6-6abeb016aaeb)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/18233348-81d5-4d69-8977-e5544363b7e8",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/18233348-81d5-4d69-8977-e5544363b7e8",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (18233348-81d5-4d69-8977-e5544363b7e8)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/1923adc1-8dc0-48e6-b177-58c1d1d31cc7",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1923adc1-8dc0-48e6-b177-58c1d1d31cc7",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (1923adc1-8dc0-48e6-b177-58c1d1d31cc7)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/1c59a341-b59f-4ead-937a-d5dfea54170e",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c59a341-b59f-4ead-937a-d5dfea54170e",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (1c59a341-b59f-4ead-937a-d5dfea54170e)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/1c74c217-b7cb-4ac8-92d8-86051e811659",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c74c217-b7cb-4ac8-92d8-86051e811659",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 3 char 2 on 3D rendering (1c74c217-b7cb-4ac8-92d8-86051e811659)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/20238516-d42d-4c23-82f8-94626948d45b",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/20238516-d42d-4c23-82f8-94626948d45b",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (20238516-d42d-4c23-82f8-94626948d45b)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/22ce9eb9-dcbb-4bc0-8af0-0dc8e604f2fb",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/22ce9eb9-dcbb-4bc0-8af0-0dc8e604f2fb",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (22ce9eb9-dcbb-4bc0-8af0-0dc8e604f2fb)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/2333d226-57d3-4122-82e5-1eb5858315a7",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2333d226-57d3-4122-82e5-1eb5858315a7",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (2333d226-57d3-4122-82e5-1eb5858315a7)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/28b2e58a-c464-462e-aa73-a369ffaee903",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/28b2e58a-c464-462e-aa73-a369ffaee903",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 2 char 7 on 3D rendering (28b2e58a-c464-462e-aa73-a369ffaee903)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/2a8bcac4-2342-40c2-932f-29b5931bd98a",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2a8bcac4-2342-40c2-932f-29b5931bd98a",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (2a8bcac4-2342-40c2-932f-29b5931bd98a)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/2de86608-03d1-4572-ab60-69a9188f6b1d",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2de86608-03d1-4572-ab60-69a9188f6b1d",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (2de86608-03d1-4572-ab60-69a9188f6b1d)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/2e103f24-158a-4017-bfa6-ad96d5bfac35",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2e103f24-158a-4017-bfa6-ad96d5bfac35",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (2e103f24-158a-4017-bfa6-ad96d5bfac35)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/2e937f6f-e410-41b8-b5f3-f3eda97915b4",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2e937f6f-e410-41b8-b5f3-f3eda97915b4",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (2e937f6f-e410-41b8-b5f3-f3eda97915b4)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/2f7901c7-4ed4-4135-aed7-f2ee7ceedfec",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2f7901c7-4ed4-4135-aed7-f2ee7ceedfec",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (2f7901c7-4ed4-4135-aed7-f2ee7ceedfec)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/302f462b-5a85-4129-ab64-71b9c5e7de77",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/302f462b-5a85-4129-ab64-71b9c5e7de77",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (302f462b-5a85-4129-ab64-71b9c5e7de77)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/32de1d43-3933-412a-ba17-0f3053a29eee",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/32de1d43-3933-412a-ba17-0f3053a29eee",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 4 char 4 on 3D rendering (32de1d43-3933-412a-ba17-0f3053a29eee)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/34a4f506-5fb4-4b92-a32a-7278f8f19e40",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/34a4f506-5fb4-4b92-a32a-7278f8f19e40",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (34a4f506-5fb4-4b92-a32a-7278f8f19e40)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/395cc156-f85f-45be-8786-743a4e6d8a6c",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/395cc156-f85f-45be-8786-743a4e6d8a6c",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (395cc156-f85f-45be-8786-743a4e6d8a6c)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/3b4fb577-3201-495a-9f14-0b7bc875a278",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/3b4fb577-3201-495a-9f14-0b7bc875a278",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (3b4fb577-3201-495a-9f14-0b7bc875a278)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/44394056-5b4d-4d9a-b917-04c610fea0d0",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/44394056-5b4d-4d9a-b917-04c610fea0d0",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (44394056-5b4d-4d9a-b917-04c610fea0d0)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/45e343c9-c3a5-4417-ae16-7fa1fb3c0eec",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/45e343c9-c3a5-4417-ae16-7fa1fb3c0eec",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 2 char 2 on 3D rendering (45e343c9-c3a5-4417-ae16-7fa1fb3c0eec)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/4776df65-3c46-4ae6-a868-1f416c8a544b",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4776df65-3c46-4ae6-a868-1f416c8a544b",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 3 char 1 on 3D rendering (4776df65-3c46-4ae6-a868-1f416c8a544b)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/47fdacc5-6576-4c1e-8743-f93be32e998b",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/47fdacc5-6576-4c1e-8743-f93be32e998b",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 4 char 3 on 3D rendering (47fdacc5-6576-4c1e-8743-f93be32e998b)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/4a1aed45-24db-4cb9-a760-28486d7f6707",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4a1aed45-24db-4cb9-a760-28486d7f6707",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (4a1aed45-24db-4cb9-a760-28486d7f6707)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/4daae4c2-bd2a-4911-86e0-31dfeea22595",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4daae4c2-bd2a-4911-86e0-31dfeea22595",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 1 char 1 on 3D rendering (4daae4c2-bd2a-4911-86e0-31dfeea22595)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/4fde8eef-a86f-42b8-ba81-648d82f07acd",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4fde8eef-a86f-42b8-ba81-648d82f07acd",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (4fde8eef-a86f-42b8-ba81-648d82f07acd)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/543a567d-b925-4644-a115-da4fbd7cfa12",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/543a567d-b925-4644-a115-da4fbd7cfa12",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (543a567d-b925-4644-a115-da4fbd7cfa12)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/55939666-2415-432b-9868-8b13b83042b7",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/55939666-2415-432b-9868-8b13b83042b7",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (55939666-2415-432b-9868-8b13b83042b7)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/5d9921bb-d810-4885-91c5-18c64d14c511",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5d9921bb-d810-4885-91c5-18c64d14c511",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (5d9921bb-d810-4885-91c5-18c64d14c511)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/5dd92e14-a9a2-4153-b431-73e2f7832a64",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5dd92e14-a9a2-4153-b431-73e2f7832a64",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (5dd92e14-a9a2-4153-b431-73e2f7832a64)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/5fca1a08-a8a0-4c7a-b1dd-5746ea72ea71",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5fca1a08-a8a0-4c7a-b1dd-5746ea72ea71",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (5fca1a08-a8a0-4c7a-b1dd-5746ea72ea71)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/60530cc4-8562-410f-9624-d28fa4576258",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/60530cc4-8562-410f-9624-d28fa4576258",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (60530cc4-8562-410f-9624-d28fa4576258)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/610a351f-143b-4fc7-b89c-3f3373d88f46",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/610a351f-143b-4fc7-b89c-3f3373d88f46",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (610a351f-143b-4fc7-b89c-3f3373d88f46)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/6775d9df-397d-49bf-ae32-c94bf37b91bf",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6775d9df-397d-49bf-ae32-c94bf37b91bf",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (6775d9df-397d-49bf-ae32-c94bf37b91bf)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/69e6c278-caca-444d-b4bf-7b0ae06c6e98",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/69e6c278-caca-444d-b4bf-7b0ae06c6e98",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (69e6c278-caca-444d-b4bf-7b0ae06c6e98)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/6d5e30cb-70d8-4295-8bc6-d927c3706a75",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6d5e30cb-70d8-4295-8bc6-d927c3706a75",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (6d5e30cb-70d8-4295-8bc6-d927c3706a75)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/6e9d7570-b5e5-44a5-824c-8d68550bda5f",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6e9d7570-b5e5-44a5-824c-8d68550bda5f",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (6e9d7570-b5e5-44a5-824c-8d68550bda5f)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/701dcc35-84ef-4f69-87a2-04d67071badd",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/701dcc35-84ef-4f69-87a2-04d67071badd",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (701dcc35-84ef-4f69-87a2-04d67071badd)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/70a82f4b-157e-48d4-9e83-d646e488697e",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/70a82f4b-157e-48d4-9e83-d646e488697e",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (70a82f4b-157e-48d4-9e83-d646e488697e)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7109412e-1f80-469f-93df-aba62c22e4dd",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7109412e-1f80-469f-93df-aba62c22e4dd",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (7109412e-1f80-469f-93df-aba62c22e4dd)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/74320630-35e8-40e0-b826-766c3940e6fc",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/74320630-35e8-40e0-b826-766c3940e6fc",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (74320630-35e8-40e0-b826-766c3940e6fc)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/74c24a98-1f7a-4393-85ab-7a2f6519ad86",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/74c24a98-1f7a-4393-85ab-7a2f6519ad86",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (74c24a98-1f7a-4393-85ab-7a2f6519ad86)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7a8a8a3f-225b-4102-a306-41143980e4ff",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7a8a8a3f-225b-4102-a306-41143980e4ff",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (7a8a8a3f-225b-4102-a306-41143980e4ff)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7b837315-b8d6-4b7e-8491-4217efebe15d",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7b837315-b8d6-4b7e-8491-4217efebe15d",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (7b837315-b8d6-4b7e-8491-4217efebe15d)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7bcf54f2-b0a5-4dcc-b274-95afbae42f08",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7bcf54f2-b0a5-4dcc-b274-95afbae42f08",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (7bcf54f2-b0a5-4dcc-b274-95afbae42f08)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7e496dec-0a73-4273-af45-1a0bc5b5fe4d",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7e496dec-0a73-4273-af45-1a0bc5b5fe4d",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (7e496dec-0a73-4273-af45-1a0bc5b5fe4d)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7f2e6bd5-6a05-475e-841b-e2f8bde1cb54",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7f2e6bd5-6a05-475e-841b-e2f8bde1cb54",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (7f2e6bd5-6a05-475e-841b-e2f8bde1cb54)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7fd3c5c4-4ef4-41be-8709-9d2c488e32f0",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7fd3c5c4-4ef4-41be-8709-9d2c488e32f0",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (7fd3c5c4-4ef4-41be-8709-9d2c488e32f0)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/827cde28-5c40-448e-8406-d06bd1012216",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/827cde28-5c40-448e-8406-d06bd1012216",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (827cde28-5c40-448e-8406-d06bd1012216)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/845da737-5586-40c9-b2d3-8bcd0a45f32c",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/845da737-5586-40c9-b2d3-8bcd0a45f32c",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (845da737-5586-40c9-b2d3-8bcd0a45f32c)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/8767417a-3c4c-45c0-a68e-742aa6f5000b",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/8767417a-3c4c-45c0-a68e-742aa6f5000b",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (8767417a-3c4c-45c0-a68e-742aa6f5000b)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/87bf3688-62af-4454-a0c5-34abfb87668f",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/87bf3688-62af-4454-a0c5-34abfb87668f",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (87bf3688-62af-4454-a0c5-34abfb87668f)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/88084672-0d9c-4f66-9fb0-8a81165732df",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/88084672-0d9c-4f66-9fb0-8a81165732df",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (88084672-0d9c-4f66-9fb0-8a81165732df)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9249bcca-57c7-4bce-bc99-f1c4416702b1",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9249bcca-57c7-4bce-bc99-f1c4416702b1",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 1 char 2 on 3D rendering (9249bcca-57c7-4bce-bc99-f1c4416702b1)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/987a5913-1501-41ad-a49f-acd2f9b71b0a",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/987a5913-1501-41ad-a49f-acd2f9b71b0a",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (987a5913-1501-41ad-a49f-acd2f9b71b0a)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9a3572bc-d972-43e5-8aa3-b18876e717fd",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a3572bc-d972-43e5-8aa3-b18876e717fd",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 2 char 1 on 3D rendering (9a3572bc-d972-43e5-8aa3-b18876e717fd)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9a961dfe-7891-44ec-b13e-b9f7726819a1",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a961dfe-7891-44ec-b13e-b9f7726819a1",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (9a961dfe-7891-44ec-b13e-b9f7726819a1)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9b910a29-b0d7-4a00-8e7d-8ac16dd8319a",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9b910a29-b0d7-4a00-8e7d-8ac16dd8319a",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (9b910a29-b0d7-4a00-8e7d-8ac16dd8319a)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9cb25054-7a21-4f3b-8d06-6863d14e1c5d",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9cb25054-7a21-4f3b-8d06-6863d14e1c5d",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (9cb25054-7a21-4f3b-8d06-6863d14e1c5d)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9e548954-e3a5-415e-9794-24306e536b5c",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9e548954-e3a5-415e-9794-24306e536b5c",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (9e548954-e3a5-415e-9794-24306e536b5c)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9f63d152-5f4c-4ab2-975a-df6e89c3054d",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9f63d152-5f4c-4ab2-975a-df6e89c3054d",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (9f63d152-5f4c-4ab2-975a-df6e89c3054d)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/a1ae4737-511b-4747-a1ee-6c2d32e11fc3",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/a1ae4737-511b-4747-a1ee-6c2d32e11fc3",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (a1ae4737-511b-4747-a1ee-6c2d32e11fc3)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/a75e0570-568d-4f41-9c3d-ccd54263c76c",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/a75e0570-568d-4f41-9c3d-ccd54263c76c",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (a75e0570-568d-4f41-9c3d-ccd54263c76c)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/aaf1409a-87bb-4dc4-aac6-880be041ad64",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/aaf1409a-87bb-4dc4-aac6-880be041ad64",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 3 char 3 on 3D rendering (aaf1409a-87bb-4dc4-aac6-880be041ad64)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ac299c35-0d28-4d34-919d-8b3bb7863dcd",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ac299c35-0d28-4d34-919d-8b3bb7863dcd",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (ac299c35-0d28-4d34-919d-8b3bb7863dcd)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/b62757ff-11db-44a5-b5c4-3b2a16826875",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b62757ff-11db-44a5-b5c4-3b2a16826875",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (b62757ff-11db-44a5-b5c4-3b2a16826875)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/b7578865-d9d5-4a16-bff5-b58f112773ce",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b7578865-d9d5-4a16-bff5-b58f112773ce",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (b7578865-d9d5-4a16-bff5-b58f112773ce)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/b9ccf5ba-ed50-4281-9f84-2b86b8f9edc9",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b9ccf5ba-ed50-4281-9f84-2b86b8f9edc9",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (b9ccf5ba-ed50-4281-9f84-2b86b8f9edc9)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ba4bd60c-9a11-4577-b712-807036e61a4b",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ba4bd60c-9a11-4577-b712-807036e61a4b",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (ba4bd60c-9a11-4577-b712-807036e61a4b)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ba670c4e-3a5b-4dfb-827a-990c81adb88f",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ba670c4e-3a5b-4dfb-827a-990c81adb88f",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (ba670c4e-3a5b-4dfb-827a-990c81adb88f)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/bd9c5134-e3b6-4a7e-9603-91316ec2a7e4",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/bd9c5134-e3b6-4a7e-9603-91316ec2a7e4",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (bd9c5134-e3b6-4a7e-9603-91316ec2a7e4)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/be1b3527-e84e-486c-80eb-ce56e316f0be",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/be1b3527-e84e-486c-80eb-ce56e316f0be",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (be1b3527-e84e-486c-80eb-ce56e316f0be)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/c475f2e0-9bf1-4e94-b6a9-ad7b0158a2a9",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c475f2e0-9bf1-4e94-b6a9-ad7b0158a2a9",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (c475f2e0-9bf1-4e94-b6a9-ad7b0158a2a9)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/c50c7e91-e1fd-44e0-af0c-e05f3b4de41e",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c50c7e91-e1fd-44e0-af0c-e05f3b4de41e",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 2 char 3 on 3D rendering (c50c7e91-e1fd-44e0-af0c-e05f3b4de41e)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/c57ebe4a-256f-42a2-91e1-e11eeec90ffe",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c57ebe4a-256f-42a2-91e1-e11eeec90ffe",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (c57ebe4a-256f-42a2-91e1-e11eeec90ffe)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/c745a7af-3396-4d48-9bbb-b2f4aae36105",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c745a7af-3396-4d48-9bbb-b2f4aae36105",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (c745a7af-3396-4d48-9bbb-b2f4aae36105)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/cc0ff0d6-f1fd-48a2-97b9-18f52544cb28",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/cc0ff0d6-f1fd-48a2-97b9-18f52544cb28",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (cc0ff0d6-f1fd-48a2-97b9-18f52544cb28)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/cc7b4748-5fd7-40a6-84ae-354cad301886",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/cc7b4748-5fd7-40a6-84ae-354cad301886",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (cc7b4748-5fd7-40a6-84ae-354cad301886)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ce77c897-18f9-4776-a05e-c742be8c95c4",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ce77c897-18f9-4776-a05e-c742be8c95c4",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (ce77c897-18f9-4776-a05e-c742be8c95c4)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d08674f8-cdbe-47ad-be44-f0b48d7850f2",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d08674f8-cdbe-47ad-be44-f0b48d7850f2",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (d08674f8-cdbe-47ad-be44-f0b48d7850f2)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d15a7179-a4c7-4b4c-a11a-9ee84f4691ec",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d15a7179-a4c7-4b4c-a11a-9ee84f4691ec",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (d15a7179-a4c7-4b4c-a11a-9ee84f4691ec)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d3ca46ed-0156-4a04-9c7c-a5d6fbc66144",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d3ca46ed-0156-4a04-9c7c-a5d6fbc66144",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (d3ca46ed-0156-4a04-9c7c-a5d6fbc66144)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d48fef72-5219-4b73-bf9d-534c60c62956",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d48fef72-5219-4b73-bf9d-534c60c62956",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 1 char 3 on 3D rendering (d48fef72-5219-4b73-bf9d-534c60c62956)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d59cd306-5b7e-493b-adbf-35c6092d7596",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d59cd306-5b7e-493b-adbf-35c6092d7596",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (d59cd306-5b7e-493b-adbf-35c6092d7596)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d79ca86c-6f7a-44b4-b499-3161e787e3d8",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d79ca86c-6f7a-44b4-b499-3161e787e3d8",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 4 char 2 on 3D rendering (d79ca86c-6f7a-44b4-b499-3161e787e3d8)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d7a3b6e8-72db-4a59-9e77-0844a88066d9",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d7a3b6e8-72db-4a59-9e77-0844a88066d9",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (d7a3b6e8-72db-4a59-9e77-0844a88066d9)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/dc07557b-f507-41df-933e-a980414d76fe",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/dc07557b-f507-41df-933e-a980414d76fe",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (dc07557b-f507-41df-933e-a980414d76fe)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/dce31708-a467-44e3-b63f-e0a0bf8fcf7f",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/dce31708-a467-44e3-b63f-e0a0bf8fcf7f",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (dce31708-a467-44e3-b63f-e0a0bf8fcf7f)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/de61550e-85da-4c06-a8d9-737d46509629",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/de61550e-85da-4c06-a8d9-737d46509629",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (de61550e-85da-4c06-a8d9-737d46509629)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e0671dc3-f247-4c43-9187-61ec411c25cb",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0671dc3-f247-4c43-9187-61ec411c25cb",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (e0671dc3-f247-4c43-9187-61ec411c25cb)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e0948c0d-f255-4382-8304-d8ca05c68dff",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0948c0d-f255-4382-8304-d8ca05c68dff",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (e0948c0d-f255-4382-8304-d8ca05c68dff)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e0f5680c-9972-4db0-b693-7b4eb827de86",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0f5680c-9972-4db0-b693-7b4eb827de86",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (e0f5680c-9972-4db0-b693-7b4eb827de86)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e384c172-4242-406e-964c-316b8c4fe59d",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e384c172-4242-406e-964c-316b8c4fe59d",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (e384c172-4242-406e-964c-316b8c4fe59d)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e3e564c3-309b-4d3e-9ca3-6757cef13dcd",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e3e564c3-309b-4d3e-9ca3-6757cef13dcd",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (e3e564c3-309b-4d3e-9ca3-6757cef13dcd)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e57afe5b-16df-4194-b793-8ad5beb74fe0",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e57afe5b-16df-4194-b793-8ad5beb74fe0",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 4 char 1 on 3D rendering (e57afe5b-16df-4194-b793-8ad5beb74fe0)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e5b147fa-6e22-41e6-a234-a180ddc2efe9",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e5b147fa-6e22-41e6-a234-a180ddc2efe9",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (e5b147fa-6e22-41e6-a234-a180ddc2efe9)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e6ae5599-1a9d-4f50-abb2-970f9428a1e7",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e6ae5599-1a9d-4f50-abb2-970f9428a1e7",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (e6ae5599-1a9d-4f50-abb2-970f9428a1e7)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e889905d-7796-46b1-b8df-8b4f7cead442",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e889905d-7796-46b1-b8df-8b4f7cead442",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (e889905d-7796-46b1-b8df-8b4f7cead442)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ea94292a-62c2-4775-bc0a-cbc67f4e311c",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ea94292a-62c2-4775-bc0a-cbc67f4e311c",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (ea94292a-62c2-4775-bc0a-cbc67f4e311c)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/eefb61b9-f4c9-4428-89ce-716395059391",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/eefb61b9-f4c9-4428-89ce-716395059391",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (eefb61b9-f4c9-4428-89ce-716395059391)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/f81a66b0-e180-409c-8506-53f42837c34b",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f81a66b0-e180-409c-8506-53f42837c34b",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (f81a66b0-e180-409c-8506-53f42837c34b)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/f8aed9e2-4e01-4ea0-abe9-26bddf84f1b6",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f8aed9e2-4e01-4ea0-abe9-26bddf84f1b6",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (f8aed9e2-4e01-4ea0-abe9-26bddf84f1b6)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/f968847c-2649-4225-8499-8c048c086f96",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f968847c-2649-4225-8499-8c048c086f96",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (f968847c-2649-4225-8499-8c048c086f96)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/fb1d478f-d4d1-484f-8bc2-66a50fe6f6fa",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb1d478f-d4d1-484f-8bc2-66a50fe6f6fa",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (fb1d478f-d4d1-484f-8bc2-66a50fe6f6fa)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/fb75638a-5db1-415f-9d86-bc88d8a3c4dc",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb75638a-5db1-415f-9d86-bc88d8a3c4dc",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (fb75638a-5db1-415f-9d86-bc88d8a3c4dc)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/00cda0d2-a7fb-4e22-b367-242a7c8119fc_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/00cda0d2-a7fb-4e22-b367-242a7c8119fc_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (00cda0d2-a7fb-4e22-b367-242a7c8119fc_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/00cda0d2-a7fb-4e22-b367-242a7c8119fc_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/00cda0d2-a7fb-4e22-b367-242a7c8119fc_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (00cda0d2-a7fb-4e22-b367-242a7c8119fc_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/059d6ee0-b203-4059-a996-767b25994eb7_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/059d6ee0-b203-4059-a996-767b25994eb7_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (059d6ee0-b203-4059-a996-767b25994eb7_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/059d6ee0-b203-4059-a996-767b25994eb7_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/059d6ee0-b203-4059-a996-767b25994eb7_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (059d6ee0-b203-4059-a996-767b25994eb7_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/0753a90c-1198-4ddd-b818-571579b2a7cf_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0753a90c-1198-4ddd-b818-571579b2a7cf_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (0753a90c-1198-4ddd-b818-571579b2a7cf_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/0753a90c-1198-4ddd-b818-571579b2a7cf_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0753a90c-1198-4ddd-b818-571579b2a7cf_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (0753a90c-1198-4ddd-b818-571579b2a7cf_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/0821f61c-c8f6-4d7e-8f32-976f25af4bb9_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0821f61c-c8f6-4d7e-8f32-976f25af4bb9_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (0821f61c-c8f6-4d7e-8f32-976f25af4bb9_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/0821f61c-c8f6-4d7e-8f32-976f25af4bb9_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0821f61c-c8f6-4d7e-8f32-976f25af4bb9_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (0821f61c-c8f6-4d7e-8f32-976f25af4bb9_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/09a66ef9-8b3c-488b-ad51-d280404f2a7f_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/09a66ef9-8b3c-488b-ad51-d280404f2a7f_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 2 char 8 on 3D rendering (09a66ef9-8b3c-488b-ad51-d280404f2a7f_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/09a66ef9-8b3c-488b-ad51-d280404f2a7f_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/09a66ef9-8b3c-488b-ad51-d280404f2a7f_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 2 char 8 on 3D rendering (09a66ef9-8b3c-488b-ad51-d280404f2a7f_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/0d375432-3447-40f2-b1ae-d82104591707_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0d375432-3447-40f2-b1ae-d82104591707_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (0d375432-3447-40f2-b1ae-d82104591707_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/0d375432-3447-40f2-b1ae-d82104591707_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0d375432-3447-40f2-b1ae-d82104591707_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (0d375432-3447-40f2-b1ae-d82104591707_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/0e7063b6-b4a2-4ade-8ad8-a2bf842709d8_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e7063b6-b4a2-4ade-8ad8-a2bf842709d8_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 1 char 4 on 3D rendering (0e7063b6-b4a2-4ade-8ad8-a2bf842709d8_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/0e7063b6-b4a2-4ade-8ad8-a2bf842709d8_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e7063b6-b4a2-4ade-8ad8-a2bf842709d8_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 1 char 4 on 3D rendering (0e7063b6-b4a2-4ade-8ad8-a2bf842709d8_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/0e8e1d31-9942-4cdf-8f68-e01ff4a51926_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e8e1d31-9942-4cdf-8f68-e01ff4a51926_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (0e8e1d31-9942-4cdf-8f68-e01ff4a51926_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/0e8e1d31-9942-4cdf-8f68-e01ff4a51926_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e8e1d31-9942-4cdf-8f68-e01ff4a51926_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (0e8e1d31-9942-4cdf-8f68-e01ff4a51926_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/0f55aeec-eefc-4ac2-baf1-f5d15f762d6b_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0f55aeec-eefc-4ac2-baf1-f5d15f762d6b_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (0f55aeec-eefc-4ac2-baf1-f5d15f762d6b_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/0f55aeec-eefc-4ac2-baf1-f5d15f762d6b_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0f55aeec-eefc-4ac2-baf1-f5d15f762d6b_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (0f55aeec-eefc-4ac2-baf1-f5d15f762d6b_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/119e80df-5bb3-4733-9840-65b48dc8a458_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/119e80df-5bb3-4733-9840-65b48dc8a458_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (119e80df-5bb3-4733-9840-65b48dc8a458_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/119e80df-5bb3-4733-9840-65b48dc8a458_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/119e80df-5bb3-4733-9840-65b48dc8a458_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (119e80df-5bb3-4733-9840-65b48dc8a458_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/13b2fdfc-a233-430e-a2c6-6abeb016aaeb_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/13b2fdfc-a233-430e-a2c6-6abeb016aaeb_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (13b2fdfc-a233-430e-a2c6-6abeb016aaeb_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/13b2fdfc-a233-430e-a2c6-6abeb016aaeb_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/13b2fdfc-a233-430e-a2c6-6abeb016aaeb_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (13b2fdfc-a233-430e-a2c6-6abeb016aaeb_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/18233348-81d5-4d69-8977-e5544363b7e8_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/18233348-81d5-4d69-8977-e5544363b7e8_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (18233348-81d5-4d69-8977-e5544363b7e8_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/18233348-81d5-4d69-8977-e5544363b7e8_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/18233348-81d5-4d69-8977-e5544363b7e8_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (18233348-81d5-4d69-8977-e5544363b7e8_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/1923adc1-8dc0-48e6-b177-58c1d1d31cc7_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1923adc1-8dc0-48e6-b177-58c1d1d31cc7_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (1923adc1-8dc0-48e6-b177-58c1d1d31cc7_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/1923adc1-8dc0-48e6-b177-58c1d1d31cc7_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1923adc1-8dc0-48e6-b177-58c1d1d31cc7_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (1923adc1-8dc0-48e6-b177-58c1d1d31cc7_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/1c59a341-b59f-4ead-937a-d5dfea54170e_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c59a341-b59f-4ead-937a-d5dfea54170e_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (1c59a341-b59f-4ead-937a-d5dfea54170e_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/1c59a341-b59f-4ead-937a-d5dfea54170e_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c59a341-b59f-4ead-937a-d5dfea54170e_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (1c59a341-b59f-4ead-937a-d5dfea54170e_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/1c74c217-b7cb-4ac8-92d8-86051e811659_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c74c217-b7cb-4ac8-92d8-86051e811659_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 3 char 2 on 3D rendering (1c74c217-b7cb-4ac8-92d8-86051e811659_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/1c74c217-b7cb-4ac8-92d8-86051e811659_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c74c217-b7cb-4ac8-92d8-86051e811659_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 3 char 2 on 3D rendering (1c74c217-b7cb-4ac8-92d8-86051e811659_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/20238516-d42d-4c23-82f8-94626948d45b_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/20238516-d42d-4c23-82f8-94626948d45b_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (20238516-d42d-4c23-82f8-94626948d45b_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/20238516-d42d-4c23-82f8-94626948d45b_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/20238516-d42d-4c23-82f8-94626948d45b_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (20238516-d42d-4c23-82f8-94626948d45b_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/22ce9eb9-dcbb-4bc0-8af0-0dc8e604f2fb_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/22ce9eb9-dcbb-4bc0-8af0-0dc8e604f2fb_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (22ce9eb9-dcbb-4bc0-8af0-0dc8e604f2fb_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/22ce9eb9-dcbb-4bc0-8af0-0dc8e604f2fb_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/22ce9eb9-dcbb-4bc0-8af0-0dc8e604f2fb_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (22ce9eb9-dcbb-4bc0-8af0-0dc8e604f2fb_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/2333d226-57d3-4122-82e5-1eb5858315a7_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2333d226-57d3-4122-82e5-1eb5858315a7_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (2333d226-57d3-4122-82e5-1eb5858315a7_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/2333d226-57d3-4122-82e5-1eb5858315a7_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2333d226-57d3-4122-82e5-1eb5858315a7_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (2333d226-57d3-4122-82e5-1eb5858315a7_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/28b2e58a-c464-462e-aa73-a369ffaee903_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/28b2e58a-c464-462e-aa73-a369ffaee903_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 2 char 7 on 3D rendering (28b2e58a-c464-462e-aa73-a369ffaee903_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/28b2e58a-c464-462e-aa73-a369ffaee903_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/28b2e58a-c464-462e-aa73-a369ffaee903_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 2 char 7 on 3D rendering (28b2e58a-c464-462e-aa73-a369ffaee903_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/2a8bcac4-2342-40c2-932f-29b5931bd98a_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2a8bcac4-2342-40c2-932f-29b5931bd98a_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (2a8bcac4-2342-40c2-932f-29b5931bd98a_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/2a8bcac4-2342-40c2-932f-29b5931bd98a_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2a8bcac4-2342-40c2-932f-29b5931bd98a_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (2a8bcac4-2342-40c2-932f-29b5931bd98a_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/2de86608-03d1-4572-ab60-69a9188f6b1d_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2de86608-03d1-4572-ab60-69a9188f6b1d_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (2de86608-03d1-4572-ab60-69a9188f6b1d_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/2de86608-03d1-4572-ab60-69a9188f6b1d_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2de86608-03d1-4572-ab60-69a9188f6b1d_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (2de86608-03d1-4572-ab60-69a9188f6b1d_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/2e103f24-158a-4017-bfa6-ad96d5bfac35_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2e103f24-158a-4017-bfa6-ad96d5bfac35_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (2e103f24-158a-4017-bfa6-ad96d5bfac35_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/2e103f24-158a-4017-bfa6-ad96d5bfac35_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2e103f24-158a-4017-bfa6-ad96d5bfac35_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (2e103f24-158a-4017-bfa6-ad96d5bfac35_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/2e937f6f-e410-41b8-b5f3-f3eda97915b4_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2e937f6f-e410-41b8-b5f3-f3eda97915b4_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (2e937f6f-e410-41b8-b5f3-f3eda97915b4_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/2e937f6f-e410-41b8-b5f3-f3eda97915b4_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2e937f6f-e410-41b8-b5f3-f3eda97915b4_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (2e937f6f-e410-41b8-b5f3-f3eda97915b4_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/2f7901c7-4ed4-4135-aed7-f2ee7ceedfec_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2f7901c7-4ed4-4135-aed7-f2ee7ceedfec_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (2f7901c7-4ed4-4135-aed7-f2ee7ceedfec_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/2f7901c7-4ed4-4135-aed7-f2ee7ceedfec_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2f7901c7-4ed4-4135-aed7-f2ee7ceedfec_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (2f7901c7-4ed4-4135-aed7-f2ee7ceedfec_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/302f462b-5a85-4129-ab64-71b9c5e7de77_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/302f462b-5a85-4129-ab64-71b9c5e7de77_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (302f462b-5a85-4129-ab64-71b9c5e7de77_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/302f462b-5a85-4129-ab64-71b9c5e7de77_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/302f462b-5a85-4129-ab64-71b9c5e7de77_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (302f462b-5a85-4129-ab64-71b9c5e7de77_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/32de1d43-3933-412a-ba17-0f3053a29eee_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/32de1d43-3933-412a-ba17-0f3053a29eee_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 4 char 4 on 3D rendering (32de1d43-3933-412a-ba17-0f3053a29eee_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/32de1d43-3933-412a-ba17-0f3053a29eee_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/32de1d43-3933-412a-ba17-0f3053a29eee_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 4 char 4 on 3D rendering (32de1d43-3933-412a-ba17-0f3053a29eee_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/34a4f506-5fb4-4b92-a32a-7278f8f19e40_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/34a4f506-5fb4-4b92-a32a-7278f8f19e40_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (34a4f506-5fb4-4b92-a32a-7278f8f19e40_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/34a4f506-5fb4-4b92-a32a-7278f8f19e40_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/34a4f506-5fb4-4b92-a32a-7278f8f19e40_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (34a4f506-5fb4-4b92-a32a-7278f8f19e40_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/395cc156-f85f-45be-8786-743a4e6d8a6c_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/395cc156-f85f-45be-8786-743a4e6d8a6c_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (395cc156-f85f-45be-8786-743a4e6d8a6c_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/395cc156-f85f-45be-8786-743a4e6d8a6c_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/395cc156-f85f-45be-8786-743a4e6d8a6c_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (395cc156-f85f-45be-8786-743a4e6d8a6c_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/3b4fb577-3201-495a-9f14-0b7bc875a278_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/3b4fb577-3201-495a-9f14-0b7bc875a278_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (3b4fb577-3201-495a-9f14-0b7bc875a278_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/3b4fb577-3201-495a-9f14-0b7bc875a278_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/3b4fb577-3201-495a-9f14-0b7bc875a278_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (3b4fb577-3201-495a-9f14-0b7bc875a278_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/44394056-5b4d-4d9a-b917-04c610fea0d0_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/44394056-5b4d-4d9a-b917-04c610fea0d0_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (44394056-5b4d-4d9a-b917-04c610fea0d0_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/44394056-5b4d-4d9a-b917-04c610fea0d0_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/44394056-5b4d-4d9a-b917-04c610fea0d0_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (44394056-5b4d-4d9a-b917-04c610fea0d0_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/45e343c9-c3a5-4417-ae16-7fa1fb3c0eec_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/45e343c9-c3a5-4417-ae16-7fa1fb3c0eec_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 2 char 2 on 3D rendering (45e343c9-c3a5-4417-ae16-7fa1fb3c0eec_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/45e343c9-c3a5-4417-ae16-7fa1fb3c0eec_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/45e343c9-c3a5-4417-ae16-7fa1fb3c0eec_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 2 char 2 on 3D rendering (45e343c9-c3a5-4417-ae16-7fa1fb3c0eec_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/4776df65-3c46-4ae6-a868-1f416c8a544b_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4776df65-3c46-4ae6-a868-1f416c8a544b_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 3 char 1 on 3D rendering (4776df65-3c46-4ae6-a868-1f416c8a544b_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/4776df65-3c46-4ae6-a868-1f416c8a544b_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4776df65-3c46-4ae6-a868-1f416c8a544b_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 3 char 1 on 3D rendering (4776df65-3c46-4ae6-a868-1f416c8a544b_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/47fdacc5-6576-4c1e-8743-f93be32e998b_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/47fdacc5-6576-4c1e-8743-f93be32e998b_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 4 char 3 on 3D rendering (47fdacc5-6576-4c1e-8743-f93be32e998b_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/47fdacc5-6576-4c1e-8743-f93be32e998b_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/47fdacc5-6576-4c1e-8743-f93be32e998b_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 4 char 3 on 3D rendering (47fdacc5-6576-4c1e-8743-f93be32e998b_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/4a1aed45-24db-4cb9-a760-28486d7f6707_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4a1aed45-24db-4cb9-a760-28486d7f6707_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (4a1aed45-24db-4cb9-a760-28486d7f6707_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/4a1aed45-24db-4cb9-a760-28486d7f6707_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4a1aed45-24db-4cb9-a760-28486d7f6707_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (4a1aed45-24db-4cb9-a760-28486d7f6707_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/4daae4c2-bd2a-4911-86e0-31dfeea22595_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4daae4c2-bd2a-4911-86e0-31dfeea22595_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 1 char 1 on 3D rendering (4daae4c2-bd2a-4911-86e0-31dfeea22595_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/4daae4c2-bd2a-4911-86e0-31dfeea22595_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4daae4c2-bd2a-4911-86e0-31dfeea22595_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 1 char 1 on 3D rendering (4daae4c2-bd2a-4911-86e0-31dfeea22595_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/4fde8eef-a86f-42b8-ba81-648d82f07acd_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4fde8eef-a86f-42b8-ba81-648d82f07acd_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (4fde8eef-a86f-42b8-ba81-648d82f07acd_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/4fde8eef-a86f-42b8-ba81-648d82f07acd_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4fde8eef-a86f-42b8-ba81-648d82f07acd_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (4fde8eef-a86f-42b8-ba81-648d82f07acd_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/543a567d-b925-4644-a115-da4fbd7cfa12_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/543a567d-b925-4644-a115-da4fbd7cfa12_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (543a567d-b925-4644-a115-da4fbd7cfa12_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/543a567d-b925-4644-a115-da4fbd7cfa12_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/543a567d-b925-4644-a115-da4fbd7cfa12_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (543a567d-b925-4644-a115-da4fbd7cfa12_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/55939666-2415-432b-9868-8b13b83042b7_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/55939666-2415-432b-9868-8b13b83042b7_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (55939666-2415-432b-9868-8b13b83042b7_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/55939666-2415-432b-9868-8b13b83042b7_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/55939666-2415-432b-9868-8b13b83042b7_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (55939666-2415-432b-9868-8b13b83042b7_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/5d9921bb-d810-4885-91c5-18c64d14c511_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5d9921bb-d810-4885-91c5-18c64d14c511_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (5d9921bb-d810-4885-91c5-18c64d14c511_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/5d9921bb-d810-4885-91c5-18c64d14c511_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5d9921bb-d810-4885-91c5-18c64d14c511_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (5d9921bb-d810-4885-91c5-18c64d14c511_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/5dd92e14-a9a2-4153-b431-73e2f7832a64_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5dd92e14-a9a2-4153-b431-73e2f7832a64_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (5dd92e14-a9a2-4153-b431-73e2f7832a64_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/5dd92e14-a9a2-4153-b431-73e2f7832a64_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5dd92e14-a9a2-4153-b431-73e2f7832a64_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (5dd92e14-a9a2-4153-b431-73e2f7832a64_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/5fca1a08-a8a0-4c7a-b1dd-5746ea72ea71_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5fca1a08-a8a0-4c7a-b1dd-5746ea72ea71_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (5fca1a08-a8a0-4c7a-b1dd-5746ea72ea71_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/5fca1a08-a8a0-4c7a-b1dd-5746ea72ea71_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5fca1a08-a8a0-4c7a-b1dd-5746ea72ea71_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (5fca1a08-a8a0-4c7a-b1dd-5746ea72ea71_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/60530cc4-8562-410f-9624-d28fa4576258_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/60530cc4-8562-410f-9624-d28fa4576258_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (60530cc4-8562-410f-9624-d28fa4576258_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/60530cc4-8562-410f-9624-d28fa4576258_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/60530cc4-8562-410f-9624-d28fa4576258_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (60530cc4-8562-410f-9624-d28fa4576258_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/610a351f-143b-4fc7-b89c-3f3373d88f46_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/610a351f-143b-4fc7-b89c-3f3373d88f46_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (610a351f-143b-4fc7-b89c-3f3373d88f46_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/610a351f-143b-4fc7-b89c-3f3373d88f46_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/610a351f-143b-4fc7-b89c-3f3373d88f46_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (610a351f-143b-4fc7-b89c-3f3373d88f46_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/6775d9df-397d-49bf-ae32-c94bf37b91bf_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6775d9df-397d-49bf-ae32-c94bf37b91bf_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (6775d9df-397d-49bf-ae32-c94bf37b91bf_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/6775d9df-397d-49bf-ae32-c94bf37b91bf_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6775d9df-397d-49bf-ae32-c94bf37b91bf_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (6775d9df-397d-49bf-ae32-c94bf37b91bf_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/69e6c278-caca-444d-b4bf-7b0ae06c6e98_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/69e6c278-caca-444d-b4bf-7b0ae06c6e98_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (69e6c278-caca-444d-b4bf-7b0ae06c6e98_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/69e6c278-caca-444d-b4bf-7b0ae06c6e98_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/69e6c278-caca-444d-b4bf-7b0ae06c6e98_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (69e6c278-caca-444d-b4bf-7b0ae06c6e98_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/6d5e30cb-70d8-4295-8bc6-d927c3706a75_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6d5e30cb-70d8-4295-8bc6-d927c3706a75_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (6d5e30cb-70d8-4295-8bc6-d927c3706a75_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/6d5e30cb-70d8-4295-8bc6-d927c3706a75_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6d5e30cb-70d8-4295-8bc6-d927c3706a75_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (6d5e30cb-70d8-4295-8bc6-d927c3706a75_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/6e9d7570-b5e5-44a5-824c-8d68550bda5f_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6e9d7570-b5e5-44a5-824c-8d68550bda5f_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (6e9d7570-b5e5-44a5-824c-8d68550bda5f_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/6e9d7570-b5e5-44a5-824c-8d68550bda5f_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6e9d7570-b5e5-44a5-824c-8d68550bda5f_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (6e9d7570-b5e5-44a5-824c-8d68550bda5f_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/701dcc35-84ef-4f69-87a2-04d67071badd_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/701dcc35-84ef-4f69-87a2-04d67071badd_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (701dcc35-84ef-4f69-87a2-04d67071badd_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/701dcc35-84ef-4f69-87a2-04d67071badd_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/701dcc35-84ef-4f69-87a2-04d67071badd_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (701dcc35-84ef-4f69-87a2-04d67071badd_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/70a82f4b-157e-48d4-9e83-d646e488697e_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/70a82f4b-157e-48d4-9e83-d646e488697e_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (70a82f4b-157e-48d4-9e83-d646e488697e_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/70a82f4b-157e-48d4-9e83-d646e488697e_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/70a82f4b-157e-48d4-9e83-d646e488697e_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (70a82f4b-157e-48d4-9e83-d646e488697e_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7109412e-1f80-469f-93df-aba62c22e4dd_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7109412e-1f80-469f-93df-aba62c22e4dd_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (7109412e-1f80-469f-93df-aba62c22e4dd_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7109412e-1f80-469f-93df-aba62c22e4dd_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7109412e-1f80-469f-93df-aba62c22e4dd_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (7109412e-1f80-469f-93df-aba62c22e4dd_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/74320630-35e8-40e0-b826-766c3940e6fc_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/74320630-35e8-40e0-b826-766c3940e6fc_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (74320630-35e8-40e0-b826-766c3940e6fc_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/74320630-35e8-40e0-b826-766c3940e6fc_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/74320630-35e8-40e0-b826-766c3940e6fc_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (74320630-35e8-40e0-b826-766c3940e6fc_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/74c24a98-1f7a-4393-85ab-7a2f6519ad86_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/74c24a98-1f7a-4393-85ab-7a2f6519ad86_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (74c24a98-1f7a-4393-85ab-7a2f6519ad86_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/74c24a98-1f7a-4393-85ab-7a2f6519ad86_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/74c24a98-1f7a-4393-85ab-7a2f6519ad86_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (74c24a98-1f7a-4393-85ab-7a2f6519ad86_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7a8a8a3f-225b-4102-a306-41143980e4ff_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7a8a8a3f-225b-4102-a306-41143980e4ff_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (7a8a8a3f-225b-4102-a306-41143980e4ff_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7a8a8a3f-225b-4102-a306-41143980e4ff_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7a8a8a3f-225b-4102-a306-41143980e4ff_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (7a8a8a3f-225b-4102-a306-41143980e4ff_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7b837315-b8d6-4b7e-8491-4217efebe15d_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7b837315-b8d6-4b7e-8491-4217efebe15d_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (7b837315-b8d6-4b7e-8491-4217efebe15d_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7b837315-b8d6-4b7e-8491-4217efebe15d_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7b837315-b8d6-4b7e-8491-4217efebe15d_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (7b837315-b8d6-4b7e-8491-4217efebe15d_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7bcf54f2-b0a5-4dcc-b274-95afbae42f08_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7bcf54f2-b0a5-4dcc-b274-95afbae42f08_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (7bcf54f2-b0a5-4dcc-b274-95afbae42f08_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7bcf54f2-b0a5-4dcc-b274-95afbae42f08_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7bcf54f2-b0a5-4dcc-b274-95afbae42f08_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (7bcf54f2-b0a5-4dcc-b274-95afbae42f08_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7e496dec-0a73-4273-af45-1a0bc5b5fe4d_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7e496dec-0a73-4273-af45-1a0bc5b5fe4d_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (7e496dec-0a73-4273-af45-1a0bc5b5fe4d_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7e496dec-0a73-4273-af45-1a0bc5b5fe4d_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7e496dec-0a73-4273-af45-1a0bc5b5fe4d_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (7e496dec-0a73-4273-af45-1a0bc5b5fe4d_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7f2e6bd5-6a05-475e-841b-e2f8bde1cb54_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7f2e6bd5-6a05-475e-841b-e2f8bde1cb54_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (7f2e6bd5-6a05-475e-841b-e2f8bde1cb54_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7f2e6bd5-6a05-475e-841b-e2f8bde1cb54_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7f2e6bd5-6a05-475e-841b-e2f8bde1cb54_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (7f2e6bd5-6a05-475e-841b-e2f8bde1cb54_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7fd3c5c4-4ef4-41be-8709-9d2c488e32f0_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7fd3c5c4-4ef4-41be-8709-9d2c488e32f0_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (7fd3c5c4-4ef4-41be-8709-9d2c488e32f0_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7fd3c5c4-4ef4-41be-8709-9d2c488e32f0_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7fd3c5c4-4ef4-41be-8709-9d2c488e32f0_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (7fd3c5c4-4ef4-41be-8709-9d2c488e32f0_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/827cde28-5c40-448e-8406-d06bd1012216_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/827cde28-5c40-448e-8406-d06bd1012216_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (827cde28-5c40-448e-8406-d06bd1012216_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/827cde28-5c40-448e-8406-d06bd1012216_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/827cde28-5c40-448e-8406-d06bd1012216_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (827cde28-5c40-448e-8406-d06bd1012216_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/845da737-5586-40c9-b2d3-8bcd0a45f32c_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/845da737-5586-40c9-b2d3-8bcd0a45f32c_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (845da737-5586-40c9-b2d3-8bcd0a45f32c_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/845da737-5586-40c9-b2d3-8bcd0a45f32c_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/845da737-5586-40c9-b2d3-8bcd0a45f32c_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (845da737-5586-40c9-b2d3-8bcd0a45f32c_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/8767417a-3c4c-45c0-a68e-742aa6f5000b_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/8767417a-3c4c-45c0-a68e-742aa6f5000b_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (8767417a-3c4c-45c0-a68e-742aa6f5000b_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/8767417a-3c4c-45c0-a68e-742aa6f5000b_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/8767417a-3c4c-45c0-a68e-742aa6f5000b_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (8767417a-3c4c-45c0-a68e-742aa6f5000b_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/87bf3688-62af-4454-a0c5-34abfb87668f_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/87bf3688-62af-4454-a0c5-34abfb87668f_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (87bf3688-62af-4454-a0c5-34abfb87668f_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/87bf3688-62af-4454-a0c5-34abfb87668f_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/87bf3688-62af-4454-a0c5-34abfb87668f_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (87bf3688-62af-4454-a0c5-34abfb87668f_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/88084672-0d9c-4f66-9fb0-8a81165732df_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/88084672-0d9c-4f66-9fb0-8a81165732df_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (88084672-0d9c-4f66-9fb0-8a81165732df_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/88084672-0d9c-4f66-9fb0-8a81165732df_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/88084672-0d9c-4f66-9fb0-8a81165732df_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (88084672-0d9c-4f66-9fb0-8a81165732df_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9249bcca-57c7-4bce-bc99-f1c4416702b1_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9249bcca-57c7-4bce-bc99-f1c4416702b1_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 1 char 2 on 3D rendering (9249bcca-57c7-4bce-bc99-f1c4416702b1_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9249bcca-57c7-4bce-bc99-f1c4416702b1_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9249bcca-57c7-4bce-bc99-f1c4416702b1_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 1 char 2 on 3D rendering (9249bcca-57c7-4bce-bc99-f1c4416702b1_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/987a5913-1501-41ad-a49f-acd2f9b71b0a_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/987a5913-1501-41ad-a49f-acd2f9b71b0a_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (987a5913-1501-41ad-a49f-acd2f9b71b0a_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/987a5913-1501-41ad-a49f-acd2f9b71b0a_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/987a5913-1501-41ad-a49f-acd2f9b71b0a_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (987a5913-1501-41ad-a49f-acd2f9b71b0a_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9a3572bc-d972-43e5-8aa3-b18876e717fd_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a3572bc-d972-43e5-8aa3-b18876e717fd_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 2 char 1 on 3D rendering (9a3572bc-d972-43e5-8aa3-b18876e717fd_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9a3572bc-d972-43e5-8aa3-b18876e717fd_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a3572bc-d972-43e5-8aa3-b18876e717fd_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 2 char 1 on 3D rendering (9a3572bc-d972-43e5-8aa3-b18876e717fd_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9a961dfe-7891-44ec-b13e-b9f7726819a1_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a961dfe-7891-44ec-b13e-b9f7726819a1_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (9a961dfe-7891-44ec-b13e-b9f7726819a1_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9a961dfe-7891-44ec-b13e-b9f7726819a1_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a961dfe-7891-44ec-b13e-b9f7726819a1_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (9a961dfe-7891-44ec-b13e-b9f7726819a1_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9b910a29-b0d7-4a00-8e7d-8ac16dd8319a_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9b910a29-b0d7-4a00-8e7d-8ac16dd8319a_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (9b910a29-b0d7-4a00-8e7d-8ac16dd8319a_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9b910a29-b0d7-4a00-8e7d-8ac16dd8319a_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9b910a29-b0d7-4a00-8e7d-8ac16dd8319a_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (9b910a29-b0d7-4a00-8e7d-8ac16dd8319a_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9cb25054-7a21-4f3b-8d06-6863d14e1c5d_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9cb25054-7a21-4f3b-8d06-6863d14e1c5d_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (9cb25054-7a21-4f3b-8d06-6863d14e1c5d_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9cb25054-7a21-4f3b-8d06-6863d14e1c5d_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9cb25054-7a21-4f3b-8d06-6863d14e1c5d_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (9cb25054-7a21-4f3b-8d06-6863d14e1c5d_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9e548954-e3a5-415e-9794-24306e536b5c_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9e548954-e3a5-415e-9794-24306e536b5c_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (9e548954-e3a5-415e-9794-24306e536b5c_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9e548954-e3a5-415e-9794-24306e536b5c_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9e548954-e3a5-415e-9794-24306e536b5c_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (9e548954-e3a5-415e-9794-24306e536b5c_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9f63d152-5f4c-4ab2-975a-df6e89c3054d_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9f63d152-5f4c-4ab2-975a-df6e89c3054d_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (9f63d152-5f4c-4ab2-975a-df6e89c3054d_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9f63d152-5f4c-4ab2-975a-df6e89c3054d_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9f63d152-5f4c-4ab2-975a-df6e89c3054d_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (9f63d152-5f4c-4ab2-975a-df6e89c3054d_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/a1ae4737-511b-4747-a1ee-6c2d32e11fc3_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/a1ae4737-511b-4747-a1ee-6c2d32e11fc3_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (a1ae4737-511b-4747-a1ee-6c2d32e11fc3_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/a1ae4737-511b-4747-a1ee-6c2d32e11fc3_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/a1ae4737-511b-4747-a1ee-6c2d32e11fc3_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (a1ae4737-511b-4747-a1ee-6c2d32e11fc3_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/a75e0570-568d-4f41-9c3d-ccd54263c76c_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/a75e0570-568d-4f41-9c3d-ccd54263c76c_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (a75e0570-568d-4f41-9c3d-ccd54263c76c_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/a75e0570-568d-4f41-9c3d-ccd54263c76c_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/a75e0570-568d-4f41-9c3d-ccd54263c76c_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (a75e0570-568d-4f41-9c3d-ccd54263c76c_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/aaf1409a-87bb-4dc4-aac6-880be041ad64_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/aaf1409a-87bb-4dc4-aac6-880be041ad64_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 3 char 3 on 3D rendering (aaf1409a-87bb-4dc4-aac6-880be041ad64_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/aaf1409a-87bb-4dc4-aac6-880be041ad64_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/aaf1409a-87bb-4dc4-aac6-880be041ad64_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 3 char 3 on 3D rendering (aaf1409a-87bb-4dc4-aac6-880be041ad64_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ac299c35-0d28-4d34-919d-8b3bb7863dcd_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ac299c35-0d28-4d34-919d-8b3bb7863dcd_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (ac299c35-0d28-4d34-919d-8b3bb7863dcd_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ac299c35-0d28-4d34-919d-8b3bb7863dcd_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ac299c35-0d28-4d34-919d-8b3bb7863dcd_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (ac299c35-0d28-4d34-919d-8b3bb7863dcd_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/b62757ff-11db-44a5-b5c4-3b2a16826875_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b62757ff-11db-44a5-b5c4-3b2a16826875_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (b62757ff-11db-44a5-b5c4-3b2a16826875_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/b62757ff-11db-44a5-b5c4-3b2a16826875_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b62757ff-11db-44a5-b5c4-3b2a16826875_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (b62757ff-11db-44a5-b5c4-3b2a16826875_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/b7578865-d9d5-4a16-bff5-b58f112773ce_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b7578865-d9d5-4a16-bff5-b58f112773ce_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (b7578865-d9d5-4a16-bff5-b58f112773ce_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/b7578865-d9d5-4a16-bff5-b58f112773ce_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b7578865-d9d5-4a16-bff5-b58f112773ce_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (b7578865-d9d5-4a16-bff5-b58f112773ce_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/b9ccf5ba-ed50-4281-9f84-2b86b8f9edc9_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b9ccf5ba-ed50-4281-9f84-2b86b8f9edc9_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (b9ccf5ba-ed50-4281-9f84-2b86b8f9edc9_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/b9ccf5ba-ed50-4281-9f84-2b86b8f9edc9_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b9ccf5ba-ed50-4281-9f84-2b86b8f9edc9_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (b9ccf5ba-ed50-4281-9f84-2b86b8f9edc9_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ba4bd60c-9a11-4577-b712-807036e61a4b_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ba4bd60c-9a11-4577-b712-807036e61a4b_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (ba4bd60c-9a11-4577-b712-807036e61a4b_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ba4bd60c-9a11-4577-b712-807036e61a4b_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ba4bd60c-9a11-4577-b712-807036e61a4b_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (ba4bd60c-9a11-4577-b712-807036e61a4b_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ba670c4e-3a5b-4dfb-827a-990c81adb88f_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ba670c4e-3a5b-4dfb-827a-990c81adb88f_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (ba670c4e-3a5b-4dfb-827a-990c81adb88f_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ba670c4e-3a5b-4dfb-827a-990c81adb88f_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ba670c4e-3a5b-4dfb-827a-990c81adb88f_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (ba670c4e-3a5b-4dfb-827a-990c81adb88f_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/bd9c5134-e3b6-4a7e-9603-91316ec2a7e4_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/bd9c5134-e3b6-4a7e-9603-91316ec2a7e4_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (bd9c5134-e3b6-4a7e-9603-91316ec2a7e4_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/bd9c5134-e3b6-4a7e-9603-91316ec2a7e4_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/bd9c5134-e3b6-4a7e-9603-91316ec2a7e4_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (bd9c5134-e3b6-4a7e-9603-91316ec2a7e4_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/be1b3527-e84e-486c-80eb-ce56e316f0be_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/be1b3527-e84e-486c-80eb-ce56e316f0be_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (be1b3527-e84e-486c-80eb-ce56e316f0be_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/be1b3527-e84e-486c-80eb-ce56e316f0be_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/be1b3527-e84e-486c-80eb-ce56e316f0be_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (be1b3527-e84e-486c-80eb-ce56e316f0be_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/c475f2e0-9bf1-4e94-b6a9-ad7b0158a2a9_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c475f2e0-9bf1-4e94-b6a9-ad7b0158a2a9_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (c475f2e0-9bf1-4e94-b6a9-ad7b0158a2a9_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/c475f2e0-9bf1-4e94-b6a9-ad7b0158a2a9_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c475f2e0-9bf1-4e94-b6a9-ad7b0158a2a9_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (c475f2e0-9bf1-4e94-b6a9-ad7b0158a2a9_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/c50c7e91-e1fd-44e0-af0c-e05f3b4de41e_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c50c7e91-e1fd-44e0-af0c-e05f3b4de41e_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 2 char 3 on 3D rendering (c50c7e91-e1fd-44e0-af0c-e05f3b4de41e_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/c50c7e91-e1fd-44e0-af0c-e05f3b4de41e_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c50c7e91-e1fd-44e0-af0c-e05f3b4de41e_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 2 char 3 on 3D rendering (c50c7e91-e1fd-44e0-af0c-e05f3b4de41e_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/c57ebe4a-256f-42a2-91e1-e11eeec90ffe_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c57ebe4a-256f-42a2-91e1-e11eeec90ffe_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (c57ebe4a-256f-42a2-91e1-e11eeec90ffe_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/c57ebe4a-256f-42a2-91e1-e11eeec90ffe_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c57ebe4a-256f-42a2-91e1-e11eeec90ffe_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (c57ebe4a-256f-42a2-91e1-e11eeec90ffe_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/c745a7af-3396-4d48-9bbb-b2f4aae36105_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c745a7af-3396-4d48-9bbb-b2f4aae36105_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (c745a7af-3396-4d48-9bbb-b2f4aae36105_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/c745a7af-3396-4d48-9bbb-b2f4aae36105_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c745a7af-3396-4d48-9bbb-b2f4aae36105_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (c745a7af-3396-4d48-9bbb-b2f4aae36105_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/cc0ff0d6-f1fd-48a2-97b9-18f52544cb28_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/cc0ff0d6-f1fd-48a2-97b9-18f52544cb28_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (cc0ff0d6-f1fd-48a2-97b9-18f52544cb28_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/cc0ff0d6-f1fd-48a2-97b9-18f52544cb28_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/cc0ff0d6-f1fd-48a2-97b9-18f52544cb28_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (cc0ff0d6-f1fd-48a2-97b9-18f52544cb28_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/cc7b4748-5fd7-40a6-84ae-354cad301886_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/cc7b4748-5fd7-40a6-84ae-354cad301886_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (cc7b4748-5fd7-40a6-84ae-354cad301886_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/cc7b4748-5fd7-40a6-84ae-354cad301886_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/cc7b4748-5fd7-40a6-84ae-354cad301886_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (cc7b4748-5fd7-40a6-84ae-354cad301886_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ce77c897-18f9-4776-a05e-c742be8c95c4_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ce77c897-18f9-4776-a05e-c742be8c95c4_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (ce77c897-18f9-4776-a05e-c742be8c95c4_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ce77c897-18f9-4776-a05e-c742be8c95c4_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ce77c897-18f9-4776-a05e-c742be8c95c4_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (ce77c897-18f9-4776-a05e-c742be8c95c4_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d08674f8-cdbe-47ad-be44-f0b48d7850f2_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d08674f8-cdbe-47ad-be44-f0b48d7850f2_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (d08674f8-cdbe-47ad-be44-f0b48d7850f2_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d08674f8-cdbe-47ad-be44-f0b48d7850f2_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d08674f8-cdbe-47ad-be44-f0b48d7850f2_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (d08674f8-cdbe-47ad-be44-f0b48d7850f2_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d15a7179-a4c7-4b4c-a11a-9ee84f4691ec_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d15a7179-a4c7-4b4c-a11a-9ee84f4691ec_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (d15a7179-a4c7-4b4c-a11a-9ee84f4691ec_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d15a7179-a4c7-4b4c-a11a-9ee84f4691ec_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d15a7179-a4c7-4b4c-a11a-9ee84f4691ec_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (d15a7179-a4c7-4b4c-a11a-9ee84f4691ec_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d3ca46ed-0156-4a04-9c7c-a5d6fbc66144_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d3ca46ed-0156-4a04-9c7c-a5d6fbc66144_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (d3ca46ed-0156-4a04-9c7c-a5d6fbc66144_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d3ca46ed-0156-4a04-9c7c-a5d6fbc66144_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d3ca46ed-0156-4a04-9c7c-a5d6fbc66144_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (d3ca46ed-0156-4a04-9c7c-a5d6fbc66144_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d48fef72-5219-4b73-bf9d-534c60c62956_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d48fef72-5219-4b73-bf9d-534c60c62956_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 1 char 3 on 3D rendering (d48fef72-5219-4b73-bf9d-534c60c62956_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d48fef72-5219-4b73-bf9d-534c60c62956_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d48fef72-5219-4b73-bf9d-534c60c62956_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 1 char 3 on 3D rendering (d48fef72-5219-4b73-bf9d-534c60c62956_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d59cd306-5b7e-493b-adbf-35c6092d7596_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d59cd306-5b7e-493b-adbf-35c6092d7596_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (d59cd306-5b7e-493b-adbf-35c6092d7596_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d59cd306-5b7e-493b-adbf-35c6092d7596_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d59cd306-5b7e-493b-adbf-35c6092d7596_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (d59cd306-5b7e-493b-adbf-35c6092d7596_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d79ca86c-6f7a-44b4-b499-3161e787e3d8_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d79ca86c-6f7a-44b4-b499-3161e787e3d8_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 4 char 2 on 3D rendering (d79ca86c-6f7a-44b4-b499-3161e787e3d8_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d79ca86c-6f7a-44b4-b499-3161e787e3d8_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d79ca86c-6f7a-44b4-b499-3161e787e3d8_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 4 char 2 on 3D rendering (d79ca86c-6f7a-44b4-b499-3161e787e3d8_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d7a3b6e8-72db-4a59-9e77-0844a88066d9_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d7a3b6e8-72db-4a59-9e77-0844a88066d9_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (d7a3b6e8-72db-4a59-9e77-0844a88066d9_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d7a3b6e8-72db-4a59-9e77-0844a88066d9_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d7a3b6e8-72db-4a59-9e77-0844a88066d9_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (d7a3b6e8-72db-4a59-9e77-0844a88066d9_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/dc07557b-f507-41df-933e-a980414d76fe_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/dc07557b-f507-41df-933e-a980414d76fe_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (dc07557b-f507-41df-933e-a980414d76fe_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/dc07557b-f507-41df-933e-a980414d76fe_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/dc07557b-f507-41df-933e-a980414d76fe_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (dc07557b-f507-41df-933e-a980414d76fe_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/dce31708-a467-44e3-b63f-e0a0bf8fcf7f_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/dce31708-a467-44e3-b63f-e0a0bf8fcf7f_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (dce31708-a467-44e3-b63f-e0a0bf8fcf7f_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/dce31708-a467-44e3-b63f-e0a0bf8fcf7f_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/dce31708-a467-44e3-b63f-e0a0bf8fcf7f_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (dce31708-a467-44e3-b63f-e0a0bf8fcf7f_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/de61550e-85da-4c06-a8d9-737d46509629_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/de61550e-85da-4c06-a8d9-737d46509629_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (de61550e-85da-4c06-a8d9-737d46509629_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/de61550e-85da-4c06-a8d9-737d46509629_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/de61550e-85da-4c06-a8d9-737d46509629_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (de61550e-85da-4c06-a8d9-737d46509629_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e0671dc3-f247-4c43-9187-61ec411c25cb_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0671dc3-f247-4c43-9187-61ec411c25cb_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (e0671dc3-f247-4c43-9187-61ec411c25cb_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e0671dc3-f247-4c43-9187-61ec411c25cb_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0671dc3-f247-4c43-9187-61ec411c25cb_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (e0671dc3-f247-4c43-9187-61ec411c25cb_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e0948c0d-f255-4382-8304-d8ca05c68dff_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0948c0d-f255-4382-8304-d8ca05c68dff_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (e0948c0d-f255-4382-8304-d8ca05c68dff_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e0948c0d-f255-4382-8304-d8ca05c68dff_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0948c0d-f255-4382-8304-d8ca05c68dff_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (e0948c0d-f255-4382-8304-d8ca05c68dff_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e0f5680c-9972-4db0-b693-7b4eb827de86_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0f5680c-9972-4db0-b693-7b4eb827de86_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (e0f5680c-9972-4db0-b693-7b4eb827de86_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e0f5680c-9972-4db0-b693-7b4eb827de86_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0f5680c-9972-4db0-b693-7b4eb827de86_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (e0f5680c-9972-4db0-b693-7b4eb827de86_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e384c172-4242-406e-964c-316b8c4fe59d_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e384c172-4242-406e-964c-316b8c4fe59d_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (e384c172-4242-406e-964c-316b8c4fe59d_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e384c172-4242-406e-964c-316b8c4fe59d_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e384c172-4242-406e-964c-316b8c4fe59d_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (e384c172-4242-406e-964c-316b8c4fe59d_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e3e564c3-309b-4d3e-9ca3-6757cef13dcd_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e3e564c3-309b-4d3e-9ca3-6757cef13dcd_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (e3e564c3-309b-4d3e-9ca3-6757cef13dcd_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e3e564c3-309b-4d3e-9ca3-6757cef13dcd_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e3e564c3-309b-4d3e-9ca3-6757cef13dcd_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (e3e564c3-309b-4d3e-9ca3-6757cef13dcd_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e57afe5b-16df-4194-b793-8ad5beb74fe0_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e57afe5b-16df-4194-b793-8ad5beb74fe0_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 4 char 1 on 3D rendering (e57afe5b-16df-4194-b793-8ad5beb74fe0_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e57afe5b-16df-4194-b793-8ad5beb74fe0_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e57afe5b-16df-4194-b793-8ad5beb74fe0_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 4 char 1 on 3D rendering (e57afe5b-16df-4194-b793-8ad5beb74fe0_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e5b147fa-6e22-41e6-a234-a180ddc2efe9_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e5b147fa-6e22-41e6-a234-a180ddc2efe9_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (e5b147fa-6e22-41e6-a234-a180ddc2efe9_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e5b147fa-6e22-41e6-a234-a180ddc2efe9_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e5b147fa-6e22-41e6-a234-a180ddc2efe9_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (e5b147fa-6e22-41e6-a234-a180ddc2efe9_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e6ae5599-1a9d-4f50-abb2-970f9428a1e7_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e6ae5599-1a9d-4f50-abb2-970f9428a1e7_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (e6ae5599-1a9d-4f50-abb2-970f9428a1e7_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e6ae5599-1a9d-4f50-abb2-970f9428a1e7_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e6ae5599-1a9d-4f50-abb2-970f9428a1e7_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (e6ae5599-1a9d-4f50-abb2-970f9428a1e7_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e889905d-7796-46b1-b8df-8b4f7cead442_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e889905d-7796-46b1-b8df-8b4f7cead442_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (e889905d-7796-46b1-b8df-8b4f7cead442_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e889905d-7796-46b1-b8df-8b4f7cead442_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e889905d-7796-46b1-b8df-8b4f7cead442_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (e889905d-7796-46b1-b8df-8b4f7cead442_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ea94292a-62c2-4775-bc0a-cbc67f4e311c_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ea94292a-62c2-4775-bc0a-cbc67f4e311c_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (ea94292a-62c2-4775-bc0a-cbc67f4e311c_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ea94292a-62c2-4775-bc0a-cbc67f4e311c_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ea94292a-62c2-4775-bc0a-cbc67f4e311c_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (ea94292a-62c2-4775-bc0a-cbc67f4e311c_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/eefb61b9-f4c9-4428-89ce-716395059391_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/eefb61b9-f4c9-4428-89ce-716395059391_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (eefb61b9-f4c9-4428-89ce-716395059391_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/eefb61b9-f4c9-4428-89ce-716395059391_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/eefb61b9-f4c9-4428-89ce-716395059391_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (eefb61b9-f4c9-4428-89ce-716395059391_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/f81a66b0-e180-409c-8506-53f42837c34b_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f81a66b0-e180-409c-8506-53f42837c34b_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (f81a66b0-e180-409c-8506-53f42837c34b_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/f81a66b0-e180-409c-8506-53f42837c34b_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f81a66b0-e180-409c-8506-53f42837c34b_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (f81a66b0-e180-409c-8506-53f42837c34b_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/f8aed9e2-4e01-4ea0-abe9-26bddf84f1b6_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f8aed9e2-4e01-4ea0-abe9-26bddf84f1b6_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (f8aed9e2-4e01-4ea0-abe9-26bddf84f1b6_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/f8aed9e2-4e01-4ea0-abe9-26bddf84f1b6_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f8aed9e2-4e01-4ea0-abe9-26bddf84f1b6_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (f8aed9e2-4e01-4ea0-abe9-26bddf84f1b6_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/f968847c-2649-4225-8499-8c048c086f96_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f968847c-2649-4225-8499-8c048c086f96_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (f968847c-2649-4225-8499-8c048c086f96_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/f968847c-2649-4225-8499-8c048c086f96_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f968847c-2649-4225-8499-8c048c086f96_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (f968847c-2649-4225-8499-8c048c086f96_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/fb1d478f-d4d1-484f-8bc2-66a50fe6f6fa_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb1d478f-d4d1-484f-8bc2-66a50fe6f6fa_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (fb1d478f-d4d1-484f-8bc2-66a50fe6f6fa_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/fb1d478f-d4d1-484f-8bc2-66a50fe6f6fa_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb1d478f-d4d1-484f-8bc2-66a50fe6f6fa_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (fb1d478f-d4d1-484f-8bc2-66a50fe6f6fa_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/fb75638a-5db1-415f-9d86-bc88d8a3c4dc_body_glyph",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb75638a-5db1-415f-9d86-bc88d8a3c4dc_body_glyph",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing Glyph at HS1174 obverse line 0 char 0 on 3D rendering (fb75638a-5db1-415f-9d86-bc88d8a3c4dc_body_glyph)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/fb75638a-5db1-415f-9d86-bc88d8a3c4dc_body_translit",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb75638a-5db1-415f-9d86-bc88d8a3c4dc_body_translit",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
         "text": "Annotation body referencing transliteration char occurrence at HS1174 obverse line 0 char 0 on 3D rendering (fb75638a-5db1-415f-9d86-bc88d8a3c4dc_body_translit)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/00cda0d2-a7fb-4e22-b367-242a7c8119fc_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/00cda0d2-a7fb-4e22-b367-242a7c8119fc_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (00cda0d2-a7fb-4e22-b367-242a7c8119fc_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/059d6ee0-b203-4059-a996-767b25994eb7_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/059d6ee0-b203-4059-a996-767b25994eb7_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (059d6ee0-b203-4059-a996-767b25994eb7_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/0753a90c-1198-4ddd-b818-571579b2a7cf_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0753a90c-1198-4ddd-b818-571579b2a7cf_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (0753a90c-1198-4ddd-b818-571579b2a7cf_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/0821f61c-c8f6-4d7e-8f32-976f25af4bb9_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0821f61c-c8f6-4d7e-8f32-976f25af4bb9_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (0821f61c-c8f6-4d7e-8f32-976f25af4bb9_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/09a66ef9-8b3c-488b-ad51-d280404f2a7f_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/09a66ef9-8b3c-488b-ad51-d280404f2a7f_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 2 char 8 on 3D rendering (09a66ef9-8b3c-488b-ad51-d280404f2a7f_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/0d375432-3447-40f2-b1ae-d82104591707_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0d375432-3447-40f2-b1ae-d82104591707_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (0d375432-3447-40f2-b1ae-d82104591707_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/0e7063b6-b4a2-4ade-8ad8-a2bf842709d8_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e7063b6-b4a2-4ade-8ad8-a2bf842709d8_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 1 char 4 on 3D rendering (0e7063b6-b4a2-4ade-8ad8-a2bf842709d8_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/0e8e1d31-9942-4cdf-8f68-e01ff4a51926_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e8e1d31-9942-4cdf-8f68-e01ff4a51926_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (0e8e1d31-9942-4cdf-8f68-e01ff4a51926_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/0f55aeec-eefc-4ac2-baf1-f5d15f762d6b_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0f55aeec-eefc-4ac2-baf1-f5d15f762d6b_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (0f55aeec-eefc-4ac2-baf1-f5d15f762d6b_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/119e80df-5bb3-4733-9840-65b48dc8a458_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/119e80df-5bb3-4733-9840-65b48dc8a458_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (119e80df-5bb3-4733-9840-65b48dc8a458_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/13b2fdfc-a233-430e-a2c6-6abeb016aaeb_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/13b2fdfc-a233-430e-a2c6-6abeb016aaeb_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (13b2fdfc-a233-430e-a2c6-6abeb016aaeb_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/18233348-81d5-4d69-8977-e5544363b7e8_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/18233348-81d5-4d69-8977-e5544363b7e8_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (18233348-81d5-4d69-8977-e5544363b7e8_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/1923adc1-8dc0-48e6-b177-58c1d1d31cc7_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1923adc1-8dc0-48e6-b177-58c1d1d31cc7_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (1923adc1-8dc0-48e6-b177-58c1d1d31cc7_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/1c59a341-b59f-4ead-937a-d5dfea54170e_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c59a341-b59f-4ead-937a-d5dfea54170e_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (1c59a341-b59f-4ead-937a-d5dfea54170e_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/1c74c217-b7cb-4ac8-92d8-86051e811659_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c74c217-b7cb-4ac8-92d8-86051e811659_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 3 char 2 on 3D rendering (1c74c217-b7cb-4ac8-92d8-86051e811659_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/20238516-d42d-4c23-82f8-94626948d45b_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/20238516-d42d-4c23-82f8-94626948d45b_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (20238516-d42d-4c23-82f8-94626948d45b_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/22ce9eb9-dcbb-4bc0-8af0-0dc8e604f2fb_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/22ce9eb9-dcbb-4bc0-8af0-0dc8e604f2fb_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (22ce9eb9-dcbb-4bc0-8af0-0dc8e604f2fb_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/2333d226-57d3-4122-82e5-1eb5858315a7_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2333d226-57d3-4122-82e5-1eb5858315a7_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (2333d226-57d3-4122-82e5-1eb5858315a7_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/28b2e58a-c464-462e-aa73-a369ffaee903_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/28b2e58a-c464-462e-aa73-a369ffaee903_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 2 char 7 on 3D rendering (28b2e58a-c464-462e-aa73-a369ffaee903_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/2a8bcac4-2342-40c2-932f-29b5931bd98a_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2a8bcac4-2342-40c2-932f-29b5931bd98a_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (2a8bcac4-2342-40c2-932f-29b5931bd98a_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/2de86608-03d1-4572-ab60-69a9188f6b1d_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2de86608-03d1-4572-ab60-69a9188f6b1d_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (2de86608-03d1-4572-ab60-69a9188f6b1d_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/2e103f24-158a-4017-bfa6-ad96d5bfac35_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2e103f24-158a-4017-bfa6-ad96d5bfac35_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (2e103f24-158a-4017-bfa6-ad96d5bfac35_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/2e937f6f-e410-41b8-b5f3-f3eda97915b4_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2e937f6f-e410-41b8-b5f3-f3eda97915b4_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (2e937f6f-e410-41b8-b5f3-f3eda97915b4_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/2f7901c7-4ed4-4135-aed7-f2ee7ceedfec_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2f7901c7-4ed4-4135-aed7-f2ee7ceedfec_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (2f7901c7-4ed4-4135-aed7-f2ee7ceedfec_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/302f462b-5a85-4129-ab64-71b9c5e7de77_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/302f462b-5a85-4129-ab64-71b9c5e7de77_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (302f462b-5a85-4129-ab64-71b9c5e7de77_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/32de1d43-3933-412a-ba17-0f3053a29eee_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/32de1d43-3933-412a-ba17-0f3053a29eee_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 4 char 4 on 3D rendering (32de1d43-3933-412a-ba17-0f3053a29eee_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/34a4f506-5fb4-4b92-a32a-7278f8f19e40_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/34a4f506-5fb4-4b92-a32a-7278f8f19e40_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (34a4f506-5fb4-4b92-a32a-7278f8f19e40_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/395cc156-f85f-45be-8786-743a4e6d8a6c_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/395cc156-f85f-45be-8786-743a4e6d8a6c_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (395cc156-f85f-45be-8786-743a4e6d8a6c_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/3b4fb577-3201-495a-9f14-0b7bc875a278_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/3b4fb577-3201-495a-9f14-0b7bc875a278_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (3b4fb577-3201-495a-9f14-0b7bc875a278_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/44394056-5b4d-4d9a-b917-04c610fea0d0_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/44394056-5b4d-4d9a-b917-04c610fea0d0_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (44394056-5b4d-4d9a-b917-04c610fea0d0_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/45e343c9-c3a5-4417-ae16-7fa1fb3c0eec_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/45e343c9-c3a5-4417-ae16-7fa1fb3c0eec_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 2 char 2 on 3D rendering (45e343c9-c3a5-4417-ae16-7fa1fb3c0eec_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/4776df65-3c46-4ae6-a868-1f416c8a544b_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4776df65-3c46-4ae6-a868-1f416c8a544b_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 3 char 1 on 3D rendering (4776df65-3c46-4ae6-a868-1f416c8a544b_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/47fdacc5-6576-4c1e-8743-f93be32e998b_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/47fdacc5-6576-4c1e-8743-f93be32e998b_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 4 char 3 on 3D rendering (47fdacc5-6576-4c1e-8743-f93be32e998b_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/4a1aed45-24db-4cb9-a760-28486d7f6707_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4a1aed45-24db-4cb9-a760-28486d7f6707_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (4a1aed45-24db-4cb9-a760-28486d7f6707_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/4daae4c2-bd2a-4911-86e0-31dfeea22595_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4daae4c2-bd2a-4911-86e0-31dfeea22595_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 1 char 1 on 3D rendering (4daae4c2-bd2a-4911-86e0-31dfeea22595_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/4fde8eef-a86f-42b8-ba81-648d82f07acd_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4fde8eef-a86f-42b8-ba81-648d82f07acd_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (4fde8eef-a86f-42b8-ba81-648d82f07acd_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/543a567d-b925-4644-a115-da4fbd7cfa12_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/543a567d-b925-4644-a115-da4fbd7cfa12_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (543a567d-b925-4644-a115-da4fbd7cfa12_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/55939666-2415-432b-9868-8b13b83042b7_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/55939666-2415-432b-9868-8b13b83042b7_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (55939666-2415-432b-9868-8b13b83042b7_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/5d9921bb-d810-4885-91c5-18c64d14c511_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5d9921bb-d810-4885-91c5-18c64d14c511_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (5d9921bb-d810-4885-91c5-18c64d14c511_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/5dd92e14-a9a2-4153-b431-73e2f7832a64_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5dd92e14-a9a2-4153-b431-73e2f7832a64_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (5dd92e14-a9a2-4153-b431-73e2f7832a64_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/5fca1a08-a8a0-4c7a-b1dd-5746ea72ea71_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5fca1a08-a8a0-4c7a-b1dd-5746ea72ea71_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (5fca1a08-a8a0-4c7a-b1dd-5746ea72ea71_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/60530cc4-8562-410f-9624-d28fa4576258_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/60530cc4-8562-410f-9624-d28fa4576258_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (60530cc4-8562-410f-9624-d28fa4576258_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/610a351f-143b-4fc7-b89c-3f3373d88f46_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/610a351f-143b-4fc7-b89c-3f3373d88f46_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (610a351f-143b-4fc7-b89c-3f3373d88f46_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/6775d9df-397d-49bf-ae32-c94bf37b91bf_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6775d9df-397d-49bf-ae32-c94bf37b91bf_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (6775d9df-397d-49bf-ae32-c94bf37b91bf_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/69e6c278-caca-444d-b4bf-7b0ae06c6e98_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/69e6c278-caca-444d-b4bf-7b0ae06c6e98_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (69e6c278-caca-444d-b4bf-7b0ae06c6e98_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/6d5e30cb-70d8-4295-8bc6-d927c3706a75_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6d5e30cb-70d8-4295-8bc6-d927c3706a75_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (6d5e30cb-70d8-4295-8bc6-d927c3706a75_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/6e9d7570-b5e5-44a5-824c-8d68550bda5f_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6e9d7570-b5e5-44a5-824c-8d68550bda5f_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (6e9d7570-b5e5-44a5-824c-8d68550bda5f_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/701dcc35-84ef-4f69-87a2-04d67071badd_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/701dcc35-84ef-4f69-87a2-04d67071badd_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (701dcc35-84ef-4f69-87a2-04d67071badd_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/70a82f4b-157e-48d4-9e83-d646e488697e_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/70a82f4b-157e-48d4-9e83-d646e488697e_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (70a82f4b-157e-48d4-9e83-d646e488697e_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7109412e-1f80-469f-93df-aba62c22e4dd_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7109412e-1f80-469f-93df-aba62c22e4dd_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (7109412e-1f80-469f-93df-aba62c22e4dd_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/74320630-35e8-40e0-b826-766c3940e6fc_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/74320630-35e8-40e0-b826-766c3940e6fc_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (74320630-35e8-40e0-b826-766c3940e6fc_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/74c24a98-1f7a-4393-85ab-7a2f6519ad86_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/74c24a98-1f7a-4393-85ab-7a2f6519ad86_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (74c24a98-1f7a-4393-85ab-7a2f6519ad86_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7a8a8a3f-225b-4102-a306-41143980e4ff_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7a8a8a3f-225b-4102-a306-41143980e4ff_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (7a8a8a3f-225b-4102-a306-41143980e4ff_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7b837315-b8d6-4b7e-8491-4217efebe15d_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7b837315-b8d6-4b7e-8491-4217efebe15d_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (7b837315-b8d6-4b7e-8491-4217efebe15d_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7bcf54f2-b0a5-4dcc-b274-95afbae42f08_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7bcf54f2-b0a5-4dcc-b274-95afbae42f08_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (7bcf54f2-b0a5-4dcc-b274-95afbae42f08_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7e496dec-0a73-4273-af45-1a0bc5b5fe4d_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7e496dec-0a73-4273-af45-1a0bc5b5fe4d_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (7e496dec-0a73-4273-af45-1a0bc5b5fe4d_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7f2e6bd5-6a05-475e-841b-e2f8bde1cb54_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7f2e6bd5-6a05-475e-841b-e2f8bde1cb54_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (7f2e6bd5-6a05-475e-841b-e2f8bde1cb54_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/7fd3c5c4-4ef4-41be-8709-9d2c488e32f0_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7fd3c5c4-4ef4-41be-8709-9d2c488e32f0_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (7fd3c5c4-4ef4-41be-8709-9d2c488e32f0_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/827cde28-5c40-448e-8406-d06bd1012216_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/827cde28-5c40-448e-8406-d06bd1012216_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (827cde28-5c40-448e-8406-d06bd1012216_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/845da737-5586-40c9-b2d3-8bcd0a45f32c_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/845da737-5586-40c9-b2d3-8bcd0a45f32c_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (845da737-5586-40c9-b2d3-8bcd0a45f32c_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/8767417a-3c4c-45c0-a68e-742aa6f5000b_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/8767417a-3c4c-45c0-a68e-742aa6f5000b_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (8767417a-3c4c-45c0-a68e-742aa6f5000b_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/87bf3688-62af-4454-a0c5-34abfb87668f_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/87bf3688-62af-4454-a0c5-34abfb87668f_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (87bf3688-62af-4454-a0c5-34abfb87668f_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/88084672-0d9c-4f66-9fb0-8a81165732df_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/88084672-0d9c-4f66-9fb0-8a81165732df_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (88084672-0d9c-4f66-9fb0-8a81165732df_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9249bcca-57c7-4bce-bc99-f1c4416702b1_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9249bcca-57c7-4bce-bc99-f1c4416702b1_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 1 char 2 on 3D rendering (9249bcca-57c7-4bce-bc99-f1c4416702b1_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/987a5913-1501-41ad-a49f-acd2f9b71b0a_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/987a5913-1501-41ad-a49f-acd2f9b71b0a_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (987a5913-1501-41ad-a49f-acd2f9b71b0a_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9a3572bc-d972-43e5-8aa3-b18876e717fd_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a3572bc-d972-43e5-8aa3-b18876e717fd_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 2 char 1 on 3D rendering (9a3572bc-d972-43e5-8aa3-b18876e717fd_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9a961dfe-7891-44ec-b13e-b9f7726819a1_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a961dfe-7891-44ec-b13e-b9f7726819a1_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (9a961dfe-7891-44ec-b13e-b9f7726819a1_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9b910a29-b0d7-4a00-8e7d-8ac16dd8319a_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9b910a29-b0d7-4a00-8e7d-8ac16dd8319a_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (9b910a29-b0d7-4a00-8e7d-8ac16dd8319a_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9cb25054-7a21-4f3b-8d06-6863d14e1c5d_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9cb25054-7a21-4f3b-8d06-6863d14e1c5d_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (9cb25054-7a21-4f3b-8d06-6863d14e1c5d_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9e548954-e3a5-415e-9794-24306e536b5c_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9e548954-e3a5-415e-9794-24306e536b5c_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (9e548954-e3a5-415e-9794-24306e536b5c_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9f63d152-5f4c-4ab2-975a-df6e89c3054d_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9f63d152-5f4c-4ab2-975a-df6e89c3054d_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (9f63d152-5f4c-4ab2-975a-df6e89c3054d_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/a1ae4737-511b-4747-a1ee-6c2d32e11fc3_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/a1ae4737-511b-4747-a1ee-6c2d32e11fc3_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (a1ae4737-511b-4747-a1ee-6c2d32e11fc3_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/a75e0570-568d-4f41-9c3d-ccd54263c76c_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/a75e0570-568d-4f41-9c3d-ccd54263c76c_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (a75e0570-568d-4f41-9c3d-ccd54263c76c_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/aaf1409a-87bb-4dc4-aac6-880be041ad64_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/aaf1409a-87bb-4dc4-aac6-880be041ad64_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 3 char 3 on 3D rendering (aaf1409a-87bb-4dc4-aac6-880be041ad64_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ac299c35-0d28-4d34-919d-8b3bb7863dcd_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ac299c35-0d28-4d34-919d-8b3bb7863dcd_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (ac299c35-0d28-4d34-919d-8b3bb7863dcd_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/b62757ff-11db-44a5-b5c4-3b2a16826875_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b62757ff-11db-44a5-b5c4-3b2a16826875_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (b62757ff-11db-44a5-b5c4-3b2a16826875_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/b7578865-d9d5-4a16-bff5-b58f112773ce_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b7578865-d9d5-4a16-bff5-b58f112773ce_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (b7578865-d9d5-4a16-bff5-b58f112773ce_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/b9ccf5ba-ed50-4281-9f84-2b86b8f9edc9_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b9ccf5ba-ed50-4281-9f84-2b86b8f9edc9_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (b9ccf5ba-ed50-4281-9f84-2b86b8f9edc9_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ba4bd60c-9a11-4577-b712-807036e61a4b_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ba4bd60c-9a11-4577-b712-807036e61a4b_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (ba4bd60c-9a11-4577-b712-807036e61a4b_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ba670c4e-3a5b-4dfb-827a-990c81adb88f_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ba670c4e-3a5b-4dfb-827a-990c81adb88f_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (ba670c4e-3a5b-4dfb-827a-990c81adb88f_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/bd9c5134-e3b6-4a7e-9603-91316ec2a7e4_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/bd9c5134-e3b6-4a7e-9603-91316ec2a7e4_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (bd9c5134-e3b6-4a7e-9603-91316ec2a7e4_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/be1b3527-e84e-486c-80eb-ce56e316f0be_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/be1b3527-e84e-486c-80eb-ce56e316f0be_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (be1b3527-e84e-486c-80eb-ce56e316f0be_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/c475f2e0-9bf1-4e94-b6a9-ad7b0158a2a9_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c475f2e0-9bf1-4e94-b6a9-ad7b0158a2a9_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (c475f2e0-9bf1-4e94-b6a9-ad7b0158a2a9_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/c50c7e91-e1fd-44e0-af0c-e05f3b4de41e_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c50c7e91-e1fd-44e0-af0c-e05f3b4de41e_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 2 char 3 on 3D rendering (c50c7e91-e1fd-44e0-af0c-e05f3b4de41e_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/c57ebe4a-256f-42a2-91e1-e11eeec90ffe_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c57ebe4a-256f-42a2-91e1-e11eeec90ffe_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (c57ebe4a-256f-42a2-91e1-e11eeec90ffe_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/c745a7af-3396-4d48-9bbb-b2f4aae36105_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c745a7af-3396-4d48-9bbb-b2f4aae36105_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (c745a7af-3396-4d48-9bbb-b2f4aae36105_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/cc0ff0d6-f1fd-48a2-97b9-18f52544cb28_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/cc0ff0d6-f1fd-48a2-97b9-18f52544cb28_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (cc0ff0d6-f1fd-48a2-97b9-18f52544cb28_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/cc7b4748-5fd7-40a6-84ae-354cad301886_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/cc7b4748-5fd7-40a6-84ae-354cad301886_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (cc7b4748-5fd7-40a6-84ae-354cad301886_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ce77c897-18f9-4776-a05e-c742be8c95c4_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ce77c897-18f9-4776-a05e-c742be8c95c4_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (ce77c897-18f9-4776-a05e-c742be8c95c4_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d08674f8-cdbe-47ad-be44-f0b48d7850f2_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d08674f8-cdbe-47ad-be44-f0b48d7850f2_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (d08674f8-cdbe-47ad-be44-f0b48d7850f2_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d15a7179-a4c7-4b4c-a11a-9ee84f4691ec_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d15a7179-a4c7-4b4c-a11a-9ee84f4691ec_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (d15a7179-a4c7-4b4c-a11a-9ee84f4691ec_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d3ca46ed-0156-4a04-9c7c-a5d6fbc66144_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d3ca46ed-0156-4a04-9c7c-a5d6fbc66144_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (d3ca46ed-0156-4a04-9c7c-a5d6fbc66144_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d48fef72-5219-4b73-bf9d-534c60c62956_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d48fef72-5219-4b73-bf9d-534c60c62956_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 1 char 3 on 3D rendering (d48fef72-5219-4b73-bf9d-534c60c62956_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d59cd306-5b7e-493b-adbf-35c6092d7596_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d59cd306-5b7e-493b-adbf-35c6092d7596_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (d59cd306-5b7e-493b-adbf-35c6092d7596_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d79ca86c-6f7a-44b4-b499-3161e787e3d8_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d79ca86c-6f7a-44b4-b499-3161e787e3d8_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 4 char 2 on 3D rendering (d79ca86c-6f7a-44b4-b499-3161e787e3d8_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d7a3b6e8-72db-4a59-9e77-0844a88066d9_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d7a3b6e8-72db-4a59-9e77-0844a88066d9_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (d7a3b6e8-72db-4a59-9e77-0844a88066d9_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/dc07557b-f507-41df-933e-a980414d76fe_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/dc07557b-f507-41df-933e-a980414d76fe_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (dc07557b-f507-41df-933e-a980414d76fe_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/dce31708-a467-44e3-b63f-e0a0bf8fcf7f_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/dce31708-a467-44e3-b63f-e0a0bf8fcf7f_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (dce31708-a467-44e3-b63f-e0a0bf8fcf7f_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/de61550e-85da-4c06-a8d9-737d46509629_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/de61550e-85da-4c06-a8d9-737d46509629_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (de61550e-85da-4c06-a8d9-737d46509629_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e0671dc3-f247-4c43-9187-61ec411c25cb_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0671dc3-f247-4c43-9187-61ec411c25cb_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (e0671dc3-f247-4c43-9187-61ec411c25cb_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e0948c0d-f255-4382-8304-d8ca05c68dff_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0948c0d-f255-4382-8304-d8ca05c68dff_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (e0948c0d-f255-4382-8304-d8ca05c68dff_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e0f5680c-9972-4db0-b693-7b4eb827de86_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0f5680c-9972-4db0-b693-7b4eb827de86_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (e0f5680c-9972-4db0-b693-7b4eb827de86_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e384c172-4242-406e-964c-316b8c4fe59d_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e384c172-4242-406e-964c-316b8c4fe59d_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (e384c172-4242-406e-964c-316b8c4fe59d_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e3e564c3-309b-4d3e-9ca3-6757cef13dcd_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e3e564c3-309b-4d3e-9ca3-6757cef13dcd_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (e3e564c3-309b-4d3e-9ca3-6757cef13dcd_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e57afe5b-16df-4194-b793-8ad5beb74fe0_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e57afe5b-16df-4194-b793-8ad5beb74fe0_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 4 char 1 on 3D rendering (e57afe5b-16df-4194-b793-8ad5beb74fe0_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e5b147fa-6e22-41e6-a234-a180ddc2efe9_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e5b147fa-6e22-41e6-a234-a180ddc2efe9_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (e5b147fa-6e22-41e6-a234-a180ddc2efe9_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e6ae5599-1a9d-4f50-abb2-970f9428a1e7_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e6ae5599-1a9d-4f50-abb2-970f9428a1e7_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (e6ae5599-1a9d-4f50-abb2-970f9428a1e7_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e889905d-7796-46b1-b8df-8b4f7cead442_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e889905d-7796-46b1-b8df-8b4f7cead442_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (e889905d-7796-46b1-b8df-8b4f7cead442_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ea94292a-62c2-4775-bc0a-cbc67f4e311c_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ea94292a-62c2-4775-bc0a-cbc67f4e311c_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (ea94292a-62c2-4775-bc0a-cbc67f4e311c_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/eefb61b9-f4c9-4428-89ce-716395059391_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/eefb61b9-f4c9-4428-89ce-716395059391_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (eefb61b9-f4c9-4428-89ce-716395059391_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/f81a66b0-e180-409c-8506-53f42837c34b_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f81a66b0-e180-409c-8506-53f42837c34b_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (f81a66b0-e180-409c-8506-53f42837c34b_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/f8aed9e2-4e01-4ea0-abe9-26bddf84f1b6_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f8aed9e2-4e01-4ea0-abe9-26bddf84f1b6_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (f8aed9e2-4e01-4ea0-abe9-26bddf84f1b6_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/f968847c-2649-4225-8499-8c048c086f96_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f968847c-2649-4225-8499-8c048c086f96_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (f968847c-2649-4225-8499-8c048c086f96_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/fb1d478f-d4d1-484f-8bc2-66a50fe6f6fa_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb1d478f-d4d1-484f-8bc2-66a50fe6f6fa_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (fb1d478f-d4d1-484f-8bc2-66a50fe6f6fa_target1_selector)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/fb75638a-5db1-415f-9d86-bc88d8a3c4dc_target1_selector",
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb75638a-5db1-415f-9d86-bc88d8a3c4dc_target1_selector",
         "parent": "http://www.w3.org/ns/oa#SvgSelector",
         "type": "instance",
         "text": "Annotation target selector of Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering (fb75638a-5db1-415f-9d86-bc88d8a3c4dc_target1_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/09a66ef9-8b3c-488b-ad51-d280404f2a7f_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 2 char 8 on a 3D Mesh (09a66ef9-8b3c-488b-ad51-d280404f2a7f_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e7063b6-b4a2-4ade-8ad8-a2bf842709d8_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 1 char 4 on a 3D Mesh (0e7063b6-b4a2-4ade-8ad8-a2bf842709d8_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c74c217-b7cb-4ac8-92d8-86051e811659_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 3 char 2 on a 3D Mesh (1c74c217-b7cb-4ac8-92d8-86051e811659_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/28b2e58a-c464-462e-aa73-a369ffaee903_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 2 char 7 on a 3D Mesh (28b2e58a-c464-462e-aa73-a369ffaee903_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/32de1d43-3933-412a-ba17-0f3053a29eee_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 4 char 4 on a 3D Mesh (32de1d43-3933-412a-ba17-0f3053a29eee_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/45e343c9-c3a5-4417-ae16-7fa1fb3c0eec_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 2 char 2 on a 3D Mesh (45e343c9-c3a5-4417-ae16-7fa1fb3c0eec_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4776df65-3c46-4ae6-a868-1f416c8a544b_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 3 char 1 on a 3D Mesh (4776df65-3c46-4ae6-a868-1f416c8a544b_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/47fdacc5-6576-4c1e-8743-f93be32e998b_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 4 char 3 on a 3D Mesh (47fdacc5-6576-4c1e-8743-f93be32e998b_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4daae4c2-bd2a-4911-86e0-31dfeea22595_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 1 char 1 on a 3D Mesh (4daae4c2-bd2a-4911-86e0-31dfeea22595_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9249bcca-57c7-4bce-bc99-f1c4416702b1_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 1 char 2 on a 3D Mesh (9249bcca-57c7-4bce-bc99-f1c4416702b1_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a3572bc-d972-43e5-8aa3-b18876e717fd_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 2 char 1 on a 3D Mesh (9a3572bc-d972-43e5-8aa3-b18876e717fd_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/aaf1409a-87bb-4dc4-aac6-880be041ad64_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 3 char 3 on a 3D Mesh (aaf1409a-87bb-4dc4-aac6-880be041ad64_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c50c7e91-e1fd-44e0-af0c-e05f3b4de41e_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 2 char 3 on a 3D Mesh (c50c7e91-e1fd-44e0-af0c-e05f3b4de41e_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d48fef72-5219-4b73-bf9d-534c60c62956_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 1 char 3 on a 3D Mesh (d48fef72-5219-4b73-bf9d-534c60c62956_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d79ca86c-6f7a-44b4-b499-3161e787e3d8_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 4 char 2 on a 3D Mesh (d79ca86c-6f7a-44b4-b499-3161e787e3d8_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e57afe5b-16df-4194-b793-8ad5beb74fe0_target3d_selector",
+        "parent": "http://www.w3.org/ns/oa#WKTSelector",
+        "type": "instance",
+        "text": "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 4 char 1 on a 3D Mesh (e57afe5b-16df-4194-b793-8ad5beb74fe0_target3d_selector)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/09a66ef9-8b3c-488b-ad51-d280404f2a7f_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 2 char 8 on a 3D Mesh (09a66ef9-8b3c-488b-ad51-d280404f2a7f_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e7063b6-b4a2-4ade-8ad8-a2bf842709d8_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 1 char 4 on a 3D Mesh (0e7063b6-b4a2-4ade-8ad8-a2bf842709d8_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c74c217-b7cb-4ac8-92d8-86051e811659_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 3 char 2 on a 3D Mesh (1c74c217-b7cb-4ac8-92d8-86051e811659_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/28b2e58a-c464-462e-aa73-a369ffaee903_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 2 char 7 on a 3D Mesh (28b2e58a-c464-462e-aa73-a369ffaee903_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/32de1d43-3933-412a-ba17-0f3053a29eee_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 4 char 4 on a 3D Mesh (32de1d43-3933-412a-ba17-0f3053a29eee_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/45e343c9-c3a5-4417-ae16-7fa1fb3c0eec_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 2 char 2 on a 3D Mesh (45e343c9-c3a5-4417-ae16-7fa1fb3c0eec_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4776df65-3c46-4ae6-a868-1f416c8a544b_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 3 char 1 on a 3D Mesh (4776df65-3c46-4ae6-a868-1f416c8a544b_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/47fdacc5-6576-4c1e-8743-f93be32e998b_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 4 char 3 on a 3D Mesh (47fdacc5-6576-4c1e-8743-f93be32e998b_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4daae4c2-bd2a-4911-86e0-31dfeea22595_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 1 char 1 on a 3D Mesh (4daae4c2-bd2a-4911-86e0-31dfeea22595_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9249bcca-57c7-4bce-bc99-f1c4416702b1_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 1 char 2 on a 3D Mesh (9249bcca-57c7-4bce-bc99-f1c4416702b1_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a3572bc-d972-43e5-8aa3-b18876e717fd_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 2 char 1 on a 3D Mesh (9a3572bc-d972-43e5-8aa3-b18876e717fd_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/aaf1409a-87bb-4dc4-aac6-880be041ad64_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 3 char 3 on a 3D Mesh (aaf1409a-87bb-4dc4-aac6-880be041ad64_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c50c7e91-e1fd-44e0-af0c-e05f3b4de41e_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 2 char 3 on a 3D Mesh (c50c7e91-e1fd-44e0-af0c-e05f3b4de41e_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d48fef72-5219-4b73-bf9d-534c60c62956_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 1 char 3 on a 3D Mesh (d48fef72-5219-4b73-bf9d-534c60c62956_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d79ca86c-6f7a-44b4-b499-3161e787e3d8_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 4 char 2 on a 3D Mesh (d79ca86c-6f7a-44b4-b499-3161e787e3d8_target3d_selector_compref0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e57afe5b-16df-4194-b793-8ad5beb74fe0_target3d_selector_compref0",
+        "parent": "http://purl.org/meshsparql/ComputingReference",
+        "type": "instance",
+        "text": "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 4 char 1 on a 3D Mesh (e57afe5b-16df-4194-b793-8ad5beb74fe0_target3d_selector_compref0)",
         "data": {}
       },
       {
@@ -37007,10 +41052,24 @@ var tree={
         "data": {}
       },
       {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/aaf1409a-87bb-4dc4-aac6-880be041ad64",
+        "parent": "http://www.w3.org/ns/oa#Annotation",
+        "type": "instance",
+        "text": "Annotation of Glyph at HS 1174 obverse line 3 char 3 on 3D rendering (aaf1409a-87bb-4dc4-aac6-880be041ad64)",
+        "data": {}
+      },
+      {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/be0ac301-f23e-47d3-b567-3c618a52bc3d",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS 1174 reverse line 2 char 4 on 3D rendering (be0ac301-f23e-47d3-b567-3c618a52bc3d)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/be1b3527-e84e-486c-80eb-ce56e316f0be",
+        "parent": "http://www.w3.org/ns/oa#Annotation",
+        "type": "instance",
+        "text": "Annotation of wedge 3 of the Glyph at HS 1174 obverse line 1 char 2 on 3D rendering (be1b3527-e84e-486c-80eb-ce56e316f0be)",
         "data": {}
       },
       {
@@ -37028,6 +41087,13 @@ var tree={
         "data": {}
       },
       {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/cc0ff0d6-f1fd-48a2-97b9-18f52544cb28",
+        "parent": "http://www.w3.org/ns/oa#Annotation",
+        "type": "instance",
+        "text": "Annotation of wedge 1 of the Glyph at HS 1174 obverse line 1 char 2 on 3D rendering (cc0ff0d6-f1fd-48a2-97b9-18f52544cb28)",
+        "data": {}
+      },
+      {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d0404773-7f6d-4aa8-84ee-b7450e97ebc6",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
@@ -37035,10 +41101,52 @@ var tree={
         "data": {}
       },
       {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d48fef72-5219-4b73-bf9d-534c60c62956",
+        "parent": "http://www.w3.org/ns/oa#Annotation",
+        "type": "instance",
+        "text": "Annotation of Glyph at HS 1174 obverse line 1 char 3 on 3D rendering (d48fef72-5219-4b73-bf9d-534c60c62956)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/d79ca86c-6f7a-44b4-b499-3161e787e3d8",
+        "parent": "http://www.w3.org/ns/oa#Annotation",
+        "type": "instance",
+        "text": "Annotation of Glyph at HS 1174 obverse line 4 char 2 on 3D rendering (d79ca86c-6f7a-44b4-b499-3161e787e3d8)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e57afe5b-16df-4194-b793-8ad5beb74fe0",
+        "parent": "http://www.w3.org/ns/oa#Annotation",
+        "type": "instance",
+        "text": "Annotation of Glyph at HS 1174 obverse line 4 char 1 on 3D rendering (e57afe5b-16df-4194-b793-8ad5beb74fe0)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e889905d-7796-46b1-b8df-8b4f7cead442",
+        "parent": "http://www.w3.org/ns/oa#Annotation",
+        "type": "instance",
+        "text": "Annotation of wedge 3 of the Glyph at HS 1174 obverse line 1 char 1 on 3D rendering (e889905d-7796-46b1-b8df-8b4f7cead442)",
+        "data": {}
+      },
+      {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/fb9c9d65-e2f6-4ed2-bb8c-620adc0533b1",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS 1174 reverse line 3 char 2 on 3D rendering (fb9c9d65-e2f6-4ed2-bb8c-620adc0533b1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/0d375432-3447-40f2-b1ae-d82104591707",
+        "parent": "http://www.w3.org/ns/oa#Annotation",
+        "type": "instance",
+        "text": "Annotation of wedge 1 of the Glyph at HS 1174 obverse line 1 char 1 on 3D rendering (0d375432-3447-40f2-b1ae-d82104591707)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/0e7063b6-b4a2-4ade-8ad8-a2bf842709d8",
+        "parent": "http://www.w3.org/ns/oa#Annotation",
+        "type": "instance",
+        "text": "Annotation of Glyph at HS 1174 obverse line 1 char 4 on 3D rendering (0e7063b6-b4a2-4ade-8ad8-a2bf842709d8)",
         "data": {}
       },
       {
@@ -37056,6 +41164,20 @@ var tree={
         "data": {}
       },
       {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/09a66ef9-8b3c-488b-ad51-d280404f2a7f",
+        "parent": "http://www.w3.org/ns/oa#Annotation",
+        "type": "instance",
+        "text": "Annotation of Glyph at HS 1174 obverse line 2 char 8 on 3D rendering (09a66ef9-8b3c-488b-ad51-d280404f2a7f)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/1c74c217-b7cb-4ac8-92d8-86051e811659",
+        "parent": "http://www.w3.org/ns/oa#Annotation",
+        "type": "instance",
+        "text": "Annotation of Glyph at HS 1174 obverse line 3 char 2 on 3D rendering (1c74c217-b7cb-4ac8-92d8-86051e811659)",
+        "data": {}
+      },
+      {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/2f800280-da53-498f-9ef0-7f080c120a41",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
@@ -37067,6 +41189,13 @@ var tree={
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS 1174 reverse line 3 char 3 on 3D rendering (22174ad2-aa62-4696-9539-81830707ed89)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/28b2e58a-c464-462e-aa73-a369ffaee903",
+        "parent": "http://www.w3.org/ns/oa#Annotation",
+        "type": "instance",
+        "text": "Annotation of Glyph at HS 1174 obverse line 2 char 7 on 3D rendering (28b2e58a-c464-462e-aa73-a369ffaee903)",
         "data": {}
       },
       {
@@ -37084,10 +41213,31 @@ var tree={
         "data": {}
       },
       {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/302f462b-5a85-4129-ab64-71b9c5e7de77",
+        "parent": "http://www.w3.org/ns/oa#Annotation",
+        "type": "instance",
+        "text": "Annotation of wedge 2 of the Glyph at HS 1174 obverse line 1 char 2 on 3D rendering (302f462b-5a85-4129-ab64-71b9c5e7de77)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/32de1d43-3933-412a-ba17-0f3053a29eee",
+        "parent": "http://www.w3.org/ns/oa#Annotation",
+        "type": "instance",
+        "text": "Annotation of Glyph at HS 1174 obverse line 4 char 4 on 3D rendering (32de1d43-3933-412a-ba17-0f3053a29eee)",
+        "data": {}
+      },
+      {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/4aff6617-073c-4153-822d-6760d644ee12",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS 1174 reverse line 5 char 2 on 3D rendering (4aff6617-073c-4153-822d-6760d644ee12)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/4daae4c2-bd2a-4911-86e0-31dfeea22595",
+        "parent": "http://www.w3.org/ns/oa#Annotation",
+        "type": "instance",
+        "text": "Annotation of Glyph at HS 1174 obverse line 1 char 1 on 3D rendering (4daae4c2-bd2a-4911-86e0-31dfeea22595)",
         "data": {}
       },
       {
@@ -37109,6 +41259,34 @@ var tree={
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS 1174 reverse line 3 char 4 on 3D rendering (4472679d-dc81-4c16-9a47-210efe111429)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/45e343c9-c3a5-4417-ae16-7fa1fb3c0eec",
+        "parent": "http://www.w3.org/ns/oa#Annotation",
+        "type": "instance",
+        "text": "Annotation of Glyph at HS 1174 obverse line 2 char 2 on 3D rendering (45e343c9-c3a5-4417-ae16-7fa1fb3c0eec)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/47fdacc5-6576-4c1e-8743-f93be32e998b",
+        "parent": "http://www.w3.org/ns/oa#Annotation",
+        "type": "instance",
+        "text": "Annotation of Glyph at HS 1174 obverse line 4 char 3 on 3D rendering (47fdacc5-6576-4c1e-8743-f93be32e998b)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/4776df65-3c46-4ae6-a868-1f416c8a544b",
+        "parent": "http://www.w3.org/ns/oa#Annotation",
+        "type": "instance",
+        "text": "Annotation of Glyph at HS 1174 obverse line 3 char 1 on 3D rendering (4776df65-3c46-4ae6-a868-1f416c8a544b)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/5d9921bb-d810-4885-91c5-18c64d14c511",
+        "parent": "http://www.w3.org/ns/oa#Annotation",
+        "type": "instance",
+        "text": "Annotation of wedge 2 of the Glyph at HS 1174 obverse line 1 char 1 on 3D rendering (5d9921bb-d810-4885-91c5-18c64d14c511)",
         "data": {}
       },
       {
@@ -37137,6 +41315,20 @@ var tree={
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
         "text": "Annotation of Glyph at HS 1174 reverse line 5 char 3 on 3D rendering (8d1ad8c9-3d87-4f25-8aa8-ab8b12e9a5cf)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9a3572bc-d972-43e5-8aa3-b18876e717fd",
+        "parent": "http://www.w3.org/ns/oa#Annotation",
+        "type": "instance",
+        "text": "Annotation of Glyph at HS 1174 obverse line 2 char 1 on 3D rendering (9a3572bc-d972-43e5-8aa3-b18876e717fd)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9249bcca-57c7-4bce-bc99-f1c4416702b1",
+        "parent": "http://www.w3.org/ns/oa#Annotation",
+        "type": "instance",
+        "text": "Annotation of Glyph at HS 1174 obverse line 1 char 2 on 3D rendering (9249bcca-57c7-4bce-bc99-f1c4416702b1)",
         "data": {}
       },
       {
@@ -38336,14 +42528,6 @@ var tree={
         "text": "CuneiformWedge (purl:graphemon#CuneiformWedge) [9]",
         "data": {
           "to": {
-            "http://www.purl.org/cuneiform/isRepresentedBy": {
-              "instancecount": 1,
-              "http://www.purl.org/graphemon#CuneiformWedge": 1
-            },
-            "http://www.purl.org/graphemon#leftOf": {
-              "instancecount": 1,
-              "http://www.purl.org/graphemon#CuneiformWedge": 1
-            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
@@ -38353,13 +42537,13 @@ var tree={
             }
           },
           "from": {
-            "http://www.purl.org/graphemon#leftOf": {
+            "http://www.w3.org/ns/oa#hasSource": {
               "instancecount": 0,
-              "http://www.purl.org/graphemon#CuneiformWedge": 1
+              "http://www.w3.org/ns/oa#SpecificResource": 1
             }
           }
         },
-        "instancecount": 4
+        "instancecount": 2
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_writtentext",
