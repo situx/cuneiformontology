@@ -9921,7 +9921,12 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.purl.org/graphemon#variant": {
+              "instancecount": 0,
+              "http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme": 1
+            }
+          }
         },
         "instancecount": 2
       },
@@ -10591,7 +10596,12 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://lemon-model.net/lemon#form": {
+              "instancecount": 0,
+              "http://www.w3.org/2002/07/owl#NamedIndividual": 1
+            }
+          }
         },
         "instancecount": 2
       },
@@ -10869,17 +10879,20 @@ var tree={
               "instancecount": 1,
               "http://lemon-model.net/lemon#LexicalSense": 1
             },
+            "http://purl.org/dc/elements/1.1/license": {
+              "instancecount": 1
+            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
             },
             "http://www.w3.org/2000/01/rdf-schema#label": {
-              "instancecount": 1
+              "instancecount": 2
             }
           },
           "from": {}
         },
-        "instancecount": 4
+        "instancecount": 6
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/signlist/character_karcomp",
@@ -29843,52 +29856,52 @@ var tree={
         "data": {}
       },
       {
-        "id": "n31e0d4f4d73844388eba3f35e236df94b2",
+        "id": "naeaa02e634e34147bdd05689818b283db2",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n31e0d4f4d73844388eba3f35e236df94b2",
+        "text": "naeaa02e634e34147bdd05689818b283db2",
         "data": {}
       },
       {
-        "id": "n31e0d4f4d73844388eba3f35e236df94b3",
+        "id": "naeaa02e634e34147bdd05689818b283db3",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n31e0d4f4d73844388eba3f35e236df94b3",
+        "text": "naeaa02e634e34147bdd05689818b283db3",
         "data": {}
       },
       {
-        "id": "n31e0d4f4d73844388eba3f35e236df94b4",
+        "id": "naeaa02e634e34147bdd05689818b283db4",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n31e0d4f4d73844388eba3f35e236df94b4",
+        "text": "naeaa02e634e34147bdd05689818b283db4",
         "data": {}
       },
       {
-        "id": "n31e0d4f4d73844388eba3f35e236df94b5",
+        "id": "naeaa02e634e34147bdd05689818b283db5",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n31e0d4f4d73844388eba3f35e236df94b5",
+        "text": "naeaa02e634e34147bdd05689818b283db5",
         "data": {}
       },
       {
-        "id": "n31e0d4f4d73844388eba3f35e236df94b6",
+        "id": "naeaa02e634e34147bdd05689818b283db6",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n31e0d4f4d73844388eba3f35e236df94b6",
+        "text": "naeaa02e634e34147bdd05689818b283db6",
         "data": {}
       },
       {
-        "id": "n31e0d4f4d73844388eba3f35e236df94b7",
+        "id": "naeaa02e634e34147bdd05689818b283db7",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n31e0d4f4d73844388eba3f35e236df94b7",
+        "text": "naeaa02e634e34147bdd05689818b283db7",
         "data": {}
       },
       {
-        "id": "n31e0d4f4d73844388eba3f35e236df94b8",
+        "id": "naeaa02e634e34147bdd05689818b283db8",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n31e0d4f4d73844388eba3f35e236df94b8",
+        "text": "naeaa02e634e34147bdd05689818b283db8",
         "data": {}
       },
       {
@@ -31014,7 +31027,7 @@ var tree={
             }
           },
           "from": {
-            "http://www.gigamesh.eu/ont#danglingBorderFaces": {
+            "http://www.gigamesh.eu/ont#bridgeBorderFaces": {
               "instancecount": 0,
               "http://purl.org/dc/elements/1.1/Image": 1,
               "http://www.gigamesh.eu/ont#Mesh": 1
@@ -38339,7 +38352,12 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.purl.org/graphemon#leftOf": {
+              "instancecount": 0,
+              "http://www.purl.org/graphemon#CuneiformWedge": 1
+            }
+          }
         },
         "instancecount": 4
       },
