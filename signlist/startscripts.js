@@ -405,7 +405,18 @@ function start3dhop(meshurl,meshformat){
 
 let camera, scene, renderer,controls;
 
-function initThreeJS(domelement,verts) {
+function viewGeometry(geometry) {
+  const material = new THREE.MeshPhongMaterial({
+    color: 0xffffff,
+    flatShading: true,
+    vertexColors: THREE.VertexColors,
+    wireframe: false
+  });
+  const mesh = new THREE.Mesh(geometry, material);
+  scene.add(mesh);
+}
+
+function initThreeJS(domelement,verts,meshurls) {
     scene = new THREE.Scene();
     minz=Number.MAX_VALUE
     maxz=Number.MIN_VALUE
@@ -445,6 +456,10 @@ function initThreeJS(domelement,verts) {
         if(vert["x"]<minx){
             miny=vert["x"]
         }
+    }
+    if(meshurls.length>0){
+        var loader = new THREE.PLYLoader();
+        loader.load(meshurls[0], viewGeometry);
     }
     camera = new THREE.PerspectiveCamera(90,window.innerWidth / window.innerHeight, 0.1, 150 );
     var axesHelper = new THREE.AxesHelper( Math.max(maxx, maxy, maxz)*4 );
