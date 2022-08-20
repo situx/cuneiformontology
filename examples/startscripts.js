@@ -463,7 +463,7 @@ function initThreeJS(domelement,verts) {
     renderer.setSize( 480, 500 );
     document.getElementById(domelement).appendChild( renderer.domElement );
 	controls = new THREE.OrbitControls( camera, renderer.domElement );
-    controls.target( centervec.x,centervec.y,centervec.z );
+    controls.target.set( centervec.x,centervec.y,centervec.z );
     camera.position.x= centervec.x
     camera.position.y= centervec.y
     camera.position.z = centervec.z;
