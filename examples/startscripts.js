@@ -462,7 +462,7 @@ function initThreeJS(domelement,verts) {
 	renderer.setPixelRatio( window.devicePixelRatio );
     renderer.setSize( 480, 500 );
     document.getElementById(domelement).appendChild( renderer.domElement );
-	controls = new THREE.TrackballControls( camera, renderer.domElement );
+	controls = new THREE.OrbitControls( camera, renderer.domElement );
     controls.target.copy( mesh.position );
     controls.update();
     controls.target.set(centervec.x, centervec.y, centervec.z);
