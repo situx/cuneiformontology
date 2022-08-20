@@ -599,7 +599,7 @@ function initThreeJS(domelement,verts) {
     controls.target.copy( mesh.position );
     controls.update();
     controls.target.set(centervec.x, centervec.y, centervec.z);
-    camera.position.z = centervec.z+(maxz-minz);
+    camera.position.z = centervec.z+5;
     controls.maxDistance= Math.max(maxx, maxy, maxz)*2
     animate()
 }
@@ -988,6 +988,7 @@ htmltemplate = """<html about=\"{{subject}}\"><head><title>{{toptitle}}</title>
 <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three/build/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three/examples/js/controls/TrackballControls.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/PLYLoader.js"></script>
 <script src="{{scriptfolderpath}}"></script><script src="{{classtreefolderpath}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/jstree.min.js"></script>
 <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
