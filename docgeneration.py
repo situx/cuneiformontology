@@ -596,10 +596,12 @@ function initThreeJS(domelement,verts) {
     renderer.setSize( 480, 500 );
     document.getElementById(domelement).appendChild( renderer.domElement );
 	controls = new THREE.OrbitControls( camera, renderer.domElement );
-    controls.target.copy( mesh.position );
-    controls.update();
-    camera.position.z = centervec.z+5;
+    controls.target( centervec.x,centervec.y,centervec.z );
+    camera.position.x= centervec.x
+    camera.position.y= centervec.y
+    camera.position.z = centervec.z;
     controls.maxDistance= Math.max(maxx, maxy, maxz)*2
+    controls.update();
     animate()
 }
 
