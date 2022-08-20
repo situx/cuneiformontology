@@ -7,6 +7,8 @@ tabletnames=["HS1174","HT073195","TCH92","O147"]
 tabletsides=["front","back","left","right","bottom","top"]
 tabletname="HS1174"
 material="3D rendering"
+meshsources={"HS1174":"https://heidicon.ub.uni-heidelberg.de/eas/partitions/1/0/577000/577526/97a78512f61fae4dbdf80c43e7725822a3a23308/application/x-ply/HS_1174_HeiCuBeDa_GigaMesh.ply",
+"HT073195":"https://heidicon.ub.uni-heidelberg.de/eas/partitions/5/0/841000/841085/667f74981bf43066b1b10ecd71a86412da7c3074/application/x-ply/HT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FuncValColor_Legacy.ply"}
 creatormap={"O147":"https://orcid.org/0000-0001-6690-9098"}
 creator="https://orcid.org/0000-0002-9499-5840"
 namespace="https://situx.github.io/cuneiformontology/examples/"+str(tabletname).lower()+"/imgannotations/"
@@ -126,7 +128,10 @@ for tabname in tabletnames:
             if key in data3d and "target" in data3d[key] and "selector" in data3d[key]["target"]:
                 res.write("<"+str(indid)+"> oa:hasTarget <"+str(indid)+"_target3d> .\n")
                 res.write("<"+str(indid)+"_target3d> rdf:type owl:NamedIndividual .\n")
-                res.write("<"+str(indid)+"_target3d> oa:hasSource <"+str(data3d[key]["target"]["source"])+"> .\n")
+                if tabname in meshsources:
+                    res.write("<"+str(indid)+"_target3d> oa:hasSource <"+meshsources[tabname]+"> .\n")               
+                else:
+                    res.write("<"+str(indid)+"_target3d> oa:hasSource <"+str(data3d[key]["target"]["source"]).replace("../","https://situx.github.io/cuneiformontology/examples/")+"> .\n")
                 res.write("<"+str(indid)+"_target3d> oa:hasSelector <"+str(indid)+"_target3d_selector> .\n")
                 res.write("<"+str(indid)+"_target3d> rdfs:label \"3D Annotation target of Annotation of Glyph at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on "+str(material)+"\"@en .\n")
                 res.write("<"+str(indid)+"_target3d_selector> rdf:type oa:WKTSelector .\n")
