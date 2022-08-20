@@ -446,7 +446,7 @@ function initThreeJS(domelement,verts) {
             miny=vert["x"]
         }
     }
-    camera = new THREE.PerspectiveCamera(90,window.innerWidth / window.innerHeight, 0.01, 10 );
+    camera = new THREE.PerspectiveCamera(90,window.innerWidth / window.innerHeight, 0.1, 150 );
     var axesHelper = new THREE.AxesHelper( Math.max(maxx, maxy, maxz)*4 );
     scene.add( axesHelper );
     console.log("Depth: "+(maxz-minz))
