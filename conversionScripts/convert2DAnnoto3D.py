@@ -354,6 +354,12 @@ class PCAUtils:
         return wktString  
 
     @staticmethod
+    def cstoJSON():
+        resjson={}
+        
+        
+
+    @staticmethod
     def csToRDF(ttlstring,indid):
         ttlstring.add("<"+str(indid)+"> <http://www.opengis.net/ont/geosparql#inSRS> <http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm> .\n") 
         ttlstring.add("<http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/crs/CartesianCoordinateSystem> .\n") 
@@ -384,7 +390,7 @@ class PCAUtils:
     @staticmethod
     def pcaToRDF(translationvector,rotationmatrix,scaling,ttlstring,indid):
         ttlstring.add("<"+str(indid)+"> <http://www.opengis.net/ont/geosparql#inSRS> <"+str(indid)+"_crs_pca> .\n")
-        ttlstring.add("<"+str(indid)+"_crs_pca>  .\n")         
+        ttlstring.add("<"+str(indid)+"_crs_pca> .\n")         
 
     @staticmethod
     def pcaToWKT(translationvector, rotationmatrix, scaling):
@@ -418,9 +424,9 @@ class PCAUtils:
             LENGTHUNIT["millimetre",1]
         ]],
       METHOD["Geocentric translations", ID["EPSG", 1031]],
-      PARAMETER["X-axis translation", -128.5, LENGTHUNIT["metre", 1]],
-      PARAMETER["Y-axis translation",  -53.0, LENGTHUNIT["metre", 1]],
-      PARAMETER["Z-axis translation",  153.4, LENGTHUNIT["metre", 1]]
+      PARAMETER["X-axis translation", -128.5, LENGTHUNIT["millimetre", 1]],
+      PARAMETER["Y-axis translation",  -53.0, LENGTHUNIT["millimetre", 1]],
+      PARAMETER["Z-axis translation",  153.4, LENGTHUNIT["millimetre", 1]]
       OPERATIONACCURACY[5],
       """    
         return wktTransformation
@@ -437,7 +443,7 @@ if len(sys.argv)>1:
     
     
 origtabletside="front"
-tabletnames=["HS1174","HT073195","O147","TCH92"]
+tabletnames=["O147"]#"HS1174","HT073195","O147","TCH92"]
 tabletsides=["front","back","left","right","bottom","top"]
 tabletname="HS1174"
 material="3D rendering"
@@ -454,9 +460,15 @@ withglyphs=False
 for tabname in tabletnames:
     print(tabname)
     for side in tabletsides:
-        annotationfile="../examples/"+str(tabname)+"/ttl/"+str(tabname)+"_"+str(side)+".png.json"  
-        meshfile="../examples/"+str(tabname)+"/mesh/"+str(tabname)+"_mesh.ply"
-        imagefile="../examples/"+str(tabname)+"/images/sides/"+str(tabname)+"_"+str(side)+".png" 
+        annotationfile="../examples/"+str(tabname)+"/ttl/"+str(tabname)+"_"+str(side)+".png.json"
+        if os.path.exists("../examples/"+str(tabname)+"/mesh/"+str(tabname)+"_"+str(side)+"_mesh.ply"):
+            meshfile="../examples/"+str(tabname)+"/mesh/"+str(tabname)+"_"+str(side)+"_mesh.ply"
+        else:
+            meshfile="../examples/"+str(tabname)+"/mesh/"+str(tabname)+"_mesh.ply"
+        if os.path.exists("../examples/"+str(tabname)+"/images/sides/"+str(tabname)+"_A_color_"+str(side)+".png"):
+            imagefile="../examples/"+str(tabname)+"/images/sides/"+str(tabname)+"_A_color_"+str(side)+".png"
+        else:
+            imagefile="../examples/"+str(tabname)+"/images/sides/"+str(tabname)+"_"+str(side)+".png" 
         print(annotationfile+" "+str(os.path.exists(annotationfile))+" - "+meshfile+" "+str(os.path.exists(meshfile))+"  - "+imagefile+" "+str(os.path.exists(imagefile)))
         if not os.path.exists(meshfile) or not os.path.exists(imagefile) or not os.path.exists(annotationfile):
             continue
