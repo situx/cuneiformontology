@@ -25,6 +25,7 @@ collectionclasses=["http://www.opengis.net/ont/geosparql#FeatureCollection","htt
 
 collectionrelationproperties={
     "http://www.w3.org/2000/01/rdf-schema#member":"ObjectProperty",
+    "http://www.w3.org/2004/02/skos/core#member":"ObjectProperty"
 }
 
 
@@ -538,7 +539,18 @@ function start3dhop(meshurl,meshformat){
 
 let camera, scene, renderer,controls;
 
-function initThreeJS(domelement,verts) {
+function viewGeometry(geometry) {
+  const material = new THREE.MeshPhongMaterial({
+    color: 0xffffff,
+    flatShading: true,
+    vertexColors: THREE.VertexColors,
+    wireframe: false
+  });
+  const mesh = new THREE.Mesh(geometry, material);
+  scene.add(mesh);
+}
+
+function initThreeJS(domelement,verts,meshurls) {
     scene = new THREE.Scene();
     minz=Number.MAX_VALUE
     maxz=Number.MIN_VALUE
@@ -578,6 +590,10 @@ function initThreeJS(domelement,verts) {
         if(vert["x"]<minx){
             miny=vert["x"]
         }
+    }
+    if(meshurls.length>0){
+        var loader = new THREE.PLYLoader();
+        loader.load(meshurls[0], viewGeometry);
     }
     camera = new THREE.PerspectiveCamera(90,window.innerWidth / window.innerHeight, 0.1, 150 );
     var axesHelper = new THREE.AxesHelper( Math.max(maxx, maxy, maxz)*4 );
@@ -1061,7 +1077,7 @@ Your browser does not support the audio element.
 threejstemplate="""
 <div id="threejs" class="threejscontainer" style="max-width:485px;max-height:500px">
 </div>
-<script>$(document).ready(function(){initThreeJS('threejs',parseWKTStringToJSON("{{wktstring}}"))})</script>
+<script>$(document).ready(function(){initThreeJS('threejs',parseWKTStringToJSON("{{wktstring}}"),{{meshurls}})})</script>
 """
 
 image3dtemplate="""<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cnr-isti-vclab/3DHOP@4.3/minimal/stylesheet/3dhop.css"/>
@@ -1552,7 +1568,7 @@ class OntDocGeneration:
         #QgsMessageLog.logMessage("Relative Link from Given Depth: " + rellink,"OntdocGeneration", Qgis.Info)
         return rellink
 
-    def searchObjectConnectionsForAggregateData(self,graph,object,pred,geojsonrep,foundmedia,imageannos,label):
+    def searchObjectConnectionsForAggregateData(self,graph,object,pred,geojsonrep,foundmedia,imageannos,image3dannos,label):
         geoprop=False
         incollection=False
         if pred in geopointerproperties:
@@ -1566,8 +1582,10 @@ class OntDocGeneration:
                 label=str(tup[1])
             if pred=="http://www.w3.org/ns/oa#hasSelector" and tup[0]==URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type") and (tup[1]==URIRef("http://www.w3.org/ns/oa#SvgSelector") or tup[1]==URIRef("http://www.w3.org/ns/oa#WKTSelector")):
                 for svglit in graph.objects(object,URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#value")):
-                    if "<svg" in str(svglit) or ("POINT" in str(svglit).upper() or "POLYGON" in str(svglit).upper() or "LINESTRING" in str(svglit).upper()):
+                    if "<svg" in str(svglit):
                         imageannos.add(str(svglit))
+                    elif ("POINT" in str(svglit).upper() or "POLYGON" in str(svglit).upper() or "LINESTRING" in str(svglit).upper()):
+                        image3dannos.add(str(svglit))
             if geoprop and str(tup[0]) in geoproperties and isinstance(tup[1], Literal):
                 geojsonrep = self.processLiteral(str(tup[1]), tup[1].datatype, "")
             if incollection and "<svg" in str(tup[1]):
@@ -1582,15 +1600,15 @@ class OntDocGeneration:
                 foundunit=str(tup[1])
         if foundunit!=None and foundval!=None and label!=None:
             label+=" "+str(foundval)+" ["+str(self.shortenURI(foundunit))+"]"
-        return {"geojsonrep":geojsonrep,"label":label,"foundmedia":foundmedia,"imageannos":imageannos}
+        return {"geojsonrep":geojsonrep,"label":label,"foundmedia":foundmedia,"imageannos":imageannos,"image3dannos":image3dannos}
 
 
-    def createHTMLTableValueEntry(self,subject,pred,object,ttlf,tablecontents,graph,baseurl,checkdepth,geojsonrep,foundmedia,imageannos):
+    def createHTMLTableValueEntry(self,subject,pred,object,ttlf,tablecontents,graph,baseurl,checkdepth,geojsonrep,foundmedia,imageannos,image3dannos):
         if isinstance(object,URIRef) or isinstance(object,BNode):
             if ttlf != None:
                 ttlf.write("<" + str(subject) + "> <" + str(pred) + "> <" + str(object) + "> .\n")
             label = str(self.shortenURI(str(object)))
-            mydata=self.searchObjectConnectionsForAggregateData(graph,object,pred,geojsonrep,foundmedia,imageannos,label)
+            mydata=self.searchObjectConnectionsForAggregateData(graph,object,pred,geojsonrep,foundmedia,imageannos,image3dannos,label)
             label=mydata["label"]
             geojsonrep=mydata["geojsonrep"]
             foundmedia=mydata["foundmedia"]
@@ -1639,7 +1657,7 @@ class OntDocGeneration:
                 else:
                     tablecontents += "<span property=\"" + str(pred) + "\" content=\"" + str(
                         object).replace("<","&lt").replace(">","&gt;").replace("\"","'") + "\" datatype=\"http://www.w3.org/2001/XMLSchema#string\">" + str(object).replace("<","&lt").replace(">","&gt;").replace("\"","'") + " <small>(<a style=\"color: #666;\" target=\"_blank\" href=\"http://www.w3.org/2001/XMLSchema#string\">xsd:string</a>)</small></span>"
-        return {"html":tablecontents,"geojson":geojsonrep,"foundmedia":foundmedia,"imageannos":imageannos}
+        return {"html":tablecontents,"geojson":geojsonrep,"foundmedia":foundmedia,"imageannos":imageannos,"image3dannos":image3dannos}
 
     def formatPredicate(self,tup,baseurl,checkdepth,tablecontents,graph,reverse):
         label = self.shortenURI(str(tup))
@@ -1688,6 +1706,7 @@ class OntDocGeneration:
         checkdepth=self.checkDepthFromPath(savepath, baseurl, subject)
         foundlabel = ""
         imageannos=set()
+        image3dannos=set()
         predobjmap={}
         isgeocollection=False
         comment=None
@@ -1749,11 +1768,12 @@ class OntDocGeneration:
                                 foundmedia[fileextensionmap[ext]].add(str(item))
                         tablecontents+="<li>"
                         res=self.createHTMLTableValueEntry(subject, tup, item, ttlf, tablecontents, graph,
-                                              baseurl, checkdepth,geojsonrep,foundmedia,imageannos)
+                                              baseurl, checkdepth,geojsonrep,foundmedia,imageannos,image3dannos)
                         tablecontents = res["html"]
                         geojsonrep = res["geojson"]
                         foundmedia = res["foundmedia"]
                         imageannos=res["imageannos"]
+                        image3dannos=res["image3dannos"]
                         tablecontents += "</li>"
                     tablecontents+="</ul></td>"
                 else:
@@ -1767,11 +1787,12 @@ class OntDocGeneration:
                         if ext in fileextensionmap:
                             foundmedia[fileextensionmap[ext]].add(str(predobjmap[tup][0]))
                     res=self.createHTMLTableValueEntry(subject, tup, predobjmap[tup][0], ttlf, tablecontents, graph,
-                                              baseurl, checkdepth,geojsonrep,foundmedia,imageannos)
+                                              baseurl, checkdepth,geojsonrep,foundmedia,imageannos,image3dannos)
                     tablecontents=res["html"]
                     geojsonrep=res["geojson"]
                     foundmedia = res["foundmedia"]
                     imageannos=res["imageannos"]
+                    image3dannos=res["image3dannos"]
                     tablecontents+="</td>"
             else:
                 tablecontents += "<td class=\"wrapword\"></td>"
@@ -1806,10 +1827,11 @@ class OntDocGeneration:
                             print("Postprocessing: " + str(item)+" - "+str(tup)+" - "+str(subject))
                             postprocessing.add((item,URIRef(tup),subject))
                         res = self.createHTMLTableValueEntry(subject, tup, item, None, tablecontents, graph,
-                                                             baseurl, checkdepth, geojsonrep,foundmedia,imageannos)
+                                                             baseurl, checkdepth, geojsonrep,foundmedia,imageannos,image3dannos)
                         tablecontents = res["html"]
                         foundmedia = res["foundmedia"]
                         imageannos=res["imageannos"]
+                        image3dannos=res["image3dannos"]
                         tablecontents += "</li>"
                     tablecontents += "</ul></td>"
                 else:
@@ -1818,10 +1840,11 @@ class OntDocGeneration:
                         print("Postprocessing: " + str(subpredsmap[tup][0]) + " - " + str(tup) + " - " + str(subject))
                         postprocessing.add((subpredsmap[tup][0], URIRef(tup), subject))
                     res = self.createHTMLTableValueEntry(subject, tup, subpredsmap[tup][0], None, tablecontents, graph,
-                                                         baseurl, checkdepth, geojsonrep,foundmedia,imageannos)
+                                                         baseurl, checkdepth, geojsonrep,foundmedia,imageannos,image3dannos)
                     tablecontents = res["html"]
                     foundmedia = res["foundmedia"]
                     imageannos=res["imageannos"]
+                    image3dannos=res["image3dannos"]
                     tablecontents += "</td>"
             else:
                 tablecontents += "<td class=\"wrapword\"></td>"
@@ -1859,14 +1882,22 @@ class OntDocGeneration:
                     "{{scriptfolderpath}}", rellink).replace("{{classtreefolderpath}}", rellink2).replace("{{exports}}",myexports).replace("{{subject}}",str(subject)))
             if comment!=None:
                 f.write(htmlcommenttemplate.replace("{{comment}}",comment))
-            if len(foundmedia["mesh"])>0:
+            if len(foundmedia["mesh"])>0 and len(image3dannos)>0:
+                for anno in image3dannos:
+                    if ("POINT" in anno.upper() or "POLYGON" in anno.upper() or "LINESTRING" in anno.upper()):
+                        f.write(threejstemplate.replace("{{wktstring}}",anno).replace("{{meshurls}}",list(foundmedia["mesh"]))
+            elif len(foundmedia["mesh"])>0 and len(image3dannos)==0:
                 print("Found 3D Model: "+str(foundmedia["mesh"]))
                 for curitem in foundmedia["mesh"]:
                     format="ply"
                     if ".nxs" in curitem or ".nxz" in curitem:
                         format="nexus"
                     f.write(image3dtemplate.replace("{{meshurl}}",curitem).replace("{{meshformat}}",format))
-                    break
+                    break                
+            elif len(foundmedia["mesh"])==0 and len(image3dannos)>0:
+                for anno in image3dannos:
+                    if ("POINT" in anno.upper() or "POLYGON" in anno.upper() or "LINESTRING" in anno.upper()):
+                        f.write(threejstemplate.replace("{{wktstring}}",anno).replace("{{meshurls}}","[]"))
             carousel="image"
             if len(foundmedia["image"])>3:
                 carousel="carousel-item active"
@@ -1892,10 +1923,6 @@ class OntDocGeneration:
                         carousel="carousel-item"
             if len(foundmedia["image"])>3:
                 f.write(imagecarouselfooter)
-            if len(imageannos)>0:
-                for anno in imageannos:
-                    if "<svg" not in anno and ("POINT" in anno.upper() or "POLYGON" in anno.upper() or "LINESTRING" in anno.upper()):
-                        f.write(threejstemplate.replace("{{wktstring}}",anno))
             for audio in foundmedia["audio"]:
                 f.write(audiotemplate.replace("{{audio}}",str(audio)))
             for video in foundmedia["video"]:
