@@ -466,7 +466,7 @@ function initThreeJS(domelement,verts) {
     controls.target.set( centervec.x,centervec.y,centervec.z );
     camera.position.x= centervec.x
     camera.position.y= centervec.y
-    camera.position.z = centervec.z+5;
+    camera.position.z = centervec.z+10;
     controls.maxDistance= Math.max(maxx, maxy, maxz)*5
     controls.update();
     animate()
