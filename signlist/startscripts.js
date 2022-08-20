@@ -462,6 +462,10 @@ function initThreeJS(domelement,verts,meshurls) {
         loader.load(meshurls[0], viewGeometry);
     }
     camera = new THREE.PerspectiveCamera(90,window.innerWidth / window.innerHeight, 0.1, 150 );
+    scene.add(new THREE.AmbientLight(0x222222));
+    var light = new THREE.DirectionalLight(0xffffff, 1);
+    light.position.set(20, 20, 0);
+    scene.add(light);
     var axesHelper = new THREE.AxesHelper( Math.max(maxx, maxy, maxz)*4 );
     scene.add( axesHelper );
     console.log("Depth: "+(maxz-minz))
