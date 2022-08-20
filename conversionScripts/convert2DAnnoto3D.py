@@ -157,7 +157,10 @@ class AnnotationProcessor:
         result=[]
         for xypair in svgpolygon.split(" "):
             spl=xypair.split(",")
-            result.append([float(spl[0]),float(spl[1])])
+            try:
+                result.append([float(str(spl[0]).replace("\"","")),float(str(spl[1]).replace("\"",""))])
+            except Exception as e:
+                print(e)
         return result
     
     @staticmethod
@@ -340,17 +343,48 @@ class PCAUtils:
         wktString=""
         wktString+="CS[\"cartesian\",3],"
         wktString+="""AXIS["X", "geocentricX", ORDER[1],
-            LENGTHUNIT["millimetre",1],
-            ANGLEUNIT["degree", 0.0174532925199433]
+            LENGTHUNIT["millimetre",1]
         ],
         AXIS["Y", "geocentricY", ORDER[2],
-            LENGTHUNIT["millimetre",1],
-            ANGLEUNIT["degree", 0.0174532925199433]
+            LENGTHUNIT["millimetre",1]
         ],
         AXIS["Z", "geocentricZ", ORDER[3],
             LENGTHUNIT["millimetre",1]
         ]]"""
         return wktString  
+
+    @staticmethod
+    def csToRDF(ttlstring,indid):
+        ttlstring.add("<"+str(indid)+"> <http://www.opengis.net/ont/geosparql#inSRS> <http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm> .\n") 
+        ttlstring.add("<http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/crs/CartesianCoordinateSystem> .\n") 
+        ttlstring.add("<http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm> <http://www.w3.org/2000/01/rdf-schema#label> \"Cartesian coordinate system with 3 axis in millimetre units\"@en .\n") 
+        ttlstring.add("<http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm> <http://www.opengis.net/ont/crs/axis> <http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm_axis1> .\n") 
+        ttlstring.add("<http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm_axis1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/crs/CoordinateSystemAxis> .\n")
+        ttlstring.add("<http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm_axis1> <http://www.w3.org/2000/01/rdf-schema#label> \"Cartesian coordinate system with 3 axis in millimetre units: Axis 1\"@en .\n")
+        ttlstring.add("<http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm_axis1> <http://www.opengis.net/ont/crs/abbreviation> \"X\" .\n")
+        ttlstring.add("<http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm_axis1> <http://www.opengis.net/ont/crs/axisDirection> <http://www.opengis.net/ont/crs/geocentricX> .\n")
+        ttlstring.add("<http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm_axis1> <http://www.opengis.net/ont/crs/axisOrder> \"1\"^^xsd:int .\n")
+        ttlstring.add("<http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm_axis1> <http://www.opengis.net/ont/crs/unit> <http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre> .\n")         
+        ttlstring.add("<http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm> <http://www.opengis.net/ont/crs/axis> <http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm_axis2> .\n") 
+        ttlstring.add("<http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm_axis2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/crs/CoordinateSystemAxis> .\n")
+        ttlstring.add("<http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm_axis2> <http://www.w3.org/2000/01/rdf-schema#label> \"Cartesian coordinate system with 3 axis in millimetre units: Axis 2\"@en .\n")
+        ttlstring.add("<http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm_axis2> <http://www.opengis.net/ont/crs/abbreviation> \"Y\" .\n")
+        ttlstring.add("<http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm_axis2> <http://www.opengis.net/ont/crs/axisDirection> <http://www.opengis.net/ont/crs/geocentricY> .\n")
+        ttlstring.add("<http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm_axis2> <http://www.opengis.net/ont/crs/axisOrder> \"2\"^^xsd:int .\n")
+        ttlstring.add("<http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm_axis2> <http://www.opengis.net/ont/crs/unit> <http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre> .\n")  
+        ttlstring.add("<http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm> <http://www.opengis.net/ont/crs/axis> <http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm_axis3> .\n") 
+        ttlstring.add("<http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm_axis3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/crs/CoordinateSystemAxis> .\n")
+        ttlstring.add("<http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm_axis3> <http://www.w3.org/2000/01/rdf-schema#label> \"Cartesian coordinate system with 3 axis in millimetre units: Axis 3\"@en .\n")
+        ttlstring.add("<http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm_axis3> <http://www.opengis.net/ont/crs/abbreviation> \"Z\" .\n")
+        ttlstring.add("<http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm_axis1> <http://www.opengis.net/ont/crs/axisDirection> <http://www.opengis.net/ont/crs/geocentricZ> .\n")
+        ttlstring.add("<http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm_axis3> <http://www.opengis.net/ont/crs/axisOrder> \"3\"^^xsd:int .\n")
+        ttlstring.add("<http://www.opengis.net/ont/geosparql/crs/cs/cartesian_ax3_mm_axis3> <http://www.opengis.net/ont/crs/unit> <http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre> .\n")        
+        
+
+    @staticmethod
+    def pcaToRDF(translationvector,rotationmatrix,scaling,ttlstring,indid):
+        ttlstring.add("<"+str(indid)+"> <http://www.opengis.net/ont/geosparql#inSRS> <"+str(indid)+"_crs_pca> .\n")
+        ttlstring.add("<"+str(indid)+"_crs_pca>  .\n")         
 
     @staticmethod
     def pcaToWKT(translationvector, rotationmatrix, scaling):
@@ -365,24 +399,20 @@ class PCAUtils:
         COORDINATEOPERATION["Object To PCA",
       SOURCECRS[CS["cartesian", 3],
         AXIS["X", "geocentricX", ORDER[1],
-            LENGTHUNIT["millimetre",1],
-            ANGLEUNIT["degree", 0.0174532925199433]
+            LENGTHUNIT["millimetre",1]
         ],
         AXIS["Y", "geocentricY", ORDER[2],
-            LENGTHUNIT["millimetre",1],
-            ANGLEUNIT["degree", 0.0174532925199433]
+            LENGTHUNIT["millimetre",1]
         ],
         AXIS["Z", "geocentricZ", ORDER[3],
             LENGTHUNIT["millimetre",1]
         ]],
       TARGETCRS[CS["cartesian", 3],
         AXIS["X", "geocentricX", ORDER[1],
-            LENGTHUNIT["millimetre",1],
-            ANGLEUNIT["degree", 0.0174532925199433]
+            LENGTHUNIT["millimetre",1]
         ],
         AXIS["Y", "geocentricY", ORDER[2],
-            LENGTHUNIT["millimetre",1],
-            ANGLEUNIT["degree", 0.0174532925199433]
+            LENGTHUNIT["millimetre",1]
         ],
         AXIS["Z", "geocentricZ", ORDER[3],
             LENGTHUNIT["millimetre",1]
@@ -392,9 +422,10 @@ class PCAUtils:
       PARAMETER["Y-axis translation",  -53.0, LENGTHUNIT["metre", 1]],
       PARAMETER["Z-axis translation",  153.4, LENGTHUNIT["metre", 1]]
       OPERATIONACCURACY[5],
-
       """    
         return wktTransformation
+
+
 
 
 def findZCoordinate():
@@ -406,7 +437,7 @@ if len(sys.argv)>1:
     
     
 origtabletside="front"
-tabletnames=["HS1174","HT073195","O147"]#,"TCH92]
+tabletnames=["HS1174","HT073195","O147","TCH92"]
 tabletsides=["front","back","left","right","bottom","top"]
 tabletname="HS1174"
 material="3D rendering"
