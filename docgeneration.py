@@ -1964,6 +1964,8 @@ if os.path.exists('signlist/prefixes.json'):
    
 prefixes["reversed"]["http://purl.org/cuneiform/"]="cunei"
 prefixes["reversed"]["http://purl.org/graphemon/"]="graphemon"
+prefixes["reversed"]["http://www.opengis.net/ont/crs/"]="geocrs"
+prefixes["reversed"]["http://www.ontology-of-units-of-measure.org/resource/om-2/"]="om"
 prefixnsshort="cuneidict"
 prefixnamespace="http://purl.org/cuneiform/"
 license="CC BY-SA 4.0"
