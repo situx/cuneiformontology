@@ -596,6 +596,10 @@ function initThreeJS(domelement,verts,meshurls) {
         loader.load(meshurls[0], viewGeometry);
     }
     camera = new THREE.PerspectiveCamera(90,window.innerWidth / window.innerHeight, 0.1, 150 );
+    scene.add(new THREE.AmbientLight(0x222222));
+    var light = new THREE.DirectionalLight(0xffffff, 1);
+    light.position.set(20, 20, 0);
+    scene.add(light);
     var axesHelper = new THREE.AxesHelper( Math.max(maxx, maxy, maxz)*4 );
     scene.add( axesHelper );
     console.log("Depth: "+(maxz-minz))
@@ -1613,6 +1617,7 @@ class OntDocGeneration:
             geojsonrep=mydata["geojsonrep"]
             foundmedia=mydata["foundmedia"]
             imageannos=mydata["imageannos"]
+            image3dannos=mydata["image3dannos"]
             if baseurl in str(object) or isinstance(object,BNode):
                 rellink = self.generateRelativeLinkFromGivenDepth(baseurl,checkdepth,str(object),True)
                 tablecontents += "<span><a property=\"" + str(pred) + "\" resource=\"" + str(object) + "\" href=\"" + rellink + "\">"+ label + " <span style=\"color: #666;\">(" + self.namespaceshort + ":" + str(self.shortenURI(str(object))) + ")</span></a></span>"
@@ -1633,7 +1638,7 @@ class OntDocGeneration:
                 if ttlf!=None:
                     ttlf.write("<" + str(subject) + "> <" + str(pred) + "> \"" + str(object) + "\"^^<" + str(
                     object.datatype) + "> .\n")
-                objstring=str(object)
+                objstring=str(object).replace("<", "&lt").replace(">", "&gt;")
                 if str(object.datatype)=="http://www.w3.org/2001/XMLSchema#anyURI":
                     objstring="<a href=\""+str(object)+"\">"+str(object)+"</a>"
                 if res != None:
@@ -1653,10 +1658,10 @@ class OntDocGeneration:
                     ttlf.write("<" + str(subject) + "> <" + str(pred) + "> \"" + str(object) + "\" .\n")
                 if object.language != None:
                     tablecontents += "<span property=\"" + str(pred) + "\" content=\"" + str(
-                        object).replace("<", "&lt").replace(">", "&gt;").replace("\"","'") + "\" datatype=\"http://www.w3.org/2001/XMLSchema#string\" xml:lang=\"" + str(object.language) + "\">" + str(object).replace("<", "&lt").replace(">", "&gt;").replace("\"","'") + " <small>(<a style=\"color: #666;\" target=\"_blank\" href=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#langString\">rdf:langString</a>) (<a href=\"http://www.lexvo.org/page/iso639-1/"+str(object.language)+"\" target=\"_blank\">iso6391:" + str(object.language) + "</a>)</small></span>"
+                        object).replace("<", "&lt").replace(">", "&gt;").replace("\"","'") + "\" datatype=\"http://www.w3.org/2001/XMLSchema#string\" xml:lang=\"" + str(object.language) + "\">" + str(object).replace("<", "&lt").replace(">", "&gt;") + " <small>(<a style=\"color: #666;\" target=\"_blank\" href=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#langString\">rdf:langString</a>) (<a href=\"http://www.lexvo.org/page/iso639-1/"+str(object.language)+"\" target=\"_blank\">iso6391:" + str(object.language) + "</a>)</small></span>"
                 else:
                     tablecontents += "<span property=\"" + str(pred) + "\" content=\"" + str(
-                        object).replace("<","&lt").replace(">","&gt;").replace("\"","'") + "\" datatype=\"http://www.w3.org/2001/XMLSchema#string\">" + str(object).replace("<","&lt").replace(">","&gt;").replace("\"","'") + " <small>(<a style=\"color: #666;\" target=\"_blank\" href=\"http://www.w3.org/2001/XMLSchema#string\">xsd:string</a>)</small></span>"
+                        object).replace("<","&lt").replace(">","&gt;").replace("\"","'") + "\" datatype=\"http://www.w3.org/2001/XMLSchema#string\">" + str(object).replace("<","&lt").replace(">","&gt;") + " <small>(<a style=\"color: #666;\" target=\"_blank\" href=\"http://www.w3.org/2001/XMLSchema#string\">xsd:string</a>)</small></span>"
         return {"html":tablecontents,"geojson":geojsonrep,"foundmedia":foundmedia,"imageannos":imageannos,"image3dannos":image3dannos}
 
     def formatPredicate(self,tup,baseurl,checkdepth,tablecontents,graph,reverse):
@@ -1759,7 +1764,7 @@ class OntDocGeneration:
                     tablecontents+="<td class=\"wrapword\"><ul>"
                     for item in predobjmap[tup]:
                         if ("POINT" in str(item).upper() or "POLYGON" in str(item).upper() or "LINESTRING" in str(item).upper()) and tup in valueproperties and "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" in predobjmap and URIRef("http://www.w3.org/ns/oa#WKTSelector") in predobjmap["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"]:
-                            imageannos.add(str(item))
+                            image3dannos.add(str(item))
                         elif "<svg" in str(item):
                             foundmedia["image"].add(str(item))
                         elif "http" in str(item):
@@ -1779,7 +1784,7 @@ class OntDocGeneration:
                 else:
                     tablecontents+="<td class=\"wrapword\">"
                     if ("POINT" in str(predobjmap[tup]).upper() or "POLYGON" in str(predobjmap[tup]).upper() or "LINESTRING" in str(predobjmap[tup]).upper()) and tup in valueproperties and "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" in predobjmap and URIRef("http://www.w3.org/ns/oa#WKTSelector") in predobjmap["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"]:
-                        imageannos.add(str(predobjmap[tup][0]))
+                        image3dannos.add(str(predobjmap[tup][0]))
                     elif "<svg" in str(predobjmap[tup]):
                         foundmedia["image"].add(str(predobjmap[tup][0]))
                     elif "http" in str(predobjmap[tup]):
@@ -1885,7 +1890,7 @@ class OntDocGeneration:
             if len(foundmedia["mesh"])>0 and len(image3dannos)>0:
                 for anno in image3dannos:
                     if ("POINT" in anno.upper() or "POLYGON" in anno.upper() or "LINESTRING" in anno.upper()):
-                        f.write(threejstemplate.replace("{{wktstring}}",anno).replace("{{meshurls}}",list(foundmedia["mesh"]))
+                        f.write(threejstemplate.replace("{{wktstring}}",anno).replace("{{meshurls}}",str(list(foundmedia["mesh"]))))
             elif len(foundmedia["mesh"])>0 and len(image3dannos)==0:
                 print("Found 3D Model: "+str(foundmedia["mesh"]))
                 for curitem in foundmedia["mesh"]:
