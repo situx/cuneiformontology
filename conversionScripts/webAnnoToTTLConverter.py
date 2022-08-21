@@ -13,10 +13,40 @@ creatormap={"O147":"https://orcid.org/0000-0001-6690-9098"}
 creator="https://orcid.org/0000-0002-9499-5840"
 namespace="https://situx.github.io/cuneiformontology/examples/"+str(tabletname).lower()+"/imgannotations/"
 namespaceitems="https://situx.github.io/cuneiformontology/examples/"+str(tabletname).lower()+"/"
+crsnamespace="https://situx.github.io/cuneiformontology/examples/crs/"
 filename="../examples/"+str(tabletname)+"/ttl/"+str(tabletname)+"_"+str(origtabletside)+".png.json"
 withlines=False
 withcharoccs=False
 withglyphs=False
+
+
+def csToRDF(fw,crsnamespace,indid,crsaswkt):
+    fw.write("<"+str(indid)+"> <http://www.opengis.net/ont/geosparql#inSRS> <"+str(crsnamespace)+"cs/cartesian_ax3_mm> .\n")
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm> <http://www.opengis.net/ont/crs/asWKT> \""+str(crsaswkt)+"\"^^<http://www.opengis.net/ont/geosparql/crs#wktLiteral>.\n")     
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/crs/CartesianCoordinateSystem> .\n") 
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm> <http://www.w3.org/2000/01/rdf-schema#label> \"Cartesian coordinate system with 3 axis in millimetre units\"@en .\n") 
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm> <http://www.opengis.net/ont/crs/axis> <"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis1> .\n") 
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/crs/CoordinateSystemAxis> .\n")
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis1> <http://www.w3.org/2000/01/rdf-schema#label> \"Cartesian coordinate system with 3 axis in millimetre units: Axis 1\"@en .\n")
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis1> <http://www.opengis.net/ont/crs/abbreviation> \"X\" .\n")
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis1> <http://www.opengis.net/ont/crs/axisDirection> <http://www.opengis.net/ont/crs/geocentricX> .\n")
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis1> <http://www.opengis.net/ont/crs/axisOrder> \"1\"^^xsd:int .\n")
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis1> <http://www.opengis.net/ont/crs/unit> <http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre> .\n")         
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm> <http://www.opengis.net/ont/crs/axis> <"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis2> .\n") 
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/crs/CoordinateSystemAxis> .\n")
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis2> <http://www.w3.org/2000/01/rdf-schema#label> \"Cartesian coordinate system with 3 axis in millimetre units: Axis 2\"@en .\n")
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis2> <http://www.opengis.net/ont/crs/abbreviation> \"Y\" .\n")
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis2> <http://www.opengis.net/ont/crs/axisDirection> <http://www.opengis.net/ont/crs/geocentricY> .\n")
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis2> <http://www.opengis.net/ont/crs/axisOrder> \"2\"^^xsd:int .\n")
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis2> <http://www.opengis.net/ont/crs/unit> <http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre> .\n")  
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm> <http://www.opengis.net/ont/crs/axis> <"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis3> .\n") 
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/crs/CoordinateSystemAxis> .\n")
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis3> <http://www.w3.org/2000/01/rdf-schema#label> \"Cartesian coordinate system with 3 axis in millimetre units: Axis 3\"@en .\n")
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis3> <http://www.opengis.net/ont/crs/abbreviation> \"Z\" .\n")
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis1> <http://www.opengis.net/ont/crs/axisDirection> <http://www.opengis.net/ont/crs/geocentricZ> .\n")
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis3> <http://www.opengis.net/ont/crs/axisOrder> \"3\"^^xsd:int .\n")
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis3> <http://www.opengis.net/ont/crs/unit> <http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre> .\n")        
+    
 
 
 for tabname in tabletnames:
@@ -136,8 +166,7 @@ for tabname in tabletnames:
                 res.write("<"+str(indid)+"_target3d> rdfs:label \"3D Annotation target of Annotation of Glyph at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on "+str(material)+"\"@en .\n")
                 res.write("<"+str(indid)+"_target3d_selector> rdf:type oa:WKTSelector .\n")
                 if "coordinateSystem" in data3d[key]["target"]["selector"]:
-                    print("  ")
-                    res.write("<"+str(indid)+"_target3d_selector> <http://www.opengis.net/ont/geosparql#inSRS> \"\"\""+str(data3d[key]["target"]["selector"]["coordinateSystem"]).replace("\n","").replace("\"","\\\"")+"\"\"\"^^<http://www.opengis.net/ont/geosparql/crs#wktLiteral> . \n")
+                    csToRDF(res,crsnamespace,str(indid)+"_target3d_selector","\"\""+str(data3d[key]["target"]["selector"]["coordinateSystem"]).replace("\n","").replace("\"","\\\"")+"\"\"")
                 if "pcaValue" in data3d[key]["target"]["selector"]:
                     res.write("<"+str(indid)+"_target3d_selector> <http://purl.org/meshsparql/pcaValue> \""+str(data3d[key]["target"]["selector"]["pcaValue"]).replace("\n","")+"\"^^oa:wktLiteral . \n")                             
                 if "computingReference" in data3d[key]["target"]["selector"]:
