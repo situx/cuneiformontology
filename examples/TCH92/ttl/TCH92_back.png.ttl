@@ -5,6 +5,7 @@
 @prefix ns1: <http://purl.org/meshsparql/> .
 @prefix ns2: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns3: <http://www.opengis.net/ont/crs/> .
+@prefix ns4: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -186,24 +187,24 @@
 
 <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1> a ns3:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 1"@en ;
+    ns4:hasUnit ns4:millimetre ;
     ns3:abbreviation "X" ;
-    ns3:axisDirection ns3:geocentricX,
-        ns3:geocentricZ ;
-    ns3:axisOrder "1"^^xsd:int ;
-    ns3:unit <http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre> .
+    ns3:axisDirection ns3:geocentricX ;
+    ns3:axisOrder "1"^^xsd:int .
 
 <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2> a ns3:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 2"@en ;
+    ns4:hasUnit ns4:millimetre ;
     ns3:abbreviation "Y" ;
     ns3:axisDirection ns3:geocentricY ;
-    ns3:axisOrder "2"^^xsd:int ;
-    ns3:unit <http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre> .
+    ns3:axisOrder "2"^^xsd:int .
 
 <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> a ns3:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 3"@en ;
+    ns4:hasUnit ns4:millimetre ;
     ns3:abbreviation "Z" ;
-    ns3:axisOrder "3"^^xsd:int ;
-    ns3:unit <http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre> .
+    ns3:axisDirection ns3:geocentricZ ;
+    ns3:axisOrder "3"^^xsd:int .
 
 <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/0052c32d-8670-4bf6-a3b5-41d39b4caaec> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at TCH92 reverse line 26 char 5 on 3D rendering"@en ;
