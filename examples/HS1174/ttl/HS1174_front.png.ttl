@@ -2,16 +2,20 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://purl.org/meshsparql/> .
-@prefix ns2: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns3: <http://www.opengis.net/ont/crs/> .
-@prefix ns4: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns2: <http://purl.org/meshsparql/> .
+@prefix ns3: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix ns4: <http://www.opengis.net/ont/geosparql#> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+oa:FragmentSelector a owl:Class ;
+    rdfs:label "Fragment Selector"@en ;
+    rdfs:subClassOf oa:Selector .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/HS1174_obverse_annotations> a as:Collection ;
     rdfs:label "Image annotations on HS1174 obverse on medium 3D rendering"@en ;
@@ -132,26 +136,26 @@
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb75638a-5db1-415f-9d86-bc88d8a3c4dc> ;
     rdfs:subClassOf skos:Collection .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1> a ns3:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1> a ns1:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 1"@en ;
-    ns4:hasUnit ns4:millimetre ;
-    ns3:abbreviation "X" ;
-    ns3:axisDirection ns3:geocentricX ;
-    ns3:axisOrder "1"^^xsd:int .
+    ns3:hasUnit ns3:millimetre ;
+    ns1:abbreviation "X" ;
+    ns1:axisDirection ns1:geocentricX ;
+    ns1:axisOrder "1"^^xsd:int .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2> a ns3:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2> a ns1:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 2"@en ;
-    ns4:hasUnit ns4:millimetre ;
-    ns3:abbreviation "Y" ;
-    ns3:axisDirection ns3:geocentricY ;
-    ns3:axisOrder "2"^^xsd:int .
+    ns3:hasUnit ns3:millimetre ;
+    ns1:abbreviation "Y" ;
+    ns1:axisDirection ns1:geocentricY ;
+    ns1:axisOrder "2"^^xsd:int .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> a ns3:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> a ns1:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 3"@en ;
-    ns4:hasUnit ns4:millimetre ;
-    ns3:abbreviation "Z" ;
-    ns3:axisDirection ns3:geocentricZ ;
-    ns3:axisOrder "3"^^xsd:int .
+    ns3:hasUnit ns3:millimetre ;
+    ns1:abbreviation "Z" ;
+    ns1:axisDirection ns1:geocentricZ ;
+    ns1:axisOrder "3"^^xsd:int .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/00cda0d2-a7fb-4e22-b367-242a7c8119fc> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering"@en ;
@@ -306,18 +310,18 @@
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/09a66ef9-8b3c-488b-ad51-d280404f2a7f_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 2 char 8 on a 3D Mesh"@en ;
-    ns1:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/09a66ef9-8b3c-488b-ad51-d280404f2a7f_target3d_selector_compref0> ;
-    ns1:pcaValue "POLYGON Z ((11.770306291587712 31.317014682282505 4.5576629638671875, 6.984358239511643 31.191344217253807 4.5576629638671875, 6.6652947186845495 36.84653201829294 4.5576629638671875, 11.344889850595031 36.84653201829294 4.5576629638671875, 11.770306291587712 31.317014682282505 7.099310874938965, 6.984358239511643 31.191344217253807 7.099310874938965, 6.6652947186845495 36.84653201829294 7.099310874938965, 11.344889850595031 36.84653201829294 7.099310874938965, 11.770306291587712 31.317014682282505 4.5576629638671875))"^^oa:wktLiteral ;
-    ns2:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
-    rdf:value "POLYGON Z ((11.914378496415974 14.386346805085239 4.228275299072266, 7.128430444339905 14.260676340056541 4.228275299072266, 6.809366923512812 19.915864141095675 4.228275299072266, 11.488962055423293 19.915864141095675 4.228275299072266, 11.914378496415974 14.386346805085239 6.769923210144043, 7.128430444339905 14.260676340056541 6.769923210144043, 6.809366923512812 19.915864141095675 6.769923210144043, 11.488962055423293 19.915864141095675 6.769923210144043, 11.914378496415974 14.386346805085239 4.228275299072266))"^^oa:wktLiteral .
+    ns2:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/09a66ef9-8b3c-488b-ad51-d280404f2a7f_target3d_selector_compref0> ;
+    ns2:pcaValue "POLYGON Z ((11.770306291587712 31.317014682282505 4.5576629638671875, 6.984358239511643 31.191344217253807 4.5576629638671875, 6.6652947186845495 36.84653201829294 4.5576629638671875, 11.344889850595031 36.84653201829294 4.5576629638671875, 11.770306291587712 2.5443210721120266 7.099310874938965, 6.984358239511643 2.6699915371407243 7.099310874938965, 6.6652947186845495 -2.985196263898409 7.099310874938965, 11.344889850595031 -2.985196263898409 7.099310874938965, 11.770306291587712 31.317014682282505 4.5576629638671875))"^^oa:wktLiteral ;
+    ns4:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
+    rdf:value "POLYGON Z ((11.914378496415974 14.386346805085239 4.228275299072266, 7.128430444339905 14.260676340056541 4.228275299072266, 6.809366923512812 19.915864141095675 4.228275299072266, 11.488962055423293 19.915864141095675 4.228275299072266, 11.914378496415974 -14.386346805085239 6.769923210144043, 7.128430444339905 -14.260676340056541 6.769923210144043, 6.809366923512812 -19.915864141095675 6.769923210144043, 11.488962055423293 -19.915864141095675 6.769923210144043, 11.914378496415974 14.386346805085239 4.228275299072266))"^^oa:wktLiteral .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/09a66ef9-8b3c-488b-ad51-d280404f2a7f_target3d_selector_compref0> a ns1:ComputingReference ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/09a66ef9-8b3c-488b-ad51-d280404f2a7f_target3d_selector_compref0> a ns2:ComputingReference ;
     rdfs:label "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 2 char 8 on a 3D Mesh" ;
-    ns1:comprefType "PCA"^^xsd:string ;
-    ns1:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
-    ns1:stable true ;
-    ns1:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns2:comprefType "PCA"^^xsd:string ;
+    ns2:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
+    ns2:stable true ;
+    ns2:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
+    ns2:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0d375432-3447-40f2-b1ae-d82104591707> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering"@en ;
@@ -385,18 +389,18 @@
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e7063b6-b4a2-4ade-8ad8-a2bf842709d8_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 1 char 4 on a 3D Mesh"@en ;
-    ns1:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e7063b6-b4a2-4ade-8ad8-a2bf842709d8_target3d_selector_compref0> ;
-    ns1:pcaValue "POLYGON Z ((10.24795265065248 18.227511048523763 5.048478603363037, 7.376383343373803 18.143730474836698 5.048478603363037, 6.8800617820505074 25.181298049324997 5.048478603363037, 9.751631089329184 25.013736726172247 5.048478603363037, 10.24795265065248 18.227511048523763 6.672297477722168, 7.376383343373803 18.143730474836698 6.672297477722168, 6.8800617820505074 25.181298049324997 6.672297477722168, 9.751631089329184 25.013736726172247 6.672297477722168, 10.24795265065248 18.227511048523763 5.048478603363037))"^^oa:wktLiteral ;
-    ns2:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
-    rdf:value "POLYGON Z ((10.392024855480742 1.296843171326496 4.719090938568115, 7.520455548202065 1.213062597639431 4.719090938568115, 7.02413398687877 8.250630172127732 4.719090938568115, 9.895703294157446 8.08306884897498 4.719090938568115, 10.392024855480742 1.296843171326496 6.342909812927246, 7.520455548202065 1.213062597639431 6.342909812927246, 7.02413398687877 8.250630172127732 6.342909812927246, 9.895703294157446 8.08306884897498 6.342909812927246, 10.392024855480742 1.296843171326496 4.719090938568115))"^^oa:wktLiteral .
+    ns2:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e7063b6-b4a2-4ade-8ad8-a2bf842709d8_target3d_selector_compref0> ;
+    ns2:pcaValue "POLYGON Z ((10.24795265065248 18.227511048523763 5.048478603363037, 7.376383343373803 18.143730474836698 5.048478603363037, 6.8800617820505074 25.181298049324997 5.048478603363037, 9.751631089329184 25.013736726172247 5.048478603363037, 10.24795265065248 15.633824705870769 6.672297477722168, 7.376383343373803 15.717605279557835 6.672297477722168, 6.8800617820505074 8.680037705069534 6.672297477722168, 9.751631089329184 8.847599028222286 6.672297477722168, 10.24795265065248 18.227511048523763 5.048478603363037))"^^oa:wktLiteral ;
+    ns4:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
+    rdf:value "POLYGON Z ((10.392024855480742 1.296843171326496 4.719090938568115, 7.520455548202065 1.213062597639431 4.719090938568115, 7.02413398687877 8.250630172127732 4.719090938568115, 9.895703294157446 8.08306884897498 4.719090938568115, 10.392024855480742 -1.296843171326496 6.342909812927246, 7.520455548202065 -1.213062597639431 6.342909812927246, 7.02413398687877 -8.250630172127732 6.342909812927246, 9.895703294157446 -8.08306884897498 6.342909812927246, 10.392024855480742 1.296843171326496 4.719090938568115))"^^oa:wktLiteral .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e7063b6-b4a2-4ade-8ad8-a2bf842709d8_target3d_selector_compref0> a ns1:ComputingReference ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e7063b6-b4a2-4ade-8ad8-a2bf842709d8_target3d_selector_compref0> a ns2:ComputingReference ;
     rdfs:label "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 1 char 4 on a 3D Mesh" ;
-    ns1:comprefType "PCA"^^xsd:string ;
-    ns1:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
-    ns1:stable true ;
-    ns1:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns2:comprefType "PCA"^^xsd:string ;
+    ns2:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
+    ns2:stable true ;
+    ns2:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
+    ns2:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e8e1d31-9942-4cdf-8f68-e01ff4a51926> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering"@en ;
@@ -638,18 +642,18 @@
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c74c217-b7cb-4ac8-92d8-86051e811659_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 3 char 2 on a 3D Mesh"@en ;
-    ns1:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c74c217-b7cb-4ac8-92d8-86051e811659_target3d_selector_compref0> ;
-    ns1:pcaValue "POLYGON Z ((-6.9719395571443545 35.97221337024391 5.682280540466309, -7.61006600375725 42.423318335151734 5.682280540466309, 1.7845756301464384 42.67465926520913 5.682280540466309, 2.3517987415525994 36.181665551520716 5.682280540466309, -6.9719395571443545 35.97221337024391 7.708495616912842, -7.61006600375725 42.423318335151734 7.708495616912842, 1.7845756301464384 42.67465926520913 7.708495616912842, 2.3517987415525994 36.181665551520716 7.708495616912842, -6.9719395571443545 35.97221337024391 5.682280540466309))"^^oa:wktLiteral ;
-    ns2:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
-    rdf:value "POLYGON Z ((-6.827867352316092 19.041545493046645 5.352892875671387, -7.465993798928988 25.49265045795447 5.352892875671387, 1.9286478349747007 25.743991388011864 5.352892875671387, 2.4958709463808617 19.25099767432345 5.352892875671387, -6.827867352316092 19.041545493046645 7.37910795211792, -7.465993798928988 25.49265045795447 7.37910795211792, 1.9286478349747007 25.743991388011864 7.37910795211792, 2.4958709463808617 19.25099767432345 7.37910795211792, -6.827867352316092 19.041545493046645 5.352892875671387))"^^oa:wktLiteral .
+    ns2:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c74c217-b7cb-4ac8-92d8-86051e811659_target3d_selector_compref0> ;
+    ns2:pcaValue "POLYGON Z ((-6.9719395571443545 35.97221337024391 5.682280540466309, -7.61006600375725 42.423318335151734 5.682280540466309, 1.7845756301464384 42.67465926520913 5.682280540466309, 2.3517987415525994 36.181665551520716 5.682280540466309, -6.9719395571443545 -2.110877615849379 7.708495616912842, -7.61006600375725 -8.561982580757203 7.708495616912842, 1.7845756301464384 -8.813323510814598 7.708495616912842, 2.3517987415525994 -2.3203297971261847 7.708495616912842, -6.9719395571443545 35.97221337024391 5.682280540466309))"^^oa:wktLiteral ;
+    ns4:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
+    rdf:value "POLYGON Z ((-6.827867352316092 19.041545493046645 5.352892875671387, -7.465993798928988 25.49265045795447 5.352892875671387, 1.9286478349747007 25.743991388011864 5.352892875671387, 2.4958709463808617 19.25099767432345 5.352892875671387, -6.827867352316092 -19.041545493046645 7.37910795211792, -7.465993798928988 -25.49265045795447 7.37910795211792, 1.9286478349747007 -25.743991388011864 7.37910795211792, 2.4958709463808617 -19.25099767432345 7.37910795211792, -6.827867352316092 19.041545493046645 5.352892875671387))"^^oa:wktLiteral .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c74c217-b7cb-4ac8-92d8-86051e811659_target3d_selector_compref0> a ns1:ComputingReference ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c74c217-b7cb-4ac8-92d8-86051e811659_target3d_selector_compref0> a ns2:ComputingReference ;
     rdfs:label "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 3 char 2 on a 3D Mesh" ;
-    ns1:comprefType "PCA"^^xsd:string ;
-    ns1:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
-    ns1:stable true ;
-    ns1:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns2:comprefType "PCA"^^xsd:string ;
+    ns2:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
+    ns2:stable true ;
+    ns2:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
+    ns2:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/20238516-d42d-4c23-82f8-94626948d45b> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering"@en ;
@@ -775,18 +779,18 @@
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/28b2e58a-c464-462e-aa73-a369ffaee903_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 2 char 7 on a 3D Mesh"@en ;
-    ns1:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/28b2e58a-c464-462e-aa73-a369ffaee903_target3d_selector_compref0> ;
-    ns1:pcaValue "POLYGON Z ((6.523981932543265 35.999885144062375 5.5920820236206055, -2.5515949904507504 35.91610483404324 5.5920820236206055, -2.0552746192100404 30.470367808051936 5.5920820236206055, 6.736692533204771 31.182501849443533 5.5920820236206055, 6.523981932543265 35.999885144062375 7.7059855461120605, -2.5515949904507504 35.91610483404324 7.7059855461120605, -2.0552746192100404 30.470367808051936 7.7059855461120605, 6.736692533204771 31.182501849443533 7.7059855461120605, 6.523981932543265 35.999885144062375 5.5920820236206055))"^^oa:wktLiteral ;
-    ns2:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
-    rdf:value "POLYGON Z ((6.668054137371527 19.06921726686511 5.262694358825684, -2.407522785622488 18.985436956845977 5.262694358825684, -1.911202414381778 13.53969993085467 5.262694358825684, 6.880764738033033 14.251833972246269 5.262694358825684, 6.668054137371527 19.06921726686511 7.376597881317139, -2.407522785622488 18.985436956845977 7.376597881317139, -1.911202414381778 13.53969993085467 7.376597881317139, 6.880764738033033 14.251833972246269 7.376597881317139, 6.668054137371527 19.06921726686511 5.262694358825684))"^^oa:wktLiteral .
+    ns2:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/28b2e58a-c464-462e-aa73-a369ffaee903_target3d_selector_compref0> ;
+    ns2:pcaValue "POLYGON Z ((6.523981932543265 35.999885144062375 5.5920820236206055, -2.5515949904507504 35.91610483404324 5.5920820236206055, -2.0552746192100404 30.470367808051936 5.5920820236206055, 6.736692533204771 31.182501849443533 5.5920820236206055, 6.523981932543265 -2.138549389667844 7.7059855461120605, -2.5515949904507504 -2.054769079648711 7.7059855461120605, -2.0552746192100404 3.3909679463425952 7.7059855461120605, 6.736692533204771 2.678833904950997 7.7059855461120605, 6.523981932543265 35.999885144062375 5.5920820236206055))"^^oa:wktLiteral ;
+    ns4:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
+    rdf:value "POLYGON Z ((6.668054137371527 19.06921726686511 5.262694358825684, -2.407522785622488 18.985436956845977 5.262694358825684, -1.911202414381778 13.53969993085467 5.262694358825684, 6.880764738033033 14.251833972246269 5.262694358825684, 6.668054137371527 -19.06921726686511 7.376597881317139, -2.407522785622488 -18.985436956845977 7.376597881317139, -1.911202414381778 -13.53969993085467 7.376597881317139, 6.880764738033033 -14.251833972246269 7.376597881317139, 6.668054137371527 19.06921726686511 5.262694358825684))"^^oa:wktLiteral .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/28b2e58a-c464-462e-aa73-a369ffaee903_target3d_selector_compref0> a ns1:ComputingReference ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/28b2e58a-c464-462e-aa73-a369ffaee903_target3d_selector_compref0> a ns2:ComputingReference ;
     rdfs:label "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 2 char 7 on a 3D Mesh" ;
-    ns1:comprefType "PCA"^^xsd:string ;
-    ns1:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
-    ns1:stable true ;
-    ns1:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns2:comprefType "PCA"^^xsd:string ;
+    ns2:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
+    ns2:stable true ;
+    ns2:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
+    ns2:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2a8bcac4-2342-40c2-932f-29b5931bd98a> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering"@en ;
@@ -999,18 +1003,18 @@
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/32de1d43-3933-412a-ba17-0f3053a29eee_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 4 char 4 on a 3D Mesh"@en ;
-    ns1:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/32de1d43-3933-412a-ba17-0f3053a29eee_target3d_selector_compref0> ;
-    ns1:pcaValue "POLYGON Z ((10.290386235253155 42.51275449811821 0.3296105563640594, 4.867027571238221 42.60912055748561 0.3296105563640594, 4.418479495068201 48.87293691603038 0.3296105563640594, 10.086501287031592 48.87293691603038 0.3296105563640594, 10.290386235253155 42.51275449811821 7.18063497543335, 4.867027571238221 42.60912055748561 7.18063497543335, 4.418479495068201 48.87293691603038 7.18063497543335, 10.086501287031592 48.87293691603038 7.18063497543335, 10.290386235253155 42.51275449811821 0.3296105563640594))"^^oa:wktLiteral ;
-    ns2:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
-    rdf:value "POLYGON Z ((10.434458440081418 25.582086620920943 0.0002228853263659, 5.011099776066484 25.678452680288345 0.0002228853263659, 4.5625516998964635 31.942269038833114 0.0002228853263659, 10.230573491859854 31.942269038833114 0.0002228853263659, 10.434458440081418 25.582086620920943 6.851247310638428, 5.011099776066484 25.678452680288345 6.851247310638428, 4.5625516998964635 31.942269038833114 6.851247310638428, 10.230573491859854 31.942269038833114 6.851247310638428, 10.434458440081418 25.582086620920943 0.0002228853263659))"^^oa:wktLiteral .
+    ns2:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/32de1d43-3933-412a-ba17-0f3053a29eee_target3d_selector_compref0> ;
+    ns2:pcaValue "POLYGON Z ((10.290386235253155 42.51275449811821 0.3296105563640594, 4.867027571238221 42.60912055748561 0.3296105563640594, 4.418479495068201 48.87293691603038 0.3296105563640594, 10.086501287031592 48.87293691603038 0.3296105563640594, 10.290386235253155 -8.651418743723678 7.18063497543335, 4.867027571238221 -8.74778480309108 7.18063497543335, 4.418479495068201 -15.011601161635848 7.18063497543335, 10.086501287031592 -15.011601161635848 7.18063497543335, 10.290386235253155 42.51275449811821 0.3296105563640594))"^^oa:wktLiteral ;
+    ns4:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
+    rdf:value "POLYGON Z ((10.434458440081418 25.582086620920943 0.0002228853263659, 5.011099776066484 25.678452680288345 0.0002228853263659, 4.5625516998964635 31.942269038833114 0.0002228853263659, 10.230573491859854 31.942269038833114 0.0002228853263659, 10.434458440081418 -25.582086620920943 6.851247310638428, 5.011099776066484 -25.678452680288345 6.851247310638428, 4.5625516998964635 -31.942269038833114 6.851247310638428, 10.230573491859854 -31.942269038833114 6.851247310638428, 10.434458440081418 25.582086620920943 0.0002228853263659))"^^oa:wktLiteral .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/32de1d43-3933-412a-ba17-0f3053a29eee_target3d_selector_compref0> a ns1:ComputingReference ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/32de1d43-3933-412a-ba17-0f3053a29eee_target3d_selector_compref0> a ns2:ComputingReference ;
     rdfs:label "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 4 char 4 on a 3D Mesh" ;
-    ns1:comprefType "PCA"^^xsd:string ;
-    ns1:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
-    ns1:stable true ;
-    ns1:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns2:comprefType "PCA"^^xsd:string ;
+    ns2:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
+    ns2:stable true ;
+    ns2:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
+    ns2:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/34a4f506-5fb4-4b92-a32a-7278f8f19e40> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering"@en ;
@@ -1165,18 +1169,18 @@
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/45e343c9-c3a5-4417-ae16-7fa1fb3c0eec_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 2 char 2 on a 3D Mesh"@en ;
-    ns1:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/45e343c9-c3a5-4417-ae16-7fa1fb3c0eec_target3d_selector_compref0> ;
-    ns1:pcaValue "POLYGON Z ((-5.696222201081181 24.43428601371994 5.536488056182861, 0.5077860096754492 24.72751780190139 5.536488056182861, 0.2241750490136631 30.927279727408347 5.536488056182861, -6.121639832156445 31.262402373713854 5.536488056182861, -5.696222201081181 24.43428601371994 7.399155616760254, 0.5077860096754492 24.72751780190139 7.399155616760254, 0.2241750490136631 30.927279727408347 7.399155616760254, -6.121639832156445 31.262402373713854 7.399155616760254, -5.696222201081181 24.43428601371994 5.536488056182861))"^^oa:wktLiteral ;
-    ns2:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
-    rdf:value "POLYGON Z ((-5.552149996252918 7.5036181365226735 5.2071003913879395, 0.6518582145037115 7.796849924704124 5.2071003913879395, 0.3682472538419255 13.996611850211083 5.2071003913879395, -5.977567627328183 14.331734496516589 5.2071003913879395, -5.552149996252918 7.5036181365226735 7.069767951965332, 0.6518582145037115 7.796849924704124 7.069767951965332, 0.3682472538419255 13.996611850211083 7.069767951965332, -5.977567627328183 14.331734496516589 7.069767951965332, -5.552149996252918 7.5036181365226735 5.2071003913879395))"^^oa:wktLiteral .
+    ns2:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/45e343c9-c3a5-4417-ae16-7fa1fb3c0eec_target3d_selector_compref0> ;
+    ns2:pcaValue "POLYGON Z ((-5.696222201081181 24.43428601371994 5.536488056182861, 0.5077860096754492 24.72751780190139 5.536488056182861, 0.2241750490136631 30.927279727408347 5.536488056182861, -6.121639832156445 31.262402373713854 5.536488056182861, -5.696222201081181 9.427049740674592 7.399155616760254, 0.5077860096754492 9.133817952493143 7.399155616760254, 0.2241750490136631 2.934056026986182 7.399155616760254, -6.121639832156445 2.598933380680677 7.399155616760254, -5.696222201081181 24.43428601371994 5.536488056182861))"^^oa:wktLiteral ;
+    ns4:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
+    rdf:value "POLYGON Z ((-5.552149996252918 7.5036181365226735 5.2071003913879395, 0.6518582145037115 7.796849924704124 5.2071003913879395, 0.3682472538419255 13.996611850211083 5.2071003913879395, -5.977567627328183 14.331734496516589 5.2071003913879395, -5.552149996252918 -7.5036181365226735 7.069767951965332, 0.6518582145037115 -7.796849924704124 7.069767951965332, 0.3682472538419255 -13.996611850211083 7.069767951965332, -5.977567627328183 -14.331734496516589 7.069767951965332, -5.552149996252918 7.5036181365226735 5.2071003913879395))"^^oa:wktLiteral .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/45e343c9-c3a5-4417-ae16-7fa1fb3c0eec_target3d_selector_compref0> a ns1:ComputingReference ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/45e343c9-c3a5-4417-ae16-7fa1fb3c0eec_target3d_selector_compref0> a ns2:ComputingReference ;
     rdfs:label "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 2 char 2 on a 3D Mesh" ;
-    ns1:comprefType "PCA"^^xsd:string ;
-    ns1:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
-    ns1:stable true ;
-    ns1:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns2:comprefType "PCA"^^xsd:string ;
+    ns2:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
+    ns2:stable true ;
+    ns2:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
+    ns2:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4776df65-3c46-4ae6-a868-1f416c8a544b> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 3 char 1 on 3D rendering"@en ;
@@ -1215,18 +1219,18 @@
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4776df65-3c46-4ae6-a868-1f416c8a544b_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 3 char 1 on a 3D Mesh"@en ;
-    ns1:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4776df65-3c46-4ae6-a868-1f416c8a544b_target3d_selector_compref0> ;
-    ns1:pcaValue "POLYGON Z ((-13.673758568817327 36.665301446364786 2.318160057067871, -8.994163585667165 36.916643782651164 2.318160057067871, -9.455032586825151 42.40426955742305 2.318160057067871, -14.205530756421728 42.19481737614625 2.318160057067871, -13.673758568817327 36.665301446364786 6.761415958404541, -8.994163585667165 36.916643782651164 6.761415958404541, -9.455032586825151 42.40426955742305 6.761415958404541, -14.205530756421728 42.19481737614625 6.761415958404541, -13.673758568817327 36.665301446364786 2.318160057067871))"^^oa:wktLiteral ;
-    ns2:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
-    rdf:value "POLYGON Z ((-13.529686363989065 19.73463356916752 1.9887722730636597, -8.850091380838903 19.985975905453895 1.9887722730636597, -9.310960381996889 25.473601680225787 1.9887722730636597, -14.061458551593466 25.26414949894898 1.9887722730636597, -13.529686363989065 19.73463356916752 6.432028293609619, -8.850091380838903 19.985975905453895 6.432028293609619, -9.310960381996889 25.473601680225787 6.432028293609619, -14.061458551593466 25.26414949894898 6.432028293609619, -13.529686363989065 19.73463356916752 1.9887722730636597))"^^oa:wktLiteral .
+    ns2:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4776df65-3c46-4ae6-a868-1f416c8a544b_target3d_selector_compref0> ;
+    ns2:pcaValue "POLYGON Z ((-13.673758568817327 36.665301446364786 2.318160057067871, -8.994163585667165 36.916643782651164 2.318160057067871, -9.455032586825151 42.40426955742305 2.318160057067871, -14.205530756421728 42.19481737614625 2.318160057067871, -13.673758568817327 -2.803965691970255 6.761415958404541, -8.994163585667165 -3.055308028256629 6.761415958404541, -9.455032586825151 -8.542933803028522 6.761415958404541, -14.205530756421728 -8.333481621751716 6.761415958404541, -13.673758568817327 36.665301446364786 2.318160057067871))"^^oa:wktLiteral ;
+    ns4:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
+    rdf:value "POLYGON Z ((-13.529686363989065 19.73463356916752 1.9887722730636597, -8.850091380838903 19.985975905453895 1.9887722730636597, -9.310960381996889 25.473601680225787 1.9887722730636597, -14.061458551593466 25.26414949894898 1.9887722730636597, -13.529686363989065 -19.73463356916752 6.432028293609619, -8.850091380838903 -19.985975905453895 6.432028293609619, -9.310960381996889 -25.473601680225787 6.432028293609619, -14.061458551593466 -25.26414949894898 6.432028293609619, -13.529686363989065 19.73463356916752 1.9887722730636597))"^^oa:wktLiteral .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4776df65-3c46-4ae6-a868-1f416c8a544b_target3d_selector_compref0> a ns1:ComputingReference ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4776df65-3c46-4ae6-a868-1f416c8a544b_target3d_selector_compref0> a ns2:ComputingReference ;
     rdfs:label "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 3 char 1 on a 3D Mesh" ;
-    ns1:comprefType "PCA"^^xsd:string ;
-    ns1:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
-    ns1:stable true ;
-    ns1:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns2:comprefType "PCA"^^xsd:string ;
+    ns2:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
+    ns2:stable true ;
+    ns2:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
+    ns2:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/47fdacc5-6576-4c1e-8743-f93be32e998b> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 4 char 3 on 3D rendering"@en ;
@@ -1265,18 +1269,18 @@
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/47fdacc5-6576-4c1e-8743-f93be32e998b_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 4 char 3 on a 3D Mesh"@en ;
-    ns1:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/47fdacc5-6576-4c1e-8743-f93be32e998b_target3d_selector_compref0> ;
-    ns1:pcaValue "POLYGON Z ((1.1095072350148705 42.697502048718995 0.3311269283294678, 4.902815734692101 42.655610487480445 0.3311269283294678, 4.371043993368669 49.27427747865551 0.3311269283294678, 0.045963752368003 49.02293373614017 0.3311269283294678, 1.1095072350148705 42.697502048718995 7.497435092926025, 4.902815734692101 42.655610487480445 7.497435092926025, 4.371043993368669 49.27427747865551 7.497435092926025, 0.045963752368003 49.02293373614017 7.497435092926025, 1.1095072350148705 42.697502048718995 0.3311269283294678))"^^oa:wktLiteral ;
-    ns2:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
-    rdf:value "POLYGON Z ((1.2535794398431328 25.76683417152173 0.0017392545705661, 5.046887939520364 25.724942610283183 0.0017392545705661, 4.515116198196932 32.34360960145825 0.0017392545705661, 0.1900359571962653 32.0922658589429 0.0017392545705661, 1.2535794398431328 25.76683417152173 7.1680474281311035, 5.046887939520364 25.724942610283183 7.1680474281311035, 4.515116198196932 32.34360960145825 7.1680474281311035, 0.1900359571962653 32.0922658589429 7.1680474281311035, 1.2535794398431328 25.76683417152173 0.0017392545705661))"^^oa:wktLiteral .
+    ns2:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/47fdacc5-6576-4c1e-8743-f93be32e998b_target3d_selector_compref0> ;
+    ns2:pcaValue "POLYGON Z ((1.1095072350148705 42.697502048718995 0.3311269283294678, 4.902815734692101 42.655610487480445 0.3311269283294678, 4.371043993368669 49.27427747865551 0.3311269283294678, 0.045963752368003 49.02293373614017 0.3311269283294678, 1.1095072350148705 -8.836166294324464 7.497435092926025, 4.902815734692101 -8.794274733085917 7.497435092926025, 4.371043993368669 -15.412941724260982 7.497435092926025, 0.045963752368003 -15.161597981745636 7.497435092926025, 1.1095072350148705 42.697502048718995 0.3311269283294678))"^^oa:wktLiteral ;
+    ns4:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
+    rdf:value "POLYGON Z ((1.2535794398431328 25.76683417152173 0.0017392545705661, 5.046887939520364 25.724942610283183 0.0017392545705661, 4.515116198196932 32.34360960145825 0.0017392545705661, 0.1900359571962653 32.0922658589429 0.0017392545705661, 1.2535794398431328 -25.76683417152173 7.1680474281311035, 5.046887939520364 -25.724942610283183 7.1680474281311035, 4.515116198196932 -32.34360960145825 7.1680474281311035, 0.1900359571962653 -32.0922658589429 7.1680474281311035, 1.2535794398431328 25.76683417152173 0.0017392545705661))"^^oa:wktLiteral .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/47fdacc5-6576-4c1e-8743-f93be32e998b_target3d_selector_compref0> a ns1:ComputingReference ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/47fdacc5-6576-4c1e-8743-f93be32e998b_target3d_selector_compref0> a ns2:ComputingReference ;
     rdfs:label "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 4 char 3 on a 3D Mesh" ;
-    ns1:comprefType "PCA"^^xsd:string ;
-    ns1:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
-    ns1:stable true ;
-    ns1:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns2:comprefType "PCA"^^xsd:string ;
+    ns2:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
+    ns2:stable true ;
+    ns2:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
+    ns2:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4a1aed45-24db-4cb9-a760-28486d7f6707> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering"@en ;
@@ -1344,18 +1348,18 @@
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4daae4c2-bd2a-4911-86e0-31dfeea22595_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 1 char 1 on a 3D Mesh"@en ;
-    ns1:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4daae4c2-bd2a-4911-86e0-31dfeea22595_target3d_selector_compref0> ;
-    ns1:pcaValue "POLYGON Z ((-13.518901006511173 18.561026726665276 0.3296199440956116, -6.179020258965789 18.630410415970413 0.3296199440956116, -6.707491901284913 25.01371774208105 0.3296199440956116, -13.988653379114409 24.944333701218667 0.3296199440956116, -13.518901006511173 18.561026726665276 7.081624507904053, -6.179020258965789 18.630410415970413 7.081624507904053, -6.707491901284913 25.01371774208105 7.081624507904053, -13.988653379114409 24.944333701218667 7.081624507904053, -13.518901006511173 18.561026726665276 0.3296199440956116))"^^oa:wktLiteral ;
-    ns2:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
-    rdf:value "POLYGON Z ((-13.374828801682911 1.6303588494680086 0.0002322912332602, -6.034948054137526 1.699742538773146 0.0002322912332602, -6.56341969645665 8.083049864883785 0.0002322912332602, -13.844581174286146 8.013665824021402 0.0002322912332602, -13.374828801682911 1.6303588494680086 6.752236843109131, -6.034948054137526 1.699742538773146 6.752236843109131, -6.56341969645665 8.083049864883785 6.752236843109131, -13.844581174286146 8.013665824021402 6.752236843109131, -13.374828801682911 1.6303588494680086 0.0002322912332602))"^^oa:wktLiteral .
+    ns2:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4daae4c2-bd2a-4911-86e0-31dfeea22595_target3d_selector_compref0> ;
+    ns2:pcaValue "POLYGON Z ((-13.518901006511173 18.561026726665276 0.3296199440956116, -6.179020258965789 18.630410415970413 0.3296199440956116, -6.707491901284913 25.01371774208105 0.3296199440956116, -13.988653379114409 24.944333701218667 0.3296199440956116, -13.518901006511173 15.300309027729257 7.081624507904053, -6.179020258965789 15.23092533842412 7.081624507904053, -6.707491901284913 8.84761801231348 7.081624507904053, -13.988653379114409 8.917002053175864 7.081624507904053, -13.518901006511173 18.561026726665276 0.3296199440956116))"^^oa:wktLiteral ;
+    ns4:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
+    rdf:value "POLYGON Z ((-13.374828801682911 1.6303588494680086 0.0002322912332602, -6.034948054137526 1.699742538773146 0.0002322912332602, -6.56341969645665 8.083049864883785 0.0002322912332602, -13.844581174286146 8.013665824021402 0.0002322912332602, -13.374828801682911 -1.6303588494680086 6.752236843109131, -6.034948054137526 -1.699742538773146 6.752236843109131, -6.56341969645665 -8.083049864883785 6.752236843109131, -13.844581174286146 -8.013665824021402 6.752236843109131, -13.374828801682911 1.6303588494680086 0.0002322912332602))"^^oa:wktLiteral .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4daae4c2-bd2a-4911-86e0-31dfeea22595_target3d_selector_compref0> a ns1:ComputingReference ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4daae4c2-bd2a-4911-86e0-31dfeea22595_target3d_selector_compref0> a ns2:ComputingReference ;
     rdfs:label "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 1 char 1 on a 3D Mesh" ;
-    ns1:comprefType "PCA"^^xsd:string ;
-    ns1:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
-    ns1:stable true ;
-    ns1:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns2:comprefType "PCA"^^xsd:string ;
+    ns2:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
+    ns2:stable true ;
+    ns2:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
+    ns2:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4fde8eef-a86f-42b8-ba81-648d82f07acd> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering"@en ;
@@ -2206,18 +2210,18 @@
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9249bcca-57c7-4bce-bc99-f1c4416702b1_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 1 char 2 on a 3D Mesh"@en ;
-    ns1:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9249bcca-57c7-4bce-bc99-f1c4416702b1_target3d_selector_compref0> ;
-    ns1:pcaValue "POLYGON Z ((0.0451985292667487 18.491643037360138 3.0609190464019775, -5.591829941972069 18.422259172276377 3.0609190464019775, -6.061582314575302 24.319880145915185 3.0609190464019775, -0.5419917877269693 24.38926348366308 3.0609190464019775, 0.0451985292667487 18.491643037360138 7.323707580566406, -5.591829941972069 18.422259172276377 7.323707580566406, -6.061582314575302 24.319880145915185 7.323707580566406, -0.5419917877269693 24.38926348366308 7.323707580566406, 0.0451985292667487 18.491643037360138 3.0609190464019775))"^^oa:wktLiteral ;
-    ns2:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
-    rdf:value "POLYGON Z ((0.189270734095011 1.5609751601628714 2.7315313816070557, -5.447757737143807 1.4915912950791117 2.7315313816070557, -5.91751010974704 7.389212268717921 2.7315313816070557, -0.397919582898707 7.458595606465814 2.7315313816070557, 0.189270734095011 1.5609751601628714 6.994319915771484, -5.447757737143807 1.4915912950791117 6.994319915771484, -5.91751010974704 7.389212268717921 6.994319915771484, -0.397919582898707 7.458595606465814 6.994319915771484, 0.189270734095011 1.5609751601628714 2.7315313816070557))"^^oa:wktLiteral .
+    ns2:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9249bcca-57c7-4bce-bc99-f1c4416702b1_target3d_selector_compref0> ;
+    ns2:pcaValue "POLYGON Z ((0.0451985292667487 18.491643037360138 3.0609190464019775, -5.591829941972069 18.422259172276377 3.0609190464019775, -6.061582314575302 24.319880145915185 3.0609190464019775, -0.5419917877269693 24.38926348366308 3.0609190464019775, 0.0451985292667487 15.369692717034393 7.323707580566406, -5.591829941972069 15.439076582118155 7.323707580566406, -6.061582314575302 9.541455608479344 7.323707580566406, -0.5419917877269693 9.472072270731452 7.323707580566406, 0.0451985292667487 18.491643037360138 3.0609190464019775))"^^oa:wktLiteral ;
+    ns4:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
+    rdf:value "POLYGON Z ((0.189270734095011 1.5609751601628714 2.7315313816070557, -5.447757737143807 1.4915912950791117 2.7315313816070557, -5.91751010974704 7.389212268717921 2.7315313816070557, -0.397919582898707 7.458595606465814 2.7315313816070557, 0.189270734095011 -1.5609751601628714 6.994319915771484, -5.447757737143807 -1.4915912950791117 6.994319915771484, -5.91751010974704 -7.389212268717921 6.994319915771484, -0.397919582898707 -7.458595606465814 6.994319915771484, 0.189270734095011 1.5609751601628714 2.7315313816070557))"^^oa:wktLiteral .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9249bcca-57c7-4bce-bc99-f1c4416702b1_target3d_selector_compref0> a ns1:ComputingReference ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9249bcca-57c7-4bce-bc99-f1c4416702b1_target3d_selector_compref0> a ns2:ComputingReference ;
     rdfs:label "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 1 char 2 on a 3D Mesh" ;
-    ns1:comprefType "PCA"^^xsd:string ;
-    ns1:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
-    ns1:stable true ;
-    ns1:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns2:comprefType "PCA"^^xsd:string ;
+    ns2:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
+    ns2:stable true ;
+    ns2:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
+    ns2:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/987a5913-1501-41ad-a49f-acd2f9b71b0a> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering"@en ;
@@ -2285,18 +2289,18 @@
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a3572bc-d972-43e5-8aa3-b18876e717fd_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 2 char 1 on a 3D Mesh"@en ;
-    ns1:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a3572bc-d972-43e5-8aa3-b18876e717fd_target3d_selector_compref0> ;
-    ns1:pcaValue "POLYGON Z ((-13.794491851881787 25.1524056687541 4.149117469787598, -5.8179093353363935 25.068625358734966 4.149117469787598, -6.314230301618398 31.645400085557 4.149117469787598, -14.078103556345189 31.352167594261058 4.149117469787598, -13.794491851881787 25.1524056687541 7.026444911956787, -5.8179093353363935 25.068625358734966 7.026444911956787, -6.314230301618398 31.645400085557 7.026444911956787, -14.078103556345189 31.352167594261058 7.026444911956787, -13.794491851881787 25.1524056687541 4.149117469787598))"^^oa:wktLiteral ;
-    ns2:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
-    rdf:value "POLYGON Z ((-13.650419647053525 8.221737791556832 3.819730043411255, -5.673837130508131 8.1379574815377 3.819730043411255, -6.170158096790136 14.714732208359733 3.819730043411255, -13.934031351516927 14.421499717063792 3.819730043411255, -13.650419647053525 8.221737791556832 6.697057247161865, -5.673837130508131 8.1379574815377 6.697057247161865, -6.170158096790136 14.714732208359733 6.697057247161865, -13.934031351516927 14.421499717063792 6.697057247161865, -13.650419647053525 8.221737791556832 3.819730043411255))"^^oa:wktLiteral .
+    ns2:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a3572bc-d972-43e5-8aa3-b18876e717fd_target3d_selector_compref0> ;
+    ns2:pcaValue "POLYGON Z ((-13.794491851881787 25.1524056687541 4.149117469787598, -5.8179093353363935 25.068625358734966 4.149117469787598, -6.314230301618398 31.645400085557 4.149117469787598, -14.078103556345189 31.352167594261058 4.149117469787598, -13.794491851881787 8.708930085640434 7.026444911956787, -5.8179093353363935 8.792710395659565 7.026444911956787, -6.314230301618398 2.215935668837533 7.026444911956787, -14.078103556345189 2.5091681601334734 7.026444911956787, -13.794491851881787 25.1524056687541 4.149117469787598))"^^oa:wktLiteral ;
+    ns4:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
+    rdf:value "POLYGON Z ((-13.650419647053525 8.221737791556832 3.819730043411255, -5.673837130508131 8.1379574815377 3.819730043411255, -6.170158096790136 14.714732208359733 3.819730043411255, -13.934031351516927 14.421499717063792 3.819730043411255, -13.650419647053525 -8.221737791556832 6.697057247161865, -5.673837130508131 -8.1379574815377 6.697057247161865, -6.170158096790136 -14.714732208359733 6.697057247161865, -13.934031351516927 -14.421499717063792 6.697057247161865, -13.650419647053525 8.221737791556832 3.819730043411255))"^^oa:wktLiteral .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a3572bc-d972-43e5-8aa3-b18876e717fd_target3d_selector_compref0> a ns1:ComputingReference ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a3572bc-d972-43e5-8aa3-b18876e717fd_target3d_selector_compref0> a ns2:ComputingReference ;
     rdfs:label "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 2 char 1 on a 3D Mesh" ;
-    ns1:comprefType "PCA"^^xsd:string ;
-    ns1:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
-    ns1:stable true ;
-    ns1:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns2:comprefType "PCA"^^xsd:string ;
+    ns2:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
+    ns2:stable true ;
+    ns2:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
+    ns2:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a961dfe-7891-44ec-b13e-b9f7726819a1> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering"@en ;
@@ -2538,18 +2542,18 @@
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/aaf1409a-87bb-4dc4-aac6-880be041ad64_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 3 char 3 on a 3D Mesh"@en ;
-    ns1:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/aaf1409a-87bb-4dc4-aac6-880be041ad64_target3d_selector_compref0> ;
-    ns1:pcaValue "POLYGON Z ((2.404348028113837 36.9992006734599 5.473689079284668, 9.95551365738558 37.08298098347903 5.473689079284668, 9.671900316558627 42.52871800947034 5.473689079284668, 1.943479026955849 42.52871800947034 5.473689079284668, 2.404348028113837 36.9992006734599 7.47048282623291, 9.95551365738558 37.08298098347903 7.47048282623291, 9.671900316558627 42.52871800947034 7.47048282623291, 1.943479026955849 42.52871800947034 7.47048282623291, 2.404348028113837 36.9992006734599 5.473689079284668))"^^oa:wktLiteral ;
-    ns2:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
-    rdf:value "POLYGON Z ((2.5484202329420995 20.068532796262637 5.144301414489746, 10.099585862213843 20.152313106281767 5.144301414489746, 9.81597252138689 25.598050132273073 5.144301414489746, 2.0875512317841114 25.598050132273073 5.144301414489746, 2.5484202329420995 20.068532796262637 7.141095161437988, 10.099585862213843 20.152313106281767 7.141095161437988, 9.81597252138689 25.598050132273073 7.141095161437988, 2.0875512317841114 25.598050132273073 7.141095161437988, 2.5484202329420995 20.068532796262637 5.144301414489746))"^^oa:wktLiteral .
+    ns2:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/aaf1409a-87bb-4dc4-aac6-880be041ad64_target3d_selector_compref0> ;
+    ns2:pcaValue "POLYGON Z ((2.404348028113837 36.9992006734599 5.473689079284668, 9.95551365738558 37.08298098347903 5.473689079284668, 9.671900316558627 42.52871800947034 5.473689079284668, 1.943479026955849 42.52871800947034 5.473689079284668, 2.404348028113837 -3.137864919065372 7.47048282623291, 9.95551365738558 -3.2216452290845012 7.47048282623291, 9.671900316558627 -8.667382255075808 7.47048282623291, 1.943479026955849 -8.667382255075808 7.47048282623291, 2.404348028113837 36.9992006734599 5.473689079284668))"^^oa:wktLiteral ;
+    ns4:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
+    rdf:value "POLYGON Z ((2.5484202329420995 20.068532796262637 5.144301414489746, 10.099585862213843 20.152313106281767 5.144301414489746, 9.81597252138689 25.598050132273073 5.144301414489746, 2.0875512317841114 25.598050132273073 5.144301414489746, 2.5484202329420995 -20.068532796262637 7.141095161437988, 10.099585862213843 -20.152313106281767 7.141095161437988, 9.81597252138689 -25.598050132273073 7.141095161437988, 2.0875512317841114 -25.598050132273073 7.141095161437988, 2.5484202329420995 20.068532796262637 5.144301414489746))"^^oa:wktLiteral .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/aaf1409a-87bb-4dc4-aac6-880be041ad64_target3d_selector_compref0> a ns1:ComputingReference ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/aaf1409a-87bb-4dc4-aac6-880be041ad64_target3d_selector_compref0> a ns2:ComputingReference ;
     rdfs:label "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 3 char 3 on a 3D Mesh" ;
-    ns1:comprefType "PCA"^^xsd:string ;
-    ns1:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
-    ns1:stable true ;
-    ns1:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns2:comprefType "PCA"^^xsd:string ;
+    ns2:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
+    ns2:stable true ;
+    ns2:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
+    ns2:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ac299c35-0d28-4d34-919d-8b3bb7863dcd> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering"@en ;
@@ -2849,18 +2853,18 @@
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c50c7e91-e1fd-44e0-af0c-e05f3b4de41e_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 2 char 3 on a 3D Mesh"@en ;
-    ns1:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c50c7e91-e1fd-44e0-af0c-e05f3b4de41e_target3d_selector_compref0> ;
-    ns1:pcaValue "POLYGON Z ((0.5634652134315417 25.237596426437623 5.026582717895508, 9.461786476094524 25.237596426437623 5.026582717895508, 9.213625695432878 31.646809126992412 5.026582717895508, 0.1380463922736954 31.43735835194458 5.026582717895508, 0.5634652134315417 25.237596426437623 7.373279094696045, 9.461786476094524 25.237596426437623 7.373279094696045, 9.213625695432878 31.646809126992412 7.373279094696045, 0.1380463922736954 31.43735835194458 7.373279094696045, 0.5634652134315417 25.237596426437623 5.026582717895508))"^^oa:wktLiteral ;
-    ns2:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
-    rdf:value "POLYGON Z ((0.707537418259804 8.306928549240357 4.697195053100586, 9.605858680922786 8.306928549240357 4.697195053100586, 9.35769790026114 14.716141249795147 4.697195053100586, 0.2821185971019578 14.506690474747316 4.697195053100586, 0.707537418259804 8.306928549240357 7.043891429901123, 9.605858680922786 8.306928549240357 7.043891429901123, 9.35769790026114 14.716141249795147 7.043891429901123, 0.2821185971019578 14.506690474747316 7.043891429901123, 0.707537418259804 8.306928549240357 4.697195053100586))"^^oa:wktLiteral .
+    ns2:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c50c7e91-e1fd-44e0-af0c-e05f3b4de41e_target3d_selector_compref0> ;
+    ns2:pcaValue "POLYGON Z ((0.5634652134315417 25.237596426437623 5.026582717895508, 9.461786476094524 25.237596426437623 5.026582717895508, 9.213625695432878 31.646809126992412 5.026582717895508, 0.1380463922736954 31.43735835194458 5.026582717895508, 0.5634652134315417 8.623739327956908 7.373279094696045, 9.461786476094524 8.623739327956908 7.373279094696045, 9.213625695432878 2.214526627402119 7.373279094696045, 0.1380463922736954 2.4239774024499496 7.373279094696045, 0.5634652134315417 25.237596426437623 5.026582717895508))"^^oa:wktLiteral ;
+    ns4:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
+    rdf:value "POLYGON Z ((0.707537418259804 8.306928549240357 4.697195053100586, 9.605858680922786 8.306928549240357 4.697195053100586, 9.35769790026114 14.716141249795147 4.697195053100586, 0.2821185971019578 14.506690474747316 4.697195053100586, 0.707537418259804 -8.306928549240357 7.043891429901123, 9.605858680922786 -8.306928549240357 7.043891429901123, 9.35769790026114 -14.716141249795147 7.043891429901123, 0.2821185971019578 -14.506690474747316 7.043891429901123, 0.707537418259804 8.306928549240357 4.697195053100586))"^^oa:wktLiteral .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c50c7e91-e1fd-44e0-af0c-e05f3b4de41e_target3d_selector_compref0> a ns1:ComputingReference ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c50c7e91-e1fd-44e0-af0c-e05f3b4de41e_target3d_selector_compref0> a ns2:ComputingReference ;
     rdfs:label "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 2 char 3 on a 3D Mesh" ;
-    ns1:comprefType "PCA"^^xsd:string ;
-    ns1:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
-    ns1:stable true ;
-    ns1:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns2:comprefType "PCA"^^xsd:string ;
+    ns2:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
+    ns2:stable true ;
+    ns2:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
+    ns2:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c57ebe4a-256f-42a2-91e1-e11eeec90ffe> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering"@en ;
@@ -3131,18 +3135,18 @@
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d48fef72-5219-4b73-bf9d-534c60c62956_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 1 char 3 on a 3D Mesh"@en ;
-    ns1:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d48fef72-5219-4b73-bf9d-534c60c62956_target3d_selector_compref0> ;
-    ns1:pcaValue "POLYGON Z ((0.4359300133605419 18.23357716877528 4.309564590454102, 7.3135160408127895 18.484918801947167 4.309564590454102, 6.7817442994893575 25.18736381801927 4.309564590454102, -0.0603915479627535 25.145473663009707 4.309564590454102, 0.4359300133605419 18.23357716877528 7.188409328460693, 7.3135160408127895 18.484918801947167 7.188409328460693, 6.7817442994893575 25.18736381801927 7.188409328460693, -0.0603915479627535 25.145473663009707 7.188409328460693, 0.4359300133605419 18.23357716877528 4.309564590454102))"^^oa:wktLiteral ;
-    ns2:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
-    rdf:value "POLYGON Z ((0.5800022181888043 1.3029092915780158 3.9801769256591797, 7.457588245641052 1.5542509247499003 3.9801769256591797, 6.92581650431762 8.256695940822008 3.9801769256591797, 0.0836806568655088 8.214805785812441 3.9801769256591797, 0.5800022181888043 1.3029092915780158 6.8590216636657715, 7.457588245641052 1.5542509247499003 6.8590216636657715, 6.92581650431762 8.256695940822008 6.8590216636657715, 0.0836806568655088 8.214805785812441 6.8590216636657715, 0.5800022181888043 1.3029092915780158 3.9801769256591797))"^^oa:wktLiteral .
+    ns2:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d48fef72-5219-4b73-bf9d-534c60c62956_target3d_selector_compref0> ;
+    ns2:pcaValue "POLYGON Z ((0.4359300133605419 18.23357716877528 4.309564590454102, 7.3135160408127895 18.484918801947167 4.309564590454102, 6.7817442994893575 25.18736381801927 4.309564590454102, -0.0603915479627535 25.145473663009707 4.309564590454102, 0.4359300133605419 15.62775858561925 7.188409328460693, 7.3135160408127895 15.376416952447364 7.188409328460693, 6.7817442994893575 8.673971936375258 7.188409328460693, -0.0603915479627535 8.715862091384825 7.188409328460693, 0.4359300133605419 18.23357716877528 4.309564590454102))"^^oa:wktLiteral ;
+    ns4:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
+    rdf:value "POLYGON Z ((0.5800022181888043 1.3029092915780158 3.9801769256591797, 7.457588245641052 1.5542509247499003 3.9801769256591797, 6.92581650431762 8.256695940822008 3.9801769256591797, 0.0836806568655088 8.214805785812441 3.9801769256591797, 0.5800022181888043 -1.3029092915780158 6.8590216636657715, 7.457588245641052 -1.5542509247499003 6.8590216636657715, 6.92581650431762 -8.256695940822008 6.8590216636657715, 0.0836806568655088 -8.214805785812441 6.8590216636657715, 0.5800022181888043 1.3029092915780158 3.9801769256591797))"^^oa:wktLiteral .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d48fef72-5219-4b73-bf9d-534c60c62956_target3d_selector_compref0> a ns1:ComputingReference ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d48fef72-5219-4b73-bf9d-534c60c62956_target3d_selector_compref0> a ns2:ComputingReference ;
     rdfs:label "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 1 char 3 on a 3D Mesh" ;
-    ns1:comprefType "PCA"^^xsd:string ;
-    ns1:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
-    ns1:stable true ;
-    ns1:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns2:comprefType "PCA"^^xsd:string ;
+    ns2:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
+    ns2:stable true ;
+    ns2:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
+    ns2:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d59cd306-5b7e-493b-adbf-35c6092d7596> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering"@en ;
@@ -3210,18 +3214,18 @@
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d79ca86c-6f7a-44b4-b499-3161e787e3d8_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 4 char 2 on a 3D Mesh"@en ;
-    ns1:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d79ca86c-6f7a-44b4-b499-3161e787e3d8_target3d_selector_compref0> ;
-    ns1:pcaValue "POLYGON Z ((-7.079783650787187 42.52994142868073 0.3296636939048767, 0.1523178626161723 42.781282358738125 0.3296636939048767, -0.379455068789845 49.1067140461593 0.3296636939048767, -7.540653246986465 48.687812496063636 0.3296636939048767, -7.079783650787187 42.52994142868073 7.337850570678711, 0.1523178626161723 42.781282358738125 7.337850570678711, -0.379455068789845 49.1067140461593 7.337850570678711, -7.540653246986465 48.687812496063636 7.337850570678711, -7.079783650787187 42.52994142868073 0.3296636939048767))"^^oa:wktLiteral ;
-    ns2:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
-    rdf:value "POLYGON Z ((-6.935711445958924 25.599273551483467 0.0002760186616797, 0.2963900674444346 25.850614481540862 0.0002760186616797, -0.2353828639615827 32.17604616896203 0.0002760186616797, -7.396581042158203 31.75714461886637 0.0002760186616797, -6.935711445958924 25.599273551483467 7.008462905883789, 0.2963900674444346 25.850614481540862 7.008462905883789, -0.2353828639615827 32.17604616896203 7.008462905883789, -7.396581042158203 31.75714461886637 7.008462905883789, -6.935711445958924 25.599273551483467 0.0002760186616797))"^^oa:wktLiteral .
+    ns2:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d79ca86c-6f7a-44b4-b499-3161e787e3d8_target3d_selector_compref0> ;
+    ns2:pcaValue "POLYGON Z ((-7.079783650787187 42.52994142868073 0.3296636939048767, 0.1523178626161723 42.781282358738125 0.3296636939048767, -0.379455068789845 49.1067140461593 0.3296636939048767, -7.540653246986465 48.687812496063636 0.3296636939048767, -7.079783650787187 -8.668605674286201 7.337850570678711, 0.1523178626161723 -8.919946604343597 7.337850570678711, -0.379455068789845 -15.245378291764766 7.337850570678711, -7.540653246986465 -14.826476741669104 7.337850570678711, -7.079783650787187 42.52994142868073 0.3296636939048767))"^^oa:wktLiteral ;
+    ns4:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
+    rdf:value "POLYGON Z ((-6.935711445958924 25.599273551483467 0.0002760186616797, 0.2963900674444346 25.850614481540862 0.0002760186616797, -0.2353828639615827 32.17604616896203 0.0002760186616797, -7.396581042158203 31.75714461886637 0.0002760186616797, -6.935711445958924 -25.599273551483467 7.008462905883789, 0.2963900674444346 -25.850614481540862 7.008462905883789, -0.2353828639615827 -32.17604616896203 7.008462905883789, -7.396581042158203 -31.75714461886637 7.008462905883789, -6.935711445958924 25.599273551483467 0.0002760186616797))"^^oa:wktLiteral .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d79ca86c-6f7a-44b4-b499-3161e787e3d8_target3d_selector_compref0> a ns1:ComputingReference ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d79ca86c-6f7a-44b4-b499-3161e787e3d8_target3d_selector_compref0> a ns2:ComputingReference ;
     rdfs:label "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 4 char 2 on a 3D Mesh" ;
-    ns1:comprefType "PCA"^^xsd:string ;
-    ns1:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
-    ns1:stable true ;
-    ns1:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns2:comprefType "PCA"^^xsd:string ;
+    ns2:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
+    ns2:stable true ;
+    ns2:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
+    ns2:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d7a3b6e8-72db-4a59-9e77-0844a88066d9> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering"@en ;
@@ -3521,18 +3525,18 @@
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e57afe5b-16df-4194-b793-8ad5beb74fe0_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 4 char 1 on a 3D Mesh"@en ;
-    ns1:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e57afe5b-16df-4194-b793-8ad5beb74fe0_target3d_selector_compref0> ;
-    ns1:pcaValue "POLYGON Z ((-14.205530756421728 42.19481737614625 0.3295349180698395, -7.540653246986465 42.613721738699866 0.3295349180698395, -8.001522248144452 48.18512782349089 0.3295349180698395, -14.489142609645453 47.85000658341436 0.3295349180698395, -14.205530756421728 42.19481737614625 6.7867960929870605, -7.540653246986465 42.613721738699866 6.7867960929870605, -8.001522248144452 48.18512782349089 6.7867960929870605, -14.489142609645453 47.85000658341436 6.7867960929870605, -14.205530756421728 42.19481737614625 0.3295349180698395))"^^oa:wktLiteral ;
-    ns2:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
-    rdf:value "POLYGON Z ((-14.061458551593466 25.26414949894898 0.0001472429285059, -7.396581042158203 25.683053861502597 0.0001472429285059, -7.85745004331619 31.254459946293625 0.0001472429285059, -14.345070404817191 30.919338706217097 0.0001472429285059, -14.061458551593466 25.26414949894898 6.457408428192139, -7.396581042158203 25.683053861502597 6.457408428192139, -7.85745004331619 31.254459946293625 6.457408428192139, -14.345070404817191 30.919338706217097 6.457408428192139, -14.061458551593466 25.26414949894898 0.0001472429285059))"^^oa:wktLiteral .
+    ns2:computingReference <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e57afe5b-16df-4194-b793-8ad5beb74fe0_target3d_selector_compref0> ;
+    ns2:pcaValue "POLYGON Z ((-14.205530756421728 42.19481737614625 0.3295349180698395, -7.540653246986465 42.613721738699866 0.3295349180698395, -8.001522248144452 48.18512782349089 0.3295349180698395, -14.489142609645453 47.85000658341436 0.3295349180698395, -14.205530756421728 -8.333481621751716 6.7867960929870605, -7.540653246986465 -8.75238598430533 6.7867960929870605, -8.001522248144452 -14.32379206909636 6.7867960929870605, -14.489142609645453 -13.988670829019831 6.7867960929870605, -14.205530756421728 42.19481737614625 0.3295349180698395))"^^oa:wktLiteral ;
+    ns4:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
+    rdf:value "POLYGON Z ((-14.061458551593466 25.26414949894898 0.0001472429285059, -7.396581042158203 25.683053861502597 0.0001472429285059, -7.85745004331619 31.254459946293625 0.0001472429285059, -14.345070404817191 30.919338706217097 0.0001472429285059, -14.061458551593466 -25.26414949894898 6.457408428192139, -7.396581042158203 -25.683053861502597 6.457408428192139, -7.85745004331619 -31.254459946293625 6.457408428192139, -14.345070404817191 -30.919338706217097 6.457408428192139, -14.061458551593466 25.26414949894898 0.0001472429285059))"^^oa:wktLiteral .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e57afe5b-16df-4194-b793-8ad5beb74fe0_target3d_selector_compref0> a ns1:ComputingReference ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e57afe5b-16df-4194-b793-8ad5beb74fe0_target3d_selector_compref0> a ns2:ComputingReference ;
     rdfs:label "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 4 char 1 on a 3D Mesh" ;
-    ns1:comprefType "PCA"^^xsd:string ;
-    ns1:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
-    ns1:stable true ;
-    ns1:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns2:comprefType "PCA"^^xsd:string ;
+    ns2:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^xsd:string ;
+    ns2:stable true ;
+    ns2:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
+    ns2:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e5b147fa-6e22-41e6-a234-a180ddc2efe9> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 0 char 0 on 3D rendering"@en ;
@@ -3830,10 +3834,10 @@ oa:WKTSelector a owl:Class ;
     rdfs:label "WKT Selector"@en ;
     rdfs:subClassOf oa:Selector .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> a ns3:CartesianCoordinateSystem ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> a ns1:CartesianCoordinateSystem ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units"@en ;
-    ns3:asWKT "CS[\"cartesian\",3],AXIS[\"X\", \"geocentricX\", ORDER[1],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Y\", \"geocentricY\", ORDER[2],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Z\", \"geocentricZ\", ORDER[3],            LENGTHUNIT[\"millimetre\",1]        ]]"^^<http://www.opengis.net/ont/geosparql/crs#wktLiteral> ;
-    ns3:axis <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1>,
+    ns1:asWKT "CS[\"cartesian\",3],AXIS[\"X\", \"geocentricX\", ORDER[1],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Y\", \"geocentricY\", ORDER[2],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Z\", \"geocentricZ\", ORDER[3],            LENGTHUNIT[\"millimetre\",1]        ]]"^^<http://www.opengis.net/ont/geosparql/crs#wktLiteral> ;
+    ns1:axis <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1>,
         <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2>,
         <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> .
 

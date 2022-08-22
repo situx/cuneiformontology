@@ -5,6 +5,7 @@ import copy
 import numpy as np
 from math import sqrt
 import pandas as pd
+from pyproj import CRS
 from PIL import Image
 from shapely.geometry.polygon import Polygon
 from shapely.geometry import Point
@@ -142,7 +143,7 @@ class AnnotationProcessor:
         for point in bbox2d:
             point[2]=minZ
         for i in range(0,len(bbox2d)):
-            bbox2d.append([bbox2d[i][0], bbox2d[i][1],maxZ])
+            bbox2d.append([bbox2d[i][0], bbox2d[i][1]*-1,maxZ])
         print(bbox2d)
         return bbox2d
     
@@ -443,7 +444,7 @@ if len(sys.argv)>1:
     
     
 origtabletside="front"
-tabletnames=["O147"]#"HS1174","HT073195","O147","TCH92"]
+tabletnames=["HS1174","HT073195","O147","TCH92"]
 tabletsides=["front","back","left","right","bottom","top"]
 tabletname="HS1174"
 material="3D rendering"

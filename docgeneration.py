@@ -1381,7 +1381,7 @@ class OntDocGeneration:
                         self.graph.parse(outpath + path+"/index.ttl")
                     except Exception as e:
                         print(e)
-                self.createHTML(outpath + path, self.graph.predicate_objects(subj), subj, prefixnamespace, self.graph.subject_predicates(subj),
+                postprocessing=self.createHTML(outpath + path, self.graph.predicate_objects(subj), subj, prefixnamespace, self.graph.subject_predicates(subj),
                            self.graph,str(corpusid) + "_search.js", str(corpusid) + "_classtree.js",uritotreeitem,curlicense,subjectstorender,postprocessing)
                 subtorencounter += 1
                 if subtorencounter%500==0:
@@ -1956,6 +1956,7 @@ class OntDocGeneration:
             f.write(htmltabletemplate.replace("{{tablecontent}}", tablecontents))
             f.write(htmlfooter.replace("{{exports}}",myexports).replace("{{license}}",curlicense))
             f.close()
+        return postprocessing
             
 prefixes={"reversed":{}}
 if os.path.exists('signlist/prefixes.json'):

@@ -61,6 +61,10 @@ oa:WKTSelector a owl:Class ;
     rdfs:label "Image annotations on O147 right on medium 3D rendering"@en ;
     rdfs:subClassOf skos:Collection .
 
+oa:FragmentSelector a owl:Class ;
+    rdfs:label "Fragment Selector"@en ;
+    rdfs:subClassOf oa:Selector .
+
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/09aac23a-5b78-45d8-a561-a93d8c8eaaaa> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 2 char 4 on 3D rendering"@en ;
     dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;

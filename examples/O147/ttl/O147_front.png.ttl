@@ -3,8 +3,8 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ns1: <http://www.opengis.net/ont/crs/> .
-@prefix ns2: <http://purl.org/meshsparql/> .
-@prefix ns3: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix ns2: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix ns3: <http://purl.org/meshsparql/> .
 @prefix ns4: <http://www.opengis.net/ont/geosparql#> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -85,21 +85,21 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1> a ns1:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 1"@en ;
-    ns3:hasUnit ns3:millimetre ;
+    ns2:hasUnit ns2:millimetre ;
     ns1:abbreviation "X" ;
     ns1:axisDirection ns1:geocentricX ;
     ns1:axisOrder "1"^^xsd:int .
 
 <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2> a ns1:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 2"@en ;
-    ns3:hasUnit ns3:millimetre ;
+    ns2:hasUnit ns2:millimetre ;
     ns1:abbreviation "Y" ;
     ns1:axisDirection ns1:geocentricY ;
     ns1:axisOrder "2"^^xsd:int .
 
 <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> a ns1:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 3"@en ;
-    ns3:hasUnit ns3:millimetre ;
+    ns2:hasUnit ns2:millimetre ;
     ns1:abbreviation "Z" ;
     ns1:axisDirection ns1:geocentricZ ;
     ns1:axisOrder "3"^^xsd:int .
@@ -924,18 +924,18 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/86c668c6-2039-42f4-b447-cb7b014ed130_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at O147 front line 1 char 2 on a 3D Mesh"@en ;
-    ns2:computingReference <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/86c668c6-2039-42f4-b447-cb7b014ed130_target3d_selector_compref0> ;
-    ns2:pcaValue "POLYGON Z ((2096.8895672506537 -2389.785668117639 -8.0278902053833, 1893.7454574206645 -2381.741908689557 -8.0278902053833, 1889.722767349117 -2198.7463912316525 -8.0278902053833, 2100.912196312266 -2190.7026241788 -8.0278902053833, 2096.8895672506537 -2389.785668117639 3.766657829284668, 1893.7454574206645 -2381.741908689557 3.766657829284668, 1889.722767349117 -2198.7463912316525 3.766657829284668, 2100.912196312266 -2190.7026241788 3.766657829284668, 2096.8895672506537 -2389.785668117639 -8.0278902053833))"^^oa:wktLiteral ;
+    ns3:computingReference <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/86c668c6-2039-42f4-b447-cb7b014ed130_target3d_selector_compref0> ;
+    ns3:pcaValue "POLYGON Z ((2096.8895672506537 -2389.785668117639 -8.0278902053833, 1893.7454574206645 -2381.741908689557 -8.0278902053833, 1889.722767349117 -2198.7463912316525 -8.0278902053833, 2100.912196312266 -2190.7026241788 -8.0278902053833, 2096.8895672506537 740.7857901879513 3.766657829284668, 1893.7454574206645 732.7420307598693 3.766657829284668, 1889.722767349117 549.746513301965 3.766657829284668, 2100.912196312266 541.7027462491121 3.766657829284668, 2096.8895672506537 -2389.785668117639 -8.0278902053833))"^^oa:wktLiteral ;
     ns4:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
-    rdf:value "POLYGON Z ((887.3894451803412 -1565.285729152795 0.0005492290947586, 684.245335350352 -1557.241969724713 0.0005492290947586, 680.2226452788045 -1374.2464522668088 0.0005492290947586, 891.4120742419534 -1366.2026852139559 0.0005492290947586, 887.3894451803412 -1565.285729152795 11.795097351074219, 684.245335350352 -1557.241969724713 11.795097351074219, 680.2226452788045 -1374.2464522668088 11.795097351074219, 891.4120742419534 -1366.2026852139559 11.795097351074219, 887.3894451803412 -1565.285729152795 0.0005492290947586))"^^oa:wktLiteral .
+    rdf:value "POLYGON Z ((887.3894451803412 -1565.285729152795 0.0005492290947586, 684.245335350352 -1557.241969724713 0.0005492290947586, 680.2226452788045 -1374.2464522668088 0.0005492290947586, 891.4120742419534 -1366.2026852139559 0.0005492290947586, 887.3894451803412 1565.285729152795 11.795097351074219, 684.245335350352 1557.241969724713 11.795097351074219, 680.2226452788045 1374.2464522668088 11.795097351074219, 891.4120742419534 1366.2026852139559 11.795097351074219, 887.3894451803412 -1565.285729152795 0.0005492290947586))"^^oa:wktLiteral .
 
-<https://situx.github.io/cuneiformontology/examples/o147/imgannotations/86c668c6-2039-42f4-b447-cb7b014ed130_target3d_selector_compref0> a ns2:ComputingReference ;
+<https://situx.github.io/cuneiformontology/examples/o147/imgannotations/86c668c6-2039-42f4-b447-cb7b014ed130_target3d_selector_compref0> a ns3:ComputingReference ;
     rdfs:label "Computing Reference of 3D Annotation target selector of Annotation of Glyph at O147 front line 1 char 2 on a 3D Mesh" ;
-    ns2:comprefType "PCA"^^xsd:string ;
-    ns2:referenceVector "[1209.5001    -824.49994     -8.0284395] [-886.213   -824.5536  -205.05568] [ 1209.5795   -2253.4421      -8.483341] [1226.4071 -824.4418 -187.862 ]"^^xsd:string ;
-    ns2:stable true ;
-    ns2:transformationMatrix "[[ 1.00000000e+00  2.16660739e-09  1.32984419e-09  1.20950012e+03] [-2.16660714e-09  1.00000000e+00  1.83508149e-09 -8.24499970e+02] [-1.32984422e-09 -1.83508138e-09  1.00000000e+00 -8.02843825e+00] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns2:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[1209.50012297]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[-824.49997044]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[-8.02843825]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns3:comprefType "PCA"^^xsd:string ;
+    ns3:referenceVector "[1209.5001    -824.49994     -8.0284395] [-886.213   -824.5536  -205.05568] [ 1209.5795   -2253.4421      -8.483341] [1226.4071 -824.4418 -187.862 ]"^^xsd:string ;
+    ns3:stable true ;
+    ns3:transformationMatrix "[[ 1.00000000e+00  2.16660739e-09  1.32984419e-09  1.20950012e+03] [-2.16660714e-09  1.00000000e+00  1.83508149e-09 -8.24499970e+02] [-1.32984422e-09 -1.83508138e-09  1.00000000e+00 -8.02843825e+00] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
+    ns3:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[1209.50012297]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[-824.49997044]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[-8.02843825]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/89d36fca-6207-4467-b051-546d5fac525b> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 5 char 1 on 3D rendering"@en ;
@@ -1690,6 +1690,10 @@ oa:WKTSelector a owl:Class ;
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/fd37bc32-222c-4163-b177-03422773f1c8_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at O147 front line 8 char 2 on 3D rendering"@en ;
     rdf:value "<svg><polygon points=\"797.8218994140625,1356.1993408203125 1201.0587158203125,1363.443115234375 1196.2294921875,1554.19580078125 783.3343505859375,1571.0980224609375 783.3343505859375,1571.0980224609375\"></polygon></svg>" .
+
+oa:FragmentSelector a owl:Class ;
+    rdfs:label "Fragment Selector"@en ;
+    rdfs:subClassOf oa:Selector .
 
 oa:Selector a owl:Class .
 

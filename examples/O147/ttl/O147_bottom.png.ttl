@@ -9,6 +9,10 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+oa:FragmentSelector a owl:Class ;
+    rdfs:label "Fragment Selector"@en ;
+    rdfs:subClassOf oa:Selector .
+
 oa:WKTSelector a owl:Class ;
     rdfs:label "WKT Selector"@en ;
     rdfs:subClassOf oa:Selector .

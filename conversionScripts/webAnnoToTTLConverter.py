@@ -101,6 +101,9 @@ for tabname in tabletnames:
         res.write("oa:WKTSelector rdf:type owl:Class .\n")
         res.write("oa:WKTSelector rdfs:label \"WKT Selector\"@en .\n")
         res.write("oa:WKTSelector rdfs:subClassOf oa:Selector .\n")
+        res.write("oa:FragmentSelector rdf:type owl:Class .\n")
+        res.write("oa:FragmentSelector rdfs:label \"Fragment Selector\"@en .\n")
+        res.write("oa:FragmentSelector rdfs:subClassOf oa:Selector .\n")
         creator="https://orcid.org/0000-0002-9499-5840"
         if tabletname in creatormap:
             creator=creatormap[tabletname]
