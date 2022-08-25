@@ -21,6 +21,7 @@ withglyphs=False
 
 
 def csToRDF(fw,crsnamespace,indid,crsaswkt):
+    svgstr= """<svg width=\"400\" height=\"250\" viewbox=\"0 0 375 220\"><defs><marker id=\"arrowhead\" markerWidth=\"10\" markerHeight=\"7\" refX=\"0\" refY=\"2\" orient=\"auto\"><polygon points=\"0 0, 4 2, 0 4\" /></marker></defs>"""
     fw.write("<"+str(indid)+"> <http://www.opengis.net/ont/geosparql#inSRS> <"+str(crsnamespace)+"cs/cartesian_ax3_mm> .\n")
     fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm> <http://www.opengis.net/ont/crs/asWKT> \""+str(crsaswkt)+"\"^^<http://www.opengis.net/ont/geosparql/crs#wktLiteral>.\n")     
     fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/crs/CartesianCoordinateSystem> .\n") 
@@ -32,6 +33,7 @@ def csToRDF(fw,crsnamespace,indid,crsaswkt):
     fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis1> <http://www.opengis.net/ont/crs/axisDirection> <http://www.opengis.net/ont/crs/geocentricX> .\n")
     fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis1> <http://www.opengis.net/ont/crs/axisOrder> \"1\"^^xsd:int .\n")
     fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis1> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre> .\n")         
+    svgstr+="""<line x1=\"20\" y1=\"200\" x2=\"200\" y2=\"200\" stroke=\"red\" stroke-width=\"5\" marker-end=\"url(#arrowhead)\"></line><text x=\"110\" y=\"220\" class=\"small\">X: Cartesian X Axis (om:millimetre)</text>"""
     fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm> <http://www.opengis.net/ont/crs/axis> <"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis2> .\n") 
     fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/crs/CoordinateSystemAxis> .\n")
     fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis2> <http://www.w3.org/2000/01/rdf-schema#label> \"Cartesian coordinate system with 3 axis in millimetre units: Axis 2\"@en .\n")
@@ -39,6 +41,7 @@ def csToRDF(fw,crsnamespace,indid,crsaswkt):
     fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis2> <http://www.opengis.net/ont/crs/axisDirection> <http://www.opengis.net/ont/crs/geocentricY> .\n")
     fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis2> <http://www.opengis.net/ont/crs/axisOrder> \"2\"^^xsd:int .\n")
     fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis2> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre> .\n")  
+    svgstr+="""<line x1=\"20\" y1=\"200\" x2=\"20\" y2=\"20\" stroke=\"green\" stroke-width=\"5\" marker-end=\"url(#arrowhead)\"></line><text x=\"35\" y=\"20\" class=\"small\">Y: Cartesian Y Axis (om:millimetre)</text>"""
     fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm> <http://www.opengis.net/ont/crs/axis> <"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis3> .\n") 
     fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/crs/CoordinateSystemAxis> .\n")
     fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis3> <http://www.w3.org/2000/01/rdf-schema#label> \"Cartesian coordinate system with 3 axis in millimetre units: Axis 3\"@en .\n")
@@ -46,9 +49,9 @@ def csToRDF(fw,crsnamespace,indid,crsaswkt):
     fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis3> <http://www.opengis.net/ont/crs/axisDirection> <http://www.opengis.net/ont/crs/geocentricZ> .\n")
     fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis3> <http://www.opengis.net/ont/crs/axisOrder> \"3\"^^xsd:int .\n")
     fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis3> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre> .\n")        
+    svgstr+="""<line x1=\"20\" y1=\"200\" x2=\"190\" y2=\"30\" stroke=\"blue\" stroke-width=\"5\" marker-end=\"url(#arrowhead)\"></line><text x=\"210\" y=\"25\" class=\"small\">Z: Cartesian Z Axis (om:millimetre)</text>"""
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm> <http://www.opengis.net/ont/crs/asSVG> \""+svgstr.replace("\"","'")+"</svg>\"^^xsd:string .\n")
     
-
-
 for tabname in tabletnames:
     print(tabname)
     for side in tabletsides:
