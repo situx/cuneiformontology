@@ -274,22 +274,33 @@ function download(){
 }
 
 function rewriteLink(thelink){
+    console.log(thelink)
+    console.log(window.location.pathname)
+    console.log(baseurl)
     if(thelink==null){
         rest=search[document.getElementById('search').value].replace(baseurl,"")
     }else{
         curlocpath=window.location.href.replace(baseurl,"")
         rest=thelink.replace(baseurl,"")
     }
-    count=0
-    if(!indexpage){
-        count=curlocpath.split("/").length-1
+    if(!(rest.endsWith("/"))){
+        rest+="/"
     }
+    console.log(rest)
+    console.log(curlocpath)
+    count=0
+    console.log(curlocpath.split("/"))
+    console.log(rest.split("/"))
+    if(!indexpage){
+        count=rest.split("/").length-1
+    }
+    console.log(count)
     counter=0
     while(counter<count){
         rest="../"+rest
         counter+=1
     }
-    rest+="/index.html"
+    rest+="index.html"
     console.log(rest)
     return rest
 }
@@ -570,7 +581,7 @@ function formatHTMLTableForClassRelations(result,nodeicon,nodelabel,nodeid){
         }
     }
     dialogcontent+="</tbody></table>"
-    dialogcontent+="<button id=\"closebutton\" onclick='document.getElementById(\"classrelationdialog\").close()'>Close</button>"
+    dialogcontent+="<button style=\"float:right\" id=\"closebutton\" onclick='document.getElementById(\"classrelationdialog\").close()'>Close</button>"
     return dialogcontent
 }
 
@@ -616,7 +627,7 @@ function formatHTMLTableForResult(result,nodeicon){
         dialogcontent+="</tr>"
     }
     dialogcontent+="</tbody></table>"
-    dialogcontent+="<button id=\"closebutton\" onclick='document.getElementById(\"dataschemadialog\").close()'>Close</button>"
+    dialogcontent+="<button style=\"float:right\" id=\"closebutton\" onclick='document.getElementById(\"dataschemadialog\").close()'>Close</button>"
     return dialogcontent
 }
 
@@ -679,7 +690,12 @@ function setupJSTree(){
         }
     }
     tree["contextmenu"]["items"]=function (node) {
-        return {
+        nodetype=node.type
+        thelinkpart="class"
+        if(nodetype=="instance" || nodetype=="geoinstance"){
+            thelinkpart="instance"
+        }    
+        contextmenu={
             "lookupdefinition": {
                 "separator_before": false,
                 "separator_after": false,
@@ -690,12 +706,12 @@ function setupJSTree(){
                     var win = window.open(newlink, '_blank');
                     win.focus();
                 }
-            }, 
+            },
             "copyuriclipboard":{
                 "separator_before": false,
                 "separator_after": false,
                 "label": "Copy URI to clipboard",
-                "icon": "https://github.com/i3mainz/geopubby/raw/master/public/icons/classlink.png",
+                "icon": "https://github.com/i3mainz/geopubby/raw/master/public/icons/"+thelinkpart+"link.png",
                 "action":function(obj){
                     copyText=node.id
                     navigator.clipboard.writeText(copyText);
@@ -704,8 +720,8 @@ function setupJSTree(){
             "discoverrelations":{
                 "separator_before": false,
                 "separator_after": false,
-                "label": "Discover class relations",
-                "icon": "https://github.com/i3mainz/geopubby/raw/master/public/icons/classlink.png",
+                "label": "Discover "+node.type+" relations",
+                "icon": "https://github.com/i3mainz/geopubby/raw/master/public/icons/"+thelinkpart+"link.png",
                 "action":function(obj){
                     console.log("class relations")
                     if(node.type=="class" || node.type=="geoclass" || node.type=="collectionclass"){
@@ -716,8 +732,8 @@ function setupJSTree(){
             "loaddataschema": {
                 "separator_before": false,
                 "separator_after": false,
-                "icon":"https://github.com/i3mainz/geopubby/raw/master/public/icons/classschema.png",
-                "label": "Load dataschema for class",
+                "icon":"https://github.com/i3mainz/geopubby/raw/master/public/icons/"+node.type+"schema.png",
+                "label": "Load dataschema for "+node.type,
                 "action": function (obj) {
                     console.log(node)
                     console.log(node.id)
@@ -728,8 +744,9 @@ function setupJSTree(){
                         getDataSchemaDialog(node) 
                     }                                         
                 }
-            }
-        };
+            }                
+        }
+        return contextmenu
     }
     $('#jstree').jstree(tree);
     $('#jstree').bind("dblclick.jstree", function (event) {
