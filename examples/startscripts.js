@@ -276,10 +276,11 @@ function download(){
 function rewriteLink(thelink){
     console.log(thelink)
     console.log(window.location.pathname)
+    console.log(baseurl)
     if(thelink==null){
         rest=search[document.getElementById('search').value].replace(baseurl,"")
     }else{
-        curlocpath=window.location.pathname.replace(baseurl,"")
+        curlocpath=window.location.href.replace(baseurl,"")
         rest=thelink.replace(baseurl,"")
     }
     console.log(rest)
