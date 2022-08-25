@@ -49,7 +49,7 @@ var tree={
         "id": "https://www.w3.org/ns/activitystreams#Collection",
         "parent": "#",
         "type": "collectionclass",
-        "text": "Collection [9]",
+        "text": "Collection (as:Collection) [9]",
         "data": {}
       },
       {
@@ -1260,7 +1260,7 @@ var tree={
         "id": "http://www.w3.org/ns/oa#Annotation",
         "parent": "#",
         "type": "class",
-        "text": "Annotation [722]",
+        "text": "Annotation (oa:Annotation) [722]",
         "data": {}
       },
       {
@@ -3619,7 +3619,7 @@ var tree={
         "id": "http://www.w3.org/ns/oa#SpecificResource",
         "parent": "#",
         "type": "class",
-        "text": "SpecificResource [1403]",
+        "text": "SpecificResource (oa:SpecificResource) [1403]",
         "data": {}
       },
       {
@@ -4802,7 +4802,7 @@ var tree={
         "id": "http://www.w3.org/ns/oa#SvgSelector",
         "parent": "http://www.w3.org/ns/oa#Selector",
         "type": "class",
-        "text": "SvgSelector [716]",
+        "text": "SvgSelector (oa:SvgSelector) [716]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -5851,7 +5851,7 @@ var tree={
         "id": "http://www.w3.org/ns/oa#WKTSelector",
         "parent": "http://www.w3.org/ns/oa#Selector",
         "type": "class",
-        "text": "WKTSelector [327]",
+        "text": "WKTSelector (oa:WKTSelector) [327]",
         "data": {
           "to": {
             "http://purl.org/meshsparql/computingReference": {
@@ -6939,21 +6939,21 @@ var tree={
         "id": "http://purl.org/dc/elements/1.1/Software",
         "parent": "#",
         "type": "class",
-        "text": "Software [1]",
+        "text": "Software (dce:Software) [1]",
         "data": {}
       },
       {
         "id": "http://www.w3.org/ns/oa#FragmentSelector",
         "parent": "http://www.w3.org/ns/oa#Selector",
         "type": "class",
-        "text": "FragmentSelector [5]",
+        "text": "FragmentSelector (oa:FragmentSelector) [5]",
         "data": {}
       },
       {
         "id": "http://www.w3.org/ns/oa#Selector",
         "parent": "#",
         "type": "class",
-        "text": "Selector",
+        "text": "Selector (oa:Selector)",
         "data": {}
       },
       {
@@ -13134,7 +13134,7 @@ var tree={
         "id": "http://lemon-model.net/lemon#Lexicon",
         "parent": "http://www.w3.org/2004/02/skos/core#Collection",
         "type": "class",
-        "text": "Lexicon [4]",
+        "text": "Lexicon (lemon:Lexicon) [4]",
         "data": {
           "to": {
             "http://lemon-model.net/lemon#language": {
@@ -13163,7 +13163,7 @@ var tree={
         "id": "http://www.purl.org/cuneiform/Transliteration",
         "parent": "http://www.purl.org/cuneiform/Representation",
         "type": "class",
-        "text": "Transliteration [4]",
+        "text": "Transliteration (purl:cuneiform/Transliteration) [4]",
         "data": {
           "to": {
             "http://www.purl.org/cuneiform/signreadings": {
@@ -13197,7 +13197,7 @@ var tree={
         "id": "http://www.purl.org/graphemon#GlyphCollection",
         "parent": "http://www.w3.org/2004/02/skos/core#Collection",
         "type": "class",
-        "text": "GlyphCollection [1]",
+        "text": "GlyphCollection (purl:graphemon#GlyphCollection) [1]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -13226,7 +13226,7 @@ var tree={
         "id": "http://www.purl.org/graphemon#GraphemeCollection",
         "parent": "http://www.w3.org/2004/02/skos/core#Collection",
         "type": "class",
-        "text": "GraphemeCollection [4]",
+        "text": "GraphemeCollection (purl:graphemon#GraphemeCollection) [4]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -13260,7 +13260,7 @@ var tree={
         "id": "http://www.purl.org/graphemon#GraphemeReadingCollection",
         "parent": "http://www.w3.org/2004/02/skos/core#Collection",
         "type": "class",
-        "text": "GraphemeReadingCollection [4]",
+        "text": "GraphemeReadingCollection (purl:graphemon#GraphemeReadingCollection) [4]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -13771,7 +13771,7 @@ var tree={
         "id": "http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme",
         "parent": "#",
         "type": "class",
-        "text": "TX8_Grapheme [133]",
+        "text": "TX8_Grapheme (crm:TX8_Grapheme) [133]",
         "data": {}
       },
       {
@@ -13813,9 +13813,18 @@ var tree={
         "id": "http://www.purl.org/graphemon#GraphemeVariant",
         "parent": "http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme",
         "type": "class",
-        "text": "GraphemeVariant [49]",
+        "text": "GraphemeVariant (purl:graphemon#GraphemeVariant) [49]",
         "data": {
           "to": {
+            "http://www.purl.org/graphemon#asSVG": {
+              "instancecount": 1
+            },
+            "http://www.purl.org/graphemon#hasGottsteinCode": {
+              "instancecount": 1
+            },
+            "http://www.purl.org/graphemon#hasPaleoCode": {
+              "instancecount": 1
+            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
@@ -13826,7 +13835,7 @@ var tree={
           },
           "from": {}
         },
-        "instancecount": 2
+        "instancecount": 5
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/signlist/character_al_reading_al",
@@ -14336,7 +14345,7 @@ var tree={
         "id": "http://www.purl.org/graphemon#GraphemeReading",
         "parent": "#",
         "type": "class",
-        "text": "GraphemeReading [147]",
+        "text": "GraphemeReading (purl:graphemon#GraphemeReading) [147]",
         "data": {}
       },
       {
@@ -14483,7 +14492,7 @@ var tree={
         "id": "http://lemon-model.net/lemon#WordForm",
         "parent": "http://lemon-model.net/lemon#LexicalForm",
         "type": "class",
-        "text": "WordForm [32]",
+        "text": "WordForm (lemon:WordForm) [32]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -14633,7 +14642,7 @@ var tree={
         "id": "http://lemon-model.net/lemon#LexicalSense",
         "parent": "#",
         "type": "class",
-        "text": "LexicalSense [31]",
+        "text": "LexicalSense (lemon:LexicalSense) [31]",
         "data": {}
       },
       {
@@ -14766,7 +14775,7 @@ var tree={
         "id": "http://lemon-model.net/lemon#Word",
         "parent": "http://lemon-model.net/lemon#LexicalEntity",
         "type": "class",
-        "text": "Word [33]",
+        "text": "Word (lemon:Word) [33]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -14792,7 +14801,7 @@ var tree={
         "id": "http://www.purl.org/graphemon#GraphemeComposition",
         "parent": "#",
         "type": "class",
-        "text": "GraphemeComposition [3]",
+        "text": "GraphemeComposition (purl:graphemon#GraphemeComposition) [3]",
         "data": {}
       },
       {
@@ -14806,7 +14815,7 @@ var tree={
         "id": "http://www.purl.org/cuneiform/Tablet",
         "parent": "http://www.cidoc-crm.org/cidoc-crm/E22_ManMadeObject",
         "type": "class",
-        "text": "Tablet [4]",
+        "text": "Tablet (purl:cuneiform/Tablet) [4]",
         "data": {
           "to": {
             "http://www.purl.org/cuneiform/hasSurface": {
@@ -14852,7 +14861,7 @@ var tree={
         "id": "http://www.purl.org/cuneiform/BottomSide",
         "parent": "http://www.purl.org/cuneiform/TabletSurface",
         "type": "class",
-        "text": "BottomSide [4]",
+        "text": "BottomSide (purl:cuneiform/BottomSide) [4]",
         "data": {
           "to": {
             "http://www.purl.org/cuneiform/isRepresentedBy": {
@@ -14886,7 +14895,7 @@ var tree={
         "id": "http://www.purl.org/cuneiform/LeftSide",
         "parent": "http://www.purl.org/cuneiform/TabletSurface",
         "type": "class",
-        "text": "LeftSide [4]",
+        "text": "LeftSide (purl:cuneiform/LeftSide) [4]",
         "data": {
           "to": {
             "http://www.purl.org/cuneiform/isRepresentedBy": {
@@ -14920,7 +14929,7 @@ var tree={
         "id": "http://www.purl.org/cuneiform/RightSide",
         "parent": "http://www.purl.org/cuneiform/TabletSurface",
         "type": "class",
-        "text": "RightSide [4]",
+        "text": "RightSide (purl:cuneiform/RightSide) [4]",
         "data": {
           "to": {
             "http://www.purl.org/cuneiform/isRepresentedBy": {
@@ -14954,7 +14963,7 @@ var tree={
         "id": "http://www.purl.org/cuneiform/ObverseSide",
         "parent": "http://www.purl.org/cuneiform/TabletSurface",
         "type": "class",
-        "text": "ObverseSide [4]",
+        "text": "ObverseSide (purl:cuneiform/ObverseSide) [4]",
         "data": {
           "to": {
             "http://www.purl.org/cuneiform/isRepresentedBy": {
@@ -14992,7 +15001,7 @@ var tree={
         "id": "http://www.purl.org/cuneiform/ReverseSide",
         "parent": "http://www.purl.org/cuneiform/TabletSurface",
         "type": "class",
-        "text": "ReverseSide [4]",
+        "text": "ReverseSide (purl:cuneiform/ReverseSide) [4]",
         "data": {
           "to": {
             "http://www.purl.org/cuneiform/isRepresentedBy": {
@@ -15429,7 +15438,7 @@ var tree={
         "id": "http://www.purl.org/cuneiform/Line",
         "parent": "#",
         "type": "class",
-        "text": "Line [95]",
+        "text": "Line (purl:cuneiform/Line) [95]",
         "data": {}
       },
       {
@@ -15443,7 +15452,7 @@ var tree={
         "id": "http://www.purl.org/cuneiform/TopSide",
         "parent": "http://www.purl.org/cuneiform/TabletSurface",
         "type": "class",
-        "text": "TopSide [4]",
+        "text": "TopSide (purl:cuneiform/TopSide) [4]",
         "data": {
           "to": {
             "http://www.purl.org/cuneiform/isRepresentedBy": {
@@ -19000,7 +19009,7 @@ var tree={
         "id": "http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph",
         "parent": "#",
         "type": "class",
-        "text": "TX9_Glyph [751]",
+        "text": "TX9_Glyph (crm:TX9_Glyph) [751]",
         "data": {}
       },
       {
@@ -19413,7 +19422,7 @@ var tree={
         "id": "http://www.purl.org/cuneiform/TransliterationLine",
         "parent": "http://www.purl.org/cuneiform/TransliterationPart",
         "type": "class",
-        "text": "TransliterationLine [95]",
+        "text": "TransliterationLine (purl:cuneiform/TransliterationLine) [95]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -23016,7 +23025,7 @@ var tree={
         "id": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "parent": "http://www.purl.org/cuneiform/TransliterationPart",
         "type": "class",
-        "text": "TransliterationCharOccurrence [710]",
+        "text": "TransliterationCharOccurrence (purl:cuneiform/TransliterationCharOccurrence) [710]",
         "data": {
           "to": {
             "http://www.purl.org/cuneiform/charIndex": {
@@ -23681,13 +23690,17 @@ var tree={
         "id": "http://www.purl.org/cuneiform/TransliterationWordOccurrence",
         "parent": "http://www.purl.org/cuneiform/TransliterationPart",
         "type": "class",
-        "text": "TransliterationWordOccurrence [176]",
+        "text": "TransliterationWordOccurrence (purl:cuneiform/TransliterationWordOccurrence) [176]",
         "data": {
           "to": {
             "http://www.purl.org/cuneiform/lineNumber": {
               "instancecount": 1
             },
             "http://www.purl.org/cuneiform/nextWord": {
+              "instancecount": 1,
+              "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
+            },
+            "http://www.purl.org/cuneiform/prevWord": {
               "instancecount": 1,
               "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
             },
@@ -23703,33 +23716,37 @@ var tree={
             }
           },
           "from": {
+            "http://www.purl.org/cuneiform/nextWord": {
+              "instancecount": 0,
+              "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
+            },
             "http://www.purl.org/cuneiform/prevWord": {
               "instancecount": 0,
               "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
             }
           }
         },
-        "instancecount": 5
+        "instancecount": 6
       },
       {
         "id": "http://lemon-model.net/lemon#LexicalEntity",
         "parent": "#",
         "type": "class",
-        "text": "LexicalEntity",
+        "text": "LexicalEntity (lemon:LexicalEntity)",
         "data": {}
       },
       {
         "id": "http://lemon-model.net/lemon#LexicalForm",
         "parent": "#",
         "type": "class",
-        "text": "LexicalForm",
+        "text": "LexicalForm (lemon:LexicalForm)",
         "data": {}
       },
       {
         "id": "http://www.purl.org/cuneiform/TabletSurface",
         "parent": "http://www.purl.org/cuneiform/TabletFeature",
         "type": "class",
-        "text": "TabletSurface",
+        "text": "TabletSurface (purl:cuneiform/TabletSurface)",
         "data": {}
       },
       {
@@ -29448,7 +29465,7 @@ var tree={
         "id": "http://www.purl.org/graphemon#WordOccurrenceCollection",
         "parent": "#",
         "type": "class",
-        "text": "WordOccurrenceCollection [2]",
+        "text": "WordOccurrenceCollection (purl:graphemon#WordOccurrenceCollection) [2]",
         "data": {}
       },
       {
@@ -32675,7 +32692,7 @@ var tree={
         "id": "http://www.w3.org/2004/02/skos/core#Collection",
         "parent": "#",
         "type": "collectionclass",
-        "text": "Collection [1]",
+        "text": "Collection (skos:Collection) [1]",
         "data": {}
       },
       {
@@ -32990,7 +33007,7 @@ var tree={
         "id": "http://www.purl.org/cuneiform/3DRendering",
         "parent": "#",
         "type": "class",
-        "text": "3DRendering [6]",
+        "text": "3DRendering (purl:cuneiform/3DRendering) [6]",
         "data": {}
       },
       {
@@ -33774,56 +33791,56 @@ var tree={
         "id": "http://purl.org/dc/elements/1.1/Image",
         "parent": "#",
         "type": "class",
-        "text": "Image [1]",
+        "text": "Image (dce:Image) [1]",
         "data": {}
       },
       {
-        "id": "n7a15e5bc45c5456dad4d74e1271f9b25b2",
+        "id": "n534555afe79249e2bec8caf1ba2460cab2",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n7a15e5bc45c5456dad4d74e1271f9b25b2",
+        "text": "n534555afe79249e2bec8caf1ba2460cab2",
         "data": {}
       },
       {
-        "id": "n7a15e5bc45c5456dad4d74e1271f9b25b3",
+        "id": "n534555afe79249e2bec8caf1ba2460cab3",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n7a15e5bc45c5456dad4d74e1271f9b25b3",
+        "text": "n534555afe79249e2bec8caf1ba2460cab3",
         "data": {}
       },
       {
-        "id": "n7a15e5bc45c5456dad4d74e1271f9b25b4",
+        "id": "n534555afe79249e2bec8caf1ba2460cab4",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n7a15e5bc45c5456dad4d74e1271f9b25b4",
+        "text": "n534555afe79249e2bec8caf1ba2460cab4",
         "data": {}
       },
       {
-        "id": "n7a15e5bc45c5456dad4d74e1271f9b25b5",
+        "id": "n534555afe79249e2bec8caf1ba2460cab5",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n7a15e5bc45c5456dad4d74e1271f9b25b5",
+        "text": "n534555afe79249e2bec8caf1ba2460cab5",
         "data": {}
       },
       {
-        "id": "n7a15e5bc45c5456dad4d74e1271f9b25b6",
+        "id": "n534555afe79249e2bec8caf1ba2460cab6",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n7a15e5bc45c5456dad4d74e1271f9b25b6",
+        "text": "n534555afe79249e2bec8caf1ba2460cab6",
         "data": {}
       },
       {
-        "id": "n7a15e5bc45c5456dad4d74e1271f9b25b7",
+        "id": "n534555afe79249e2bec8caf1ba2460cab7",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n7a15e5bc45c5456dad4d74e1271f9b25b7",
+        "text": "n534555afe79249e2bec8caf1ba2460cab7",
         "data": {}
       },
       {
-        "id": "n7a15e5bc45c5456dad4d74e1271f9b25b8",
+        "id": "n534555afe79249e2bec8caf1ba2460cab8",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n7a15e5bc45c5456dad4d74e1271f9b25b8",
+        "text": "n534555afe79249e2bec8caf1ba2460cab8",
         "data": {}
       },
       {
@@ -33858,7 +33875,7 @@ var tree={
         "id": "http://xmlns.com/foaf/0.1/Person",
         "parent": "http://www.w3.org/ns/prov#Agent",
         "type": "class",
-        "text": "Person [11]",
+        "text": "Person (foaf:Person) [11]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -34995,7 +35012,7 @@ var tree={
             }
           },
           "from": {
-            "http://www.gigamesh.eu/ont#nonManifoldFaces": {
+            "http://www.gigamesh.eu/ont#manifoldFaces": {
               "instancecount": 0,
               "http://purl.org/dc/elements/1.1/Image": 1,
               "http://www.gigamesh.eu/ont#Mesh": 1
@@ -35245,7 +35262,7 @@ var tree={
         "id": "http://www.w3.org/2003/01/geo/wgs84_pos#Geometry",
         "parent": "#",
         "type": "class",
-        "text": "Geometry [1]",
+        "text": "Geometry (w3cgeo:Geometry) [1]",
         "data": {}
       },
       {
@@ -35378,7 +35395,7 @@ var tree={
         "id": "http://xmlns.com/foaf/0.1/Image",
         "parent": "#",
         "type": "class",
-        "text": "Image [18]",
+        "text": "Image (foaf:Image) [18]",
         "data": {}
       },
       {
@@ -35392,7 +35409,7 @@ var tree={
         "id": "http://www.opengis.net/ont/geosparql#Feature",
         "parent": "http://www.opengis.net/ont/geosparql#SpatialObject",
         "type": "geoclass",
-        "text": "Feature [1]",
+        "text": "Feature (gsp:Feature) [1]",
         "data": {
           "to": {
             "http://www.opengis.net/ont/geosparql#hasGeometry": {
@@ -35436,7 +35453,7 @@ var tree={
         "id": "http://www.opengis.net/ont/sf#Polygon",
         "parent": "http://www.opengis.net/ont/geosparql#Geometry",
         "type": "geoclass",
-        "text": "Polygon [1]",
+        "text": "Polygon (sf:Polygon) [1]",
         "data": {
           "to": {
             "http://www.opengis.net/ont/geosparql#asWKT": {
@@ -35539,7 +35556,7 @@ var tree={
         "id": "http://www.purl.org/graphemon#CharOccurrenceCollection",
         "parent": "http://www.w3.org/2004/02/skos/core#Collection",
         "type": "class",
-        "text": "CharOccurrenceCollection [1]",
+        "text": "CharOccurrenceCollection (purl:graphemon#CharOccurrenceCollection) [1]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -36450,14 +36467,14 @@ var tree={
         "id": "http://www.w3.org/ns/prov#Entity",
         "parent": "#",
         "type": "class",
-        "text": "Entity",
+        "text": "Entity (prov:Entity)",
         "data": {}
       },
       {
         "id": "http://www.w3.org/ns/prov#Agent",
         "parent": "#",
         "type": "class",
-        "text": "Agent",
+        "text": "Agent (prov:Agent)",
         "data": {}
       },
       {
@@ -40811,7 +40828,7 @@ var tree={
         "id": "http://www.purl.org/graphemon#GraphemeVariantCollection",
         "parent": "http://www.w3.org/2004/02/skos/core#Collection",
         "type": "class",
-        "text": "GraphemeVariantCollection [1]",
+        "text": "GraphemeVariantCollection (purl:graphemon#GraphemeVariantCollection) [1]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -40897,28 +40914,28 @@ var tree={
         "id": "http://www.purl.org/cuneiform/Sumerian",
         "parent": "http://www.purl.org/cuneiform/language",
         "type": "instance",
-        "text": "Sumerian",
+        "text": "Sumerian (purl:cuneiform/Sumerian)",
         "data": {}
       },
       {
         "id": "http://www.purl.org/cuneiform/language",
         "parent": "#",
         "type": "class",
-        "text": "language [1]",
+        "text": "language (purl:cuneiform/language) [1]",
         "data": {}
       },
       {
         "id": "http://www.purl.org/cuneiform/clay",
         "parent": "http://www.purl.org/cuneiform/Material",
         "type": "instance",
-        "text": "clay",
+        "text": "clay (purl:cuneiform/clay)",
         "data": {}
       },
       {
         "id": "http://www.purl.org/cuneiform/Material",
         "parent": "#",
         "type": "class",
-        "text": "Material [1]",
+        "text": "Material (purl:cuneiform/Material) [1]",
         "data": {}
       },
       {
@@ -42626,7 +42643,7 @@ var tree={
         "id": "http://www.purl.org/graphemon#CuneiformWedge",
         "parent": "http://www.purl.org/graphemon#Stroketyped",
         "type": "class",
-        "text": "CuneiformWedge [9]",
+        "text": "CuneiformWedge (purl:graphemon#CuneiformWedge) [9]",
         "data": {
           "to": {
             "http://www.purl.org/cuneiform/isRepresentedBy": {
@@ -42660,7 +42677,7 @@ var tree={
         "id": "http://www.cidoc-crm.org/cidoc-crm/TX1_WrittenText",
         "parent": "#",
         "type": "class",
-        "text": "TX1_WrittenText [1]",
+        "text": "TX1_WrittenText (crm:TX1_WrittenText) [1]",
         "data": {}
       },
       {
@@ -42674,7 +42691,7 @@ var tree={
         "id": "http://www.cidoc-crm.org/cidoc-crm/TX5_Reading",
         "parent": "#",
         "type": "class",
-        "text": "TX5_Reading [1]",
+        "text": "TX5_Reading (crm:TX5_Reading) [1]",
         "data": {}
       },
       {
@@ -43227,7 +43244,7 @@ var tree={
         "id": "http://www.purl.org/cuneiform/3DMesh",
         "parent": "http://www.purl.org/cuneiform/representation",
         "type": "class",
-        "text": "3DMesh [1]",
+        "text": "3DMesh (purl:cuneiform/3DMesh) [1]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -43261,7 +43278,7 @@ var tree={
         "id": "http://www.purl.org/graphemon#GraphemeAtomicPartCollection",
         "parent": "http://www.w3.org/2004/02/skos/core#Collection",
         "type": "class",
-        "text": "GraphemeAtomicPartCollection [1]",
+        "text": "GraphemeAtomicPartCollection (purl:graphemon#GraphemeAtomicPartCollection) [1]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -43497,91 +43514,91 @@ var tree={
         "id": "http://www.cidoc-crm.org/cidoc-crm/E22_ManMadeObject",
         "parent": "#",
         "type": "class",
-        "text": "E22_ManMadeObject",
+        "text": "E22_ManMadeObject (crm:E22_ManMadeObject)",
         "data": {}
       },
       {
         "id": "http://www.cidoc-crm.org/cidoc-crm/TX2_Writing",
         "parent": "#",
         "type": "class",
-        "text": "TX2_Writing",
+        "text": "TX2_Writing (crm:TX2_Writing)",
         "data": {}
       },
       {
         "id": "http://www.cidoc-crm.org/cidoc-crm/TX4_WritingField",
         "parent": "http://www.purl.org/cuneiform/TabletFeature",
         "type": "class",
-        "text": "TX4_WritingField",
+        "text": "TX4_WritingField (crm:TX4_WritingField)",
         "data": {}
       },
       {
         "id": "http://www.cidoc-crm.org/cidoc-crm/TX6_Transcription",
         "parent": "http://www.purl.org/cuneiform/representation",
         "type": "class",
-        "text": "TX6_Transcription",
+        "text": "TX6_Transcription (crm:TX6_Transcription)",
         "data": {}
       },
       {
         "id": "http://www.purl.org/cuneiform/CuneiformArtifactCollection",
         "parent": "http://www.w3.org/2004/02/skos/core#Collection",
         "type": "class",
-        "text": "CuneiformArtifactCollection",
+        "text": "CuneiformArtifactCollection (purl:cuneiform/CuneiformArtifactCollection)",
         "data": {}
       },
       {
         "id": "http://www.purl.org/cuneiform/Sentence",
         "parent": "https://situx.github.io/cuneiformontology/examples/hs1174/TX7_WrittenTextFragment",
         "type": "class",
-        "text": "Sentence",
+        "text": "Sentence (purl:cuneiform/Sentence)",
         "data": {}
       },
       {
         "id": "http://www.purl.org/cuneiform/TabletFeature",
         "parent": "#",
         "type": "class",
-        "text": "TabletFeature",
+        "text": "TabletFeature (purl:cuneiform/TabletFeature)",
         "data": {}
       },
       {
         "id": "http://www.purl.org/cuneiform/WordForm",
         "parent": "https://situx.github.io/cuneiformontology/examples/hs1174/TX7_WrittenTextFragment",
         "type": "class",
-        "text": "WordForm",
+        "text": "WordForm (purl:cuneiform/WordForm)",
         "data": {}
       },
       {
         "id": "http://www.purl.org/cuneiform/Representation",
         "parent": "#",
         "type": "class",
-        "text": "Representation",
+        "text": "Representation (purl:cuneiform/Representation)",
         "data": {}
       },
       {
         "id": "http://www.purl.org/graphemon#GraphemeAtomicPart",
         "parent": "http://www.purl.org/graphemon#GraphemePart",
         "type": "class",
-        "text": "GraphemeAtomicPart",
+        "text": "GraphemeAtomicPart (purl:graphemon#GraphemeAtomicPart)",
         "data": {}
       },
       {
         "id": "http://www.purl.org/graphemon#GraphemePart",
         "parent": "#",
         "type": "class",
-        "text": "GraphemePart",
+        "text": "GraphemePart (purl:graphemon#GraphemePart)",
         "data": {}
       },
       {
         "id": "http://www.purl.org/graphemon#Stroketyped",
         "parent": "http://www.purl.org/graphemon#GraphemeAtomicPart",
         "type": "class",
-        "text": "Stroketyped",
+        "text": "Stroketyped (purl:graphemon#Stroketyped)",
         "data": {}
       },
       {
         "id": "http://www.w3.org/ns/oa#TextualBody",
         "parent": "#",
         "type": "class",
-        "text": "TextualBody",
+        "text": "TextualBody (oa:TextualBody)",
         "data": {}
       },
       {
