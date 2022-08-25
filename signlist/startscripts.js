@@ -282,6 +282,7 @@ function rewriteLink(thelink){
     }
     console.log(rest)
     count=0
+    console.log(rest.split("/"))
     if(!indexpage){
         count=rest.split("/").length
     }
