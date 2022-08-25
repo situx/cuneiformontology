@@ -274,23 +274,16 @@ function download(){
 }
 
 function rewriteLink(thelink){
-    console.log(thelink)
-    console.log(window.location.pathname)
-    console.log(baseurl)
     if(thelink==null){
         rest=search[document.getElementById('search').value].replace(baseurl,"")
     }else{
         curlocpath=window.location.href.replace(baseurl,"")
         rest=thelink.replace(baseurl,"")
     }
-    console.log(rest)
-    console.log(curlocpath)
     count=0
-    console.log(curlocpath.split("/"))
     if(!indexpage){
         count=curlocpath.split("/").length-1
     }
-    console.log(count)
     counter=0
     while(counter<count){
         rest="../"+rest
