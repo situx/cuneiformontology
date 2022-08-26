@@ -14486,6 +14486,10 @@ var tree={
         "text": "WordForm (lemon:WordForm) [32]",
         "data": {
           "to": {
+            "http://www.purl.org/cuneiform/Occurence": {
+              "instancecount": 1,
+              "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
+            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
@@ -14501,7 +14505,7 @@ var tree={
             }
           }
         },
-        "instancecount": 2
+        "instancecount": 3
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/dict/ban_wordsense",
@@ -14777,9 +14781,6 @@ var tree={
               "instancecount": 1,
               "http://lemon-model.net/lemon#LexicalSense": 1
             },
-            "http://purl.org/dc/elements/1.1/license": {
-              "instancecount": 1
-            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
@@ -14790,7 +14791,7 @@ var tree={
           },
           "from": {}
         },
-        "instancecount": 5
+        "instancecount": 4
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/signlist/character_karcomp",
@@ -23713,12 +23714,7 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {
-            "http://www.purl.org/cuneiform/prevWord": {
-              "instancecount": 0,
-              "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
-            }
-          }
+          "from": {}
         },
         "instancecount": 5
       },
@@ -33789,52 +33785,52 @@ var tree={
         "data": {}
       },
       {
-        "id": "ne004d5a4de0846e7b7f8e3e873453951b2",
+        "id": "n1c9b6cb404da45f680fde66fd37ba668b2",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "ne004d5a4de0846e7b7f8e3e873453951b2",
+        "text": "n1c9b6cb404da45f680fde66fd37ba668b2",
         "data": {}
       },
       {
-        "id": "ne004d5a4de0846e7b7f8e3e873453951b3",
+        "id": "n1c9b6cb404da45f680fde66fd37ba668b3",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "ne004d5a4de0846e7b7f8e3e873453951b3",
+        "text": "n1c9b6cb404da45f680fde66fd37ba668b3",
         "data": {}
       },
       {
-        "id": "ne004d5a4de0846e7b7f8e3e873453951b4",
+        "id": "n1c9b6cb404da45f680fde66fd37ba668b4",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "ne004d5a4de0846e7b7f8e3e873453951b4",
+        "text": "n1c9b6cb404da45f680fde66fd37ba668b4",
         "data": {}
       },
       {
-        "id": "ne004d5a4de0846e7b7f8e3e873453951b5",
+        "id": "n1c9b6cb404da45f680fde66fd37ba668b5",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "ne004d5a4de0846e7b7f8e3e873453951b5",
+        "text": "n1c9b6cb404da45f680fde66fd37ba668b5",
         "data": {}
       },
       {
-        "id": "ne004d5a4de0846e7b7f8e3e873453951b6",
+        "id": "n1c9b6cb404da45f680fde66fd37ba668b6",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "ne004d5a4de0846e7b7f8e3e873453951b6",
+        "text": "n1c9b6cb404da45f680fde66fd37ba668b6",
         "data": {}
       },
       {
-        "id": "ne004d5a4de0846e7b7f8e3e873453951b7",
+        "id": "n1c9b6cb404da45f680fde66fd37ba668b7",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "ne004d5a4de0846e7b7f8e3e873453951b7",
+        "text": "n1c9b6cb404da45f680fde66fd37ba668b7",
         "data": {}
       },
       {
-        "id": "ne004d5a4de0846e7b7f8e3e873453951b8",
+        "id": "n1c9b6cb404da45f680fde66fd37ba668b8",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "ne004d5a4de0846e7b7f8e3e873453951b8",
+        "text": "n1c9b6cb404da45f680fde66fd37ba668b8",
         "data": {}
       },
       {
