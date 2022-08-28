@@ -1648,6 +1648,8 @@ class OntDocGeneration:
                     unitlabel=str(foundval)+" <a href=\""+str(foundunit)+"\" target=\"_blank\">"+str(self.shortenURI(foundunit))+"</a>"
             else:
                 unitlabel=str(foundval)+" "+str(foundunit)
+        if foundunit==None and foundval!=None:
+            unitlabel=str(foundval)
         return {"geojsonrep":geojsonrep,"label":label,"unitlabel":unitlabel,"foundmedia":foundmedia,"imageannos":imageannos,"image3dannos":image3dannos}
 
 
