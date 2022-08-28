@@ -1,0 +1,499 @@
+@prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf:<http://xmlns.com/foaf/0.1/> . 
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:<http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:<http://www.w3.org/2002/07/owl#> .
+@prefix dcat:<http://www.w3.org/ns/dcat#> .
+@prefix prov:<http://www.w3.org/ns/prov#> .
+@prefix giga:<http://www.gigamesh.eu/ont#> .
+@prefix dc:<http://purl.org/dc/terms/> .
+@prefix ex:<http://purl.org/net/ns/ex#> .
+@prefix geo:<http://www.opengis.net/ont/geosparql#> .
+@prefix wdt:<http://www.wikidata.org/prop/direct/> .
+@prefix om:<http://www.ontology-of-units-of-measure.org/resource/om-2/>.
+giga:GigameshInfo rdf:type owl:Class .
+giga:GigameshInfo rdfs:label "Gigamesh Info"@en .
+prov:Entity rdf:type owl:Class .
+prov:Entity rdfs:label "Entity"@en .
+prov:Agent rdf:type owl:Class .
+prov:Agent rdfs:label "Agent"@en .
+giga:Mesh rdf:type owl:Class .
+giga:Mesh rdfs:subClassOf prov:Entity .
+giga:Mesh rdfs:label "Mesh"@en .
+geo:Geometry rdf:type owl:Class .
+geo:Geometry rdfs:label "Geometry"@en .
+foaf:Person rdf:type owl:Class .
+foaf:Person rdfs:subClassOf prov:Agent .
+foaf:Person rdfs:label "Person"@en .
+foaf:accountName rdf:type owl:DatatypeProperty . 
+foaf:accountName rdfs:domain foaf:Person . 
+foaf:accountName rdfs:range xsd:string . 
+foaf:accountName rdfs:label "account name"@en .
+dc:contributor rdf:type owl:ObjectProperty . 
+dc:contributor rdfs:label "contributor"@en .
+wdt:P361 rdf:type owl:ObjectProperty . 
+wdt:P361 rdfs:label "part of"@en .
+rdf:value rdf:type owl:DatatypeProperty . 
+rdf:value rdfs:domain giga:GigameshInfo . 
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> rdf:type giga:Mesh .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> dc:contributor <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_contributor> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_contributor> rdf:type foaf:Person .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_contributor> rdfs:label  "HT073195_mesh.ply Contributor"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_contributor> foaf:accountName "" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> rdfs:label "HT073195_mesh.ply"@en .
+giga:TotalNumberOfVertices rdf:type owl:Class .
+giga:TotalNumberOfVertices rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfVertices> rdf:type giga:TotalNumberOfVertices .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfVertices> rdfs:label "HT073195_mesh.ply Total Number of Vertices"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfVertices> rdf:value "1187693"^^xsd:integer .
+giga:totalNumberOfVertices rdf:type owl:ObjectProperty .
+giga:totalNumberOfVertices rdfs:domain giga:Mesh .
+giga:totalNumberOfVertices rdfs:label "Total number of vertices"@en .
+giga:totalNumberOfVertices skos:definition "The total number of vertices as represented in the mesh" .
+giga:totalNumberOfVertices rdfs:comment "Gigamesh Info: Total number of vertices" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:totalNumberOfVertices <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfVertices> .
+giga:NaNVertices rdf:type owl:Class .
+giga:NaNVertices rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_NaNVertices> rdf:type giga:NaNVertices .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_NaNVertices> rdfs:label "HT073195_mesh.ply Amount of NaN Vertices"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_NaNVertices> rdf:value "0"^^xsd:integer .
+giga:NaNVertices rdf:type owl:ObjectProperty .
+giga:NaNVertices rdfs:domain giga:Mesh .
+giga:NaNVertices rdfs:label "NaN Vertices"@en .
+giga:NaNVertices skos:definition "The total number of vertices which are not represented by a number" .
+giga:NaNVertices rdfs:comment "Gigamesh Info: Vertices not-a-number" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:NaNVertices <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_NaNVertices> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_NaNVertices> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfVertices> .
+giga:VertexNormalLength rdf:type owl:Class .
+giga:VertexNormalLength rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_vertexNormalLength> rdf:type giga:VertexNormalLength .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_vertexNormalLength> rdfs:label "HT073195_mesh.ply Amount of Vertices with normal length"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_vertexNormalLength> rdf:value "0"^^xsd:integer .
+giga:vertexNormalLength rdf:type owl:ObjectProperty .
+giga:vertexNormalLength rdfs:domain giga:Mesh .
+giga:vertexNormalLength rdfs:label "Vertex normal vector length normal"@en .
+giga:vertexNormalLength skos:definition "The toal number of vertices with a normal vector length" .
+giga:vertexNormalLength rdfs:comment "Gigamesh Info: Vertex normal vector length normal" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:vertexNormalLength <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_vertexNormalLength> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_vertexNormalLength> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfVertices> .
+giga:VertexIsolated rdf:type owl:Class .
+giga:VertexIsolated rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_vertexIsolated> rdf:type giga:VertexIsolated .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_vertexIsolated> rdf:value "0"^^xsd:integer .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_vertexIsolated> rdfs:label "HT073195_mesh.ply Isolated Vertices"@en .
+giga:vertexIsolated rdf:type owl:ObjectProperty .
+giga:vertexIsolated rdfs:domain giga:Mesh .
+giga:vertexIsolated rdfs:label "Vertices solo"@en .
+giga:vertexIsolated skos:definition "The total number of isolated vertices" .
+giga:vertexIsolated rdfs:comment "Gigamesh Info: Vertices solo" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:vertexIsolated <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_vertexIsolated> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_vertexIsolated> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfVertices> .
+giga:BorderVertices rdf:type owl:Class .
+giga:BorderVertices rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_borderVertices> rdf:type giga:BorderVertices .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_borderVertices> rdfs:label "HT073195_mesh.ply Amount of Border Vertices"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_borderVertices> rdf:value "0"^^xsd:integer .
+giga:borderVertices rdf:type owl:ObjectProperty .
+giga:borderVertices rdfs:domain giga:Mesh .
+giga:borderVertices rdfs:label "Border vertices"@en .
+giga:borderVertices skos:definition "The total number of vertices at borders of the mesh" .
+giga:borderVertices rdfs:comment "Gigamesh Info: Border vertices" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:borderVertices <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_borderVertices> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_borderVertices> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfVertices> .
+giga:NonManifoldVertices rdf:type owl:Class .
+giga:NonManifoldVertices rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_nonManifoldVertices> rdf:type giga:NonManifoldVertices .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_nonManifoldVertices> rdfs:label "HT073195_mesh.ply Amount of Non-Manifold Vertices"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_nonManifoldVertices> rdf:value "0"^^xsd:integer .
+giga:nonManifoldVertices rdf:type owl:ObjectProperty .
+giga:nonManifoldVertices rdfs:domain giga:Mesh .
+giga:nonManifoldVertices rdfs:label "Vertices non-manifold"@en .
+giga:nonManifoldVertices skos:definition "The total number of vertices which are not part of a manifold" .
+giga:nonManifoldVertices rdfs:comment "Gigamesh Info: Vertices non-manifold" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:nonManifoldVertices <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_nonManifoldVertices> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_nonManifoldVertices> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfVertices> .
+giga:SingularVertices rdf:type owl:Class .
+giga:SingularVertices rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_singularVertices> rdf:type giga:SingularVertices .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_singularVertices> rdfs:label "HT073195_mesh.ply Amount of Singular Vertices"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_singularVertices> rdf:value "0"^^xsd:integer .
+giga:singularVertices rdf:type owl:ObjectProperty .
+giga:singularVertices rdfs:domain giga:Mesh .
+giga:singularVertices rdfs:label "Vertices singular"@en .
+giga:singularVertices skos:definition "The total number of vertices which are singular" .
+giga:singularVertices rdfs:comment "Gigamesh Info: Vertices singular" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:singularVertices <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_singularVertices> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_singularVertices> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfVertices> .
+giga:VerticesOnInvertedEdge rdf:type owl:Class .
+giga:VerticesOnInvertedEdge rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_verticesOnInvertedEdge> rdf:type giga:VerticesOnInvertedEdge .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_verticesOnInvertedEdge> rdfs:label "HT073195_mesh.ply Amount of Vertices on inverted edges"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_verticesOnInvertedEdge> rdf:value "0"^^xsd:integer .
+giga:verticesOnInvertedEdge rdf:type owl:ObjectProperty .
+giga:verticesOnInvertedEdge rdfs:domain giga:Mesh .
+giga:verticesOnInvertedEdge rdfs:label "Vertices along an inverted edge"@en .
+giga:verticesOnInvertedEdge skos:definition "The total number of vertices on an inverted edge" .
+giga:verticesOnInvertedEdge rdfs:comment "Gigamesh Info: Vertices along an inverted edge" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:verticesOnInvertedEdge <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_verticesOnInvertedEdge> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_verticesOnInvertedEdge> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfVertices> .
+giga:VerticesPartOfZeroAreaFace rdf:type owl:Class .
+giga:VerticesPartOfZeroAreaFace rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_verticesPartOfZeroAreaFace> rdf:type giga:VerticesPartOfZeroAreaFace .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_verticesPartOfZeroAreaFace> rdfs:label "HT073195_mesh.ply Amount of Vertices which are part of zero area faces"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_verticesPartOfZeroAreaFace> rdf:value "0"^^xsd:integer .
+giga:verticesPartOfZeroAreaFace rdf:type owl:ObjectProperty .
+giga:verticesPartOfZeroAreaFace rdfs:domain giga:Mesh .
+giga:verticesPartOfZeroAreaFace rdfs:label "Vertices part of a zero area face"@en .
+giga:verticesPartOfZeroAreaFace skos:definition "The total number of vertices which are part of a zero area face" .
+giga:verticesPartOfZeroAreaFace rdfs:comment "Gigamesh Info: Vertices part of a zero area face" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:verticesPartOfZeroAreaFace <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_verticesPartOfZeroAreaFace> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_verticesPartOfZeroAreaFace> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfVertices> .
+giga:SyntheticVertices rdf:type owl:Class .
+giga:SyntheticVertices rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_syntheticVertices> rdf:type giga:SyntheticVertices .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_syntheticVertices> rdfs:label "HT073195_mesh.ply Amount of synthetic vertices"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_syntheticVertices> rdf:value "0"^^xsd:integer .
+giga:syntheticVertices rdf:type owl:ObjectProperty .
+giga:syntheticVertices rdfs:domain giga:Mesh .
+giga:syntheticVertices rdfs:label "Vertices synthetic"@en .
+giga:syntheticVertices skos:definition "The total number of vertices which are synthetic" .
+giga:syntheticVertices rdfs:comment "Gigamesh Info: Vertices synthetic" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:syntheticVertices <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_syntheticVertices> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_syntheticVertices> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfVertices> .
+giga:ManuallyAddedVertices rdf:type owl:Class .
+giga:ManuallyAddedVertices rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_manuallyAddedVertices> rdf:type giga:ManuallyAddedVertices .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_manuallyAddedVertices> rdfs:label "HT073195_mesh.ply Amount of manually added vertices"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_manuallyAddedVertices> rdf:value "0"^^xsd:integer .
+giga:manuallyAddedVertices rdf:type owl:ObjectProperty .
+giga:manuallyAddedVertices rdfs:domain giga:Mesh .
+giga:manuallyAddedVertices rdfs:label "Vertices manually added"@en .
+giga:manuallyAddedVertices skos:definition "The total number of vertices which have been manually added" .
+giga:manuallyAddedVertices rdfs:comment "Gigamesh Info: Vertices manually added" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:manuallyAddedVertices <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_manuallyAddedVertices> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_manuallyAddedVertices> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfVertices> .
+giga:CircleCenterVertices rdf:type owl:Class .
+giga:CircleCenterVertices rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_circleCenterVertices> rdf:type giga:CircleCenterVertices .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_circleCenterVertices> rdfs:label "HT073195_mesh.ply Amount of circle center vertices"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_circleCenterVertices> rdf:value "0"^^xsd:integer .
+giga:circleCenterVertices rdf:type owl:ObjectProperty .
+giga:circleCenterVertices rdfs:domain giga:Mesh .
+giga:circleCenterVertices rdfs:label "Vertices circle center"@en .
+giga:circleCenterVertices skos:definition "The total number of vertices which comprise the center of a circle" .
+giga:circleCenterVertices rdfs:comment "Gigamesh Info: Vertices circle center" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:circleCenterVertices <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_circleCenterVertices> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_circleCenterVertices> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfVertices> .
+giga:SelectedVertices rdf:type owl:Class .
+giga:SelectedVertices rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_selectedVertices> rdf:type giga:SelectedVertices .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_selectedVertices> rdfs:label "HT073195_mesh.ply Amount of selected vertices"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_selectedVertices> rdf:value "0"^^xsd:integer .
+giga:selectedVertices rdf:type owl:ObjectProperty .
+giga:selectedVertices rdfs:domain giga:Mesh .
+giga:selectedVertices rdfs:label "Vertices selected"@en .
+giga:selectedVertices skos:definition "The total number of vertices which are selected" .
+giga:selectedVertices rdfs:comment "Gigamesh Info: Vertices selected" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:selectedVertices <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_selectedVertices> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_selectedVertices> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfVertices> .
+giga:FiniteFunctionValueVertices rdf:type owl:Class .
+giga:FiniteFunctionValueVertices rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_finiteFunctionValueVertices> rdf:type giga:FiniteFunctionValueVertices .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_finiteFunctionValueVertices> rdfs:label "HT073195_mesh.ply Amount of finite function value vertices"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_finiteFunctionValueVertices> rdf:value "1187693"^^xsd:integer .
+giga:finiteFunctionValueVertices rdf:type owl:ObjectProperty .
+giga:finiteFunctionValueVertices rdfs:domain giga:Mesh .
+giga:finiteFunctionValueVertices rdfs:label "Vertices with finite function value"@en .
+giga:finiteFunctionValueVertices skos:definition "The total number of vertices which have a finite function value" .
+giga:finiteFunctionValueVertices rdfs:comment "Gigamesh Info: Vertices with finite function value" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:finiteFunctionValueVertices <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_finiteFunctionValueVertices> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_finiteFunctionValueVertices> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfVertices> .
+giga:LocalFunctionMinValueVertices rdf:type owl:Class .
+giga:LocalFunctionMinValueVertices rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_localFunctionMinValueVertices> rdf:type giga:LocalFunctionMinValueVertices .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_localFunctionMinValueVertices> rdfs:label "HT073195_mesh.ply Amount of local function minimum value vertices"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_localFunctionMinValueVertices> rdf:value "51114"^^xsd:integer .
+giga:localFunctionValueMinVertices rdf:type owl:ObjectProperty .
+giga:localFunctionValueMinVertices rdfs:domain giga:Mesh .
+giga:localFunctionValueMinVertices rdfs:label "Vertices with local function value minimum"@en .
+giga:localFunctionValueMinVertices skos:definition "The total number of vertices which have a local function value minimum" .
+giga:localFunctionValueMinVertices rdfs:comment "Gigamesh Info: Vertices with local function value minimum" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:localFunctionValueMinVertices <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_localFunctionMinValueVertices> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_localFunctionMinValueVertices> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfVertices> .
+giga:LocalFunctionMaxValueVertices rdf:type owl:Class .
+giga:LocalFunctionMaxValueVertices rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_localFunctionMaxValueVertices> rdf:type giga:LocalFunctionMaxValueVertices .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_localFunctionMaxValueVertices> rdfs:label "HT073195_mesh.ply Amount of local function maximum value vertices"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_localFunctionMaxValueVertices> rdf:value "57210"^^xsd:integer .
+giga:localFunctionValueMaxVertices rdf:type owl:ObjectProperty .
+giga:localFunctionValueMaxVertices rdfs:domain giga:Mesh .
+giga:localFunctionValueMaxVertices rdfs:label "Vertices with local function value maximum"@en .
+giga:localFunctionValueMaxVertices skos:definition "The total number of vertices which have a local function value maximum" .
+giga:localFunctionValueMaxVertices rdfs:comment "Gigamesh Info: Vertices with local function value maximum" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:localFunctionValueMaxVertices <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_localFunctionMaxValueVertices> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_localFunctionMaxValueVertices> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfVertices> .
+giga:TotalNumberOfFaces rdf:type owl:Class .
+giga:TotalNumberOfFaces rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfFaces> rdf:type giga:TotalNumberOfFaces .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfFaces> rdfs:label "HT073195_mesh.ply Total number of faces"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfFaces> rdf:value "2375382"^^xsd:integer .
+giga:totalNumberOfFaces rdf:type owl:ObjectProperty .
+giga:totalNumberOfFaces rdfs:domain giga:Mesh .
+giga:totalNumberOfFaces rdfs:label "Total number of faces"@en .
+giga:totalNumberOfFaces skos:definition "The total number of faces in the given mesh" .
+giga:totalNumberOfFaces rdfs:comment "Gigamesh Info: Total number of faces" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:totalNumberOfFaces <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfFaces> .
+giga:SoloFaces rdf:type owl:Class .
+giga:SoloFaces rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_soloFaces> rdf:type giga:SoloFaces .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_soloFaces> rdfs:label "HT073195_mesh.ply Amount of solo faces"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_soloFaces> rdf:value "0"^^xsd:integer .
+giga:soloFaces rdf:type owl:ObjectProperty .
+giga:soloFaces rdfs:domain giga:Mesh .
+giga:soloFaces rdfs:label "Solo faces"@en .
+giga:soloFaces skos:definition "The total number of solo faces" .
+giga:soloFaces rdfs:comment "Gigamesh Info: Solo faces" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:soloFaces <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_soloFaces> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_soloFaces> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfFaces> .
+giga:BorderFaces rdf:type owl:Class .
+giga:BorderFaces rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_borderFaces> rdf:type giga:BorderFaces .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_borderFaces> rdfs:label "HT073195_mesh.ply Amount of border faces"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_borderFaces> rdf:value "0"^^xsd:integer .
+giga:borderFaces rdf:type owl:ObjectProperty .
+giga:borderFaces rdfs:domain giga:Mesh .
+giga:borderFaces rdfs:label "Border faces"@en .
+giga:borderFaces skos:definition "The total number of border faces" .
+giga:borderFaces rdfs:comment "Gigamesh Info: Border faces" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:borderFaces <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_borderFaces> . 
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_borderFaces> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfFaces> .
+giga:ThreeBorderVertexFaces rdf:type owl:Class .
+giga:ThreeBorderVertexFaces rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_threeBorderVertexFaces> rdf:type giga:ThreeBorderVertexFaces .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_threeBorderVertexFaces> rdfs:label "HT073195_mesh.ply Amount of three border vertex faces"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_threeBorderVertexFaces> rdf:value "0"^^xsd:integer .
+giga:threeBorderVertexFaces rdf:type owl:ObjectProperty .
+giga:threeBorderVertexFaces rdfs:domain giga:Mesh .
+giga:threeBorderVertexFaces rdfs:label "Faces with three border vertices"@en .
+giga:threeBorderVertexFaces skos:definition "The total number of faces with three border vertices" .
+giga:threeBorderVertexFaces rdfs:comment "Gigamesh Info: Faces with three border vertices" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:threeBorderVertexFaces <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_threeBorderVertexFaces> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_threeBorderVertexFaces> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfFaces> .
+giga:BorderFacesBridgeTriConnection rdf:type owl:Class .
+giga:BorderFacesBridgeTriConnection rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_borderFacesBridgeTriConnection> rdf:type giga:BorderFacesBridgeTriConnection .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_borderFacesBridgeTriConnection> rdfs:label "HT073195_mesh.ply Amount of border faces with a bridge tri connection"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_borderFacesBridgeTriConnection> rdf:value "0"^^xsd:integer .
+giga:borderFacesBridgeTriConnection rdf:type owl:ObjectProperty .
+giga:borderFacesBridgeTriConnection rdfs:domain giga:Mesh .
+giga:borderFacesBridgeTriConnection rdfs:label "Border faces bridge tri-connection"@en .
+giga:borderFacesBridgeTriConnection skos:definition "The total number of faces with three border vertices" .
+giga:borderFacesBridgeTriConnection rdfs:comment "Gigamesh Info: Border faces bridge tri-connection" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:borderFacesBridgeTriConnection <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_borderFacesBridgeTriConnection> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_borderFacesBridgeTriConnection> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfFaces> .
+giga:BridgeBorderFaces rdf:type owl:Class .
+giga:BridgeBorderFaces rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_bridgeBorderFaces> rdf:type giga:BridgeBorderFaces .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_bridgeBorderFaces> rdfs:label "HT073195_mesh.ply Amount of bridge border faces"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_bridgeBorderFaces> rdf:value "0"^^xsd:integer .
+giga:bridgeBorderFaces rdf:type owl:ObjectProperty .
+giga:bridgeBorderFaces rdfs:domain giga:Mesh .
+giga:bridgeBorderFaces rdfs:label "Bridge border faces"@en .
+giga:bridgeBorderFaces skos:definition "The total number of bridge border faces" .
+giga:bridgeBorderFaces rdfs:comment "Gigamesh Info: Bridge border faces" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:bridgeBorderFaces <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_bridgeBorderFaces> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_bridgeBorderFaces> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfFaces> .
+giga:DanglingBorderFaces rdf:type owl:Class .
+giga:DanglingBorderFaces rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_danglingBorderFaces> rdf:type giga:BridgeBorderFaces .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_danglingBorderFaces> rdfs:label "HT073195_mesh.ply Amount of dangling border faces"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_danglingBorderFaces> rdf:value "0"^^xsd:integer .
+giga:danglingBorderFaces rdf:type owl:ObjectProperty .
+giga:danglingBorderFaces rdfs:domain giga:Mesh .
+giga:danglingBorderFaces rdfs:label "Dangling border faces"@en .
+giga:danglingBorderFaces skos:definition "The total number of dangling border faces" .
+giga:danglingBorderFaces rdfs:comment "Gigamesh Info: Dangling border faces" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:danglingBorderFaces <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_danglingBorderFaces> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_danglingBorderFaces> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfFaces> .
+giga:ManifoldFaces rdf:type owl:Class .
+giga:ManifoldFaces rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_manifoldFaces> rdf:type giga:ManifoldFaces .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_manifoldFaces> rdfs:label "HT073195_mesh.ply Amount of manifold faces"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_manifoldFaces> rdf:value "2375382"^^xsd:integer .
+giga:manifoldFaces rdf:type owl:ObjectProperty .
+giga:manifoldFaces rdfs:domain giga:Mesh .
+giga:manifoldFaces rdfs:label "Manifold faces"@en .
+giga:manifoldFaces skos:definition "The total number of manifold faces" .
+giga:manifoldFaces rdfs:comment "Gigamesh Info: Manifold faces" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:manifoldFaces <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_manifoldFaces> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_manifoldFaces> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfFaces> .
+giga:NonManifoldFaces rdf:type owl:Class .
+giga:NonManifoldFaces rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_nonManifoldFaces> rdf:type giga:ManifoldFaces .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_nonManifoldFaces> rdfs:label "HT073195_mesh.ply Amount of non-manifold faces"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_nonManifoldFaces> rdf:value "0"^^xsd:integer .
+giga:nonManifoldFaces rdf:type owl:ObjectProperty .
+giga:nonManifoldFaces rdfs:domain giga:Mesh .
+giga:nonManifoldFaces rdfs:label "Non-Manifold faces"@en .
+giga:nonManifoldFaces skos:definition "The total number of non-manifold faces" .
+giga:nonManifoldFaces rdfs:comment "Gigamesh Info: Non-Manifold faces" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:nonManifoldFaces <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_nonManifoldFaces> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_nonManifoldFaces> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfFaces> .
+giga:StickyFaces rdf:type owl:Class .
+giga:StickyFaces rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_stickyFaces> rdf:type giga:StickyFaces .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_stickyFaces> rdfs:label "HT073195_mesh.ply Amount of sticky faces"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_stickyFaces> rdf:value "0"^^xsd:integer .
+giga:stickyFaces rdf:type owl:ObjectProperty .
+giga:stickyFaces rdfs:domain giga:Mesh .
+giga:stickyFaces rdfs:label "Sticky faces"@en .
+giga:stickyFaces skos:definition "The total number of sticky faces" .
+giga:stickyFaces rdfs:comment "Gigamesh Info: Sticky faces" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:stickyFaces <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_stickyFaces> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_stickyFaces> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfFaces> .
+giga:ZeroAreaFaces rdf:type owl:Class .
+giga:ZeroAreaFaces rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_zeroAreaFaces> rdf:type giga:ZeroAreaFaces .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_zeroAreaFaces> rdfs:label "HT073195_mesh.ply Amount of zero area faces"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_zeroAreaFaces> rdf:value "0"^^xsd:integer .
+giga:zeroAreaFaces rdf:type owl:ObjectProperty .
+giga:zeroAreaFaces rdfs:domain giga:Mesh .
+giga:zeroAreaFaces rdfs:label "Faces with zero area"@en .
+giga:zeroAreaFaces skos:definition "The total number of faces with zero area" .
+giga:zeroAreaFaces rdfs:comment "Gigamesh Info: Faces with zero area" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:zeroAreaFaces <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_zeroAreaFaces> . 
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_zeroAreaFaces> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfFaces> .
+giga:InvertedFaces rdf:type owl:Class .
+giga:InvertedFaces rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_invertedFaces> rdf:type giga:InvertedFaces .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_invertedFaces> rdfs:label "HT073195_mesh.ply Amount of inverted faces"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_invertedFaces> rdf:value "0"^^xsd:integer .
+giga:invertedFaces rdf:type owl:ObjectProperty .
+giga:invertedFaces rdfs:domain giga:Mesh .
+giga:invertedFaces rdfs:label "Inverted Faces"@en .
+giga:invertedFaces skos:definition "The total number of faces which are inverted" .
+giga:invertedFaces rdfs:comment "Gigamesh Info: Inverted Faces" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:invertedFaces <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_invertedFaces> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_invertedFaces> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfFaces> .
+giga:SelectedFaces rdf:type owl:Class .
+giga:SelectedFaces rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_selectedFaces> rdf:type giga:SelectedFaces .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_selectedFaces> rdfs:label "HT073195_mesh.ply Amount of selected faces"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_selectedFaces> rdf:value "0"^^xsd:integer .
+giga:selectedFaces rdf:type owl:ObjectProperty .
+giga:selectedFaces rdfs:domain giga:Mesh .
+giga:selectedFaces rdfs:label "Selected Faces"@en .
+giga:selectedFaces skos:definition "The total number of selected faces" .
+giga:selectedFaces rdfs:comment "Gigamesh Info: Selected Faces" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:selectedFaces <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_selectedFaces> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_selectedFaces> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfFaces> .
+giga:SyntheticVertexFaces rdf:type owl:Class .
+giga:SyntheticVertexFaces rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_syntheticVertexFaces> rdf:type giga:SyntheticVertexFaces .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_syntheticVertexFaces> rdfs:label "HT073195_mesh.ply Amount of synthetic vertex faces"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_syntheticVertexFaces> rdf:value "0"^^xsd:integer .
+giga:syntheticVertexFaces rdf:type owl:ObjectProperty .
+giga:syntheticVertexFaces rdfs:domain giga:Mesh .
+giga:syntheticVertexFaces rdfs:label "Faces with synthetic vertices"@en .
+giga:syntheticVertexFaces skos:definition "The total number of faces with synthetic vertices" .
+giga:syntheticVertexFaces rdfs:comment "Gigamesh Info: Faces with synthetic vertices" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:syntheticVertexFaces <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_syntheticVertexFaces> .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_syntheticVertexFaces> wdt:P361 <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_totalNumberOfFaces> .
+giga:ConnectedComponents rdf:type owl:Class .
+giga:ConnectedComponents rdfs:subClassOf giga:GigameshInfo .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_connectedComponents> rdf:type giga:ConnectedComponents .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_connectedComponents> rdfs:label "HT073195_mesh.ply Amount of connected components"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_connectedComponents> rdf:value "0"^^xsd:integer .
+giga:amountOfConnectedComponents rdf:type owl:ObjectProperty .
+giga:amountOfConnectedComponents rdfs:domain giga:Mesh .
+giga:amountOfConnectedComponents rdfs:label "Connected components"@en .
+giga:amountOfConnectedComponents skos:definition "The total number of connected components" .
+giga:amountOfConnectedComponents rdfs:comment "Gigamesh Info: Connected components" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:amountOfConnectedComponents <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_connectedComponents> .
+giga:boundingBox rdf:type owl:ObjectProperty .
+giga:boundingBox rdfs:domain giga:Mesh .
+giga:boundingBox rdfs:label "Bounding Box"@en . 
+giga:boundingBox skos:definition "The bounding box of the mesh" .
+giga:boundingBox rdfs:comment "Gigamesh Info: The bounding box of the mesh" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_geom> rdf:type geo:Geometry .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_geom> rdfs:label "HT073195_mesh.ply Bounding Box"@en .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:boundingBox <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_geom> . <https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_geom> geo:asWKT "ENVELOPE(-71.364300 0.000000 -27.127600,71.364300 101.715500 27.127600)"^^geo:wktLiteral .
+giga:minimumXCoordinate rdf:type owl:DatatypeProperty .
+giga:minimumXCoordinate rdfs:domain geo:Geometry .
+giga:minimumXCoordinate rdfs:label "Minimum X Coordinate"@en . 
+giga:minimumXCoordinate skos:definition "The minimum x coordinate of the mesh" .
+giga:minimumXCoordinate rdfs:comment "Gigamesh Info: Minimum X Coordinate" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_geom> giga:minimumXCoordinate "-71.364300"^^xsd:double .
+giga:minimumYCoordinate rdf:type owl:DatatypeProperty .
+giga:minimumYCoordinate rdfs:domain geo:Geometry .
+giga:minimumYCoordinate rdfs:label "Minimum Y Coordinate"@en . 
+giga:minimumYCoordinate skos:definition "The minimum y coordinate of the mesh" .
+giga:minimumYCoordinate rdfs:comment "Gigamesh Info: Minimum Y Coordinate" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_geom> giga:minimumYCoordinate "0.000000"^^xsd:double .
+giga:minimumZCoordinate rdf:type owl:DatatypeProperty .
+giga:minimumZCoordinate rdfs:domain geo:Geometry .
+giga:minimumZCoordinate rdfs:label "Minimum Z Coordinate"@en . 
+giga:minimumZCoordinate skos:definition "The minimum z coordinate of the mesh" .
+giga:minimumZCoordinate rdfs:comment "Gigamesh Info: Minimum Z Coordinate" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_geom> giga:minimumZCoordinate "-27.127600"^^xsd:double .
+giga:maximumXCoordinate rdf:type owl:DatatypeProperty .
+giga:maximumXCoordinate rdfs:domain geo:Geometry .
+giga:maximumXCoordinate rdfs:label "Maximum X Coordinate"@en . 
+giga:maximumXCoordinate skos:definition "The maximum x coordinate of the mesh" .
+giga:maximumXCoordinate rdfs:comment "Gigamesh Info: Maximum X Coordinate" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_geom> giga:maximumXCoordinate "71.364300"^^xsd:double .
+giga:maximumYCoordinate rdf:type owl:DatatypeProperty .
+giga:maximumYCoordinate rdfs:domain geo:Geometry .
+giga:maximumYCoordinate rdfs:label "Maximum Y Coordinate"@en . 
+giga:maximumYCoordinate skos:definition "The maximum y coordinate of the mesh" .
+giga:maximumYCoordinate rdfs:comment "Gigamesh Info: Maximum Y Coordinate" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_geom> giga:maximumYCoordinate "101.715500"^^xsd:double .
+giga:maximumZCoordinate rdf:type owl:DatatypeProperty .
+giga:maximumZCoordinate rdfs:domain geo:Geometry .
+giga:maximumZCoordinate rdfs:label "Maximum Z Coordinate"@en . 
+giga:maximumZCoordinate skos:definition "The maximum y coordinate of the mesh" .
+giga:maximumZCoordinate rdfs:comment "Gigamesh Info: Maximum Z Coordinate" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_geom> giga:maximumZCoordinate "27.127600"^^xsd:double .
+giga:boundingBoxWidth rdf:type owl:DatatypeProperty .
+giga:boundingBoxWidth rdfs:domain geo:Geometry .
+giga:boundingBoxWidth rdfs:label "Bounding Box Width"@en . 
+giga:boundingBoxWidth skos:definition "The width of the bounding box encompassing the mesh" .
+giga:boundingBoxWidth rdfs:comment "Gigamesh Info: Bounding Box Width" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_geom> giga:boundingBoxWidth "14.300000"^^xsd:double .
+giga:boundingBoxHeight rdf:type owl:DatatypeProperty .
+giga:boundingBoxHeight rdfs:domain geo:Geometry .
+giga:boundingBoxHeight rdfs:label "Bounding Box Height"@en. 
+giga:boundingBoxHeight skos:definition "The height of the bounding box encompassing the mesh" .
+giga:boundingBoxHeight rdfs:comment "Gigamesh Info: Bounding Box Height" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_geom> giga:boundingBoxHeight "10.200000"^^xsd:double .
+giga:boundingBoxThickness rdf:type owl:DatatypeProperty .
+giga:boundingBoxThickness rdfs:domain geo:Geometry .
+giga:boundingBoxThickness rdfs:label "Bounding Box Thickness"@en . 
+giga:boundingBoxThickness skos:definition "The thickness of the bounding box encompassing the mesh" .
+giga:boundingBoxThickness rdfs:comment "Gigamesh Info: Bounding Box Thickness" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply_geom> giga:boundingBoxThickness "5.400000"^^xsd:double .
+giga:totalArea rdf:type owl:DatatypeProperty .
+giga:totalArea rdfs:domain giga:Mesh .
+giga:totalArea rdfs:label "Total Area"@en . 
+giga:totalArea skos:definition "The total area of the mesh" .
+giga:totalArea rdfs:comment "Gigamesh Info: Total Area" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:totalArea "401.570000"^^xsd:double .
+giga:totalVolumeDX rdf:type owl:DatatypeProperty .
+giga:totalVolumeDX rdfs:domain giga:Mesh .
+giga:totalVolumeDX rdfs:label "Total Volume DX"@en . 
+giga:totalVolumeDX skos:definition "The total volume DX of the mesh" .
+giga:totalVolumeDX rdfs:comment "Gigamesh Info: Total Volume DX" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:totalVolumeDX "469762.979386"^^xsd:double .
+giga:totalVolumeDY rdf:type owl:DatatypeProperty .
+giga:totalVolumeDY rdfs:domain giga:Mesh .
+giga:totalVolumeDY rdfs:label "Total Volume DY"@en. 
+giga:totalVolumeDY skos:definition "The total volume DY of the mesh" .
+giga:totalVolumeDY rdfs:comment "Gigamesh Info: Total Volume DY" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:totalVolumeDY "469762.979386"^^xsd:double .
+giga:totalVolumeDZ rdf:type owl:DatatypeProperty .
+giga:totalVolumeDZ rdfs:domain giga:Mesh .
+giga:totalVolumeDZ rdfs:label "Total Volume DZ"@en . 
+giga:totalVolumeDZ skos:definition "The total volume DZ of the mesh" .
+giga:totalVolumeDZ rdfs:comment "Gigamesh Info: Total Volume DZ" .
+<https://situx.github.io/proj4rdf/examples/HT073195/mesh/HT073195_mesh.ply> giga:totalVolumeDZ "469762.979386"^^xsd:double .
