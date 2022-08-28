@@ -368,17 +368,24 @@ var tree={
         "data": {}
       },
       {
+        "id": "http://www.gigamesh.eu/ont#BridgeBorderFaces",
+        "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
+        "type": "class",
+        "text": "BridgeBorderFaces [6]",
+        "data": {}
+      },
+      {
         "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_danglingBorderFaces",
-        "parent": "http://www.gigamesh.eu/ont#BridgeBorderFaces",
+        "parent": "http://www.gigamesh.eu/ont#DanglingBorderFaces",
         "type": "instance",
         "text": "TCH92_mesh.ply_danglingBorderFaces",
         "data": {}
       },
       {
-        "id": "http://www.gigamesh.eu/ont#BridgeBorderFaces",
+        "id": "http://www.gigamesh.eu/ont#DanglingBorderFaces",
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
-        "text": "BridgeBorderFaces [10]",
+        "text": "DanglingBorderFaces [4]",
         "data": {}
       },
       {
@@ -519,13 +526,6 @@ var tree={
         "parent": "#",
         "type": "class",
         "text": "Agent (prov:Agent)",
-        "data": {}
-      },
-      {
-        "id": "http://www.gigamesh.eu/ont#DanglingBorderFaces",
-        "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
-        "type": "class",
-        "text": "DanglingBorderFaces",
         "data": {}
       },
       {
@@ -14991,12 +14991,7 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {
-            "http://lemon-model.net/lemon#form": {
-              "instancecount": 0,
-              "http://lemon-model.net/lemon#Word": 1
-            }
-          }
+          "from": {}
         },
         "instancecount": 2
       },
@@ -15266,6 +15261,14 @@ var tree={
         "text": "Word (lemon:Word) [33]",
         "data": {
           "to": {
+            "http://lemon-model.net/lemon#form": {
+              "instancecount": 1,
+              "http://lemon-model.net/lemon#WordForm": 1
+            },
+            "http://lemon-model.net/lemon#sense": {
+              "instancecount": 1,
+              "http://lemon-model.net/lemon#LexicalSense": 1
+            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
@@ -15276,7 +15279,7 @@ var tree={
           },
           "from": {}
         },
-        "instancecount": 2
+        "instancecount": 4
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/signlist/character_karcomp",
@@ -19913,40 +19916,17 @@ var tree={
         "text": "TransliterationLine (purl:cuneiform/TransliterationLine) [95]",
         "data": {
           "to": {
-            "http://www.purl.org/cuneiform/lineNumber": {
-              "instancecount": 1
-            },
-            "http://www.purl.org/cuneiform/nextLine": {
-              "instancecount": 1,
-              "http://www.purl.org/cuneiform/TransliterationLine": 1
-            },
-            "http://www.purl.org/cuneiform/prevLine": {
-              "instancecount": 1,
-              "http://www.purl.org/cuneiform/TransliterationLine": 1
-            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
             },
             "http://www.w3.org/2000/01/rdf-schema#label": {
               "instancecount": 1
-            },
-            "http://www.w3.org/2004/02/skos/core#definition": {
-              "instancecount": 1
             }
           },
-          "from": {
-            "http://www.purl.org/cuneiform/nextLine": {
-              "instancecount": 0,
-              "http://www.purl.org/cuneiform/TransliterationLine": 1
-            },
-            "http://www.purl.org/cuneiform/prevLine": {
-              "instancecount": 0,
-              "http://www.purl.org/cuneiform/TransliterationLine": 1
-            }
-          }
+          "from": {}
         },
-        "instancecount": 6
+        "instancecount": 2
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/tch92_transliteration1_obverse_line10_char1",
@@ -23545,6 +23525,10 @@ var tree={
             "http://www.purl.org/cuneiform/lineNumber": {
               "instancecount": 1
             },
+            "http://www.purl.org/cuneiform/nextChar": {
+              "instancecount": 1,
+              "http://www.purl.org/cuneiform/TransliterationCharOccurrence": 1
+            },
             "http://www.purl.org/cuneiform/prevChar": {
               "instancecount": 1,
               "http://www.purl.org/cuneiform/TransliterationCharOccurrence": 1
@@ -23555,14 +23539,14 @@ var tree={
             },
             "http://www.w3.org/2000/01/rdf-schema#label": {
               "instancecount": 1
-            },
-            "https://situx.github.io/cuneiformontology/examples/signlist/hasGraphemeReading": {
-              "instancecount": 1,
-              "http://www.purl.org/graphemon#GraphemeReading": 1
             }
           },
           "from": {
             "http://www.purl.org/cuneiform/nextChar": {
+              "instancecount": 0,
+              "http://www.purl.org/cuneiform/TransliterationCharOccurrence": 1
+            },
+            "http://www.purl.org/cuneiform/prevChar": {
               "instancecount": 0,
               "http://www.purl.org/cuneiform/TransliterationCharOccurrence": 1
             }
@@ -24426,7 +24410,7 @@ var tree={
       },
       {
         "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_danglingBorderFaces",
-        "parent": "http://www.gigamesh.eu/ont#BridgeBorderFaces",
+        "parent": "http://www.gigamesh.eu/ont#DanglingBorderFaces",
         "type": "instance",
         "text": "O147_back_mesh.plyO147_back_mesh.ply_danglingBorderFaces",
         "data": {}
@@ -24664,7 +24648,7 @@ var tree={
       },
       {
         "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_danglingBorderFaces",
-        "parent": "http://www.gigamesh.eu/ont#BridgeBorderFaces",
+        "parent": "http://www.gigamesh.eu/ont#DanglingBorderFaces",
         "type": "instance",
         "text": "O147_front_mesh.plyO147_front_mesh.ply_danglingBorderFaces",
         "data": {}
@@ -34778,52 +34762,52 @@ var tree={
         "data": {}
       },
       {
-        "id": "n476ca87bab164877945fb601ed936590b2",
+        "id": "ncb966c5313f0488282f0e201460ffb7eb2",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n476ca87bab164877945fb601ed936590b2",
+        "text": "ncb966c5313f0488282f0e201460ffb7eb2",
         "data": {}
       },
       {
-        "id": "n476ca87bab164877945fb601ed936590b3",
+        "id": "ncb966c5313f0488282f0e201460ffb7eb3",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n476ca87bab164877945fb601ed936590b3",
+        "text": "ncb966c5313f0488282f0e201460ffb7eb3",
         "data": {}
       },
       {
-        "id": "n476ca87bab164877945fb601ed936590b4",
+        "id": "ncb966c5313f0488282f0e201460ffb7eb4",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n476ca87bab164877945fb601ed936590b4",
+        "text": "ncb966c5313f0488282f0e201460ffb7eb4",
         "data": {}
       },
       {
-        "id": "n476ca87bab164877945fb601ed936590b5",
+        "id": "ncb966c5313f0488282f0e201460ffb7eb5",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n476ca87bab164877945fb601ed936590b5",
+        "text": "ncb966c5313f0488282f0e201460ffb7eb5",
         "data": {}
       },
       {
-        "id": "n476ca87bab164877945fb601ed936590b6",
+        "id": "ncb966c5313f0488282f0e201460ffb7eb6",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n476ca87bab164877945fb601ed936590b6",
+        "text": "ncb966c5313f0488282f0e201460ffb7eb6",
         "data": {}
       },
       {
-        "id": "n476ca87bab164877945fb601ed936590b7",
+        "id": "ncb966c5313f0488282f0e201460ffb7eb7",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n476ca87bab164877945fb601ed936590b7",
+        "text": "ncb966c5313f0488282f0e201460ffb7eb7",
         "data": {}
       },
       {
-        "id": "n476ca87bab164877945fb601ed936590b8",
+        "id": "ncb966c5313f0488282f0e201460ffb7eb8",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n476ca87bab164877945fb601ed936590b8",
+        "text": "ncb966c5313f0488282f0e201460ffb7eb8",
         "data": {}
       },
       {
@@ -36453,7 +36437,7 @@ var tree={
       },
       {
         "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_danglingBorderFaces",
-        "parent": "http://www.gigamesh.eu/ont#BridgeBorderFaces",
+        "parent": "http://www.gigamesh.eu/ont#DanglingBorderFaces",
         "type": "instance",
         "text": "HS1174_mesh.ply_danglingBorderFaces",
         "data": {}
