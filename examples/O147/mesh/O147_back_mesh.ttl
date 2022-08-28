@@ -306,7 +306,7 @@ giga:bridgeBorderFaces rdfs:comment "Gigamesh Info: Bridge border faces" .
 <https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_bridgeBorderFaces> wdt:P361 <https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_totalNumberOfFaces> .
 giga:DanglingBorderFaces rdf:type owl:Class .
 giga:DanglingBorderFaces rdfs:subClassOf giga:GigameshInfo .
-<https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_danglingBorderFaces> rdf:type giga:BridgeBorderFaces .
+<https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_danglingBorderFaces> rdf:type giga:DanglingBorderFaces .
 <https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_danglingBorderFaces> rdfs:label "O147_back_mesh.ply Amount of dangling border faces"@en .
 <https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_danglingBorderFaces> rdf:value "0"^^xsd:integer .
 giga:danglingBorderFaces rdf:type owl:ObjectProperty .
