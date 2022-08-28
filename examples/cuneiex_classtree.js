@@ -16219,8 +16219,12 @@ var tree={
         "data": {
           "to": {
             "http://lemon-model.net/lemon#form": {
+              "instancecount": 2,
+              "http://lemon-model.net/lemon#WordForm": 2
+            },
+            "http://lemon-model.net/lemon#sense": {
               "instancecount": 1,
-              "http://lemon-model.net/lemon#WordForm": 1
+              "http://lemon-model.net/lemon#LexicalSense": 1
             },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
@@ -16232,7 +16236,7 @@ var tree={
           },
           "from": {}
         },
-        "instancecount": 3
+        "instancecount": 5
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/signlist/character_karcomp",
@@ -20869,40 +20873,17 @@ var tree={
         "text": "TransliterationLine (purl:cuneiform/TransliterationLine) [95]",
         "data": {
           "to": {
-            "http://www.purl.org/cuneiform/lineNumber": {
-              "instancecount": 1
-            },
-            "http://www.purl.org/cuneiform/nextLine": {
-              "instancecount": 1,
-              "http://www.purl.org/cuneiform/TransliterationLine": 1
-            },
-            "http://www.purl.org/cuneiform/prevLine": {
-              "instancecount": 1,
-              "http://www.purl.org/cuneiform/TransliterationLine": 1
-            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
             },
             "http://www.w3.org/2000/01/rdf-schema#label": {
               "instancecount": 1
-            },
-            "http://www.w3.org/2004/02/skos/core#definition": {
-              "instancecount": 1
             }
           },
-          "from": {
-            "http://www.purl.org/cuneiform/nextLine": {
-              "instancecount": 0,
-              "http://www.purl.org/cuneiform/TransliterationLine": 1
-            },
-            "http://www.purl.org/cuneiform/prevLine": {
-              "instancecount": 0,
-              "http://www.purl.org/cuneiform/TransliterationLine": 1
-            }
-          }
+          "from": {}
         },
-        "instancecount": 6
+        "instancecount": 2
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/tch92_transliteration1_obverse_line10_char1",
@@ -25167,10 +25148,6 @@ var tree={
               "instancecount": 1,
               "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
             },
-            "http://www.purl.org/cuneiform/prevWord": {
-              "instancecount": 1,
-              "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
-            },
             "http://www.purl.org/cuneiform/wordIndex": {
               "instancecount": 1
             },
@@ -25183,17 +25160,13 @@ var tree={
             }
           },
           "from": {
-            "http://www.purl.org/cuneiform/nextWord": {
-              "instancecount": 0,
-              "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
-            },
             "http://www.purl.org/cuneiform/prevWord": {
               "instancecount": 0,
               "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
             }
           }
         },
-        "instancecount": 6
+        "instancecount": 5
       },
       {
         "id": "http://lemon-model.net/lemon#LexicalEntity",
@@ -35738,52 +35711,52 @@ var tree={
         "data": {}
       },
       {
-        "id": "ncfe559d308e64174a74a809984da000eb2",
+        "id": "n7a7292a16179460ebee75cbad45f4954b2",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "ncfe559d308e64174a74a809984da000eb2",
+        "text": "n7a7292a16179460ebee75cbad45f4954b2",
         "data": {}
       },
       {
-        "id": "ncfe559d308e64174a74a809984da000eb3",
+        "id": "n7a7292a16179460ebee75cbad45f4954b3",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "ncfe559d308e64174a74a809984da000eb3",
+        "text": "n7a7292a16179460ebee75cbad45f4954b3",
         "data": {}
       },
       {
-        "id": "ncfe559d308e64174a74a809984da000eb4",
+        "id": "n7a7292a16179460ebee75cbad45f4954b4",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "ncfe559d308e64174a74a809984da000eb4",
+        "text": "n7a7292a16179460ebee75cbad45f4954b4",
         "data": {}
       },
       {
-        "id": "ncfe559d308e64174a74a809984da000eb5",
+        "id": "n7a7292a16179460ebee75cbad45f4954b5",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "ncfe559d308e64174a74a809984da000eb5",
+        "text": "n7a7292a16179460ebee75cbad45f4954b5",
         "data": {}
       },
       {
-        "id": "ncfe559d308e64174a74a809984da000eb6",
+        "id": "n7a7292a16179460ebee75cbad45f4954b6",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "ncfe559d308e64174a74a809984da000eb6",
+        "text": "n7a7292a16179460ebee75cbad45f4954b6",
         "data": {}
       },
       {
-        "id": "ncfe559d308e64174a74a809984da000eb7",
+        "id": "n7a7292a16179460ebee75cbad45f4954b7",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "ncfe559d308e64174a74a809984da000eb7",
+        "text": "n7a7292a16179460ebee75cbad45f4954b7",
         "data": {}
       },
       {
-        "id": "ncfe559d308e64174a74a809984da000eb8",
+        "id": "n7a7292a16179460ebee75cbad45f4954b8",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "ncfe559d308e64174a74a809984da000eb8",
+        "text": "n7a7292a16179460ebee75cbad45f4954b8",
         "data": {}
       },
       {
@@ -36246,6 +36219,9 @@ var tree={
             "http://www.opengis.net/ont/geosparql#asWKT": {
               "instancecount": 1
             },
+            "http://www.opengis.net/ont/geosparql#inSRS": {
+              "instancecount": 1
+            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1
             },
@@ -36260,7 +36236,7 @@ var tree={
             }
           }
         },
-        "instancecount": 3
+        "instancecount": 4
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_lexicon",
