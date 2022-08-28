@@ -39,10 +39,10 @@ var tree={
     "check_callback": true,
     "data": [
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply",
         "parent": "http://www.gigamesh.eu/ont#Mesh",
         "type": "instance",
-        "text": "TCH92_mesh.ply",
+        "text": "TCH92_mesh.ply (TCH92_mesh.ply)",
         "data": {}
       },
       {
@@ -50,13 +50,169 @@ var tree={
         "parent": "http://www.w3.org/ns/prov#Entity",
         "type": "class",
         "text": "Mesh [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://purl.org/dc/terms/contributor": {
+              "instancecount": 1,
+              "http://xmlns.com/foaf/0.1/Person": 1
+            },
+            "http://www.gigamesh.eu/ont#NaNVertices": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#NaNVertices": 1
+            },
+            "http://www.gigamesh.eu/ont#amountOfConnectedComponents": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#ConnectedComponents": 1
+            },
+            "http://www.gigamesh.eu/ont#borderFaces": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#BorderFaces": 1
+            },
+            "http://www.gigamesh.eu/ont#borderFacesBridgeTriConnection": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#BorderFacesBridgeTriConnection": 1
+            },
+            "http://www.gigamesh.eu/ont#borderVertices": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#BorderVertices": 1
+            },
+            "http://www.gigamesh.eu/ont#boundingBox": {
+              "instancecount": 1,
+              "http://www.opengis.net/ont/geosparql#Geometry": 1
+            },
+            "http://www.gigamesh.eu/ont#bridgeBorderFaces": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#BridgeBorderFaces": 1
+            },
+            "http://www.gigamesh.eu/ont#circleCenterVertices": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#CircleCenterVertices": 1
+            },
+            "http://www.gigamesh.eu/ont#danglingBorderFaces": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#DanglingBorderFaces": 1
+            },
+            "http://www.gigamesh.eu/ont#finiteFunctionValueVertices": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#FiniteFunctionValueVertices": 1
+            },
+            "http://www.gigamesh.eu/ont#invertedFaces": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#InvertedFaces": 1
+            },
+            "http://www.gigamesh.eu/ont#localFunctionValueMaxVertices": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#LocalFunctionMaxValueVertices": 1
+            },
+            "http://www.gigamesh.eu/ont#localFunctionValueMinVertices": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#LocalFunctionMinValueVertices": 1
+            },
+            "http://www.gigamesh.eu/ont#manifoldFaces": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#ManifoldFaces": 1
+            },
+            "http://www.gigamesh.eu/ont#manuallyAddedVertices": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#ManuallyAddedVertices": 1
+            },
+            "http://www.gigamesh.eu/ont#nonManifoldFaces": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#ManifoldFaces": 1
+            },
+            "http://www.gigamesh.eu/ont#nonManifoldVertices": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#NonManifoldVertices": 1
+            },
+            "http://www.gigamesh.eu/ont#selectedFaces": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#SelectedFaces": 1
+            },
+            "http://www.gigamesh.eu/ont#selectedVertices": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#SelectedVertices": 1
+            },
+            "http://www.gigamesh.eu/ont#singularVertices": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#SingularVertices": 1
+            },
+            "http://www.gigamesh.eu/ont#soloFaces": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#SoloFaces": 1
+            },
+            "http://www.gigamesh.eu/ont#stickyFaces": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#StickyFaces": 1
+            },
+            "http://www.gigamesh.eu/ont#syntheticVertexFaces": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#SyntheticVertexFaces": 1
+            },
+            "http://www.gigamesh.eu/ont#syntheticVertices": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#SyntheticVertices": 1
+            },
+            "http://www.gigamesh.eu/ont#threeBorderVertexFaces": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#ThreeBorderVertexFaces": 1
+            },
+            "http://www.gigamesh.eu/ont#totalArea": {
+              "instancecount": 1
+            },
+            "http://www.gigamesh.eu/ont#totalNumberOfFaces": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfFaces": 1
+            },
+            "http://www.gigamesh.eu/ont#totalNumberOfVertices": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
+            },
+            "http://www.gigamesh.eu/ont#totalVolumeDX": {
+              "instancecount": 1
+            },
+            "http://www.gigamesh.eu/ont#totalVolumeDY": {
+              "instancecount": 1
+            },
+            "http://www.gigamesh.eu/ont#totalVolumeDZ": {
+              "instancecount": 1
+            },
+            "http://www.gigamesh.eu/ont#vertexIsolated": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#VertexIsolated": 1
+            },
+            "http://www.gigamesh.eu/ont#vertexNormalLength": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#VertexNormalLength": 1
+            },
+            "http://www.gigamesh.eu/ont#verticesOnInvertedEdge": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#VerticesOnInvertedEdge": 1
+            },
+            "http://www.gigamesh.eu/ont#verticesPartOfZeroAreaFace": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#VerticesPartOfZeroAreaFace": 1
+            },
+            "http://www.gigamesh.eu/ont#zeroAreaFaces": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#ZeroAreaFaces": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            }
+          },
+          "from": {}
+        },
+        "instancecount": 39
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_contributor",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_contributor",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "TCH92_mesh.ply_contributor",
+        "text": "TCH92_mesh.ply Contributor (TCH92_mesh.ply_contributor)",
         "data": {}
       },
       {
@@ -64,13 +220,33 @@ var tree={
         "parent": "http://www.w3.org/ns/prov#Agent",
         "type": "class",
         "text": "Person (foaf:Person) [15]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://xmlns.com/foaf/0.1/accountName": {
+              "instancecount": 1
+            }
+          },
+          "from": {
+            "http://purl.org/dc/terms/contributor": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 3
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_totalNumberOfVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_totalNumberOfVertices",
         "parent": "http://www.gigamesh.eu/ont#TotalNumberOfVertices",
         "type": "instance",
-        "text": "TCH92_mesh.ply_totalNumberOfVertices",
+        "text": "TCH92_mesh.ply Total Number of Vertices (TCH92_mesh.ply_totalNumberOfVertices)",
         "data": {}
       },
       {
@@ -78,13 +254,51 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "TotalNumberOfVertices [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#totalNumberOfVertices": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#NaNVertices": 1,
+              "http://www.gigamesh.eu/ont#BorderVertices": 1,
+              "http://www.gigamesh.eu/ont#CircleCenterVertices": 1,
+              "http://www.gigamesh.eu/ont#FiniteFunctionValueVertices": 1,
+              "http://www.gigamesh.eu/ont#LocalFunctionMaxValueVertices": 1,
+              "http://www.gigamesh.eu/ont#LocalFunctionMinValueVertices": 1,
+              "http://www.gigamesh.eu/ont#ManuallyAddedVertices": 1,
+              "http://www.gigamesh.eu/ont#NonManifoldVertices": 1,
+              "http://www.gigamesh.eu/ont#SelectedVertices": 1,
+              "http://www.gigamesh.eu/ont#SingularVertices": 1,
+              "http://www.gigamesh.eu/ont#SyntheticVertices": 1,
+              "http://www.gigamesh.eu/ont#VertexIsolated": 1,
+              "http://www.gigamesh.eu/ont#VertexNormalLength": 1,
+              "http://www.gigamesh.eu/ont#VerticesOnInvertedEdge": 1,
+              "http://www.gigamesh.eu/ont#VerticesPartOfZeroAreaFace": 1
+            }
+          }
+        },
+        "instancecount": 3
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_NaNVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_NaNVertices",
         "parent": "http://www.gigamesh.eu/ont#NaNVertices",
         "type": "instance",
-        "text": "TCH92_mesh.ply_NaNVertices",
+        "text": "TCH92_mesh.ply Amount of NaN Vertices (TCH92_mesh.ply_NaNVertices)",
         "data": {}
       },
       {
@@ -92,13 +306,38 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "NaNVertices [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1,
+              "http://www.w3.org/2002/07/owl#ObjectProperty": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#NaNVertices": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_vertexNormalLength",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_vertexNormalLength",
         "parent": "http://www.gigamesh.eu/ont#VertexNormalLength",
         "type": "instance",
-        "text": "TCH92_mesh.ply_vertexNormalLength",
+        "text": "TCH92_mesh.ply Amount of Vertices with normal length (TCH92_mesh.ply_vertexNormalLength)",
         "data": {}
       },
       {
@@ -106,13 +345,37 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "VertexNormalLength [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#vertexNormalLength": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_vertexIsolated",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_vertexIsolated",
         "parent": "http://www.gigamesh.eu/ont#VertexIsolated",
         "type": "instance",
-        "text": "TCH92_mesh.ply_vertexIsolated",
+        "text": "TCH92_mesh.ply Isolated Vertices (TCH92_mesh.ply_vertexIsolated)",
         "data": {}
       },
       {
@@ -120,13 +383,37 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "VertexIsolated [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#vertexIsolated": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_borderVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_borderVertices",
         "parent": "http://www.gigamesh.eu/ont#BorderVertices",
         "type": "instance",
-        "text": "TCH92_mesh.ply_borderVertices",
+        "text": "TCH92_mesh.ply Amount of Border Vertices (TCH92_mesh.ply_borderVertices)",
         "data": {}
       },
       {
@@ -134,13 +421,37 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "BorderVertices [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#borderVertices": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_nonManifoldVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_nonManifoldVertices",
         "parent": "http://www.gigamesh.eu/ont#NonManifoldVertices",
         "type": "instance",
-        "text": "TCH92_mesh.ply_nonManifoldVertices",
+        "text": "TCH92_mesh.ply Amount of Non-Manifold Vertices (TCH92_mesh.ply_nonManifoldVertices)",
         "data": {}
       },
       {
@@ -148,13 +459,37 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "NonManifoldVertices [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#nonManifoldVertices": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_singularVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_singularVertices",
         "parent": "http://www.gigamesh.eu/ont#SingularVertices",
         "type": "instance",
-        "text": "TCH92_mesh.ply_singularVertices",
+        "text": "TCH92_mesh.ply Amount of Singular Vertices (TCH92_mesh.ply_singularVertices)",
         "data": {}
       },
       {
@@ -162,13 +497,37 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "SingularVertices [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#singularVertices": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_verticesOnInvertedEdge",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_verticesOnInvertedEdge",
         "parent": "http://www.gigamesh.eu/ont#VerticesOnInvertedEdge",
         "type": "instance",
-        "text": "TCH92_mesh.ply_verticesOnInvertedEdge",
+        "text": "TCH92_mesh.ply Amount of Vertices on inverted edges (TCH92_mesh.ply_verticesOnInvertedEdge)",
         "data": {}
       },
       {
@@ -176,13 +535,37 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "VerticesOnInvertedEdge [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#verticesOnInvertedEdge": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_verticesPartOfZeroAreaFace",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_verticesPartOfZeroAreaFace",
         "parent": "http://www.gigamesh.eu/ont#VerticesPartOfZeroAreaFace",
         "type": "instance",
-        "text": "TCH92_mesh.ply_verticesPartOfZeroAreaFace",
+        "text": "TCH92_mesh.ply Amount of Vertices which are part of zero area faces (TCH92_mesh.ply_verticesPartOfZeroAreaFace)",
         "data": {}
       },
       {
@@ -190,13 +573,37 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "VerticesPartOfZeroAreaFace [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#verticesPartOfZeroAreaFace": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_syntheticVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_syntheticVertices",
         "parent": "http://www.gigamesh.eu/ont#SyntheticVertices",
         "type": "instance",
-        "text": "TCH92_mesh.ply_syntheticVertices",
+        "text": "TCH92_mesh.ply Amount of synthetic vertices (TCH92_mesh.ply_syntheticVertices)",
         "data": {}
       },
       {
@@ -204,13 +611,37 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "SyntheticVertices [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#syntheticVertices": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_manuallyAddedVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_manuallyAddedVertices",
         "parent": "http://www.gigamesh.eu/ont#ManuallyAddedVertices",
         "type": "instance",
-        "text": "TCH92_mesh.ply_manuallyAddedVertices",
+        "text": "TCH92_mesh.ply Amount of manually added vertices (TCH92_mesh.ply_manuallyAddedVertices)",
         "data": {}
       },
       {
@@ -218,13 +649,37 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "ManuallyAddedVertices [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#manuallyAddedVertices": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_circleCenterVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_circleCenterVertices",
         "parent": "http://www.gigamesh.eu/ont#CircleCenterVertices",
         "type": "instance",
-        "text": "TCH92_mesh.ply_circleCenterVertices",
+        "text": "TCH92_mesh.ply Amount of circle center vertices (TCH92_mesh.ply_circleCenterVertices)",
         "data": {}
       },
       {
@@ -232,13 +687,37 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "CircleCenterVertices [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#circleCenterVertices": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_selectedVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_selectedVertices",
         "parent": "http://www.gigamesh.eu/ont#SelectedVertices",
         "type": "instance",
-        "text": "TCH92_mesh.ply_selectedVertices",
+        "text": "TCH92_mesh.ply Amount of selected vertices (TCH92_mesh.ply_selectedVertices)",
         "data": {}
       },
       {
@@ -246,13 +725,37 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "SelectedVertices [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#selectedVertices": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_finiteFunctionValueVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_finiteFunctionValueVertices",
         "parent": "http://www.gigamesh.eu/ont#FiniteFunctionValueVertices",
         "type": "instance",
-        "text": "TCH92_mesh.ply_finiteFunctionValueVertices",
+        "text": "TCH92_mesh.ply Amount of finite function value vertices (TCH92_mesh.ply_finiteFunctionValueVertices)",
         "data": {}
       },
       {
@@ -260,13 +763,37 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "FiniteFunctionValueVertices [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#finiteFunctionValueVertices": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_localFunctionMinValueVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_localFunctionMinValueVertices",
         "parent": "http://www.gigamesh.eu/ont#LocalFunctionMinValueVertices",
         "type": "instance",
-        "text": "TCH92_mesh.ply_localFunctionMinValueVertices",
+        "text": "TCH92_mesh.ply Amount of local function minimum value vertices (TCH92_mesh.ply_localFunctionMinValueVertices)",
         "data": {}
       },
       {
@@ -274,13 +801,37 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "LocalFunctionMinValueVertices [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#localFunctionValueMinVertices": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_localFunctionMaxValueVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_localFunctionMaxValueVertices",
         "parent": "http://www.gigamesh.eu/ont#LocalFunctionMaxValueVertices",
         "type": "instance",
-        "text": "TCH92_mesh.ply_localFunctionMaxValueVertices",
+        "text": "TCH92_mesh.ply Amount of local function maximum value vertices (TCH92_mesh.ply_localFunctionMaxValueVertices)",
         "data": {}
       },
       {
@@ -288,13 +839,37 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "LocalFunctionMaxValueVertices [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#localFunctionValueMaxVertices": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_totalNumberOfFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_totalNumberOfFaces",
         "parent": "http://www.gigamesh.eu/ont#TotalNumberOfFaces",
         "type": "instance",
-        "text": "TCH92_mesh.ply_totalNumberOfFaces",
+        "text": "TCH92_mesh.ply Total number of faces (TCH92_mesh.ply_totalNumberOfFaces)",
         "data": {}
       },
       {
@@ -302,13 +877,48 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "TotalNumberOfFaces [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#totalNumberOfFaces": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#BorderFaces": 1,
+              "http://www.gigamesh.eu/ont#BorderFacesBridgeTriConnection": 1,
+              "http://www.gigamesh.eu/ont#BridgeBorderFaces": 1,
+              "http://www.gigamesh.eu/ont#DanglingBorderFaces": 1,
+              "http://www.gigamesh.eu/ont#InvertedFaces": 1,
+              "http://www.gigamesh.eu/ont#ManifoldFaces": 2,
+              "http://www.gigamesh.eu/ont#SelectedFaces": 1,
+              "http://www.gigamesh.eu/ont#SoloFaces": 1,
+              "http://www.gigamesh.eu/ont#StickyFaces": 1,
+              "http://www.gigamesh.eu/ont#SyntheticVertexFaces": 1,
+              "http://www.gigamesh.eu/ont#ThreeBorderVertexFaces": 1,
+              "http://www.gigamesh.eu/ont#ZeroAreaFaces": 1
+            }
+          }
+        },
+        "instancecount": 3
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_soloFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_soloFaces",
         "parent": "http://www.gigamesh.eu/ont#SoloFaces",
         "type": "instance",
-        "text": "TCH92_mesh.ply_soloFaces",
+        "text": "TCH92_mesh.ply Amount of solo faces (TCH92_mesh.ply_soloFaces)",
         "data": {}
       },
       {
@@ -316,13 +926,37 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "SoloFaces [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfFaces": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#soloFaces": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_borderFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_borderFaces",
         "parent": "http://www.gigamesh.eu/ont#BorderFaces",
         "type": "instance",
-        "text": "TCH92_mesh.ply_borderFaces",
+        "text": "TCH92_mesh.ply Amount of border faces (TCH92_mesh.ply_borderFaces)",
         "data": {}
       },
       {
@@ -330,13 +964,37 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "BorderFaces [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfFaces": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#borderFaces": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_threeBorderVertexFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_threeBorderVertexFaces",
         "parent": "http://www.gigamesh.eu/ont#ThreeBorderVertexFaces",
         "type": "instance",
-        "text": "TCH92_mesh.ply_threeBorderVertexFaces",
+        "text": "TCH92_mesh.ply Amount of three border vertex faces (TCH92_mesh.ply_threeBorderVertexFaces)",
         "data": {}
       },
       {
@@ -344,13 +1002,37 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "ThreeBorderVertexFaces [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfFaces": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#threeBorderVertexFaces": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_borderFacesBridgeTriConnection",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_borderFacesBridgeTriConnection",
         "parent": "http://www.gigamesh.eu/ont#BorderFacesBridgeTriConnection",
         "type": "instance",
-        "text": "TCH92_mesh.ply_borderFacesBridgeTriConnection",
+        "text": "TCH92_mesh.ply Amount of border faces with a bridge tri connection (TCH92_mesh.ply_borderFacesBridgeTriConnection)",
         "data": {}
       },
       {
@@ -358,13 +1040,37 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "BorderFacesBridgeTriConnection [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfFaces": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#borderFacesBridgeTriConnection": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_bridgeBorderFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_bridgeBorderFaces",
         "parent": "http://www.gigamesh.eu/ont#BridgeBorderFaces",
         "type": "instance",
-        "text": "TCH92_mesh.ply_bridgeBorderFaces",
+        "text": "TCH92_mesh.ply Amount of bridge border faces (TCH92_mesh.ply_bridgeBorderFaces)",
         "data": {}
       },
       {
@@ -372,13 +1078,37 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "BridgeBorderFaces [6]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfFaces": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#bridgeBorderFaces": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_danglingBorderFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_danglingBorderFaces",
         "parent": "http://www.gigamesh.eu/ont#DanglingBorderFaces",
         "type": "instance",
-        "text": "TCH92_mesh.ply_danglingBorderFaces",
+        "text": "TCH92_mesh.ply Amount of dangling border faces (TCH92_mesh.ply_danglingBorderFaces)",
         "data": {}
       },
       {
@@ -386,20 +1116,44 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "DanglingBorderFaces [4]",
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfFaces": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#danglingBorderFaces": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_manifoldFaces",
+        "parent": "http://www.gigamesh.eu/ont#ManifoldFaces",
+        "type": "instance",
+        "text": "TCH92_mesh.ply Amount of manifold faces (TCH92_mesh.ply_manifoldFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_manifoldFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_nonManifoldFaces",
         "parent": "http://www.gigamesh.eu/ont#ManifoldFaces",
         "type": "instance",
-        "text": "TCH92_mesh.ply_manifoldFaces",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_nonManifoldFaces",
-        "parent": "http://www.gigamesh.eu/ont#ManifoldFaces",
-        "type": "instance",
-        "text": "TCH92_mesh.ply_nonManifoldFaces",
+        "text": "TCH92_mesh.ply Amount of non-manifold faces (TCH92_mesh.ply_nonManifoldFaces)",
         "data": {}
       },
       {
@@ -407,13 +1161,37 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "ManifoldFaces [10]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfFaces": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#manifoldFaces": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_stickyFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_stickyFaces",
         "parent": "http://www.gigamesh.eu/ont#StickyFaces",
         "type": "instance",
-        "text": "TCH92_mesh.ply_stickyFaces",
+        "text": "TCH92_mesh.ply Amount of sticky faces (TCH92_mesh.ply_stickyFaces)",
         "data": {}
       },
       {
@@ -421,13 +1199,37 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "StickyFaces [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfFaces": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#stickyFaces": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_zeroAreaFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_zeroAreaFaces",
         "parent": "http://www.gigamesh.eu/ont#ZeroAreaFaces",
         "type": "instance",
-        "text": "TCH92_mesh.ply_zeroAreaFaces",
+        "text": "TCH92_mesh.ply Amount of zero area faces (TCH92_mesh.ply_zeroAreaFaces)",
         "data": {}
       },
       {
@@ -435,13 +1237,37 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "ZeroAreaFaces [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfFaces": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#zeroAreaFaces": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_invertedFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_invertedFaces",
         "parent": "http://www.gigamesh.eu/ont#InvertedFaces",
         "type": "instance",
-        "text": "TCH92_mesh.ply_invertedFaces",
+        "text": "TCH92_mesh.ply Amount of inverted faces (TCH92_mesh.ply_invertedFaces)",
         "data": {}
       },
       {
@@ -449,13 +1275,37 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "InvertedFaces [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfFaces": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#invertedFaces": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_selectedFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_selectedFaces",
         "parent": "http://www.gigamesh.eu/ont#SelectedFaces",
         "type": "instance",
-        "text": "TCH92_mesh.ply_selectedFaces",
+        "text": "TCH92_mesh.ply Amount of selected faces (TCH92_mesh.ply_selectedFaces)",
         "data": {}
       },
       {
@@ -463,13 +1313,37 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "SelectedFaces [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfFaces": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#selectedFaces": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_syntheticVertexFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_syntheticVertexFaces",
         "parent": "http://www.gigamesh.eu/ont#SyntheticVertexFaces",
         "type": "instance",
-        "text": "TCH92_mesh.ply_syntheticVertexFaces",
+        "text": "TCH92_mesh.ply Amount of synthetic vertex faces (TCH92_mesh.ply_syntheticVertexFaces)",
         "data": {}
       },
       {
@@ -477,13 +1351,37 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "SyntheticVertexFaces [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 1,
+              "http://www.gigamesh.eu/ont#TotalNumberOfFaces": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#syntheticVertexFaces": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_connectedComponents",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_connectedComponents",
         "parent": "http://www.gigamesh.eu/ont#ConnectedComponents",
         "type": "instance",
-        "text": "TCH92_mesh.ply_connectedComponents",
+        "text": "TCH92_mesh.ply Amount of connected components (TCH92_mesh.ply_connectedComponents)",
         "data": {}
       },
       {
@@ -491,13 +1389,33 @@ var tree={
         "parent": "http://www.gigamesh.eu/ont#GigameshInfo",
         "type": "class",
         "text": "ConnectedComponents [5]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1,
+              "http://www.w3.org/2002/07/owl#Class": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            }
+          },
+          "from": {
+            "http://www.gigamesh.eu/ont#amountOfConnectedComponents": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
+        },
+        "instancecount": 3
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/TCH92/mesh/TCH92_mesh.ply_geom",
+        "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh.ply_geom",
         "parent": "http://www.opengis.net/ont/geosparql#Geometry",
         "type": "instance",
-        "text": "TCH92_mesh.ply_geom",
+        "text": "TCH92_mesh.ply Bounding Box (TCH92_mesh.ply_geom)",
         "data": {}
       },
       {
@@ -14983,6 +15901,9 @@ var tree={
         "text": "WordForm (lemon:WordForm) [32]",
         "data": {
           "to": {
+            "http://purl.org/dc/elements/1.1/license": {
+              "instancecount": 1
+            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
@@ -14991,9 +15912,14 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://lemon-model.net/lemon#form": {
+              "instancecount": 0,
+              "http://lemon-model.net/lemon#Word": 1
+            }
+          }
         },
-        "instancecount": 2
+        "instancecount": 3
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/dict/ban_wordsense",
@@ -15265,10 +16191,6 @@ var tree={
               "instancecount": 1,
               "http://lemon-model.net/lemon#WordForm": 1
             },
-            "http://lemon-model.net/lemon#sense": {
-              "instancecount": 1,
-              "http://lemon-model.net/lemon#LexicalSense": 1
-            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
@@ -15279,7 +16201,7 @@ var tree={
           },
           "from": {}
         },
-        "instancecount": 4
+        "instancecount": 3
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/signlist/character_karcomp",
@@ -23539,6 +24461,10 @@ var tree={
             },
             "http://www.w3.org/2000/01/rdf-schema#label": {
               "instancecount": 1
+            },
+            "https://situx.github.io/cuneiformontology/examples/signlist/hasGraphemeReading": {
+              "instancecount": 1,
+              "http://www.purl.org/graphemon#GraphemeReading": 1
             }
           },
           "from": {
@@ -23552,7 +24478,7 @@ var tree={
             }
           }
         },
-        "instancecount": 6
+        "instancecount": 7
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/tch92_transliteration1_obverse_line10_word1",
@@ -24191,10 +25117,6 @@ var tree={
               "instancecount": 1,
               "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
             },
-            "http://www.purl.org/cuneiform/prevWord": {
-              "instancecount": 1,
-              "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
-            },
             "http://www.purl.org/cuneiform/wordIndex": {
               "instancecount": 1
             },
@@ -24207,17 +25129,13 @@ var tree={
             }
           },
           "from": {
-            "http://www.purl.org/cuneiform/nextWord": {
-              "instancecount": 0,
-              "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
-            },
             "http://www.purl.org/cuneiform/prevWord": {
               "instancecount": 0,
               "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
             }
           }
         },
-        "instancecount": 6
+        "instancecount": 5
       },
       {
         "id": "http://lemon-model.net/lemon#LexicalEntity",
@@ -24241,479 +25159,479 @@ var tree={
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply",
         "parent": "http://www.gigamesh.eu/ont#Mesh",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply",
+        "text": "O147_back_mesh.ply (O147_back_mesh.plyO147_back_mesh.ply)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_contributor",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_contributor",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_contributor",
+        "text": "O147_back_mesh.ply Contributor (O147_back_mesh.plyO147_back_mesh.ply_contributor)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_totalNumberOfVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_totalNumberOfVertices",
         "parent": "http://www.gigamesh.eu/ont#TotalNumberOfVertices",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_totalNumberOfVertices",
+        "text": "O147_back_mesh.ply Total Number of Vertices (O147_back_mesh.plyO147_back_mesh.ply_totalNumberOfVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_NaNVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_NaNVertices",
         "parent": "http://www.gigamesh.eu/ont#NaNVertices",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_NaNVertices",
+        "text": "O147_back_mesh.ply Amount of NaN Vertices (O147_back_mesh.plyO147_back_mesh.ply_NaNVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_vertexNormalLength",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_vertexNormalLength",
         "parent": "http://www.gigamesh.eu/ont#VertexNormalLength",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_vertexNormalLength",
+        "text": "O147_back_mesh.ply Amount of Vertices with normal length (O147_back_mesh.plyO147_back_mesh.ply_vertexNormalLength)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_vertexIsolated",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_vertexIsolated",
         "parent": "http://www.gigamesh.eu/ont#VertexIsolated",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_vertexIsolated",
+        "text": "O147_back_mesh.ply Isolated Vertices (O147_back_mesh.plyO147_back_mesh.ply_vertexIsolated)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_borderVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_borderVertices",
         "parent": "http://www.gigamesh.eu/ont#BorderVertices",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_borderVertices",
+        "text": "O147_back_mesh.ply Amount of Border Vertices (O147_back_mesh.plyO147_back_mesh.ply_borderVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_nonManifoldVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_nonManifoldVertices",
         "parent": "http://www.gigamesh.eu/ont#NonManifoldVertices",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_nonManifoldVertices",
+        "text": "O147_back_mesh.ply Amount of Non-Manifold Vertices (O147_back_mesh.plyO147_back_mesh.ply_nonManifoldVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_singularVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_singularVertices",
         "parent": "http://www.gigamesh.eu/ont#SingularVertices",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_singularVertices",
+        "text": "O147_back_mesh.ply Amount of Singular Vertices (O147_back_mesh.plyO147_back_mesh.ply_singularVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_verticesOnInvertedEdge",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_verticesOnInvertedEdge",
         "parent": "http://www.gigamesh.eu/ont#VerticesOnInvertedEdge",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_verticesOnInvertedEdge",
+        "text": "O147_back_mesh.ply Amount of Vertices on inverted edges (O147_back_mesh.plyO147_back_mesh.ply_verticesOnInvertedEdge)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_verticesPartOfZeroAreaFace",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_verticesPartOfZeroAreaFace",
         "parent": "http://www.gigamesh.eu/ont#VerticesPartOfZeroAreaFace",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_verticesPartOfZeroAreaFace",
+        "text": "O147_back_mesh.ply Amount of Vertices which are part of zero area faces (O147_back_mesh.plyO147_back_mesh.ply_verticesPartOfZeroAreaFace)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_syntheticVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_syntheticVertices",
         "parent": "http://www.gigamesh.eu/ont#SyntheticVertices",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_syntheticVertices",
+        "text": "O147_back_mesh.ply Amount of synthetic vertices (O147_back_mesh.plyO147_back_mesh.ply_syntheticVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_manuallyAddedVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_manuallyAddedVertices",
         "parent": "http://www.gigamesh.eu/ont#ManuallyAddedVertices",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_manuallyAddedVertices",
+        "text": "O147_back_mesh.ply Amount of manually added vertices (O147_back_mesh.plyO147_back_mesh.ply_manuallyAddedVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_circleCenterVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_circleCenterVertices",
         "parent": "http://www.gigamesh.eu/ont#CircleCenterVertices",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_circleCenterVertices",
+        "text": "O147_back_mesh.ply Amount of circle center vertices (O147_back_mesh.plyO147_back_mesh.ply_circleCenterVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_selectedVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_selectedVertices",
         "parent": "http://www.gigamesh.eu/ont#SelectedVertices",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_selectedVertices",
+        "text": "O147_back_mesh.ply Amount of selected vertices (O147_back_mesh.plyO147_back_mesh.ply_selectedVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_finiteFunctionValueVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_finiteFunctionValueVertices",
         "parent": "http://www.gigamesh.eu/ont#FiniteFunctionValueVertices",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_finiteFunctionValueVertices",
+        "text": "O147_back_mesh.ply Amount of finite function value vertices (O147_back_mesh.plyO147_back_mesh.ply_finiteFunctionValueVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_localFunctionMinValueVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_localFunctionMinValueVertices",
         "parent": "http://www.gigamesh.eu/ont#LocalFunctionMinValueVertices",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_localFunctionMinValueVertices",
+        "text": "O147_back_mesh.ply Amount of local function minimum value vertices (O147_back_mesh.plyO147_back_mesh.ply_localFunctionMinValueVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_localFunctionMaxValueVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_localFunctionMaxValueVertices",
         "parent": "http://www.gigamesh.eu/ont#LocalFunctionMaxValueVertices",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_localFunctionMaxValueVertices",
+        "text": "O147_back_mesh.ply Amount of local function maximum value vertices (O147_back_mesh.plyO147_back_mesh.ply_localFunctionMaxValueVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_totalNumberOfFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_totalNumberOfFaces",
         "parent": "http://www.gigamesh.eu/ont#TotalNumberOfFaces",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_totalNumberOfFaces",
+        "text": "O147_back_mesh.ply Total number of faces (O147_back_mesh.plyO147_back_mesh.ply_totalNumberOfFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_soloFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_soloFaces",
         "parent": "http://www.gigamesh.eu/ont#SoloFaces",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_soloFaces",
+        "text": "O147_back_mesh.ply Amount of solo faces (O147_back_mesh.plyO147_back_mesh.ply_soloFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_borderFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_borderFaces",
         "parent": "http://www.gigamesh.eu/ont#BorderFaces",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_borderFaces",
+        "text": "O147_back_mesh.ply Amount of border faces (O147_back_mesh.plyO147_back_mesh.ply_borderFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_threeBorderVertexFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_threeBorderVertexFaces",
         "parent": "http://www.gigamesh.eu/ont#ThreeBorderVertexFaces",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_threeBorderVertexFaces",
+        "text": "O147_back_mesh.ply Amount of three border vertex faces (O147_back_mesh.plyO147_back_mesh.ply_threeBorderVertexFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_borderFacesBridgeTriConnection",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_borderFacesBridgeTriConnection",
         "parent": "http://www.gigamesh.eu/ont#BorderFacesBridgeTriConnection",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_borderFacesBridgeTriConnection",
+        "text": "O147_back_mesh.ply Amount of border faces with a bridge tri connection (O147_back_mesh.plyO147_back_mesh.ply_borderFacesBridgeTriConnection)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_bridgeBorderFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_bridgeBorderFaces",
         "parent": "http://www.gigamesh.eu/ont#BridgeBorderFaces",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_bridgeBorderFaces",
+        "text": "O147_back_mesh.ply Amount of bridge border faces (O147_back_mesh.plyO147_back_mesh.ply_bridgeBorderFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_danglingBorderFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_danglingBorderFaces",
         "parent": "http://www.gigamesh.eu/ont#DanglingBorderFaces",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_danglingBorderFaces",
+        "text": "O147_back_mesh.ply Amount of dangling border faces (O147_back_mesh.plyO147_back_mesh.ply_danglingBorderFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_manifoldFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_manifoldFaces",
         "parent": "http://www.gigamesh.eu/ont#ManifoldFaces",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_manifoldFaces",
+        "text": "O147_back_mesh.ply Amount of manifold faces (O147_back_mesh.plyO147_back_mesh.ply_manifoldFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_nonManifoldFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_nonManifoldFaces",
         "parent": "http://www.gigamesh.eu/ont#ManifoldFaces",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_nonManifoldFaces",
+        "text": "O147_back_mesh.ply Amount of non-manifold faces (O147_back_mesh.plyO147_back_mesh.ply_nonManifoldFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_stickyFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_stickyFaces",
         "parent": "http://www.gigamesh.eu/ont#StickyFaces",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_stickyFaces",
+        "text": "O147_back_mesh.ply Amount of sticky faces (O147_back_mesh.plyO147_back_mesh.ply_stickyFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_zeroAreaFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_zeroAreaFaces",
         "parent": "http://www.gigamesh.eu/ont#ZeroAreaFaces",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_zeroAreaFaces",
+        "text": "O147_back_mesh.ply Amount of zero area faces (O147_back_mesh.plyO147_back_mesh.ply_zeroAreaFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_invertedFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_invertedFaces",
         "parent": "http://www.gigamesh.eu/ont#InvertedFaces",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_invertedFaces",
+        "text": "O147_back_mesh.ply Amount of inverted faces (O147_back_mesh.plyO147_back_mesh.ply_invertedFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_selectedFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_selectedFaces",
         "parent": "http://www.gigamesh.eu/ont#SelectedFaces",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_selectedFaces",
+        "text": "O147_back_mesh.ply Amount of selected faces (O147_back_mesh.plyO147_back_mesh.ply_selectedFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_syntheticVertexFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_syntheticVertexFaces",
         "parent": "http://www.gigamesh.eu/ont#SyntheticVertexFaces",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_syntheticVertexFaces",
+        "text": "O147_back_mesh.ply Amount of synthetic vertex faces (O147_back_mesh.plyO147_back_mesh.ply_syntheticVertexFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_connectedComponents",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_connectedComponents",
         "parent": "http://www.gigamesh.eu/ont#ConnectedComponents",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_connectedComponents",
+        "text": "O147_back_mesh.ply Amount of connected components (O147_back_mesh.plyO147_back_mesh.ply_connectedComponents)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_geom",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh.plyO147_back_mesh.ply_geom",
         "parent": "http://www.opengis.net/ont/geosparql#Geometry",
         "type": "instance",
-        "text": "O147_back_mesh.plyO147_back_mesh.ply_geom",
+        "text": "O147_back_mesh.ply Bounding Box (O147_back_mesh.plyO147_back_mesh.ply_geom)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply",
         "parent": "http://www.gigamesh.eu/ont#Mesh",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply",
+        "text": "O147_front_mesh.ply (O147_front_mesh.plyO147_front_mesh.ply)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_contributor",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_contributor",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_contributor",
+        "text": "O147_front_mesh.ply Contributor (O147_front_mesh.plyO147_front_mesh.ply_contributor)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_totalNumberOfVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_totalNumberOfVertices",
         "parent": "http://www.gigamesh.eu/ont#TotalNumberOfVertices",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_totalNumberOfVertices",
+        "text": "O147_front_mesh.ply Total Number of Vertices (O147_front_mesh.plyO147_front_mesh.ply_totalNumberOfVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_NaNVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_NaNVertices",
         "parent": "http://www.gigamesh.eu/ont#NaNVertices",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_NaNVertices",
+        "text": "O147_front_mesh.ply Amount of NaN Vertices (O147_front_mesh.plyO147_front_mesh.ply_NaNVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_vertexNormalLength",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_vertexNormalLength",
         "parent": "http://www.gigamesh.eu/ont#VertexNormalLength",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_vertexNormalLength",
+        "text": "O147_front_mesh.ply Amount of Vertices with normal length (O147_front_mesh.plyO147_front_mesh.ply_vertexNormalLength)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_vertexIsolated",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_vertexIsolated",
         "parent": "http://www.gigamesh.eu/ont#VertexIsolated",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_vertexIsolated",
+        "text": "O147_front_mesh.ply Isolated Vertices (O147_front_mesh.plyO147_front_mesh.ply_vertexIsolated)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_borderVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_borderVertices",
         "parent": "http://www.gigamesh.eu/ont#BorderVertices",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_borderVertices",
+        "text": "O147_front_mesh.ply Amount of Border Vertices (O147_front_mesh.plyO147_front_mesh.ply_borderVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_nonManifoldVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_nonManifoldVertices",
         "parent": "http://www.gigamesh.eu/ont#NonManifoldVertices",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_nonManifoldVertices",
+        "text": "O147_front_mesh.ply Amount of Non-Manifold Vertices (O147_front_mesh.plyO147_front_mesh.ply_nonManifoldVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_singularVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_singularVertices",
         "parent": "http://www.gigamesh.eu/ont#SingularVertices",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_singularVertices",
+        "text": "O147_front_mesh.ply Amount of Singular Vertices (O147_front_mesh.plyO147_front_mesh.ply_singularVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_verticesOnInvertedEdge",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_verticesOnInvertedEdge",
         "parent": "http://www.gigamesh.eu/ont#VerticesOnInvertedEdge",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_verticesOnInvertedEdge",
+        "text": "O147_front_mesh.ply Amount of Vertices on inverted edges (O147_front_mesh.plyO147_front_mesh.ply_verticesOnInvertedEdge)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_verticesPartOfZeroAreaFace",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_verticesPartOfZeroAreaFace",
         "parent": "http://www.gigamesh.eu/ont#VerticesPartOfZeroAreaFace",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_verticesPartOfZeroAreaFace",
+        "text": "O147_front_mesh.ply Amount of Vertices which are part of zero area faces (O147_front_mesh.plyO147_front_mesh.ply_verticesPartOfZeroAreaFace)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_syntheticVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_syntheticVertices",
         "parent": "http://www.gigamesh.eu/ont#SyntheticVertices",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_syntheticVertices",
+        "text": "O147_front_mesh.ply Amount of synthetic vertices (O147_front_mesh.plyO147_front_mesh.ply_syntheticVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_manuallyAddedVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_manuallyAddedVertices",
         "parent": "http://www.gigamesh.eu/ont#ManuallyAddedVertices",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_manuallyAddedVertices",
+        "text": "O147_front_mesh.ply Amount of manually added vertices (O147_front_mesh.plyO147_front_mesh.ply_manuallyAddedVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_circleCenterVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_circleCenterVertices",
         "parent": "http://www.gigamesh.eu/ont#CircleCenterVertices",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_circleCenterVertices",
+        "text": "O147_front_mesh.ply Amount of circle center vertices (O147_front_mesh.plyO147_front_mesh.ply_circleCenterVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_selectedVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_selectedVertices",
         "parent": "http://www.gigamesh.eu/ont#SelectedVertices",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_selectedVertices",
+        "text": "O147_front_mesh.ply Amount of selected vertices (O147_front_mesh.plyO147_front_mesh.ply_selectedVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_finiteFunctionValueVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_finiteFunctionValueVertices",
         "parent": "http://www.gigamesh.eu/ont#FiniteFunctionValueVertices",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_finiteFunctionValueVertices",
+        "text": "O147_front_mesh.ply Amount of finite function value vertices (O147_front_mesh.plyO147_front_mesh.ply_finiteFunctionValueVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_localFunctionMinValueVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_localFunctionMinValueVertices",
         "parent": "http://www.gigamesh.eu/ont#LocalFunctionMinValueVertices",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_localFunctionMinValueVertices",
+        "text": "O147_front_mesh.ply Amount of local function minimum value vertices (O147_front_mesh.plyO147_front_mesh.ply_localFunctionMinValueVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_localFunctionMaxValueVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_localFunctionMaxValueVertices",
         "parent": "http://www.gigamesh.eu/ont#LocalFunctionMaxValueVertices",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_localFunctionMaxValueVertices",
+        "text": "O147_front_mesh.ply Amount of local function maximum value vertices (O147_front_mesh.plyO147_front_mesh.ply_localFunctionMaxValueVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_totalNumberOfFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_totalNumberOfFaces",
         "parent": "http://www.gigamesh.eu/ont#TotalNumberOfFaces",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_totalNumberOfFaces",
+        "text": "O147_front_mesh.ply Total number of faces (O147_front_mesh.plyO147_front_mesh.ply_totalNumberOfFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_soloFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_soloFaces",
         "parent": "http://www.gigamesh.eu/ont#SoloFaces",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_soloFaces",
+        "text": "O147_front_mesh.ply Amount of solo faces (O147_front_mesh.plyO147_front_mesh.ply_soloFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_borderFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_borderFaces",
         "parent": "http://www.gigamesh.eu/ont#BorderFaces",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_borderFaces",
+        "text": "O147_front_mesh.ply Amount of border faces (O147_front_mesh.plyO147_front_mesh.ply_borderFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_threeBorderVertexFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_threeBorderVertexFaces",
         "parent": "http://www.gigamesh.eu/ont#ThreeBorderVertexFaces",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_threeBorderVertexFaces",
+        "text": "O147_front_mesh.ply Amount of three border vertex faces (O147_front_mesh.plyO147_front_mesh.ply_threeBorderVertexFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_borderFacesBridgeTriConnection",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_borderFacesBridgeTriConnection",
         "parent": "http://www.gigamesh.eu/ont#BorderFacesBridgeTriConnection",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_borderFacesBridgeTriConnection",
+        "text": "O147_front_mesh.ply Amount of border faces with a bridge tri connection (O147_front_mesh.plyO147_front_mesh.ply_borderFacesBridgeTriConnection)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_bridgeBorderFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_bridgeBorderFaces",
         "parent": "http://www.gigamesh.eu/ont#BridgeBorderFaces",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_bridgeBorderFaces",
+        "text": "O147_front_mesh.ply Amount of bridge border faces (O147_front_mesh.plyO147_front_mesh.ply_bridgeBorderFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_danglingBorderFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_danglingBorderFaces",
         "parent": "http://www.gigamesh.eu/ont#DanglingBorderFaces",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_danglingBorderFaces",
+        "text": "O147_front_mesh.ply Amount of dangling border faces (O147_front_mesh.plyO147_front_mesh.ply_danglingBorderFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_manifoldFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_manifoldFaces",
         "parent": "http://www.gigamesh.eu/ont#ManifoldFaces",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_manifoldFaces",
+        "text": "O147_front_mesh.ply Amount of manifold faces (O147_front_mesh.plyO147_front_mesh.ply_manifoldFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_nonManifoldFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_nonManifoldFaces",
         "parent": "http://www.gigamesh.eu/ont#ManifoldFaces",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_nonManifoldFaces",
+        "text": "O147_front_mesh.ply Amount of non-manifold faces (O147_front_mesh.plyO147_front_mesh.ply_nonManifoldFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_stickyFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_stickyFaces",
         "parent": "http://www.gigamesh.eu/ont#StickyFaces",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_stickyFaces",
+        "text": "O147_front_mesh.ply Amount of sticky faces (O147_front_mesh.plyO147_front_mesh.ply_stickyFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_zeroAreaFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_zeroAreaFaces",
         "parent": "http://www.gigamesh.eu/ont#ZeroAreaFaces",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_zeroAreaFaces",
+        "text": "O147_front_mesh.ply Amount of zero area faces (O147_front_mesh.plyO147_front_mesh.ply_zeroAreaFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_invertedFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_invertedFaces",
         "parent": "http://www.gigamesh.eu/ont#InvertedFaces",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_invertedFaces",
+        "text": "O147_front_mesh.ply Amount of inverted faces (O147_front_mesh.plyO147_front_mesh.ply_invertedFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_selectedFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_selectedFaces",
         "parent": "http://www.gigamesh.eu/ont#SelectedFaces",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_selectedFaces",
+        "text": "O147_front_mesh.ply Amount of selected faces (O147_front_mesh.plyO147_front_mesh.ply_selectedFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_syntheticVertexFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_syntheticVertexFaces",
         "parent": "http://www.gigamesh.eu/ont#SyntheticVertexFaces",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_syntheticVertexFaces",
+        "text": "O147_front_mesh.ply Amount of synthetic vertex faces (O147_front_mesh.plyO147_front_mesh.ply_syntheticVertexFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_connectedComponents",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_connectedComponents",
         "parent": "http://www.gigamesh.eu/ont#ConnectedComponents",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_connectedComponents",
+        "text": "O147_front_mesh.ply Amount of connected components (O147_front_mesh.plyO147_front_mesh.ply_connectedComponents)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_geom",
+        "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh.plyO147_front_mesh.ply_geom",
         "parent": "http://www.opengis.net/ont/geosparql#Geometry",
         "type": "instance",
-        "text": "O147_front_mesh.plyO147_front_mesh.ply_geom",
+        "text": "O147_front_mesh.ply Bounding Box (O147_front_mesh.plyO147_front_mesh.ply_geom)",
         "data": {}
       },
       {
@@ -34762,52 +35680,52 @@ var tree={
         "data": {}
       },
       {
-        "id": "ncb966c5313f0488282f0e201460ffb7eb2",
+        "id": "nb69cdcbd9adf40b9908ff55e2a95a12ab2",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "ncb966c5313f0488282f0e201460ffb7eb2",
+        "text": "nb69cdcbd9adf40b9908ff55e2a95a12ab2",
         "data": {}
       },
       {
-        "id": "ncb966c5313f0488282f0e201460ffb7eb3",
+        "id": "nb69cdcbd9adf40b9908ff55e2a95a12ab3",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "ncb966c5313f0488282f0e201460ffb7eb3",
+        "text": "nb69cdcbd9adf40b9908ff55e2a95a12ab3",
         "data": {}
       },
       {
-        "id": "ncb966c5313f0488282f0e201460ffb7eb4",
+        "id": "nb69cdcbd9adf40b9908ff55e2a95a12ab4",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "ncb966c5313f0488282f0e201460ffb7eb4",
+        "text": "nb69cdcbd9adf40b9908ff55e2a95a12ab4",
         "data": {}
       },
       {
-        "id": "ncb966c5313f0488282f0e201460ffb7eb5",
+        "id": "nb69cdcbd9adf40b9908ff55e2a95a12ab5",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "ncb966c5313f0488282f0e201460ffb7eb5",
+        "text": "nb69cdcbd9adf40b9908ff55e2a95a12ab5",
         "data": {}
       },
       {
-        "id": "ncb966c5313f0488282f0e201460ffb7eb6",
+        "id": "nb69cdcbd9adf40b9908ff55e2a95a12ab6",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "ncb966c5313f0488282f0e201460ffb7eb6",
+        "text": "nb69cdcbd9adf40b9908ff55e2a95a12ab6",
         "data": {}
       },
       {
-        "id": "ncb966c5313f0488282f0e201460ffb7eb7",
+        "id": "nb69cdcbd9adf40b9908ff55e2a95a12ab7",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "ncb966c5313f0488282f0e201460ffb7eb7",
+        "text": "nb69cdcbd9adf40b9908ff55e2a95a12ab7",
         "data": {}
       },
       {
-        "id": "ncb966c5313f0488282f0e201460ffb7eb8",
+        "id": "nb69cdcbd9adf40b9908ff55e2a95a12ab8",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "ncb966c5313f0488282f0e201460ffb7eb8",
+        "text": "nb69cdcbd9adf40b9908ff55e2a95a12ab8",
         "data": {}
       },
       {
@@ -36268,241 +37186,241 @@ var tree={
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply",
         "parent": "http://www.gigamesh.eu/ont#Mesh",
         "type": "instance",
-        "text": "HS1174_mesh.ply",
+        "text": "HS1174_mesh.ply (HS1174_mesh.ply)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_contributor",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_contributor",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "HS1174_mesh.ply_contributor",
+        "text": "HS1174_mesh.ply Contributor (HS1174_mesh.ply_contributor)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_totalNumberOfVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_totalNumberOfVertices",
         "parent": "http://www.gigamesh.eu/ont#TotalNumberOfVertices",
         "type": "instance",
-        "text": "HS1174_mesh.ply_totalNumberOfVertices",
+        "text": "HS1174_mesh.ply Total Number of Vertices (HS1174_mesh.ply_totalNumberOfVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_NaNVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_NaNVertices",
         "parent": "http://www.gigamesh.eu/ont#NaNVertices",
         "type": "instance",
-        "text": "HS1174_mesh.ply_NaNVertices",
+        "text": "HS1174_mesh.ply Amount of NaN Vertices (HS1174_mesh.ply_NaNVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_vertexNormalLength",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_vertexNormalLength",
         "parent": "http://www.gigamesh.eu/ont#VertexNormalLength",
         "type": "instance",
-        "text": "HS1174_mesh.ply_vertexNormalLength",
+        "text": "HS1174_mesh.ply Amount of Vertices with normal length (HS1174_mesh.ply_vertexNormalLength)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_vertexIsolated",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_vertexIsolated",
         "parent": "http://www.gigamesh.eu/ont#VertexIsolated",
         "type": "instance",
-        "text": "HS1174_mesh.ply_vertexIsolated",
+        "text": "HS1174_mesh.ply Isolated Vertices (HS1174_mesh.ply_vertexIsolated)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_borderVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_borderVertices",
         "parent": "http://www.gigamesh.eu/ont#BorderVertices",
         "type": "instance",
-        "text": "HS1174_mesh.ply_borderVertices",
+        "text": "HS1174_mesh.ply Amount of Border Vertices (HS1174_mesh.ply_borderVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_nonManifoldVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_nonManifoldVertices",
         "parent": "http://www.gigamesh.eu/ont#NonManifoldVertices",
         "type": "instance",
-        "text": "HS1174_mesh.ply_nonManifoldVertices",
+        "text": "HS1174_mesh.ply Amount of Non-Manifold Vertices (HS1174_mesh.ply_nonManifoldVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_singularVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_singularVertices",
         "parent": "http://www.gigamesh.eu/ont#SingularVertices",
         "type": "instance",
-        "text": "HS1174_mesh.ply_singularVertices",
+        "text": "HS1174_mesh.ply Amount of Singular Vertices (HS1174_mesh.ply_singularVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_verticesOnInvertedEdge",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_verticesOnInvertedEdge",
         "parent": "http://www.gigamesh.eu/ont#VerticesOnInvertedEdge",
         "type": "instance",
-        "text": "HS1174_mesh.ply_verticesOnInvertedEdge",
+        "text": "HS1174_mesh.ply Amount of Vertices on inverted edges (HS1174_mesh.ply_verticesOnInvertedEdge)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_verticesPartOfZeroAreaFace",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_verticesPartOfZeroAreaFace",
         "parent": "http://www.gigamesh.eu/ont#VerticesPartOfZeroAreaFace",
         "type": "instance",
-        "text": "HS1174_mesh.ply_verticesPartOfZeroAreaFace",
+        "text": "HS1174_mesh.ply Amount of Vertices which are part of zero area faces (HS1174_mesh.ply_verticesPartOfZeroAreaFace)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_syntheticVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_syntheticVertices",
         "parent": "http://www.gigamesh.eu/ont#SyntheticVertices",
         "type": "instance",
-        "text": "HS1174_mesh.ply_syntheticVertices",
+        "text": "HS1174_mesh.ply Amount of synthetic vertices (HS1174_mesh.ply_syntheticVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_manuallyAddedVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_manuallyAddedVertices",
         "parent": "http://www.gigamesh.eu/ont#ManuallyAddedVertices",
         "type": "instance",
-        "text": "HS1174_mesh.ply_manuallyAddedVertices",
+        "text": "HS1174_mesh.ply Amount of manually added vertices (HS1174_mesh.ply_manuallyAddedVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_circleCenterVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_circleCenterVertices",
         "parent": "http://www.gigamesh.eu/ont#CircleCenterVertices",
         "type": "instance",
-        "text": "HS1174_mesh.ply_circleCenterVertices",
+        "text": "HS1174_mesh.ply Amount of circle center vertices (HS1174_mesh.ply_circleCenterVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_selectedVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_selectedVertices",
         "parent": "http://www.gigamesh.eu/ont#SelectedVertices",
         "type": "instance",
-        "text": "HS1174_mesh.ply_selectedVertices",
+        "text": "HS1174_mesh.ply Amount of selected vertices (HS1174_mesh.ply_selectedVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_finiteFunctionValueVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_finiteFunctionValueVertices",
         "parent": "http://www.gigamesh.eu/ont#FiniteFunctionValueVertices",
         "type": "instance",
-        "text": "HS1174_mesh.ply_finiteFunctionValueVertices",
+        "text": "HS1174_mesh.ply Amount of finite function value vertices (HS1174_mesh.ply_finiteFunctionValueVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_localFunctionMinValueVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_localFunctionMinValueVertices",
         "parent": "http://www.gigamesh.eu/ont#LocalFunctionMinValueVertices",
         "type": "instance",
-        "text": "HS1174_mesh.ply_localFunctionMinValueVertices",
+        "text": "HS1174_mesh.ply Amount of local function minimum value vertices (HS1174_mesh.ply_localFunctionMinValueVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_localFunctionMaxValueVertices",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_localFunctionMaxValueVertices",
         "parent": "http://www.gigamesh.eu/ont#LocalFunctionMaxValueVertices",
         "type": "instance",
-        "text": "HS1174_mesh.ply_localFunctionMaxValueVertices",
+        "text": "HS1174_mesh.ply Amount of local function maximum value vertices (HS1174_mesh.ply_localFunctionMaxValueVertices)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_totalNumberOfFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_totalNumberOfFaces",
         "parent": "http://www.gigamesh.eu/ont#TotalNumberOfFaces",
         "type": "instance",
-        "text": "HS1174_mesh.ply_totalNumberOfFaces",
+        "text": "HS1174_mesh.ply Total number of faces (HS1174_mesh.ply_totalNumberOfFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_soloFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_soloFaces",
         "parent": "http://www.gigamesh.eu/ont#SoloFaces",
         "type": "instance",
-        "text": "HS1174_mesh.ply_soloFaces",
+        "text": "HS1174_mesh.ply Amount of solo faces (HS1174_mesh.ply_soloFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_borderFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_borderFaces",
         "parent": "http://www.gigamesh.eu/ont#BorderFaces",
         "type": "instance",
-        "text": "HS1174_mesh.ply_borderFaces",
+        "text": "HS1174_mesh.ply Amount of border faces (HS1174_mesh.ply_borderFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_threeBorderVertexFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_threeBorderVertexFaces",
         "parent": "http://www.gigamesh.eu/ont#ThreeBorderVertexFaces",
         "type": "instance",
-        "text": "HS1174_mesh.ply_threeBorderVertexFaces",
+        "text": "HS1174_mesh.ply Amount of three border vertex faces (HS1174_mesh.ply_threeBorderVertexFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_borderFacesBridgeTriConnection",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_borderFacesBridgeTriConnection",
         "parent": "http://www.gigamesh.eu/ont#BorderFacesBridgeTriConnection",
         "type": "instance",
-        "text": "HS1174_mesh.ply_borderFacesBridgeTriConnection",
+        "text": "HS1174_mesh.ply Amount of border faces with a bridge tri connection (HS1174_mesh.ply_borderFacesBridgeTriConnection)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_bridgeBorderFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_bridgeBorderFaces",
         "parent": "http://www.gigamesh.eu/ont#BridgeBorderFaces",
         "type": "instance",
-        "text": "HS1174_mesh.ply_bridgeBorderFaces",
+        "text": "HS1174_mesh.ply Amount of bridge border faces (HS1174_mesh.ply_bridgeBorderFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_danglingBorderFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_danglingBorderFaces",
         "parent": "http://www.gigamesh.eu/ont#DanglingBorderFaces",
         "type": "instance",
-        "text": "HS1174_mesh.ply_danglingBorderFaces",
+        "text": "HS1174_mesh.ply Amount of dangling border faces (HS1174_mesh.ply_danglingBorderFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_manifoldFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_manifoldFaces",
         "parent": "http://www.gigamesh.eu/ont#ManifoldFaces",
         "type": "instance",
-        "text": "HS1174_mesh.ply_manifoldFaces",
+        "text": "HS1174_mesh.ply Amount of manifold faces (HS1174_mesh.ply_manifoldFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_nonManifoldFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_nonManifoldFaces",
         "parent": "http://www.gigamesh.eu/ont#ManifoldFaces",
         "type": "instance",
-        "text": "HS1174_mesh.ply_nonManifoldFaces",
+        "text": "HS1174_mesh.ply Amount of non-manifold faces (HS1174_mesh.ply_nonManifoldFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_stickyFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_stickyFaces",
         "parent": "http://www.gigamesh.eu/ont#StickyFaces",
         "type": "instance",
-        "text": "HS1174_mesh.ply_stickyFaces",
+        "text": "HS1174_mesh.ply Amount of sticky faces (HS1174_mesh.ply_stickyFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_zeroAreaFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_zeroAreaFaces",
         "parent": "http://www.gigamesh.eu/ont#ZeroAreaFaces",
         "type": "instance",
-        "text": "HS1174_mesh.ply_zeroAreaFaces",
+        "text": "HS1174_mesh.ply Amount of zero area faces (HS1174_mesh.ply_zeroAreaFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_invertedFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_invertedFaces",
         "parent": "http://www.gigamesh.eu/ont#InvertedFaces",
         "type": "instance",
-        "text": "HS1174_mesh.ply_invertedFaces",
+        "text": "HS1174_mesh.ply Amount of inverted faces (HS1174_mesh.ply_invertedFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_selectedFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_selectedFaces",
         "parent": "http://www.gigamesh.eu/ont#SelectedFaces",
         "type": "instance",
-        "text": "HS1174_mesh.ply_selectedFaces",
+        "text": "HS1174_mesh.ply Amount of selected faces (HS1174_mesh.ply_selectedFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_syntheticVertexFaces",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_syntheticVertexFaces",
         "parent": "http://www.gigamesh.eu/ont#SyntheticVertexFaces",
         "type": "instance",
-        "text": "HS1174_mesh.ply_syntheticVertexFaces",
+        "text": "HS1174_mesh.ply Amount of synthetic vertex faces (HS1174_mesh.ply_syntheticVertexFaces)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_connectedComponents",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_connectedComponents",
         "parent": "http://www.gigamesh.eu/ont#ConnectedComponents",
         "type": "instance",
-        "text": "HS1174_mesh.ply_connectedComponents",
+        "text": "HS1174_mesh.ply Amount of connected components (HS1174_mesh.ply_connectedComponents)",
         "data": {}
       },
       {
-        "id": "https://situx.github.io/proj4rdf/examples/HS1174/mesh/HS1174_mesh.ply_geom",
+        "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh.ply_geom",
         "parent": "http://www.opengis.net/ont/geosparql#Geometry",
         "type": "instance",
-        "text": "HS1174_mesh.ply_geom",
+        "text": "HS1174_mesh.ply Bounding Box (HS1174_mesh.ply_geom)",
         "data": {}
       },
       {
@@ -42660,14 +43578,6 @@ var tree={
         "text": "CuneiformWedge (purl:graphemon#CuneiformWedge) [9]",
         "data": {
           "to": {
-            "http://www.purl.org/cuneiform/isRepresentedBy": {
-              "instancecount": 1,
-              "http://www.purl.org/graphemon#CuneiformWedge": 1
-            },
-            "http://www.purl.org/graphemon#leftOf": {
-              "instancecount": 1,
-              "http://www.purl.org/graphemon#CuneiformWedge": 1
-            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
@@ -42676,9 +43586,14 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.w3.org/ns/oa#hasSource": {
+              "instancecount": 0,
+              "http://www.w3.org/ns/oa#SpecificResource": 1
+            }
+          }
         },
-        "instancecount": 4
+        "instancecount": 2
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_writtentext",
