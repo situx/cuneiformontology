@@ -196,6 +196,10 @@ var tree={
               "instancecount": 1,
               "http://www.gigamesh.eu/ont#ZeroAreaFaces": 1
             },
+            "http://www.opengis.net/ont/geosparql#inSRS": {
+              "instancecount": 1,
+              "http://www.opengis.net/ont/crs/CartesianCoordinateSystem": 1
+            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
@@ -206,7 +210,7 @@ var tree={
           },
           "from": {}
         },
-        "instancecount": 39
+        "instancecount": 40
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_contributor",
@@ -1458,6 +1462,48 @@ var tree={
         "data": {}
       },
       {
+        "id": "https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm",
+        "parent": "http://www.opengis.net/ont/crs/CartesianCoordinateSystem",
+        "type": "instance",
+        "text": "Cartesian coordinate system with 3 axis in millimetre units (cartesian_ax3_mm)",
+        "data": {}
+      },
+      {
+        "id": "http://www.opengis.net/ont/crs/CartesianCoordinateSystem",
+        "parent": "#",
+        "type": "class",
+        "text": "CartesianCoordinateSystem (geocrs:CartesianCoordinateSystem) [1]",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1",
+        "parent": "http://www.opengis.net/ont/crs/CoordinateSystemAxis",
+        "type": "instance",
+        "text": "Cartesian coordinate system with 3 axis in millimetre units: Axis 1 (cartesian_ax3_mm_axis1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2",
+        "parent": "http://www.opengis.net/ont/crs/CoordinateSystemAxis",
+        "type": "instance",
+        "text": "Cartesian coordinate system with 3 axis in millimetre units: Axis 2 (cartesian_ax3_mm_axis2)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3",
+        "parent": "http://www.opengis.net/ont/crs/CoordinateSystemAxis",
+        "type": "instance",
+        "text": "Cartesian coordinate system with 3 axis in millimetre units: Axis 3 (cartesian_ax3_mm_axis3)",
+        "data": {}
+      },
+      {
+        "id": "http://www.opengis.net/ont/crs/CoordinateSystemAxis",
+        "parent": "#",
+        "type": "class",
+        "text": "CoordinateSystemAxis (geocrs:CoordinateSystemAxis) [3]",
+        "data": {}
+      },
+      {
         "id": "http://www.gigamesh.eu/ont#GigameshInfo",
         "parent": "#",
         "type": "class",
@@ -1490,34 +1536,6 @@ var tree={
         "parent": "#",
         "type": "collectionclass",
         "text": "Collection (as:Collection) [9]",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1",
-        "parent": "http://www.opengis.net/ont/crs/CoordinateSystemAxis",
-        "type": "instance",
-        "text": "Cartesian coordinate system with 3 axis in millimetre units: Axis 1 (cartesian_ax3_mm_axis1)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2",
-        "parent": "http://www.opengis.net/ont/crs/CoordinateSystemAxis",
-        "type": "instance",
-        "text": "Cartesian coordinate system with 3 axis in millimetre units: Axis 2 (cartesian_ax3_mm_axis2)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3",
-        "parent": "http://www.opengis.net/ont/crs/CoordinateSystemAxis",
-        "type": "instance",
-        "text": "Cartesian coordinate system with 3 axis in millimetre units: Axis 3 (cartesian_ax3_mm_axis3)",
-        "data": {}
-      },
-      {
-        "id": "http://www.opengis.net/ont/crs/CoordinateSystemAxis",
-        "parent": "#",
-        "type": "class",
-        "text": "CoordinateSystemAxis (geocrs:CoordinateSystemAxis) [3]",
         "data": {}
       },
       {
@@ -8352,20 +8370,6 @@ var tree={
         "parent": "#",
         "type": "class",
         "text": "ComputingReference (msp:ComputingReference) [327]",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm",
-        "parent": "http://www.opengis.net/ont/crs/CartesianCoordinateSystem",
-        "type": "instance",
-        "text": "Cartesian coordinate system with 3 axis in millimetre units (cartesian_ax3_mm)",
-        "data": {}
-      },
-      {
-        "id": "http://www.opengis.net/ont/crs/CartesianCoordinateSystem",
-        "parent": "#",
-        "type": "class",
-        "text": "CartesianCoordinateSystem (geocrs:CartesianCoordinateSystem) [1]",
         "data": {}
       },
       {
@@ -15934,12 +15938,7 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {
-            "http://lemon-model.net/lemon#form": {
-              "instancecount": 0,
-              "http://lemon-model.net/lemon#Word": 1
-            }
-          }
+          "from": {}
         },
         "instancecount": 2
       },
@@ -16217,6 +16216,9 @@ var tree={
               "instancecount": 1,
               "http://lemon-model.net/lemon#LexicalSense": 1
             },
+            "http://purl.org/dc/elements/1.1/license": {
+              "instancecount": 1
+            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
@@ -16227,7 +16229,7 @@ var tree={
           },
           "from": {}
         },
-        "instancecount": 4
+        "instancecount": 5
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/signlist/character_karcomp",
@@ -24477,34 +24479,22 @@ var tree={
               "instancecount": 1,
               "http://www.purl.org/cuneiform/TransliterationCharOccurrence": 1
             },
-            "http://www.purl.org/cuneiform/prevChar": {
-              "instancecount": 1,
-              "http://www.purl.org/cuneiform/TransliterationCharOccurrence": 1
-            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
             },
             "http://www.w3.org/2000/01/rdf-schema#label": {
               "instancecount": 1
-            },
-            "https://situx.github.io/cuneiformontology/examples/signlist/hasGraphemeReading": {
-              "instancecount": 1,
-              "http://www.purl.org/graphemon#GraphemeReading": 1
             }
           },
           "from": {
-            "http://www.purl.org/cuneiform/nextChar": {
-              "instancecount": 0,
-              "http://www.purl.org/cuneiform/TransliterationCharOccurrence": 1
-            },
             "http://www.purl.org/cuneiform/prevChar": {
               "instancecount": 0,
               "http://www.purl.org/cuneiform/TransliterationCharOccurrence": 1
             }
           }
         },
-        "instancecount": 7
+        "instancecount": 5
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/tch92_transliteration1_obverse_line10_word1",
@@ -25139,7 +25129,7 @@ var tree={
             "http://www.purl.org/cuneiform/lineNumber": {
               "instancecount": 1
             },
-            "http://www.purl.org/cuneiform/prevWord": {
+            "http://www.purl.org/cuneiform/nextWord": {
               "instancecount": 1,
               "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
             },
@@ -25155,7 +25145,7 @@ var tree={
             }
           },
           "from": {
-            "http://www.purl.org/cuneiform/nextWord": {
+            "http://www.purl.org/cuneiform/prevWord": {
               "instancecount": 0,
               "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
             }
@@ -35706,52 +35696,52 @@ var tree={
         "data": {}
       },
       {
-        "id": "nf3dcd307f7d94c35a6d3864a4d78fc31b2",
+        "id": "nfa625fd9f2f141548d3f334dc041b9e8b2",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "nf3dcd307f7d94c35a6d3864a4d78fc31b2",
+        "text": "nfa625fd9f2f141548d3f334dc041b9e8b2",
         "data": {}
       },
       {
-        "id": "nf3dcd307f7d94c35a6d3864a4d78fc31b3",
+        "id": "nfa625fd9f2f141548d3f334dc041b9e8b3",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "nf3dcd307f7d94c35a6d3864a4d78fc31b3",
+        "text": "nfa625fd9f2f141548d3f334dc041b9e8b3",
         "data": {}
       },
       {
-        "id": "nf3dcd307f7d94c35a6d3864a4d78fc31b4",
+        "id": "nfa625fd9f2f141548d3f334dc041b9e8b4",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "nf3dcd307f7d94c35a6d3864a4d78fc31b4",
+        "text": "nfa625fd9f2f141548d3f334dc041b9e8b4",
         "data": {}
       },
       {
-        "id": "nf3dcd307f7d94c35a6d3864a4d78fc31b5",
+        "id": "nfa625fd9f2f141548d3f334dc041b9e8b5",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "nf3dcd307f7d94c35a6d3864a4d78fc31b5",
+        "text": "nfa625fd9f2f141548d3f334dc041b9e8b5",
         "data": {}
       },
       {
-        "id": "nf3dcd307f7d94c35a6d3864a4d78fc31b6",
+        "id": "nfa625fd9f2f141548d3f334dc041b9e8b6",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "nf3dcd307f7d94c35a6d3864a4d78fc31b6",
+        "text": "nfa625fd9f2f141548d3f334dc041b9e8b6",
         "data": {}
       },
       {
-        "id": "nf3dcd307f7d94c35a6d3864a4d78fc31b7",
+        "id": "nfa625fd9f2f141548d3f334dc041b9e8b7",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "nf3dcd307f7d94c35a6d3864a4d78fc31b7",
+        "text": "nfa625fd9f2f141548d3f334dc041b9e8b7",
         "data": {}
       },
       {
-        "id": "nf3dcd307f7d94c35a6d3864a4d78fc31b8",
+        "id": "nfa625fd9f2f141548d3f334dc041b9e8b8",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "nf3dcd307f7d94c35a6d3864a4d78fc31b8",
+        "text": "nfa625fd9f2f141548d3f334dc041b9e8b8",
         "data": {}
       },
       {
@@ -43611,6 +43601,10 @@ var tree={
               "instancecount": 1,
               "http://www.purl.org/graphemon#CuneiformWedge": 1
             },
+            "http://www.purl.org/graphemon#leftOf": {
+              "instancecount": 1,
+              "http://www.purl.org/graphemon#CuneiformWedge": 1
+            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
@@ -43626,7 +43620,7 @@ var tree={
             }
           }
         },
-        "instancecount": 3
+        "instancecount": 4
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_writtentext",
