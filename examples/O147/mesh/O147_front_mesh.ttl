@@ -460,43 +460,59 @@ giga:boundingBoxWidth rdfs:domain geo:Geometry .
 giga:boundingBoxWidth rdfs:label "Bounding Box Width"@en . 
 giga:boundingBoxWidth skos:definition "The width of the bounding box encompassing the mesh" .
 giga:boundingBoxWidth rdfs:comment "Gigamesh Info: Bounding Box Width" .
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_geom> giga:boundingBoxWidth "241.900000"^^xsd:double .
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_geom> giga:boundingBoxWidth <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_boundingBoxWidth> .
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_boundingBoxWidth> rdf:value "241.900000"^^xsd:double .
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_boundingBoxWidth> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> om:millimetre .
 giga:boundingBoxHeight rdf:type owl:DatatypeProperty .
 giga:boundingBoxHeight rdfs:domain geo:Geometry .
 giga:boundingBoxHeight rdfs:label "Bounding Box Height"@en. 
 giga:boundingBoxHeight skos:definition "The height of the bounding box encompassing the mesh" .
 giga:boundingBoxHeight rdfs:comment "Gigamesh Info: Bounding Box Height" .
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_geom> giga:boundingBoxHeight "164.900000"^^xsd:double .
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_geom> giga:boundingBoxHeight <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_boundingBoxHeight> .
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_boundingBoxHeight> rdf:value "164.900000"^^xsd:double .
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_boundingBoxHeight> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> om:millimetre . 
 giga:boundingBoxThickness rdf:type owl:DatatypeProperty .
 giga:boundingBoxThickness rdfs:domain geo:Geometry .
 giga:boundingBoxThickness rdfs:label "Bounding Box Thickness"@en . 
 giga:boundingBoxThickness skos:definition "The thickness of the bounding box encompassing the mesh" .
 giga:boundingBoxThickness rdfs:comment "Gigamesh Info: Bounding Box Thickness" .
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_geom> giga:boundingBoxThickness "57.900000"^^xsd:double .
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_geom> giga:boundingBoxThickness <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_boundingBoxThickness> .
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_boundingBoxThickness> rdf:value "57.900000"^^xsd:double .
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_boundingBoxThickness> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> om:millimetre . 
 giga:totalArea rdf:type owl:DatatypeProperty .
 giga:totalArea rdfs:domain giga:Mesh .
 giga:totalArea rdfs:label "Total Area"@en . 
 giga:totalArea skos:definition "The total area of the mesh" .
 giga:totalArea rdfs:comment "Gigamesh Info: Total Area" .
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1> giga:totalArea "0.000000"^^xsd:double .
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1> giga:totalArea <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_totalArea> .
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_totalArea> rdf:value "0.000000"^^xsd:double .
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_totalArea> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> om:squareMillimetre . 
 giga:totalVolumeDX rdf:type owl:DatatypeProperty .
 giga:totalVolumeDX rdfs:domain giga:Mesh .
 giga:totalVolumeDX rdfs:label "Total Volume DX"@en . 
 giga:totalVolumeDX skos:definition "The total volume DX of the mesh" .
 giga:totalVolumeDX rdfs:comment "Gigamesh Info: Total Volume DX" .
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1> giga:totalVolumeDX "0.000000"^^xsd:double .
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1> giga:totalVolumeDX <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_totalVolumeDX> .
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_totalVolumeDX> rdf:value "0.000000"^^xsd:double .
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_totalVolumeDX> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> om:cubicMillimetre . 
 giga:totalVolumeDY rdf:type owl:DatatypeProperty .
 giga:totalVolumeDY rdfs:domain giga:Mesh .
 giga:totalVolumeDY rdfs:label "Total Volume DY"@en. 
 giga:totalVolumeDY skos:definition "The total volume DY of the mesh" .
 giga:totalVolumeDY rdfs:comment "Gigamesh Info: Total Volume DY" .
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1> giga:totalVolumeDY "0.000000"^^xsd:double .
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1> giga:totalVolumeDY <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_totalVolumeDY> .
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_totalVolumeDY> rdf:value "0.000000"^^xsd:double .
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_totalVolumeDY> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> om:cubicMillimetre . 
 giga:totalVolumeDZ rdf:type owl:DatatypeProperty .
 giga:totalVolumeDZ rdfs:domain giga:Mesh .
 giga:totalVolumeDZ rdfs:label "Total Volume DZ"@en . 
 giga:totalVolumeDZ skos:definition "The total volume DZ of the mesh" .
 giga:totalVolumeDZ rdfs:comment "Gigamesh Info: Total Volume DZ" .
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1> giga:totalVolumeDZ "0.000000"^^xsd:double .
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1> giga:totalVolumeDZ <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_totalVolumeDZ> .
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_totalVolumeDZ> rdf:value "0.000000"^^xsd:double .
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_totalVolumeDZ> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> om:cubicMillimetre . 
+
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_geom> <http://www.opengis.net/ont/geosparql#inSRS> <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
 
 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1> <http://www.opengis.net/ont/geosparql#inSRS> <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
 
