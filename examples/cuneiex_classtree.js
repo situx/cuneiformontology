@@ -1450,14 +1450,14 @@ var tree={
       {
         "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_geom",
         "parent": "http://www.opengis.net/ont/geosparql#Geometry",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "TCH92_mesh1 Bounding Box (TCH92_mesh1_geom)",
         "data": {}
       },
       {
         "id": "http://www.opengis.net/ont/geosparql#Geometry",
         "parent": "#",
-        "type": "class",
+        "type": "geoclass",
         "text": "Geometry (gsp:Geometry) [4]",
         "data": {}
       },
@@ -15930,6 +15930,9 @@ var tree={
         "text": "WordForm (lemon:WordForm) [32]",
         "data": {
           "to": {
+            "http://purl.org/dc/elements/1.1/license": {
+              "instancecount": 1
+            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
@@ -15945,7 +15948,7 @@ var tree={
             }
           }
         },
-        "instancecount": 2
+        "instancecount": 3
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/dict/ban_wordsense",
@@ -24486,11 +24489,11 @@ var tree={
             }
           },
           "from": {
-            "http://www.purl.org/cuneiform/nextChar": {
+            "http://www.purl.org/cuneiform/prevChar": {
               "instancecount": 0,
               "http://www.purl.org/cuneiform/TransliterationCharOccurrence": 1
             },
-            "http://www.purl.org/cuneiform/prevChar": {
+            "http://www.purl.org/cuneiform/nextChar": {
               "instancecount": 0,
               "http://www.purl.org/cuneiform/TransliterationCharOccurrence": 1
             }
@@ -25410,7 +25413,7 @@ var tree={
       {
         "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_geom",
         "parent": "http://www.opengis.net/ont/geosparql#Geometry",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "O147_back_mesh.ply Bounding Box (O147_back_mesh1_geom)",
         "data": {}
       },
@@ -25648,7 +25651,7 @@ var tree={
       {
         "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_geom",
         "parent": "http://www.opengis.net/ont/geosparql#Geometry",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "O147_front_mesh.ply Bounding Box (O147_front_mesh1_geom)",
         "data": {}
       },
@@ -35698,52 +35701,52 @@ var tree={
         "data": {}
       },
       {
-        "id": "n59675fdbb88b40feb6ecbd979e6b9c8eb2",
+        "id": "nead7b14c561648e584e7ee952803581ab2",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n59675fdbb88b40feb6ecbd979e6b9c8eb2",
+        "text": "nead7b14c561648e584e7ee952803581ab2",
         "data": {}
       },
       {
-        "id": "n59675fdbb88b40feb6ecbd979e6b9c8eb3",
+        "id": "nead7b14c561648e584e7ee952803581ab3",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n59675fdbb88b40feb6ecbd979e6b9c8eb3",
+        "text": "nead7b14c561648e584e7ee952803581ab3",
         "data": {}
       },
       {
-        "id": "n59675fdbb88b40feb6ecbd979e6b9c8eb4",
+        "id": "nead7b14c561648e584e7ee952803581ab4",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n59675fdbb88b40feb6ecbd979e6b9c8eb4",
+        "text": "nead7b14c561648e584e7ee952803581ab4",
         "data": {}
       },
       {
-        "id": "n59675fdbb88b40feb6ecbd979e6b9c8eb5",
+        "id": "nead7b14c561648e584e7ee952803581ab5",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n59675fdbb88b40feb6ecbd979e6b9c8eb5",
+        "text": "nead7b14c561648e584e7ee952803581ab5",
         "data": {}
       },
       {
-        "id": "n59675fdbb88b40feb6ecbd979e6b9c8eb6",
+        "id": "nead7b14c561648e584e7ee952803581ab6",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n59675fdbb88b40feb6ecbd979e6b9c8eb6",
+        "text": "nead7b14c561648e584e7ee952803581ab6",
         "data": {}
       },
       {
-        "id": "n59675fdbb88b40feb6ecbd979e6b9c8eb7",
+        "id": "nead7b14c561648e584e7ee952803581ab7",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n59675fdbb88b40feb6ecbd979e6b9c8eb7",
+        "text": "nead7b14c561648e584e7ee952803581ab7",
         "data": {}
       },
       {
-        "id": "n59675fdbb88b40feb6ecbd979e6b9c8eb8",
+        "id": "nead7b14c561648e584e7ee952803581ab8",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n59675fdbb88b40feb6ecbd979e6b9c8eb8",
+        "text": "nead7b14c561648e584e7ee952803581ab8",
         "data": {}
       },
       {
@@ -36192,14 +36195,14 @@ var tree={
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_excavloc_geometry",
         "parent": "http://www.opengis.net/ont/sf#Polygon",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Geometry of excavation site of HT 07-31-95 (ht073195_excavloc_geometry)",
         "data": {}
       },
       {
         "id": "http://www.opengis.net/ont/sf#Polygon",
         "parent": "http://www.opengis.net/ont/geosparql#Geometry",
-        "type": "class",
+        "type": "geoclass",
         "text": "Polygon (sf:Polygon) [1]",
         "data": {
           "to": {
@@ -37440,7 +37443,7 @@ var tree={
       {
         "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh1_geom",
         "parent": "http://www.opengis.net/ont/geosparql#Geometry",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "HS1174_mesh1 Bounding Box (HS1174_mesh1_geom)",
         "data": {}
       },
