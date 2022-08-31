@@ -307,7 +307,7 @@ function exportCSV(){
 }
 
 function setSVGDimensions(){ 
-    $('.element svg').each(function(i, obj) {
+    $('svg').each(function(i, obj) {
         console.log(obj)
         console.log($(obj).children().first()[0])
         if($(obj).attr("viewBox") || $(obj).attr("width") || $(obj).attr("height")){
