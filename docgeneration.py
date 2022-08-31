@@ -337,10 +337,10 @@ function setSVGDimensions(){
         $(obj).attr("height",((maxy-miny)+10))
         console.log($(obj).hasClass("svgoverlay"))
         if($(obj).hasClass("svgoverlay")){
-            naturalWidth=$(obj).prev().first()[0].naturalWidth
-            naturalHeight=$(obj).prev().first()[0].naturalHeight
-            currentWidth=$(obj).prev().first()[0].width
-            currentHeight=$(obj).prev().first()[0].height
+            naturalWidth=$(obj).prev().children('img')[0].naturalWidth
+            naturalHeight=$(obj).prev().children('img')[0].naturalHeight
+            currentWidth=$(obj).prev().children('img')[0].width
+            currentHeight=$(obj).prev().children('img')[0].height
             console.log(naturalWidth+" - "+naturalHeight+" - "+currentWidth+" - "+currentHeight)
             overlayposX = (currentWidth/naturalWidth) * minx;
             overlayposY = (currentHeight/naturalHeight) * miny;
