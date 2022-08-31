@@ -1911,7 +1911,7 @@ class OntDocGeneration:
                     tablecontents += "</ul></td>"
                 else:
                     tablecontents += "<td class=\"wrapword\">"
-                    if subpredsmap[tup][0] not in subjectstorender and baseurl in str(subpredsmap[tup][0]):
+                    if subpredsmap[tup] not in subjectstorender and baseurl in str(subpredsmap[tup][0]):
                         print("Postprocessing: " + str(subpredsmap[tup][0]) + " - " + str(tup) + " - " + str(subject))
                         postprocessing.add((subpredsmap[tup][0], URIRef(tup), subject))
                     res = self.createHTMLTableValueEntry(subject, tup, subpredsmap[tup][0], None, graph,
@@ -2041,6 +2041,7 @@ prefixes["reversed"]["http://www.opengis.net/ont/crs/"]="geocrs"
 prefixes["reversed"]["http://www.ontology-of-units-of-measure.org/resource/om-2/"]="om"
 prefixes["reversed"]["http://purl.org/meshsparql/"]="msp"
 prefixnsshort="cuneidict"
+preferredlabellanguage=""
 prefixnamespace="http://purl.org/cuneiform/"
 license="CC BY-SA 4.0"
 outpath="signlist_htmls/"
