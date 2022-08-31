@@ -337,10 +337,10 @@ function setSVGDimensions(){
         $(obj).attr("height",((maxy-miny)+10))
         console.log($(obj).hasClass("svgoverlay"))
         if($(obj).hasClass("svgoverlay")){
-            naturalWidth=$(obj).prev()[0].naturalWidth
-            naturalHeight=$(obj).prev()[0].naturalHeight
-            currentWidth=$(obj).prev()[0].width
-            currentHeight=$(obj).prev()[0].height
+            naturalWidth=$(obj).prev().children('img')[0].naturalWidth
+            naturalHeight=$(obj).prev().children('img')[0].naturalHeight
+            currentWidth=$(obj).prev().children('img')[0].width
+            currentHeight=$(obj).prev().children('img')[0].height
             console.log(naturalWidth+" - "+naturalHeight+" - "+currentWidth+" - "+currentHeight)
             overlayposX = (currentWidth/naturalWidth) * minx;
             overlayposY = (currentHeight/naturalHeight) * miny;
@@ -1655,11 +1655,13 @@ class OntDocGeneration:
         return {"geojsonrep":geojsonrep,"label":label,"unitlabel":unitlabel,"foundmedia":foundmedia,"imageannos":imageannos,"image3dannos":image3dannos}
 
 
-    def createHTMLTableValueEntry(self,subject,pred,object,ttlf,graph,baseurl,checkdepth,geojsonrep,foundmedia,imageannos,image3dannos):
+    def createHTMLTableValueEntry(self,subject,pred,object,ttlf,graph,baseurl,checkdepth,geojsonrep,foundmedia,imageannos,image3dannos,subpred):
         tablecontents=""
         label=""
         if isinstance(object,URIRef) or isinstance(object,BNode):
-            if ttlf != None:
+            if ttlf != None and subpred:
+                ttlf.write("<" + str(object) + "> <" + str(pred) + "> <" + str(subject) + "> .\n")
+            elif ttlf != None and not subpred:
                 ttlf.write("<" + str(subject) + "> <" + str(pred) + "> <" + str(object) + "> .\n")
             label = str(self.shortenURI(str(object)))
             unitlabel=""
@@ -1834,7 +1836,7 @@ class OntDocGeneration:
                             if ext in fileextensionmap:
                                 foundmedia[fileextensionmap[ext]].add(str(item))
                         res=self.createHTMLTableValueEntry(subject, tup, item, ttlf, graph,
-                                              baseurl, checkdepth,geojsonrep,foundmedia,imageannos,image3dannos)
+                                              baseurl, checkdepth,geojsonrep,foundmedia,imageannos,image3dannos,False)
                         geojsonrep = res["geojson"]
                         foundmedia = res["foundmedia"]
                         imageannos=res["imageannos"]
@@ -1859,7 +1861,7 @@ class OntDocGeneration:
                         if ext in fileextensionmap:
                             foundmedia[fileextensionmap[ext]].add(str(predobjmap[tup][0]))
                     res=self.createHTMLTableValueEntry(subject, tup, predobjmap[tup][0], ttlf, graph,
-                                              baseurl, checkdepth,geojsonrep,foundmedia,imageannos,image3dannos)
+                                              baseurl, checkdepth,geojsonrep,foundmedia,imageannos,image3dannos,False)
                     tablecontents+=res["html"]
                     geojsonrep=res["geojson"]
                     foundmedia = res["foundmedia"]
@@ -1898,8 +1900,8 @@ class OntDocGeneration:
                         if item not in subjectstorender and baseurl in str(item):
                             print("Postprocessing: " + str(item)+" - "+str(tup)+" - "+str(subject))
                             postprocessing.add((item,URIRef(tup),subject))
-                        res = self.createHTMLTableValueEntry(subject, tup, item, None, graph,
-                                                             baseurl, checkdepth, geojsonrep,foundmedia,imageannos,image3dannos)
+                        res = self.createHTMLTableValueEntry(subject, tup, item, ttlf, graph,
+                                                             baseurl, checkdepth, geojsonrep,foundmedia,imageannos,image3dannos,True)
                         foundmedia = res["foundmedia"]
                         imageannos=res["imageannos"]
                         image3dannos=res["image3dannos"]
@@ -1911,11 +1913,12 @@ class OntDocGeneration:
                     tablecontents += "</ul></td>"
                 else:
                     tablecontents += "<td class=\"wrapword\">"
+                    print(subpredsmap[tup][0])
                     if subpredsmap[tup][0] not in subjectstorender and baseurl in str(subpredsmap[tup][0]):
                         print("Postprocessing: " + str(subpredsmap[tup][0]) + " - " + str(tup) + " - " + str(subject))
                         postprocessing.add((subpredsmap[tup][0], URIRef(tup), subject))
-                    res = self.createHTMLTableValueEntry(subject, tup, subpredsmap[tup][0], None, graph,
-                                                         baseurl, checkdepth, geojsonrep,foundmedia,imageannos,image3dannos)
+                    res = self.createHTMLTableValueEntry(subject, tup, subpredsmap[tup][0], ttlf, graph,
+                                                         baseurl, checkdepth, geojsonrep,foundmedia,imageannos,image3dannos,True)
                     tablecontents += res["html"]
                     foundmedia = res["foundmedia"]
                     imageannos=res["imageannos"]
@@ -2041,6 +2044,7 @@ prefixes["reversed"]["http://www.opengis.net/ont/crs/"]="geocrs"
 prefixes["reversed"]["http://www.ontology-of-units-of-measure.org/resource/om-2/"]="om"
 prefixes["reversed"]["http://purl.org/meshsparql/"]="msp"
 prefixnsshort="cuneidict"
+preferredlabellanguage=""
 prefixnamespace="http://purl.org/cuneiform/"
 license="CC BY-SA 4.0"
 outpath="signlist_htmls/"
