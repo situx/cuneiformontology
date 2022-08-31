@@ -1450,14 +1450,14 @@ var tree={
       {
         "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_geom",
         "parent": "http://www.opengis.net/ont/geosparql#Geometry",
-        "type": "geoinstance",
+        "type": "instance",
         "text": "TCH92_mesh1 Bounding Box (TCH92_mesh1_geom)",
         "data": {}
       },
       {
         "id": "http://www.opengis.net/ont/geosparql#Geometry",
         "parent": "#",
-        "type": "geoclass",
+        "type": "class",
         "text": "Geometry (gsp:Geometry) [4]",
         "data": {}
       },
@@ -15260,15 +15260,6 @@ var tree={
         "text": "GraphemeVariant (purl:graphemon#GraphemeVariant) [49]",
         "data": {
           "to": {
-            "http://www.purl.org/graphemon#asSVG": {
-              "instancecount": 1
-            },
-            "http://www.purl.org/graphemon#hasGottsteinCode": {
-              "instancecount": 1
-            },
-            "http://www.purl.org/graphemon#hasPaleoCode": {
-              "instancecount": 1
-            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
@@ -15279,7 +15270,7 @@ var tree={
           },
           "from": {}
         },
-        "instancecount": 5
+        "instancecount": 2
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/signlist/character_al_reading_al",
@@ -15947,7 +15938,12 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://lemon-model.net/lemon#form": {
+              "instancecount": 0,
+              "http://lemon-model.net/lemon#Word": 1
+            }
+          }
         },
         "instancecount": 2
       },
@@ -25135,7 +25131,7 @@ var tree={
             "http://www.purl.org/cuneiform/lineNumber": {
               "instancecount": 1
             },
-            "http://www.purl.org/cuneiform/nextChar": {
+            "http://www.purl.org/cuneiform/nextWord": {
               "instancecount": 1,
               "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
             },
@@ -25414,7 +25410,7 @@ var tree={
       {
         "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_geom",
         "parent": "http://www.opengis.net/ont/geosparql#Geometry",
-        "type": "geoinstance",
+        "type": "instance",
         "text": "O147_back_mesh.ply Bounding Box (O147_back_mesh1_geom)",
         "data": {}
       },
@@ -25652,7 +25648,7 @@ var tree={
       {
         "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_geom",
         "parent": "http://www.opengis.net/ont/geosparql#Geometry",
-        "type": "geoinstance",
+        "type": "instance",
         "text": "O147_front_mesh.ply Bounding Box (O147_front_mesh1_geom)",
         "data": {}
       },
@@ -35702,52 +35698,52 @@ var tree={
         "data": {}
       },
       {
-        "id": "neddc898d098c4176b74f5a4969c584f9b2",
+        "id": "n59675fdbb88b40feb6ecbd979e6b9c8eb2",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "neddc898d098c4176b74f5a4969c584f9b2",
+        "text": "n59675fdbb88b40feb6ecbd979e6b9c8eb2",
         "data": {}
       },
       {
-        "id": "neddc898d098c4176b74f5a4969c584f9b3",
+        "id": "n59675fdbb88b40feb6ecbd979e6b9c8eb3",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "neddc898d098c4176b74f5a4969c584f9b3",
+        "text": "n59675fdbb88b40feb6ecbd979e6b9c8eb3",
         "data": {}
       },
       {
-        "id": "neddc898d098c4176b74f5a4969c584f9b4",
+        "id": "n59675fdbb88b40feb6ecbd979e6b9c8eb4",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "neddc898d098c4176b74f5a4969c584f9b4",
+        "text": "n59675fdbb88b40feb6ecbd979e6b9c8eb4",
         "data": {}
       },
       {
-        "id": "neddc898d098c4176b74f5a4969c584f9b5",
+        "id": "n59675fdbb88b40feb6ecbd979e6b9c8eb5",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "neddc898d098c4176b74f5a4969c584f9b5",
+        "text": "n59675fdbb88b40feb6ecbd979e6b9c8eb5",
         "data": {}
       },
       {
-        "id": "neddc898d098c4176b74f5a4969c584f9b6",
+        "id": "n59675fdbb88b40feb6ecbd979e6b9c8eb6",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "neddc898d098c4176b74f5a4969c584f9b6",
+        "text": "n59675fdbb88b40feb6ecbd979e6b9c8eb6",
         "data": {}
       },
       {
-        "id": "neddc898d098c4176b74f5a4969c584f9b7",
+        "id": "n59675fdbb88b40feb6ecbd979e6b9c8eb7",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "neddc898d098c4176b74f5a4969c584f9b7",
+        "text": "n59675fdbb88b40feb6ecbd979e6b9c8eb7",
         "data": {}
       },
       {
-        "id": "neddc898d098c4176b74f5a4969c584f9b8",
+        "id": "n59675fdbb88b40feb6ecbd979e6b9c8eb8",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "neddc898d098c4176b74f5a4969c584f9b8",
+        "text": "n59675fdbb88b40feb6ecbd979e6b9c8eb8",
         "data": {}
       },
       {
@@ -36196,14 +36192,14 @@ var tree={
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_excavloc_geometry",
         "parent": "http://www.opengis.net/ont/sf#Polygon",
-        "type": "geoinstance",
+        "type": "instance",
         "text": "Geometry of excavation site of HT 07-31-95 (ht073195_excavloc_geometry)",
         "data": {}
       },
       {
         "id": "http://www.opengis.net/ont/sf#Polygon",
         "parent": "http://www.opengis.net/ont/geosparql#Geometry",
-        "type": "geoclass",
+        "type": "class",
         "text": "Polygon (sf:Polygon) [1]",
         "data": {
           "to": {
@@ -37444,7 +37440,7 @@ var tree={
       {
         "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh1_geom",
         "parent": "http://www.opengis.net/ont/geosparql#Geometry",
-        "type": "geoinstance",
+        "type": "instance",
         "text": "HS1174_mesh1 Bounding Box (HS1174_mesh1_geom)",
         "data": {}
       },
@@ -43612,6 +43608,10 @@ var tree={
             }
           },
           "from": {
+            "http://www.purl.org/cuneiform/isRepresentedBy": {
+              "instancecount": 0,
+              "http://www.purl.org/graphemon#CuneiformWedge": 1
+            },
             "http://www.w3.org/ns/oa#hasSource": {
               "instancecount": 0,
               "http://www.w3.org/ns/oa#SpecificResource": 1
