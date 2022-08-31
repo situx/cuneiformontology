@@ -15268,7 +15268,12 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.purl.org/graphemon#variant": {
+              "instancecount": 0,
+              "http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme": 1
+            }
+          }
         },
         "instancecount": 2
       },
@@ -16214,12 +16219,15 @@ var tree={
         "data": {
           "to": {
             "http://lemon-model.net/lemon#form": {
-              "instancecount": 2,
-              "http://lemon-model.net/lemon#WordForm": 2
+              "instancecount": 1,
+              "http://lemon-model.net/lemon#WordForm": 1
             },
             "http://lemon-model.net/lemon#sense": {
               "instancecount": 1,
               "http://lemon-model.net/lemon#LexicalSense": 1
+            },
+            "http://purl.org/dc/elements/1.1/license": {
+              "instancecount": 1
             },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
@@ -16229,7 +16237,11 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://lemon-model.net/lemon#entry": {
+              "instancecount": 0
+            }
+          }
         },
         "instancecount": 5
       },
@@ -20871,6 +20883,10 @@ var tree={
             "http://www.purl.org/cuneiform/lineNumber": {
               "instancecount": 1
             },
+            "http://www.purl.org/cuneiform/nextLine": {
+              "instancecount": 1,
+              "http://www.purl.org/cuneiform/TransliterationLine": 1
+            },
             "http://www.purl.org/cuneiform/prevLine": {
               "instancecount": 1,
               "http://www.purl.org/cuneiform/TransliterationLine": 1
@@ -20881,13 +20897,14 @@ var tree={
             },
             "http://www.w3.org/2000/01/rdf-schema#label": {
               "instancecount": 1
-            },
-            "http://www.w3.org/2004/02/skos/core#definition": {
-              "instancecount": 1
             }
           },
           "from": {
             "http://www.purl.org/cuneiform/nextLine": {
+              "instancecount": 0,
+              "http://www.purl.org/cuneiform/TransliterationLine": 1
+            },
+            "http://www.purl.org/cuneiform/prevLine": {
               "instancecount": 0,
               "http://www.purl.org/cuneiform/TransliterationLine": 1
             }
@@ -24509,10 +24526,6 @@ var tree={
             }
           },
           "from": {
-            "http://www.purl.org/cuneiform/nextChar": {
-              "instancecount": 0,
-              "http://www.purl.org/cuneiform/TransliterationCharOccurrence": 1
-            },
             "http://www.purl.org/cuneiform/prevChar": {
               "instancecount": 0,
               "http://www.purl.org/cuneiform/TransliterationCharOccurrence": 1
@@ -25154,10 +25167,6 @@ var tree={
             "http://www.purl.org/cuneiform/lineNumber": {
               "instancecount": 1
             },
-            "http://www.purl.org/cuneiform/nextWord": {
-              "instancecount": 1,
-              "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
-            },
             "http://www.purl.org/cuneiform/prevWord": {
               "instancecount": 1,
               "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
@@ -25177,14 +25186,10 @@ var tree={
             "http://www.purl.org/cuneiform/nextWord": {
               "instancecount": 0,
               "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
-            },
-            "http://www.purl.org/cuneiform/prevWord": {
-              "instancecount": 0,
-              "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
             }
           }
         },
-        "instancecount": 6
+        "instancecount": 5
       },
       {
         "id": "http://lemon-model.net/lemon#LexicalEntity",
@@ -35729,52 +35734,52 @@ var tree={
         "data": {}
       },
       {
-        "id": "na3b2f127343c4d2ab0f93b0ffac90d62b2",
+        "id": "n3feaff1fa2ba4d3ab6faded44578c42ab2",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "na3b2f127343c4d2ab0f93b0ffac90d62b2",
+        "text": "n3feaff1fa2ba4d3ab6faded44578c42ab2",
         "data": {}
       },
       {
-        "id": "na3b2f127343c4d2ab0f93b0ffac90d62b3",
+        "id": "n3feaff1fa2ba4d3ab6faded44578c42ab3",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "na3b2f127343c4d2ab0f93b0ffac90d62b3",
+        "text": "n3feaff1fa2ba4d3ab6faded44578c42ab3",
         "data": {}
       },
       {
-        "id": "na3b2f127343c4d2ab0f93b0ffac90d62b4",
+        "id": "n3feaff1fa2ba4d3ab6faded44578c42ab4",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "na3b2f127343c4d2ab0f93b0ffac90d62b4",
+        "text": "n3feaff1fa2ba4d3ab6faded44578c42ab4",
         "data": {}
       },
       {
-        "id": "na3b2f127343c4d2ab0f93b0ffac90d62b5",
+        "id": "n3feaff1fa2ba4d3ab6faded44578c42ab5",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "na3b2f127343c4d2ab0f93b0ffac90d62b5",
+        "text": "n3feaff1fa2ba4d3ab6faded44578c42ab5",
         "data": {}
       },
       {
-        "id": "na3b2f127343c4d2ab0f93b0ffac90d62b6",
+        "id": "n3feaff1fa2ba4d3ab6faded44578c42ab6",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "na3b2f127343c4d2ab0f93b0ffac90d62b6",
+        "text": "n3feaff1fa2ba4d3ab6faded44578c42ab6",
         "data": {}
       },
       {
-        "id": "na3b2f127343c4d2ab0f93b0ffac90d62b7",
+        "id": "n3feaff1fa2ba4d3ab6faded44578c42ab7",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "na3b2f127343c4d2ab0f93b0ffac90d62b7",
+        "text": "n3feaff1fa2ba4d3ab6faded44578c42ab7",
         "data": {}
       },
       {
-        "id": "na3b2f127343c4d2ab0f93b0ffac90d62b8",
+        "id": "n3feaff1fa2ba4d3ab6faded44578c42ab8",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "na3b2f127343c4d2ab0f93b0ffac90d62b8",
+        "text": "n3feaff1fa2ba4d3ab6faded44578c42ab8",
         "data": {}
       },
       {
@@ -43630,14 +43635,6 @@ var tree={
         "text": "CuneiformWedge (purl:graphemon#CuneiformWedge) [9]",
         "data": {
           "to": {
-            "http://www.purl.org/cuneiform/isRepresentedBy": {
-              "instancecount": 1,
-              "http://www.purl.org/graphemon#CuneiformWedge": 1
-            },
-            "http://www.purl.org/graphemon#leftOf": {
-              "instancecount": 1,
-              "http://www.purl.org/graphemon#CuneiformWedge": 1
-            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
@@ -43647,13 +43644,13 @@ var tree={
             }
           },
           "from": {
-            "http://www.purl.org/graphemon#leftOf": {
+            "http://www.w3.org/ns/oa#hasSource": {
               "instancecount": 0,
-              "http://www.purl.org/graphemon#CuneiformWedge": 1
+              "http://www.w3.org/ns/oa#SpecificResource": 1
             }
           }
         },
-        "instancecount": 4
+        "instancecount": 2
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_writtentext",
