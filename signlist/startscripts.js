@@ -163,13 +163,17 @@ function exportCSV(){
 }
 
 function setSVGDimensions(){ 
-    $('.svgview').each(function(i, obj) {
+    $('.element svg').each(function(i, obj) {
         console.log(obj)
         console.log($(obj).children().first()[0])
+        if($(obj).attr("viewBox") || $(obj).attr("width") || $(obj).attr("height")){
+            return
+        }
         maxx=Number.MIN_VALUE
         maxy=Number.MIN_VALUE
         minx=Number.MAX_VALUE
         miny=Number.MAX_VALUE
+
         $(obj).children().each(function(i){
             svgbbox=$(this)[0].getBBox()
             console.log(svgbbox)
