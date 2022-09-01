@@ -68,7 +68,7 @@ origtabletside="front"
 tabletnames=["HS1174","HT073195","TCH92","O147"]
 tabletsides=["front","back","left","right","bottom","top"]
 tabletname="HS1174"
-material="3D rendering"
+material="transliteration"
 creatormap={"O147":"https://orcid.org/0000-0001-6690-9098"}
 creator="https://orcid.org/0000-0002-9499-5840"
 namespace="https://situx.github.io/cuneiformontology/examples/"+str(tabletname).lower()+"/imgannotations/"
@@ -115,6 +115,7 @@ for tabname in tabletnames:
     @prefix graphemon: <http://www.purl.org/graphemon#> .
     """)
     res.write("oa:TextQuoteSelector rdfs:subClassOf oa:Selector .\n")
+    res.write("oa:TextPositionSelector rdfs:subClassOf oa:Selector .\n")
     res.write("oa:Selector rdf:type owl:Class .\n")
     res.write("oa:TextQuoteSelector rdf:type owl:Class .\n")
     res.write("oa:TextQuoteSelector rdfs:label \"Text Quote Selector\"@en .\n")

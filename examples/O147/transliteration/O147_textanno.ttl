@@ -89,28 +89,26 @@ oa:TextQuoteSelector a owl:Class ;
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/fece81a5-0c1e-474d-81e8-b1f5f648daa4> ;
     rdfs:subClassOf skos:Collection .
 
-oa:Selector a owl:Class .
-
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0032a19b-e11a-4a83-884f-b8e1bbb0e489> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0032a19b-e11a-4a83-884f-b8e1bbb0e489_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0032a19b-e11a-4a83-884f-b8e1bbb0e489_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0032a19b-e11a-4a83-884f-b8e1bbb0e489_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0032a19b-e11a-4a83-884f-b8e1bbb0e489_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "da" ;
     oa:end 125 ;
     oa:start 123 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/02e2a4b9-acd5-4d73-be6f-2a2458acb7a2> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/02e2a4b9-acd5-4d73-be6f-2a2458acb7a2_body_class_sense> ;
@@ -123,18 +121,18 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/02e2a4b9-acd5-4d73-be6f-2a2458acb7a2_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/02e2a4b9-acd5-4d73-be6f-2a2458acb7a2_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/02e2a4b9-acd5-4d73-be6f-2a2458acb7a2_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "e2#?" ;
     oa:end 906 ;
     oa:start 902 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0789aa33-43ab-442f-b8d8-d0f97c2317e7> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0789aa33-43ab-442f-b8d8-d0f97c2317e7_body_translit1> ;
@@ -142,24 +140,24 @@ oa:Selector a owl:Class .
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0789aa33-43ab-442f-b8d8-d0f97c2317e7_body_translit1> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 5 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 5 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_reverse_line5_word4>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_reverse_line5_word4> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0789aa33-43ab-442f-b8d8-d0f97c2317e7_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0789aa33-43ab-442f-b8d8-d0f97c2317e7_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0789aa33-43ab-442f-b8d8-d0f97c2317e7_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "sin-ri-me-ni" ;
     oa:end 833 ;
     oa:start 821 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/08179cf1-06c3-4f88-8093-cd2c361e01c3> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/08179cf1-06c3-4f88-8093-cd2c361e01c3_body_translit1> ;
@@ -167,60 +165,60 @@ oa:Selector a owl:Class .
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/08179cf1-06c3-4f88-8093-cd2c361e01c3_body_translit1> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 4 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 4 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_bottom_line4_word3>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_bottom_line4_word3> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/08179cf1-06c3-4f88-8093-cd2c361e01c3_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/08179cf1-06c3-4f88-8093-cd2c361e01c3_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/08179cf1-06c3-4f88-8093-cd2c361e01c3_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "dingir-pi4!-{d}a-a" ;
     oa:end 634 ;
     oa:start 616 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0a8d70cf-afbc-45ea-9f4a-d810f36cf459> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0a8d70cf-afbc-45ea-9f4a-d810f36cf459_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0a8d70cf-afbc-45ea-9f4a-d810f36cf459_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0a8d70cf-afbc-45ea-9f4a-d810f36cf459_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0a8d70cf-afbc-45ea-9f4a-d810f36cf459_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "{d}[utu]" ;
     oa:end 681 ;
     oa:start 673 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0cbcaa7c-5533-4440-b56c-839df2a2174d> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0cbcaa7c-5533-4440-b56c-839df2a2174d_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0cbcaa7c-5533-4440-b56c-839df2a2174d_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0cbcaa7c-5533-4440-b56c-839df2a2174d_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0cbcaa7c-5533-4440-b56c-839df2a2174d_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "{d}utu#" ;
     oa:end 648 ;
     oa:start 641 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0f309c73-23b9-4041-94eb-e8eac5f6f531> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0f309c73-23b9-4041-94eb-e8eac5f6f531_body_class_sense>,
@@ -235,48 +233,48 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0f309c73-23b9-4041-94eb-e8eac5f6f531_body_translit1> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 2 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 2 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line2_word1>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line2_word1> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0f309c73-23b9-4041-94eb-e8eac5f6f531_body_translit2> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 2 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 2 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line2_word2>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line2_word2> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0f309c73-23b9-4041-94eb-e8eac5f6f531_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0f309c73-23b9-4041-94eb-e8eac5f6f531_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0f309c73-23b9-4041-94eb-e8eac5f6f531_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "{gisz}sag-kul" ;
     oa:end 89 ;
     oa:start 76 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0f81e76f-5eee-46e1-9743-709387f56bd7> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0f81e76f-5eee-46e1-9743-709387f56bd7_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0f81e76f-5eee-46e1-9743-709387f56bd7_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0f81e76f-5eee-46e1-9743-709387f56bd7_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0f81e76f-5eee-46e1-9743-709387f56bd7_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "sag-bi" ;
     oa:end 220 ;
     oa:start 214 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/11c71b4a-fc6a-47b1-ba10-f27377513be6> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/11c71b4a-fc6a-47b1-ba10-f27377513be6_body_class_sense> ;
@@ -289,54 +287,54 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/11c71b4a-fc6a-47b1-ba10-f27377513be6_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/11c71b4a-fc6a-47b1-ba10-f27377513be6_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/11c71b4a-fc6a-47b1-ba10-f27377513be6_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "sar" ;
     oa:end 108 ;
     oa:start 105 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/13e760d4-d055-451e-abec-27abde90feeb> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/13e760d4-d055-451e-abec-27abde90feeb_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/13e760d4-d055-451e-abec-27abde90feeb_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/13e760d4-d055-451e-abec-27abde90feeb_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/13e760d4-d055-451e-abec-27abde90feeb_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "1(disz)-kam" ;
     oa:end 198 ;
     oa:start 187 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/16971768-eb59-46ec-9587-6806fd01a618> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/16971768-eb59-46ec-9587-6806fd01a618_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/16971768-eb59-46ec-9587-6806fd01a618_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/16971768-eb59-46ec-9587-6806fd01a618_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/16971768-eb59-46ec-9587-6806fd01a618_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "sag-bi" ;
     oa:end 186 ;
     oa:start 180 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/19b94580-e18c-4e56-8387-c4525b992200> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/19b94580-e18c-4e56-8387-c4525b992200_body_class_sense> ;
@@ -349,18 +347,18 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/19b94580-e18c-4e56-8387-c4525b992200_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/19b94580-e18c-4e56-8387-c4525b992200_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/19b94580-e18c-4e56-8387-c4525b992200_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "e2" ;
     oa:end 128 ;
     oa:start 126 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/1b2c18c8-e962-4995-b445-9ac5766363c3> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/1b2c18c8-e962-4995-b445-9ac5766363c3_body_class_sense> ;
@@ -373,18 +371,18 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/1b2c18c8-e962-4995-b445-9ac5766363c3_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/1b2c18c8-e962-4995-b445-9ac5766363c3_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/1b2c18c8-e962-4995-b445-9ac5766363c3_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "u3" ;
     oa:end 570 ;
     oa:start 568 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/1b69e579-dede-4aa6-b900-8a6dad92c687> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/1b69e579-dede-4aa6-b900-8a6dad92c687_body_translit1> ;
@@ -392,42 +390,42 @@ oa:Selector a owl:Class .
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/1b69e579-dede-4aa6-b900-8a6dad92c687_body_translit1> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 10 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 10 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line10_word1>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line10_word1> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/1b69e579-dede-4aa6-b900-8a6dad92c687_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/1b69e579-dede-4aa6-b900-8a6dad92c687_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/1b69e579-dede-4aa6-b900-8a6dad92c687_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "in-szi-in-szam2#" ;
     oa:end 360 ;
     oa:start 344 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/204b696c-bd5b-4b34-a5f0-ba2643a3e5ea> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/204b696c-bd5b-4b34-a5f0-ba2643a3e5ea_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/204b696c-bd5b-4b34-a5f0-ba2643a3e5ea_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/204b696c-bd5b-4b34-a5f0-ba2643a3e5ea_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/204b696c-bd5b-4b34-a5f0-ba2643a3e5ea_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "nu-ga2-ga2-a" ;
     oa:end 524 ;
     oa:start 512 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit1>,
@@ -438,42 +436,42 @@ oa:Selector a owl:Class .
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit1> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 4 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 4 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line4_word1>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line4_word1> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit2> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 4 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 4 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line4_word2>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line4_word2> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit3> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 5 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 5 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line5_word1>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line5_word1> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit4> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 5 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 5 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line5_word2>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line5_word2> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "isz-du-ki-nu-um" ;
     oa:end 176 ;
     oa:start 161 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2617717a-9f8b-4075-8484-b496b326e576> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2617717a-9f8b-4075-8484-b496b326e576_body_class_sense>,
@@ -488,30 +486,30 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2617717a-9f8b-4075-8484-b496b326e576_body_translit1> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 1 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 1 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line1_word1>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line1_word1> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2617717a-9f8b-4075-8484-b496b326e576_body_translit2> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 1 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 1 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line1_word3>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line1_word3> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2617717a-9f8b-4075-8484-b496b326e576_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2617717a-9f8b-4075-8484-b496b326e576_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2617717a-9f8b-4075-8484-b496b326e576_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "2/3(disz)" ;
     oa:end 35 ;
     oa:start 26 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2e833987-3470-4a6f-a0b6-68da13e40db3> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2e833987-3470-4a6f-a0b6-68da13e40db3_body_translit1> ;
@@ -519,24 +517,24 @@ oa:Selector a owl:Class .
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2e833987-3470-4a6f-a0b6-68da13e40db3_body_translit1> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 3 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 3 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_bottom_line3_word1>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_bottom_line3_word1> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2e833987-3470-4a6f-a0b6-68da13e40db3_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2e833987-3470-4a6f-a0b6-68da13e40db3_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2e833987-3470-4a6f-a0b6-68da13e40db3_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "sa-am-su2-i-lu-na" ;
     oa:end 588 ;
     oa:start 571 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit1>,
@@ -547,42 +545,42 @@ oa:Selector a owl:Class .
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit1> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 3 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 3 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line3_word4>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line3_word4> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit2> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 4 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 4 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line4_word1>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line4_word1> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit3> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 4 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 4 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line4_word2>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line4_word2> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit4> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 4 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 4 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line4_word3>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line4_word3> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "lu2-{d}utu-asz-szar" ;
     oa:end 148 ;
     oa:start 129 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3036462f-8589-4103-aa78-06b415bb1b4d> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3036462f-8589-4103-aa78-06b415bb1b4d_body_class_sense> ;
@@ -595,18 +593,18 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3036462f-8589-4103-aa78-06b415bb1b4d_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3036462f-8589-4103-aa78-06b415bb1b4d_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3036462f-8589-4103-aa78-06b415bb1b4d_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "mu#" ;
     oa:end 901 ;
     oa:start 898 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/32f94041-1864-4df7-8e25-bdb34a61455a> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/32f94041-1864-4df7-8e25-bdb34a61455a_body_class_sense> ;
@@ -619,18 +617,18 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/32f94041-1864-4df7-8e25-bdb34a61455a_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/32f94041-1864-4df7-8e25-bdb34a61455a_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/32f94041-1864-4df7-8e25-bdb34a61455a_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "dumu" ;
     oa:end 791 ;
     oa:start 787 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3a7fc23d-5a29-4fe9-a4c4-95d599b610ac> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3a7fc23d-5a29-4fe9-a4c4-95d599b610ac_body_class_sense> ;
@@ -643,54 +641,54 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3a7fc23d-5a29-4fe9-a4c4-95d599b610ac_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3a7fc23d-5a29-4fe9-a4c4-95d599b610ac_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3a7fc23d-5a29-4fe9-a4c4-95d599b610ac_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "e2-ki#-ud#" ;
     oa:end 119 ;
     oa:start 109 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3b5838ed-d095-43bb-9279-06e32fd1c3c1> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3b5838ed-d095-43bb-9279-06e32fd1c3c1_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3b5838ed-d095-43bb-9279-06e32fd1c3c1_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3b5838ed-d095-43bb-9279-06e32fd1c3c1_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3b5838ed-d095-43bb-9279-06e32fd1c3c1_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "igi" ;
     oa:end 769 ;
     oa:start 766 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/46c33cad-8e89-4ddd-951f-c176e04bba8c> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/46c33cad-8e89-4ddd-951f-c176e04bba8c_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/46c33cad-8e89-4ddd-951f-c176e04bba8c_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/46c33cad-8e89-4ddd-951f-c176e04bba8c_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/46c33cad-8e89-4ddd-951f-c176e04bba8c_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "igi" ;
     oa:end 820 ;
     oa:start 817 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4b66ca49-41b7-420d-962a-eabf7e3fc051> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4b66ca49-41b7-420d-962a-eabf7e3fc051_body_class_sense> ;
@@ -703,18 +701,18 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4b66ca49-41b7-420d-962a-eabf7e3fc051_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4b66ca49-41b7-420d-962a-eabf7e3fc051_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4b66ca49-41b7-420d-962a-eabf7e3fc051_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "sar" ;
     oa:end 39 ;
     oa:start 36 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4e4b4ad3-4c5b-4949-a568-297671a5f2a5> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4e4b4ad3-4c5b-4949-a568-297671a5f2a5_body_translit1>,
@@ -724,180 +722,180 @@ oa:Selector a owl:Class .
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4e4b4ad3-4c5b-4949-a568-297671a5f2a5_body_translit1> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 1 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 1 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_reverse_line1_word5>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_reverse_line1_word5> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4e4b4ad3-4c5b-4949-a568-297671a5f2a5_body_translit2> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 2 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 2 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_reverse_line2_word1>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_reverse_line2_word1> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4e4b4ad3-4c5b-4949-a568-297671a5f2a5_body_translit3> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 2 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 2 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_reverse_line2_word2>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_reverse_line2_word2> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4e4b4ad3-4c5b-4949-a568-297671a5f2a5_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4e4b4ad3-4c5b-4949-a568-297671a5f2a5_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4e4b4ad3-4c5b-4949-a568-297671a5f2a5_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "{d}AMAR-UTU-la-ma-sa3-szu" ;
     oa:end 714 ;
     oa:start 689 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4ed15719-0613-4b0b-ba84-42a1c3a708e0> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4ed15719-0613-4b0b-ba84-42a1c3a708e0_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4ed15719-0613-4b0b-ba84-42a1c3a708e0_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4ed15719-0613-4b0b-ba84-42a1c3a708e0_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4ed15719-0613-4b0b-ba84-42a1c3a708e0_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "da" ;
     oa:end 157 ;
     oa:start 155 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/52f0633b-367b-4bea-a5ab-b35751dbb9ae> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/52f0633b-367b-4bea-a5ab-b35751dbb9ae_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/52f0633b-367b-4bea-a5ab-b35751dbb9ae_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/52f0633b-367b-4bea-a5ab-b35751dbb9ae_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/52f0633b-367b-4bea-a5ab-b35751dbb9ae_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "szu-{d}mar!-tu" ;
     oa:end 339 ;
     oa:start 325 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/53cb0219-d6db-4806-ac73-2c7d9f869059> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/53cb0219-d6db-4806-ac73-2c7d9f869059_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/53cb0219-d6db-4806-ac73-2c7d9f869059_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/53cb0219-d6db-4806-ac73-2c7d9f869059_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/53cb0219-d6db-4806-ac73-2c7d9f869059_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "inim" ;
     oa:end 511 ;
     oa:start 507 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5411a2d5-217d-4297-a2b9-92d0806ae435> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5411a2d5-217d-4297-a2b9-92d0806ae435_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5411a2d5-217d-4297-a2b9-92d0806ae435_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5411a2d5-217d-4297-a2b9-92d0806ae435_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5411a2d5-217d-4297-a2b9-92d0806ae435_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "ud" ;
     oa:end 482 ;
     oa:start 480 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/54ce9aa5-5ea0-4543-845c-b7e67a9de55b> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/54ce9aa5-5ea0-4543-845c-b7e67a9de55b_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/54ce9aa5-5ea0-4543-845c-b7e67a9de55b_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/54ce9aa5-5ea0-4543-845c-b7e67a9de55b_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/54ce9aa5-5ea0-4543-845c-b7e67a9de55b_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "igi" ;
     oa:end 655 ;
     oa:start 652 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5becb4fd-4958-48b7-871c-1d98c6e9e510> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5becb4fd-4958-48b7-871c-1d98c6e9e510_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5becb4fd-4958-48b7-871c-1d98c6e9e510_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5becb4fd-4958-48b7-871c-1d98c6e9e510_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5becb4fd-4958-48b7-871c-1d98c6e9e510_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "dingir-szu-a-bu-szu#" ;
     oa:end 812 ;
     oa:start 792 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5c78b0a7-5c8f-46dd-b245-70015825d210> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5c78b0a7-5c8f-46dd-b245-70015825d210_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5c78b0a7-5c8f-46dd-b245-70015825d210_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5c78b0a7-5c8f-46dd-b245-70015825d210_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5c78b0a7-5c8f-46dd-b245-70015825d210_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "nu-ur2-an-tim" ;
     oa:end 783 ;
     oa:start 770 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/66044ae7-2b7e-4d90-b735-c69f25554b2a> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/66044ae7-2b7e-4d90-b735-c69f25554b2a_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/66044ae7-2b7e-4d90-b735-c69f25554b2a_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/66044ae7-2b7e-4d90-b735-c69f25554b2a_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/66044ae7-2b7e-4d90-b735-c69f25554b2a_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "igi" ;
     oa:end 615 ;
     oa:start 612 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6621cd1c-a1a3-4d66-98a5-267a686224d8> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6621cd1c-a1a3-4d66-98a5-267a686224d8_body_class_sense> ;
@@ -910,18 +908,18 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6621cd1c-a1a3-4d66-98a5-267a686224d8_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6621cd1c-a1a3-4d66-98a5-267a686224d8_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6621cd1c-a1a3-4d66-98a5-267a686224d8_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "1(u)" ;
     oa:end 104 ;
     oa:start 100 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/66c7dc5b-95b5-4de6-b07c-78cd40efc0c4> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/66c7dc5b-95b5-4de6-b07c-78cd40efc0c4_body_class_sense> ;
@@ -934,18 +932,18 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/66c7dc5b-95b5-4de6-b07c-78cd40efc0c4_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/66c7dc5b-95b5-4de6-b07c-78cd40efc0c4_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/66c7dc5b-95b5-4de6-b07c-78cd40efc0c4_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "dumu" ;
     oa:end 324 ;
     oa:start 320 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/68096439-4877-4a70-a156-18e3d3e28be5> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/68096439-4877-4a70-a156-18e3d3e28be5_body_class_sense> ;
@@ -958,18 +956,18 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/68096439-4877-4a70-a156-18e3d3e28be5_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/68096439-4877-4a70-a156-18e3d3e28be5_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/68096439-4877-4a70-a156-18e3d3e28be5_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "ku3-babbar" ;
     oa:end 414 ;
     oa:start 404 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6aa9eb66-d6d3-49a3-b2bb-9527b0bedb51> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6aa9eb66-d6d3-49a3-b2bb-9527b0bedb51_body_translit1> ;
@@ -977,42 +975,42 @@ oa:Selector a owl:Class .
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6aa9eb66-d6d3-49a3-b2bb-9527b0bedb51_body_translit1> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 4 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 4 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_bottom_line4_word1>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_bottom_line4_word1> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6aa9eb66-d6d3-49a3-b2bb-9527b0bedb51_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6aa9eb66-d6d3-49a3-b2bb-9527b0bedb51_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6aa9eb66-d6d3-49a3-b2bb-9527b0bedb51_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "in-pad3-de3-mesz" ;
     oa:end 608 ;
     oa:start 592 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6ce7cbb6-0821-4cc9-ae80-3f88c40c3430> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6ce7cbb6-0821-4cc9-ae80-3f88c40c3430_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6ce7cbb6-0821-4cc9-ae80-3f88c40c3430_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6ce7cbb6-0821-4cc9-ae80-3f88c40c3430_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6ce7cbb6-0821-4cc9-ae80-3f88c40c3430_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "{d}utu" ;
     oa:end 913 ;
     oa:start 907 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6d9880fb-49a1-4103-bdfd-a19440f07644> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6d9880fb-49a1-4103-bdfd-a19440f07644_body_translit1> ;
@@ -1020,78 +1018,78 @@ oa:Selector a owl:Class .
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6d9880fb-49a1-4103-bdfd-a19440f07644_body_translit1> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 13 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 13 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line13_word1>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line13_word1> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6d9880fb-49a1-4103-bdfd-a19440f07644_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6d9880fb-49a1-4103-bdfd-a19440f07644_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6d9880fb-49a1-4103-bdfd-a19440f07644_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "al-dug#" ;
     oa:end 476 ;
     oa:start 469 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/71e2af8a-7c2c-4a66-87f0-0bac00a9aab5> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/71e2af8a-7c2c-4a66-87f0-0bac00a9aab5_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/71e2af8a-7c2c-4a66-87f0-0bac00a9aab5_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/71e2af8a-7c2c-4a66-87f0-0bac00a9aab5_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/71e2af8a-7c2c-4a66-87f0-0bac00a9aab5_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "{d}a-a" ;
     oa:end 552 ;
     oa:start 546 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/7b5bc417-06b0-497c-a1b2-db59f36e8b7c> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/7b5bc417-06b0-497c-a1b2-db59f36e8b7c_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/7b5bc417-06b0-497c-a1b2-db59f36e8b7c_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/7b5bc417-06b0-497c-a1b2-db59f36e8b7c_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/7b5bc417-06b0-497c-a1b2-db59f36e8b7c_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "{d}utu" ;
     oa:end 762 ;
     oa:start 756 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/7cac37cc-ae05-4468-9643-cdeecc1b3134> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/7cac37cc-ae05-4468-9643-cdeecc1b3134_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/7cac37cc-ae05-4468-9643-cdeecc1b3134_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/7cac37cc-ae05-4468-9643-cdeecc1b3134_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/7cac37cc-ae05-4468-9643-cdeecc1b3134_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "gub-ba" ;
     oa:end 96 ;
     oa:start 90 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/85156587-47f1-4c4e-8a91-3d45a569109b> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/85156587-47f1-4c4e-8a91-3d45a569109b_body_translit1> ;
@@ -1099,24 +1097,24 @@ oa:Selector a owl:Class .
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/85156587-47f1-4c4e-8a91-3d45a569109b_body_translit1> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 6 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 6 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line6_word1>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line6_word1> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/85156587-47f1-4c4e-8a91-3d45a569109b_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/85156587-47f1-4c4e-8a91-3d45a569109b_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/85156587-47f1-4c4e-8a91-3d45a569109b_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "sila#-dagal" ;
     oa:end 210 ;
     oa:start 199 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86661e47-e4c9-46ca-8fb5-69710e9b7fc9> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86661e47-e4c9-46ca-8fb5-69710e9b7fc9_body_class_sense> ;
@@ -1129,18 +1127,18 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86661e47-e4c9-46ca-8fb5-69710e9b7fc9_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86661e47-e4c9-46ca-8fb5-69710e9b7fc9_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86661e47-e4c9-46ca-8fb5-69710e9b7fc9_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "e2" ;
     oa:end 160 ;
     oa:start 158 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86bfaccf-619d-45fe-8f73-b76042b0e613> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86bfaccf-619d-45fe-8f73-b76042b0e613_body_translit1> ;
@@ -1148,42 +1146,42 @@ oa:Selector a owl:Class .
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86bfaccf-619d-45fe-8f73-b76042b0e613_body_translit1> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 7 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 7 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line7_word3>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line7_word3> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86bfaccf-619d-45fe-8f73-b76042b0e613_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86bfaccf-619d-45fe-8f73-b76042b0e613_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86bfaccf-619d-45fe-8f73-b76042b0e613_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "s,a-ap-pa-ta?-nu?" ;
     oa:end 285 ;
     oa:start 268 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/917e87d1-0d57-47fb-aa76-e871df2681ff> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/917e87d1-0d57-47fb-aa76-e871df2681ff_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/917e87d1-0d57-47fb-aa76-e871df2681ff_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/917e87d1-0d57-47fb-aa76-e871df2681ff_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/917e87d1-0d57-47fb-aa76-e871df2681ff_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "2(disz)-kam" ;
     oa:end 232 ;
     oa:start 221 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/92c48249-fc81-4382-8e98-984624971aa8> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/92c48249-fc81-4382-8e98-984624971aa8_body_class_sense> ;
@@ -1196,18 +1194,18 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/92c48249-fc81-4382-8e98-984624971aa8_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/92c48249-fc81-4382-8e98-984624971aa8_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/92c48249-fc81-4382-8e98-984624971aa8_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "{gisz}ig" ;
     oa:end 75 ;
     oa:start 67 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/9a94a4f5-4051-4094-9308-ee85fbb9d117> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/9a94a4f5-4051-4094-9308-ee85fbb9d117_body_translit1> ;
@@ -1215,24 +1213,24 @@ oa:Selector a owl:Class .
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/9a94a4f5-4051-4094-9308-ee85fbb9d117_body_translit1> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 3 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 3 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_reverse_line3_word1>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_reverse_line3_word1> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/9a94a4f5-4051-4094-9308-ee85fbb9d117_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/9a94a4f5-4051-4094-9308-ee85fbb9d117_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/9a94a4f5-4051-4094-9308-ee85fbb9d117_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "ra-asz-s,il2-li2-e2-a" ;
     oa:end 743 ;
     oa:start 722 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/9bcc994a-90df-4105-b7b7-d854f484ad53> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/9bcc994a-90df-4105-b7b7-d854f484ad53_body_class_sense> ;
@@ -1245,36 +1243,36 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/9bcc994a-90df-4105-b7b7-d854f484ad53_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/9bcc994a-90df-4105-b7b7-d854f484ad53_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/9bcc994a-90df-4105-b7b7-d854f484ad53_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "e2" ;
     oa:end 42 ;
     oa:start 40 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a10e26ac-3cdc-4df3-bd30-2922fa277bee> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a10e26ac-3cdc-4df3-bd30-2922fa277bee_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a10e26ac-3cdc-4df3-bd30-2922fa277bee_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a10e26ac-3cdc-4df3-bd30-2922fa277bee_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a10e26ac-3cdc-4df3-bd30-2922fa277bee_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "isz-me-sin" ;
     oa:end 666 ;
     oa:start 656 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a2cf4e62-cb85-4853-93ee-bd574ab2a52a> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a2cf4e62-cb85-4853-93ee-bd574ab2a52a_body_class_sense> ;
@@ -1287,18 +1285,18 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a2cf4e62-cb85-4853-93ee-bd574ab2a52a_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a2cf4e62-cb85-4853-93ee-bd574ab2a52a_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a2cf4e62-cb85-4853-93ee-bd574ab2a52a_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "sza3#-ga-a-ni" ;
     oa:end 468 ;
     oa:start 455 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a30c404b-4b77-4eb7-8f55-c7c66a669a4e> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a30c404b-4b77-4eb7-8f55-c7c66a669a4e_body_class_sense> ;
@@ -1311,18 +1309,18 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a30c404b-4b77-4eb7-8f55-c7c66a669a4e_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a30c404b-4b77-4eb7-8f55-c7c66a669a4e_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a30c404b-4b77-4eb7-8f55-c7c66a669a4e_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "sanga" ;
     oa:end 640 ;
     oa:start 635 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a336a132-8dc4-4dca-b74e-b4a1f962c13d> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a336a132-8dc4-4dca-b74e-b4a1f962c13d_body_class_sense> ;
@@ -1335,18 +1333,18 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a336a132-8dc4-4dca-b74e-b4a1f962c13d_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a336a132-8dc4-4dca-b74e-b4a1f962c13d_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a336a132-8dc4-4dca-b74e-b4a1f962c13d_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "dumu" ;
     oa:end 267 ;
     oa:start 263 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a740d970-a16b-4aac-8e38-d3e208135bc7> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a740d970-a16b-4aac-8e38-d3e208135bc7_body_class_sense> ;
@@ -1359,18 +1357,18 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a740d970-a16b-4aac-8e38-d3e208135bc7_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a740d970-a16b-4aac-8e38-d3e208135bc7_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a740d970-a16b-4aac-8e38-d3e208135bc7_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "sanga" ;
     oa:end 672 ;
     oa:start 667 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ac1c80e9-de3d-46e2-9932-15d7864f206b> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ac1c80e9-de3d-46e2-9932-15d7864f206b_body_class_sense> ;
@@ -1383,18 +1381,18 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ac1c80e9-de3d-46e2-9932-15d7864f206b_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ac1c80e9-de3d-46e2-9932-15d7864f206b_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ac1c80e9-de3d-46e2-9932-15d7864f206b_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "u3" ;
     oa:end 154 ;
     oa:start 152 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/b1c415e7-c35a-4495-804e-d96d7bad4289> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/b1c415e7-c35a-4495-804e-d96d7bad4289_body_class_sense> ;
@@ -1407,18 +1405,18 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/b1c415e7-c35a-4495-804e-d96d7bad4289_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/b1c415e7-c35a-4495-804e-d96d7bad4289_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/b1c415e7-c35a-4495-804e-d96d7bad4289_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "ugula" ;
     oa:end 749 ;
     oa:start 744 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/b2b3dbd0-dd30-499c-8985-1736143f367b> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/b2b3dbd0-dd30-499c-8985-1736143f367b_body_class_sense>,
@@ -1432,60 +1430,60 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/b2b3dbd0-dd30-499c-8985-1736143f367b_body_translit1> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 1 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 1 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line1_word5>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line1_word5> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/b2b3dbd0-dd30-499c-8985-1736143f367b_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/b2b3dbd0-dd30-499c-8985-1736143f367b_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/b2b3dbd0-dd30-499c-8985-1736143f367b_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "{gisz}kesz2-da" ;
     oa:end 66 ;
     oa:start 52 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c0cbcf5f-873f-4ecb-b02b-bec6a860ea51> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c0cbcf5f-873f-4ecb-b02b-bec6a860ea51_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c0cbcf5f-873f-4ecb-b02b-bec6a860ea51_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c0cbcf5f-873f-4ecb-b02b-bec6a860ea51_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c0cbcf5f-873f-4ecb-b02b-bec6a860ea51_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "ki#" ;
     oa:end 249 ;
     oa:start 246 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c0cffdd5-dc64-45dd-a4c0-f6d1025a7174> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c0cffdd5-dc64-45dd-a4c0-f6d1025a7174_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c0cffdd5-dc64-45dd-a4c0-f6d1025a7174_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c0cffdd5-dc64-45dd-a4c0-f6d1025a7174_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c0cffdd5-dc64-45dd-a4c0-f6d1025a7174_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "igi" ;
     oa:end 688 ;
     oa:start 685 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c8174ebc-dfce-4f96-b7ac-d179246151c1> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c8174ebc-dfce-4f96-b7ac-d179246151c1_body_class_sense> ;
@@ -1498,18 +1496,18 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c8174ebc-dfce-4f96-b7ac-d179246151c1_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c8174ebc-dfce-4f96-b7ac-d179246151c1_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c8174ebc-dfce-4f96-b7ac-d179246151c1_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "5(disz)" ;
     oa:end 25 ;
     oa:start 18 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/caf33991-6043-4318-8cd4-21b1486a1321> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/caf33991-6043-4318-8cd4-21b1486a1321_body_translit1>,
@@ -1518,30 +1516,30 @@ oa:Selector a owl:Class .
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/caf33991-6043-4318-8cd4-21b1486a1321_body_translit1> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 6 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 6 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_reverse_line6_word1>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_reverse_line6_word1> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/caf33991-6043-4318-8cd4-21b1486a1321_body_translit2> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 6 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 6 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_reverse_line6_word2>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_reverse_line6_word2> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/caf33991-6043-4318-8cd4-21b1486a1321_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/caf33991-6043-4318-8cd4-21b1486a1321_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/caf33991-6043-4318-8cd4-21b1486a1321_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "{d}NIN-KAL?-LA" ;
     oa:end 857 ;
     oa:start 843 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/cc2cf354-24e4-4533-8515-ebb403386508> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/cc2cf354-24e4-4533-8515-ebb403386508_body_class_sense> ;
@@ -1554,72 +1552,72 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/cc2cf354-24e4-4533-8515-ebb403386508_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/cc2cf354-24e4-4533-8515-ebb403386508_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/cc2cf354-24e4-4533-8515-ebb403386508_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "{d}AMAR-UTU" ;
     oa:end 564 ;
     oa:start 553 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/cfd3c28b-118c-43ca-b4b1-94f9eb41fac9> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/cfd3c28b-118c-43ca-b4b1-94f9eb41fac9_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/cfd3c28b-118c-43ca-b4b1-94f9eb41fac9_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/cfd3c28b-118c-43ca-b4b1-94f9eb41fac9_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/cfd3c28b-118c-43ca-b4b1-94f9eb41fac9_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "igi" ;
     oa:end 721 ;
     oa:start 718 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/dcfd952f-2834-431e-b5b4-8166bb4fd761> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/dcfd952f-2834-431e-b5b4-8166bb4fd761_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/dcfd952f-2834-431e-b5b4-8166bb4fd761_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/dcfd952f-2834-431e-b5b4-8166bb4fd761_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/dcfd952f-2834-431e-b5b4-8166bb4fd761_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "in-[na-an-la2]" ;
     oa:end 429 ;
     oa:start 415 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/de02e886-fbd5-4fff-bd7a-eb2fb270515b> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/de02e886-fbd5-4fff-bd7a-eb2fb270515b_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/de02e886-fbd5-4fff-bd7a-eb2fb270515b_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/de02e886-fbd5-4fff-bd7a-eb2fb270515b_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/de02e886-fbd5-4fff-bd7a-eb2fb270515b_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "al#-til#" ;
     oa:end 451 ;
     oa:start 443 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e3ab97a9-20e4-4d78-9fb7-47633191fc37> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e3ab97a9-20e4-4d78-9fb7-47633191fc37_body_class_sense> ;
@@ -1632,18 +1630,18 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e3ab97a9-20e4-4d78-9fb7-47633191fc37_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e3ab97a9-20e4-4d78-9fb7-47633191fc37_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e3ab97a9-20e4-4d78-9fb7-47633191fc37_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "kur2-sze3" ;
     oa:end 492 ;
     oa:start 483 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit1>,
@@ -1652,30 +1650,30 @@ oa:Selector a owl:Class .
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit1> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 8 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 8 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line8_word2>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line8_word2> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit2> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 8 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 8 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line8_word3>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line8_word3> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "{m}sa3-ap-h,u-li!-ip-h,ur" ;
     oa:end 315 ;
     oa:start 290 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/eb5d1b13-f5cd-4235-9bf1-69a3c6c9cb30> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/eb5d1b13-f5cd-4235-9bf1-69a3c6c9cb30_body_translit1> ;
@@ -1683,24 +1681,24 @@ oa:Selector a owl:Class .
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/eb5d1b13-f5cd-4235-9bf1-69a3c6c9cb30_body_translit1> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 12 char on 3D rendering"@en ;
+    rdfs:label "Annotation body referencing transliteration char occurrence at O147 line 12 char on transliteration"@en ;
     rdf:value "<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line12_word1>" ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line12_word1> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/eb5d1b13-f5cd-4235-9bf1-69a3c6c9cb30_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/eb5d1b13-f5cd-4235-9bf1-69a3c6c9cb30_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/eb5d1b13-f5cd-4235-9bf1-69a3c6c9cb30_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "inim#-bi#" ;
     oa:end 442 ;
     oa:start 433 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ebe58ce7-e6a5-4981-a525-209c2961f795> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ebe58ce7-e6a5-4981-a525-209c2961f795_body_class_sense> ;
@@ -1713,54 +1711,57 @@ oa:Selector a owl:Class .
     oa:motivatedBy oa:classifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ebe58ce7-e6a5-4981-a525-209c2961f795_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ebe58ce7-e6a5-4981-a525-209c2961f795_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ebe58ce7-e6a5-4981-a525-209c2961f795_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "dumu" ;
     oa:end 842 ;
     oa:start 838 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ece8bf7a-52c1-41c3-b0be-a5a11475af03> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ece8bf7a-52c1-41c3-b0be-a5a11475af03_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ece8bf7a-52c1-41c3-b0be-a5a11475af03_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ece8bf7a-52c1-41c3-b0be-a5a11475af03_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ece8bf7a-52c1-41c3-b0be-a5a11475af03_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "{d}utu" ;
     oa:end 545 ;
     oa:start 539 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/fece81a5-0c1e-474d-81e8-b1f5f648daa4> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation of text at O147  line  char  on transliteration"@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/fece81a5-0c1e-474d-81e8-b1f5f648daa4_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/fece81a5-0c1e-474d-81e8-b1f5f648daa4_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on 3D rendering"@en ;
+    rdfs:label "Annotation target1 of Annotation of Glyph at O147 line  char  on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/fece81a5-0c1e-474d-81e8-b1f5f648daa4_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/fece81a5-0c1e-474d-81e8-b1f5f648daa4_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on 3D rendering"@en ;
+    rdfs:label "Annotation target selector of Annotation of Glyph at O147 line  char on transliteration"@en ;
     rdf:value "du3-a" ;
     oa:end 48 ;
     oa:start 43 .
 
+oa:Selector a owl:Class .
+
 oa:TextPositionSelector a owl:Class ;
-    rdfs:label "Text Position Selector"@en .
+    rdfs:label "Text Position Selector"@en ;
+    rdfs:subClassOf oa:Selector .
 
 <https://github.com/recogito/recogito-js> a dc:Software ;
     foaf:homepage "https://github.com/recogito/recogito-js"^^xsd:anyURI ;
