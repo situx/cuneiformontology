@@ -187,10 +187,16 @@ for tabname in tabletnames:
                     res.write("<"+str(indid)+"_body_class_sense> rdf:value <"+str(item["source"])+"> .\n")
                     res.write("<"+str(indid)+"_body_class_sense> rdfs:label \""+str(item["label"])+"\"@en .\n") 
                     res.write("<"+str(indid)+"_body_class_sense> oa:motivatedBy oa:classifying .\n")                  
-                    res.write("<"+str(indid)+"_body_class_sense> skos:definition \""+str(item["description"])+"\"@en .\n")                     
-                if item["purpose"]=="tagging" and "source" in item and "olia" in item["source"]:
+                    res.write("<"+str(indid)+"_body_class_sense> skos:definition \""+str(item["description"])+"\"@en .\n") 
+                if item["purpose"]=="classifying" and "source" in item and "/L" in item["source"]:
+                    res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_wordform> .\n")
+                    res.write("<"+str(indid)+"_body_wordform> rdf:value <"+str(item["source"])+"> .\n")
+                    res.write("<"+str(indid)+"_body_wordform> rdfs:label \""+str(item["label"])+"\"@en .\n") 
+                    res.write("<"+str(indid)+"_body_wordform> oa:motivatedBy oa:classifying .\n")                  
+                    res.write("<"+str(indid)+"_body_wordform> skos:definition \""+str(item["description"])+"\"@en .\n")                         
+                if item["purpose"]=="tagging" and "source" in item and "id" in item["source"] and "olia" in item["source"]["id"]:
                     res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_class_postag> .\n")
-                    res.write("<"+str(indid)+"_body_class_postag> rdf:value <"+str(item["source"])+"> .\n")
+                    res.write("<"+str(indid)+"_body_class_postag> rdf:value <"+str(item["source"]["id"])+"> .\n")
         targetcounter=1
         res.write("<"+str(indid)+"_target"+str(targetcounter)+"> rdf:type owl:NamedIndividual .\n")
         res.write("<"+str(indid)+"_target"+str(targetcounter)+"> oa:hasSelector <"+str(indid)+"_target"+str(targetcounter)+"_selector> .\n")
