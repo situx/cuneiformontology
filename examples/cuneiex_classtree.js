@@ -15255,15 +15255,6 @@ var tree={
         "text": "GraphemeVariant (purl:graphemon#GraphemeVariant) [49]",
         "data": {
           "to": {
-            "http://www.purl.org/graphemon#asSVG": {
-              "instancecount": 1
-            },
-            "http://www.purl.org/graphemon#hasGottsteinCode": {
-              "instancecount": 1
-            },
-            "http://www.purl.org/graphemon#hasPaleoCode": {
-              "instancecount": 1
-            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
@@ -15272,9 +15263,14 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.purl.org/graphemon#variant": {
+              "instancecount": 0,
+              "http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme": 1
+            }
+          }
         },
-        "instancecount": 5
+        "instancecount": 2
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/signlist/character_al_reading_al",
@@ -15934,9 +15930,6 @@ var tree={
         "text": "WordForm (lemon:WordForm) [32]",
         "data": {
           "to": {
-            "http://purl.org/dc/elements/1.1/license": {
-              "instancecount": 1
-            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
@@ -15952,7 +15945,7 @@ var tree={
             }
           }
         },
-        "instancecount": 3
+        "instancecount": 2
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/dict/ban_wordsense",
@@ -16224,13 +16217,6 @@ var tree={
               "instancecount": 1,
               "http://lemon-model.net/lemon#WordForm": 1
             },
-            "http://lemon-model.net/lemon#sense": {
-              "instancecount": 1,
-              "http://lemon-model.net/lemon#LexicalSense": 1
-            },
-            "http://purl.org/dc/elements/1.1/license": {
-              "instancecount": 1
-            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
@@ -16239,13 +16225,9 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {
-            "http://lemon-model.net/lemon#entry": {
-              "instancecount": 0
-            }
-          }
+          "from": {}
         },
-        "instancecount": 5
+        "instancecount": 3
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/signlist/character_karcomp",
@@ -25176,7 +25158,7 @@ var tree={
             "http://www.purl.org/cuneiform/lineNumber": {
               "instancecount": 1
             },
-            "http://www.purl.org/cuneiform/nextChar": {
+            "http://www.purl.org/cuneiform/nextWord": {
               "instancecount": 1,
               "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
             },
@@ -25232,504 +25214,504 @@ var tree={
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/0032a19b-e11a-4a83-884f-b8e1bbb0e489",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (0032a19b-e11a-4a83-884f-b8e1bbb0e489)",
+        "text": "0032a19b-e11a-4a83-884f-b8e1bbb0e489",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/02e2a4b9-acd5-4d73-be6f-2a2458acb7a2",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (02e2a4b9-acd5-4d73-be6f-2a2458acb7a2)",
+        "text": "02e2a4b9-acd5-4d73-be6f-2a2458acb7a2",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/0789aa33-43ab-442f-b8d8-d0f97c2317e7",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (0789aa33-43ab-442f-b8d8-d0f97c2317e7)",
+        "text": "Annotation of text at O147  line 5 word 4 on transliteration (0789aa33-43ab-442f-b8d8-d0f97c2317e7)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/08179cf1-06c3-4f88-8093-cd2c361e01c3",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (08179cf1-06c3-4f88-8093-cd2c361e01c3)",
+        "text": "Annotation of text at O147  line 4 word 3 on transliteration (08179cf1-06c3-4f88-8093-cd2c361e01c3)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/0a8d70cf-afbc-45ea-9f4a-d810f36cf459",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (0a8d70cf-afbc-45ea-9f4a-d810f36cf459)",
+        "text": "0a8d70cf-afbc-45ea-9f4a-d810f36cf459",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/0cbcaa7c-5533-4440-b56c-839df2a2174d",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (0cbcaa7c-5533-4440-b56c-839df2a2174d)",
+        "text": "0cbcaa7c-5533-4440-b56c-839df2a2174d",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/0f309c73-23b9-4041-94eb-e8eac5f6f531",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (0f309c73-23b9-4041-94eb-e8eac5f6f531)",
+        "text": "Annotation of text at O147  line 2 word 1 on transliteration (0f309c73-23b9-4041-94eb-e8eac5f6f531)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/0f81e76f-5eee-46e1-9743-709387f56bd7",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (0f81e76f-5eee-46e1-9743-709387f56bd7)",
+        "text": "0f81e76f-5eee-46e1-9743-709387f56bd7",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/11c71b4a-fc6a-47b1-ba10-f27377513be6",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (11c71b4a-fc6a-47b1-ba10-f27377513be6)",
+        "text": "11c71b4a-fc6a-47b1-ba10-f27377513be6",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/13e760d4-d055-451e-abec-27abde90feeb",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (13e760d4-d055-451e-abec-27abde90feeb)",
+        "text": "13e760d4-d055-451e-abec-27abde90feeb",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/16971768-eb59-46ec-9587-6806fd01a618",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (16971768-eb59-46ec-9587-6806fd01a618)",
+        "text": "16971768-eb59-46ec-9587-6806fd01a618",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/19b94580-e18c-4e56-8387-c4525b992200",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (19b94580-e18c-4e56-8387-c4525b992200)",
+        "text": "19b94580-e18c-4e56-8387-c4525b992200",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/1b2c18c8-e962-4995-b445-9ac5766363c3",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (1b2c18c8-e962-4995-b445-9ac5766363c3)",
+        "text": "1b2c18c8-e962-4995-b445-9ac5766363c3",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/1b69e579-dede-4aa6-b900-8a6dad92c687",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (1b69e579-dede-4aa6-b900-8a6dad92c687)",
+        "text": "Annotation of text at O147  line 10 word 1 on transliteration (1b69e579-dede-4aa6-b900-8a6dad92c687)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/204b696c-bd5b-4b34-a5f0-ba2643a3e5ea",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (204b696c-bd5b-4b34-a5f0-ba2643a3e5ea)",
+        "text": "204b696c-bd5b-4b34-a5f0-ba2643a3e5ea",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (22e8ef2b-1da3-45ef-b50d-94beec254de4)",
+        "text": "Annotation of text at O147  line 4 word 1 on transliteration (22e8ef2b-1da3-45ef-b50d-94beec254de4)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/2617717a-9f8b-4075-8484-b496b326e576",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (2617717a-9f8b-4075-8484-b496b326e576)",
+        "text": "Annotation of text at O147  line 1 word 1 on transliteration (2617717a-9f8b-4075-8484-b496b326e576)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/2e833987-3470-4a6f-a0b6-68da13e40db3",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (2e833987-3470-4a6f-a0b6-68da13e40db3)",
+        "text": "Annotation of text at O147  line 3 word 1 on transliteration (2e833987-3470-4a6f-a0b6-68da13e40db3)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9)",
+        "text": "Annotation of text at O147  line 3 word 4 on transliteration (2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/3036462f-8589-4103-aa78-06b415bb1b4d",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (3036462f-8589-4103-aa78-06b415bb1b4d)",
+        "text": "3036462f-8589-4103-aa78-06b415bb1b4d",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/32f94041-1864-4df7-8e25-bdb34a61455a",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (32f94041-1864-4df7-8e25-bdb34a61455a)",
+        "text": "32f94041-1864-4df7-8e25-bdb34a61455a",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/3a7fc23d-5a29-4fe9-a4c4-95d599b610ac",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (3a7fc23d-5a29-4fe9-a4c4-95d599b610ac)",
+        "text": "3a7fc23d-5a29-4fe9-a4c4-95d599b610ac",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/3b5838ed-d095-43bb-9279-06e32fd1c3c1",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (3b5838ed-d095-43bb-9279-06e32fd1c3c1)",
+        "text": "3b5838ed-d095-43bb-9279-06e32fd1c3c1",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/46c33cad-8e89-4ddd-951f-c176e04bba8c",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (46c33cad-8e89-4ddd-951f-c176e04bba8c)",
+        "text": "46c33cad-8e89-4ddd-951f-c176e04bba8c",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/4b66ca49-41b7-420d-962a-eabf7e3fc051",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (4b66ca49-41b7-420d-962a-eabf7e3fc051)",
+        "text": "4b66ca49-41b7-420d-962a-eabf7e3fc051",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/4e4b4ad3-4c5b-4949-a568-297671a5f2a5",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (4e4b4ad3-4c5b-4949-a568-297671a5f2a5)",
+        "text": "Annotation of text at O147  line 1 word 5 on transliteration (4e4b4ad3-4c5b-4949-a568-297671a5f2a5)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/4ed15719-0613-4b0b-ba84-42a1c3a708e0",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (4ed15719-0613-4b0b-ba84-42a1c3a708e0)",
+        "text": "4ed15719-0613-4b0b-ba84-42a1c3a708e0",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/52f0633b-367b-4bea-a5ab-b35751dbb9ae",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (52f0633b-367b-4bea-a5ab-b35751dbb9ae)",
+        "text": "52f0633b-367b-4bea-a5ab-b35751dbb9ae",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/53cb0219-d6db-4806-ac73-2c7d9f869059",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (53cb0219-d6db-4806-ac73-2c7d9f869059)",
+        "text": "53cb0219-d6db-4806-ac73-2c7d9f869059",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/5411a2d5-217d-4297-a2b9-92d0806ae435",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (5411a2d5-217d-4297-a2b9-92d0806ae435)",
+        "text": "5411a2d5-217d-4297-a2b9-92d0806ae435",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/54ce9aa5-5ea0-4543-845c-b7e67a9de55b",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (54ce9aa5-5ea0-4543-845c-b7e67a9de55b)",
+        "text": "54ce9aa5-5ea0-4543-845c-b7e67a9de55b",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/5becb4fd-4958-48b7-871c-1d98c6e9e510",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (5becb4fd-4958-48b7-871c-1d98c6e9e510)",
+        "text": "5becb4fd-4958-48b7-871c-1d98c6e9e510",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/5c78b0a7-5c8f-46dd-b245-70015825d210",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (5c78b0a7-5c8f-46dd-b245-70015825d210)",
+        "text": "5c78b0a7-5c8f-46dd-b245-70015825d210",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/66044ae7-2b7e-4d90-b735-c69f25554b2a",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (66044ae7-2b7e-4d90-b735-c69f25554b2a)",
+        "text": "66044ae7-2b7e-4d90-b735-c69f25554b2a",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/6621cd1c-a1a3-4d66-98a5-267a686224d8",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (6621cd1c-a1a3-4d66-98a5-267a686224d8)",
+        "text": "6621cd1c-a1a3-4d66-98a5-267a686224d8",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/66c7dc5b-95b5-4de6-b07c-78cd40efc0c4",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (66c7dc5b-95b5-4de6-b07c-78cd40efc0c4)",
+        "text": "66c7dc5b-95b5-4de6-b07c-78cd40efc0c4",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/68096439-4877-4a70-a156-18e3d3e28be5",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (68096439-4877-4a70-a156-18e3d3e28be5)",
+        "text": "68096439-4877-4a70-a156-18e3d3e28be5",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/6aa9eb66-d6d3-49a3-b2bb-9527b0bedb51",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (6aa9eb66-d6d3-49a3-b2bb-9527b0bedb51)",
+        "text": "Annotation of text at O147  line 4 word 1 on transliteration (6aa9eb66-d6d3-49a3-b2bb-9527b0bedb51)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/6ce7cbb6-0821-4cc9-ae80-3f88c40c3430",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (6ce7cbb6-0821-4cc9-ae80-3f88c40c3430)",
+        "text": "6ce7cbb6-0821-4cc9-ae80-3f88c40c3430",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/6d9880fb-49a1-4103-bdfd-a19440f07644",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (6d9880fb-49a1-4103-bdfd-a19440f07644)",
+        "text": "Annotation of text at O147  line 13 word 1 on transliteration (6d9880fb-49a1-4103-bdfd-a19440f07644)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/71e2af8a-7c2c-4a66-87f0-0bac00a9aab5",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (71e2af8a-7c2c-4a66-87f0-0bac00a9aab5)",
+        "text": "71e2af8a-7c2c-4a66-87f0-0bac00a9aab5",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/7b5bc417-06b0-497c-a1b2-db59f36e8b7c",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (7b5bc417-06b0-497c-a1b2-db59f36e8b7c)",
+        "text": "7b5bc417-06b0-497c-a1b2-db59f36e8b7c",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/7cac37cc-ae05-4468-9643-cdeecc1b3134",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (7cac37cc-ae05-4468-9643-cdeecc1b3134)",
+        "text": "7cac37cc-ae05-4468-9643-cdeecc1b3134",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/85156587-47f1-4c4e-8a91-3d45a569109b",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (85156587-47f1-4c4e-8a91-3d45a569109b)",
+        "text": "Annotation of text at O147  line 6 word 1 on transliteration (85156587-47f1-4c4e-8a91-3d45a569109b)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/86661e47-e4c9-46ca-8fb5-69710e9b7fc9",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (86661e47-e4c9-46ca-8fb5-69710e9b7fc9)",
+        "text": "86661e47-e4c9-46ca-8fb5-69710e9b7fc9",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/86bfaccf-619d-45fe-8f73-b76042b0e613",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (86bfaccf-619d-45fe-8f73-b76042b0e613)",
+        "text": "Annotation of text at O147  line 7 word 3 on transliteration (86bfaccf-619d-45fe-8f73-b76042b0e613)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/917e87d1-0d57-47fb-aa76-e871df2681ff",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (917e87d1-0d57-47fb-aa76-e871df2681ff)",
+        "text": "917e87d1-0d57-47fb-aa76-e871df2681ff",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/92c48249-fc81-4382-8e98-984624971aa8",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (92c48249-fc81-4382-8e98-984624971aa8)",
+        "text": "92c48249-fc81-4382-8e98-984624971aa8",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/9a94a4f5-4051-4094-9308-ee85fbb9d117",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (9a94a4f5-4051-4094-9308-ee85fbb9d117)",
+        "text": "Annotation of text at O147  line 3 word 1 on transliteration (9a94a4f5-4051-4094-9308-ee85fbb9d117)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/9bcc994a-90df-4105-b7b7-d854f484ad53",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (9bcc994a-90df-4105-b7b7-d854f484ad53)",
+        "text": "9bcc994a-90df-4105-b7b7-d854f484ad53",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/a10e26ac-3cdc-4df3-bd30-2922fa277bee",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (a10e26ac-3cdc-4df3-bd30-2922fa277bee)",
+        "text": "a10e26ac-3cdc-4df3-bd30-2922fa277bee",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/a2cf4e62-cb85-4853-93ee-bd574ab2a52a",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (a2cf4e62-cb85-4853-93ee-bd574ab2a52a)",
+        "text": "a2cf4e62-cb85-4853-93ee-bd574ab2a52a",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/a30c404b-4b77-4eb7-8f55-c7c66a669a4e",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (a30c404b-4b77-4eb7-8f55-c7c66a669a4e)",
+        "text": "a30c404b-4b77-4eb7-8f55-c7c66a669a4e",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/a336a132-8dc4-4dca-b74e-b4a1f962c13d",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (a336a132-8dc4-4dca-b74e-b4a1f962c13d)",
+        "text": "a336a132-8dc4-4dca-b74e-b4a1f962c13d",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/a740d970-a16b-4aac-8e38-d3e208135bc7",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (a740d970-a16b-4aac-8e38-d3e208135bc7)",
+        "text": "a740d970-a16b-4aac-8e38-d3e208135bc7",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/ac1c80e9-de3d-46e2-9932-15d7864f206b",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (ac1c80e9-de3d-46e2-9932-15d7864f206b)",
+        "text": "ac1c80e9-de3d-46e2-9932-15d7864f206b",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/b1c415e7-c35a-4495-804e-d96d7bad4289",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (b1c415e7-c35a-4495-804e-d96d7bad4289)",
+        "text": "b1c415e7-c35a-4495-804e-d96d7bad4289",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/b2b3dbd0-dd30-499c-8985-1736143f367b",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (b2b3dbd0-dd30-499c-8985-1736143f367b)",
+        "text": "Annotation of text at O147  line 1 word 5 on transliteration (b2b3dbd0-dd30-499c-8985-1736143f367b)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/c0cbcf5f-873f-4ecb-b02b-bec6a860ea51",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (c0cbcf5f-873f-4ecb-b02b-bec6a860ea51)",
+        "text": "c0cbcf5f-873f-4ecb-b02b-bec6a860ea51",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/c0cffdd5-dc64-45dd-a4c0-f6d1025a7174",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (c0cffdd5-dc64-45dd-a4c0-f6d1025a7174)",
+        "text": "c0cffdd5-dc64-45dd-a4c0-f6d1025a7174",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/c8174ebc-dfce-4f96-b7ac-d179246151c1",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (c8174ebc-dfce-4f96-b7ac-d179246151c1)",
+        "text": "c8174ebc-dfce-4f96-b7ac-d179246151c1",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/caf33991-6043-4318-8cd4-21b1486a1321",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (caf33991-6043-4318-8cd4-21b1486a1321)",
+        "text": "Annotation of text at O147  line 6 word 1 on transliteration (caf33991-6043-4318-8cd4-21b1486a1321)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/cc2cf354-24e4-4533-8515-ebb403386508",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (cc2cf354-24e4-4533-8515-ebb403386508)",
+        "text": "cc2cf354-24e4-4533-8515-ebb403386508",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/cfd3c28b-118c-43ca-b4b1-94f9eb41fac9",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (cfd3c28b-118c-43ca-b4b1-94f9eb41fac9)",
+        "text": "cfd3c28b-118c-43ca-b4b1-94f9eb41fac9",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/dcfd952f-2834-431e-b5b4-8166bb4fd761",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (dcfd952f-2834-431e-b5b4-8166bb4fd761)",
+        "text": "dcfd952f-2834-431e-b5b4-8166bb4fd761",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/de02e886-fbd5-4fff-bd7a-eb2fb270515b",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (de02e886-fbd5-4fff-bd7a-eb2fb270515b)",
+        "text": "de02e886-fbd5-4fff-bd7a-eb2fb270515b",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/e3ab97a9-20e4-4d78-9fb7-47633191fc37",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (e3ab97a9-20e4-4d78-9fb7-47633191fc37)",
+        "text": "e3ab97a9-20e4-4d78-9fb7-47633191fc37",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (e692611e-9cd2-4d95-8cc9-b1f9a3e3d813)",
+        "text": "Annotation of text at O147  line 8 word 2 on transliteration (e692611e-9cd2-4d95-8cc9-b1f9a3e3d813)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/eb5d1b13-f5cd-4235-9bf1-69a3c6c9cb30",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (eb5d1b13-f5cd-4235-9bf1-69a3c6c9cb30)",
+        "text": "Annotation of text at O147  line 12 word 1 on transliteration (eb5d1b13-f5cd-4235-9bf1-69a3c6c9cb30)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/ebe58ce7-e6a5-4981-a525-209c2961f795",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (ebe58ce7-e6a5-4981-a525-209c2961f795)",
+        "text": "ebe58ce7-e6a5-4981-a525-209c2961f795",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/ece8bf7a-52c1-41c3-b0be-a5a11475af03",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (ece8bf7a-52c1-41c3-b0be-a5a11475af03)",
+        "text": "ece8bf7a-52c1-41c3-b0be-a5a11475af03",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/fece81a5-0c1e-474d-81e8-b1f5f648daa4",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "Annotation of text at O147  line  char  on transliteration (fece81a5-0c1e-474d-81e8-b1f5f648daa4)",
+        "text": "fece81a5-0c1e-474d-81e8-b1f5f648daa4",
         "data": {}
       },
       {
@@ -37015,52 +36997,52 @@ var tree={
         "data": {}
       },
       {
-        "id": "n65744ca60bba4d59af61171cf29f026fb2",
+        "id": "naed2957b4d63471fb07f801f671225d0b2",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n65744ca60bba4d59af61171cf29f026fb2",
+        "text": "naed2957b4d63471fb07f801f671225d0b2",
         "data": {}
       },
       {
-        "id": "n65744ca60bba4d59af61171cf29f026fb3",
+        "id": "naed2957b4d63471fb07f801f671225d0b3",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n65744ca60bba4d59af61171cf29f026fb3",
+        "text": "naed2957b4d63471fb07f801f671225d0b3",
         "data": {}
       },
       {
-        "id": "n65744ca60bba4d59af61171cf29f026fb4",
+        "id": "naed2957b4d63471fb07f801f671225d0b4",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n65744ca60bba4d59af61171cf29f026fb4",
+        "text": "naed2957b4d63471fb07f801f671225d0b4",
         "data": {}
       },
       {
-        "id": "n65744ca60bba4d59af61171cf29f026fb5",
+        "id": "naed2957b4d63471fb07f801f671225d0b5",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n65744ca60bba4d59af61171cf29f026fb5",
+        "text": "naed2957b4d63471fb07f801f671225d0b5",
         "data": {}
       },
       {
-        "id": "n65744ca60bba4d59af61171cf29f026fb6",
+        "id": "naed2957b4d63471fb07f801f671225d0b6",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n65744ca60bba4d59af61171cf29f026fb6",
+        "text": "naed2957b4d63471fb07f801f671225d0b6",
         "data": {}
       },
       {
-        "id": "n65744ca60bba4d59af61171cf29f026fb7",
+        "id": "naed2957b4d63471fb07f801f671225d0b7",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n65744ca60bba4d59af61171cf29f026fb7",
+        "text": "naed2957b4d63471fb07f801f671225d0b7",
         "data": {}
       },
       {
-        "id": "n65744ca60bba4d59af61171cf29f026fb8",
+        "id": "naed2957b4d63471fb07f801f671225d0b8",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n65744ca60bba4d59af61171cf29f026fb8",
+        "text": "naed2957b4d63471fb07f801f671225d0b8",
         "data": {}
       },
       {
@@ -44925,6 +44907,10 @@ var tree={
             }
           },
           "from": {
+            "http://www.purl.org/cuneiform/isRepresentedBy": {
+              "instancecount": 0,
+              "http://www.purl.org/graphemon#CuneiformWedge": 1
+            },
             "http://www.w3.org/ns/oa#hasSource": {
               "instancecount": 0,
               "http://www.w3.org/ns/oa#SpecificResource": 1
