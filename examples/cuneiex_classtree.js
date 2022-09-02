@@ -15255,6 +15255,15 @@ var tree={
         "text": "GraphemeVariant (purl:graphemon#GraphemeVariant) [49]",
         "data": {
           "to": {
+            "http://www.purl.org/graphemon#asSVG": {
+              "instancecount": 1
+            },
+            "http://www.purl.org/graphemon#hasGottsteinCode": {
+              "instancecount": 1
+            },
+            "http://www.purl.org/graphemon#hasPaleoCode": {
+              "instancecount": 1
+            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
@@ -15265,7 +15274,7 @@ var tree={
           },
           "from": {}
         },
-        "instancecount": 2
+        "instancecount": 5
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/signlist/character_al_reading_al",
@@ -15925,6 +15934,9 @@ var tree={
         "text": "WordForm (lemon:WordForm) [32]",
         "data": {
           "to": {
+            "http://purl.org/dc/elements/1.1/license": {
+              "instancecount": 1
+            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
@@ -15940,7 +15952,7 @@ var tree={
             }
           }
         },
-        "instancecount": 2
+        "instancecount": 3
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/dict/ban_wordsense",
@@ -16209,12 +16221,15 @@ var tree={
         "data": {
           "to": {
             "http://lemon-model.net/lemon#form": {
-              "instancecount": 2,
-              "http://lemon-model.net/lemon#WordForm": 2
+              "instancecount": 1,
+              "http://lemon-model.net/lemon#WordForm": 1
             },
             "http://lemon-model.net/lemon#sense": {
               "instancecount": 1,
               "http://lemon-model.net/lemon#LexicalSense": 1
+            },
+            "http://purl.org/dc/elements/1.1/license": {
+              "instancecount": 1
             },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
@@ -16224,7 +16239,11 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://lemon-model.net/lemon#entry": {
+              "instancecount": 0
+            }
+          }
         },
         "instancecount": 5
       },
@@ -20880,6 +20899,9 @@ var tree={
             },
             "http://www.w3.org/2000/01/rdf-schema#label": {
               "instancecount": 1
+            },
+            "http://www.w3.org/2004/02/skos/core#definition": {
+              "instancecount": 1
             }
           },
           "from": {
@@ -20893,7 +20915,7 @@ var tree={
             }
           }
         },
-        "instancecount": 5
+        "instancecount": 6
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/tch92_transliteration1_obverse_line10_char1",
@@ -25154,11 +25176,7 @@ var tree={
             "http://www.purl.org/cuneiform/lineNumber": {
               "instancecount": 1
             },
-            "http://www.purl.org/cuneiform/nextWord": {
-              "instancecount": 1,
-              "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
-            },
-            "http://www.purl.org/cuneiform/prevWord": {
+            "http://www.purl.org/cuneiform/nextChar": {
               "instancecount": 1,
               "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
             },
@@ -25174,17 +25192,13 @@ var tree={
             }
           },
           "from": {
-            "http://www.purl.org/cuneiform/nextWord": {
-              "instancecount": 0,
-              "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
-            },
             "http://www.purl.org/cuneiform/prevWord": {
               "instancecount": 0,
               "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
             }
           }
         },
-        "instancecount": 6
+        "instancecount": 5
       },
       {
         "id": "http://lemon-model.net/lemon#LexicalEntity",
@@ -25722,504 +25736,504 @@ var tree={
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/0032a19b-e11a-4a83-884f-b8e1bbb0e489_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 char 0 on transliteration (0032a19b-e11a-4a83-884f-b8e1bbb0e489_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 char 0 on transliteration (0032a19b-e11a-4a83-884f-b8e1bbb0e489_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/02e2a4b9-acd5-4d73-be6f-2a2458acb7a2_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (02e2a4b9-acd5-4d73-be6f-2a2458acb7a2_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (02e2a4b9-acd5-4d73-be6f-2a2458acb7a2_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/0789aa33-43ab-442f-b8d8-d0f97c2317e7_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 5 word 4 on transliteration (0789aa33-43ab-442f-b8d8-d0f97c2317e7_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 5 word 4 on transliteration (0789aa33-43ab-442f-b8d8-d0f97c2317e7_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/08179cf1-06c3-4f88-8093-cd2c361e01c3_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 4 word 3 on transliteration (08179cf1-06c3-4f88-8093-cd2c361e01c3_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 4 word 3 on transliteration (08179cf1-06c3-4f88-8093-cd2c361e01c3_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/0a8d70cf-afbc-45ea-9f4a-d810f36cf459_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (0a8d70cf-afbc-45ea-9f4a-d810f36cf459_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (0a8d70cf-afbc-45ea-9f4a-d810f36cf459_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/0cbcaa7c-5533-4440-b56c-839df2a2174d_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (0cbcaa7c-5533-4440-b56c-839df2a2174d_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (0cbcaa7c-5533-4440-b56c-839df2a2174d_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/0f309c73-23b9-4041-94eb-e8eac5f6f531_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 2 word 2 on transliteration (0f309c73-23b9-4041-94eb-e8eac5f6f531_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 2 word 2 on transliteration (0f309c73-23b9-4041-94eb-e8eac5f6f531_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/0f81e76f-5eee-46e1-9743-709387f56bd7_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (0f81e76f-5eee-46e1-9743-709387f56bd7_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (0f81e76f-5eee-46e1-9743-709387f56bd7_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/11c71b4a-fc6a-47b1-ba10-f27377513be6_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (11c71b4a-fc6a-47b1-ba10-f27377513be6_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (11c71b4a-fc6a-47b1-ba10-f27377513be6_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/13e760d4-d055-451e-abec-27abde90feeb_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (13e760d4-d055-451e-abec-27abde90feeb_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (13e760d4-d055-451e-abec-27abde90feeb_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/16971768-eb59-46ec-9587-6806fd01a618_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (16971768-eb59-46ec-9587-6806fd01a618_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (16971768-eb59-46ec-9587-6806fd01a618_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/19b94580-e18c-4e56-8387-c4525b992200_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 char 0 on transliteration (19b94580-e18c-4e56-8387-c4525b992200_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 char 0 on transliteration (19b94580-e18c-4e56-8387-c4525b992200_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/1b2c18c8-e962-4995-b445-9ac5766363c3_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (1b2c18c8-e962-4995-b445-9ac5766363c3_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (1b2c18c8-e962-4995-b445-9ac5766363c3_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/1b69e579-dede-4aa6-b900-8a6dad92c687_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 10 word 1 on transliteration (1b69e579-dede-4aa6-b900-8a6dad92c687_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 10 word 1 on transliteration (1b69e579-dede-4aa6-b900-8a6dad92c687_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/204b696c-bd5b-4b34-a5f0-ba2643a3e5ea_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (204b696c-bd5b-4b34-a5f0-ba2643a3e5ea_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (204b696c-bd5b-4b34-a5f0-ba2643a3e5ea_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 5 word 2 on transliteration (22e8ef2b-1da3-45ef-b50d-94beec254de4_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 5 word 2 on transliteration (22e8ef2b-1da3-45ef-b50d-94beec254de4_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/2617717a-9f8b-4075-8484-b496b326e576_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 1 word 3 on transliteration (2617717a-9f8b-4075-8484-b496b326e576_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 1 word 3 on transliteration (2617717a-9f8b-4075-8484-b496b326e576_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/2e833987-3470-4a6f-a0b6-68da13e40db3_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 3 word 1 on transliteration (2e833987-3470-4a6f-a0b6-68da13e40db3_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 3 word 1 on transliteration (2e833987-3470-4a6f-a0b6-68da13e40db3_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 4 word 3 on transliteration (2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 4 word 3 on transliteration (2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/3036462f-8589-4103-aa78-06b415bb1b4d_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (3036462f-8589-4103-aa78-06b415bb1b4d_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (3036462f-8589-4103-aa78-06b415bb1b4d_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/32f94041-1864-4df7-8e25-bdb34a61455a_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (32f94041-1864-4df7-8e25-bdb34a61455a_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (32f94041-1864-4df7-8e25-bdb34a61455a_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/3a7fc23d-5a29-4fe9-a4c4-95d599b610ac_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 char 0 on transliteration (3a7fc23d-5a29-4fe9-a4c4-95d599b610ac_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 char 0 on transliteration (3a7fc23d-5a29-4fe9-a4c4-95d599b610ac_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/3b5838ed-d095-43bb-9279-06e32fd1c3c1_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (3b5838ed-d095-43bb-9279-06e32fd1c3c1_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (3b5838ed-d095-43bb-9279-06e32fd1c3c1_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/46c33cad-8e89-4ddd-951f-c176e04bba8c_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 char 0 on transliteration (46c33cad-8e89-4ddd-951f-c176e04bba8c_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 char 0 on transliteration (46c33cad-8e89-4ddd-951f-c176e04bba8c_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/4b66ca49-41b7-420d-962a-eabf7e3fc051_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (4b66ca49-41b7-420d-962a-eabf7e3fc051_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (4b66ca49-41b7-420d-962a-eabf7e3fc051_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/4e4b4ad3-4c5b-4949-a568-297671a5f2a5_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 2 word 2 on transliteration (4e4b4ad3-4c5b-4949-a568-297671a5f2a5_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 2 word 2 on transliteration (4e4b4ad3-4c5b-4949-a568-297671a5f2a5_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/4ed15719-0613-4b0b-ba84-42a1c3a708e0_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (4ed15719-0613-4b0b-ba84-42a1c3a708e0_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (4ed15719-0613-4b0b-ba84-42a1c3a708e0_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/52f0633b-367b-4bea-a5ab-b35751dbb9ae_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (52f0633b-367b-4bea-a5ab-b35751dbb9ae_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (52f0633b-367b-4bea-a5ab-b35751dbb9ae_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/53cb0219-d6db-4806-ac73-2c7d9f869059_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (53cb0219-d6db-4806-ac73-2c7d9f869059_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (53cb0219-d6db-4806-ac73-2c7d9f869059_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/5411a2d5-217d-4297-a2b9-92d0806ae435_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (5411a2d5-217d-4297-a2b9-92d0806ae435_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (5411a2d5-217d-4297-a2b9-92d0806ae435_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/54ce9aa5-5ea0-4543-845c-b7e67a9de55b_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (54ce9aa5-5ea0-4543-845c-b7e67a9de55b_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (54ce9aa5-5ea0-4543-845c-b7e67a9de55b_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/5becb4fd-4958-48b7-871c-1d98c6e9e510_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 char 0 on transliteration (5becb4fd-4958-48b7-871c-1d98c6e9e510_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 char 0 on transliteration (5becb4fd-4958-48b7-871c-1d98c6e9e510_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/5c78b0a7-5c8f-46dd-b245-70015825d210_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (5c78b0a7-5c8f-46dd-b245-70015825d210_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (5c78b0a7-5c8f-46dd-b245-70015825d210_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/66044ae7-2b7e-4d90-b735-c69f25554b2a_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (66044ae7-2b7e-4d90-b735-c69f25554b2a_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (66044ae7-2b7e-4d90-b735-c69f25554b2a_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/6621cd1c-a1a3-4d66-98a5-267a686224d8_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (6621cd1c-a1a3-4d66-98a5-267a686224d8_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (6621cd1c-a1a3-4d66-98a5-267a686224d8_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/66c7dc5b-95b5-4de6-b07c-78cd40efc0c4_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (66c7dc5b-95b5-4de6-b07c-78cd40efc0c4_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (66c7dc5b-95b5-4de6-b07c-78cd40efc0c4_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/68096439-4877-4a70-a156-18e3d3e28be5_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (68096439-4877-4a70-a156-18e3d3e28be5_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (68096439-4877-4a70-a156-18e3d3e28be5_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/6aa9eb66-d6d3-49a3-b2bb-9527b0bedb51_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 4 word 1 on transliteration (6aa9eb66-d6d3-49a3-b2bb-9527b0bedb51_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 4 word 1 on transliteration (6aa9eb66-d6d3-49a3-b2bb-9527b0bedb51_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/6ce7cbb6-0821-4cc9-ae80-3f88c40c3430_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (6ce7cbb6-0821-4cc9-ae80-3f88c40c3430_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (6ce7cbb6-0821-4cc9-ae80-3f88c40c3430_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/6d9880fb-49a1-4103-bdfd-a19440f07644_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 13 word 1 on transliteration (6d9880fb-49a1-4103-bdfd-a19440f07644_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 13 word 1 on transliteration (6d9880fb-49a1-4103-bdfd-a19440f07644_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/71e2af8a-7c2c-4a66-87f0-0bac00a9aab5_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (71e2af8a-7c2c-4a66-87f0-0bac00a9aab5_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (71e2af8a-7c2c-4a66-87f0-0bac00a9aab5_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/7b5bc417-06b0-497c-a1b2-db59f36e8b7c_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (7b5bc417-06b0-497c-a1b2-db59f36e8b7c_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (7b5bc417-06b0-497c-a1b2-db59f36e8b7c_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/7cac37cc-ae05-4468-9643-cdeecc1b3134_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (7cac37cc-ae05-4468-9643-cdeecc1b3134_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (7cac37cc-ae05-4468-9643-cdeecc1b3134_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/85156587-47f1-4c4e-8a91-3d45a569109b_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 6 word 1 on transliteration (85156587-47f1-4c4e-8a91-3d45a569109b_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 6 word 1 on transliteration (85156587-47f1-4c4e-8a91-3d45a569109b_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/86661e47-e4c9-46ca-8fb5-69710e9b7fc9_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (86661e47-e4c9-46ca-8fb5-69710e9b7fc9_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (86661e47-e4c9-46ca-8fb5-69710e9b7fc9_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/86bfaccf-619d-45fe-8f73-b76042b0e613_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 7 word 3 on transliteration (86bfaccf-619d-45fe-8f73-b76042b0e613_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 7 word 3 on transliteration (86bfaccf-619d-45fe-8f73-b76042b0e613_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/917e87d1-0d57-47fb-aa76-e871df2681ff_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (917e87d1-0d57-47fb-aa76-e871df2681ff_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (917e87d1-0d57-47fb-aa76-e871df2681ff_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/92c48249-fc81-4382-8e98-984624971aa8_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (92c48249-fc81-4382-8e98-984624971aa8_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (92c48249-fc81-4382-8e98-984624971aa8_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/9a94a4f5-4051-4094-9308-ee85fbb9d117_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 3 word 1 on transliteration (9a94a4f5-4051-4094-9308-ee85fbb9d117_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 3 word 1 on transliteration (9a94a4f5-4051-4094-9308-ee85fbb9d117_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/9bcc994a-90df-4105-b7b7-d854f484ad53_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (9bcc994a-90df-4105-b7b7-d854f484ad53_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (9bcc994a-90df-4105-b7b7-d854f484ad53_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/a10e26ac-3cdc-4df3-bd30-2922fa277bee_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (a10e26ac-3cdc-4df3-bd30-2922fa277bee_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (a10e26ac-3cdc-4df3-bd30-2922fa277bee_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/a2cf4e62-cb85-4853-93ee-bd574ab2a52a_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (a2cf4e62-cb85-4853-93ee-bd574ab2a52a_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (a2cf4e62-cb85-4853-93ee-bd574ab2a52a_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/a30c404b-4b77-4eb7-8f55-c7c66a669a4e_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (a30c404b-4b77-4eb7-8f55-c7c66a669a4e_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (a30c404b-4b77-4eb7-8f55-c7c66a669a4e_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/a336a132-8dc4-4dca-b74e-b4a1f962c13d_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (a336a132-8dc4-4dca-b74e-b4a1f962c13d_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (a336a132-8dc4-4dca-b74e-b4a1f962c13d_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/a740d970-a16b-4aac-8e38-d3e208135bc7_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (a740d970-a16b-4aac-8e38-d3e208135bc7_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (a740d970-a16b-4aac-8e38-d3e208135bc7_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/ac1c80e9-de3d-46e2-9932-15d7864f206b_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (ac1c80e9-de3d-46e2-9932-15d7864f206b_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (ac1c80e9-de3d-46e2-9932-15d7864f206b_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/b1c415e7-c35a-4495-804e-d96d7bad4289_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (b1c415e7-c35a-4495-804e-d96d7bad4289_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (b1c415e7-c35a-4495-804e-d96d7bad4289_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/b2b3dbd0-dd30-499c-8985-1736143f367b_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 1 word 5 on transliteration (b2b3dbd0-dd30-499c-8985-1736143f367b_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 1 word 5 on transliteration (b2b3dbd0-dd30-499c-8985-1736143f367b_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/c0cbcf5f-873f-4ecb-b02b-bec6a860ea51_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (c0cbcf5f-873f-4ecb-b02b-bec6a860ea51_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (c0cbcf5f-873f-4ecb-b02b-bec6a860ea51_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/c0cffdd5-dc64-45dd-a4c0-f6d1025a7174_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (c0cffdd5-dc64-45dd-a4c0-f6d1025a7174_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (c0cffdd5-dc64-45dd-a4c0-f6d1025a7174_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/c8174ebc-dfce-4f96-b7ac-d179246151c1_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (c8174ebc-dfce-4f96-b7ac-d179246151c1_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (c8174ebc-dfce-4f96-b7ac-d179246151c1_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/caf33991-6043-4318-8cd4-21b1486a1321_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 6 word 2 on transliteration (caf33991-6043-4318-8cd4-21b1486a1321_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 6 word 2 on transliteration (caf33991-6043-4318-8cd4-21b1486a1321_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/cc2cf354-24e4-4533-8515-ebb403386508_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (cc2cf354-24e4-4533-8515-ebb403386508_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (cc2cf354-24e4-4533-8515-ebb403386508_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/cfd3c28b-118c-43ca-b4b1-94f9eb41fac9_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (cfd3c28b-118c-43ca-b4b1-94f9eb41fac9_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (cfd3c28b-118c-43ca-b4b1-94f9eb41fac9_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/dcfd952f-2834-431e-b5b4-8166bb4fd761_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (dcfd952f-2834-431e-b5b4-8166bb4fd761_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (dcfd952f-2834-431e-b5b4-8166bb4fd761_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/de02e886-fbd5-4fff-bd7a-eb2fb270515b_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (de02e886-fbd5-4fff-bd7a-eb2fb270515b_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (de02e886-fbd5-4fff-bd7a-eb2fb270515b_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/e3ab97a9-20e4-4d78-9fb7-47633191fc37_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (e3ab97a9-20e4-4d78-9fb7-47633191fc37_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (e3ab97a9-20e4-4d78-9fb7-47633191fc37_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 8 word 3 on transliteration (e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 8 word 3 on transliteration (e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/eb5d1b13-f5cd-4235-9bf1-69a3c6c9cb30_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 12 word 1 on transliteration (eb5d1b13-f5cd-4235-9bf1-69a3c6c9cb30_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 12 word 1 on transliteration (eb5d1b13-f5cd-4235-9bf1-69a3c6c9cb30_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/ebe58ce7-e6a5-4981-a525-209c2961f795_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (ebe58ce7-e6a5-4981-a525-209c2961f795_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (ebe58ce7-e6a5-4981-a525-209c2961f795_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/ece8bf7a-52c1-41c3-b0be-a5a11475af03_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (ece8bf7a-52c1-41c3-b0be-a5a11475af03_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (ece8bf7a-52c1-41c3-b0be-a5a11475af03_target1_selector)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/fece81a5-0c1e-474d-81e8-b1f5f648daa4_target1_selector",
         "parent": "http://www.w3.org/ns/oa#TextPositionSelector",
         "type": "instance",
-        "text": "Annotation target selector of Annotation of of text section at O147 transliteration  line 0 word 0 on transliteration (fece81a5-0c1e-474d-81e8-b1f5f648daa4_target1_selector)",
+        "text": "Annotation target selector of Annotation of text section at O147 transliteration  line 0 word 0 on transliteration (fece81a5-0c1e-474d-81e8-b1f5f648daa4_target1_selector)",
         "data": {}
       },
       {
@@ -37001,52 +37015,52 @@ var tree={
         "data": {}
       },
       {
-        "id": "n8df1c90becd54045a0a3119df616eda7b2",
+        "id": "n65744ca60bba4d59af61171cf29f026fb2",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n8df1c90becd54045a0a3119df616eda7b2",
+        "text": "n65744ca60bba4d59af61171cf29f026fb2",
         "data": {}
       },
       {
-        "id": "n8df1c90becd54045a0a3119df616eda7b3",
+        "id": "n65744ca60bba4d59af61171cf29f026fb3",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n8df1c90becd54045a0a3119df616eda7b3",
+        "text": "n65744ca60bba4d59af61171cf29f026fb3",
         "data": {}
       },
       {
-        "id": "n8df1c90becd54045a0a3119df616eda7b4",
+        "id": "n65744ca60bba4d59af61171cf29f026fb4",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n8df1c90becd54045a0a3119df616eda7b4",
+        "text": "n65744ca60bba4d59af61171cf29f026fb4",
         "data": {}
       },
       {
-        "id": "n8df1c90becd54045a0a3119df616eda7b5",
+        "id": "n65744ca60bba4d59af61171cf29f026fb5",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n8df1c90becd54045a0a3119df616eda7b5",
+        "text": "n65744ca60bba4d59af61171cf29f026fb5",
         "data": {}
       },
       {
-        "id": "n8df1c90becd54045a0a3119df616eda7b6",
+        "id": "n65744ca60bba4d59af61171cf29f026fb6",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n8df1c90becd54045a0a3119df616eda7b6",
+        "text": "n65744ca60bba4d59af61171cf29f026fb6",
         "data": {}
       },
       {
-        "id": "n8df1c90becd54045a0a3119df616eda7b7",
+        "id": "n65744ca60bba4d59af61171cf29f026fb7",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n8df1c90becd54045a0a3119df616eda7b7",
+        "text": "n65744ca60bba4d59af61171cf29f026fb7",
         "data": {}
       },
       {
-        "id": "n8df1c90becd54045a0a3119df616eda7b8",
+        "id": "n65744ca60bba4d59af61171cf29f026fb8",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n8df1c90becd54045a0a3119df616eda7b8",
+        "text": "n65744ca60bba4d59af61171cf29f026fb8",
         "data": {}
       },
       {
