@@ -1630,7 +1630,9 @@ class OntDocGeneration:
                         image3dannos.add(str(svglit))
             if pred=="http://www.w3.org/ns/oa#hasSelector" and tup[0]==URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type") and tup[1]==URIRef("http://www.w3.org/ns/oa#TextPositionSelector"):
                 curanno={}
+                print("ADDING TEXTANNO: "+str(tup))
                 for txtlit in graph.predicate_objects(object):
+                    print("ADDING TEXTANNO: "+str(txtlit))
                     if str(txtlit[0])=="http://www.w3.org/1999/02/22-rdf-syntax-ns#value":
                         curanno["exact"]=str(txtlit[1])
                     elif str(txtlit[0])=="http://www.w3.org/ns/oa#start":
@@ -2029,6 +2031,7 @@ class OntDocGeneration:
             if len(foundmedia["image"])>3:
                 f.write(imagecarouselfooter)
             if len(textannos)>=0:
+                print("TEXTANNOS: "+str(textannos))
                 for textann in textannos:
                     f.write("<span class=\"textanno\" from=\"\" to=\"\" exact=\"\"></span>")
             for audio in foundmedia["audio"]:
