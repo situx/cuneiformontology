@@ -1628,7 +1628,7 @@ class OntDocGeneration:
                         imageannos.add(str(svglit))
                     elif ("POINT" in str(svglit).upper() or "POLYGON" in str(svglit).upper() or "LINESTRING" in str(svglit).upper()):
                         image3dannos.add(str(svglit))
-            if pred=="http://www.w3.org/ns/oa#hasSelector" and tup[0]==URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type") and (tup[1]==URIRef("http://www.w3.org/ns/oa#TextPositionSelector"):
+            if pred=="http://www.w3.org/ns/oa#hasSelector" and tup[0]==URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type") and tup[1]==URIRef("http://www.w3.org/ns/oa#TextPositionSelector"):
                 curanno={}
                 for txtlit in graph.predicate_objects(object):
                     if str(txtlit[0])=="http://www.w3.org/1999/02/22-rdf-syntax-ns#value":
