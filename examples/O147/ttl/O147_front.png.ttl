@@ -76,21 +76,37 @@ oa:WKTSelector a owl:Class ;
     rdfs:label "WKT Selector"@en ;
     rdfs:subClassOf oa:Selector .
 
-<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_86c668c6-2039-42f4-b447-cb7b014ed130> rdfs:label "Object To PCA"@en ;
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_86c668c6-2039-42f4-b447-cb7b014ed130> rdfs:label geocrs:CoordinateOperation,
+        "Object To PCA"@en ;
     geocrs:parameter <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_86c668c6-2039-42f4-b447-cb7b014ed130_xaxis_translation>,
         <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_86c668c6-2039-42f4-b447-cb7b014ed130_yaxis_translation>,
         <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_86c668c6-2039-42f4-b447-cb7b014ed130_zaxis_translation> ;
     geocrs:sourceCRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
 
-<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_86c668c6-2039-42f4-b447-cb7b014ed130_xaxis_translation> rdfs:label "X-axis translation"@en ;
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_86c668c6-2039-42f4-b447-cb7b014ed130_xaxis_translation> a geocrs:OperationParameter ;
+    rdfs:label "X-axis translation"@en ;
+    geocrs:usesValue <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_86c668c6-2039-42f4-b447-cb7b014ed130_xaxis_translation_value> .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_86c668c6-2039-42f4-b447-cb7b014ed130_xaxis_translation_value> a geocrs:OperationParameterValue ;
+    rdfs:label "X-axis translation value"@en ;
     om:hasUnit om:millimetre ;
     rdf:value 0e+00 .
 
-<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_86c668c6-2039-42f4-b447-cb7b014ed130_yaxis_translation> rdfs:label "Y-axis translation"@en ;
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_86c668c6-2039-42f4-b447-cb7b014ed130_yaxis_translation> a geocrs:OperationParameter ;
+    rdfs:label "Y-axis translation"@en ;
+    geocrs:usesValue <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_86c668c6-2039-42f4-b447-cb7b014ed130_yaxis_translation_value> .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_86c668c6-2039-42f4-b447-cb7b014ed130_yaxis_translation_value> a geocrs:OperationParameterValue ;
+    rdfs:label "Y-axis translation value"@en ;
     om:hasUnit om:millimetre ;
     rdf:value 0e+00 .
 
-<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_86c668c6-2039-42f4-b447-cb7b014ed130_zaxis_translation> rdfs:label "Z-axis translation"@en ;
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_86c668c6-2039-42f4-b447-cb7b014ed130_zaxis_translation> a geocrs:OperationParameter ;
+    rdfs:label "Z-axis translation"@en ;
+    geocrs:usesValue <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_86c668c6-2039-42f4-b447-cb7b014ed130_zaxis_translation_value> .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_86c668c6-2039-42f4-b447-cb7b014ed130_zaxis_translation_value> a geocrs:OperationParameterValue ;
+    rdfs:label "Z-axis translation value"@en ;
     om:hasUnit om:millimetre ;
     rdf:value 0e+00 .
 
