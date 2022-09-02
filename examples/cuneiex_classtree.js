@@ -41,14 +41,14 @@ var tree={
       {
         "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1",
         "parent": "http://www.gigamesh.eu/ont#Mesh",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "TCH92_mesh1 (TCH92_mesh1)",
         "data": {}
       },
       {
         "id": "http://www.gigamesh.eu/ont#Mesh",
         "parent": "http://www.w3.org/ns/prov#Entity",
-        "type": "class",
+        "type": "halfgeoclass",
         "text": "Mesh [5]",
         "data": {
           "to": {
@@ -237,7 +237,12 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://purl.org/dc/terms/contributor": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 3
       },
@@ -266,7 +271,30 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#totalNumberOfVertices": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#NaNVertices": 1,
+              "http://www.gigamesh.eu/ont#BorderVertices": 1,
+              "http://www.gigamesh.eu/ont#CircleCenterVertices": 1,
+              "http://www.gigamesh.eu/ont#FiniteFunctionValueVertices": 1,
+              "http://www.gigamesh.eu/ont#LocalFunctionMaxValueVertices": 1,
+              "http://www.gigamesh.eu/ont#LocalFunctionMinValueVertices": 1,
+              "http://www.gigamesh.eu/ont#ManuallyAddedVertices": 1,
+              "http://www.gigamesh.eu/ont#NonManifoldVertices": 1,
+              "http://www.gigamesh.eu/ont#SelectedVertices": 1,
+              "http://www.gigamesh.eu/ont#SingularVertices": 1,
+              "http://www.gigamesh.eu/ont#SyntheticVertices": 1,
+              "http://www.gigamesh.eu/ont#VertexIsolated": 1,
+              "http://www.gigamesh.eu/ont#VertexNormalLength": 1,
+              "http://www.gigamesh.eu/ont#VerticesOnInvertedEdge": 1,
+              "http://www.gigamesh.eu/ont#VerticesPartOfZeroAreaFace": 1
+            }
+          }
         },
         "instancecount": 3
       },
@@ -300,7 +328,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#NaNVertices": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -333,7 +366,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#vertexNormalLength": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -366,7 +404,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#vertexIsolated": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -399,7 +442,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#borderVertices": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -432,7 +480,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#nonManifoldVertices": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -465,7 +518,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#singularVertices": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -498,7 +556,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#verticesOnInvertedEdge": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -531,7 +594,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#verticesPartOfZeroAreaFace": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -564,7 +632,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#syntheticVertices": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -597,7 +670,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#manuallyAddedVertices": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -630,7 +708,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#circleCenterVertices": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -663,7 +746,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#selectedVertices": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -696,7 +784,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#finiteFunctionValueVertices": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -729,7 +822,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#localFunctionValueMinVertices": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -762,7 +860,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfVertices": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#localFunctionValueMaxVertices": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -791,7 +894,28 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#totalNumberOfFaces": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            },
+            "http://www.wikidata.org/prop/direct/P361": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#BorderFaces": 1,
+              "http://www.gigamesh.eu/ont#BorderFacesBridgeTriConnection": 1,
+              "http://www.gigamesh.eu/ont#BridgeBorderFaces": 1,
+              "http://www.gigamesh.eu/ont#DanglingBorderFaces": 1,
+              "http://www.gigamesh.eu/ont#InvertedFaces": 1,
+              "http://www.gigamesh.eu/ont#ManifoldFaces": 1,
+              "http://www.gigamesh.eu/ont#NonManifoldFaces": 1,
+              "http://www.gigamesh.eu/ont#SelectedFaces": 1,
+              "http://www.gigamesh.eu/ont#SoloFaces": 1,
+              "http://www.gigamesh.eu/ont#StickyFaces": 1,
+              "http://www.gigamesh.eu/ont#SyntheticVertexFaces": 1,
+              "http://www.gigamesh.eu/ont#ThreeBorderVertexFaces": 1,
+              "http://www.gigamesh.eu/ont#ZeroAreaFaces": 1
+            }
+          }
         },
         "instancecount": 3
       },
@@ -824,7 +948,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfFaces": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#soloFaces": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -857,7 +986,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfFaces": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#borderFaces": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -890,7 +1024,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfFaces": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#threeBorderVertexFaces": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -923,7 +1062,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfFaces": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#borderFacesBridgeTriConnection": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -956,7 +1100,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfFaces": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#bridgeBorderFaces": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -989,7 +1138,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfFaces": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#danglingBorderFaces": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -1022,7 +1176,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfFaces": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#manifoldFaces": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -1055,7 +1214,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfFaces": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#nonManifoldFaces": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -1088,7 +1252,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfFaces": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#stickyFaces": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -1121,7 +1290,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfFaces": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#zeroAreaFaces": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -1154,7 +1328,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfFaces": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#invertedFaces": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -1187,7 +1366,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfFaces": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#selectedFaces": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -1220,7 +1404,12 @@ var tree={
               "http://www.gigamesh.eu/ont#TotalNumberOfFaces": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#syntheticVertexFaces": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -1249,21 +1438,26 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.gigamesh.eu/ont#amountOfConnectedComponents": {
+              "instancecount": 0,
+              "http://www.gigamesh.eu/ont#Mesh": 1
+            }
+          }
         },
         "instancecount": 3
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_geom",
         "parent": "http://www.opengis.net/ont/geosparql#Geometry",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "TCH92_mesh1 Bounding Box (TCH92_mesh1_geom)",
         "data": {}
       },
       {
         "id": "http://www.opengis.net/ont/geosparql#Geometry",
         "parent": "#",
-        "type": "class",
+        "type": "geoclass",
         "text": "Geometry (gsp:Geometry) [4]",
         "data": {}
       },
@@ -6080,7 +6274,12 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.w3.org/ns/oa#hasSelector": {
+              "instancecount": 0,
+              "http://www.w3.org/2002/07/owl#NamedIndividual": 1
+            }
+          }
         },
         "instancecount": 3
       },
@@ -7135,7 +7334,12 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.w3.org/ns/oa#hasSelector": {
+              "instancecount": 0,
+              "http://www.w3.org/2002/07/owl#NamedIndividual": 1
+            }
+          }
         },
         "instancecount": 6
       },
@@ -14480,7 +14684,12 @@ var tree={
               "http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme": 50
             }
           },
-          "from": {}
+          "from": {
+            "http://www.purl.org/cuneiform/signs": {
+              "instancecount": 0,
+              "http://www.purl.org/cuneiform/Transliteration": 1
+            }
+          }
         },
         "instancecount": 58
       },
@@ -14510,7 +14719,12 @@ var tree={
               "http://www.purl.org/graphemon#GraphemeReading": 57
             }
           },
-          "from": {}
+          "from": {
+            "http://www.purl.org/cuneiform/signreadings": {
+              "instancecount": 0,
+              "http://www.purl.org/cuneiform/Transliteration": 1
+            }
+          }
         },
         "instancecount": 61
       },
@@ -15046,15 +15260,6 @@ var tree={
         "text": "GraphemeVariant (purl:graphemon#GraphemeVariant) [49]",
         "data": {
           "to": {
-            "http://www.purl.org/graphemon#asSVG": {
-              "instancecount": 1
-            },
-            "http://www.purl.org/graphemon#hasGottsteinCode": {
-              "instancecount": 1
-            },
-            "http://www.purl.org/graphemon#hasPaleoCode": {
-              "instancecount": 1
-            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
@@ -15065,7 +15270,7 @@ var tree={
           },
           "from": {}
         },
-        "instancecount": 5
+        "instancecount": 2
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/signlist/character_al_reading_al",
@@ -15725,6 +15930,10 @@ var tree={
         "text": "WordForm (lemon:WordForm) [32]",
         "data": {
           "to": {
+            "http://www.purl.org/cuneiform/Occurence": {
+              "instancecount": 1,
+              "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
+            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
@@ -15733,9 +15942,14 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://lemon-model.net/lemon#form": {
+              "instancecount": 0,
+              "http://lemon-model.net/lemon#Word": 1
+            }
+          }
         },
-        "instancecount": 2
+        "instancecount": 3
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/dict/ban_wordsense",
@@ -16004,24 +16218,33 @@ var tree={
         "data": {
           "to": {
             "http://lemon-model.net/lemon#form": {
-              "instancecount": 1,
+              "instancecount": 2,
               "http://lemon-model.net/lemon#WordForm": 1
             },
             "http://lemon-model.net/lemon#sense": {
-              "instancecount": 1,
-              "http://lemon-model.net/lemon#LexicalSense": 1
+              "instancecount": 1
+            },
+            "http://purl.org/dc/elements/1.1/license": {
+              "instancecount": 1
             },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
             },
             "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 2
+            },
+            "http://www.w3.org/2002/07/owl#sameAs": {
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://lemon-model.net/lemon#entry": {
+              "instancecount": 0
+            }
+          }
         },
-        "instancecount": 4
+        "instancecount": 8
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/signlist/character_karcomp",
@@ -16108,7 +16331,12 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.purl.org/cuneiform/hasSurface": {
+              "instancecount": 0,
+              "http://www.purl.org/cuneiform/Tablet": 1
+            }
+          }
         },
         "instancecount": 3
       },
@@ -16137,7 +16365,12 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.purl.org/cuneiform/hasSurface": {
+              "instancecount": 0,
+              "http://www.purl.org/cuneiform/Tablet": 1
+            }
+          }
         },
         "instancecount": 3
       },
@@ -16166,7 +16399,12 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.purl.org/cuneiform/hasSurface": {
+              "instancecount": 0,
+              "http://www.purl.org/cuneiform/Tablet": 1
+            }
+          }
         },
         "instancecount": 3
       },
@@ -16199,7 +16437,12 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.purl.org/cuneiform/hasSurface": {
+              "instancecount": 0,
+              "http://www.purl.org/cuneiform/Tablet": 1
+            }
+          }
         },
         "instancecount": 31
       },
@@ -16232,7 +16475,12 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.purl.org/cuneiform/hasSurface": {
+              "instancecount": 0,
+              "http://www.purl.org/cuneiform/Tablet": 1
+            }
+          }
         },
         "instancecount": 33
       },
@@ -24244,7 +24492,7 @@ var tree={
             },
             "http://www.purl.org/cuneiform/nextChar": {
               "instancecount": 1,
-              "http://www.purl.org/cuneiform/TransliterationCharOccurrence": 1
+              "http://www.w3.org/2002/07/owl#NamedIndividual": 1
             },
             "http://www.purl.org/cuneiform/prevChar": {
               "instancecount": 1,
@@ -24256,11 +24504,20 @@ var tree={
             },
             "http://www.w3.org/2000/01/rdf-schema#label": {
               "instancecount": 1
+            },
+            "https://situx.github.io/cuneiformontology/examples/signlist/hasGraphemeReading": {
+              "instancecount": 1,
+              "http://www.purl.org/graphemon#GraphemeReading": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.purl.org/cuneiform/nextChar": {
+              "instancecount": 0,
+              "http://www.purl.org/cuneiform/TransliterationCharOccurrence": 1
+            }
+          }
         },
-        "instancecount": 6
+        "instancecount": 7
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/tch92_transliteration1_obverse_line10_word1",
@@ -24910,7 +25167,16 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.purl.org/cuneiform/nextWord": {
+              "instancecount": 0,
+              "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
+            },
+            "http://www.purl.org/cuneiform/prevWord": {
+              "instancecount": 0,
+              "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
+            }
+          }
         },
         "instancecount": 5
       },
@@ -25974,7 +26240,12 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.w3.org/ns/oa#hasSelector": {
+              "instancecount": 0,
+              "http://www.w3.org/2002/07/owl#NamedIndividual": 1
+            }
+          }
         },
         "instancecount": 5
       },
@@ -26205,7 +26476,7 @@ var tree={
       {
         "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1",
         "parent": "http://www.gigamesh.eu/ont#Mesh",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "O147_back_mesh.ply (O147_back_mesh1)",
         "data": {}
       },
@@ -26436,14 +26707,14 @@ var tree={
       {
         "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_geom",
         "parent": "http://www.opengis.net/ont/geosparql#Geometry",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "O147_back_mesh.ply Bounding Box (O147_back_mesh1_geom)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1",
         "parent": "http://www.gigamesh.eu/ont#Mesh",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "O147_front_mesh.ply (O147_front_mesh1)",
         "data": {}
       },
@@ -26674,7 +26945,7 @@ var tree={
       {
         "id": "https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_front_mesh1_geom",
         "parent": "http://www.opengis.net/ont/geosparql#Geometry",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "O147_front_mesh.ply Bounding Box (O147_front_mesh1_geom)",
         "data": {}
       },
@@ -36724,52 +36995,52 @@ var tree={
         "data": {}
       },
       {
-        "id": "nd314835bd98d49b0adb389fddd744991b2",
+        "id": "n0b7f540f89bb4a0f97a7dbbf170fc904b2",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "nd314835bd98d49b0adb389fddd744991b2",
+        "text": "n0b7f540f89bb4a0f97a7dbbf170fc904b2",
         "data": {}
       },
       {
-        "id": "nd314835bd98d49b0adb389fddd744991b3",
+        "id": "n0b7f540f89bb4a0f97a7dbbf170fc904b3",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "nd314835bd98d49b0adb389fddd744991b3",
+        "text": "n0b7f540f89bb4a0f97a7dbbf170fc904b3",
         "data": {}
       },
       {
-        "id": "nd314835bd98d49b0adb389fddd744991b4",
+        "id": "n0b7f540f89bb4a0f97a7dbbf170fc904b4",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "nd314835bd98d49b0adb389fddd744991b4",
+        "text": "n0b7f540f89bb4a0f97a7dbbf170fc904b4",
         "data": {}
       },
       {
-        "id": "nd314835bd98d49b0adb389fddd744991b5",
+        "id": "n0b7f540f89bb4a0f97a7dbbf170fc904b5",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "nd314835bd98d49b0adb389fddd744991b5",
+        "text": "n0b7f540f89bb4a0f97a7dbbf170fc904b5",
         "data": {}
       },
       {
-        "id": "nd314835bd98d49b0adb389fddd744991b6",
+        "id": "n0b7f540f89bb4a0f97a7dbbf170fc904b6",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "nd314835bd98d49b0adb389fddd744991b6",
+        "text": "n0b7f540f89bb4a0f97a7dbbf170fc904b6",
         "data": {}
       },
       {
-        "id": "nd314835bd98d49b0adb389fddd744991b7",
+        "id": "n0b7f540f89bb4a0f97a7dbbf170fc904b7",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "nd314835bd98d49b0adb389fddd744991b7",
+        "text": "n0b7f540f89bb4a0f97a7dbbf170fc904b7",
         "data": {}
       },
       {
-        "id": "nd314835bd98d49b0adb389fddd744991b8",
+        "id": "n0b7f540f89bb4a0f97a7dbbf170fc904b8",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "nd314835bd98d49b0adb389fddd744991b8",
+        "text": "n0b7f540f89bb4a0f97a7dbbf170fc904b8",
         "data": {}
       },
       {
@@ -37174,14 +37445,14 @@ var tree={
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_excavloc",
         "parent": "http://www.opengis.net/ont/geosparql#Feature",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "HT 07-31-95 Excavation Location (ht073195_excavloc)",
         "data": {}
       },
       {
         "id": "http://www.opengis.net/ont/geosparql#Feature",
         "parent": "http://www.opengis.net/ont/geosparql#SpatialObject",
-        "type": "class",
+        "type": "geoclass",
         "text": "Feature (gsp:Feature) [1]",
         "data": {
           "to": {
@@ -37205,21 +37476,27 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://purl.org/dc/elements/1.1/spatial": {
+              "instancecount": 0,
+              "http://www.purl.org/cuneiform/Tablet": 1,
+              "http://xmlns.com/foaf/0.1/Image": 18
+            }
+          }
         },
         "instancecount": 6
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/ht073195_excavloc_geometry",
         "parent": "http://www.opengis.net/ont/sf#Polygon",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "Geometry of excavation site of HT 07-31-95 (ht073195_excavloc_geometry)",
         "data": {}
       },
       {
         "id": "http://www.opengis.net/ont/sf#Polygon",
         "parent": "http://www.opengis.net/ont/geosparql#Geometry",
-        "type": "class",
+        "type": "geoclass",
         "text": "Polygon (sf:Polygon) [1]",
         "data": {
           "to": {
@@ -37236,7 +37513,12 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.opengis.net/ont/geosparql#hasGeometry": {
+              "instancecount": 0,
+              "http://www.opengis.net/ont/geosparql#Feature": 1
+            }
+          }
         },
         "instancecount": 4
       },
@@ -38224,7 +38506,7 @@ var tree={
       {
         "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh1",
         "parent": "http://www.gigamesh.eu/ont#Mesh",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "HS1174_mesh1 (HS1174_mesh1)",
         "data": {}
       },
@@ -38455,7 +38737,7 @@ var tree={
       {
         "id": "https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh1_geom",
         "parent": "http://www.opengis.net/ont/geosparql#Geometry",
-        "type": "instance",
+        "type": "geoinstance",
         "text": "HS1174_mesh1 Bounding Box (HS1174_mesh1_geom)",
         "data": {}
       },
@@ -44618,6 +44900,10 @@ var tree={
               "instancecount": 1,
               "http://www.purl.org/graphemon#CuneiformWedge": 1
             },
+            "http://www.purl.org/graphemon#leftOf": {
+              "instancecount": 1,
+              "http://www.purl.org/graphemon#CuneiformWedge": 1
+            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
@@ -44628,7 +44914,7 @@ var tree={
           },
           "from": {}
         },
-        "instancecount": 3
+        "instancecount": 4
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_writtentext",
@@ -45222,7 +45508,12 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.purl.org/cuneiform/isRepresentedBy": {
+              "instancecount": 0,
+              "http://www.purl.org/cuneiform/Tablet": 1
+            }
+          }
         },
         "instancecount": 3
       },
