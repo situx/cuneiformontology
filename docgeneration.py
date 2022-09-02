@@ -1639,7 +1639,7 @@ class OntDocGeneration:
                         curanno["start"]=str(txtlit[1])
                     elif str(txtlit[0])=="http://www.w3.org/ns/oa#end":
                         curanno["end"]=str(txtlit[1])
-                textannos.add(curanno)
+                textannos.append(curanno)
             if isinstance(tup[1], Literal) and (str(tup[0]) in geoproperties or str(tup[1].datatype) in geoliteraltypes):
                 geojsonrep = self.processLiteral(str(tup[1]), tup[1].datatype, "")
             if incollection and "<svg" in str(tup[1]):
