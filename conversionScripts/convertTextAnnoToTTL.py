@@ -141,6 +141,9 @@ for tabname in tabletnames:
         islineannotation=False
         isphraseannotation=False
         curtranslit=""
+        curline=0
+        curword=0
+        curchar=0
         source=""
         selectortype=""
         selectorval=""
@@ -177,36 +180,47 @@ for tabname in tabletnames:
                 res.write("<"+str(indid)+"_body_translit"+str(targetcounter)+"> rdf:type oa:SpecificResource .\n")
                 res.write("<"+str(indid)+"_body_translit"+str(targetcounter)+"> oa:hasSource "+str(anntar)+" .\n")
                 res.write("<"+str(indid)+"_body_translit"+str(targetcounter)+"> oa:motivatedBy oa:identifying .\n")
-                res.write("<"+str(indid)+"_body_translit"+str(targetcounter)+"> rdf:value \""+str(anntar)+"\" .\n")
-                res.write("<"+str(indid)+"_body_translit"+str(targetcounter)+"> rdfs:label  \"Annotation body referencing transliteration char occurrence at "+str(tabname)+" line "+str(resuris[anntar]["line"])+" char on "+str(material)+"\"@en .\n")
+                curline=resuris[anntar]["line"]
+                if "word" in resuris[anntar] and iswordannotation:
+                    res.write("<"+str(indid)+"_body_translit"+str(targetcounter)+"> rdfs:label  \"Annotation body referencing transliteration of "+str(tabname)+" line "+str(resuris[anntar]["line"])+" word "+str(resuris[anntar]["word"])+" on "+str(material)+"\"@en .\n")
+                    curword=resuris[anntar]["word"]
+                if "char" in resuris[anntar] and iswordannotation:
+                    res.write("<"+str(indid)+"_body_translit"+str(targetcounter)+"> rdfs:label  \"Annotation body referencing transliteration of "+str(tabname)+" line "+str(resuris[anntar]["line"])+" char "+str(resuris[anntar]["char"])+" on "+str(material)+"\"@en .\n")
+                    curchar=resuris[anntar]["char"]
                 targetcounter+=1
         if "body" in keyobj:
             for item in keyobj["body"]:
                 if item["purpose"]=="classifying" and "source" in item and "/Q" in item["source"]:
                     res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_class_sense> .\n")
-                    res.write("<"+str(indid)+"_body_class_sense> rdf:value <"+str(item["source"])+"> .\n")
+                    res.write("<"+str(indid)+"_body_class_sense> rdf:value \""+str(item["source"])+"\"^^xsd:anyURI .\n")
                     res.write("<"+str(indid)+"_body_class_sense> rdfs:label \""+str(item["label"])+"\"@en .\n") 
                     res.write("<"+str(indid)+"_body_class_sense> oa:motivatedBy oa:classifying .\n")                  
                     res.write("<"+str(indid)+"_body_class_sense> skos:definition \""+str(item["description"])+"\"@en .\n") 
                 if item["purpose"]=="classifying" and "source" in item and "/L" in item["source"]:
                     res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_wordform> .\n")
-                    res.write("<"+str(indid)+"_body_wordform> rdf:value <"+str(item["source"])+"> .\n")
+                    res.write("<"+str(indid)+"_body_wordform> rdf:value \""+str(item["source"])+"\"^^xsd:anyURI .\n")
                     res.write("<"+str(indid)+"_body_wordform> rdfs:label \""+str(item["label"])+"\"@en .\n") 
                     res.write("<"+str(indid)+"_body_wordform> oa:motivatedBy oa:classifying .\n")                  
                     res.write("<"+str(indid)+"_body_wordform> skos:definition \""+str(item["description"])+"\"@en .\n")                         
                 if item["purpose"]=="tagging" and "source" in item and "id" in item["source"] and "olia" in item["source"]["id"]:
                     res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_class_postag> .\n")
-                    res.write("<"+str(indid)+"_body_class_postag> rdf:value <"+str(item["source"]["id"])+"> .\n")
+                    res.write("<"+str(indid)+"_body_class_postag> rdf:value \""+str(item["source"]["id"])+"\"^^xsd:anyURI .\n")
         targetcounter=1
         res.write("<"+str(indid)+"_target"+str(targetcounter)+"> rdf:type owl:NamedIndividual .\n")
         res.write("<"+str(indid)+"_target"+str(targetcounter)+"> oa:hasSelector <"+str(indid)+"_target"+str(targetcounter)+"_selector> .\n")
         res.write("<"+str(indid)+"_target"+str(targetcounter)+"> oa:hasSource <"+str(namespace)+str(tabname)+"_transliteration1> .\n")             
-        res.write("<"+str(indid)+"_target"+str(targetcounter)+"> rdfs:label \"Annotation target"+str(targetcounter)+" of Annotation of Glyph at "+str(tabname)+" line  char  on "+str(material)+"\"@en .\n")
+        if iswordannotation:
+            res.write("<"+str(indid)+"_target"+str(targetcounter)+"> rdfs:label \"Annotation target"+str(targetcounter)+" of Annotation of text section at "+str(tabname)+" line "+str(curline)+" word "+str(curword)+" on "+str(material)+"\"@en .\n")
+        else:
+            res.write("<"+str(indid)+"_target"+str(targetcounter)+"> rdfs:label \"Annotation target"+str(targetcounter)+" of Annotation of text section at "+str(tabname)+" line "+str(curline)+" char "+str(curchar)+" on "+str(material)+"\"@en .\n")
         res.write("<"+str(indid)+"_target"+str(targetcounter)+"_selector> rdf:type oa:"+str(selectortype)+" .\n")
         res.write("<"+str(indid)+"_target"+str(targetcounter)+"_selector> oa:start \""+str(startindex)+"\"^^xsd:integer .\n")
         res.write("<"+str(indid)+"_target"+str(targetcounter)+"_selector> oa:end \""+str(endindex)+"\"^^xsd:integer .\n")
         res.write("<"+str(indid)+"_target"+str(targetcounter)+"_selector> rdf:value \""+str(selectorval).replace('"','\\"')+"\" .\n")
-        res.write("<"+str(indid)+"_target"+str(targetcounter)+"_selector> rdfs:label \"Annotation target selector of Annotation of Glyph at "+str(tabname)+" line  char on "+str(material)+"\"@en .\n")
+        if iswordannotation:
+            res.write("<"+str(indid)+"_target"+str(targetcounter)+"_selector> rdfs:label \"Annotation target selector of Annotation of of text section at "+str(tabname)+" transliteration  line "+str(curline)+" word "+str(curword)+" on "+str(material)+"\"@en .\n")
+        else:
+            res.write("<"+str(indid)+"_target"+str(targetcounter)+"_selector> rdfs:label \"Annotation target selector of Annotation of of text section at "+str(tabname)+" transliteration  line "+str(curline)+" char "+str(curchar)+" on "+str(material)+"\"@en .\n")
     res.close()
     g = Graph()
     g.parse(filename.replace(".json",".ttl"))
