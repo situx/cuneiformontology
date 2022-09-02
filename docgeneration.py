@@ -1665,6 +1665,7 @@ class OntDocGeneration:
                         curanno["end"]=str(txtlit[1])
                 textannos.append(curanno)
             if pred=="http://www.w3.org/ns/oa#hasSource":
+                print("TEXTANNOSOURCE: "+str(tup[1]))
                 annosource=str(tup[1])
             if isinstance(tup[1], Literal) and (str(tup[0]) in geoproperties or str(tup[1].datatype) in geoliteraltypes):
                 geojsonrep = self.processLiteral(str(tup[1]), tup[1].datatype, "")
