@@ -1082,6 +1082,9 @@ imageswithannotemplate="""<div class="{{carousel}}">
 </div>
 """
 
+textwithannotemplate="""<div class="textanno">
+</div>"""
+
 
 imagestemplatesvg="""<div class="{{carousel}}" style="max-width:485px;max-height:500px">
 {{image}}
@@ -1607,7 +1610,7 @@ class OntDocGeneration:
         #QgsMessageLog.logMessage("Relative Link from Given Depth: " + rellink,"OntdocGeneration", Qgis.Info)
         return rellink
 
-    def searchObjectConnectionsForAggregateData(self,graph,object,pred,geojsonrep,foundmedia,imageannos,image3dannos,label,unitlabel):
+    def searchObjectConnectionsForAggregateData(self,graph,object,pred,geojsonrep,foundmedia,imageannos,image3dannos,textannos,label,unitlabel):
         geoprop=False
         incollection=False
         if pred in geopointerproperties:
@@ -1625,6 +1628,16 @@ class OntDocGeneration:
                         imageannos.add(str(svglit))
                     elif ("POINT" in str(svglit).upper() or "POLYGON" in str(svglit).upper() or "LINESTRING" in str(svglit).upper()):
                         image3dannos.add(str(svglit))
+            if pred=="http://www.w3.org/ns/oa#hasSelector" and tup[0]==URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type") and (tup[1]==URIRef("http://www.w3.org/ns/oa#TextPositionSelector"):
+                curanno={}
+                for txtlit in graph.predicate_objects(object):
+                    if str(txtlit[0])=="http://www.w3.org/1999/02/22-rdf-syntax-ns#value":
+                        curanno["exact"]=str(txtlit[1])
+                    elif str(txtlit[0])=="http://www.w3.org/ns/oa#start":
+                        curanno["start"]=str(txtlit[1])
+                    elif str(txtlit[0])=="http://www.w3.org/ns/oa#end":
+                        curanno["end"]=str(txtlit[1])
+                textannos.add(curanno)
             if isinstance(tup[1], Literal) and (str(tup[0]) in geoproperties or str(tup[1].datatype) in geoliteraltypes):
                 geojsonrep = self.processLiteral(str(tup[1]), tup[1].datatype, "")
             if incollection and "<svg" in str(tup[1]):
@@ -1640,8 +1653,8 @@ class OntDocGeneration:
                     for valtup in graph.predicate_objects(tup[1]):
                         if str(valtup[0]) in unitproperties:
                             foundunit=str(valtup[1])
-                        if str(valtup[0]) in valueproperties and isinstance(valtup[1],Literal):
-                            foundval=str(valtup[1])
+                        if str(valtup[0]) in valueproperties and (isinstance(valtup[1],Literal) or isinstance(valtup[1],URIRef)):
+                            foundval=str(valtup[1])                           
             if str(tup[0]) in unitproperties:
                 foundunit=tup[1]
         if foundunit!=None and foundval!=None:
@@ -1655,11 +1668,14 @@ class OntDocGeneration:
             else:
                 unitlabel=str(foundval)+" "+str(foundunit)
         if foundunit==None and foundval!=None:
-            unitlabel=str(foundval)
-        return {"geojsonrep":geojsonrep,"label":label,"unitlabel":unitlabel,"foundmedia":foundmedia,"imageannos":imageannos,"image3dannos":image3dannos}
+            if "http" in foundval:
+                unitlabel="<a href=\""+str(foundval)+"\">"+str(self.shortenURI(foundval))+"</a>"
+            else:
+                unitlabel=str(foundval)
+        return {"geojsonrep":geojsonrep,"label":label,"unitlabel":unitlabel,"foundmedia":foundmedia,"imageannos":imageannos,"textannos":textannos,"image3dannos":image3dannos}
 
 
-    def createHTMLTableValueEntry(self,subject,pred,object,ttlf,graph,baseurl,checkdepth,geojsonrep,foundmedia,imageannos,image3dannos,subpred):
+    def createHTMLTableValueEntry(self,subject,pred,object,ttlf,graph,baseurl,checkdepth,geojsonrep,foundmedia,imageannos,textannos,image3dannos,subpred):
         tablecontents=""
         label=""
         if isinstance(object,URIRef) or isinstance(object,BNode):
@@ -1674,6 +1690,7 @@ class OntDocGeneration:
             geojsonrep=mydata["geojsonrep"]
             foundmedia=mydata["foundmedia"]
             imageannos=mydata["imageannos"]
+            textannos=mydata["textannos"]
             image3dannos=mydata["image3dannos"]
             unitlabel=mydata["unitlabel"]
             if baseurl in str(object) or isinstance(object,BNode):
@@ -1726,7 +1743,7 @@ class OntDocGeneration:
                         ttlf.write("<" + str(subject) + "> <" + str(pred) + "> \"" + str(object) + "\" .\n")
                     tablecontents += "<span property=\"" + str(pred) + "\" content=\"" + str(
                         object).replace("<","&lt").replace(">","&gt;").replace("\"","'") + "\" datatype=\"http://www.w3.org/2001/XMLSchema#string\">" + str(object).replace("<","&lt").replace(">","&gt;") + " <small>(<a style=\"color: #666;\" target=\"_blank\" href=\"http://www.w3.org/2001/XMLSchema#string\">xsd:string</a>)</small></span>"
-        return {"html":tablecontents,"geojson":geojsonrep,"foundmedia":foundmedia,"imageannos":imageannos,"image3dannos":image3dannos,"label":label}
+        return {"html":tablecontents,"geojson":geojsonrep,"foundmedia":foundmedia,"imageannos":imageannos,"textannos":textannos,"image3dannos":image3dannos,"label":label}
 
     def formatPredicate(self,tup,baseurl,checkdepth,tablecontents,graph,reverse):
         label = self.shortenURI(str(tup))
@@ -1776,6 +1793,7 @@ class OntDocGeneration:
         checkdepth=self.checkDepthFromPath(savepath, baseurl, subject)
         foundlabel = ""
         imageannos=set()
+        textannos=set()
         image3dannos=set()
         predobjmap={}
         isgeocollection=False
@@ -1840,7 +1858,7 @@ class OntDocGeneration:
                             if ext in fileextensionmap:
                                 foundmedia[fileextensionmap[ext]].add(str(item))
                         res=self.createHTMLTableValueEntry(subject, tup, item, ttlf, graph,
-                                              baseurl, checkdepth,geojsonrep,foundmedia,imageannos,image3dannos,False)
+                                              baseurl, checkdepth,geojsonrep,foundmedia,imageannos,textannos,image3dannos,False)
                         geojsonrep = res["geojson"]
                         foundmedia = res["foundmedia"]
                         imageannos=res["imageannos"]
@@ -1865,12 +1883,13 @@ class OntDocGeneration:
                         if ext in fileextensionmap:
                             foundmedia[fileextensionmap[ext]].add(str(predobjmap[tup][0]))
                     res=self.createHTMLTableValueEntry(subject, tup, predobjmap[tup][0], ttlf, graph,
-                                              baseurl, checkdepth,geojsonrep,foundmedia,imageannos,image3dannos,False)
+                                              baseurl, checkdepth,geojsonrep,foundmedia,imageannos,textannos,image3dannos,False)
                     tablecontents+=res["html"]
                     geojsonrep=res["geojson"]
                     foundmedia = res["foundmedia"]
                     imageannos=res["imageannos"]
                     image3dannos=res["image3dannos"]
+                    textannos=res["textannos"]
                     tablecontents+="</td>"
             else:
                 tablecontents += "<td class=\"wrapword\"></td>"
@@ -1905,9 +1924,10 @@ class OntDocGeneration:
                             print("Postprocessing: " + str(item)+" - "+str(tup)+" - "+str(subject))
                             postprocessing.add((item,URIRef(tup),subject))
                         res = self.createHTMLTableValueEntry(subject, tup, item, ttlf, graph,
-                                                             baseurl, checkdepth, geojsonrep,foundmedia,imageannos,image3dannos,True)
+                                                             baseurl, checkdepth, geojsonrep,foundmedia,imageannos,textannos,image3dannos,True)
                         foundmedia = res["foundmedia"]
                         imageannos=res["imageannos"]
+                        textannos=res["textannos"]
                         image3dannos=res["image3dannos"]
                         if res["label"] not in labelmap:
                             labelmap[res["label"]]=""
@@ -1922,10 +1942,11 @@ class OntDocGeneration:
                         print("Postprocessing: " + str(subpredsmap[tup][0]) + " - " + str(tup) + " - " + str(subject))
                         postprocessing.add((subpredsmap[tup][0], URIRef(tup), subject))
                     res = self.createHTMLTableValueEntry(subject, tup, subpredsmap[tup][0], ttlf, graph,
-                                                         baseurl, checkdepth, geojsonrep,foundmedia,imageannos,image3dannos,True)
+                                                         baseurl, checkdepth, geojsonrep,foundmedia,imageannos,textannos,image3dannos,True)
                     tablecontents += res["html"]
                     foundmedia = res["foundmedia"]
                     imageannos=res["imageannos"]
+                    textannos=res["textannos"]
                     image3dannos=res["image3dannos"]
                     tablecontents += "</td>"
             else:
@@ -2007,6 +2028,9 @@ class OntDocGeneration:
                         carousel="carousel-item"
             if len(foundmedia["image"])>3:
                 f.write(imagecarouselfooter)
+            if len(textannos)>=0:
+                for textann in textannos:
+                    f.write("<span class=\"textanno\" from=\"\" to=\"\" exact=\"\"></span>")
             for audio in foundmedia["audio"]:
                 f.write(audiotemplate.replace("{{audio}}",str(audio)))
             for video in foundmedia["video"]:
