@@ -516,10 +516,8 @@ function getTextAnnoContext(source,start,end,selector){
         markarea=data.substring(start,end)
         counter=0
         startindex=0
-        endindex=data.indexOf('
-',end)
-        for(line in data.split("
-")){
+        endindex=data.indexOf("\n",end)
+        for(line in data.split("\n")){
             counter+=line.length
             if(counter>start){
                 startindex=counter-line.length
