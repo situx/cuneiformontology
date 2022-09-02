@@ -1635,6 +1635,7 @@ class OntDocGeneration:
 
     def searchObjectConnectionsForAggregateData(self,graph,object,pred,geojsonrep,foundmedia,imageannos,image3dannos,textannos,label,unitlabel):
         geoprop=False
+        annosource=None
         incollection=False
         if pred in geopointerproperties:
             geoprop=True
@@ -1662,9 +1663,9 @@ class OntDocGeneration:
                         curanno["start"]=str(txtlit[1])
                     elif str(txtlit[0])=="http://www.w3.org/ns/oa#end":
                         curanno["end"]=str(txtlit[1])
-                for srctup in graph.objects(object,URIRef("http://www.w3.org/ns/oa#hasSource")):
-                    curanno["src"]=str(srctup)
                 textannos.append(curanno)
+            if pred=="http://www.w3.org/ns/oa#hasSource":
+                annosource=str(tup[1])
             if isinstance(tup[1], Literal) and (str(tup[0]) in geoproperties or str(tup[1].datatype) in geoliteraltypes):
                 geojsonrep = self.processLiteral(str(tup[1]), tup[1].datatype, "")
             if incollection and "<svg" in str(tup[1]):
@@ -1674,7 +1675,7 @@ class OntDocGeneration:
                 if ext in fileextensionmap:
                     foundmedia[fileextensionmap[ext]].add(str(tup[1]))
             if str(tup[0]) in valueproperties:
-                if valueproperties[str(tup[0])]=="DatatypeProperty" and (isinstance(tup[1],Literal) or isinstance(valtup[1],URIRef)):
+                if valueproperties[str(tup[0])]=="DatatypeProperty" and (isinstance(tup[1],Literal) or isinstance(tup[1],URIRef)):
                     foundval=str(tup[1])
                 else:
                     for valtup in graph.predicate_objects(tup[1]):
@@ -1699,6 +1700,9 @@ class OntDocGeneration:
                 unitlabel="<a href=\""+str(foundval)+"\">"+str(self.shortenURI(foundval))+"</a>"
             else:
                 unitlabel=str(foundval)
+        if annosource!=None:
+            for textanno in textannos:
+                textanno["src"]=annosource
         return {"geojsonrep":geojsonrep,"label":label,"unitlabel":unitlabel,"foundmedia":foundmedia,"imageannos":imageannos,"textannos":textannos,"image3dannos":image3dannos}
 
 
