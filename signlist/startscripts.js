@@ -511,6 +511,25 @@ function animate() {
 }
 
 
+function getTextAnnoContext(source,start,end,selector){
+    $.get( source, function( data ) {
+        markarea=data.substring(start,end)
+        counter=0
+        startindex=0
+        endindex=data.indexOf('
+',end)
+        for(line in data.split("
+")){
+            counter+=line.length
+            if(counter>start){
+                startindex=counter-line.length
+                break
+            }
+        }
+        $(selector).html(("<span>"+data.substring(startindex,endindex)+"</span>").replace(markarea,"<mark>"+markarea+"</mark>"))     
+    });
+}
+
 function labelFromURI(uri,label){
         if(uri.includes("#")){
         	prefix=uri.substring(0,uri.lastIndexOf('#')-1)
