@@ -19,7 +19,8 @@ withlines=False
 withcharoccs=False
 withglyphs=False
 
-def coptoRDF(fw,crsnamespace,indid,opaswkt,induuid):
+def coptoRDF(fw,crsnamespace,indid,opaswkt,induid):
+    induuid=induid.replace("#","")
     fw.write("<"+str(indid)+"> <http://www.opengis.net/ont/geosparql#coordinateOperation> <"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"> .\n")
     fw.write("<"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"> rdfs:label \"Object To PCA\"@en .\n")
     fw.write("<"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"> geocrs:sourceCRS <"+str(crsnamespace)+"cs/cartesian_ax3_mm> .\n")
