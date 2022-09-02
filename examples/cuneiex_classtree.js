@@ -15263,7 +15263,12 @@ var tree={
               "instancecount": 1
             }
           },
-          "from": {}
+          "from": {
+            "http://www.purl.org/graphemon#variant": {
+              "instancecount": 0,
+              "http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme": 1
+            }
+          }
         },
         "instancecount": 2
       },
@@ -24478,10 +24483,6 @@ var tree={
             },
             "http://www.w3.org/2000/01/rdf-schema#label": {
               "instancecount": 1
-            },
-            "https://situx.github.io/cuneiformontology/examples/signlist/hasGraphemeReading": {
-              "instancecount": 1,
-              "http://www.purl.org/graphemon#GraphemeReading": 1
             }
           },
           "from": {
@@ -24495,7 +24496,7 @@ var tree={
             }
           }
         },
-        "instancecount": 7
+        "instancecount": 6
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/tch92_transliteration1_obverse_line10_word1",
@@ -25130,7 +25131,7 @@ var tree={
             "http://www.purl.org/cuneiform/lineNumber": {
               "instancecount": 1
             },
-            "http://www.purl.org/cuneiform/nextWord": {
+            "http://www.purl.org/cuneiform/prevWord": {
               "instancecount": 1,
               "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
             },
@@ -25147,10 +25148,6 @@ var tree={
           },
           "from": {
             "http://www.purl.org/cuneiform/nextWord": {
-              "instancecount": 0,
-              "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
-            },
-            "http://www.purl.org/cuneiform/prevWord": {
               "instancecount": 0,
               "http://www.purl.org/cuneiform/TransliterationWordOccurrence": 1
             }
@@ -26231,210 +26228,210 @@ var tree={
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/0789aa33-43ab-442f-b8d8-d0f97c2317e7_body_translit1",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 5 char on transliteration (0789aa33-43ab-442f-b8d8-d0f97c2317e7_body_translit1)",
+        "text": "Annotation body referencing transliteration of O147 line 5 word 4 on transliteration (0789aa33-43ab-442f-b8d8-d0f97c2317e7_body_translit1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/08179cf1-06c3-4f88-8093-cd2c361e01c3_body_translit1",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 4 char on transliteration (08179cf1-06c3-4f88-8093-cd2c361e01c3_body_translit1)",
+        "text": "Annotation body referencing transliteration of O147 line 4 word 3 on transliteration (08179cf1-06c3-4f88-8093-cd2c361e01c3_body_translit1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/0f309c73-23b9-4041-94eb-e8eac5f6f531_body_translit1",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 2 char on transliteration (0f309c73-23b9-4041-94eb-e8eac5f6f531_body_translit1)",
+        "text": "Annotation body referencing transliteration of O147 line 2 word 1 on transliteration (0f309c73-23b9-4041-94eb-e8eac5f6f531_body_translit1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/0f309c73-23b9-4041-94eb-e8eac5f6f531_body_translit2",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 2 char on transliteration (0f309c73-23b9-4041-94eb-e8eac5f6f531_body_translit2)",
+        "text": "Annotation body referencing transliteration of O147 line 2 word 2 on transliteration (0f309c73-23b9-4041-94eb-e8eac5f6f531_body_translit2)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/1b69e579-dede-4aa6-b900-8a6dad92c687_body_translit1",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 10 char on transliteration (1b69e579-dede-4aa6-b900-8a6dad92c687_body_translit1)",
+        "text": "Annotation body referencing transliteration of O147 line 10 word 1 on transliteration (1b69e579-dede-4aa6-b900-8a6dad92c687_body_translit1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit1",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 4 char on transliteration (22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit1)",
+        "text": "Annotation body referencing transliteration of O147 line 4 word 1 on transliteration (22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit2",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 4 char on transliteration (22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit2)",
+        "text": "Annotation body referencing transliteration of O147 line 4 word 2 on transliteration (22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit2)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit3",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 5 char on transliteration (22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit3)",
+        "text": "Annotation body referencing transliteration of O147 line 5 word 1 on transliteration (22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit3)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit4",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 5 char on transliteration (22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit4)",
+        "text": "Annotation body referencing transliteration of O147 line 5 word 2 on transliteration (22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit4)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/2617717a-9f8b-4075-8484-b496b326e576_body_translit1",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 1 char on transliteration (2617717a-9f8b-4075-8484-b496b326e576_body_translit1)",
+        "text": "Annotation body referencing transliteration of O147 line 1 word 1 on transliteration (2617717a-9f8b-4075-8484-b496b326e576_body_translit1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/2617717a-9f8b-4075-8484-b496b326e576_body_translit2",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 1 char on transliteration (2617717a-9f8b-4075-8484-b496b326e576_body_translit2)",
+        "text": "Annotation body referencing transliteration of O147 line 1 word 3 on transliteration (2617717a-9f8b-4075-8484-b496b326e576_body_translit2)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/2e833987-3470-4a6f-a0b6-68da13e40db3_body_translit1",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 3 char on transliteration (2e833987-3470-4a6f-a0b6-68da13e40db3_body_translit1)",
+        "text": "Annotation body referencing transliteration of O147 line 3 word 1 on transliteration (2e833987-3470-4a6f-a0b6-68da13e40db3_body_translit1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit1",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 3 char on transliteration (2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit1)",
+        "text": "Annotation body referencing transliteration of O147 line 3 word 4 on transliteration (2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit2",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 4 char on transliteration (2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit2)",
+        "text": "Annotation body referencing transliteration of O147 line 4 word 1 on transliteration (2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit2)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit3",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 4 char on transliteration (2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit3)",
+        "text": "Annotation body referencing transliteration of O147 line 4 word 2 on transliteration (2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit3)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit4",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 4 char on transliteration (2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit4)",
+        "text": "Annotation body referencing transliteration of O147 line 4 word 3 on transliteration (2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit4)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/4e4b4ad3-4c5b-4949-a568-297671a5f2a5_body_translit1",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 1 char on transliteration (4e4b4ad3-4c5b-4949-a568-297671a5f2a5_body_translit1)",
+        "text": "Annotation body referencing transliteration of O147 line 1 word 5 on transliteration (4e4b4ad3-4c5b-4949-a568-297671a5f2a5_body_translit1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/4e4b4ad3-4c5b-4949-a568-297671a5f2a5_body_translit2",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 2 char on transliteration (4e4b4ad3-4c5b-4949-a568-297671a5f2a5_body_translit2)",
+        "text": "Annotation body referencing transliteration of O147 line 2 word 1 on transliteration (4e4b4ad3-4c5b-4949-a568-297671a5f2a5_body_translit2)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/4e4b4ad3-4c5b-4949-a568-297671a5f2a5_body_translit3",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 2 char on transliteration (4e4b4ad3-4c5b-4949-a568-297671a5f2a5_body_translit3)",
+        "text": "Annotation body referencing transliteration of O147 line 2 word 2 on transliteration (4e4b4ad3-4c5b-4949-a568-297671a5f2a5_body_translit3)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/6aa9eb66-d6d3-49a3-b2bb-9527b0bedb51_body_translit1",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 4 char on transliteration (6aa9eb66-d6d3-49a3-b2bb-9527b0bedb51_body_translit1)",
+        "text": "Annotation body referencing transliteration of O147 line 4 word 1 on transliteration (6aa9eb66-d6d3-49a3-b2bb-9527b0bedb51_body_translit1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/6d9880fb-49a1-4103-bdfd-a19440f07644_body_translit1",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 13 char on transliteration (6d9880fb-49a1-4103-bdfd-a19440f07644_body_translit1)",
+        "text": "Annotation body referencing transliteration of O147 line 13 word 1 on transliteration (6d9880fb-49a1-4103-bdfd-a19440f07644_body_translit1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/85156587-47f1-4c4e-8a91-3d45a569109b_body_translit1",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 6 char on transliteration (85156587-47f1-4c4e-8a91-3d45a569109b_body_translit1)",
+        "text": "Annotation body referencing transliteration of O147 line 6 word 1 on transliteration (85156587-47f1-4c4e-8a91-3d45a569109b_body_translit1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/86bfaccf-619d-45fe-8f73-b76042b0e613_body_translit1",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 7 char on transliteration (86bfaccf-619d-45fe-8f73-b76042b0e613_body_translit1)",
+        "text": "Annotation body referencing transliteration of O147 line 7 word 3 on transliteration (86bfaccf-619d-45fe-8f73-b76042b0e613_body_translit1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/9a94a4f5-4051-4094-9308-ee85fbb9d117_body_translit1",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 3 char on transliteration (9a94a4f5-4051-4094-9308-ee85fbb9d117_body_translit1)",
+        "text": "Annotation body referencing transliteration of O147 line 3 word 1 on transliteration (9a94a4f5-4051-4094-9308-ee85fbb9d117_body_translit1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/b2b3dbd0-dd30-499c-8985-1736143f367b_body_translit1",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 1 char on transliteration (b2b3dbd0-dd30-499c-8985-1736143f367b_body_translit1)",
+        "text": "Annotation body referencing transliteration of O147 line 1 word 5 on transliteration (b2b3dbd0-dd30-499c-8985-1736143f367b_body_translit1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/caf33991-6043-4318-8cd4-21b1486a1321_body_translit1",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 6 char on transliteration (caf33991-6043-4318-8cd4-21b1486a1321_body_translit1)",
+        "text": "Annotation body referencing transliteration of O147 line 6 word 1 on transliteration (caf33991-6043-4318-8cd4-21b1486a1321_body_translit1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/caf33991-6043-4318-8cd4-21b1486a1321_body_translit2",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 6 char on transliteration (caf33991-6043-4318-8cd4-21b1486a1321_body_translit2)",
+        "text": "Annotation body referencing transliteration of O147 line 6 word 2 on transliteration (caf33991-6043-4318-8cd4-21b1486a1321_body_translit2)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit1",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 8 char on transliteration (e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit1)",
+        "text": "Annotation body referencing transliteration of O147 line 8 word 2 on transliteration (e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit2",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 8 char on transliteration (e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit2)",
+        "text": "Annotation body referencing transliteration of O147 line 8 word 3 on transliteration (e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit2)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/eb5d1b13-f5cd-4235-9bf1-69a3c6c9cb30_body_translit1",
         "parent": "http://www.w3.org/ns/oa#SpecificResource",
         "type": "instance",
-        "text": "Annotation body referencing transliteration char occurrence at O147 line 12 char on transliteration (eb5d1b13-f5cd-4235-9bf1-69a3c6c9cb30_body_translit1)",
+        "text": "Annotation body referencing transliteration of O147 line 12 word 1 on transliteration (eb5d1b13-f5cd-4235-9bf1-69a3c6c9cb30_body_translit1)",
         "data": {}
       },
       {
@@ -36973,52 +36970,52 @@ var tree={
         "data": {}
       },
       {
-        "id": "n87ae84c72497426a805e26267b3ff499b2",
+        "id": "nf2b8da90385d4b6ba103bec5bb4647ddb2",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n87ae84c72497426a805e26267b3ff499b2",
+        "text": "nf2b8da90385d4b6ba103bec5bb4647ddb2",
         "data": {}
       },
       {
-        "id": "n87ae84c72497426a805e26267b3ff499b3",
+        "id": "nf2b8da90385d4b6ba103bec5bb4647ddb3",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n87ae84c72497426a805e26267b3ff499b3",
+        "text": "nf2b8da90385d4b6ba103bec5bb4647ddb3",
         "data": {}
       },
       {
-        "id": "n87ae84c72497426a805e26267b3ff499b4",
+        "id": "nf2b8da90385d4b6ba103bec5bb4647ddb4",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n87ae84c72497426a805e26267b3ff499b4",
+        "text": "nf2b8da90385d4b6ba103bec5bb4647ddb4",
         "data": {}
       },
       {
-        "id": "n87ae84c72497426a805e26267b3ff499b5",
+        "id": "nf2b8da90385d4b6ba103bec5bb4647ddb5",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n87ae84c72497426a805e26267b3ff499b5",
+        "text": "nf2b8da90385d4b6ba103bec5bb4647ddb5",
         "data": {}
       },
       {
-        "id": "n87ae84c72497426a805e26267b3ff499b6",
+        "id": "nf2b8da90385d4b6ba103bec5bb4647ddb6",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n87ae84c72497426a805e26267b3ff499b6",
+        "text": "nf2b8da90385d4b6ba103bec5bb4647ddb6",
         "data": {}
       },
       {
-        "id": "n87ae84c72497426a805e26267b3ff499b7",
+        "id": "nf2b8da90385d4b6ba103bec5bb4647ddb7",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n87ae84c72497426a805e26267b3ff499b7",
+        "text": "nf2b8da90385d4b6ba103bec5bb4647ddb7",
         "data": {}
       },
       {
-        "id": "n87ae84c72497426a805e26267b3ff499b8",
+        "id": "nf2b8da90385d4b6ba103bec5bb4647ddb8",
         "parent": "http://xmlns.com/foaf/0.1/Person",
         "type": "instance",
-        "text": "n87ae84c72497426a805e26267b3ff499b8",
+        "text": "nf2b8da90385d4b6ba103bec5bb4647ddb8",
         "data": {}
       },
       {
@@ -44874,14 +44871,6 @@ var tree={
         "text": "CuneiformWedge (purl:graphemon#CuneiformWedge) [9]",
         "data": {
           "to": {
-            "http://www.purl.org/cuneiform/isRepresentedBy": {
-              "instancecount": 1,
-              "http://www.purl.org/graphemon#CuneiformWedge": 1
-            },
-            "http://www.purl.org/graphemon#leftOf": {
-              "instancecount": 1,
-              "http://www.purl.org/graphemon#CuneiformWedge": 1
-            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#Class": 1
@@ -44891,13 +44880,17 @@ var tree={
             }
           },
           "from": {
-            "http://www.purl.org/graphemon#leftOf": {
+            "http://www.purl.org/cuneiform/isRepresentedBy": {
               "instancecount": 0,
               "http://www.purl.org/graphemon#CuneiformWedge": 1
+            },
+            "http://www.w3.org/ns/oa#hasSource": {
+              "instancecount": 0,
+              "http://www.w3.org/ns/oa#SpecificResource": 1
             }
           }
         },
-        "instancecount": 4
+        "instancecount": 2
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_obverse_writtentext",
