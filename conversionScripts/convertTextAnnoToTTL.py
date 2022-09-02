@@ -218,9 +218,9 @@ for tabname in tabletnames:
         res.write("<"+str(indid)+"_target"+str(targetcounter)+"_selector> oa:end \""+str(endindex)+"\"^^xsd:integer .\n")
         res.write("<"+str(indid)+"_target"+str(targetcounter)+"_selector> rdf:value \""+str(selectorval).replace('"','\\"')+"\" .\n")
         if iswordannotation:
-            res.write("<"+str(indid)+"_target"+str(targetcounter)+"_selector> rdfs:label \"Annotation target selector of Annotation of of text section at "+str(tabname)+" transliteration  line "+str(curline)+" word "+str(curword)+" on "+str(material)+"\"@en .\n")
+            res.write("<"+str(indid)+"_target"+str(targetcounter)+"_selector> rdfs:label \"Annotation target selector of Annotation of text section at "+str(tabname)+" transliteration  line "+str(curline)+" word "+str(curword)+" on "+str(material)+"\"@en .\n")
         else:
-            res.write("<"+str(indid)+"_target"+str(targetcounter)+"_selector> rdfs:label \"Annotation target selector of Annotation of of text section at "+str(tabname)+" transliteration  line "+str(curline)+" char "+str(curchar)+" on "+str(material)+"\"@en .\n")
+            res.write("<"+str(indid)+"_target"+str(targetcounter)+"_selector> rdfs:label \"Annotation target selector of Annotation of text section at "+str(tabname)+" transliteration  line "+str(curline)+" char "+str(curchar)+" on "+str(material)+"\"@en .\n")
     res.close()
     g = Graph()
     g.parse(filename.replace(".json",".ttl"))
