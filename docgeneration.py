@@ -1656,9 +1656,7 @@ class OntDocGeneration:
                         image3dannos.add(str(svglit))
             if pred=="http://www.w3.org/ns/oa#hasSelector" and tup[0]==URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type") and tup[1]==URIRef("http://www.w3.org/ns/oa#TextPositionSelector"):
                 curanno={}
-                print("ADDING TEXTANNO: "+str(tup))
                 for txtlit in graph.predicate_objects(object):
-                    print("ADDING TEXTANNO: "+str(txtlit))
                     if str(txtlit[0])=="http://www.w3.org/1999/02/22-rdf-syntax-ns#value":
                         curanno["exact"]=str(txtlit[1])
                     elif str(txtlit[0])=="http://www.w3.org/ns/oa#start":
@@ -1667,7 +1665,6 @@ class OntDocGeneration:
                         curanno["end"]=str(txtlit[1])
                 textannos.append(curanno)
             if pred=="http://www.w3.org/ns/oa#hasSource":
-                print("TEXTANNOSOURCE: "+str(tup[1]))
                 annosource=str(tup[1])
             if isinstance(tup[1], Literal) and (str(tup[0]) in geoproperties or str(tup[1].datatype) in geoliteraltypes):
                 geojsonrep = self.processLiteral(str(tup[1]), tup[1].datatype, "")
@@ -1828,10 +1825,11 @@ class OntDocGeneration:
         foundlabel = ""
         imageannos=set()
         textannos=[]
+        foundvals=set()
         image3dannos=set()
         predobjmap={}
         isgeocollection=False
-        comment=None
+        comment={}
         parentclass=None
         inverse=False
         if str(subject) in uritotreeitem and uritotreeitem[str(subject)]["parent"].startswith("http"):
@@ -1874,7 +1872,7 @@ class OntDocGeneration:
             if str(tup) in labelproperties:
                 foundlabel = str(predobjmap[tup][0])
             if str(tup) in commentproperties:
-                comment = str(predobjmap[tup][0])
+                comment[str(tup)]=str(predobjmap[tup][0])
             if len(predobjmap[tup]) > 0:
                 if len(predobjmap[tup])>1:
                     tablecontents+="<td class=\"wrapword\"><ul>"
@@ -1891,6 +1889,8 @@ class OntDocGeneration:
                                 ext = "." + ''.join(filter(str.isalpha, str(item).split(".")[-1]))                            
                             if ext in fileextensionmap:
                                 foundmedia[fileextensionmap[ext]].add(str(item))
+                        elif tup in valueproperties:
+                            foundvals.add(str(item))
                         res=self.createHTMLTableValueEntry(subject, tup, item, ttlf, graph,
                                               baseurl, checkdepth,geojsonrep,foundmedia,imageannos,textannos,image3dannos,False)
                         geojsonrep = res["geojson"]
@@ -1916,6 +1916,8 @@ class OntDocGeneration:
                             ext = "." + ''.join(filter(str.isalpha, str(predobjmap[tup][0]).split(".")[-1]))
                         if ext in fileextensionmap:
                             foundmedia[fileextensionmap[ext]].add(str(predobjmap[tup][0]))
+                    elif tup in valueproperties:
+                        foundvals.add(str(predobjmap[tup][0]))
                     res=self.createHTMLTableValueEntry(subject, tup, predobjmap[tup][0], ttlf, graph,
                                               baseurl, checkdepth,geojsonrep,foundmedia,imageannos,textannos,image3dannos,False)
                     tablecontents+=res["html"]
@@ -2017,8 +2019,10 @@ class OntDocGeneration:
                     "{{baseurl}}", baseurl).replace("{{description}}",
                                                                                                "").replace(
                     "{{scriptfolderpath}}", rellink).replace("{{classtreefolderpath}}", rellink2).replace("{{exports}}",myexports).replace("{{subject}}",str(subject)))
-            if comment!=None:
-                f.write(htmlcommenttemplate.replace("{{comment}}",comment))
+            for comm in comment:
+                f.write(htmlcommenttemplate.replace("{{comment}}",self.shortenURI(comm)+":"+comment[comm]))
+            for fval in foundvals:
+                f.write(htmlcommenttemplate.replace("{{comment}}","<b>Value:<mark>"+str(fval)+"</mark></b>"))
             if len(foundmedia["mesh"])>0 and len(image3dannos)>0:
                 for anno in image3dannos:
                     if ("POINT" in anno.upper() or "POLYGON" in anno.upper() or "LINESTRING" in anno.upper()):
@@ -2066,9 +2070,9 @@ class OntDocGeneration:
                 print("TEXTANNOS: "+str(textannos))
                 for textanno in textannos:
                     if "src" in textanno:
-                        f.write("<span class=\"textanno\" start=\""+str(textanno["start"])+"\" end=\""+str(textanno["end"])+"\" exact=\""+str(textanno["exact"])+"\" src=\""+str(textanno["src"])+"\"><mark>"+str(textanno["exact"])+"</mark></span>")
+                        f.write("<span style=\"font-weight:bold\" class=\"textanno\" start=\""+str(textanno["start"])+"\" end=\""+str(textanno["end"])+"\" exact=\""+str(textanno["exact"])+"\" src=\""+str(textanno["src"])+"\"><mark>"+str(textanno["exact"])+"</mark></span>")
                     else:
-                        f.write("<span class=\"textanno\" start=\""+str(textanno["start"])+"\" end=\""+str(textanno["end"])+"\" exact=\""+str(textanno["exact"])+"\"><mark>"+str(textanno["exact"])+"</mark></span>")
+                        f.write("<span style=\"font-weight:bold\" class=\"textanno\" start=\""+str(textanno["start"])+"\" end=\""+str(textanno["end"])+"\" exact=\""+str(textanno["exact"])+"\"><mark>"+str(textanno["exact"])+"</mark></span>")
             for audio in foundmedia["audio"]:
                 f.write(audiotemplate.replace("{{audio}}",str(audio)))
             for video in foundmedia["video"]:
