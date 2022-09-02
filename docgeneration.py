@@ -1795,7 +1795,7 @@ class OntDocGeneration:
         checkdepth=self.checkDepthFromPath(savepath, baseurl, subject)
         foundlabel = ""
         imageannos=set()
-        textannos=set()
+        textannos=[]
         image3dannos=set()
         predobjmap={}
         isgeocollection=False
@@ -2030,7 +2030,7 @@ class OntDocGeneration:
                         carousel="carousel-item"
             if len(foundmedia["image"])>3:
                 f.write(imagecarouselfooter)
-            if len(textannos)>=0:
+            if len(textannos)>0:
                 print("TEXTANNOS: "+str(textannos))
                 for textann in textannos:
                     f.write("<span class=\"textanno\" from=\"\" to=\"\" exact=\"\"></span>")
