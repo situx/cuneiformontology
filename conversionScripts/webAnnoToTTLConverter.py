@@ -23,7 +23,7 @@ def coptoRDF(fw,crsnamespace,indid,opaswkt,induid):
     induuid=induid.replace("#","")
     fw.write("<"+str(indid)+"> <http://www.opengis.net/ont/geosparql#coordinateOperation> <"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"> .\n")
     fw.write("<"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"> rdfs:label \"Object To PCA\"@en .\n")
-    fw.write("<"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"> rdfs:label geocrs:CoordinateOperation .\n")
+    fw.write("<"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"> rdf:type geocrs:CoordinateOperation .\n")
     fw.write("<"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"> geocrs:sourceCRS <"+str(crsnamespace)+"cs/cartesian_ax3_mm> .\n")
     fw.write("<"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"> geocrs:parameter <"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"_xaxis_translation> .\n")
     fw.write("<"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"_xaxis_translation> rdfs:label \"X-axis translation\"@en .\n")
