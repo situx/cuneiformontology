@@ -2556,6 +2556,9 @@ oa:FragmentSelector a owl:Class ;
     rdfs:label "Annotation target selector of Annotation of Glyph at O147 back line 12 char 4 on 3D rendering"@en ;
     rdf:value "<svg><polygon points=\"1093.6251220703125,2174.690185546875 1191.4384765625,2117.244140625 1208.5169677734375,2194.873779296875 1189.8858642578125,2252.31982421875 1154.17626953125,2272.50341796875 1120.0191650390625,2246.109375 1120.0191650390625,2246.109375\"></polygon></svg>" .
 
+geocrs:CoordinateOperation a owl:Class ;
+    rdfs:label "coordinate operation"@en .
+
 oa:WKTSelector a owl:Class ;
     rdfs:label "WKT Selector"@en ;
     rdfs:subClassOf oa:Selector .
@@ -2569,6 +2572,12 @@ oa:Selector a owl:Class .
     geocrs:axis <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1>,
         <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2>,
         <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> .
+
+geocrs:OperationParameter a owl:Class ;
+    rdfs:label "operation parameter"@en .
+
+geocrs:OperationParameterValue a owl:Class ;
+    rdfs:label "operation parameter value"@en .
 
 oa:SvgSelector a owl:Class ;
     rdfs:label "Svg Selector"@en ;

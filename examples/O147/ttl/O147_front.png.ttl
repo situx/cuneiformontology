@@ -72,6 +72,9 @@
     rdfs:label "Image annotations on O147 obverse on medium 3D rendering"@en ;
     rdfs:subClassOf skos:Collection .
 
+geocrs:CoordinateOperation a owl:Class ;
+    rdfs:label "coordinate operation"@en .
+
 oa:WKTSelector a owl:Class ;
     rdfs:label "WKT Selector"@en ;
     rdfs:subClassOf oa:Selector .
@@ -1726,6 +1729,12 @@ oa:WKTSelector a owl:Class ;
     geocrs:axis <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1>,
         <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2>,
         <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> .
+
+geocrs:OperationParameter a owl:Class ;
+    rdfs:label "operation parameter"@en .
+
+geocrs:OperationParameterValue a owl:Class ;
+    rdfs:label "operation parameter value"@en .
 
 oa:FragmentSelector a owl:Class ;
     rdfs:label "Fragment Selector"@en ;
