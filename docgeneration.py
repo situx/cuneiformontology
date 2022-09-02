@@ -2049,7 +2049,7 @@ class OntDocGeneration:
                 f.write(imagecarouselfooter)
             if len(textannos)>0:
                 print("TEXTANNOS: "+str(textannos))
-                for textann in textannos:
+                for textanno in textannos:
                     f.write("<span class=\"textanno\" start=\""+str(textanno["start"])+"\" end=\""+str(textanno["end"])+"\" exact=\""+str(textanno["exact"])+"\"><mark>"+str(textanno["exact"])+"</mark></span>")
             for audio in foundmedia["audio"]:
                 f.write(audiotemplate.replace("{{audio}}",str(audio)))
