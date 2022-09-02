@@ -19,6 +19,26 @@ withlines=False
 withcharoccs=False
 withglyphs=False
 
+def coptoRDF(fw,crsnamespace,indid,opaswkt,induuid):
+    fw.write("<"+str(indid)+"> <http://www.opengis.net/ont/geosparql#coordinateOperation> <"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"> .\n")
+    fw.write("<"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"> rdfs:label \"Object To PCA\"@en .\n")
+    fw.write("<"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"> geocrs:sourceCRS <"+str(crsnamespace)+"cs/cartesian_ax3_mm> .\n")
+    fw.write("<"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"> geocrs:parameter <"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"_xaxis_translation> .\n")
+    fw.write("<"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"_xaxis_translation> rdfs:label \"X-axis translation\"@en .\n")
+    fw.write("<"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"_xaxis_translation> rdf:value \"0.0\"^^xsd:double .\n")
+    fw.write("<"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"_xaxis_translation> om:hasUnit om:millimetre .\n")
+    fw.write("<"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"> geocrs:parameter <"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"_yaxis_translation> .\n")
+    fw.write("<"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"_yaxis_translation> rdfs:label \"Y-axis translation\"@en .\n")
+    fw.write("<"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"_yaxis_translation> rdf:value \"0.0\"^^xsd:double .\n")
+    fw.write("<"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"_yaxis_translation> om:hasUnit om:millimetre .\n")
+    fw.write("<"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"> geocrs:parameter <"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"_zaxis_translation> .\n")
+    fw.write("<"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"_zaxis_translation> rdfs:label \"Z-axis translation\"@en .\n")
+    fw.write("<"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"_zaxis_translation> rdf:value \"0.0\"^^xsd:double .\n")
+    fw.write("<"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"_zaxis_translation> om:hasUnit om:millimetre .\n")
+    #fw.write("<"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"> geocrs:area_of_use <"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"_aou> .\n")
+    #fw.write("<"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"> geocrs:area_of_use <"+str(crsnamespace)+"crs/operation/cartesian_to_pca_"+str(induuid)+"_aou> .\n")
+    
+    
 
 def csToRDF(fw,crsnamespace,indid,crsaswkt):
     svgstr= """<svg width=\"400\" height=\"250\" viewbox=\"0 0 375 220\"><defs><marker id=\"arrowhead\" markerWidth=\"10\" markerHeight=\"7\" refX=\"0\" refY=\"2\" orient=\"auto\"><polygon points=\"0 0, 4 2, 0 4\" /></marker></defs>"""
@@ -50,7 +70,7 @@ def csToRDF(fw,crsnamespace,indid,crsaswkt):
     fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis3> <http://www.opengis.net/ont/crs/axisOrder> \"3\"^^xsd:int .\n")
     fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis3> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre> .\n")        
     svgstr+="""<line x1=\"20\" y1=\"200\" x2=\"190\" y2=\"30\" stroke=\"blue\" stroke-width=\"5\" marker-end=\"url(#arrowhead)\"></line><text x=\"210\" y=\"25\" class=\"small\">Z: Cartesian Z Axis (om:millimetre)</text>"""
-    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm> <http://www.opengis.net/ont/crs/asSVG> \""+svgstr.replace("\"","'")+"</svg>\"^^xsd:string .\n")
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm> <http://www.opengis.net/ont/crs/asSVG> \""+svgstr.replace("\"","'")+"</svg>\"^^<http://www.opengis.net/ont/crs/svgLiteral> .\n")
     
 for tabname in tabletnames:
     print(tabname)
@@ -86,6 +106,8 @@ for tabname in tabletnames:
         @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
         @prefix xml: <http://www.w3.org/XML/1998/namespace> .
         @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+        @prefix geocrs: <http://www.opengis.net/ont/crs/> .
+        @prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
         @prefix anno: <http://www.w3.org/ns/anno.jsonld> .
         @prefix dc: <http://purl.org/dc/elements/1.1/> .
         @prefix as: <https://www.w3.org/ns/activitystreams#> .
@@ -187,7 +209,8 @@ for tabname in tabletnames:
                         res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql/transformationMatrix> \""+str(compref["transformationmatrix"]).replace("\n","").replace("\\n","")+"\"^^xsd:string .\n")
                         res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql/comprefType> \""+str(compref["type"])+"\"^^xsd:string .\n")
                         res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql/referenceVector> \"\"\""+str(compref["value"]).replace("\r","").replace("\n","").replace("\\n","")+"\"\"\"^^xsd:string .\n")
-                        res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql/wktTransformation> \"\"\""+str(compref["wktTransformation"]).replace("\n","").replace("\"","\\\"")+"\"\"\"^^xsd:string .\n")
+                        res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql/wktTransformation> \"\"\""+str(compref["wktTransformation"]).replace("\n","").replace("\"","\\\"")+"\"\"\"^^geocrs:wktLiteral .\n")
+                        coptoRDF(res,crsnamespace,str(comprefid),"\"\"\""+str(compref["wktTransformation"]).replace("\n","").replace("\"","\\\"")+"\"\"\"",key)
                     i+=1               
                 res.write("<"+str(indid)+"_target3d_selector> rdf:type oa:WKTSelector .\n")
                 res.write("<"+str(indid)+"_target3d_selector> rdf:value \""+str(data3d[key]["target"]["selector"]["value"])+"\"^^oa:wktLiteral .\n")

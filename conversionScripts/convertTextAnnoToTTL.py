@@ -170,7 +170,6 @@ for tabname in tabletnames:
         res.write("<"+str(indid)+"> <http://purl.org/dc/terms/creator> <"+creator+"> .\n")
         res.write("<"+str(indid)+"> oa:hasTarget <"+str(indid)+"_target1> .\n")
         res.write("<"+str(indid)+"> <http://purl.org/dc/terms/rights> \"https://creativecommons.org/publicdomain/zero/1.0/\"^^xsd:anyURI .\n")
-        res.write("<"+str(indid)+"> rdfs:label \"Annotation of text at "+str(tabname)+"  line  char  on "+str(material)+"\"@en .\n")
         targetcounter=1
         resuris=relateAnnotationToTransliteration(startindex,endindex,namespace,tabname)
         for anntar in resuris:
@@ -183,9 +182,11 @@ for tabname in tabletnames:
                 curline=resuris[anntar]["line"]
                 if "word" in resuris[anntar] and iswordannotation:
                     res.write("<"+str(indid)+"_body_translit"+str(targetcounter)+"> rdfs:label  \"Annotation body referencing transliteration of "+str(tabname)+" line "+str(resuris[anntar]["line"])+" word "+str(resuris[anntar]["word"])+" on "+str(material)+"\"@en .\n")
+                    res.write("<"+str(indid)+"> rdfs:label \"Annotation of text at "+str(tabname)+"  line "+str(resuris[anntar]["line"])+" word "+str(resuris[anntar]["word"])+" on "+str(material)+"\"@en .\n")
                     curword=resuris[anntar]["word"]
                 if "char" in resuris[anntar] and iswordannotation:
                     res.write("<"+str(indid)+"_body_translit"+str(targetcounter)+"> rdfs:label  \"Annotation body referencing transliteration of "+str(tabname)+" line "+str(resuris[anntar]["line"])+" char "+str(resuris[anntar]["char"])+" on "+str(material)+"\"@en .\n")
+                    res.write("<"+str(indid)+"> rdfs:label \"Annotation of text at "+str(tabname)+"  line "+str(resuris[anntar]["line"])+" char "+str(resuris[anntar]["char"])+" on "+str(material)+"\"@en .\n")
                     curchar=resuris[anntar]["char"]
                 targetcounter+=1
         if "body" in keyobj:

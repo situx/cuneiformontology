@@ -1,12 +1,12 @@
 @prefix as: <https://www.w3.org/ns/activitystreams#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geocrs: <http://www.opengis.net/ont/crs/> .
 @prefix ns1: <http://purl.org/meshsparql/> .
 @prefix ns2: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns3: <http://www.opengis.net/ont/crs/> .
-@prefix ns4: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix ns3: <http://purl.org/dc/terms/> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -40,31 +40,319 @@ oa:FragmentSelector a owl:Class ;
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794> ;
     rdfs:subClassOf skos:Collection .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1> a ns3:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#2f61ab22-5e2e-4bd3-bf07-143503771fa7> rdfs:label "Object To PCA"@en ;
+    geocrs:parameter <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#2f61ab22-5e2e-4bd3-bf07-143503771fa7_xaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#2f61ab22-5e2e-4bd3-bf07-143503771fa7_yaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#2f61ab22-5e2e-4bd3-bf07-143503771fa7_zaxis_translation> ;
+    geocrs:sourceCRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#2f61ab22-5e2e-4bd3-bf07-143503771fa7_xaxis_translation> rdfs:label "X-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#2f61ab22-5e2e-4bd3-bf07-143503771fa7_yaxis_translation> rdfs:label "Y-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#2f61ab22-5e2e-4bd3-bf07-143503771fa7_zaxis_translation> rdfs:label "Z-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#342a8a96-28c6-4727-90c2-0835ccf32acd> rdfs:label "Object To PCA"@en ;
+    geocrs:parameter <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#342a8a96-28c6-4727-90c2-0835ccf32acd_xaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#342a8a96-28c6-4727-90c2-0835ccf32acd_yaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#342a8a96-28c6-4727-90c2-0835ccf32acd_zaxis_translation> ;
+    geocrs:sourceCRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#342a8a96-28c6-4727-90c2-0835ccf32acd_xaxis_translation> rdfs:label "X-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#342a8a96-28c6-4727-90c2-0835ccf32acd_yaxis_translation> rdfs:label "Y-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#342a8a96-28c6-4727-90c2-0835ccf32acd_zaxis_translation> rdfs:label "Z-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#3c2b58f8-0830-427f-b388-cbebf1a7cf14> rdfs:label "Object To PCA"@en ;
+    geocrs:parameter <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#3c2b58f8-0830-427f-b388-cbebf1a7cf14_xaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#3c2b58f8-0830-427f-b388-cbebf1a7cf14_yaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#3c2b58f8-0830-427f-b388-cbebf1a7cf14_zaxis_translation> ;
+    geocrs:sourceCRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#3c2b58f8-0830-427f-b388-cbebf1a7cf14_xaxis_translation> rdfs:label "X-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#3c2b58f8-0830-427f-b388-cbebf1a7cf14_yaxis_translation> rdfs:label "Y-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#3c2b58f8-0830-427f-b388-cbebf1a7cf14_zaxis_translation> rdfs:label "Z-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#4e29b703-128a-4b0f-a7f2-0f4ac2f3e691> rdfs:label "Object To PCA"@en ;
+    geocrs:parameter <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_xaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_yaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_zaxis_translation> ;
+    geocrs:sourceCRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_xaxis_translation> rdfs:label "X-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_yaxis_translation> rdfs:label "Y-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_zaxis_translation> rdfs:label "Z-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#51752fae-341c-4300-8459-a040fa24e2e4> rdfs:label "Object To PCA"@en ;
+    geocrs:parameter <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#51752fae-341c-4300-8459-a040fa24e2e4_xaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#51752fae-341c-4300-8459-a040fa24e2e4_yaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#51752fae-341c-4300-8459-a040fa24e2e4_zaxis_translation> ;
+    geocrs:sourceCRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#51752fae-341c-4300-8459-a040fa24e2e4_xaxis_translation> rdfs:label "X-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#51752fae-341c-4300-8459-a040fa24e2e4_yaxis_translation> rdfs:label "Y-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#51752fae-341c-4300-8459-a040fa24e2e4_zaxis_translation> rdfs:label "Z-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#74b0bb9e-7847-475a-83aa-9f49d88d4e39> rdfs:label "Object To PCA"@en ;
+    geocrs:parameter <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#74b0bb9e-7847-475a-83aa-9f49d88d4e39_xaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#74b0bb9e-7847-475a-83aa-9f49d88d4e39_yaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#74b0bb9e-7847-475a-83aa-9f49d88d4e39_zaxis_translation> ;
+    geocrs:sourceCRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#74b0bb9e-7847-475a-83aa-9f49d88d4e39_xaxis_translation> rdfs:label "X-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#74b0bb9e-7847-475a-83aa-9f49d88d4e39_yaxis_translation> rdfs:label "Y-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#74b0bb9e-7847-475a-83aa-9f49d88d4e39_zaxis_translation> rdfs:label "Z-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#8e692dd8-375b-4468-b81d-46b464ad3cfc> rdfs:label "Object To PCA"@en ;
+    geocrs:parameter <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#8e692dd8-375b-4468-b81d-46b464ad3cfc_xaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#8e692dd8-375b-4468-b81d-46b464ad3cfc_yaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#8e692dd8-375b-4468-b81d-46b464ad3cfc_zaxis_translation> ;
+    geocrs:sourceCRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#8e692dd8-375b-4468-b81d-46b464ad3cfc_xaxis_translation> rdfs:label "X-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#8e692dd8-375b-4468-b81d-46b464ad3cfc_yaxis_translation> rdfs:label "Y-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#8e692dd8-375b-4468-b81d-46b464ad3cfc_zaxis_translation> rdfs:label "Z-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#9994b419-0d27-4ba6-9ead-79d86d3c6eef> rdfs:label "Object To PCA"@en ;
+    geocrs:parameter <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#9994b419-0d27-4ba6-9ead-79d86d3c6eef_xaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#9994b419-0d27-4ba6-9ead-79d86d3c6eef_yaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#9994b419-0d27-4ba6-9ead-79d86d3c6eef_zaxis_translation> ;
+    geocrs:sourceCRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#9994b419-0d27-4ba6-9ead-79d86d3c6eef_xaxis_translation> rdfs:label "X-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#9994b419-0d27-4ba6-9ead-79d86d3c6eef_yaxis_translation> rdfs:label "Y-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#9994b419-0d27-4ba6-9ead-79d86d3c6eef_zaxis_translation> rdfs:label "Z-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#ad8d2422-8b5a-44ba-80db-baffcfbaa808> rdfs:label "Object To PCA"@en ;
+    geocrs:parameter <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#ad8d2422-8b5a-44ba-80db-baffcfbaa808_xaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#ad8d2422-8b5a-44ba-80db-baffcfbaa808_yaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#ad8d2422-8b5a-44ba-80db-baffcfbaa808_zaxis_translation> ;
+    geocrs:sourceCRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#ad8d2422-8b5a-44ba-80db-baffcfbaa808_xaxis_translation> rdfs:label "X-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#ad8d2422-8b5a-44ba-80db-baffcfbaa808_yaxis_translation> rdfs:label "Y-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#ad8d2422-8b5a-44ba-80db-baffcfbaa808_zaxis_translation> rdfs:label "Z-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#b33d847a-9ace-4bae-89de-5c694107072d> rdfs:label "Object To PCA"@en ;
+    geocrs:parameter <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#b33d847a-9ace-4bae-89de-5c694107072d_xaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#b33d847a-9ace-4bae-89de-5c694107072d_yaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#b33d847a-9ace-4bae-89de-5c694107072d_zaxis_translation> ;
+    geocrs:sourceCRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#b33d847a-9ace-4bae-89de-5c694107072d_xaxis_translation> rdfs:label "X-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#b33d847a-9ace-4bae-89de-5c694107072d_yaxis_translation> rdfs:label "Y-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#b33d847a-9ace-4bae-89de-5c694107072d_zaxis_translation> rdfs:label "Z-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#b6733284-773c-4b2f-a402-383393e812e0> rdfs:label "Object To PCA"@en ;
+    geocrs:parameter <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#b6733284-773c-4b2f-a402-383393e812e0_xaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#b6733284-773c-4b2f-a402-383393e812e0_yaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#b6733284-773c-4b2f-a402-383393e812e0_zaxis_translation> ;
+    geocrs:sourceCRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#b6733284-773c-4b2f-a402-383393e812e0_xaxis_translation> rdfs:label "X-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#b6733284-773c-4b2f-a402-383393e812e0_yaxis_translation> rdfs:label "Y-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#b6733284-773c-4b2f-a402-383393e812e0_zaxis_translation> rdfs:label "Z-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#c8de7de3-7841-4bb1-97f3-536092c19208> rdfs:label "Object To PCA"@en ;
+    geocrs:parameter <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#c8de7de3-7841-4bb1-97f3-536092c19208_xaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#c8de7de3-7841-4bb1-97f3-536092c19208_yaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#c8de7de3-7841-4bb1-97f3-536092c19208_zaxis_translation> ;
+    geocrs:sourceCRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#c8de7de3-7841-4bb1-97f3-536092c19208_xaxis_translation> rdfs:label "X-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#c8de7de3-7841-4bb1-97f3-536092c19208_yaxis_translation> rdfs:label "Y-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#c8de7de3-7841-4bb1-97f3-536092c19208_zaxis_translation> rdfs:label "Z-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#d71a22a0-1c00-4f69-a1ae-69546444f6a1> rdfs:label "Object To PCA"@en ;
+    geocrs:parameter <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#d71a22a0-1c00-4f69-a1ae-69546444f6a1_xaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#d71a22a0-1c00-4f69-a1ae-69546444f6a1_yaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#d71a22a0-1c00-4f69-a1ae-69546444f6a1_zaxis_translation> ;
+    geocrs:sourceCRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#d71a22a0-1c00-4f69-a1ae-69546444f6a1_xaxis_translation> rdfs:label "X-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#d71a22a0-1c00-4f69-a1ae-69546444f6a1_yaxis_translation> rdfs:label "Y-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#d71a22a0-1c00-4f69-a1ae-69546444f6a1_zaxis_translation> rdfs:label "Z-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#e24ac580-f9ce-46e0-a245-f4e3015ec8c0> rdfs:label "Object To PCA"@en ;
+    geocrs:parameter <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#e24ac580-f9ce-46e0-a245-f4e3015ec8c0_xaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#e24ac580-f9ce-46e0-a245-f4e3015ec8c0_yaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#e24ac580-f9ce-46e0-a245-f4e3015ec8c0_zaxis_translation> ;
+    geocrs:sourceCRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#e24ac580-f9ce-46e0-a245-f4e3015ec8c0_xaxis_translation> rdfs:label "X-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#e24ac580-f9ce-46e0-a245-f4e3015ec8c0_yaxis_translation> rdfs:label "Y-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#e24ac580-f9ce-46e0-a245-f4e3015ec8c0_zaxis_translation> rdfs:label "Z-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#eaabf091-ea1b-4795-896a-75711119b1c0> rdfs:label "Object To PCA"@en ;
+    geocrs:parameter <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#eaabf091-ea1b-4795-896a-75711119b1c0_xaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#eaabf091-ea1b-4795-896a-75711119b1c0_yaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#eaabf091-ea1b-4795-896a-75711119b1c0_zaxis_translation> ;
+    geocrs:sourceCRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#eaabf091-ea1b-4795-896a-75711119b1c0_xaxis_translation> rdfs:label "X-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#eaabf091-ea1b-4795-896a-75711119b1c0_yaxis_translation> rdfs:label "Y-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#eaabf091-ea1b-4795-896a-75711119b1c0_zaxis_translation> rdfs:label "Z-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#f35ec015-52aa-44cd-8656-3fa893cce887> rdfs:label "Object To PCA"@en ;
+    geocrs:parameter <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#f35ec015-52aa-44cd-8656-3fa893cce887_xaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#f35ec015-52aa-44cd-8656-3fa893cce887_yaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#f35ec015-52aa-44cd-8656-3fa893cce887_zaxis_translation> ;
+    geocrs:sourceCRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#f35ec015-52aa-44cd-8656-3fa893cce887_xaxis_translation> rdfs:label "X-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#f35ec015-52aa-44cd-8656-3fa893cce887_yaxis_translation> rdfs:label "Y-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#f35ec015-52aa-44cd-8656-3fa893cce887_zaxis_translation> rdfs:label "Z-axis translation"@en ;
+    om:hasUnit om:millimetre ;
+    rdf:value 0e+00 .
+
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1> a geocrs:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 1"@en ;
-    ns4:hasUnit ns4:millimetre ;
-    ns3:abbreviation "X" ;
-    ns3:axisDirection ns3:geocentricX ;
-    ns3:axisOrder "1"^^xsd:int .
+    om:hasUnit om:millimetre ;
+    geocrs:abbreviation "X" ;
+    geocrs:axisDirection geocrs:geocentricX ;
+    geocrs:axisOrder "1"^^xsd:int .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2> a ns3:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2> a geocrs:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 2"@en ;
-    ns4:hasUnit ns4:millimetre ;
-    ns3:abbreviation "Y" ;
-    ns3:axisDirection ns3:geocentricY ;
-    ns3:axisOrder "2"^^xsd:int .
+    om:hasUnit om:millimetre ;
+    geocrs:abbreviation "Y" ;
+    geocrs:axisDirection geocrs:geocentricY ;
+    geocrs:axisOrder "2"^^xsd:int .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> a ns3:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> a geocrs:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 3"@en ;
-    ns4:hasUnit ns4:millimetre ;
-    ns3:abbreviation "Z" ;
-    ns3:axisDirection ns3:geocentricZ ;
-    ns3:axisOrder "3"^^xsd:int .
+    om:hasUnit om:millimetre ;
+    geocrs:abbreviation "Z" ;
+    geocrs:axisDirection geocrs:geocentricZ ;
+    geocrs:axisOrder "3"^^xsd:int .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/11b957da-50e2-487b-9501-3be9638eab44> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 7 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/11b957da-50e2-487b-9501-3be9638eab44_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/11b957da-50e2-487b-9501-3be9638eab44_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/11b957da-50e2-487b-9501-3be9638eab44_target1> ;
@@ -92,8 +380,8 @@ oa:FragmentSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 1 char 1 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_target1>,
@@ -138,12 +426,13 @@ oa:FragmentSelector a owl:Class ;
     ns1:referenceVector "[-0.9456889  51.624893    0.12959771] [-129.12686     40.986454     0.9130082] [ -8.611319  144.02231     0.6082411] [ -1.2671754  51.854553  -49.35311  ]"^^xsd:string ;
     ns1:stable true ;
     ns1:transformationMatrix "[[ 1.00000000e+00  9.08674697e-09 -1.75505833e-08 -9.45691849e-01] [-9.08674737e-09  1.00000000e+00  5.29757910e-09  5.16248958e+01] [ 1.75505834e-08 -5.29757899e-09  1.00000000e+00  1.29598519e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^geocrs:wktLiteral ;
+    ns2:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#2f61ab22-5e2e-4bd3-bf07-143503771fa7> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 2 char 2 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_target1>,
@@ -188,12 +477,13 @@ oa:FragmentSelector a owl:Class ;
     ns1:referenceVector "[-0.9456889  51.624893    0.12959771] [-129.12686     40.986454     0.9130082] [ -8.611319  144.02231     0.6082411] [ -1.2671754  51.854553  -49.35311  ]"^^xsd:string ;
     ns1:stable true ;
     ns1:transformationMatrix "[[ 1.00000000e+00  9.08674697e-09 -1.75505833e-08 -9.45691849e-01] [-9.08674737e-09  1.00000000e+00  5.29757910e-09  5.16248958e+01] [ 1.75505834e-08 -5.29757899e-09  1.00000000e+00  1.29598519e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^geocrs:wktLiteral ;
+    ns2:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#342a8a96-28c6-4727-90c2-0835ccf32acd> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 3 char 4 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_target1>,
@@ -238,12 +528,13 @@ oa:FragmentSelector a owl:Class ;
     ns1:referenceVector "[-0.9456889  51.624893    0.12959771] [-129.12686     40.986454     0.9130082] [ -8.611319  144.02231     0.6082411] [ -1.2671754  51.854553  -49.35311  ]"^^xsd:string ;
     ns1:stable true ;
     ns1:transformationMatrix "[[ 1.00000000e+00  9.08674697e-09 -1.75505833e-08 -9.45691849e-01] [-9.08674737e-09  1.00000000e+00  5.29757910e-09  5.16248958e+01] [ 1.75505834e-08 -5.29757899e-09  1.00000000e+00  1.29598519e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^geocrs:wktLiteral ;
+    ns2:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#3c2b58f8-0830-427f-b388-cbebf1a7cf14> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 4 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_target1>,
@@ -288,12 +579,13 @@ oa:FragmentSelector a owl:Class ;
     ns1:referenceVector "[-0.9456889  51.624893    0.12959771] [-129.12686     40.986454     0.9130082] [ -8.611319  144.02231     0.6082411] [ -1.2671754  51.854553  -49.35311  ]"^^xsd:string ;
     ns1:stable true ;
     ns1:transformationMatrix "[[ 1.00000000e+00  9.08674697e-09 -1.75505833e-08 -9.45691849e-01] [-9.08674737e-09  1.00000000e+00  5.29757910e-09  5.16248958e+01] [ 1.75505834e-08 -5.29757899e-09  1.00000000e+00  1.29598519e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^geocrs:wktLiteral ;
+    ns2:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#4e29b703-128a-4b0f-a7f2-0f4ac2f3e691> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 2 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_target1>,
@@ -338,12 +630,13 @@ oa:FragmentSelector a owl:Class ;
     ns1:referenceVector "[-0.9456889  51.624893    0.12959771] [-129.12686     40.986454     0.9130082] [ -8.611319  144.02231     0.6082411] [ -1.2671754  51.854553  -49.35311  ]"^^xsd:string ;
     ns1:stable true ;
     ns1:transformationMatrix "[[ 1.00000000e+00  9.08674697e-09 -1.75505833e-08 -9.45691849e-01] [-9.08674737e-09  1.00000000e+00  5.29757910e-09  5.16248958e+01] [ 1.75505834e-08 -5.29757899e-09  1.00000000e+00  1.29598519e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^geocrs:wktLiteral ;
+    ns2:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#51752fae-341c-4300-8459-a040fa24e2e4> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 5 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_target1>,
@@ -388,12 +681,13 @@ oa:FragmentSelector a owl:Class ;
     ns1:referenceVector "[-0.9456889  51.624893    0.12959771] [-129.12686     40.986454     0.9130082] [ -8.611319  144.02231     0.6082411] [ -1.2671754  51.854553  -49.35311  ]"^^xsd:string ;
     ns1:stable true ;
     ns1:transformationMatrix "[[ 1.00000000e+00  9.08674697e-09 -1.75505833e-08 -9.45691849e-01] [-9.08674737e-09  1.00000000e+00  5.29757910e-09  5.16248958e+01] [ 1.75505834e-08 -5.29757899e-09  1.00000000e+00  1.29598519e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^geocrs:wktLiteral ;
+    ns2:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#74b0bb9e-7847-475a-83aa-9f49d88d4e39> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/796378b1-43be-4a50-8f63-ea1b5211349a> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 3 char 6 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/796378b1-43be-4a50-8f63-ea1b5211349a_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/796378b1-43be-4a50-8f63-ea1b5211349a_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/796378b1-43be-4a50-8f63-ea1b5211349a_target1> ;
@@ -421,8 +715,8 @@ oa:FragmentSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 2 char 3 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_target1>,
@@ -467,12 +761,13 @@ oa:FragmentSelector a owl:Class ;
     ns1:referenceVector "[-0.9456889  51.624893    0.12959771] [-129.12686     40.986454     0.9130082] [ -8.611319  144.02231     0.6082411] [ -1.2671754  51.854553  -49.35311  ]"^^xsd:string ;
     ns1:stable true ;
     ns1:transformationMatrix "[[ 1.00000000e+00  9.08674697e-09 -1.75505833e-08 -9.45691849e-01] [-9.08674737e-09  1.00000000e+00  5.29757910e-09  5.16248958e+01] [ 1.75505834e-08 -5.29757899e-09  1.00000000e+00  1.29598519e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^geocrs:wktLiteral ;
+    ns2:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#8e692dd8-375b-4468-b81d-46b464ad3cfc> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 6 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_target1>,
@@ -517,12 +812,13 @@ oa:FragmentSelector a owl:Class ;
     ns1:referenceVector "[-0.9456889  51.624893    0.12959771] [-129.12686     40.986454     0.9130082] [ -8.611319  144.02231     0.6082411] [ -1.2671754  51.854553  -49.35311  ]"^^xsd:string ;
     ns1:stable true ;
     ns1:transformationMatrix "[[ 1.00000000e+00  9.08674697e-09 -1.75505833e-08 -9.45691849e-01] [-9.08674737e-09  1.00000000e+00  5.29757910e-09  5.16248958e+01] [ 1.75505834e-08 -5.29757899e-09  1.00000000e+00  1.29598519e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^geocrs:wktLiteral ;
+    ns2:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#9994b419-0d27-4ba6-9ead-79d86d3c6eef> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 2 char 1 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_target1>,
@@ -567,12 +863,13 @@ oa:FragmentSelector a owl:Class ;
     ns1:referenceVector "[-0.9456889  51.624893    0.12959771] [-129.12686     40.986454     0.9130082] [ -8.611319  144.02231     0.6082411] [ -1.2671754  51.854553  -49.35311  ]"^^xsd:string ;
     ns1:stable true ;
     ns1:transformationMatrix "[[ 1.00000000e+00  9.08674697e-09 -1.75505833e-08 -9.45691849e-01] [-9.08674737e-09  1.00000000e+00  5.29757910e-09  5.16248958e+01] [ 1.75505834e-08 -5.29757899e-09  1.00000000e+00  1.29598519e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^geocrs:wktLiteral ;
+    ns2:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#ad8d2422-8b5a-44ba-80db-baffcfbaa808> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 3 char 2 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_target1>,
@@ -617,12 +914,13 @@ oa:FragmentSelector a owl:Class ;
     ns1:referenceVector "[-0.9456889  51.624893    0.12959771] [-129.12686     40.986454     0.9130082] [ -8.611319  144.02231     0.6082411] [ -1.2671754  51.854553  -49.35311  ]"^^xsd:string ;
     ns1:stable true ;
     ns1:transformationMatrix "[[ 1.00000000e+00  9.08674697e-09 -1.75505833e-08 -9.45691849e-01] [-9.08674737e-09  1.00000000e+00  5.29757910e-09  5.16248958e+01] [ 1.75505834e-08 -5.29757899e-09  1.00000000e+00  1.29598519e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^geocrs:wktLiteral ;
+    ns2:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#b33d847a-9ace-4bae-89de-5c694107072d> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 1 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_target1>,
@@ -667,12 +965,13 @@ oa:FragmentSelector a owl:Class ;
     ns1:referenceVector "[-0.9456889  51.624893    0.12959771] [-129.12686     40.986454     0.9130082] [ -8.611319  144.02231     0.6082411] [ -1.2671754  51.854553  -49.35311  ]"^^xsd:string ;
     ns1:stable true ;
     ns1:transformationMatrix "[[ 1.00000000e+00  9.08674697e-09 -1.75505833e-08 -9.45691849e-01] [-9.08674737e-09  1.00000000e+00  5.29757910e-09  5.16248958e+01] [ 1.75505834e-08 -5.29757899e-09  1.00000000e+00  1.29598519e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^geocrs:wktLiteral ;
+    ns2:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#b6733284-773c-4b2f-a402-383393e812e0> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 3 char 5 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_target1>,
@@ -717,12 +1016,13 @@ oa:FragmentSelector a owl:Class ;
     ns1:referenceVector "[-0.9456889  51.624893    0.12959771] [-129.12686     40.986454     0.9130082] [ -8.611319  144.02231     0.6082411] [ -1.2671754  51.854553  -49.35311  ]"^^xsd:string ;
     ns1:stable true ;
     ns1:transformationMatrix "[[ 1.00000000e+00  9.08674697e-09 -1.75505833e-08 -9.45691849e-01] [-9.08674737e-09  1.00000000e+00  5.29757910e-09  5.16248958e+01] [ 1.75505834e-08 -5.29757899e-09  1.00000000e+00  1.29598519e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^geocrs:wktLiteral ;
+    ns2:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#c8de7de3-7841-4bb1-97f3-536092c19208> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 2 char 4 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_target1>,
@@ -767,12 +1067,13 @@ oa:FragmentSelector a owl:Class ;
     ns1:referenceVector "[-0.9456889  51.624893    0.12959771] [-129.12686     40.986454     0.9130082] [ -8.611319  144.02231     0.6082411] [ -1.2671754  51.854553  -49.35311  ]"^^xsd:string ;
     ns1:stable true ;
     ns1:transformationMatrix "[[ 1.00000000e+00  9.08674697e-09 -1.75505833e-08 -9.45691849e-01] [-9.08674737e-09  1.00000000e+00  5.29757910e-09  5.16248958e+01] [ 1.75505834e-08 -5.29757899e-09  1.00000000e+00  1.29598519e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^geocrs:wktLiteral ;
+    ns2:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#d71a22a0-1c00-4f69-a1ae-69546444f6a1> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 0 char 0 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_target1>,
@@ -817,12 +1118,13 @@ oa:FragmentSelector a owl:Class ;
     ns1:referenceVector "[-0.9456889  51.624893    0.12959771] [-129.12686     40.986454     0.9130082] [ -8.611319  144.02231     0.6082411] [ -1.2671754  51.854553  -49.35311  ]"^^xsd:string ;
     ns1:stable true ;
     ns1:transformationMatrix "[[ 1.00000000e+00  9.08674697e-09 -1.75505833e-08 -9.45691849e-01] [-9.08674737e-09  1.00000000e+00  5.29757910e-09  5.16248958e+01] [ 1.75505834e-08 -5.29757899e-09  1.00000000e+00  1.29598519e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^geocrs:wktLiteral ;
+    ns2:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#e24ac580-f9ce-46e0-a245-f4e3015ec8c0> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 0 char 1 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_target1>,
@@ -867,12 +1169,13 @@ oa:FragmentSelector a owl:Class ;
     ns1:referenceVector "[-0.9456889  51.624893    0.12959771] [-129.12686     40.986454     0.9130082] [ -8.611319  144.02231     0.6082411] [ -1.2671754  51.854553  -49.35311  ]"^^xsd:string ;
     ns1:stable true ;
     ns1:transformationMatrix "[[ 1.00000000e+00  9.08674697e-09 -1.75505833e-08 -9.45691849e-01] [-9.08674737e-09  1.00000000e+00  5.29757910e-09  5.16248958e+01] [ 1.75505834e-08 -5.29757899e-09  1.00000000e+00  1.29598519e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^geocrs:wktLiteral ;
+    ns2:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#eaabf091-ea1b-4795-896a-75711119b1c0> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 3 char 3 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_target1>,
@@ -917,12 +1220,13 @@ oa:FragmentSelector a owl:Class ;
     ns1:referenceVector "[-0.9456889  51.624893    0.12959771] [-129.12686     40.986454     0.9130082] [ -8.611319  144.02231     0.6082411] [ -1.2671754  51.854553  -49.35311  ]"^^xsd:string ;
     ns1:stable true ;
     ns1:transformationMatrix "[[ 1.00000000e+00  9.08674697e-09 -1.75505833e-08 -9.45691849e-01] [-9.08674737e-09  1.00000000e+00  5.29757910e-09  5.16248958e+01] [ 1.75505834e-08 -5.29757899e-09  1.00000000e+00  1.29598519e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
-    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^xsd:string .
+    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.94569185]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[51.6248958]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.12959852]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^geocrs:wktLiteral ;
+    ns2:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_#f35ec015-52aa-44cd-8656-3fa893cce887> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 3 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794_body_translit> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794_target1> ;
@@ -954,14 +1258,6 @@ oa:WKTSelector a owl:Class ;
     rdfs:label "WKT Selector"@en ;
     rdfs:subClassOf oa:Selector .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> a ns3:CartesianCoordinateSystem ;
-    rdfs:label "Cartesian coordinate system with 3 axis in millimetre units"@en ;
-    ns3:asSVG "<svg width='400' height='250' viewbox='0 0 375 220'><defs><marker id='arrowhead' markerWidth='10' markerHeight='7' refX='0' refY='2' orient='auto'><polygon points='0 0, 4 2, 0 4' /></marker></defs><line x1='20' y1='200' x2='200' y2='200' stroke='red' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='110' y='220' class='small'>X: Cartesian X Axis (om:millimetre)</text><line x1='20' y1='200' x2='20' y2='20' stroke='green' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='35' y='20' class='small'>Y: Cartesian Y Axis (om:millimetre)</text><line x1='20' y1='200' x2='190' y2='30' stroke='blue' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='210' y='25' class='small'>Z: Cartesian Z Axis (om:millimetre)</text></svg>"^^xsd:string ;
-    ns3:asWKT "CS[\"cartesian\",3],AXIS[\"X\", \"geocentricX\", ORDER[1],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Y\", \"geocentricY\", ORDER[2],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Z\", \"geocentricZ\", ORDER[3],            LENGTHUNIT[\"millimetre\",1]        ]]"^^<http://www.opengis.net/ont/geosparql/crs#wktLiteral> ;
-    ns3:axis <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1>,
-        <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2>,
-        <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> .
-
 oa:SvgSelector a owl:Class ;
     rdfs:label "Svg Selector"@en ;
     rdfs:subClassOf oa:Selector .
@@ -969,4 +1265,12 @@ oa:SvgSelector a owl:Class ;
 <https://github.com/recogito/annotorious-openseadragon> a dc:Software ;
     foaf:homepage "https://github.com/recogito/annotorious-openseadragon"^^xsd:anyURI ;
     foaf:name "Annotorious-OpenSeaDragon" .
+
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> a geocrs:CartesianCoordinateSystem ;
+    rdfs:label "Cartesian coordinate system with 3 axis in millimetre units"@en ;
+    geocrs:asSVG "<svg width='400' height='250' viewbox='0 0 375 220'><defs><marker id='arrowhead' markerWidth='10' markerHeight='7' refX='0' refY='2' orient='auto'><polygon points='0 0, 4 2, 0 4' /></marker></defs><line x1='20' y1='200' x2='200' y2='200' stroke='red' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='110' y='220' class='small'>X: Cartesian X Axis (om:millimetre)</text><line x1='20' y1='200' x2='20' y2='20' stroke='green' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='35' y='20' class='small'>Y: Cartesian Y Axis (om:millimetre)</text><line x1='20' y1='200' x2='190' y2='30' stroke='blue' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='210' y='25' class='small'>Z: Cartesian Z Axis (om:millimetre)</text></svg>"^^geocrs:svgLiteral ;
+    geocrs:asWKT "CS[\"cartesian\",3],AXIS[\"X\", \"geocentricX\", ORDER[1],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Y\", \"geocentricY\", ORDER[2],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Z\", \"geocentricZ\", ORDER[3],            LENGTHUNIT[\"millimetre\",1]        ]]"^^<http://www.opengis.net/ont/geosparql/crs#wktLiteral> ;
+    geocrs:axis <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1>,
+        <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2>,
+        <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> .
 
