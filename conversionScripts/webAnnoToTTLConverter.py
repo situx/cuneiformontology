@@ -107,6 +107,7 @@ for tabname in tabletnames:
             tabletside="obverse"
         print(filename)
         print(filename3d)
+        annocounter=0
         data3d={}
         if not os.path.exists(filename):
             continue
@@ -127,6 +128,7 @@ for tabname in tabletnames:
         @prefix xml: <http://www.w3.org/XML/1998/namespace> .
         @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
         @prefix geocrs: <http://www.opengis.net/ont/crs/> .
+        @prefix msp: <http://purl.org/meshsparql/> .
         @prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
         @prefix anno: <http://www.w3.org/ns/anno.jsonld> .
         @prefix dc: <http://purl.org/dc/elements/1.1/> .
@@ -204,6 +206,7 @@ for tabname in tabletnames:
             res.write("<"+str(indid)+"_body_translit> rdf:value \""+str(curtranslit)+"\" .\n")
             res.write("<"+str(indid)+"_body_translit> rdfs:label  \"Annotation body referencing transliteration char occurrence at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on "+str(material)+"\"@en .\n")
             if key in data3d and "target" in data3d[key] and "selector" in data3d[key]["target"]:
+                annocounter+=1
                 res.write("<"+str(indid)+"> oa:hasTarget <"+str(indid)+"_target3d> .\n")
                 res.write("<"+str(indid)+"_target3d> rdf:type owl:NamedIndividual .\n")
                 if tabname in meshsources:
@@ -235,6 +238,11 @@ for tabname in tabletnames:
                 res.write("<"+str(indid)+"_target3d_selector> rdf:type oa:WKTSelector .\n")
                 res.write("<"+str(indid)+"_target3d_selector> rdf:value \""+str(data3d[key]["target"]["selector"]["value"])+"\"^^oa:wktLiteral .\n")
                 res.write("<"+str(indid)+"_target3d_selector> rdfs:label \"3D Annotation target selector of Annotation of Glyph at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on a 3D Mesh\"@en .\n")
+                #3D Label Target
+                res.write("<"+str(indid)+"_target3d> oa:hasSelector  <"+str(indid)+"_target3d_labelselector> .\n")
+                res.write("<"+str(indid)+"_target3d_labelselector> rdf:type msp:MeshLabelSelector .\n")
+                res.write("<"+str(indid)+"_target3d_labelselector> rdfs:label \"3D Annotation target labeling selector of Annotation of Glyph at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on a 3D Mesh\"@en .\n")
+                res.write("<"+str(indid)+"_target3d_labelselector> rdf:value \"[v[labelid="+str(annocounter)+"]\"^^msp:selectorLiteral .\n")
             res.write("<"+str(indid)+"_target1> rdf:type owl:NamedIndividual .\n")
             res.write("<"+str(indid)+"_target1> oa:hasSelector <"+str(indid)+"_target1_selector> .\n")
             if "/raw" in str(source):
