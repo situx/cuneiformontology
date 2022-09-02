@@ -655,7 +655,12 @@ function animate() {
 }
 
 
-function getTextAnnoContext(source,start,end,selector){
+function getTextAnnoContext(){
+$('span.textanno').each(function(i, obj) {
+    startindex=$(obj).attr("start").val()
+    endindex=$(obj).attr("end").val()
+    exact=$(obj).attr("exact").val()
+    source=$(obj).attr("src").val()
     $.get( source, function( data ) {
         markarea=data.substring(start,end)
         counter=0
@@ -668,8 +673,9 @@ function getTextAnnoContext(source,start,end,selector){
                 break
             }
         }
-        $(selector).html(("<span>"+data.substring(startindex,endindex)+"</span>").replace(markarea,"<mark>"+markarea+"</mark>"))     
+        $(obj).html(data.substring(startindex,endindex)+"</span>".replace(markarea,"<mark>"+markarea+"</mark>"))    
     });
+  });
 }
 
 function labelFromURI(uri,label){
@@ -1656,6 +1662,8 @@ class OntDocGeneration:
                         curanno["start"]=str(txtlit[1])
                     elif str(txtlit[0])=="http://www.w3.org/ns/oa#end":
                         curanno["end"]=str(txtlit[1])
+                for srctup in graph.objects(object,URIRef("http://www.w3.org/ns/oa#hasSource")):
+                    curanno["src"]=str(srctup)
                 textannos.append(curanno)
             if isinstance(tup[1], Literal) and (str(tup[0]) in geoproperties or str(tup[1].datatype) in geoliteraltypes):
                 geojsonrep = self.processLiteral(str(tup[1]), tup[1].datatype, "")
@@ -1666,7 +1674,7 @@ class OntDocGeneration:
                 if ext in fileextensionmap:
                     foundmedia[fileextensionmap[ext]].add(str(tup[1]))
             if str(tup[0]) in valueproperties:
-                if valueproperties[str(tup[0])]=="DatatypeProperty" and isinstance(tup[1],Literal):
+                if valueproperties[str(tup[0])]=="DatatypeProperty" and (isinstance(tup[1],Literal) or isinstance(valtup[1],URIRef)):
                     foundval=str(tup[1])
                 else:
                     for valtup in graph.predicate_objects(tup[1]):
@@ -2050,7 +2058,7 @@ class OntDocGeneration:
             if len(textannos)>0:
                 print("TEXTANNOS: "+str(textannos))
                 for textanno in textannos:
-                    f.write("<span class=\"textanno\" start=\""+str(textanno["start"])+"\" end=\""+str(textanno["end"])+"\" exact=\""+str(textanno["exact"])+"\"><mark>"+str(textanno["exact"])+"</mark></span>")
+                    f.write("<span class=\"textanno\" start=\""+str(textanno["start"])+"\" end=\""+str(textanno["end"])+"\" exact=\""+str(textanno["exact"])+"\" src=\""+str(textanno["src"])+"\"><mark>"+str(textanno["exact"])+"</mark></span>")
             for audio in foundmedia["audio"]:
                 f.write(audiotemplate.replace("{{audio}}",str(audio)))
             for video in foundmedia["video"]:
