@@ -660,21 +660,23 @@ $('span.textanno').each(function(i, obj) {
     startindex=$(obj).attr("start").val()
     endindex=$(obj).attr("end").val()
     exact=$(obj).attr("exact").val()
-    source=$(obj).attr("src").val()
-    $.get( source, function( data ) {
-        markarea=data.substring(start,end)
-        counter=0
-        startindex=0
-        endindex=data.indexOf("\\n",end)
-        for(line in data.split("\\n")){
-            counter+=line.length
-            if(counter>start){
-                startindex=counter-line.length
-                break
+    if($(obj).attr("src")){
+        source=$(obj).attr("src").val()
+        $.get( source, function( data ) {
+            markarea=data.substring(start,end)
+            counter=0
+            startindex=0
+            endindex=data.indexOf("\\n",end)
+            for(line in data.split("\\n")){
+                counter+=line.length
+                if(counter>start){
+                    startindex=counter-line.length
+                    break
+                }
             }
-        }
-        $(obj).html(data.substring(startindex,endindex)+"</span>".replace(markarea,"<mark>"+markarea+"</mark>"))    
-    });
+            $(obj).html(data.substring(startindex,endindex)+"</span>".replace(markarea,"<mark>"+markarea+"</mark>"))    
+        });
+    }
   });
 }
 
@@ -2063,7 +2065,10 @@ class OntDocGeneration:
             if len(textannos)>0:
                 print("TEXTANNOS: "+str(textannos))
                 for textanno in textannos:
-                    f.write("<span class=\"textanno\" start=\""+str(textanno["start"])+"\" end=\""+str(textanno["end"])+"\" exact=\""+str(textanno["exact"])+"\" src=\""+str(textanno["src"])+"\"><mark>"+str(textanno["exact"])+"</mark></span>")
+                    if "src" in textanno:
+                        f.write("<span class=\"textanno\" start=\""+str(textanno["start"])+"\" end=\""+str(textanno["end"])+"\" exact=\""+str(textanno["exact"])+"\" src=\""+str(textanno["src"])+"\"><mark>"+str(textanno["exact"])+"</mark></span>")
+                    else:
+                        f.write("<span class=\"textanno\" start=\""+str(textanno["start"])+"\" end=\""+str(textanno["end"])+"\" exact=\""+str(textanno["exact"])+"\"><mark>"+str(textanno["exact"])+"</mark></span>")
             for audio in foundmedia["audio"]:
                 f.write(audiotemplate.replace("{{audio}}",str(audio)))
             for video in foundmedia["video"]:
