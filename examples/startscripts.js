@@ -511,7 +511,12 @@ function animate() {
 }
 
 
-function getTextAnnoContext(source,start,end,selector){
+function getTextAnnoContext(){
+$('span.textanno').each(function(i, obj) {
+    startindex=$(obj).attr("start").val()
+    endindex=$(obj).attr("end").val()
+    exact=$(obj).attr("exact").val()
+    source=$(obj).attr("src").val()
     $.get( source, function( data ) {
         markarea=data.substring(start,end)
         counter=0
@@ -524,8 +529,9 @@ function getTextAnnoContext(source,start,end,selector){
                 break
             }
         }
-        $(selector).html(("<span>"+data.substring(startindex,endindex)+"</span>").replace(markarea,"<mark>"+markarea+"</mark>"))     
+        $(obj).html(data.substring(startindex,endindex)+"</span>".replace(markarea,"<mark>"+markarea+"</mark>"))    
     });
+  });
 }
 
 function labelFromURI(uri,label){
