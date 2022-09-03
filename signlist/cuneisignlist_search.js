@@ -1868,7 +1868,7 @@ var search={
   "Grapheme Reading N\u00cdNDA\u00d7\u0160E: sam2": "http://purl.org/cuneiform/signlist/character_n\u00ednda\u00d7sze_reading_sam2",
   "Grapheme Reading N\u00cdNDA\u00d7\u0160E: szam2": "http://purl.org/cuneiform/signlist/character_n\u00ednda\u00d7sze_reading_szam2",
   "Grapheme Reading N\u00daMUN (ZIoverZI.LAGAB): |ZI&ZI.LAGAB|": "http://purl.org/cuneiform/signlist/character_n\u00famun_reading_zi&zi_lagab",
-  "Grapheme Reading PA: ": "http://purl.org/cuneiform/signlist/character_pa_reading_kumx?_k",
+  "Grapheme Reading PA: ": "http://purl.org/cuneiform/signlist/character_pa_reading_hud?_k",
   "Grapheme Reading PA: pa": "http://purl.org/cuneiform/signlist/character_pa_reading_\u00a0pa_relatively_rare",
   "Grapheme Reading PAB or PAP: |pap.pap\u00d7sze|": "http://purl.org/cuneiform/signlist/character_pab_or_pap_reading_pap_pap\u00d7sze",
   "Grapheme Reading PE\u01604 (\u0160\u00c0\u00d7A): sza3\u00d7a": "http://purl.org/cuneiform/signlist/character_pesz4_reading_sza3\u00d7a",
