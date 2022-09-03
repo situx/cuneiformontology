@@ -1419,7 +1419,7 @@ oa:FragmentSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/8c3c5739-7ae0-4f45-9215-fc1cfc24a226_target3d_labelselector> a msp:MeshLabelSelector ;
     rdfs:label "3D Annotation target labeling selector of Annotation of Glyph at O147 back line 4 char 1 on a 3D Mesh"@en ;
-    rdf:value "[v[labelid=1]"^^msp:selectorLiteral .
+    rdf:value "[v[labelid=1]]"^^msp:selectorLiteral .
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/8c3c5739-7ae0-4f45-9215-fc1cfc24a226_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at O147 back line 4 char 1 on a 3D Mesh"@en ;
@@ -2316,7 +2316,7 @@ oa:FragmentSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/e97d40f0-c537-440b-8cb5-d663d03a2974_target3d_labelselector> a msp:MeshLabelSelector ;
     rdfs:label "3D Annotation target labeling selector of Annotation of Glyph at O147 back line 4 char 2 on a 3D Mesh"@en ;
-    rdf:value "[v[labelid=2]"^^msp:selectorLiteral .
+    rdf:value "[v[labelid=2]]"^^msp:selectorLiteral .
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/e97d40f0-c537-440b-8cb5-d663d03a2974_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at O147 back line 4 char 2 on a 3D Mesh"@en ;
@@ -2565,6 +2565,8 @@ oa:FragmentSelector a owl:Class ;
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/fd4e1df1-a12f-4460-9b33-c8cefb02b533_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at O147 back line 12 char 4 on 3D rendering"@en ;
     rdf:value "<svg><polygon points=\"1093.6251220703125,2174.690185546875 1191.4384765625,2117.244140625 1208.5169677734375,2194.873779296875 1189.8858642578125,2252.31982421875 1154.17626953125,2272.50341796875 1120.0191650390625,2246.109375 1120.0191650390625,2246.109375\"></polygon></svg>" .
+
+msp:MeshLabelSelector rdfs:subClassOf oa:Selector .
 
 geocrs:CoordinateOperation a owl:Class ;
     rdfs:label "coordinate operation"@en .

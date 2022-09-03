@@ -240,9 +240,10 @@ for tabname in tabletnames:
                 res.write("<"+str(indid)+"_target3d_selector> rdfs:label \"3D Annotation target selector of Annotation of Glyph at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on a 3D Mesh\"@en .\n")
                 #3D Label Target
                 res.write("<"+str(indid)+"_target3d> oa:hasSelector  <"+str(indid)+"_target3d_labelselector> .\n")
+                res.write("msp:MeshLabelSelector rdfs:subClassOf oa:Selector .\n")
                 res.write("<"+str(indid)+"_target3d_labelselector> rdf:type msp:MeshLabelSelector .\n")
                 res.write("<"+str(indid)+"_target3d_labelselector> rdfs:label \"3D Annotation target labeling selector of Annotation of Glyph at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on a 3D Mesh\"@en .\n")
-                res.write("<"+str(indid)+"_target3d_labelselector> rdf:value \"[v[labelid="+str(annocounter)+"]\"^^msp:selectorLiteral .\n")
+                res.write("<"+str(indid)+"_target3d_labelselector> rdf:value \"[v[labelid="+str(annocounter)+"]]\"^^msp:selectorLiteral .\n")
             res.write("<"+str(indid)+"_target1> rdf:type owl:NamedIndividual .\n")
             res.write("<"+str(indid)+"_target1> oa:hasSelector <"+str(indid)+"_target1_selector> .\n")
             if "/raw" in str(source):
