@@ -2,6 +2,7 @@
 from rdflib import Graph
 from rdflib import URIRef, Literal, BNode
 from rdflib.plugins.sparql import prepareQuery
+import traceback
 import shapely.wkt
 import shapely.geometry
 import os
@@ -1449,6 +1450,7 @@ class OntDocGeneration:
                 print(str(subtorencounter) + "/" + str(subtorenderlen) + " " + str(outpath + path))
             except Exception as e:
                 print("Create HTML Exception: "+str(e))
+                print(traceback.format_exc())
             #    #QgsMessageLog.logMessage("Exception occured " + str(e), "OntdocGeneration", Qgis.Info)
         print("Postprocessing " + str(len(postprocessing)))
         for subj in postprocessing.subjects():
