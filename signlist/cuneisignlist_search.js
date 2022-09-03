@@ -878,7 +878,7 @@ var search={
   "Grapheme Reading DIMSAR: |igi&igi.szir&szir.ud&ud|": "http://purl.org/cuneiform/signlist/character_dimsar_reading_igi&igi_szir&szir_ud&ud",
   "Grapheme Reading DIM\u00d7\u0160E, later DIM\u00d7KUR: gakkul2": "http://purl.org/cuneiform/signlist/character_dim\u00d7sze_later_dim\u00d7kur_reading_gakkul2",
   "Grapheme Reading DIM\u00d7\u0160E, later DIM\u00d7KUR: kakkul2": "http://purl.org/cuneiform/signlist/character_dim\u00d7sze_later_dim\u00d7kur_reading_kakkul2",
-  "Grapheme Reading DIM\u00d7\u0160E, later DIM\u00d7KUR: mun": "http://purl.org/cuneiform/signlist/character_dim\u00d7sze_later_dim\u00d7kur_reading_mun_dim",
+  "Grapheme Reading DIM\u00d7\u0160E, later DIM\u00d7KUR: mun": "http://purl.org/cuneiform/signlist/character_dim\u00d7sze_later_dim\u00d7kur_reading_mun",
   "Grapheme Reading DIM\u00d7\u0160E, later DIM\u00d7KUR: munu": "http://purl.org/cuneiform/signlist/character_dim\u00d7sze_later_dim\u00d7kur_reading_munu",
   "Grapheme Reading DIM\u00d7\u0160E, later DIM\u00d7KUR: |DIM\u00d7\u0160E|": "http://purl.org/cuneiform/signlist/character_dim\u00d7sze_later_dim\u00d7kur_reading_dim\u00d7sze",
   "Grapheme Reading DIN.KASKAL.SIG7: |din.kaskal.u@g.disz|": "http://purl.org/cuneiform/signlist/character_din_kaskal_sig7_reading_din_kaskal_u@g_disz",
