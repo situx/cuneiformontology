@@ -160,6 +160,8 @@ def format_ascii(word):
 origtabletside="front"
 tabletnames=["HS1174","HT073195","TCH92","O147"]
 tabletsides=["front","back","left","right","bottom","top"]
+tabsideid={"front":"03","back":"06","obverse":"03","reverse":"06","bottom":"04"}
+renderingvars={"O147":["A_Color","B_Color","A_shaded","B_Shaded"]}
 tabletname="HS1174"
 material="3D rendering"
 wordsplit="-|~|\."
@@ -179,7 +181,7 @@ for tabname in tabletnames:
     translitfilename="../examples/"+str(tabname)+"/transliteration/"+str(tabname)+".atf"
     namespace="https://situx.github.io/cuneiformontology/examples/"+str(tabname).lower()+"/"
     namespaceitems="https://situx.github.io/cuneiformontology/examples/"+str(tabname).lower()+"/"
-    header="""@prefix skos:<http://www.w3.org/2004/02/skos/core#> .\n@prefix """+str(namespaceprefix)+""":<"""+str(namespace)+"""> .\n @prefix dc:<http://purl.org/dc/terms/> .\n@prefix cdli:<https://cdli.ucla.edu/> .\n@prefix graphemon:<https://purl.org/graphemon/> .\n@prefix qudt:<http://qudt.org/schema/qudt/> .\n@prefix xsd:<http://www.w3.org/2001/XMLSchema#> .\n@prefix cunei:<http://www.example.org/cunei/> .\n@prefix cuneidict:<http://www.example.org/cuneiform/dict/> .\n@prefix cidoc:<http://www.cidoc-crm.org/cidoc-crm/> .\n@prefix owl:<http://www.w3.org/2002/07/owl#> .\n@prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#> .\n@prefix lemon:<http://lemon-model.net/lemon#> .\n"""
+    header="""@prefix foaf:<http://xmlns.com/foaf/0.1/> .\n@prefix prov:<http://www.w3.org/ns/prov-o/> .\n@prefix skos:<http://www.w3.org/2004/02/skos/core#> .\n@prefix """+str(namespaceprefix)+""":<"""+str(namespace)+"""> .\n @prefix dc:<http://purl.org/dc/terms/> .\n@prefix cdli:<https://cdli.ucla.edu/> .\n@prefix graphemon:<https://purl.org/graphemon/> .\n@prefix qudt:<http://qudt.org/schema/qudt/> .\n@prefix xsd:<http://www.w3.org/2001/XMLSchema#> .\n@prefix cunei:<http://www.example.org/cunei/> .\n@prefix cuneidict:<http://www.example.org/cuneiform/dict/> .\n@prefix cidoc:<http://www.cidoc-crm.org/cidoc-crm/> .\n@prefix owl:<http://www.w3.org/2002/07/owl#> .\n@prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#> .\n@prefix lemon:<http://lemon-model.net/lemon#> .\n"""
     ontology="""cunei:writtenrepASCII rdf:type owl:DatatypeProperty .\ncunei:charIndex rdf:type owl:DatatypeProperty .\ncunei:lineNumber rdf:type owl:DatatypeProperty .\ncunei:contains rdf:type owl:ObjectProperty .\ngraphemon:contains rdf:type owl:ObjectProperty .\ngraphemon:hasGraphemeReading rdf:type owl:ObjectProperty.\ncunei:isDamaged rdf:type owl:DatatypeProperty .\ncunei:positionOnTabletSide rdf:type owl:DatatypeProperty .\ncunei:positionInWord rdf:type owl:DatatypeProperty .\ncunei:consistsOf rdf:type owl:ObjectProperty .\nrdfs:member rdf:type owl:ObjectProperty .\ncunei:language rdf:type owl:ObjectProperty .\ncunei:period rdf:type owl:ObjectProperty .\ncunei:cdli_key rdf:type owl:ObjectProperty .\ncunei:compositeNumber rdf:type owl:ObjectProperty .\ncunei:museumNumber rdf:type owl:ObjectProperty .\ncunei:collection rdf:type owl:ObjectProperty .\nrdf:value rdf:type owl:ObjectProperty .\nqudt:unit rdf:type owl:ObjectProperty .\ncunei:thickness rdf:type owl:ObjectProperty .\ncunei:width rdf:type owl:ObjectProperty .\ncunei:height rdf:type owl:ObjectProperty .\ncunei:material rdf:type owl:ObjectProperty .\ncunei:isDamaged rdf:type owl:ObjectProperty .\n<http://lexinfo.net/ontology/2.0/lexinfo#partOfSpeech> rdf:type owl:ObjectProperty .\ncunei:hasLine rdf:type owl:ObjectProperty.\ncidoc:P56_found_on rdf:type owl:ObjectProperty.\ncidoc:TXP10_read_by rdf:type owl:ObjectProperty.\ncidoc:TXP3_is_rendered_by rdf:type owl:ObjectProperty .\ncunei:writtenText rdf:type owl:ObjectProperty .\ncunei:hasSide rdf:type owl:ObjectProperty .\ncunei:partOf rdf:type owl:ObjectProperty .\ncunei:next rdf:type owl:ObjectProperty .\ncunei:prevLine rdf:type owl:ObjectProperty .\ncunei:nextLine rdf:type owl:ObjectProperty .\ncunei:prevSentence rdf:type owl:ObjectProperty .\ncunei:nextSentence rdf:type owl:ObjectProperty .\ncunei:nextWord rdf:type owl:ObjectProperty .\ncunei:consistsOf rdf:type owl:ObjectProperty .\ncunei:prevWord rdf:type owl:ObjectProperty .\ncunei:prevInWord rdf:type owl:ObjectProperty .\ncunei:nextInWord rdf:type owl:ObjectProperty .\ncunei:prev rdf:type owl:ObjectProperty .\nlemon:sense rdf:type owl:ObjectProperty .\nlemon:pos rdf:type owl:ObjectProperty .\nlemon:entry rdf:type owl:ObjectProperty .\nlemon:writtenRepUnicode rdf:type owl:ObjectProperty .\n lemon:writtenRepASCII rdf:type owl:ObjectProperty .\n<http://www.cidoc-crm.org/cidoc-crm/TXP8_is_component_of> rdf:type owl:ObjectProperty .<http://www.cidoc-crm.org/cidoc-crm/P56_isFoundOn> rdf:type owl:ObjectProperty .\n<http://www.cidoc-crm.org/cidoc-crm/P138_represents> rdf:type owl:ObjectProperty .\n lemon:writtenRep rdf:type owl:ObjectProperty .\ncunei:positionOnTabletSide rdf:type owl:ObjectProperty .\ncunei:locatedIn rdf:type owl:ObjectProperty .\nlemon:form rdf:type owl:ObjectProperty .\ncunei:positionInWord rdf:type owl:ObjectProperty .\ncunei:Line rdf:type owl:ObjectProperty .\ncunei:isAttested rdf:type owl:ObjectProperty .\n"""    
     print(filename)
     print(translitfilename)
@@ -190,8 +192,14 @@ for tabname in tabletnames:
     currenttabletid=tabname
     cdlitabs=set()
     wordformresult=set()
+    cdlitabs.add("cidoc:E22_ManMadeObject rdfs:subClassOf prov:Entity .\n")
+    cdlitabs.add("cunei:Transliteration rdfs:subClassOf prov:Entity .\n")
+    cdlitabs.add("cunei:Tablet rdfs:subClassOf cidoc:E22_ManMadeObject .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+" rdf:type cunei:Tablet .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+" rdfs:label \"Cuneiform Artifact: "+str(currenttabletid)+"\" .\n")
+    cdlitabs.add("cidoc:TX7_WrittenTextFragment rdfs:subClassOf cidoc:TX1_WrittenText .\n")
+    cdlitabs.add("cunei:Side rdfs:subClassOf cidoc:TX7_WrittenTextFragment .\n")
+    cdlitabs.add("cunei:Line rdfs:subClassOf cidoc:TX7_WrittenTextFragment .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_writtenText rdf:type cidoc:TX1_WrittenText .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_writtenText rdfs:label \"Written Text on "+str(currenttabletid)+"\" .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_writtenText cidoc:P56_found_on "+namespaceprefix+":"+str(currenttabletid)+" .\n")
@@ -204,20 +212,27 @@ for tabname in tabletnames:
     currentsidejtf={"_class":"surface","@id":str(currenttabletid)+"_tablet","@type":"tablet","children":[]}
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1 rdf:type cunei:Transliteration .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1 rdfs:label \"Transliteration 1 of "+str(currenttabletid)+"\"@en .\n")
+    cdlitabs.add("cunei:CharOccurrenceCollection rdfs:subClassOf skos:Collection .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_charoccurrences rdf:type cunei:CharOccurrenceCollection .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_charoccurrences rdfs:label \"Char Occurrences of "+str(currenttabletid)+" generated from transliteration 1\"@en .\n")
+    cdlitabs.add("cunei:WordFormOccurrenceCollection rdfs:subClassOf skos:Collection .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_wordformoccurrences rdf:type cunei:WordFormOccurrenceCollection .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_wordformoccurrences rdfs:label \"Wordform Occurrences of "+str(currenttabletid)+" generated from transliteration 1\"@en .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_glyphlist rdf:type cunei:GlyphCollection .\n")
+    cdlitabs.add("cunei:GlyphCollection rdfs:subClassOf skos:Collection .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_glyphlist rdfs:label \"Glyphs of "+str(currenttabletid)+"\"@en .\n")
+    cdlitabs.add("lemon:Lexicon rdfs:subClassOf skos:Collection .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_lexicon rdf:type lemon:Lexicon .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_lexicon rdfs:label \"Lexicon for "+str(currenttabletid)+" generated from transliteration 1\"@en .\n")
+    cdlitabs.add("cunei:GraphemeCollection rdfs:subClassOf skos:Collection .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_signlist rdf:type cunei:GraphemeCollection .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_signlist rdfs:label \"Signlist of "+str(currenttabletid)+"\"@en .\n")
+    cdlitabs.add("cunei:GraphemeReadingCollection rdfs:subClassOf skos:Collection .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_signreadinglist rdf:type cunei:GraphemeReadingCollection .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_signreadinglist rdfs:label \"Sign Readings of "+str(currenttabletid)+"\"@en .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_signreadinglist rdfs:label \"Sign Readings of "+str(currenttabletid)+" as shown in transliteration 1\"@en .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_graphemevars rdf:type cunei:GraphemeVariantCollection .\n")
+    cdlitabs.add("cunei:GraphemeVariantCollection rdfs:subClassOf skos:Collection .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_graphemevars rdfs:label \""+str(currenttabletid)+" Grapheme Variant Collection \"@en .\n")
     currentline=0
     currentwordindex=0
@@ -233,6 +248,7 @@ for tabname in tabletnames:
             currentsidejtf={"_class":"surface","@id":str(currenttabletid)+"_"+currentsideuri,"@type":currentside,"children":[]}
             cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+" rdf:type cunei:Side .\n")
             cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+" rdfs:label \""+str(currenttabletid)+": "+str(currentside)+"\" .\n")
+            cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+" foaf:image \""+str(namespace)+"/images/sides/"+str(tabname)+"_"+str(currentside)+".jpg\"^^xsd:anyURI .\n")
             cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+" cunei:hasSide "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+" .\n")
             jtfldrep["@graph"]["children"].append(currentsidejtf)
             currentline=0
@@ -240,6 +256,8 @@ for tabname in tabletnames:
         elif re.match("^[0-9]+\.",line):
             currentline+=1
             curjtfline={"_class":"line","@id":str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline)),"children":[]}
+            cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" rdf:type cunei:Line .\n")
+            cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" foaf:image \""+str(namespace)+"/images/line/line_"+replaceNonURIChars(str(currentline))+"_"+str(tabname)+"_"+str(tabsideid[currentside])+"_"+str(currentside)+".jpg\"^^xsd:anyURI .\n")
             cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" rdf:type cunei:TransliterationLine .\n")
             cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+" cunei:contains "+namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" .\n")
             cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" skos:definition \""+str(line)+"\" .\n")
@@ -289,6 +307,8 @@ for tabname in tabletnames:
                     cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_charocc skos:definition \""+str(charr)+"\" .\n")
                     cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_charoccurrences rdfs:member "+str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_charocc . \n")
                     cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_glyph rdf:type cidoc:TX9_Glyph .\n")
+                    cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_glyph foaf:image \""+str(namespace)+"/images/charline/charline_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_"+str(tabname)+"_"+str(tabsideid[currentside])+"_"+str(currentside)+".jpg\"^^xsd:anyURI .\n")
+                    cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_glyph foaf:image \""+str(namespace)+"/images/character/char_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_"+str(tabname)+"_"+str(tabsideid[currentside])+"_"+str(currentside)+".jpg\"^^xsd:anyURI .\n")              
                     cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_glyph <http://www.cidoc-crm.org/cidoc-crm/TXP8_is_component_of> cunei:"+str(currenttabletid)+"_writtenText .\n")
                     cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_glyph rdfs:label \"Glyph at "+str(currenttabletid)+"["+str(currentside)+" "+replaceNonURIChars(str(currentline))+" "+str(currentcharindex)+"])\" .\n")
                     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_glyphlist rdfs:member "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_glyph .\n")                    
