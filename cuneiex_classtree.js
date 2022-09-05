@@ -55386,6 +55386,244 @@ var tree={
         "data": {}
       },
       {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/3(disz)_charvariant1_ap1",
+        "parent": "http://www.purl.org/graphemon#CuneiformWedge",
+        "type": "instance",
+        "text": "Atomic part 1 of grapheme variant 1 of grapheme 3(disz) (3(disz)_charvariant1_ap1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/3(disz)_charvariant1_ap2",
+        "parent": "http://www.purl.org/graphemon#CuneiformWedge",
+        "type": "instance",
+        "text": "Atomic part 2 of grapheme variant 1 of grapheme 3(disz) (3(disz)_charvariant1_ap2)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/3(disz)_charvariant1_ap3",
+        "parent": "http://www.purl.org/graphemon#CuneiformWedge",
+        "type": "instance",
+        "text": "Atomic part 3 of grapheme variant 1 of grapheme 3(disz) (3(disz)_charvariant1_ap3)",
+        "data": {}
+      },
+      {
+        "id": "http://www.purl.org/graphemon#CuneiformWedge",
+        "parent": "#",
+        "type": "class",
+        "text": "CuneiformWedge (purl:graphemon#CuneiformWedge) [3]",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/um_charvariant1",
+        "parent": "http://www.purl.org/graphemon#GraphemeVariant",
+        "type": "instance",
+        "text": "Grapheme Variant 1: UM (um_charvariant1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/za_charvariant1",
+        "parent": "http://www.purl.org/graphemon#GraphemeVariant",
+        "type": "instance",
+        "text": "Grapheme Variant 1: ZA (za_charvariant1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/tum_charvariant1",
+        "parent": "http://www.purl.org/graphemon#GraphemeVariant",
+        "type": "instance",
+        "text": "Grapheme Variant 1: TUM (tum_charvariant1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/tur_charvariant1",
+        "parent": "http://www.purl.org/graphemon#GraphemeVariant",
+        "type": "instance",
+        "text": "Grapheme Variant 1: TUR (tur_charvariant1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ud_charvariant1",
+        "parent": "http://www.purl.org/graphemon#GraphemeVariant",
+        "type": "instance",
+        "text": "Grapheme Variant 1: UD (ud_charvariant1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ru_charvariant1",
+        "parent": "http://www.purl.org/graphemon#GraphemeVariant",
+        "type": "instance",
+        "text": "Grapheme Variant 1: RU (ru_charvariant1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/sa6_charvariant1",
+        "parent": "http://www.purl.org/graphemon#GraphemeVariant",
+        "type": "instance",
+        "text": "Grapheme Variant 1: SA6 (sa6_charvariant1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/szesz_charvariant1",
+        "parent": "http://www.purl.org/graphemon#GraphemeVariant",
+        "type": "instance",
+        "text": "Grapheme Variant 1: SZESZ (szesz_charvariant1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ga_charvariant1",
+        "parent": "http://www.purl.org/graphemon#GraphemeVariant",
+        "type": "instance",
+        "text": "Grapheme Variant 1: GA (ga_charvariant1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ma_charvariant1",
+        "parent": "http://www.purl.org/graphemon#GraphemeVariant",
+        "type": "instance",
+        "text": "Grapheme Variant 1: MA (ma_charvariant1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/nu_charvariant1",
+        "parent": "http://www.purl.org/graphemon#GraphemeVariant",
+        "type": "instance",
+        "text": "Grapheme Variant 1: NU (nu_charvariant1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/pa_charvariant1",
+        "parent": "http://www.purl.org/graphemon#GraphemeVariant",
+        "type": "instance",
+        "text": "Grapheme Variant 1: PA (pa_charvariant1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/gal_charvariant1",
+        "parent": "http://www.purl.org/graphemon#GraphemeVariant",
+        "type": "instance",
+        "text": "Grapheme Variant 1: GAL (gal_charvariant1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/gurusz_charvariant1",
+        "parent": "http://www.purl.org/graphemon#GraphemeVariant",
+        "type": "instance",
+        "text": "Grapheme Variant 1: GURUSZ (gurusz_charvariant1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ka_charvariant1",
+        "parent": "http://www.purl.org/graphemon#GraphemeVariant",
+        "type": "instance",
+        "text": "Grapheme Variant 1: KA (ka_charvariant1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ku3_charvariant1",
+        "parent": "http://www.purl.org/graphemon#GraphemeVariant",
+        "type": "instance",
+        "text": "Grapheme Variant 1: KU3 (ku3_charvariant1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ku_charvariant1",
+        "parent": "http://www.purl.org/graphemon#GraphemeVariant",
+        "type": "instance",
+        "text": "Grapheme Variant 1: KU (ku_charvariant1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/lu2_charvariant1",
+        "parent": "http://www.purl.org/graphemon#GraphemeVariant",
+        "type": "instance",
+        "text": "Grapheme Variant 1: LU2 (lu2_charvariant1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/da_charvariant1",
+        "parent": "http://www.purl.org/graphemon#GraphemeVariant",
+        "type": "instance",
+        "text": "Grapheme Variant 1: DA (da_charvariant1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/dim2_charvariant1",
+        "parent": "http://www.purl.org/graphemon#GraphemeVariant",
+        "type": "instance",
+        "text": "Grapheme Variant 1: GIM (dim2_charvariant1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/du6_charvariant1",
+        "parent": "http://www.purl.org/graphemon#GraphemeVariant",
+        "type": "instance",
+        "text": "Grapheme Variant 1: DU6 (du6_charvariant1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/a_charvariant1",
+        "parent": "http://www.purl.org/graphemon#GraphemeVariant",
+        "type": "instance",
+        "text": "Grapheme Variant 1: A (a_charvariant1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9(disz)_charvariant1",
+        "parent": "http://www.purl.org/graphemon#GraphemeVariant",
+        "type": "instance",
+        "text": "Grapheme Variant 1: 9(disz) (9(disz)_charvariant1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/3(u)_charvariant1",
+        "parent": "http://www.purl.org/graphemon#GraphemeVariant",
+        "type": "instance",
+        "text": "Grapheme Variant 1: 3(u) (3(u)_charvariant1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/3(disz)_charvariant1",
+        "parent": "http://www.purl.org/graphemon#GraphemeVariant",
+        "type": "instance",
+        "text": "Grapheme Variant 1: 3(disz) (3(disz)_charvariant1)",
+        "data": {}
+      },
+      {
+        "id": "http://www.purl.org/graphemon#GraphemeVariant",
+        "parent": "#",
+        "type": "class",
+        "text": "GraphemeVariant (purl:graphemon#GraphemeVariant) [25]",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_graphemevars",
+        "parent": "http://www.purl.org/graphemon#GraphemeVariantCollection",
+        "type": "instance",
+        "text": "HS 1174 Grapheme Variant Collection (hs1174_graphemevars)",
+        "data": {}
+      },
+      {
+        "id": "http://www.purl.org/graphemon#GraphemeVariantCollection",
+        "parent": "#",
+        "type": "class",
+        "text": "GraphemeVariantCollection (purl:graphemon#GraphemeVariantCollection) [1]",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/3(disz)_charvariant1_apcollection",
+        "parent": "http://www.purl.org/graphemon#GraphemeAtomicPartCollection",
+        "type": "instance",
+        "text": "Atomic part collection of 3(disz) grapheme variant 1 (3(disz)_charvariant1_apcollection)",
+        "data": {}
+      },
+      {
+        "id": "http://www.purl.org/graphemon#GraphemeAtomicPartCollection",
+        "parent": "#",
+        "type": "class",
+        "text": "GraphemeAtomicPartCollection (purl:graphemon#GraphemeAtomicPartCollection) [1]",
+        "data": {}
+      },
+      {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/HS1174_reverse_annotations",
         "parent": "https://www.w3.org/ns/activitystreams#Collection",
         "type": "instance",
