@@ -40384,6 +40384,13 @@ var tree={
         "data": {}
       },
       {
+        "id": "http://www.w3.org/2004/02/skos/core#Collection",
+        "parent": "#",
+        "type": "collectionclass",
+        "text": "Collection (skos:Collection)",
+        "data": {}
+      },
+      {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_textannotations",
         "parent": "https://www.w3.org/ns/activitystreams#Collection",
         "type": "instance",
