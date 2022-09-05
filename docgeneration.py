@@ -1798,7 +1798,7 @@ class OntDocGeneration:
                                      "uri"] + ")</span></a></span>"
             else:
                 tablecontents += "<span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\"" + str(
-                    tup[0]) + "\">" + label + "</a></span>"
+                    tup) + "\">" + label + "</a></span>"
         if reverse:
             tablecontents+=" of"
         tablecontents += "</td>"
@@ -2115,7 +2115,7 @@ prefixes["reversed"]["http://purl.org/cuneiform/"]="cunei"
 prefixes["reversed"]["http://purl.org/graphemon/"]="graphemon"
 prefixes["reversed"]["http://www.opengis.net/ont/crs/"]="geocrs"
 prefixes["reversed"]["http://www.ontology-of-units-of-measure.org/resource/om-2/"]="om"
-prefixes["reversed"]["http://purl.org/meshsparql#"]="msp"
+prefixes["reversed"]["http://purl.org/meshsparql/"]="msp"
 prefixnsshort="cuneidict"
 preferredlabellanguage=""
 prefixnamespace="http://purl.org/cuneiform/"
