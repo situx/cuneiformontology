@@ -48,6 +48,8 @@ jtfcontext={
 	  "Glyph":"cidoc:TX9_Glyph"
 }
 
+createRefLinks=True
+
 with open("../signlist/cuneify.json",encoding='utf-8') as f:
     cuneify = json.load(f)
 
@@ -199,6 +201,7 @@ for tabname in tabletnames:
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+" rdf:type cunei:Tablet .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+" rdfs:label \"Cuneiform Artifact: "+str(currenttabletid)+"\" .\n")
     cdlitabs.add("cidoc:TX7_WrittenTextFragment rdfs:subClassOf cidoc:TX1_WrittenText .\n")
+    cdlitabs.add("cidoc:TX7_WrittenTextFragment rdfs:label \"written text fragment\"@en .\n")
     cdlitabs.add("cunei:Side rdfs:subClassOf cidoc:TX7_WrittenTextFragment .\n")
     cdlitabs.add("cunei:Line rdfs:subClassOf cidoc:TX7_WrittenTextFragment .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_writtenText rdf:type cidoc:TX1_WrittenText .\n")
@@ -249,7 +252,7 @@ for tabname in tabletnames:
             currentsidejtf={"_class":"surface","@id":str(currenttabletid)+"_"+currentsideuri,"@type":currentside,"children":[]}
             cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+" rdf:type cunei:Side .\n")
             cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+" rdfs:label \""+str(currenttabletid)+": "+str(currentside)+"\" .\n")
-            cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+" foaf:image \""+str(namespace)+"/images/sides/"+str(tabname)+"_"+str(currentside)+".jpg\"^^xsd:anyURI .\n")
+            cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+" foaf:image \""+str(namespace)+"images/sides/"+str(tabname)+"_"+str(currentside)+".jpg\"^^xsd:anyURI .\n")
             cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+" cunei:hasSide "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+" .\n")
             jtfldrep["@graph"]["children"].append(currentsidejtf)
             currentline=0
@@ -259,7 +262,9 @@ for tabname in tabletnames:
             curjtfline={"_class":"line","@id":str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline)),"children":[]}
             cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" rdf:type cunei:Line .\n")
             cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" rdfs:label \"Line "+str(currentline)+"\"@en .\n")
-            cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" foaf:image \""+str(namespace)+"/images/line/line_"+replaceNonURIChars(str(currentline))+"_"+str(tabname)+"_"+str(tabsideid[currentside])+"_"+str(currentside)+".jpg\"^^xsd:anyURI .\n")
+            if createRefLinks:
+                cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" cidoc:TXP3_is_rendered_by "+namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"  .\n")
+            cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" foaf:image \""+str(namespace)+"images/line/line_"+replaceNonURIChars(str(currentline))+"_"+str(tabname)+"_"+str(tabsideid[currentside])+"_"+str(currentside)+".jpg\"^^xsd:anyURI .\n")
             cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" rdf:type cunei:TransliterationLine .\n")
             cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+" cunei:contains "+namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" .\n")
             cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" skos:definition \""+str(line)+"\" .\n")
@@ -309,8 +314,8 @@ for tabname in tabletnames:
                     cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_charocc skos:definition \""+str(charr)+"\" .\n")
                     cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_charoccurrences rdfs:member "+str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_charocc . \n")
                     cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_glyph rdf:type cidoc:TX9_Glyph .\n")
-                    cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_glyph foaf:image \""+str(namespace)+"/images/charline/charline_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_"+str(tabname)+"_"+str(tabsideid[currentside])+"_"+str(currentside)+".jpg\"^^xsd:anyURI .\n")
-                    cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_glyph foaf:image \""+str(namespace)+"/images/character/char_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_"+str(tabname)+"_"+str(tabsideid[currentside])+"_"+str(currentside)+".jpg\"^^xsd:anyURI .\n")              
+                    cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_glyph foaf:image \""+str(namespace)+"images/charline/charline_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_"+str(tabname)+"_"+str(tabsideid[currentside])+"_"+str(currentside)+".jpg\"^^xsd:anyURI .\n")
+                    cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_glyph foaf:image \""+str(namespace)+"images/character/char_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_"+str(tabname)+"_"+str(tabsideid[currentside])+"_"+str(currentside)+".jpg\"^^xsd:anyURI .\n")              
                     cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_glyph <http://www.cidoc-crm.org/cidoc-crm/TXP8_is_component_of> cunei:"+str(currenttabletid)+"_writtenText .\n")
                     cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_glyph rdfs:label \"Glyph at "+str(currenttabletid)+"["+str(currentside)+" "+replaceNonURIChars(str(currentline))+" "+str(currentcharindex)+"])\" .\n")
                     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_glyphlist rdfs:member "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_glyph .\n")                    
@@ -322,6 +327,8 @@ for tabname in tabletnames:
                     cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_charocc cunei:charIndex \""+str(currentcharindex)+"\"^^xsd:integer .\n")
                     cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_charocc cunei:positionInWord \""+str(currentrelcharindex)+"\"^^xsd:integer .\n")
                     cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_charocc lemon:writtenRepUnicode \""+str(cuneifyWord(str(charr),str(namespace)+""+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_charocc",cdlitabs,namespaceprefix+":"+str(currenttabletid)+"_signreadinglist"))+"\" .\n")
+                    if createRefLinks:
+                        cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_glyph cidoc:TXP3_is_rendered_by "+namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+" .\n")
                     if "#" in charr:
                         cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_glyph cunei:isDamaged \"true\"^^xsd:boolean .\n")
                     else:
