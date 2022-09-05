@@ -29848,16 +29848,16 @@ var tree={
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_glyphlist",
-        "parent": "http://www.example.org/cunei/GlyphCollection",
+        "parent": "http://www.purl.org/cuneiform/GlyphCollection",
         "type": "instance",
         "text": "Glyphs of TCH92 (TCH92_glyphlist)",
         "data": {}
       },
       {
-        "id": "http://www.example.org/cunei/GlyphCollection",
+        "id": "http://www.purl.org/cuneiform/GlyphCollection",
         "parent": "http://www.w3.org/2004/02/skos/core#Collection",
         "type": "class",
-        "text": "GlyphCollection (eg:cunei/GlyphCollection) [4]",
+        "text": "GlyphCollection (purl:cuneiform/GlyphCollection) [4]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -29877,16 +29877,16 @@ var tree={
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_graphemevars",
-        "parent": "http://www.example.org/cunei/GraphemeVariantCollection",
+        "parent": "http://www.purl.org/cuneiform/GraphemeVariantCollection",
         "type": "instance",
         "text": "TCH92 Grapheme Variant Collection  (TCH92_graphemevars)",
         "data": {}
       },
       {
-        "id": "http://www.example.org/cunei/GraphemeVariantCollection",
+        "id": "http://www.purl.org/cuneiform/GraphemeVariantCollection",
         "parent": "http://www.w3.org/2004/02/skos/core#Collection",
         "type": "class",
-        "text": "GraphemeVariantCollection (eg:cunei/GraphemeVariantCollection) [4]",
+        "text": "GraphemeVariantCollection (purl:cuneiform/GraphemeVariantCollection) [4]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -29902,420 +29902,420 @@ var tree={
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line1",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 1 (TCH92_obverse_line1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line10",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 10 (TCH92_obverse_line10)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line11",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 11 (TCH92_obverse_line11)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line12",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 12 (TCH92_obverse_line12)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line13",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 13 (TCH92_obverse_line13)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line14",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 14 (TCH92_obverse_line14)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line15",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 15 (TCH92_obverse_line15)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line16",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 16 (TCH92_obverse_line16)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line17",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 17 (TCH92_obverse_line17)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line18",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 18 (TCH92_obverse_line18)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line19",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 19 (TCH92_obverse_line19)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line2",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 2 (TCH92_obverse_line2)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line20",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 20 (TCH92_obverse_line20)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line21",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 21 (TCH92_obverse_line21)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line22",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 22 (TCH92_obverse_line22)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line23",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 23 (TCH92_obverse_line23)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line24",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 24 (TCH92_obverse_line24)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line25",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 25 (TCH92_obverse_line25)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line26",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 26 (TCH92_obverse_line26)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line27",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 27 (TCH92_obverse_line27)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line28",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 28 (TCH92_obverse_line28)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line3",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 3 (TCH92_obverse_line3)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line4",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 4 (TCH92_obverse_line4)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line5",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 5 (TCH92_obverse_line5)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line6",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 6 (TCH92_obverse_line6)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line7",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 7 (TCH92_obverse_line7)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line8",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 8 (TCH92_obverse_line8)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line9",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 9 (TCH92_obverse_line9)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line1",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 1 (TCH92_reverse_line1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line10",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 10 (TCH92_reverse_line10)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line11",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 11 (TCH92_reverse_line11)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line12",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 12 (TCH92_reverse_line12)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line13",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 13 (TCH92_reverse_line13)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line14",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 14 (TCH92_reverse_line14)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line15",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 15 (TCH92_reverse_line15)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line16",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 16 (TCH92_reverse_line16)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line17",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 17 (TCH92_reverse_line17)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line18",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 18 (TCH92_reverse_line18)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line19",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 19 (TCH92_reverse_line19)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line2",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 2 (TCH92_reverse_line2)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line20",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 20 (TCH92_reverse_line20)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line21",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 21 (TCH92_reverse_line21)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line22",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 22 (TCH92_reverse_line22)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line23",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 23 (TCH92_reverse_line23)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line24",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 24 (TCH92_reverse_line24)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line25",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 25 (TCH92_reverse_line25)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line26",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 26 (TCH92_reverse_line26)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line27",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 27 (TCH92_reverse_line27)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line28",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 28 (TCH92_reverse_line28)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line29",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 29 (TCH92_reverse_line29)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line3",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 3 (TCH92_reverse_line3)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line30",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 30 (TCH92_reverse_line30)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line4",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 4 (TCH92_reverse_line4)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line5",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 5 (TCH92_reverse_line5)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line6",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 6 (TCH92_reverse_line6)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line7",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 7 (TCH92_reverse_line7)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line8",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 8 (TCH92_reverse_line8)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line9",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 9 (TCH92_reverse_line9)",
         "data": {}
       },
       {
-        "id": "http://www.example.org/cunei/Line",
+        "id": "http://www.purl.org/cuneiform/Line",
         "parent": "http://www.cidoc-crm.org/cidoc-crm/TX7_WrittenTextFragment",
         "type": "class",
-        "text": "Line (eg:cunei/Line) [102]",
+        "text": "Line (purl:cuneiform/Line) [102]",
         "data": {
           "to": {
             "http://www.cidoc-crm.org/cidoc-crm/TXP3_is_rendered_by": {
               "instancecount": 1,
-              "http://www.example.org/cunei/TransliterationLine": 1
+              "http://www.purl.org/cuneiform/TransliterationLine": 1
             },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
@@ -30334,16 +30334,16 @@ var tree={
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_signlist",
-        "parent": "http://www.example.org/cunei/GraphemeCollection",
+        "parent": "http://www.purl.org/cuneiform/GraphemeCollection",
         "type": "instance",
         "text": "Signlist of TCH92 (TCH92_signlist)",
         "data": {}
       },
       {
-        "id": "http://www.example.org/cunei/GraphemeCollection",
+        "id": "http://www.purl.org/cuneiform/GraphemeCollection",
         "parent": "http://www.w3.org/2004/02/skos/core#Collection",
         "type": "class",
-        "text": "GraphemeCollection (eg:cunei/GraphemeCollection) [4]",
+        "text": "GraphemeCollection (purl:cuneiform/GraphemeCollection) [4]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -30359,16 +30359,16 @@ var tree={
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_signreadinglist",
-        "parent": "http://www.example.org/cunei/GraphemeReadingCollection",
+        "parent": "http://www.purl.org/cuneiform/GraphemeReadingCollection",
         "type": "instance",
         "text": "Sign Readings of TCH92 (TCH92_signreadinglist)",
         "data": {}
       },
       {
-        "id": "http://www.example.org/cunei/GraphemeReadingCollection",
+        "id": "http://www.purl.org/cuneiform/GraphemeReadingCollection",
         "parent": "http://www.w3.org/2004/02/skos/core#Collection",
         "type": "class",
-        "text": "GraphemeReadingCollection (eg:cunei/GraphemeReadingCollection) [4]",
+        "text": "GraphemeReadingCollection (purl:cuneiform/GraphemeReadingCollection) [4]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -30388,16 +30388,16 @@ var tree={
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1",
-        "parent": "http://www.example.org/cunei/Transliteration",
+        "parent": "http://www.purl.org/cuneiform/Transliteration",
         "type": "instance",
         "text": "Transliteration 1 of TCH92 (TCH92_transliteration1)",
         "data": {}
       },
       {
-        "id": "http://www.example.org/cunei/Transliteration",
+        "id": "http://www.purl.org/cuneiform/Transliteration",
         "parent": "http://www.w3.org/ns/prov-o/Entity",
         "type": "class",
-        "text": "Transliteration (eg:cunei/Transliteration) [4]",
+        "text": "Transliteration (purl:cuneiform/Transliteration) [4]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -30413,16 +30413,16 @@ var tree={
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_charoccurrences",
-        "parent": "http://www.example.org/cunei/CharOccurrenceCollection",
+        "parent": "http://www.purl.org/cuneiform/CharOccurrenceCollection",
         "type": "instance",
         "text": "Char Occurrences of TCH92 generated from transliteration 1 (TCH92_transliteration1_charoccurrences)",
         "data": {}
       },
       {
-        "id": "http://www.example.org/cunei/CharOccurrenceCollection",
+        "id": "http://www.purl.org/cuneiform/CharOccurrenceCollection",
         "parent": "http://www.w3.org/2004/02/skos/core#Collection",
         "type": "class",
-        "text": "CharOccurrenceCollection (eg:cunei/CharOccurrenceCollection) [4]",
+        "text": "CharOccurrenceCollection (purl:cuneiform/CharOccurrenceCollection) [4]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -30433,8 +30433,8 @@ var tree={
             },
             "http://www.w3.org/2000/01/rdf-schema#member": {
               "instancecount": 546,
-              "http://www.example.org/cunei/WordForm": 87,
-              "http://www.example.org/cunei/TransliterationCharOccurrence": 459
+              "http://www.purl.org/cuneiform/WordForm": 87,
+              "http://www.purl.org/cuneiform/TransliterationCharOccurrence": 459
             }
           },
           "from": {}
@@ -30468,16 +30468,16 @@ var tree={
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_wordformoccurrences",
-        "parent": "http://www.example.org/cunei/WordFormOccurrenceCollection",
+        "parent": "http://www.purl.org/cuneiform/WordFormOccurrenceCollection",
         "type": "instance",
         "text": "Wordform Occurrences of TCH92 generated from transliteration 1 (TCH92_transliteration1_wordformoccurrences)",
         "data": {}
       },
       {
-        "id": "http://www.example.org/cunei/WordFormOccurrenceCollection",
+        "id": "http://www.purl.org/cuneiform/WordFormOccurrenceCollection",
         "parent": "http://www.w3.org/2004/02/skos/core#Collection",
         "type": "class",
-        "text": "WordFormOccurrenceCollection (eg:cunei/WordFormOccurrenceCollection) [4]",
+        "text": "WordFormOccurrenceCollection (purl:cuneiform/WordFormOccurrenceCollection) [4]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -30488,7 +30488,7 @@ var tree={
             },
             "http://www.w3.org/2000/01/rdf-schema#member": {
               "instancecount": 87,
-              "http://www.example.org/cunei/WordForm": 87
+              "http://www.purl.org/cuneiform/WordForm": 87
             }
           },
           "from": {}
@@ -30511,21 +30511,21 @@ var tree={
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92",
-        "parent": "http://www.example.org/cunei/Tablet",
+        "parent": "http://www.purl.org/cuneiform/Tablet",
         "type": "instance",
         "text": "Cuneiform Artifact: TCH92 (TCH92)",
         "data": {}
       },
       {
-        "id": "http://www.example.org/cunei/Tablet",
+        "id": "http://www.purl.org/cuneiform/Tablet",
         "parent": "http://www.cidoc-crm.org/cidoc-crm/E22_ManMadeObject",
         "type": "class",
-        "text": "Tablet (eg:cunei/Tablet) [4]",
+        "text": "Tablet (purl:cuneiform/Tablet) [4]",
         "data": {
           "to": {
-            "http://www.example.org/cunei/hasSide": {
+            "http://www.purl.org/cuneiform/hasSide": {
               "instancecount": 2,
-              "http://www.example.org/cunei/Side": 2
+              "http://www.purl.org/cuneiform/Side": 2
             },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1
@@ -30545,23 +30545,23 @@ var tree={
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse",
-        "parent": "http://www.example.org/cunei/Side",
+        "parent": "http://www.purl.org/cuneiform/Side",
         "type": "instance",
         "text": "TCH92: obverse (TCH92_obverse)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse",
-        "parent": "http://www.example.org/cunei/Side",
+        "parent": "http://www.purl.org/cuneiform/Side",
         "type": "instance",
         "text": "TCH92: reverse (TCH92_reverse)",
         "data": {}
       },
       {
-        "id": "http://www.example.org/cunei/Side",
+        "id": "http://www.purl.org/cuneiform/Side",
         "parent": "http://www.cidoc-crm.org/cidoc-crm/TX7_WrittenTextFragment",
         "type": "class",
-        "text": "Side (eg:cunei/Side) [9]",
+        "text": "Side (purl:cuneiform/Side) [9]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -30575,9 +30575,9 @@ var tree={
             }
           },
           "from": {
-            "http://www.example.org/cunei/hasSide": {
+            "http://www.purl.org/cuneiform/hasSide": {
               "instancecount": 0,
-              "http://www.example.org/cunei/Tablet": 1
+              "http://www.purl.org/cuneiform/Tablet": 1
             }
           }
         },
@@ -34204,4251 +34204,4251 @@ var tree={
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_2_disz_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: 1/2(disz) (1_2_disz_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_2_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: 1/2 (1_2_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__A_am_mar_sza_DINGIR_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {1(disz)}A-am-mar-sza-DINGIR (1_disz__A_am_mar_sza_DINGIR_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__A_ta_na_ah__DINGIR_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {1(disz)}A-ta-na-ah,-DINGIR (1_disz__A_ta_na_ah__DINGIR_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__Ba_li_h_u_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {1(disz)}Ba-li-h,u (1_disz__Ba_li_h_u_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__Ba_nu_u2_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {1(disz)}Ba-nu-u2 (1_disz__Ba_nu_u2_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__DINGIR_ba_ni_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {1(disz)}DINGIR-ba-ni (1_disz__DINGIR_ba_ni_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__GU_u2_ug_szar_ri_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {1(disz)}GU-u2-ug-szar-ri (1_disz__GU_u2_ug_szar_ri_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__Gu_u2_gu_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {1(disz)}Gu-u2-gu (1_disz__Gu_u2_gu_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__Gu_u2_ug_ma_an_za_a_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {1(disz)}Gu-u2-ug-ma-an-za-a (1_disz__Gu_u2_ug_ma_an_za_a_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__IR2__d_IMIN_BI_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {1(disz)}IR2-{d}IMIN.BI (1_disz__IR2__d_IMIN_BI_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__KA_szu_t_a__a_bu_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {1(disz)}KA-szu-t,a?-a-bu (1_disz__KA_szu_t_a__a_bu_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__NE__d_Sza2_masz_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {1(disz)}NE-{d}Sza2-masz (1_disz__NE__d_Sza2_masz_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__NE__d__Isz8_tar2_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {1(disz)}NE-{d}-Isz8-tar2 (1_disz__NE__d__Isz8_tar2_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__Na_al_ka_me_en_na_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {1(disz)}Na-al-ka-me-en-na (1_disz__Na_al_ka_me_en_na_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__Na_par2_ak_sze_er_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {1(disz)#}Na-par2-ak-sze-er (1_disz__Na_par2_ak_sze_er_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__Re_e_szu_ma_DINGIR_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {1(disz)}Re-e-szu-ma-DINGIR (1_disz__Re_e_szu_ma_DINGIR_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__Ru_us_su_kar_du_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {1(disz)}Ru-us-su-kar-du (1_disz__Ru_us_su_kar_du_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__S_il2_li2__d_Nin_urta_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {1(disz)}S,il2-li2-{d}Nin-urta (1_disz__S_il2_li2__d_Nin_urta_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz___Gu_u2_ug_h_a_di_ra_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {1(disz)}-Gu-u2-ug-h,a-di-ra (1_disz___Gu_u2_ug_h_a_di_ra_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__d_X_X_X_KAM_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {1(disz).d}X-X-X-KAM (1_disz__d_X_X_X_KAM_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__d__X_X_X_re_ma_ni_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {1(disz)-d}-X-X-X-re-ma-ni (1_disz__d__X_X_X_re_ma_ni_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__mu_KAR__d_A_szur_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {1(disz)-mu}KAR-{d}A-szur (1_disz__mu_KAR__d_A_szur_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: 1(disz) (1_disz_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_u_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: 1(u) (1_u_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/2_disz_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: 2(disz) (2_disz_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/2_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: 2 (2_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/3_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: 3 (3_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/4_disz__MUNUS_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: [4(disz){MUNUS} (4_disz__MUNUS_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/4_disz_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: 4(disz) (4_disz_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/4_u_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: 4(u) (4_u_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/5_disz_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: 5(disz) (5_disz_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/5_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: 5 (5_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/7_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: 7 (7_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/ANSZE_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: ANSZE (ANSZE_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/BAN2_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: BAN2 (BAN2_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/BAN_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: BAN (BAN_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/DAM_su_sza2_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: DAM-su-sza2 (DAM_su_sza2_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/DAM_su_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: DAM#-su (DAM_su_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/DUMU_MUNUS_su_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: DUMU#.MUNUS-su (DUMU_MUNUS_su_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/DUMU_szu_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: DUMU-szu (DUMU_szu_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/ERIN2_MESZ__wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: ERIN2{MESZ}] (ERIN2_MESZ__wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/ERIN2_MESZ_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: ERIN2{MESZ} (ERIN2_MESZ_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/GABA_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: GABA (GABA_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/KIN_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: KIN (KIN_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/KI_MIN_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: KI.MIN (KI_MIN_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/KUR_e_la_mi_a_ie_e_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {KUR}e-la-mi-a-ie-e (KUR_e_la_mi_a_ie_e_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/LU2_pir2_su_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {LU2}pir2-su (LU2_pir2_su_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/LU2_sza_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {LU2}sza (LU2_sza_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/LU2_ta_ri_u2_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {LU2}ta-ri-u2 (LU2_ta_ri_u2_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/MUNUS_pir2_su_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {MUNUS}pir2-su (MUNUS_pir2_su_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/MUNUS_tal_mi_da_tu_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {MUNUS}tal-mi-da-tu (MUNUS_tal_mi_da_tu_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/NIGIDA_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: NIGIDA (NIGIDA_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/SILA3_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: SILA3 (SILA3_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/SZE_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: SZE (SZE_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/SZU_NIGIN2_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: SZU.NIGIN2 (SZU_NIGIN2_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/_MUNUS_ta_ri_tu_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: [{MUNUS}ta-ri-tu] (_MUNUS_ta_ri_tu_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/__1disz__SU___d_SZU_ri_h_a_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: [{(1disz)}SU]-{d}SZU-ri-h,a (__1disz__SU___d_SZU_ri_h_a_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/a_di_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: a-di (a_di_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_1_disz__na_AN_e__szar_rat_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {f}1(disz)+na-AN{e}-szar-rat (f_1_disz__na_AN_e__szar_rat_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_A_na_ru_qi_al_si_szi_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {f}A-na-ru-qi-al-si-szi (f_A_na_ru_qi_al_si_szi_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_A_ta_mar_qa_sa_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {f}A-ta-mar-qa-sa (f_A_ta_mar_qa_sa_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Ba_a_bu_ia_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {f}Ba-a-bu-ia (f_Ba_a_bu_ia_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Ba_bi_szar_ri_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {f}Ba-bi-szar#-ri (f_Ba_bi_szar_ri_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Be_el_tu_ia_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {f}Be-el-tu-ia (f_Be_el_tu_ia_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_DU_tu_ma_an_za_a_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {f}DU-tu-ma-an-za-a (f_DU_tu_ma_an_za_a_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_E_bit_ta_asz2_sz_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {f}E-bit-ta-asz2-sz (f_E_bit_ta_asz2_sz_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Im_ma_te_a_am_mar_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {f}Im-ma-te-a-am-mar (f_Im_ma_te_a_am_mar_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Ki_di_ni_tu_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {f}Ki-di-ni-tu (f_Ki_di_ni_tu_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_La_ka_ma_asz2_sze_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {f}La-ka-ma-asz2-sze (f_La_ka_ma_asz2_sze_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Me_e_na_ma_gi_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {f}Me-e-na-ma-gi (f_Me_e_na_ma_gi_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Nap_sze_ri_um_mi_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {f}Nap-sze-ri-um-mi (f_Nap_sze_ri_um_mi_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Pi_il_h_a_tu_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {f}Pi-il-h,a-tu (f_Pi_il_h_a_tu_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Pu_ut_tu_me_ri_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {f}Pu-ut-tu-me-ri (f_Pu_ut_tu_me_ri_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Sza_qu_u2_tu_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {f}Sza-qu-u2-tu (f_Sza_qu_u2_tu_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Ta_ki_szu_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {f}Ta-ki#-szu (f_Ta_ki_szu_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_U2_bar_ta_ni_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {f}U2-bar-ta-ni (f_U2_bar_ta_ni_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_U2_ta_za_ku_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {f}U2-ta-za-ku (f_U2_ta_za_ku_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/f__E_bu_ri_i_tu_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {f}-E#-bu#-ri-i-tu (f__E_bu_ri_i_tu_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/ku_kul2_li_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: ku-kul2#-li# (ku_kul2_li_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/pir2_su_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: pir2-su (pir2_su_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/sza2_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: [sza2 (sza2_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/sza__pil2_ti_szu_nu_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: sza-[pil2-ti-szu-nu] (sza__pil2_ti_szu_nu_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/sza_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: sza (sza_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/ta_ri_tu_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: ta-ri-tu (ta_ri_tu_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/ta_ri_u2_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: ta-ri-u2 (ta_ri_u2_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/tal_mi__tu_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: tal-mi-[tu] (tal_mi__tu_wordform)",
         "data": {}
       },
       {
-        "id": "http://www.example.org/cunei/WordForm",
+        "id": "http://www.purl.org/cuneiform/WordForm",
         "parent": "#",
         "type": "class",
-        "text": "WordForm (eg:cunei/WordForm) [183]",
+        "text": "WordForm (purl:cuneiform/WordForm) [183]",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line1",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 1 [TCH92_obverse] (TCH92_transliteration1_obverse_line1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line10",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 10 [TCH92_obverse] (TCH92_transliteration1_obverse_line10)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line11",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 11 [TCH92_obverse] (TCH92_transliteration1_obverse_line11)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line12",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 12 [TCH92_obverse] (TCH92_transliteration1_obverse_line12)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line13",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 13 [TCH92_obverse] (TCH92_transliteration1_obverse_line13)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line14",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 14 [TCH92_obverse] (TCH92_transliteration1_obverse_line14)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line15",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 15 [TCH92_obverse] (TCH92_transliteration1_obverse_line15)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line16",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 16 [TCH92_obverse] (TCH92_transliteration1_obverse_line16)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line17",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 17 [TCH92_obverse] (TCH92_transliteration1_obverse_line17)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line18",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 18 [TCH92_obverse] (TCH92_transliteration1_obverse_line18)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line19",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 19 [TCH92_obverse] (TCH92_transliteration1_obverse_line19)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line2",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 2 [TCH92_obverse] (TCH92_transliteration1_obverse_line2)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line20",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 20 [TCH92_obverse] (TCH92_transliteration1_obverse_line20)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line21",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 21 [TCH92_obverse] (TCH92_transliteration1_obverse_line21)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line22",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 22 [TCH92_obverse] (TCH92_transliteration1_obverse_line22)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line23",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 23 [TCH92_obverse] (TCH92_transliteration1_obverse_line23)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line24",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 24 [TCH92_obverse] (TCH92_transliteration1_obverse_line24)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line25",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 25 [TCH92_obverse] (TCH92_transliteration1_obverse_line25)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line26",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 26 [TCH92_obverse] (TCH92_transliteration1_obverse_line26)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line27",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 27 [TCH92_obverse] (TCH92_transliteration1_obverse_line27)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line28",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 28 [TCH92_obverse] (TCH92_transliteration1_obverse_line28)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line3",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 3 [TCH92_obverse] (TCH92_transliteration1_obverse_line3)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line4",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 4 [TCH92_obverse] (TCH92_transliteration1_obverse_line4)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line5",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 5 [TCH92_obverse] (TCH92_transliteration1_obverse_line5)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line6",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 6 [TCH92_obverse] (TCH92_transliteration1_obverse_line6)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line7",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 7 [TCH92_obverse] (TCH92_transliteration1_obverse_line7)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line8",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 8 [TCH92_obverse] (TCH92_transliteration1_obverse_line8)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line9",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 9 [TCH92_obverse] (TCH92_transliteration1_obverse_line9)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line1",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 1 [TCH92_reverse] (TCH92_transliteration1_reverse_line1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line10",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 10 [TCH92_reverse] (TCH92_transliteration1_reverse_line10)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line11",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 11 [TCH92_reverse] (TCH92_transliteration1_reverse_line11)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line12",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 12 [TCH92_reverse] (TCH92_transliteration1_reverse_line12)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line13",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 13 [TCH92_reverse] (TCH92_transliteration1_reverse_line13)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line14",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 14 [TCH92_reverse] (TCH92_transliteration1_reverse_line14)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line15",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 15 [TCH92_reverse] (TCH92_transliteration1_reverse_line15)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line16",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 16 [TCH92_reverse] (TCH92_transliteration1_reverse_line16)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line17",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 17 [TCH92_reverse] (TCH92_transliteration1_reverse_line17)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line18",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 18 [TCH92_reverse] (TCH92_transliteration1_reverse_line18)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 19 [TCH92_reverse] (TCH92_transliteration1_reverse_line19)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line2",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 2 [TCH92_reverse] (TCH92_transliteration1_reverse_line2)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line20",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 20 [TCH92_reverse] (TCH92_transliteration1_reverse_line20)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line21",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 21 [TCH92_reverse] (TCH92_transliteration1_reverse_line21)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line22",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 22 [TCH92_reverse] (TCH92_transliteration1_reverse_line22)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line23",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 23 [TCH92_reverse] (TCH92_transliteration1_reverse_line23)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line24",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 24 [TCH92_reverse] (TCH92_transliteration1_reverse_line24)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 25 [TCH92_reverse] (TCH92_transliteration1_reverse_line25)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line26",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 26 [TCH92_reverse] (TCH92_transliteration1_reverse_line26)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line27",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 27 [TCH92_reverse] (TCH92_transliteration1_reverse_line27)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line28",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 28 [TCH92_reverse] (TCH92_transliteration1_reverse_line28)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line29",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 29 [TCH92_reverse] (TCH92_transliteration1_reverse_line29)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line3",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 3 [TCH92_reverse] (TCH92_transliteration1_reverse_line3)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line30",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 30 [TCH92_reverse] (TCH92_transliteration1_reverse_line30)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line4",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 4 [TCH92_reverse] (TCH92_transliteration1_reverse_line4)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line5",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 5 [TCH92_reverse] (TCH92_transliteration1_reverse_line5)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line6",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 6 [TCH92_reverse] (TCH92_transliteration1_reverse_line6)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line7",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 7 [TCH92_reverse] (TCH92_transliteration1_reverse_line7)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line8",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 8 [TCH92_reverse] (TCH92_transliteration1_reverse_line8)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line9",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 9 [TCH92_reverse] (TCH92_transliteration1_reverse_line9)",
         "data": {}
       },
       {
-        "id": "http://www.example.org/cunei/TransliterationLine",
+        "id": "http://www.purl.org/cuneiform/TransliterationLine",
         "parent": "#",
         "type": "class",
-        "text": "TransliterationLine (eg:cunei/TransliterationLine) [102]",
+        "text": "TransliterationLine (purl:cuneiform/TransliterationLine) [102]",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line10_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: BAN (TCH92[obverse_transliteration1_line10_char8]) (TCH92_transliteration1_obverse_line10_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line11_char11_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: li# (TCH92[obverse_transliteration1_line11_char11]) (TCH92_transliteration1_obverse_line11_char11_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line12_char10_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: [tu] (TCH92[obverse_transliteration1_line12_char10]) (TCH92_transliteration1_obverse_line12_char10_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line13_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[obverse_transliteration1_line13_char9]) (TCH92_transliteration1_obverse_line13_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line14_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: MIN (TCH92[obverse_transliteration1_line14_char9]) (TCH92_transliteration1_obverse_line14_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line15_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: SZE (TCH92[obverse_transliteration1_line15_char5]) (TCH92_transliteration1_obverse_line15_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line16_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: BAN (TCH92[obverse_transliteration1_line16_char4]) (TCH92_transliteration1_obverse_line16_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line17_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: KIN (TCH92[obverse_transliteration1_line17_char9]) (TCH92_transliteration1_obverse_line17_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line18_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: KIN (TCH92[obverse_transliteration1_line18_char7]) (TCH92_transliteration1_obverse_line18_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line19_char10_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[obverse_transliteration1_line19_char10]) (TCH92_transliteration1_obverse_line19_char10_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line1_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: BAN (TCH92[obverse_transliteration1_line1_char5]) (TCH92_transliteration1_obverse_line1_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line20_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: SZE (TCH92[obverse_transliteration1_line20_char4]) (TCH92_transliteration1_obverse_line20_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line21_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: BAN (TCH92[obverse_transliteration1_line21_char8]) (TCH92_transliteration1_obverse_line21_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line22_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: KIN (TCH92[obverse_transliteration1_line22_char9]) (TCH92_transliteration1_obverse_line22_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line23_char10_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: li# (TCH92[obverse_transliteration1_line23_char10]) (TCH92_transliteration1_obverse_line23_char10_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line24_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: SZE (TCH92[obverse_transliteration1_line24_char4]) (TCH92_transliteration1_obverse_line24_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line25_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: BAN# (TCH92[obverse_transliteration1_line25_char6]) (TCH92_transliteration1_obverse_line25_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line26_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: KIN (TCH92[obverse_transliteration1_line26_char8]) (TCH92_transliteration1_obverse_line26_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line27_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: BAN# (TCH92[obverse_transliteration1_line27_char7]) (TCH92_transliteration1_obverse_line27_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line28_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: SZE (TCH92[obverse_transliteration1_line28_char4]) (TCH92_transliteration1_obverse_line28_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line2_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: KIN (TCH92[obverse_transliteration1_line2_char8]) (TCH92_transliteration1_obverse_line2_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line3_char11_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: KIN] (TCH92[obverse_transliteration1_line3_char11]) (TCH92_transliteration1_obverse_line3_char11_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line4_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: GABA (TCH92[obverse_transliteration1_line4_char9]) (TCH92_transliteration1_obverse_line4_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line5_char11_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: [tu] (TCH92[obverse_transliteration1_line5_char11]) (TCH92_transliteration1_obverse_line5_char11_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line6_char10_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[obverse_transliteration1_line6_char10]) (TCH92_transliteration1_obverse_line6_char10_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line7_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: SZE (TCH92[obverse_transliteration1_line7_char6]) (TCH92_transliteration1_obverse_line7_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line8_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: BAN (TCH92[obverse_transliteration1_line8_char9]) (TCH92_transliteration1_obverse_line8_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line9_char10_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: li# (TCH92[obverse_transliteration1_line9_char10]) (TCH92_transliteration1_obverse_line9_char10_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line10_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: KIN (TCH92[reverse_transliteration1_line10_char8]) (TCH92_transliteration1_reverse_line10_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line11_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: SZE (TCH92[reverse_transliteration1_line11_char9]) (TCH92_transliteration1_reverse_line11_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line12_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: BAN (TCH92[reverse_transliteration1_line12_char6]) (TCH92_transliteration1_reverse_line12_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line13_char10_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: KIN (TCH92[reverse_transliteration1_line13_char10]) (TCH92_transliteration1_reverse_line13_char10_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line14_char10_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: u2 (TCH92[reverse_transliteration1_line14_char10]) (TCH92_transliteration1_reverse_line14_char10_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line15_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: NIGIDA (TCH92[reverse_transliteration1_line15_char9]) (TCH92_transliteration1_reverse_line15_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line16_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: SZE (TCH92[reverse_transliteration1_line16_char6]) (TCH92_transliteration1_reverse_line16_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line17_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: BAN (TCH92[reverse_transliteration1_line17_char4]) (TCH92_transliteration1_reverse_line17_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line18_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: KIN (TCH92[reverse_transliteration1_line18_char9]) (TCH92_transliteration1_reverse_line18_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19_char10_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[reverse_transliteration1_line19_char10]) (TCH92_transliteration1_reverse_line19_char10_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line1_char11_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: GABA (TCH92[reverse_transliteration1_line1_char11]) (TCH92_transliteration1_reverse_line1_char11_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line20_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: SZE (TCH92[reverse_transliteration1_line20_char2]) (TCH92_transliteration1_reverse_line20_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line21_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: BAN (TCH92[reverse_transliteration1_line21_char4]) (TCH92_transliteration1_reverse_line21_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line22_char11_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: SZE (TCH92[reverse_transliteration1_line22_char11]) (TCH92_transliteration1_reverse_line22_char11_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line23_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: BAN (TCH92[reverse_transliteration1_line23_char6]) (TCH92_transliteration1_reverse_line23_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line24_char11_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: SZE (TCH92[reverse_transliteration1_line24_char11]) (TCH92_transliteration1_reverse_line24_char11_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_char11_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: li (TCH92[reverse_transliteration1_line25_char11]) (TCH92_transliteration1_reverse_line25_char11_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line26_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[reverse_transliteration1_line26_char7]) (TCH92_transliteration1_reverse_line26_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line27_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: KIN] (TCH92[reverse_transliteration1_line27_char7]) (TCH92_transliteration1_reverse_line27_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line28_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: tu] (TCH92[reverse_transliteration1_line28_char9]) (TCH92_transliteration1_reverse_line28_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line29_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ERIN2{MESZ}] (TCH92[reverse_transliteration1_line29_char8]) (TCH92_transliteration1_reverse_line29_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line2_char11_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su# (TCH92[reverse_transliteration1_line2_char11]) (TCH92_transliteration1_reverse_line2_char11_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line30_char13_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: nu] (TCH92[reverse_transliteration1_line30_char13]) (TCH92_transliteration1_reverse_line30_char13_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line3_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: SZE (TCH92[reverse_transliteration1_line3_char5]) (TCH92_transliteration1_reverse_line3_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line4_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: BAN (TCH92[reverse_transliteration1_line4_char4]) (TCH92_transliteration1_reverse_line4_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line5_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: KIN# (TCH92[reverse_transliteration1_line5_char8]) (TCH92_transliteration1_reverse_line5_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line6_char10_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: tu (TCH92[reverse_transliteration1_line6_char10]) (TCH92_transliteration1_reverse_line6_char10_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line7_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[reverse_transliteration1_line7_char8]) (TCH92_transliteration1_reverse_line7_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line8_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: SZE (TCH92[reverse_transliteration1_line8_char7]) (TCH92_transliteration1_reverse_line8_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line9_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: BAN (TCH92[reverse_transliteration1_line9_char4]) (TCH92_transliteration1_reverse_line9_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line10_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DUMU (TCH92[obverse_transliteration1_line10_char6]) (TCH92_transliteration1_obverse_line10_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line10_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szu (TCH92[obverse_transliteration1_line10_char7]) (TCH92_transliteration1_obverse_line10_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line11_char10_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: kul2 (TCH92[obverse_transliteration1_line11_char10]) (TCH92_transliteration1_obverse_line11_char10_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line11_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DUMU (TCH92[obverse_transliteration1_line11_char6]) (TCH92_transliteration1_obverse_line11_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line11_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szu (TCH92[obverse_transliteration1_line11_char7]) (TCH92_transliteration1_obverse_line11_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line11_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sza (TCH92[obverse_transliteration1_line11_char8]) (TCH92_transliteration1_obverse_line11_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line11_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ku (TCH92[obverse_transliteration1_line11_char9]) (TCH92_transliteration1_obverse_line11_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line12_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DUMU (TCH92[obverse_transliteration1_line12_char5]) (TCH92_transliteration1_obverse_line12_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line12_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: MUNUS (TCH92[obverse_transliteration1_line12_char6]) (TCH92_transliteration1_obverse_line12_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line12_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[obverse_transliteration1_line12_char7]) (TCH92_transliteration1_obverse_line12_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line12_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: tal (TCH92[obverse_transliteration1_line12_char8]) (TCH92_transliteration1_obverse_line12_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line12_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: mi (TCH92[obverse_transliteration1_line12_char9]) (TCH92_transliteration1_obverse_line12_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line13_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: KI (TCH92[obverse_transliteration1_line13_char6]) (TCH92_transliteration1_obverse_line13_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line13_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: MIN (TCH92[obverse_transliteration1_line13_char7]) (TCH92_transliteration1_obverse_line13_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line13_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: pir2 (TCH92[obverse_transliteration1_line13_char8]) (TCH92_transliteration1_obverse_line13_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line14_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DUMU (TCH92[obverse_transliteration1_line14_char6]) (TCH92_transliteration1_obverse_line14_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line14_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szu (TCH92[obverse_transliteration1_line14_char7]) (TCH92_transliteration1_obverse_line14_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line14_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: KI (TCH92[obverse_transliteration1_line14_char8]) (TCH92_transliteration1_obverse_line14_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line15_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 1(disz) (TCH92[obverse_transliteration1_line15_char1]) (TCH92_transliteration1_obverse_line15_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line15_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ANSZE (TCH92[obverse_transliteration1_line15_char2]) (TCH92_transliteration1_obverse_line15_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line15_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 3 (TCH92[obverse_transliteration1_line15_char3]) (TCH92_transliteration1_obverse_line15_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line15_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: BAN2 (TCH92[obverse_transliteration1_line15_char4]) (TCH92_transliteration1_obverse_line15_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line17_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DAM (TCH92[obverse_transliteration1_line17_char6]) (TCH92_transliteration1_obverse_line17_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line17_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[obverse_transliteration1_line17_char7]) (TCH92_transliteration1_obverse_line17_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line17_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sza2 (TCH92[obverse_transliteration1_line17_char8]) (TCH92_transliteration1_obverse_line17_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line18_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DAM (TCH92[obverse_transliteration1_line18_char4]) (TCH92_transliteration1_obverse_line18_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line18_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[obverse_transliteration1_line18_char5]) (TCH92_transliteration1_obverse_line18_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line18_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sza2 (TCH92[obverse_transliteration1_line18_char6]) (TCH92_transliteration1_obverse_line18_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line19_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DUMU (TCH92[obverse_transliteration1_line19_char7]) (TCH92_transliteration1_obverse_line19_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line19_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szu (TCH92[obverse_transliteration1_line19_char8]) (TCH92_transliteration1_obverse_line19_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line19_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: pir2 (TCH92[obverse_transliteration1_line19_char9]) (TCH92_transliteration1_obverse_line19_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line20_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: NIGIDA (TCH92[obverse_transliteration1_line20_char1]) (TCH92_transliteration1_obverse_line20_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line20_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 2 (TCH92[obverse_transliteration1_line20_char2]) (TCH92_transliteration1_obverse_line20_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line20_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: BAN2 (TCH92[obverse_transliteration1_line20_char3]) (TCH92_transliteration1_obverse_line20_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line22_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DAM (TCH92[obverse_transliteration1_line22_char6]) (TCH92_transliteration1_obverse_line22_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line22_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[obverse_transliteration1_line22_char7]) (TCH92_transliteration1_obverse_line22_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line22_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sza2 (TCH92[obverse_transliteration1_line22_char8]) (TCH92_transliteration1_obverse_line22_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line23_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DUMU (TCH92[obverse_transliteration1_line23_char5]) (TCH92_transliteration1_obverse_line23_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line23_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szu (TCH92[obverse_transliteration1_line23_char6]) (TCH92_transliteration1_obverse_line23_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line23_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sza (TCH92[obverse_transliteration1_line23_char7]) (TCH92_transliteration1_obverse_line23_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line23_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ku (TCH92[obverse_transliteration1_line23_char8]) (TCH92_transliteration1_obverse_line23_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line23_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: kul2# (TCH92[obverse_transliteration1_line23_char9]) (TCH92_transliteration1_obverse_line23_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line24_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: NIGIDA (TCH92[obverse_transliteration1_line24_char1]) (TCH92_transliteration1_obverse_line24_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line24_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 5 (TCH92[obverse_transliteration1_line24_char2]) (TCH92_transliteration1_obverse_line24_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line24_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: SILA3 (TCH92[obverse_transliteration1_line24_char3]) (TCH92_transliteration1_obverse_line24_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line26_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DAM (TCH92[obverse_transliteration1_line26_char5]) (TCH92_transliteration1_obverse_line26_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line26_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[obverse_transliteration1_line26_char6]) (TCH92_transliteration1_obverse_line26_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line26_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sza2 (TCH92[obverse_transliteration1_line26_char7]) (TCH92_transliteration1_obverse_line26_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line27_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DUMU (TCH92[obverse_transliteration1_line27_char5]) (TCH92_transliteration1_obverse_line27_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line27_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szu (TCH92[obverse_transliteration1_line27_char6]) (TCH92_transliteration1_obverse_line27_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line28_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: [NIGIDA] (TCH92[obverse_transliteration1_line28_char1]) (TCH92_transliteration1_obverse_line28_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line28_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 2(disz)# (TCH92[obverse_transliteration1_line28_char2]) (TCH92_transliteration1_obverse_line28_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line28_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: BAN2# (TCH92[obverse_transliteration1_line28_char3]) (TCH92_transliteration1_obverse_line28_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line2_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DAM (TCH92[obverse_transliteration1_line2_char5]) (TCH92_transliteration1_obverse_line2_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line2_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[obverse_transliteration1_line2_char6]) (TCH92_transliteration1_obverse_line2_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line2_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sza2 (TCH92[obverse_transliteration1_line2_char7]) (TCH92_transliteration1_obverse_line2_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line3_char10_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: [sza2 (TCH92[obverse_transliteration1_line3_char10]) (TCH92_transliteration1_obverse_line3_char10_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line3_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DAM (TCH92[obverse_transliteration1_line3_char8]) (TCH92_transliteration1_obverse_line3_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line3_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[obverse_transliteration1_line3_char9]) (TCH92_transliteration1_obverse_line3_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line4_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DUMU (TCH92[obverse_transliteration1_line4_char6]) (TCH92_transliteration1_obverse_line4_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line4_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szu (TCH92[obverse_transliteration1_line4_char7]) (TCH92_transliteration1_obverse_line4_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line4_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sza2 (TCH92[obverse_transliteration1_line4_char8]) (TCH92_transliteration1_obverse_line4_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line5_char10_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: mi (TCH92[obverse_transliteration1_line5_char10]) (TCH92_transliteration1_obverse_line5_char10_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line5_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DUMU# (TCH92[obverse_transliteration1_line5_char6]) (TCH92_transliteration1_obverse_line5_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line5_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: MUNUS (TCH92[obverse_transliteration1_line5_char7]) (TCH92_transliteration1_obverse_line5_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line5_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[obverse_transliteration1_line5_char8]) (TCH92_transliteration1_obverse_line5_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line5_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: tal (TCH92[obverse_transliteration1_line5_char9]) (TCH92_transliteration1_obverse_line5_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line6_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: KI (TCH92[obverse_transliteration1_line6_char7]) (TCH92_transliteration1_obverse_line6_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line6_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: MIN (TCH92[obverse_transliteration1_line6_char8]) (TCH92_transliteration1_obverse_line6_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line6_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: pir2 (TCH92[obverse_transliteration1_line6_char9]) (TCH92_transliteration1_obverse_line6_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line7_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 1(disz) (TCH92[obverse_transliteration1_line7_char1]) (TCH92_transliteration1_obverse_line7_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line7_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ANSZE (TCH92[obverse_transliteration1_line7_char2]) (TCH92_transliteration1_obverse_line7_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line7_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 2(disz) (TCH92[obverse_transliteration1_line7_char3]) (TCH92_transliteration1_obverse_line7_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line7_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 1/2(disz) (TCH92[obverse_transliteration1_line7_char4]) (TCH92_transliteration1_obverse_line7_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line7_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: SILA3 (TCH92[obverse_transliteration1_line7_char5]) (TCH92_transliteration1_obverse_line7_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line9_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DAM (TCH92[obverse_transliteration1_line9_char5]) (TCH92_transliteration1_obverse_line9_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line9_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[obverse_transliteration1_line9_char6]) (TCH92_transliteration1_obverse_line9_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line9_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sza2 (TCH92[obverse_transliteration1_line9_char7]) (TCH92_transliteration1_obverse_line9_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line9_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ku (TCH92[obverse_transliteration1_line9_char8]) (TCH92_transliteration1_obverse_line9_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line9_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: kul2 (TCH92[obverse_transliteration1_line9_char9]) (TCH92_transliteration1_obverse_line9_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line10_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DAM (TCH92[reverse_transliteration1_line10_char5]) (TCH92_transliteration1_reverse_line10_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line10_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[reverse_transliteration1_line10_char6]) (TCH92_transliteration1_reverse_line10_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line10_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sza2 (TCH92[reverse_transliteration1_line10_char7]) (TCH92_transliteration1_reverse_line10_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line11_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DUMU (TCH92[reverse_transliteration1_line11_char4]) (TCH92_transliteration1_reverse_line11_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line11_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szu (TCH92[reverse_transliteration1_line11_char5]) (TCH92_transliteration1_reverse_line11_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line11_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: pir2 (TCH92[reverse_transliteration1_line11_char6]) (TCH92_transliteration1_reverse_line11_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line11_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[reverse_transliteration1_line11_char7]) (TCH92_transliteration1_reverse_line11_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line11_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: NIGIDA (TCH92[reverse_transliteration1_line11_char8]) (TCH92_transliteration1_reverse_line11_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line13_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DAM (TCH92[reverse_transliteration1_line13_char7]) (TCH92_transliteration1_reverse_line13_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line13_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[reverse_transliteration1_line13_char8]) (TCH92_transliteration1_reverse_line13_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line13_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sza2 (TCH92[reverse_transliteration1_line13_char9]) (TCH92_transliteration1_reverse_line13_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line14_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DUMU (TCH92[reverse_transliteration1_line14_char6]) (TCH92_transliteration1_reverse_line14_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line14_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szu (TCH92[reverse_transliteration1_line14_char7]) (TCH92_transliteration1_reverse_line14_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line14_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ta (TCH92[reverse_transliteration1_line14_char8]) (TCH92_transliteration1_reverse_line14_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line14_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ri (TCH92[reverse_transliteration1_line14_char9]) (TCH92_transliteration1_reverse_line14_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line15_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DUMU (TCH92[reverse_transliteration1_line15_char5]) (TCH92_transliteration1_reverse_line15_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line15_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szu (TCH92[reverse_transliteration1_line15_char6]) (TCH92_transliteration1_reverse_line15_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line15_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: pir2 (TCH92[reverse_transliteration1_line15_char7]) (TCH92_transliteration1_reverse_line15_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line15_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[reverse_transliteration1_line15_char8]) (TCH92_transliteration1_reverse_line15_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line16_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 1(disz) (TCH92[reverse_transliteration1_line16_char1]) (TCH92_transliteration1_reverse_line16_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line16_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: BAN2 (TCH92[reverse_transliteration1_line16_char2]) (TCH92_transliteration1_reverse_line16_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line16_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 2(disz) (TCH92[reverse_transliteration1_line16_char3]) (TCH92_transliteration1_reverse_line16_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line16_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 1/2 (TCH92[reverse_transliteration1_line16_char4]) (TCH92_transliteration1_reverse_line16_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line16_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: SILA3 (TCH92[reverse_transliteration1_line16_char5]) (TCH92_transliteration1_reverse_line16_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line18_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DAM (TCH92[reverse_transliteration1_line18_char6]) (TCH92_transliteration1_reverse_line18_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line18_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[reverse_transliteration1_line18_char7]) (TCH92_transliteration1_reverse_line18_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line18_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sza2 (TCH92[reverse_transliteration1_line18_char8]) (TCH92_transliteration1_reverse_line18_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DUMU (TCH92[reverse_transliteration1_line19_char6]) (TCH92_transliteration1_reverse_line19_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: MUNUS (TCH92[reverse_transliteration1_line19_char7]) (TCH92_transliteration1_reverse_line19_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[reverse_transliteration1_line19_char8]) (TCH92_transliteration1_reverse_line19_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: pir2 (TCH92[reverse_transliteration1_line19_char9]) (TCH92_transliteration1_reverse_line19_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line1_char10_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sza (TCH92[reverse_transliteration1_line1_char10]) (TCH92_transliteration1_reverse_line1_char10_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line1_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DUMU (TCH92[reverse_transliteration1_line1_char8]) (TCH92_transliteration1_reverse_line1_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line1_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szu (TCH92[reverse_transliteration1_line1_char9]) (TCH92_transliteration1_reverse_line1_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line20_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: NIGIDA (TCH92[reverse_transliteration1_line20_char1]) (TCH92_transliteration1_reverse_line20_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line22_char10_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: BAN2 (TCH92[reverse_transliteration1_line22_char10]) (TCH92_transliteration1_reverse_line22_char10_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line22_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DAM (TCH92[reverse_transliteration1_line22_char5]) (TCH92_transliteration1_reverse_line22_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line22_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[reverse_transliteration1_line22_char6]) (TCH92_transliteration1_reverse_line22_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line22_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sza2 (TCH92[reverse_transliteration1_line22_char7]) (TCH92_transliteration1_reverse_line22_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line22_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: KIN (TCH92[reverse_transliteration1_line22_char8]) (TCH92_transliteration1_reverse_line22_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line22_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 5(disz) (TCH92[reverse_transliteration1_line22_char9]) (TCH92_transliteration1_reverse_line22_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line24_char10_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: BAN2 (TCH92[reverse_transliteration1_line24_char10]) (TCH92_transliteration1_reverse_line24_char10_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line24_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DAM (TCH92[reverse_transliteration1_line24_char5]) (TCH92_transliteration1_reverse_line24_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line24_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[reverse_transliteration1_line24_char6]) (TCH92_transliteration1_reverse_line24_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line24_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sza2 (TCH92[reverse_transliteration1_line24_char7]) (TCH92_transliteration1_reverse_line24_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line24_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: KIN (TCH92[reverse_transliteration1_line24_char8]) (TCH92_transliteration1_reverse_line24_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line24_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 5(disz) (TCH92[reverse_transliteration1_line24_char9]) (TCH92_transliteration1_reverse_line24_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_char10_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: kul2 (TCH92[reverse_transliteration1_line25_char10]) (TCH92_transliteration1_reverse_line25_char10_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 1(u) (TCH92[reverse_transliteration1_line25_char3]) (TCH92_transliteration1_reverse_line25_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 4(disz) (TCH92[reverse_transliteration1_line25_char4]) (TCH92_transliteration1_reverse_line25_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ERIN2{MESZ} (TCH92[reverse_transliteration1_line25_char5]) (TCH92_transliteration1_reverse_line25_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: BAN (TCH92[reverse_transliteration1_line25_char6]) (TCH92_transliteration1_reverse_line25_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 2(disz) (TCH92[reverse_transliteration1_line25_char7]) (TCH92_transliteration1_reverse_line25_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {LU2}sza (TCH92[reverse_transliteration1_line25_char8]) (TCH92_transliteration1_reverse_line25_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ku (TCH92[reverse_transliteration1_line25_char9]) (TCH92_transliteration1_reverse_line25_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line26_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: u2 (TCH92[reverse_transliteration1_line26_char4]) (TCH92_transliteration1_reverse_line26_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line26_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 4(disz) (TCH92[reverse_transliteration1_line26_char5]) (TCH92_transliteration1_reverse_line26_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line26_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {LU2}pir2 (TCH92[reverse_transliteration1_line26_char6]) (TCH92_transliteration1_reverse_line26_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line27_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 2(disz) (TCH92[reverse_transliteration1_line27_char1]) (TCH92_transliteration1_reverse_line27_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line27_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {LU2}sza (TCH92[reverse_transliteration1_line27_char2]) (TCH92_transliteration1_reverse_line27_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line27_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: GABA (TCH92[reverse_transliteration1_line27_char3]) (TCH92_transliteration1_reverse_line27_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line27_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 1(u) (TCH92[reverse_transliteration1_line27_char4]) (TCH92_transliteration1_reverse_line27_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line27_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: [4(disz){MUNUS} (TCH92[reverse_transliteration1_line27_char5]) (TCH92_transliteration1_reverse_line27_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line27_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sza2 (TCH92[reverse_transliteration1_line27_char6]) (TCH92_transliteration1_reverse_line27_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line28_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: tu (TCH92[reverse_transliteration1_line28_char5]) (TCH92_transliteration1_reverse_line28_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line28_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 1(disz) (TCH92[reverse_transliteration1_line28_char6]) (TCH92_transliteration1_reverse_line28_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line28_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: [{MUNUS}ta (TCH92[reverse_transliteration1_line28_char7]) (TCH92_transliteration1_reverse_line28_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line28_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ri (TCH92[reverse_transliteration1_line28_char8]) (TCH92_transliteration1_reverse_line28_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line29_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {MUNUS}pir2 (TCH92[reverse_transliteration1_line29_char2]) (TCH92_transliteration1_reverse_line29_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line29_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[reverse_transliteration1_line29_char3]) (TCH92_transliteration1_reverse_line29_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line29_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: SZU (TCH92[reverse_transliteration1_line29_char4]) (TCH92_transliteration1_reverse_line29_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line29_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: NIGIN2 (TCH92[reverse_transliteration1_line29_char5]) (TCH92_transliteration1_reverse_line29_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line29_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 4(u) (TCH92[reverse_transliteration1_line29_char6]) (TCH92_transliteration1_reverse_line29_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line29_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: [5(disz) (TCH92[reverse_transliteration1_line29_char7]) (TCH92_transliteration1_reverse_line29_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line2_char10_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: pir2 (TCH92[reverse_transliteration1_line2_char10]) (TCH92_transliteration1_reverse_line2_char10_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line2_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DUMU (TCH92[reverse_transliteration1_line2_char7]) (TCH92_transliteration1_reverse_line2_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line2_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: MUNUS (TCH92[reverse_transliteration1_line2_char8]) (TCH92_transliteration1_reverse_line2_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line2_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[reverse_transliteration1_line2_char9]) (TCH92_transliteration1_reverse_line2_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line30_char10_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: [pil2 (TCH92[reverse_transliteration1_line30_char10]) (TCH92_transliteration1_reverse_line30_char10_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line30_char11_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ti (TCH92[reverse_transliteration1_line30_char11]) (TCH92_transliteration1_reverse_line30_char11_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line30_char12_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szu (TCH92[reverse_transliteration1_line30_char12]) (TCH92_transliteration1_reverse_line30_char12_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line30_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: a (TCH92[reverse_transliteration1_line30_char7]) (TCH92_transliteration1_reverse_line30_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line30_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: di (TCH92[reverse_transliteration1_line30_char8]) (TCH92_transliteration1_reverse_line30_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line30_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sza (TCH92[reverse_transliteration1_line30_char9]) (TCH92_transliteration1_reverse_line30_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line3_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: NIGIDA (TCH92[reverse_transliteration1_line3_char1]) (TCH92_transliteration1_reverse_line3_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line3_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 7 (TCH92[reverse_transliteration1_line3_char2]) (TCH92_transliteration1_reverse_line3_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line3_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 1/2 (TCH92[reverse_transliteration1_line3_char3]) (TCH92_transliteration1_reverse_line3_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line3_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: SILA3 (TCH92[reverse_transliteration1_line3_char4]) (TCH92_transliteration1_reverse_line3_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line5_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DAM# (TCH92[reverse_transliteration1_line5_char5]) (TCH92_transliteration1_reverse_line5_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line5_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[reverse_transliteration1_line5_char6]) (TCH92_transliteration1_reverse_line5_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line5_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sza2 (TCH92[reverse_transliteration1_line5_char7]) (TCH92_transliteration1_reverse_line5_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line6_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DUMU (TCH92[reverse_transliteration1_line6_char5]) (TCH92_transliteration1_reverse_line6_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line6_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: MUNUS (TCH92[reverse_transliteration1_line6_char6]) (TCH92_transliteration1_reverse_line6_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line6_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[reverse_transliteration1_line6_char7]) (TCH92_transliteration1_reverse_line6_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line6_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ta (TCH92[reverse_transliteration1_line6_char8]) (TCH92_transliteration1_reverse_line6_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line6_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ri (TCH92[reverse_transliteration1_line6_char9]) (TCH92_transliteration1_reverse_line6_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line7_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: KI (TCH92[reverse_transliteration1_line7_char5]) (TCH92_transliteration1_reverse_line7_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line7_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: MIN (TCH92[reverse_transliteration1_line7_char6]) (TCH92_transliteration1_reverse_line7_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line7_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: pir2 (TCH92[reverse_transliteration1_line7_char7]) (TCH92_transliteration1_reverse_line7_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line8_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: NIGIDA (TCH92[reverse_transliteration1_line8_char1]) (TCH92_transliteration1_reverse_line8_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line8_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 1(disz) (TCH92[reverse_transliteration1_line8_char2]) (TCH92_transliteration1_reverse_line8_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line8_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: BAN2 (TCH92[reverse_transliteration1_line8_char3]) (TCH92_transliteration1_reverse_line8_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line8_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 2(disz) (TCH92[reverse_transliteration1_line8_char4]) (TCH92_transliteration1_reverse_line8_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line8_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 1/2 (TCH92[reverse_transliteration1_line8_char5]) (TCH92_transliteration1_reverse_line8_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line8_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: SILA3 (TCH92[reverse_transliteration1_line8_char6]) (TCH92_transliteration1_reverse_line8_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line10_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: du (TCH92[obverse_transliteration1_line10_char5]) (TCH92_transliteration1_obverse_line10_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line11_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: bu (TCH92[obverse_transliteration1_line11_char5]) (TCH92_transliteration1_obverse_line11_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line12_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ri (TCH92[obverse_transliteration1_line12_char4]) (TCH92_transliteration1_obverse_line12_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line13_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: mi (TCH92[obverse_transliteration1_line13_char5]) (TCH92_transliteration1_obverse_line13_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line14_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: KAM (TCH92[obverse_transliteration1_line14_char5]) (TCH92_transliteration1_obverse_line14_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line16_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {1(disz)}Ba (TCH92[obverse_transliteration1_line16_char1]) (TCH92_transliteration1_obverse_line16_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line16_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: h,u (TCH92[obverse_transliteration1_line16_char3]) (TCH92_transliteration1_obverse_line16_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line17_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ri (TCH92[obverse_transliteration1_line17_char5]) (TCH92_transliteration1_obverse_line17_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line18_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szu (TCH92[obverse_transliteration1_line18_char3]) (TCH92_transliteration1_obverse_line18_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line19_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: na (TCH92[obverse_transliteration1_line19_char6]) (TCH92_transliteration1_obverse_line19_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line1_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {1(disz)}NE (TCH92[obverse_transliteration1_line1_char1]) (TCH92_transliteration1_obverse_line1_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line1_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: tar2 (TCH92[obverse_transliteration1_line1_char4]) (TCH92_transliteration1_obverse_line1_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line21_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {1(disz)}Gu (TCH92[obverse_transliteration1_line21_char1]) (TCH92_transliteration1_obverse_line21_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line21_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: a (TCH92[obverse_transliteration1_line21_char7]) (TCH92_transliteration1_obverse_line21_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line22_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: gi (TCH92[obverse_transliteration1_line22_char5]) (TCH92_transliteration1_obverse_line22_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line23_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: urta (TCH92[obverse_transliteration1_line23_char4]) (TCH92_transliteration1_obverse_line23_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line25_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {1(disz)#}Na (TCH92[obverse_transliteration1_line25_char1]) (TCH92_transliteration1_obverse_line25_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line25_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: er (TCH92[obverse_transliteration1_line25_char5]) (TCH92_transliteration1_obverse_line25_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line26_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: tu (TCH92[obverse_transliteration1_line26_char4]) (TCH92_transliteration1_obverse_line26_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line27_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: h,a (TCH92[obverse_transliteration1_line27_char4]) (TCH92_transliteration1_obverse_line27_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line2_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ia (TCH92[obverse_transliteration1_line2_char4]) (TCH92_transliteration1_obverse_line2_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line3_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szi (TCH92[obverse_transliteration1_line3_char7]) (TCH92_transliteration1_obverse_line3_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line4_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DINGIR (TCH92[obverse_transliteration1_line4_char5]) (TCH92_transliteration1_obverse_line4_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line5_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sze (TCH92[obverse_transliteration1_line5_char5]) (TCH92_transliteration1_obverse_line5_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line6_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: mar (TCH92[obverse_transliteration1_line6_char6]) (TCH92_transliteration1_obverse_line6_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line8_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {1(disz) (TCH92[obverse_transliteration1_line8_char1]) (TCH92_transliteration1_obverse_line8_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line8_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ni (TCH92[obverse_transliteration1_line8_char8]) (TCH92_transliteration1_obverse_line8_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line9_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: tu (TCH92[obverse_transliteration1_line9_char4]) (TCH92_transliteration1_obverse_line9_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line10_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ia (TCH92[reverse_transliteration1_line10_char4]) (TCH92_transliteration1_reverse_line10_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line11_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: masz (TCH92[reverse_transliteration1_line11_char3]) (TCH92_transliteration1_reverse_line11_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line12_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {1(disz)}GU (TCH92[reverse_transliteration1_line12_char1]) (TCH92_transliteration1_reverse_line12_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line12_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ri (TCH92[reverse_transliteration1_line12_char5]) (TCH92_transliteration1_reverse_line12_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line13_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: a (TCH92[reverse_transliteration1_line13_char6]) (TCH92_transliteration1_reverse_line13_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line14_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DINGIR (TCH92[reverse_transliteration1_line14_char5]) (TCH92_transliteration1_reverse_line14_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line15_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szur (TCH92[reverse_transliteration1_line15_char4]) (TCH92_transliteration1_reverse_line15_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line17_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {1(disz)}Gu (TCH92[reverse_transliteration1_line17_char1]) (TCH92_transliteration1_reverse_line17_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line17_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: gu (TCH92[reverse_transliteration1_line17_char3]) (TCH92_transliteration1_reverse_line17_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line18_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sz (TCH92[reverse_transliteration1_line18_char5]) (TCH92_transliteration1_reverse_line18_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sa (TCH92[reverse_transliteration1_line19_char5]) (TCH92_transliteration1_reverse_line19_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line1_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ra (TCH92[reverse_transliteration1_line1_char7]) (TCH92_transliteration1_reverse_line1_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line21_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {1(disz)}DINGIR (TCH92[reverse_transliteration1_line21_char1]) (TCH92_transliteration1_reverse_line21_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line21_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ni (TCH92[reverse_transliteration1_line21_char3]) (TCH92_transliteration1_reverse_line21_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line22_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ku (TCH92[reverse_transliteration1_line22_char4]) (TCH92_transliteration1_reverse_line22_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line23_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {1(disz)}Re (TCH92[reverse_transliteration1_line23_char1]) (TCH92_transliteration1_reverse_line23_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line23_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: DINGIR (TCH92[reverse_transliteration1_line23_char5]) (TCH92_transliteration1_reverse_line23_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line24_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ni (TCH92[reverse_transliteration1_line24_char4]) (TCH92_transliteration1_reverse_line24_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line26_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {LU2}ta (TCH92[reverse_transliteration1_line26_char2]) (TCH92_transliteration1_reverse_line26_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line26_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ri (TCH92[reverse_transliteration1_line26_char3]) (TCH92_transliteration1_reverse_line26_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line28_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: da (TCH92[reverse_transliteration1_line28_char4]) (TCH92_transliteration1_reverse_line28_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line2_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: tu (TCH92[reverse_transliteration1_line2_char6]) (TCH92_transliteration1_reverse_line2_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line30_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: e (TCH92[reverse_transliteration1_line30_char6]) (TCH92_transliteration1_reverse_line30_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line4_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {1(disz)}IR2 (TCH92[reverse_transliteration1_line4_char1]) (TCH92_transliteration1_reverse_line4_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line4_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: BI (TCH92[reverse_transliteration1_line4_char3]) (TCH92_transliteration1_reverse_line4_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line5_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ia (TCH92[reverse_transliteration1_line5_char4]) (TCH92_transliteration1_reverse_line5_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line6_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: tu (TCH92[reverse_transliteration1_line6_char4]) (TCH92_transliteration1_reverse_line6_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line7_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: rat (TCH92[reverse_transliteration1_line7_char4]) (TCH92_transliteration1_reverse_line7_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line9_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {1(disz)}Ba (TCH92[reverse_transliteration1_line9_char1]) (TCH92_transliteration1_reverse_line9_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line9_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: u2 (TCH92[reverse_transliteration1_line9_char3]) (TCH92_transliteration1_reverse_line9_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line10_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {1(disz)}Ru (TCH92[obverse_transliteration1_line10_char1]) (TCH92_transliteration1_obverse_line10_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line10_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: us (TCH92[obverse_transliteration1_line10_char2]) (TCH92_transliteration1_obverse_line10_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line10_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su (TCH92[obverse_transliteration1_line10_char3]) (TCH92_transliteration1_obverse_line10_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line10_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: kar (TCH92[obverse_transliteration1_line10_char4]) (TCH92_transliteration1_obverse_line10_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line11_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: t,a? (TCH92[obverse_transliteration1_line11_char3]) (TCH92_transliteration1_obverse_line11_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line11_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: a (TCH92[obverse_transliteration1_line11_char4]) (TCH92_transliteration1_obverse_line11_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line12_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szar# (TCH92[obverse_transliteration1_line12_char3]) (TCH92_transliteration1_obverse_line12_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line13_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sze (TCH92[obverse_transliteration1_line13_char2]) (TCH92_transliteration1_obverse_line13_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line13_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ri (TCH92[obverse_transliteration1_line13_char3]) (TCH92_transliteration1_obverse_line13_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line13_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: um (TCH92[obverse_transliteration1_line13_char4]) (TCH92_transliteration1_obverse_line13_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line14_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: d}X (TCH92[obverse_transliteration1_line14_char2]) (TCH92_transliteration1_obverse_line14_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line14_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: X (TCH92[obverse_transliteration1_line14_char3]) (TCH92_transliteration1_obverse_line14_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line14_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: X (TCH92[obverse_transliteration1_line14_char4]) (TCH92_transliteration1_obverse_line14_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line16_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: li (TCH92[obverse_transliteration1_line16_char2]) (TCH92_transliteration1_obverse_line16_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line17_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {f}Pu (TCH92[obverse_transliteration1_line17_char1]) (TCH92_transliteration1_obverse_line17_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line17_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ut (TCH92[obverse_transliteration1_line17_char2]) (TCH92_transliteration1_obverse_line17_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line17_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: tu (TCH92[obverse_transliteration1_line17_char3]) (TCH92_transliteration1_obverse_line17_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line17_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: me (TCH92[obverse_transliteration1_line17_char4]) (TCH92_transliteration1_obverse_line17_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line18_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {f}Ta (TCH92[obverse_transliteration1_line18_char1]) (TCH92_transliteration1_obverse_line18_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line19_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: al (TCH92[obverse_transliteration1_line19_char2]) (TCH92_transliteration1_obverse_line19_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line19_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ka (TCH92[obverse_transliteration1_line19_char3]) (TCH92_transliteration1_obverse_line19_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line19_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: me (TCH92[obverse_transliteration1_line19_char4]) (TCH92_transliteration1_obverse_line19_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line19_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: en (TCH92[obverse_transliteration1_line19_char5]) (TCH92_transliteration1_obverse_line19_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line1_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {d} (TCH92[obverse_transliteration1_line1_char2]) (TCH92_transliteration1_obverse_line1_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line1_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: Isz8 (TCH92[obverse_transliteration1_line1_char3]) (TCH92_transliteration1_obverse_line1_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line21_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: u2 (TCH92[obverse_transliteration1_line21_char2]) (TCH92_transliteration1_obverse_line21_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line21_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ug (TCH92[obverse_transliteration1_line21_char3]) (TCH92_transliteration1_obverse_line21_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line21_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ma (TCH92[obverse_transliteration1_line21_char4]) (TCH92_transliteration1_obverse_line21_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line21_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: an (TCH92[obverse_transliteration1_line21_char5]) (TCH92_transliteration1_obverse_line21_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line21_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: za (TCH92[obverse_transliteration1_line21_char6]) (TCH92_transliteration1_obverse_line21_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line22_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {f}Me (TCH92[obverse_transliteration1_line22_char1]) (TCH92_transliteration1_obverse_line22_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line22_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: e (TCH92[obverse_transliteration1_line22_char2]) (TCH92_transliteration1_obverse_line22_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line22_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: na (TCH92[obverse_transliteration1_line22_char3]) (TCH92_transliteration1_obverse_line22_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line22_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ma (TCH92[obverse_transliteration1_line22_char4]) (TCH92_transliteration1_obverse_line22_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line23_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {d}Nin (TCH92[obverse_transliteration1_line23_char3]) (TCH92_transliteration1_obverse_line23_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line25_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: par2 (TCH92[obverse_transliteration1_line25_char2]) (TCH92_transliteration1_obverse_line25_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line25_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ak (TCH92[obverse_transliteration1_line25_char3]) (TCH92_transliteration1_obverse_line25_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line25_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sze (TCH92[obverse_transliteration1_line25_char4]) (TCH92_transliteration1_obverse_line25_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line26_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {f}Ki (TCH92[obverse_transliteration1_line26_char1]) (TCH92_transliteration1_obverse_line26_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line26_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: di (TCH92[obverse_transliteration1_line26_char2]) (TCH92_transliteration1_obverse_line26_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line26_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ni (TCH92[obverse_transliteration1_line26_char3]) (TCH92_transliteration1_obverse_line26_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line27_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: [{(1disz)}SU] (TCH92[obverse_transliteration1_line27_char1]) (TCH92_transliteration1_obverse_line27_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line27_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {d}SZU (TCH92[obverse_transliteration1_line27_char2]) (TCH92_transliteration1_obverse_line27_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line27_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ri (TCH92[obverse_transliteration1_line27_char3]) (TCH92_transliteration1_obverse_line27_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line2_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {f}Be (TCH92[obverse_transliteration1_line2_char1]) (TCH92_transliteration1_obverse_line2_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line2_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: el (TCH92[obverse_transliteration1_line2_char2]) (TCH92_transliteration1_obverse_line2_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line2_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: tu (TCH92[obverse_transliteration1_line2_char3]) (TCH92_transliteration1_obverse_line2_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line3_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {f}A (TCH92[obverse_transliteration1_line3_char1]) (TCH92_transliteration1_obverse_line3_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line3_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: na (TCH92[obverse_transliteration1_line3_char2]) (TCH92_transliteration1_obverse_line3_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line3_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ru (TCH92[obverse_transliteration1_line3_char3]) (TCH92_transliteration1_obverse_line3_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line3_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: qi (TCH92[obverse_transliteration1_line3_char4]) (TCH92_transliteration1_obverse_line3_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line3_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: al (TCH92[obverse_transliteration1_line3_char5]) (TCH92_transliteration1_obverse_line3_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line3_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: si (TCH92[obverse_transliteration1_line3_char6]) (TCH92_transliteration1_obverse_line3_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line4_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {1(disz)}A (TCH92[obverse_transliteration1_line4_char1]) (TCH92_transliteration1_obverse_line4_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line4_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: am (TCH92[obverse_transliteration1_line4_char2]) (TCH92_transliteration1_obverse_line4_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line4_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: mar (TCH92[obverse_transliteration1_line4_char3]) (TCH92_transliteration1_obverse_line4_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line4_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sza (TCH92[obverse_transliteration1_line4_char4]) (TCH92_transliteration1_obverse_line4_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line5_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ma (TCH92[obverse_transliteration1_line5_char3]) (TCH92_transliteration1_obverse_line5_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line5_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: asz2 (TCH92[obverse_transliteration1_line5_char4]) (TCH92_transliteration1_obverse_line5_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line6_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ma (TCH92[obverse_transliteration1_line6_char2]) (TCH92_transliteration1_obverse_line6_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line6_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: te (TCH92[obverse_transliteration1_line6_char3]) (TCH92_transliteration1_obverse_line6_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line6_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: a (TCH92[obverse_transliteration1_line6_char4]) (TCH92_transliteration1_obverse_line6_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line6_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: am (TCH92[obverse_transliteration1_line6_char5]) (TCH92_transliteration1_obverse_line6_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line8_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: d} (TCH92[obverse_transliteration1_line8_char2]) (TCH92_transliteration1_obverse_line8_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line8_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: X (TCH92[obverse_transliteration1_line8_char3]) (TCH92_transliteration1_obverse_line8_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line8_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: X (TCH92[obverse_transliteration1_line8_char4]) (TCH92_transliteration1_obverse_line8_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line8_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: X (TCH92[obverse_transliteration1_line8_char5]) (TCH92_transliteration1_obverse_line8_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line8_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: re (TCH92[obverse_transliteration1_line8_char6]) (TCH92_transliteration1_obverse_line8_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line8_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ma (TCH92[obverse_transliteration1_line8_char7]) (TCH92_transliteration1_obverse_line8_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line9_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: h,a (TCH92[obverse_transliteration1_line9_char3]) (TCH92_transliteration1_obverse_line9_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line10_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {f}Be (TCH92[reverse_transliteration1_line10_char1]) (TCH92_transliteration1_reverse_line10_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line10_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: el (TCH92[reverse_transliteration1_line10_char2]) (TCH92_transliteration1_reverse_line10_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line10_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: tu (TCH92[reverse_transliteration1_line10_char3]) (TCH92_transliteration1_reverse_line10_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line11_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {d}Sza2 (TCH92[reverse_transliteration1_line11_char2]) (TCH92_transliteration1_reverse_line11_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line12_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: u2 (TCH92[reverse_transliteration1_line12_char2]) (TCH92_transliteration1_reverse_line12_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line12_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ug (TCH92[reverse_transliteration1_line12_char3]) (TCH92_transliteration1_reverse_line12_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line12_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szar (TCH92[reverse_transliteration1_line12_char4]) (TCH92_transliteration1_reverse_line12_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line13_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {f}DU (TCH92[reverse_transliteration1_line13_char1]) (TCH92_transliteration1_reverse_line13_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line13_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ma (TCH92[reverse_transliteration1_line13_char3]) (TCH92_transliteration1_reverse_line13_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line13_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: an (TCH92[reverse_transliteration1_line13_char4]) (TCH92_transliteration1_reverse_line13_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line13_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: za (TCH92[reverse_transliteration1_line13_char5]) (TCH92_transliteration1_reverse_line13_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line14_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: na (TCH92[reverse_transliteration1_line14_char3]) (TCH92_transliteration1_reverse_line14_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line14_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ah, (TCH92[reverse_transliteration1_line14_char4]) (TCH92_transliteration1_reverse_line14_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line15_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: mu}KAR (TCH92[reverse_transliteration1_line15_char2]) (TCH92_transliteration1_reverse_line15_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line15_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {d}A (TCH92[reverse_transliteration1_line15_char3]) (TCH92_transliteration1_reverse_line15_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line17_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: u2 (TCH92[reverse_transliteration1_line17_char2]) (TCH92_transliteration1_reverse_line17_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line18_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {f}E (TCH92[reverse_transliteration1_line18_char1]) (TCH92_transliteration1_reverse_line18_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line18_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: bit (TCH92[reverse_transliteration1_line18_char2]) (TCH92_transliteration1_reverse_line18_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line18_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ta (TCH92[reverse_transliteration1_line18_char3]) (TCH92_transliteration1_reverse_line18_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line18_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: asz2 (TCH92[reverse_transliteration1_line18_char4]) (TCH92_transliteration1_reverse_line18_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: mar (TCH92[reverse_transliteration1_line19_char3]) (TCH92_transliteration1_reverse_line19_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: qa (TCH92[reverse_transliteration1_line19_char4]) (TCH92_transliteration1_reverse_line19_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line1_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {1(disz)} (TCH92[reverse_transliteration1_line1_char1]) (TCH92_transliteration1_reverse_line1_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line1_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: Gu (TCH92[reverse_transliteration1_line1_char2]) (TCH92_transliteration1_reverse_line1_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line1_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: u2 (TCH92[reverse_transliteration1_line1_char3]) (TCH92_transliteration1_reverse_line1_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line1_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ug (TCH92[reverse_transliteration1_line1_char4]) (TCH92_transliteration1_reverse_line1_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line1_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: h,a (TCH92[reverse_transliteration1_line1_char5]) (TCH92_transliteration1_reverse_line1_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line1_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: di (TCH92[reverse_transliteration1_line1_char6]) (TCH92_transliteration1_reverse_line1_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line21_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ba (TCH92[reverse_transliteration1_line21_char2]) (TCH92_transliteration1_reverse_line21_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line22_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {f}U2 (TCH92[reverse_transliteration1_line22_char1]) (TCH92_transliteration1_reverse_line22_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line22_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ta (TCH92[reverse_transliteration1_line22_char2]) (TCH92_transliteration1_reverse_line22_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line22_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: za (TCH92[reverse_transliteration1_line22_char3]) (TCH92_transliteration1_reverse_line22_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line23_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: e (TCH92[reverse_transliteration1_line23_char2]) (TCH92_transliteration1_reverse_line23_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line23_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szu (TCH92[reverse_transliteration1_line23_char3]) (TCH92_transliteration1_reverse_line23_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line23_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ma (TCH92[reverse_transliteration1_line23_char4]) (TCH92_transliteration1_reverse_line23_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line24_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {f}U2 (TCH92[reverse_transliteration1_line24_char1]) (TCH92_transliteration1_reverse_line24_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line24_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: bar (TCH92[reverse_transliteration1_line24_char2]) (TCH92_transliteration1_reverse_line24_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line24_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ta (TCH92[reverse_transliteration1_line24_char3]) (TCH92_transliteration1_reverse_line24_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: SZU (TCH92[reverse_transliteration1_line25_char1]) (TCH92_transliteration1_reverse_line25_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: NIGIN2 (TCH92[reverse_transliteration1_line25_char2]) (TCH92_transliteration1_reverse_line25_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line26_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 1(disz) (TCH92[reverse_transliteration1_line26_char1]) (TCH92_transliteration1_reverse_line26_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line28_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 2(disz) (TCH92[reverse_transliteration1_line28_char1]) (TCH92_transliteration1_reverse_line28_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line28_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {MUNUS}tal (TCH92[reverse_transliteration1_line28_char2]) (TCH92_transliteration1_reverse_line28_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line28_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: mi (TCH92[reverse_transliteration1_line28_char3]) (TCH92_transliteration1_reverse_line28_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line29_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 5(disz) (TCH92[reverse_transliteration1_line29_char1]) (TCH92_transliteration1_reverse_line29_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line2_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: bu# (TCH92[reverse_transliteration1_line2_char3]) (TCH92_transliteration1_reverse_line2_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line2_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ri (TCH92[reverse_transliteration1_line2_char4]) (TCH92_transliteration1_reverse_line2_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line2_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: i (TCH92[reverse_transliteration1_line2_char5]) (TCH92_transliteration1_reverse_line2_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line30_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ie (TCH92[reverse_transliteration1_line30_char5]) (TCH92_transliteration1_reverse_line30_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line4_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {d}IMIN (TCH92[reverse_transliteration1_line4_char2]) (TCH92_transliteration1_reverse_line4_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line5_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {f}Ba (TCH92[reverse_transliteration1_line5_char1]) (TCH92_transliteration1_reverse_line5_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line5_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: a (TCH92[reverse_transliteration1_line5_char2]) (TCH92_transliteration1_reverse_line5_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line5_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: bu (TCH92[reverse_transliteration1_line5_char3]) (TCH92_transliteration1_reverse_line5_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line6_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: u2 (TCH92[reverse_transliteration1_line6_char3]) (TCH92_transliteration1_reverse_line6_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line7_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: AN{e} (TCH92[reverse_transliteration1_line7_char2]) (TCH92_transliteration1_reverse_line7_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line7_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szar (TCH92[reverse_transliteration1_line7_char3]) (TCH92_transliteration1_reverse_line7_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line9_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: nu (TCH92[reverse_transliteration1_line9_char2]) (TCH92_transliteration1_reverse_line9_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line11_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {1(disz)}KA (TCH92[obverse_transliteration1_line11_char1]) (TCH92_transliteration1_obverse_line11_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line11_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szu (TCH92[obverse_transliteration1_line11_char2]) (TCH92_transliteration1_obverse_line11_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line12_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {f}Ba (TCH92[obverse_transliteration1_line12_char1]) (TCH92_transliteration1_obverse_line12_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line13_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {f}Nap (TCH92[obverse_transliteration1_line13_char1]) (TCH92_transliteration1_obverse_line13_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line14_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {1(disz) (TCH92[obverse_transliteration1_line14_char1]) (TCH92_transliteration1_obverse_line14_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line18_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ki# (TCH92[obverse_transliteration1_line18_char2]) (TCH92_transliteration1_obverse_line18_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line19_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {1(disz)}Na (TCH92[obverse_transliteration1_line19_char1]) (TCH92_transliteration1_obverse_line19_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line23_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {1(disz)}S,il2 (TCH92[obverse_transliteration1_line23_char1]) (TCH92_transliteration1_obverse_line23_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line23_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: li2 (TCH92[obverse_transliteration1_line23_char2]) (TCH92_transliteration1_obverse_line23_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line5_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {f}La (TCH92[obverse_transliteration1_line5_char1]) (TCH92_transliteration1_obverse_line5_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line6_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {f}Im (TCH92[obverse_transliteration1_line6_char1]) (TCH92_transliteration1_obverse_line6_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line9_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {f}Pi (TCH92[obverse_transliteration1_line9_char1]) (TCH92_transliteration1_obverse_line9_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line9_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: il (TCH92[obverse_transliteration1_line9_char2]) (TCH92_transliteration1_obverse_line9_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line11_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {1(disz)}NE (TCH92[reverse_transliteration1_line11_char1]) (TCH92_transliteration1_reverse_line11_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line13_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: tu (TCH92[reverse_transliteration1_line13_char2]) (TCH92_transliteration1_reverse_line13_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line14_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {1(disz)}A (TCH92[reverse_transliteration1_line14_char1]) (TCH92_transliteration1_reverse_line14_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line14_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ta (TCH92[reverse_transliteration1_line14_char2]) (TCH92_transliteration1_reverse_line14_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line15_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {1(disz) (TCH92[reverse_transliteration1_line15_char1]) (TCH92_transliteration1_reverse_line15_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {f}A (TCH92[reverse_transliteration1_line19_char1]) (TCH92_transliteration1_reverse_line19_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ta (TCH92[reverse_transliteration1_line19_char2]) (TCH92_transliteration1_reverse_line19_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line2_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {f} (TCH92[reverse_transliteration1_line2_char1]) (TCH92_transliteration1_reverse_line2_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line2_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: E# (TCH92[reverse_transliteration1_line2_char2]) (TCH92_transliteration1_reverse_line2_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line30_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {KUR}e (TCH92[reverse_transliteration1_line30_char1]) (TCH92_transliteration1_reverse_line30_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line30_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: la (TCH92[reverse_transliteration1_line30_char2]) (TCH92_transliteration1_reverse_line30_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line30_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: mi (TCH92[reverse_transliteration1_line30_char3]) (TCH92_transliteration1_reverse_line30_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line30_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: a (TCH92[reverse_transliteration1_line30_char4]) (TCH92_transliteration1_reverse_line30_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line6_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {f}Sza (TCH92[reverse_transliteration1_line6_char1]) (TCH92_transliteration1_reverse_line6_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line7_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {f}1(disz)+na (TCH92[reverse_transliteration1_line7_char1]) (TCH92_transliteration1_reverse_line7_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line12_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: bi (TCH92[obverse_transliteration1_line12_char2]) (TCH92_transliteration1_obverse_line12_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line5_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ka (TCH92[obverse_transliteration1_line5_char2]) (TCH92_transliteration1_obverse_line5_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line6_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: qu (TCH92[reverse_transliteration1_line6_char2]) (TCH92_transliteration1_reverse_line6_char2_charocc)",
         "data": {}
       },
       {
-        "id": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "id": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "parent": "#",
         "type": "class",
-        "text": "TransliterationCharOccurrence (eg:cunei/TransliterationCharOccurrence) [709]",
+        "text": "TransliterationCharOccurrence (purl:cuneiform/TransliterationCharOccurrence) [709]",
         "data": {}
       },
       {
@@ -38859,1528 +38859,1528 @@ var tree={
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line10_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: BAN (TCH92[obverse_line10_word3]) (TCH92_transliteration1_obverse_line10_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line15_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 1(disz) (TCH92[obverse_line15_word1]) (TCH92_transliteration1_obverse_line15_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line15_word5_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: SZE (TCH92[obverse_line15_word5]) (TCH92_transliteration1_obverse_line15_word5_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line16_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: BAN (TCH92[obverse_line16_word2]) (TCH92_transliteration1_obverse_line16_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line17_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: KIN (TCH92[obverse_line17_word4]) (TCH92_transliteration1_obverse_line17_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line18_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: KIN (TCH92[obverse_line18_word3]) (TCH92_transliteration1_obverse_line18_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line1_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: BAN (TCH92[obverse_line1_word2]) (TCH92_transliteration1_obverse_line1_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line20_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: NIGIDA (TCH92[obverse_line20_word1]) (TCH92_transliteration1_obverse_line20_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line20_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: SZE (TCH92[obverse_line20_word4]) (TCH92_transliteration1_obverse_line20_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line21_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: BAN (TCH92[obverse_line21_word2]) (TCH92_transliteration1_obverse_line21_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line22_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: KIN (TCH92[obverse_line22_word4]) (TCH92_transliteration1_obverse_line22_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line24_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: NIGIDA (TCH92[obverse_line24_word1]) (TCH92_transliteration1_obverse_line24_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line24_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: SZE (TCH92[obverse_line24_word4]) (TCH92_transliteration1_obverse_line24_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line25_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: BAN# (TCH92[obverse_line25_word2]) (TCH92_transliteration1_obverse_line25_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line26_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: KIN (TCH92[obverse_line26_word4]) (TCH92_transliteration1_obverse_line26_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line27_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: BAN# (TCH92[obverse_line27_word3]) (TCH92_transliteration1_obverse_line27_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line28_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: [NIGIDA] (TCH92[obverse_line28_word1]) (TCH92_transliteration1_obverse_line28_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line28_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: SZE (TCH92[obverse_line28_word4]) (TCH92_transliteration1_obverse_line28_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line2_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: KIN (TCH92[obverse_line2_word4]) (TCH92_transliteration1_obverse_line2_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line3_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: KIN] (TCH92[obverse_line3_word4]) (TCH92_transliteration1_obverse_line3_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line4_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: GABA (TCH92[obverse_line4_word4]) (TCH92_transliteration1_obverse_line4_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line7_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 1(disz) (TCH92[obverse_line7_word1]) (TCH92_transliteration1_obverse_line7_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line7_word6_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: SZE (TCH92[obverse_line7_word6]) (TCH92_transliteration1_obverse_line7_word6_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line8_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: BAN (TCH92[obverse_line8_word2]) (TCH92_transliteration1_obverse_line8_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line10_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: KIN (TCH92[reverse_line10_word4]) (TCH92_transliteration1_reverse_line10_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line11_word5_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: SZE (TCH92[reverse_line11_word5]) (TCH92_transliteration1_reverse_line11_word5_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line12_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: BAN (TCH92[reverse_line12_word2]) (TCH92_transliteration1_reverse_line12_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line13_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: KIN (TCH92[reverse_line13_word3]) (TCH92_transliteration1_reverse_line13_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line15_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: NIGIDA (TCH92[reverse_line15_word4]) (TCH92_transliteration1_reverse_line15_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line16_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 1(disz) (TCH92[reverse_line16_word1]) (TCH92_transliteration1_reverse_line16_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line16_word6_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: SZE (TCH92[reverse_line16_word6]) (TCH92_transliteration1_reverse_line16_word6_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line17_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: BAN (TCH92[reverse_line17_word2]) (TCH92_transliteration1_reverse_line17_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line18_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: KIN (TCH92[reverse_line18_word4]) (TCH92_transliteration1_reverse_line18_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line1_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: GABA (TCH92[reverse_line1_word4]) (TCH92_transliteration1_reverse_line1_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line20_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: NIGIDA (TCH92[reverse_line20_word1]) (TCH92_transliteration1_reverse_line20_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line20_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: SZE (TCH92[reverse_line20_word2]) (TCH92_transliteration1_reverse_line20_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line21_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: BAN (TCH92[reverse_line21_word2]) (TCH92_transliteration1_reverse_line21_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line22_word7_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: SZE (TCH92[reverse_line22_word7]) (TCH92_transliteration1_reverse_line22_word7_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line23_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: BAN (TCH92[reverse_line23_word2]) (TCH92_transliteration1_reverse_line23_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line24_word7_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: SZE (TCH92[reverse_line24_word7]) (TCH92_transliteration1_reverse_line24_word7_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line26_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 1(disz) (TCH92[reverse_line26_word1]) (TCH92_transliteration1_reverse_line26_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line27_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 2(disz) (TCH92[reverse_line27_word1]) (TCH92_transliteration1_reverse_line27_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line27_word7_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: KIN] (TCH92[reverse_line27_word7]) (TCH92_transliteration1_reverse_line27_word7_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line28_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 2(disz) (TCH92[reverse_line28_word1]) (TCH92_transliteration1_reverse_line28_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line29_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 5(disz) (TCH92[reverse_line29_word1]) (TCH92_transliteration1_reverse_line29_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line29_word6_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: ERIN2{MESZ}] (TCH92[reverse_line29_word6]) (TCH92_transliteration1_reverse_line29_word6_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line3_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: NIGIDA (TCH92[reverse_line3_word1]) (TCH92_transliteration1_reverse_line3_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line3_word5_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: SZE (TCH92[reverse_line3_word5]) (TCH92_transliteration1_reverse_line3_word5_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line4_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: BAN (TCH92[reverse_line4_word2]) (TCH92_transliteration1_reverse_line4_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line5_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: KIN# (TCH92[reverse_line5_word4]) (TCH92_transliteration1_reverse_line5_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line8_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: NIGIDA (TCH92[reverse_line8_word1]) (TCH92_transliteration1_reverse_line8_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line8_word7_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: SZE (TCH92[reverse_line8_word7]) (TCH92_transliteration1_reverse_line8_word7_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line9_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: BAN (TCH92[reverse_line9_word2]) (TCH92_transliteration1_reverse_line9_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line11_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sza (TCH92[obverse_line11_word3]) (TCH92_transliteration1_obverse_line11_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line13_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: pir2-su (TCH92[obverse_line13_word3]) (TCH92_transliteration1_obverse_line13_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line14_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: KI.MIN (TCH92[obverse_line14_word3]) (TCH92_transliteration1_obverse_line14_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line15_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: ANSZE (TCH92[obverse_line15_word2]) (TCH92_transliteration1_obverse_line15_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line15_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 3 (TCH92[obverse_line15_word3]) (TCH92_transliteration1_obverse_line15_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line15_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: BAN2 (TCH92[obverse_line15_word4]) (TCH92_transliteration1_obverse_line15_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line17_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sza2 (TCH92[obverse_line17_word3]) (TCH92_transliteration1_obverse_line17_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line19_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: pir2-su (TCH92[obverse_line19_word3]) (TCH92_transliteration1_obverse_line19_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line20_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 2 (TCH92[obverse_line20_word2]) (TCH92_transliteration1_obverse_line20_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line20_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: BAN2 (TCH92[obverse_line20_word3]) (TCH92_transliteration1_obverse_line20_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line22_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sza2 (TCH92[obverse_line22_word3]) (TCH92_transliteration1_obverse_line22_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line23_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sza (TCH92[obverse_line23_word3]) (TCH92_transliteration1_obverse_line23_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line24_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 5 (TCH92[obverse_line24_word2]) (TCH92_transliteration1_obverse_line24_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line24_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: SILA3 (TCH92[obverse_line24_word3]) (TCH92_transliteration1_obverse_line24_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line26_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sza2 (TCH92[obverse_line26_word3]) (TCH92_transliteration1_obverse_line26_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line28_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 2(disz)# (TCH92[obverse_line28_word2]) (TCH92_transliteration1_obverse_line28_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line28_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: BAN2# (TCH92[obverse_line28_word3]) (TCH92_transliteration1_obverse_line28_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line2_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sza2 (TCH92[obverse_line2_word3]) (TCH92_transliteration1_obverse_line2_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line3_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: [sza2 (TCH92[obverse_line3_word3]) (TCH92_transliteration1_obverse_line3_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line4_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sza2 (TCH92[obverse_line4_word3]) (TCH92_transliteration1_obverse_line4_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line6_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: pir2-su (TCH92[obverse_line6_word3]) (TCH92_transliteration1_obverse_line6_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line7_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: ANSZE (TCH92[obverse_line7_word2]) (TCH92_transliteration1_obverse_line7_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line7_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 2(disz) (TCH92[obverse_line7_word3]) (TCH92_transliteration1_obverse_line7_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line7_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 1/2(disz) (TCH92[obverse_line7_word4]) (TCH92_transliteration1_obverse_line7_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line7_word5_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: SILA3 (TCH92[obverse_line7_word5]) (TCH92_transliteration1_obverse_line7_word5_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line9_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sza2 (TCH92[obverse_line9_word3]) (TCH92_transliteration1_obverse_line9_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line10_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sza2 (TCH92[reverse_line10_word3]) (TCH92_transliteration1_reverse_line10_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line11_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: NIGIDA (TCH92[reverse_line11_word4]) (TCH92_transliteration1_reverse_line11_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line16_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: BAN2 (TCH92[reverse_line16_word2]) (TCH92_transliteration1_reverse_line16_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line16_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 2(disz) (TCH92[reverse_line16_word3]) (TCH92_transliteration1_reverse_line16_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line16_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 1/2 (TCH92[reverse_line16_word4]) (TCH92_transliteration1_reverse_line16_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line16_word5_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: SILA3 (TCH92[reverse_line16_word5]) (TCH92_transliteration1_reverse_line16_word5_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line18_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sza2 (TCH92[reverse_line18_word3]) (TCH92_transliteration1_reverse_line18_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: pir2-su (TCH92[reverse_line19_word3]) (TCH92_transliteration1_reverse_line19_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line1_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sza (TCH92[reverse_line1_word3]) (TCH92_transliteration1_reverse_line1_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line22_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sza2 (TCH92[reverse_line22_word3]) (TCH92_transliteration1_reverse_line22_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line22_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: KIN (TCH92[reverse_line22_word4]) (TCH92_transliteration1_reverse_line22_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line22_word5_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 5(disz) (TCH92[reverse_line22_word5]) (TCH92_transliteration1_reverse_line22_word5_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line22_word6_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: BAN2 (TCH92[reverse_line22_word6]) (TCH92_transliteration1_reverse_line22_word6_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line24_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sza2 (TCH92[reverse_line24_word3]) (TCH92_transliteration1_reverse_line24_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line24_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: KIN (TCH92[reverse_line24_word4]) (TCH92_transliteration1_reverse_line24_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line24_word5_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 5(disz) (TCH92[reverse_line24_word5]) (TCH92_transliteration1_reverse_line24_word5_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line24_word6_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: BAN2 (TCH92[reverse_line24_word6]) (TCH92_transliteration1_reverse_line24_word6_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: SZU.NIGIN2 (TCH92[reverse_line25_word1]) (TCH92_transliteration1_reverse_line25_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 1(u) (TCH92[reverse_line25_word2]) (TCH92_transliteration1_reverse_line25_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 4(disz) (TCH92[reverse_line25_word3]) (TCH92_transliteration1_reverse_line25_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: ERIN2{MESZ} (TCH92[reverse_line25_word4]) (TCH92_transliteration1_reverse_line25_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_word5_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: BAN (TCH92[reverse_line25_word5]) (TCH92_transliteration1_reverse_line25_word5_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_word6_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 2(disz) (TCH92[reverse_line25_word6]) (TCH92_transliteration1_reverse_line25_word6_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_word7_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {LU2}sza (TCH92[reverse_line25_word7]) (TCH92_transliteration1_reverse_line25_word7_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line26_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 4(disz) (TCH92[reverse_line26_word3]) (TCH92_transliteration1_reverse_line26_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line26_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {LU2}pir2-su (TCH92[reverse_line26_word4]) (TCH92_transliteration1_reverse_line26_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line27_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {LU2}sza (TCH92[reverse_line27_word2]) (TCH92_transliteration1_reverse_line27_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line27_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: GABA (TCH92[reverse_line27_word3]) (TCH92_transliteration1_reverse_line27_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line27_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 1(u) (TCH92[reverse_line27_word4]) (TCH92_transliteration1_reverse_line27_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line27_word5_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: [4(disz){MUNUS} (TCH92[reverse_line27_word5]) (TCH92_transliteration1_reverse_line27_word5_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line27_word6_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sza2 (TCH92[reverse_line27_word6]) (TCH92_transliteration1_reverse_line27_word6_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line28_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 1(disz) (TCH92[reverse_line28_word3]) (TCH92_transliteration1_reverse_line28_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line29_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 4(u) (TCH92[reverse_line29_word4]) (TCH92_transliteration1_reverse_line29_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line29_word5_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: [5(disz) (TCH92[reverse_line29_word5]) (TCH92_transliteration1_reverse_line29_word5_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line2_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: pir2-su# (TCH92[reverse_line2_word3]) (TCH92_transliteration1_reverse_line2_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line3_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 7 (TCH92[reverse_line3_word2]) (TCH92_transliteration1_reverse_line3_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line3_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 1/2 (TCH92[reverse_line3_word3]) (TCH92_transliteration1_reverse_line3_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line3_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: SILA3 (TCH92[reverse_line3_word4]) (TCH92_transliteration1_reverse_line3_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line5_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sza2 (TCH92[reverse_line5_word3]) (TCH92_transliteration1_reverse_line5_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line7_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: pir2-su (TCH92[reverse_line7_word3]) (TCH92_transliteration1_reverse_line7_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line8_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 1(disz) (TCH92[reverse_line8_word2]) (TCH92_transliteration1_reverse_line8_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line8_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: BAN2 (TCH92[reverse_line8_word3]) (TCH92_transliteration1_reverse_line8_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line8_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 2(disz) (TCH92[reverse_line8_word4]) (TCH92_transliteration1_reverse_line8_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line8_word5_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 1/2 (TCH92[reverse_line8_word5]) (TCH92_transliteration1_reverse_line8_word5_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line8_word6_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: SILA3 (TCH92[reverse_line8_word6]) (TCH92_transliteration1_reverse_line8_word6_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line10_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DUMU-szu (TCH92[obverse_line10_word2]) (TCH92_transliteration1_obverse_line10_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line11_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DUMU-szu (TCH92[obverse_line11_word2]) (TCH92_transliteration1_obverse_line11_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line11_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: ku-kul2-li# (TCH92[obverse_line11_word4]) (TCH92_transliteration1_obverse_line11_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line12_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: tal-mi-[tu] (TCH92[obverse_line12_word3]) (TCH92_transliteration1_obverse_line12_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line13_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: KI.MIN (TCH92[obverse_line13_word2]) (TCH92_transliteration1_obverse_line13_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line14_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DUMU-szu (TCH92[obverse_line14_word2]) (TCH92_transliteration1_obverse_line14_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line16_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {1(disz)}Ba-li-h,u (TCH92[obverse_line16_word1]) (TCH92_transliteration1_obverse_line16_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line17_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DAM-su (TCH92[obverse_line17_word2]) (TCH92_transliteration1_obverse_line17_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line18_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {f}Ta-ki#-szu (TCH92[obverse_line18_word1]) (TCH92_transliteration1_obverse_line18_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line19_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DUMU-szu (TCH92[obverse_line19_word2]) (TCH92_transliteration1_obverse_line19_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line22_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DAM-su (TCH92[obverse_line22_word2]) (TCH92_transliteration1_obverse_line22_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line23_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DUMU-szu (TCH92[obverse_line23_word2]) (TCH92_transliteration1_obverse_line23_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line23_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: ku-kul2#-li# (TCH92[obverse_line23_word4]) (TCH92_transliteration1_obverse_line23_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line26_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DAM-su (TCH92[obverse_line26_word2]) (TCH92_transliteration1_obverse_line26_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line27_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DUMU-szu (TCH92[obverse_line27_word2]) (TCH92_transliteration1_obverse_line27_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line2_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DAM-su (TCH92[obverse_line2_word2]) (TCH92_transliteration1_obverse_line2_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line3_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DAM-su (TCH92[obverse_line3_word2]) (TCH92_transliteration1_obverse_line3_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line4_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DUMU-szu (TCH92[obverse_line4_word2]) (TCH92_transliteration1_obverse_line4_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line5_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: tal-mi-[tu] (TCH92[obverse_line5_word3]) (TCH92_transliteration1_obverse_line5_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line6_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: KI.MIN (TCH92[obverse_line6_word2]) (TCH92_transliteration1_obverse_line6_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line9_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DAM-su (TCH92[obverse_line9_word2]) (TCH92_transliteration1_obverse_line9_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line9_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: ku-kul2-li# (TCH92[obverse_line9_word4]) (TCH92_transliteration1_obverse_line9_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line10_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DAM-su (TCH92[reverse_line10_word2]) (TCH92_transliteration1_reverse_line10_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line11_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {1(disz)}NE-{d}Sza2-masz (TCH92[reverse_line11_word1]) (TCH92_transliteration1_reverse_line11_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line11_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DUMU-szu (TCH92[reverse_line11_word2]) (TCH92_transliteration1_reverse_line11_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line11_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: pir2-su (TCH92[reverse_line11_word3]) (TCH92_transliteration1_reverse_line11_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line14_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DUMU-szu (TCH92[reverse_line14_word2]) (TCH92_transliteration1_reverse_line14_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line14_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: ta-ri-u2 (TCH92[reverse_line14_word3]) (TCH92_transliteration1_reverse_line14_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line15_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DUMU-szu (TCH92[reverse_line15_word2]) (TCH92_transliteration1_reverse_line15_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line15_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: pir2-su (TCH92[reverse_line15_word3]) (TCH92_transliteration1_reverse_line15_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line17_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {1(disz)}Gu-u2-gu (TCH92[reverse_line17_word1]) (TCH92_transliteration1_reverse_line17_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line18_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DAM-su (TCH92[reverse_line18_word2]) (TCH92_transliteration1_reverse_line18_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line1_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DUMU-szu (TCH92[reverse_line1_word2]) (TCH92_transliteration1_reverse_line1_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line21_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {1(disz)}DINGIR-ba-ni (TCH92[reverse_line21_word1]) (TCH92_transliteration1_reverse_line21_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line22_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DAM-su (TCH92[reverse_line22_word2]) (TCH92_transliteration1_reverse_line22_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line24_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DAM-su (TCH92[reverse_line24_word2]) (TCH92_transliteration1_reverse_line24_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_word8_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: ku-kul2-li (TCH92[reverse_line25_word8]) (TCH92_transliteration1_reverse_line25_word8_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line28_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: [{MUNUS}ta-ri-tu] (TCH92[reverse_line28_word4]) (TCH92_transliteration1_reverse_line28_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line29_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {MUNUS}pir2-su (TCH92[reverse_line29_word2]) (TCH92_transliteration1_reverse_line29_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line29_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: SZU.NIGIN2 (TCH92[reverse_line29_word3]) (TCH92_transliteration1_reverse_line29_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line30_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: a-di (TCH92[reverse_line30_word2]) (TCH92_transliteration1_reverse_line30_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line4_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {1(disz)}IR2-{d}IMIN.BI (TCH92[reverse_line4_word1]) (TCH92_transliteration1_reverse_line4_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line5_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DAM#-su (TCH92[reverse_line5_word2]) (TCH92_transliteration1_reverse_line5_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line6_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: ta-ri-tu (TCH92[reverse_line6_word3]) (TCH92_transliteration1_reverse_line6_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line7_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: KI.MIN (TCH92[reverse_line7_word2]) (TCH92_transliteration1_reverse_line7_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line9_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {1(disz)}Ba-nu-u2 (TCH92[reverse_line9_word1]) (TCH92_transliteration1_reverse_line9_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line12_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {f}Ba-bi-szar#-ri (TCH92[obverse_line12_word1]) (TCH92_transliteration1_obverse_line12_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line12_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DUMU.MUNUS-su (TCH92[obverse_line12_word2]) (TCH92_transliteration1_obverse_line12_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line18_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DAM-su-sza2 (TCH92[obverse_line18_word2]) (TCH92_transliteration1_obverse_line18_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line1_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {1(disz)}NE-{d}-Isz8-tar2 (TCH92[obverse_line1_word1]) (TCH92_transliteration1_obverse_line1_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line23_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {1(disz)}S,il2-li2-{d}Nin-urta (TCH92[obverse_line23_word1]) (TCH92_transliteration1_obverse_line23_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line26_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {f}Ki-di-ni-tu (TCH92[obverse_line26_word1]) (TCH92_transliteration1_obverse_line26_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line27_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: [{(1disz)}SU]-{d}SZU-ri-h,a (TCH92[obverse_line27_word1]) (TCH92_transliteration1_obverse_line27_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line2_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {f}Be-el-tu-ia (TCH92[obverse_line2_word1]) (TCH92_transliteration1_obverse_line2_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line5_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DUMU#.MUNUS-su (TCH92[obverse_line5_word2]) (TCH92_transliteration1_obverse_line5_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line9_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {f}Pi-il-h,a-tu (TCH92[obverse_line9_word1]) (TCH92_transliteration1_obverse_line9_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line10_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {f}Be-el-tu-ia (TCH92[reverse_line10_word1]) (TCH92_transliteration1_reverse_line10_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line13_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DAM-su-sza2 (TCH92[reverse_line13_word2]) (TCH92_transliteration1_reverse_line13_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line15_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {1(disz)-mu}KAR-{d}A-szur (TCH92[reverse_line15_word1]) (TCH92_transliteration1_reverse_line15_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DUMU.MUNUS-su (TCH92[reverse_line19_word2]) (TCH92_transliteration1_reverse_line19_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line22_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {f}U2-ta-za-ku (TCH92[reverse_line22_word1]) (TCH92_transliteration1_reverse_line22_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line24_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {f}U2-bar-ta-ni (TCH92[reverse_line24_word1]) (TCH92_transliteration1_reverse_line24_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line26_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {LU2}ta-ri-u2 (TCH92[reverse_line26_word2]) (TCH92_transliteration1_reverse_line26_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line2_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DUMU-MUNUS-su (TCH92[reverse_line2_word2]) (TCH92_transliteration1_reverse_line2_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line5_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {f}Ba-a-bu-ia (TCH92[reverse_line5_word1]) (TCH92_transliteration1_reverse_line5_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line6_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {f}Sza-qu-u2-tu (TCH92[reverse_line6_word1]) (TCH92_transliteration1_reverse_line6_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line6_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: DUMU.MUNUS-su (TCH92[reverse_line6_word2]) (TCH92_transliteration1_reverse_line6_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line7_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {f}1(disz)+na-AN{e}-szar-rat (TCH92[reverse_line7_word1]) (TCH92_transliteration1_reverse_line7_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line10_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {1(disz)}Ru-us-su-kar-du (TCH92[obverse_line10_word1]) (TCH92_transliteration1_obverse_line10_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line11_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {1(disz)}KA-szu-t,a?-a-bu (TCH92[obverse_line11_word1]) (TCH92_transliteration1_obverse_line11_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line13_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {f}Nap-sze-ri-um-mi (TCH92[obverse_line13_word1]) (TCH92_transliteration1_obverse_line13_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line14_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {1(disz).d}X-X-X-KAM (TCH92[obverse_line14_word1]) (TCH92_transliteration1_obverse_line14_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line17_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {f}Pu-ut-tu-me-ri (TCH92[obverse_line17_word1]) (TCH92_transliteration1_obverse_line17_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line22_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {f}Me-e-na-ma-gi (TCH92[obverse_line22_word1]) (TCH92_transliteration1_obverse_line22_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line25_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {1(disz)#}Na-par2-ak-sze-er (TCH92[obverse_line25_word1]) (TCH92_transliteration1_obverse_line25_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line4_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {1(disz)}A-am-mar-sza-DINGIR (TCH92[obverse_line4_word1]) (TCH92_transliteration1_obverse_line4_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line5_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {f}La-ka-ma-asz2-sze (TCH92[obverse_line5_word1]) (TCH92_transliteration1_obverse_line5_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line12_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {1(disz)}GU-u2-ug-szar-ri (TCH92[reverse_line12_word1]) (TCH92_transliteration1_reverse_line12_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line14_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {1(disz)}A-ta-na-ah,-DINGIR (TCH92[reverse_line14_word1]) (TCH92_transliteration1_reverse_line14_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line18_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {f}E-bit-ta-asz2-sz (TCH92[reverse_line18_word1]) (TCH92_transliteration1_reverse_line18_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {f}A-ta-mar-qa-sa (TCH92[reverse_line19_word1]) (TCH92_transliteration1_reverse_line19_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line23_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {1(disz)}Re-e-szu-ma-DINGIR (TCH92[reverse_line23_word1]) (TCH92_transliteration1_reverse_line23_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line28_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {MUNUS}tal-mi-da-tu (TCH92[reverse_line28_word2]) (TCH92_transliteration1_reverse_line28_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line30_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sza-[pil2-ti-szu-nu] (TCH92[reverse_line30_word3]) (TCH92_transliteration1_reverse_line30_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line19_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {1(disz)}Na-al-ka-me-en-na (TCH92[obverse_line19_word1]) (TCH92_transliteration1_obverse_line19_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line6_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {f}Im-ma-te-a-am-mar (TCH92[obverse_line6_word1]) (TCH92_transliteration1_obverse_line6_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line13_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {f}DU-tu-ma-an-za-a (TCH92[reverse_line13_word1]) (TCH92_transliteration1_reverse_line13_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line2_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {f}-E#-bu#-ri-i-tu (TCH92[reverse_line2_word1]) (TCH92_transliteration1_reverse_line2_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line30_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {KUR}e-la-mi-a-ie-e (TCH92[reverse_line30_word1]) (TCH92_transliteration1_reverse_line30_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line21_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {1(disz)}Gu-u2-ug-ma-an-za-a (TCH92[obverse_line21_word1]) (TCH92_transliteration1_obverse_line21_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line3_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {f}A-na-ru-qi-al-si-szi (TCH92[obverse_line3_word1]) (TCH92_transliteration1_obverse_line3_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line1_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {1(disz)}-Gu-u2-ug-h,a-di-ra (TCH92[reverse_line1_word1]) (TCH92_transliteration1_reverse_line1_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line8_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {1(disz)-d}-X-X-X-re-ma-ni (TCH92[obverse_line8_word1]) (TCH92_transliteration1_obverse_line8_word1_wordformocc)",
         "data": {}
       },
       {
-        "id": "http://www.example.org/cunei/WordformOccurance",
+        "id": "http://www.purl.org/cuneiform/WordformOccurance",
         "parent": "#",
         "type": "class",
-        "text": "WordformOccurance (eg:cunei/WordformOccurance) [341]",
+        "text": "WordformOccurance (purl:cuneiform/WordformOccurance) [341]",
         "data": {}
       },
       {
@@ -48006,259 +48006,259 @@ var tree={
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_bottom_line1",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 1 (O147_bottom_line1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_bottom_line2",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 2 (O147_bottom_line2)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_bottom_line3",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 3 (O147_bottom_line3)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_bottom_line4",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 4 (O147_bottom_line4)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_bottom_line5",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 5 (O147_bottom_line5)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_obverse_line1",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 1 (O147_obverse_line1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_obverse_line10",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 10 (O147_obverse_line10)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_obverse_line11",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 11 (O147_obverse_line11)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_obverse_line12",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 12 (O147_obverse_line12)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_obverse_line13",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 13 (O147_obverse_line13)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_obverse_line2",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 2 (O147_obverse_line2)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_obverse_line3",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 3 (O147_obverse_line3)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_obverse_line4",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 4 (O147_obverse_line4)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_obverse_line5",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 5 (O147_obverse_line5)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_obverse_line6",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 6 (O147_obverse_line6)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_obverse_line7",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 7 (O147_obverse_line7)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_obverse_line8",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 8 (O147_obverse_line8)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_obverse_line9",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 9 (O147_obverse_line9)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line1",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 1 (O147_reverse_line1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line10",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 10 (O147_reverse_line10)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line11",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 11 (O147_reverse_line11)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line12",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 12 (O147_reverse_line12)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line13",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 13 (O147_reverse_line13)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line2",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 2 (O147_reverse_line2)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line3",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 3 (O147_reverse_line3)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line4",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 4 (O147_reverse_line4)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line5",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 5 (O147_reverse_line5)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line6",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 6 (O147_reverse_line6)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line7",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 7 (O147_reverse_line7)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line8",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 8 (O147_reverse_line8)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line9",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 9 (O147_reverse_line9)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_glyphlist",
-        "parent": "http://www.example.org/cunei/GlyphCollection",
+        "parent": "http://www.purl.org/cuneiform/GlyphCollection",
         "type": "instance",
         "text": "Glyphs of O147 (O147_glyphlist)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_graphemevars",
-        "parent": "http://www.example.org/cunei/GraphemeVariantCollection",
+        "parent": "http://www.purl.org/cuneiform/GraphemeVariantCollection",
         "type": "instance",
         "text": "O147 Grapheme Variant Collection  (O147_graphemevars)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_signlist",
-        "parent": "http://www.example.org/cunei/GraphemeCollection",
+        "parent": "http://www.purl.org/cuneiform/GraphemeCollection",
         "type": "instance",
         "text": "Signlist of O147 (O147_signlist)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_signreadinglist",
-        "parent": "http://www.example.org/cunei/GraphemeReadingCollection",
+        "parent": "http://www.purl.org/cuneiform/GraphemeReadingCollection",
         "type": "instance",
         "text": "Sign Readings of O147 (O147_signreadinglist)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1",
-        "parent": "http://www.example.org/cunei/Transliteration",
+        "parent": "http://www.purl.org/cuneiform/Transliteration",
         "type": "instance",
         "text": "Transliteration 1 of O147 (O147_transliteration1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_charoccurrences",
-        "parent": "http://www.example.org/cunei/CharOccurrenceCollection",
+        "parent": "http://www.purl.org/cuneiform/CharOccurrenceCollection",
         "type": "instance",
         "text": "Char Occurrences of O147 generated from transliteration 1 (O147_transliteration1_charoccurrences)",
         "data": {}
@@ -48272,7 +48272,7 @@ var tree={
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_wordformoccurrences",
-        "parent": "http://www.example.org/cunei/WordFormOccurrenceCollection",
+        "parent": "http://www.purl.org/cuneiform/WordFormOccurrenceCollection",
         "type": "instance",
         "text": "Wordform Occurrences of O147 generated from transliteration 1 (O147_transliteration1_wordformoccurrences)",
         "data": {}
@@ -48286,28 +48286,28 @@ var tree={
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147",
-        "parent": "http://www.example.org/cunei/Tablet",
+        "parent": "http://www.purl.org/cuneiform/Tablet",
         "type": "instance",
         "text": "Cuneiform Artifact: O147 (O147)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_bottom",
-        "parent": "http://www.example.org/cunei/Side",
+        "parent": "http://www.purl.org/cuneiform/Side",
         "type": "instance",
         "text": "O147: bottom (O147_bottom)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_obverse",
-        "parent": "http://www.example.org/cunei/Side",
+        "parent": "http://www.purl.org/cuneiform/Side",
         "type": "instance",
         "text": "O147: obverse (O147_obverse)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_reverse",
-        "parent": "http://www.example.org/cunei/Side",
+        "parent": "http://www.purl.org/cuneiform/Side",
         "type": "instance",
         "text": "O147: reverse (O147_reverse)",
         "data": {}
@@ -49679,1925 +49679,1925 @@ var tree={
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/1_u_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: 1(u) (1_u_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/2_3_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: 2/3 (2_3_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/2_u__8__disz__kam_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: 2(u)-8?(disz)-kam (2_u__8__disz__kam_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/5_disz_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: 5(disz) (5_disz_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/a_ap_pa_ta__nu_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: a-ap-pa-ta?-nu? (a_ap_pa_ta__nu_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/al_dug_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: al-dug# (al_dug_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/al_til_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: al#-til# (al_til_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/d_AMAR_UTU_la_ma_sa3_szu_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {d}AMAR-UTU-la-ma-sa3-szu (d_AMAR_UTU_la_ma_sa3_szu_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/d_AMAR_UTU_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {d}AMAR-UTU (d_AMAR_UTU_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/d_NIN_KAL__LA_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {d}NIN-KAL?-LA (d_NIN_KAL__LA_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/d__utu_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {d}[utu] (d__utu_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/d_a_a_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {d}a-a (d_a_a_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/d_utu_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {d}utu (d_utu_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/da_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: da (da_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/dingir_pi4___d_a_a_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: dingir-pi4!-{d}a-a (dingir_pi4___d_a_a_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/dingir_szu_a_bu_szu_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: dingir-szu-a-bu-szu# (dingir_szu_a_bu_szu_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/dumu_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: dumu (dumu_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/e2_du3_a_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: e2-du3-a (e2_du3_a_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/e2_ki_ud_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: e2-ki#-ud# (e2_ki_ud_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/e2_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: e2 (e2_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/gisz_ig_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {gisz}ig (gisz_ig_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/gisz_kesz2_da_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {gisz}kesz2-da (gisz_kesz2_da_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/gisz_sag_kul_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {gisz}sag-kul (gisz_sag_kul_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/gub_ba_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: gub-ba (gub_ba_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/igi_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: igi (igi_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/in__na_an_la2_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: in-[na-an-la2] (in__na_an_la2_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/in_pad3_de3_mesz_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: in-pad3-de3-mesz (in_pad3_de3_mesz_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/in_szi_in_szam2_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: in-szi-in-szam2# (in_szi_in_szam2_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/inim_bi_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: inim#-bi# (inim_bi_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/inim_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: inim (inim_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/innin_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: innin (innin_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/isz_du_ki_nu_um_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: isz-du-ki-nu-um (isz_du_ki_nu_um_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/isz_me_sin_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: isz-me-sin (isz_me_sin_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/iti_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: iti# (iti_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/ki_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: ki# (ki_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/ku3_babbar_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: ku3-babbar (ku3_babbar_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/lu2__d_utu_asz_szar_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: lu2-{d}utu-asz-szar (lu2__d_utu_asz_szar_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/lu2_lu2_ra_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: lu2-lu2-ra (lu2_lu2_ra_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/lukur_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: lukur (lukur_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/m_sa3_ap_h_u_li__ip_h_ur_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: {m}sa3-ap-h,u-li!-ip-h,ur (m_sa3_ap_h_u_li__ip_h_ur_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/mu_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: mu (mu_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/nu_ga2_ga2_a_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: nu-ga2-ga2-a (nu_ga2_ga2_a_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/nu_ur2_an_tim_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: nu-ur2-an-tim (nu_ur2_an_tim_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/ra__pa__asz_s_il2_li2_e2_a_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: ra-<pa>-asz-s,il2-li2-e2-a (ra__pa__asz_s_il2_li2_e2_a_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/sa_am_su2_i_lu_na_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: sa-am-su2-i-lu-na (sa_am_su2_i_lu_na_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/sag_bi_1_disz__kam_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: sag-bi-1(disz)-kam (sag_bi_1_disz__kam_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/sag_bi_2_disz__kam_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: sag-bi-2(disz)-kam (sag_bi_2_disz__kam_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/sanga_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: sanga (sanga_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/sar_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: sar (sar_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/sila_dagal_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: sila#-dagal (sila_dagal_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/sin_ri_me_ni_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: sin-ri-me-ni (sin_ri_me_ni_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/sza3_ga_a_ni_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: sza3#-ga-a-ni (sza3_ga_a_ni_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/szam2__ti_la_bi__sze3_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: [szam2]-ti-la-bi#-[sze3] (szam2__ti_la_bi__sze3_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/szu__d_mar__tu_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: szu-{d}mar!-tu (szu__d_mar__tu_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/u3_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: u3 (u3_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/u4_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: u4 (u4_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/ud_kur2_sze3_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: ud-kur2-sze3 (ud_kur2_sze3_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/ugula_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: ugula (ugula_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/x_is_PU2_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: x#-is-PU2 (x_is_PU2_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/x_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: x (x_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/x_x_s_i2_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: x#-x-s,i2 (x_x_s_i2_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/\u00e2\u20ac\u00a6_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: [\u00e2\u20ac\u00a6] (\u00e2\u20ac\u00a6_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line1",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 1 [O147_bottom] (O147_transliteration1_bottom_line1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line2",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 2 [O147_bottom] (O147_transliteration1_bottom_line2)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line3",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 3 [O147_bottom] (O147_transliteration1_bottom_line3)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line4",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 4 [O147_bottom] (O147_transliteration1_bottom_line4)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line5",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 5 [O147_bottom] (O147_transliteration1_bottom_line5)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line1",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 1 [O147_obverse] (O147_transliteration1_obverse_line1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line10",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 10 [O147_obverse] (O147_transliteration1_obverse_line10)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line11",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 11 [O147_obverse] (O147_transliteration1_obverse_line11)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line12",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 12 [O147_obverse] (O147_transliteration1_obverse_line12)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line13",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 13 [O147_obverse] (O147_transliteration1_obverse_line13)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line2",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 2 [O147_obverse] (O147_transliteration1_obverse_line2)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line3",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 3 [O147_obverse] (O147_transliteration1_obverse_line3)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line4",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 4 [O147_obverse] (O147_transliteration1_obverse_line4)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line5",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 5 [O147_obverse] (O147_transliteration1_obverse_line5)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line6",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 6 [O147_obverse] (O147_transliteration1_obverse_line6)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line7",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 7 [O147_obverse] (O147_transliteration1_obverse_line7)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line8",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 8 [O147_obverse] (O147_transliteration1_obverse_line8)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line9",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 9 [O147_obverse] (O147_transliteration1_obverse_line9)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line1",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 1 [O147_reverse] (O147_transliteration1_reverse_line1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line10",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 10 [O147_reverse] (O147_transliteration1_reverse_line10)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line11",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 11 [O147_reverse] (O147_transliteration1_reverse_line11)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line12",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 12 [O147_reverse] (O147_transliteration1_reverse_line12)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line13",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 13 [O147_reverse] (O147_transliteration1_reverse_line13)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line2",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 2 [O147_reverse] (O147_transliteration1_reverse_line2)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line3",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 3 [O147_reverse] (O147_transliteration1_reverse_line3)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line4",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 4 [O147_reverse] (O147_transliteration1_reverse_line4)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line5",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 5 [O147_reverse] (O147_transliteration1_reverse_line5)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line6",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 6 [O147_reverse] (O147_transliteration1_reverse_line6)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line7",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 7 [O147_reverse] (O147_transliteration1_reverse_line7)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line8",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 8 [O147_reverse] (O147_transliteration1_reverse_line8)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line9",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 9 [O147_reverse] (O147_transliteration1_reverse_line9)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line1_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: la2] (O147[bottom_transliteration1_line1_char7]) (O147_transliteration1_bottom_line1_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line2_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: til# (O147[bottom_transliteration1_line2_char4]) (O147_transliteration1_bottom_line2_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line3_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: dug# (O147[bottom_transliteration1_line3_char6]) (O147_transliteration1_bottom_line3_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line4_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ra (O147[bottom_transliteration1_line4_char6]) (O147_transliteration1_bottom_line4_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line5_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: a (O147[bottom_transliteration1_line5_char5]) (O147_transliteration1_bottom_line5_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line11_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: tu (O147[obverse_transliteration1_line11_char4]) (O147_transliteration1_obverse_line11_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line1_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: a (O147[obverse_transliteration1_line1_char6]) (O147_transliteration1_obverse_line1_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line2_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ba (O147[obverse_transliteration1_line2_char7]) (O147_transliteration1_obverse_line2_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line3_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ud# (O147[obverse_transliteration1_line3_char5]) (O147_transliteration1_obverse_line3_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line4_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szar (O147[obverse_transliteration1_line4_char6]) (O147_transliteration1_obverse_line4_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line5_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: um (O147[obverse_transliteration1_line5_char8]) (O147_transliteration1_obverse_line5_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line6_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: dagal (O147[obverse_transliteration1_line6_char6]) (O147_transliteration1_obverse_line6_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line7_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: s,i2 (O147[obverse_transliteration1_line7_char7]) (O147_transliteration1_obverse_line7_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line8_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: PU2 (O147[obverse_transliteration1_line8_char4]) (O147_transliteration1_obverse_line8_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line9_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: nu? (O147[obverse_transliteration1_line9_char6]) (O147_transliteration1_obverse_line9_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line10_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ni (O147[reverse_transliteration1_line10_char5]) (O147_transliteration1_reverse_line10_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line11_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: LA (O147[reverse_transliteration1_line11_char4]) (O147_transliteration1_reverse_line11_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line12_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: kam (O147[reverse_transliteration1_line12_char6]) (O147_transliteration1_reverse_line12_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line13_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: x (O147[reverse_transliteration1_line13_char6]) (O147_transliteration1_reverse_line13_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line1_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: UTU (O147[reverse_transliteration1_line1_char6]) (O147_transliteration1_reverse_line1_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line2_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: na (O147[reverse_transliteration1_line2_char7]) (O147_transliteration1_reverse_line2_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line4_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {d}utu# (O147[reverse_transliteration1_line4_char7]) (O147_transliteration1_reverse_line4_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line5_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {d}[utu] (O147[reverse_transliteration1_line5_char6]) (O147_transliteration1_reverse_line5_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line6_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szu (O147[reverse_transliteration1_line6_char7]) (O147_transliteration1_reverse_line6_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line7_char11_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {d}utu (O147[reverse_transliteration1_line7_char11]) (O147_transliteration1_reverse_line7_char11_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line8_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: tim (O147[reverse_transliteration1_line8_char5]) (O147_transliteration1_reverse_line8_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line9_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szu# (O147[reverse_transliteration1_line9_char6]) (O147_transliteration1_reverse_line9_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line1_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: in (O147[bottom_transliteration1_line1_char4]) (O147_transliteration1_bottom_line1_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line1_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: [na (O147[bottom_transliteration1_line1_char5]) (O147_transliteration1_bottom_line1_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line1_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: an (O147[bottom_transliteration1_line1_char6]) (O147_transliteration1_bottom_line1_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line2_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: al# (O147[bottom_transliteration1_line2_char3]) (O147_transliteration1_bottom_line2_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line3_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: al (O147[bottom_transliteration1_line3_char5]) (O147_transliteration1_bottom_line3_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line4_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: lu2 (O147[bottom_transliteration1_line4_char4]) (O147_transliteration1_bottom_line4_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line4_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: lu2 (O147[bottom_transliteration1_line4_char5]) (O147_transliteration1_bottom_line4_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line10_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: h,ur (O147[obverse_transliteration1_line10_char6]) (O147_transliteration1_obverse_line10_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line12_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szam2# (O147[obverse_transliteration1_line12_char4]) (O147_transliteration1_obverse_line12_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line13_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: [sze3] (O147[obverse_transliteration1_line13_char5]) (O147_transliteration1_obverse_line13_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line1_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sar (O147[obverse_transliteration1_line1_char3]) (O147_transliteration1_obverse_line1_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line1_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: e2 (O147[obverse_transliteration1_line1_char4]) (O147_transliteration1_obverse_line1_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line1_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: du3 (O147[obverse_transliteration1_line1_char5]) (O147_transliteration1_obverse_line1_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line2_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {gisz}ig (O147[obverse_transliteration1_line2_char3]) (O147_transliteration1_obverse_line2_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line2_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {gisz}sag (O147[obverse_transliteration1_line2_char4]) (O147_transliteration1_obverse_line2_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line2_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: kul (O147[obverse_transliteration1_line2_char5]) (O147_transliteration1_obverse_line2_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line2_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: gub (O147[obverse_transliteration1_line2_char6]) (O147_transliteration1_obverse_line2_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line3_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: e2 (O147[obverse_transliteration1_line3_char3]) (O147_transliteration1_obverse_line3_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line3_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ki# (O147[obverse_transliteration1_line3_char4]) (O147_transliteration1_obverse_line3_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line4_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: asz (O147[obverse_transliteration1_line4_char5]) (O147_transliteration1_obverse_line4_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line5_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ki (O147[obverse_transliteration1_line5_char6]) (O147_transliteration1_obverse_line5_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line5_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: nu (O147[obverse_transliteration1_line5_char7]) (O147_transliteration1_obverse_line5_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line6_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sila# (O147[obverse_transliteration1_line6_char5]) (O147_transliteration1_obverse_line6_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line7_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: x# (O147[obverse_transliteration1_line7_char5]) (O147_transliteration1_obverse_line7_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line7_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: x (O147[obverse_transliteration1_line7_char6]) (O147_transliteration1_obverse_line7_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line12_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: u4 (O147[reverse_transliteration1_line12_char3]) (O147_transliteration1_reverse_line12_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line12_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 2(u) (O147[reverse_transliteration1_line12_char4]) (O147_transliteration1_reverse_line12_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line12_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 8?(disz) (O147[reverse_transliteration1_line12_char5]) (O147_transliteration1_reverse_line12_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line13_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: mu# (O147[reverse_transliteration1_line13_char1]) (O147_transliteration1_reverse_line13_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line13_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: e2#? (O147[reverse_transliteration1_line13_char2]) (O147_transliteration1_reverse_line13_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line13_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {d}utu (O147[reverse_transliteration1_line13_char3]) (O147_transliteration1_reverse_line13_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line13_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: x (O147[reverse_transliteration1_line13_char4]) (O147_transliteration1_reverse_line13_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line13_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: x (O147[reverse_transliteration1_line13_char5]) (O147_transliteration1_reverse_line13_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line1_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {d}utu (O147[reverse_transliteration1_line1_char2]) (O147_transliteration1_reverse_line1_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line1_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {d}a (O147[reverse_transliteration1_line1_char3]) (O147_transliteration1_reverse_line1_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line1_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: a (O147[reverse_transliteration1_line1_char4]) (O147_transliteration1_reverse_line1_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line1_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {d}AMAR (O147[reverse_transliteration1_line1_char5]) (O147_transliteration1_reverse_line1_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line3_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: mesz (O147[reverse_transliteration1_line3_char4]) (O147_transliteration1_reverse_line3_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line4_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: a (O147[reverse_transliteration1_line4_char5]) (O147_transliteration1_reverse_line4_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line4_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sanga (O147[reverse_transliteration1_line4_char6]) (O147_transliteration1_reverse_line4_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line5_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sin (O147[reverse_transliteration1_line5_char4]) (O147_transliteration1_reverse_line5_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line5_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sanga (O147[reverse_transliteration1_line5_char5]) (O147_transliteration1_reverse_line5_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line7_char10_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: lukur (O147[reverse_transliteration1_line7_char10]) (O147_transliteration1_reverse_line7_char10_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line7_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: a (O147[reverse_transliteration1_line7_char8]) (O147_transliteration1_reverse_line7_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line7_char9_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ugula (O147[reverse_transliteration1_line7_char9]) (O147_transliteration1_reverse_line7_char9_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line1_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ku3 (O147[bottom_transliteration1_line1_char2]) (O147_transliteration1_bottom_line1_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line1_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: babbar (O147[bottom_transliteration1_line1_char3]) (O147_transliteration1_bottom_line1_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line2_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: bi# (O147[bottom_transliteration1_line2_char2]) (O147_transliteration1_bottom_line2_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line3_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ni (O147[bottom_transliteration1_line3_char4]) (O147_transliteration1_bottom_line3_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line4_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sze3 (O147[bottom_transliteration1_line4_char3]) (O147_transliteration1_bottom_line4_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line5_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: inim (O147[bottom_transliteration1_line5_char1]) (O147_transliteration1_bottom_line5_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line5_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: nu (O147[bottom_transliteration1_line5_char2]) (O147_transliteration1_bottom_line5_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line5_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ga2 (O147[bottom_transliteration1_line5_char4]) (O147_transliteration1_bottom_line5_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line10_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {m}sa3 (O147[obverse_transliteration1_line10_char1]) (O147_transliteration1_obverse_line10_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line11_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: dumu (O147[obverse_transliteration1_line11_char1]) (O147_transliteration1_obverse_line11_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line11_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szu (O147[obverse_transliteration1_line11_char2]) (O147_transliteration1_obverse_line11_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line11_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {d}mar! (O147[obverse_transliteration1_line11_char3]) (O147_transliteration1_obverse_line11_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line12_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: in (O147[obverse_transliteration1_line12_char1]) (O147_transliteration1_obverse_line12_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line13_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: [szam2] (O147[obverse_transliteration1_line13_char1]) (O147_transliteration1_obverse_line13_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line1_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 5(disz) (O147[obverse_transliteration1_line1_char1]) (O147_transliteration1_obverse_line1_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line1_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 2/3 (O147[obverse_transliteration1_line1_char2]) (O147_transliteration1_obverse_line1_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line2_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: da (O147[obverse_transliteration1_line2_char2]) (O147_transliteration1_obverse_line2_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line3_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 1(u) (O147[obverse_transliteration1_line3_char1]) (O147_transliteration1_obverse_line3_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line3_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sar (O147[obverse_transliteration1_line3_char2]) (O147_transliteration1_obverse_line3_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line4_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: da (O147[obverse_transliteration1_line4_char1]) (O147_transliteration1_obverse_line4_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line4_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: e2 (O147[obverse_transliteration1_line4_char2]) (O147_transliteration1_obverse_line4_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line4_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: lu2 (O147[obverse_transliteration1_line4_char3]) (O147_transliteration1_obverse_line4_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line4_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {d}utu (O147[obverse_transliteration1_line4_char4]) (O147_transliteration1_obverse_line4_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line5_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: u3 (O147[obverse_transliteration1_line5_char1]) (O147_transliteration1_obverse_line5_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line5_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: da (O147[obverse_transliteration1_line5_char2]) (O147_transliteration1_obverse_line5_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line5_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: e2 (O147[obverse_transliteration1_line5_char3]) (O147_transliteration1_obverse_line5_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line5_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: isz (O147[obverse_transliteration1_line5_char4]) (O147_transliteration1_obverse_line5_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line5_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: du (O147[obverse_transliteration1_line5_char5]) (O147_transliteration1_obverse_line5_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line6_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: kam (O147[obverse_transliteration1_line6_char4]) (O147_transliteration1_obverse_line6_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line7_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: kam (O147[obverse_transliteration1_line7_char4]) (O147_transliteration1_obverse_line7_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line8_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ki# (O147[obverse_transliteration1_line8_char1]) (O147_transliteration1_obverse_line8_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line8_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: x# (O147[obverse_transliteration1_line8_char2]) (O147_transliteration1_obverse_line8_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line8_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: is (O147[obverse_transliteration1_line8_char3]) (O147_transliteration1_obverse_line8_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line9_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: dumu (O147[obverse_transliteration1_line9_char1]) (O147_transliteration1_obverse_line9_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line9_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: a (O147[obverse_transliteration1_line9_char2]) (O147_transliteration1_obverse_line9_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line9_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ta? (O147[obverse_transliteration1_line9_char5]) (O147_transliteration1_obverse_line9_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line10_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: igi (O147[reverse_transliteration1_line10_char1]) (O147_transliteration1_reverse_line10_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line10_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sin (O147[reverse_transliteration1_line10_char2]) (O147_transliteration1_reverse_line10_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line10_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: me (O147[reverse_transliteration1_line10_char4]) (O147_transliteration1_reverse_line10_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line11_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: dumu (O147[reverse_transliteration1_line11_char1]) (O147_transliteration1_reverse_line11_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line11_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {d}NIN (O147[reverse_transliteration1_line11_char2]) (O147_transliteration1_reverse_line11_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line11_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: KAL? (O147[reverse_transliteration1_line11_char3]) (O147_transliteration1_reverse_line11_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line12_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: iti# (O147[reverse_transliteration1_line12_char1]) (O147_transliteration1_reverse_line12_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line12_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: innin (O147[reverse_transliteration1_line12_char2]) (O147_transliteration1_reverse_line12_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line2_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: u3 (O147[reverse_transliteration1_line2_char1]) (O147_transliteration1_reverse_line2_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line2_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sa (O147[reverse_transliteration1_line2_char2]) (O147_transliteration1_reverse_line2_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line2_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: lu (O147[reverse_transliteration1_line2_char6]) (O147_transliteration1_reverse_line2_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line3_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: in (O147[reverse_transliteration1_line3_char1]) (O147_transliteration1_reverse_line3_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line4_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: igi (O147[reverse_transliteration1_line4_char1]) (O147_transliteration1_reverse_line4_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line4_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: dingir (O147[reverse_transliteration1_line4_char2]) (O147_transliteration1_reverse_line4_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line4_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {d}a (O147[reverse_transliteration1_line4_char4]) (O147_transliteration1_reverse_line4_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line5_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: igi (O147[reverse_transliteration1_line5_char1]) (O147_transliteration1_reverse_line5_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line5_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: isz (O147[reverse_transliteration1_line5_char2]) (O147_transliteration1_reverse_line5_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line5_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: me (O147[reverse_transliteration1_line5_char3]) (O147_transliteration1_reverse_line5_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line6_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: igi (O147[reverse_transliteration1_line6_char1]) (O147_transliteration1_reverse_line6_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line6_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {d}AMAR (O147[reverse_transliteration1_line6_char2]) (O147_transliteration1_reverse_line6_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line6_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sa3 (O147[reverse_transliteration1_line6_char6]) (O147_transliteration1_reverse_line6_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line7_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: igi (O147[reverse_transliteration1_line7_char1]) (O147_transliteration1_reverse_line7_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line7_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ra (O147[reverse_transliteration1_line7_char2]) (O147_transliteration1_reverse_line7_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line7_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: e2 (O147[reverse_transliteration1_line7_char7]) (O147_transliteration1_reverse_line7_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line8_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: igi (O147[reverse_transliteration1_line8_char1]) (O147_transliteration1_reverse_line8_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line8_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: nu (O147[reverse_transliteration1_line8_char2]) (O147_transliteration1_reverse_line8_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line8_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: an (O147[reverse_transliteration1_line8_char4]) (O147_transliteration1_reverse_line8_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line9_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: dumu (O147[reverse_transliteration1_line9_char1]) (O147_transliteration1_reverse_line9_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line9_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: dingir (O147[reverse_transliteration1_line9_char2]) (O147_transliteration1_reverse_line9_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line9_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: bu (O147[reverse_transliteration1_line9_char5]) (O147_transliteration1_reverse_line9_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line1_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: [\u00e2\u20ac\u00a6] (O147[bottom_transliteration1_line1_char1]) (O147_transliteration1_bottom_line1_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line2_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: inim# (O147[bottom_transliteration1_line2_char1]) (O147_transliteration1_bottom_line2_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line3_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sza3# (O147[bottom_transliteration1_line3_char1]) (O147_transliteration1_bottom_line3_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line3_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ga (O147[bottom_transliteration1_line3_char2]) (O147_transliteration1_bottom_line3_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line3_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: a (O147[bottom_transliteration1_line3_char3]) (O147_transliteration1_bottom_line3_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line4_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ud (O147[bottom_transliteration1_line4_char1]) (O147_transliteration1_bottom_line4_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line5_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ga2 (O147[bottom_transliteration1_line5_char3]) (O147_transliteration1_bottom_line5_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line10_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ap (O147[obverse_transliteration1_line10_char2]) (O147_transliteration1_obverse_line10_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line10_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: h,u (O147[obverse_transliteration1_line10_char3]) (O147_transliteration1_obverse_line10_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line10_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: li! (O147[obverse_transliteration1_line10_char4]) (O147_transliteration1_obverse_line10_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line10_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ip (O147[obverse_transliteration1_line10_char5]) (O147_transliteration1_obverse_line10_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line12_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szi (O147[obverse_transliteration1_line12_char2]) (O147_transliteration1_obverse_line12_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line12_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: in (O147[obverse_transliteration1_line12_char3]) (O147_transliteration1_obverse_line12_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line13_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ti (O147[obverse_transliteration1_line13_char2]) (O147_transliteration1_obverse_line13_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line13_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: la (O147[obverse_transliteration1_line13_char3]) (O147_transliteration1_obverse_line13_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line13_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: bi# (O147[obverse_transliteration1_line13_char4]) (O147_transliteration1_obverse_line13_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line6_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sag (O147[obverse_transliteration1_line6_char1]) (O147_transliteration1_obverse_line6_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line6_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: bi (O147[obverse_transliteration1_line6_char2]) (O147_transliteration1_obverse_line6_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line6_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 1(disz) (O147[obverse_transliteration1_line6_char3]) (O147_transliteration1_obverse_line6_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line7_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sag (O147[obverse_transliteration1_line7_char1]) (O147_transliteration1_obverse_line7_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line7_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 2(disz) (O147[obverse_transliteration1_line7_char3]) (O147_transliteration1_obverse_line7_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line9_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ap (O147[obverse_transliteration1_line9_char3]) (O147_transliteration1_obverse_line9_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line9_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: pa (O147[obverse_transliteration1_line9_char4]) (O147_transliteration1_obverse_line9_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line10_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ri (O147[reverse_transliteration1_line10_char3]) (O147_transliteration1_reverse_line10_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line1_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: mu (O147[reverse_transliteration1_line1_char1]) (O147_transliteration1_reverse_line1_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line2_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: am (O147[reverse_transliteration1_line2_char3]) (O147_transliteration1_reverse_line2_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line2_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: su2 (O147[reverse_transliteration1_line2_char4]) (O147_transliteration1_reverse_line2_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line2_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: i (O147[reverse_transliteration1_line2_char5]) (O147_transliteration1_reverse_line2_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line3_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: pad3 (O147[reverse_transliteration1_line3_char2]) (O147_transliteration1_reverse_line3_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line3_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: de3 (O147[reverse_transliteration1_line3_char3]) (O147_transliteration1_reverse_line3_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line4_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: pi4! (O147[reverse_transliteration1_line4_char3]) (O147_transliteration1_reverse_line4_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line6_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: UTU (O147[reverse_transliteration1_line6_char3]) (O147_transliteration1_reverse_line6_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line6_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: la (O147[reverse_transliteration1_line6_char4]) (O147_transliteration1_reverse_line6_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line6_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ma (O147[reverse_transliteration1_line6_char5]) (O147_transliteration1_reverse_line6_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line7_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: <pa> (O147[reverse_transliteration1_line7_char3]) (O147_transliteration1_reverse_line7_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line7_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: asz (O147[reverse_transliteration1_line7_char4]) (O147_transliteration1_reverse_line7_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line7_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: s,il2 (O147[reverse_transliteration1_line7_char5]) (O147_transliteration1_reverse_line7_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line7_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: li2 (O147[reverse_transliteration1_line7_char6]) (O147_transliteration1_reverse_line7_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line8_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ur2 (O147[reverse_transliteration1_line8_char3]) (O147_transliteration1_reverse_line8_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line9_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szu (O147[reverse_transliteration1_line9_char3]) (O147_transliteration1_reverse_line9_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line9_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: a (O147[reverse_transliteration1_line9_char4]) (O147_transliteration1_reverse_line9_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line4_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: kur2 (O147[bottom_transliteration1_line4_char2]) (O147_transliteration1_bottom_line4_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line2_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {gisz}kesz2 (O147[obverse_transliteration1_line2_char1]) (O147_transliteration1_obverse_line2_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line7_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: bi (O147[obverse_transliteration1_line7_char2]) (O147_transliteration1_obverse_line7_char2_charocc)",
         "data": {}
@@ -51730,574 +51730,574 @@ var tree={
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line1_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: [\u00e2\u20ac\u00a6] (O147[bottom_line1_word1]) (O147_transliteration1_bottom_line1_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line5_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: inim (O147[bottom_line5_word1]) (O147_transliteration1_bottom_line5_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line11_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: dumu (O147[obverse_line11_word1]) (O147_transliteration1_obverse_line11_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line1_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 5(disz) (O147[obverse_line1_word1]) (O147_transliteration1_obverse_line1_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line3_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 1(u) (O147[obverse_line3_word1]) (O147_transliteration1_obverse_line3_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line4_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: da (O147[obverse_line4_word1]) (O147_transliteration1_obverse_line4_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line5_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: u3 (O147[obverse_line5_word1]) (O147_transliteration1_obverse_line5_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line8_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: ki# (O147[obverse_line8_word1]) (O147_transliteration1_obverse_line8_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line9_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: dumu (O147[obverse_line9_word1]) (O147_transliteration1_obverse_line9_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line10_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: igi (O147[reverse_line10_word1]) (O147_transliteration1_reverse_line10_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line11_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: dumu (O147[reverse_line11_word1]) (O147_transliteration1_reverse_line11_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line12_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: iti# (O147[reverse_line12_word1]) (O147_transliteration1_reverse_line12_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line13_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: mu# (O147[reverse_line13_word1]) (O147_transliteration1_reverse_line13_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line13_word6_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: x (O147[reverse_line13_word6]) (O147_transliteration1_reverse_line13_word6_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line1_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: mu (O147[reverse_line1_word1]) (O147_transliteration1_reverse_line1_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line2_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: u3 (O147[reverse_line2_word1]) (O147_transliteration1_reverse_line2_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line4_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: igi (O147[reverse_line4_word1]) (O147_transliteration1_reverse_line4_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line4_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {d}utu# (O147[reverse_line4_word4]) (O147_transliteration1_reverse_line4_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line5_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: igi (O147[reverse_line5_word1]) (O147_transliteration1_reverse_line5_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line5_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {d}[utu] (O147[reverse_line5_word4]) (O147_transliteration1_reverse_line5_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line6_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: igi (O147[reverse_line6_word1]) (O147_transliteration1_reverse_line6_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line7_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: igi (O147[reverse_line7_word1]) (O147_transliteration1_reverse_line7_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line7_word5_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {d}utu (O147[reverse_line7_word5]) (O147_transliteration1_reverse_line7_word5_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line8_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: igi (O147[reverse_line8_word1]) (O147_transliteration1_reverse_line8_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line9_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: dumu (O147[reverse_line9_word1]) (O147_transliteration1_reverse_line9_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line2_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: inim#-bi# (O147[bottom_line2_word1]) (O147_transliteration1_bottom_line2_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line2_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: al#-til# (O147[bottom_line2_word2]) (O147_transliteration1_bottom_line2_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line3_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: al-dug# (O147[bottom_line3_word2]) (O147_transliteration1_bottom_line3_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line1_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 2/3 (O147[obverse_line1_word2]) (O147_transliteration1_obverse_line1_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line1_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sar (O147[obverse_line1_word3]) (O147_transliteration1_obverse_line1_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line2_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {gisz}kesz2-da (O147[obverse_line2_word1]) (O147_transliteration1_obverse_line2_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line2_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {gisz}ig (O147[obverse_line2_word2]) (O147_transliteration1_obverse_line2_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line2_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: gub-ba (O147[obverse_line2_word4]) (O147_transliteration1_obverse_line2_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line3_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sar (O147[obverse_line3_word2]) (O147_transliteration1_obverse_line3_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line4_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: e2 (O147[obverse_line4_word2]) (O147_transliteration1_obverse_line4_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line5_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: da (O147[obverse_line5_word2]) (O147_transliteration1_obverse_line5_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line5_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: e2 (O147[obverse_line5_word3]) (O147_transliteration1_obverse_line5_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line6_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sila#-dagal (O147[obverse_line6_word2]) (O147_transliteration1_obverse_line6_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line12_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: innin (O147[reverse_line12_word2]) (O147_transliteration1_reverse_line12_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line12_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: u4 (O147[reverse_line12_word3]) (O147_transliteration1_reverse_line12_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line13_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: e2#? (O147[reverse_line13_word2]) (O147_transliteration1_reverse_line13_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line13_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {d}utu (O147[reverse_line13_word3]) (O147_transliteration1_reverse_line13_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line13_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: x (O147[reverse_line13_word4]) (O147_transliteration1_reverse_line13_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line13_word5_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: x (O147[reverse_line13_word5]) (O147_transliteration1_reverse_line13_word5_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line1_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {d}utu (O147[reverse_line1_word2]) (O147_transliteration1_reverse_line1_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line1_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {d}AMAR-UTU (O147[reverse_line1_word4]) (O147_transliteration1_reverse_line1_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line4_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sanga (O147[reverse_line4_word3]) (O147_transliteration1_reverse_line4_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line5_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sanga (O147[reverse_line5_word3]) (O147_transliteration1_reverse_line5_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line7_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: ugula (O147[reverse_line7_word3]) (O147_transliteration1_reverse_line7_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line7_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: lukur (O147[reverse_line7_word4]) (O147_transliteration1_reverse_line7_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line1_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: ku3-babbar (O147[bottom_line1_word2]) (O147_transliteration1_bottom_line1_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line4_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: ud-kur2-sze3 (O147[bottom_line4_word1]) (O147_transliteration1_bottom_line4_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line4_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: lu2-lu2-ra (O147[bottom_line4_word2]) (O147_transliteration1_bottom_line4_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line11_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: szu-{d}mar!-tu (O147[obverse_line11_word2]) (O147_transliteration1_obverse_line11_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line12_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: in-szi-in-szam2# (O147[obverse_line12_word1]) (O147_transliteration1_obverse_line12_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line1_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: e2-du3-a (O147[obverse_line1_word4]) (O147_transliteration1_obverse_line1_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line2_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {gisz}sag-kul (O147[obverse_line2_word3]) (O147_transliteration1_obverse_line2_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line3_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: e2-ki#-ud# (O147[obverse_line3_word3]) (O147_transliteration1_obverse_line3_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line7_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: x#-x-s,i2 (O147[obverse_line7_word2]) (O147_transliteration1_obverse_line7_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line8_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: x#-is-PU2 (O147[obverse_line8_word2]) (O147_transliteration1_obverse_line8_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line11_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {d}NIN-KAL?-LA (O147[reverse_line11_word2]) (O147_transliteration1_reverse_line11_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line12_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 2(u)-8?(disz)-kam (O147[reverse_line12_word4]) (O147_transliteration1_reverse_line12_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line1_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {d}a-a (O147[reverse_line1_word3]) (O147_transliteration1_reverse_line1_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line3_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: in-pad3-de3-mesz (O147[reverse_line3_word1]) (O147_transliteration1_reverse_line3_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line1_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: in-[na-an-la2] (O147[bottom_line1_word3]) (O147_transliteration1_bottom_line1_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line3_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sza3#-ga-a-ni (O147[bottom_line3_word1]) (O147_transliteration1_bottom_line3_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line5_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: nu-ga2-ga2-a (O147[bottom_line5_word2]) (O147_transliteration1_bottom_line5_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line13_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: [szam2]-ti-la-bi#-[sze3] (O147[obverse_line13_word1]) (O147_transliteration1_obverse_line13_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line4_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: lu2-{d}utu-asz-szar (O147[obverse_line4_word3]) (O147_transliteration1_obverse_line4_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line6_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sag-bi-1(disz)-kam (O147[obverse_line6_word1]) (O147_transliteration1_obverse_line6_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line7_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sag-bi-2(disz)-kam (O147[obverse_line7_word1]) (O147_transliteration1_obverse_line7_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line10_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sin-ri-me-ni (O147[reverse_line10_word2]) (O147_transliteration1_reverse_line10_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line5_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: isz-me-sin (O147[reverse_line5_word2]) (O147_transliteration1_reverse_line5_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line8_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: nu-ur2-an-tim (O147[reverse_line8_word2]) (O147_transliteration1_reverse_line8_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line10_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {m}sa3-ap-h,u-li!-ip-h,ur (O147[obverse_line10_word1]) (O147_transliteration1_obverse_line10_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line5_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: isz-du-ki-nu-um (O147[obverse_line5_word4]) (O147_transliteration1_obverse_line5_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line9_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: a-ap-pa-ta?-nu? (O147[obverse_line9_word2]) (O147_transliteration1_obverse_line9_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line4_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: dingir-pi4!-{d}a-a (O147[reverse_line4_word2]) (O147_transliteration1_reverse_line4_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line9_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: dingir-szu-a-bu-szu# (O147[reverse_line9_word2]) (O147_transliteration1_reverse_line9_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line2_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sa-am-su2-i-lu-na (O147[reverse_line2_word2]) (O147_transliteration1_reverse_line2_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line6_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: {d}AMAR-UTU-la-ma-sa3-szu (O147[reverse_line6_word2]) (O147_transliteration1_reverse_line6_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line7_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: ra-<pa>-asz-s,il2-li2-e2-a (O147[reverse_line7_word2]) (O147_transliteration1_reverse_line7_word2_wordformocc)",
         "data": {}
@@ -53963,70 +53963,70 @@ var tree={
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_glyphlist",
-        "parent": "http://www.example.org/cunei/GlyphCollection",
+        "parent": "http://www.purl.org/cuneiform/GlyphCollection",
         "type": "instance",
         "text": "Glyphs of HT073195 (HT073195_glyphlist)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_graphemevars",
-        "parent": "http://www.example.org/cunei/GraphemeVariantCollection",
+        "parent": "http://www.purl.org/cuneiform/GraphemeVariantCollection",
         "type": "instance",
         "text": "HT073195 Grapheme Variant Collection  (HT073195_graphemevars)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 1 (HT073195_obverse_line1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 2 (HT073195_obverse_line2)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 3 (HT073195_obverse_line3)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 4 (HT073195_obverse_line4)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_signlist",
-        "parent": "http://www.example.org/cunei/GraphemeCollection",
+        "parent": "http://www.purl.org/cuneiform/GraphemeCollection",
         "type": "instance",
         "text": "Signlist of HT073195 (HT073195_signlist)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_signreadinglist",
-        "parent": "http://www.example.org/cunei/GraphemeReadingCollection",
+        "parent": "http://www.purl.org/cuneiform/GraphemeReadingCollection",
         "type": "instance",
         "text": "Sign Readings of HT073195 (HT073195_signreadinglist)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1",
-        "parent": "http://www.example.org/cunei/Transliteration",
+        "parent": "http://www.purl.org/cuneiform/Transliteration",
         "type": "instance",
         "text": "Transliteration 1 of HT073195 (HT073195_transliteration1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_charoccurrences",
-        "parent": "http://www.example.org/cunei/CharOccurrenceCollection",
+        "parent": "http://www.purl.org/cuneiform/CharOccurrenceCollection",
         "type": "instance",
         "text": "Char Occurrences of HT073195 generated from transliteration 1 (HT073195_transliteration1_charoccurrences)",
         "data": {}
@@ -54040,7 +54040,7 @@ var tree={
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_wordformoccurrences",
-        "parent": "http://www.example.org/cunei/WordFormOccurrenceCollection",
+        "parent": "http://www.purl.org/cuneiform/WordFormOccurrenceCollection",
         "type": "instance",
         "text": "Wordform Occurrences of HT073195 generated from transliteration 1 (HT073195_transliteration1_wordformoccurrences)",
         "data": {}
@@ -54054,21 +54054,21 @@ var tree={
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195",
-        "parent": "http://www.example.org/cunei/Tablet",
+        "parent": "http://www.purl.org/cuneiform/Tablet",
         "type": "instance",
         "text": "Cuneiform Artifact: HT073195 (HT073195)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse",
-        "parent": "http://www.example.org/cunei/Side",
+        "parent": "http://www.purl.org/cuneiform/Side",
         "type": "instance",
         "text": "HT073195: obverse (HT073195_obverse)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_reverse",
-        "parent": "http://www.example.org/cunei/Side",
+        "parent": "http://www.purl.org/cuneiform/Side",
         "type": "instance",
         "text": "HT073195: reverse (HT073195_reverse)",
         "data": {}
@@ -54250,399 +54250,399 @@ var tree={
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/1_disz__ME_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: 1(disz)-ME (1_disz__ME_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/1_u_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: 1(u) (1_u_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/2_disz_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: 2(disz) (2_disz_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/6_disz_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: 6(disz) (6_disz_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/8_disz_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: 8(disz) (8_disz_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/9_u_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: 9(u) (9_u_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/H_AR_mesz_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: H,AR{mesz} (H_AR_mesz_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/KU3_BABBAR_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: KU3.BABBAR (KU3_BABBAR_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/KU3_GI_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: KU3.GI (KU3_GI_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/SZU_NIGIN2_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: SZU.NIGIN2 (SZU_NIGIN2_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/a_mar__d_UTU_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: a-mar-{d}UTU (a_mar__d_UTU_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/isz_szu_u2_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: isz-szu-u2 (isz_szu_u2_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/sza3_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: sza3 (sza3_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 1 [HT073195_obverse] (HT073195_transliteration1_obverse_line1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 2 [HT073195_obverse] (HT073195_transliteration1_obverse_line2)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 3 [HT073195_obverse] (HT073195_transliteration1_obverse_line3)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 4 [HT073195_obverse] (HT073195_transliteration1_obverse_line4)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: BABBAR (HT073195[obverse_transliteration1_line1_char6]) (HT073195_transliteration1_obverse_line1_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: GI (HT073195[obverse_transliteration1_line2_char5]) (HT073195_transliteration1_obverse_line2_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: H,AR{mesz} (HT073195[obverse_transliteration1_line3_char6]) (HT073195_transliteration1_obverse_line3_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: u2 (HT073195[obverse_transliteration1_line4_char7]) (HT073195_transliteration1_obverse_line4_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 2(disz) (HT073195[obverse_transliteration1_line1_char2]) (HT073195_transliteration1_obverse_line1_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: H,AR{mesz} (HT073195[obverse_transliteration1_line1_char3]) (HT073195_transliteration1_obverse_line1_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sza3 (HT073195[obverse_transliteration1_line1_char4]) (HT073195_transliteration1_obverse_line1_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: KU3 (HT073195[obverse_transliteration1_line1_char5]) (HT073195_transliteration1_obverse_line1_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 6(disz) (HT073195[obverse_transliteration1_line2_char2]) (HT073195_transliteration1_obverse_line2_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sza3 (HT073195[obverse_transliteration1_line2_char3]) (HT073195_transliteration1_obverse_line2_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: KU3 (HT073195[obverse_transliteration1_line2_char4]) (HT073195_transliteration1_obverse_line2_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 1(disz) (HT073195[obverse_transliteration1_line3_char3]) (HT073195_transliteration1_obverse_line3_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ME (HT073195[obverse_transliteration1_line3_char4]) (HT073195_transliteration1_obverse_line3_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 8(disz) (HT073195[obverse_transliteration1_line3_char5]) (HT073195_transliteration1_obverse_line3_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: {d}UTU (HT073195[obverse_transliteration1_line4_char4]) (HT073195_transliteration1_obverse_line4_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: isz (HT073195[obverse_transliteration1_line4_char5]) (HT073195_transliteration1_obverse_line4_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szu (HT073195[obverse_transliteration1_line4_char6]) (HT073195_transliteration1_obverse_line4_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 9(u) (HT073195[obverse_transliteration1_line1_char1]) (HT073195_transliteration1_obverse_line1_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 1(u) (HT073195[obverse_transliteration1_line2_char1]) (HT073195_transliteration1_obverse_line2_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: NIGIN2 (HT073195[obverse_transliteration1_line3_char2]) (HT073195_transliteration1_obverse_line3_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: mar (HT073195[obverse_transliteration1_line4_char3]) (HT073195_transliteration1_obverse_line4_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: SZU (HT073195[obverse_transliteration1_line3_char1]) (HT073195_transliteration1_obverse_line3_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sza3 (HT073195[obverse_transliteration1_line4_char1]) (HT073195_transliteration1_obverse_line4_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: a (HT073195[obverse_transliteration1_line4_char2]) (HT073195_transliteration1_obverse_line4_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 9(u) (HT073195[obverse_line1_word1]) (HT073195_transliteration1_obverse_line1_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 1(u) (HT073195[obverse_line2_word1]) (HT073195_transliteration1_obverse_line2_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: H,AR{mesz} (HT073195[obverse_line3_word4]) (HT073195_transliteration1_obverse_line3_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sza3 (HT073195[obverse_line4_word1]) (HT073195_transliteration1_obverse_line4_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 2(disz) (HT073195[obverse_line1_word2]) (HT073195_transliteration1_obverse_line1_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: H,AR{mesz} (HT073195[obverse_line1_word3]) (HT073195_transliteration1_obverse_line1_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sza3 (HT073195[obverse_line1_word4]) (HT073195_transliteration1_obverse_line1_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_word5_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: KU3.BABBAR (HT073195[obverse_line1_word5]) (HT073195_transliteration1_obverse_line1_word5_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 6(disz) (HT073195[obverse_line2_word2]) (HT073195_transliteration1_obverse_line2_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sza3 (HT073195[obverse_line2_word3]) (HT073195_transliteration1_obverse_line2_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: KU3.GI (HT073195[obverse_line2_word4]) (HT073195_transliteration1_obverse_line2_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: SZU.NIGIN2 (HT073195[obverse_line3_word1]) (HT073195_transliteration1_obverse_line3_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 8(disz) (HT073195[obverse_line3_word3]) (HT073195_transliteration1_obverse_line3_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 1(disz)-ME (HT073195[obverse_line3_word2]) (HT073195_transliteration1_obverse_line3_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: isz-szu-u2 (HT073195[obverse_line4_word3]) (HT073195_transliteration1_obverse_line4_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: a-mar-{d}UTU (HT073195[obverse_line4_word2]) (HT073195_transliteration1_obverse_line4_word2_wordformocc)",
         "data": {}
@@ -61229,105 +61229,105 @@ var tree={
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_glyphlist",
-        "parent": "http://www.example.org/cunei/GlyphCollection",
+        "parent": "http://www.purl.org/cuneiform/GlyphCollection",
         "type": "instance",
         "text": "Glyphs of HS1174 (HS1174_glyphlist)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_graphemevars",
-        "parent": "http://www.example.org/cunei/GraphemeVariantCollection",
+        "parent": "http://www.purl.org/cuneiform/GraphemeVariantCollection",
         "type": "instance",
         "text": "HS1174 Grapheme Variant Collection  (HS1174_graphemevars)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 1 (HS1174_obverse_line1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 2 (HS1174_obverse_line2)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line3",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 3 (HS1174_obverse_line3)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 4 (HS1174_obverse_line4)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 1 (HS1174_reverse_line1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line2",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 2 (HS1174_reverse_line2)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 3 (HS1174_reverse_line3)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line4",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 4 (HS1174_reverse_line4)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line5",
-        "parent": "http://www.example.org/cunei/Line",
+        "parent": "http://www.purl.org/cuneiform/Line",
         "type": "instance",
         "text": "Line 5 (HS1174_reverse_line5)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_signlist",
-        "parent": "http://www.example.org/cunei/GraphemeCollection",
+        "parent": "http://www.purl.org/cuneiform/GraphemeCollection",
         "type": "instance",
         "text": "Signlist of HS1174 (HS1174_signlist)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_signreadinglist",
-        "parent": "http://www.example.org/cunei/GraphemeReadingCollection",
+        "parent": "http://www.purl.org/cuneiform/GraphemeReadingCollection",
         "type": "instance",
         "text": "Sign Readings of HS1174 (HS1174_signreadinglist)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1",
-        "parent": "http://www.example.org/cunei/Transliteration",
+        "parent": "http://www.purl.org/cuneiform/Transliteration",
         "type": "instance",
         "text": "Transliteration 1 of HS1174 (HS1174_transliteration1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_charoccurrences",
-        "parent": "http://www.example.org/cunei/CharOccurrenceCollection",
+        "parent": "http://www.purl.org/cuneiform/CharOccurrenceCollection",
         "type": "instance",
         "text": "Char Occurrences of HS1174 generated from transliteration 1 (HS1174_transliteration1_charoccurrences)",
         "data": {}
@@ -61341,7 +61341,7 @@ var tree={
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_wordformoccurrences",
-        "parent": "http://www.example.org/cunei/WordFormOccurrenceCollection",
+        "parent": "http://www.purl.org/cuneiform/WordFormOccurrenceCollection",
         "type": "instance",
         "text": "Wordform Occurrences of HS1174 generated from transliteration 1 (HS1174_transliteration1_wordformoccurrences)",
         "data": {}
@@ -61355,21 +61355,21 @@ var tree={
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174",
-        "parent": "http://www.example.org/cunei/Tablet",
+        "parent": "http://www.purl.org/cuneiform/Tablet",
         "type": "instance",
         "text": "Cuneiform Artifact: HS1174 (HS1174)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse",
-        "parent": "http://www.example.org/cunei/Side",
+        "parent": "http://www.purl.org/cuneiform/Side",
         "type": "instance",
         "text": "HS1174: obverse (HS1174_obverse)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse",
-        "parent": "http://www.example.org/cunei/Side",
+        "parent": "http://www.purl.org/cuneiform/Side",
         "type": "instance",
         "text": "HS1174: reverse (HS1174_reverse)",
         "data": {}
@@ -61719,518 +61719,518 @@ var tree={
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/3_disz_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: 3(disz) (3_disz_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/3_u_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: 3(u) (3_u_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9_disz_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: 9(disz) (9_disz_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/da_ak_ru_um_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: da-ak-ru-um (da_ak_ru_um_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/dim2_ma_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: dim2-ma (dim2_ma_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/du6_ku3_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: du6-ku3 (du6_ku3_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e2_a_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: e2-a (e2_a_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e2_gal_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: e2-gal (e2_gal_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ensi2_ka_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: ensi2-ka (ensi2_ka_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/gurusz_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: gurusz (gurusz_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ib2_dab5_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: ib2-dab5 (ib2_dab5_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/iti_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: iti (iti_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ku3_sa6_ga_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: ku3-sa6-ga (ku3_sa6_ga_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/lu2_ga_a_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: lu2-ga-a (lu2_ga_a_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/nu_banda3_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: nu-banda3 (nu_banda3_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/sza3_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: sza3 (sza3_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/szesz_da_da_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: szesz-da-da (szesz_da_da_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/szu_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: szu (szu_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/tum_al__TA_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: tum-al!(TA) (tum_al__TA_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/u4_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: u4 (u4_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ugula_wordform",
-        "parent": "http://www.example.org/cunei/WordForm",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
         "type": "instance",
         "text": "WordForm: ugula (ugula_wordform)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line1",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 1 [HS1174_obverse] (HS1174_transliteration1_obverse_line1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 2 [HS1174_obverse] (HS1174_transliteration1_obverse_line2)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line3",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 3 [HS1174_obverse] (HS1174_transliteration1_obverse_line3)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line4",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 4 [HS1174_obverse] (HS1174_transliteration1_obverse_line4)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line1",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 1 [HS1174_reverse] (HS1174_transliteration1_reverse_line1)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line2",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 2 [HS1174_reverse] (HS1174_transliteration1_reverse_line2)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line3",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 3 [HS1174_reverse] (HS1174_transliteration1_reverse_line3)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line4",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 4 [HS1174_reverse] (HS1174_transliteration1_reverse_line4)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line5",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "http://www.purl.org/cuneiform/TransliterationLine",
         "type": "instance",
         "text": "Transliteration Line: 5 [HS1174_reverse] (HS1174_transliteration1_reverse_line5)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line1_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ma (HS1174[obverse_transliteration1_line1_char6]) (HS1174_transliteration1_obverse_line1_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2_char8_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: dab5 (HS1174[obverse_transliteration1_line2_char8]) (HS1174_transliteration1_obverse_line2_char8_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line3_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: da (HS1174[obverse_transliteration1_line3_char4]) (HS1174_transliteration1_obverse_line3_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line4_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ma (HS1174[obverse_transliteration1_line4_char5]) (HS1174_transliteration1_obverse_line4_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line1_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: a (HS1174[reverse_transliteration1_line1_char4]) (HS1174_transliteration1_reverse_line1_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line2_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ga (HS1174[reverse_transliteration1_line2_char5]) (HS1174_transliteration1_reverse_line2_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line3_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ka (HS1174[reverse_transliteration1_line3_char4]) (HS1174_transliteration1_reverse_line3_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line4_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: al!(TA) (HS1174[reverse_transliteration1_line4_char3]) (HS1174_transliteration1_reverse_line4_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line5_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 9(disz) (HS1174[reverse_transliteration1_line5_char5]) (HS1174_transliteration1_reverse_line5_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line1_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 3(disz) (HS1174[obverse_transliteration1_line1_char2]) (HS1174_transliteration1_obverse_line1_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line1_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: gurusz (HS1174[obverse_transliteration1_line1_char3]) (HS1174_transliteration1_obverse_line1_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line1_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szu (HS1174[obverse_transliteration1_line1_char4]) (HS1174_transliteration1_obverse_line1_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line1_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: dim2 (HS1174[obverse_transliteration1_line1_char5]) (HS1174_transliteration1_obverse_line1_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2_char5_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: e2 (HS1174[obverse_transliteration1_line2_char5]) (HS1174_transliteration1_obverse_line2_char5_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2_char6_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: a (HS1174[obverse_transliteration1_line2_char6]) (HS1174_transliteration1_obverse_line2_char6_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2_char7_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ib2 (HS1174[obverse_transliteration1_line2_char7]) (HS1174_transliteration1_obverse_line2_char7_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line4_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: gurusz (HS1174[obverse_transliteration1_line4_char2]) (HS1174_transliteration1_obverse_line4_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line4_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szu (HS1174[obverse_transliteration1_line4_char3]) (HS1174_transliteration1_obverse_line4_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line4_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: dim2 (HS1174[obverse_transliteration1_line4_char4]) (HS1174_transliteration1_obverse_line4_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line2_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ku3 (HS1174[reverse_transliteration1_line2_char3]) (HS1174_transliteration1_reverse_line2_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line2_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sa6 (HS1174[reverse_transliteration1_line2_char4]) (HS1174_transliteration1_reverse_line2_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line3_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ensi2 (HS1174[reverse_transliteration1_line3_char3]) (HS1174_transliteration1_reverse_line3_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line4_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: tum (HS1174[reverse_transliteration1_line4_char2]) (HS1174_transliteration1_reverse_line4_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line5_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: du6 (HS1174[reverse_transliteration1_line5_char2]) (HS1174_transliteration1_reverse_line5_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line5_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ku3 (HS1174[reverse_transliteration1_line5_char3]) (HS1174_transliteration1_reverse_line5_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line5_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: u4 (HS1174[reverse_transliteration1_line5_char4]) (HS1174_transliteration1_reverse_line5_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line1_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 3(u) (HS1174[obverse_transliteration1_line1_char1]) (HS1174_transliteration1_obverse_line1_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2_char4_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: um (HS1174[obverse_transliteration1_line2_char4]) (HS1174_transliteration1_obverse_line2_char4_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line3_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ugula (HS1174[obverse_transliteration1_line3_char1]) (HS1174_transliteration1_obverse_line3_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line3_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: szesz (HS1174[obverse_transliteration1_line3_char2]) (HS1174_transliteration1_obverse_line3_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line3_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: da (HS1174[obverse_transliteration1_line3_char3]) (HS1174_transliteration1_obverse_line3_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line4_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: 9(disz) (HS1174[obverse_transliteration1_line4_char1]) (HS1174_transliteration1_obverse_line4_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line1_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ugula (HS1174[reverse_transliteration1_line1_char1]) (HS1174_transliteration1_reverse_line1_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line1_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: lu2 (HS1174[reverse_transliteration1_line1_char2]) (HS1174_transliteration1_reverse_line1_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line1_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ga (HS1174[reverse_transliteration1_line1_char3]) (HS1174_transliteration1_reverse_line1_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line3_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: gal (HS1174[reverse_transliteration1_line3_char2]) (HS1174_transliteration1_reverse_line3_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line4_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: sza3 (HS1174[reverse_transliteration1_line4_char1]) (HS1174_transliteration1_reverse_line4_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line5_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: iti (HS1174[reverse_transliteration1_line5_char1]) (HS1174_transliteration1_reverse_line5_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ak (HS1174[obverse_transliteration1_line2_char2]) (HS1174_transliteration1_obverse_line2_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2_char3_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: ru (HS1174[obverse_transliteration1_line2_char3]) (HS1174_transliteration1_obverse_line2_char3_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line2_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: nu (HS1174[reverse_transliteration1_line2_char1]) (HS1174_transliteration1_reverse_line2_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line2_char2_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: banda3 (HS1174[reverse_transliteration1_line2_char2]) (HS1174_transliteration1_reverse_line2_char2_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line3_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: e2 (HS1174[reverse_transliteration1_line3_char1]) (HS1174_transliteration1_reverse_line3_char1_charocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2_char1_charocc",
-        "parent": "http://www.example.org/cunei/TransliterationCharOccurrence",
+        "parent": "http://www.purl.org/cuneiform/TransliterationCharOccurrence",
         "type": "instance",
         "text": "Char Occurrence: da (HS1174[obverse_transliteration1_line2_char1]) (HS1174_transliteration1_obverse_line2_char1_charocc)",
         "data": {}
@@ -62272,182 +62272,182 @@ var tree={
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line1_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 3(u) (HS1174[obverse_line1_word1]) (HS1174_transliteration1_obverse_line1_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line3_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: ugula (HS1174[obverse_line3_word1]) (HS1174_transliteration1_obverse_line3_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line4_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 9(disz) (HS1174[obverse_line4_word1]) (HS1174_transliteration1_obverse_line4_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line1_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: ugula (HS1174[reverse_line1_word1]) (HS1174_transliteration1_reverse_line1_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line4_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: sza3 (HS1174[reverse_line4_word1]) (HS1174_transliteration1_reverse_line4_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line5_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: iti (HS1174[reverse_line5_word1]) (HS1174_transliteration1_reverse_line5_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line5_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 9(disz) (HS1174[reverse_line5_word4]) (HS1174_transliteration1_reverse_line5_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line1_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: 3(disz) (HS1174[obverse_line1_word2]) (HS1174_transliteration1_obverse_line1_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line1_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: gurusz (HS1174[obverse_line1_word3]) (HS1174_transliteration1_obverse_line1_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line1_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: szu (HS1174[obverse_line1_word4]) (HS1174_transliteration1_obverse_line1_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line1_word5_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: dim2-ma (HS1174[obverse_line1_word5]) (HS1174_transliteration1_obverse_line1_word5_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: ib2-dab5 (HS1174[obverse_line2_word3]) (HS1174_transliteration1_obverse_line2_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line4_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: gurusz (HS1174[obverse_line4_word2]) (HS1174_transliteration1_obverse_line4_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line4_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: szu (HS1174[obverse_line4_word3]) (HS1174_transliteration1_obverse_line4_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line4_word4_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: dim2-ma (HS1174[obverse_line4_word4]) (HS1174_transliteration1_obverse_line4_word4_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line2_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: nu-banda3 (HS1174[reverse_line2_word1]) (HS1174_transliteration1_reverse_line2_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line3_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: e2-gal (HS1174[reverse_line3_word1]) (HS1174_transliteration1_reverse_line3_word1_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line3_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: ensi2-ka (HS1174[reverse_line3_word2]) (HS1174_transliteration1_reverse_line3_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line4_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: tum-al!(TA) (HS1174[reverse_line4_word2]) (HS1174_transliteration1_reverse_line4_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line5_word3_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: u4 (HS1174[reverse_line5_word3]) (HS1174_transliteration1_reverse_line5_word3_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: e2-a (HS1174[obverse_line2_word2]) (HS1174_transliteration1_obverse_line2_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line3_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: szesz-da-da (HS1174[obverse_line3_word2]) (HS1174_transliteration1_obverse_line3_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line1_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: lu2-ga-a (HS1174[reverse_line1_word2]) (HS1174_transliteration1_reverse_line1_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line2_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: ku3-sa6-ga (HS1174[reverse_line2_word2]) (HS1174_transliteration1_reverse_line2_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line5_word2_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: du6-ku3 (HS1174[reverse_line5_word2]) (HS1174_transliteration1_reverse_line5_word2_wordformocc)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2_word1_wordformocc",
-        "parent": "http://www.example.org/cunei/WordformOccurance",
+        "parent": "http://www.purl.org/cuneiform/WordformOccurance",
         "type": "instance",
         "text": " WordForm Occurrence: da-ak-ru-um (HS1174[obverse_line2_word1]) (HS1174_transliteration1_obverse_line2_word1_wordformocc)",
         "data": {}
