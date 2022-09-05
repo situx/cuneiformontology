@@ -165,7 +165,7 @@ tabletnames=["HS1174","HT073195","TCH92","O147"]
 tabletsides=["front","back","left","right","bottom","top"]
 tabsideid={"front":"03","back":"06","obverse":"03","reverse":"06","bottom":"04"}
 sidereplacements:{"obverse":"front","reverse":"back"}
-renderingvars={"O147":["A_Color","B_Color","A_shaded","B_Shaded"]}
+renderingvars={"O147":["A_color","B_color","C_color","D_color","A_shaded","B_shaded","C_shaded","D_shaded","sketch_soft","sktech_hard"]}
 tabletname="HS1174"
 material="3D rendering"
 wordsplit="-|~|\."
@@ -325,8 +325,8 @@ for tabname in tabletnames:
                     cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_glyph rdf:type cidoc:TX9_Glyph .\n")
                     if tabname in renderingvars:
                         for item in renderingvars[tabname]:
-                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_glyph foaf:image \""+str(namespace)+"images/charline/charline_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_"+str(charr)+"_"+str(tabname)+"_"+str(tabsideid[currentside])+"_"+str(item)+"_"+str(currentside).replace("obverse","front").replace("reverse","back")+".jpg\"^^xsd:anyURI .\n")
-                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_glyph foaf:image \""+str(namespace)+"images/character/char_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_"+str(charr)+"_"+str(tabname)+"_"+str(tabsideid[currentside])+"_"+str(item)+"_"+str(currentside).replace("obverse","front").replace("reverse","back")+".jpg\"^^xsd:anyURI .\n")                
+                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_glyph foaf:image \""+str(namespace)+"images/charline/charline_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_"+str(charr)+"_"+str(tabname)+"_"+str(item)+"_"+str(currentside).replace("obverse","front").replace("reverse","back")+".jpg\"^^xsd:anyURI .\n")
+                            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_glyph foaf:image \""+str(namespace)+"images/character/char_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_"+str(charr)+"_"+str(tabname)+"_"+str(item)+"_"+str(currentside).replace("obverse","front").replace("reverse","back")+".jpg\"^^xsd:anyURI .\n")                
                     else:
                         cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_glyph foaf:image \""+str(namespace)+"images/charline/charline_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_"+str(charr)+"_"+str(tabname)+"_"+str(tabsideid[currentside])+"_"+str(currentside).replace("obverse","front").replace("reverse","back")+".jpg\"^^xsd:anyURI .\n")
                         cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_glyph foaf:image \""+str(namespace)+"images/character/char_"+replaceNonURIChars(str(currentline))+"_"+str(currentcharindex)+"_"+str(charr)+"_"+str(tabname)+"_"+str(tabsideid[currentside])+"_"+str(currentside).replace("obverse","front").replace("reverse","back")+".jpg\"^^xsd:anyURI .\n")              
