@@ -84,17 +84,17 @@ def cuneifyWord(ufword,worduri,ttlresult,readcolluri):
         for chara in unicodeword:
             if chara in signmapping:
                 #print(str(chara)+" - "+str(signmapping[chara]))
-                ttlresult.add("<"+str(worduri)+"> cunei:contains <"+str(signmapping[chara]["@id"])+"> .\n")
-                ttlresult.add("<"+str(signmapping[chara]["@id"])+"> rdf:type graphemon:Grapheme . \n")
-                ttlresult.add("<"+str(signmapping[chara]["@id"])+"> rdfs:label \"Character: "+str(signmapping[chara]["signname"])+"\" . \n")
+                ttlresult.add("<"+str(worduri)+"> cunei:contains <"+str(signmapping[chara]["@id"].replace("http://purl.org/cuneiform/signlist/","https://situx.github.io/cuneiformontology/signlist"))+"> .\n")
+                ttlresult.add("<"+str(signmapping[chara]["@id"].replace("http://purl.org/cuneiform/signlist/","https://situx.github.io/cuneiformontology/signlist"))+"> rdf:type graphemon:Grapheme . \n")
+                ttlresult.add("<"+str(signmapping[chara]["@id"].replace("http://purl.org/cuneiform/signlist/","https://situx.github.io/cuneiformontology/signlist"))+"> rdfs:label \"Character: "+str(signmapping[chara]["signname"])+"\" . \n")
                 #labeltouri["Character: "+str(signmapping[chara]["signname"])]=str(signmapping[chara]["@id"])
             if counter<len(chars) and chara in signmapping:
-                ttlresult.add("<"+str(worduri)+"> graphemon:hasGraphemeReading <"+str(signmapping[chara]["@id"])+"_reading_"+str(chars[counter])+"> .\n")
-                cdlitabs.add(readcolluri+" rdfs:member <"+str(signmapping[chara]["@id"])+"_reading_"+str(chars[counter])+"> .\n")
-                ttlresult.add("<"+str(signmapping[chara]["@id"])+"_reading_"+str(chars[counter])+"> rdfs:label \"Grapheme Reading "+str(signmapping[chara]["signname"])+": "+str(chars[counter])+"\" .\n")
+                ttlresult.add("<"+str(worduri)+"> graphemon:hasGraphemeReading <"+str(signmapping[chara]["@id"].replace("http://purl.org/cuneiform/signlist/","https://situx.github.io/cuneiformontology/signlist"))+"_reading_"+str(chars[counter])+"> .\n")
+                cdlitabs.add(readcolluri+" rdfs:member <"+str(signmapping[chara]["@id"].replace("http://purl.org/cuneiform/signlist/","https://situx.github.io/cuneiformontology/signlist"))+"_reading_"+str(chars[counter])+"> .\n")
+                ttlresult.add("<"+str(signmapping[chara]["@id"].replace("http://purl.org/cuneiform/signlist/","https://situx.github.io/cuneiformontology/signlist"))+"_reading_"+str(chars[counter])+"> rdfs:label \"Grapheme Reading "+str(signmapping[chara]["signname"])+": "+str(chars[counter])+"\" .\n")
                 #labeltouri["Grapheme Reading "+str(signmapping[chara]["signname"])+": "+str(chars[counter])]=str(signmapping[chara]["@id"])+"_reading_"+str(chars[counter])
-                ttlresult.add("<"+str(signmapping[chara]["@id"])+"_reading_"+str(chars[counter])+"> rdf:type graphemon:GraphemeReading .\n")
-                ttlresult.add("<"+str(signmapping[chara]["@id"])+"> graphemon:hasGraphemeReading <"+str(signmapping[chara]["@id"])+"_reading_"+str(chars[counter])+"> .\n")
+                ttlresult.add("<"+str(signmapping[chara]["@id"].replace("http://purl.org/cuneiform/signlist/","https://situx.github.io/cuneiformontology/signlist"))+"_reading_"+str(chars[counter])+"> rdf:type graphemon:GraphemeReading .\n")
+                ttlresult.add("<"+str(signmapping[chara]["@id"].replace("http://purl.org/cuneiform/signlist/","https://situx.github.io/cuneiformontology/signlist"))+"> graphemon:hasGraphemeReading <"+str(signmapping[chara]["@id"].replace("http://purl.org/cuneiform/signlist/","https://situx.github.io/cuneiformontology/signlist"))+"_reading_"+str(chars[counter])+"> .\n")
             counter+=1
         return cuneify[word]
     return ""
