@@ -1,11 +1,11 @@
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix cunei: <http://www.purl.org/cuneiform/> .
+@prefix cunei: <http://www.purl.org/cuneiform#> .
 @prefix cuneiex: <https://situx.github.io/cuneiformontology/examples/ht073195/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix graphemon: <http://purl.org/graphemon/> .
 @prefix lemon: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix prov: <http://www.w3.org/ns/prov-o/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -297,7 +297,8 @@ cuneiex:HT073195_writtenText a cidoc:TX1_WrittenText ;
 
 lemon:Lexicon rdfs:subClassOf skos:Collection .
 
-cidoc:E22_ManMadeObject rdfs:subClassOf prov:Entity .
+cidoc:E22_ManMadeObject rdfs:label "Man made object"@en ;
+    rdfs:subClassOf prov:Entity .
 
 cunei:CharOccurrenceCollection rdfs:label "CharOccurrence Collection"@en ;
     rdfs:subClassOf skos:Collection .
@@ -311,9 +312,11 @@ cunei:GraphemeReadingCollection rdfs:subClassOf skos:Collection .
 
 cunei:GraphemeVariantCollection rdfs:subClassOf skos:Collection .
 
-cunei:Tablet rdfs:subClassOf cidoc:E22_ManMadeObject .
+cunei:Tablet rdfs:label "cuneiform tablet"@en ;
+    rdfs:subClassOf cidoc:E22_ManMadeObject .
 
-cunei:Transliteration rdfs:subClassOf prov:Entity .
+cunei:Transliteration rdfs:label "transliteration"@en ;
+    rdfs:subClassOf prov:Entity .
 
 cunei:WordFormOccurrenceCollection rdfs:label "WordFormOccurrence Collection"@en ;
     rdfs:subClassOf skos:Collection .
@@ -470,19 +473,38 @@ cuneiex:sza3_wordform a cunei:WordForm ;
 
 <https://situx.github.io/cuneiformontology/signlist/character_a> a graphemon:Grapheme ;
     rdfs:label "Character: A" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_a_reading_a> .
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_a_reading_a> ;
+    graphemon:variant <https://situx.github.io/cuneiformontology/signlist/character_a_variant1> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_a_variant1> a graphemon:GraphemeVariant ;
+    rdfs:label "Grapheme A: Variant 1"@en .
 
 <https://situx.github.io/cuneiformontology/signlist/character_mar> a graphemon:Grapheme ;
     rdfs:label "Character: MAR" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_mar_reading_mar> .
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_mar_reading_mar> ;
+    graphemon:variant <https://situx.github.io/cuneiformontology/signlist/character_mar_variant1> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_mar_variant1> a graphemon:GraphemeVariant ;
+    rdfs:label "Grapheme MAR: Variant 1"@en .
 
 <https://situx.github.io/cuneiformontology/signlist/character_me> a graphemon:Grapheme ;
     rdfs:label "Character: ME" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_me_reading_me> .
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_me_reading_me> ;
+    graphemon:variant <https://situx.github.io/cuneiformontology/signlist/character_me_variant1> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_me_variant1> a graphemon:GraphemeVariant ;
+    rdfs:label "Grapheme ME: Variant 1"@en .
+
+<https://situx.github.io/cuneiformontology/signlist/character_szu_variant1> a graphemon:GraphemeVariant ;
+    rdfs:label "Grapheme SZU: Variant 1"@en .
 
 <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar> a graphemon:Grapheme ;
     rdfs:label "Character: UD (BABBAR)" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_reading_babbar> .
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_reading_babbar> ;
+    graphemon:variant <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_variant1> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_variant1> a graphemon:GraphemeVariant ;
+    rdfs:label "Grapheme UD (BABBAR): Variant 1"@en .
 
 cidoc:TX7_WrittenTextFragment rdfs:label "written text fragment"@en ;
     rdfs:subClassOf cidoc:TX1_WrittenText .
@@ -651,7 +673,8 @@ cuneiex:HT073195_transliteration1_obverse_line4 a cunei:TransliterationLine ;
 
 <https://situx.github.io/cuneiformontology/signlist/character_szu> a graphemon:Grapheme ;
     rdfs:label "Character: SZU" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_šu> .
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_šu> ;
+    graphemon:variant <https://situx.github.io/cuneiformontology/signlist/character_szu_variant1> .
 
 cuneiex:HT073195_obverse_line1_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at HT073195[obverse 1 1])" ;
