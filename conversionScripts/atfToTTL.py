@@ -318,7 +318,7 @@ for tabname in tabletnames:
                     if charr=="":
                         continue
                     cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_charocc rdf:type cunei:TransliterationCharOccurrence .\n")
-                    cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_charoccurrences rdfs:member "+str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform . \n")
+                    cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_wordformoccurrences rdfs:member "+str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform . \n")
                     cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_charocc rdfs:label \"Char Occurrence: "+str(charr)+" ("+str(currenttabletid)+"["+str(currentside)+"_transliteration1_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"])\" .\n")
                     cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_charocc skos:definition \""+str(charr)+"\" .\n")
                     cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_charoccurrences rdfs:member "+str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_charocc . \n")

@@ -798,11 +798,7 @@ cuneiex:O147_transliteration1_bottom cunei:contains cuneiex:O147_transliteration
 
 cuneiex:O147_transliteration1_charoccurrences a cunei:CharOccurrenceCollection ;
     rdfs:label "Char Occurrences of O147 generated from transliteration 1"@en ;
-    rdfs:member cuneiex:1_u_wordform,
-        cuneiex:2_3_wordform,
-        cuneiex:2_u__8__disz__kam_wordform,
-        cuneiex:5_disz_wordform,
-        cuneiex:O147_transliteration1_bottom_line1_char1_charocc,
+    rdfs:member cuneiex:O147_transliteration1_bottom_line1_char1_charocc,
         cuneiex:O147_transliteration1_bottom_line1_char2_charocc,
         cuneiex:O147_transliteration1_bottom_line1_char3_charocc,
         cuneiex:O147_transliteration1_bottom_line1_char4_charocc,
@@ -983,65 +979,7 @@ cuneiex:O147_transliteration1_charoccurrences a cunei:CharOccurrenceCollection ;
         cuneiex:O147_transliteration1_reverse_line9_char3_charocc,
         cuneiex:O147_transliteration1_reverse_line9_char4_charocc,
         cuneiex:O147_transliteration1_reverse_line9_char5_charocc,
-        cuneiex:O147_transliteration1_reverse_line9_char6_charocc,
-        cuneiex:a_ap_pa_ta__nu_wordform,
-        cuneiex:al_dug_wordform,
-        cuneiex:al_til_wordform,
-        cuneiex:d_AMAR_UTU_la_ma_sa3_szu_wordform,
-        cuneiex:d_AMAR_UTU_wordform,
-        cuneiex:d_NIN_KAL__LA_wordform,
-        cuneiex:d__utu_wordform,
-        cuneiex:d_a_a_wordform,
-        cuneiex:d_utu_wordform,
-        cuneiex:da_wordform,
-        cuneiex:dingir_pi4___d_a_a_wordform,
-        cuneiex:dingir_szu_a_bu_szu_wordform,
-        cuneiex:dumu_wordform,
-        cuneiex:e2_du3_a_wordform,
-        cuneiex:e2_ki_ud_wordform,
-        cuneiex:e2_wordform,
-        cuneiex:gisz_ig_wordform,
-        cuneiex:gisz_kesz2_da_wordform,
-        cuneiex:gisz_sag_kul_wordform,
-        cuneiex:gub_ba_wordform,
-        cuneiex:igi_wordform,
-        cuneiex:in__na_an_la2_wordform,
-        cuneiex:in_pad3_de3_mesz_wordform,
-        cuneiex:in_szi_in_szam2_wordform,
-        cuneiex:inim_bi_wordform,
-        cuneiex:inim_wordform,
-        cuneiex:innin_wordform,
-        cuneiex:isz_du_ki_nu_um_wordform,
-        cuneiex:isz_me_sin_wordform,
-        cuneiex:iti_wordform,
-        cuneiex:ki_wordform,
-        cuneiex:ku3_babbar_wordform,
-        cuneiex:lu2__d_utu_asz_szar_wordform,
-        cuneiex:lu2_lu2_ra_wordform,
-        cuneiex:lukur_wordform,
-        cuneiex:m_sa3_ap_h_u_li__ip_h_ur_wordform,
-        cuneiex:mu_wordform,
-        cuneiex:nu_ga2_ga2_a_wordform,
-        cuneiex:nu_ur2_an_tim_wordform,
-        cuneiex:ra__pa__asz_s_il2_li2_e2_a_wordform,
-        cuneiex:sa_am_su2_i_lu_na_wordform,
-        cuneiex:sag_bi_1_disz__kam_wordform,
-        cuneiex:sag_bi_2_disz__kam_wordform,
-        cuneiex:sanga_wordform,
-        cuneiex:sar_wordform,
-        cuneiex:sila_dagal_wordform,
-        cuneiex:sin_ri_me_ni_wordform,
-        cuneiex:sza3_ga_a_ni_wordform,
-        cuneiex:szam2__ti_la_bi__sze3_wordform,
-        cuneiex:szu__d_mar__tu_wordform,
-        cuneiex:u3_wordform,
-        cuneiex:u4_wordform,
-        cuneiex:ud_kur2_sze3_wordform,
-        cuneiex:ugula_wordform,
-        cuneiex:x_is_PU2_wordform,
-        cuneiex:x_wordform,
-        cuneiex:x_x_s_i2_wordform,
-        <https://situx.github.io/cuneiformontology/examples/o147/â€¦_wordform> .
+        cuneiex:O147_transliteration1_reverse_line9_char6_charocc .
 
 cuneiex:O147_transliteration1_lexicon a lemon:Lexicon ;
     rdfs:label "Lexicon for O147 generated from transliteration 1"@en .
@@ -1168,6 +1106,34 @@ cunei:Transliteration rdfs:subClassOf prov:Entity .
 
 cunei:WordFormOccurrenceCollection rdfs:label "WordFormOccurrence Collection"@en ;
     rdfs:subClassOf skos:Collection .
+
+cuneiex:1_u_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: 1(u)" ;
+    lemon:writtenRepASCII "1(u)"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line3_word1_wordformocc ;
+    skos:definition "1(u)" .
+
+cuneiex:2_3_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: 2/3" ;
+    lemon:writtenRepASCII "2/3"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line1_word2_wordformocc ;
+    skos:definition "2/3" .
+
+cuneiex:2_u__8__disz__kam_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: 2(u)-8?(disz)-kam" ;
+    lemon:writtenRepASCII "2(u)-8?(disz)-kam"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_reverse_line12_word4_wordformocc ;
+    skos:definition "2(u)-8?(disz)-kam" .
+
+cuneiex:5_disz_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: 5(disz)" ;
+    lemon:writtenRepASCII "5(disz)"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line1_word1_wordformocc ;
+    skos:definition "5(disz)" .
 
 cuneiex:O147 a cunei:Tablet ;
     rdfs:label "Cuneiform Artifact: O147" ;
@@ -1457,6 +1423,441 @@ cuneiex:O147_writtenText_reading a cidoc:TX5_Reading ;
     rdfs:label "Reading interpretation of the written text of O147" ;
     cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration .
 
+cuneiex:a_ap_pa_ta__nu_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: a-ap-pa-ta?-nu?" ;
+    lemon:writtenRepASCII "a-ap-pa-ta?-nu?"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line9_word2_wordformocc ;
+    skos:definition "a-ap-pa-ta?-nu?" .
+
+cuneiex:al_dug_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: al-dug#" ;
+    lemon:writtenRepASCII "al-dug#"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_bottom_line3_word2_wordformocc ;
+    skos:definition "al-dug#" .
+
+cuneiex:al_til_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: al#-til#" ;
+    lemon:writtenRepASCII "al#-til#"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_bottom_line2_word2_wordformocc ;
+    skos:definition "al#-til#" .
+
+cuneiex:d_AMAR_UTU_la_ma_sa3_szu_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: {d}AMAR-UTU-la-ma-sa3-szu" ;
+    lemon:writtenRepASCII "{d}AMAR-UTU-la-ma-sa3-szu"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_reverse_line6_word2_wordformocc ;
+    skos:definition "{d}AMAR-UTU-la-ma-sa3-szu" .
+
+cuneiex:d_AMAR_UTU_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: {d}AMAR-UTU" ;
+    lemon:writtenRepASCII "{d}AMAR-UTU"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_reverse_line1_word4_wordformocc ;
+    skos:definition "{d}AMAR-UTU" .
+
+cuneiex:d_NIN_KAL__LA_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: {d}NIN-KAL?-LA" ;
+    lemon:writtenRepASCII "{d}NIN-KAL?-LA"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_reverse_line11_word2_wordformocc ;
+    skos:definition "{d}NIN-KAL?-LA" .
+
+cuneiex:d__utu_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: {d}[utu]" ;
+    lemon:writtenRepASCII "{d}[utu]"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_reverse_line5_word4_wordformocc ;
+    skos:definition "{d}[utu]" .
+
+cuneiex:d_a_a_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: {d}a-a" ;
+    lemon:writtenRepASCII "{d}a-a"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_reverse_line1_word3_wordformocc ;
+    skos:definition "{d}a-a" .
+
+cuneiex:d_utu_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: {d}utu",
+        "WordForm: {d}utu#" ;
+    lemon:writtenRepASCII "{d}utu"^^cunei:ASCIILiteral,
+        "{d}utu#"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_reverse_line13_word3_wordformocc,
+        cuneiex:O147_transliteration1_reverse_line1_word2_wordformocc,
+        cuneiex:O147_transliteration1_reverse_line4_word4_wordformocc,
+        cuneiex:O147_transliteration1_reverse_line7_word5_wordformocc ;
+    skos:definition "{d}utu",
+        "{d}utu#" .
+
+cuneiex:da_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: da" ;
+    lemon:writtenRepASCII "da"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode "𒁕"^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line4_word1_wordformocc,
+        cuneiex:O147_transliteration1_obverse_line5_word2_wordformocc ;
+    skos:definition "da" .
+
+cuneiex:dingir_pi4___d_a_a_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: dingir-pi4!-{d}a-a" ;
+    lemon:writtenRepASCII "dingir-pi4!-{d}a-a"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_reverse_line4_word2_wordformocc ;
+    skos:definition "dingir-pi4!-{d}a-a" .
+
+cuneiex:dingir_szu_a_bu_szu_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: dingir-szu-a-bu-szu#" ;
+    lemon:writtenRepASCII "dingir-szu-a-bu-szu#"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_reverse_line9_word2_wordformocc ;
+    skos:definition "dingir-szu-a-bu-szu#" .
+
+cuneiex:dumu_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: dumu" ;
+    lemon:writtenRepASCII "dumu"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode "𒌉"^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line11_word1_wordformocc,
+        cuneiex:O147_transliteration1_obverse_line9_word1_wordformocc,
+        cuneiex:O147_transliteration1_reverse_line11_word1_wordformocc,
+        cuneiex:O147_transliteration1_reverse_line9_word1_wordformocc ;
+    skos:definition "dumu" .
+
+cuneiex:e2_du3_a_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: e2-du3-a" ;
+    lemon:writtenRepASCII "e2-du3-a"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line1_word4_wordformocc ;
+    skos:definition "e2-du3-a" .
+
+cuneiex:e2_ki_ud_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: e2-ki#-ud#" ;
+    lemon:writtenRepASCII "e2-ki#-ud#"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line3_word3_wordformocc ;
+    skos:definition "e2-ki#-ud#" .
+
+cuneiex:e2_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: e2",
+        "WordForm: e2#?" ;
+    lemon:writtenRepASCII "e2"^^cunei:ASCIILiteral,
+        "e2#?"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line4_word2_wordformocc,
+        cuneiex:O147_transliteration1_obverse_line5_word3_wordformocc,
+        cuneiex:O147_transliteration1_reverse_line13_word2_wordformocc ;
+    skos:definition "e2",
+        "e2#?" .
+
+cuneiex:gisz_ig_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: {gisz}ig" ;
+    lemon:writtenRepASCII "{gisz}ig"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line2_word2_wordformocc ;
+    skos:definition "{gisz}ig" .
+
+cuneiex:gisz_kesz2_da_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: {gisz}kesz2-da" ;
+    lemon:writtenRepASCII "{gisz}kesz2-da"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line2_word1_wordformocc ;
+    skos:definition "{gisz}kesz2-da" .
+
+cuneiex:gisz_sag_kul_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: {gisz}sag-kul" ;
+    lemon:writtenRepASCII "{gisz}sag-kul"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line2_word3_wordformocc ;
+    skos:definition "{gisz}sag-kul" .
+
+cuneiex:gub_ba_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: gub-ba" ;
+    lemon:writtenRepASCII "gub-ba"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line2_word4_wordformocc ;
+    skos:definition "gub-ba" .
+
+cuneiex:igi_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: igi" ;
+    lemon:writtenRepASCII "igi"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_reverse_line10_word1_wordformocc,
+        cuneiex:O147_transliteration1_reverse_line4_word1_wordformocc,
+        cuneiex:O147_transliteration1_reverse_line5_word1_wordformocc,
+        cuneiex:O147_transliteration1_reverse_line6_word1_wordformocc,
+        cuneiex:O147_transliteration1_reverse_line7_word1_wordformocc,
+        cuneiex:O147_transliteration1_reverse_line8_word1_wordformocc ;
+    skos:definition "igi" .
+
+cuneiex:in__na_an_la2_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: in-[na-an-la2]" ;
+    lemon:writtenRepASCII "in-[na-an-la2]"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_bottom_line1_word3_wordformocc ;
+    skos:definition "in-[na-an-la2]" .
+
+cuneiex:in_pad3_de3_mesz_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: in-pad3-de3-mesz" ;
+    lemon:writtenRepASCII "in-pad3-de3-mesz"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_reverse_line3_word1_wordformocc ;
+    skos:definition "in-pad3-de3-mesz" .
+
+cuneiex:in_szi_in_szam2_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: in-szi-in-szam2#" ;
+    lemon:writtenRepASCII "in-szi-in-szam2#"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line12_word1_wordformocc ;
+    skos:definition "in-szi-in-szam2#" .
+
+cuneiex:inim_bi_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: inim#-bi#" ;
+    lemon:writtenRepASCII "inim#-bi#"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_bottom_line2_word1_wordformocc ;
+    skos:definition "inim#-bi#" .
+
+cuneiex:inim_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: inim" ;
+    lemon:writtenRepASCII "inim"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_bottom_line5_word1_wordformocc ;
+    skos:definition "inim" .
+
+cuneiex:innin_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: innin" ;
+    lemon:writtenRepASCII "innin"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_reverse_line12_word2_wordformocc ;
+    skos:definition "innin" .
+
+cuneiex:isz_du_ki_nu_um_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: isz-du-ki-nu-um" ;
+    lemon:writtenRepASCII "isz-du-ki-nu-um"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line5_word4_wordformocc ;
+    skos:definition "isz-du-ki-nu-um" .
+
+cuneiex:isz_me_sin_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: isz-me-sin" ;
+    lemon:writtenRepASCII "isz-me-sin"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_reverse_line5_word2_wordformocc ;
+    skos:definition "isz-me-sin" .
+
+cuneiex:iti_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: iti#" ;
+    lemon:writtenRepASCII "iti#"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_reverse_line12_word1_wordformocc ;
+    skos:definition "iti#" .
+
+cuneiex:ki_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: ki#" ;
+    lemon:writtenRepASCII "ki#"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line8_word1_wordformocc ;
+    skos:definition "ki#" .
+
+cuneiex:ku3_babbar_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: ku3-babbar" ;
+    lemon:writtenRepASCII "ku3-babbar"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_bottom_line1_word2_wordformocc ;
+    skos:definition "ku3-babbar" .
+
+cuneiex:lu2__d_utu_asz_szar_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: lu2-{d}utu-asz-szar" ;
+    lemon:writtenRepASCII "lu2-{d}utu-asz-szar"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line4_word3_wordformocc ;
+    skos:definition "lu2-{d}utu-asz-szar" .
+
+cuneiex:lu2_lu2_ra_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: lu2-lu2-ra" ;
+    lemon:writtenRepASCII "lu2-lu2-ra"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_bottom_line4_word2_wordformocc ;
+    skos:definition "lu2-lu2-ra" .
+
+cuneiex:lukur_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: lukur" ;
+    lemon:writtenRepASCII "lukur"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode "𒊩𒈨"^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_reverse_line7_word4_wordformocc ;
+    skos:definition "lukur" .
+
+cuneiex:m_sa3_ap_h_u_li__ip_h_ur_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: {m}sa3-ap-h,u-li!-ip-h,ur" ;
+    lemon:writtenRepASCII "{m}sa3-ap-h,u-li!-ip-h,ur"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line10_word1_wordformocc ;
+    skos:definition "{m}sa3-ap-h,u-li!-ip-h,ur" .
+
+cuneiex:mu_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: mu",
+        "WordForm: mu#" ;
+    lemon:writtenRepASCII "mu"^^cunei:ASCIILiteral,
+        "mu#"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode "𒈬"^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_reverse_line13_word1_wordformocc,
+        cuneiex:O147_transliteration1_reverse_line1_word1_wordformocc ;
+    skos:definition "mu",
+        "mu#" .
+
+cuneiex:nu_ga2_ga2_a_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: nu-ga2-ga2-a" ;
+    lemon:writtenRepASCII "nu-ga2-ga2-a"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_bottom_line5_word2_wordformocc ;
+    skos:definition "nu-ga2-ga2-a" .
+
+cuneiex:nu_ur2_an_tim_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: nu-ur2-an-tim" ;
+    lemon:writtenRepASCII "nu-ur2-an-tim"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_reverse_line8_word2_wordformocc ;
+    skos:definition "nu-ur2-an-tim" .
+
+cuneiex:ra__pa__asz_s_il2_li2_e2_a_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: ra-<pa>-asz-s,il2-li2-e2-a" ;
+    lemon:writtenRepASCII "ra-<pa>-asz-s,il2-li2-e2-a"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_reverse_line7_word2_wordformocc ;
+    skos:definition "ra-<pa>-asz-s,il2-li2-e2-a" .
+
+cuneiex:sa_am_su2_i_lu_na_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: sa-am-su2-i-lu-na" ;
+    lemon:writtenRepASCII "sa-am-su2-i-lu-na"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_reverse_line2_word2_wordformocc ;
+    skos:definition "sa-am-su2-i-lu-na" .
+
+cuneiex:sag_bi_1_disz__kam_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: sag-bi-1(disz)-kam" ;
+    lemon:writtenRepASCII "sag-bi-1(disz)-kam"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line6_word1_wordformocc ;
+    skos:definition "sag-bi-1(disz)-kam" .
+
+cuneiex:sag_bi_2_disz__kam_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: sag-bi-2(disz)-kam" ;
+    lemon:writtenRepASCII "sag-bi-2(disz)-kam"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line7_word1_wordformocc ;
+    skos:definition "sag-bi-2(disz)-kam" .
+
+cuneiex:sanga_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: sanga" ;
+    lemon:writtenRepASCII "sanga"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_reverse_line4_word3_wordformocc,
+        cuneiex:O147_transliteration1_reverse_line5_word3_wordformocc ;
+    skos:definition "sanga" .
+
+cuneiex:sar_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: sar" ;
+    lemon:writtenRepASCII "sar"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode "𒊬"^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line1_word3_wordformocc,
+        cuneiex:O147_transliteration1_obverse_line3_word2_wordformocc ;
+    skos:definition "sar" .
+
+cuneiex:sila_dagal_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: sila#-dagal" ;
+    lemon:writtenRepASCII "sila#-dagal"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line6_word2_wordformocc ;
+    skos:definition "sila#-dagal" .
+
+cuneiex:sin_ri_me_ni_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: sin-ri-me-ni" ;
+    lemon:writtenRepASCII "sin-ri-me-ni"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_reverse_line10_word2_wordformocc ;
+    skos:definition "sin-ri-me-ni" .
+
+cuneiex:sza3_ga_a_ni_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: sza3#-ga-a-ni" ;
+    lemon:writtenRepASCII "sza3#-ga-a-ni"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_bottom_line3_word1_wordformocc ;
+    skos:definition "sza3#-ga-a-ni" .
+
+cuneiex:szam2__ti_la_bi__sze3_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: [szam2]-ti-la-bi#-[sze3]" ;
+    lemon:writtenRepASCII "[szam2]-ti-la-bi#-[sze3]"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line13_word1_wordformocc ;
+    skos:definition "[szam2]-ti-la-bi#-[sze3]" .
+
+cuneiex:szu__d_mar__tu_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: szu-{d}mar!-tu" ;
+    lemon:writtenRepASCII "szu-{d}mar!-tu"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line11_word2_wordformocc ;
+    skos:definition "szu-{d}mar!-tu" .
+
+cuneiex:u3_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: u3" ;
+    lemon:writtenRepASCII "u3"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line5_word1_wordformocc,
+        cuneiex:O147_transliteration1_reverse_line2_word1_wordformocc ;
+    skos:definition "u3" .
+
+cuneiex:u4_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: u4" ;
+    lemon:writtenRepASCII "u4"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode "𒌓"^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_reverse_line12_word3_wordformocc ;
+    skos:definition "u4" .
+
+cuneiex:ud_kur2_sze3_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: ud-kur2-sze3" ;
+    lemon:writtenRepASCII "ud-kur2-sze3"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_bottom_line4_word1_wordformocc ;
+    skos:definition "ud-kur2-sze3" .
+
+cuneiex:ugula_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: ugula" ;
+    lemon:writtenRepASCII "ugula"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_reverse_line7_word3_wordformocc ;
+    skos:definition "ugula" .
+
+cuneiex:x_is_PU2_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: x#-is-PU2" ;
+    lemon:writtenRepASCII "x#-is-PU2"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line8_word2_wordformocc ;
+    skos:definition "x#-is-PU2" .
+
+cuneiex:x_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: x" ;
+    lemon:writtenRepASCII "x"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_reverse_line13_word4_wordformocc,
+        cuneiex:O147_transliteration1_reverse_line13_word5_wordformocc,
+        cuneiex:O147_transliteration1_reverse_line13_word6_wordformocc ;
+    skos:definition "x" .
+
+cuneiex:x_x_s_i2_wordform a cunei:WordForm ;
+    rdfs:label "WordForm: x#-x-s,i2" ;
+    lemon:writtenRepASCII "x#-x-s,i2"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_obverse_line7_word2_wordformocc ;
+    skos:definition "x#-x-s,i2" .
+
+<https://situx.github.io/cuneiformontology/examples/o147/â€¦_wordform> a cunei:WordForm ;
+    rdfs:label "WordForm: [â€¦]" ;
+    lemon:writtenRepASCII "[â€¦]"^^cunei:ASCIILiteral ;
+    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
+    cunei:isAttested cuneiex:O147_transliteration1_bottom_line1_word1_wordformocc ;
+    skos:definition "[â€¦]" .
+
 <https://situx.github.io/cuneiformontology/signlist/character_am_gu4×kur> a graphemon:Grapheme ;
     rdfs:label "Character: AM (GU4×KUR)" ;
     graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_am_gu4×kur_reading_am> .
@@ -1529,34 +1930,6 @@ cuneiex:O147_writtenText_reading a cidoc:TX5_Reading ;
 
 cidoc:TX7_WrittenTextFragment rdfs:label "written text fragment"@en ;
     rdfs:subClassOf cidoc:TX1_WrittenText .
-
-cuneiex:1_u_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: 1(u)" ;
-    lemon:writtenRepASCII "1(u)"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line3_word1_wordformocc ;
-    skos:definition "1(u)" .
-
-cuneiex:2_3_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: 2/3" ;
-    lemon:writtenRepASCII "2/3"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line1_word2_wordformocc ;
-    skos:definition "2/3" .
-
-cuneiex:2_u__8__disz__kam_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: 2(u)-8?(disz)-kam" ;
-    lemon:writtenRepASCII "2(u)-8?(disz)-kam"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_reverse_line12_word4_wordformocc ;
-    skos:definition "2(u)-8?(disz)-kam" .
-
-cuneiex:5_disz_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: 5(disz)" ;
-    lemon:writtenRepASCII "5(disz)"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line1_word1_wordformocc ;
-    skos:definition "5(disz)" .
 
 cuneiex:O147_bottom_line1_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 1 4])" ;
@@ -2248,441 +2621,6 @@ cuneiex:O147_transliteration1_reverse_line9 a cunei:TransliterationLine ;
     cunei:consistsOf cuneiex:O147_transliteration1_reverse_line9_word1_wordformocc,
         cuneiex:O147_transliteration1_reverse_line9_word2_wordformocc ;
     skos:definition "9. dumu dingir-szu-a-bu-szu#" .
-
-cuneiex:a_ap_pa_ta__nu_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: a-ap-pa-ta?-nu?" ;
-    lemon:writtenRepASCII "a-ap-pa-ta?-nu?"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line9_word2_wordformocc ;
-    skos:definition "a-ap-pa-ta?-nu?" .
-
-cuneiex:al_dug_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: al-dug#" ;
-    lemon:writtenRepASCII "al-dug#"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_bottom_line3_word2_wordformocc ;
-    skos:definition "al-dug#" .
-
-cuneiex:al_til_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: al#-til#" ;
-    lemon:writtenRepASCII "al#-til#"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_bottom_line2_word2_wordformocc ;
-    skos:definition "al#-til#" .
-
-cuneiex:d_AMAR_UTU_la_ma_sa3_szu_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: {d}AMAR-UTU-la-ma-sa3-szu" ;
-    lemon:writtenRepASCII "{d}AMAR-UTU-la-ma-sa3-szu"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_reverse_line6_word2_wordformocc ;
-    skos:definition "{d}AMAR-UTU-la-ma-sa3-szu" .
-
-cuneiex:d_AMAR_UTU_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: {d}AMAR-UTU" ;
-    lemon:writtenRepASCII "{d}AMAR-UTU"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_reverse_line1_word4_wordformocc ;
-    skos:definition "{d}AMAR-UTU" .
-
-cuneiex:d_NIN_KAL__LA_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: {d}NIN-KAL?-LA" ;
-    lemon:writtenRepASCII "{d}NIN-KAL?-LA"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_reverse_line11_word2_wordformocc ;
-    skos:definition "{d}NIN-KAL?-LA" .
-
-cuneiex:d__utu_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: {d}[utu]" ;
-    lemon:writtenRepASCII "{d}[utu]"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_reverse_line5_word4_wordformocc ;
-    skos:definition "{d}[utu]" .
-
-cuneiex:d_a_a_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: {d}a-a" ;
-    lemon:writtenRepASCII "{d}a-a"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_reverse_line1_word3_wordformocc ;
-    skos:definition "{d}a-a" .
-
-cuneiex:d_utu_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: {d}utu",
-        "WordForm: {d}utu#" ;
-    lemon:writtenRepASCII "{d}utu"^^cunei:ASCIILiteral,
-        "{d}utu#"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_reverse_line13_word3_wordformocc,
-        cuneiex:O147_transliteration1_reverse_line1_word2_wordformocc,
-        cuneiex:O147_transliteration1_reverse_line4_word4_wordformocc,
-        cuneiex:O147_transliteration1_reverse_line7_word5_wordformocc ;
-    skos:definition "{d}utu",
-        "{d}utu#" .
-
-cuneiex:da_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: da" ;
-    lemon:writtenRepASCII "da"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode "𒁕"^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line4_word1_wordformocc,
-        cuneiex:O147_transliteration1_obverse_line5_word2_wordformocc ;
-    skos:definition "da" .
-
-cuneiex:dingir_pi4___d_a_a_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: dingir-pi4!-{d}a-a" ;
-    lemon:writtenRepASCII "dingir-pi4!-{d}a-a"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_reverse_line4_word2_wordformocc ;
-    skos:definition "dingir-pi4!-{d}a-a" .
-
-cuneiex:dingir_szu_a_bu_szu_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: dingir-szu-a-bu-szu#" ;
-    lemon:writtenRepASCII "dingir-szu-a-bu-szu#"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_reverse_line9_word2_wordformocc ;
-    skos:definition "dingir-szu-a-bu-szu#" .
-
-cuneiex:dumu_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: dumu" ;
-    lemon:writtenRepASCII "dumu"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode "𒌉"^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line11_word1_wordformocc,
-        cuneiex:O147_transliteration1_obverse_line9_word1_wordformocc,
-        cuneiex:O147_transliteration1_reverse_line11_word1_wordformocc,
-        cuneiex:O147_transliteration1_reverse_line9_word1_wordformocc ;
-    skos:definition "dumu" .
-
-cuneiex:e2_du3_a_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: e2-du3-a" ;
-    lemon:writtenRepASCII "e2-du3-a"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line1_word4_wordformocc ;
-    skos:definition "e2-du3-a" .
-
-cuneiex:e2_ki_ud_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: e2-ki#-ud#" ;
-    lemon:writtenRepASCII "e2-ki#-ud#"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line3_word3_wordformocc ;
-    skos:definition "e2-ki#-ud#" .
-
-cuneiex:e2_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: e2",
-        "WordForm: e2#?" ;
-    lemon:writtenRepASCII "e2"^^cunei:ASCIILiteral,
-        "e2#?"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line4_word2_wordformocc,
-        cuneiex:O147_transliteration1_obverse_line5_word3_wordformocc,
-        cuneiex:O147_transliteration1_reverse_line13_word2_wordformocc ;
-    skos:definition "e2",
-        "e2#?" .
-
-cuneiex:gisz_ig_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: {gisz}ig" ;
-    lemon:writtenRepASCII "{gisz}ig"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line2_word2_wordformocc ;
-    skos:definition "{gisz}ig" .
-
-cuneiex:gisz_kesz2_da_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: {gisz}kesz2-da" ;
-    lemon:writtenRepASCII "{gisz}kesz2-da"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line2_word1_wordformocc ;
-    skos:definition "{gisz}kesz2-da" .
-
-cuneiex:gisz_sag_kul_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: {gisz}sag-kul" ;
-    lemon:writtenRepASCII "{gisz}sag-kul"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line2_word3_wordformocc ;
-    skos:definition "{gisz}sag-kul" .
-
-cuneiex:gub_ba_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: gub-ba" ;
-    lemon:writtenRepASCII "gub-ba"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line2_word4_wordformocc ;
-    skos:definition "gub-ba" .
-
-cuneiex:igi_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: igi" ;
-    lemon:writtenRepASCII "igi"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_reverse_line10_word1_wordformocc,
-        cuneiex:O147_transliteration1_reverse_line4_word1_wordformocc,
-        cuneiex:O147_transliteration1_reverse_line5_word1_wordformocc,
-        cuneiex:O147_transliteration1_reverse_line6_word1_wordformocc,
-        cuneiex:O147_transliteration1_reverse_line7_word1_wordformocc,
-        cuneiex:O147_transliteration1_reverse_line8_word1_wordformocc ;
-    skos:definition "igi" .
-
-cuneiex:in__na_an_la2_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: in-[na-an-la2]" ;
-    lemon:writtenRepASCII "in-[na-an-la2]"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_bottom_line1_word3_wordformocc ;
-    skos:definition "in-[na-an-la2]" .
-
-cuneiex:in_pad3_de3_mesz_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: in-pad3-de3-mesz" ;
-    lemon:writtenRepASCII "in-pad3-de3-mesz"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_reverse_line3_word1_wordformocc ;
-    skos:definition "in-pad3-de3-mesz" .
-
-cuneiex:in_szi_in_szam2_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: in-szi-in-szam2#" ;
-    lemon:writtenRepASCII "in-szi-in-szam2#"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line12_word1_wordformocc ;
-    skos:definition "in-szi-in-szam2#" .
-
-cuneiex:inim_bi_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: inim#-bi#" ;
-    lemon:writtenRepASCII "inim#-bi#"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_bottom_line2_word1_wordformocc ;
-    skos:definition "inim#-bi#" .
-
-cuneiex:inim_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: inim" ;
-    lemon:writtenRepASCII "inim"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_bottom_line5_word1_wordformocc ;
-    skos:definition "inim" .
-
-cuneiex:innin_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: innin" ;
-    lemon:writtenRepASCII "innin"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_reverse_line12_word2_wordformocc ;
-    skos:definition "innin" .
-
-cuneiex:isz_du_ki_nu_um_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: isz-du-ki-nu-um" ;
-    lemon:writtenRepASCII "isz-du-ki-nu-um"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line5_word4_wordformocc ;
-    skos:definition "isz-du-ki-nu-um" .
-
-cuneiex:isz_me_sin_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: isz-me-sin" ;
-    lemon:writtenRepASCII "isz-me-sin"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_reverse_line5_word2_wordformocc ;
-    skos:definition "isz-me-sin" .
-
-cuneiex:iti_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: iti#" ;
-    lemon:writtenRepASCII "iti#"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_reverse_line12_word1_wordformocc ;
-    skos:definition "iti#" .
-
-cuneiex:ki_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: ki#" ;
-    lemon:writtenRepASCII "ki#"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line8_word1_wordformocc ;
-    skos:definition "ki#" .
-
-cuneiex:ku3_babbar_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: ku3-babbar" ;
-    lemon:writtenRepASCII "ku3-babbar"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_bottom_line1_word2_wordformocc ;
-    skos:definition "ku3-babbar" .
-
-cuneiex:lu2__d_utu_asz_szar_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: lu2-{d}utu-asz-szar" ;
-    lemon:writtenRepASCII "lu2-{d}utu-asz-szar"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line4_word3_wordformocc ;
-    skos:definition "lu2-{d}utu-asz-szar" .
-
-cuneiex:lu2_lu2_ra_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: lu2-lu2-ra" ;
-    lemon:writtenRepASCII "lu2-lu2-ra"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_bottom_line4_word2_wordformocc ;
-    skos:definition "lu2-lu2-ra" .
-
-cuneiex:lukur_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: lukur" ;
-    lemon:writtenRepASCII "lukur"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode "𒊩𒈨"^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_reverse_line7_word4_wordformocc ;
-    skos:definition "lukur" .
-
-cuneiex:m_sa3_ap_h_u_li__ip_h_ur_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: {m}sa3-ap-h,u-li!-ip-h,ur" ;
-    lemon:writtenRepASCII "{m}sa3-ap-h,u-li!-ip-h,ur"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line10_word1_wordformocc ;
-    skos:definition "{m}sa3-ap-h,u-li!-ip-h,ur" .
-
-cuneiex:mu_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: mu",
-        "WordForm: mu#" ;
-    lemon:writtenRepASCII "mu"^^cunei:ASCIILiteral,
-        "mu#"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode "𒈬"^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_reverse_line13_word1_wordformocc,
-        cuneiex:O147_transliteration1_reverse_line1_word1_wordformocc ;
-    skos:definition "mu",
-        "mu#" .
-
-cuneiex:nu_ga2_ga2_a_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: nu-ga2-ga2-a" ;
-    lemon:writtenRepASCII "nu-ga2-ga2-a"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_bottom_line5_word2_wordformocc ;
-    skos:definition "nu-ga2-ga2-a" .
-
-cuneiex:nu_ur2_an_tim_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: nu-ur2-an-tim" ;
-    lemon:writtenRepASCII "nu-ur2-an-tim"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_reverse_line8_word2_wordformocc ;
-    skos:definition "nu-ur2-an-tim" .
-
-cuneiex:ra__pa__asz_s_il2_li2_e2_a_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: ra-<pa>-asz-s,il2-li2-e2-a" ;
-    lemon:writtenRepASCII "ra-<pa>-asz-s,il2-li2-e2-a"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_reverse_line7_word2_wordformocc ;
-    skos:definition "ra-<pa>-asz-s,il2-li2-e2-a" .
-
-cuneiex:sa_am_su2_i_lu_na_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: sa-am-su2-i-lu-na" ;
-    lemon:writtenRepASCII "sa-am-su2-i-lu-na"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_reverse_line2_word2_wordformocc ;
-    skos:definition "sa-am-su2-i-lu-na" .
-
-cuneiex:sag_bi_1_disz__kam_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: sag-bi-1(disz)-kam" ;
-    lemon:writtenRepASCII "sag-bi-1(disz)-kam"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line6_word1_wordformocc ;
-    skos:definition "sag-bi-1(disz)-kam" .
-
-cuneiex:sag_bi_2_disz__kam_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: sag-bi-2(disz)-kam" ;
-    lemon:writtenRepASCII "sag-bi-2(disz)-kam"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line7_word1_wordformocc ;
-    skos:definition "sag-bi-2(disz)-kam" .
-
-cuneiex:sanga_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: sanga" ;
-    lemon:writtenRepASCII "sanga"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_reverse_line4_word3_wordformocc,
-        cuneiex:O147_transliteration1_reverse_line5_word3_wordformocc ;
-    skos:definition "sanga" .
-
-cuneiex:sar_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: sar" ;
-    lemon:writtenRepASCII "sar"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode "𒊬"^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line1_word3_wordformocc,
-        cuneiex:O147_transliteration1_obverse_line3_word2_wordformocc ;
-    skos:definition "sar" .
-
-cuneiex:sila_dagal_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: sila#-dagal" ;
-    lemon:writtenRepASCII "sila#-dagal"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line6_word2_wordformocc ;
-    skos:definition "sila#-dagal" .
-
-cuneiex:sin_ri_me_ni_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: sin-ri-me-ni" ;
-    lemon:writtenRepASCII "sin-ri-me-ni"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_reverse_line10_word2_wordformocc ;
-    skos:definition "sin-ri-me-ni" .
-
-cuneiex:sza3_ga_a_ni_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: sza3#-ga-a-ni" ;
-    lemon:writtenRepASCII "sza3#-ga-a-ni"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_bottom_line3_word1_wordformocc ;
-    skos:definition "sza3#-ga-a-ni" .
-
-cuneiex:szam2__ti_la_bi__sze3_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: [szam2]-ti-la-bi#-[sze3]" ;
-    lemon:writtenRepASCII "[szam2]-ti-la-bi#-[sze3]"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line13_word1_wordformocc ;
-    skos:definition "[szam2]-ti-la-bi#-[sze3]" .
-
-cuneiex:szu__d_mar__tu_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: szu-{d}mar!-tu" ;
-    lemon:writtenRepASCII "szu-{d}mar!-tu"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line11_word2_wordformocc ;
-    skos:definition "szu-{d}mar!-tu" .
-
-cuneiex:u3_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: u3" ;
-    lemon:writtenRepASCII "u3"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line5_word1_wordformocc,
-        cuneiex:O147_transliteration1_reverse_line2_word1_wordformocc ;
-    skos:definition "u3" .
-
-cuneiex:u4_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: u4" ;
-    lemon:writtenRepASCII "u4"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode "𒌓"^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_reverse_line12_word3_wordformocc ;
-    skos:definition "u4" .
-
-cuneiex:ud_kur2_sze3_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: ud-kur2-sze3" ;
-    lemon:writtenRepASCII "ud-kur2-sze3"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_bottom_line4_word1_wordformocc ;
-    skos:definition "ud-kur2-sze3" .
-
-cuneiex:ugula_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: ugula" ;
-    lemon:writtenRepASCII "ugula"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_reverse_line7_word3_wordformocc ;
-    skos:definition "ugula" .
-
-cuneiex:x_is_PU2_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: x#-is-PU2" ;
-    lemon:writtenRepASCII "x#-is-PU2"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line8_word2_wordformocc ;
-    skos:definition "x#-is-PU2" .
-
-cuneiex:x_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: x" ;
-    lemon:writtenRepASCII "x"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_reverse_line13_word4_wordformocc,
-        cuneiex:O147_transliteration1_reverse_line13_word5_wordformocc,
-        cuneiex:O147_transliteration1_reverse_line13_word6_wordformocc ;
-    skos:definition "x" .
-
-cuneiex:x_x_s_i2_wordform a cunei:WordForm ;
-    rdfs:label "WordForm: x#-x-s,i2" ;
-    lemon:writtenRepASCII "x#-x-s,i2"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_obverse_line7_word2_wordformocc ;
-    skos:definition "x#-x-s,i2" .
-
-<https://situx.github.io/cuneiformontology/examples/o147/â€¦_wordform> a cunei:WordForm ;
-    rdfs:label "WordForm: [â€¦]" ;
-    lemon:writtenRepASCII "[â€¦]"^^cunei:ASCIILiteral ;
-    lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
-    cunei:isAttested cuneiex:O147_transliteration1_bottom_line1_word1_wordformocc ;
-    skos:definition "[â€¦]" .
 
 <https://situx.github.io/cuneiformontology/signlist/character_ab> a graphemon:Grapheme ;
     rdfs:label "Character: AB" ;
