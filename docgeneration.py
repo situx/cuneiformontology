@@ -2065,7 +2065,7 @@ class OntDocGeneration:
                     else:
                         f.write(imagestemplate.replace("{{carousel}}",carousel).replace("{{image}}",str(image)).replace("{{imagetitle}}",str(image)[0:str(image).rfind('.')]))
                     if len(foundmedia["image"])>3:
-                        carousel="carousel-item"
+                        carousel="carousel-item d-flex justify-content-center"
             if len(foundmedia["image"])>3:
                 f.write(imagecarouselfooter)
             if len(textannos)>0:
