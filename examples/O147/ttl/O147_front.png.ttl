@@ -2,7 +2,7 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix geocrs: <http://www.opengis.net/ont/crs/> .
-@prefix msp: <http://purl.org/meshsparql/> .
+@prefix msp: <http://purl.org/meshsparql#> .
 @prefix ns1: <http://purl.org/dc/terms/> .
 @prefix ns2: <http://www.opengis.net/ont/geosparql#> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
@@ -73,6 +73,8 @@
     rdfs:subClassOf skos:Collection .
 
 msp:MeshLabelSelector rdfs:subClassOf oa:Selector .
+
+msp:PCAReference rdfs:subClassOf msp:ComputingReference .
 
 geocrs:CoordinateOperation a owl:Class ;
     rdfs:label "coordinate operation"@en .
@@ -966,12 +968,11 @@ oa:WKTSelector a owl:Class ;
     ns2:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
     rdf:value "POLYGON Z ((887.3894451803412 -1565.285729152795 0.0005492290947586, 684.245335350352 -1557.241969724713 0.0005492290947586, 680.2226452788045 -1374.2464522668088 0.0005492290947586, 891.4120742419534 -1366.2026852139559 0.0005492290947586, 887.3894451803412 -1565.285729152795 11.795097351074219, 684.245335350352 -1557.241969724713 11.795097351074219, 680.2226452788045 -1374.2464522668088 11.795097351074219, 891.4120742419534 -1366.2026852139559 11.795097351074219, 887.3894451803412 -1565.285729152795 0.0005492290947586))"^^oa:wktLiteral .
 
-<https://situx.github.io/cuneiformontology/examples/o147/imgannotations/86c668c6-2039-42f4-b447-cb7b014ed130_target3d_selector_compref0> a msp:ComputingReference ;
+<https://situx.github.io/cuneiformontology/examples/o147/imgannotations/86c668c6-2039-42f4-b447-cb7b014ed130_target3d_selector_compref0> a msp:PCAReference ;
     rdfs:label "Computing Reference of 3D Annotation target selector of Annotation of Glyph at O147 front line 1 char 2 on a 3D Mesh" ;
-    msp:comprefType "PCA"^^xsd:string ;
-    msp:referenceVector "[1209.5001    -824.49994     -8.0284395] [-886.213   -824.5536  -205.05568] [ 1209.5795   -2253.4421      -8.483341] [1226.4071 -824.4418 -187.862 ]"^^xsd:string ;
+    msp:referenceVector "[1209.5001    -824.49994     -8.0284395] [-886.213   -824.5536  -205.05568] [ 1209.5795   -2253.4421      -8.483341] [1226.4071 -824.4418 -187.862 ]"^^msp:vectorLiteral ;
     msp:stable true ;
-    msp:transformationMatrix "[[ 1.00000000e+00  2.16660739e-09  1.32984419e-09  1.20950012e+03] [-2.16660714e-09  1.00000000e+00  1.83508149e-09 -8.24499970e+02] [-1.32984422e-09 -1.83508138e-09  1.00000000e+00 -8.02843825e+00] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^xsd:string ;
+    msp:transformationMatrix "[[ 1.00000000e+00  2.16660739e-09  1.32984419e-09  1.20950012e+03] [-2.16660714e-09  1.00000000e+00  1.83508149e-09 -8.24499970e+02] [-1.32984422e-09 -1.83508138e-09  1.00000000e+00 -8.02843825e+00] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^msp:matrixLiteral ;
     msp:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[1209.50012297]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[-824.49997044]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[-8.02843825]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^geocrs:wktLiteral ;
     ns2:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_86c668c6-2039-42f4-b447-cb7b014ed130> .
 

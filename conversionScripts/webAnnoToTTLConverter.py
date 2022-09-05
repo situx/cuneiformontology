@@ -18,6 +18,7 @@ filename="../examples/"+str(tabletname)+"/ttl/"+str(tabletname)+"_"+str(origtabl
 withlines=False
 withcharoccs=False
 withglyphs=False
+compreftypes={"PCA":"http://purl.org/meshsparql#PCAReference"}
 
 def coptoRDF(fw,crsnamespace,indid,opaswkt,induid):
     induuid=induid.replace("#","")
@@ -128,7 +129,7 @@ for tabname in tabletnames:
         @prefix xml: <http://www.w3.org/XML/1998/namespace> .
         @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
         @prefix geocrs: <http://www.opengis.net/ont/crs/> .
-        @prefix msp: <http://purl.org/meshsparql/> .
+        @prefix msp: <http://purl.org/meshsparql#> .
         @prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
         @prefix anno: <http://www.w3.org/ns/anno.jsonld> .
         @prefix dc: <http://purl.org/dc/elements/1.1/> .
@@ -219,20 +220,27 @@ for tabname in tabletnames:
                 if "coordinateSystem" in data3d[key]["target"]["selector"]:
                     csToRDF(res,crsnamespace,str(indid)+"_target3d_selector","\"\""+str(data3d[key]["target"]["selector"]["coordinateSystem"]).replace("\n","").replace("\"","\\\"")+"\"\"")
                 if "pcaValue" in data3d[key]["target"]["selector"]:
-                    res.write("<"+str(indid)+"_target3d_selector> <http://purl.org/meshsparql/pcaValue> \""+str(data3d[key]["target"]["selector"]["pcaValue"]).replace("\n","")+"\"^^oa:wktLiteral . \n")                             
+                    res.write("<"+str(indid)+"_target3d_selector> <http://purl.org/meshsparql#pcaValue> \""+str(data3d[key]["target"]["selector"]["pcaValue"]).replace("\n","")+"\"^^oa:wktLiteral . \n")                             
                 if "computingReference" in data3d[key]["target"]["selector"]:
                     i=0
                     for compref in data3d[key]["target"]["selector"]["computingReference"]:
                         comprefid=str(indid)+"_target3d_selector_compref"+str(i)
                         print(compref)
-                        res.write("<"+str(indid)+"_target3d_selector> <http://purl.org/meshsparql/computingReference> <"+str(comprefid)+"> . \n")
-                        res.write("<"+str(comprefid)+"> rdf:type <http://purl.org/meshsparql/ComputingReference> .\n")
+                        res.write("<"+str(indid)+"_target3d_selector> <http://purl.org/meshsparql#computingReference> <"+str(comprefid)+"> . \n")
+                        if "type" in compref:
+                            if compref["type"] in compreftypes:
+                                res.write("<"+str(compreftypes[compref["type"]])+"> rdfs:subClassOf <http://purl.org/meshsparql#ComputingReference> .\n")
+                                res.write("<"+str(comprefid)+"> rdf:type <"+str(compreftypes[compref["type"]])+"> .\n")
+                            else:
+                                res.write("<"+str(comprefid)+"> rdf:type <http://purl.org/meshsparql#ComputingReference> .\n")
+                                res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql#comprefType> \""+str(compref["type"])+"\"^^xsd:string .\n")   
+                        else:
+                            res.write("<"+str(comprefid)+"> rdf:type <http://purl.org/meshsparql#ComputingReference> .\n")
                         res.write("<"+str(comprefid)+"> rdfs:label \"Computing Reference of 3D Annotation target selector of Annotation of Glyph at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on a 3D Mesh\" .\n")
-                        res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql/stable> \""+str(compref["stable"])+"\"^^xsd:boolean .\n")
-                        res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql/transformationMatrix> \""+str(compref["transformationmatrix"]).replace("\n","").replace("\\n","")+"\"^^xsd:string .\n")
-                        res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql/comprefType> \""+str(compref["type"])+"\"^^xsd:string .\n")
-                        res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql/referenceVector> \"\"\""+str(compref["value"]).replace("\r","").replace("\n","").replace("\\n","")+"\"\"\"^^xsd:string .\n")
-                        res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql/wktTransformation> \"\"\""+str(compref["wktTransformation"]).replace("\n","").replace("\"","\\\"")+"\"\"\"^^geocrs:wktLiteral .\n")
+                        res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql#stable> \""+str(compref["stable"])+"\"^^xsd:boolean .\n")
+                        res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql#transformationMatrix> \""+str(compref["transformationmatrix"]).replace("\n","").replace("\\n","")+"\"^^msp:matrixLiteral .\n")
+                        res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql#referenceVector> \"\"\""+str(compref["value"]).replace("\r","").replace("\n","").replace("\\n","")+"\"\"\"^^msp:vectorLiteral .\n")
+                        res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql#wktTransformation> \"\"\""+str(compref["wktTransformation"]).replace("\n","").replace("\"","\\\"")+"\"\"\"^^geocrs:wktLiteral .\n")
                         coptoRDF(res,crsnamespace,str(comprefid),"\"\"\""+str(compref["wktTransformation"]).replace("\n","").replace("\"","\\\"")+"\"\"\"",key)
                     i+=1               
                 res.write("<"+str(indid)+"_target3d_selector> rdf:type oa:WKTSelector .\n")
