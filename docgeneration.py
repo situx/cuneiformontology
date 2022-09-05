@@ -2043,7 +2043,7 @@ class OntDocGeneration:
                         f.write(threejstemplate.replace("{{wktstring}}",anno).replace("{{meshurls}}","[]"))
             carousel="image"
             if len(foundmedia["image"])>3:
-                carousel="carousel-item active"
+                carousel="carousel-item active d-flex justify-content-center"
                 f.write(imagecarouselheader)
             if len(imageannos)>0 and len(foundmedia["image"])>0:
                 for image in foundmedia["image"]:
@@ -2052,7 +2052,7 @@ class OntDocGeneration:
                         annostring+=anno.replace("<svg>","<svg style=\"position: absolute;top: 0;left: 0;\" class=\"svgview svgoverlay\" fill=\"#044B94\" fill-opacity=\"0.4\">")
                     f.write(imageswithannotemplate.replace("{{carousel}}",carousel+"\" style=\"position: relative;display: inline-block;").replace("{{image}}",str(image)).replace("{{svganno}}",annostring).replace("{{imagetitle}}",str(image)[0:str(image).rfind('.')]))
                     if len(foundmedia["image"])>3:
-                        carousel="carousel-item"                  
+                        carousel="carousel-item d-flex justify-content-center"                  
             else:
                 for image in foundmedia["image"]:
                     if image=="<svg width=":
