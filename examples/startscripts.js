@@ -27,7 +27,7 @@ var geoproperties={
                    "http://www.wikidata.org/prop/direct/P3896": "DatatypeProperty"
 }
 
-  var baseurl="https://situx.github.io/cuneiformontology/examples/"
+  var baseurl="https://situx.github.io/cuneiformontology/"
   $( function() {
     var availableTags = Object.keys(search)
     $( "#search" ).autocomplete({

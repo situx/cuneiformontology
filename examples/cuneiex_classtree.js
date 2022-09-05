@@ -33821,378 +33821,378 @@ var tree={
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ag",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_ag",
+        "text": "Character: AG (character_ag)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ba",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_ba",
+        "text": "Character: BA (character_ba)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_da",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_da",
+        "text": "Character: DA (character_da)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_dar_g\u00f9n;_\u1e2bu_gun\u00fb_si_gun\u00fb",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_dar_g\u00f9n;_\u1e2bu_gun\u00fb_si_gun\u00fb",
+        "text": "Character: DAR (G\u00d9N; \u1e2aU-gun\u00fb, SI-gun\u00fb) (character_dar_g\u00f9n;_\u1e2bu_gun\u00fb_si_gun\u00fb)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_du",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_du",
+        "text": "Character: DU (character_du)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_en",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_en",
+        "text": "Character: EN (character_en)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ib",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_ib",
+        "text": "Character: IB (character_ib)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ir_gag_gun\u00fb",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_ir_gag_gun\u00fb",
+        "text": "Character: IR (GAG-gun\u00fb) (character_ir_gag_gun\u00fb)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_kam_\u1e2bi_bad",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_kam_\u1e2bi_bad",
+        "text": "Character: KAM (\u1e2aI.BAD) (character_kam_\u1e2bi_bad)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_kum_gum",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_kum_gum",
+        "text": "Character: KUM (GUM) (character_kum_gum)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_la",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_la",
+        "text": "Character: LA (character_la)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_masz",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_masz",
+        "text": "Character: MASZ (character_masz)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ra",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_ra",
+        "text": "Character: RA (character_ra)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ru",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_ru",
+        "text": "Character: RU (character_ru)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_sa",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_sa",
+        "text": "Character: SA (character_sa)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_sur_szur",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_sur_szur",
+        "text": "Character: SUR (SZUR) (character_sur_szur)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_sz\u00ecta_rad",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_sz\u00ecta_rad",
+        "text": "Character: SZ\u00ccTA (RAD) (character_sz\u00ecta_rad)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_s\u00ecla",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_s\u00ecla",
+        "text": "Character: S\u00ccLA (character_s\u00ecla)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ud_babbar",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_ud_babbar",
+        "text": "Character: UD (BABBAR) (character_ud_babbar)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_um",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_um",
+        "text": "Character: UM (character_um)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_uz_us",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_uz_us",
+        "text": "Character: UZ (US) (character_uz_us)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_al",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_al",
+        "text": "Character: AL (character_al)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_am_gu4\u00d7kur",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_am_gu4\u00d7kur",
+        "text": "Character: AM (GU4\u00d7KUR) (character_am_gu4\u00d7kur)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_an",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_an",
+        "text": "Character: AN (character_an)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_bar",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_bar",
+        "text": "Character: BAR (character_bar)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_el",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_el",
+        "text": "Character: EL (character_el)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ka_x_bi",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_ka_x_bi",
+        "text": "Character: KA x BI (character_ka_x_bi)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_me",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_me",
+        "text": "Character: ME (character_me)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_nu",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_nu",
+        "text": "Character: NU (character_nu)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_te",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_te",
+        "text": "Character: TE (character_te)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_\u00e1sz_z\u00edz",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_\u00e1sz_z\u00edz",
+        "text": "Character: \u00c1SZ (Z\u00cdZ) (character_\u00e1sz_z\u00edz)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_bu_g\u00edd",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_bu_g\u00edd",
+        "text": "Character: BU (G\u00cdD) (character_bu_g\u00edd)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_mar",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_mar",
+        "text": "Character: MAR (character_mar)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_nigidalimmu_za",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_nigidalimmu_za",
+        "text": "Character: NIGIDALIMMU (ZA) (character_nigidalimmu_za)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ri",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_ri",
+        "text": "Character: RI (character_ri)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_sar",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_sar",
+        "text": "Character: SAR (character_sar)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ansze_g\u00ecr\u00d7pa_or_g\u00ecr\u00d7tab",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_ansze_g\u00ecr\u00d7pa_or_g\u00ecr\u00d7tab",
+        "text": "Character: ANSZE (G\u00ccR\u00d7PA or G\u00ccR\u00d7TAB) (character_ansze_g\u00ecr\u00d7pa_or_g\u00ecr\u00d7tab)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_e",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_e",
+        "text": "Character: E (character_e)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_gul_s\u00fan",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_gul_s\u00fan",
+        "text": "Character: GUL (S\u00daN) (character_gul_s\u00fan)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_na",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_na",
+        "text": "Character: NA (character_na)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ku_d\u00far_tukul_tusz",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_ku_d\u00far_tukul_tusz",
+        "text": "Character: KU (D\u00daR, TUKUL, TUSZ) (character_ku_d\u00far_tukul_tusz)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_munus_sal",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_munus_sal",
+        "text": "Character: MUNUS (SAL) (character_munus_sal)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ma",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_ma",
+        "text": "Character: MA (character_ma)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_a",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_a",
+        "text": "Character: A (character_a)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_sza",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_sza",
+        "text": "Character: SZA (character_sza)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ta",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_ta",
+        "text": "Character: TA (character_ta)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_dam",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_dam",
+        "text": "Character: DAM (character_dam)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_tu",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_tu",
+        "text": "Character: TU (character_tu)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_b\u00e1n",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_b\u00e1n",
+        "text": "Character: B\u00c1N (character_b\u00e1n)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_tur_dumu",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_tur_dumu",
+        "text": "Character: TUR (DUMU) (character_tur_dumu)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_szu",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_szu",
+        "text": "Character: SZU (character_szu)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_sze",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_sze",
+        "text": "Character: SZE (character_sze)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_pan",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_pan",
+        "text": "Character: PAN (character_pan)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_suoversu",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_suoversu",
+        "text": "Character: SUoverSU (character_suoversu)",
         "data": {}
       },
       {
@@ -38455,399 +38455,399 @@ var tree={
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ag_reading_ak",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_ag_reading_ak",
+        "text": "Grapheme Reading AG: ak (character_ag_reading_ak)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ba_reading_ba",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_ba_reading_ba",
+        "text": "Grapheme Reading BA: ba (character_ba_reading_ba)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_bar_reading_bar",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_bar_reading_bar",
+        "text": "Grapheme Reading BAR: bar (character_bar_reading_bar)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_bar_reading_par\u2082",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_bar_reading_par\u2082",
+        "text": "Grapheme Reading BAR: par\u2082 (character_bar_reading_par\u2082)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_da_reading_da",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_da_reading_da",
+        "text": "Grapheme Reading DA: da (character_da_reading_da)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_dar_g\u00f9n;_\u1e2bu_gun\u00fb_si_gun\u00fb_reading_tar\u2082",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_dar_g\u00f9n;_\u1e2bu_gun\u00fb_si_gun\u00fb_reading_tar\u2082",
+        "text": "Grapheme Reading DAR (G\u00d9N; \u1e2aU-gun\u00fb, SI-gun\u00fb): tar\u2082 (character_dar_g\u00f9n;_\u1e2bu_gun\u00fb_si_gun\u00fb_reading_tar\u2082)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_du_reading_du",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_du_reading_du",
+        "text": "Grapheme Reading DU: du (character_du_reading_du)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_en_reading_en",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_en_reading_en",
+        "text": "Grapheme Reading EN: en (character_en_reading_en)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ib_reading_urta",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_ib_reading_urta",
+        "text": "Grapheme Reading IB: urta (character_ib_reading_urta)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ir_gag_gun\u00fb_reading_er",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_ir_gag_gun\u00fb_reading_er",
+        "text": "Grapheme Reading IR (GAG-gun\u00fb): er (character_ir_gag_gun\u00fb_reading_er)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_kam_\u1e2bi_bad_reading_kam",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_kam_\u1e2bi_bad_reading_kam",
+        "text": "Grapheme Reading KAM (\u1e2aI.BAD): kam (character_kam_\u1e2bi_bad_reading_kam)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_kum_gum_reading_qu",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_kum_gum_reading_qu",
+        "text": "Grapheme Reading KUM (GUM): qu (character_kum_gum_reading_qu)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_la_reading_la",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_la_reading_la",
+        "text": "Grapheme Reading LA: la (character_la_reading_la)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_masz_reading_ma\u0161",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_masz_reading_ma\u0161",
+        "text": "Grapheme Reading MASZ: ma\u0161 (character_masz_reading_ma\u0161)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ra_reading_ra",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_ra_reading_ra",
+        "text": "Grapheme Reading RA: ra (character_ra_reading_ra)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ri_reading_re",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_ri_reading_re",
+        "text": "Grapheme Reading RI: re (character_ri_reading_re)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ru_reading_ru",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_ru_reading_ru",
+        "text": "Grapheme Reading RU: ru (character_ru_reading_ru)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_sa_reading_sa",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_sa_reading_sa",
+        "text": "Grapheme Reading SA: sa (character_sa_reading_sa)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_sur_szur_reading_\u0161ur",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_sur_szur_reading_\u0161ur",
+        "text": "Grapheme Reading SUR (SZUR): \u0161ur (character_sur_szur_reading_\u0161ur)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_sz\u00ecta_rad_reading_rat",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_sz\u00ecta_rad_reading_rat",
+        "text": "Grapheme Reading SZ\u00ccTA (RAD): rat (character_sz\u00ecta_rad_reading_rat)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_s\u00ecla_reading_qa",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_s\u00ecla_reading_qa",
+        "text": "Grapheme Reading S\u00ccLA: qa (character_s\u00ecla_reading_qa)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_te_reading_kar",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_te_reading_kar",
+        "text": "Grapheme Reading TE: kar (character_te_reading_kar)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_te_reading_te",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_te_reading_te",
+        "text": "Grapheme Reading TE: te (character_te_reading_te)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_reading_ut",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_ud_babbar_reading_ut",
+        "text": "Grapheme Reading UD (BABBAR): ut (character_ud_babbar_reading_ut)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_um_reading_um",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_um_reading_um",
+        "text": "Grapheme Reading UM: um (character_um_reading_um)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_uz_us_reading_us",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_uz_us_reading_us",
+        "text": "Grapheme Reading UZ (US): us (character_uz_us_reading_us)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_al_reading_al",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_al_reading_al",
+        "text": "Grapheme Reading AL: al (character_al_reading_al)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_am_gu4\u00d7kur_reading_am",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_am_gu4\u00d7kur_reading_am",
+        "text": "Grapheme Reading AM (GU4\u00d7KUR): am (character_am_gu4\u00d7kur_reading_am)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_an_reading_an",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_an_reading_an",
+        "text": "Grapheme Reading AN: an (character_an_reading_an)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_el_reading_el",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_el_reading_el",
+        "text": "Grapheme Reading EL: el (character_el_reading_el)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ka_x_bi_reading_ka",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_ka_x_bi_reading_ka",
+        "text": "Grapheme Reading KA x BI: ka (character_ka_x_bi_reading_ka)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_me_reading_me",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_me_reading_me",
+        "text": "Grapheme Reading ME: me (character_me_reading_me)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_nu_reading_nu",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_nu_reading_nu",
+        "text": "Grapheme Reading NU: nu (character_nu_reading_nu)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ri_reading_tal",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_ri_reading_tal",
+        "text": "Grapheme Reading RI: tal (character_ri_reading_tal)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_\u00e1sz_z\u00edz_reading_a\u0161\u2082",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_\u00e1sz_z\u00edz_reading_a\u0161\u2082",
+        "text": "Grapheme Reading \u00c1SZ (Z\u00cdZ): a\u0161\u2082 (character_\u00e1sz_z\u00edz_reading_a\u0161\u2082)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_bu_g\u00edd_reading_bu",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_bu_g\u00edd_reading_bu",
+        "text": "Grapheme Reading BU (G\u00cdD): bu (character_bu_g\u00edd_reading_bu)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_mar_reading_mar",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_mar_reading_mar",
+        "text": "Grapheme Reading MAR: mar (character_mar_reading_mar)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_nigidalimmu_za_reading_za",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_nigidalimmu_za_reading_za",
+        "text": "Grapheme Reading NIGIDALIMMU (ZA): za (character_nigidalimmu_za_reading_za)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_sar_reading_\u0161ar",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_sar_reading_\u0161ar",
+        "text": "Grapheme Reading SAR: \u0161ar (character_sar_reading_\u0161ar)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ansze_g\u00ecr\u00d7pa_or_g\u00ecr\u00d7tab_reading_an\u0161e",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_ansze_g\u00ecr\u00d7pa_or_g\u00ecr\u00d7tab_reading_an\u0161e",
+        "text": "Grapheme Reading ANSZE (G\u00ccR\u00d7PA or G\u00ccR\u00d7TAB): an\u0161e (character_ansze_g\u00ecr\u00d7pa_or_g\u00ecr\u00d7tab_reading_an\u0161e)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_e_reading_e",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_e_reading_e",
+        "text": "Grapheme Reading E: e (character_e_reading_e)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_gul_s\u00fan_reading_kul\u2082",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_gul_s\u00fan_reading_kul\u2082",
+        "text": "Grapheme Reading GUL (S\u00daN): kul\u2082 (character_gul_s\u00fan_reading_kul\u2082)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_na_reading_na",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_na_reading_na",
+        "text": "Grapheme Reading NA: na (character_na_reading_na)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ku_d\u00far_tukul_tusz_reading_ku",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_ku_d\u00far_tukul_tusz_reading_ku",
+        "text": "Grapheme Reading KU (D\u00daR, TUKUL, TUSZ): ku (character_ku_d\u00far_tukul_tusz_reading_ku)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_munus_sal_reading_munus",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_munus_sal_reading_munus",
+        "text": "Grapheme Reading MUNUS (SAL): munus (character_munus_sal_reading_munus)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_a_reading_a",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_a_reading_a",
+        "text": "Grapheme Reading A: a (character_a_reading_a)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ma_reading_ma",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_ma_reading_ma",
+        "text": "Grapheme Reading MA: ma (character_ma_reading_ma)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_sza_reading_\u0161a",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_sza_reading_\u0161a",
+        "text": "Grapheme Reading SZA: \u0161a (character_sza_reading_\u0161a)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ta_reading_ta",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_ta_reading_ta",
+        "text": "Grapheme Reading TA: ta (character_ta_reading_ta)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_dam_reading_dam",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_dam_reading_dam",
+        "text": "Grapheme Reading DAM: dam (character_dam_reading_dam)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_tu_reading_tu",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_tu_reading_tu",
+        "text": "Grapheme Reading TU: tu (character_tu_reading_tu)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_b\u00e1n_reading_ban\u2082",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_b\u00e1n_reading_ban\u2082",
+        "text": "Grapheme Reading B\u00c1N: ban\u2082 (character_b\u00e1n_reading_ban\u2082)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_tur_dumu_reading_dumu",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_tur_dumu_reading_dumu",
+        "text": "Grapheme Reading TUR (DUMU): dumu (character_tur_dumu_reading_dumu)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_szu_reading_\u0161u",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_szu_reading_\u0161u",
+        "text": "Grapheme Reading SZU: \u0161u (character_szu_reading_\u0161u)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_sze_reading_\u0161e",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_sze_reading_\u0161e",
+        "text": "Grapheme Reading SZE: \u0161e (character_sze_reading_\u0161e)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_pan_reading_ban",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_pan_reading_ban",
+        "text": "Grapheme Reading PAN: ban (character_pan_reading_ban)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_suoversu_reading_su",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_suoversu_reading_su",
+        "text": "Grapheme Reading SUoverSU: su (character_suoversu_reading_su)",
         "data": {}
       },
       {
@@ -49597,84 +49597,84 @@ var tree={
         "id": "https://situx.github.io/cuneiformontology/signlist/character_esz_3\u00d7u",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_esz_3\u00d7u",
+        "text": "Character: ESZ (3\u00d7U) (character_esz_3\u00d7u)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_igi_szi_lim",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_igi_szi_lim",
+        "text": "Character: IGI (SZI, LIM) (character_igi_szi_lim)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_kal",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_kal",
+        "text": "Character: KAL (character_kal)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_lu_udu",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_lu_udu",
+        "text": "Character: LU (UDU) (character_lu_udu)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_numun",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_numun",
+        "text": "Character: NUMUN (character_numun)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_pa",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_pa",
+        "text": "Character: PA (character_pa)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_pab_or_pap",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_pab_or_pap",
+        "text": "Character: PAB or PAP (character_pab_or_pap)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_\u00far",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_\u00far",
+        "text": "Character: \u00daR (character_\u00far)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ab",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_ab",
+        "text": "Character: AB (character_ab)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_asz",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_asz",
+        "text": "Character: ASZ (character_asz)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_n\u00ednda\u00d7sze",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_n\u00ednda\u00d7sze",
+        "text": "Character: N\u00cdNDA\u00d7SZE (character_n\u00ednda\u00d7sze)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_mu",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_mu",
+        "text": "Character: MU (character_mu)",
         "data": {}
       },
       {
@@ -51606,126 +51606,126 @@ var tree={
         "id": "https://situx.github.io/cuneiformontology/signlist/character_igi_szi_lim_reading_pad\u2083",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_igi_szi_lim_reading_pad\u2083",
+        "text": "Grapheme Reading IGI (SZI, LIM): pad\u2083 (character_igi_szi_lim_reading_pad\u2083)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_kal_reading_kal",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_kal_reading_kal",
+        "text": "Grapheme Reading KAL: kal (character_kal_reading_kal)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_lu_udu_reading_lu",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_lu_udu_reading_lu",
+        "text": "Grapheme Reading LU (UDU): lu (character_lu_udu_reading_lu)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_me_reading_me\u0161",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_me_reading_me\u0161",
+        "text": "Grapheme Reading ME: me\u0161 (character_me_reading_me\u0161)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_numun_reading_kul",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_numun_reading_kul",
+        "text": "Grapheme Reading NUMUN: kul (character_numun_reading_kul)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_pa_reading_pa",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_pa_reading_pa",
+        "text": "Grapheme Reading PA: pa (character_pa_reading_pa)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_pab_or_pap_reading_kur\u2082",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_pab_or_pap_reading_kur\u2082",
+        "text": "Grapheme Reading PAB or PAP: kur\u2082 (character_pab_or_pap_reading_kur\u2082)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_reading_babbar",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_ud_babbar_reading_babbar",
+        "text": "Grapheme Reading UD (BABBAR): babbar (character_ud_babbar_reading_babbar)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_\u00far_reading_ur\u2082",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_\u00far_reading_ur\u2082",
+        "text": "Grapheme Reading \u00daR: ur\u2082 (character_\u00far_reading_ur\u2082)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ab_reading_ap",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_ab_reading_ap",
+        "text": "Grapheme Reading AB: ap (character_ab_reading_ap)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_asz_reading_a\u0161",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_asz_reading_a\u0161",
+        "text": "Grapheme Reading ASZ: a\u0161 (character_asz_reading_a\u0161)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_munus_sal_reading_lukur",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_munus_sal_reading_lukur",
+        "text": "Grapheme Reading MUNUS (SAL): lukur (character_munus_sal_reading_lukur)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_n\u00ednda\u00d7sze_reading_\u0161am\u2082",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_n\u00ednda\u00d7sze_reading_\u0161am\u2082",
+        "text": "Grapheme Reading N\u00cdNDA\u00d7SZE: \u0161am\u2082 (character_n\u00ednda\u00d7sze_reading_\u0161am\u2082)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_reading_ud",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_ud_babbar_reading_ud",
+        "text": "Grapheme Reading UD (BABBAR): ud (character_ud_babbar_reading_ud)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_reading_utu",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_ud_babbar_reading_utu",
+        "text": "Grapheme Reading UD (BABBAR): utu (character_ud_babbar_reading_utu)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_reading_u\u2084",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_ud_babbar_reading_u\u2084",
+        "text": "Grapheme Reading UD (BABBAR): u\u2084 (character_ud_babbar_reading_u\u2084)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_mu_reading_mu",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_mu_reading_mu",
+        "text": "Grapheme Reading MU: mu (character_mu_reading_mu)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_sar_reading_sar",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_sar_reading_sar",
+        "text": "Grapheme Reading SAR: sar (character_sar_reading_sar)",
         "data": {}
       },
       {
@@ -61693,28 +61693,28 @@ var tree={
         "id": "https://situx.github.io/cuneiformontology/signlist/character_du6_lagar_gun\u00fb",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_du6_lagar_gun\u00fb",
+        "text": "Character: DU6 (LAGAR-gun\u00fb) (character_du6_lagar_gun\u00fb)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_szab6",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_szab6",
+        "text": "Character: SZAB6 (character_szab6)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_szesz_\u00f9ri",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_szesz_\u00f9ri",
+        "text": "Character: SZESZ (\u00d9RI) (character_szesz_\u00f9ri)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_tum",
         "parent": "https://purl.org/graphemon/Grapheme",
         "type": "instance",
-        "text": "character_tum",
+        "text": "Character: TUM (character_tum)",
         "data": {}
       },
       {
@@ -62239,35 +62239,35 @@ var tree={
         "id": "https://situx.github.io/cuneiformontology/signlist/character_du6_lagar_gun\u00fb_reading_du\u2086",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_du6_lagar_gun\u00fb_reading_du\u2086",
+        "text": "Grapheme Reading DU6 (LAGAR-gun\u00fb): du\u2086 (character_du6_lagar_gun\u00fb_reading_du\u2086)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_ku_d\u00far_tukul_tusz_reading_dab\u2085",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_ku_d\u00far_tukul_tusz_reading_dab\u2085",
+        "text": "Grapheme Reading KU (D\u00daR, TUKUL, TUSZ): dab\u2085 (character_ku_d\u00far_tukul_tusz_reading_dab\u2085)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_szab6_reading_sa\u2086",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_szab6_reading_sa\u2086",
+        "text": "Grapheme Reading SZAB6: sa\u2086 (character_szab6_reading_sa\u2086)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_szesz_\u00f9ri_reading_\u0161e\u0161",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_szesz_\u00f9ri_reading_\u0161e\u0161",
+        "text": "Grapheme Reading SZESZ (\u00d9RI): \u0161e\u0161 (character_szesz_\u00f9ri_reading_\u0161e\u0161)",
         "data": {}
       },
       {
         "id": "https://situx.github.io/cuneiformontology/signlist/character_tum_reading_tum",
         "parent": "https://purl.org/graphemon/GraphemeReading",
         "type": "instance",
-        "text": "character_tum_reading_tum",
+        "text": "Grapheme Reading TUM: tum (character_tum_reading_tum)",
         "data": {}
       },
       {
