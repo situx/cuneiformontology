@@ -230,7 +230,7 @@ for tabname in tabletnames:
                         if "type" in compref:
                             if compref["type"] in compreftypes:
                                 res.write("<"+str(compreftypes[compref["type"]])+"> rdfs:subClassOf <http://purl.org/meshsparql#ComputingReference> .\n")
-                                res.write("<"+str(comprefid)+"> rdf:type \""+str(compreftypes[compref["type"]])+"\"^^xsd:string .\n")
+                                res.write("<"+str(comprefid)+"> rdf:type <"+str(compreftypes[compref["type"]])+"> .\n")
                             else:
                                 res.write("<"+str(comprefid)+"> rdf:type <http://purl.org/meshsparql#ComputingReference> .\n")
                                 res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql#comprefType> \""+str(compref["type"])+"\"^^xsd:string .\n")   
@@ -239,7 +239,7 @@ for tabname in tabletnames:
                         res.write("<"+str(comprefid)+"> rdfs:label \"Computing Reference of 3D Annotation target selector of Annotation of Glyph at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on a 3D Mesh\" .\n")
                         res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql#stable> \""+str(compref["stable"])+"\"^^xsd:boolean .\n")
                         res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql#transformationMatrix> \""+str(compref["transformationmatrix"]).replace("\n","").replace("\\n","")+"\"^^msp:matrixLiteral .\n")
-                        res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql#referenceVector> \"\"\""+str(compref["value"]).replace("\r","").replace("\n","").replace("\\n","")+"\"\"\"^^xsd:string .\n")
+                        res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql#referenceVector> \"\"\""+str(compref["value"]).replace("\r","").replace("\n","").replace("\\n","")+"\"\"\"^^msp:vectorLiteral .\n")
                         res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql#wktTransformation> \"\"\""+str(compref["wktTransformation"]).replace("\n","").replace("\"","\\\"")+"\"\"\"^^geocrs:wktLiteral .\n")
                         coptoRDF(res,crsnamespace,str(comprefid),"\"\"\""+str(compref["wktTransformation"]).replace("\n","").replace("\"","\\\"")+"\"\"\"",key)
                     i+=1               

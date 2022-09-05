@@ -13,8 +13,6 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-msp:PCAReference rdfs:subClassOf msp:ComputingReference .
-
 oa:FragmentSelector a owl:Class ;
     rdfs:label "Fragment Selector"@en ;
     rdfs:subClassOf oa:Selector .
@@ -1430,9 +1428,9 @@ oa:FragmentSelector a owl:Class ;
     ns2:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
     rdf:value "POLYGON Z ((518.4530940536625 -966.730458873402 -34.86653518676758, 703.4952510865267 -964.7195323597301 -34.86653518676758, 697.4612464841732 -761.6146125192353 -34.86653518676758, 510.40774441553543 -767.6473920602509 -34.86653518676758, 518.4530940536625 -966.730458873402 -0.0024037975817919, 703.4952510865267 -964.7195323597301 -0.0024037975817919, 697.4612464841732 -761.6146125192353 -0.0024037975817919, 510.40774441553543 -767.6473920602509 -0.0024037975817919, 518.4530940536625 -966.730458873402 -34.86653518676758))"^^oa:wktLiteral .
 
-<https://situx.github.io/cuneiformontology/examples/o147/imgannotations/8c3c5739-7ae0-4f45-9215-fc1cfc24a226_target3d_selector_compref0> a "http://purl.org/meshsparql#PCAReference"^^xsd:string ;
+<https://situx.github.io/cuneiformontology/examples/o147/imgannotations/8c3c5739-7ae0-4f45-9215-fc1cfc24a226_target3d_selector_compref0> a msp:PCAReference ;
     rdfs:label "Computing Reference of 3D Annotation target selector of Annotation of Glyph at O147 back line 4 char 1 on a 3D Mesh" ;
-    msp:referenceVector "[1209.5001   -824.49994   -10.853803] [-886.11926 -819.5041  -242.92534] [1216.9292    604.4211    -47.178307] [1234.4454  -830.3591  -236.23782]"^^xsd:string ;
+    msp:referenceVector "[1209.5001   -824.49994   -10.853803] [-886.11926 -819.5041  -242.92534] [1216.9292    604.4211    -47.178307] [1234.4454  -830.3591  -236.23782]"^^msp:vectorLiteral ;
     msp:stable true ;
     msp:transformationMatrix "[[ 1.00000000e+00 -1.20318887e-10 -1.92973415e-11  1.20950009e+03] [ 1.20318659e-10  1.00000000e+00 -2.60101250e-09 -8.24499970e+02] [ 1.92973207e-11  2.60101251e-09  1.00000000e+00 -1.08538150e+01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^msp:matrixLiteral ;
     msp:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[1209.50009159]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[-824.49996974]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[-10.85381504]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^geocrs:wktLiteral ;
@@ -2326,9 +2324,9 @@ oa:FragmentSelector a owl:Class ;
     ns2:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
     rdf:value "POLYGON Z ((872.8491303751291 -964.7194713615648 -5.901407718658447, 699.0703835227273 -964.7194713615648 -5.901407718658447, 696.6568304897339 -766.8429482569838 -5.901407718658447, 865.6083492562791 -764.4297998416785 -5.901407718658447, 872.8491303751291 -964.7194713615648 -0.008283426053822, 699.0703835227273 -964.7194713615648 -0.008283426053822, 696.6568304897339 -766.8429482569838 -0.008283426053822, 865.6083492562791 -764.4297998416785 -0.008283426053822, 872.8491303751291 -964.7194713615648 -5.901407718658447))"^^oa:wktLiteral .
 
-<https://situx.github.io/cuneiformontology/examples/o147/imgannotations/e97d40f0-c537-440b-8cb5-d663d03a2974_target3d_selector_compref0> a "http://purl.org/meshsparql#PCAReference"^^xsd:string ;
+<https://situx.github.io/cuneiformontology/examples/o147/imgannotations/e97d40f0-c537-440b-8cb5-d663d03a2974_target3d_selector_compref0> a msp:PCAReference ;
     rdfs:label "Computing Reference of 3D Annotation target selector of Annotation of Glyph at O147 back line 4 char 2 on a 3D Mesh" ;
-    msp:referenceVector "[1209.5001   -824.49994   -10.853803] [-886.11926 -819.5041  -242.92534] [1216.9292    604.4211    -47.178307] [1234.4454  -830.3591  -236.23782]"^^xsd:string ;
+    msp:referenceVector "[1209.5001   -824.49994   -10.853803] [-886.11926 -819.5041  -242.92534] [1216.9292    604.4211    -47.178307] [1234.4454  -830.3591  -236.23782]"^^msp:vectorLiteral ;
     msp:stable true ;
     msp:transformationMatrix "[[ 1.00000000e+00 -1.20318887e-10 -1.92973415e-11  1.20950009e+03] [ 1.20318659e-10  1.00000000e+00 -2.60101250e-09 -8.24499970e+02] [ 1.92973207e-11  2.60101251e-09  1.00000000e+00 -1.08538150e+01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^msp:matrixLiteral ;
     msp:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[1209.50009159]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[-824.49996974]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[-10.85381504]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^geocrs:wktLiteral ;
@@ -2567,6 +2565,8 @@ oa:FragmentSelector a owl:Class ;
     rdf:value "<svg><polygon points=\"1093.6251220703125,2174.690185546875 1191.4384765625,2117.244140625 1208.5169677734375,2194.873779296875 1189.8858642578125,2252.31982421875 1154.17626953125,2272.50341796875 1120.0191650390625,2246.109375 1120.0191650390625,2246.109375\"></polygon></svg>" .
 
 msp:MeshLabelSelector rdfs:subClassOf oa:Selector .
+
+msp:PCAReference rdfs:subClassOf msp:ComputingReference .
 
 geocrs:CoordinateOperation a owl:Class ;
     rdfs:label "coordinate operation"@en .
