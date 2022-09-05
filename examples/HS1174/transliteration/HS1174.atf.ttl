@@ -2,7 +2,7 @@
 @prefix cunei: <http://www.example.org/cunei/> .
 @prefix cuneiex: <https://situx.github.io/cuneiformontology/examples/hs1174/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix graphemon: <https://purl.org/graphemon/> .
+@prefix graphemon: <http://purl.org/graphemon/> .
 @prefix lemon: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov-o/> .
@@ -27,6 +27,10 @@ lemon:writtenRepASCII a owl:ObjectProperty .
 lemon:writtenRepUnicode a owl:ObjectProperty .
 
 <http://lexinfo.net/ontology/2.0/lexinfo#partOfSpeech> a owl:ObjectProperty .
+
+graphemon:contains a owl:ObjectProperty .
+
+graphemon:hasGraphemeReading a owl:ObjectProperty .
 
 qudt:unit a owl:ObjectProperty .
 
@@ -116,10 +120,6 @@ cunei:writtenrepASCII a owl:DatatypeProperty .
 rdf:value a owl:ObjectProperty .
 
 rdfs:member a owl:ObjectProperty .
-
-graphemon:contains a owl:ObjectProperty .
-
-graphemon:hasGraphemeReading a owl:ObjectProperty .
 
 cuneiex:HS1174_glyphlist a cunei:GlyphCollection ;
     rdfs:label "Glyphs of HS1174"@en ;
@@ -719,6 +719,7 @@ cuneiex:HS1174_transliteration1_obverse_line1 a cunei:TransliterationLine ;
 cuneiex:HS1174_transliteration1_obverse_line1_char6_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: ma (HS1174[obverse_transliteration1_line1_char6])" ;
     lemon:writtenRepUnicode "𒈠" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ma_reading_ma> ;
     cunei:charIndex 6 ;
     cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_ma> ;
     cunei:lineNumber 1 ;
@@ -727,8 +728,7 @@ cuneiex:HS1174_transliteration1_obverse_line1_char6_charocc a cunei:Transliterat
     cunei:positionOnTabletSide 5 ;
     cunei:prev cuneiex:HS1174_transliteration1_obverse_line1_char5_charocc ;
     cunei:prevInWord cuneiex:HS1174_transliteration1_obverse_line1_char1_charocc ;
-    skos:definition "ma" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ma_reading_ma> .
+    skos:definition "ma" .
 
 cuneiex:HS1174_transliteration1_obverse_line2 a cunei:TransliterationLine ;
     rdfs:label "Transliteration Line: 2 [HS1174_obverse]" ;
@@ -742,6 +742,7 @@ cuneiex:HS1174_transliteration1_obverse_line2 a cunei:TransliterationLine ;
 cuneiex:HS1174_transliteration1_obverse_line2_char8_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: dab5 (HS1174[obverse_transliteration1_line2_char8])" ;
     lemon:writtenRepUnicode "𒆪" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ku_dúr_tukul_tusz_reading_dab₅> ;
     cunei:charIndex 8 ;
     cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_ku_dúr_tukul_tusz> ;
     cunei:lineNumber 2 ;
@@ -750,8 +751,7 @@ cuneiex:HS1174_transliteration1_obverse_line2_char8_charocc a cunei:Transliterat
     cunei:positionOnTabletSide 13 ;
     cunei:prev cuneiex:HS1174_transliteration1_obverse_line2_char7_charocc ;
     cunei:prevInWord cuneiex:HS1174_transliteration1_obverse_line2_char1_charocc ;
-    skos:definition "dab5" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ku_dúr_tukul_tusz_reading_dab₅> .
+    skos:definition "dab5" .
 
 cuneiex:HS1174_transliteration1_obverse_line3 a cunei:TransliterationLine ;
     rdfs:label "Transliteration Line: 3 [HS1174_obverse]" ;
@@ -764,6 +764,7 @@ cuneiex:HS1174_transliteration1_obverse_line3 a cunei:TransliterationLine ;
 cuneiex:HS1174_transliteration1_obverse_line3_char4_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: da (HS1174[obverse_transliteration1_line3_char4])" ;
     lemon:writtenRepUnicode "𒁕" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_da_reading_da> ;
     cunei:charIndex 4 ;
     cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_da> ;
     cunei:lineNumber 3 ;
@@ -772,8 +773,7 @@ cuneiex:HS1174_transliteration1_obverse_line3_char4_charocc a cunei:Transliterat
     cunei:positionOnTabletSide 17 ;
     cunei:prev cuneiex:HS1174_transliteration1_obverse_line3_char3_charocc ;
     cunei:prevInWord cuneiex:HS1174_transliteration1_obverse_line3_char2_charocc ;
-    skos:definition "da" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_da_reading_da> .
+    skos:definition "da" .
 
 cuneiex:HS1174_transliteration1_obverse_line4 a cunei:TransliterationLine ;
     rdfs:label "Transliteration Line: 4 [HS1174_obverse]" ;
@@ -788,6 +788,7 @@ cuneiex:HS1174_transliteration1_obverse_line4 a cunei:TransliterationLine ;
 cuneiex:HS1174_transliteration1_obverse_line4_char5_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: ma (HS1174[obverse_transliteration1_line4_char5])" ;
     lemon:writtenRepUnicode "𒈠" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ma_reading_ma> ;
     cunei:charIndex 5 ;
     cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_ma> ;
     cunei:lineNumber 4 ;
@@ -796,8 +797,7 @@ cuneiex:HS1174_transliteration1_obverse_line4_char5_charocc a cunei:Transliterat
     cunei:positionOnTabletSide 22 ;
     cunei:prev cuneiex:HS1174_transliteration1_obverse_line4_char4_charocc ;
     cunei:prevInWord cuneiex:HS1174_transliteration1_obverse_line4_char1_charocc ;
-    skos:definition "ma" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ma_reading_ma> .
+    skos:definition "ma" .
 
 cuneiex:HS1174_transliteration1_reverse_line1 a cunei:TransliterationLine ;
     rdfs:label "Transliteration Line: 1 [HS1174_reverse]" ;
@@ -810,6 +810,7 @@ cuneiex:HS1174_transliteration1_reverse_line1 a cunei:TransliterationLine ;
 cuneiex:HS1174_transliteration1_reverse_line1_char4_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: a (HS1174[reverse_transliteration1_line1_char4])" ;
     lemon:writtenRepUnicode "𒀀" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_a_reading_a> ;
     cunei:charIndex 4 ;
     cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_a> ;
     cunei:lineNumber 1 ;
@@ -818,8 +819,7 @@ cuneiex:HS1174_transliteration1_reverse_line1_char4_charocc a cunei:Transliterat
     cunei:positionOnTabletSide 26 ;
     cunei:prev cuneiex:HS1174_transliteration1_reverse_line1_char3_charocc ;
     cunei:prevInWord cuneiex:HS1174_transliteration1_reverse_line1_char2_charocc ;
-    skos:definition "a" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_a_reading_a> .
+    skos:definition "a" .
 
 cuneiex:HS1174_transliteration1_reverse_line2 a cunei:TransliterationLine ;
     rdfs:label "Transliteration Line: 2 [HS1174_reverse]" ;
@@ -852,6 +852,7 @@ cuneiex:HS1174_transliteration1_reverse_line3 a cunei:TransliterationLine ;
 cuneiex:HS1174_transliteration1_reverse_line3_char4_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: ka (HS1174[reverse_transliteration1_line3_char4])" ;
     lemon:writtenRepUnicode "𒅟" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ka_x_bi_reading_ka> ;
     cunei:charIndex 4 ;
     cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_ka_x_bi> ;
     cunei:lineNumber 3 ;
@@ -860,8 +861,7 @@ cuneiex:HS1174_transliteration1_reverse_line3_char4_charocc a cunei:Transliterat
     cunei:positionOnTabletSide 35 ;
     cunei:prev cuneiex:HS1174_transliteration1_reverse_line3_char3_charocc ;
     cunei:prevInWord cuneiex:HS1174_transliteration1_reverse_line3_char1_charocc ;
-    skos:definition "ka" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ka_x_bi_reading_ka> .
+    skos:definition "ka" .
 
 cuneiex:HS1174_transliteration1_reverse_line4 a cunei:TransliterationLine ;
     rdfs:label "Transliteration Line: 4 [HS1174_reverse]" ;
@@ -1179,6 +1179,7 @@ cuneiex:HS1174_transliteration1_obverse_line1_char3_charocc a cunei:Transliterat
 cuneiex:HS1174_transliteration1_obverse_line1_char4_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: szu (HS1174[obverse_transliteration1_line1_char4])" ;
     lemon:writtenRepUnicode "𒋗" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_šu> ;
     cunei:charIndex 4 ;
     cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_szu> ;
     cunei:lineNumber 1 ;
@@ -1186,8 +1187,7 @@ cuneiex:HS1174_transliteration1_obverse_line1_char4_charocc a cunei:Transliterat
     cunei:positionInWord 1 ;
     cunei:positionOnTabletSide 3 ;
     cunei:prev cuneiex:HS1174_transliteration1_obverse_line1_char3_charocc ;
-    skos:definition "szu" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_šu> .
+    skos:definition "szu" .
 
 cuneiex:HS1174_transliteration1_obverse_line1_char5_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: dim2 (HS1174[obverse_transliteration1_line1_char5])" ;
@@ -1214,6 +1214,7 @@ cuneiex:HS1174_transliteration1_obverse_line2_char5_charocc a cunei:Transliterat
 cuneiex:HS1174_transliteration1_obverse_line2_char6_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: a (HS1174[obverse_transliteration1_line2_char6])" ;
     lemon:writtenRepUnicode "𒀀" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_a_reading_a> ;
     cunei:charIndex 6 ;
     cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_a> ;
     cunei:lineNumber 2 ;
@@ -1222,8 +1223,7 @@ cuneiex:HS1174_transliteration1_obverse_line2_char6_charocc a cunei:Transliterat
     cunei:positionOnTabletSide 11 ;
     cunei:prev cuneiex:HS1174_transliteration1_obverse_line2_char5_charocc ;
     cunei:prevInWord cuneiex:HS1174_transliteration1_obverse_line2_char1_charocc ;
-    skos:definition "a" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_a_reading_a> .
+    skos:definition "a" .
 
 cuneiex:HS1174_transliteration1_obverse_line2_char7_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: ib2 (HS1174[obverse_transliteration1_line2_char7])" ;
@@ -1250,6 +1250,7 @@ cuneiex:HS1174_transliteration1_obverse_line4_char2_charocc a cunei:Transliterat
 cuneiex:HS1174_transliteration1_obverse_line4_char3_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: szu (HS1174[obverse_transliteration1_line4_char3])" ;
     lemon:writtenRepUnicode "𒋗" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_šu> ;
     cunei:charIndex 3 ;
     cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_szu> ;
     cunei:lineNumber 4 ;
@@ -1257,8 +1258,7 @@ cuneiex:HS1174_transliteration1_obverse_line4_char3_charocc a cunei:Transliterat
     cunei:positionInWord 1 ;
     cunei:positionOnTabletSide 20 ;
     cunei:prev cuneiex:HS1174_transliteration1_obverse_line4_char2_charocc ;
-    skos:definition "szu" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_šu> .
+    skos:definition "szu" .
 
 cuneiex:HS1174_transliteration1_obverse_line4_char4_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: dim2 (HS1174[obverse_transliteration1_line4_char4])" ;
@@ -1285,6 +1285,7 @@ cuneiex:HS1174_transliteration1_reverse_line2_char3_charocc a cunei:Transliterat
 cuneiex:HS1174_transliteration1_reverse_line2_char4_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: sa6 (HS1174[reverse_transliteration1_line2_char4])" ;
     lemon:writtenRepUnicode "𒊷" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szab6_reading_sa₆> ;
     cunei:charIndex 4 ;
     cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_szab6> ;
     cunei:lineNumber 2 ;
@@ -1293,8 +1294,7 @@ cuneiex:HS1174_transliteration1_reverse_line2_char4_charocc a cunei:Transliterat
     cunei:positionOnTabletSide 30 ;
     cunei:prev cuneiex:HS1174_transliteration1_reverse_line2_char3_charocc ;
     cunei:prevInWord cuneiex:HS1174_transliteration1_reverse_line2_char1_charocc ;
-    skos:definition "sa6" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szab6_reading_sa₆> .
+    skos:definition "sa6" .
 
 cuneiex:HS1174_transliteration1_reverse_line3_char3_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: ensi2 (HS1174[reverse_transliteration1_line3_char3])" ;
@@ -1310,6 +1310,7 @@ cuneiex:HS1174_transliteration1_reverse_line3_char3_charocc a cunei:Transliterat
 cuneiex:HS1174_transliteration1_reverse_line4_char2_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: tum (HS1174[reverse_transliteration1_line4_char2])" ;
     lemon:writtenRepUnicode "𒌈" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_tum_reading_tum> ;
     cunei:charIndex 2 ;
     cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_tum> ;
     cunei:lineNumber 4 ;
@@ -1317,12 +1318,12 @@ cuneiex:HS1174_transliteration1_reverse_line4_char2_charocc a cunei:Transliterat
     cunei:positionInWord 1 ;
     cunei:positionOnTabletSide 37 ;
     cunei:prev cuneiex:HS1174_transliteration1_reverse_line4_char1_charocc ;
-    skos:definition "tum" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_tum_reading_tum> .
+    skos:definition "tum" .
 
 cuneiex:HS1174_transliteration1_reverse_line5_char2_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: du6 (HS1174[reverse_transliteration1_line5_char2])" ;
     lemon:writtenRepUnicode "𒇯" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_du6_lagar_gunû_reading_du₆> ;
     cunei:charIndex 2 ;
     cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_du6_lagar_gunû> ;
     cunei:lineNumber 5 ;
@@ -1330,8 +1331,7 @@ cuneiex:HS1174_transliteration1_reverse_line5_char2_charocc a cunei:Transliterat
     cunei:positionInWord 1 ;
     cunei:positionOnTabletSide 40 ;
     cunei:prev cuneiex:HS1174_transliteration1_reverse_line5_char1_charocc ;
-    skos:definition "du6" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_du6_lagar_gunû_reading_du₆> .
+    skos:definition "du6" .
 
 cuneiex:HS1174_transliteration1_reverse_line5_char3_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: ku3 (HS1174[reverse_transliteration1_line5_char3])" ;
@@ -1348,6 +1348,7 @@ cuneiex:HS1174_transliteration1_reverse_line5_char3_charocc a cunei:Transliterat
 cuneiex:HS1174_transliteration1_reverse_line5_char4_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: u4 (HS1174[reverse_transliteration1_line5_char4])" ;
     lemon:writtenRepUnicode "𒌓" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_reading_u₄> ;
     cunei:charIndex 4 ;
     cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar> ;
     cunei:lineNumber 5 ;
@@ -1355,8 +1356,7 @@ cuneiex:HS1174_transliteration1_reverse_line5_char4_charocc a cunei:Transliterat
     cunei:positionInWord 1 ;
     cunei:positionOnTabletSide 42 ;
     cunei:prev cuneiex:HS1174_transliteration1_reverse_line5_char3_charocc ;
-    skos:definition "u4" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_reading_u₄> .
+    skos:definition "u4" .
 
 <https://situx.github.io/cuneiformontology/signlist/character_ag_reading_ak> a graphemon:GraphemeReading ;
     rdfs:label "Grapheme Reading AG: ak" .
@@ -1461,6 +1461,7 @@ cuneiex:HS1174_transliteration1_obverse_line1_word1_wordformocc a cunei:Wordform
 cuneiex:HS1174_transliteration1_obverse_line2_char4_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: um (HS1174[obverse_transliteration1_line2_char4])" ;
     lemon:writtenRepUnicode "𒌝" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_um_reading_um> ;
     cunei:charIndex 4 ;
     cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_um> ;
     cunei:lineNumber 2 ;
@@ -1469,8 +1470,7 @@ cuneiex:HS1174_transliteration1_obverse_line2_char4_charocc a cunei:Transliterat
     cunei:positionOnTabletSide 9 ;
     cunei:prev cuneiex:HS1174_transliteration1_obverse_line2_char3_charocc ;
     cunei:prevInWord cuneiex:HS1174_transliteration1_obverse_line2_char3_charocc ;
-    skos:definition "um" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_um_reading_um> .
+    skos:definition "um" .
 
 cuneiex:HS1174_transliteration1_obverse_line3_char1_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: ugula (HS1174[obverse_transliteration1_line3_char1])" ;
@@ -1485,6 +1485,7 @@ cuneiex:HS1174_transliteration1_obverse_line3_char1_charocc a cunei:Transliterat
 cuneiex:HS1174_transliteration1_obverse_line3_char2_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: szesz (HS1174[obverse_transliteration1_line3_char2])" ;
     lemon:writtenRepUnicode "𒋀" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szesz_ùri_reading_šeš> ;
     cunei:charIndex 2 ;
     cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_szesz_ùri> ;
     cunei:lineNumber 3 ;
@@ -1493,12 +1494,12 @@ cuneiex:HS1174_transliteration1_obverse_line3_char2_charocc a cunei:Transliterat
     cunei:positionInWord 1 ;
     cunei:positionOnTabletSide 15 ;
     cunei:prev cuneiex:HS1174_transliteration1_obverse_line3_char1_charocc ;
-    skos:definition "szesz" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szesz_ùri_reading_šeš> .
+    skos:definition "szesz" .
 
 cuneiex:HS1174_transliteration1_obverse_line3_char3_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: da (HS1174[obverse_transliteration1_line3_char3])" ;
     lemon:writtenRepUnicode "𒁕" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_da_reading_da> ;
     cunei:charIndex 3 ;
     cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_da> ;
     cunei:lineNumber 3 ;
@@ -1507,8 +1508,7 @@ cuneiex:HS1174_transliteration1_obverse_line3_char3_charocc a cunei:Transliterat
     cunei:positionOnTabletSide 16 ;
     cunei:prev cuneiex:HS1174_transliteration1_obverse_line3_char2_charocc ;
     cunei:prevInWord cuneiex:HS1174_transliteration1_obverse_line3_char1_charocc ;
-    skos:definition "da" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_da_reading_da> .
+    skos:definition "da" .
 
 cuneiex:HS1174_transliteration1_obverse_line3_word1_wordformocc a cunei:WordformOccurance ;
     rdfs:label " WordForm Occurrence: ugula (HS1174[obverse_line3_word1])" ;
@@ -1660,12 +1660,12 @@ cuneiex:HS1174_transliteration1_obverse_line1_word3_wordformocc a cunei:Wordform
 
 cuneiex:HS1174_transliteration1_obverse_line1_word4_wordformocc a cunei:WordformOccurance ;
     rdfs:label " WordForm Occurrence: szu (HS1174[obverse_line1_word4])" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_šu> ;
     cunei:consistsOf cuneiex:HS1174_transliteration1_obverse_line1_char4_charocc ;
     cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_szu> ;
     cunei:nextWord cuneiex:HS1174_transliteration1_obverse_line1_word5_wordformocc ;
     cunei:prevWord cuneiex:HS1174_transliteration1_obverse_line1_word3_wordformocc ;
-    skos:definition "szu" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_šu> .
+    skos:definition "szu" .
 
 cuneiex:HS1174_transliteration1_obverse_line1_word5_wordformocc a cunei:WordformOccurance ;
     rdfs:label " WordForm Occurrence: dim2-ma (HS1174[obverse_line1_word5])" ;
@@ -1677,6 +1677,7 @@ cuneiex:HS1174_transliteration1_obverse_line1_word5_wordformocc a cunei:Wordform
 cuneiex:HS1174_transliteration1_obverse_line2_char2_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: ak (HS1174[obverse_transliteration1_line2_char2])" ;
     lemon:writtenRepUnicode "𒀝" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ag_reading_ak> ;
     cunei:charIndex 2 ;
     cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_ag> ;
     cunei:lineNumber 2 ;
@@ -1686,12 +1687,12 @@ cuneiex:HS1174_transliteration1_obverse_line2_char2_charocc a cunei:Transliterat
     cunei:positionOnTabletSide 7 ;
     cunei:prev cuneiex:HS1174_transliteration1_obverse_line2_char1_charocc ;
     cunei:prevInWord cuneiex:HS1174_transliteration1_obverse_line2_char1_charocc ;
-    skos:definition "ak" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ag_reading_ak> .
+    skos:definition "ak" .
 
 cuneiex:HS1174_transliteration1_obverse_line2_char3_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: ru (HS1174[obverse_transliteration1_line2_char3])" ;
     lemon:writtenRepUnicode "𒊒" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ru_reading_ru> ;
     cunei:charIndex 3 ;
     cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_ru> ;
     cunei:lineNumber 2 ;
@@ -1701,8 +1702,7 @@ cuneiex:HS1174_transliteration1_obverse_line2_char3_charocc a cunei:Transliterat
     cunei:positionOnTabletSide 8 ;
     cunei:prev cuneiex:HS1174_transliteration1_obverse_line2_char2_charocc ;
     cunei:prevInWord cuneiex:HS1174_transliteration1_obverse_line2_char2_charocc ;
-    skos:definition "ru" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ru_reading_ru> .
+    skos:definition "ru" .
 
 cuneiex:HS1174_transliteration1_obverse_line2_word3_wordformocc a cunei:WordformOccurance ;
     rdfs:label " WordForm Occurrence: ib2-dab5 (HS1174[obverse_line2_word3])" ;
@@ -1720,12 +1720,12 @@ cuneiex:HS1174_transliteration1_obverse_line4_word2_wordformocc a cunei:Wordform
 
 cuneiex:HS1174_transliteration1_obverse_line4_word3_wordformocc a cunei:WordformOccurance ;
     rdfs:label " WordForm Occurrence: szu (HS1174[obverse_line4_word3])" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_šu> ;
     cunei:consistsOf cuneiex:HS1174_transliteration1_obverse_line4_char3_charocc ;
     cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_szu> ;
     cunei:nextWord cuneiex:HS1174_transliteration1_obverse_line4_word4_wordformocc ;
     cunei:prevWord cuneiex:HS1174_transliteration1_obverse_line4_word2_wordformocc ;
-    skos:definition "szu" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_šu> .
+    skos:definition "szu" .
 
 cuneiex:HS1174_transliteration1_obverse_line4_word4_wordformocc a cunei:WordformOccurance ;
     rdfs:label " WordForm Occurrence: dim2-ma (HS1174[obverse_line4_word4])" ;
@@ -1737,6 +1737,7 @@ cuneiex:HS1174_transliteration1_obverse_line4_word4_wordformocc a cunei:Wordform
 cuneiex:HS1174_transliteration1_reverse_line2_char1_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: nu (HS1174[reverse_transliteration1_line2_char1])" ;
     lemon:writtenRepUnicode "𒉡" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_nu_reading_nu> ;
     cunei:charIndex 1 ;
     cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_nu> ;
     cunei:lineNumber 2 ;
@@ -1744,8 +1745,7 @@ cuneiex:HS1174_transliteration1_reverse_line2_char1_charocc a cunei:Transliterat
     cunei:partOf cuneiex:HS1174_transliteration1_reverse_line2_word1_wordformocc ;
     cunei:positionInWord 1 ;
     cunei:positionOnTabletSide 27 ;
-    skos:definition "nu" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_nu_reading_nu> .
+    skos:definition "nu" .
 
 cuneiex:HS1174_transliteration1_reverse_line2_char2_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: banda3 (HS1174[reverse_transliteration1_line2_char2])" ;
@@ -1800,12 +1800,12 @@ cuneiex:HS1174_transliteration1_reverse_line4_word2_wordformocc a cunei:Wordform
 
 cuneiex:HS1174_transliteration1_reverse_line5_word3_wordformocc a cunei:WordformOccurance ;
     rdfs:label " WordForm Occurrence: u4 (HS1174[reverse_line5_word3])" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_reading_u₄> ;
     cunei:consistsOf cuneiex:HS1174_transliteration1_reverse_line5_char4_charocc ;
     cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar> ;
     cunei:nextWord cuneiex:HS1174_transliteration1_reverse_line5_word4_wordformocc ;
     cunei:prevWord cuneiex:HS1174_transliteration1_reverse_line5_word2_wordformocc ;
-    skos:definition "u4" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_reading_u₄> .
+    skos:definition "u4" .
 
 <https://situx.github.io/cuneiformontology/signlist/character_da_reading_da> a graphemon:GraphemeReading ;
     rdfs:label "Grapheme Reading DA: da" .
@@ -1813,6 +1813,7 @@ cuneiex:HS1174_transliteration1_reverse_line5_word3_wordformocc a cunei:Wordform
 cuneiex:HS1174_transliteration1_obverse_line2_char1_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: da (HS1174[obverse_transliteration1_line2_char1])" ;
     lemon:writtenRepUnicode "𒁕" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_da_reading_da> ;
     cunei:charIndex 1 ;
     cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_da> ;
     cunei:lineNumber 2 ;
@@ -1820,8 +1821,7 @@ cuneiex:HS1174_transliteration1_obverse_line2_char1_charocc a cunei:Transliterat
     cunei:partOf cuneiex:HS1174_transliteration1_obverse_line2_word1_wordformocc ;
     cunei:positionInWord 1 ;
     cunei:positionOnTabletSide 6 ;
-    skos:definition "da" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_da_reading_da> .
+    skos:definition "da" .
 
 cuneiex:HS1174_transliteration1_obverse_line2_word2_wordformocc a cunei:WordformOccurance ;
     rdfs:label " WordForm Occurrence: e2-a (HS1174[obverse_line2_word2])" ;
