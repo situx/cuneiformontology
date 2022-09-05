@@ -1089,11 +1089,11 @@ var relativedepth={{relativedepth}}</script>
 
 imagecarouselheader="""<div id="imagecarousel" class="carousel slide" data-ride="carousel"><div class="carousel-inner">"""
 
-imagecarouselfooter="""</div> <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+imagecarouselfooter="""</div> <a class="carousel-control-prev" href="#imagecarousel" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#imagecarousel" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a></div>"""
@@ -2044,7 +2044,7 @@ class OntDocGeneration:
                         f.write(threejstemplate.replace("{{wktstring}}",anno).replace("{{meshurls}}","[]"))
             carousel="image"
             if len(foundmedia["image"])>3:
-                carousel="carousel-item active carousel-center"
+                carousel="carousel-item active"
                 f.write(imagecarouselheader)
             if len(imageannos)>0 and len(foundmedia["image"])>0:
                 for image in foundmedia["image"]:
@@ -2053,7 +2053,7 @@ class OntDocGeneration:
                         annostring+=anno.replace("<svg>","<svg style=\"position: absolute;top: 0;left: 0;\" class=\"svgview svgoverlay\" fill=\"#044B94\" fill-opacity=\"0.4\">")
                     f.write(imageswithannotemplate.replace("{{carousel}}",carousel+"\" style=\"position: relative;display: inline-block;").replace("{{image}}",str(image)).replace("{{svganno}}",annostring).replace("{{imagetitle}}",str(image)[0:str(image).rfind('.')]))
                     if len(foundmedia["image"])>3:
-                        carousel="carousel-item carousel-center"                  
+                        carousel="carousel-item"                  
             else:
                 for image in foundmedia["image"]:
                     if image=="<svg width=":
@@ -2066,7 +2066,7 @@ class OntDocGeneration:
                     else:
                         f.write(imagestemplate.replace("{{carousel}}",carousel).replace("{{image}}",str(image)).replace("{{imagetitle}}",str(image)[0:str(image).rfind('.')]))
                     if len(foundmedia["image"])>3:
-                        carousel="carousel-item carousel-center"
+                        carousel="carousel-item"
             if len(foundmedia["image"])>3:
                 f.write(imagecarouselfooter)
             if len(textannos)>0:
