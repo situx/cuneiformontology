@@ -35,24 +35,24 @@ jobs:
          cp -r examples/TCH92/images/ docs/examples/tch92/images/ 
          cp -r examples/O147/images/ docs/examples/o147/images/ 
          python3 docgeneration.py signlist/signlist.ttl docs/ https://situx.github.io/cuneiformontology/ cuneisignlist False
-         python3 docgeneration.py examples/HS1174/transliteration/HS1174.atf.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex
-         python3 docgeneration.py examples/HS1174/ttl/HS1174_front.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex
-         python3 docgeneration.py examples/HS1174/ttl/HS1174_back.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex
-         python3 docgeneration.py examples/HS1174/mesh/HS1174_mesh.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex
-         python3 docgeneration.py examples/HT073195/transliteration/HT073195.atf.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex
-         python3 docgeneration.py examples/HT073195/ttl/HT073195_front.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex
-         python3 docgeneration.py examples/O147/transliteration/O147.atf.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex
-         python3 docgeneration.py examples/O147/ttl/O147_front.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex
-         python3 docgeneration.py examples/O147/ttl/O147_back.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex
-         python3 docgeneration.py examples/O147/ttl/O147_right.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex
-         python3 docgeneration.py examples/O147/ttl/O147_bottom.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex
-         python3 docgeneration.py examples/O147/mesh/O147_front_mesh.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex
-         python3 docgeneration.py examples/O147/mesh/O147_back_mesh.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex
-         python3 docgeneration.py examples/O147/transliteration/O147_textanno.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex
+         python3 docgeneration.py examples/HS1174/transliteration/HS1174.atf.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/HS1174/ttl/HS1174_front.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/HS1174/ttl/HS1174_back.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/HS1174/mesh/HS1174_mesh.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/HT073195/transliteration/HT073195.atf.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/HT073195/ttl/HT073195_front.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/O147/transliteration/O147.atf.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/O147/ttl/O147_front.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/O147/ttl/O147_back.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/O147/ttl/O147_right.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False 
+         python3 docgeneration.py examples/O147/ttl/O147_bottom.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/O147/mesh/O147_front_mesh.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/O147/mesh/O147_back_mesh.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/O147/transliteration/O147_textanno.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
          python3 docgeneration.py examples/TCH92//transliteration/TCH92.atf.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
-         python3 docgeneration.py examples/TCH92/ttl/TCH92_front.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex
-         python3 docgeneration.py examples/TCH92/ttl/TCH92_back.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex
-         python3 docgeneration.py examples/TCH92/mesh/TCH92_mesh.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex
+         python3 docgeneration.py examples/TCH92/ttl/TCH92_front.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/TCH92/ttl/TCH92_back.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/TCH92/mesh/TCH92_mesh.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.3.3
       with:
