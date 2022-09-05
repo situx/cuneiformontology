@@ -164,6 +164,7 @@ origtabletside="front"
 tabletnames=["HS1174","HT073195","TCH92","O147"]
 tabletsides=["front","back","left","right","bottom","top"]
 tabsideid={"front":"03","back":"06","obverse":"03","reverse":"06","bottom":"04"}
+sidereplacements:{"obverse":"front","reverse":"back"}
 renderingvars={"O147":["A_Color","B_Color","A_shaded","B_Shaded"]}
 tabletname="HS1174"
 material="3D rendering"
@@ -217,13 +218,18 @@ for tabname in tabletnames:
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1 rdf:type cunei:Transliteration .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1 rdfs:label \"Transliteration 1 of "+str(currenttabletid)+"\"@en .\n")
     cdlitabs.add("cunei:CharOccurrenceCollection rdfs:subClassOf skos:Collection .\n")
+    cdlitabs.add("cunei:CharOccurrenceCollection rdfs:label \"CharOccurrence Collection\"@en .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_charoccurrences rdf:type cunei:CharOccurrenceCollection .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_charoccurrences rdfs:label \"Char Occurrences of "+str(currenttabletid)+" generated from transliteration 1\"@en .\n")
     cdlitabs.add("cunei:WordFormOccurrenceCollection rdfs:subClassOf skos:Collection .\n")
+    cdlitabs.add("skos:Collection rdf:type owl:Class .\n")
+    cdlitabs.add("skos:Collection rdfs:label \"collection\"@en .\n")
+    cdlitabs.add("cunei:WordFormOccurrenceCollection rdfs:label \"WordFormOccurrence Collection\"@en .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_wordformoccurrences rdf:type cunei:WordFormOccurrenceCollection .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_wordformoccurrences rdfs:label \"Wordform Occurrences of "+str(currenttabletid)+" generated from transliteration 1\"@en .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_glyphlist rdf:type cunei:GlyphCollection .\n")
     cdlitabs.add("cunei:GlyphCollection rdfs:subClassOf skos:Collection .\n")
+    cdlitabs.add("cunei:GlyphCollection rdfs:label \"Glyph Collection\"@en .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_glyphlist rdfs:label \"Glyphs of "+str(currenttabletid)+"\"@en .\n")
     cdlitabs.add("lemon:Lexicon rdfs:subClassOf skos:Collection .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_lexicon rdf:type lemon:Lexicon .\n")
@@ -328,7 +334,7 @@ for tabname in tabletnames:
                     cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_charocc cunei:positionInWord \""+str(currentrelcharindex)+"\"^^xsd:integer .\n")
                     cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_charocc lemon:writtenRepUnicode \""+str(cuneifyWord(str(charr),str(namespace)+""+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_charocc",cdlitabs,namespaceprefix+":"+str(currenttabletid)+"_signreadinglist"))+"\" .\n")
                     if createRefLinks:
-                        cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_glyph cidoc:TXP3_is_rendered_by "+namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+" .\n")
+                        cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_glyph cidoc:TXP3_is_rendered_by "+namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_charocc .\n")
                     if "#" in charr:
                         cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_char"+str(currentcharindex)+"_glyph cunei:isDamaged \"true\"^^xsd:boolean .\n")
                     else:

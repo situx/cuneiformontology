@@ -943,9 +943,11 @@ lemon:Lexicon rdfs:subClassOf skos:Collection .
 
 cidoc:E22_ManMadeObject rdfs:subClassOf prov:Entity .
 
-cunei:CharOccurrenceCollection rdfs:subClassOf skos:Collection .
+cunei:CharOccurrenceCollection rdfs:label "CharOccurrence Collection"@en ;
+    rdfs:subClassOf skos:Collection .
 
-cunei:GlyphCollection rdfs:subClassOf skos:Collection .
+cunei:GlyphCollection rdfs:label "Glyph Collection"@en ;
+    rdfs:subClassOf skos:Collection .
 
 cunei:GraphemeCollection rdfs:subClassOf skos:Collection .
 
@@ -957,7 +959,8 @@ cunei:Tablet rdfs:subClassOf cidoc:E22_ManMadeObject .
 
 cunei:Transliteration rdfs:subClassOf prov:Entity .
 
-cunei:WordFormOccurrenceCollection rdfs:subClassOf skos:Collection .
+cunei:WordFormOccurrenceCollection rdfs:label "WordFormOccurrence Collection"@en ;
+    rdfs:subClassOf skos:Collection .
 
 cuneiex:O147 a cunei:Tablet ;
     rdfs:label "Cuneiform Artifact: O147" ;
@@ -971,7 +974,7 @@ cuneiex:O147_bottom a cunei:Side ;
 
 cuneiex:O147_bottom_line1_char7_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 1 7])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line1_line1_char7 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line1_line1_char7_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_bottom_line1_char6_glyph ;
@@ -981,7 +984,7 @@ cuneiex:O147_bottom_line1_char7_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_bottom_line2_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 2 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line2_line2_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line2_line2_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged true ;
     cunei:prevChar cuneiex:O147_bottom_line2_char3_glyph ;
@@ -991,7 +994,7 @@ cuneiex:O147_bottom_line2_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_bottom_line3_char6_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 3 6])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line3_line3_char6 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line3_line3_char6_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged true ;
     cunei:prevChar cuneiex:O147_bottom_line3_char5_glyph ;
@@ -1001,7 +1004,7 @@ cuneiex:O147_bottom_line3_char6_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_bottom_line4_char6_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 4 6])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line4_line4_char6 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line4_line4_char6_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_bottom_line4_char5_glyph ;
@@ -1011,7 +1014,7 @@ cuneiex:O147_bottom_line4_char6_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_bottom_line5_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 5 5])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line5_line5_char5 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line5_line5_char5_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_bottom_line5_char4_glyph ;
@@ -1025,7 +1028,7 @@ cuneiex:O147_obverse a cunei:Side ;
 
 cuneiex:O147_obverse_line11_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 11 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line11_line11_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line11_line11_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line11_char3_glyph ;
@@ -1035,7 +1038,7 @@ cuneiex:O147_obverse_line11_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line1_char6_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 1 6])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line1_line1_char6 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line1_line1_char6_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line1_char5_glyph ;
@@ -1045,7 +1048,7 @@ cuneiex:O147_obverse_line1_char6_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line2_char7_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 2 7])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line2_line2_char7 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line2_line2_char7_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line2_char6_glyph ;
@@ -1055,7 +1058,7 @@ cuneiex:O147_obverse_line2_char7_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line3_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 3 5])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line3_line3_char5 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line3_line3_char5_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged true ;
     cunei:prevChar cuneiex:O147_obverse_line3_char4_glyph ;
@@ -1065,7 +1068,7 @@ cuneiex:O147_obverse_line3_char5_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line4_char6_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 4 6])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line4_line4_char6 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line4_line4_char6_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line4_char5_glyph ;
@@ -1075,7 +1078,7 @@ cuneiex:O147_obverse_line4_char6_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line5_char8_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 5 8])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line5_line5_char8 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line5_line5_char8_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line5_char7_glyph ;
@@ -1085,7 +1088,7 @@ cuneiex:O147_obverse_line5_char8_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line6_char6_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 6 6])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line6_line6_char6 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line6_line6_char6_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line6_char5_glyph ;
@@ -1095,7 +1098,7 @@ cuneiex:O147_obverse_line6_char6_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line7_char7_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 7 7])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line7_line7_char7 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line7_line7_char7_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line7_char6_glyph ;
@@ -1105,7 +1108,7 @@ cuneiex:O147_obverse_line7_char7_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line8_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 8 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line8_line8_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line8_line8_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line8_char3_glyph ;
@@ -1115,7 +1118,7 @@ cuneiex:O147_obverse_line8_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line9_char6_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 9 6])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line9_line9_char6 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line9_line9_char6_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line9_char5_glyph ;
@@ -1129,7 +1132,7 @@ cuneiex:O147_reverse a cunei:Side ;
 
 cuneiex:O147_reverse_line10_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 10 5])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line10_line10_char5 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line10_line10_char5_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line10_char4_glyph ;
@@ -1139,7 +1142,7 @@ cuneiex:O147_reverse_line10_char5_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line11_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 11 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line11_line11_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line11_line11_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line11_char3_glyph ;
@@ -1149,7 +1152,7 @@ cuneiex:O147_reverse_line11_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line12_char6_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 12 6])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line12_line12_char6 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line12_line12_char6_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line12_char5_glyph ;
@@ -1159,7 +1162,7 @@ cuneiex:O147_reverse_line12_char6_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line13_char6_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 13 6])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line13_line13_char6 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line13_line13_char6_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line13_char5_glyph ;
@@ -1168,7 +1171,7 @@ cuneiex:O147_reverse_line13_char6_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line1_char6_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 1 6])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line1_line1_char6 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line1_line1_char6_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line1_char5_glyph ;
@@ -1178,7 +1181,7 @@ cuneiex:O147_reverse_line1_char6_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line2_char7_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 2 7])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line2_line2_char7 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line2_line2_char7_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line2_char6_glyph ;
@@ -1188,7 +1191,7 @@ cuneiex:O147_reverse_line2_char7_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line4_char7_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 4 7])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line4_line4_char7 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line4_line4_char7_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged true ;
     cunei:prevChar cuneiex:O147_reverse_line4_char6_glyph ;
@@ -1197,7 +1200,7 @@ cuneiex:O147_reverse_line4_char7_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line5_char6_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 5 6])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line5_line5_char6 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line5_line5_char6_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line5_char5_glyph ;
@@ -1206,7 +1209,7 @@ cuneiex:O147_reverse_line5_char6_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line6_char7_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 6 7])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line6_line6_char7 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line6_line6_char7_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line6_char6_glyph ;
@@ -1216,7 +1219,7 @@ cuneiex:O147_reverse_line6_char7_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line7_char11_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 7 11])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line7_line7_char11 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line7_line7_char11_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line7_char10_glyph ;
@@ -1225,7 +1228,7 @@ cuneiex:O147_reverse_line7_char11_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line8_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 8 5])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line8_line8_char5 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line8_line8_char5_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line8_char4_glyph ;
@@ -1235,7 +1238,7 @@ cuneiex:O147_reverse_line8_char5_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line9_char6_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 9 6])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line9_line9_char6 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line9_line9_char6_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged true ;
     cunei:prevChar cuneiex:O147_reverse_line9_char5_glyph ;
@@ -1312,7 +1315,7 @@ cuneiex:5_disz_wordform a cunei:WordForm ;
 
 cuneiex:O147_bottom_line1_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 1 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line1_line1_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line1_line1_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_bottom_line1_char3_glyph ;
@@ -1321,7 +1324,7 @@ cuneiex:O147_bottom_line1_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_bottom_line1_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 1 5])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line1_line1_char5 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line1_line1_char5_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_bottom_line1_char4_glyph ;
@@ -1331,7 +1334,7 @@ cuneiex:O147_bottom_line1_char5_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_bottom_line1_char6_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 1 6])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line1_line1_char6 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line1_line1_char6_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_bottom_line1_char5_glyph ;
@@ -1341,7 +1344,7 @@ cuneiex:O147_bottom_line1_char6_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_bottom_line2_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 2 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line2_line2_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line2_line2_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged true ;
     cunei:prevChar cuneiex:O147_bottom_line2_char2_glyph ;
@@ -1350,7 +1353,7 @@ cuneiex:O147_bottom_line2_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_bottom_line3_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 3 5])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line3_line3_char5 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line3_line3_char5_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_bottom_line3_char4_glyph ;
@@ -1359,7 +1362,7 @@ cuneiex:O147_bottom_line3_char5_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_bottom_line4_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 4 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line4_line4_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line4_line4_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_bottom_line4_char3_glyph ;
@@ -1368,7 +1371,7 @@ cuneiex:O147_bottom_line4_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_bottom_line4_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 4 5])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line4_line4_char5 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line4_line4_char5_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_bottom_line4_char4_glyph ;
@@ -1378,7 +1381,7 @@ cuneiex:O147_bottom_line4_char5_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line10_char6_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 10 6])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line10_line10_char6 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line10_line10_char6_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line10_char5_glyph ;
@@ -1388,7 +1391,7 @@ cuneiex:O147_obverse_line10_char6_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line12_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 12 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line12_line12_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line12_line12_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged true ;
     cunei:prevChar cuneiex:O147_obverse_line12_char3_glyph ;
@@ -1398,7 +1401,7 @@ cuneiex:O147_obverse_line12_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line13_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 13 5])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line13_line13_char5 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line13_line13_char5_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line13_char4_glyph ;
@@ -1408,7 +1411,7 @@ cuneiex:O147_obverse_line13_char5_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line1_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 1 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line1_line1_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line1_line1_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line1_char2_glyph ;
@@ -1417,7 +1420,7 @@ cuneiex:O147_obverse_line1_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line1_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 1 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line1_line1_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line1_line1_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line1_char3_glyph ;
@@ -1426,7 +1429,7 @@ cuneiex:O147_obverse_line1_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line1_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 1 5])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line1_line1_char5 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line1_line1_char5_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line1_char4_glyph ;
@@ -1436,7 +1439,7 @@ cuneiex:O147_obverse_line1_char5_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line2_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 2 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line2_line2_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line2_line2_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line2_char2_glyph ;
@@ -1445,7 +1448,7 @@ cuneiex:O147_obverse_line2_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line2_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 2 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line2_line2_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line2_line2_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line2_char3_glyph ;
@@ -1454,7 +1457,7 @@ cuneiex:O147_obverse_line2_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line2_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 2 5])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line2_line2_char5 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line2_line2_char5_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line2_char4_glyph ;
@@ -1464,7 +1467,7 @@ cuneiex:O147_obverse_line2_char5_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line2_char6_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 2 6])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line2_line2_char6 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line2_line2_char6_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line2_char5_glyph ;
@@ -1473,7 +1476,7 @@ cuneiex:O147_obverse_line2_char6_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line3_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 3 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line3_line3_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line3_line3_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line3_char2_glyph ;
@@ -1482,7 +1485,7 @@ cuneiex:O147_obverse_line3_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line3_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 3 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line3_line3_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line3_line3_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged true ;
     cunei:prevChar cuneiex:O147_obverse_line3_char3_glyph ;
@@ -1492,7 +1495,7 @@ cuneiex:O147_obverse_line3_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line4_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 4 5])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line4_line4_char5 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line4_line4_char5_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line4_char4_glyph ;
@@ -1502,7 +1505,7 @@ cuneiex:O147_obverse_line4_char5_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line5_char6_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 5 6])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line5_line5_char6 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line5_line5_char6_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line5_char5_glyph ;
@@ -1512,7 +1515,7 @@ cuneiex:O147_obverse_line5_char6_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line5_char7_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 5 7])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line5_line5_char7 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line5_line5_char7_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line5_char6_glyph ;
@@ -1522,7 +1525,7 @@ cuneiex:O147_obverse_line5_char7_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line6_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 6 5])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line6_line6_char5 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line6_line6_char5_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged true ;
     cunei:prevChar cuneiex:O147_obverse_line6_char4_glyph ;
@@ -1531,7 +1534,7 @@ cuneiex:O147_obverse_line6_char5_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line7_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 7 5])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line7_line7_char5 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line7_line7_char5_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged true ;
     cunei:prevChar cuneiex:O147_obverse_line7_char4_glyph ;
@@ -1540,7 +1543,7 @@ cuneiex:O147_obverse_line7_char5_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line7_char6_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 7 6])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line7_line7_char6 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line7_line7_char6_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line7_char5_glyph ;
@@ -1550,7 +1553,7 @@ cuneiex:O147_obverse_line7_char6_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line12_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 12 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line12_line12_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line12_line12_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line12_char2_glyph ;
@@ -1559,7 +1562,7 @@ cuneiex:O147_reverse_line12_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line12_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 12 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line12_line12_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line12_line12_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line12_char3_glyph ;
@@ -1568,7 +1571,7 @@ cuneiex:O147_reverse_line12_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line12_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 12 5])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line12_line12_char5 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line12_line12_char5_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line12_char4_glyph ;
@@ -1578,7 +1581,7 @@ cuneiex:O147_reverse_line12_char5_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line13_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 13 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line13_line13_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line13_line13_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged true ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_13_1_O147_06_reverse.jpg"^^xsd:anyURI,
@@ -1586,7 +1589,7 @@ cuneiex:O147_reverse_line13_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line13_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 13 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line13_line13_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line13_line13_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged true ;
     cunei:prevChar cuneiex:O147_reverse_line13_char1_glyph ;
@@ -1595,7 +1598,7 @@ cuneiex:O147_reverse_line13_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line13_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 13 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line13_line13_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line13_line13_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line13_char2_glyph ;
@@ -1604,7 +1607,7 @@ cuneiex:O147_reverse_line13_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line13_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 13 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line13_line13_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line13_line13_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line13_char3_glyph ;
@@ -1613,7 +1616,7 @@ cuneiex:O147_reverse_line13_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line13_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 13 5])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line13_line13_char5 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line13_line13_char5_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line13_char4_glyph ;
@@ -1622,7 +1625,7 @@ cuneiex:O147_reverse_line13_char5_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line1_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 1 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line1_line1_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line1_line1_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line1_char1_glyph ;
@@ -1631,7 +1634,7 @@ cuneiex:O147_reverse_line1_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line1_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 1 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line1_line1_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line1_line1_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line1_char2_glyph ;
@@ -1640,7 +1643,7 @@ cuneiex:O147_reverse_line1_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line1_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 1 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line1_line1_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line1_line1_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line1_char3_glyph ;
@@ -1650,7 +1653,7 @@ cuneiex:O147_reverse_line1_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line1_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 1 5])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line1_line1_char5 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line1_line1_char5_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line1_char4_glyph ;
@@ -1659,7 +1662,7 @@ cuneiex:O147_reverse_line1_char5_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line3_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 3 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line3_line3_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line3_line3_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line3_char3_glyph ;
@@ -1669,7 +1672,7 @@ cuneiex:O147_reverse_line3_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line4_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 4 5])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line4_line4_char5 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line4_line4_char5_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line4_char4_glyph ;
@@ -1679,7 +1682,7 @@ cuneiex:O147_reverse_line4_char5_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line4_char6_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 4 6])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line4_line4_char6 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line4_line4_char6_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line4_char5_glyph ;
@@ -1688,7 +1691,7 @@ cuneiex:O147_reverse_line4_char6_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line5_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 5 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line5_line5_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line5_line5_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line5_char3_glyph ;
@@ -1698,7 +1701,7 @@ cuneiex:O147_reverse_line5_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line5_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 5 5])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line5_line5_char5 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line5_line5_char5_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line5_char4_glyph ;
@@ -1707,7 +1710,7 @@ cuneiex:O147_reverse_line5_char5_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line7_char10_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 7 10])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line7_line7_char10 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line7_line7_char10_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line7_char9_glyph ;
@@ -1716,7 +1719,7 @@ cuneiex:O147_reverse_line7_char10_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line7_char8_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 7 8])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line7_line7_char8 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line7_line7_char8_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line7_char7_glyph ;
@@ -1726,7 +1729,7 @@ cuneiex:O147_reverse_line7_char8_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line7_char9_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 7 9])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line7_line7_char9 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line7_line7_char9_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line7_char8_glyph ;
@@ -2855,7 +2858,7 @@ cunei:Side rdfs:subClassOf cidoc:TX7_WrittenTextFragment .
 
 cuneiex:O147_bottom_line1_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 1 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line1_line1_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line1_line1_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_bottom_line1_char1_glyph ;
@@ -2864,7 +2867,7 @@ cuneiex:O147_bottom_line1_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_bottom_line1_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 1 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line1_line1_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line1_line1_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_bottom_line1_char2_glyph ;
@@ -2874,7 +2877,7 @@ cuneiex:O147_bottom_line1_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_bottom_line2_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 2 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line2_line2_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line2_line2_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged true ;
     cunei:prevChar cuneiex:O147_bottom_line2_char1_glyph ;
@@ -2884,7 +2887,7 @@ cuneiex:O147_bottom_line2_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_bottom_line3_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 3 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line3_line3_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line3_line3_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_bottom_line3_char3_glyph ;
@@ -2894,7 +2897,7 @@ cuneiex:O147_bottom_line3_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_bottom_line4_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 4 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line4_line4_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line4_line4_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_bottom_line4_char2_glyph ;
@@ -2904,7 +2907,7 @@ cuneiex:O147_bottom_line4_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_bottom_line5_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 5 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line5_line5_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line5_line5_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_5_1_O147_04_bottom.jpg"^^xsd:anyURI,
@@ -2912,7 +2915,7 @@ cuneiex:O147_bottom_line5_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_bottom_line5_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 5 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line5_line5_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line5_line5_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_bottom_line5_char3_glyph ;
@@ -2922,7 +2925,7 @@ cuneiex:O147_bottom_line5_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_bottom_line5_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 5 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line5_line5_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line5_line5_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_bottom_line5_char3_glyph ;
@@ -2932,7 +2935,7 @@ cuneiex:O147_bottom_line5_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line10_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 10 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line10_line10_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line10_line10_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_obverse_line10_char2_glyph ;
@@ -2941,7 +2944,7 @@ cuneiex:O147_obverse_line10_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line11_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 11 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line11_line11_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line11_line11_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_11_1_O147_03_obverse.jpg"^^xsd:anyURI,
@@ -2949,7 +2952,7 @@ cuneiex:O147_obverse_line11_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line11_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 11 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line11_line11_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line11_line11_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_obverse_line11_char3_glyph ;
@@ -2959,7 +2962,7 @@ cuneiex:O147_obverse_line11_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line11_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 11 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line11_line11_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line11_line11_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line11_char2_glyph ;
@@ -2969,7 +2972,7 @@ cuneiex:O147_obverse_line11_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line12_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 12 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line12_line12_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line12_line12_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_obverse_line12_char2_glyph ;
@@ -2978,7 +2981,7 @@ cuneiex:O147_obverse_line12_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line13_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 13 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line13_line13_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line13_line13_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_obverse_line13_char2_glyph ;
@@ -2987,7 +2990,7 @@ cuneiex:O147_obverse_line13_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line1_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 1 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line1_line1_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line1_line1_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_1_1_O147_03_obverse.jpg"^^xsd:anyURI,
@@ -2995,7 +2998,7 @@ cuneiex:O147_obverse_line1_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line1_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 1 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line1_line1_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line1_line1_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line1_char1_glyph ;
@@ -3004,7 +3007,7 @@ cuneiex:O147_obverse_line1_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line2_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 2 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line2_line2_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line2_line2_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line2_char1_glyph ;
@@ -3014,7 +3017,7 @@ cuneiex:O147_obverse_line2_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line3_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 3 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line3_line3_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line3_line3_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_3_1_O147_03_obverse.jpg"^^xsd:anyURI,
@@ -3022,7 +3025,7 @@ cuneiex:O147_obverse_line3_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line3_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 3 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line3_line3_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line3_line3_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line3_char1_glyph ;
@@ -3031,7 +3034,7 @@ cuneiex:O147_obverse_line3_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line4_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 4 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line4_line4_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line4_line4_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_4_1_O147_03_obverse.jpg"^^xsd:anyURI,
@@ -3039,7 +3042,7 @@ cuneiex:O147_obverse_line4_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line4_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 4 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line4_line4_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line4_line4_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line4_char1_glyph ;
@@ -3048,7 +3051,7 @@ cuneiex:O147_obverse_line4_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line4_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 4 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line4_line4_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line4_line4_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_obverse_line4_char4_glyph ;
@@ -3058,7 +3061,7 @@ cuneiex:O147_obverse_line4_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line4_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 4 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line4_line4_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line4_line4_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line4_char3_glyph ;
@@ -3068,7 +3071,7 @@ cuneiex:O147_obverse_line4_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line5_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 5 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line5_line5_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line5_line5_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_5_1_O147_03_obverse.jpg"^^xsd:anyURI,
@@ -3076,7 +3079,7 @@ cuneiex:O147_obverse_line5_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line5_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 5 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line5_line5_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line5_line5_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line5_char1_glyph ;
@@ -3085,7 +3088,7 @@ cuneiex:O147_obverse_line5_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line5_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 5 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line5_line5_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line5_line5_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line5_char2_glyph ;
@@ -3094,7 +3097,7 @@ cuneiex:O147_obverse_line5_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line5_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 5 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line5_line5_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line5_line5_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_obverse_line5_char5_glyph ;
@@ -3104,7 +3107,7 @@ cuneiex:O147_obverse_line5_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line5_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 5 5])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line5_line5_char5 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line5_line5_char5_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line5_char4_glyph ;
@@ -3114,7 +3117,7 @@ cuneiex:O147_obverse_line5_char5_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line6_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 6 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line6_line6_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line6_line6_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line6_char3_glyph ;
@@ -3124,7 +3127,7 @@ cuneiex:O147_obverse_line6_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line7_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 7 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line7_line7_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line7_line7_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line7_char3_glyph ;
@@ -3134,7 +3137,7 @@ cuneiex:O147_obverse_line7_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line8_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 8 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line8_line8_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line8_line8_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged true ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_8_1_O147_03_obverse.jpg"^^xsd:anyURI,
@@ -3142,7 +3145,7 @@ cuneiex:O147_obverse_line8_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line8_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 8 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line8_line8_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line8_line8_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged true ;
     cunei:next cuneiex:O147_obverse_line8_char3_glyph ;
@@ -3152,7 +3155,7 @@ cuneiex:O147_obverse_line8_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line8_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 8 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line8_line8_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line8_line8_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line8_char2_glyph ;
@@ -3162,7 +3165,7 @@ cuneiex:O147_obverse_line8_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line9_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 9 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line9_line9_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line9_line9_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_9_1_O147_03_obverse.jpg"^^xsd:anyURI,
@@ -3170,7 +3173,7 @@ cuneiex:O147_obverse_line9_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line9_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 9 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line9_line9_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line9_line9_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_obverse_line9_char3_glyph ;
@@ -3180,7 +3183,7 @@ cuneiex:O147_obverse_line9_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line9_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 9 5])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line9_line9_char5 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line9_line9_char5_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_obverse_line9_char4_glyph ;
@@ -3190,7 +3193,7 @@ cuneiex:O147_obverse_line9_char5_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line10_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 10 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line10_line10_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line10_line10_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_10_1_O147_06_reverse.jpg"^^xsd:anyURI,
@@ -3198,7 +3201,7 @@ cuneiex:O147_reverse_line10_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line10_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 10 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line10_line10_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line10_line10_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line10_char3_glyph ;
@@ -3208,7 +3211,7 @@ cuneiex:O147_reverse_line10_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line10_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 10 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line10_line10_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line10_line10_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line10_char3_glyph ;
@@ -3218,7 +3221,7 @@ cuneiex:O147_reverse_line10_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line11_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 11 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line11_line11_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line11_line11_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_11_1_O147_06_reverse.jpg"^^xsd:anyURI,
@@ -3226,7 +3229,7 @@ cuneiex:O147_reverse_line11_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line11_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 11 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line11_line11_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line11_line11_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line11_char3_glyph ;
@@ -3236,7 +3239,7 @@ cuneiex:O147_reverse_line11_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line11_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 11 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line11_line11_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line11_line11_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line11_char2_glyph ;
@@ -3246,7 +3249,7 @@ cuneiex:O147_reverse_line11_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line12_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 12 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line12_line12_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line12_line12_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged true ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_12_1_O147_06_reverse.jpg"^^xsd:anyURI,
@@ -3254,7 +3257,7 @@ cuneiex:O147_reverse_line12_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line12_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 12 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line12_line12_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line12_line12_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line12_char1_glyph ;
@@ -3263,7 +3266,7 @@ cuneiex:O147_reverse_line12_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line2_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 2 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line2_line2_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line2_line2_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_2_1_O147_06_reverse.jpg"^^xsd:anyURI,
@@ -3271,7 +3274,7 @@ cuneiex:O147_reverse_line2_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line2_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 2 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line2_line2_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line2_line2_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line2_char3_glyph ;
@@ -3281,7 +3284,7 @@ cuneiex:O147_reverse_line2_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line2_char6_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 2 6])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line2_line2_char6 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line2_line2_char6_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line2_char5_glyph ;
@@ -3291,7 +3294,7 @@ cuneiex:O147_reverse_line2_char6_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line3_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 3 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line3_line3_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line3_line3_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line3_char2_glyph ;
@@ -3300,7 +3303,7 @@ cuneiex:O147_reverse_line3_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line4_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 4 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line4_line4_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line4_line4_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_4_1_O147_06_reverse.jpg"^^xsd:anyURI,
@@ -3308,7 +3311,7 @@ cuneiex:O147_reverse_line4_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line4_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 4 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line4_line4_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line4_line4_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line4_char3_glyph ;
@@ -3318,7 +3321,7 @@ cuneiex:O147_reverse_line4_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line4_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 4 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line4_line4_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line4_line4_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line4_char3_glyph ;
@@ -3328,7 +3331,7 @@ cuneiex:O147_reverse_line4_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line5_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 5 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line5_line5_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line5_line5_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_5_1_O147_06_reverse.jpg"^^xsd:anyURI,
@@ -3336,7 +3339,7 @@ cuneiex:O147_reverse_line5_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line5_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 5 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line5_line5_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line5_line5_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line5_char3_glyph ;
@@ -3346,7 +3349,7 @@ cuneiex:O147_reverse_line5_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line5_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 5 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line5_line5_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line5_line5_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line5_char2_glyph ;
@@ -3356,7 +3359,7 @@ cuneiex:O147_reverse_line5_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line6_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 6 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line6_line6_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line6_line6_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_6_1_O147_06_reverse.jpg"^^xsd:anyURI,
@@ -3364,7 +3367,7 @@ cuneiex:O147_reverse_line6_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line6_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 6 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line6_line6_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line6_line6_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line6_char3_glyph ;
@@ -3374,7 +3377,7 @@ cuneiex:O147_reverse_line6_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line6_char6_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 6 6])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line6_line6_char6 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line6_line6_char6_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line6_char5_glyph ;
@@ -3384,7 +3387,7 @@ cuneiex:O147_reverse_line6_char6_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line7_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 7 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line7_line7_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line7_line7_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_7_1_O147_06_reverse.jpg"^^xsd:anyURI,
@@ -3392,7 +3395,7 @@ cuneiex:O147_reverse_line7_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line7_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 7 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line7_line7_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line7_line7_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line7_char3_glyph ;
@@ -3402,7 +3405,7 @@ cuneiex:O147_reverse_line7_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line7_char7_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 7 7])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line7_line7_char7 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line7_line7_char7_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line7_char6_glyph ;
@@ -3412,7 +3415,7 @@ cuneiex:O147_reverse_line7_char7_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line8_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 8 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line8_line8_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line8_line8_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_8_1_O147_06_reverse.jpg"^^xsd:anyURI,
@@ -3420,7 +3423,7 @@ cuneiex:O147_reverse_line8_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line8_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 8 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line8_line8_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line8_line8_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line8_char3_glyph ;
@@ -3430,7 +3433,7 @@ cuneiex:O147_reverse_line8_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line8_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 8 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line8_line8_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line8_line8_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line8_char3_glyph ;
@@ -3440,7 +3443,7 @@ cuneiex:O147_reverse_line8_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line9_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 9 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line9_line9_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line9_line9_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_9_1_O147_06_reverse.jpg"^^xsd:anyURI,
@@ -3448,7 +3451,7 @@ cuneiex:O147_reverse_line9_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line9_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 9 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line9_line9_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line9_line9_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line9_char3_glyph ;
@@ -3458,7 +3461,7 @@ cuneiex:O147_reverse_line9_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line9_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 9 5])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line9_line9_char5 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line9_line9_char5_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:O147_reverse_line9_char4_glyph ;
@@ -4063,7 +4066,7 @@ cuneiex:O147_transliteration1_reverse_line7_char9_charocc a cunei:Transliteratio
 
 cuneiex:O147_bottom_line1_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 1 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line1_line1_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line1_line1_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_1_1_O147_04_bottom.jpg"^^xsd:anyURI,
@@ -4071,7 +4074,7 @@ cuneiex:O147_bottom_line1_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_bottom_line2_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 2 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line2_line2_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line2_line2_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged true ;
     cunei:next cuneiex:O147_bottom_line2_char2_glyph ;
@@ -4080,7 +4083,7 @@ cuneiex:O147_bottom_line2_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_bottom_line3_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 3 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line3_line3_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line3_line3_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged true ;
     cunei:next cuneiex:O147_bottom_line3_char2_glyph ;
@@ -4089,7 +4092,7 @@ cuneiex:O147_bottom_line3_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_bottom_line3_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 3 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line3_line3_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line3_line3_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_bottom_line3_char3_glyph ;
@@ -4100,7 +4103,7 @@ cuneiex:O147_bottom_line3_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_bottom_line3_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 3 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line3_line3_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line3_line3_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_bottom_line3_char4_glyph ;
@@ -4111,7 +4114,7 @@ cuneiex:O147_bottom_line3_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_bottom_line4_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 4 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line4_line4_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line4_line4_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_bottom_line4_char2_glyph ;
@@ -4120,7 +4123,7 @@ cuneiex:O147_bottom_line4_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_bottom_line5_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 5 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line5_line5_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line5_line5_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_bottom_line5_char4_glyph ;
@@ -4131,7 +4134,7 @@ cuneiex:O147_bottom_line5_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line10_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 10 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line10_line10_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line10_line10_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_obverse_line10_char3_glyph ;
@@ -4142,7 +4145,7 @@ cuneiex:O147_obverse_line10_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line10_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 10 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line10_line10_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line10_line10_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_obverse_line10_char4_glyph ;
@@ -4153,7 +4156,7 @@ cuneiex:O147_obverse_line10_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line10_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 10 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line10_line10_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line10_line10_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_obverse_line10_char5_glyph ;
@@ -4164,7 +4167,7 @@ cuneiex:O147_obverse_line10_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line10_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 10 5])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line10_line10_char5 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line10_line10_char5_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_obverse_line10_char6_glyph ;
@@ -4175,7 +4178,7 @@ cuneiex:O147_obverse_line10_char5_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line12_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 12 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line12_line12_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line12_line12_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_obverse_line12_char3_glyph ;
@@ -4186,7 +4189,7 @@ cuneiex:O147_obverse_line12_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line12_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 12 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line12_line12_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line12_line12_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_obverse_line12_char4_glyph ;
@@ -4197,7 +4200,7 @@ cuneiex:O147_obverse_line12_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line13_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 13 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line13_line13_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line13_line13_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_obverse_line13_char3_glyph ;
@@ -4208,7 +4211,7 @@ cuneiex:O147_obverse_line13_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line13_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 13 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line13_line13_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line13_line13_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_obverse_line13_char4_glyph ;
@@ -4219,7 +4222,7 @@ cuneiex:O147_obverse_line13_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line13_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 13 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line13_line13_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line13_line13_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged true ;
     cunei:next cuneiex:O147_obverse_line13_char5_glyph ;
@@ -4230,7 +4233,7 @@ cuneiex:O147_obverse_line13_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line6_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 6 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line6_line6_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line6_line6_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_obverse_line6_char2_glyph ;
@@ -4239,7 +4242,7 @@ cuneiex:O147_obverse_line6_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line6_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 6 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line6_line6_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line6_line6_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_obverse_line6_char3_glyph ;
@@ -4250,7 +4253,7 @@ cuneiex:O147_obverse_line6_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line6_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 6 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line6_line6_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line6_line6_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_obverse_line6_char4_glyph ;
@@ -4261,7 +4264,7 @@ cuneiex:O147_obverse_line6_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line7_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 7 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line7_line7_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line7_line7_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_obverse_line7_char2_glyph ;
@@ -4270,7 +4273,7 @@ cuneiex:O147_obverse_line7_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line7_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 7 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line7_line7_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line7_line7_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_obverse_line7_char4_glyph ;
@@ -4281,7 +4284,7 @@ cuneiex:O147_obverse_line7_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line9_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 9 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line9_line9_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line9_line9_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_obverse_line9_char4_glyph ;
@@ -4292,7 +4295,7 @@ cuneiex:O147_obverse_line9_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line9_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 9 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line9_line9_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line9_line9_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_obverse_line9_char5_glyph ;
@@ -4303,7 +4306,7 @@ cuneiex:O147_obverse_line9_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line10_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 10 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line10_line10_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line10_line10_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line10_char4_glyph ;
@@ -4314,7 +4317,7 @@ cuneiex:O147_reverse_line10_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line1_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 1 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line1_line1_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line1_line1_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_1_1_O147_06_reverse.jpg"^^xsd:anyURI,
@@ -4322,7 +4325,7 @@ cuneiex:O147_reverse_line1_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line2_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 2 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line2_line2_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line2_line2_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line2_char4_glyph ;
@@ -4333,7 +4336,7 @@ cuneiex:O147_reverse_line2_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line2_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 2 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line2_line2_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line2_line2_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line2_char5_glyph ;
@@ -4344,7 +4347,7 @@ cuneiex:O147_reverse_line2_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line2_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 2 5])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line2_line2_char5 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line2_line2_char5_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line2_char6_glyph ;
@@ -4355,7 +4358,7 @@ cuneiex:O147_reverse_line2_char5_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line3_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 3 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line3_line3_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line3_line3_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line3_char3_glyph ;
@@ -4366,7 +4369,7 @@ cuneiex:O147_reverse_line3_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line3_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 3 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line3_line3_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line3_line3_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line3_char4_glyph ;
@@ -4377,7 +4380,7 @@ cuneiex:O147_reverse_line3_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line4_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 4 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line4_line4_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line4_line4_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line4_char4_glyph ;
@@ -4388,7 +4391,7 @@ cuneiex:O147_reverse_line4_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line6_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 6 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line6_line6_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line6_line6_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line6_char4_glyph ;
@@ -4399,7 +4402,7 @@ cuneiex:O147_reverse_line6_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line6_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 6 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line6_line6_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line6_line6_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line6_char5_glyph ;
@@ -4410,7 +4413,7 @@ cuneiex:O147_reverse_line6_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line6_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 6 5])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line6_line6_char5 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line6_line6_char5_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line6_char6_glyph ;
@@ -4421,7 +4424,7 @@ cuneiex:O147_reverse_line6_char5_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line7_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 7 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line7_line7_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line7_line7_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line7_char4_glyph ;
@@ -4432,7 +4435,7 @@ cuneiex:O147_reverse_line7_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line7_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 7 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line7_line7_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line7_line7_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line7_char5_glyph ;
@@ -4443,7 +4446,7 @@ cuneiex:O147_reverse_line7_char4_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line7_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 7 5])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line7_line7_char5 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line7_line7_char5_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line7_char6_glyph ;
@@ -4454,7 +4457,7 @@ cuneiex:O147_reverse_line7_char5_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line7_char6_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 7 6])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line7_line7_char6 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line7_line7_char6_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line7_char7_glyph ;
@@ -4465,7 +4468,7 @@ cuneiex:O147_reverse_line7_char6_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line8_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 8 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line8_line8_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line8_line8_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line8_char4_glyph ;
@@ -4476,7 +4479,7 @@ cuneiex:O147_reverse_line8_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line9_char3_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 9 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line9_line9_char3 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line9_line9_char3_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line9_char4_glyph ;
@@ -4487,7 +4490,7 @@ cuneiex:O147_reverse_line9_char3_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_reverse_line9_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[reverse 9 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line9_line9_char4 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line9_line9_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_reverse_line9_char5_glyph ;
@@ -5479,7 +5482,7 @@ cuneiex:O147_transliteration1_reverse_line9_word1_wordformocc a cunei:WordformOc
 
 cuneiex:O147_bottom_line4_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[bottom 4 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line4_line4_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_bottom_line4_line4_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_bottom_line4_char3_glyph ;
@@ -5490,7 +5493,7 @@ cuneiex:O147_bottom_line4_char2_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line2_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 2 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line2_line2_char1 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line2_line2_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_obverse_line2_char2_glyph ;
@@ -5499,7 +5502,7 @@ cuneiex:O147_obverse_line2_char1_glyph a cidoc:TX9_Glyph ;
 
 cuneiex:O147_obverse_line7_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at O147[obverse 7 2])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line7_line7_char2 ;
+    cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_obverse_line7_line7_char2_charocc ;
     cidoc:TXP8_is_component_of cunei:O147_writtenText ;
     cunei:isDamaged false ;
     cunei:next cuneiex:O147_obverse_line7_char3_glyph ;
@@ -6416,6 +6419,9 @@ cuneiex:O147_transliteration1_reverse_line3_word1_wordformocc a cunei:WordformOc
         <http://purl.org/cuneiform/signlist/character_ud_babbar_reading_ud>,
         <http://purl.org/cuneiform/signlist/character_ud_babbar_reading_utu>,
         <http://purl.org/cuneiform/signlist/character_ud_babbar_reading_u₄> .
+
+skos:Collection a owl:Class ;
+    rdfs:label "collection"@en .
 
 cuneiex:O147_transliteration1_bottom_line1_word3_wordformocc a cunei:WordformOccurance ;
     rdfs:label " WordForm Occurrence: in-[na-an-la2] (O147[bottom_line1_word3])" ;
