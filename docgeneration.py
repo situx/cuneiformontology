@@ -1798,7 +1798,7 @@ class OntDocGeneration:
                                      "uri"] + ")</span></a></span>"
             else:
                 tablecontents += "<span class=\"property-name\"><a class=\"uri\" target=\"_blank\" href=\"" + str(
-                    tup[0]) + "\">" + label + "</a></span>"
+                    tup) + "\">" + label + "</a></span>"
         if reverse:
             tablecontents+=" of"
         tablecontents += "</td>"
