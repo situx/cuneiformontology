@@ -949,6 +949,7 @@ body { font-family: sans-serif; font-size: 80%; margin: 0; padding: 1.2em 2em; }
 #rdficon { float: right; position: relative; top: -28px; }
 #header { border-bottom: 2px solid #696; margin: 0 0 1.2em; padding: 0 0 0.3em; }
 #footer { border-top: 2px solid #696; margin: 1.2em 0 0; padding: 0.3em 0 0; }
+.carousel-center {margin:auto;}
 #homelink { display: inline; }
 #homelink, #homelink a { color: #666; }
 #homelink a { font-weight: bold; text-decoration: none; }
@@ -2043,7 +2044,7 @@ class OntDocGeneration:
                         f.write(threejstemplate.replace("{{wktstring}}",anno).replace("{{meshurls}}","[]"))
             carousel="image"
             if len(foundmedia["image"])>3:
-                carousel="carousel-item active d-flex justify-content-center"
+                carousel="carousel-item active carousel-center"
                 f.write(imagecarouselheader)
             if len(imageannos)>0 and len(foundmedia["image"])>0:
                 for image in foundmedia["image"]:
@@ -2052,7 +2053,7 @@ class OntDocGeneration:
                         annostring+=anno.replace("<svg>","<svg style=\"position: absolute;top: 0;left: 0;\" class=\"svgview svgoverlay\" fill=\"#044B94\" fill-opacity=\"0.4\">")
                     f.write(imageswithannotemplate.replace("{{carousel}}",carousel+"\" style=\"position: relative;display: inline-block;").replace("{{image}}",str(image)).replace("{{svganno}}",annostring).replace("{{imagetitle}}",str(image)[0:str(image).rfind('.')]))
                     if len(foundmedia["image"])>3:
-                        carousel="carousel-item d-flex justify-content-center"                  
+                        carousel="carousel-item carousel-center"                  
             else:
                 for image in foundmedia["image"]:
                     if image=="<svg width=":
@@ -2065,7 +2066,7 @@ class OntDocGeneration:
                     else:
                         f.write(imagestemplate.replace("{{carousel}}",carousel).replace("{{image}}",str(image)).replace("{{imagetitle}}",str(image)[0:str(image).rfind('.')]))
                     if len(foundmedia["image"])>3:
-                        carousel="carousel-item d-flex justify-content-center"
+                        carousel="carousel-item carousel-center"
             if len(foundmedia["image"])>3:
                 f.write(imagecarouselfooter)
             if len(textannos)>0:
