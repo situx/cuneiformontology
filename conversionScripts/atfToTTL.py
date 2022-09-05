@@ -1,5 +1,6 @@
 import json
 import re
+from rdflib import Graph
 
 jtfcontext={
 	  "cunei": "http://www.purl.org/cuneiform/",
@@ -97,7 +98,7 @@ def cuneifyWord(ufword,worduri,ttlresult,readcolluri):
     return ""
 
 def replaceNonURIChars(myuri):
-    res=myuri.replace("$","_").replace("#","").replace("~","_").replace("[","_").replace("]","_").replace("\"","_").replace("{","_").replace("?","_").replace("!","_").replace("+","_").replace(" ","_").replace("=","_").replace("-","_").replace("^","_").replace("*","_").replace("}","_").replace("̌","_").replace(";","_").replace("̄","_").replace("ʾ","_").replace("̆","_").replace(",","_").replace("'","_").replace("/","_").replace("+","_").replace("(","_").replace(")","_").replace("|","_").replace("@","_").replace("×","_").replace("&","_").replace("+","_").replace(".","_")
+    res=myuri.replace("$","_").replace("<","_").replace(">","_").replace("#","").replace("~","_").replace("[","_").replace("]","_").replace("\"","_").replace("{","_").replace("?","_").replace("!","_").replace("+","_").replace(" ","_").replace("=","_").replace("-","_").replace("^","_").replace("*","_").replace("}","_").replace("̌","_").replace(";","_").replace("̄","_").replace("ʾ","_").replace("̆","_").replace(",","_").replace("'","_").replace("/","_").replace("+","_").replace("(","_").replace(")","_").replace("|","_").replace("@","_").replace("×","_").replace("&","_").replace("+","_").replace(".","_")
     if res.startswith("_"):
         res=res[1:]
     if res.endswith("_"):
@@ -257,7 +258,7 @@ for tabname in tabletnames:
             currentline+=1
             curjtfline={"_class":"line","@id":str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline)),"children":[]}
             cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" rdf:type cunei:Line .\n")
-            cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" rdfs:label \"Line "+str(currentline)+"\"@ .\n")
+            cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" rdfs:label \"Line "+str(currentline)+"\"@en .\n")
             cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" foaf:image \""+str(namespace)+"/images/line/line_"+replaceNonURIChars(str(currentline))+"_"+str(tabname)+"_"+str(tabsideid[currentside])+"_"+str(currentside)+".jpg\"^^xsd:anyURI .\n")
             cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" rdf:type cunei:TransliterationLine .\n")
             cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+" cunei:contains "+namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" .\n")
@@ -350,3 +351,6 @@ for tabname in tabletnames:
     with open(translitfilename+".jtf", 'w', encoding='utf-8') as f:
         f.write(json.dumps(jtfldrep,indent=2))
         f.close()
+    g = Graph()
+    g.parse(translitfilename+".ttl")
+    g.serialize(destination=translitfilename+".ttl")
