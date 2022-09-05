@@ -30412,7 +30412,7 @@ var tree={
             "http://www.w3.org/2000/01/rdf-schema#member": {
               "instancecount": 57,
               "http://purl.org/graphemon#GraphemeReading": 57,
-              "http://purl.org/graphemon/GraphemeReading": 9
+              "http://purl.org/graphemon/GraphemeReading": 24
             }
           },
           "from": {}
