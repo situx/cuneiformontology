@@ -2,6 +2,7 @@
 from rdflib import Graph
 from rdflib import URIRef, Literal, BNode
 from rdflib.plugins.sparql import prepareQuery
+import traceback
 import shapely.wkt
 import shapely.geometry
 import os
@@ -1449,6 +1450,7 @@ class OntDocGeneration:
                 print(str(subtorencounter) + "/" + str(subtorenderlen) + " " + str(outpath + path))
             except Exception as e:
                 print("Create HTML Exception: "+str(e))
+                print(traceback.format_exc())
             #    #QgsMessageLog.logMessage("Exception occured " + str(e), "OntdocGeneration", Qgis.Info)
         print("Postprocessing " + str(len(postprocessing)))
         for subj in postprocessing.subjects():
@@ -1635,7 +1637,7 @@ class OntDocGeneration:
         #QgsMessageLog.logMessage("Relative Link from Given Depth: " + rellink,"OntdocGeneration", Qgis.Info)
         return rellink
 
-    def searchObjectConnectionsForAggregateData(self,graph,object,pred,geojsonrep,foundmedia,imageannos,image3dannos,textannos,label,unitlabel):
+    def searchObjectConnectionsForAggregateData(self,graph,object,pred,geojsonrep,foundmedia,imageannos,textannos,image3dannos,label,unitlabel):
         geoprop=False
         annosource=None
         incollection=False
@@ -2069,10 +2071,11 @@ class OntDocGeneration:
             if len(textannos)>0:
                 print("TEXTANNOS: "+str(textannos))
                 for textanno in textannos:
-                    if "src" in textanno:
-                        f.write("<span style=\"font-weight:bold\" class=\"textanno\" start=\""+str(textanno["start"])+"\" end=\""+str(textanno["end"])+"\" exact=\""+str(textanno["exact"])+"\" src=\""+str(textanno["src"])+"\"><mark>"+str(textanno["exact"])+"</mark></span>")
-                    else:
-                        f.write("<span style=\"font-weight:bold\" class=\"textanno\" start=\""+str(textanno["start"])+"\" end=\""+str(textanno["end"])+"\" exact=\""+str(textanno["exact"])+"\"><mark>"+str(textanno["exact"])+"</mark></span>")
+                    if isinstance(textanno,dict):
+                        if "src" in textanno:
+                            f.write("<span style=\"font-weight:bold\" class=\"textanno\" start=\""+str(textanno["start"])+"\" end=\""+str(textanno["end"])+"\" exact=\""+str(textanno["exact"])+"\" src=\""+str(textanno["src"])+"\"><mark>"+str(textanno["exact"])+"</mark></span>")
+                        else:
+                            f.write("<span style=\"font-weight:bold\" class=\"textanno\" start=\""+str(textanno["start"])+"\" end=\""+str(textanno["end"])+"\" exact=\""+str(textanno["exact"])+"\"><mark>"+str(textanno["exact"])+"</mark></span>")
             for audio in foundmedia["audio"]:
                 f.write(audiotemplate.replace("{{audio}}",str(audio)))
             for video in foundmedia["video"]:
