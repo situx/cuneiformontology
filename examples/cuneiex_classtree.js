@@ -30313,6 +30313,10 @@ var tree={
         "text": "Line (eg:cunei/Line) [102]",
         "data": {
           "to": {
+            "http://www.cidoc-crm.org/cidoc-crm/TXP3_is_rendered_by": {
+              "instancecount": 1,
+              "http://www.example.org/cunei/TransliterationLine": 1
+            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1,
               "http://www.w3.org/2002/07/owl#ObjectProperty": 1
@@ -30326,7 +30330,7 @@ var tree={
           },
           "from": {}
         },
-        "instancecount": 3
+        "instancecount": 4
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_signlist",
@@ -34185,419 +34189,6 @@ var tree={
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line1",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 1 [TCH92_obverse] (TCH92_transliteration1_obverse_line1)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line10",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 10 [TCH92_obverse] (TCH92_transliteration1_obverse_line10)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line11",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 11 [TCH92_obverse] (TCH92_transliteration1_obverse_line11)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line12",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 12 [TCH92_obverse] (TCH92_transliteration1_obverse_line12)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line13",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 13 [TCH92_obverse] (TCH92_transliteration1_obverse_line13)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line14",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 14 [TCH92_obverse] (TCH92_transliteration1_obverse_line14)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line15",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 15 [TCH92_obverse] (TCH92_transliteration1_obverse_line15)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line16",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 16 [TCH92_obverse] (TCH92_transliteration1_obverse_line16)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line17",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 17 [TCH92_obverse] (TCH92_transliteration1_obverse_line17)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line18",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 18 [TCH92_obverse] (TCH92_transliteration1_obverse_line18)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line19",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 19 [TCH92_obverse] (TCH92_transliteration1_obverse_line19)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line2",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 2 [TCH92_obverse] (TCH92_transliteration1_obverse_line2)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line20",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 20 [TCH92_obverse] (TCH92_transliteration1_obverse_line20)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line21",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 21 [TCH92_obverse] (TCH92_transliteration1_obverse_line21)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line22",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 22 [TCH92_obverse] (TCH92_transliteration1_obverse_line22)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line23",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 23 [TCH92_obverse] (TCH92_transliteration1_obverse_line23)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line24",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 24 [TCH92_obverse] (TCH92_transliteration1_obverse_line24)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line25",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 25 [TCH92_obverse] (TCH92_transliteration1_obverse_line25)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line26",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 26 [TCH92_obverse] (TCH92_transliteration1_obverse_line26)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line27",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 27 [TCH92_obverse] (TCH92_transliteration1_obverse_line27)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line28",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 28 [TCH92_obverse] (TCH92_transliteration1_obverse_line28)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line3",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 3 [TCH92_obverse] (TCH92_transliteration1_obverse_line3)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line4",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 4 [TCH92_obverse] (TCH92_transliteration1_obverse_line4)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line5",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 5 [TCH92_obverse] (TCH92_transliteration1_obverse_line5)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line6",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 6 [TCH92_obverse] (TCH92_transliteration1_obverse_line6)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line7",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 7 [TCH92_obverse] (TCH92_transliteration1_obverse_line7)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line8",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 8 [TCH92_obverse] (TCH92_transliteration1_obverse_line8)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line9",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 9 [TCH92_obverse] (TCH92_transliteration1_obverse_line9)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line1",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 1 [TCH92_reverse] (TCH92_transliteration1_reverse_line1)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line10",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 10 [TCH92_reverse] (TCH92_transliteration1_reverse_line10)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line11",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 11 [TCH92_reverse] (TCH92_transliteration1_reverse_line11)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line12",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 12 [TCH92_reverse] (TCH92_transliteration1_reverse_line12)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line13",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 13 [TCH92_reverse] (TCH92_transliteration1_reverse_line13)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line14",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 14 [TCH92_reverse] (TCH92_transliteration1_reverse_line14)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line15",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 15 [TCH92_reverse] (TCH92_transliteration1_reverse_line15)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line16",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 16 [TCH92_reverse] (TCH92_transliteration1_reverse_line16)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line17",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 17 [TCH92_reverse] (TCH92_transliteration1_reverse_line17)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line18",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 18 [TCH92_reverse] (TCH92_transliteration1_reverse_line18)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 19 [TCH92_reverse] (TCH92_transliteration1_reverse_line19)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line2",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 2 [TCH92_reverse] (TCH92_transliteration1_reverse_line2)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line20",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 20 [TCH92_reverse] (TCH92_transliteration1_reverse_line20)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line21",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 21 [TCH92_reverse] (TCH92_transliteration1_reverse_line21)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line22",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 22 [TCH92_reverse] (TCH92_transliteration1_reverse_line22)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line23",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 23 [TCH92_reverse] (TCH92_transliteration1_reverse_line23)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line24",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 24 [TCH92_reverse] (TCH92_transliteration1_reverse_line24)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 25 [TCH92_reverse] (TCH92_transliteration1_reverse_line25)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line26",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 26 [TCH92_reverse] (TCH92_transliteration1_reverse_line26)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line27",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 27 [TCH92_reverse] (TCH92_transliteration1_reverse_line27)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line28",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 28 [TCH92_reverse] (TCH92_transliteration1_reverse_line28)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line29",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 29 [TCH92_reverse] (TCH92_transliteration1_reverse_line29)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line3",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 3 [TCH92_reverse] (TCH92_transliteration1_reverse_line3)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line30",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 30 [TCH92_reverse] (TCH92_transliteration1_reverse_line30)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line4",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 4 [TCH92_reverse] (TCH92_transliteration1_reverse_line4)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line5",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 5 [TCH92_reverse] (TCH92_transliteration1_reverse_line5)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line6",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 6 [TCH92_reverse] (TCH92_transliteration1_reverse_line6)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line7",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 7 [TCH92_reverse] (TCH92_transliteration1_reverse_line7)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line8",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 8 [TCH92_reverse] (TCH92_transliteration1_reverse_line8)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line9",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 9 [TCH92_reverse] (TCH92_transliteration1_reverse_line9)",
-        "data": {}
-      },
-      {
-        "id": "http://www.example.org/cunei/TransliterationLine",
-        "parent": "#",
-        "type": "class",
-        "text": "TransliterationLine (eg:cunei/TransliterationLine) [102]",
-        "data": {}
-      },
-      {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_writtenText_reading",
         "parent": "http://www.cidoc-crm.org/cidoc-crm/TX5_Reading",
         "type": "instance",
@@ -35225,6 +34816,419 @@ var tree={
         "parent": "#",
         "type": "class",
         "text": "WordForm (eg:cunei/WordForm) [183]",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line1",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 1 [TCH92_obverse] (TCH92_transliteration1_obverse_line1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line10",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 10 [TCH92_obverse] (TCH92_transliteration1_obverse_line10)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line11",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 11 [TCH92_obverse] (TCH92_transliteration1_obverse_line11)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line12",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 12 [TCH92_obverse] (TCH92_transliteration1_obverse_line12)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line13",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 13 [TCH92_obverse] (TCH92_transliteration1_obverse_line13)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line14",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 14 [TCH92_obverse] (TCH92_transliteration1_obverse_line14)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line15",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 15 [TCH92_obverse] (TCH92_transliteration1_obverse_line15)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line16",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 16 [TCH92_obverse] (TCH92_transliteration1_obverse_line16)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line17",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 17 [TCH92_obverse] (TCH92_transliteration1_obverse_line17)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line18",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 18 [TCH92_obverse] (TCH92_transliteration1_obverse_line18)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line19",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 19 [TCH92_obverse] (TCH92_transliteration1_obverse_line19)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line2",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 2 [TCH92_obverse] (TCH92_transliteration1_obverse_line2)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line20",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 20 [TCH92_obverse] (TCH92_transliteration1_obverse_line20)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line21",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 21 [TCH92_obverse] (TCH92_transliteration1_obverse_line21)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line22",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 22 [TCH92_obverse] (TCH92_transliteration1_obverse_line22)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line23",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 23 [TCH92_obverse] (TCH92_transliteration1_obverse_line23)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line24",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 24 [TCH92_obverse] (TCH92_transliteration1_obverse_line24)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line25",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 25 [TCH92_obverse] (TCH92_transliteration1_obverse_line25)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line26",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 26 [TCH92_obverse] (TCH92_transliteration1_obverse_line26)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line27",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 27 [TCH92_obverse] (TCH92_transliteration1_obverse_line27)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line28",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 28 [TCH92_obverse] (TCH92_transliteration1_obverse_line28)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line3",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 3 [TCH92_obverse] (TCH92_transliteration1_obverse_line3)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line4",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 4 [TCH92_obverse] (TCH92_transliteration1_obverse_line4)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line5",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 5 [TCH92_obverse] (TCH92_transliteration1_obverse_line5)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line6",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 6 [TCH92_obverse] (TCH92_transliteration1_obverse_line6)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line7",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 7 [TCH92_obverse] (TCH92_transliteration1_obverse_line7)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line8",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 8 [TCH92_obverse] (TCH92_transliteration1_obverse_line8)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line9",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 9 [TCH92_obverse] (TCH92_transliteration1_obverse_line9)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line1",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 1 [TCH92_reverse] (TCH92_transliteration1_reverse_line1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line10",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 10 [TCH92_reverse] (TCH92_transliteration1_reverse_line10)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line11",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 11 [TCH92_reverse] (TCH92_transliteration1_reverse_line11)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line12",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 12 [TCH92_reverse] (TCH92_transliteration1_reverse_line12)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line13",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 13 [TCH92_reverse] (TCH92_transliteration1_reverse_line13)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line14",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 14 [TCH92_reverse] (TCH92_transliteration1_reverse_line14)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line15",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 15 [TCH92_reverse] (TCH92_transliteration1_reverse_line15)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line16",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 16 [TCH92_reverse] (TCH92_transliteration1_reverse_line16)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line17",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 17 [TCH92_reverse] (TCH92_transliteration1_reverse_line17)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line18",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 18 [TCH92_reverse] (TCH92_transliteration1_reverse_line18)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 19 [TCH92_reverse] (TCH92_transliteration1_reverse_line19)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line2",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 2 [TCH92_reverse] (TCH92_transliteration1_reverse_line2)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line20",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 20 [TCH92_reverse] (TCH92_transliteration1_reverse_line20)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line21",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 21 [TCH92_reverse] (TCH92_transliteration1_reverse_line21)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line22",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 22 [TCH92_reverse] (TCH92_transliteration1_reverse_line22)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line23",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 23 [TCH92_reverse] (TCH92_transliteration1_reverse_line23)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line24",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 24 [TCH92_reverse] (TCH92_transliteration1_reverse_line24)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 25 [TCH92_reverse] (TCH92_transliteration1_reverse_line25)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line26",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 26 [TCH92_reverse] (TCH92_transliteration1_reverse_line26)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line27",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 27 [TCH92_reverse] (TCH92_transliteration1_reverse_line27)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line28",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 28 [TCH92_reverse] (TCH92_transliteration1_reverse_line28)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line29",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 29 [TCH92_reverse] (TCH92_transliteration1_reverse_line29)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line3",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 3 [TCH92_reverse] (TCH92_transliteration1_reverse_line3)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line30",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 30 [TCH92_reverse] (TCH92_transliteration1_reverse_line30)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line4",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 4 [TCH92_reverse] (TCH92_transliteration1_reverse_line4)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line5",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 5 [TCH92_reverse] (TCH92_transliteration1_reverse_line5)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line6",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 6 [TCH92_reverse] (TCH92_transliteration1_reverse_line6)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line7",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 7 [TCH92_reverse] (TCH92_transliteration1_reverse_line7)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line8",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 8 [TCH92_reverse] (TCH92_transliteration1_reverse_line8)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line9",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 9 [TCH92_reverse] (TCH92_transliteration1_reverse_line9)",
+        "data": {}
+      },
+      {
+        "id": "http://www.example.org/cunei/TransliterationLine",
+        "parent": "#",
+        "type": "class",
+        "text": "TransliterationLine (eg:cunei/TransliterationLine) [102]",
         "data": {}
       },
       {
@@ -49660,223 +49664,6 @@ var tree={
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line1",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 1 [O147_bottom] (O147_transliteration1_bottom_line1)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line2",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 2 [O147_bottom] (O147_transliteration1_bottom_line2)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line3",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 3 [O147_bottom] (O147_transliteration1_bottom_line3)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line4",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 4 [O147_bottom] (O147_transliteration1_bottom_line4)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line5",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 5 [O147_bottom] (O147_transliteration1_bottom_line5)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line1",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 1 [O147_obverse] (O147_transliteration1_obverse_line1)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line10",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 10 [O147_obverse] (O147_transliteration1_obverse_line10)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line11",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 11 [O147_obverse] (O147_transliteration1_obverse_line11)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line12",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 12 [O147_obverse] (O147_transliteration1_obverse_line12)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line13",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 13 [O147_obverse] (O147_transliteration1_obverse_line13)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line2",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 2 [O147_obverse] (O147_transliteration1_obverse_line2)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line3",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 3 [O147_obverse] (O147_transliteration1_obverse_line3)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line4",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 4 [O147_obverse] (O147_transliteration1_obverse_line4)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line5",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 5 [O147_obverse] (O147_transliteration1_obverse_line5)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line6",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 6 [O147_obverse] (O147_transliteration1_obverse_line6)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line7",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 7 [O147_obverse] (O147_transliteration1_obverse_line7)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line8",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 8 [O147_obverse] (O147_transliteration1_obverse_line8)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line9",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 9 [O147_obverse] (O147_transliteration1_obverse_line9)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line1",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 1 [O147_reverse] (O147_transliteration1_reverse_line1)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line10",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 10 [O147_reverse] (O147_transliteration1_reverse_line10)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line11",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 11 [O147_reverse] (O147_transliteration1_reverse_line11)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line12",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 12 [O147_reverse] (O147_transliteration1_reverse_line12)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line13",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 13 [O147_reverse] (O147_transliteration1_reverse_line13)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line2",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 2 [O147_reverse] (O147_transliteration1_reverse_line2)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line3",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 3 [O147_reverse] (O147_transliteration1_reverse_line3)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line4",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 4 [O147_reverse] (O147_transliteration1_reverse_line4)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line5",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 5 [O147_reverse] (O147_transliteration1_reverse_line5)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line6",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 6 [O147_reverse] (O147_transliteration1_reverse_line6)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line7",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 7 [O147_reverse] (O147_transliteration1_reverse_line7)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line8",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 8 [O147_reverse] (O147_transliteration1_reverse_line8)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line9",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 9 [O147_reverse] (O147_transliteration1_reverse_line9)",
-        "data": {}
-      },
-      {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_writtenText_reading",
         "parent": "http://www.cidoc-crm.org/cidoc-crm/TX5_Reading",
         "type": "instance",
@@ -50315,6 +50102,223 @@ var tree={
         "parent": "http://www.example.org/cunei/WordForm",
         "type": "instance",
         "text": "WordForm: [\u00e2\u20ac\u00a6] (\u00e2\u20ac\u00a6_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line1",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 1 [O147_bottom] (O147_transliteration1_bottom_line1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line2",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 2 [O147_bottom] (O147_transliteration1_bottom_line2)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line3",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 3 [O147_bottom] (O147_transliteration1_bottom_line3)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line4",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 4 [O147_bottom] (O147_transliteration1_bottom_line4)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line5",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 5 [O147_bottom] (O147_transliteration1_bottom_line5)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line1",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 1 [O147_obverse] (O147_transliteration1_obverse_line1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line10",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 10 [O147_obverse] (O147_transliteration1_obverse_line10)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line11",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 11 [O147_obverse] (O147_transliteration1_obverse_line11)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line12",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 12 [O147_obverse] (O147_transliteration1_obverse_line12)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line13",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 13 [O147_obverse] (O147_transliteration1_obverse_line13)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line2",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 2 [O147_obverse] (O147_transliteration1_obverse_line2)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line3",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 3 [O147_obverse] (O147_transliteration1_obverse_line3)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line4",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 4 [O147_obverse] (O147_transliteration1_obverse_line4)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line5",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 5 [O147_obverse] (O147_transliteration1_obverse_line5)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line6",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 6 [O147_obverse] (O147_transliteration1_obverse_line6)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line7",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 7 [O147_obverse] (O147_transliteration1_obverse_line7)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line8",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 8 [O147_obverse] (O147_transliteration1_obverse_line8)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line9",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 9 [O147_obverse] (O147_transliteration1_obverse_line9)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line1",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 1 [O147_reverse] (O147_transliteration1_reverse_line1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line10",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 10 [O147_reverse] (O147_transliteration1_reverse_line10)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line11",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 11 [O147_reverse] (O147_transliteration1_reverse_line11)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line12",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 12 [O147_reverse] (O147_transliteration1_reverse_line12)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line13",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 13 [O147_reverse] (O147_transliteration1_reverse_line13)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line2",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 2 [O147_reverse] (O147_transliteration1_reverse_line2)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line3",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 3 [O147_reverse] (O147_transliteration1_reverse_line3)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line4",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 4 [O147_reverse] (O147_transliteration1_reverse_line4)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line5",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 5 [O147_reverse] (O147_transliteration1_reverse_line5)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line6",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 6 [O147_reverse] (O147_transliteration1_reverse_line6)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line7",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 7 [O147_reverse] (O147_transliteration1_reverse_line7)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line8",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 8 [O147_reverse] (O147_transliteration1_reverse_line8)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line9",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 9 [O147_reverse] (O147_transliteration1_reverse_line9)",
         "data": {}
       },
       {
@@ -54231,34 +54235,6 @@ var tree={
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 1 [HT073195_obverse] (HT073195_transliteration1_obverse_line1)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 2 [HT073195_obverse] (HT073195_transliteration1_obverse_line2)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 3 [HT073195_obverse] (HT073195_transliteration1_obverse_line3)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 4 [HT073195_obverse] (HT073195_transliteration1_obverse_line4)",
-        "data": {}
-      },
-      {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_writtenText_reading",
         "parent": "http://www.cidoc-crm.org/cidoc-crm/TX5_Reading",
         "type": "instance",
@@ -54354,6 +54330,34 @@ var tree={
         "parent": "http://www.example.org/cunei/WordForm",
         "type": "instance",
         "text": "WordForm: sza3 (sza3_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 1 [HT073195_obverse] (HT073195_transliteration1_obverse_line1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 2 [HT073195_obverse] (HT073195_transliteration1_obverse_line2)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 3 [HT073195_obverse] (HT073195_transliteration1_obverse_line3)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 4 [HT073195_obverse] (HT073195_transliteration1_obverse_line4)",
         "data": {}
       },
       {
@@ -61700,69 +61704,6 @@ var tree={
         "data": {}
       },
       {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line1",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 1 [HS1174_obverse] (HS1174_transliteration1_obverse_line1)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 2 [HS1174_obverse] (HS1174_transliteration1_obverse_line2)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line3",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 3 [HS1174_obverse] (HS1174_transliteration1_obverse_line3)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line4",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 4 [HS1174_obverse] (HS1174_transliteration1_obverse_line4)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line1",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 1 [HS1174_reverse] (HS1174_transliteration1_reverse_line1)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line2",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 2 [HS1174_reverse] (HS1174_transliteration1_reverse_line2)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line3",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 3 [HS1174_reverse] (HS1174_transliteration1_reverse_line3)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line4",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 4 [HS1174_reverse] (HS1174_transliteration1_reverse_line4)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line5",
-        "parent": "http://www.example.org/cunei/TransliterationLine",
-        "type": "instance",
-        "text": "Transliteration Line: 5 [HS1174_reverse] (HS1174_transliteration1_reverse_line5)",
-        "data": {}
-      },
-      {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_writtenText_reading",
         "parent": "http://www.cidoc-crm.org/cidoc-crm/TX5_Reading",
         "type": "instance",
@@ -61914,6 +61855,69 @@ var tree={
         "parent": "http://www.example.org/cunei/WordForm",
         "type": "instance",
         "text": "WordForm: ugula (ugula_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line1",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 1 [HS1174_obverse] (HS1174_transliteration1_obverse_line1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 2 [HS1174_obverse] (HS1174_transliteration1_obverse_line2)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line3",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 3 [HS1174_obverse] (HS1174_transliteration1_obverse_line3)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line4",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 4 [HS1174_obverse] (HS1174_transliteration1_obverse_line4)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line1",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 1 [HS1174_reverse] (HS1174_transliteration1_reverse_line1)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line2",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 2 [HS1174_reverse] (HS1174_transliteration1_reverse_line2)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line3",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 3 [HS1174_reverse] (HS1174_transliteration1_reverse_line3)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line4",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 4 [HS1174_reverse] (HS1174_transliteration1_reverse_line4)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line5",
+        "parent": "http://www.example.org/cunei/TransliterationLine",
+        "type": "instance",
+        "text": "Transliteration Line: 5 [HS1174_reverse] (HS1174_transliteration1_reverse_line5)",
         "data": {}
       },
       {
