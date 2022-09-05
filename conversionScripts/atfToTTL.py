@@ -257,13 +257,14 @@ for tabname in tabletnames:
             currentline+=1
             curjtfline={"_class":"line","@id":str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline)),"children":[]}
             cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" rdf:type cunei:Line .\n")
+            cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" rdfs:label \"Line "+str(currentline)+"\"@ .\n")
             cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" foaf:image \""+str(namespace)+"/images/line/line_"+replaceNonURIChars(str(currentline))+"_"+str(tabname)+"_"+str(tabsideid[currentside])+"_"+str(currentside)+".jpg\"^^xsd:anyURI .\n")
             cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" rdf:type cunei:TransliterationLine .\n")
             cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+" cunei:contains "+namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" .\n")
             cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" skos:definition \""+str(line)+"\" .\n")
             cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" lemon:writtenRepUnicode \""+str(cuneifyWord(str(currentline),str(namespace)+""+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_word"+str(currentwordindex)+"_wordformocc",cdlitabs,namespaceprefix+":"+str(currenttabletid)+"_signreadinglist")).replace("\"","")+"\"^^cunei:unicodeLiteral .\n")
             cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" lemon:writtenRepASCII \""+str(format_ascii(str(currentline))).replace("\"","")+"\"^^cunei:ASCIILiteral .\n")
-            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" rdfs:label \"Line: "+str(currentline)+" ["+str(currenttabletid)+"_"+str(currentside)+"]\" .\n")
+            cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" rdfs:label \"Transliteration Line: "+str(currentline)+" ["+str(currenttabletid)+"_"+str(currentside)+"]\" .\n")
             currentsidejtf["children"].append(curjtfline)
             currentwordindex=0
             currentcharindex=1
@@ -293,7 +294,7 @@ for tabname in tabletnames:
                 cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" cunei:consistsOf "+str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_word"+str(currentwordindex)+"_wordformocc .\n")
                 if currentwordindex>0 and (currentwordindex-1)>0:
                     cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_word"+str(currentwordindex)+"_wordformocc cunei:prevWord "+str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_word"+str(currentwordindex-1)+"_wordformocc .\n")
-                if currentwordindex<=linelen and (currentwordindex+1)<=linelen:
+                if currentwordindex<=linelen and (currentwordindex+1)<len(linespl):
                     cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_word"+str(currentwordindex)+"_wordformocc cunei:nextWord "+str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_word"+str(currentwordindex+1)+"_wordformocc .\n")
                 currentrelcharindex=1
                 wordspl=re.split(wordsplit,word)
@@ -346,6 +347,6 @@ for tabname in tabletnames:
         f.write(ontology)
         f.write("".join(cdlitabs))
         f.close()
-    #with open("cdli_jtfs/"+replaceNonURIChars(currenttabletid)+'.jtf', 'w', encoding='utf-8') as f:
-    #    f.write(json.dumps(jtfldrep,indent=2))
-    #    f.close()
+    with open(translitfilename+".jtf", 'w', encoding='utf-8') as f:
+        f.write(json.dumps(jtfldrep,indent=2))
+        f.close()

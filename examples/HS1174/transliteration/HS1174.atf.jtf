@@ -1,0 +1,737 @@
+{
+  "@context": {
+    "cunei": "http://www.purl.org/cuneiform/",
+    "graphemon": "http://www.purl.org/graphemon/",
+    "cuneisignlist": "http://www.purl.org/cuneiform/signlist/",
+    "cuneidict": "http://www.purl.org/cuneiform/dict/",
+    "cidoc": "http://www.cidoc-crm.org/cidoc-crm/",
+    "lemon": "http://lemon-model.net/lemon#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "Collection": "cunei:CuneiformArtifactCollection",
+    "tablet": "cunei:Tablet",
+    "Cone": "cunei:Cone",
+    "Bulla": "cunei:Bulla",
+    "Brick": "cunei:Brick",
+    "Block": "cunei:Block",
+    "Barrel": "cunei:Barrel",
+    "children": "cunei:contains",
+    "Cylinder": "cunei:Cylinder",
+    "Envelope": "cunei:Envelope",
+    "label": "rdfs:label",
+    "Tag": "cunei:Tag",
+    "sequence": "cunei:Sequence",
+    "reading": "graphemon:hasGraphemeReading",
+    "grapheme": "graphemon:grapheme",
+    "short": "cunei:ShortSequence",
+    "sense": "lemon:sense",
+    "form": "lemon:form",
+    "lineNumber": "cunei:lineNumber",
+    "TabletSide": "cunei:TabletSide",
+    "bottom": "cunei:BottomSide",
+    "top": "cunei:TopSide",
+    "left": "cunei:LeftSide",
+    "right": "cunei:RightSide",
+    "obverse": "cunei:ObverseSide",
+    "reverse": "cunei:ReverseSide",
+    "FindSpot": "cunei:FindSpot",
+    "Genre": "cunei:Genre",
+    "Transliteration": "cunei:Transliteration",
+    "TransliterationCharOccurrence": "cunei:TransliterationCharOccurrence",
+    "WritingField": "cidoc:TX4_WritingField",
+    "Column": "cunei:Column",
+    "Sentence": "cunei:Sentence",
+    "WordOccurance": "cunei:WordOccurance",
+    "Glyph": "cidoc:TX9_Glyph"
+  },
+  "@graph": {
+    "_class": "object",
+    "@id": "P@tablet",
+    "@type": "tablet",
+    "children": [
+      {
+        "_class": "surface",
+        "@id": "HS1174_obverse",
+        "@type": "obverse",
+        "children": [
+          {
+            "_class": "line",
+            "@id": "HS1174_obverse_line1",
+            "children": [
+              {
+                "_class": "sequence",
+                "@id": "HS1174_obverse_line1_word1_wordformocc",
+                "form": "3(u)",
+                "@type": "short",
+                "children": [
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_obverse_line1_char1_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "3(u)",
+                    "grapheme": {
+                      "@type": "CharacterComposition",
+                      "@id": "http://purl.org/cuneiform/signlist/character_esz_3\u00d7u",
+                      "signname": "ESZ (3\u00d7U)",
+                      "label": "Grapheme: ESZ (3\u00d7U)"
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "sequence",
+                "@id": "HS1174_obverse_line1_word2_wordformocc",
+                "form": "3(disz)",
+                "@type": "short",
+                "children": [
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_obverse_line1_char2_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "3(disz)",
+                    "grapheme": {}
+                  }
+                ]
+              },
+              {
+                "_class": "sequence",
+                "@id": "HS1174_obverse_line1_word3_wordformocc",
+                "form": "gurusz",
+                "@type": "short",
+                "children": [
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_obverse_line1_char3_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "gurusz",
+                    "grapheme": {}
+                  }
+                ]
+              },
+              {
+                "_class": "sequence",
+                "@id": "HS1174_obverse_line1_word4_wordformocc",
+                "form": "szu",
+                "@type": "short",
+                "children": [
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_obverse_line1_char4_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "szu",
+                    "grapheme": {}
+                  }
+                ]
+              },
+              {
+                "_class": "sequence",
+                "@id": "HS1174_obverse_line1_word5_wordformocc",
+                "form": "dim2-ma",
+                "@type": "short",
+                "children": [
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_obverse_line1_char5_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "dim2",
+                    "grapheme": {}
+                  },
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_obverse_line1_char6_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "ma",
+                    "grapheme": {
+                      "@type": "CharacterComposition",
+                      "@id": "http://purl.org/cuneiform/signlist/character_ma",
+                      "signname": "MA",
+                      "label": "Grapheme: MA"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "_class": "line",
+            "@id": "HS1174_obverse_line2",
+            "children": [
+              {
+                "_class": "sequence",
+                "@id": "HS1174_obverse_line2_word1_wordformocc",
+                "form": "da-ak-ru-um",
+                "@type": "short",
+                "children": [
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_obverse_line2_char1_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "da",
+                    "grapheme": {
+                      "@type": "CharacterComposition",
+                      "@id": "http://purl.org/cuneiform/signlist/character_da",
+                      "signname": "DA",
+                      "label": "Grapheme: DA"
+                    }
+                  },
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_obverse_line2_char2_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "ak",
+                    "grapheme": {
+                      "@type": "CharacterComposition",
+                      "@id": "http://purl.org/cuneiform/signlist/character_ag",
+                      "signname": "AG",
+                      "label": "Grapheme: AG"
+                    }
+                  },
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_obverse_line2_char3_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "ru",
+                    "grapheme": {
+                      "@type": "CharacterComposition",
+                      "@id": "http://purl.org/cuneiform/signlist/character_ru",
+                      "signname": "RU",
+                      "label": "Grapheme: RU"
+                    }
+                  },
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_obverse_line2_char4_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "um",
+                    "grapheme": {
+                      "@type": "CharacterComposition",
+                      "@id": "http://purl.org/cuneiform/signlist/character_um",
+                      "signname": "UM",
+                      "label": "Grapheme: UM"
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "sequence",
+                "@id": "HS1174_obverse_line2_word2_wordformocc",
+                "form": "e2-a",
+                "@type": "short",
+                "children": [
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_obverse_line2_char5_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "e2",
+                    "grapheme": {}
+                  },
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_obverse_line2_char6_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "a",
+                    "grapheme": {
+                      "@type": "CharacterComposition",
+                      "@id": "http://purl.org/cuneiform/signlist/character_a",
+                      "signname": "A",
+                      "label": "Grapheme: A"
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "sequence",
+                "@id": "HS1174_obverse_line2_word3_wordformocc",
+                "form": "ib2-dab5",
+                "@type": "short",
+                "children": [
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_obverse_line2_char7_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "ib2",
+                    "grapheme": {}
+                  },
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_obverse_line2_char8_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "dab5",
+                    "grapheme": {}
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "_class": "line",
+            "@id": "HS1174_obverse_line3",
+            "children": [
+              {
+                "_class": "sequence",
+                "@id": "HS1174_obverse_line3_word1_wordformocc",
+                "form": "ugula",
+                "@type": "short",
+                "children": [
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_obverse_line3_char1_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "ugula",
+                    "grapheme": {
+                      "@type": "CharacterComposition",
+                      "@id": "http://purl.org/cuneiform/signlist/character_pa",
+                      "signname": "PA",
+                      "label": "Grapheme: PA"
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "sequence",
+                "@id": "HS1174_obverse_line3_word2_wordformocc",
+                "form": "szesz-da-da",
+                "@type": "short",
+                "children": [
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_obverse_line3_char2_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "szesz",
+                    "grapheme": {}
+                  },
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_obverse_line3_char3_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "da",
+                    "grapheme": {
+                      "@type": "CharacterComposition",
+                      "@id": "http://purl.org/cuneiform/signlist/character_da",
+                      "signname": "DA",
+                      "label": "Grapheme: DA"
+                    }
+                  },
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_obverse_line3_char4_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "da",
+                    "grapheme": {
+                      "@type": "CharacterComposition",
+                      "@id": "http://purl.org/cuneiform/signlist/character_da",
+                      "signname": "DA",
+                      "label": "Grapheme: DA"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "_class": "line",
+            "@id": "HS1174_obverse_line4",
+            "children": [
+              {
+                "_class": "sequence",
+                "@id": "HS1174_obverse_line4_word1_wordformocc",
+                "form": "9(disz)",
+                "@type": "short",
+                "children": [
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_obverse_line4_char1_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "9(disz)",
+                    "grapheme": {}
+                  }
+                ]
+              },
+              {
+                "_class": "sequence",
+                "@id": "HS1174_obverse_line4_word2_wordformocc",
+                "form": "gurusz",
+                "@type": "short",
+                "children": [
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_obverse_line4_char2_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "gurusz",
+                    "grapheme": {}
+                  }
+                ]
+              },
+              {
+                "_class": "sequence",
+                "@id": "HS1174_obverse_line4_word3_wordformocc",
+                "form": "szu",
+                "@type": "short",
+                "children": [
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_obverse_line4_char3_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "szu",
+                    "grapheme": {}
+                  }
+                ]
+              },
+              {
+                "_class": "sequence",
+                "@id": "HS1174_obverse_line4_word4_wordformocc",
+                "form": "dim2-ma",
+                "@type": "short",
+                "children": [
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_obverse_line4_char4_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "dim2",
+                    "grapheme": {}
+                  },
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_obverse_line4_char5_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "ma",
+                    "grapheme": {
+                      "@type": "CharacterComposition",
+                      "@id": "http://purl.org/cuneiform/signlist/character_ma",
+                      "signname": "MA",
+                      "label": "Grapheme: MA"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "_class": "surface",
+        "@id": "HS1174_reverse",
+        "@type": "reverse",
+        "children": [
+          {
+            "_class": "line",
+            "@id": "HS1174_reverse_line1",
+            "children": [
+              {
+                "_class": "sequence",
+                "@id": "HS1174_reverse_line1_word1_wordformocc",
+                "form": "ugula",
+                "@type": "short",
+                "children": [
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_reverse_line1_char1_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "ugula",
+                    "grapheme": {
+                      "@type": "CharacterComposition",
+                      "@id": "http://purl.org/cuneiform/signlist/character_pa",
+                      "signname": "PA",
+                      "label": "Grapheme: PA"
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "sequence",
+                "@id": "HS1174_reverse_line1_word2_wordformocc",
+                "form": "lu2-ga-a",
+                "@type": "short",
+                "children": [
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_reverse_line1_char2_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "lu2",
+                    "grapheme": {}
+                  },
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_reverse_line1_char3_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "ga",
+                    "grapheme": {
+                      "@type": "CharacterComposition",
+                      "@id": "http://purl.org/cuneiform/signlist/character_ga",
+                      "signname": "GA",
+                      "label": "Grapheme: GA"
+                    }
+                  },
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_reverse_line1_char4_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "a",
+                    "grapheme": {
+                      "@type": "CharacterComposition",
+                      "@id": "http://purl.org/cuneiform/signlist/character_a",
+                      "signname": "A",
+                      "label": "Grapheme: A"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "_class": "line",
+            "@id": "HS1174_reverse_line2",
+            "children": [
+              {
+                "_class": "sequence",
+                "@id": "HS1174_reverse_line2_word1_wordformocc",
+                "form": "nu-banda3",
+                "@type": "short",
+                "children": [
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_reverse_line2_char1_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "nu",
+                    "grapheme": {
+                      "@type": "CharacterComposition",
+                      "@id": "http://purl.org/cuneiform/signlist/character_nu",
+                      "signname": "NU",
+                      "label": "Grapheme: NU"
+                    }
+                  },
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_reverse_line2_char2_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "banda3",
+                    "grapheme": {}
+                  }
+                ]
+              },
+              {
+                "_class": "sequence",
+                "@id": "HS1174_reverse_line2_word2_wordformocc",
+                "form": "ku3-sa6-ga",
+                "@type": "short",
+                "children": [
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_reverse_line2_char3_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "ku3",
+                    "grapheme": {}
+                  },
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_reverse_line2_char4_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "sa6",
+                    "grapheme": {}
+                  },
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_reverse_line2_char5_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "ga",
+                    "grapheme": {
+                      "@type": "CharacterComposition",
+                      "@id": "http://purl.org/cuneiform/signlist/character_ga",
+                      "signname": "GA",
+                      "label": "Grapheme: GA"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "_class": "line",
+            "@id": "HS1174_reverse_line3",
+            "children": [
+              {
+                "_class": "sequence",
+                "@id": "HS1174_reverse_line3_word1_wordformocc",
+                "form": "e2-gal",
+                "@type": "short",
+                "children": [
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_reverse_line3_char1_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "e2",
+                    "grapheme": {}
+                  },
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_reverse_line3_char2_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "gal",
+                    "grapheme": {
+                      "@type": "CharacterComposition",
+                      "@id": "http://purl.org/cuneiform/signlist/character_gal",
+                      "signname": "GAL",
+                      "label": "Grapheme: GAL"
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "sequence",
+                "@id": "HS1174_reverse_line3_word2_wordformocc",
+                "form": "ensi2-ka",
+                "@type": "short",
+                "children": [
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_reverse_line3_char3_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "ensi2",
+                    "grapheme": {}
+                  },
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_reverse_line3_char4_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "ka",
+                    "grapheme": {
+                      "@type": "CharacterComposition",
+                      "@id": "http://purl.org/cuneiform/signlist/character_ka_x_bi",
+                      "signname": "KA x BI",
+                      "label": "Grapheme: KA x BI"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "_class": "line",
+            "@id": "HS1174_reverse_line4",
+            "children": [
+              {
+                "_class": "sequence",
+                "@id": "HS1174_reverse_line4_word1_wordformocc",
+                "form": "sza3",
+                "@type": "short",
+                "children": [
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_reverse_line4_char1_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "sza3",
+                    "grapheme": {}
+                  }
+                ]
+              },
+              {
+                "_class": "sequence",
+                "@id": "HS1174_reverse_line4_word2_wordformocc",
+                "form": "tum-al!(TA)",
+                "@type": "short",
+                "children": [
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_reverse_line4_char2_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "tum",
+                    "grapheme": {
+                      "@type": "CharacterComposition",
+                      "@id": "http://purl.org/cuneiform/signlist/character_tum",
+                      "signname": "TUM",
+                      "label": "Grapheme: TUM"
+                    }
+                  },
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_reverse_line4_char3_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "al!(TA)",
+                    "grapheme": {}
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "_class": "line",
+            "@id": "HS1174_reverse_line5",
+            "children": [
+              {
+                "_class": "sequence",
+                "@id": "HS1174_reverse_line5_word1_wordformocc",
+                "form": "iti",
+                "@type": "short",
+                "children": [
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_reverse_line5_char1_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "iti",
+                    "grapheme": {
+                      "@type": "CharacterComposition",
+                      "@id": "http://purl.org/cuneiform/signlist/character_iti_ud\u00d7esz",
+                      "signname": "ITI (UD\u00d7ESZ)",
+                      "label": "Grapheme: ITI (UD\u00d7ESZ)"
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "sequence",
+                "@id": "HS1174_reverse_line5_word2_wordformocc",
+                "form": "du6-ku3",
+                "@type": "short",
+                "children": [
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_reverse_line5_char2_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "du6",
+                    "grapheme": {}
+                  },
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_reverse_line5_char3_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "ku3",
+                    "grapheme": {}
+                  }
+                ]
+              },
+              {
+                "_class": "sequence",
+                "@id": "HS1174_reverse_line5_word3_wordformocc",
+                "form": "u4",
+                "@type": "short",
+                "children": [
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_reverse_line5_char4_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "u4",
+                    "grapheme": {}
+                  }
+                ]
+              },
+              {
+                "_class": "sequence",
+                "@id": "HS1174_reverse_line5_word4_wordformocc",
+                "form": "9(disz)",
+                "@type": "short",
+                "children": [
+                  {
+                    "_class": "chr",
+                    "@id": "HS1174_transliteration1_reverse_line5_char5_charocc",
+                    "@type": "TransliterationCharOccurrence",
+                    "reading": "9(disz)",
+                    "grapheme": {}
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
