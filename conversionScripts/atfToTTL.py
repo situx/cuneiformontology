@@ -70,7 +70,7 @@ def getGraphemeReadingURI(word):
         counter=0
         for chara in unicodeword:
             if chara in signmapping:
-                return {"@type":signmapping[chara]["@type"],"@id":signmapping[chara]["@id"],"signname":str(signmapping[chara]["signname"]),"label":"Grapheme: "+str(signmapping[chara]["signname"])}
+                return {"@type":signmapping[chara]["@type"],"@id":signmapping[chara]["@id"].replace("http://purl.org/cuneiform/signlist/","https://situx.github.io/cuneiformontology/signlist"),"signname":str(signmapping[chara]["signname"]),"label":"Grapheme: "+str(signmapping[chara]["signname"])}
     return {}
 
 def cuneifyWord(ufword,worduri,ttlresult,readcolluri):
