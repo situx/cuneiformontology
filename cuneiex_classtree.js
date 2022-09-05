@@ -30432,14 +30432,13 @@ var tree={
               "instancecount": 1
             },
             "http://www.w3.org/2000/01/rdf-schema#member": {
-              "instancecount": 546,
-              "http://www.purl.org/cuneiform/WordForm": 87,
+              "instancecount": 459,
               "http://www.purl.org/cuneiform/TransliterationCharOccurrence": 459
             }
           },
           "from": {}
         },
-        "instancecount": 548
+        "instancecount": 461
       },
       {
         "id": "https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_lexicon",
@@ -30507,6 +30506,622 @@ var tree={
         "parent": "#",
         "type": "class",
         "text": "TX1_WrittenText (crm:TX1_WrittenText) [4]",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_2_disz_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: 1/2(disz) (1_2_disz_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_2_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: 1/2 (1_2_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__A_am_mar_sza_DINGIR_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {1(disz)}A-am-mar-sza-DINGIR (1_disz__A_am_mar_sza_DINGIR_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__A_ta_na_ah__DINGIR_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {1(disz)}A-ta-na-ah,-DINGIR (1_disz__A_ta_na_ah__DINGIR_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__Ba_li_h_u_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {1(disz)}Ba-li-h,u (1_disz__Ba_li_h_u_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__Ba_nu_u2_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {1(disz)}Ba-nu-u2 (1_disz__Ba_nu_u2_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__DINGIR_ba_ni_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {1(disz)}DINGIR-ba-ni (1_disz__DINGIR_ba_ni_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__GU_u2_ug_szar_ri_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {1(disz)}GU-u2-ug-szar-ri (1_disz__GU_u2_ug_szar_ri_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__Gu_u2_gu_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {1(disz)}Gu-u2-gu (1_disz__Gu_u2_gu_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__Gu_u2_ug_ma_an_za_a_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {1(disz)}Gu-u2-ug-ma-an-za-a (1_disz__Gu_u2_ug_ma_an_za_a_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__IR2__d_IMIN_BI_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {1(disz)}IR2-{d}IMIN.BI (1_disz__IR2__d_IMIN_BI_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__KA_szu_t_a__a_bu_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {1(disz)}KA-szu-t,a?-a-bu (1_disz__KA_szu_t_a__a_bu_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__NE__d_Sza2_masz_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {1(disz)}NE-{d}Sza2-masz (1_disz__NE__d_Sza2_masz_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__NE__d__Isz8_tar2_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {1(disz)}NE-{d}-Isz8-tar2 (1_disz__NE__d__Isz8_tar2_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__Na_al_ka_me_en_na_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {1(disz)}Na-al-ka-me-en-na (1_disz__Na_al_ka_me_en_na_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__Na_par2_ak_sze_er_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {1(disz)#}Na-par2-ak-sze-er (1_disz__Na_par2_ak_sze_er_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__Re_e_szu_ma_DINGIR_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {1(disz)}Re-e-szu-ma-DINGIR (1_disz__Re_e_szu_ma_DINGIR_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__Ru_us_su_kar_du_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {1(disz)}Ru-us-su-kar-du (1_disz__Ru_us_su_kar_du_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__S_il2_li2__d_Nin_urta_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {1(disz)}S,il2-li2-{d}Nin-urta (1_disz__S_il2_li2__d_Nin_urta_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz___Gu_u2_ug_h_a_di_ra_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {1(disz)}-Gu-u2-ug-h,a-di-ra (1_disz___Gu_u2_ug_h_a_di_ra_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__d_X_X_X_KAM_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {1(disz).d}X-X-X-KAM (1_disz__d_X_X_X_KAM_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__d__X_X_X_re_ma_ni_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {1(disz)-d}-X-X-X-re-ma-ni (1_disz__d__X_X_X_re_ma_ni_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__mu_KAR__d_A_szur_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {1(disz)-mu}KAR-{d}A-szur (1_disz__mu_KAR__d_A_szur_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: 1(disz) (1_disz_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_u_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: 1(u) (1_u_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/2_disz_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: 2(disz) (2_disz_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/2_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: 2 (2_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/3_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: 3 (3_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/4_disz__MUNUS_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: [4(disz){MUNUS} (4_disz__MUNUS_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/4_disz_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: 4(disz) (4_disz_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/4_u_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: 4(u) (4_u_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/5_disz_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: 5(disz) (5_disz_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/5_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: 5 (5_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/7_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: 7 (7_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/ANSZE_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: ANSZE (ANSZE_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/BAN2_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: BAN2 (BAN2_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/BAN_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: BAN (BAN_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/DAM_su_sza2_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: DAM-su-sza2 (DAM_su_sza2_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/DAM_su_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: DAM#-su (DAM_su_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/DUMU_MUNUS_su_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: DUMU#.MUNUS-su (DUMU_MUNUS_su_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/DUMU_szu_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: DUMU-szu (DUMU_szu_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/ERIN2_MESZ__wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: ERIN2{MESZ}] (ERIN2_MESZ__wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/ERIN2_MESZ_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: ERIN2{MESZ} (ERIN2_MESZ_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/GABA_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: GABA (GABA_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/KIN_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: KIN (KIN_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/KI_MIN_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: KI.MIN (KI_MIN_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/KUR_e_la_mi_a_ie_e_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {KUR}e-la-mi-a-ie-e (KUR_e_la_mi_a_ie_e_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/LU2_pir2_su_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {LU2}pir2-su (LU2_pir2_su_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/LU2_sza_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {LU2}sza (LU2_sza_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/LU2_ta_ri_u2_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {LU2}ta-ri-u2 (LU2_ta_ri_u2_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/MUNUS_pir2_su_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {MUNUS}pir2-su (MUNUS_pir2_su_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/MUNUS_tal_mi_da_tu_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {MUNUS}tal-mi-da-tu (MUNUS_tal_mi_da_tu_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/NIGIDA_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: NIGIDA (NIGIDA_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/SILA3_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: SILA3 (SILA3_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/SZE_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: SZE (SZE_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/SZU_NIGIN2_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: SZU.NIGIN2 (SZU_NIGIN2_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/_MUNUS_ta_ri_tu_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: [{MUNUS}ta-ri-tu] (_MUNUS_ta_ri_tu_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/__1disz__SU___d_SZU_ri_h_a_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: [{(1disz)}SU]-{d}SZU-ri-h,a (__1disz__SU___d_SZU_ri_h_a_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/a_di_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: a-di (a_di_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_1_disz__na_AN_e__szar_rat_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {f}1(disz)+na-AN{e}-szar-rat (f_1_disz__na_AN_e__szar_rat_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_A_na_ru_qi_al_si_szi_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {f}A-na-ru-qi-al-si-szi (f_A_na_ru_qi_al_si_szi_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_A_ta_mar_qa_sa_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {f}A-ta-mar-qa-sa (f_A_ta_mar_qa_sa_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Ba_a_bu_ia_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {f}Ba-a-bu-ia (f_Ba_a_bu_ia_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Ba_bi_szar_ri_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {f}Ba-bi-szar#-ri (f_Ba_bi_szar_ri_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Be_el_tu_ia_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {f}Be-el-tu-ia (f_Be_el_tu_ia_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_DU_tu_ma_an_za_a_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {f}DU-tu-ma-an-za-a (f_DU_tu_ma_an_za_a_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_E_bit_ta_asz2_sz_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {f}E-bit-ta-asz2-sz (f_E_bit_ta_asz2_sz_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Im_ma_te_a_am_mar_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {f}Im-ma-te-a-am-mar (f_Im_ma_te_a_am_mar_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Ki_di_ni_tu_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {f}Ki-di-ni-tu (f_Ki_di_ni_tu_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_La_ka_ma_asz2_sze_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {f}La-ka-ma-asz2-sze (f_La_ka_ma_asz2_sze_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Me_e_na_ma_gi_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {f}Me-e-na-ma-gi (f_Me_e_na_ma_gi_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Nap_sze_ri_um_mi_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {f}Nap-sze-ri-um-mi (f_Nap_sze_ri_um_mi_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Pi_il_h_a_tu_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {f}Pi-il-h,a-tu (f_Pi_il_h_a_tu_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Pu_ut_tu_me_ri_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {f}Pu-ut-tu-me-ri (f_Pu_ut_tu_me_ri_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Sza_qu_u2_tu_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {f}Sza-qu-u2-tu (f_Sza_qu_u2_tu_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Ta_ki_szu_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {f}Ta-ki#-szu (f_Ta_ki_szu_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_U2_bar_ta_ni_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {f}U2-bar-ta-ni (f_U2_bar_ta_ni_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_U2_ta_za_ku_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {f}U2-ta-za-ku (f_U2_ta_za_ku_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f__E_bu_ri_i_tu_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {f}-E#-bu#-ri-i-tu (f__E_bu_ri_i_tu_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/ku_kul2_li_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: ku-kul2#-li# (ku_kul2_li_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/pir2_su_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: pir2-su (pir2_su_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/sza2_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: [sza2 (sza2_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/sza__pil2_ti_szu_nu_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: sza-[pil2-ti-szu-nu] (sza__pil2_ti_szu_nu_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/sza_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: sza (sza_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/ta_ri_tu_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: ta-ri-tu (ta_ri_tu_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/ta_ri_u2_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: ta-ri-u2 (ta_ri_u2_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/tch92/tal_mi__tu_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: tal-mi-[tu] (tal_mi__tu_wordform)",
+        "data": {}
+      },
+      {
+        "id": "http://www.purl.org/cuneiform/WordForm",
+        "parent": "#",
+        "type": "class",
+        "text": "WordForm (purl:cuneiform/WordForm) [183]",
         "data": {}
       },
       {
@@ -34200,622 +34815,6 @@ var tree={
         "parent": "#",
         "type": "class",
         "text": "Grapheme (graphemon:Grapheme) [70]",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_2_disz_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: 1/2(disz) (1_2_disz_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_2_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: 1/2 (1_2_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__A_am_mar_sza_DINGIR_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {1(disz)}A-am-mar-sza-DINGIR (1_disz__A_am_mar_sza_DINGIR_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__A_ta_na_ah__DINGIR_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {1(disz)}A-ta-na-ah,-DINGIR (1_disz__A_ta_na_ah__DINGIR_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__Ba_li_h_u_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {1(disz)}Ba-li-h,u (1_disz__Ba_li_h_u_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__Ba_nu_u2_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {1(disz)}Ba-nu-u2 (1_disz__Ba_nu_u2_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__DINGIR_ba_ni_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {1(disz)}DINGIR-ba-ni (1_disz__DINGIR_ba_ni_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__GU_u2_ug_szar_ri_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {1(disz)}GU-u2-ug-szar-ri (1_disz__GU_u2_ug_szar_ri_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__Gu_u2_gu_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {1(disz)}Gu-u2-gu (1_disz__Gu_u2_gu_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__Gu_u2_ug_ma_an_za_a_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {1(disz)}Gu-u2-ug-ma-an-za-a (1_disz__Gu_u2_ug_ma_an_za_a_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__IR2__d_IMIN_BI_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {1(disz)}IR2-{d}IMIN.BI (1_disz__IR2__d_IMIN_BI_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__KA_szu_t_a__a_bu_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {1(disz)}KA-szu-t,a?-a-bu (1_disz__KA_szu_t_a__a_bu_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__NE__d_Sza2_masz_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {1(disz)}NE-{d}Sza2-masz (1_disz__NE__d_Sza2_masz_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__NE__d__Isz8_tar2_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {1(disz)}NE-{d}-Isz8-tar2 (1_disz__NE__d__Isz8_tar2_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__Na_al_ka_me_en_na_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {1(disz)}Na-al-ka-me-en-na (1_disz__Na_al_ka_me_en_na_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__Na_par2_ak_sze_er_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {1(disz)#}Na-par2-ak-sze-er (1_disz__Na_par2_ak_sze_er_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__Re_e_szu_ma_DINGIR_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {1(disz)}Re-e-szu-ma-DINGIR (1_disz__Re_e_szu_ma_DINGIR_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__Ru_us_su_kar_du_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {1(disz)}Ru-us-su-kar-du (1_disz__Ru_us_su_kar_du_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__S_il2_li2__d_Nin_urta_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {1(disz)}S,il2-li2-{d}Nin-urta (1_disz__S_il2_li2__d_Nin_urta_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz___Gu_u2_ug_h_a_di_ra_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {1(disz)}-Gu-u2-ug-h,a-di-ra (1_disz___Gu_u2_ug_h_a_di_ra_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__d_X_X_X_KAM_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {1(disz).d}X-X-X-KAM (1_disz__d_X_X_X_KAM_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__d__X_X_X_re_ma_ni_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {1(disz)-d}-X-X-X-re-ma-ni (1_disz__d__X_X_X_re_ma_ni_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz__mu_KAR__d_A_szur_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {1(disz)-mu}KAR-{d}A-szur (1_disz__mu_KAR__d_A_szur_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_disz_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: 1(disz) (1_disz_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/1_u_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: 1(u) (1_u_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/2_disz_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: 2(disz) (2_disz_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/2_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: 2 (2_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/3_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: 3 (3_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/4_disz__MUNUS_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: [4(disz){MUNUS} (4_disz__MUNUS_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/4_disz_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: 4(disz) (4_disz_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/4_u_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: 4(u) (4_u_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/5_disz_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: 5(disz) (5_disz_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/5_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: 5 (5_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/7_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: 7 (7_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/ANSZE_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: ANSZE (ANSZE_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/BAN2_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: BAN2 (BAN2_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/BAN_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: BAN (BAN_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/DAM_su_sza2_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: DAM-su-sza2 (DAM_su_sza2_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/DAM_su_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: DAM#-su (DAM_su_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/DUMU_MUNUS_su_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: DUMU#.MUNUS-su (DUMU_MUNUS_su_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/DUMU_szu_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: DUMU-szu (DUMU_szu_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/ERIN2_MESZ__wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: ERIN2{MESZ}] (ERIN2_MESZ__wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/ERIN2_MESZ_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: ERIN2{MESZ} (ERIN2_MESZ_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/GABA_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: GABA (GABA_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/KIN_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: KIN (KIN_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/KI_MIN_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: KI.MIN (KI_MIN_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/KUR_e_la_mi_a_ie_e_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {KUR}e-la-mi-a-ie-e (KUR_e_la_mi_a_ie_e_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/LU2_pir2_su_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {LU2}pir2-su (LU2_pir2_su_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/LU2_sza_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {LU2}sza (LU2_sza_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/LU2_ta_ri_u2_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {LU2}ta-ri-u2 (LU2_ta_ri_u2_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/MUNUS_pir2_su_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {MUNUS}pir2-su (MUNUS_pir2_su_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/MUNUS_tal_mi_da_tu_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {MUNUS}tal-mi-da-tu (MUNUS_tal_mi_da_tu_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/NIGIDA_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: NIGIDA (NIGIDA_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/SILA3_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: SILA3 (SILA3_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/SZE_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: SZE (SZE_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/SZU_NIGIN2_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: SZU.NIGIN2 (SZU_NIGIN2_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/_MUNUS_ta_ri_tu_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: [{MUNUS}ta-ri-tu] (_MUNUS_ta_ri_tu_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/__1disz__SU___d_SZU_ri_h_a_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: [{(1disz)}SU]-{d}SZU-ri-h,a (__1disz__SU___d_SZU_ri_h_a_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/a_di_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: a-di (a_di_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_1_disz__na_AN_e__szar_rat_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {f}1(disz)+na-AN{e}-szar-rat (f_1_disz__na_AN_e__szar_rat_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_A_na_ru_qi_al_si_szi_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {f}A-na-ru-qi-al-si-szi (f_A_na_ru_qi_al_si_szi_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_A_ta_mar_qa_sa_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {f}A-ta-mar-qa-sa (f_A_ta_mar_qa_sa_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Ba_a_bu_ia_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {f}Ba-a-bu-ia (f_Ba_a_bu_ia_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Ba_bi_szar_ri_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {f}Ba-bi-szar#-ri (f_Ba_bi_szar_ri_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Be_el_tu_ia_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {f}Be-el-tu-ia (f_Be_el_tu_ia_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_DU_tu_ma_an_za_a_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {f}DU-tu-ma-an-za-a (f_DU_tu_ma_an_za_a_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_E_bit_ta_asz2_sz_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {f}E-bit-ta-asz2-sz (f_E_bit_ta_asz2_sz_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Im_ma_te_a_am_mar_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {f}Im-ma-te-a-am-mar (f_Im_ma_te_a_am_mar_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Ki_di_ni_tu_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {f}Ki-di-ni-tu (f_Ki_di_ni_tu_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_La_ka_ma_asz2_sze_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {f}La-ka-ma-asz2-sze (f_La_ka_ma_asz2_sze_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Me_e_na_ma_gi_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {f}Me-e-na-ma-gi (f_Me_e_na_ma_gi_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Nap_sze_ri_um_mi_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {f}Nap-sze-ri-um-mi (f_Nap_sze_ri_um_mi_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Pi_il_h_a_tu_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {f}Pi-il-h,a-tu (f_Pi_il_h_a_tu_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Pu_ut_tu_me_ri_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {f}Pu-ut-tu-me-ri (f_Pu_ut_tu_me_ri_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Sza_qu_u2_tu_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {f}Sza-qu-u2-tu (f_Sza_qu_u2_tu_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_Ta_ki_szu_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {f}Ta-ki#-szu (f_Ta_ki_szu_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_U2_bar_ta_ni_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {f}U2-bar-ta-ni (f_U2_bar_ta_ni_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f_U2_ta_za_ku_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {f}U2-ta-za-ku (f_U2_ta_za_ku_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/f__E_bu_ri_i_tu_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {f}-E#-bu#-ri-i-tu (f__E_bu_ri_i_tu_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/ku_kul2_li_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: ku-kul2#-li# (ku_kul2_li_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/pir2_su_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: pir2-su (pir2_su_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/sza2_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: [sza2 (sza2_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/sza__pil2_ti_szu_nu_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: sza-[pil2-ti-szu-nu] (sza__pil2_ti_szu_nu_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/sza_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: sza (sza_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/ta_ri_tu_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: ta-ri-tu (ta_ri_tu_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/ta_ri_u2_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: ta-ri-u2 (ta_ri_u2_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/tch92/tal_mi__tu_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: tal-mi-[tu] (tal_mi__tu_wordform)",
-        "data": {}
-      },
-      {
-        "id": "http://www.purl.org/cuneiform/WordForm",
-        "parent": "#",
-        "type": "class",
-        "text": "WordForm (purl:cuneiform/WordForm) [183]",
         "data": {}
       },
       {
@@ -48285,6 +48284,440 @@ var tree={
         "data": {}
       },
       {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/1_u_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: 1(u) (1_u_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/2_3_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: 2/3 (2_3_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/2_u__8__disz__kam_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: 2(u)-8?(disz)-kam (2_u__8__disz__kam_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/5_disz_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: 5(disz) (5_disz_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/a_ap_pa_ta__nu_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: a-ap-pa-ta?-nu? (a_ap_pa_ta__nu_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/al_dug_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: al-dug# (al_dug_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/al_til_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: al#-til# (al_til_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/d_AMAR_UTU_la_ma_sa3_szu_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {d}AMAR-UTU-la-ma-sa3-szu (d_AMAR_UTU_la_ma_sa3_szu_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/d_AMAR_UTU_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {d}AMAR-UTU (d_AMAR_UTU_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/d_NIN_KAL__LA_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {d}NIN-KAL?-LA (d_NIN_KAL__LA_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/d__utu_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {d}[utu] (d__utu_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/d_a_a_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {d}a-a (d_a_a_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/d_utu_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {d}utu (d_utu_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/da_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: da (da_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/dingir_pi4___d_a_a_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: dingir-pi4!-{d}a-a (dingir_pi4___d_a_a_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/dingir_szu_a_bu_szu_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: dingir-szu-a-bu-szu# (dingir_szu_a_bu_szu_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/dumu_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: dumu (dumu_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/e2_du3_a_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: e2-du3-a (e2_du3_a_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/e2_ki_ud_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: e2-ki#-ud# (e2_ki_ud_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/e2_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: e2 (e2_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/gisz_ig_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {gisz}ig (gisz_ig_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/gisz_kesz2_da_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {gisz}kesz2-da (gisz_kesz2_da_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/gisz_sag_kul_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {gisz}sag-kul (gisz_sag_kul_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/gub_ba_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: gub-ba (gub_ba_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/igi_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: igi (igi_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/in__na_an_la2_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: in-[na-an-la2] (in__na_an_la2_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/in_pad3_de3_mesz_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: in-pad3-de3-mesz (in_pad3_de3_mesz_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/in_szi_in_szam2_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: in-szi-in-szam2# (in_szi_in_szam2_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/inim_bi_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: inim#-bi# (inim_bi_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/inim_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: inim (inim_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/innin_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: innin (innin_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/isz_du_ki_nu_um_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: isz-du-ki-nu-um (isz_du_ki_nu_um_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/isz_me_sin_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: isz-me-sin (isz_me_sin_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/iti_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: iti# (iti_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/ki_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: ki# (ki_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/ku3_babbar_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: ku3-babbar (ku3_babbar_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/lu2__d_utu_asz_szar_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: lu2-{d}utu-asz-szar (lu2__d_utu_asz_szar_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/lu2_lu2_ra_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: lu2-lu2-ra (lu2_lu2_ra_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/lukur_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: lukur (lukur_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/m_sa3_ap_h_u_li__ip_h_ur_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: {m}sa3-ap-h,u-li!-ip-h,ur (m_sa3_ap_h_u_li__ip_h_ur_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/mu_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: mu (mu_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/nu_ga2_ga2_a_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: nu-ga2-ga2-a (nu_ga2_ga2_a_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/nu_ur2_an_tim_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: nu-ur2-an-tim (nu_ur2_an_tim_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/ra__pa__asz_s_il2_li2_e2_a_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: ra-<pa>-asz-s,il2-li2-e2-a (ra__pa__asz_s_il2_li2_e2_a_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/sa_am_su2_i_lu_na_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: sa-am-su2-i-lu-na (sa_am_su2_i_lu_na_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/sag_bi_1_disz__kam_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: sag-bi-1(disz)-kam (sag_bi_1_disz__kam_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/sag_bi_2_disz__kam_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: sag-bi-2(disz)-kam (sag_bi_2_disz__kam_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/sanga_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: sanga (sanga_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/sar_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: sar (sar_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/sila_dagal_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: sila#-dagal (sila_dagal_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/sin_ri_me_ni_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: sin-ri-me-ni (sin_ri_me_ni_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/sza3_ga_a_ni_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: sza3#-ga-a-ni (sza3_ga_a_ni_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/szam2__ti_la_bi__sze3_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: [szam2]-ti-la-bi#-[sze3] (szam2__ti_la_bi__sze3_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/szu__d_mar__tu_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: szu-{d}mar!-tu (szu__d_mar__tu_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/u3_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: u3 (u3_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/u4_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: u4 (u4_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/ud_kur2_sze3_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: ud-kur2-sze3 (ud_kur2_sze3_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/ugula_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: ugula (ugula_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/x_is_PU2_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: x#-is-PU2 (x_is_PU2_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/x_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: x (x_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/x_x_s_i2_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: x#-x-s,i2 (x_x_s_i2_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/o147/\u00e2\u20ac\u00a6_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: [\u00e2\u20ac\u00a6] (\u00e2\u20ac\u00a6_wordform)",
+        "data": {}
+      },
+      {
         "id": "https://situx.github.io/cuneiformontology/examples/o147/O147",
         "parent": "http://www.purl.org/cuneiform/Tablet",
         "type": "instance",
@@ -49675,440 +50108,6 @@ var tree={
         "parent": "http://purl.org/graphemon/Grapheme",
         "type": "instance",
         "text": "Character: MU (character_mu)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/1_u_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: 1(u) (1_u_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/2_3_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: 2/3 (2_3_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/2_u__8__disz__kam_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: 2(u)-8?(disz)-kam (2_u__8__disz__kam_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/5_disz_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: 5(disz) (5_disz_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/a_ap_pa_ta__nu_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: a-ap-pa-ta?-nu? (a_ap_pa_ta__nu_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/al_dug_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: al-dug# (al_dug_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/al_til_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: al#-til# (al_til_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/d_AMAR_UTU_la_ma_sa3_szu_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {d}AMAR-UTU-la-ma-sa3-szu (d_AMAR_UTU_la_ma_sa3_szu_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/d_AMAR_UTU_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {d}AMAR-UTU (d_AMAR_UTU_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/d_NIN_KAL__LA_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {d}NIN-KAL?-LA (d_NIN_KAL__LA_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/d__utu_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {d}[utu] (d__utu_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/d_a_a_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {d}a-a (d_a_a_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/d_utu_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {d}utu (d_utu_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/da_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: da (da_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/dingir_pi4___d_a_a_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: dingir-pi4!-{d}a-a (dingir_pi4___d_a_a_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/dingir_szu_a_bu_szu_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: dingir-szu-a-bu-szu# (dingir_szu_a_bu_szu_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/dumu_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: dumu (dumu_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/e2_du3_a_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: e2-du3-a (e2_du3_a_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/e2_ki_ud_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: e2-ki#-ud# (e2_ki_ud_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/e2_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: e2 (e2_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/gisz_ig_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {gisz}ig (gisz_ig_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/gisz_kesz2_da_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {gisz}kesz2-da (gisz_kesz2_da_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/gisz_sag_kul_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {gisz}sag-kul (gisz_sag_kul_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/gub_ba_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: gub-ba (gub_ba_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/igi_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: igi (igi_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/in__na_an_la2_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: in-[na-an-la2] (in__na_an_la2_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/in_pad3_de3_mesz_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: in-pad3-de3-mesz (in_pad3_de3_mesz_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/in_szi_in_szam2_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: in-szi-in-szam2# (in_szi_in_szam2_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/inim_bi_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: inim#-bi# (inim_bi_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/inim_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: inim (inim_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/innin_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: innin (innin_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/isz_du_ki_nu_um_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: isz-du-ki-nu-um (isz_du_ki_nu_um_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/isz_me_sin_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: isz-me-sin (isz_me_sin_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/iti_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: iti# (iti_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/ki_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: ki# (ki_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/ku3_babbar_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: ku3-babbar (ku3_babbar_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/lu2__d_utu_asz_szar_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: lu2-{d}utu-asz-szar (lu2__d_utu_asz_szar_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/lu2_lu2_ra_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: lu2-lu2-ra (lu2_lu2_ra_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/lukur_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: lukur (lukur_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/m_sa3_ap_h_u_li__ip_h_ur_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: {m}sa3-ap-h,u-li!-ip-h,ur (m_sa3_ap_h_u_li__ip_h_ur_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/mu_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: mu (mu_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/nu_ga2_ga2_a_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: nu-ga2-ga2-a (nu_ga2_ga2_a_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/nu_ur2_an_tim_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: nu-ur2-an-tim (nu_ur2_an_tim_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/ra__pa__asz_s_il2_li2_e2_a_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: ra-<pa>-asz-s,il2-li2-e2-a (ra__pa__asz_s_il2_li2_e2_a_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/sa_am_su2_i_lu_na_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: sa-am-su2-i-lu-na (sa_am_su2_i_lu_na_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/sag_bi_1_disz__kam_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: sag-bi-1(disz)-kam (sag_bi_1_disz__kam_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/sag_bi_2_disz__kam_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: sag-bi-2(disz)-kam (sag_bi_2_disz__kam_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/sanga_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: sanga (sanga_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/sar_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: sar (sar_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/sila_dagal_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: sila#-dagal (sila_dagal_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/sin_ri_me_ni_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: sin-ri-me-ni (sin_ri_me_ni_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/sza3_ga_a_ni_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: sza3#-ga-a-ni (sza3_ga_a_ni_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/szam2__ti_la_bi__sze3_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: [szam2]-ti-la-bi#-[sze3] (szam2__ti_la_bi__sze3_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/szu__d_mar__tu_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: szu-{d}mar!-tu (szu__d_mar__tu_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/u3_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: u3 (u3_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/u4_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: u4 (u4_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/ud_kur2_sze3_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: ud-kur2-sze3 (ud_kur2_sze3_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/ugula_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: ugula (ugula_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/x_is_PU2_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: x#-is-PU2 (x_is_PU2_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/x_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: x (x_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/x_x_s_i2_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: x#-x-s,i2 (x_x_s_i2_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/o147/\u00e2\u20ac\u00a6_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: [\u00e2\u20ac\u00a6] (\u00e2\u20ac\u00a6_wordform)",
         "data": {}
       },
       {
@@ -54053,6 +54052,97 @@ var tree={
         "data": {}
       },
       {
+        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/1_disz__ME_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: 1(disz)-ME (1_disz__ME_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/1_u_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: 1(u) (1_u_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/2_disz_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: 2(disz) (2_disz_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/6_disz_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: 6(disz) (6_disz_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/8_disz_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: 8(disz) (8_disz_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/9_u_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: 9(u) (9_u_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/H_AR_mesz_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: H,AR{mesz} (H_AR_mesz_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/KU3_BABBAR_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: KU3.BABBAR (KU3_BABBAR_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/KU3_GI_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: KU3.GI (KU3_GI_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/SZU_NIGIN2_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: SZU.NIGIN2 (SZU_NIGIN2_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/a_mar__d_UTU_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: a-mar-{d}UTU (a_mar__d_UTU_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/isz_szu_u2_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: isz-szu-u2 (isz_szu_u2_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/sza3_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: sza3 (sza3_wordform)",
+        "data": {}
+      },
+      {
         "id": "https://situx.github.io/cuneiformontology/examples/ht073195/HT073195",
         "parent": "http://www.purl.org/cuneiform/Tablet",
         "type": "instance",
@@ -54246,97 +54336,6 @@ var tree={
         "parent": "http://www.cidoc-crm.org/cidoc-crm/TX5_Reading",
         "type": "instance",
         "text": "Reading interpretation of the written text of HT073195 (HT073195_writtenText_reading)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/1_disz__ME_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: 1(disz)-ME (1_disz__ME_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/1_u_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: 1(u) (1_u_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/2_disz_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: 2(disz) (2_disz_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/6_disz_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: 6(disz) (6_disz_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/8_disz_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: 8(disz) (8_disz_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/9_u_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: 9(u) (9_u_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/H_AR_mesz_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: H,AR{mesz} (H_AR_mesz_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/KU3_BABBAR_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: KU3.BABBAR (KU3_BABBAR_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/KU3_GI_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: KU3.GI (KU3_GI_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/SZU_NIGIN2_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: SZU.NIGIN2 (SZU_NIGIN2_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/a_mar__d_UTU_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: a-mar-{d}UTU (a_mar__d_UTU_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/isz_szu_u2_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: isz-szu-u2 (isz_szu_u2_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/ht073195/sza3_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: sza3 (sza3_wordform)",
         "data": {}
       },
       {
@@ -61354,6 +61353,153 @@ var tree={
         "data": {}
       },
       {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/3_disz_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: 3(disz) (3_disz_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/3_u_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: 3(u) (3_u_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9_disz_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: 9(disz) (9_disz_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/da_ak_ru_um_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: da-ak-ru-um (da_ak_ru_um_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/dim2_ma_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: dim2-ma (dim2_ma_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/du6_ku3_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: du6-ku3 (du6_ku3_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e2_a_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: e2-a (e2_a_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e2_gal_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: e2-gal (e2_gal_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ensi2_ka_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: ensi2-ka (ensi2_ka_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/gurusz_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: gurusz (gurusz_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ib2_dab5_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: ib2-dab5 (ib2_dab5_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/iti_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: iti (iti_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ku3_sa6_ga_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: ku3-sa6-ga (ku3_sa6_ga_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/lu2_ga_a_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: lu2-ga-a (lu2_ga_a_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/nu_banda3_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: nu-banda3 (nu_banda3_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/sza3_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: sza3 (sza3_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/szesz_da_da_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: szesz-da-da (szesz_da_da_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/szu_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: szu (szu_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/tum_al__TA_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: tum-al!(TA) (tum_al__TA_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/u4_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: u4 (u4_wordform)",
+        "data": {}
+      },
+      {
+        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ugula_wordform",
+        "parent": "http://www.purl.org/cuneiform/WordForm",
+        "type": "instance",
+        "text": "WordForm: ugula (ugula_wordform)",
+        "data": {}
+      },
+      {
         "id": "https://situx.github.io/cuneiformontology/examples/hs1174/HS1174",
         "parent": "http://www.purl.org/cuneiform/Tablet",
         "type": "instance",
@@ -61715,153 +61861,6 @@ var tree={
         "parent": "http://purl.org/graphemon/Grapheme",
         "type": "instance",
         "text": "Character: TUM (character_tum)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/3_disz_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: 3(disz) (3_disz_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/3_u_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: 3(u) (3_u_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/9_disz_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: 9(disz) (9_disz_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/da_ak_ru_um_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: da-ak-ru-um (da_ak_ru_um_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/dim2_ma_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: dim2-ma (dim2_ma_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/du6_ku3_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: du6-ku3 (du6_ku3_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e2_a_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: e2-a (e2_a_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/e2_gal_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: e2-gal (e2_gal_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ensi2_ka_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: ensi2-ka (ensi2_ka_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/gurusz_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: gurusz (gurusz_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ib2_dab5_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: ib2-dab5 (ib2_dab5_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/iti_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: iti (iti_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ku3_sa6_ga_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: ku3-sa6-ga (ku3_sa6_ga_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/lu2_ga_a_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: lu2-ga-a (lu2_ga_a_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/nu_banda3_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: nu-banda3 (nu_banda3_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/sza3_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: sza3 (sza3_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/szesz_da_da_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: szesz-da-da (szesz_da_da_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/szu_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: szu (szu_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/tum_al__TA_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: tum-al!(TA) (tum_al__TA_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/u4_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: u4 (u4_wordform)",
-        "data": {}
-      },
-      {
-        "id": "https://situx.github.io/cuneiformontology/examples/hs1174/ugula_wordform",
-        "parent": "http://www.purl.org/cuneiform/WordForm",
-        "type": "instance",
-        "text": "WordForm: ugula (ugula_wordform)",
         "data": {}
       },
       {
