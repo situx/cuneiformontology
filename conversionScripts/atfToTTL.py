@@ -165,7 +165,7 @@ tabletnames=["HS1174","HT073195","TCH92","O147"]
 tabletsides=["front","back","left","right","bottom","top"]
 tabsideid={"front":"03","back":"06","obverse":"03","reverse":"06","bottom":"04"}
 sidereplacements:{"obverse":"front","reverse":"back"}
-renderingvars={"O147":["A_Color","B_Color","A_shaded","B_Shaded"]}
+renderingvars={"O147":["A_color","B_color","C_color","D_color","A_shaded","B_shaded","C_shaded","D_shaded","sketch_soft","sktech_hard"]}
 tabletname="HS1174"
 material="3D rendering"
 wordsplit="-|~|\."
