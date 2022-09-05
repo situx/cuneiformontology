@@ -14484,7 +14484,7 @@ var tree={
         "id": "http://purl.org/meshsparql#MeshLabelSelector",
         "parent": "http://www.w3.org/ns/oa#Selector",
         "type": "class",
-        "text": "MeshLabelSelector [327]",
+        "text": "MeshLabelSelector (msp:MeshLabelSelector) [327]",
         "data": {
           "to": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
@@ -16592,7 +16592,7 @@ var tree={
         "id": "http://purl.org/meshsparql#PCAReference",
         "parent": "http://purl.org/meshsparql#ComputingReference",
         "type": "class",
-        "text": "PCAReference [327]",
+        "text": "PCAReference (msp:PCAReference) [327]",
         "data": {
           "to": {
             "http://purl.org/meshsparql#referenceVector": {
