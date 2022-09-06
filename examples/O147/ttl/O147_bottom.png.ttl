@@ -14,7 +14,15 @@
 
 msp:ComputingReference rdfs:subClassOf prov:Entity .
 
+geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
+
 geocrs:CoordinateOperation rdfs:subClassOf prov:Entity .
+
+geocrs:CoordinateSystemAxis rdfs:subClassOf prov:Entity .
+
+geocrs:OperationParameter rdfs:subClassOf prov:Entity .
+
+geocrs:OperationParameterValue rdfs:subClassOf prov:Entity .
 
 oa:FragmentSelector a owl:Class ;
     rdfs:label "Fragment Selector"@en ;
