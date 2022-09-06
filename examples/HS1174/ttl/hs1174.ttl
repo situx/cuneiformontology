@@ -8,7 +8,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix cunei: <http://www.purl.org/cuneiform/> .
+@prefix cunei: <http://www.purl.org/cuneiform#> .
 @prefix lemon: <http://lemon-model.net/lemon#> .
 @prefix graphemon: <http://www.purl.org/graphemon#> .
 @base <http://www.w3.org/2002/07/owl#> .
@@ -1285,8 +1285,8 @@ oa:identifying rdf:type owl:NamedIndividual .
 
 
 
-###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_lexicon
-<https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_lexicon> rdf:type                                                                                    lemon:Lexicon ;
+###  https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_lexicon
+<https://situx.github.io/cuneiformontology/examples/hs1174/hs1174_transliteration1_lexicon> rdf:type                                                                                    lemon:Lexicon ;
                                                                            lemon:entry <https://situx.github.io/cuneiformontology/examples/hs1174/e2-gal_sense> ,
                                                                                        <https://situx.github.io/cuneiformontology/examples/dict/e2_word> ,
                                                                                        <https://situx.github.io/cuneiformontology/examples/dict/gurusz_word> ,
