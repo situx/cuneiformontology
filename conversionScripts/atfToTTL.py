@@ -230,6 +230,8 @@ for tabname in tabletnames:
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1 rdfs:label \"Transliteration 1 of "+str(currenttabletid)+"\"@en .\n")
     cdlitabs.add("cunei:CharOccurrenceCollection rdfs:subClassOf skos:Collection .\n")
     cdlitabs.add("cunei:CharOccurrenceCollection rdfs:label \"CharOccurrence Collection\"@en .\n")
+    cdlitabs.add("cunei:GraphemeVariantCollection rdf:type skos:Collection .\n")
+    cdlitabs.add("cunei:GraphemeVariantCollection rdfs:label \"Grapheme Variant Collection\"@en .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_charoccurrences rdf:type cunei:CharOccurrenceCollection .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_charoccurrences rdfs:label \"Char Occurrences of "+str(currenttabletid)+" generated from transliteration 1\"@en .\n")
     cdlitabs.add("cunei:WordFormOccurrenceCollection rdfs:subClassOf skos:Collection .\n")
@@ -281,7 +283,10 @@ for tabname in tabletnames:
             cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" rdfs:label \"Line "+str(currentline)+"\"@en .\n")
             if createRefLinks:
                 cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" cidoc:TXP3_is_rendered_by "+namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"  .\n")
-            cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" foaf:image \""+imageURLEscape(str(namespace)+"images/line/line_"+replaceNonURIChars(str(currentline))+"_"+str(tabname)+"_"+str(tabsideid[currentside])+"_"+str(currentside).replace("obverse","front").replace("reverse","back"))+".jpg\"^^xsd:anyURI .\n")
+            if tabname in withid:
+                cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" foaf:image \""+imageURLEscape(str(namespace)+"images/line/line_"+replaceNonURIChars(str(currentline))+"_"+str(tabname)+"_"+str(tabsideid[currentside])+"_"+str(currentside).replace("obverse","front").replace("reverse","back"))+".jpg\"^^xsd:anyURI .\n")
+            else:
+                cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" foaf:image \""+imageURLEscape(str(namespace)+"images/line/line_"+replaceNonURIChars(str(currentline))+"_"+str(tabname)+"_"+str(currentside).replace("obverse","front").replace("reverse","back"))+".jpg\"^^xsd:anyURI .\n")                
             cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" rdf:type cunei:TransliterationLine .\n")
             cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+" cunei:contains "+namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" .\n")
             cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" skos:definition \""+str(line)+"\" .\n")

@@ -310,7 +310,9 @@ cunei:GraphemeCollection rdfs:subClassOf skos:Collection .
 
 cunei:GraphemeReadingCollection rdfs:subClassOf skos:Collection .
 
-cunei:GraphemeVariantCollection rdfs:subClassOf skos:Collection .
+cunei:GraphemeVariantCollection a skos:Collection ;
+    rdfs:label "Grapheme Variant Collection"@en ;
+    rdfs:subClassOf skos:Collection .
 
 cunei:Tablet rdfs:label "cuneiform tablet"@en ;
     rdfs:subClassOf cidoc:E22_ManMadeObject .
@@ -1127,9 +1129,6 @@ cuneiex:HT073195_transliteration1_obverse_line4_char2_charocc a cunei:Transliter
     cunei:prev cuneiex:HT073195_transliteration1_obverse_line4_char1_charocc ;
     skos:definition "a" .
 
-skos:Collection a owl:Class ;
-    rdfs:label "collection"@en .
-
 cuneiex:HT073195_transliteration1_obverse_line3_word2_wordformocc a cunei:WordFormOccurance ;
     rdfs:label " WordForm Occurrence: 1(disz)-ME (HT073195[obverse_line3_word2])" ;
     cunei:consistsOf cuneiex:HT073195_transliteration1_obverse_line3_char3_charocc,
@@ -1145,6 +1144,9 @@ cuneiex:HT073195_transliteration1_obverse_line4_word3_wordformocc a cunei:WordFo
         cuneiex:HT073195_transliteration1_obverse_line4_char7_charocc ;
     cunei:prevWord cuneiex:HT073195_transliteration1_obverse_line4_word2_wordformocc ;
     skos:definition "isz-szu-u2" .
+
+skos:Collection a owl:Class ;
+    rdfs:label "collection"@en .
 
 cuneiex:HT073195_transliteration1_obverse_line4_word2_wordformocc a cunei:WordFormOccurance ;
     rdfs:label " WordForm Occurrence: a-mar-{d}UTU (HT073195[obverse_line4_word2])" ;

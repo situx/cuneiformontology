@@ -434,7 +434,9 @@ cunei:GraphemeCollection rdfs:subClassOf skos:Collection .
 
 cunei:GraphemeReadingCollection rdfs:subClassOf skos:Collection .
 
-cunei:GraphemeVariantCollection rdfs:subClassOf skos:Collection .
+cunei:GraphemeVariantCollection a skos:Collection ;
+    rdfs:label "Grapheme Variant Collection"@en ;
+    rdfs:subClassOf skos:Collection .
 
 cunei:Tablet rdfs:label "cuneiform tablet"@en ;
     rdfs:subClassOf cidoc:E22_ManMadeObject .
@@ -1942,9 +1944,6 @@ cuneiex:HS1174_transliteration1_reverse_line5_word3_wordformocc a cunei:WordForm
 <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_šu> a graphemon:GraphemeReading ;
     rdfs:label "Grapheme Reading SZU: šu" .
 
-skos:Collection a owl:Class ;
-    rdfs:label "collection"@en .
-
 cuneiex:HS1174_transliteration1_obverse_line2_char1_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: da (HS1174[obverse_transliteration1_line2_char1])" ;
     lemon:writtenRepUnicode "𒁕" ;
@@ -1997,6 +1996,9 @@ cuneiex:HS1174_transliteration1_reverse_line5_word2_wordformocc a cunei:WordForm
     cunei:nextWord cuneiex:HS1174_transliteration1_reverse_line5_word3_wordformocc ;
     cunei:prevWord cuneiex:HS1174_transliteration1_reverse_line5_word1_wordformocc ;
     skos:definition "du6-ku3" .
+
+skos:Collection a owl:Class ;
+    rdfs:label "collection"@en .
 
 cuneiex:HS1174_transliteration1_obverse_line2_word1_wordformocc a cunei:WordFormOccurance ;
     rdfs:label " WordForm Occurrence: da-ak-ru-um (HS1174[obverse_line2_word1])" ;
