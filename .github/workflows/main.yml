@@ -29,9 +29,11 @@ jobs:
          pylode -i examples/TCH92/ttl/tch92.ttl -o docs/example_tch92.html
          mkdir docs/examples/
          mkdir docs/examples/hs1174/
+         mkdir docs/examples/ht073195/
          mkdir docs/examples/tch92/
          mkdir docs/examples/o147/
          cp -r examples/HS1174/images/ docs/examples/hs1174/images/ 
+         cp -r examples/HT073195/images/ docs/examples/ht073195/images/ 
          cp -r examples/TCH92/images/ docs/examples/tch92/images/ 
          cp -r examples/O147/images/ docs/examples/o147/images/ 
          python3 docgeneration.py signlist/signlist.ttl docs/ https://situx.github.io/cuneiformontology/ cuneisignlist False
