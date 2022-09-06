@@ -8,6 +8,7 @@
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -69,8 +70,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/fd37bc32-222c-4163-b177-03422773f1c8> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/O147_obverse_annotations> a as:Collection ;
-    rdfs:label "Image annotations on O147 obverse on medium 3D rendering"@en ;
-    rdfs:subClassOf skos:Collection .
+    rdfs:label "Image annotations on O147 obverse on medium 3D rendering"@en .
 
 msp:MeshLabelSelector rdfs:subClassOf oa:Selector .
 
@@ -969,7 +969,7 @@ oa:WKTSelector a owl:Class ;
     rdf:value "POLYGON Z ((887.3894451803412 -1565.285729152795 0.0005492290947586, 684.245335350352 -1557.241969724713 0.0005492290947586, 680.2226452788045 -1374.2464522668088 0.0005492290947586, 891.4120742419534 -1366.2026852139559 0.0005492290947586, 887.3894451803412 -1565.285729152795 11.795097351074219, 684.245335350352 -1557.241969724713 11.795097351074219, 680.2226452788045 -1374.2464522668088 11.795097351074219, 891.4120742419534 -1366.2026852139559 11.795097351074219, 887.3894451803412 -1565.285729152795 0.0005492290947586))"^^oa:wktLiteral .
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/86c668c6-2039-42f4-b447-cb7b014ed130_target3d_selector_compref0> a msp:PCAReference ;
-    rdfs:label "Computing Reference of 3D Annotation target selector of Annotation of Glyph at O147 front line 1 char 2 on a 3D Mesh" ;
+    rdfs:label "Computing Reference of 3D Annotation target selector of Annotation of Glyph at O147 front line 1 char 2 on a 3D Mesh"@en ;
     msp:referenceVector "[1209.5001    -824.49994     -8.0284395] [-886.213   -824.5536  -205.05568] [ 1209.5795   -2253.4421      -8.483341] [1226.4071 -824.4418 -187.862 ]"^^msp:vectorLiteral ;
     msp:stable true ;
     msp:transformationMatrix "[[ 1.00000000e+00  2.16660739e-09  1.32984419e-09  1.20950012e+03] [-2.16660714e-09  1.00000000e+00  1.83508149e-09 -8.24499970e+02] [-1.32984422e-09 -1.83508138e-09  1.00000000e+00 -8.02843825e+00] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^msp:matrixLiteral ;
@@ -1730,6 +1730,8 @@ oa:WKTSelector a owl:Class ;
     rdfs:label "Annotation target selector of Annotation of Glyph at O147 front line 8 char 2 on 3D rendering"@en ;
     rdf:value "<svg><polygon points=\"797.8218994140625,1356.1993408203125 1201.0587158203125,1363.443115234375 1196.2294921875,1554.19580078125 783.3343505859375,1571.0980224609375 783.3343505859375,1571.0980224609375\"></polygon></svg>" .
 
+as:Collection rdfs:subClassOf skos:Collection .
+
 <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> a geocrs:CartesianCoordinateSystem ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units"@en ;
     geocrs:asSVG "<svg width='400' height='250' viewbox='0 0 375 220'><defs><marker id='arrowhead' markerWidth='10' markerHeight='7' refX='0' refY='2' orient='auto'><polygon points='0 0, 4 2, 0 4' /></marker></defs><line x1='20' y1='200' x2='200' y2='200' stroke='red' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='110' y='220' class='small'>X: Cartesian X Axis (om:millimetre)</text><line x1='20' y1='200' x2='20' y2='20' stroke='green' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='35' y='20' class='small'>Y: Cartesian Y Axis (om:millimetre)</text><line x1='20' y1='200' x2='190' y2='30' stroke='blue' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='210' y='25' class='small'>Z: Cartesian Z Axis (om:millimetre)</text></svg>"^^geocrs:svgLiteral ;
@@ -1748,11 +1750,14 @@ oa:FragmentSelector a owl:Class ;
     rdfs:label "Fragment Selector"@en ;
     rdfs:subClassOf oa:Selector .
 
-oa:Selector a owl:Class .
+oa:Selector a owl:Class ;
+    rdfs:subClassOf prov:Entity .
 
 oa:SvgSelector a owl:Class ;
     rdfs:label "Svg Selector"@en ;
     rdfs:subClassOf oa:Selector .
+
+oa:Annotation rdfs:subClassOf prov:Entity .
 
 <https://github.com/recogito/annotorious-openseadragon> a dc:Software ;
     foaf:homepage "https://github.com/recogito/annotorious-openseadragon"^^xsd:anyURI ;

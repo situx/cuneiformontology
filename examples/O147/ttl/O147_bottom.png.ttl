@@ -4,6 +4,7 @@
 @prefix ns1: <http://purl.org/dc/terms/> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -43,8 +44,7 @@ oa:WKTSelector a owl:Class ;
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/d656b8a8-250b-4d68-b0f9-d332292e7bfb>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/f68145c0-34ba-4317-ac56-b028c0be0cfb>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/f9d1c9cc-8b3f-4225-9fa8-667fc34a081d>,
-        <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/feb0dc84-e20c-41a1-b663-5da021b03678> ;
-    rdfs:subClassOf skos:Collection .
+        <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/feb0dc84-e20c-41a1-b663-5da021b03678> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/05e3f030-495d-4388-a697-d507f41216cf> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 bottom line 1 char 1 on 3D rendering"@en ;
@@ -771,7 +771,12 @@ oa:WKTSelector a owl:Class ;
     rdfs:label "Annotation target selector of Annotation of Glyph at O147 bottom line 2 char 2 on 3D rendering"@en ;
     rdf:value "<svg><polygon points=\"782.5072631835938,331.1087646484375 942.6032104492188,300.06976318359375 989.9785766601562,375.2168273925781 913.1978759765625,471.60113525390625 759.6364135742188,432.39398193359375 758.0027465820312,430.7603454589844\"></polygon></svg>" .
 
-oa:Selector a owl:Class .
+as:Collection rdfs:subClassOf skos:Collection .
+
+oa:Selector a owl:Class ;
+    rdfs:subClassOf prov:Entity .
+
+oa:Annotation rdfs:subClassOf prov:Entity .
 
 oa:SvgSelector a owl:Class ;
     rdfs:label "Svg Selector"@en ;

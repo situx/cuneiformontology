@@ -129,6 +129,7 @@ for tabname in tabletnames:
         @prefix xml: <http://www.w3.org/XML/1998/namespace> .
         @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
         @prefix geocrs: <http://www.opengis.net/ont/crs/> .
+        @prefix prov: <http://www.w3.org/ns/prov#> .
         @prefix msp: <http://purl.org/meshsparql#> .
         @prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
         @prefix anno: <http://www.w3.org/ns/anno.jsonld> .
@@ -144,6 +145,7 @@ for tabname in tabletnames:
         """)
         res.write("oa:SvgSelector rdfs:subClassOf oa:Selector .\n")
         res.write("oa:Selector rdf:type owl:Class .\n")
+        res.write("oa:Selector rdfs:subClassOf prov:Entity .\n")
         res.write("oa:SvgSelector rdf:type owl:Class .\n")
         res.write("oa:SvgSelector rdfs:label \"Svg Selector\"@en .\n")
         res.write("oa:WKTSelector rdf:type owl:Class .\n")
@@ -156,7 +158,7 @@ for tabname in tabletnames:
         if tabletname in creatormap:
             creator=creatormap[tabletname]
         res.write("<"+str(namespace)+str(tabname)+"_"+str(tabletside)+"_annotations> rdf:type as:Collection .\n")
-        res.write("<"+str(namespace)+str(tabname)+"_"+str(tabletside)+"_annotations> rdfs:subClassOf skos:Collection .\n")
+        res.write("as:Collection rdfs:subClassOf skos:Collection .\n")
         res.write("<"+str(namespace)+str(tabname)+"_"+str(tabletside)+"_annotations> rdfs:label \"Image annotations on "+str(tabname)+" "+str(tabletside)+" on medium "+str(material)+"\"@en .\n")
         for key in data:
             if "http" not in key and key.startswith("#"):
@@ -186,6 +188,7 @@ for tabname in tabletnames:
                     selectortype=data[key]["target"]["selector"]["type"]
                     selectorval=data[key]["target"]["selector"]["value"]
             res.write("<"+str(indid)+"> rdf:type oa:Annotation .\n")
+            res.write("oa:Annotation rdfs:subClassOf prov:Entity .\n")
             res.write("<"+str(namespace)+str(tabname)+"_"+str(tabletside)+"_annotations> rdfs:member <"+str(indid)+"> .\n")
             res.write("<"+str(indid)+"> as:generator <https://github.com/recogito/annotorious-openseadragon> .\n")
             res.write("<https://github.com/recogito/annotorious-openseadragon> rdf:type dc:Software .\n")
@@ -236,7 +239,7 @@ for tabname in tabletnames:
                                 res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql#comprefType> \""+str(compref["type"])+"\"^^xsd:string .\n")   
                         else:
                             res.write("<"+str(comprefid)+"> rdf:type <http://purl.org/meshsparql#ComputingReference> .\n")
-                        res.write("<"+str(comprefid)+"> rdfs:label \"Computing Reference of 3D Annotation target selector of Annotation of Glyph at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on a 3D Mesh\" .\n")
+                        res.write("<"+str(comprefid)+"> rdfs:label \"Computing Reference of 3D Annotation target selector of Annotation of Glyph at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on a 3D Mesh\"@en .\n")
                         res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql#stable> \""+str(compref["stable"])+"\"^^xsd:boolean .\n")
                         res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql#transformationMatrix> \""+str(compref["transformationmatrix"]).replace("\n","").replace("\\n","")+"\"^^msp:matrixLiteral .\n")
                         res.write("<"+str(comprefid)+"> <http://purl.org/meshsparql#referenceVector> \"\"\""+str(compref["value"]).replace("\r","").replace("\n","").replace("\\n","")+"\"\"\"^^msp:vectorLiteral .\n")
