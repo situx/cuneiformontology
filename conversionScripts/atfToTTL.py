@@ -294,17 +294,17 @@ for tabname in tabletnames:
                 if currentwordindex==0:
                     currentwordindex+=1
                     continue
-                cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_word"+str(currentwordindex)+"_wordformocc rdf:type cunei:WordformOccurance .\n")
+                cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_word"+str(currentwordindex)+"_wordformocc rdf:type cunei:WordFormOccurance .\n")
                 cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_word"+str(currentwordindex)+"_wordformocc rdfs:label \" WordForm Occurrence: "+str(word)+" ("+str(currenttabletid)+"["+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_word"+str(currentwordindex)+"])\" .\n")
                 cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_word"+str(currentwordindex)+"_wordformocc skos:definition \""+str(word)+"\" .\n")
                 cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_word foaf:image \""+str(namespace)+"images/word/word_"+replaceNonURIChars(str(currentline))+"_"+str(currentwordindex)+"_"+str(tabname)+"_"+str(tabsideid[currentside])+"_"+str(currentside).replace("obverse","front").replace("reverse","back")+".jpg\"^^xsd:anyURI .\n")
                 if createRefLinks:
                     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_word"+str(currentwordindex)+" cidoc:TXP3_is_rendered_by "+namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_word"+str(currentwordindex)+"_wordformocc  .\n")
-                cdlitabs.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform rdf:type cunei:WordForm .\n")
+                cdlitabs.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform rdf:type lemon:WordForm .\n")
                 cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_wordformoccurrences rdfs:member "+str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform . \n")
                 cdlitabs.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform skos:definition \""+str(word)+"\" .\n")
                 cdlitabs.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform  cunei:isAttested "+str(namespaceprefix)+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_word"+str(currentwordindex)+"_wordformocc .\n")
-                wordformresult.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform rdf:type cunei:WordForm .\n")
+                wordformresult.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform rdf:type lemon:WordForm .\n")
                 wordformresult.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform rdfs:label \"WordForm: "+replaceNonURIChars(str(word)).replace("\"","")+"\" .\n")
                 cdlitabs.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform rdfs:label \"WordForm: "+str(word).replace("\"","")+"\" .\n")
                 cdlitabs.add(str(namespaceprefix)+":"+replaceNonURIChars(str(word))+"_wordform lemon:writtenRepUnicode \""+str(cuneifyWord(str(word),str(namespace)+""+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"_word"+str(currentwordindex)+"_wordformocc",cdlitabs,namespaceprefix+":"+str(currenttabletid)+"_signreadinglist")).replace("\"","")+"\"^^cunei:unicodeLiteral .\n")
