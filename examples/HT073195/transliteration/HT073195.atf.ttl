@@ -129,6 +129,7 @@ cuneiex:HT073195_glyphlist a cunei:GlyphCollection ;
         cuneiex:HT073195_obverse_line1_char4_glyph,
         cuneiex:HT073195_obverse_line1_char5_glyph,
         cuneiex:HT073195_obverse_line1_char6_glyph,
+        cuneiex:HT073195_obverse_line1_char7_glyph,
         cuneiex:HT073195_obverse_line2_char1_glyph,
         cuneiex:HT073195_obverse_line2_char2_glyph,
         cuneiex:HT073195_obverse_line2_char3_glyph,
@@ -140,13 +141,15 @@ cuneiex:HT073195_glyphlist a cunei:GlyphCollection ;
         cuneiex:HT073195_obverse_line3_char4_glyph,
         cuneiex:HT073195_obverse_line3_char5_glyph,
         cuneiex:HT073195_obverse_line3_char6_glyph,
+        cuneiex:HT073195_obverse_line3_char7_glyph,
         cuneiex:HT073195_obverse_line4_char1_glyph,
         cuneiex:HT073195_obverse_line4_char2_glyph,
         cuneiex:HT073195_obverse_line4_char3_glyph,
         cuneiex:HT073195_obverse_line4_char4_glyph,
         cuneiex:HT073195_obverse_line4_char5_glyph,
         cuneiex:HT073195_obverse_line4_char6_glyph,
-        cuneiex:HT073195_obverse_line4_char7_glyph .
+        cuneiex:HT073195_obverse_line4_char7_glyph,
+        cuneiex:HT073195_obverse_line4_char8_glyph .
 
 cuneiex:HT073195_graphemevars a cunei:GraphemeVariantCollection ;
     rdfs:label "HT073195 Grapheme Variant Collection "@en .
@@ -229,10 +232,13 @@ cuneiex:HT073195_signlist a cunei:GraphemeCollection ;
 cuneiex:HT073195_signreadinglist a cunei:GraphemeReadingCollection ;
     rdfs:label "Sign Readings of HT073195"@en ;
     rdfs:member <https://situx.github.io/cuneiformontology/signlist/character_a_reading_a>,
+        <https://situx.github.io/cuneiformontology/signlist/character_an_reading_d>,
         <https://situx.github.io/cuneiformontology/signlist/character_mar_reading_mar>,
         <https://situx.github.io/cuneiformontology/signlist/character_me_reading_me>,
+        <https://situx.github.io/cuneiformontology/signlist/character_me_reading_meš>,
         <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_šu>,
-        <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_reading_babbar> .
+        <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_reading_babbar>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_reading_utu> .
 
 cuneiex:HT073195_transliteration1 a cunei:Transliteration ;
     rdfs:label "Transliteration 1 of HT073195"@en .
@@ -245,6 +251,7 @@ cuneiex:HT073195_transliteration1_charoccurrences a cunei:CharOccurrenceCollecti
         cuneiex:HT073195_transliteration1_obverse_line1_char4_charocc,
         cuneiex:HT073195_transliteration1_obverse_line1_char5_charocc,
         cuneiex:HT073195_transliteration1_obverse_line1_char6_charocc,
+        cuneiex:HT073195_transliteration1_obverse_line1_char7_charocc,
         cuneiex:HT073195_transliteration1_obverse_line2_char1_charocc,
         cuneiex:HT073195_transliteration1_obverse_line2_char2_charocc,
         cuneiex:HT073195_transliteration1_obverse_line2_char3_charocc,
@@ -256,13 +263,15 @@ cuneiex:HT073195_transliteration1_charoccurrences a cunei:CharOccurrenceCollecti
         cuneiex:HT073195_transliteration1_obverse_line3_char4_charocc,
         cuneiex:HT073195_transliteration1_obverse_line3_char5_charocc,
         cuneiex:HT073195_transliteration1_obverse_line3_char6_charocc,
+        cuneiex:HT073195_transliteration1_obverse_line3_char7_charocc,
         cuneiex:HT073195_transliteration1_obverse_line4_char1_charocc,
         cuneiex:HT073195_transliteration1_obverse_line4_char2_charocc,
         cuneiex:HT073195_transliteration1_obverse_line4_char3_charocc,
         cuneiex:HT073195_transliteration1_obverse_line4_char4_charocc,
         cuneiex:HT073195_transliteration1_obverse_line4_char5_charocc,
         cuneiex:HT073195_transliteration1_obverse_line4_char6_charocc,
-        cuneiex:HT073195_transliteration1_obverse_line4_char7_charocc .
+        cuneiex:HT073195_transliteration1_obverse_line4_char7_charocc,
+        cuneiex:HT073195_transliteration1_obverse_line4_char8_charocc .
 
 cuneiex:HT073195_transliteration1_lexicon a lemon:Lexicon ;
     rdfs:label "Lexicon for HT073195 generated from transliteration 1"@en .
@@ -374,15 +383,15 @@ cuneiex:HT073195_obverse a cunei:Side ;
     rdfs:label "HT073195: obverse" ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/sides/HT073195_front.jpg"^^xsd:anyURI .
 
-cuneiex:HT073195_obverse_line1_char6_glyph a cidoc:TX9_Glyph ;
-    rdfs:label "Glyph at HT073195[obverse 1 6])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:HT073195_transliteration1_obverse_line1_char6_charocc ;
+cuneiex:HT073195_obverse_line1_char7_glyph a cidoc:TX9_Glyph ;
+    rdfs:label "Glyph at HT073195[obverse 1 7])" ;
+    cidoc:TXP3_is_rendered_by cuneiex:HT073195_transliteration1_obverse_line1_char7_charocc ;
     cidoc:TXP8_is_component_of cunei:HT073195_writtenText ;
     cunei:isDamaged false ;
-    cunei:prevChar cuneiex:HT073195_obverse_line1_char5_glyph ;
+    cunei:prevChar cuneiex:HT073195_obverse_line1_char6_glyph ;
     cunei:prevInWord cuneiex:HT073195_obverse_line1_char1_glyph ;
-    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_1_6_BABBAR_HT073195_03_front.jpg"^^xsd:anyURI,
-        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_1_6_BABBAR_HT073195_03_front.jpg"^^xsd:anyURI .
+    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_1_7_BABBAR_HT073195_03_front.jpg"^^xsd:anyURI,
+        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_1_7_BABBAR_HT073195_03_front.jpg"^^xsd:anyURI .
 
 cuneiex:HT073195_obverse_line2_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at HT073195[obverse 2 5])" ;
@@ -394,24 +403,25 @@ cuneiex:HT073195_obverse_line2_char5_glyph a cidoc:TX9_Glyph ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_2_5_GI_HT073195_03_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_2_5_GI_HT073195_03_front.jpg"^^xsd:anyURI .
 
-cuneiex:HT073195_obverse_line3_char6_glyph a cidoc:TX9_Glyph ;
-    rdfs:label "Glyph at HT073195[obverse 3 6])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:HT073195_transliteration1_obverse_line3_char6_charocc ;
+cuneiex:HT073195_obverse_line3_char7_glyph a cidoc:TX9_Glyph ;
+    rdfs:label "Glyph at HT073195[obverse 3 7])" ;
+    cidoc:TXP3_is_rendered_by cuneiex:HT073195_transliteration1_obverse_line3_char7_charocc ;
     cidoc:TXP8_is_component_of cunei:HT073195_writtenText ;
     cunei:isDamaged false ;
-    cunei:prevChar cuneiex:HT073195_obverse_line3_char5_glyph ;
-    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_3_6_H,AR%7Bmesz%7D_HT073195_03_front.jpg"^^xsd:anyURI,
-        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_3_6_H,AR%7Bmesz%7D_HT073195_03_front.jpg"^^xsd:anyURI .
+    cunei:prevChar cuneiex:HT073195_obverse_line3_char6_glyph ;
+    cunei:prevInWord cuneiex:HT073195_obverse_line3_char1_glyph ;
+    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_3_7_mesz_HT073195_03_front.jpg"^^xsd:anyURI,
+        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_3_7_mesz_HT073195_03_front.jpg"^^xsd:anyURI .
 
-cuneiex:HT073195_obverse_line4_char7_glyph a cidoc:TX9_Glyph ;
-    rdfs:label "Glyph at HT073195[obverse 4 7])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:HT073195_transliteration1_obverse_line4_char7_charocc ;
+cuneiex:HT073195_obverse_line4_char8_glyph a cidoc:TX9_Glyph ;
+    rdfs:label "Glyph at HT073195[obverse 4 8])" ;
+    cidoc:TXP3_is_rendered_by cuneiex:HT073195_transliteration1_obverse_line4_char8_charocc ;
     cidoc:TXP8_is_component_of cunei:HT073195_writtenText ;
     cunei:isDamaged false ;
-    cunei:prevChar cuneiex:HT073195_obverse_line4_char6_glyph ;
+    cunei:prevChar cuneiex:HT073195_obverse_line4_char7_glyph ;
     cunei:prevInWord cuneiex:HT073195_obverse_line4_char2_glyph ;
-    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_4_7_u2_HT073195_03_front.jpg"^^xsd:anyURI,
-        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_4_7_u2_HT073195_03_front.jpg"^^xsd:anyURI .
+    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_4_8_u2_HT073195_03_front.jpg"^^xsd:anyURI,
+        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_4_8_u2_HT073195_03_front.jpg"^^xsd:anyURI .
 
 cuneiex:HT073195_reverse a cunei:Side ;
     rdfs:label "HT073195: reverse" ;
@@ -422,12 +432,15 @@ cuneiex:HT073195_writtenText_reading a cidoc:TX5_Reading ;
     cidoc:TXP3_is_rendered_by cuneiex:HT073195_transliteration .
 
 cuneiex:H_AR_mesz_wordform a lemon:WordForm ;
-    rdfs:label "WordForm: H,AR{mesz}" ;
-    lemon:writtenRepASCII "H,AR{mesz}"^^cunei:ASCIILiteral ;
+    rdfs:label "WordForm: H,AR-mesz",
+        "WordForm: H,AR-mesz-" ;
+    lemon:writtenRepASCII "H,AR-mesz"^^cunei:ASCIILiteral,
+        "H,AR-mesz-"^^cunei:ASCIILiteral ;
     lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
     cunei:isAttested cuneiex:HT073195_transliteration1_obverse_line1_word3_wordformocc,
         cuneiex:HT073195_transliteration1_obverse_line3_word4_wordformocc ;
-    skos:definition "H,AR{mesz}" .
+    skos:definition "H,AR-mesz",
+        "H,AR-mesz-" .
 
 cuneiex:KU3_BABBAR_wordform a lemon:WordForm ;
     rdfs:label "WordForm: KU3.BABBAR" ;
@@ -451,11 +464,11 @@ cuneiex:SZU_NIGIN2_wordform a lemon:WordForm ;
     skos:definition "SZU.NIGIN2" .
 
 cuneiex:a_mar__d_UTU_wordform a lemon:WordForm ;
-    rdfs:label "WordForm: a-mar-{d}UTU" ;
-    lemon:writtenRepASCII "a-mar-{d}UTU"^^cunei:ASCIILiteral ;
+    rdfs:label "WordForm: a-mar--d-UTU" ;
+    lemon:writtenRepASCII "a-mar--d-UTU"^^cunei:ASCIILiteral ;
     lemon:writtenRepUnicode ""^^cunei:unicodeLiteral ;
     cunei:isAttested cuneiex:HT073195_transliteration1_obverse_line4_word2_wordformocc ;
-    skos:definition "a-mar-{d}UTU" .
+    skos:definition "a-mar--d-UTU" .
 
 cuneiex:isz_szu_u2_wordform a lemon:WordForm ;
     rdfs:label "WordForm: isz-szu-u2" ;
@@ -481,6 +494,17 @@ cuneiex:sza3_wordform a lemon:WordForm ;
 <https://situx.github.io/cuneiformontology/signlist/character_a_variant1> a graphemon:GraphemeVariant ;
     rdfs:label "Grapheme A: Variant 1"@en .
 
+<https://situx.github.io/cuneiformontology/signlist/character_an> a graphemon:Grapheme ;
+    rdfs:label "Character: AN" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_an_reading_d> ;
+    graphemon:variant <https://situx.github.io/cuneiformontology/signlist/character_an_variant1> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_an_variant1> a graphemon:GraphemeVariant ;
+    rdfs:label "Grapheme AN: Variant 1"@en .
+
+<https://situx.github.io/cuneiformontology/signlist/character_esz_3×u_variant1> a graphemon:GraphemeVariant ;
+    rdfs:label "Grapheme ESZ (3×U): Variant 1"@en .
+
 <https://situx.github.io/cuneiformontology/signlist/character_mar> a graphemon:Grapheme ;
     rdfs:label "Character: MAR" ;
     graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_mar_reading_mar> ;
@@ -489,21 +513,11 @@ cuneiex:sza3_wordform a lemon:WordForm ;
 <https://situx.github.io/cuneiformontology/signlist/character_mar_variant1> a graphemon:GraphemeVariant ;
     rdfs:label "Grapheme MAR: Variant 1"@en .
 
-<https://situx.github.io/cuneiformontology/signlist/character_me> a graphemon:Grapheme ;
-    rdfs:label "Character: ME" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_me_reading_me> ;
-    graphemon:variant <https://situx.github.io/cuneiformontology/signlist/character_me_variant1> .
-
 <https://situx.github.io/cuneiformontology/signlist/character_me_variant1> a graphemon:GraphemeVariant ;
     rdfs:label "Grapheme ME: Variant 1"@en .
 
 <https://situx.github.io/cuneiformontology/signlist/character_szu_variant1> a graphemon:GraphemeVariant ;
     rdfs:label "Grapheme SZU: Variant 1"@en .
-
-<https://situx.github.io/cuneiformontology/signlist/character_ud_babbar> a graphemon:Grapheme ;
-    rdfs:label "Character: UD (BABBAR)" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_reading_babbar> ;
-    graphemon:variant <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_variant1> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_variant1> a graphemon:GraphemeVariant ;
     rdfs:label "Grapheme UD (BABBAR): Variant 1"@en .
@@ -528,8 +542,8 @@ cuneiex:HT073195_obverse_line1_char3_glyph a cidoc:TX9_Glyph ;
     cidoc:TXP8_is_component_of cunei:HT073195_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:HT073195_obverse_line1_char2_glyph ;
-    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_1_3_H,AR%7Bmesz%7D_HT073195_03_front.jpg"^^xsd:anyURI,
-        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_1_3_H,AR%7Bmesz%7D_HT073195_03_front.jpg"^^xsd:anyURI .
+    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_1_3_H,AR_HT073195_03_front.jpg"^^xsd:anyURI,
+        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_1_3_H,AR_HT073195_03_front.jpg"^^xsd:anyURI .
 
 cuneiex:HT073195_obverse_line1_char4_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at HT073195[obverse 1 4])" ;
@@ -537,8 +551,9 @@ cuneiex:HT073195_obverse_line1_char4_glyph a cidoc:TX9_Glyph ;
     cidoc:TXP8_is_component_of cunei:HT073195_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:HT073195_obverse_line1_char3_glyph ;
-    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_1_4_sza3_HT073195_03_front.jpg"^^xsd:anyURI,
-        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_1_4_sza3_HT073195_03_front.jpg"^^xsd:anyURI .
+    cunei:prevInWord cuneiex:HT073195_obverse_line1_char1_glyph ;
+    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_1_4_mesz_HT073195_03_front.jpg"^^xsd:anyURI,
+        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_1_4_mesz_HT073195_03_front.jpg"^^xsd:anyURI .
 
 cuneiex:HT073195_obverse_line1_char5_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at HT073195[obverse 1 5])" ;
@@ -546,8 +561,17 @@ cuneiex:HT073195_obverse_line1_char5_glyph a cidoc:TX9_Glyph ;
     cidoc:TXP8_is_component_of cunei:HT073195_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:HT073195_obverse_line1_char4_glyph ;
-    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_1_5_KU3_HT073195_03_front.jpg"^^xsd:anyURI,
-        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_1_5_KU3_HT073195_03_front.jpg"^^xsd:anyURI .
+    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_1_5_sza3_HT073195_03_front.jpg"^^xsd:anyURI,
+        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_1_5_sza3_HT073195_03_front.jpg"^^xsd:anyURI .
+
+cuneiex:HT073195_obverse_line1_char6_glyph a cidoc:TX9_Glyph ;
+    rdfs:label "Glyph at HT073195[obverse 1 6])" ;
+    cidoc:TXP3_is_rendered_by cuneiex:HT073195_transliteration1_obverse_line1_char6_charocc ;
+    cidoc:TXP8_is_component_of cunei:HT073195_writtenText ;
+    cunei:isDamaged false ;
+    cunei:prevChar cuneiex:HT073195_obverse_line1_char5_glyph ;
+    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_1_6_KU3_HT073195_03_front.jpg"^^xsd:anyURI,
+        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_1_6_KU3_HT073195_03_front.jpg"^^xsd:anyURI .
 
 cuneiex:HT073195_obverse_line2_char2_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at HT073195[obverse 2 2])" ;
@@ -604,24 +628,14 @@ cuneiex:HT073195_obverse_line3_char5_glyph a cidoc:TX9_Glyph ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_3_5_8(disz)_HT073195_03_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_3_5_8(disz)_HT073195_03_front.jpg"^^xsd:anyURI .
 
-cuneiex:HT073195_obverse_line4_char4_glyph a cidoc:TX9_Glyph ;
-    rdfs:label "Glyph at HT073195[obverse 4 4])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:HT073195_transliteration1_obverse_line4_char4_charocc ;
+cuneiex:HT073195_obverse_line3_char6_glyph a cidoc:TX9_Glyph ;
+    rdfs:label "Glyph at HT073195[obverse 3 6])" ;
+    cidoc:TXP3_is_rendered_by cuneiex:HT073195_transliteration1_obverse_line3_char6_charocc ;
     cidoc:TXP8_is_component_of cunei:HT073195_writtenText ;
     cunei:isDamaged false ;
-    cunei:prevChar cuneiex:HT073195_obverse_line4_char3_glyph ;
-    cunei:prevInWord cuneiex:HT073195_obverse_line4_char2_glyph ;
-    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_4_4_%7Bd%7DUTU_HT073195_03_front.jpg"^^xsd:anyURI,
-        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_4_4_%7Bd%7DUTU_HT073195_03_front.jpg"^^xsd:anyURI .
-
-cuneiex:HT073195_obverse_line4_char5_glyph a cidoc:TX9_Glyph ;
-    rdfs:label "Glyph at HT073195[obverse 4 5])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:HT073195_transliteration1_obverse_line4_char5_charocc ;
-    cidoc:TXP8_is_component_of cunei:HT073195_writtenText ;
-    cunei:isDamaged false ;
-    cunei:prevChar cuneiex:HT073195_obverse_line4_char4_glyph ;
-    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_4_5_isz_HT073195_03_front.jpg"^^xsd:anyURI,
-        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_4_5_isz_HT073195_03_front.jpg"^^xsd:anyURI .
+    cunei:prevChar cuneiex:HT073195_obverse_line3_char5_glyph ;
+    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_3_6_H,AR_HT073195_03_front.jpg"^^xsd:anyURI,
+        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_3_6_H,AR_HT073195_03_front.jpg"^^xsd:anyURI .
 
 cuneiex:HT073195_obverse_line4_char6_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at HT073195[obverse 4 6])" ;
@@ -629,9 +643,18 @@ cuneiex:HT073195_obverse_line4_char6_glyph a cidoc:TX9_Glyph ;
     cidoc:TXP8_is_component_of cunei:HT073195_writtenText ;
     cunei:isDamaged false ;
     cunei:prevChar cuneiex:HT073195_obverse_line4_char5_glyph ;
+    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_4_6_isz_HT073195_03_front.jpg"^^xsd:anyURI,
+        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_4_6_isz_HT073195_03_front.jpg"^^xsd:anyURI .
+
+cuneiex:HT073195_obverse_line4_char7_glyph a cidoc:TX9_Glyph ;
+    rdfs:label "Glyph at HT073195[obverse 4 7])" ;
+    cidoc:TXP3_is_rendered_by cuneiex:HT073195_transliteration1_obverse_line4_char7_charocc ;
+    cidoc:TXP8_is_component_of cunei:HT073195_writtenText ;
+    cunei:isDamaged false ;
+    cunei:prevChar cuneiex:HT073195_obverse_line4_char6_glyph ;
     cunei:prevInWord cuneiex:HT073195_obverse_line4_char1_glyph ;
-    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_4_6_szu_HT073195_03_front.jpg"^^xsd:anyURI,
-        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_4_6_szu_HT073195_03_front.jpg"^^xsd:anyURI .
+    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_4_7_szu_HT073195_03_front.jpg"^^xsd:anyURI,
+        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_4_7_szu_HT073195_03_front.jpg"^^xsd:anyURI .
 
 cuneiex:HT073195_transliteration1_obverse_line1 a cunei:TransliterationLine ;
     rdfs:label "Transliteration Line: 1 [HT073195_obverse]" ;
@@ -673,18 +696,20 @@ cuneiex:HT073195_transliteration1_obverse_line4 a cunei:TransliterationLine ;
         cuneiex:HT073195_transliteration1_obverse_line4_word3_wordformocc ;
     skos:definition "4. sza3 a-mar-{d}UTU isz-szu-u2" .
 
+<https://situx.github.io/cuneiformontology/signlist/character_esz_3×u> a graphemon:Grapheme ;
+    rdfs:label "Character: ESZ (3×U)" ;
+    graphemon:variant <https://situx.github.io/cuneiformontology/signlist/character_esz_3×u_variant1> .
+
 <https://situx.github.io/cuneiformontology/signlist/character_szu> a graphemon:Grapheme ;
     rdfs:label "Character: SZU" ;
     graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_šu> ;
     graphemon:variant <https://situx.github.io/cuneiformontology/signlist/character_szu_variant1> .
 
-cuneiex:HT073195_obverse_line1_char1_glyph a cidoc:TX9_Glyph ;
-    rdfs:label "Glyph at HT073195[obverse 1 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:HT073195_transliteration1_obverse_line1_char1_charocc ;
-    cidoc:TXP8_is_component_of cunei:HT073195_writtenText ;
-    cunei:isDamaged false ;
-    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_1_1_9(u)_HT073195_03_front.jpg"^^xsd:anyURI,
-        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_1_1_9(u)_HT073195_03_front.jpg"^^xsd:anyURI .
+<https://situx.github.io/cuneiformontology/signlist/character_ud_babbar> a graphemon:Grapheme ;
+    rdfs:label "Character: UD (BABBAR)" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_reading_babbar>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_reading_utu> ;
+    graphemon:variant <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_variant1> .
 
 cuneiex:HT073195_obverse_line2_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at HT073195[obverse 2 1])" ;
@@ -704,27 +729,38 @@ cuneiex:HT073195_obverse_line3_char2_glyph a cidoc:TX9_Glyph ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_3_2_NIGIN2_HT073195_03_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_3_2_NIGIN2_HT073195_03_front.jpg"^^xsd:anyURI .
 
-cuneiex:HT073195_obverse_line4_char3_glyph a cidoc:TX9_Glyph ;
-    rdfs:label "Glyph at HT073195[obverse 4 3])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:HT073195_transliteration1_obverse_line4_char3_charocc ;
+cuneiex:HT073195_obverse_line4_char4_glyph a cidoc:TX9_Glyph ;
+    rdfs:label "Glyph at HT073195[obverse 4 4])" ;
+    cidoc:TXP3_is_rendered_by cuneiex:HT073195_transliteration1_obverse_line4_char4_charocc ;
     cidoc:TXP8_is_component_of cunei:HT073195_writtenText ;
     cunei:isDamaged false ;
-    cunei:prevChar cuneiex:HT073195_obverse_line4_char2_glyph ;
-    cunei:prevInWord cuneiex:HT073195_obverse_line4_char1_glyph ;
-    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_4_3_mar_HT073195_03_front.jpg"^^xsd:anyURI,
-        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_4_3_mar_HT073195_03_front.jpg"^^xsd:anyURI .
+    cunei:next cuneiex:HT073195_obverse_line4_char5_glyph ;
+    cunei:prevChar cuneiex:HT073195_obverse_line4_char3_glyph ;
+    cunei:prevInWord cuneiex:HT073195_obverse_line4_char2_glyph ;
+    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_4_4_d_HT073195_03_front.jpg"^^xsd:anyURI,
+        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_4_4_d_HT073195_03_front.jpg"^^xsd:anyURI .
 
-cuneiex:HT073195_transliteration1_obverse_line1_char6_charocc a cunei:TransliterationCharOccurrence ;
-    rdfs:label "Char Occurrence: BABBAR (HT073195[obverse_transliteration1_line1_char6])" ;
+cuneiex:HT073195_obverse_line4_char5_glyph a cidoc:TX9_Glyph ;
+    rdfs:label "Glyph at HT073195[obverse 4 5])" ;
+    cidoc:TXP3_is_rendered_by cuneiex:HT073195_transliteration1_obverse_line4_char5_charocc ;
+    cidoc:TXP8_is_component_of cunei:HT073195_writtenText ;
+    cunei:isDamaged false ;
+    cunei:prevChar cuneiex:HT073195_obverse_line4_char4_glyph ;
+    cunei:prevInWord cuneiex:HT073195_obverse_line4_char3_glyph ;
+    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_4_5_UTU_HT073195_03_front.jpg"^^xsd:anyURI,
+        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_4_5_UTU_HT073195_03_front.jpg"^^xsd:anyURI .
+
+cuneiex:HT073195_transliteration1_obverse_line1_char7_charocc a cunei:TransliterationCharOccurrence ;
+    rdfs:label "Char Occurrence: BABBAR (HT073195[obverse_transliteration1_line1_char7])" ;
     lemon:writtenRepUnicode "𒌓" ;
     graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_reading_babbar> ;
-    cunei:charIndex 6 ;
+    cunei:charIndex 7 ;
     cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar> ;
     cunei:lineNumber 1 ;
     cunei:partOf cuneiex:HT073195_transliteration1_obverse_line1_word5_wordformocc ;
     cunei:positionInWord 2 ;
-    cunei:positionOnTabletSide 5 ;
-    cunei:prev cuneiex:HT073195_transliteration1_obverse_line1_char5_charocc ;
+    cunei:positionOnTabletSide 6 ;
+    cunei:prev cuneiex:HT073195_transliteration1_obverse_line1_char6_charocc ;
     cunei:prevInWord cuneiex:HT073195_transliteration1_obverse_line1_char1_charocc ;
     skos:definition "BABBAR" .
 
@@ -735,39 +771,52 @@ cuneiex:HT073195_transliteration1_obverse_line2_char5_charocc a cunei:Transliter
     cunei:lineNumber 2 ;
     cunei:partOf cuneiex:HT073195_transliteration1_obverse_line2_word4_wordformocc ;
     cunei:positionInWord 2 ;
-    cunei:positionOnTabletSide 10 ;
+    cunei:positionOnTabletSide 11 ;
     cunei:prev cuneiex:HT073195_transliteration1_obverse_line2_char4_charocc ;
     cunei:prevInWord cuneiex:HT073195_transliteration1_obverse_line2_char1_charocc ;
     skos:definition "GI" .
 
-cuneiex:HT073195_transliteration1_obverse_line3_char6_charocc a cunei:TransliterationCharOccurrence ;
-    rdfs:label "Char Occurrence: H,AR{mesz} (HT073195[obverse_transliteration1_line3_char6])" ;
-    lemon:writtenRepUnicode "" ;
-    cunei:charIndex 6 ;
+cuneiex:HT073195_transliteration1_obverse_line3_char7_charocc a cunei:TransliterationCharOccurrence ;
+    rdfs:label "Char Occurrence: mesz (HT073195[obverse_transliteration1_line3_char7])" ;
+    lemon:writtenRepUnicode "𒈨𒌍" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_me_reading_meš> ;
+    cunei:charIndex 7 ;
+    cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_esz_3×u>,
+        <https://situx.github.io/cuneiformontology/signlist/character_me> ;
     cunei:lineNumber 3 ;
     cunei:partOf cuneiex:HT073195_transliteration1_obverse_line3_word4_wordformocc ;
-    cunei:positionInWord 1 ;
-    cunei:positionOnTabletSide 16 ;
-    cunei:prev cuneiex:HT073195_transliteration1_obverse_line3_char5_charocc ;
-    skos:definition "H,AR{mesz}" .
+    cunei:positionInWord 2 ;
+    cunei:positionOnTabletSide 18 ;
+    cunei:prev cuneiex:HT073195_transliteration1_obverse_line3_char6_charocc ;
+    cunei:prevInWord cuneiex:HT073195_transliteration1_obverse_line3_char1_charocc ;
+    skos:definition "mesz" .
 
-cuneiex:HT073195_transliteration1_obverse_line4_char7_charocc a cunei:TransliterationCharOccurrence ;
-    rdfs:label "Char Occurrence: u2 (HT073195[obverse_transliteration1_line4_char7])" ;
+cuneiex:HT073195_transliteration1_obverse_line4_char8_charocc a cunei:TransliterationCharOccurrence ;
+    rdfs:label "Char Occurrence: u2 (HT073195[obverse_transliteration1_line4_char8])" ;
     lemon:writtenRepUnicode "" ;
-    cunei:charIndex 7 ;
+    cunei:charIndex 8 ;
     cunei:lineNumber 4 ;
     cunei:partOf cuneiex:HT073195_transliteration1_obverse_line4_word3_wordformocc ;
     cunei:positionInWord 3 ;
-    cunei:positionOnTabletSide 23 ;
-    cunei:prev cuneiex:HT073195_transliteration1_obverse_line4_char6_charocc ;
+    cunei:positionOnTabletSide 26 ;
+    cunei:prev cuneiex:HT073195_transliteration1_obverse_line4_char7_charocc ;
     cunei:prevInWord cuneiex:HT073195_transliteration1_obverse_line4_char2_charocc ;
     skos:definition "u2" .
 
 <https://situx.github.io/cuneiformontology/signlist/character_a_reading_a> a graphemon:GraphemeReading ;
     rdfs:label "Grapheme Reading A: a" .
 
+<https://situx.github.io/cuneiformontology/signlist/character_an_reading_d> a graphemon:GraphemeReading ;
+    rdfs:label "Grapheme Reading AN: d" .
+
 <https://situx.github.io/cuneiformontology/signlist/character_mar_reading_mar> a graphemon:GraphemeReading ;
     rdfs:label "Grapheme Reading MAR: mar" .
+
+<https://situx.github.io/cuneiformontology/signlist/character_me> a graphemon:Grapheme ;
+    rdfs:label "Character: ME" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_me_reading_me>,
+        <https://situx.github.io/cuneiformontology/signlist/character_me_reading_meš> ;
+    graphemon:variant <https://situx.github.io/cuneiformontology/signlist/character_me_variant1> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_me_reading_me> a graphemon:GraphemeReading ;
     rdfs:label "Grapheme Reading ME: me" .
@@ -775,18 +824,20 @@ cuneiex:HT073195_transliteration1_obverse_line4_char7_charocc a cunei:Transliter
 <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_reading_babbar> a graphemon:GraphemeReading ;
     rdfs:label "Grapheme Reading UD (BABBAR): babbar" .
 
+<https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_reading_utu> a graphemon:GraphemeReading ;
+    rdfs:label "Grapheme Reading UD (BABBAR): utu" .
+
 cunei:Line a owl:ObjectProperty ;
     rdfs:subClassOf cidoc:TX7_WrittenTextFragment,
         cunei:TabletFeature .
 
-cuneiex:HT073195_obverse_line3_char1_glyph a cidoc:TX9_Glyph ;
-    rdfs:label "Glyph at HT073195[obverse 3 1])" ;
-    cidoc:TXP3_is_rendered_by cuneiex:HT073195_transliteration1_obverse_line3_char1_charocc ;
+cuneiex:HT073195_obverse_line1_char1_glyph a cidoc:TX9_Glyph ;
+    rdfs:label "Glyph at HT073195[obverse 1 1])" ;
+    cidoc:TXP3_is_rendered_by cuneiex:HT073195_transliteration1_obverse_line1_char1_charocc ;
     cidoc:TXP8_is_component_of cunei:HT073195_writtenText ;
     cunei:isDamaged false ;
-    cunei:next cuneiex:HT073195_obverse_line3_char2_glyph ;
-    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_3_1_SZU_HT073195_03_front.jpg"^^xsd:anyURI,
-        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_3_1_SZU_HT073195_03_front.jpg"^^xsd:anyURI .
+    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_1_1_9(u)_HT073195_03_front.jpg"^^xsd:anyURI,
+        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_1_1_9(u)_HT073195_03_front.jpg"^^xsd:anyURI .
 
 cuneiex:HT073195_obverse_line4_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at HT073195[obverse 4 1])" ;
@@ -806,6 +857,17 @@ cuneiex:HT073195_obverse_line4_char2_glyph a cidoc:TX9_Glyph ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_4_2_a_HT073195_03_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_4_2_a_HT073195_03_front.jpg"^^xsd:anyURI .
 
+cuneiex:HT073195_obverse_line4_char3_glyph a cidoc:TX9_Glyph ;
+    rdfs:label "Glyph at HT073195[obverse 4 3])" ;
+    cidoc:TXP3_is_rendered_by cuneiex:HT073195_transliteration1_obverse_line4_char3_charocc ;
+    cidoc:TXP8_is_component_of cunei:HT073195_writtenText ;
+    cunei:isDamaged false ;
+    cunei:next cuneiex:HT073195_obverse_line4_char4_glyph ;
+    cunei:prevChar cuneiex:HT073195_obverse_line4_char2_glyph ;
+    cunei:prevInWord cuneiex:HT073195_obverse_line4_char1_glyph ;
+    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_4_3_mar_HT073195_03_front.jpg"^^xsd:anyURI,
+        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_4_3_mar_HT073195_03_front.jpg"^^xsd:anyURI .
+
 cuneiex:HT073195_transliteration1_obverse_line1_char2_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: 2(disz) (HT073195[obverse_transliteration1_line1_char2])" ;
     lemon:writtenRepUnicode "" ;
@@ -818,7 +880,7 @@ cuneiex:HT073195_transliteration1_obverse_line1_char2_charocc a cunei:Transliter
     skos:definition "2(disz)" .
 
 cuneiex:HT073195_transliteration1_obverse_line1_char3_charocc a cunei:TransliterationCharOccurrence ;
-    rdfs:label "Char Occurrence: H,AR{mesz} (HT073195[obverse_transliteration1_line1_char3])" ;
+    rdfs:label "Char Occurrence: H,AR (HT073195[obverse_transliteration1_line1_char3])" ;
     lemon:writtenRepUnicode "" ;
     cunei:charIndex 3 ;
     cunei:lineNumber 1 ;
@@ -826,28 +888,43 @@ cuneiex:HT073195_transliteration1_obverse_line1_char3_charocc a cunei:Transliter
     cunei:positionInWord 1 ;
     cunei:positionOnTabletSide 2 ;
     cunei:prev cuneiex:HT073195_transliteration1_obverse_line1_char2_charocc ;
-    skos:definition "H,AR{mesz}" .
+    skos:definition "H,AR" .
 
 cuneiex:HT073195_transliteration1_obverse_line1_char4_charocc a cunei:TransliterationCharOccurrence ;
-    rdfs:label "Char Occurrence: sza3 (HT073195[obverse_transliteration1_line1_char4])" ;
-    lemon:writtenRepUnicode "" ;
+    rdfs:label "Char Occurrence: mesz (HT073195[obverse_transliteration1_line1_char4])" ;
+    lemon:writtenRepUnicode "𒈨𒌍" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_me_reading_meš> ;
     cunei:charIndex 4 ;
+    cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_esz_3×u>,
+        <https://situx.github.io/cuneiformontology/signlist/character_me> ;
     cunei:lineNumber 1 ;
-    cunei:partOf cuneiex:HT073195_transliteration1_obverse_line1_word4_wordformocc ;
-    cunei:positionInWord 1 ;
+    cunei:partOf cuneiex:HT073195_transliteration1_obverse_line1_word3_wordformocc ;
+    cunei:positionInWord 2 ;
     cunei:positionOnTabletSide 3 ;
     cunei:prev cuneiex:HT073195_transliteration1_obverse_line1_char3_charocc ;
-    skos:definition "sza3" .
+    cunei:prevInWord cuneiex:HT073195_transliteration1_obverse_line1_char1_charocc ;
+    skos:definition "mesz" .
 
 cuneiex:HT073195_transliteration1_obverse_line1_char5_charocc a cunei:TransliterationCharOccurrence ;
-    rdfs:label "Char Occurrence: KU3 (HT073195[obverse_transliteration1_line1_char5])" ;
+    rdfs:label "Char Occurrence: sza3 (HT073195[obverse_transliteration1_line1_char5])" ;
     lemon:writtenRepUnicode "" ;
     cunei:charIndex 5 ;
     cunei:lineNumber 1 ;
-    cunei:partOf cuneiex:HT073195_transliteration1_obverse_line1_word5_wordformocc ;
+    cunei:partOf cuneiex:HT073195_transliteration1_obverse_line1_word4_wordformocc ;
     cunei:positionInWord 1 ;
     cunei:positionOnTabletSide 4 ;
     cunei:prev cuneiex:HT073195_transliteration1_obverse_line1_char4_charocc ;
+    skos:definition "sza3" .
+
+cuneiex:HT073195_transliteration1_obverse_line1_char6_charocc a cunei:TransliterationCharOccurrence ;
+    rdfs:label "Char Occurrence: KU3 (HT073195[obverse_transliteration1_line1_char6])" ;
+    lemon:writtenRepUnicode "" ;
+    cunei:charIndex 6 ;
+    cunei:lineNumber 1 ;
+    cunei:partOf cuneiex:HT073195_transliteration1_obverse_line1_word5_wordformocc ;
+    cunei:positionInWord 1 ;
+    cunei:positionOnTabletSide 5 ;
+    cunei:prev cuneiex:HT073195_transliteration1_obverse_line1_char5_charocc ;
     skos:definition "KU3" .
 
 cuneiex:HT073195_transliteration1_obverse_line2_char2_charocc a cunei:TransliterationCharOccurrence ;
@@ -857,7 +934,7 @@ cuneiex:HT073195_transliteration1_obverse_line2_char2_charocc a cunei:Transliter
     cunei:lineNumber 2 ;
     cunei:partOf cuneiex:HT073195_transliteration1_obverse_line2_word2_wordformocc ;
     cunei:positionInWord 1 ;
-    cunei:positionOnTabletSide 7 ;
+    cunei:positionOnTabletSide 8 ;
     cunei:prev cuneiex:HT073195_transliteration1_obverse_line2_char1_charocc ;
     skos:definition "6(disz)" .
 
@@ -868,7 +945,7 @@ cuneiex:HT073195_transliteration1_obverse_line2_char3_charocc a cunei:Transliter
     cunei:lineNumber 2 ;
     cunei:partOf cuneiex:HT073195_transliteration1_obverse_line2_word3_wordformocc ;
     cunei:positionInWord 1 ;
-    cunei:positionOnTabletSide 8 ;
+    cunei:positionOnTabletSide 9 ;
     cunei:prev cuneiex:HT073195_transliteration1_obverse_line2_char2_charocc ;
     skos:definition "sza3" .
 
@@ -879,7 +956,7 @@ cuneiex:HT073195_transliteration1_obverse_line2_char4_charocc a cunei:Transliter
     cunei:lineNumber 2 ;
     cunei:partOf cuneiex:HT073195_transliteration1_obverse_line2_word4_wordformocc ;
     cunei:positionInWord 1 ;
-    cunei:positionOnTabletSide 9 ;
+    cunei:positionOnTabletSide 10 ;
     cunei:prev cuneiex:HT073195_transliteration1_obverse_line2_char3_charocc ;
     skos:definition "KU3" .
 
@@ -890,7 +967,7 @@ cuneiex:HT073195_transliteration1_obverse_line3_char3_charocc a cunei:Transliter
     cunei:lineNumber 3 ;
     cunei:partOf cuneiex:HT073195_transliteration1_obverse_line3_word2_wordformocc ;
     cunei:positionInWord 1 ;
-    cunei:positionOnTabletSide 13 ;
+    cunei:positionOnTabletSide 14 ;
     cunei:prev cuneiex:HT073195_transliteration1_obverse_line3_char2_charocc ;
     skos:definition "1(disz)" .
 
@@ -903,7 +980,7 @@ cuneiex:HT073195_transliteration1_obverse_line3_char4_charocc a cunei:Transliter
     cunei:lineNumber 3 ;
     cunei:partOf cuneiex:HT073195_transliteration1_obverse_line3_word2_wordformocc ;
     cunei:positionInWord 2 ;
-    cunei:positionOnTabletSide 14 ;
+    cunei:positionOnTabletSide 15 ;
     cunei:prev cuneiex:HT073195_transliteration1_obverse_line3_char3_charocc ;
     cunei:prevInWord cuneiex:HT073195_transliteration1_obverse_line3_char1_charocc ;
     skos:definition "ME" .
@@ -915,59 +992,60 @@ cuneiex:HT073195_transliteration1_obverse_line3_char5_charocc a cunei:Transliter
     cunei:lineNumber 3 ;
     cunei:partOf cuneiex:HT073195_transliteration1_obverse_line3_word3_wordformocc ;
     cunei:positionInWord 1 ;
-    cunei:positionOnTabletSide 15 ;
+    cunei:positionOnTabletSide 16 ;
     cunei:prev cuneiex:HT073195_transliteration1_obverse_line3_char4_charocc ;
     skos:definition "8(disz)" .
 
-cuneiex:HT073195_transliteration1_obverse_line4_char4_charocc a cunei:TransliterationCharOccurrence ;
-    rdfs:label "Char Occurrence: {d}UTU (HT073195[obverse_transliteration1_line4_char4])" ;
+cuneiex:HT073195_transliteration1_obverse_line3_char6_charocc a cunei:TransliterationCharOccurrence ;
+    rdfs:label "Char Occurrence: H,AR (HT073195[obverse_transliteration1_line3_char6])" ;
     lemon:writtenRepUnicode "" ;
-    cunei:charIndex 4 ;
-    cunei:lineNumber 4 ;
-    cunei:partOf cuneiex:HT073195_transliteration1_obverse_line4_word2_wordformocc ;
-    cunei:positionInWord 3 ;
-    cunei:positionOnTabletSide 20 ;
-    cunei:prev cuneiex:HT073195_transliteration1_obverse_line4_char3_charocc ;
-    cunei:prevInWord cuneiex:HT073195_transliteration1_obverse_line4_char2_charocc ;
-    skos:definition "{d}UTU" .
+    cunei:charIndex 6 ;
+    cunei:lineNumber 3 ;
+    cunei:partOf cuneiex:HT073195_transliteration1_obverse_line3_word4_wordformocc ;
+    cunei:positionInWord 1 ;
+    cunei:positionOnTabletSide 17 ;
+    cunei:prev cuneiex:HT073195_transliteration1_obverse_line3_char5_charocc ;
+    skos:definition "H,AR" .
 
-cuneiex:HT073195_transliteration1_obverse_line4_char5_charocc a cunei:TransliterationCharOccurrence ;
-    rdfs:label "Char Occurrence: isz (HT073195[obverse_transliteration1_line4_char5])" ;
+cuneiex:HT073195_transliteration1_obverse_line4_char6_charocc a cunei:TransliterationCharOccurrence ;
+    rdfs:label "Char Occurrence: isz (HT073195[obverse_transliteration1_line4_char6])" ;
     lemon:writtenRepUnicode "" ;
-    cunei:charIndex 5 ;
+    cunei:charIndex 6 ;
     cunei:lineNumber 4 ;
     cunei:partOf cuneiex:HT073195_transliteration1_obverse_line4_word3_wordformocc ;
     cunei:positionInWord 1 ;
-    cunei:positionOnTabletSide 21 ;
-    cunei:prev cuneiex:HT073195_transliteration1_obverse_line4_char4_charocc ;
+    cunei:positionOnTabletSide 24 ;
+    cunei:prev cuneiex:HT073195_transliteration1_obverse_line4_char5_charocc ;
     skos:definition "isz" .
 
-cuneiex:HT073195_transliteration1_obverse_line4_char6_charocc a cunei:TransliterationCharOccurrence ;
-    rdfs:label "Char Occurrence: szu (HT073195[obverse_transliteration1_line4_char6])" ;
+cuneiex:HT073195_transliteration1_obverse_line4_char7_charocc a cunei:TransliterationCharOccurrence ;
+    rdfs:label "Char Occurrence: szu (HT073195[obverse_transliteration1_line4_char7])" ;
     lemon:writtenRepUnicode "𒋗" ;
     graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_šu> ;
-    cunei:charIndex 6 ;
+    cunei:charIndex 7 ;
     cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_szu> ;
     cunei:lineNumber 4 ;
     cunei:partOf cuneiex:HT073195_transliteration1_obverse_line4_word3_wordformocc ;
     cunei:positionInWord 2 ;
-    cunei:positionOnTabletSide 22 ;
-    cunei:prev cuneiex:HT073195_transliteration1_obverse_line4_char5_charocc ;
+    cunei:positionOnTabletSide 25 ;
+    cunei:prev cuneiex:HT073195_transliteration1_obverse_line4_char6_charocc ;
     cunei:prevInWord cuneiex:HT073195_transliteration1_obverse_line4_char1_charocc ;
     skos:definition "szu" .
+
+<https://situx.github.io/cuneiformontology/signlist/character_me_reading_meš> a graphemon:GraphemeReading ;
+    rdfs:label "Grapheme Reading ME: meš" .
 
 <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_šu> a graphemon:GraphemeReading ;
     rdfs:label "Grapheme Reading SZU: šu" .
 
-cuneiex:HT073195_transliteration1_obverse_line1_char1_charocc a cunei:TransliterationCharOccurrence ;
-    rdfs:label "Char Occurrence: 9(u) (HT073195[obverse_transliteration1_line1_char1])" ;
-    lemon:writtenRepUnicode "" ;
-    cunei:charIndex 1 ;
-    cunei:lineNumber 1 ;
-    cunei:partOf cuneiex:HT073195_transliteration1_obverse_line1_word1_wordformocc ;
-    cunei:positionInWord 1 ;
-    cunei:positionOnTabletSide 0 ;
-    skos:definition "9(u)" .
+cuneiex:HT073195_obverse_line3_char1_glyph a cidoc:TX9_Glyph ;
+    rdfs:label "Glyph at HT073195[obverse 3 1])" ;
+    cidoc:TXP3_is_rendered_by cuneiex:HT073195_transliteration1_obverse_line3_char1_charocc ;
+    cidoc:TXP8_is_component_of cunei:HT073195_writtenText ;
+    cunei:isDamaged false ;
+    cunei:next cuneiex:HT073195_obverse_line3_char2_glyph ;
+    foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_3_1_SZU_HT073195_03_front.jpg"^^xsd:anyURI,
+        "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_3_1_SZU_HT073195_03_front.jpg"^^xsd:anyURI .
 
 cuneiex:HT073195_transliteration1_obverse_line1_word1_wordformocc a cunei:WordFormOccurance ;
     rdfs:label " WordForm Occurrence: 9(u) (HT073195[obverse_line1_word1])" ;
@@ -982,7 +1060,7 @@ cuneiex:HT073195_transliteration1_obverse_line2_char1_charocc a cunei:Transliter
     cunei:lineNumber 2 ;
     cunei:partOf cuneiex:HT073195_transliteration1_obverse_line2_word1_wordformocc ;
     cunei:positionInWord 1 ;
-    cunei:positionOnTabletSide 6 ;
+    cunei:positionOnTabletSide 7 ;
     skos:definition "1(u)" .
 
 cuneiex:HT073195_transliteration1_obverse_line2_word1_wordformocc a cunei:WordFormOccurance ;
@@ -998,36 +1076,55 @@ cuneiex:HT073195_transliteration1_obverse_line3_char2_charocc a cunei:Transliter
     cunei:lineNumber 3 ;
     cunei:partOf cuneiex:HT073195_transliteration1_obverse_line3_word1_wordformocc ;
     cunei:positionInWord 2 ;
-    cunei:positionOnTabletSide 12 ;
+    cunei:positionOnTabletSide 13 ;
     cunei:prev cuneiex:HT073195_transliteration1_obverse_line3_char1_charocc ;
     cunei:prevInWord cuneiex:HT073195_transliteration1_obverse_line3_char1_charocc ;
     skos:definition "NIGIN2" .
 
-cuneiex:HT073195_transliteration1_obverse_line3_word4_wordformocc a cunei:WordFormOccurance ;
-    rdfs:label " WordForm Occurrence: H,AR{mesz} (HT073195[obverse_line3_word4])" ;
-    cunei:consistsOf cuneiex:HT073195_transliteration1_obverse_line3_char6_charocc ;
-    cunei:prevWord cuneiex:HT073195_transliteration1_obverse_line3_word3_wordformocc ;
-    skos:definition "H,AR{mesz}" .
+cuneiex:HT073195_transliteration1_obverse_line4_char4_charocc a cunei:TransliterationCharOccurrence ;
+    rdfs:label "Char Occurrence: d (HT073195[obverse_transliteration1_line4_char4])" ;
+    lemon:writtenRepUnicode "𒀭" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_an_reading_d> ;
+    cunei:charIndex 4 ;
+    cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_an> ;
+    cunei:lineNumber 4 ;
+    cunei:nextInWord cuneiex:HT073195_transliteration1_obverse_line4_char5_charocc ;
+    cunei:partOf cuneiex:HT073195_transliteration1_obverse_line4_word2_wordformocc ;
+    cunei:positionInWord 3 ;
+    cunei:positionOnTabletSide 22 ;
+    cunei:prev cuneiex:HT073195_transliteration1_obverse_line4_char3_charocc ;
+    cunei:prevInWord cuneiex:HT073195_transliteration1_obverse_line4_char2_charocc ;
+    skos:definition "d" .
 
-cuneiex:HT073195_transliteration1_obverse_line4_char3_charocc a cunei:TransliterationCharOccurrence ;
-    rdfs:label "Char Occurrence: mar (HT073195[obverse_transliteration1_line4_char3])" ;
-    lemon:writtenRepUnicode "𒈥" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_mar_reading_mar> ;
-    cunei:charIndex 3 ;
-    cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_mar> ;
+cuneiex:HT073195_transliteration1_obverse_line4_char5_charocc a cunei:TransliterationCharOccurrence ;
+    rdfs:label "Char Occurrence: UTU (HT073195[obverse_transliteration1_line4_char5])" ;
+    lemon:writtenRepUnicode "𒌓" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_reading_utu> ;
+    cunei:charIndex 5 ;
+    cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar> ;
     cunei:lineNumber 4 ;
     cunei:partOf cuneiex:HT073195_transliteration1_obverse_line4_word2_wordformocc ;
-    cunei:positionInWord 2 ;
-    cunei:positionOnTabletSide 19 ;
-    cunei:prev cuneiex:HT073195_transliteration1_obverse_line4_char2_charocc ;
-    cunei:prevInWord cuneiex:HT073195_transliteration1_obverse_line4_char1_charocc ;
-    skos:definition "mar" .
+    cunei:positionInWord 4 ;
+    cunei:positionOnTabletSide 23 ;
+    cunei:prev cuneiex:HT073195_transliteration1_obverse_line4_char4_charocc ;
+    cunei:prevInWord cuneiex:HT073195_transliteration1_obverse_line4_char3_charocc ;
+    skos:definition "UTU" .
 
 cuneiex:HT073195_transliteration1_obverse_line4_word1_wordformocc a cunei:WordFormOccurance ;
     rdfs:label " WordForm Occurrence: sza3 (HT073195[obverse_line4_word1])" ;
     cunei:consistsOf cuneiex:HT073195_transliteration1_obverse_line4_char1_charocc ;
     cunei:nextWord cuneiex:HT073195_transliteration1_obverse_line4_word2_wordformocc ;
     skos:definition "sza3" .
+
+cuneiex:HT073195_transliteration1_obverse_line1_char1_charocc a cunei:TransliterationCharOccurrence ;
+    rdfs:label "Char Occurrence: 9(u) (HT073195[obverse_transliteration1_line1_char1])" ;
+    lemon:writtenRepUnicode "" ;
+    cunei:charIndex 1 ;
+    cunei:lineNumber 1 ;
+    cunei:partOf cuneiex:HT073195_transliteration1_obverse_line1_word1_wordformocc ;
+    cunei:positionInWord 1 ;
+    cunei:positionOnTabletSide 0 ;
+    skos:definition "9(u)" .
 
 cuneiex:HT073195_transliteration1_obverse_line1_word2_wordformocc a cunei:WordFormOccurance ;
     rdfs:label " WordForm Occurrence: 2(disz) (HT073195[obverse_line1_word2])" ;
@@ -1036,24 +1133,17 @@ cuneiex:HT073195_transliteration1_obverse_line1_word2_wordformocc a cunei:WordFo
     cunei:prevWord cuneiex:HT073195_transliteration1_obverse_line1_word1_wordformocc ;
     skos:definition "2(disz)" .
 
-cuneiex:HT073195_transliteration1_obverse_line1_word3_wordformocc a cunei:WordFormOccurance ;
-    rdfs:label " WordForm Occurrence: H,AR{mesz} (HT073195[obverse_line1_word3])" ;
-    cunei:consistsOf cuneiex:HT073195_transliteration1_obverse_line1_char3_charocc ;
-    cunei:nextWord cuneiex:HT073195_transliteration1_obverse_line1_word4_wordformocc ;
-    cunei:prevWord cuneiex:HT073195_transliteration1_obverse_line1_word2_wordformocc ;
-    skos:definition "H,AR{mesz}" .
-
 cuneiex:HT073195_transliteration1_obverse_line1_word4_wordformocc a cunei:WordFormOccurance ;
     rdfs:label " WordForm Occurrence: sza3 (HT073195[obverse_line1_word4])" ;
-    cunei:consistsOf cuneiex:HT073195_transliteration1_obverse_line1_char4_charocc ;
+    cunei:consistsOf cuneiex:HT073195_transliteration1_obverse_line1_char5_charocc ;
     cunei:nextWord cuneiex:HT073195_transliteration1_obverse_line1_word5_wordformocc ;
     cunei:prevWord cuneiex:HT073195_transliteration1_obverse_line1_word3_wordformocc ;
     skos:definition "sza3" .
 
 cuneiex:HT073195_transliteration1_obverse_line1_word5_wordformocc a cunei:WordFormOccurance ;
     rdfs:label " WordForm Occurrence: KU3.BABBAR (HT073195[obverse_line1_word5])" ;
-    cunei:consistsOf cuneiex:HT073195_transliteration1_obverse_line1_char5_charocc,
-        cuneiex:HT073195_transliteration1_obverse_line1_char6_charocc ;
+    cunei:consistsOf cuneiex:HT073195_transliteration1_obverse_line1_char6_charocc,
+        cuneiex:HT073195_transliteration1_obverse_line1_char7_charocc ;
     cunei:prevWord cuneiex:HT073195_transliteration1_obverse_line1_word4_wordformocc ;
     skos:definition "KU3.BABBAR" .
 
@@ -1078,19 +1168,6 @@ cuneiex:HT073195_transliteration1_obverse_line2_word4_wordformocc a cunei:WordFo
     cunei:prevWord cuneiex:HT073195_transliteration1_obverse_line2_word3_wordformocc ;
     skos:definition "KU3.GI" .
 
-cuneiex:HT073195_transliteration1_obverse_line3_char1_charocc a cunei:TransliterationCharOccurrence ;
-    rdfs:label "Char Occurrence: SZU (HT073195[obverse_transliteration1_line3_char1])" ;
-    lemon:writtenRepUnicode "𒋗" ;
-    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_šu> ;
-    cunei:charIndex 1 ;
-    cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_szu> ;
-    cunei:lineNumber 3 ;
-    cunei:nextInWord cuneiex:HT073195_transliteration1_obverse_line3_char2_charocc ;
-    cunei:partOf cuneiex:HT073195_transliteration1_obverse_line3_word1_wordformocc ;
-    cunei:positionInWord 1 ;
-    cunei:positionOnTabletSide 11 ;
-    skos:definition "SZU" .
-
 cuneiex:HT073195_transliteration1_obverse_line3_word1_wordformocc a cunei:WordFormOccurance ;
     rdfs:label " WordForm Occurrence: SZU.NIGIN2 (HT073195[obverse_line3_word1])" ;
     cunei:consistsOf cuneiex:HT073195_transliteration1_obverse_line3_char1_charocc,
@@ -1105,6 +1182,13 @@ cuneiex:HT073195_transliteration1_obverse_line3_word3_wordformocc a cunei:WordFo
     cunei:prevWord cuneiex:HT073195_transliteration1_obverse_line3_word2_wordformocc ;
     skos:definition "8(disz)" .
 
+cuneiex:HT073195_transliteration1_obverse_line3_word4_wordformocc a cunei:WordFormOccurance ;
+    rdfs:label " WordForm Occurrence: H,AR-mesz- (HT073195[obverse_line3_word4])" ;
+    cunei:consistsOf cuneiex:HT073195_transliteration1_obverse_line3_char6_charocc,
+        cuneiex:HT073195_transliteration1_obverse_line3_char7_charocc ;
+    cunei:prevWord cuneiex:HT073195_transliteration1_obverse_line3_word3_wordformocc ;
+    skos:definition "H,AR-mesz-" .
+
 cuneiex:HT073195_transliteration1_obverse_line4_char1_charocc a cunei:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: sza3 (HT073195[obverse_transliteration1_line4_char1])" ;
     lemon:writtenRepUnicode "" ;
@@ -1112,7 +1196,7 @@ cuneiex:HT073195_transliteration1_obverse_line4_char1_charocc a cunei:Transliter
     cunei:lineNumber 4 ;
     cunei:partOf cuneiex:HT073195_transliteration1_obverse_line4_word1_wordformocc ;
     cunei:positionInWord 1 ;
-    cunei:positionOnTabletSide 17 ;
+    cunei:positionOnTabletSide 19 ;
     skos:definition "sza3" .
 
 cuneiex:HT073195_transliteration1_obverse_line4_char2_charocc a cunei:TransliterationCharOccurrence ;
@@ -1125,9 +1209,45 @@ cuneiex:HT073195_transliteration1_obverse_line4_char2_charocc a cunei:Transliter
     cunei:nextInWord cuneiex:HT073195_transliteration1_obverse_line4_char3_charocc ;
     cunei:partOf cuneiex:HT073195_transliteration1_obverse_line4_word2_wordformocc ;
     cunei:positionInWord 1 ;
-    cunei:positionOnTabletSide 18 ;
+    cunei:positionOnTabletSide 20 ;
     cunei:prev cuneiex:HT073195_transliteration1_obverse_line4_char1_charocc ;
     skos:definition "a" .
+
+cuneiex:HT073195_transliteration1_obverse_line4_char3_charocc a cunei:TransliterationCharOccurrence ;
+    rdfs:label "Char Occurrence: mar (HT073195[obverse_transliteration1_line4_char3])" ;
+    lemon:writtenRepUnicode "𒈥" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_mar_reading_mar> ;
+    cunei:charIndex 3 ;
+    cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_mar> ;
+    cunei:lineNumber 4 ;
+    cunei:nextInWord cuneiex:HT073195_transliteration1_obverse_line4_char4_charocc ;
+    cunei:partOf cuneiex:HT073195_transliteration1_obverse_line4_word2_wordformocc ;
+    cunei:positionInWord 2 ;
+    cunei:positionOnTabletSide 21 ;
+    cunei:prev cuneiex:HT073195_transliteration1_obverse_line4_char2_charocc ;
+    cunei:prevInWord cuneiex:HT073195_transliteration1_obverse_line4_char1_charocc ;
+    skos:definition "mar" .
+
+cuneiex:HT073195_transliteration1_obverse_line1_word3_wordformocc a cunei:WordFormOccurance ;
+    rdfs:label " WordForm Occurrence: H,AR-mesz (HT073195[obverse_line1_word3])" ;
+    cunei:consistsOf cuneiex:HT073195_transliteration1_obverse_line1_char3_charocc,
+        cuneiex:HT073195_transliteration1_obverse_line1_char4_charocc ;
+    cunei:nextWord cuneiex:HT073195_transliteration1_obverse_line1_word4_wordformocc ;
+    cunei:prevWord cuneiex:HT073195_transliteration1_obverse_line1_word2_wordformocc ;
+    skos:definition "H,AR-mesz" .
+
+cuneiex:HT073195_transliteration1_obverse_line3_char1_charocc a cunei:TransliterationCharOccurrence ;
+    rdfs:label "Char Occurrence: SZU (HT073195[obverse_transliteration1_line3_char1])" ;
+    lemon:writtenRepUnicode "𒋗" ;
+    graphemon:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_šu> ;
+    cunei:charIndex 1 ;
+    cunei:contains <https://situx.github.io/cuneiformontology/signlist/character_szu> ;
+    cunei:lineNumber 3 ;
+    cunei:nextInWord cuneiex:HT073195_transliteration1_obverse_line3_char2_charocc ;
+    cunei:partOf cuneiex:HT073195_transliteration1_obverse_line3_word1_wordformocc ;
+    cunei:positionInWord 1 ;
+    cunei:positionOnTabletSide 12 ;
+    skos:definition "SZU" .
 
 cuneiex:HT073195_transliteration1_obverse_line3_word2_wordformocc a cunei:WordFormOccurance ;
     rdfs:label " WordForm Occurrence: 1(disz)-ME (HT073195[obverse_line3_word2])" ;
@@ -1139,9 +1259,9 @@ cuneiex:HT073195_transliteration1_obverse_line3_word2_wordformocc a cunei:WordFo
 
 cuneiex:HT073195_transliteration1_obverse_line4_word3_wordformocc a cunei:WordFormOccurance ;
     rdfs:label " WordForm Occurrence: isz-szu-u2 (HT073195[obverse_line4_word3])" ;
-    cunei:consistsOf cuneiex:HT073195_transliteration1_obverse_line4_char5_charocc,
-        cuneiex:HT073195_transliteration1_obverse_line4_char6_charocc,
-        cuneiex:HT073195_transliteration1_obverse_line4_char7_charocc ;
+    cunei:consistsOf cuneiex:HT073195_transliteration1_obverse_line4_char6_charocc,
+        cuneiex:HT073195_transliteration1_obverse_line4_char7_charocc,
+        cuneiex:HT073195_transliteration1_obverse_line4_char8_charocc ;
     cunei:prevWord cuneiex:HT073195_transliteration1_obverse_line4_word2_wordformocc ;
     skos:definition "isz-szu-u2" .
 
@@ -1149,11 +1269,12 @@ skos:Collection a owl:Class ;
     rdfs:label "collection"@en .
 
 cuneiex:HT073195_transliteration1_obverse_line4_word2_wordformocc a cunei:WordFormOccurance ;
-    rdfs:label " WordForm Occurrence: a-mar-{d}UTU (HT073195[obverse_line4_word2])" ;
+    rdfs:label " WordForm Occurrence: a-mar--d-UTU (HT073195[obverse_line4_word2])" ;
     cunei:consistsOf cuneiex:HT073195_transliteration1_obverse_line4_char2_charocc,
         cuneiex:HT073195_transliteration1_obverse_line4_char3_charocc,
-        cuneiex:HT073195_transliteration1_obverse_line4_char4_charocc ;
+        cuneiex:HT073195_transliteration1_obverse_line4_char4_charocc,
+        cuneiex:HT073195_transliteration1_obverse_line4_char5_charocc ;
     cunei:nextWord cuneiex:HT073195_transliteration1_obverse_line4_word3_wordformocc ;
     cunei:prevWord cuneiex:HT073195_transliteration1_obverse_line4_word1_wordformocc ;
-    skos:definition "a-mar-{d}UTU" .
+    skos:definition "a-mar--d-UTU" .
 

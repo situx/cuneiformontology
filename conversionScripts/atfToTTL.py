@@ -296,6 +296,8 @@ for tabname in tabletnames:
             currentsidejtf["children"].append(curjtfline)
             currentwordindex=0
             currentcharindex=1
+            line=line.replace("{","-").replace("}","-")
+            line=line.replace(" -"," ").replace("- "," ")
             linespl=line.split(" ")
             linelen=len(linespl)
             for word in linespl:
