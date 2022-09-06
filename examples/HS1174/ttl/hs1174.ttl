@@ -381,11 +381,11 @@ lemon:LexicalEntity rdf:type owl:Class ;
 
 
 ###  http://lemon-model.net/lemon#LexicalForm
-lemon:LexicalForm rdf:type owl:Class rdfs:subClassOf prov:Entity .
+lemon:LexicalForm rdf:type owl:Class ; rdfs:subClassOf prov:Entity .
 
 
 ###  http://lemon-model.net/lemon#LexicalSense
-lemon:LexicalSense rdf:type owl:Class rdfs:subClassOf prov:Entity .
+lemon:LexicalSense rdf:type owl:Class ; rdfs:subClassOf prov:Entity .
 
 
 ###  http://lemon-model.net/lemon#Lexicon
