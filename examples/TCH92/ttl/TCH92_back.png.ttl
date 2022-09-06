@@ -189,6 +189,8 @@ oa:FragmentSelector a owl:Class ;
         <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ff325923-d2db-4e87-b2ef-241a461cd15f>,
         <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ffe5a971-0a38-4462-ae74-1f5e9bc742e0> .
 
+msp:ComputingReference rdfs:subClassOf prov:Entity .
+
 <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_00a7b8c0-721b-4a8c-8eea-8c8fa65f3590> a geocrs:CoordinateOperation ;
     rdfs:label "Object To PCA"@en ;
     geocrs:parameter <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_00a7b8c0-721b-4a8c-8eea-8c8fa65f3590_xaxis_translation>,
@@ -13852,7 +13854,8 @@ msp:MeshLabelSelector rdfs:subClassOf oa:Selector .
 msp:PCAReference rdfs:subClassOf msp:ComputingReference .
 
 geocrs:CoordinateOperation a owl:Class ;
-    rdfs:label "coordinate operation"@en .
+    rdfs:label "coordinate operation"@en ;
+    rdfs:subClassOf prov:Entity .
 
 oa:WKTSelector a owl:Class ;
     rdfs:label "WKT Selector"@en ;
@@ -13875,6 +13878,8 @@ oa:SvgSelector a owl:Class ;
     geocrs:axis <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1>,
         <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2>,
         <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> .
+
+oa:SpecificResource rdfs:subClassOf prov:Entity .
 
 geocrs:OperationParameter a owl:Class ;
     rdfs:label "operation parameter"@en .

@@ -1,6 +1,8 @@
 @prefix as: <https://www.w3.org/ns/activitystreams#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geocrs: <http://www.opengis.net/ont/crs/> .
+@prefix msp: <http://purl.org/meshsparql#> .
 @prefix ns1: <http://purl.org/dc/terms/> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -9,6 +11,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+msp:ComputingReference rdfs:subClassOf prov:Entity .
+
+geocrs:CoordinateOperation rdfs:subClassOf prov:Entity .
 
 oa:FragmentSelector a owl:Class ;
     rdfs:label "Fragment Selector"@en ;
@@ -785,4 +791,6 @@ oa:SvgSelector a owl:Class ;
 <https://github.com/recogito/annotorious-openseadragon> a dc:Software ;
     foaf:homepage "https://github.com/recogito/annotorious-openseadragon"^^xsd:anyURI ;
     foaf:name "Annotorious-OpenSeaDragon" .
+
+oa:SpecificResource rdfs:subClassOf prov:Entity .
 

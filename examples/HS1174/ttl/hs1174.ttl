@@ -375,15 +375,16 @@ rdf:value rdf:type owl:DatatypeProperty .
 
 ###  http://lemon-model.net/lemon#LexicalEntity
 lemon:LexicalEntity rdf:type owl:Class ;
+					rdfs:subClassOf prov:Entity ;
                     rdfs:label "lexical entity"@en .
 
 
 ###  http://lemon-model.net/lemon#LexicalForm
-lemon:LexicalForm rdf:type owl:Class .
+lemon:LexicalForm rdf:type owl:Class rdfs:subClassOf prov:Entity .
 
 
 ###  http://lemon-model.net/lemon#LexicalSense
-lemon:LexicalSense rdf:type owl:Class .
+lemon:LexicalSense rdf:type owl:Class rdfs:subClassOf prov:Entity .
 
 
 ###  http://lemon-model.net/lemon#Lexicon

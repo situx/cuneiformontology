@@ -774,7 +774,8 @@ cuneiex:HT073195_transliteration1_obverse_line4_char7_charocc a cunei:Transliter
     rdfs:label "Grapheme Reading UD (BABBAR): babbar" .
 
 cunei:Line a owl:ObjectProperty ;
-    rdfs:subClassOf cidoc:TX7_WrittenTextFragment .
+    rdfs:subClassOf cidoc:TX7_WrittenTextFragment,
+        cunei:TabletFeature .
 
 cuneiex:HT073195_obverse_line3_char1_glyph a cidoc:TX9_Glyph ;
     rdfs:label "Glyph at HT073195[obverse 3 1])" ;

@@ -212,6 +212,7 @@ for tabname in tabletnames:
     cdlitabs.add("cidoc:TX7_WrittenTextFragment rdfs:label \"written text fragment\"@en .\n")
     cdlitabs.add("cunei:Side rdfs:subClassOf cidoc:TX7_WrittenTextFragment .\n")
     cdlitabs.add("cunei:Line rdfs:subClassOf cidoc:TX7_WrittenTextFragment .\n")
+    cdlitabs.add("cunei:Line rdfs:subClassOf cunei:TabletFeature .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_writtenText rdf:type cidoc:TX1_WrittenText .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_writtenText rdfs:label \"Written Text on "+str(currenttabletid)+"\" .\n")
     cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_writtenText cidoc:P56_found_on "+namespaceprefix+":"+str(currenttabletid)+" .\n")

@@ -103,6 +103,8 @@ oa:FragmentSelector a owl:Class ;
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/O147_reverse_annotations> a as:Collection ;
     rdfs:label "Image annotations on O147 reverse on medium 3D rendering"@en .
 
+msp:ComputingReference rdfs:subClassOf prov:Entity .
+
 <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_8c3c5739-7ae0-4f45-9215-fc1cfc24a226> a geocrs:CoordinateOperation ;
     rdfs:label "Object To PCA"@en ;
     geocrs:parameter <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_8c3c5739-7ae0-4f45-9215-fc1cfc24a226_xaxis_translation>,
@@ -2571,7 +2573,8 @@ msp:MeshLabelSelector rdfs:subClassOf oa:Selector .
 msp:PCAReference rdfs:subClassOf msp:ComputingReference .
 
 geocrs:CoordinateOperation a owl:Class ;
-    rdfs:label "coordinate operation"@en .
+    rdfs:label "coordinate operation"@en ;
+    rdfs:subClassOf prov:Entity .
 
 oa:WKTSelector a owl:Class ;
     rdfs:label "WKT Selector"@en ;
@@ -2603,4 +2606,6 @@ oa:SvgSelector a owl:Class ;
 <https://github.com/recogito/annotorious-openseadragon> a dc:Software ;
     foaf:homepage "https://github.com/recogito/annotorious-openseadragon"^^xsd:anyURI ;
     foaf:name "Annotorious-OpenSeaDragon" .
+
+oa:SpecificResource rdfs:subClassOf prov:Entity .
 

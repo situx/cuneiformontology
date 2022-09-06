@@ -72,12 +72,15 @@
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/O147_obverse_annotations> a as:Collection ;
     rdfs:label "Image annotations on O147 obverse on medium 3D rendering"@en .
 
+msp:ComputingReference rdfs:subClassOf prov:Entity .
+
 msp:MeshLabelSelector rdfs:subClassOf oa:Selector .
 
 msp:PCAReference rdfs:subClassOf msp:ComputingReference .
 
 geocrs:CoordinateOperation a owl:Class ;
-    rdfs:label "coordinate operation"@en .
+    rdfs:label "coordinate operation"@en ;
+    rdfs:subClassOf prov:Entity .
 
 oa:WKTSelector a owl:Class ;
     rdfs:label "WKT Selector"@en ;
@@ -1762,4 +1765,6 @@ oa:Annotation rdfs:subClassOf prov:Entity .
 <https://github.com/recogito/annotorious-openseadragon> a dc:Software ;
     foaf:homepage "https://github.com/recogito/annotorious-openseadragon"^^xsd:anyURI ;
     foaf:name "Annotorious-OpenSeaDragon" .
+
+oa:SpecificResource rdfs:subClassOf prov:Entity .
 

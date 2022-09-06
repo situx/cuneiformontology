@@ -209,23 +209,23 @@ graphemon:slha rdf:type owl:DatatypeProperty ;
 #################################################################
 
 ###  http://lemon-model.net/lemon#LexicalEntity
-<http://lemon-model.net/lemon#LexicalEntity> rdf:type owl:Class .
+<http://lemon-model.net/lemon#LexicalEntity> rdf:type owl:Class rdfs:subClassOf prov:Entity .
 
 
 ###  http://lemon-model.net/lemon#LexicalForm
-<http://lemon-model.net/lemon#LexicalForm> rdf:type owl:Class .
+<http://lemon-model.net/lemon#LexicalForm> rdf:type owl:Class rdfs:subClassOf prov:Entity .
 
 
 ###  http://lemon-model.net/lemon#LexicalSense
-<http://lemon-model.net/lemon#LexicalSense> rdf:type owl:Class .
+<http://lemon-model.net/lemon#LexicalSense> rdf:type owl:Class rdfs:subClassOf prov:Entity .
 
 
 ###  http://lemon-model.net/lemon#Lexicon
-<http://lemon-model.net/lemon#Lexicon> rdf:type owl:Class .
+<http://lemon-model.net/lemon#Lexicon> rdf:type owl:Class rdfs:subClassOf skos:Collection .
 
 
 ###  http://lemon-model.net/lemon#WordForm
-<http://lemon-model.net/lemon#WordForm> rdf:type owl:Class .
+<http://lemon-model.net/lemon#WordForm> rdf:type owl:Class rdfs:subClassOf <http://lemon-model.net/lemon#LexicalForm> .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph
