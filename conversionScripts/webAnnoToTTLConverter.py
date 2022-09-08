@@ -261,19 +261,19 @@ for tabname in tabletnames:
                 charindex=0
             if ischaracter or (lineindex!=0 and (wedgeindex==None or wedgeindex==0)):
                 res.write("<"+str(indid)+"> rdfs:label \"Annotation of Glyph at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on "+str(material)+"\"@en .\n") 
-            elif wedgeindex!=0:
+            elif wedgeindex!=0 and wedgeindex!=None:
                 res.write("<"+str(indid)+"> rdfs:label \"Annotation of Wedge at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" wedge "+str(wedgeindex)+" on "+str(material)+"\"@en .\n")
             else:
                 res.write("<"+str(indid)+"> rdfs:label \"Annotation of Wedge at "+str(tabname)+" "+str(tabletside)+" on "+str(material)+"\"@en .\n")
             res.write("<"+str(indid)+"_body_glyph> rdf:type oa:SpecificResource .\n")
-            if wedgeindex!=0:
+            if wedgeindex!=0 and wedgeindex!=None:
                 res.write("<"+str(indid)+"_body_glyph> oa:hasSource <"+str(namespaceitems)+str(tabname)+"_"+str(tabletside)+"_line"+str(lineindex)+"_char"+str(charindex)+"_wedge"+str(wedgeindex)+"_glyph> .\n")
             else:
                 res.write("<"+str(indid)+"_body_glyph> oa:hasSource <"+str(namespaceitems)+str(tabname)+"_"+str(tabletside)+"_line"+str(lineindex)+"_char"+str(charindex)+"_glyph> .\n")
             res.write("<"+str(indid)+"_body_glyph> oa:motivatedBy oa:identifying .\n")
             if ischaracter or (lineindex!=0 and (wedgeindex==None or wedgeindex==0)):
                 res.write("<"+str(indid)+"_body_glyph> rdfs:label \"Annotation body referencing Glyph at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on "+str(material)+"\"@en .\n")
-            elif wedgeindex!=0:
+            elif wedgeindex!=0 and wedgeindex!=None:
                 res.write("<"+str(indid)+"_body_glyph> rdfs:label \"Annotation body referencing Wedge at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" wedge "+str(wedgeindex)+" on "+str(material)+"\"@en .\n")           
             else:
                 res.write("<"+str(indid)+"_body_glyph> rdfs:label \"Annotation body referencing Wedge at "+str(tabname)+" "+str(tabletside)+" on "+str(material)+"\"@en .\n")                
@@ -315,7 +315,7 @@ for tabname in tabletnames:
                             res.write("<"+str(comprefid)+"> rdf:type <http://purl.org/meshsparql#ComputingReference> .\n")
                         if ischaracter or (lineindex!=0 and (wedgeindex==None or wedgeindex==0)):
                             res.write("<"+str(comprefid)+"> rdfs:label \"Computing Reference of 3D Annotation target selector of Annotation of Glyph at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on a 3D Mesh\"@en .\n")
-                        elif wedgeindex!=0:
+                        elif wedgeindex!=0 and wedgeindex!=None:
                             res.write("<"+str(comprefid)+"> rdfs:label \"Computing Reference of 3D Annotation target selector of Annotation of Wedge at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" wedge "+str(wedgeindex)+" on a 3D Mesh\"@en .\n")                        
                         else:
                             res.write("<"+str(comprefid)+"> rdfs:label \"Computing Reference of 3D Annotation target selector of Annotation of Wedge at "+str(tabname)+" "+str(tabletside)+" on a 3D Mesh\"@en .\n")
@@ -329,7 +329,7 @@ for tabname in tabletnames:
                 res.write("<"+str(indid)+"_target3d_selector> rdf:value \""+str(data3d[key]["target"]["selector"]["value"])+"\"^^oa:wktLiteral .\n")
                 if ischaracter or (lineindex!=0 and (wedgeindex==None or wedgeindex==0)):
                     res.write("<"+str(indid)+"_target3d_selector> rdfs:label \"3D Annotation target selector of Annotation of Glyph at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on a 3D Mesh\"@en .\n")
-                elif wedgeindex!=0:
+                elif wedgeindex!=0 and wedgeindex!=None:
                     res.write("<"+str(indid)+"_target3d_selector> rdfs:label \"3D Annotation target selector of Annotation of Wedge at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" wedge "+str(wedgeindex)+" on a 3D Mesh\"@en .\n")
                 else:
                     res.write("<"+str(indid)+"_target3d_selector> rdfs:label \"3D Annotation target selector of Annotation of Wedge at "+str(tabname)+" "+str(tabletside)+" on a 3D Mesh\"@en .\n")
@@ -350,7 +350,7 @@ for tabname in tabletnames:
             res.write("<"+str(indid)+"_target1_selector> rdf:value \""+str(selectorval).replace('"','\\"')+"\" .\n")
             if ischaracter or (lineindex!=0 and (wedgeindex==None or wedgeindex==0)):
                 res.write("<"+str(indid)+"_target1_selector> rdfs:label \"Annotation target selector of Annotation of Glyph at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on "+str(material)+"\"@en .\n")
-            elif wedgeindex!=0:
+            elif wedgeindex!=0 and wedgeindex!=None:
                 res.write("<"+str(indid)+"_target1_selector> rdfs:label \"Annotation target selector of Annotation of Wedge at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" wedge "+str(wedgeindex)+" on "+str(material)+"\"@en .\n")          
             else:
                 res.write("<"+str(indid)+"_target1_selector> rdfs:label \"Annotation target selector of Annotation of Wedge at "+str(tabname)+" "+str(tabletside)+" on "+str(material)+"\"@en .\n")
