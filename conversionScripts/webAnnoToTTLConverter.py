@@ -172,10 +172,10 @@ for tabname in tabletnames:
                 indid=str(namespace)+str(key).replace("#","")
             else:
                 indid=key
-            charindex=0
-            lineindex=0
+            charindex=None
+            lineindex=None
+            columnindex=None
             curtranslit=""
-
             source=""
             selectortype=""
             selectorval=""
@@ -183,6 +183,8 @@ for tabname in tabletnames:
                 for item in data[key]["body"]:
                     if item["purpose"]=="Line":
                         lineindex=int(item["value"])
+                    if item["purpose"]=="Column":
+                        columnindex=item["value"]
                     if item["purpose"]=="Charindex":
                         charindex=int(item["value"])
                     if item["purpose"]=="Transliteration":
@@ -206,7 +208,37 @@ for tabname in tabletnames:
             res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_translit> .\n")
             res.write("<"+str(indid)+"> oa:hasTarget <"+str(indid)+"_target1> .\n")
             res.write("<"+str(indid)+"> <http://purl.org/dc/terms/rights> \"https://creativecommons.org/publicdomain/zero/1.0/\"^^xsd:anyURI .\n")
-            res.write("<"+str(indid)+"> rdfs:label \"Annotation of Glyph at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on "+str(material)+"\"@en .\n")
+            if tabletside!=None:
+                res.write("<"+str(indid)+"_body_columnindex> rdf:type oa:TextualBody .\n")
+                res.write("<"+str(indid)+"_body_columnindex> oa:motivatedBy oa:describing .\n")
+                res.write("<"+str(indid)+"_body_columnindex> oa:purpose oa:tagging .\n")
+                res.write("<"+str(indid)+"_body_columnindex> rdfs:label \"Annotation Body: Tablet Side "+str(tabletside)+"\"@en .\n")
+                res.write("<"+str(indid)+"_body_columnindex> rdf:value \""+str(tabletside)+"\"^^xsd:string .\n")
+            if columnindex!=None and columnindex!="":
+                res.write("<"+str(indid)+"_body_columnindex> rdf:type oa:TextualBody .\n")
+                res.write("<"+str(indid)+"_body_columnindex> oa:motivatedBy oa:describing .\n")
+                res.write("<"+str(indid)+"_body_columnindex> oa:purpose oa:tagging .\n")
+                res.write("<"+str(indid)+"_body_columnindex> rdfs:label \"Annotation Body: Column "+str(lineindex)+"\"@en .\n")
+                res.write("<"+str(indid)+"_body_columnindex> rdf:value \""+str(columnindex)+"\"^^xsd:integer .\n")
+            else:
+                columnindex=0
+            if lineindex!=None:
+                res.write("<"+str(indid)+"_body_line> rdf:type oa:TextualBody .\n")
+                res.write("<"+str(indid)+"_body_line> oa:motivatedBy oa:describing .\n")
+                res.write("<"+str(indid)+"_body_line> oa:purpose oa:tagging .\n")
+                res.write("<"+str(indid)+"_body_line> rdfs:label \"Annotation Body: Line "+str(lineindex)+"\"@en .\n")
+                res.write("<"+str(indid)+"_body_line> rdf:value \""+str(lineindex)+"\"^^xsd:integer .\n")
+            else:
+                lineindex=0
+            if charindex!=None:
+                res.write("<"+str(indid)+"_body_charindex> rdf:type oa:TextualBody .\n")
+                res.write("<"+str(indid)+"_body_charindex> oa:motivatedBy oa:describing .\n")
+                res.write("<"+str(indid)+"_body_charindex> oa:purpose oa:tagging .\n")
+                res.write("<"+str(indid)+"_body_charindex> rdfs:label \"Annotation Body: Charindex "+str(charindex)+"\"@en .\n")
+                res.write("<"+str(indid)+"_body_charindex> rdf:value \""+str(charindex)+"\"^^xsd:integer .\n")
+            else:
+                charindex=0
+            res.write("<"+str(indid)+"> rdfs:label \"Annotation of Glyph at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on "+str(material)+"\"@en .\n")    
             res.write("<"+str(indid)+"_body_glyph> rdf:type oa:SpecificResource .\n")
             res.write("<"+str(indid)+"_body_glyph> oa:hasSource <"+str(namespaceitems)+str(tabname)+"_"+str(tabletside)+"_line"+str(lineindex)+"_char"+str(charindex)+"_glyph> .\n")
             res.write("<"+str(indid)+"_body_glyph> oa:motivatedBy oa:identifying .\n")
