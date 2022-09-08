@@ -1137,6 +1137,8 @@ oa:TextQuoteSelector a owl:Class ;
         "Annotation of text at TCH92  line 3 word 4 on transliteration"@en,
         "Annotation of text at TCH92  line 3 word 5 on transliteration"@en,
         "Annotation of text at TCH92  line 4 word 1 on transliteration"@en,
+        "Annotation of text at TCH92  line 4 word 3 on transliteration"@en,
+        "Annotation of text at TCH92  line 4 word 5 on transliteration"@en,
         "Annotation of text passage of transliteration 1 of TCH92 "@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
@@ -1146,7 +1148,9 @@ oa:TextQuoteSelector a owl:Class ;
         <https://situx.github.io/cuneiformontology/examples/tch92/textannotations/cfce1f5d-c47a-4321-a9fd-b18ede790736_body_translit3>,
         <https://situx.github.io/cuneiformontology/examples/tch92/textannotations/cfce1f5d-c47a-4321-a9fd-b18ede790736_body_translit4>,
         <https://situx.github.io/cuneiformontology/examples/tch92/textannotations/cfce1f5d-c47a-4321-a9fd-b18ede790736_body_translit5>,
-        <https://situx.github.io/cuneiformontology/examples/tch92/textannotations/cfce1f5d-c47a-4321-a9fd-b18ede790736_body_translit6> ;
+        <https://situx.github.io/cuneiformontology/examples/tch92/textannotations/cfce1f5d-c47a-4321-a9fd-b18ede790736_body_translit6>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/textannotations/cfce1f5d-c47a-4321-a9fd-b18ede790736_body_translit7>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/textannotations/cfce1f5d-c47a-4321-a9fd-b18ede790736_body_translit8> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/tch92/textannotations/cfce1f5d-c47a-4321-a9fd-b18ede790736_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
@@ -1155,8 +1159,8 @@ oa:TextQuoteSelector a owl:Class ;
     rdf:value "http://purl.org/olia/Sumerian.owl#PersonName"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/tch92/textannotations/cfce1f5d-c47a-4321-a9fd-b18ede790736_body_translit1> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration of TCH92 line 1 word 4 on transliteration"@en ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/tch92/textannotations/TCH92_transliteration1_obverse_line1_word4> ;
+    rdfs:label "Annotation body referencing transliteration of TCH92 line 4 word 3 on transliteration"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/tch92/textannotations/TCH92_transliteration1_obverse_line4_word3> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/tch92/textannotations/cfce1f5d-c47a-4321-a9fd-b18ede790736_body_translit2> a oa:SpecificResource ;
@@ -1165,21 +1169,31 @@ oa:TextQuoteSelector a owl:Class ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/tch92/textannotations/cfce1f5d-c47a-4321-a9fd-b18ede790736_body_translit3> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing transliteration of TCH92 line 4 word 5 on transliteration"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/tch92/textannotations/TCH92_transliteration1_obverse_line4_word5> ;
+    oa:motivatedBy oa:identifying .
+
+<https://situx.github.io/cuneiformontology/examples/tch92/textannotations/cfce1f5d-c47a-4321-a9fd-b18ede790736_body_translit4> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing transliteration of TCH92 line 1 word 4 on transliteration"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/tch92/textannotations/TCH92_transliteration1_obverse_line1_word4> ;
+    oa:motivatedBy oa:identifying .
+
+<https://situx.github.io/cuneiformontology/examples/tch92/textannotations/cfce1f5d-c47a-4321-a9fd-b18ede790736_body_translit5> a oa:SpecificResource ;
     rdfs:label "Annotation body referencing transliteration of TCH92 line 1 word 6 on transliteration"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/tch92/textannotations/TCH92_transliteration1_obverse_line1_word6> ;
     oa:motivatedBy oa:identifying .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/textannotations/cfce1f5d-c47a-4321-a9fd-b18ede790736_body_translit4> a oa:SpecificResource ;
+<https://situx.github.io/cuneiformontology/examples/tch92/textannotations/cfce1f5d-c47a-4321-a9fd-b18ede790736_body_translit6> a oa:SpecificResource ;
     rdfs:label "Annotation body referencing transliteration of TCH92 line 3 word 4 on transliteration"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/tch92/textannotations/TCH92_transliteration1_obverse_line3_word4> ;
     oa:motivatedBy oa:identifying .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/textannotations/cfce1f5d-c47a-4321-a9fd-b18ede790736_body_translit5> a oa:SpecificResource ;
+<https://situx.github.io/cuneiformontology/examples/tch92/textannotations/cfce1f5d-c47a-4321-a9fd-b18ede790736_body_translit7> a oa:SpecificResource ;
     rdfs:label "Annotation body referencing transliteration of TCH92 line 3 word 5 on transliteration"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/tch92/textannotations/TCH92_transliteration1_obverse_line3_word5> ;
     oa:motivatedBy oa:identifying .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/textannotations/cfce1f5d-c47a-4321-a9fd-b18ede790736_body_translit6> a oa:SpecificResource ;
+<https://situx.github.io/cuneiformontology/examples/tch92/textannotations/cfce1f5d-c47a-4321-a9fd-b18ede790736_body_translit8> a oa:SpecificResource ;
     rdfs:label "Annotation body referencing transliteration of TCH92 line 4 word 1 on transliteration"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/tch92/textannotations/TCH92_transliteration1_obverse_line4_word1> ;
     oa:motivatedBy oa:identifying .

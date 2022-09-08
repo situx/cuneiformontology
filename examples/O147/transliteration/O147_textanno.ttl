@@ -354,12 +354,14 @@ oa:TextQuoteSelector a owl:Class ;
     oa:start 105 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/13e760d4-d055-451e-abec-27abde90feeb> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line 4 word 4 on transliteration"@en,
+    rdfs:label "Annotation of text at O147  line 2 word 1 on transliteration"@en,
+        "Annotation of text at O147  line 4 word 4 on transliteration"@en,
         "Annotation of text passage of transliteration 1 of O147 "@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/13e760d4-d055-451e-abec-27abde90feeb_body_class_postag>,
-        <https://situx.github.io/cuneiformontology/examples/o147/textannotations/13e760d4-d055-451e-abec-27abde90feeb_body_translit1> ;
+        <https://situx.github.io/cuneiformontology/examples/o147/textannotations/13e760d4-d055-451e-abec-27abde90feeb_body_translit1>,
+        <https://situx.github.io/cuneiformontology/examples/o147/textannotations/13e760d4-d055-451e-abec-27abde90feeb_body_translit2> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/13e760d4-d055-451e-abec-27abde90feeb_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
@@ -368,6 +370,11 @@ oa:TextQuoteSelector a owl:Class ;
     rdf:value "http://purl.org/olia/Sumerian.owl#Adjective"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/13e760d4-d055-451e-abec-27abde90feeb_body_translit1> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing transliteration of O147 line 2 word 1 on transliteration"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_reverse_line2_word1> ;
+    oa:motivatedBy oa:identifying .
+
+<https://situx.github.io/cuneiformontology/examples/o147/textannotations/13e760d4-d055-451e-abec-27abde90feeb_body_translit2> a oa:SpecificResource ;
     rdfs:label "Annotation body referencing transliteration of O147 line 4 word 4 on transliteration"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line4_word4> ;
     oa:motivatedBy oa:identifying .
@@ -548,14 +555,18 @@ oa:TextQuoteSelector a owl:Class ;
     oa:start 512 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line 2 word 1 on transliteration"@en,
+    rdfs:label "Annotation of text at O147  line 1 word 1 on transliteration"@en,
+        "Annotation of text at O147  line 1 word 2 on transliteration"@en,
+        "Annotation of text at O147  line 2 word 1 on transliteration"@en,
         "Annotation of text at O147  line 2 word 2 on transliteration"@en,
         "Annotation of text passage of transliteration 1 of O147 "@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_body_class_postag>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit1>,
-        <https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit2> ;
+        <https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit2>,
+        <https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit3>,
+        <https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit4> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
@@ -564,11 +575,21 @@ oa:TextQuoteSelector a owl:Class ;
     rdf:value "http://purl.org/olia/Sumerian.owl#PersonName"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit1> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing transliteration of O147 line 1 word 1 on transliteration"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_reverse_line1_word1> ;
+    oa:motivatedBy oa:identifying .
+
+<https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit2> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing transliteration of O147 line 1 word 2 on transliteration"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_reverse_line1_word2> ;
+    oa:motivatedBy oa:identifying .
+
+<https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit3> a oa:SpecificResource ;
     rdfs:label "Annotation body referencing transliteration of O147 line 2 word 1 on transliteration"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line2_word1> ;
     oa:motivatedBy oa:identifying .
 
-<https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit2> a oa:SpecificResource ;
+<https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit4> a oa:SpecificResource ;
     rdfs:label "Annotation body referencing transliteration of O147 line 2 word 2 on transliteration"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line2_word2> ;
     oa:motivatedBy oa:identifying .
@@ -685,8 +706,8 @@ oa:TextQuoteSelector a owl:Class ;
     rdf:value "http://purl.org/olia/Sumerian.owl#PersonName"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit1> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration of O147 line 1 word 4 on transliteration"@en ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line1_word4> ;
+    rdfs:label "Annotation body referencing transliteration of O147 line 4 word 3 on transliteration"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line4_word3> ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit2> a oa:SpecificResource ;
@@ -695,37 +716,37 @@ oa:TextQuoteSelector a owl:Class ;
     oa:motivatedBy oa:identifying .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit3> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing transliteration of O147 line 1 word 4 on transliteration"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line1_word4> ;
+    oa:motivatedBy oa:identifying .
+
+<https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit4> a oa:SpecificResource ;
     rdfs:label "Annotation body referencing transliteration of O147 line 3 word 4 on transliteration"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line3_word4> ;
     oa:motivatedBy oa:identifying .
 
-<https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit4> a oa:SpecificResource ;
+<https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit5> a oa:SpecificResource ;
     rdfs:label "Annotation body referencing transliteration of O147 line 3 word 5 on transliteration"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line3_word5> ;
     oa:motivatedBy oa:identifying .
 
-<https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit5> a oa:SpecificResource ;
+<https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit6> a oa:SpecificResource ;
     rdfs:label "Annotation body referencing transliteration of O147 line 4 word 1 on transliteration"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line4_word1> ;
     oa:motivatedBy oa:identifying .
 
-<https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit6> a oa:SpecificResource ;
+<https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit7> a oa:SpecificResource ;
     rdfs:label "Annotation body referencing transliteration of O147 line 4 word 2 on transliteration"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line4_word2> ;
     oa:motivatedBy oa:identifying .
 
-<https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit7> a oa:SpecificResource ;
-    rdfs:label "Annotation body referencing transliteration of O147 line 4 word 3 on transliteration"@en ;
-    oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line4_word3> ;
-    oa:motivatedBy oa:identifying .
-
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_target1> a owl:NamedIndividual ;
-    rdfs:label "Annotation target1 of Annotation of text section at O147 line 4 word 3 on transliteration"@en ;
+    rdfs:label "Annotation target1 of Annotation of text section at O147 line 4 word 2 on transliteration"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_target1_selector> ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_target1_selector> a oa:TextPositionSelector ;
-    rdfs:label "Annotation target selector of Annotation of text section at O147 transliteration  line 4 word 3 on transliteration"@en ;
+    rdfs:label "Annotation target selector of Annotation of text section at O147 transliteration  line 4 word 2 on transliteration"@en ;
     rdf:value "lu2-{d}utu-asz-szar" ;
     oa:end 148 ;
     oa:start 129 .
@@ -1511,12 +1532,16 @@ oa:TextQuoteSelector a owl:Class ;
     oa:start 158 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86bfaccf-619d-45fe-8f73-b76042b0e613> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line 6 word 1 on transliteration"@en,
+    rdfs:label "Annotation of text at O147  line 5 word 1 on transliteration"@en,
+        "Annotation of text at O147  line 5 word 2 on transliteration"@en,
+        "Annotation of text at O147  line 6 word 1 on transliteration"@en,
         "Annotation of text passage of transliteration 1 of O147 "@en ;
     ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86bfaccf-619d-45fe-8f73-b76042b0e613_body_class_postag>,
-        <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86bfaccf-619d-45fe-8f73-b76042b0e613_body_translit1> ;
+        <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86bfaccf-619d-45fe-8f73-b76042b0e613_body_translit1>,
+        <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86bfaccf-619d-45fe-8f73-b76042b0e613_body_translit2>,
+        <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86bfaccf-619d-45fe-8f73-b76042b0e613_body_translit3> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86bfaccf-619d-45fe-8f73-b76042b0e613_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
@@ -1525,6 +1550,16 @@ oa:TextQuoteSelector a owl:Class ;
     rdf:value "http://purl.org/olia/Sumerian.owl#PersonName"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86bfaccf-619d-45fe-8f73-b76042b0e613_body_translit1> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing transliteration of O147 line 5 word 1 on transliteration"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_reverse_line5_word1> ;
+    oa:motivatedBy oa:identifying .
+
+<https://situx.github.io/cuneiformontology/examples/o147/textannotations/86bfaccf-619d-45fe-8f73-b76042b0e613_body_translit2> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing transliteration of O147 line 5 word 2 on transliteration"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_reverse_line5_word2> ;
+    oa:motivatedBy oa:identifying .
+
+<https://situx.github.io/cuneiformontology/examples/o147/textannotations/86bfaccf-619d-45fe-8f73-b76042b0e613_body_translit3> a oa:SpecificResource ;
     rdfs:label "Annotation body referencing transliteration of O147 line 6 word 1 on transliteration"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line6_word1> ;
     oa:motivatedBy oa:identifying .
@@ -2227,7 +2262,8 @@ oa:TextQuoteSelector a owl:Class ;
     oa:start 483 .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813> a oa:Annotation ;
-    rdfs:label "Annotation of text at O147  line 6 word 3 on transliteration"@en,
+    rdfs:label "Annotation of text at O147  line 5 word 5 on transliteration"@en,
+        "Annotation of text at O147  line 6 word 3 on transliteration"@en,
         "Annotation of text at O147  line 6 word 4 on transliteration"@en,
         "Annotation of text at O147  line 8 word 1 on transliteration"@en,
         "Annotation of text at O147  line 8 word 2 on transliteration"@en,
@@ -2240,7 +2276,8 @@ oa:TextQuoteSelector a owl:Class ;
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit2>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit3>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit4>,
-        <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit5> ;
+        <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit5>,
+        <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit6> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_target1> ;
     as:generator <https://github.com/recogito/recogito-js> .
 
@@ -2249,26 +2286,31 @@ oa:TextQuoteSelector a owl:Class ;
     rdf:value "http://purl.org/olia/Sumerian.owl#PersonName"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit1> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing transliteration of O147 line 5 word 5 on transliteration"@en ;
+    oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_reverse_line5_word5> ;
+    oa:motivatedBy oa:identifying .
+
+<https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit2> a oa:SpecificResource ;
     rdfs:label "Annotation body referencing transliteration of O147 line 6 word 3 on transliteration"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line6_word3> ;
     oa:motivatedBy oa:identifying .
 
-<https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit2> a oa:SpecificResource ;
+<https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit3> a oa:SpecificResource ;
     rdfs:label "Annotation body referencing transliteration of O147 line 6 word 4 on transliteration"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line6_word4> ;
     oa:motivatedBy oa:identifying .
 
-<https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit3> a oa:SpecificResource ;
+<https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit4> a oa:SpecificResource ;
     rdfs:label "Annotation body referencing transliteration of O147 line 8 word 1 on transliteration"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line8_word1> ;
     oa:motivatedBy oa:identifying .
 
-<https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit4> a oa:SpecificResource ;
+<https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit5> a oa:SpecificResource ;
     rdfs:label "Annotation body referencing transliteration of O147 line 8 word 2 on transliteration"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line8_word2> ;
     oa:motivatedBy oa:identifying .
 
-<https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit5> a oa:SpecificResource ;
+<https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit6> a oa:SpecificResource ;
     rdfs:label "Annotation body referencing transliteration of O147 line 8 word 3 on transliteration"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_obverse_line8_word3> ;
     oa:motivatedBy oa:identifying .
