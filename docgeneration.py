@@ -40,6 +40,7 @@ valueproperties={
     "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue":"ObjectProperty",
     "http://www.w3.org/ns/oa#hasSource":"DatatypeProperty",
     "http://www.opengis.net/ont/crs/usesValue":"ObjectProperty",
+    "http://www.w3.org/ns/oa#hasTarget":"ObjectProperty",
     "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue":"DatatypeProperty"
 }
 
@@ -1649,6 +1650,7 @@ class OntDocGeneration:
             incollection=True
         foundval=None
         foundunit=None
+        tempvalprop=None
         for tup in graph.predicate_objects(object):
             if str(tup[0]) in labelproperties:
                 label=str(tup[1])
@@ -1679,8 +1681,21 @@ class OntDocGeneration:
                 if ext in fileextensionmap:
                     foundmedia[fileextensionmap[ext]].add(str(tup[1]))
             if str(tup[0]) in valueproperties:
-                if valueproperties[str(tup[0])]=="DatatypeProperty" and (isinstance(tup[1],Literal) or isinstance(tup[1],URIRef)):
+                if tempvalprop==None and str(tup[0])=="http://www.w3.org/ns/oa#hasSource":
+                    tempvalprop=str(tup[0])
                     foundval=str(tup[1])
+                if str(tup[0])!="http://www.w3.org/ns/oa#hasSource" and valueproperties[str(tup[0])]=="DatatypeProperty" and (isinstance(tup[1],Literal) or isinstance(tup[1],URIRef)):
+                    tempvalprop=str(tup[0])
+                    foundval=str(tup[1])
+                elif str(tup[0])!="http://www.w3.org/ns/oa#hasTarget":
+                    tempvalprop="http://www.w3.org/ns/oa#hasTarget"
+                    for inttup in graph.predicate_objects(tup[1]):
+                        if str(inttup[0])=="http://www.w3.org/ns/oa#hasSelector":
+                            for valtup in graph.predicate_objects(inttup[1]):
+                                if str(valtup[0]) in unitproperties:
+                                    foundunit=str(valtup[1])
+                                if str(valtup[0]) in valueproperties and (isinstance(valtup[1],Literal) or isinstance(valtup[1],URIRef)):
+                                    foundval=str(valtup[1])  
                 else:
                     for valtup in graph.predicate_objects(tup[1]):
                         if str(valtup[0]) in unitproperties:
