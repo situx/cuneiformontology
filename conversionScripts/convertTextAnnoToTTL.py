@@ -103,6 +103,7 @@ for tabname in tabletnames:
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
     @prefix xml: <http://www.w3.org/XML/1998/namespace> .
     @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix prov: <http://www.w3.org/ns/prov#> .
     @prefix anno: <http://www.w3.org/ns/anno.jsonld> .
     @prefix dc: <http://purl.org/dc/elements/1.1/> .
     @prefix as: <https://www.w3.org/ns/activitystreams#> .
@@ -117,6 +118,8 @@ for tabname in tabletnames:
     res.write("oa:TextQuoteSelector rdfs:subClassOf oa:Selector .\n")
     res.write("oa:TextPositionSelector rdfs:subClassOf oa:Selector .\n")
     res.write("oa:Selector rdf:type owl:Class .\n")
+    res.write("oa:Selector rdfs:subClassOf prov:Entity .\n")
+    res.write("oa:SpecificResource rdfs:subClassOf prov:Entity .\n")
     res.write("oa:TextQuoteSelector rdf:type owl:Class .\n")
     res.write("oa:TextQuoteSelector rdfs:label \"Text Quote Selector\"@en .\n")
     res.write("oa:TextPositionSelector rdf:type owl:Class .\n")
@@ -195,16 +198,20 @@ for tabname in tabletnames:
                     res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_class_sense> .\n")
                     res.write("<"+str(indid)+"_body_class_sense> rdf:value \""+str(item["source"])+"\"^^xsd:anyURI .\n")
                     res.write("<"+str(indid)+"_body_class_sense> rdfs:label \""+str(item["label"])+"\"@en .\n") 
-                    res.write("<"+str(indid)+"_body_class_sense> oa:motivatedBy oa:classifying .\n")                  
+                    res.write("<"+str(indid)+"_body_class_sense> oa:motivatedBy oa:classifying .\n")  
+                    res.write("<"+str(indid)+"_body_class_sense> rdf:type oa:SpecificResource .\n")                      
                     res.write("<"+str(indid)+"_body_class_sense> skos:definition \""+str(item["description"])+"\"@en .\n") 
                 if item["purpose"]=="classifying" and "source" in item and "/L" in item["source"]:
                     res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_wordform> .\n")
                     res.write("<"+str(indid)+"_body_wordform> rdf:value \""+str(item["source"])+"\"^^xsd:anyURI .\n")
                     res.write("<"+str(indid)+"_body_wordform> rdfs:label \""+str(item["label"])+"\"@en .\n") 
-                    res.write("<"+str(indid)+"_body_wordform> oa:motivatedBy oa:classifying .\n")                  
+                    res.write("<"+str(indid)+"_body_wordform> oa:motivatedBy oa:classifying .\n")  
+                    res.write("<"+str(indid)+"_body_wordform> rdf:type oa:SpecificResource .\n")                    
                     res.write("<"+str(indid)+"_body_wordform> skos:definition \""+str(item["description"])+"\"@en .\n")                         
                 if item["purpose"]=="tagging" and "source" in item and "id" in item["source"] and "olia" in item["source"]["id"]:
                     res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_class_postag> .\n")
+                    res.write("<"+str(indid)+"_body_class_postag> rdf:type oa:SpecificResource .\n")
+                    res.write("<"+str(indid)+"_body_class_postag> rdfs:label \"Annotation body of POSTag classification\"@en .\n")
                     res.write("<"+str(indid)+"_body_class_postag> rdf:value \""+str(item["source"]["id"])+"\"^^xsd:anyURI .\n")
         targetcounter=1
         res.write("<"+str(indid)+"_target"+str(targetcounter)+"> rdf:type owl:NamedIndividual .\n")
