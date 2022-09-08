@@ -40,6 +40,7 @@ valueproperties={
     "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue":"ObjectProperty",
     "http://www.w3.org/ns/oa#hasSource":"DatatypeProperty",
     "http://www.opengis.net/ont/crs/usesValue":"ObjectProperty",
+    "http://www.w3.org/ns/oa#hasTarget":"ObjectProperty",
     "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue":"DatatypeProperty"
 }
 
