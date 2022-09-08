@@ -3,8 +3,8 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix geocrs: <http://situx.github.io/proj4rdf/ont/crs/> .
 @prefix msp: <http://purl.org/meshsparql#> .
-@prefix ns1: <http://purl.org/dc/terms/> .
-@prefix ns2: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns2: <http://purl.org/dc/terms/> .
 @prefix ns3: <http://www.opengis.net/ont/geosparql#> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
@@ -125,31 +125,31 @@ oa:WKTSelector a owl:Class ;
     om:hasUnit om:millimetre ;
     rdf:value 0e+00 .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1> a ns2:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1> a ns1:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 1"@en ;
     om:hasUnit om:millimetre ;
-    ns2:abbreviation "X" ;
-    ns2:axisDirection ns2:geocentricX ;
-    ns2:axisOrder "1"^^xsd:int .
+    ns1:abbreviation "X" ;
+    ns1:axisDirection ns1:geocentricX ;
+    ns1:axisOrder "1"^^xsd:int .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2> a ns2:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2> a ns1:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 2"@en ;
     om:hasUnit om:millimetre ;
-    ns2:abbreviation "Y" ;
-    ns2:axisDirection ns2:geocentricY ;
-    ns2:axisOrder "2"^^xsd:int .
+    ns1:abbreviation "Y" ;
+    ns1:axisDirection ns1:geocentricY ;
+    ns1:axisOrder "2"^^xsd:int .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> a ns2:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> a ns1:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 3"@en ;
     om:hasUnit om:millimetre ;
-    ns2:abbreviation "Z" ;
-    ns2:axisDirection ns2:geocentricZ ;
-    ns2:axisOrder "3"^^xsd:int .
+    ns1:abbreviation "Z" ;
+    ns1:axisDirection ns1:geocentricZ ;
+    ns1:axisOrder "3"^^xsd:int .
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/07d793e7-8049-4ab2-9ec0-597382dbba1f> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 12 char 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/07d793e7-8049-4ab2-9ec0-597382dbba1f_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/07d793e7-8049-4ab2-9ec0-597382dbba1f_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/07d793e7-8049-4ab2-9ec0-597382dbba1f_body_line>,
@@ -198,8 +198,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/12de3746-b018-484c-aeab-1424686b677d> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 11 char 5 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/12de3746-b018-484c-aeab-1424686b677d_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/12de3746-b018-484c-aeab-1424686b677d_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/12de3746-b018-484c-aeab-1424686b677d_body_line>,
@@ -248,8 +248,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/18e52f2e-0b26-4d67-816b-5a9bf5f8e381> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 9 char 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/18e52f2e-0b26-4d67-816b-5a9bf5f8e381_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/18e52f2e-0b26-4d67-816b-5a9bf5f8e381_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/18e52f2e-0b26-4d67-816b-5a9bf5f8e381_body_line>,
@@ -298,8 +298,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/1ab999a4-959b-4d39-a839-310f7c372ec3> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 12 char 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/1ab999a4-959b-4d39-a839-310f7c372ec3_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/1ab999a4-959b-4d39-a839-310f7c372ec3_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/1ab999a4-959b-4d39-a839-310f7c372ec3_body_line>,
@@ -348,8 +348,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/1d1aba47-0dda-41ae-8ddc-d3928dce894f> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 7 char 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/1d1aba47-0dda-41ae-8ddc-d3928dce894f_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/1d1aba47-0dda-41ae-8ddc-d3928dce894f_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/1d1aba47-0dda-41ae-8ddc-d3928dce894f_body_line>,
@@ -398,8 +398,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/1d4b68bd-89ce-4286-8f4d-8bc1631cfdb5> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 7 char 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/1d4b68bd-89ce-4286-8f4d-8bc1631cfdb5_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/1d4b68bd-89ce-4286-8f4d-8bc1631cfdb5_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/1d4b68bd-89ce-4286-8f4d-8bc1631cfdb5_body_line>,
@@ -448,8 +448,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/2dd9937c-b959-470e-95f4-e252b1c7b849> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 3 char 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/2dd9937c-b959-470e-95f4-e252b1c7b849_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/2dd9937c-b959-470e-95f4-e252b1c7b849_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/2dd9937c-b959-470e-95f4-e252b1c7b849_body_line>,
@@ -498,8 +498,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/33ffa3fd-25ab-4a8a-9677-9df6b7098780> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 10 char 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/33ffa3fd-25ab-4a8a-9677-9df6b7098780_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/33ffa3fd-25ab-4a8a-9677-9df6b7098780_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/33ffa3fd-25ab-4a8a-9677-9df6b7098780_body_line>,
@@ -548,8 +548,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/35ad8929-469f-44ae-a6e2-1761742c3f0b> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 4 char 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/35ad8929-469f-44ae-a6e2-1761742c3f0b_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/35ad8929-469f-44ae-a6e2-1761742c3f0b_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/35ad8929-469f-44ae-a6e2-1761742c3f0b_body_line>,
@@ -598,8 +598,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/3d8544d7-d2bc-4c17-b60e-5800b6599223> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 1 char 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/3d8544d7-d2bc-4c17-b60e-5800b6599223_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/3d8544d7-d2bc-4c17-b60e-5800b6599223_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/3d8544d7-d2bc-4c17-b60e-5800b6599223_body_line>,
@@ -648,8 +648,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/40ad26f2-f6b4-47f2-89dc-f94050329a6b> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 11 char 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/40ad26f2-f6b4-47f2-89dc-f94050329a6b_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/40ad26f2-f6b4-47f2-89dc-f94050329a6b_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/40ad26f2-f6b4-47f2-89dc-f94050329a6b_body_line>,
@@ -698,8 +698,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/414b95a7-d307-4523-a3ef-7cd7b6ffd411> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 9 char 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/414b95a7-d307-4523-a3ef-7cd7b6ffd411_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/414b95a7-d307-4523-a3ef-7cd7b6ffd411_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/414b95a7-d307-4523-a3ef-7cd7b6ffd411_body_line>,
@@ -748,8 +748,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/414dcf98-9289-402b-a5d5-be2742b3a32b> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 7 char 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/414dcf98-9289-402b-a5d5-be2742b3a32b_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/414dcf98-9289-402b-a5d5-be2742b3a32b_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/414dcf98-9289-402b-a5d5-be2742b3a32b_body_line>,
@@ -798,8 +798,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/444de195-14cd-47e1-a554-1ae623f93767> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 9 char 5 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/444de195-14cd-47e1-a554-1ae623f93767_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/444de195-14cd-47e1-a554-1ae623f93767_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/444de195-14cd-47e1-a554-1ae623f93767_body_line>,
@@ -848,8 +848,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/460dbe55-4cad-4055-8e9b-c37dba820e1d> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 10 char 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/460dbe55-4cad-4055-8e9b-c37dba820e1d_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/460dbe55-4cad-4055-8e9b-c37dba820e1d_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/460dbe55-4cad-4055-8e9b-c37dba820e1d_body_line>,
@@ -898,8 +898,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/494bc39a-1404-4b2e-ab42-a11ff0b5424d> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 10 char 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/494bc39a-1404-4b2e-ab42-a11ff0b5424d_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/494bc39a-1404-4b2e-ab42-a11ff0b5424d_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/494bc39a-1404-4b2e-ab42-a11ff0b5424d_body_line>,
@@ -948,8 +948,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/598dd86e-7789-489e-94a6-8f0f9b3d017f> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 11 char 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/598dd86e-7789-489e-94a6-8f0f9b3d017f_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/598dd86e-7789-489e-94a6-8f0f9b3d017f_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/598dd86e-7789-489e-94a6-8f0f9b3d017f_body_line>,
@@ -998,8 +998,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/59c6584f-8de9-4365-ba5d-a15299ec3959> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at O147 front on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/59c6584f-8de9-4365-ba5d-a15299ec3959_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/59c6584f-8de9-4365-ba5d-a15299ec3959_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/59c6584f-8de9-4365-ba5d-a15299ec3959_body_tabletside>,
@@ -1035,8 +1035,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/5b013078-267a-492a-8331-fea0e13eafaf> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 9 char 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/5b013078-267a-492a-8331-fea0e13eafaf_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/5b013078-267a-492a-8331-fea0e13eafaf_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/5b013078-267a-492a-8331-fea0e13eafaf_body_line>,
@@ -1085,8 +1085,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/5ef378a8-826a-4f97-8eb7-7d152bb46d78> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 12 char 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/5ef378a8-826a-4f97-8eb7-7d152bb46d78_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/5ef378a8-826a-4f97-8eb7-7d152bb46d78_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/5ef378a8-826a-4f97-8eb7-7d152bb46d78_body_line>,
@@ -1135,8 +1135,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/62977a0b-f750-4331-83a5-49a880caf580> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 7 char 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/62977a0b-f750-4331-83a5-49a880caf580_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/62977a0b-f750-4331-83a5-49a880caf580_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/62977a0b-f750-4331-83a5-49a880caf580_body_line>,
@@ -1185,8 +1185,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/644162c2-df7e-4457-a2ae-494df6d8df59> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 11 char 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/644162c2-df7e-4457-a2ae-494df6d8df59_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/644162c2-df7e-4457-a2ae-494df6d8df59_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/644162c2-df7e-4457-a2ae-494df6d8df59_body_line>,
@@ -1235,8 +1235,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/6d3a2049-2dc6-4e53-8177-82c96286d879> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 6 char 5 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/6d3a2049-2dc6-4e53-8177-82c96286d879_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/6d3a2049-2dc6-4e53-8177-82c96286d879_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/6d3a2049-2dc6-4e53-8177-82c96286d879_body_line>,
@@ -1285,8 +1285,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/7051a474-5125-4df4-96d9-758742521deb> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 13 char 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/7051a474-5125-4df4-96d9-758742521deb_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/7051a474-5125-4df4-96d9-758742521deb_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/7051a474-5125-4df4-96d9-758742521deb_body_line>,
@@ -1335,8 +1335,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/71d1e22b-08b4-43d2-a205-67a3c1db7410> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 4 char 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/71d1e22b-08b4-43d2-a205-67a3c1db7410_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/71d1e22b-08b4-43d2-a205-67a3c1db7410_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/71d1e22b-08b4-43d2-a205-67a3c1db7410_body_line>,
@@ -1385,8 +1385,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/748ea8db-23e0-4685-982f-f1fe316d1e5a> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 6 char 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/748ea8db-23e0-4685-982f-f1fe316d1e5a_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/748ea8db-23e0-4685-982f-f1fe316d1e5a_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/748ea8db-23e0-4685-982f-f1fe316d1e5a_body_line>,
@@ -1435,8 +1435,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/81334d2b-4b00-49f5-bcc2-adb742644c16> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 8 char 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/81334d2b-4b00-49f5-bcc2-adb742644c16_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/81334d2b-4b00-49f5-bcc2-adb742644c16_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/81334d2b-4b00-49f5-bcc2-adb742644c16_body_line>,
@@ -1485,8 +1485,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/86c668c6-2039-42f4-b447-cb7b014ed130> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 1 char 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/86c668c6-2039-42f4-b447-cb7b014ed130_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/86c668c6-2039-42f4-b447-cb7b014ed130_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/86c668c6-2039-42f4-b447-cb7b014ed130_body_line>,
@@ -1561,8 +1561,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/89d36fca-6207-4467-b051-546d5fac525b> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 5 char 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/89d36fca-6207-4467-b051-546d5fac525b_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/89d36fca-6207-4467-b051-546d5fac525b_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/89d36fca-6207-4467-b051-546d5fac525b_body_line>,
@@ -1611,8 +1611,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/8ec44592-e6d8-4cce-bfea-7f6481ae0612> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 3 char 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/8ec44592-e6d8-4cce-bfea-7f6481ae0612_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/8ec44592-e6d8-4cce-bfea-7f6481ae0612_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/8ec44592-e6d8-4cce-bfea-7f6481ae0612_body_line>,
@@ -1661,8 +1661,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/91280f54-e805-4cf6-a419-fcea6ae6c5df> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 8 char 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/91280f54-e805-4cf6-a419-fcea6ae6c5df_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/91280f54-e805-4cf6-a419-fcea6ae6c5df_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/91280f54-e805-4cf6-a419-fcea6ae6c5df_body_line>,
@@ -1711,8 +1711,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/9f9a6c81-0382-4c0f-817a-7b351ad4dbe9> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 13 char 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/9f9a6c81-0382-4c0f-817a-7b351ad4dbe9_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/9f9a6c81-0382-4c0f-817a-7b351ad4dbe9_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/9f9a6c81-0382-4c0f-817a-7b351ad4dbe9_body_line>,
@@ -1761,8 +1761,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/a40b68bf-935c-4188-a3df-cb095dc13973> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 10 char 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/a40b68bf-935c-4188-a3df-cb095dc13973_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/a40b68bf-935c-4188-a3df-cb095dc13973_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/a40b68bf-935c-4188-a3df-cb095dc13973_body_line>,
@@ -1811,8 +1811,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/a48fc7c8-9a60-4700-b05f-f7fc4946436c> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 4 char 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/a48fc7c8-9a60-4700-b05f-f7fc4946436c_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/a48fc7c8-9a60-4700-b05f-f7fc4946436c_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/a48fc7c8-9a60-4700-b05f-f7fc4946436c_body_line>,
@@ -1861,8 +1861,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/a57779c5-67ad-41de-9de6-590491c89268> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 1 char 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/a57779c5-67ad-41de-9de6-590491c89268_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/a57779c5-67ad-41de-9de6-590491c89268_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/a57779c5-67ad-41de-9de6-590491c89268_body_line>,
@@ -1911,8 +1911,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/a691d506-efd4-4181-b9d4-05aa9ccc29ca> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 8 char 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/a691d506-efd4-4181-b9d4-05aa9ccc29ca_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/a691d506-efd4-4181-b9d4-05aa9ccc29ca_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/a691d506-efd4-4181-b9d4-05aa9ccc29ca_body_line>,
@@ -1961,8 +1961,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/ab6af627-327d-4bd7-b88a-8c0ff1dc7912> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 5 char 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/ab6af627-327d-4bd7-b88a-8c0ff1dc7912_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/ab6af627-327d-4bd7-b88a-8c0ff1dc7912_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/ab6af627-327d-4bd7-b88a-8c0ff1dc7912_body_line>,
@@ -2011,8 +2011,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/acb198c6-e4c2-4330-a238-f1e97ea4a665> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 13 char 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/acb198c6-e4c2-4330-a238-f1e97ea4a665_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/acb198c6-e4c2-4330-a238-f1e97ea4a665_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/acb198c6-e4c2-4330-a238-f1e97ea4a665_body_line>,
@@ -2061,8 +2061,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/b39deafa-a2f6-40d4-a403-18c8a8b28b4f> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 6 char 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/b39deafa-a2f6-40d4-a403-18c8a8b28b4f_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/b39deafa-a2f6-40d4-a403-18c8a8b28b4f_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/b39deafa-a2f6-40d4-a403-18c8a8b28b4f_body_line>,
@@ -2111,8 +2111,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/c218f84e-ba2d-459f-b58e-1dde97dd1477> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 10 char 5 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/c218f84e-ba2d-459f-b58e-1dde97dd1477_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/c218f84e-ba2d-459f-b58e-1dde97dd1477_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/c218f84e-ba2d-459f-b58e-1dde97dd1477_body_line>,
@@ -2161,8 +2161,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/c3ab60f4-8687-44ff-915d-b22424805c87> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 6 char 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/c3ab60f4-8687-44ff-915d-b22424805c87_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/c3ab60f4-8687-44ff-915d-b22424805c87_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/c3ab60f4-8687-44ff-915d-b22424805c87_body_line>,
@@ -2211,8 +2211,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/c3dab74c-6230-4738-bcdd-b68fa986156e> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 5 char 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/c3dab74c-6230-4738-bcdd-b68fa986156e_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/c3dab74c-6230-4738-bcdd-b68fa986156e_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/c3dab74c-6230-4738-bcdd-b68fa986156e_body_line>,
@@ -2261,8 +2261,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/c6626c48-d6cb-4fce-a98e-fd343dfe7c27> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 2 char 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/c6626c48-d6cb-4fce-a98e-fd343dfe7c27_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/c6626c48-d6cb-4fce-a98e-fd343dfe7c27_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/c6626c48-d6cb-4fce-a98e-fd343dfe7c27_body_line>,
@@ -2311,8 +2311,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/c6cd38f2-f0ec-4fb6-8d97-1b1364191557> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 4 char 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/c6cd38f2-f0ec-4fb6-8d97-1b1364191557_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/c6cd38f2-f0ec-4fb6-8d97-1b1364191557_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/c6cd38f2-f0ec-4fb6-8d97-1b1364191557_body_line>,
@@ -2361,8 +2361,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/cd496e2d-a1f8-4d0c-a857-94d0a6b11958> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 3 char 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/cd496e2d-a1f8-4d0c-a857-94d0a6b11958_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/cd496e2d-a1f8-4d0c-a857-94d0a6b11958_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/cd496e2d-a1f8-4d0c-a857-94d0a6b11958_body_line>,
@@ -2411,8 +2411,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/d0b2af92-d8cd-4f84-8118-f6341c6579db> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 5 char 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/d0b2af92-d8cd-4f84-8118-f6341c6579db_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/d0b2af92-d8cd-4f84-8118-f6341c6579db_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/d0b2af92-d8cd-4f84-8118-f6341c6579db_body_line>,
@@ -2461,8 +2461,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/d18482d6-cd7f-410d-a7b2-4b10ecbbd28e> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 6 char 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/d18482d6-cd7f-410d-a7b2-4b10ecbbd28e_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/d18482d6-cd7f-410d-a7b2-4b10ecbbd28e_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/d18482d6-cd7f-410d-a7b2-4b10ecbbd28e_body_line>,
@@ -2511,8 +2511,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/d374f578-8559-4809-a52a-4881673b46b7> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 11 char 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/d374f578-8559-4809-a52a-4881673b46b7_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/d374f578-8559-4809-a52a-4881673b46b7_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/d374f578-8559-4809-a52a-4881673b46b7_body_line>,
@@ -2561,8 +2561,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/d440e761-28b3-4aed-b892-503039fe7cfd> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 2 char 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/d440e761-28b3-4aed-b892-503039fe7cfd_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/d440e761-28b3-4aed-b892-503039fe7cfd_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/d440e761-28b3-4aed-b892-503039fe7cfd_body_line>,
@@ -2611,8 +2611,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/d715784a-9b63-4765-aa75-d35e0bfde0eb> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 1 char 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/d715784a-9b63-4765-aa75-d35e0bfde0eb_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/d715784a-9b63-4765-aa75-d35e0bfde0eb_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/d715784a-9b63-4765-aa75-d35e0bfde0eb_body_line>,
@@ -2661,8 +2661,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/d94c5d11-0bb8-445e-affe-59c6101cc7e5> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 2 char 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/d94c5d11-0bb8-445e-affe-59c6101cc7e5_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/d94c5d11-0bb8-445e-affe-59c6101cc7e5_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/d94c5d11-0bb8-445e-affe-59c6101cc7e5_body_line>,
@@ -2711,8 +2711,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/e00ef035-ed50-4225-b486-00ba59e3c70c> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 2 char 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/e00ef035-ed50-4225-b486-00ba59e3c70c_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/e00ef035-ed50-4225-b486-00ba59e3c70c_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/e00ef035-ed50-4225-b486-00ba59e3c70c_body_line>,
@@ -2761,8 +2761,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/e397a98c-1a1a-4622-b880-433dcbc31fd2> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 9 char 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/e397a98c-1a1a-4622-b880-433dcbc31fd2_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/e397a98c-1a1a-4622-b880-433dcbc31fd2_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/e397a98c-1a1a-4622-b880-433dcbc31fd2_body_line>,
@@ -2811,8 +2811,8 @@ oa:WKTSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/fd37bc32-222c-4163-b177-03422773f1c8> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 front line 8 char 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/fd37bc32-222c-4163-b177-03422773f1c8_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/fd37bc32-222c-4163-b177-03422773f1c8_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/fd37bc32-222c-4163-b177-03422773f1c8_body_line>,
@@ -2861,11 +2861,11 @@ oa:WKTSelector a owl:Class ;
 
 as:Collection rdfs:subClassOf skos:Collection .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> a ns2:CartesianCoordinateSystem ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> a ns1:CartesianCoordinateSystem ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units"@en ;
-    ns2:asSVG "<svg width='400' height='250' viewbox='0 0 375 220'><defs><marker id='arrowhead' markerWidth='10' markerHeight='7' refX='0' refY='2' orient='auto'><polygon points='0 0, 4 2, 0 4' /></marker></defs><line x1='20' y1='200' x2='200' y2='200' stroke='red' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='110' y='220' class='small'>X: Cartesian X Axis (om:millimetre)</text><line x1='20' y1='200' x2='20' y2='20' stroke='green' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='35' y='20' class='small'>Y: Cartesian Y Axis (om:millimetre)</text><line x1='20' y1='200' x2='190' y2='30' stroke='blue' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='210' y='25' class='small'>Z: Cartesian Z Axis (om:millimetre)</text></svg>"^^ns2:svgLiteral ;
-    ns2:asWKT "CS[\"cartesian\",3],AXIS[\"X\", \"geocentricX\", ORDER[1],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Y\", \"geocentricY\", ORDER[2],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Z\", \"geocentricZ\", ORDER[3],            LENGTHUNIT[\"millimetre\",1]        ]]"^^<http://www.opengis.net/ont/geosparql/crs#wktLiteral> ;
-    ns2:axis <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1>,
+    ns1:asSVG "<svg width='400' height='250' viewbox='0 0 375 220'><defs><marker id='arrowhead' markerWidth='10' markerHeight='7' refX='0' refY='2' orient='auto'><polygon points='0 0, 4 2, 0 4' /></marker></defs><line x1='20' y1='200' x2='200' y2='200' stroke='red' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='110' y='220' class='small'>X: Cartesian X Axis (om:millimetre)</text><line x1='20' y1='200' x2='20' y2='20' stroke='green' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='35' y='20' class='small'>Y: Cartesian Y Axis (om:millimetre)</text><line x1='20' y1='200' x2='190' y2='30' stroke='blue' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='210' y='25' class='small'>Z: Cartesian Z Axis (om:millimetre)</text></svg>"^^ns1:svgLiteral ;
+    ns1:asWKT "CS[\"cartesian\",3],AXIS[\"X\", \"geocentricX\", ORDER[1],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Y\", \"geocentricY\", ORDER[2],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Z\", \"geocentricZ\", ORDER[3],            LENGTHUNIT[\"millimetre\",1]        ]]"^^<http://www.opengis.net/ont/geosparql/crs#wktLiteral> ;
+    ns1:axis <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1>,
         <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2>,
         <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> .
 

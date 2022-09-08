@@ -230,7 +230,7 @@ for tabname in tabletnames:
                 res.write("<"+str(indid)+"_body_wedgeindex> rdf:type oa:TextualBody .\n")
                 res.write("<"+str(indid)+"_body_wedgeindex> oa:motivatedBy oa:describing .\n")
                 res.write("<"+str(indid)+"_body_wedgeindex> oa:purpose oa:tagging .\n")
-                res.write("<"+str(indid)+"_body_wedgeindex> rdfs:label \"Annotation Body: Wedge "+str(lineindex)+"\"@en .\n")
+                res.write("<"+str(indid)+"_body_wedgeindex> rdfs:label \"Annotation Body: Wedge "+str(wedgeindex)+"\"@en .\n")
                 res.write("<"+str(indid)+"_body_wedgeindex> rdf:value \""+str(wedgeindex)+"\"^^xsd:integer .\n")
             if columnindex!=None and columnindex!="":
                 res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_columnindex> .\n")
