@@ -1,10 +1,11 @@
 @prefix as: <https://www.w3.org/ns/activitystreams#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix geocrs: <http://www.opengis.net/ont/crs/> .
+@prefix geocrs: <http://situx.github.io/proj4rdf/ont/crs/> .
 @prefix msp: <http://purl.org/meshsparql#> .
 @prefix ns1: <http://purl.org/dc/terms/> .
 @prefix ns2: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns3: <http://www.opengis.net/ont/crs/> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -13,6 +14,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
+
+geocrs:CoordinateSystemAxis rdfs:subClassOf prov:Entity .
 
 oa:FragmentSelector a owl:Class ;
     rdfs:label "Fragment Selector"@en ;
@@ -137,8 +142,6 @@ oa:FragmentSelector a owl:Class ;
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb75638a-5db1-415f-9d86-bc88d8a3c4dc> .
 
 msp:ComputingReference rdfs:subClassOf prov:Entity .
-
-geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_09a66ef9-8b3c-488b-ad51-d280404f2a7f> a geocrs:CoordinateOperation ;
     rdfs:label "Object To PCA"@en ;
@@ -684,26 +687,26 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     om:hasUnit om:millimetre ;
     rdf:value 0e+00 .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1> a geocrs:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1> a ns3:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 1"@en ;
     om:hasUnit om:millimetre ;
-    geocrs:abbreviation "X" ;
-    geocrs:axisDirection geocrs:geocentricX ;
-    geocrs:axisOrder "1"^^xsd:int .
+    ns3:abbreviation "X" ;
+    ns3:axisDirection ns3:geocentricX ;
+    ns3:axisOrder "1"^^xsd:int .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2> a geocrs:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2> a ns3:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 2"@en ;
     om:hasUnit om:millimetre ;
-    geocrs:abbreviation "Y" ;
-    geocrs:axisDirection geocrs:geocentricY ;
-    geocrs:axisOrder "2"^^xsd:int .
+    ns3:abbreviation "Y" ;
+    ns3:axisDirection ns3:geocentricY ;
+    ns3:axisOrder "2"^^xsd:int .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> a geocrs:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> a ns3:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 3"@en ;
     om:hasUnit om:millimetre ;
-    geocrs:abbreviation "Z" ;
-    geocrs:axisDirection geocrs:geocentricZ ;
-    geocrs:axisOrder "3"^^xsd:int .
+    ns3:abbreviation "Z" ;
+    ns3:axisDirection ns3:geocentricZ ;
+    ns3:axisOrder "3"^^xsd:int .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/00cda0d2-a7fb-4e22-b367-242a7c8119fc> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse on 3D rendering"@en ;
@@ -4893,8 +4896,6 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
 
 as:Collection rdfs:subClassOf skos:Collection .
 
-geocrs:CoordinateSystemAxis rdfs:subClassOf prov:Entity .
-
 oa:Selector a owl:Class ;
     rdfs:subClassOf prov:Entity .
 
@@ -4910,11 +4911,11 @@ oa:WKTSelector a owl:Class ;
     rdfs:label "WKT Selector"@en ;
     rdfs:subClassOf oa:Selector .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> a geocrs:CartesianCoordinateSystem ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> a ns3:CartesianCoordinateSystem ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units"@en ;
-    geocrs:asSVG "<svg width='400' height='250' viewbox='0 0 375 220'><defs><marker id='arrowhead' markerWidth='10' markerHeight='7' refX='0' refY='2' orient='auto'><polygon points='0 0, 4 2, 0 4' /></marker></defs><line x1='20' y1='200' x2='200' y2='200' stroke='red' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='110' y='220' class='small'>X: Cartesian X Axis (om:millimetre)</text><line x1='20' y1='200' x2='20' y2='20' stroke='green' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='35' y='20' class='small'>Y: Cartesian Y Axis (om:millimetre)</text><line x1='20' y1='200' x2='190' y2='30' stroke='blue' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='210' y='25' class='small'>Z: Cartesian Z Axis (om:millimetre)</text></svg>"^^geocrs:svgLiteral ;
-    geocrs:asWKT "CS[\"cartesian\",3],AXIS[\"X\", \"geocentricX\", ORDER[1],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Y\", \"geocentricY\", ORDER[2],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Z\", \"geocentricZ\", ORDER[3],            LENGTHUNIT[\"millimetre\",1]        ]]"^^<http://www.opengis.net/ont/geosparql/crs#wktLiteral> ;
-    geocrs:axis <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1>,
+    ns3:asSVG "<svg width='400' height='250' viewbox='0 0 375 220'><defs><marker id='arrowhead' markerWidth='10' markerHeight='7' refX='0' refY='2' orient='auto'><polygon points='0 0, 4 2, 0 4' /></marker></defs><line x1='20' y1='200' x2='200' y2='200' stroke='red' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='110' y='220' class='small'>X: Cartesian X Axis (om:millimetre)</text><line x1='20' y1='200' x2='20' y2='20' stroke='green' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='35' y='20' class='small'>Y: Cartesian Y Axis (om:millimetre)</text><line x1='20' y1='200' x2='190' y2='30' stroke='blue' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='210' y='25' class='small'>Z: Cartesian Z Axis (om:millimetre)</text></svg>"^^ns3:svgLiteral ;
+    ns3:asWKT "CS[\"cartesian\",3],AXIS[\"X\", \"geocentricX\", ORDER[1],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Y\", \"geocentricY\", ORDER[2],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Z\", \"geocentricZ\", ORDER[3],            LENGTHUNIT[\"millimetre\",1]        ]]"^^<http://www.opengis.net/ont/geosparql/crs#wktLiteral> ;
+    ns3:axis <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1>,
         <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2>,
         <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> .
 

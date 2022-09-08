@@ -128,7 +128,7 @@ for tabname in tabletnames:
         @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
         @prefix xml: <http://www.w3.org/XML/1998/namespace> .
         @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-        @prefix geocrs: <http://www.opengis.net/ont/crs/> .
+        @prefix geocrs: <http://situx.github.io/proj4rdf/ont/crs/> .
         @prefix prov: <http://www.w3.org/ns/prov#> .
         @prefix msp: <http://purl.org/meshsparql#> .
         @prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
@@ -249,16 +249,16 @@ for tabname in tabletnames:
                 res.write("<"+str(indid)+"_body_charindex> rdf:value \""+str(charindex)+"\"^^xsd:integer .\n")
             else:
                 charindex=0
-            if ischaracter:
+            if ischaracter or lineindex!=0:
                 res.write("<"+str(indid)+"> rdfs:label \"Annotation of Glyph at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on "+str(material)+"\"@en .\n") 
-            elif iswedge:
+            else:
                 res.write("<"+str(indid)+"> rdfs:label \"Annotation of Wedge at "+str(tabname)+" "+str(tabletside)+" on "+str(material)+"\"@en .\n") 
             res.write("<"+str(indid)+"_body_glyph> rdf:type oa:SpecificResource .\n")
             res.write("<"+str(indid)+"_body_glyph> oa:hasSource <"+str(namespaceitems)+str(tabname)+"_"+str(tabletside)+"_line"+str(lineindex)+"_char"+str(charindex)+"_glyph> .\n")
             res.write("<"+str(indid)+"_body_glyph> oa:motivatedBy oa:identifying .\n")
-            if ischaracter:
+            if ischaracter or lineindex!=0:
                 res.write("<"+str(indid)+"_body_glyph> rdfs:label \"Annotation body referencing Glyph at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on "+str(material)+"\"@en .\n")
-            elif iswedge:
+            else:
                 res.write("<"+str(indid)+"_body_glyph> rdfs:label \"Annotation body referencing Wedge at "+str(tabname)+" "+str(tabletside)+" on "+str(material)+"\"@en .\n")                
             if ischaracter:
                 res.write("<"+str(indid)+"_body_translit> rdf:type oa:SpecificResource .\n")

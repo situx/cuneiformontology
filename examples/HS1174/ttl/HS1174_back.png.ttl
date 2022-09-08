@@ -1,10 +1,11 @@
 @prefix as: <https://www.w3.org/ns/activitystreams#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix geocrs: <http://www.opengis.net/ont/crs/> .
+@prefix geocrs: <http://situx.github.io/proj4rdf/ont/crs/> .
 @prefix msp: <http://purl.org/meshsparql#> .
 @prefix ns1: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns2: <http://purl.org/dc/terms/> .
+@prefix ns3: <http://www.opengis.net/ont/crs/> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -13,6 +14,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
+
+geocrs:CoordinateSystemAxis rdfs:subClassOf prov:Entity .
 
 oa:FragmentSelector a owl:Class ;
     rdfs:label "Fragment Selector"@en ;
@@ -43,8 +48,6 @@ oa:FragmentSelector a owl:Class ;
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb9c9d65-e2f6-4ed2-bb8c-620adc0533b1> .
 
 msp:ComputingReference rdfs:subClassOf prov:Entity .
-
-geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_010a9fdd-d84f-435b-9736-9c1f9489aeb8> a geocrs:CoordinateOperation ;
     rdfs:label "Object To PCA"@en ;
@@ -726,28 +729,29 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     om:hasUnit om:millimetre ;
     rdf:value 0e+00 .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1> a geocrs:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1> a ns3:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 1"@en ;
     om:hasUnit om:millimetre ;
-    geocrs:abbreviation "X" ;
-    geocrs:axisDirection geocrs:geocentricX ;
-    geocrs:axisOrder "1"^^xsd:int .
+    ns3:abbreviation "X" ;
+    ns3:axisDirection ns3:geocentricX ;
+    ns3:axisOrder "1"^^xsd:int .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2> a geocrs:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2> a ns3:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 2"@en ;
     om:hasUnit om:millimetre ;
-    geocrs:abbreviation "Y" ;
-    geocrs:axisDirection geocrs:geocentricY ;
-    geocrs:axisOrder "2"^^xsd:int .
+    ns3:abbreviation "Y" ;
+    ns3:axisDirection ns3:geocentricY ;
+    ns3:axisOrder "2"^^xsd:int .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> a geocrs:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> a ns3:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 3"@en ;
     om:hasUnit om:millimetre ;
-    geocrs:abbreviation "Z" ;
-    geocrs:axisDirection geocrs:geocentricZ ;
-    geocrs:axisOrder "3"^^xsd:int .
+    ns3:abbreviation "Z" ;
+    ns3:axisDirection ns3:geocentricZ ;
+    ns3:axisOrder "3"^^xsd:int .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/010a9fdd-d84f-435b-9736-9c1f9489aeb8> a oa:Annotation ;
+    rdfs:label "Annotation of Glyph at HS1174 reverse line 5 char 5 on 3D rendering"@en ;
     ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/010a9fdd-d84f-435b-9736-9c1f9489aeb8_body_charindex>,
@@ -766,6 +770,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     oa:purpose oa:tagging .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/010a9fdd-d84f-435b-9736-9c1f9489aeb8_body_glyph> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing Glyph at HS1174 reverse line 5 char 5 on 3D rendering"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line5_char5_glyph> ;
     oa:motivatedBy oa:identifying .
 
@@ -813,6 +818,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     ns1:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_010a9fdd-d84f-435b-9736-9c1f9489aeb8> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/04e1a518-d95f-404b-ba1c-346e651a8985> a oa:Annotation ;
+    rdfs:label "Annotation of Glyph at HS1174 reverse line 4 char 3 on 3D rendering"@en ;
     ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/04e1a518-d95f-404b-ba1c-346e651a8985_body_charindex>,
@@ -831,6 +837,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     oa:purpose oa:tagging .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/04e1a518-d95f-404b-ba1c-346e651a8985_body_glyph> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing Glyph at HS1174 reverse line 4 char 3 on 3D rendering"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line4_char3_glyph> ;
     oa:motivatedBy oa:identifying .
 
@@ -878,6 +885,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     ns1:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_04e1a518-d95f-404b-ba1c-346e651a8985> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/22174ad2-aa62-4696-9539-81830707ed89> a oa:Annotation ;
+    rdfs:label "Annotation of Glyph at HS1174 reverse line 3 char 3 on 3D rendering"@en ;
     ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/22174ad2-aa62-4696-9539-81830707ed89_body_charindex>,
@@ -896,6 +904,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     oa:purpose oa:tagging .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/22174ad2-aa62-4696-9539-81830707ed89_body_glyph> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing Glyph at HS1174 reverse line 3 char 3 on 3D rendering"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3_char3_glyph> ;
     oa:motivatedBy oa:identifying .
 
@@ -943,6 +952,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     ns1:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_22174ad2-aa62-4696-9539-81830707ed89> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/29405e81-a80b-457c-849b-9168ff597157> a oa:Annotation ;
+    rdfs:label "Annotation of Glyph at HS1174 reverse line 4 char 1 on 3D rendering"@en ;
     ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/29405e81-a80b-457c-849b-9168ff597157_body_charindex>,
@@ -961,6 +971,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     oa:purpose oa:tagging .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/29405e81-a80b-457c-849b-9168ff597157_body_glyph> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing Glyph at HS1174 reverse line 4 char 1 on 3D rendering"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line4_char1_glyph> ;
     oa:motivatedBy oa:identifying .
 
@@ -1008,6 +1019,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     ns1:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_29405e81-a80b-457c-849b-9168ff597157> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2f800280-da53-498f-9ef0-7f080c120a41> a oa:Annotation ;
+    rdfs:label "Annotation of Glyph at HS1174 reverse line 5 char 1 on 3D rendering"@en ;
     ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2f800280-da53-498f-9ef0-7f080c120a41_body_charindex>,
@@ -1026,6 +1038,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     oa:purpose oa:tagging .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2f800280-da53-498f-9ef0-7f080c120a41_body_glyph> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing Glyph at HS1174 reverse line 5 char 1 on 3D rendering"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line5_char1_glyph> ;
     oa:motivatedBy oa:identifying .
 
@@ -1073,6 +1086,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     ns1:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_2f800280-da53-498f-9ef0-7f080c120a41> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/3fed3d50-4a59-4364-99bd-16808d1bb666> a oa:Annotation ;
+    rdfs:label "Annotation of Glyph at HS1174 reverse line 1 char 4 on 3D rendering"@en ;
     ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/3fed3d50-4a59-4364-99bd-16808d1bb666_body_charindex>,
@@ -1091,6 +1105,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     oa:purpose oa:tagging .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/3fed3d50-4a59-4364-99bd-16808d1bb666_body_glyph> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing Glyph at HS1174 reverse line 1 char 4 on 3D rendering"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1_char4_glyph> ;
     oa:motivatedBy oa:identifying .
 
@@ -1138,6 +1153,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     ns1:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_3fed3d50-4a59-4364-99bd-16808d1bb666> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4331eca8-605d-40cb-a6cd-8783a3f932ef> a oa:Annotation ;
+    rdfs:label "Annotation of Glyph at HS1174 reverse line 2 char 1 on 3D rendering"@en ;
     ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4331eca8-605d-40cb-a6cd-8783a3f932ef_body_charindex>,
@@ -1156,6 +1172,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     oa:purpose oa:tagging .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4331eca8-605d-40cb-a6cd-8783a3f932ef_body_glyph> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing Glyph at HS1174 reverse line 2 char 1 on 3D rendering"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line2_char1_glyph> ;
     oa:motivatedBy oa:identifying .
 
@@ -1203,6 +1220,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     ns1:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_4331eca8-605d-40cb-a6cd-8783a3f932ef> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4472679d-dc81-4c16-9a47-210efe111429> a oa:Annotation ;
+    rdfs:label "Annotation of Glyph at HS1174 reverse line 3 char 4 on 3D rendering"@en ;
     ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4472679d-dc81-4c16-9a47-210efe111429_body_charindex>,
@@ -1221,6 +1239,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     oa:purpose oa:tagging .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4472679d-dc81-4c16-9a47-210efe111429_body_glyph> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing Glyph at HS1174 reverse line 3 char 4 on 3D rendering"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3_char4_glyph> ;
     oa:motivatedBy oa:identifying .
 
@@ -1268,6 +1287,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     ns1:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_4472679d-dc81-4c16-9a47-210efe111429> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4aff6617-073c-4153-822d-6760d644ee12> a oa:Annotation ;
+    rdfs:label "Annotation of Glyph at HS1174 reverse line 5 char 2 on 3D rendering"@en ;
     ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4aff6617-073c-4153-822d-6760d644ee12_body_charindex>,
@@ -1286,6 +1306,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     oa:purpose oa:tagging .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4aff6617-073c-4153-822d-6760d644ee12_body_glyph> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing Glyph at HS1174 reverse line 5 char 2 on 3D rendering"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line5_char2_glyph> ;
     oa:motivatedBy oa:identifying .
 
@@ -1333,6 +1354,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     ns1:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_4aff6617-073c-4153-822d-6760d644ee12> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4de7e5c7-2270-4359-a7b7-1fbb91988454> a oa:Annotation ;
+    rdfs:label "Annotation of Glyph at HS1174 reverse line 1 char 1 on 3D rendering"@en ;
     ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4de7e5c7-2270-4359-a7b7-1fbb91988454_body_charindex>,
@@ -1351,6 +1373,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     oa:purpose oa:tagging .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4de7e5c7-2270-4359-a7b7-1fbb91988454_body_glyph> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing Glyph at HS1174 reverse line 1 char 1 on 3D rendering"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1_char1_glyph> ;
     oa:motivatedBy oa:identifying .
 
@@ -1398,6 +1421,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     ns1:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_4de7e5c7-2270-4359-a7b7-1fbb91988454> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6b1b7aed-0dea-4987-8138-03bb786ce80c> a oa:Annotation ;
+    rdfs:label "Annotation of Glyph at HS1174 reverse line 3 char 1 on 3D rendering"@en ;
     ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6b1b7aed-0dea-4987-8138-03bb786ce80c_body_charindex>,
@@ -1416,6 +1440,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     oa:purpose oa:tagging .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6b1b7aed-0dea-4987-8138-03bb786ce80c_body_glyph> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing Glyph at HS1174 reverse line 3 char 1 on 3D rendering"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3_char1_glyph> ;
     oa:motivatedBy oa:identifying .
 
@@ -1463,6 +1488,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     ns1:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_6b1b7aed-0dea-4987-8138-03bb786ce80c> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7002d072-d708-43ed-9f7b-fbe5d9d8b600> a oa:Annotation ;
+    rdfs:label "Annotation of Glyph at HS1174 reverse line 1 char 2 on 3D rendering"@en ;
     ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7002d072-d708-43ed-9f7b-fbe5d9d8b600_body_charindex>,
@@ -1481,6 +1507,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     oa:purpose oa:tagging .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7002d072-d708-43ed-9f7b-fbe5d9d8b600_body_glyph> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing Glyph at HS1174 reverse line 1 char 2 on 3D rendering"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1_char2_glyph> ;
     oa:motivatedBy oa:identifying .
 
@@ -1528,6 +1555,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     ns1:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_7002d072-d708-43ed-9f7b-fbe5d9d8b600> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/78089804-7a01-470c-b28c-830bf8d5ac8f> a oa:Annotation ;
+    rdfs:label "Annotation of Glyph at HS1174 reverse line 4 char 2 on 3D rendering"@en ;
     ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/78089804-7a01-470c-b28c-830bf8d5ac8f_body_charindex>,
@@ -1546,6 +1574,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     oa:purpose oa:tagging .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/78089804-7a01-470c-b28c-830bf8d5ac8f_body_glyph> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing Glyph at HS1174 reverse line 4 char 2 on 3D rendering"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line4_char2_glyph> ;
     oa:motivatedBy oa:identifying .
 
@@ -1593,6 +1622,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     ns1:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_78089804-7a01-470c-b28c-830bf8d5ac8f> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/8d1ad8c9-3d87-4f25-8aa8-ab8b12e9a5cf> a oa:Annotation ;
+    rdfs:label "Annotation of Glyph at HS1174 reverse line 5 char 3 on 3D rendering"@en ;
     ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/8d1ad8c9-3d87-4f25-8aa8-ab8b12e9a5cf_body_charindex>,
@@ -1611,6 +1641,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     oa:purpose oa:tagging .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/8d1ad8c9-3d87-4f25-8aa8-ab8b12e9a5cf_body_glyph> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing Glyph at HS1174 reverse line 5 char 3 on 3D rendering"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line5_char3_glyph> ;
     oa:motivatedBy oa:identifying .
 
@@ -1658,6 +1689,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     ns1:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_8d1ad8c9-3d87-4f25-8aa8-ab8b12e9a5cf> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/926bd425-fbcf-4b4a-b532-72083fd53346> a oa:Annotation ;
+    rdfs:label "Annotation of Glyph at HS1174 reverse line 2 char 2 on 3D rendering"@en ;
     ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/926bd425-fbcf-4b4a-b532-72083fd53346_body_charindex>,
@@ -1676,6 +1708,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     oa:purpose oa:tagging .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/926bd425-fbcf-4b4a-b532-72083fd53346_body_glyph> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing Glyph at HS1174 reverse line 2 char 2 on 3D rendering"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line2_char2_glyph> ;
     oa:motivatedBy oa:identifying .
 
@@ -1723,6 +1756,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     ns1:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_926bd425-fbcf-4b4a-b532-72083fd53346> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/be0ac301-f23e-47d3-b567-3c618a52bc3d> a oa:Annotation ;
+    rdfs:label "Annotation of Glyph at HS1174 reverse line 2 char 4 on 3D rendering"@en ;
     ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/be0ac301-f23e-47d3-b567-3c618a52bc3d_body_charindex>,
@@ -1741,6 +1775,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     oa:purpose oa:tagging .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/be0ac301-f23e-47d3-b567-3c618a52bc3d_body_glyph> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing Glyph at HS1174 reverse line 2 char 4 on 3D rendering"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line2_char4_glyph> ;
     oa:motivatedBy oa:identifying .
 
@@ -1788,6 +1823,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     ns1:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_be0ac301-f23e-47d3-b567-3c618a52bc3d> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c8fb100a-3ce3-4418-9812-93c7d5c14624> a oa:Annotation ;
+    rdfs:label "Annotation of Glyph at HS1174 reverse line 1 char 3 on 3D rendering"@en ;
     ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c8fb100a-3ce3-4418-9812-93c7d5c14624_body_charindex>,
@@ -1806,6 +1842,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     oa:purpose oa:tagging .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c8fb100a-3ce3-4418-9812-93c7d5c14624_body_glyph> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing Glyph at HS1174 reverse line 1 char 3 on 3D rendering"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1_char3_glyph> ;
     oa:motivatedBy oa:identifying .
 
@@ -1853,6 +1890,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     ns1:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_c8fb100a-3ce3-4418-9812-93c7d5c14624> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c9e827a4-65cc-48b2-a38d-d02ff44328eb> a oa:Annotation ;
+    rdfs:label "Annotation of Glyph at HS1174 reverse line 5 char 4 on 3D rendering"@en ;
     ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c9e827a4-65cc-48b2-a38d-d02ff44328eb_body_charindex>,
@@ -1871,6 +1909,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     oa:purpose oa:tagging .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c9e827a4-65cc-48b2-a38d-d02ff44328eb_body_glyph> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing Glyph at HS1174 reverse line 5 char 4 on 3D rendering"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line5_char4_glyph> ;
     oa:motivatedBy oa:identifying .
 
@@ -1918,6 +1957,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     ns1:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_c9e827a4-65cc-48b2-a38d-d02ff44328eb> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d0404773-7f6d-4aa8-84ee-b7450e97ebc6> a oa:Annotation ;
+    rdfs:label "Annotation of Glyph at HS1174 reverse line 2 char 3 on 3D rendering"@en ;
     ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d0404773-7f6d-4aa8-84ee-b7450e97ebc6_body_charindex>,
@@ -1936,6 +1976,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     oa:purpose oa:tagging .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d0404773-7f6d-4aa8-84ee-b7450e97ebc6_body_glyph> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing Glyph at HS1174 reverse line 2 char 3 on 3D rendering"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line2_char3_glyph> ;
     oa:motivatedBy oa:identifying .
 
@@ -1983,6 +2024,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     ns1:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_d0404773-7f6d-4aa8-84ee-b7450e97ebc6> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d690cfb7-5851-4f80-85fe-630fb7079cc5> a oa:Annotation ;
+    rdfs:label "Annotation of Wedge at HS1174 reverse on 3D rendering"@en ;
     ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d690cfb7-5851-4f80-85fe-630fb7079cc5_body_glyph>,
@@ -1992,6 +2034,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d690cfb7-5851-4f80-85fe-630fb7079cc5_body_glyph> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing Wedge at HS1174 reverse on 3D rendering"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line0_char0_glyph> ;
     oa:motivatedBy oa:identifying .
 
@@ -2010,6 +2053,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     rdf:value "<svg><polygon points=\"578.4674072265625,662.837646484375 653.9219360351562,680.1104125976562 566.649169921875,721.9285888671875\"></polygon></svg>" .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb9c9d65-e2f6-4ed2-bb8c-620adc0533b1> a oa:Annotation ;
+    rdfs:label "Annotation of Glyph at HS1174 reverse line 3 char 2 on 3D rendering"@en ;
     ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
     ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb9c9d65-e2f6-4ed2-bb8c-620adc0533b1_body_charindex>,
@@ -2028,6 +2072,7 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
     oa:purpose oa:tagging .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb9c9d65-e2f6-4ed2-bb8c-620adc0533b1_body_glyph> a oa:SpecificResource ;
+    rdfs:label "Annotation body referencing Glyph at HS1174 reverse line 3 char 2 on 3D rendering"@en ;
     oa:hasSource <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3_char2_glyph> ;
     oa:motivatedBy oa:identifying .
 
@@ -2076,8 +2121,6 @@ geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .
 
 as:Collection rdfs:subClassOf skos:Collection .
 
-geocrs:CoordinateSystemAxis rdfs:subClassOf prov:Entity .
-
 oa:Selector a owl:Class ;
     rdfs:subClassOf prov:Entity .
 
@@ -2105,11 +2148,11 @@ oa:SvgSelector a owl:Class ;
     foaf:homepage "https://github.com/recogito/annotorious-openseadragon"^^xsd:anyURI ;
     foaf:name "Annotorious-OpenSeaDragon" .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> a geocrs:CartesianCoordinateSystem ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> a ns3:CartesianCoordinateSystem ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units"@en ;
-    geocrs:asSVG "<svg width='400' height='250' viewbox='0 0 375 220'><defs><marker id='arrowhead' markerWidth='10' markerHeight='7' refX='0' refY='2' orient='auto'><polygon points='0 0, 4 2, 0 4' /></marker></defs><line x1='20' y1='200' x2='200' y2='200' stroke='red' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='110' y='220' class='small'>X: Cartesian X Axis (om:millimetre)</text><line x1='20' y1='200' x2='20' y2='20' stroke='green' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='35' y='20' class='small'>Y: Cartesian Y Axis (om:millimetre)</text><line x1='20' y1='200' x2='190' y2='30' stroke='blue' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='210' y='25' class='small'>Z: Cartesian Z Axis (om:millimetre)</text></svg>"^^geocrs:svgLiteral ;
-    geocrs:asWKT "CS[\"cartesian\",3],AXIS[\"X\", \"geocentricX\", ORDER[1],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Y\", \"geocentricY\", ORDER[2],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Z\", \"geocentricZ\", ORDER[3],            LENGTHUNIT[\"millimetre\",1]        ]]"^^<http://www.opengis.net/ont/geosparql/crs#wktLiteral> ;
-    geocrs:axis <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1>,
+    ns3:asSVG "<svg width='400' height='250' viewbox='0 0 375 220'><defs><marker id='arrowhead' markerWidth='10' markerHeight='7' refX='0' refY='2' orient='auto'><polygon points='0 0, 4 2, 0 4' /></marker></defs><line x1='20' y1='200' x2='200' y2='200' stroke='red' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='110' y='220' class='small'>X: Cartesian X Axis (om:millimetre)</text><line x1='20' y1='200' x2='20' y2='20' stroke='green' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='35' y='20' class='small'>Y: Cartesian Y Axis (om:millimetre)</text><line x1='20' y1='200' x2='190' y2='30' stroke='blue' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='210' y='25' class='small'>Z: Cartesian Z Axis (om:millimetre)</text></svg>"^^ns3:svgLiteral ;
+    ns3:asWKT "CS[\"cartesian\",3],AXIS[\"X\", \"geocentricX\", ORDER[1],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Y\", \"geocentricY\", ORDER[2],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Z\", \"geocentricZ\", ORDER[3],            LENGTHUNIT[\"millimetre\",1]        ]]"^^<http://www.opengis.net/ont/geosparql/crs#wktLiteral> ;
+    ns3:axis <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1>,
         <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2>,
         <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> .
 
