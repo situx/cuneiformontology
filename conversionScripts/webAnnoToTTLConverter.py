@@ -348,9 +348,11 @@ for tabname in tabletnames:
             res.write("<"+str(indid)+"_target1> rdfs:label \"Annotation target1 of Annotation of Glyph at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on "+str(material)+"\"@en .\n")
             res.write("<"+str(indid)+"_target1_selector> rdf:type oa:"+str(selectortype)+" .\n")
             res.write("<"+str(indid)+"_target1_selector> rdf:value \""+str(selectorval).replace('"','\\"')+"\" .\n")
-            if ischaracter:
+            if ischaracter or (lineindex!=0 and (wedgeindex==None or wedgeindex==0)):
                 res.write("<"+str(indid)+"_target1_selector> rdfs:label \"Annotation target selector of Annotation of Glyph at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on "+str(material)+"\"@en .\n")
-            elif iswedge:
+            elif wedgeindex!=0:
+                res.write("<"+str(indid)+"_target1_selector> rdfs:label \"Annotation target selector of Annotation of Wedge at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" wedge "+str(wedgeindex)+" on "+str(material)+"\"@en .\n")          
+            else:
                 res.write("<"+str(indid)+"_target1_selector> rdfs:label \"Annotation target selector of Annotation of Wedge at "+str(tabname)+" "+str(tabletside)+" on "+str(material)+"\"@en .\n")
             if withglyphs:
                 res.write("<"+str(namespaceitems)+str(tabname).lower()+"_"+str(tabletside)+"_line"+str(lineindex)+"_char"+str(charindex)+"_glyph> rdf:type <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> .\n")
