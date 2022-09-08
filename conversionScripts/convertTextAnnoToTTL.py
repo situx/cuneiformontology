@@ -21,9 +21,9 @@ def indexTransliteration(transliteration):
     currentside="front"
     for line in transliteration.split("\n"):
         if line.startswith("@") or line.startswith("#"):
-            lineindexcounter+=len(line)
-            wordindexcounter+=len(line)
-            charindexcounter+=len(line)
+            lineindexcounter+=len(line)+1
+            wordindexcounter+=len(line)+1
+            charindexcounter+=len(line)+1
             if line.startswith("@") and not line.startswith("@tablet"):
                 currentside=line.replace("@","")              
             continue
@@ -46,7 +46,9 @@ def indexTransliteration(transliteration):
                     charcounter+=1              
                 wordindexcounter+=len(word)+1
                 wordcounter+=1                   
-    
+        wordindexcounter+=1
+        charindexcounter+=1
+        lineindexcounter+=1
 
 def relateAnnotationToTransliteration(startindex,endindex,namespace,tabid):
     resuris={}
@@ -172,6 +174,7 @@ for tabname in tabletnames:
         res.write("<https://github.com/recogito/recogito-js> foaf:homepage \"https://github.com/recogito/recogito-js\"^^xsd:anyURI .\n")
         res.write("<"+str(indid)+"> <http://purl.org/dc/terms/creator> <"+creator+"> .\n")
         res.write("<"+str(indid)+"> oa:hasTarget <"+str(indid)+"_target1> .\n")
+        res.write("<"+str(indid)+"> rdfs:label \"Annotation of text passage of transliteration 1 of "+str(tabname)+" \"@en .\n")
         res.write("<"+str(indid)+"> <http://purl.org/dc/terms/rights> \"https://creativecommons.org/publicdomain/zero/1.0/\"^^xsd:anyURI .\n")
         targetcounter=1
         resuris=relateAnnotationToTransliteration(startindex,endindex,namespace,tabname)
