@@ -1688,6 +1688,7 @@ class OntDocGeneration:
                     tempvalprop=str(tup[0])
                     foundval=str(tup[1])
                 elif str(tup[0])!="http://www.w3.org/ns/oa#hasTarget":
+                    tempvalprop="http://www.w3.org/ns/oa#hasTarget"
                     for inttup in graph.predicate_objects(tup[1]):
                         if str(inttup[0])=="http://www.w3.org/ns/oa#hasSelector":
                             for valtup in graph.predicate_objects(inttup[1]):
