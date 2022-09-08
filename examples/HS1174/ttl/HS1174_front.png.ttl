@@ -3,8 +3,8 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix geocrs: <http://situx.github.io/proj4rdf/ont/crs/> .
 @prefix msp: <http://purl.org/meshsparql#> .
-@prefix ns1: <http://purl.org/dc/terms/> .
-@prefix ns2: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns2: <http://purl.org/dc/terms/> .
 @prefix ns3: <http://www.opengis.net/ont/geosparql#> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
@@ -687,36 +687,35 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
     om:hasUnit om:millimetre ;
     rdf:value 0e+00 .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1> a ns2:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1> a ns1:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 1"@en ;
     om:hasUnit om:millimetre ;
-    ns2:abbreviation "X" ;
-    ns2:axisDirection ns2:geocentricX ;
-    ns2:axisOrder "1"^^xsd:int .
+    ns1:abbreviation "X" ;
+    ns1:axisDirection ns1:geocentricX ;
+    ns1:axisOrder "1"^^xsd:int .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2> a ns2:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2> a ns1:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 2"@en ;
     om:hasUnit om:millimetre ;
-    ns2:abbreviation "Y" ;
-    ns2:axisDirection ns2:geocentricY ;
-    ns2:axisOrder "2"^^xsd:int .
+    ns1:abbreviation "Y" ;
+    ns1:axisDirection ns1:geocentricY ;
+    ns1:axisOrder "2"^^xsd:int .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> a ns2:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> a ns1:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 3"@en ;
     om:hasUnit om:millimetre ;
-    ns2:abbreviation "Z" ;
-    ns2:axisDirection ns2:geocentricZ ;
-    ns2:axisOrder "3"^^xsd:int .
+    ns1:abbreviation "Z" ;
+    ns1:axisDirection ns1:geocentricZ ;
+    ns1:axisOrder "3"^^xsd:int .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/00cda0d2-a7fb-4e22-b367-242a7c8119fc> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 4 wedge 7 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/00cda0d2-a7fb-4e22-b367-242a7c8119fc_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/00cda0d2-a7fb-4e22-b367-242a7c8119fc_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/00cda0d2-a7fb-4e22-b367-242a7c8119fc_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/00cda0d2-a7fb-4e22-b367-242a7c8119fc_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/00cda0d2-a7fb-4e22-b367-242a7c8119fc_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/00cda0d2-a7fb-4e22-b367-242a7c8119fc_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/00cda0d2-a7fb-4e22-b367-242a7c8119fc_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -761,13 +760,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/059d6ee0-b203-4059-a996-767b25994eb7> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 4 wedge 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/059d6ee0-b203-4059-a996-767b25994eb7_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/059d6ee0-b203-4059-a996-767b25994eb7_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/059d6ee0-b203-4059-a996-767b25994eb7_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/059d6ee0-b203-4059-a996-767b25994eb7_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/059d6ee0-b203-4059-a996-767b25994eb7_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/059d6ee0-b203-4059-a996-767b25994eb7_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/059d6ee0-b203-4059-a996-767b25994eb7_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -812,13 +810,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0753a90c-1198-4ddd-b818-571579b2a7cf> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 4 char 1 wedge 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0753a90c-1198-4ddd-b818-571579b2a7cf_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0753a90c-1198-4ddd-b818-571579b2a7cf_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0753a90c-1198-4ddd-b818-571579b2a7cf_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0753a90c-1198-4ddd-b818-571579b2a7cf_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0753a90c-1198-4ddd-b818-571579b2a7cf_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0753a90c-1198-4ddd-b818-571579b2a7cf_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0753a90c-1198-4ddd-b818-571579b2a7cf_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -863,13 +860,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0821f61c-c8f6-4d7e-8f32-976f25af4bb9> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 5 wedge 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0821f61c-c8f6-4d7e-8f32-976f25af4bb9_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0821f61c-c8f6-4d7e-8f32-976f25af4bb9_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0821f61c-c8f6-4d7e-8f32-976f25af4bb9_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0821f61c-c8f6-4d7e-8f32-976f25af4bb9_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0821f61c-c8f6-4d7e-8f32-976f25af4bb9_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0821f61c-c8f6-4d7e-8f32-976f25af4bb9_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0821f61c-c8f6-4d7e-8f32-976f25af4bb9_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -914,8 +910,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/09a66ef9-8b3c-488b-ad51-d280404f2a7f> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 2 char 8 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/09a66ef9-8b3c-488b-ad51-d280404f2a7f_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/09a66ef9-8b3c-488b-ad51-d280404f2a7f_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/09a66ef9-8b3c-488b-ad51-d280404f2a7f_body_line>,
@@ -990,13 +986,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0d375432-3447-40f2-b1ae-d82104591707> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 1 char 1 wedge 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0d375432-3447-40f2-b1ae-d82104591707_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0d375432-3447-40f2-b1ae-d82104591707_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0d375432-3447-40f2-b1ae-d82104591707_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0d375432-3447-40f2-b1ae-d82104591707_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0d375432-3447-40f2-b1ae-d82104591707_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0d375432-3447-40f2-b1ae-d82104591707_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0d375432-3447-40f2-b1ae-d82104591707_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -1041,8 +1036,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e7063b6-b4a2-4ade-8ad8-a2bf842709d8> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 1 char 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e7063b6-b4a2-4ade-8ad8-a2bf842709d8_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e7063b6-b4a2-4ade-8ad8-a2bf842709d8_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e7063b6-b4a2-4ade-8ad8-a2bf842709d8_body_line>,
@@ -1117,13 +1112,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e8e1d31-9942-4cdf-8f68-e01ff4a51926> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 5 wedge 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e8e1d31-9942-4cdf-8f68-e01ff4a51926_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e8e1d31-9942-4cdf-8f68-e01ff4a51926_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e8e1d31-9942-4cdf-8f68-e01ff4a51926_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e8e1d31-9942-4cdf-8f68-e01ff4a51926_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e8e1d31-9942-4cdf-8f68-e01ff4a51926_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e8e1d31-9942-4cdf-8f68-e01ff4a51926_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0e8e1d31-9942-4cdf-8f68-e01ff4a51926_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -1168,13 +1162,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0f55aeec-eefc-4ac2-baf1-f5d15f762d6b> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 3 wedge 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0f55aeec-eefc-4ac2-baf1-f5d15f762d6b_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0f55aeec-eefc-4ac2-baf1-f5d15f762d6b_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0f55aeec-eefc-4ac2-baf1-f5d15f762d6b_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0f55aeec-eefc-4ac2-baf1-f5d15f762d6b_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0f55aeec-eefc-4ac2-baf1-f5d15f762d6b_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0f55aeec-eefc-4ac2-baf1-f5d15f762d6b_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0f55aeec-eefc-4ac2-baf1-f5d15f762d6b_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -1219,13 +1212,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/119e80df-5bb3-4733-9840-65b48dc8a458> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 1 wedge 8 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/119e80df-5bb3-4733-9840-65b48dc8a458_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/119e80df-5bb3-4733-9840-65b48dc8a458_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/119e80df-5bb3-4733-9840-65b48dc8a458_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/119e80df-5bb3-4733-9840-65b48dc8a458_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/119e80df-5bb3-4733-9840-65b48dc8a458_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/119e80df-5bb3-4733-9840-65b48dc8a458_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/119e80df-5bb3-4733-9840-65b48dc8a458_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -1270,13 +1262,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/13b2fdfc-a233-430e-a2c6-6abeb016aaeb> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 4 char 4 wedge 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/13b2fdfc-a233-430e-a2c6-6abeb016aaeb_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/13b2fdfc-a233-430e-a2c6-6abeb016aaeb_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/13b2fdfc-a233-430e-a2c6-6abeb016aaeb_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/13b2fdfc-a233-430e-a2c6-6abeb016aaeb_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/13b2fdfc-a233-430e-a2c6-6abeb016aaeb_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/13b2fdfc-a233-430e-a2c6-6abeb016aaeb_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/13b2fdfc-a233-430e-a2c6-6abeb016aaeb_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -1321,13 +1312,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/18233348-81d5-4d69-8977-e5544363b7e8> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 3 wedge 6 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/18233348-81d5-4d69-8977-e5544363b7e8_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/18233348-81d5-4d69-8977-e5544363b7e8_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/18233348-81d5-4d69-8977-e5544363b7e8_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/18233348-81d5-4d69-8977-e5544363b7e8_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/18233348-81d5-4d69-8977-e5544363b7e8_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/18233348-81d5-4d69-8977-e5544363b7e8_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/18233348-81d5-4d69-8977-e5544363b7e8_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -1372,13 +1362,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1923adc1-8dc0-48e6-b177-58c1d1d31cc7> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 4 char 1 wedge 9 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1923adc1-8dc0-48e6-b177-58c1d1d31cc7_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1923adc1-8dc0-48e6-b177-58c1d1d31cc7_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1923adc1-8dc0-48e6-b177-58c1d1d31cc7_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1923adc1-8dc0-48e6-b177-58c1d1d31cc7_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1923adc1-8dc0-48e6-b177-58c1d1d31cc7_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1923adc1-8dc0-48e6-b177-58c1d1d31cc7_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1923adc1-8dc0-48e6-b177-58c1d1d31cc7_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -1423,13 +1412,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c59a341-b59f-4ead-937a-d5dfea54170e> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 3 char 1 wedge 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c59a341-b59f-4ead-937a-d5dfea54170e_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c59a341-b59f-4ead-937a-d5dfea54170e_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c59a341-b59f-4ead-937a-d5dfea54170e_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c59a341-b59f-4ead-937a-d5dfea54170e_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c59a341-b59f-4ead-937a-d5dfea54170e_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c59a341-b59f-4ead-937a-d5dfea54170e_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c59a341-b59f-4ead-937a-d5dfea54170e_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -1474,8 +1462,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c74c217-b7cb-4ac8-92d8-86051e811659> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 3 char 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c74c217-b7cb-4ac8-92d8-86051e811659_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c74c217-b7cb-4ac8-92d8-86051e811659_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/1c74c217-b7cb-4ac8-92d8-86051e811659_body_line>,
@@ -1550,13 +1538,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/20238516-d42d-4c23-82f8-94626948d45b> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 4 wedge 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/20238516-d42d-4c23-82f8-94626948d45b_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/20238516-d42d-4c23-82f8-94626948d45b_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/20238516-d42d-4c23-82f8-94626948d45b_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/20238516-d42d-4c23-82f8-94626948d45b_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/20238516-d42d-4c23-82f8-94626948d45b_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/20238516-d42d-4c23-82f8-94626948d45b_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/20238516-d42d-4c23-82f8-94626948d45b_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -1601,13 +1588,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/22ce9eb9-dcbb-4bc0-8af0-0dc8e604f2fb> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 4 char 1 wedge 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/22ce9eb9-dcbb-4bc0-8af0-0dc8e604f2fb_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/22ce9eb9-dcbb-4bc0-8af0-0dc8e604f2fb_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/22ce9eb9-dcbb-4bc0-8af0-0dc8e604f2fb_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/22ce9eb9-dcbb-4bc0-8af0-0dc8e604f2fb_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/22ce9eb9-dcbb-4bc0-8af0-0dc8e604f2fb_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/22ce9eb9-dcbb-4bc0-8af0-0dc8e604f2fb_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/22ce9eb9-dcbb-4bc0-8af0-0dc8e604f2fb_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -1652,13 +1638,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2333d226-57d3-4122-82e5-1eb5858315a7> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 4 char 3 wedge 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2333d226-57d3-4122-82e5-1eb5858315a7_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2333d226-57d3-4122-82e5-1eb5858315a7_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2333d226-57d3-4122-82e5-1eb5858315a7_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2333d226-57d3-4122-82e5-1eb5858315a7_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2333d226-57d3-4122-82e5-1eb5858315a7_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2333d226-57d3-4122-82e5-1eb5858315a7_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2333d226-57d3-4122-82e5-1eb5858315a7_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -1703,8 +1688,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/28b2e58a-c464-462e-aa73-a369ffaee903> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 2 char 7 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/28b2e58a-c464-462e-aa73-a369ffaee903_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/28b2e58a-c464-462e-aa73-a369ffaee903_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/28b2e58a-c464-462e-aa73-a369ffaee903_body_line>,
@@ -1779,13 +1764,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2a8bcac4-2342-40c2-932f-29b5931bd98a> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 3 wedge 8 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2a8bcac4-2342-40c2-932f-29b5931bd98a_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2a8bcac4-2342-40c2-932f-29b5931bd98a_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2a8bcac4-2342-40c2-932f-29b5931bd98a_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2a8bcac4-2342-40c2-932f-29b5931bd98a_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2a8bcac4-2342-40c2-932f-29b5931bd98a_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2a8bcac4-2342-40c2-932f-29b5931bd98a_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2a8bcac4-2342-40c2-932f-29b5931bd98a_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -1830,13 +1814,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2de86608-03d1-4572-ab60-69a9188f6b1d> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 2 wedge 9 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2de86608-03d1-4572-ab60-69a9188f6b1d_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2de86608-03d1-4572-ab60-69a9188f6b1d_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2de86608-03d1-4572-ab60-69a9188f6b1d_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2de86608-03d1-4572-ab60-69a9188f6b1d_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2de86608-03d1-4572-ab60-69a9188f6b1d_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2de86608-03d1-4572-ab60-69a9188f6b1d_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2de86608-03d1-4572-ab60-69a9188f6b1d_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -1881,13 +1864,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2e103f24-158a-4017-bfa6-ad96d5bfac35> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 1 wedge 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2e103f24-158a-4017-bfa6-ad96d5bfac35_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2e103f24-158a-4017-bfa6-ad96d5bfac35_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2e103f24-158a-4017-bfa6-ad96d5bfac35_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2e103f24-158a-4017-bfa6-ad96d5bfac35_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2e103f24-158a-4017-bfa6-ad96d5bfac35_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2e103f24-158a-4017-bfa6-ad96d5bfac35_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2e103f24-158a-4017-bfa6-ad96d5bfac35_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -1932,13 +1914,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2e937f6f-e410-41b8-b5f3-f3eda97915b4> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 4 wedge 8 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2e937f6f-e410-41b8-b5f3-f3eda97915b4_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2e937f6f-e410-41b8-b5f3-f3eda97915b4_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2e937f6f-e410-41b8-b5f3-f3eda97915b4_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2e937f6f-e410-41b8-b5f3-f3eda97915b4_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2e937f6f-e410-41b8-b5f3-f3eda97915b4_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2e937f6f-e410-41b8-b5f3-f3eda97915b4_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2e937f6f-e410-41b8-b5f3-f3eda97915b4_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -1983,13 +1964,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2f7901c7-4ed4-4135-aed7-f2ee7ceedfec> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 4 char 2 wedge 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2f7901c7-4ed4-4135-aed7-f2ee7ceedfec_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2f7901c7-4ed4-4135-aed7-f2ee7ceedfec_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2f7901c7-4ed4-4135-aed7-f2ee7ceedfec_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2f7901c7-4ed4-4135-aed7-f2ee7ceedfec_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2f7901c7-4ed4-4135-aed7-f2ee7ceedfec_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2f7901c7-4ed4-4135-aed7-f2ee7ceedfec_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2f7901c7-4ed4-4135-aed7-f2ee7ceedfec_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -2034,13 +2014,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/302f462b-5a85-4129-ab64-71b9c5e7de77> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 1 char 2 wedge 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/302f462b-5a85-4129-ab64-71b9c5e7de77_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/302f462b-5a85-4129-ab64-71b9c5e7de77_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/302f462b-5a85-4129-ab64-71b9c5e7de77_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/302f462b-5a85-4129-ab64-71b9c5e7de77_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/302f462b-5a85-4129-ab64-71b9c5e7de77_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/302f462b-5a85-4129-ab64-71b9c5e7de77_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/302f462b-5a85-4129-ab64-71b9c5e7de77_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -2085,8 +2064,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/32de1d43-3933-412a-ba17-0f3053a29eee> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 4 char 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/32de1d43-3933-412a-ba17-0f3053a29eee_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/32de1d43-3933-412a-ba17-0f3053a29eee_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/32de1d43-3933-412a-ba17-0f3053a29eee_body_line>,
@@ -2161,13 +2140,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/34a4f506-5fb4-4b92-a32a-7278f8f19e40> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 2 wedge 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/34a4f506-5fb4-4b92-a32a-7278f8f19e40_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/34a4f506-5fb4-4b92-a32a-7278f8f19e40_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/34a4f506-5fb4-4b92-a32a-7278f8f19e40_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/34a4f506-5fb4-4b92-a32a-7278f8f19e40_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/34a4f506-5fb4-4b92-a32a-7278f8f19e40_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/34a4f506-5fb4-4b92-a32a-7278f8f19e40_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/34a4f506-5fb4-4b92-a32a-7278f8f19e40_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -2212,13 +2190,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/395cc156-f85f-45be-8786-743a4e6d8a6c> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 2 wedge 10 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/395cc156-f85f-45be-8786-743a4e6d8a6c_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/395cc156-f85f-45be-8786-743a4e6d8a6c_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/395cc156-f85f-45be-8786-743a4e6d8a6c_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/395cc156-f85f-45be-8786-743a4e6d8a6c_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/395cc156-f85f-45be-8786-743a4e6d8a6c_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/395cc156-f85f-45be-8786-743a4e6d8a6c_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/395cc156-f85f-45be-8786-743a4e6d8a6c_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -2263,13 +2240,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/3b4fb577-3201-495a-9f14-0b7bc875a278> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 4 char 2 wedge 5 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/3b4fb577-3201-495a-9f14-0b7bc875a278_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/3b4fb577-3201-495a-9f14-0b7bc875a278_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/3b4fb577-3201-495a-9f14-0b7bc875a278_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/3b4fb577-3201-495a-9f14-0b7bc875a278_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/3b4fb577-3201-495a-9f14-0b7bc875a278_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/3b4fb577-3201-495a-9f14-0b7bc875a278_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/3b4fb577-3201-495a-9f14-0b7bc875a278_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -2314,13 +2290,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/44394056-5b4d-4d9a-b917-04c610fea0d0> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 1 wedge 6 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/44394056-5b4d-4d9a-b917-04c610fea0d0_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/44394056-5b4d-4d9a-b917-04c610fea0d0_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/44394056-5b4d-4d9a-b917-04c610fea0d0_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/44394056-5b4d-4d9a-b917-04c610fea0d0_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/44394056-5b4d-4d9a-b917-04c610fea0d0_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/44394056-5b4d-4d9a-b917-04c610fea0d0_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/44394056-5b4d-4d9a-b917-04c610fea0d0_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -2365,8 +2340,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/45e343c9-c3a5-4417-ae16-7fa1fb3c0eec> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 2 char 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/45e343c9-c3a5-4417-ae16-7fa1fb3c0eec_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/45e343c9-c3a5-4417-ae16-7fa1fb3c0eec_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/45e343c9-c3a5-4417-ae16-7fa1fb3c0eec_body_line>,
@@ -2441,8 +2416,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4776df65-3c46-4ae6-a868-1f416c8a544b> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 3 char 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4776df65-3c46-4ae6-a868-1f416c8a544b_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4776df65-3c46-4ae6-a868-1f416c8a544b_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4776df65-3c46-4ae6-a868-1f416c8a544b_body_line>,
@@ -2517,8 +2492,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/47fdacc5-6576-4c1e-8743-f93be32e998b> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 4 char 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/47fdacc5-6576-4c1e-8743-f93be32e998b_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/47fdacc5-6576-4c1e-8743-f93be32e998b_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/47fdacc5-6576-4c1e-8743-f93be32e998b_body_line>,
@@ -2593,13 +2568,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4a1aed45-24db-4cb9-a760-28486d7f6707> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 1 wedge 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4a1aed45-24db-4cb9-a760-28486d7f6707_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4a1aed45-24db-4cb9-a760-28486d7f6707_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4a1aed45-24db-4cb9-a760-28486d7f6707_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4a1aed45-24db-4cb9-a760-28486d7f6707_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4a1aed45-24db-4cb9-a760-28486d7f6707_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4a1aed45-24db-4cb9-a760-28486d7f6707_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4a1aed45-24db-4cb9-a760-28486d7f6707_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -2644,8 +2618,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4daae4c2-bd2a-4911-86e0-31dfeea22595> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 1 char 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4daae4c2-bd2a-4911-86e0-31dfeea22595_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4daae4c2-bd2a-4911-86e0-31dfeea22595_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4daae4c2-bd2a-4911-86e0-31dfeea22595_body_line>,
@@ -2720,13 +2694,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4fde8eef-a86f-42b8-ba81-648d82f07acd> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 4 wedge 6 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4fde8eef-a86f-42b8-ba81-648d82f07acd_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4fde8eef-a86f-42b8-ba81-648d82f07acd_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4fde8eef-a86f-42b8-ba81-648d82f07acd_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4fde8eef-a86f-42b8-ba81-648d82f07acd_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4fde8eef-a86f-42b8-ba81-648d82f07acd_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4fde8eef-a86f-42b8-ba81-648d82f07acd_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4fde8eef-a86f-42b8-ba81-648d82f07acd_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -2771,13 +2744,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/543a567d-b925-4644-a115-da4fbd7cfa12> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 3 char 2 wedge 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/543a567d-b925-4644-a115-da4fbd7cfa12_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/543a567d-b925-4644-a115-da4fbd7cfa12_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/543a567d-b925-4644-a115-da4fbd7cfa12_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/543a567d-b925-4644-a115-da4fbd7cfa12_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/543a567d-b925-4644-a115-da4fbd7cfa12_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/543a567d-b925-4644-a115-da4fbd7cfa12_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/543a567d-b925-4644-a115-da4fbd7cfa12_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -2822,13 +2794,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/55939666-2415-432b-9868-8b13b83042b7> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 3 char 3 wedge 6 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/55939666-2415-432b-9868-8b13b83042b7_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/55939666-2415-432b-9868-8b13b83042b7_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/55939666-2415-432b-9868-8b13b83042b7_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/55939666-2415-432b-9868-8b13b83042b7_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/55939666-2415-432b-9868-8b13b83042b7_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/55939666-2415-432b-9868-8b13b83042b7_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/55939666-2415-432b-9868-8b13b83042b7_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -2873,13 +2844,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5d9921bb-d810-4885-91c5-18c64d14c511> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 1 char 1 wedge 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5d9921bb-d810-4885-91c5-18c64d14c511_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5d9921bb-d810-4885-91c5-18c64d14c511_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5d9921bb-d810-4885-91c5-18c64d14c511_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5d9921bb-d810-4885-91c5-18c64d14c511_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5d9921bb-d810-4885-91c5-18c64d14c511_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5d9921bb-d810-4885-91c5-18c64d14c511_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5d9921bb-d810-4885-91c5-18c64d14c511_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -2924,13 +2894,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5dd92e14-a9a2-4153-b431-73e2f7832a64> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 1 char 3 wedge 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5dd92e14-a9a2-4153-b431-73e2f7832a64_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5dd92e14-a9a2-4153-b431-73e2f7832a64_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5dd92e14-a9a2-4153-b431-73e2f7832a64_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5dd92e14-a9a2-4153-b431-73e2f7832a64_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5dd92e14-a9a2-4153-b431-73e2f7832a64_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5dd92e14-a9a2-4153-b431-73e2f7832a64_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5dd92e14-a9a2-4153-b431-73e2f7832a64_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -2975,13 +2944,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5fca1a08-a8a0-4c7a-b1dd-5746ea72ea71> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 5 wedge 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5fca1a08-a8a0-4c7a-b1dd-5746ea72ea71_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5fca1a08-a8a0-4c7a-b1dd-5746ea72ea71_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5fca1a08-a8a0-4c7a-b1dd-5746ea72ea71_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5fca1a08-a8a0-4c7a-b1dd-5746ea72ea71_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5fca1a08-a8a0-4c7a-b1dd-5746ea72ea71_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5fca1a08-a8a0-4c7a-b1dd-5746ea72ea71_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5fca1a08-a8a0-4c7a-b1dd-5746ea72ea71_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -3026,13 +2994,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/60530cc4-8562-410f-9624-d28fa4576258> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 1 wedge 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/60530cc4-8562-410f-9624-d28fa4576258_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/60530cc4-8562-410f-9624-d28fa4576258_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/60530cc4-8562-410f-9624-d28fa4576258_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/60530cc4-8562-410f-9624-d28fa4576258_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/60530cc4-8562-410f-9624-d28fa4576258_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/60530cc4-8562-410f-9624-d28fa4576258_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/60530cc4-8562-410f-9624-d28fa4576258_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -3077,13 +3044,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/610a351f-143b-4fc7-b89c-3f3373d88f46> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 2 wedge 5 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/610a351f-143b-4fc7-b89c-3f3373d88f46_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/610a351f-143b-4fc7-b89c-3f3373d88f46_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/610a351f-143b-4fc7-b89c-3f3373d88f46_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/610a351f-143b-4fc7-b89c-3f3373d88f46_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/610a351f-143b-4fc7-b89c-3f3373d88f46_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/610a351f-143b-4fc7-b89c-3f3373d88f46_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/610a351f-143b-4fc7-b89c-3f3373d88f46_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -3128,13 +3094,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6775d9df-397d-49bf-ae32-c94bf37b91bf> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 3 char 2 wedge 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6775d9df-397d-49bf-ae32-c94bf37b91bf_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6775d9df-397d-49bf-ae32-c94bf37b91bf_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6775d9df-397d-49bf-ae32-c94bf37b91bf_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6775d9df-397d-49bf-ae32-c94bf37b91bf_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6775d9df-397d-49bf-ae32-c94bf37b91bf_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6775d9df-397d-49bf-ae32-c94bf37b91bf_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6775d9df-397d-49bf-ae32-c94bf37b91bf_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -3179,13 +3144,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/69e6c278-caca-444d-b4bf-7b0ae06c6e98> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 2 wedge 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/69e6c278-caca-444d-b4bf-7b0ae06c6e98_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/69e6c278-caca-444d-b4bf-7b0ae06c6e98_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/69e6c278-caca-444d-b4bf-7b0ae06c6e98_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/69e6c278-caca-444d-b4bf-7b0ae06c6e98_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/69e6c278-caca-444d-b4bf-7b0ae06c6e98_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/69e6c278-caca-444d-b4bf-7b0ae06c6e98_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/69e6c278-caca-444d-b4bf-7b0ae06c6e98_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -3230,13 +3194,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6d5e30cb-70d8-4295-8bc6-d927c3706a75> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 4 char 1 wedge 8 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6d5e30cb-70d8-4295-8bc6-d927c3706a75_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6d5e30cb-70d8-4295-8bc6-d927c3706a75_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6d5e30cb-70d8-4295-8bc6-d927c3706a75_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6d5e30cb-70d8-4295-8bc6-d927c3706a75_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6d5e30cb-70d8-4295-8bc6-d927c3706a75_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6d5e30cb-70d8-4295-8bc6-d927c3706a75_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6d5e30cb-70d8-4295-8bc6-d927c3706a75_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -3281,13 +3244,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6e9d7570-b5e5-44a5-824c-8d68550bda5f> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 3 char 3 wedge 9 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6e9d7570-b5e5-44a5-824c-8d68550bda5f_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6e9d7570-b5e5-44a5-824c-8d68550bda5f_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6e9d7570-b5e5-44a5-824c-8d68550bda5f_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6e9d7570-b5e5-44a5-824c-8d68550bda5f_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6e9d7570-b5e5-44a5-824c-8d68550bda5f_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6e9d7570-b5e5-44a5-824c-8d68550bda5f_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/6e9d7570-b5e5-44a5-824c-8d68550bda5f_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -3332,13 +3294,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/701dcc35-84ef-4f69-87a2-04d67071badd> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 3 wedge 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/701dcc35-84ef-4f69-87a2-04d67071badd_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/701dcc35-84ef-4f69-87a2-04d67071badd_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/701dcc35-84ef-4f69-87a2-04d67071badd_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/701dcc35-84ef-4f69-87a2-04d67071badd_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/701dcc35-84ef-4f69-87a2-04d67071badd_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/701dcc35-84ef-4f69-87a2-04d67071badd_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/701dcc35-84ef-4f69-87a2-04d67071badd_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -3383,13 +3344,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/70a82f4b-157e-48d4-9e83-d646e488697e> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 3 char 3 wedge 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/70a82f4b-157e-48d4-9e83-d646e488697e_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/70a82f4b-157e-48d4-9e83-d646e488697e_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/70a82f4b-157e-48d4-9e83-d646e488697e_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/70a82f4b-157e-48d4-9e83-d646e488697e_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/70a82f4b-157e-48d4-9e83-d646e488697e_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/70a82f4b-157e-48d4-9e83-d646e488697e_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/70a82f4b-157e-48d4-9e83-d646e488697e_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -3434,13 +3394,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7109412e-1f80-469f-93df-aba62c22e4dd> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 2 wedge 8 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7109412e-1f80-469f-93df-aba62c22e4dd_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7109412e-1f80-469f-93df-aba62c22e4dd_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7109412e-1f80-469f-93df-aba62c22e4dd_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7109412e-1f80-469f-93df-aba62c22e4dd_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7109412e-1f80-469f-93df-aba62c22e4dd_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7109412e-1f80-469f-93df-aba62c22e4dd_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7109412e-1f80-469f-93df-aba62c22e4dd_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -3485,13 +3444,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/74320630-35e8-40e0-b826-766c3940e6fc> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 4 char 1 wedge 5 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/74320630-35e8-40e0-b826-766c3940e6fc_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/74320630-35e8-40e0-b826-766c3940e6fc_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/74320630-35e8-40e0-b826-766c3940e6fc_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/74320630-35e8-40e0-b826-766c3940e6fc_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/74320630-35e8-40e0-b826-766c3940e6fc_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/74320630-35e8-40e0-b826-766c3940e6fc_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/74320630-35e8-40e0-b826-766c3940e6fc_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -3536,13 +3494,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/74c24a98-1f7a-4393-85ab-7a2f6519ad86> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 4 char 2 wedge 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/74c24a98-1f7a-4393-85ab-7a2f6519ad86_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/74c24a98-1f7a-4393-85ab-7a2f6519ad86_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/74c24a98-1f7a-4393-85ab-7a2f6519ad86_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/74c24a98-1f7a-4393-85ab-7a2f6519ad86_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/74c24a98-1f7a-4393-85ab-7a2f6519ad86_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/74c24a98-1f7a-4393-85ab-7a2f6519ad86_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/74c24a98-1f7a-4393-85ab-7a2f6519ad86_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -3587,13 +3544,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7a8a8a3f-225b-4102-a306-41143980e4ff> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 4 char 1 wedge 6 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7a8a8a3f-225b-4102-a306-41143980e4ff_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7a8a8a3f-225b-4102-a306-41143980e4ff_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7a8a8a3f-225b-4102-a306-41143980e4ff_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7a8a8a3f-225b-4102-a306-41143980e4ff_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7a8a8a3f-225b-4102-a306-41143980e4ff_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7a8a8a3f-225b-4102-a306-41143980e4ff_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7a8a8a3f-225b-4102-a306-41143980e4ff_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -3638,13 +3594,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7b837315-b8d6-4b7e-8491-4217efebe15d> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 2 wedge 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7b837315-b8d6-4b7e-8491-4217efebe15d_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7b837315-b8d6-4b7e-8491-4217efebe15d_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7b837315-b8d6-4b7e-8491-4217efebe15d_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7b837315-b8d6-4b7e-8491-4217efebe15d_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7b837315-b8d6-4b7e-8491-4217efebe15d_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7b837315-b8d6-4b7e-8491-4217efebe15d_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7b837315-b8d6-4b7e-8491-4217efebe15d_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -3689,13 +3644,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7bcf54f2-b0a5-4dcc-b274-95afbae42f08> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 4 wedge 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7bcf54f2-b0a5-4dcc-b274-95afbae42f08_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7bcf54f2-b0a5-4dcc-b274-95afbae42f08_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7bcf54f2-b0a5-4dcc-b274-95afbae42f08_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7bcf54f2-b0a5-4dcc-b274-95afbae42f08_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7bcf54f2-b0a5-4dcc-b274-95afbae42f08_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7bcf54f2-b0a5-4dcc-b274-95afbae42f08_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7bcf54f2-b0a5-4dcc-b274-95afbae42f08_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -3740,13 +3694,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7e496dec-0a73-4273-af45-1a0bc5b5fe4d> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 3 char 3 wedge 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7e496dec-0a73-4273-af45-1a0bc5b5fe4d_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7e496dec-0a73-4273-af45-1a0bc5b5fe4d_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7e496dec-0a73-4273-af45-1a0bc5b5fe4d_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7e496dec-0a73-4273-af45-1a0bc5b5fe4d_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7e496dec-0a73-4273-af45-1a0bc5b5fe4d_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7e496dec-0a73-4273-af45-1a0bc5b5fe4d_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7e496dec-0a73-4273-af45-1a0bc5b5fe4d_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -3791,13 +3744,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7f2e6bd5-6a05-475e-841b-e2f8bde1cb54> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 1 char 3 wedge 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7f2e6bd5-6a05-475e-841b-e2f8bde1cb54_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7f2e6bd5-6a05-475e-841b-e2f8bde1cb54_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7f2e6bd5-6a05-475e-841b-e2f8bde1cb54_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7f2e6bd5-6a05-475e-841b-e2f8bde1cb54_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7f2e6bd5-6a05-475e-841b-e2f8bde1cb54_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7f2e6bd5-6a05-475e-841b-e2f8bde1cb54_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7f2e6bd5-6a05-475e-841b-e2f8bde1cb54_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -3842,13 +3794,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7fd3c5c4-4ef4-41be-8709-9d2c488e32f0> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 4 char 3 wedge 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7fd3c5c4-4ef4-41be-8709-9d2c488e32f0_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7fd3c5c4-4ef4-41be-8709-9d2c488e32f0_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7fd3c5c4-4ef4-41be-8709-9d2c488e32f0_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7fd3c5c4-4ef4-41be-8709-9d2c488e32f0_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7fd3c5c4-4ef4-41be-8709-9d2c488e32f0_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7fd3c5c4-4ef4-41be-8709-9d2c488e32f0_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7fd3c5c4-4ef4-41be-8709-9d2c488e32f0_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -3893,13 +3844,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/827cde28-5c40-448e-8406-d06bd1012216> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 3 char 3 wedge 7 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/827cde28-5c40-448e-8406-d06bd1012216_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/827cde28-5c40-448e-8406-d06bd1012216_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/827cde28-5c40-448e-8406-d06bd1012216_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/827cde28-5c40-448e-8406-d06bd1012216_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/827cde28-5c40-448e-8406-d06bd1012216_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/827cde28-5c40-448e-8406-d06bd1012216_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/827cde28-5c40-448e-8406-d06bd1012216_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -3944,13 +3894,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/845da737-5586-40c9-b2d3-8bcd0a45f32c> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 1 char 4 wedge 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/845da737-5586-40c9-b2d3-8bcd0a45f32c_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/845da737-5586-40c9-b2d3-8bcd0a45f32c_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/845da737-5586-40c9-b2d3-8bcd0a45f32c_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/845da737-5586-40c9-b2d3-8bcd0a45f32c_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/845da737-5586-40c9-b2d3-8bcd0a45f32c_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/845da737-5586-40c9-b2d3-8bcd0a45f32c_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/845da737-5586-40c9-b2d3-8bcd0a45f32c_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -3995,13 +3944,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/8767417a-3c4c-45c0-a68e-742aa6f5000b> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 4 char 4 wedge 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/8767417a-3c4c-45c0-a68e-742aa6f5000b_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/8767417a-3c4c-45c0-a68e-742aa6f5000b_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/8767417a-3c4c-45c0-a68e-742aa6f5000b_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/8767417a-3c4c-45c0-a68e-742aa6f5000b_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/8767417a-3c4c-45c0-a68e-742aa6f5000b_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/8767417a-3c4c-45c0-a68e-742aa6f5000b_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/8767417a-3c4c-45c0-a68e-742aa6f5000b_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -4046,13 +3994,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/87bf3688-62af-4454-a0c5-34abfb87668f> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 1 char 3 wedge 6 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/87bf3688-62af-4454-a0c5-34abfb87668f_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/87bf3688-62af-4454-a0c5-34abfb87668f_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/87bf3688-62af-4454-a0c5-34abfb87668f_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/87bf3688-62af-4454-a0c5-34abfb87668f_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/87bf3688-62af-4454-a0c5-34abfb87668f_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/87bf3688-62af-4454-a0c5-34abfb87668f_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/87bf3688-62af-4454-a0c5-34abfb87668f_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -4097,13 +4044,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/88084672-0d9c-4f66-9fb0-8a81165732df> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 3 wedge 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/88084672-0d9c-4f66-9fb0-8a81165732df_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/88084672-0d9c-4f66-9fb0-8a81165732df_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/88084672-0d9c-4f66-9fb0-8a81165732df_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/88084672-0d9c-4f66-9fb0-8a81165732df_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/88084672-0d9c-4f66-9fb0-8a81165732df_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/88084672-0d9c-4f66-9fb0-8a81165732df_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/88084672-0d9c-4f66-9fb0-8a81165732df_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -4148,8 +4094,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9249bcca-57c7-4bce-bc99-f1c4416702b1> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 1 char 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9249bcca-57c7-4bce-bc99-f1c4416702b1_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9249bcca-57c7-4bce-bc99-f1c4416702b1_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9249bcca-57c7-4bce-bc99-f1c4416702b1_body_line>,
@@ -4224,13 +4170,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/987a5913-1501-41ad-a49f-acd2f9b71b0a> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 4 char 4 wedge 5 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/987a5913-1501-41ad-a49f-acd2f9b71b0a_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/987a5913-1501-41ad-a49f-acd2f9b71b0a_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/987a5913-1501-41ad-a49f-acd2f9b71b0a_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/987a5913-1501-41ad-a49f-acd2f9b71b0a_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/987a5913-1501-41ad-a49f-acd2f9b71b0a_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/987a5913-1501-41ad-a49f-acd2f9b71b0a_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/987a5913-1501-41ad-a49f-acd2f9b71b0a_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -4275,8 +4220,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a3572bc-d972-43e5-8aa3-b18876e717fd> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 2 char 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a3572bc-d972-43e5-8aa3-b18876e717fd_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a3572bc-d972-43e5-8aa3-b18876e717fd_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a3572bc-d972-43e5-8aa3-b18876e717fd_body_line>,
@@ -4351,13 +4296,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a961dfe-7891-44ec-b13e-b9f7726819a1> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 1 char 4 wedge 5 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a961dfe-7891-44ec-b13e-b9f7726819a1_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a961dfe-7891-44ec-b13e-b9f7726819a1_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a961dfe-7891-44ec-b13e-b9f7726819a1_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a961dfe-7891-44ec-b13e-b9f7726819a1_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a961dfe-7891-44ec-b13e-b9f7726819a1_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a961dfe-7891-44ec-b13e-b9f7726819a1_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9a961dfe-7891-44ec-b13e-b9f7726819a1_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -4402,13 +4346,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9b910a29-b0d7-4a00-8e7d-8ac16dd8319a> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 4 wedge 5 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9b910a29-b0d7-4a00-8e7d-8ac16dd8319a_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9b910a29-b0d7-4a00-8e7d-8ac16dd8319a_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9b910a29-b0d7-4a00-8e7d-8ac16dd8319a_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9b910a29-b0d7-4a00-8e7d-8ac16dd8319a_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9b910a29-b0d7-4a00-8e7d-8ac16dd8319a_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9b910a29-b0d7-4a00-8e7d-8ac16dd8319a_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9b910a29-b0d7-4a00-8e7d-8ac16dd8319a_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -4453,11 +4396,10 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9cb25054-7a21-4f3b-8d06-6863d14e1c5d> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9cb25054-7a21-4f3b-8d06-6863d14e1c5d_body_glyph>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9cb25054-7a21-4f3b-8d06-6863d14e1c5d_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9cb25054-7a21-4f3b-8d06-6863d14e1c5d_body_translit> ;
+        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9cb25054-7a21-4f3b-8d06-6863d14e1c5d_body_tabletside> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9cb25054-7a21-4f3b-8d06-6863d14e1c5d_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
 
@@ -4483,13 +4425,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9e548954-e3a5-415e-9794-24306e536b5c> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 3 char 3 wedge 5 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9e548954-e3a5-415e-9794-24306e536b5c_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9e548954-e3a5-415e-9794-24306e536b5c_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9e548954-e3a5-415e-9794-24306e536b5c_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9e548954-e3a5-415e-9794-24306e536b5c_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9e548954-e3a5-415e-9794-24306e536b5c_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9e548954-e3a5-415e-9794-24306e536b5c_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9e548954-e3a5-415e-9794-24306e536b5c_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -4534,13 +4475,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9f63d152-5f4c-4ab2-975a-df6e89c3054d> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 4 char 3 wedge 5 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9f63d152-5f4c-4ab2-975a-df6e89c3054d_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9f63d152-5f4c-4ab2-975a-df6e89c3054d_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9f63d152-5f4c-4ab2-975a-df6e89c3054d_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9f63d152-5f4c-4ab2-975a-df6e89c3054d_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9f63d152-5f4c-4ab2-975a-df6e89c3054d_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9f63d152-5f4c-4ab2-975a-df6e89c3054d_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9f63d152-5f4c-4ab2-975a-df6e89c3054d_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -4585,13 +4525,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/a1ae4737-511b-4747-a1ee-6c2d32e11fc3> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 5 wedge 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/a1ae4737-511b-4747-a1ee-6c2d32e11fc3_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/a1ae4737-511b-4747-a1ee-6c2d32e11fc3_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/a1ae4737-511b-4747-a1ee-6c2d32e11fc3_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/a1ae4737-511b-4747-a1ee-6c2d32e11fc3_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/a1ae4737-511b-4747-a1ee-6c2d32e11fc3_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/a1ae4737-511b-4747-a1ee-6c2d32e11fc3_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/a1ae4737-511b-4747-a1ee-6c2d32e11fc3_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -4636,13 +4575,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/a75e0570-568d-4f41-9c3d-ccd54263c76c> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 4 char 3 wedge 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/a75e0570-568d-4f41-9c3d-ccd54263c76c_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/a75e0570-568d-4f41-9c3d-ccd54263c76c_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/a75e0570-568d-4f41-9c3d-ccd54263c76c_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/a75e0570-568d-4f41-9c3d-ccd54263c76c_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/a75e0570-568d-4f41-9c3d-ccd54263c76c_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/a75e0570-568d-4f41-9c3d-ccd54263c76c_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/a75e0570-568d-4f41-9c3d-ccd54263c76c_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -4687,8 +4625,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/aaf1409a-87bb-4dc4-aac6-880be041ad64> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 3 char 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/aaf1409a-87bb-4dc4-aac6-880be041ad64_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/aaf1409a-87bb-4dc4-aac6-880be041ad64_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/aaf1409a-87bb-4dc4-aac6-880be041ad64_body_line>,
@@ -4763,13 +4701,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ac299c35-0d28-4d34-919d-8b3bb7863dcd> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 4 char 2 wedge 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ac299c35-0d28-4d34-919d-8b3bb7863dcd_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ac299c35-0d28-4d34-919d-8b3bb7863dcd_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ac299c35-0d28-4d34-919d-8b3bb7863dcd_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ac299c35-0d28-4d34-919d-8b3bb7863dcd_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ac299c35-0d28-4d34-919d-8b3bb7863dcd_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ac299c35-0d28-4d34-919d-8b3bb7863dcd_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ac299c35-0d28-4d34-919d-8b3bb7863dcd_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -4814,13 +4751,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b62757ff-11db-44a5-b5c4-3b2a16826875> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 1 char 4 wedge 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b62757ff-11db-44a5-b5c4-3b2a16826875_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b62757ff-11db-44a5-b5c4-3b2a16826875_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b62757ff-11db-44a5-b5c4-3b2a16826875_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b62757ff-11db-44a5-b5c4-3b2a16826875_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b62757ff-11db-44a5-b5c4-3b2a16826875_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b62757ff-11db-44a5-b5c4-3b2a16826875_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b62757ff-11db-44a5-b5c4-3b2a16826875_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -4865,13 +4801,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b7578865-d9d5-4a16-bff5-b58f112773ce> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 4 char 2 wedge 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b7578865-d9d5-4a16-bff5-b58f112773ce_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b7578865-d9d5-4a16-bff5-b58f112773ce_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b7578865-d9d5-4a16-bff5-b58f112773ce_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b7578865-d9d5-4a16-bff5-b58f112773ce_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b7578865-d9d5-4a16-bff5-b58f112773ce_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b7578865-d9d5-4a16-bff5-b58f112773ce_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b7578865-d9d5-4a16-bff5-b58f112773ce_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -4916,13 +4851,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b9ccf5ba-ed50-4281-9f84-2b86b8f9edc9> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 3 char 3 wedge 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b9ccf5ba-ed50-4281-9f84-2b86b8f9edc9_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b9ccf5ba-ed50-4281-9f84-2b86b8f9edc9_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b9ccf5ba-ed50-4281-9f84-2b86b8f9edc9_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b9ccf5ba-ed50-4281-9f84-2b86b8f9edc9_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b9ccf5ba-ed50-4281-9f84-2b86b8f9edc9_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b9ccf5ba-ed50-4281-9f84-2b86b8f9edc9_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/b9ccf5ba-ed50-4281-9f84-2b86b8f9edc9_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -4967,13 +4901,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ba4bd60c-9a11-4577-b712-807036e61a4b> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 4 char 3 wedge 6 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ba4bd60c-9a11-4577-b712-807036e61a4b_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ba4bd60c-9a11-4577-b712-807036e61a4b_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ba4bd60c-9a11-4577-b712-807036e61a4b_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ba4bd60c-9a11-4577-b712-807036e61a4b_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ba4bd60c-9a11-4577-b712-807036e61a4b_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ba4bd60c-9a11-4577-b712-807036e61a4b_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ba4bd60c-9a11-4577-b712-807036e61a4b_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -5018,13 +4951,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ba670c4e-3a5b-4dfb-827a-990c81adb88f> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 1 wedge 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ba670c4e-3a5b-4dfb-827a-990c81adb88f_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ba670c4e-3a5b-4dfb-827a-990c81adb88f_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ba670c4e-3a5b-4dfb-827a-990c81adb88f_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ba670c4e-3a5b-4dfb-827a-990c81adb88f_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ba670c4e-3a5b-4dfb-827a-990c81adb88f_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ba670c4e-3a5b-4dfb-827a-990c81adb88f_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ba670c4e-3a5b-4dfb-827a-990c81adb88f_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -5069,13 +5001,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/bd9c5134-e3b6-4a7e-9603-91316ec2a7e4> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 4 char 4 wedge 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/bd9c5134-e3b6-4a7e-9603-91316ec2a7e4_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/bd9c5134-e3b6-4a7e-9603-91316ec2a7e4_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/bd9c5134-e3b6-4a7e-9603-91316ec2a7e4_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/bd9c5134-e3b6-4a7e-9603-91316ec2a7e4_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/bd9c5134-e3b6-4a7e-9603-91316ec2a7e4_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/bd9c5134-e3b6-4a7e-9603-91316ec2a7e4_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/bd9c5134-e3b6-4a7e-9603-91316ec2a7e4_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -5120,13 +5051,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/be1b3527-e84e-486c-80eb-ce56e316f0be> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 1 char 2 wedge 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/be1b3527-e84e-486c-80eb-ce56e316f0be_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/be1b3527-e84e-486c-80eb-ce56e316f0be_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/be1b3527-e84e-486c-80eb-ce56e316f0be_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/be1b3527-e84e-486c-80eb-ce56e316f0be_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/be1b3527-e84e-486c-80eb-ce56e316f0be_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/be1b3527-e84e-486c-80eb-ce56e316f0be_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/be1b3527-e84e-486c-80eb-ce56e316f0be_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -5171,13 +5101,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c475f2e0-9bf1-4e94-b6a9-ad7b0158a2a9> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 1 char 3 wedge 5 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c475f2e0-9bf1-4e94-b6a9-ad7b0158a2a9_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c475f2e0-9bf1-4e94-b6a9-ad7b0158a2a9_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c475f2e0-9bf1-4e94-b6a9-ad7b0158a2a9_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c475f2e0-9bf1-4e94-b6a9-ad7b0158a2a9_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c475f2e0-9bf1-4e94-b6a9-ad7b0158a2a9_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c475f2e0-9bf1-4e94-b6a9-ad7b0158a2a9_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c475f2e0-9bf1-4e94-b6a9-ad7b0158a2a9_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -5222,8 +5151,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c50c7e91-e1fd-44e0-af0c-e05f3b4de41e> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 2 char 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c50c7e91-e1fd-44e0-af0c-e05f3b4de41e_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c50c7e91-e1fd-44e0-af0c-e05f3b4de41e_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c50c7e91-e1fd-44e0-af0c-e05f3b4de41e_body_line>,
@@ -5298,13 +5227,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c57ebe4a-256f-42a2-91e1-e11eeec90ffe> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 2 wedge 6 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c57ebe4a-256f-42a2-91e1-e11eeec90ffe_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c57ebe4a-256f-42a2-91e1-e11eeec90ffe_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c57ebe4a-256f-42a2-91e1-e11eeec90ffe_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c57ebe4a-256f-42a2-91e1-e11eeec90ffe_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c57ebe4a-256f-42a2-91e1-e11eeec90ffe_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c57ebe4a-256f-42a2-91e1-e11eeec90ffe_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c57ebe4a-256f-42a2-91e1-e11eeec90ffe_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -5349,13 +5277,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c745a7af-3396-4d48-9bbb-b2f4aae36105> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 4 wedge 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c745a7af-3396-4d48-9bbb-b2f4aae36105_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c745a7af-3396-4d48-9bbb-b2f4aae36105_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c745a7af-3396-4d48-9bbb-b2f4aae36105_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c745a7af-3396-4d48-9bbb-b2f4aae36105_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c745a7af-3396-4d48-9bbb-b2f4aae36105_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c745a7af-3396-4d48-9bbb-b2f4aae36105_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c745a7af-3396-4d48-9bbb-b2f4aae36105_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -5400,13 +5327,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/cc0ff0d6-f1fd-48a2-97b9-18f52544cb28> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 1 char 2 wedge 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/cc0ff0d6-f1fd-48a2-97b9-18f52544cb28_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/cc0ff0d6-f1fd-48a2-97b9-18f52544cb28_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/cc0ff0d6-f1fd-48a2-97b9-18f52544cb28_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/cc0ff0d6-f1fd-48a2-97b9-18f52544cb28_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/cc0ff0d6-f1fd-48a2-97b9-18f52544cb28_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/cc0ff0d6-f1fd-48a2-97b9-18f52544cb28_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/cc0ff0d6-f1fd-48a2-97b9-18f52544cb28_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -5451,13 +5377,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/cc7b4748-5fd7-40a6-84ae-354cad301886> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 3 char 1 wedge 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/cc7b4748-5fd7-40a6-84ae-354cad301886_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/cc7b4748-5fd7-40a6-84ae-354cad301886_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/cc7b4748-5fd7-40a6-84ae-354cad301886_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/cc7b4748-5fd7-40a6-84ae-354cad301886_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/cc7b4748-5fd7-40a6-84ae-354cad301886_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/cc7b4748-5fd7-40a6-84ae-354cad301886_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/cc7b4748-5fd7-40a6-84ae-354cad301886_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -5502,13 +5427,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ce77c897-18f9-4776-a05e-c742be8c95c4> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 3 wedge 7 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ce77c897-18f9-4776-a05e-c742be8c95c4_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ce77c897-18f9-4776-a05e-c742be8c95c4_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ce77c897-18f9-4776-a05e-c742be8c95c4_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ce77c897-18f9-4776-a05e-c742be8c95c4_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ce77c897-18f9-4776-a05e-c742be8c95c4_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ce77c897-18f9-4776-a05e-c742be8c95c4_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ce77c897-18f9-4776-a05e-c742be8c95c4_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -5553,13 +5477,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d08674f8-cdbe-47ad-be44-f0b48d7850f2> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 3 char 2 wedge 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d08674f8-cdbe-47ad-be44-f0b48d7850f2_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d08674f8-cdbe-47ad-be44-f0b48d7850f2_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d08674f8-cdbe-47ad-be44-f0b48d7850f2_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d08674f8-cdbe-47ad-be44-f0b48d7850f2_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d08674f8-cdbe-47ad-be44-f0b48d7850f2_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d08674f8-cdbe-47ad-be44-f0b48d7850f2_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d08674f8-cdbe-47ad-be44-f0b48d7850f2_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -5604,13 +5527,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d15a7179-a4c7-4b4c-a11a-9ee84f4691ec> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 4 char 1 wedge 7 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d15a7179-a4c7-4b4c-a11a-9ee84f4691ec_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d15a7179-a4c7-4b4c-a11a-9ee84f4691ec_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d15a7179-a4c7-4b4c-a11a-9ee84f4691ec_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d15a7179-a4c7-4b4c-a11a-9ee84f4691ec_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d15a7179-a4c7-4b4c-a11a-9ee84f4691ec_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d15a7179-a4c7-4b4c-a11a-9ee84f4691ec_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d15a7179-a4c7-4b4c-a11a-9ee84f4691ec_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -5655,13 +5577,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d3ca46ed-0156-4a04-9c7c-a5d6fbc66144> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 3 wedge 5 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d3ca46ed-0156-4a04-9c7c-a5d6fbc66144_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d3ca46ed-0156-4a04-9c7c-a5d6fbc66144_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d3ca46ed-0156-4a04-9c7c-a5d6fbc66144_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d3ca46ed-0156-4a04-9c7c-a5d6fbc66144_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d3ca46ed-0156-4a04-9c7c-a5d6fbc66144_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d3ca46ed-0156-4a04-9c7c-a5d6fbc66144_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d3ca46ed-0156-4a04-9c7c-a5d6fbc66144_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -5706,8 +5627,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d48fef72-5219-4b73-bf9d-534c60c62956> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 1 char 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d48fef72-5219-4b73-bf9d-534c60c62956_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d48fef72-5219-4b73-bf9d-534c60c62956_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d48fef72-5219-4b73-bf9d-534c60c62956_body_line>,
@@ -5782,13 +5703,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d59cd306-5b7e-493b-adbf-35c6092d7596> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 3 wedge 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d59cd306-5b7e-493b-adbf-35c6092d7596_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d59cd306-5b7e-493b-adbf-35c6092d7596_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d59cd306-5b7e-493b-adbf-35c6092d7596_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d59cd306-5b7e-493b-adbf-35c6092d7596_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d59cd306-5b7e-493b-adbf-35c6092d7596_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d59cd306-5b7e-493b-adbf-35c6092d7596_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d59cd306-5b7e-493b-adbf-35c6092d7596_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -5833,8 +5753,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d79ca86c-6f7a-44b4-b499-3161e787e3d8> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 4 char 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d79ca86c-6f7a-44b4-b499-3161e787e3d8_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d79ca86c-6f7a-44b4-b499-3161e787e3d8_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d79ca86c-6f7a-44b4-b499-3161e787e3d8_body_line>,
@@ -5909,13 +5829,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d7a3b6e8-72db-4a59-9e77-0844a88066d9> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 4 char 1 wedge 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d7a3b6e8-72db-4a59-9e77-0844a88066d9_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d7a3b6e8-72db-4a59-9e77-0844a88066d9_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d7a3b6e8-72db-4a59-9e77-0844a88066d9_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d7a3b6e8-72db-4a59-9e77-0844a88066d9_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d7a3b6e8-72db-4a59-9e77-0844a88066d9_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d7a3b6e8-72db-4a59-9e77-0844a88066d9_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d7a3b6e8-72db-4a59-9e77-0844a88066d9_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -5960,13 +5879,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/dc07557b-f507-41df-933e-a980414d76fe> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 1 wedge 7 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/dc07557b-f507-41df-933e-a980414d76fe_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/dc07557b-f507-41df-933e-a980414d76fe_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/dc07557b-f507-41df-933e-a980414d76fe_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/dc07557b-f507-41df-933e-a980414d76fe_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/dc07557b-f507-41df-933e-a980414d76fe_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/dc07557b-f507-41df-933e-a980414d76fe_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/dc07557b-f507-41df-933e-a980414d76fe_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -6011,13 +5929,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/dce31708-a467-44e3-b63f-e0a0bf8fcf7f> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 4 char  wedge 6 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/dce31708-a467-44e3-b63f-e0a0bf8fcf7f_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/dce31708-a467-44e3-b63f-e0a0bf8fcf7f_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/dce31708-a467-44e3-b63f-e0a0bf8fcf7f_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/dce31708-a467-44e3-b63f-e0a0bf8fcf7f_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/dce31708-a467-44e3-b63f-e0a0bf8fcf7f_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/dce31708-a467-44e3-b63f-e0a0bf8fcf7f_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/dce31708-a467-44e3-b63f-e0a0bf8fcf7f_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -6062,13 +5979,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/de61550e-85da-4c06-a8d9-737d46509629> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 1 wedge 5 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/de61550e-85da-4c06-a8d9-737d46509629_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/de61550e-85da-4c06-a8d9-737d46509629_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/de61550e-85da-4c06-a8d9-737d46509629_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/de61550e-85da-4c06-a8d9-737d46509629_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/de61550e-85da-4c06-a8d9-737d46509629_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/de61550e-85da-4c06-a8d9-737d46509629_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/de61550e-85da-4c06-a8d9-737d46509629_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -6113,13 +6029,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0671dc3-f247-4c43-9187-61ec411c25cb> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 3 char 3 wedge 8 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0671dc3-f247-4c43-9187-61ec411c25cb_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0671dc3-f247-4c43-9187-61ec411c25cb_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0671dc3-f247-4c43-9187-61ec411c25cb_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0671dc3-f247-4c43-9187-61ec411c25cb_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0671dc3-f247-4c43-9187-61ec411c25cb_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0671dc3-f247-4c43-9187-61ec411c25cb_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0671dc3-f247-4c43-9187-61ec411c25cb_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -6164,13 +6079,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0948c0d-f255-4382-8304-d8ca05c68dff> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 1 char 4 wedge 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0948c0d-f255-4382-8304-d8ca05c68dff_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0948c0d-f255-4382-8304-d8ca05c68dff_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0948c0d-f255-4382-8304-d8ca05c68dff_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0948c0d-f255-4382-8304-d8ca05c68dff_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0948c0d-f255-4382-8304-d8ca05c68dff_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0948c0d-f255-4382-8304-d8ca05c68dff_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0948c0d-f255-4382-8304-d8ca05c68dff_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -6215,13 +6129,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0f5680c-9972-4db0-b693-7b4eb827de86> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 2 wedge 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0f5680c-9972-4db0-b693-7b4eb827de86_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0f5680c-9972-4db0-b693-7b4eb827de86_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0f5680c-9972-4db0-b693-7b4eb827de86_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0f5680c-9972-4db0-b693-7b4eb827de86_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0f5680c-9972-4db0-b693-7b4eb827de86_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0f5680c-9972-4db0-b693-7b4eb827de86_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e0f5680c-9972-4db0-b693-7b4eb827de86_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -6266,13 +6179,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e384c172-4242-406e-964c-316b8c4fe59d> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 1 char 4 wedge 6 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e384c172-4242-406e-964c-316b8c4fe59d_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e384c172-4242-406e-964c-316b8c4fe59d_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e384c172-4242-406e-964c-316b8c4fe59d_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e384c172-4242-406e-964c-316b8c4fe59d_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e384c172-4242-406e-964c-316b8c4fe59d_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e384c172-4242-406e-964c-316b8c4fe59d_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e384c172-4242-406e-964c-316b8c4fe59d_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -6317,13 +6229,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e3e564c3-309b-4d3e-9ca3-6757cef13dcd> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 1 char 3 wedge 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e3e564c3-309b-4d3e-9ca3-6757cef13dcd_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e3e564c3-309b-4d3e-9ca3-6757cef13dcd_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e3e564c3-309b-4d3e-9ca3-6757cef13dcd_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e3e564c3-309b-4d3e-9ca3-6757cef13dcd_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e3e564c3-309b-4d3e-9ca3-6757cef13dcd_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e3e564c3-309b-4d3e-9ca3-6757cef13dcd_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e3e564c3-309b-4d3e-9ca3-6757cef13dcd_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -6368,8 +6279,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e57afe5b-16df-4194-b793-8ad5beb74fe0> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HS1174 obverse line 4 char 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e57afe5b-16df-4194-b793-8ad5beb74fe0_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e57afe5b-16df-4194-b793-8ad5beb74fe0_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e57afe5b-16df-4194-b793-8ad5beb74fe0_body_line>,
@@ -6444,13 +6355,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e5b147fa-6e22-41e6-a234-a180ddc2efe9> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 4 char 3 wedge 1 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e5b147fa-6e22-41e6-a234-a180ddc2efe9_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e5b147fa-6e22-41e6-a234-a180ddc2efe9_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e5b147fa-6e22-41e6-a234-a180ddc2efe9_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e5b147fa-6e22-41e6-a234-a180ddc2efe9_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e5b147fa-6e22-41e6-a234-a180ddc2efe9_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e5b147fa-6e22-41e6-a234-a180ddc2efe9_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e5b147fa-6e22-41e6-a234-a180ddc2efe9_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -6495,13 +6405,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e6ae5599-1a9d-4f50-abb2-970f9428a1e7> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 1 char 3 wedge 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e6ae5599-1a9d-4f50-abb2-970f9428a1e7_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e6ae5599-1a9d-4f50-abb2-970f9428a1e7_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e6ae5599-1a9d-4f50-abb2-970f9428a1e7_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e6ae5599-1a9d-4f50-abb2-970f9428a1e7_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e6ae5599-1a9d-4f50-abb2-970f9428a1e7_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e6ae5599-1a9d-4f50-abb2-970f9428a1e7_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e6ae5599-1a9d-4f50-abb2-970f9428a1e7_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -6546,13 +6455,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e889905d-7796-46b1-b8df-8b4f7cead442> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 1 char 1 wedge 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e889905d-7796-46b1-b8df-8b4f7cead442_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e889905d-7796-46b1-b8df-8b4f7cead442_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e889905d-7796-46b1-b8df-8b4f7cead442_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e889905d-7796-46b1-b8df-8b4f7cead442_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e889905d-7796-46b1-b8df-8b4f7cead442_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e889905d-7796-46b1-b8df-8b4f7cead442_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e889905d-7796-46b1-b8df-8b4f7cead442_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -6597,13 +6505,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ea94292a-62c2-4775-bc0a-cbc67f4e311c> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 2 wedge 7 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ea94292a-62c2-4775-bc0a-cbc67f4e311c_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ea94292a-62c2-4775-bc0a-cbc67f4e311c_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ea94292a-62c2-4775-bc0a-cbc67f4e311c_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ea94292a-62c2-4775-bc0a-cbc67f4e311c_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ea94292a-62c2-4775-bc0a-cbc67f4e311c_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ea94292a-62c2-4775-bc0a-cbc67f4e311c_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/ea94292a-62c2-4775-bc0a-cbc67f4e311c_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -6648,13 +6555,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/eefb61b9-f4c9-4428-89ce-716395059391> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 3 char 2 wedge 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/eefb61b9-f4c9-4428-89ce-716395059391_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/eefb61b9-f4c9-4428-89ce-716395059391_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/eefb61b9-f4c9-4428-89ce-716395059391_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/eefb61b9-f4c9-4428-89ce-716395059391_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/eefb61b9-f4c9-4428-89ce-716395059391_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/eefb61b9-f4c9-4428-89ce-716395059391_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/eefb61b9-f4c9-4428-89ce-716395059391_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -6699,13 +6605,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f81a66b0-e180-409c-8506-53f42837c34b> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 4 char 4 wedge 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f81a66b0-e180-409c-8506-53f42837c34b_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f81a66b0-e180-409c-8506-53f42837c34b_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f81a66b0-e180-409c-8506-53f42837c34b_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f81a66b0-e180-409c-8506-53f42837c34b_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f81a66b0-e180-409c-8506-53f42837c34b_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f81a66b0-e180-409c-8506-53f42837c34b_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f81a66b0-e180-409c-8506-53f42837c34b_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -6750,13 +6655,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f8aed9e2-4e01-4ea0-abe9-26bddf84f1b6> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 3 char 1 wedge 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f8aed9e2-4e01-4ea0-abe9-26bddf84f1b6_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f8aed9e2-4e01-4ea0-abe9-26bddf84f1b6_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f8aed9e2-4e01-4ea0-abe9-26bddf84f1b6_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f8aed9e2-4e01-4ea0-abe9-26bddf84f1b6_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f8aed9e2-4e01-4ea0-abe9-26bddf84f1b6_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f8aed9e2-4e01-4ea0-abe9-26bddf84f1b6_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f8aed9e2-4e01-4ea0-abe9-26bddf84f1b6_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -6801,13 +6705,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f968847c-2649-4225-8499-8c048c086f96> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 1 char 4 wedge 3 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f968847c-2649-4225-8499-8c048c086f96_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f968847c-2649-4225-8499-8c048c086f96_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f968847c-2649-4225-8499-8c048c086f96_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f968847c-2649-4225-8499-8c048c086f96_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f968847c-2649-4225-8499-8c048c086f96_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f968847c-2649-4225-8499-8c048c086f96_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/f968847c-2649-4225-8499-8c048c086f96_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -6852,13 +6755,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb1d478f-d4d1-484f-8bc2-66a50fe6f6fa> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 4 char 1 wedge 2 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb1d478f-d4d1-484f-8bc2-66a50fe6f6fa_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb1d478f-d4d1-484f-8bc2-66a50fe6f6fa_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb1d478f-d4d1-484f-8bc2-66a50fe6f6fa_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb1d478f-d4d1-484f-8bc2-66a50fe6f6fa_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb1d478f-d4d1-484f-8bc2-66a50fe6f6fa_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb1d478f-d4d1-484f-8bc2-66a50fe6f6fa_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb1d478f-d4d1-484f-8bc2-66a50fe6f6fa_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -6903,13 +6805,12 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb75638a-5db1-415f-9d86-bc88d8a3c4dc> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 3 char 3 wedge 4 on 3D rendering"@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb75638a-5db1-415f-9d86-bc88d8a3c4dc_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb75638a-5db1-415f-9d86-bc88d8a3c4dc_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb75638a-5db1-415f-9d86-bc88d8a3c4dc_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb75638a-5db1-415f-9d86-bc88d8a3c4dc_body_tabletside>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb75638a-5db1-415f-9d86-bc88d8a3c4dc_body_translit>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb75638a-5db1-415f-9d86-bc88d8a3c4dc_body_wedgeindex> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb75638a-5db1-415f-9d86-bc88d8a3c4dc_target1> ;
     as:generator <https://github.com/recogito/annotorious-openseadragon> .
@@ -6969,11 +6870,11 @@ oa:WKTSelector a owl:Class ;
     rdfs:label "WKT Selector"@en ;
     rdfs:subClassOf oa:Selector .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> a ns2:CartesianCoordinateSystem ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> a ns1:CartesianCoordinateSystem ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units"@en ;
-    ns2:asSVG "<svg width='400' height='250' viewbox='0 0 375 220'><defs><marker id='arrowhead' markerWidth='10' markerHeight='7' refX='0' refY='2' orient='auto'><polygon points='0 0, 4 2, 0 4' /></marker></defs><line x1='20' y1='200' x2='200' y2='200' stroke='red' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='110' y='220' class='small'>X: Cartesian X Axis (om:millimetre)</text><line x1='20' y1='200' x2='20' y2='20' stroke='green' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='35' y='20' class='small'>Y: Cartesian Y Axis (om:millimetre)</text><line x1='20' y1='200' x2='190' y2='30' stroke='blue' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='210' y='25' class='small'>Z: Cartesian Z Axis (om:millimetre)</text></svg>"^^ns2:svgLiteral ;
-    ns2:asWKT "CS[\"cartesian\",3],AXIS[\"X\", \"geocentricX\", ORDER[1],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Y\", \"geocentricY\", ORDER[2],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Z\", \"geocentricZ\", ORDER[3],            LENGTHUNIT[\"millimetre\",1]        ]]"^^<http://www.opengis.net/ont/geosparql/crs#wktLiteral> ;
-    ns2:axis <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1>,
+    ns1:asSVG "<svg width='400' height='250' viewbox='0 0 375 220'><defs><marker id='arrowhead' markerWidth='10' markerHeight='7' refX='0' refY='2' orient='auto'><polygon points='0 0, 4 2, 0 4' /></marker></defs><line x1='20' y1='200' x2='200' y2='200' stroke='red' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='110' y='220' class='small'>X: Cartesian X Axis (om:millimetre)</text><line x1='20' y1='200' x2='20' y2='20' stroke='green' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='35' y='20' class='small'>Y: Cartesian Y Axis (om:millimetre)</text><line x1='20' y1='200' x2='190' y2='30' stroke='blue' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='210' y='25' class='small'>Z: Cartesian Z Axis (om:millimetre)</text></svg>"^^ns1:svgLiteral ;
+    ns1:asWKT "CS[\"cartesian\",3],AXIS[\"X\", \"geocentricX\", ORDER[1],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Y\", \"geocentricY\", ORDER[2],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Z\", \"geocentricZ\", ORDER[3],            LENGTHUNIT[\"millimetre\",1]        ]]"^^<http://www.opengis.net/ont/geosparql/crs#wktLiteral> ;
+    ns1:axis <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1>,
         <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2>,
         <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> .
 

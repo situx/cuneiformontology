@@ -215,7 +215,6 @@ for tabname in tabletnames:
             res.write("<https://github.com/recogito/annotorious-openseadragon> foaf:homepage \"https://github.com/recogito/annotorious-openseadragon\"^^xsd:anyURI .\n")
             res.write("<"+str(indid)+"> <http://purl.org/dc/terms/creator> <"+creator+"> .\n")
             res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_glyph> .\n")
-            res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_translit> .\n")
             res.write("<"+str(indid)+"> oa:hasTarget <"+str(indid)+"_target1> .\n")
             res.write("<"+str(indid)+"> <http://purl.org/dc/terms/rights> \"https://creativecommons.org/publicdomain/zero/1.0/\"^^xsd:anyURI .\n")
             if tabletside!=None:
@@ -278,6 +277,7 @@ for tabname in tabletnames:
             else:
                 res.write("<"+str(indid)+"_body_glyph> rdfs:label \"Annotation body referencing Wedge at "+str(tabname)+" "+str(tabletside)+" on "+str(material)+"\"@en .\n")                
             if ischaracter or (lineindex!=0 and (wedgeindex==None or wedgeindex==0)):
+                res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_translit> .\n")
                 res.write("<"+str(indid)+"_body_translit> rdf:type oa:SpecificResource .\n")
                 res.write("<"+str(indid)+"_body_translit> oa:hasSource <"+str(namespaceitems)+str(tabname)+"_transliteration1_"+str(tabletside)+"_line"+str(lineindex)+"_char"+str(charindex)+"> .\n")
                 res.write("<"+str(indid)+"_body_translit> oa:motivatedBy oa:identifying .\n")
