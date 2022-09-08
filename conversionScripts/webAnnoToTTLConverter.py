@@ -216,12 +216,14 @@ for tabname in tabletnames:
             res.write("<"+str(indid)+"> oa:hasTarget <"+str(indid)+"_target1> .\n")
             res.write("<"+str(indid)+"> <http://purl.org/dc/terms/rights> \"https://creativecommons.org/publicdomain/zero/1.0/\"^^xsd:anyURI .\n")
             if tabletside!=None:
-                res.write("<"+str(indid)+"_body_columnindex> rdf:type oa:TextualBody .\n")
-                res.write("<"+str(indid)+"_body_columnindex> oa:motivatedBy oa:describing .\n")
-                res.write("<"+str(indid)+"_body_columnindex> oa:purpose oa:tagging .\n")
-                res.write("<"+str(indid)+"_body_columnindex> rdfs:label \"Annotation Body: Tablet Side "+str(tabletside)+"\"@en .\n")
-                res.write("<"+str(indid)+"_body_columnindex> rdf:value \""+str(tabletside)+"\"^^xsd:string .\n")
+                res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_tabletside> .\n")
+                res.write("<"+str(indid)+"_body_tabletside> rdf:type oa:TextualBody .\n")
+                res.write("<"+str(indid)+"_body_tabletside> oa:motivatedBy oa:describing .\n")
+                res.write("<"+str(indid)+"_body_tabletside> oa:purpose oa:tagging .\n")
+                res.write("<"+str(indid)+"_body_tabletside> rdfs:label \"Annotation Body: Tablet Side "+str(tabletside)+"\"@en .\n")
+                res.write("<"+str(indid)+"_body_tabletside> rdf:value \""+str(tabletside)+"\"^^xsd:string .\n")
             if columnindex!=None and columnindex!="":
+                res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_columnindex> .\n")
                 res.write("<"+str(indid)+"_body_columnindex> rdf:type oa:TextualBody .\n")
                 res.write("<"+str(indid)+"_body_columnindex> oa:motivatedBy oa:describing .\n")
                 res.write("<"+str(indid)+"_body_columnindex> oa:purpose oa:tagging .\n")
@@ -230,6 +232,7 @@ for tabname in tabletnames:
             else:
                 columnindex=0
             if lineindex!=None:
+                res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_line> .\n")
                 res.write("<"+str(indid)+"_body_line> rdf:type oa:TextualBody .\n")
                 res.write("<"+str(indid)+"_body_line> oa:motivatedBy oa:describing .\n")
                 res.write("<"+str(indid)+"_body_line> oa:purpose oa:tagging .\n")
@@ -238,6 +241,7 @@ for tabname in tabletnames:
             else:
                 lineindex=0
             if charindex!=None:
+                res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_charindex> .\n")
                 res.write("<"+str(indid)+"_body_charindex> rdf:type oa:TextualBody .\n")
                 res.write("<"+str(indid)+"_body_charindex> oa:motivatedBy oa:describing .\n")
                 res.write("<"+str(indid)+"_body_charindex> oa:purpose oa:tagging .\n")
