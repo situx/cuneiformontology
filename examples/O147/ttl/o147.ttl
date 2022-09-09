@@ -449,14 +449,14 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class ; rdfs:subClassOf cunei:T
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/character_U
 <https://situx.github.io/cuneiformontology/examples/signlist/character_U> rdf:type                                                                <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
-														<http://www.purl.org/graphemon#variant> <https://situx.github.io/cuneiformontology/examples/o147/u_charvariant1> ;
+														<http://www.purl.org/graphemon#variant> <https://situx.github.io/cuneiformontology/signlist/u_charvariant1> ;
                                                        rdfs:label "Character: U"@en .
 
 
 ###  https://situx.github.io/cuneiformontology/examples/signlist/character_a
 <https://situx.github.io/cuneiformontology/examples/signlist/character_a> rdf:type                                                                <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
                                                        <http://www.purl.org/graphemon#abzl> 470 ;
-													   <http://www.purl.org/graphemon#variant> <https://situx.github.io/cuneiformontology/examples/o147/a_charvariant1> ;
+													   <http://www.purl.org/graphemon#variant> <https://situx.github.io/cuneiformontology/signlist/a_charvariant1> ;
                                                        <http://www.purl.org/graphemon#hasUnicodeCodePoint> "U+12000" ;
                                                        <http://www.purl.org/graphemon#hasUnicodeRepresentation> "𒀀" ;
                                                        <http://www.purl.org/graphemon#hethzl> 364 ,
@@ -473,12 +473,12 @@ cunei:TransliterationWordOccurrence rdf:type owl:Class ; rdfs:subClassOf cunei:T
                                                                  rdfs:label "Grapheme Reading A: a"@en .
 
 
-###  https://situx.github.io/cuneiformontology/examples/o147/a_charvariant1
-<https://situx.github.io/cuneiformontology/examples/o147/a_charvariant1> rdf:type                                                                   <http://www.purl.org/graphemon#GraphemeVariant> ;
+###  https://situx.github.io/cuneiformontology/signlist/a_charvariant1
+<https://situx.github.io/cuneiformontology/signlist/a_charvariant1> rdf:type                                                                   <http://www.purl.org/graphemon#GraphemeVariant> ;
                                                           rdfs:label "Grapheme Variant 1: A"@en .
 														  
-###  https://situx.github.io/cuneiformontology/examples/o147/u_charvariant1
-<https://situx.github.io/cuneiformontology/examples/o147/u_charvariant1> rdf:type                                                                   <http://www.purl.org/graphemon#GraphemeVariant> ;
+###  https://situx.github.io/cuneiformontology/signlist/u_charvariant1
+<https://situx.github.io/cuneiformontology/signlist/u_charvariant1> rdf:type                                                                   <http://www.purl.org/graphemon#GraphemeVariant> ;
 														  graphemon:hasGottsteinCode "c"^^graphemon:gottsteinLiteral ;
 														  graphemon:hasPaleoCode "w"^^graphemon:gottsteinLiteral ;
 														  graphemon:asSVG "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"75\" height=\"50\"><defs/><g stroke=\"#000000\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" fill=\"#000000\"><path fill=\"#000000\" stroke=\"#000000\" paint-order=\"fill stroke markers\" d=\" M 34 15.000000000000007 L 31.6 18.640000000000008 L 30.4 22.320000000000007 L 29.799999999999997 26.000000000000007 L 30.4 29.640000000000008 L 31.6 33.32000000000001 L 34 37.00000000000001 L 31 33.32000000000001 L 28.799999999999997 31.000000000000007 L 27.200000000000003 29.400000000000006 L 25.6 28.000000000000007 L 24 27.000000000000007 L 22.6 26.000000000000004 L 24 25.000000000000007 L 25.6 24.000000000000007 L 27.200000000000003 22.600000000000005 L 28.799999999999997 21.000000000000007 L 31 18.640000000000008 L 34 15.000000000000007\" stroke-miterlimit=\"10\" stroke-dasharray=\"\"/></g></svg>"^^graphemon:svgLiteral ;
