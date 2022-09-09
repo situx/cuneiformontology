@@ -277,7 +277,7 @@ for tabname in tabletnames:
                 res.write("<"+str(indid)+"> rdfs:label \"Annotation of Wedge at "+str(tabname)+" "+str(tabletside)+" on "+str(material)+"\"@en .\n")
             res.write("<"+str(indid)+"_body_glyph> rdf:type oa:SpecificResource .\n")
             if wedgeindex!=0 and wedgeindex!=None:
-                res.write("<"+str(indid)+"_body_glyph> oa:hasSource <"+str(namespaceitems)+str(tabname)+"_"+str(tabletside)+"_line"+str(lineindex)+"_char"+str(charindex)+"_wedge"+str(wedgeindex)+"_glyph> .\n")
+                res.write("<"+str(indid)+"_body_glyph> oa:hasSource <"+str(namespaceitems)+str(tabname)+"_"+str(tabletside).replace("back","reverse").replace("front","obverse")+"_line"+str(lineindex)+"_char"+str(charindex)+"_wedge"+str(wedgeindex)+"_glyph> .\n")
                 if wedgetype in wedgetypevalues:
                     res.write("<"+str(namespaceitems)+str(tabname)+"_"+str(tabletside)+"_line"+str(lineindex)+"_char"+str(charindex)+"_wedge"+str(wedgeindex)+"_glyph> rdf:type "+str(wedgetypevalues[wedgetype])+" .\n")
                     res.write(str(wedgetypevalues[wedgetype])+" rdfs:subClassOf cunei:PaleoCodeWedgeType .\n")
