@@ -270,7 +270,11 @@ for tabname in tabletnames:
             currentsidejtf={"_class":"surface","@id":str(currenttabletid)+"_"+currentsideuri,"@type":currentside,"children":[]}
             cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+" rdf:type cunei:Side .\n")
             cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+" rdfs:label \""+str(currenttabletid)+": "+str(currentside)+"\"@en .\n")
-            cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+" foaf:image \""+imageURLEscape(str(namespace)+"images/sides/"+str(tabname)+"_"+str(currentside).replace("obverse","front").replace("reverse","back"))+".jpg\"^^xsd:anyURI .\n")
+            if tabname in renderingvars:
+                for item in renderingvars[tabname]:
+                    cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+" foaf:image \""+imageURLEscape(str(namespace)+"images/sides/"+str(tabname)+"_"+str(currentside).replace("obverse","front").replace("reverse","back"))+".jpg\"^^xsd:anyURI .\n")              
+            else:        
+                cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+" foaf:image \""+imageURLEscape(str(namespace)+"images/sides/"+str(tabname)+"_"+str(currentside).replace("obverse","front").replace("reverse","back"))+".jpg\"^^xsd:anyURI .\n")
             cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+" cunei:hasSurface "+str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+" .\n")
             jtfldrep["@graph"]["children"].append(currentsidejtf)
             currentline=0
