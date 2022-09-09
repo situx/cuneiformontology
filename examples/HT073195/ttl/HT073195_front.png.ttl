@@ -4,8 +4,8 @@
 @prefix geocrs: <http://situx.github.io/proj4rdf/ont/crs/> .
 @prefix msp: <http://purl.org/meshsparql#> .
 @prefix ns1: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns2: <http://purl.org/dc/terms/> .
-@prefix ns3: <http://www.opengis.net/ont/crs/> .
+@prefix ns2: <http://www.opengis.net/ont/crs/> .
+@prefix ns3: <http://purl.org/dc/terms/> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -591,31 +591,31 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
     om:hasUnit om:millimetre ;
     rdf:value 0e+00 .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1> a ns3:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1> a ns2:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 1"@en ;
     om:hasUnit om:millimetre ;
-    ns3:abbreviation "X" ;
-    ns3:axisDirection ns3:geocentricX ;
-    ns3:axisOrder "1"^^xsd:int .
+    ns2:abbreviation "X" ;
+    ns2:axisDirection ns2:geocentricX ;
+    ns2:axisOrder "1"^^xsd:int .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2> a ns3:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2> a ns2:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 2"@en ;
     om:hasUnit om:millimetre ;
-    ns3:abbreviation "Y" ;
-    ns3:axisDirection ns3:geocentricY ;
-    ns3:axisOrder "2"^^xsd:int .
+    ns2:abbreviation "Y" ;
+    ns2:axisDirection ns2:geocentricY ;
+    ns2:axisOrder "2"^^xsd:int .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> a ns3:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> a ns2:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 3"@en ;
     om:hasUnit om:millimetre ;
-    ns3:abbreviation "Z" ;
-    ns3:axisDirection ns3:geocentricZ ;
-    ns3:axisOrder "3"^^xsd:int .
+    ns2:abbreviation "Z" ;
+    ns2:axisDirection ns2:geocentricZ ;
+    ns2:axisOrder "3"^^xsd:int .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/11b957da-50e2-487b-9501-3be9638eab44> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 7 on 3D rendering"@en ;
-    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/11b957da-50e2-487b-9501-3be9638eab44_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/11b957da-50e2-487b-9501-3be9638eab44_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/11b957da-50e2-487b-9501-3be9638eab44_body_line>,
@@ -664,8 +664,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 1 char 1 on 3D rendering"@en ;
-    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_body_line>,
@@ -745,8 +745,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 2 char 2 on 3D rendering"@en ;
-    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_body_line>,
@@ -826,8 +826,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 3 char 4 on 3D rendering"@en ;
-    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_body_line>,
@@ -907,8 +907,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 4 on 3D rendering"@en ;
-    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_body_line>,
@@ -988,8 +988,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 2 on 3D rendering"@en ;
-    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_body_line>,
@@ -1069,8 +1069,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 5 on 3D rendering"@en ;
-    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_body_line>,
@@ -1150,8 +1150,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/796378b1-43be-4a50-8f63-ea1b5211349a> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 3 char 6 on 3D rendering"@en ;
-    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/796378b1-43be-4a50-8f63-ea1b5211349a_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/796378b1-43be-4a50-8f63-ea1b5211349a_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/796378b1-43be-4a50-8f63-ea1b5211349a_body_line>,
@@ -1200,8 +1200,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 2 char 3 on 3D rendering"@en ;
-    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_body_line>,
@@ -1281,8 +1281,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 6 on 3D rendering"@en ;
-    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_body_line>,
@@ -1362,8 +1362,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 2 char 1 on 3D rendering"@en ;
-    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_body_line>,
@@ -1443,8 +1443,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 3 char 2 on 3D rendering"@en ;
-    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_body_line>,
@@ -1524,8 +1524,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 1 on 3D rendering"@en ;
-    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_body_line>,
@@ -1605,8 +1605,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 3 char 5 on 3D rendering"@en ;
-    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_body_line>,
@@ -1686,8 +1686,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 2 char 4 on 3D rendering"@en ;
-    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_body_line>,
@@ -1767,8 +1767,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HT073195 obverse on 3D rendering"@en ;
-    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_body_tabletside> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_target1>,
@@ -1827,8 +1827,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HT073195 obverse on 3D rendering"@en ;
-    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_body_tabletside> ;
@@ -1894,8 +1894,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 3 char 3 on 3D rendering"@en ;
-    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_body_line>,
@@ -1975,8 +1975,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 3 on 3D rendering"@en ;
-    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns3:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns3:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794_body_line>,
@@ -2052,11 +2052,11 @@ oa:SvgSelector a owl:Class ;
     foaf:homepage "https://github.com/recogito/annotorious-openseadragon"^^xsd:anyURI ;
     foaf:name "Annotorious-OpenSeaDragon" .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> a ns3:CartesianCS ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> a ns2:CartesianCS ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units"@en ;
-    ns3:asSVG "<svg width='400' height='250' viewbox='0 0 375 220'><defs><marker id='arrowhead' markerWidth='10' markerHeight='7' refX='0' refY='2' orient='auto'><polygon points='0 0, 4 2, 0 4' /></marker></defs><line x1='20' y1='200' x2='200' y2='200' stroke='red' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='110' y='220' class='small'>X: Cartesian X Axis (om:millimetre)</text><line x1='20' y1='200' x2='20' y2='20' stroke='green' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='35' y='20' class='small'>Y: Cartesian Y Axis (om:millimetre)</text><line x1='20' y1='200' x2='190' y2='30' stroke='blue' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='210' y='25' class='small'>Z: Cartesian Z Axis (om:millimetre)</text></svg>"^^ns3:svgLiteral ;
-    ns3:asWKT "CS[\"cartesian\",3],AXIS[\"X\", \"geocentricX\", ORDER[1],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Y\", \"geocentricY\", ORDER[2],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Z\", \"geocentricZ\", ORDER[3],            LENGTHUNIT[\"millimetre\",1]        ]]"^^<http://www.opengis.net/ont/geosparql/crs#wktLiteral> ;
-    ns3:axis <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1>,
+    ns2:asSVG "<svg width='400' height='250' viewbox='0 0 375 220'><defs><marker id='arrowhead' markerWidth='10' markerHeight='7' refX='0' refY='2' orient='auto'><polygon points='0 0, 4 2, 0 4' /></marker></defs><line x1='20' y1='200' x2='200' y2='200' stroke='red' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='110' y='220' class='small'>X: Cartesian X Axis (om:millimetre)</text><line x1='20' y1='200' x2='20' y2='20' stroke='green' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='35' y='20' class='small'>Y: Cartesian Y Axis (om:millimetre)</text><line x1='20' y1='200' x2='190' y2='30' stroke='blue' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='210' y='25' class='small'>Z: Cartesian Z Axis (om:millimetre)</text></svg>"^^ns2:svgLiteral ;
+    ns2:asWKT "CS[\"cartesian\",3],AXIS[\"X\", \"geocentricX\", ORDER[1],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Y\", \"geocentricY\", ORDER[2],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Z\", \"geocentricZ\", ORDER[3],            LENGTHUNIT[\"millimetre\",1]        ]]"^^<http://www.opengis.net/ont/geosparql/crs#wktLiteral> ;
+    ns2:axis <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1>,
         <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2>,
         <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> .
 
