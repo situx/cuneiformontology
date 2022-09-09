@@ -19,6 +19,7 @@ withlines=False
 withcharoccs=False
 withglyphs=False
 compreftypes={"PCA":"http://purl.org/meshsparql#PCAReference"}
+wedgetypevalues={"a":"cunei:PaleoCode_A","b":"cunei:PaleoCode_B","c":"cunei:PaleoCode_C","d":"cunei:PaleoCode_D","e":"cunei:PaleoCode_E","f":"cunei:PaleoCode_F","w":"cunei:PaleoCode_W"}
 
 def coptoRDF(fw,crsnamespace,indid,opaswkt,induid):
     induuid=induid.replace("#","")
@@ -240,6 +241,8 @@ for tabname in tabletnames:
                 res.write("<"+str(indid)+"_body_wedgetype> oa:motivatedBy oa:classifying .\n")
                 res.write("<"+str(indid)+"_body_wedgetype> oa:purpose oa:tagging .\n")
                 res.write("<"+str(indid)+"_body_wedgetype> rdfs:label \"Annotation Body: Wedge Type "+str(wedgetype)+"\"@en .\n")
+                if wedgetype in wedgetypevalues:
+                    res.write("<"+str(namespaceitems)+str(tabname)+"_"+str(tabletside)+"_line"+str(lineindex)+"_char"+str(charindex)+"_wedge"+str(wedgeindex)+"_glyph> rdf:type "+str(wedgetypevalues[wedgetype])+" .\n")
                 res.write("<"+str(indid)+"_body_wedgetype> rdf:value \""+str(wedgetype)+"\"^^xsd:string .\n")
             if columnindex!=None and columnindex!="":
                 res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_columnindex> .\n")
