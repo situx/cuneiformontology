@@ -281,7 +281,12 @@ for tabname in tabletnames:
                 if wedgetype in wedgetypevalues:
                     res.write("<"+str(namespaceitems)+str(tabname)+"_"+str(tabletside)+"_line"+str(lineindex)+"_char"+str(charindex)+"_wedge"+str(wedgeindex)+"_glyph> rdf:type "+str(wedgetypevalues[wedgetype])+" .\n")
                     res.write(str(wedgetypevalues[wedgetype])+" rdfs:subClassOf cunei:PaleoCodeWedgeType .\n")
+                    res.write(str(wedgetypevalues[wedgetype])+" rdf:type owl:Class .\n")
+                    res.write("cunei:PaleoCodeWedgeType rdfs:label \"PaleoCode Wedge type\"@en .\n")
                     res.write("cunei:PaleoCodeWedgeType rdfs:subClassOf cunei:WedgeType .\n")
+                    res.write("cunei:PaleoCodeWedgeType rdf:type owl:Class .\n")
+                    res.write("cunei:WedgeType rdf:type owl:Class .\n")
+                    res.write("cunei:WedgeType rdfs:label \"wedge type\"@en .\n")
                     res.write("cunei:WedgeType rdfs:subClassOf prov:Entity .\n")
                 else:
                     res.write("<"+str(namespaceitems)+str(tabname)+"_"+str(tabletside)+"_line"+str(lineindex)+"_char"+str(charindex)+"_wedge"+str(wedgeindex)+"_glyph> rdf:type cunei:WedgeGlyph .\n")
