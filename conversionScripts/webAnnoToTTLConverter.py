@@ -345,7 +345,7 @@ for tabname in tabletnames:
                     res.write("<"+str(indid)+"_target3d_meshrefselector> rdfs:label \"3D Annotation target meshref selector of Annotation of Wedge at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" wedge "+str(wedgeindex)+" on a 3D Mesh\"@en .\n")
                 else:
                     res.write("<"+str(indid)+"_target3d_meshrefselector> rdfs:label \"3D Annotation target meshref selector of Annotation of Wedge at "+str(tabname)+" "+str(tabletside)+" on a 3D Mesh\"@en .\n")
-                res.write("<"+str(indid)+"_target3d_meshrefselector> rdf:value \"https://situx.github.io/cuneiformontology/examples/meshanno/"+str(key)+"/\"^^xsd:anyURI .\n")
+                res.write("<"+str(indid)+"_target3d_meshrefselector> rdf:value \"https://situx.github.io/cuneiformontology/examples/meshanno/"+str(key).replace("#","")+"/\"^^xsd:anyURI .\n")
                 res.write("<"+str(indid)+"_target3d> oa:hasSelector  <"+str(indid)+"_target3d_labelselector> .\n")
                 res.write("msp:MeshLabelSelector rdfs:subClassOf oa:Selector .\n")
                 res.write("<"+str(indid)+"_target3d_labelselector> rdf:type msp:MeshLabelSelector .\n")

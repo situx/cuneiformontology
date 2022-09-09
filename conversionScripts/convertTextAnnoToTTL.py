@@ -13,57 +13,67 @@ lineindexreverse={}
 charindexcounter=0
 wordindexcounter=0
 lineindexcounter=0
-linestart=re.compile("^([0-9]+)\.")
+linestart=re.compile("^([0-9]+)\.(.*)$")
 def indexTransliteration(transliteration):  
-    charindexcounter=0
-    wordindexcounter=0
-    lineindexcounter=0
+    charindexcounter=2
+    wordindexcounter=2
+    lineindexcounter=2
     currentside="front"
     for line in transliteration.split("\n"):
         if line.startswith("@") or line.startswith("#"):
-            lineindexcounter+=len(line)+1
-            wordindexcounter+=len(line)+1
-            charindexcounter+=len(line)+1
+            if iswindowsformatted:
+                lineindexcounter+=len(line)+2
+                wordindexcounter+=len(line)+2
+                charindexcounter+=len(line)+2
+            else:
+                lineindexcounter+=len(line)+1
+                wordindexcounter+=len(line)+1
+                charindexcounter+=len(line)+1
             if line.startswith("@") and not line.startswith("@tablet"):
                 currentside=line.replace("@","")              
             continue
         lm=linestart.match(line)
         if lm:      
             linenumber=lm.groups()[0]
+            linecontent=lm.groups()[1][1:]
             lineindex[str(linenumber)]={"start":lineindexcounter,"end":lineindexcounter+len(line),"id":str(linenumber)}
             lineindexreverse[str(lineindexcounter)]={"start":lineindexcounter,"end":lineindexcounter+len(line),"id":str(currentside)+"_"+str(linenumber)}
-            wordindexcounter+=int(lm.groups()[0])+2
-            charindexcounter+=int(lm.groups()[0])+2
+            wordindexcounter+=len(lm.groups()[0])+1
+            charindexcounter+=len(lm.groups()[0])+1
             wordcounter=1
-            for word in line.split(" "):
-                wordindex[str(linenumber)+"_"+str(wordcounter)]={"start":wordindexcounter,"end":wordindexcounter+len(word),"id":str(linenumber)+"_"+str(wordcounter)}
-                wordindexreverse[str(wordindexcounter)]={"start":wordindexcounter,"end":wordindexcounter+len(word),"id":str(currentside)+"_line"+str(linenumber)+"_word"+str(wordcounter),"line":linenumber,"word":wordcounter}
+            print("LineContent: "+str(linecontent))
+            for word in linecontent.split(" "):
+                print("Word: "+str(word))
+                print("Word: "+str(wordindexcounter))
+                wordindex[str(linenumber)+"_"+str(wordcounter)]={"start":wordindexcounter,"end":wordindexcounter+len(word),"exact":str(word),"id":str(linenumber)+"_"+str(wordcounter)}
+                wordindexreverse[str(wordindexcounter)]={"start":wordindexcounter,"end":wordindexcounter+len(word),"id":str(currentside)+"_line"+str(linenumber)+"_word"+str(wordcounter),"exact":str(word),"line":linenumber,"word":wordcounter}
                 charcounter=1
-                for chara in word.split("-"):
-                    charindex[str(linenumber)+"_"+str(charcounter)]={"start":charindexcounter,"end":charindexcounter+len(chara),"id":str(linenumber)+"_"+str(charcounter)}
-                    charindexreverse[str(charindexcounter)]={"start":charindexcounter,"end":charindexcounter+len(chara),"id":str(currentside)+"_line"+str(linenumber)+"_char"+str(charcounter),"line":linenumber,"char":charcounter}
+                for chara in re.split("-|\.",word):
+                    charindex[str(linenumber)+"_"+str(charcounter)]={"start":charindexcounter,"end":charindexcounter+len(chara),"exact":str(chara),"id":str(linenumber)+"_"+str(charcounter)}
+                    charindexreverse[str(charindexcounter)]={"start":charindexcounter,"end":charindexcounter+len(chara),"exact":str(chara),"id":str(currentside)+"_line"+str(linenumber)+"_char"+str(charcounter),"line":linenumber,"char":charcounter}
                     charindexcounter+=len(chara)+1
                     charcounter+=1              
                 wordindexcounter+=len(word)+1
                 wordcounter+=1                   
-        wordindexcounter+=1
-        charindexcounter+=1
         lineindexcounter+=1
 
-def relateAnnotationToTransliteration(startindex,endindex,namespace,tabid):
+def relateAnnotationToTransliteration(startindex,endindex,namespace,tabid,transliteration):
     resuris={}
-    #print(str(startindex)+" - "+str(endindex))
+    print("RelToTrans: "+str(startindex)+" - "+str(endindex))
+    startindex+=2
+    endindex+=2
+    print(transliteration[startindex:endindex])
     #print(wordindexreverse)
     #print(charindexreverse)
     for word in wordindexreverse:
-        if int(word)>int(startindex) and int(word)<int(endindex):
-            if int(wordindexreverse[word]["end"])<endindex:
+        if int(word)>=int(startindex) and int(word)<=int(endindex):
+            if int(wordindexreverse[word]["end"])<=endindex:
                 resuris["<"+str(namespace)+str(tabid)+"_transliteration1_"+str(wordindexreverse[word]["id"])+">"]=wordindexreverse[word]
     for chara in charindexreverse:
-        if int(chara)>int(startindex) and int(chara)<int(endindex):
-            if int(charindexreverse[chara]["end"])<endindex:
+        if int(chara)>=int(startindex) and int(chara)<=int(endindex):
+            if int(charindexreverse[chara]["end"])<=endindex:
                 resuris["<"+str(namespace)+str(tabid)+"_transliteration1_"+str(charindexreverse[chara]["id"])+">"]=charindexreverse[chara]
-    print(resuris)
+    print("RelToTransRes: "+str(resuris))
     return resuris
 
 origtabletside="front"
@@ -80,6 +90,7 @@ filename="../examples/"+str(tabletname)+"/ttl/"+str(tabletname)+".atf"
 withlines=False
 withcharoccs=False
 withglyphs=False
+iswindowsformatted=False
 
 
 for tabname in tabletnames:
@@ -95,8 +106,10 @@ for tabname in tabletnames:
         continue
     f = open(filename,'r',encoding="utf-8")
     data = json.load(f)
-    f = open(translitfilename,'r',encoding="utf-8")
+    f = open(translitfilename,'r')
     transliteration=f.read()
+    if "\r\n" in transliteration:
+        iswindowsformatted=True
     indexTransliteration(transliteration)
     res = open(filename.replace(".json",".ttl"),'w',encoding="utf-8")
     res.write("""
@@ -145,6 +158,10 @@ for tabname in tabletnames:
         ischarannotation=False
         islineannotation=False
         isphraseannotation=False
+        lemmacitation=None
+        lemmaform=None
+        language=None
+        guideword=None
         curtranslit=""
         curline=0
         curword=0
@@ -158,6 +175,14 @@ for tabname in tabletnames:
                     iswordannotation=True
                 if item["purpose"]=="tagging" and "source" in item and item["source"]["id"]=="http://purl.org/cuneiform/Character":
                     ischarannotation=True
+                if item["purpose"]=="Lemma (Citation Form)":
+                    lemmacitation=item["value"]
+                if item["purpose"]=="Transcription (Babylonian Reading)":
+                    lemmaform=item["value"]
+                if item["purpose"]=="GuideWord":
+                    guideword=item["value"]
+                if item["purpose"]=="Language":
+                    language=item["value"]
         if "target" in keyobj:
             #print(keyobj["target"])
             source=filename
@@ -177,7 +202,7 @@ for tabname in tabletnames:
         res.write("<"+str(indid)+"> rdfs:label \"Annotation of text passage of transliteration 1 of "+str(tabname)+" \"@en .\n")
         res.write("<"+str(indid)+"> <http://purl.org/dc/terms/rights> \"https://creativecommons.org/publicdomain/zero/1.0/\"^^xsd:anyURI .\n")
         targetcounter=1
-        resuris=relateAnnotationToTransliteration(startindex,endindex,namespace,tabname)
+        resuris=relateAnnotationToTransliteration(startindex,endindex,namespace,tabname,transliteration)
         for anntar in resuris:
             if ("word" in resuris[anntar] and iswordannotation) or ("char" in resuris[anntar] and ischarannotation):
                 print(str(anntar)+" "+str(startindex)+" "+str(endindex))
@@ -197,6 +222,32 @@ for tabname in tabletnames:
                 targetcounter+=1
         if "body" in keyobj:
             for item in keyobj["body"]:
+                if item["purpose"]=="Lemma (Citation Form)":
+                    res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_lemma> .\n")
+                    res.write("<"+str(indid)+"_body_lemma> rdf:type oa:TextualBody .\n")
+                    res.write("<"+str(indid)+"_body_lemma> oa:motivatedBy oa:tagging .\n") 
+                    res.write("<"+str(indid)+"_body_lemma> rdfs:label \"Lemma: "+str(item["value"])+"\"@en .\n")
+                    res.write("<"+str(indid)+"_body_lemma> rdf:value \""+str(item["value"])+"\"^^xsd:string .\n")
+                    lemmacitation=item["value"]
+                if item["purpose"]=="Transcription (Babylonian Reading)":
+                    res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_transcription> .\n")
+                    res.write("<"+str(indid)+"_body_transcription> rdf:type oa:TextualBody .\n")
+                    res.write("<"+str(indid)+"_body_guideword> oa:motivatedBy oa:describing .\n") 
+                    res.write("<"+str(indid)+"_body_transcription> rdfs:label \"Babylonian Reading: "+str(item["value"])+"\"@en .\n")
+                    res.write("<"+str(indid)+"_body_transcription> rdf:value \""+str(item["value"])+"\"^^xsd:string .\n")
+                if item["purpose"]=="GuideWord":
+                    res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_guideword> .\n")
+                    res.write("<"+str(indid)+"_body_guideword> rdf:type oa:TextualBody .\n")
+                    res.write("<"+str(indid)+"_body_guideword> oa:motivatedBy oa:tagging .\n") 
+                    res.write("<"+str(indid)+"_body_guideword> rdfs:label \"Guideword: "+str(item["value"])+"\"@en .\n")
+                    res.write("<"+str(indid)+"_body_guideword> rdf:value \""+str(item["value"])+"\"^^xsd:string .\n")
+                if item["purpose"]=="Language":
+                    res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_language> .\n")
+                    res.write("<"+str(indid)+"_body_language> rdf:type oa:TextualBody .\n")
+                    res.write("<"+str(indid)+"_body_language> oa:motivatedBy oa:tagging .\n") 
+                    res.write("<"+str(indid)+"_body_language> rdfs:label \"Language: "+str(item["value"])+"\"@en .\n")
+                    res.write("<"+str(indid)+"_body_language> rdf:value \""+str(item["value"])+"\"^^xsd:string .\n")
+                    language=item["value"]
                 if item["purpose"]=="classifying" and "source" in item and "/Q" in item["source"]:
                     res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_class_sense> .\n")
                     res.write("<"+str(indid)+"_body_class_sense> rdf:value \""+str(item["source"])+"\"^^xsd:anyURI .\n")
