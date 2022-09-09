@@ -1,6 +1,7 @@
 @prefix as: <https://www.w3.org/ns/activitystreams#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lemon: <http://lemon-model.net/lemon#> .
 @prefix ns1: <http://purl.org/dc/terms/> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -13,6 +14,66 @@
 oa:TextQuoteSelector a owl:Class ;
     rdfs:label "Text Quote Selector"@en ;
     rdfs:subClassOf oa:Selector .
+
+<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_lexicon_None> a lemon:Lexicon ;
+    lemon:entry <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Ilszu-abuszu_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/mahru_word> ;
+    lemon:language <http://www.lexvo.org/page/iso639-1/None> .
+
+<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_lexicon_akk> a lemon:Lexicon ;
+    lemon:entry <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Aja_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Annum-pi-Aja_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Awil-Szamasz-aszszar_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Iszdukinum_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Iszme-Sin_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Marduk-lamassaszu_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Marduk_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Nin-kalla_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Nur-Antim_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Rapasz-s,illi-Ea_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Samsu-iluna_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Saphu-liphur_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Sappatanum_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Sin-remeni_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Szamasz_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Szamaz_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Szu-Amurru_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/ana_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/awatu_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/bitu_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/daltu_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/epszu_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/eszret_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/gamaru_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/h,amisz_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/ita_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/itti_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/izuzzu_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/kaspu_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/libbu_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/mahru_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/maru_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/muszaru_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/nidutu_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/panu_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/ragamu_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/rebitu_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/reszu_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/sangu_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/saqalu_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/sikkuru_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/szamu_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/szanu_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/szattu_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/szinipu_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/tamu_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/tas,liltu_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/tiabu_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/u_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/ul_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/waklu_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/warkitu_word> ;
+    lemon:language <http://www.lexvo.org/page/iso639-1/akk> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_textannotations> a as:Collection ;
     rdfs:label "Text annotations on O147 transliteration 1"@en ;
@@ -89,6 +150,371 @@ oa:TextQuoteSelector a owl:Class ;
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ece8bf7a-52c1-41c3-b0be-a5a11475af03>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/fece81a5-0c1e-474d-81e8-b1f5f648daa4> ;
     rdfs:subClassOf skos:Collection .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Aja_word> a lemon:Word ;
+    rdfs:label "Word: Aja"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Aja_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Aja_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: Aja"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Annum-pi-Aja_word> a lemon:Word ;
+    rdfs:label "Word: Annum-pi-Aja"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Annum-pi-Aja_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Annum-pi-Aja_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: Annum-pi-Aja"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Awil-Szamasz-aszszar_word> a lemon:Word ;
+    rdfs:label "Word: Awil-Szamasz-aszszar"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Awil-Szamasz-aszszar_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Awil-Szamasz-aszszar_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: Awil-Szamasz-aszszar"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Ilszu-abuszu_word> a lemon:Word ;
+    rdfs:label "Word: Ilszu-abuszu"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Ilszu-abuszu_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Ilszu-abuszu_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: Ilszu-abuszu"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Iszdu-kinum_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: Iszdu-kinum"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Iszdukinum_word> a lemon:Word ;
+    rdfs:label "Word: Iszdukinum"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Iszdu-kinum_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Iszme-Sin_word> a lemon:Word ;
+    rdfs:label "Word: Iszme-Sin"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Iszme-Sin_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Iszme-Sin_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: Iszme-Sin"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Marduk-lamassaszu_word> a lemon:Word ;
+    rdfs:label "Word: Marduk-lamassaszu"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Marduk-lamassaszu_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Marduk-lamassaszu_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: Marduk-lamassaszu"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Marduk_word> a lemon:Word ;
+    rdfs:label "Word: Marduk"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Marduk_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Marduk_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: Marduk"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Nin-kalla_word> a lemon:Word ;
+    rdfs:label "Word: Nin-kalla"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Nin-kalla_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Nin-kalla_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: Nin-kalla"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Nur-Antim_word> a lemon:Word ;
+    rdfs:label "Word: Nur-Antim"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Nur-Antim_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Nur-Antim_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: Nur-Antim"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Rapasz-s,illi-Ea_word> a lemon:Word ;
+    rdfs:label "Word: Rapasz-s,illi-Ea"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Rapasz-s,illi-Ea_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Rapasz-s,illi-Ea_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: Rapasz-s,illi-Ea"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Samsu-iluna_word> a lemon:Word ;
+    rdfs:label "Word: Samsu-iluna"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Samsu-iluna_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Samsu-iluna_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: Samsu-iluna"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Saphu-liphur_word> a lemon:Word ;
+    rdfs:label "Word: Saphu-liphur"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Saphu-liphur_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Saphu-liphur_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: Saphu-liphur"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Sappatanum_word> a lemon:Word ;
+    rdfs:label "Word: Sappatanum"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Sappatanum_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Sappatanum_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: Sappatanum"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Sin-remeni_word> a lemon:Word ;
+    rdfs:label "Word: Sin-remeni"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Sin-remeni_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Sin-remeni_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: Sin-remeni"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Szamasz_word> a lemon:Word ;
+    rdfs:label "Word: Szamasz"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Szamasz_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Szamaz_word> a lemon:Word ;
+    rdfs:label "Word: Szamaz"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Szamasz_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Szu-Amurru_word> a lemon:Word ;
+    rdfs:label "Word: Szu-Amurru"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Szu-Amurru_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Szu-Amurru_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: Szu-Amurru"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/ana_word> a lemon:Word ;
+    rdfs:label "Word: ana"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/ana_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/ana_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: ana"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/awatu_word> a lemon:Word ;
+    rdfs:label "Word: awatu"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/awatu_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/awatu_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: awatu"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/bit_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: bit"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/bitam_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: bitam"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/bitu_word> a lemon:Word ;
+    rdfs:label "Word: bitu"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/bit_wordform>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/bitam_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/daltam_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: daltam"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/daltu_word> a lemon:Word ;
+    rdfs:label "Word: daltu"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/daltam_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/epszam_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: epszam"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/epszu_word> a lemon:Word ;
+    rdfs:label "Word: epszu"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/epszam_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/eszret_word> a lemon:Word ;
+    rdfs:label "Word: eszret"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/eszret_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/eszret_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: eszret"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/gamaru_word> a lemon:Word ;
+    rdfs:label "Word: gamaru"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/gamrat_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/gamrat_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: gamrat"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/h,amisz_word> a lemon:Word ;
+    rdfs:label "Word: h,amisz"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/h,amszat_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/h,amszat_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: h,amszat"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/iraggamu_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: iraggamu"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/iszam_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: iszam"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/iszaqqal_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: iszaqqal"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/ita_word> a lemon:Word ;
+    rdfs:label "Word: ita"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/ita_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/ita_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: ita"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/itmu_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: itmu"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/itti_word> a lemon:Word ;
+    rdfs:label "Word: itti"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/itti_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/itti_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: itti"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/izuzzu_word> a lemon:Word ;
+    rdfs:label "Word: izuzzu"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/izzizu_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/izzizu_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: izzizu"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/kaspim_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: kaspim"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/kaspu_word> a lemon:Word ;
+    rdfs:label "Word: kaspu"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/kaspim_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/libbiszu_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: libbiszu"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/libbu_word> a lemon:Word ;
+    rdfs:label "Word: libbu"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/libbiszu_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/mahar_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: mahar"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/mar_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: mar"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/maru_word> a lemon:Word ;
+    rdfs:label "Word: maru"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/mar_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/muszar_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: muszar"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/muszaru_word> a lemon:Word ;
+    rdfs:label "Word: muszaru"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/muszar_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/nidutam_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: nidutam"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/nidutu_word> a lemon:Word ;
+    rdfs:label "Word: nidutu"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/nidutam_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/panu_word> a lemon:Word ;
+    rdfs:label "Word: panu"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/panum_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/panum_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: panum"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/ragamu_word> a lemon:Word ;
+    rdfs:label "Word: ragamu"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/iraggamu_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/rebitu_word> a lemon:Word ;
+    rdfs:label "Word: rebitu"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/rebitum_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/rebitum_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: rebitum"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/ressu_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: ressu"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/reszu_word> a lemon:Word ;
+    rdfs:label "Word: reszu"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/ressu_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/sange_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: sange"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/sangu_word> a lemon:Word ;
+    rdfs:label "Word: sangu"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/sange_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/saqalu_word> a lemon:Word ;
+    rdfs:label "Word: saqalu"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/iszaqqal_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/sikkuram_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: sikkuram"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/sikkuru_word> a lemon:Word ;
+    rdfs:label "Word: sikkuru"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/sikkuram_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/szamu_word> a lemon:Word ;
+    rdfs:label "Word: szamu"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/iszam_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/szanu_word> a lemon:Word ;
+    rdfs:label "Word: szanu"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/szanum_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/szanum_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: szanum"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/szat_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: szat"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/szattu_word> a lemon:Word ;
+    rdfs:label "Word: szattu"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/szat_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/szinipiat_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: szinipiat"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/szinipu_word> a lemon:Word ;
+    rdfs:label "Word: szinipu"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/szinipiat_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/tab_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: tab"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/tamu_word> a lemon:Word ;
+    rdfs:label "Word: tamu"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/itmu_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/tas,liltam_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: tas,liltam"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/tas,liltu_word> a lemon:Word ;
+    rdfs:label "Word: tas,liltu"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/tas,liltam_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/tiabu_word> a lemon:Word ;
+    rdfs:label "Word: tiabu"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/tab_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/u_word> a lemon:Word ;
+    rdfs:label "Word: u"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/u_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/u_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: u"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/ul_word> a lemon:Word ;
+    rdfs:label "Word: ul"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/ul_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/ul_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: ul"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/wakil_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: wakil"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/waklu_word> a lemon:Word ;
+    rdfs:label "Word: waklu"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/wakil_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/warkiat_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: warkiat"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/warkitu_word> a lemon:Word ;
+    rdfs:label "Word: warkitu"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/warkiat_wordform> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0032a19b-e11a-4a83-884f-b8e1bbb0e489> a oa:Annotation ;
     rdfs:label "Annotation of text passage of transliteration 1 of O147 "@en ;
@@ -3963,6 +4389,13 @@ oa:TextQuoteSelector a owl:Class ;
     rdf:value "du3-a" ;
     oa:end 48 ;
     oa:start 43 .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/Szamasz_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: Szamasz"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/mahru_word> a lemon:Word ;
+    rdfs:label "Word: mahru"@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/O147/transliteration/mahar_wordform> .
 
 oa:Selector a owl:Class ;
     rdfs:subClassOf prov:Entity .

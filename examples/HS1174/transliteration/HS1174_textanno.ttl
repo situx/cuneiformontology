@@ -1,6 +1,7 @@
 @prefix as: <https://www.w3.org/ns/activitystreams#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lemon: <http://lemon-model.net/lemon#> .
 @prefix ns1: <http://purl.org/dc/terms/> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -13,6 +14,10 @@
 oa:TextQuoteSelector a owl:Class ;
     rdfs:label "Text Quote Selector"@en ;
     rdfs:subClassOf oa:Selector .
+
+<https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/HS1174_lexicon_None> a lemon:Lexicon ;
+    lemon:entry <file:///C:/Users/timohomburg/git/cuneiformontology/examples/HS1174/transliteration/Duku_word> ;
+    lemon:language <http://www.lexvo.org/page/iso639-1/None> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/HS1174_transliteration1_textannotations> a as:Collection ;
     rdfs:label "Text annotations on HS1174 transliteration 1"@en ;
@@ -31,6 +36,9 @@ oa:TextQuoteSelector a owl:Class ;
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/f5a98936-6492-4e77-b4c6-ddf57a2e40d2>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/fe8a78fb-5ef1-42e2-a764-bee6cdbf41b4> ;
     rdfs:subClassOf skos:Collection .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/HS1174/transliteration/Duku_word> a lemon:Word ;
+    rdfs:label "Word: Duku"@en .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/147fcf81-14df-4578-a917-0e3cefbfd17a> a oa:Annotation ;
     rdfs:label "Annotation of text passage of transliteration 1 of HS1174 "@en ;

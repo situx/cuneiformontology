@@ -1,6 +1,7 @@
 @prefix as: <https://www.w3.org/ns/activitystreams#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lemon: <http://lemon-model.net/lemon#> .
 @prefix ns1: <http://purl.org/dc/terms/> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -13,6 +14,12 @@
 oa:TextQuoteSelector a owl:Class ;
     rdfs:label "Text Quote Selector"@en ;
     rdfs:subClassOf oa:Selector .
+
+<https://situx.github.io/cuneiformontology/examples/tch92/textannotations/TCH92_lexicon_None> a lemon:Lexicon ;
+    lemon:entry <file:///C:/Users/timohomburg/git/cuneiformontology/examples/TCH92/transliteration/PIlhatu_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/TCH92/transliteration/Puttumeri_word>,
+        <file:///C:/Users/timohomburg/git/cuneiformontology/examples/TCH92/transliteration/_word> ;
+    lemon:language <http://www.lexvo.org/page/iso639-1/None> .
 
 <https://situx.github.io/cuneiformontology/examples/tch92/textannotations/TCH92_transliteration1_textannotations> a as:Collection ;
     rdfs:label "Text annotations on TCH92 transliteration 1"@en ;
@@ -61,6 +68,19 @@ oa:TextQuoteSelector a owl:Class ;
         <https://situx.github.io/cuneiformontology/examples/tch92/textannotations/f1acb85d-bc02-4286-b280-8a24688d47a1>,
         <https://situx.github.io/cuneiformontology/examples/tch92/textannotations/f904294e-7863-4e19-9864-4bdeed67931a> ;
     rdfs:subClassOf skos:Collection .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/TCH92/transliteration/PIlhatu_word> a lemon:Word ;
+    rdfs:label "Word: PIlhatu"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/TCH92/transliteration/Puttumeri_word> a lemon:Word ;
+    rdfs:label "Word: Puttumeri"@en .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/TCH92/transliteration/_word> a lemon:Word ;
+    rdfs:label "Word: "@en ;
+    lemon:form <file:///C:/Users/timohomburg/git/cuneiformontology/examples/TCH92/transliteration/_wordform> .
+
+<file:///C:/Users/timohomburg/git/cuneiformontology/examples/TCH92/transliteration/_wordform> a lemon:WordForm ;
+    rdfs:label "Wordform: "@en .
 
 <https://situx.github.io/cuneiformontology/examples/tch92/textannotations/07cab738-b4d4-4770-9e7a-8bca06ced1b8> a oa:Annotation ;
     rdfs:label "Annotation of text at TCH92  line 23 word 2 on transliteration"@en,

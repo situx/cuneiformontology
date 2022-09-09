@@ -229,7 +229,15 @@ for tabname in tabletnames:
                     res.write("<"+str(indid)+"_body_lemma> oa:motivatedBy oa:tagging .\n") 
                     res.write("<"+str(indid)+"_body_lemma> rdfs:label \"Lemma: "+str(item["value"])+"\"@en .\n")
                     res.write("<"+str(indid)+"_body_lemma> rdf:value \""+str(item["value"])+"\"^^xsd:string .\n")
-                    lemmacitation=item["value"]
+                    res.write("<"+str(namespace)+str(tabname)+"_lexicon_"+str(language)+"> rdf:type lemon:Lexicon .\n")
+                    res.write("<"+str(namespace)+str(tabname)+"_lexicon_"+str(language)+"> lemon:language <http://www.lexvo.org/page/iso639-1/"+str(language)+"> .\n")
+                    res.write("<"+str(namespace)+str(tabname)+"_lexicon_"+str(language)+"> lemon:entry <"+str(lemmacitation)+"_word> .\n")
+                    res.write("<"+str(lemmacitation)+"_word> rdf:type lemon:Word .\n")
+                    res.write("<"+str(lemmacitation)+"_word> rdfs:label \"Word: "+str(item["value"])+"\"@en .\n")
+                    if lemmaform!=None:
+                       res.write("<"+str(lemmacitation)+"_word> lemon:form <"+str(lemmaform)+"_wordform> .\n")
+                       res.write("<"+str(lemmaform)+"_wordform> rdf:type lemon:WordForm .\n")
+                       res.write("<"+str(lemmaform)+"_wordform> rdfs:label \"Wordform: "+str(lemmaform)+"\"@en .\n")
                 if item["purpose"]=="Transcription (Babylonian Reading)":
                     res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_transcription> .\n")
                     res.write("<"+str(indid)+"_body_transcription> rdf:type oa:TextualBody .\n")
