@@ -288,7 +288,7 @@ for tabname in tabletnames:
                 cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" cidoc:TXP3_is_rendered_by "+namespaceprefix+":"+str(currenttabletid)+"_transliteration1_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+"  .\n")
             if tabname in renderingvars:
                 for item in renderingvars[tabname]:
-                    cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" foaf:image \""+imageURLEscape(str(namespace)+"images/line/line_"+replaceNonURIChars(str(currentline))+"_"+str(tabname)+"_"+str(item)+"_"+str(tabsideid[currentside])+"_"+str(currentside).replace("obverse","front").replace("reverse","back"))+".jpg\"^^xsd:anyURI .\n")
+                    cdlitabs.add(str(namespaceprefix)+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" foaf:image \""+imageURLEscape(str(namespace)+"images/line/line_"+replaceNonURIChars(str(currentline))+"_"+str(tabname)+"_"+str(item)+"_"+str(currentside).replace("obverse","front").replace("reverse","back"))+".jpg\"^^xsd:anyURI .\n")
             elif tabname in withid:
                 cdlitabs.add(namespaceprefix+":"+str(currenttabletid)+"_"+currentsideuri+"_line"+replaceNonURIChars(str(currentline))+" foaf:image \""+imageURLEscape(str(namespace)+"images/line/line_"+replaceNonURIChars(str(currentline))+"_"+str(tabname)+"_"+str(tabsideid[currentside])+"_"+str(currentside).replace("obverse","front").replace("reverse","back"))+".jpg\"^^xsd:anyURI .\n")
             else:
