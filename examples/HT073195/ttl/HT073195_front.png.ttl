@@ -1,11 +1,11 @@
 @prefix as: <https://www.w3.org/ns/activitystreams#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix geocrs: <http://situx.github.io/proj4rdf/ont/crs/> .
 @prefix msp: <http://purl.org/meshsparql#> .
 @prefix ns1: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns2: <http://www.opengis.net/ont/crs/> .
+@prefix ns2: <http://purl.org/dc/terms/> .
+@prefix ns3: <http://www.opengis.net/ont/crs/> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -591,31 +591,31 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
     om:hasUnit om:millimetre ;
     rdf:value 0e+00 .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1> a ns2:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1> a ns3:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 1"@en ;
     om:hasUnit om:millimetre ;
-    ns2:abbreviation "X" ;
-    ns2:axisDirection ns2:geocentricX ;
-    ns2:axisOrder "1"^^xsd:int .
+    ns3:abbreviation "X" ;
+    ns3:axisDirection ns3:geocentricX ;
+    ns3:axisOrder "1"^^xsd:int .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2> a ns2:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2> a ns3:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 2"@en ;
     om:hasUnit om:millimetre ;
-    ns2:abbreviation "Y" ;
-    ns2:axisDirection ns2:geocentricY ;
-    ns2:axisOrder "2"^^xsd:int .
+    ns3:abbreviation "Y" ;
+    ns3:axisDirection ns3:geocentricY ;
+    ns3:axisOrder "2"^^xsd:int .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> a ns2:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> a ns3:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 3"@en ;
     om:hasUnit om:millimetre ;
-    ns2:abbreviation "Z" ;
-    ns2:axisDirection ns2:geocentricZ ;
-    ns2:axisOrder "3"^^xsd:int .
+    ns3:abbreviation "Z" ;
+    ns3:axisDirection ns3:geocentricZ ;
+    ns3:axisOrder "3"^^xsd:int .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/11b957da-50e2-487b-9501-3be9638eab44> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 7 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/11b957da-50e2-487b-9501-3be9638eab44_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/11b957da-50e2-487b-9501-3be9638eab44_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/11b957da-50e2-487b-9501-3be9638eab44_body_line>,
@@ -656,7 +656,7 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/11b957da-50e2-487b-9501-3be9638eab44_target1> a owl:NamedIndividual ;
     rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 4 char 7 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/11b957da-50e2-487b-9501-3be9638eab44_target1_selector> ;
-    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
+    oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611837:841081/full/full/0/default.jpg> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/11b957da-50e2-487b-9501-3be9638eab44_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 4 char 7 on 3D rendering"@en ;
@@ -664,8 +664,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 1 char 1 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_body_line>,
@@ -707,7 +707,7 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_target1> a owl:NamedIndividual ;
     rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 1 char 1 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_target1_selector> ;
-    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
+    oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611837:841081/full/full/0/default.jpg> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 1 char 1 on 3D rendering"@en ;
@@ -716,12 +716,17 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_target3d> a owl:NamedIndividual ;
     rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 1 char 1 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_target3d_labelselector>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_target3d_meshrefselector>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_target3d_selector> ;
     oa:hasSource <https://heidicon.ub.uni-heidelberg.de/eas/partitions/5/0/841000/841085/667f74981bf43066b1b10ecd71a86412da7c3074/application/x-ply/HT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FuncValColor_Legacy.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_target3d_labelselector> a msp:MeshLabelSelector ;
     rdfs:label "3D Annotation target labeling selector of Annotation of Glyph at HT073195 obverse line 1 char 1 on a 3D Mesh"@en ;
     rdf:value "[v[labelid=7]]"^^msp:selectorLiteral .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_target3d_meshrefselector> a msp:MeshReferenceSelector ;
+    rdfs:label "3D Annotation target meshref selector of Annotation of Glyph at HT073195 obverse line 1 char 1 on a 3D Mesh"@en ;
+    rdf:value "https://situx.github.io/cuneiformontology/examples/meshanno/#2f61ab22-5e2e-4bd3-bf07-143503771fa7/"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/2f61ab22-5e2e-4bd3-bf07-143503771fa7_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 1 char 1 on a 3D Mesh"@en ;
@@ -740,8 +745,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 2 char 2 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_body_line>,
@@ -783,7 +788,7 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_target1> a owl:NamedIndividual ;
     rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 2 char 2 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_target1_selector> ;
-    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
+    oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611837:841081/full/full/0/default.jpg> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 2 char 2 on 3D rendering"@en ;
@@ -792,12 +797,17 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_target3d> a owl:NamedIndividual ;
     rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 2 char 2 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_target3d_labelselector>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_target3d_meshrefselector>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_target3d_selector> ;
     oa:hasSource <https://heidicon.ub.uni-heidelberg.de/eas/partitions/5/0/841000/841085/667f74981bf43066b1b10ecd71a86412da7c3074/application/x-ply/HT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FuncValColor_Legacy.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_target3d_labelselector> a msp:MeshLabelSelector ;
     rdfs:label "3D Annotation target labeling selector of Annotation of Glyph at HT073195 obverse line 2 char 2 on a 3D Mesh"@en ;
     rdf:value "[v[labelid=1]]"^^msp:selectorLiteral .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_target3d_meshrefselector> a msp:MeshReferenceSelector ;
+    rdfs:label "3D Annotation target meshref selector of Annotation of Glyph at HT073195 obverse line 2 char 2 on a 3D Mesh"@en ;
+    rdf:value "https://situx.github.io/cuneiformontology/examples/meshanno/#342a8a96-28c6-4727-90c2-0835ccf32acd/"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/342a8a96-28c6-4727-90c2-0835ccf32acd_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 2 char 2 on a 3D Mesh"@en ;
@@ -816,8 +826,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 3 char 4 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_body_line>,
@@ -859,7 +869,7 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_target1> a owl:NamedIndividual ;
     rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 3 char 4 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_target1_selector> ;
-    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
+    oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611837:841081/full/full/0/default.jpg> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 3 char 4 on 3D rendering"@en ;
@@ -868,12 +878,17 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_target3d> a owl:NamedIndividual ;
     rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 3 char 4 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_target3d_labelselector>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_target3d_meshrefselector>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_target3d_selector> ;
     oa:hasSource <https://heidicon.ub.uni-heidelberg.de/eas/partitions/5/0/841000/841085/667f74981bf43066b1b10ecd71a86412da7c3074/application/x-ply/HT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FuncValColor_Legacy.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_target3d_labelselector> a msp:MeshLabelSelector ;
     rdfs:label "3D Annotation target labeling selector of Annotation of Glyph at HT073195 obverse line 3 char 4 on a 3D Mesh"@en ;
     rdf:value "[v[labelid=10]]"^^msp:selectorLiteral .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_target3d_meshrefselector> a msp:MeshReferenceSelector ;
+    rdfs:label "3D Annotation target meshref selector of Annotation of Glyph at HT073195 obverse line 3 char 4 on a 3D Mesh"@en ;
+    rdf:value "https://situx.github.io/cuneiformontology/examples/meshanno/#3c2b58f8-0830-427f-b388-cbebf1a7cf14/"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/3c2b58f8-0830-427f-b388-cbebf1a7cf14_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 3 char 4 on a 3D Mesh"@en ;
@@ -892,8 +907,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 4 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_body_line>,
@@ -935,7 +950,7 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_target1> a owl:NamedIndividual ;
     rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 4 char 4 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_target1_selector> ;
-    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
+    oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611837:841081/full/full/0/default.jpg> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 4 char 4 on 3D rendering"@en ;
@@ -944,12 +959,17 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_target3d> a owl:NamedIndividual ;
     rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 4 char 4 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_target3d_labelselector>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_target3d_meshrefselector>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_target3d_selector> ;
     oa:hasSource <https://heidicon.ub.uni-heidelberg.de/eas/partitions/5/0/841000/841085/667f74981bf43066b1b10ecd71a86412da7c3074/application/x-ply/HT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FuncValColor_Legacy.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_target3d_labelselector> a msp:MeshLabelSelector ;
     rdfs:label "3D Annotation target labeling selector of Annotation of Glyph at HT073195 obverse line 4 char 4 on a 3D Mesh"@en ;
     rdf:value "[v[labelid=6]]"^^msp:selectorLiteral .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_target3d_meshrefselector> a msp:MeshReferenceSelector ;
+    rdfs:label "3D Annotation target meshref selector of Annotation of Glyph at HT073195 obverse line 4 char 4 on a 3D Mesh"@en ;
+    rdf:value "https://situx.github.io/cuneiformontology/examples/meshanno/#4e29b703-128a-4b0f-a7f2-0f4ac2f3e691/"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/4e29b703-128a-4b0f-a7f2-0f4ac2f3e691_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 4 char 4 on a 3D Mesh"@en ;
@@ -968,8 +988,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 2 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_body_line>,
@@ -1011,7 +1031,7 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_target1> a owl:NamedIndividual ;
     rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 4 char 2 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_target1_selector> ;
-    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
+    oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611837:841081/full/full/0/default.jpg> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 4 char 2 on 3D rendering"@en ;
@@ -1020,12 +1040,17 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_target3d> a owl:NamedIndividual ;
     rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 4 char 2 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_target3d_labelselector>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_target3d_meshrefselector>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_target3d_selector> ;
     oa:hasSource <https://heidicon.ub.uni-heidelberg.de/eas/partitions/5/0/841000/841085/667f74981bf43066b1b10ecd71a86412da7c3074/application/x-ply/HT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FuncValColor_Legacy.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_target3d_labelselector> a msp:MeshLabelSelector ;
     rdfs:label "3D Annotation target labeling selector of Annotation of Glyph at HT073195 obverse line 4 char 2 on a 3D Mesh"@en ;
     rdf:value "[v[labelid=5]]"^^msp:selectorLiteral .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_target3d_meshrefselector> a msp:MeshReferenceSelector ;
+    rdfs:label "3D Annotation target meshref selector of Annotation of Glyph at HT073195 obverse line 4 char 2 on a 3D Mesh"@en ;
+    rdf:value "https://situx.github.io/cuneiformontology/examples/meshanno/#51752fae-341c-4300-8459-a040fa24e2e4/"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/51752fae-341c-4300-8459-a040fa24e2e4_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 4 char 2 on a 3D Mesh"@en ;
@@ -1044,8 +1069,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 5 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_body_line>,
@@ -1087,7 +1112,7 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_target1> a owl:NamedIndividual ;
     rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 4 char 5 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_target1_selector> ;
-    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
+    oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611837:841081/full/full/0/default.jpg> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 4 char 5 on 3D rendering"@en ;
@@ -1096,12 +1121,17 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_target3d> a owl:NamedIndividual ;
     rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 4 char 5 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_target3d_labelselector>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_target3d_meshrefselector>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_target3d_selector> ;
     oa:hasSource <https://heidicon.ub.uni-heidelberg.de/eas/partitions/5/0/841000/841085/667f74981bf43066b1b10ecd71a86412da7c3074/application/x-ply/HT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FuncValColor_Legacy.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_target3d_labelselector> a msp:MeshLabelSelector ;
     rdfs:label "3D Annotation target labeling selector of Annotation of Glyph at HT073195 obverse line 4 char 5 on a 3D Mesh"@en ;
     rdf:value "[v[labelid=15]]"^^msp:selectorLiteral .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_target3d_meshrefselector> a msp:MeshReferenceSelector ;
+    rdfs:label "3D Annotation target meshref selector of Annotation of Glyph at HT073195 obverse line 4 char 5 on a 3D Mesh"@en ;
+    rdf:value "https://situx.github.io/cuneiformontology/examples/meshanno/#74b0bb9e-7847-475a-83aa-9f49d88d4e39/"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/74b0bb9e-7847-475a-83aa-9f49d88d4e39_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 4 char 5 on a 3D Mesh"@en ;
@@ -1120,8 +1150,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/796378b1-43be-4a50-8f63-ea1b5211349a> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 3 char 6 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/796378b1-43be-4a50-8f63-ea1b5211349a_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/796378b1-43be-4a50-8f63-ea1b5211349a_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/796378b1-43be-4a50-8f63-ea1b5211349a_body_line>,
@@ -1162,7 +1192,7 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/796378b1-43be-4a50-8f63-ea1b5211349a_target1> a owl:NamedIndividual ;
     rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 3 char 6 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/796378b1-43be-4a50-8f63-ea1b5211349a_target1_selector> ;
-    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
+    oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611837:841081/full/full/0/default.jpg> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/796378b1-43be-4a50-8f63-ea1b5211349a_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 3 char 6 on 3D rendering"@en ;
@@ -1170,8 +1200,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 2 char 3 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_body_line>,
@@ -1213,7 +1243,7 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_target1> a owl:NamedIndividual ;
     rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 2 char 3 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_target1_selector> ;
-    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
+    oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611837:841081/full/full/0/default.jpg> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 2 char 3 on 3D rendering"@en ;
@@ -1222,12 +1252,17 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_target3d> a owl:NamedIndividual ;
     rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 2 char 3 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_target3d_labelselector>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_target3d_meshrefselector>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_target3d_selector> ;
     oa:hasSource <https://heidicon.ub.uni-heidelberg.de/eas/partitions/5/0/841000/841085/667f74981bf43066b1b10ecd71a86412da7c3074/application/x-ply/HT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FuncValColor_Legacy.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_target3d_labelselector> a msp:MeshLabelSelector ;
     rdfs:label "3D Annotation target labeling selector of Annotation of Glyph at HT073195 obverse line 2 char 3 on a 3D Mesh"@en ;
     rdf:value "[v[labelid=13]]"^^msp:selectorLiteral .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_target3d_meshrefselector> a msp:MeshReferenceSelector ;
+    rdfs:label "3D Annotation target meshref selector of Annotation of Glyph at HT073195 obverse line 2 char 3 on a 3D Mesh"@en ;
+    rdf:value "https://situx.github.io/cuneiformontology/examples/meshanno/#8e692dd8-375b-4468-b81d-46b464ad3cfc/"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/8e692dd8-375b-4468-b81d-46b464ad3cfc_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 2 char 3 on a 3D Mesh"@en ;
@@ -1246,8 +1281,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 6 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_body_line>,
@@ -1289,7 +1324,7 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_target1> a owl:NamedIndividual ;
     rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 4 char 6 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_target1_selector> ;
-    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
+    oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611837:841081/full/full/0/default.jpg> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 4 char 6 on 3D rendering"@en ;
@@ -1298,12 +1333,17 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_target3d> a owl:NamedIndividual ;
     rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 4 char 6 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_target3d_labelselector>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_target3d_meshrefselector>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_target3d_selector> ;
     oa:hasSource <https://heidicon.ub.uni-heidelberg.de/eas/partitions/5/0/841000/841085/667f74981bf43066b1b10ecd71a86412da7c3074/application/x-ply/HT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FuncValColor_Legacy.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_target3d_labelselector> a msp:MeshLabelSelector ;
     rdfs:label "3D Annotation target labeling selector of Annotation of Glyph at HT073195 obverse line 4 char 6 on a 3D Mesh"@en ;
     rdf:value "[v[labelid=16]]"^^msp:selectorLiteral .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_target3d_meshrefselector> a msp:MeshReferenceSelector ;
+    rdfs:label "3D Annotation target meshref selector of Annotation of Glyph at HT073195 obverse line 4 char 6 on a 3D Mesh"@en ;
+    rdf:value "https://situx.github.io/cuneiformontology/examples/meshanno/#9994b419-0d27-4ba6-9ead-79d86d3c6eef/"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/9994b419-0d27-4ba6-9ead-79d86d3c6eef_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 4 char 6 on a 3D Mesh"@en ;
@@ -1322,8 +1362,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 2 char 1 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_body_line>,
@@ -1365,7 +1405,7 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_target1> a owl:NamedIndividual ;
     rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 2 char 1 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_target1_selector> ;
-    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
+    oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611837:841081/full/full/0/default.jpg> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 2 char 1 on 3D rendering"@en ;
@@ -1374,12 +1414,17 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_target3d> a owl:NamedIndividual ;
     rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 2 char 1 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_target3d_labelselector>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_target3d_meshrefselector>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_target3d_selector> ;
     oa:hasSource <https://heidicon.ub.uni-heidelberg.de/eas/partitions/5/0/841000/841085/667f74981bf43066b1b10ecd71a86412da7c3074/application/x-ply/HT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FuncValColor_Legacy.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_target3d_labelselector> a msp:MeshLabelSelector ;
     rdfs:label "3D Annotation target labeling selector of Annotation of Glyph at HT073195 obverse line 2 char 1 on a 3D Mesh"@en ;
     rdf:value "[v[labelid=8]]"^^msp:selectorLiteral .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_target3d_meshrefselector> a msp:MeshReferenceSelector ;
+    rdfs:label "3D Annotation target meshref selector of Annotation of Glyph at HT073195 obverse line 2 char 1 on a 3D Mesh"@en ;
+    rdf:value "https://situx.github.io/cuneiformontology/examples/meshanno/#ad8d2422-8b5a-44ba-80db-baffcfbaa808/"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ad8d2422-8b5a-44ba-80db-baffcfbaa808_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 2 char 1 on a 3D Mesh"@en ;
@@ -1398,8 +1443,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 3 char 2 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_body_line>,
@@ -1441,7 +1486,7 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_target1> a owl:NamedIndividual ;
     rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 3 char 2 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_target1_selector> ;
-    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
+    oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611837:841081/full/full/0/default.jpg> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 3 char 2 on 3D rendering"@en ;
@@ -1450,12 +1495,17 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_target3d> a owl:NamedIndividual ;
     rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 3 char 2 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_target3d_labelselector>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_target3d_meshrefselector>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_target3d_selector> ;
     oa:hasSource <https://heidicon.ub.uni-heidelberg.de/eas/partitions/5/0/841000/841085/667f74981bf43066b1b10ecd71a86412da7c3074/application/x-ply/HT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FuncValColor_Legacy.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_target3d_labelselector> a msp:MeshLabelSelector ;
     rdfs:label "3D Annotation target labeling selector of Annotation of Glyph at HT073195 obverse line 3 char 2 on a 3D Mesh"@en ;
     rdf:value "[v[labelid=4]]"^^msp:selectorLiteral .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_target3d_meshrefselector> a msp:MeshReferenceSelector ;
+    rdfs:label "3D Annotation target meshref selector of Annotation of Glyph at HT073195 obverse line 3 char 2 on a 3D Mesh"@en ;
+    rdf:value "https://situx.github.io/cuneiformontology/examples/meshanno/#b33d847a-9ace-4bae-89de-5c694107072d/"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b33d847a-9ace-4bae-89de-5c694107072d_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 3 char 2 on a 3D Mesh"@en ;
@@ -1474,8 +1524,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 1 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_body_line>,
@@ -1517,7 +1567,7 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_target1> a owl:NamedIndividual ;
     rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 4 char 1 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_target1_selector> ;
-    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
+    oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611837:841081/full/full/0/default.jpg> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 4 char 1 on 3D rendering"@en ;
@@ -1526,12 +1576,17 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_target3d> a owl:NamedIndividual ;
     rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 4 char 1 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_target3d_labelselector>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_target3d_meshrefselector>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_target3d_selector> ;
     oa:hasSource <https://heidicon.ub.uni-heidelberg.de/eas/partitions/5/0/841000/841085/667f74981bf43066b1b10ecd71a86412da7c3074/application/x-ply/HT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FuncValColor_Legacy.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_target3d_labelselector> a msp:MeshLabelSelector ;
     rdfs:label "3D Annotation target labeling selector of Annotation of Glyph at HT073195 obverse line 4 char 1 on a 3D Mesh"@en ;
     rdf:value "[v[labelid=12]]"^^msp:selectorLiteral .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_target3d_meshrefselector> a msp:MeshReferenceSelector ;
+    rdfs:label "3D Annotation target meshref selector of Annotation of Glyph at HT073195 obverse line 4 char 1 on a 3D Mesh"@en ;
+    rdf:value "https://situx.github.io/cuneiformontology/examples/meshanno/#b6733284-773c-4b2f-a402-383393e812e0/"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/b6733284-773c-4b2f-a402-383393e812e0_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 4 char 1 on a 3D Mesh"@en ;
@@ -1550,8 +1605,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 3 char 5 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_body_line>,
@@ -1593,7 +1648,7 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_target1> a owl:NamedIndividual ;
     rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 3 char 5 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_target1_selector> ;
-    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
+    oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611837:841081/full/full/0/default.jpg> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 3 char 5 on 3D rendering"@en ;
@@ -1602,12 +1657,17 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_target3d> a owl:NamedIndividual ;
     rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 3 char 5 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_target3d_labelselector>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_target3d_meshrefselector>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_target3d_selector> ;
     oa:hasSource <https://heidicon.ub.uni-heidelberg.de/eas/partitions/5/0/841000/841085/667f74981bf43066b1b10ecd71a86412da7c3074/application/x-ply/HT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FuncValColor_Legacy.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_target3d_labelselector> a msp:MeshLabelSelector ;
     rdfs:label "3D Annotation target labeling selector of Annotation of Glyph at HT073195 obverse line 3 char 5 on a 3D Mesh"@en ;
     rdf:value "[v[labelid=11]]"^^msp:selectorLiteral .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_target3d_meshrefselector> a msp:MeshReferenceSelector ;
+    rdfs:label "3D Annotation target meshref selector of Annotation of Glyph at HT073195 obverse line 3 char 5 on a 3D Mesh"@en ;
+    rdf:value "https://situx.github.io/cuneiformontology/examples/meshanno/#c8de7de3-7841-4bb1-97f3-536092c19208/"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/c8de7de3-7841-4bb1-97f3-536092c19208_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 3 char 5 on a 3D Mesh"@en ;
@@ -1626,8 +1686,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 2 char 4 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_body_line>,
@@ -1669,7 +1729,7 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_target1> a owl:NamedIndividual ;
     rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 2 char 4 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_target1_selector> ;
-    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
+    oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611837:841081/full/full/0/default.jpg> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 2 char 4 on 3D rendering"@en ;
@@ -1678,12 +1738,17 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_target3d> a owl:NamedIndividual ;
     rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 2 char 4 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_target3d_labelselector>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_target3d_meshrefselector>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_target3d_selector> ;
     oa:hasSource <https://heidicon.ub.uni-heidelberg.de/eas/partitions/5/0/841000/841085/667f74981bf43066b1b10ecd71a86412da7c3074/application/x-ply/HT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FuncValColor_Legacy.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_target3d_labelselector> a msp:MeshLabelSelector ;
     rdfs:label "3D Annotation target labeling selector of Annotation of Glyph at HT073195 obverse line 2 char 4 on a 3D Mesh"@en ;
     rdf:value "[v[labelid=14]]"^^msp:selectorLiteral .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_target3d_meshrefselector> a msp:MeshReferenceSelector ;
+    rdfs:label "3D Annotation target meshref selector of Annotation of Glyph at HT073195 obverse line 2 char 4 on a 3D Mesh"@en ;
+    rdf:value "https://situx.github.io/cuneiformontology/examples/meshanno/#d71a22a0-1c00-4f69-a1ae-69546444f6a1/"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/d71a22a0-1c00-4f69-a1ae-69546444f6a1_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 2 char 4 on a 3D Mesh"@en ;
@@ -1702,8 +1767,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HT073195 obverse on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_body_tabletside> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_target1>,
@@ -1724,7 +1789,7 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_target1> a owl:NamedIndividual ;
     rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 0 char 0 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_target1_selector> ;
-    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
+    oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611837:841081/full/full/0/default.jpg> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Wedge at HT073195 obverse on 3D rendering"@en ;
@@ -1733,12 +1798,17 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_target3d> a owl:NamedIndividual ;
     rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 0 char 0 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_target3d_labelselector>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_target3d_meshrefselector>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_target3d_selector> ;
     oa:hasSource <https://heidicon.ub.uni-heidelberg.de/eas/partitions/5/0/841000/841085/667f74981bf43066b1b10ecd71a86412da7c3074/application/x-ply/HT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FuncValColor_Legacy.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_target3d_labelselector> a msp:MeshLabelSelector ;
     rdfs:label "3D Annotation target labeling selector of Annotation of Wedge at HT073195 obverse on a 3D Mesh"@en ;
     rdf:value "[v[labelid=2]]"^^msp:selectorLiteral .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_target3d_meshrefselector> a msp:MeshReferenceSelector ;
+    rdfs:label "3D Annotation target meshref selector of Annotation of Wedge at HT073195 obverse on a 3D Mesh"@en ;
+    rdf:value "https://situx.github.io/cuneiformontology/examples/meshanno/#e24ac580-f9ce-46e0-a245-f4e3015ec8c0/"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/e24ac580-f9ce-46e0-a245-f4e3015ec8c0_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Wedge at HT073195 obverse on a 3D Mesh"@en ;
@@ -1757,8 +1827,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0> a oa:Annotation ;
     rdfs:label "Annotation of Wedge at HT073195 obverse on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_body_tabletside> ;
@@ -1786,7 +1856,7 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_target1> a owl:NamedIndividual ;
     rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 0 char 1 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_target1_selector> ;
-    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
+    oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611837:841081/full/full/0/default.jpg> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Wedge at HT073195 obverse on 3D rendering"@en ;
@@ -1795,12 +1865,17 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_target3d> a owl:NamedIndividual ;
     rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 0 char 1 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_target3d_labelselector>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_target3d_meshrefselector>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_target3d_selector> ;
     oa:hasSource <https://heidicon.ub.uni-heidelberg.de/eas/partitions/5/0/841000/841085/667f74981bf43066b1b10ecd71a86412da7c3074/application/x-ply/HT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FuncValColor_Legacy.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_target3d_labelselector> a msp:MeshLabelSelector ;
     rdfs:label "3D Annotation target labeling selector of Annotation of Wedge at HT073195 obverse on a 3D Mesh"@en ;
     rdf:value "[v[labelid=9]]"^^msp:selectorLiteral .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_target3d_meshrefselector> a msp:MeshReferenceSelector ;
+    rdfs:label "3D Annotation target meshref selector of Annotation of Wedge at HT073195 obverse on a 3D Mesh"@en ;
+    rdf:value "https://situx.github.io/cuneiformontology/examples/meshanno/#eaabf091-ea1b-4795-896a-75711119b1c0/"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/eaabf091-ea1b-4795-896a-75711119b1c0_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Wedge at HT073195 obverse on a 3D Mesh"@en ;
@@ -1819,8 +1894,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 3 char 3 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_body_line>,
@@ -1862,7 +1937,7 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_target1> a owl:NamedIndividual ;
     rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 3 char 3 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_target1_selector> ;
-    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
+    oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611837:841081/full/full/0/default.jpg> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 3 char 3 on 3D rendering"@en ;
@@ -1871,12 +1946,17 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_target3d> a owl:NamedIndividual ;
     rdfs:label "3D Annotation target of Annotation of Glyph at HT073195 obverse line 3 char 3 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_target3d_labelselector>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_target3d_meshrefselector>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_target3d_selector> ;
     oa:hasSource <https://heidicon.ub.uni-heidelberg.de/eas/partitions/5/0/841000/841085/667f74981bf43066b1b10ecd71a86412da7c3074/application/x-ply/HT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FuncValColor_Legacy.ply> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_target3d_labelselector> a msp:MeshLabelSelector ;
     rdfs:label "3D Annotation target labeling selector of Annotation of Glyph at HT073195 obverse line 3 char 3 on a 3D Mesh"@en ;
     rdf:value "[v[labelid=3]]"^^msp:selectorLiteral .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_target3d_meshrefselector> a msp:MeshReferenceSelector ;
+    rdfs:label "3D Annotation target meshref selector of Annotation of Glyph at HT073195 obverse line 3 char 3 on a 3D Mesh"@en ;
+    rdf:value "https://situx.github.io/cuneiformontology/examples/meshanno/#f35ec015-52aa-44cd-8656-3fa893cce887/"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/f35ec015-52aa-44cd-8656-3fa893cce887_target3d_selector> a oa:WKTSelector ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at HT073195 obverse line 3 char 3 on a 3D Mesh"@en ;
@@ -1895,8 +1975,8 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at HT073195 obverse line 4 char 3 on 3D rendering"@en ;
-    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
-    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns2:creator <https://orcid.org/0000-0002-9499-5840> ;
+    ns2:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794_body_line>,
@@ -1937,7 +2017,7 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794_target1> a owl:NamedIndividual ;
     rdfs:label "Annotation target1 of Annotation of Glyph at HT073195 obverse line 4 char 3 on 3D rendering"@en ;
     oa:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794_target1_selector> ;
-    oa:hasSource <https://gitlab.rlp.net/api/v4/projects/16599/repository/files/renderings%2FHT_07-31-95%2FHT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FTVecElMax_03_ha_front.png> .
+    oa:hasSource <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611837:841081/full/full/0/default.jpg> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/imgannotations/ffb6601e-a618-4de1-ac5a-3cebc88d8794_target1_selector> a oa:SvgSelector ;
     rdfs:label "Annotation target selector of Annotation of Glyph at HT073195 obverse line 4 char 3 on 3D rendering"@en ;
@@ -1949,6 +2029,8 @@ oa:Selector a owl:Class ;
     rdfs:subClassOf prov:Entity .
 
 msp:MeshLabelSelector rdfs:subClassOf oa:Selector .
+
+msp:MeshReferenceSelector rdfs:subClassOf oa:Selector .
 
 msp:PCAReference rdfs:subClassOf msp:ComputingReference .
 
@@ -1970,11 +2052,11 @@ oa:SvgSelector a owl:Class ;
     foaf:homepage "https://github.com/recogito/annotorious-openseadragon"^^xsd:anyURI ;
     foaf:name "Annotorious-OpenSeaDragon" .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> a ns2:CartesianCS ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> a ns3:CartesianCS ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units"@en ;
-    ns2:asSVG "<svg width='400' height='250' viewbox='0 0 375 220'><defs><marker id='arrowhead' markerWidth='10' markerHeight='7' refX='0' refY='2' orient='auto'><polygon points='0 0, 4 2, 0 4' /></marker></defs><line x1='20' y1='200' x2='200' y2='200' stroke='red' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='110' y='220' class='small'>X: Cartesian X Axis (om:millimetre)</text><line x1='20' y1='200' x2='20' y2='20' stroke='green' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='35' y='20' class='small'>Y: Cartesian Y Axis (om:millimetre)</text><line x1='20' y1='200' x2='190' y2='30' stroke='blue' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='210' y='25' class='small'>Z: Cartesian Z Axis (om:millimetre)</text></svg>"^^ns2:svgLiteral ;
-    ns2:asWKT "CS[\"cartesian\",3],AXIS[\"X\", \"geocentricX\", ORDER[1],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Y\", \"geocentricY\", ORDER[2],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Z\", \"geocentricZ\", ORDER[3],            LENGTHUNIT[\"millimetre\",1]        ]]"^^<http://www.opengis.net/ont/geosparql/crs#wktLiteral> ;
-    ns2:axis <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1>,
+    ns3:asSVG "<svg width='400' height='250' viewbox='0 0 375 220'><defs><marker id='arrowhead' markerWidth='10' markerHeight='7' refX='0' refY='2' orient='auto'><polygon points='0 0, 4 2, 0 4' /></marker></defs><line x1='20' y1='200' x2='200' y2='200' stroke='red' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='110' y='220' class='small'>X: Cartesian X Axis (om:millimetre)</text><line x1='20' y1='200' x2='20' y2='20' stroke='green' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='35' y='20' class='small'>Y: Cartesian Y Axis (om:millimetre)</text><line x1='20' y1='200' x2='190' y2='30' stroke='blue' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='210' y='25' class='small'>Z: Cartesian Z Axis (om:millimetre)</text></svg>"^^ns3:svgLiteral ;
+    ns3:asWKT "CS[\"cartesian\",3],AXIS[\"X\", \"geocentricX\", ORDER[1],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Y\", \"geocentricY\", ORDER[2],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Z\", \"geocentricZ\", ORDER[3],            LENGTHUNIT[\"millimetre\",1]        ]]"^^<http://www.opengis.net/ont/geosparql/crs#wktLiteral> ;
+    ns3:axis <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1>,
         <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2>,
         <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> .
 

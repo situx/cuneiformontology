@@ -336,6 +336,16 @@ for tabname in tabletnames:
                 else:
                     res.write("<"+str(indid)+"_target3d_selector> rdfs:label \"3D Annotation target selector of Annotation of Wedge at "+str(tabname)+" "+str(tabletside)+" on a 3D Mesh\"@en .\n")
                 #3D Label Target
+                res.write("<"+str(indid)+"_target3d> oa:hasSelector  <"+str(indid)+"_target3d_meshrefselector> .\n")
+                res.write("msp:MeshReferenceSelector rdfs:subClassOf oa:Selector .\n")
+                res.write("<"+str(indid)+"_target3d_meshrefselector> rdf:type msp:MeshReferenceSelector .\n")
+                if ischaracter or (lineindex!=0 and (wedgeindex==None or wedgeindex==0)):
+                    res.write("<"+str(indid)+"_target3d_meshrefselector> rdfs:label \"3D Annotation target meshref selector of Annotation of Glyph at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" on a 3D Mesh\"@en .\n")
+                elif wedgeindex!=0 and wedgeindex!=None:
+                    res.write("<"+str(indid)+"_target3d_meshrefselector> rdfs:label \"3D Annotation target meshref selector of Annotation of Wedge at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" wedge "+str(wedgeindex)+" on a 3D Mesh\"@en .\n")
+                else:
+                    res.write("<"+str(indid)+"_target3d_meshrefselector> rdfs:label \"3D Annotation target meshref selector of Annotation of Wedge at "+str(tabname)+" "+str(tabletside)+" on a 3D Mesh\"@en .\n")
+                res.write("<"+str(indid)+"_target3d_meshrefselector> rdf:value \"https://situx.github.io/cuneiformontology/examples/meshanno/"+str(key)+"/\"^^xsd:anyURI .\n")
                 res.write("<"+str(indid)+"_target3d> oa:hasSelector  <"+str(indid)+"_target3d_labelselector> .\n")
                 res.write("msp:MeshLabelSelector rdfs:subClassOf oa:Selector .\n")
                 res.write("<"+str(indid)+"_target3d_labelselector> rdf:type msp:MeshLabelSelector .\n")
