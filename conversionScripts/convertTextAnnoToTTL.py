@@ -68,11 +68,11 @@ def relateAnnotationToTransliteration(startindex,endindex,namespace,tabid,transl
     for word in wordindexreverse:
         if int(word)>=int(startindex) and int(word)<=int(endindex):
             if int(wordindexreverse[word]["end"])<=endindex:
-                resuris["<"+str(namespace)+str(tabid)+"_transliteration1_"+str(wordindexreverse[word]["id"])+">"]=wordindexreverse[word]
+                resuris["<"+str(namespacetext)+str(tabid)+"_transliteration1_"+str(wordindexreverse[word]["id"])+">"]=wordindexreverse[word]
     for chara in charindexreverse:
         if int(chara)>=int(startindex) and int(chara)<=int(endindex):
             if int(charindexreverse[chara]["end"])<=endindex:
-                resuris["<"+str(namespace)+str(tabid)+"_transliteration1_"+str(charindexreverse[chara]["id"])+">"]=charindexreverse[chara]
+                resuris["<"+str(namespacetext)+str(tabid)+"_transliteration1_"+str(charindexreverse[chara]["id"])+">"]=charindexreverse[chara]
     print("RelToTransRes: "+str(resuris))
     return resuris
 
