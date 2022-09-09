@@ -140,7 +140,7 @@ for tabname in tabletnames:
         @prefix foaf: <http://xmlns.com/foaf/0.1/> .
         @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
         @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/> .
-        @prefix cunei: <http://www.purl.org/cuneiform/> .
+        @prefix cunei: <http://www.purl.org/cuneiform#> .
         @prefix lemon: <http://lemon-model.net/lemon#> .
         @prefix graphemon: <http://www.purl.org/graphemon#> .
         """)
