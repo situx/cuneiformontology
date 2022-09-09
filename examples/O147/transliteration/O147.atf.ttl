@@ -46,6 +46,9 @@ cidoc:TXP3_is_rendered_by a owl:ObjectProperty .
 
 cidoc:TXP8_is_component_of a owl:ObjectProperty .
 
+cunei:GraphemeVariantCollection a skos:Collection ;
+    rdfs:label "Grapheme Variant Collection"@en .
+
 cunei:cdli_key a owl:ObjectProperty .
 
 cunei:charIndex a owl:DatatypeProperty .
@@ -385,7 +388,7 @@ cuneiex:O147_glyphlist a cunei:GlyphCollection ;
         cuneiex:O147_reverse_line9_char5_glyph,
         cuneiex:O147_reverse_line9_char6_glyph .
 
-cuneiex:O147_graphemevars a cunei:GraphemeVariantCollection ;
+cuneiex:O147_graphemevars a graphemon:GraphemeVariantCollection ;
     rdfs:label "O147 Grapheme Variant Collection "@en .
 
 cuneiex:O147_obverse_line1 a cunei:Line ;
@@ -757,11 +760,10 @@ cuneiex:O147_reverse_line9_word1 cidoc:TXP3_is_rendered_by cuneiex:O147_translit
 
 cuneiex:O147_reverse_line9_word2 cidoc:TXP3_is_rendered_by cuneiex:O147_transliteration1_reverse_line9_word2_wordformocc .
 
-cuneiex:O147_signlist a cunei:GraphemeCollection ;
+cuneiex:O147_signlist a graphemon:GraphemeCollection ;
     rdfs:label "Signlist of O147"@en .
 
-cuneiex:O147_signreadinglist a cunei:GraphemeReadingCollection ;
-    rdfs:label "Sign Readings of O147"@en ;
+cuneiex:O147_signreadinglist a graphemon:GraphemeReadingCollection ;
     rdfs:member <https://situx.github.io/cuneiformontology/signlist/character_a_reading_a>,
         <https://situx.github.io/cuneiformontology/signlist/character_ab_reading_ap>,
         <https://situx.github.io/cuneiformontology/signlist/character_al_reading_al>,
@@ -1123,6 +1125,12 @@ cuneiex:O147_writtenText a cidoc:TX1_WrittenText ;
 
 lemon:Lexicon rdfs:subClassOf skos:Collection .
 
+graphemon:GraphemeCollection rdfs:subClassOf skos:Collection .
+
+graphemon:GraphemeReadingCollection rdfs:subClassOf skos:Collection .
+
+graphemon:GraphemeVariantCollection rdfs:subClassOf skos:Collection .
+
 cidoc:E22_ManMadeObject rdfs:label "Man made object"@en ;
     rdfs:subClassOf prov:Entity .
 
@@ -1130,14 +1138,6 @@ cunei:CharOccurrenceCollection rdfs:label "CharOccurrence Collection"@en ;
     rdfs:subClassOf skos:Collection .
 
 cunei:GlyphCollection rdfs:label "Glyph Collection"@en ;
-    rdfs:subClassOf skos:Collection .
-
-cunei:GraphemeCollection rdfs:subClassOf skos:Collection .
-
-cunei:GraphemeReadingCollection rdfs:subClassOf skos:Collection .
-
-cunei:GraphemeVariantCollection a skos:Collection ;
-    rdfs:label "Grapheme Variant Collection"@en ;
     rdfs:subClassOf skos:Collection .
 
 cunei:Tablet rdfs:label "cuneiform tablet"@en ;
