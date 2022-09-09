@@ -38,6 +38,7 @@ jobs:
          cp -r examples/O147/images/ docs/examples/o147/images/ 
          python3 docgeneration.py signlist/signlist.ttl docs/ https://situx.github.io/cuneiformontology/ cuneisignlist False
          python3 docgeneration.py examples/HS1174/transliteration/HS1174.atf.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/HS1174/transliteration/HS1174_textanno.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
          python3 docgeneration.py examples/HS1174/ttl/hs1174.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
          python3 docgeneration.py examples/HS1174/ttl/HS1174_front.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
          python3 docgeneration.py examples/HS1174/ttl/HS1174_back.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
