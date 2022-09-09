@@ -65,7 +65,7 @@ def csToRDF(fw,crsnamespace,indid,crsaswkt):
     svgstr= """<svg width=\"400\" height=\"250\" viewbox=\"0 0 375 220\"><defs><marker id=\"arrowhead\" markerWidth=\"10\" markerHeight=\"7\" refX=\"0\" refY=\"2\" orient=\"auto\"><polygon points=\"0 0, 4 2, 0 4\" /></marker></defs>"""
     fw.write("<"+str(indid)+"> <http://www.opengis.net/ont/geosparql#inSRS> <"+str(crsnamespace)+"cs/cartesian_ax3_mm> .\n")
     fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm> <http://www.opengis.net/ont/crs/asWKT> \""+str(crsaswkt)+"\"^^<http://www.opengis.net/ont/geosparql/crs#wktLiteral>.\n")     
-    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/crs/CartesianCoordinateSystem> .\n") 
+    fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/crs/CartesianCS> .\n")
     fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm> <http://www.w3.org/2000/01/rdf-schema#label> \"Cartesian coordinate system with 3 axis in millimetre units\"@en .\n") 
     fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm> <http://www.opengis.net/ont/crs/axis> <"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis1> .\n") 
     fw.write("<"+str(crsnamespace)+"cs/cartesian_ax3_mm_axis1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/crs/CoordinateSystemAxis> .\n")
@@ -150,7 +150,7 @@ for tabname in tabletnames:
         res.write("geocrs:OperationParameter rdfs:subClassOf prov:Entity .\n")
         res.write("geocrs:OperationParameterValue rdfs:subClassOf prov:Entity .\n")
         res.write("geocrs:CoordinateSystemAxis rdfs:subClassOf prov:Entity .\n")
-        res.write("geocrs:CartesianCoordinateSystem rdfs:subClassOf prov:Entity .\n")
+        res.write("geocrs:CartesianCS rdfs:subClassOf prov:Entity .\n")
         res.write("oa:SvgSelector rdf:type owl:Class .\n")
         res.write("geocrs:CoordinateOperation rdfs:subClassOf prov:Entity .\n")
         res.write("<http://purl.org/meshsparql#ComputingReference> rdfs:subClassOf prov:Entity .\n")
