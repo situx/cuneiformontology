@@ -152,6 +152,8 @@ for tabname in tabletnames:
         res.write("geocrs:OperationParameterValue rdfs:subClassOf prov:Entity .\n")
         res.write("geocrs:CoordinateSystemAxis rdfs:subClassOf prov:Entity .\n")
         res.write("geocrs:CartesianCS rdfs:subClassOf prov:Entity .\n")
+        res.write("oa:TextualBody rdf:type owl:Class .\n")
+        res.write("oa:TextualBody rdfs:subClassOf prov:Entity .\n")
         res.write("oa:SvgSelector rdf:type owl:Class .\n")
         res.write("geocrs:CoordinateOperation rdfs:subClassOf prov:Entity .\n")
         res.write("<http://purl.org/meshsparql#ComputingReference> rdfs:subClassOf prov:Entity .\n")
