@@ -144,6 +144,8 @@ oa:FragmentSelector a owl:Class ;
 
 msp:ComputingReference rdfs:subClassOf prov:Entity .
 
+cunei:WedgeType rdfs:subClassOf prov:Entity .
+
 <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_09a66ef9-8b3c-488b-ad51-d280404f2a7f> a geocrs:CoordinateOperation ;
     rdfs:label "Object To PCA"@en ;
     geocrs:parameter <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_09a66ef9-8b3c-488b-ad51-d280404f2a7f_xaxis_translation>,
@@ -7902,8 +7904,16 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
 
 as:Collection rdfs:subClassOf skos:Collection .
 
+cunei:PaleoCode_D rdfs:subClassOf cunei:PaleoCodeWedgeType .
+
+cunei:PaleoCode_C rdfs:subClassOf cunei:PaleoCodeWedgeType .
+
+cunei:PaleoCodeWedgeType rdfs:subClassOf cunei:WedgeType .
+
 oa:Selector a owl:Class ;
     rdfs:subClassOf prov:Entity .
+
+cunei:PaleoCode_W rdfs:subClassOf cunei:PaleoCodeWedgeType .
 
 msp:MeshLabelSelector rdfs:subClassOf oa:Selector .
 
@@ -7926,6 +7936,10 @@ oa:WKTSelector a owl:Class ;
     ns3:axis <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1>,
         <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2>,
         <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> .
+
+cunei:PaleoCode_A rdfs:subClassOf cunei:PaleoCodeWedgeType .
+
+cunei:PaleoCode_B rdfs:subClassOf cunei:PaleoCodeWedgeType .
 
 geocrs:OperationParameter a owl:Class ;
     rdfs:label "operation parameter"@en ;

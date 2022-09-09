@@ -4,8 +4,8 @@
 @prefix geocrs: <http://situx.github.io/proj4rdf/ont/crs/> .
 @prefix msp: <http://purl.org/meshsparql#> .
 @prefix ns1: <http://purl.org/dc/terms/> .
-@prefix ns2: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns3: <http://www.opengis.net/ont/crs/> .
+@prefix ns2: <http://www.opengis.net/ont/crs/> .
+@prefix ns3: <http://www.opengis.net/ont/geosparql#> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -178,26 +178,26 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
     om:hasUnit om:millimetre ;
     rdf:value 0e+00 .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1> a ns3:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1> a ns2:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 1"@en ;
     om:hasUnit om:millimetre ;
-    ns3:abbreviation "X" ;
-    ns3:axisDirection ns3:geocentricX ;
-    ns3:axisOrder "1"^^xsd:int .
+    ns2:abbreviation "X" ;
+    ns2:axisDirection ns2:geocentricX ;
+    ns2:axisOrder "1"^^xsd:int .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2> a ns3:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2> a ns2:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 2"@en ;
     om:hasUnit om:millimetre ;
-    ns3:abbreviation "Y" ;
-    ns3:axisDirection ns3:geocentricY ;
-    ns3:axisOrder "2"^^xsd:int .
+    ns2:abbreviation "Y" ;
+    ns2:axisDirection ns2:geocentricY ;
+    ns2:axisOrder "2"^^xsd:int .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> a ns3:CoordinateSystemAxis ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> a ns2:CoordinateSystemAxis ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 3"@en ;
     om:hasUnit om:millimetre ;
-    ns3:abbreviation "Z" ;
-    ns3:axisDirection ns3:geocentricZ ;
-    ns3:axisOrder "3"^^xsd:int .
+    ns2:abbreviation "Z" ;
+    ns2:axisDirection ns2:geocentricZ ;
+    ns2:axisOrder "3"^^xsd:int .
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/0065afed-a1ad-42dc-8215-60f61cd005b8> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 back line 1 char 2 on 3D rendering"@en ;
@@ -2319,7 +2319,7 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
     rdfs:label "3D Annotation target selector of Annotation of Glyph at O147 back line 4 char 1 on a 3D Mesh"@en ;
     msp:computingReference <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/8c3c5739-7ae0-4f45-9215-fc1cfc24a226_target3d_selector_compref0> ;
     msp:pcaValue "POLYGON Z ((1727.953216123975 -1791.2303978382456 -45.7203369140625, 1912.9953731568392 -1789.219471324574 -45.7203369140625, 1906.9613685544857 -1586.1145514840791 -45.7203369140625, 1719.907866485848 -1592.1473310250947 -45.7203369140625, 1727.953216123975 -1791.2303978382456 -10.856206893920898, 1912.9953731568392 -1789.219471324574 -10.856206893920898, 1906.9613685544857 -1586.1145514840791 -10.856206893920898, 1719.907866485848 -1592.1473310250947 -10.856206893920898, 1727.953216123975 -1791.2303978382456 -45.7203369140625))"^^oa:wktLiteral ;
-    ns2:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
+    ns3:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
     rdf:value "POLYGON Z ((518.4530940536625 -966.730458873402 -34.86653518676758, 703.4952510865267 -964.7195323597301 -34.86653518676758, 697.4612464841732 -761.6146125192353 -34.86653518676758, 510.40774441553543 -767.6473920602509 -34.86653518676758, 518.4530940536625 -966.730458873402 -0.0024037975817919, 703.4952510865267 -964.7195323597301 -0.0024037975817919, 697.4612464841732 -761.6146125192353 -0.0024037975817919, 510.40774441553543 -767.6473920602509 -0.0024037975817919, 518.4530940536625 -966.730458873402 -34.86653518676758))"^^oa:wktLiteral .
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/8c3c5739-7ae0-4f45-9215-fc1cfc24a226_target3d_selector_compref0> a msp:PCAReference ;
@@ -2328,7 +2328,7 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
     msp:stable true ;
     msp:transformationMatrix "[[ 1.00000000e+00 -1.20318887e-10 -1.92973415e-11  1.20950009e+03] [ 1.20318659e-10  1.00000000e+00 -2.60101250e-09 -8.24499970e+02] [ 1.92973207e-11  2.60101251e-09  1.00000000e+00 -1.08538150e+01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^msp:matrixLiteral ;
     msp:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[1209.50009159]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[-824.49996974]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[-10.85381504]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^geocrs:wktLiteral ;
-    ns2:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_8c3c5739-7ae0-4f45-9215-fc1cfc24a226> .
+    ns3:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_8c3c5739-7ae0-4f45-9215-fc1cfc24a226> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/8d7eed4d-3766-4993-8dfa-0afda6bf94e3> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 back line 8 char 2 on 3D rendering"@en ;
@@ -3850,7 +3850,7 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
     rdfs:label "3D Annotation target selector of Annotation of Glyph at O147 back line 4 char 2 on a 3D Mesh"@en ;
     msp:computingReference <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/e97d40f0-c537-440b-8cb5-d663d03a2974_target3d_selector_compref0> ;
     msp:pcaValue "POLYGON Z ((2082.3492524454414 -1789.2194103264087 -16.755210876464844, 1908.5705055930398 -1789.2194103264087 -16.755210876464844, 1906.1569525600464 -1591.3428872218276 -16.755210876464844, 2075.108471326592 -1588.9297388065222 -16.755210876464844, 2082.3492524454414 -1789.2194103264087 -10.862086296081543, 1908.5705055930398 -1789.2194103264087 -10.862086296081543, 1906.1569525600464 -1591.3428872218276 -10.862086296081543, 2075.108471326592 -1588.9297388065222 -10.862086296081543, 2082.3492524454414 -1789.2194103264087 -16.755210876464844))"^^oa:wktLiteral ;
-    ns2:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
+    ns3:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
     rdf:value "POLYGON Z ((872.8491303751291 -964.7194713615648 -5.901407718658447, 699.0703835227273 -964.7194713615648 -5.901407718658447, 696.6568304897339 -766.8429482569838 -5.901407718658447, 865.6083492562791 -764.4297998416785 -5.901407718658447, 872.8491303751291 -964.7194713615648 -0.008283426053822, 699.0703835227273 -964.7194713615648 -0.008283426053822, 696.6568304897339 -766.8429482569838 -0.008283426053822, 865.6083492562791 -764.4297998416785 -0.008283426053822, 872.8491303751291 -964.7194713615648 -5.901407718658447))"^^oa:wktLiteral .
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/e97d40f0-c537-440b-8cb5-d663d03a2974_target3d_selector_compref0> a msp:PCAReference ;
@@ -3859,7 +3859,7 @@ msp:ComputingReference rdfs:subClassOf prov:Entity .
     msp:stable true ;
     msp:transformationMatrix "[[ 1.00000000e+00 -1.20318887e-10 -1.92973415e-11  1.20950009e+03] [ 1.20318659e-10  1.00000000e+00 -2.60101250e-09 -8.24499970e+02] [ 1.92973207e-11  2.60101251e-09  1.00000000e+00 -1.08538150e+01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^msp:matrixLiteral ;
     msp:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[1209.50009159]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[-824.49996974]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[-10.85381504]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^geocrs:wktLiteral ;
-    ns2:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_e97d40f0-c537-440b-8cb5-d663d03a2974> .
+    ns3:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_e97d40f0-c537-440b-8cb5-d663d03a2974> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/ed8d5a4e-25f6-42b5-999b-17551b125839> a oa:Annotation ;
     rdfs:label "Annotation of Glyph at O147 back line 11 char 2 on 3D rendering"@en ;
@@ -4277,11 +4277,11 @@ oa:WKTSelector a owl:Class ;
     rdfs:label "WKT Selector"@en ;
     rdfs:subClassOf oa:Selector .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> a ns3:CartesianCS ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> a ns2:CartesianCS ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units"@en ;
-    ns3:asSVG "<svg width='400' height='250' viewbox='0 0 375 220'><defs><marker id='arrowhead' markerWidth='10' markerHeight='7' refX='0' refY='2' orient='auto'><polygon points='0 0, 4 2, 0 4' /></marker></defs><line x1='20' y1='200' x2='200' y2='200' stroke='red' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='110' y='220' class='small'>X: Cartesian X Axis (om:millimetre)</text><line x1='20' y1='200' x2='20' y2='20' stroke='green' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='35' y='20' class='small'>Y: Cartesian Y Axis (om:millimetre)</text><line x1='20' y1='200' x2='190' y2='30' stroke='blue' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='210' y='25' class='small'>Z: Cartesian Z Axis (om:millimetre)</text></svg>"^^ns3:svgLiteral ;
-    ns3:asWKT "CS[\"cartesian\",3],AXIS[\"X\", \"geocentricX\", ORDER[1],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Y\", \"geocentricY\", ORDER[2],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Z\", \"geocentricZ\", ORDER[3],            LENGTHUNIT[\"millimetre\",1]        ]]"^^<http://www.opengis.net/ont/geosparql/crs#wktLiteral> ;
-    ns3:axis <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1>,
+    ns2:asSVG "<svg width='400' height='250' viewbox='0 0 375 220'><defs><marker id='arrowhead' markerWidth='10' markerHeight='7' refX='0' refY='2' orient='auto'><polygon points='0 0, 4 2, 0 4' /></marker></defs><line x1='20' y1='200' x2='200' y2='200' stroke='red' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='110' y='220' class='small'>X: Cartesian X Axis (om:millimetre)</text><line x1='20' y1='200' x2='20' y2='20' stroke='green' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='35' y='20' class='small'>Y: Cartesian Y Axis (om:millimetre)</text><line x1='20' y1='200' x2='190' y2='30' stroke='blue' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='210' y='25' class='small'>Z: Cartesian Z Axis (om:millimetre)</text></svg>"^^ns2:svgLiteral ;
+    ns2:asWKT "CS[\"cartesian\",3],AXIS[\"X\", \"geocentricX\", ORDER[1],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Y\", \"geocentricY\", ORDER[2],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Z\", \"geocentricZ\", ORDER[3],            LENGTHUNIT[\"millimetre\",1]        ]]"^^<http://www.opengis.net/ont/geosparql/crs#wktLiteral> ;
+    ns2:axis <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1>,
         <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2>,
         <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> .
 

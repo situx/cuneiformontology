@@ -280,6 +280,9 @@ for tabname in tabletnames:
                 res.write("<"+str(indid)+"_body_glyph> oa:hasSource <"+str(namespaceitems)+str(tabname)+"_"+str(tabletside)+"_line"+str(lineindex)+"_char"+str(charindex)+"_wedge"+str(wedgeindex)+"_glyph> .\n")
                 if wedgetype in wedgetypevalues:
                     res.write("<"+str(namespaceitems)+str(tabname)+"_"+str(tabletside)+"_line"+str(lineindex)+"_char"+str(charindex)+"_wedge"+str(wedgeindex)+"_glyph> rdf:type "+str(wedgetypevalues[wedgetype])+" .\n")
+                    res.write(str(wedgetypevalues[wedgetype])+" rdfs:subClassOf cunei:PaleoCodeWedgeType .\n")
+                    res.write("cunei:PaleoCodeWedgeType rdfs:subClassOf cunei:WedgeType .\n")
+                    res.write("cunei:WedgeType rdfs:subClassOf prov:Entity .\n")
                 else:
                     res.write("<"+str(namespaceitems)+str(tabname)+"_"+str(tabletside)+"_line"+str(lineindex)+"_char"+str(charindex)+"_wedge"+str(wedgeindex)+"_glyph> rdf:type cunei:WedgeGlyph .\n")
                 res.write("<"+str(namespaceitems)+str(tabname)+"_"+str(tabletside)+"_line"+str(lineindex)+"_char"+str(charindex)+"_wedge"+str(wedgeindex)+"_glyph> rdfs:label \"Wedge Glyph of cuneiform wedge at "+str(tabname)+" "+str(tabletside)+" line "+str(lineindex)+" char "+str(charindex)+" wedge "+str(wedgeindex)+"\"@en .\n")
