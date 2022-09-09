@@ -498,40 +498,42 @@ giga:totalVolumeDZ skos:definition "The total volume DZ of the mesh" .
 giga:totalVolumeDZ rdfs:comment "Gigamesh Info: Total Volume DZ" .
 <https://situx.github.io/cuneiformontology/examples/HT073195/mesh/HT073195_mesh1> giga:totalVolumeDZ "469762.979386"^^xsd:double .
 
+<https://situx.github.io/cuneiformontology/examples/HT073195/mesh/HT073195_mesh1_geom> <http://www.opengis.net/ont/geosparql#inSRS> <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
+
 <https://situx.github.io/cuneiformontology/examples/HT073195/mesh/HT073195_mesh1> <http://www.opengis.net/ont/geosparql#inSRS> <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> a <http://www.opengis.net/ont/crs/CartesianCoordinateSystem> ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> a <https://situx.github.io/proj4rdf/ont/crs/CartesianCoordinateSystem> ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units"@en ;
-    <http://www.opengis.net/ont/crs/asSVG> "<svg width='400' height='250' viewbox='0 0 375 220'><defs><marker id='arrowhead' markerWidth='10' markerHeight='7' refX='0' refY='2' orient='auto'><polygon points='0 0, 4 2, 0 4' /></marker></defs><line x1='20' y1='200' x2='200' y2='200' stroke='red' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='110' y='220' class='small'>X: Cartesian X Axis (om:millimetre)</text><line x1='20' y1='200' x2='20' y2='20' stroke='green' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='35' y='20' class='small'>Y: Cartesian Y Axis (om:millimetre)</text><line x1='20' y1='200' x2='190' y2='30' stroke='blue' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='210' y='25' class='small'>Z: Cartesian Z Axis (om:millimetre)</text></svg>"^^xsd:string ;
-    <http://www.opengis.net/ont/crs/asWKT> "CS[\"cartesian\",3],AXIS[\"X\", \"geocentricX\", ORDER[1],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Y\", \"geocentricY\", ORDER[2],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Z\", \"geocentricZ\", ORDER[3],            LENGTHUNIT[\"millimetre\",1]        ]]"^^<http://www.opengis.net/ont/geosparql/crs#wktLiteral> ;
-    <http://www.opengis.net/ont/crs/axis> <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1>,
+    <https://situx.github.io/proj4rdf/ont/crs/asSVG> "<svg width='400' height='250' viewbox='0 0 375 220'><defs><marker id='arrowhead' markerWidth='10' markerHeight='7' refX='0' refY='2' orient='auto'><polygon points='0 0, 4 2, 0 4' /></marker></defs><line x1='20' y1='200' x2='200' y2='200' stroke='red' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='110' y='220' class='small'>X: Cartesian X Axis (om:millimetre)</text><line x1='20' y1='200' x2='20' y2='20' stroke='green' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='35' y='20' class='small'>Y: Cartesian Y Axis (om:millimetre)</text><line x1='20' y1='200' x2='190' y2='30' stroke='blue' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='210' y='25' class='small'>Z: Cartesian Z Axis (om:millimetre)</text></svg>"^^xsd:string ;
+    <https://situx.github.io/proj4rdf/ont/crs/asWKT> "CS[\"cartesian\",3],AXIS[\"X\", \"geocentricX\", ORDER[1],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Y\", \"geocentricY\", ORDER[2],            LENGTHUNIT[\"millimetre\",1]        ],        AXIS[\"Z\", \"geocentricZ\", ORDER[3],            LENGTHUNIT[\"millimetre\",1]        ]]"^^<http://www.opengis.net/ont/geosparql/crs#wktLiteral> ;
+    <https://situx.github.io/proj4rdf/ont/crs/axis> <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1>,
         <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2>,
         <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> .
 		
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1> a <http://www.opengis.net/ont/crs/CoordinateSystemAxis> ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis1> a <https://situx.github.io/proj4rdf/ont/crs/CoordinateSystemAxis> ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 1"@en ;
     <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre> ;
-    <http://www.opengis.net/ont/crs/abbreviation> "X" ;
-	<http://www.opengis.net/ont/crs/asSVG> "<svg width=\"400\" height=\"100\" viewbox=\"0 0 275 100\"><defs><marker id=\"arrowhead\" markerWidth=\"10\" markerHeight=\"7\" refX=\"0\" refY=\"2\" orient=\"auto\"><polygon points=\"0 0, 4 2, 0 4\" /></marker></defs><line x1=\"20\" y1=\"50\" x2=\"200\" y2=\"50\" stroke=\"gray\" stroke-width=\"5\" marker-end=\"url(#arrowhead)\"></line><text x=\"30\" y=\"70\" class=\"small\">X: Cartesian X (om:millimetre)</text></svg>"^^<http://www.opengis.net/ont/geosparql/crs#svgLiteral> ;
-    <http://www.opengis.net/ont/crs/axisDirection> <http://www.opengis.net/ont/crs/geocentricX> ;
-    <http://www.opengis.net/ont/crs/axisOrder> "1"^^xsd:int .
+    <https://situx.github.io/proj4rdf/ont/crs/abbreviation> "X" ;
+	<https://situx.github.io/proj4rdf/ont/crs/asSVG> "<svg width=\"400\" height=\"100\" viewbox=\"0 0 275 100\"><defs><marker id=\"arrowhead\" markerWidth=\"10\" markerHeight=\"7\" refX=\"0\" refY=\"2\" orient=\"auto\"><polygon points=\"0 0, 4 2, 0 4\" /></marker></defs><line x1=\"20\" y1=\"50\" x2=\"200\" y2=\"50\" stroke=\"gray\" stroke-width=\"5\" marker-end=\"url(#arrowhead)\"></line><text x=\"30\" y=\"70\" class=\"small\">X: Cartesian X (om:millimetre)</text></svg>"^^<http://www.opengis.net/ont/geosparql/crs#svgLiteral> ;
+    <https://situx.github.io/proj4rdf/ont/crs/axisDirection> <https://situx.github.io/proj4rdf/ont/crs/geocentricX> ;
+    <https://situx.github.io/proj4rdf/ont/crs/axisOrder> "1"^^xsd:int .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2> a <http://www.opengis.net/ont/crs/CoordinateSystemAxis> ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2> a <https://situx.github.io/proj4rdf/ont/crs/CoordinateSystemAxis> ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 2"@en ;
     <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre> ;
-    <http://www.opengis.net/ont/crs/abbreviation> "Y" ;
-	<http://www.opengis.net/ont/crs/asSVG> "<svg width=\"400\" height=\"100\" viewbox=\"0 0 275 100\"><defs><marker id=\"arrowhead\" markerWidth=\"10\" markerHeight=\"7\" refX=\"0\" refY=\"2\" orient=\"auto\"><polygon points=\"0 0, 4 2, 0 4\" /></marker></defs><line x1=\"20\" y1=\"50\" x2=\"200\" y2=\"50\" stroke=\"gray\" stroke-width=\"5\" marker-end=\"url(#arrowhead)\"></line><text x=\"30\" y=\"70\" class=\"small\">Y: Cartesian Y (om:millimetre)</text></svg>"^^<http://www.opengis.net/ont/geosparql/crs#svgLiteral> ;
-    <http://www.opengis.net/ont/crs/axisDirection> <http://www.opengis.net/ont/crs/geocentricY> ;
-    <http://www.opengis.net/ont/crs/axisOrder> "2"^^xsd:int .
+    <https://situx.github.io/proj4rdf/ont/crs/abbreviation> "Y" ;
+	<https://situx.github.io/proj4rdf/ont/crs/asSVG> "<svg width=\"400\" height=\"100\" viewbox=\"0 0 275 100\"><defs><marker id=\"arrowhead\" markerWidth=\"10\" markerHeight=\"7\" refX=\"0\" refY=\"2\" orient=\"auto\"><polygon points=\"0 0, 4 2, 0 4\" /></marker></defs><line x1=\"20\" y1=\"50\" x2=\"200\" y2=\"50\" stroke=\"gray\" stroke-width=\"5\" marker-end=\"url(#arrowhead)\"></line><text x=\"30\" y=\"70\" class=\"small\">Y: Cartesian Y (om:millimetre)</text></svg>"^^<http://www.opengis.net/ont/geosparql/crs#svgLiteral> ;
+    <https://situx.github.io/proj4rdf/ont/crs/axisDirection> <https://situx.github.io/proj4rdf/ont/crs/geocentricY> ;
+    <https://situx.github.io/proj4rdf/ont/crs/axisOrder> "2"^^xsd:int .
 
-<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> a <http://www.opengis.net/ont/crs/CoordinateSystemAxis> ;
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis3> a <https://situx.github.io/proj4rdf/ont/crs/CoordinateSystemAxis> ;
     rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 3"@en ;
     <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre> ;
-    <http://www.opengis.net/ont/crs/abbreviation> "Z" ;
-	<http://www.opengis.net/ont/crs/asSVG> "<svg width=\"400\" height=\"100\" viewbox=\"0 0 275 100\"><defs><marker id=\"arrowhead\" markerWidth=\"10\" markerHeight=\"7\" refX=\"0\" refY=\"2\" orient=\"auto\"><polygon points=\"0 0, 4 2, 0 4\" /></marker></defs><line x1=\"20\" y1=\"50\" x2=\"200\" y2=\"50\" stroke=\"gray\" stroke-width=\"5\" marker-end=\"url(#arrowhead)\"></line><text x=\"30\" y=\"70\" class=\"small\">Z: Cartesian Z (om:millimetre)</text></svg>"^^<http://www.opengis.net/ont/geosparql/crs#svgLiteral> ;
-    <http://www.opengis.net/ont/crs/axisDirection> <http://www.opengis.net/ont/crs/geocentricZ> ;
-    <http://www.opengis.net/ont/crs/axisOrder> "3"^^xsd:int .
+    <https://situx.github.io/proj4rdf/ont/crs/abbreviation> "Z" ;
+	<https://situx.github.io/proj4rdf/ont/crs/asSVG> "<svg width=\"400\" height=\"100\" viewbox=\"0 0 275 100\"><defs><marker id=\"arrowhead\" markerWidth=\"10\" markerHeight=\"7\" refX=\"0\" refY=\"2\" orient=\"auto\"><polygon points=\"0 0, 4 2, 0 4\" /></marker></defs><line x1=\"20\" y1=\"50\" x2=\"200\" y2=\"50\" stroke=\"gray\" stroke-width=\"5\" marker-end=\"url(#arrowhead)\"></line><text x=\"30\" y=\"70\" class=\"small\">Z: Cartesian Z (om:millimetre)</text></svg>"^^<http://www.opengis.net/ont/geosparql/crs#svgLiteral> ;
+    <https://situx.github.io/proj4rdf/ont/crs/axisDirection> <https://situx.github.io/proj4rdf/ont/crs/geocentricZ> ;
+    <https://situx.github.io/proj4rdf/ont/crs/axisOrder> "3"^^xsd:int .
 	
 	
 	
