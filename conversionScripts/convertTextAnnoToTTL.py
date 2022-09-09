@@ -26,8 +26,8 @@ def indexTransliteration(transliteration):
                 wordindexcounter+=len(line)+2
                 charindexcounter+=len(line)+2
             else:
-                lineindexcounter+=len(line)+1
                 wordindexcounter+=len(line)+1
+                lineindexcounter+=len(line)+1
                 charindexcounter+=len(line)+1
             if line.startswith("@") and not line.startswith("@tablet"):
                 currentside=line.replace("@","")              
@@ -98,6 +98,7 @@ for tabname in tabletnames:
     filename="../examples/"+str(tabname)+"/transliteration/"+str(tabname)+"_textanno.json"
     translitfilename="../examples/"+str(tabname)+"/transliteration/"+str(tabname)+".atf"
     namespace="https://situx.github.io/cuneiformontology/examples/"+str(tabname).lower()+"/textannotations/"
+    namespacetext="https://situx.github.io/cuneiformontology/examples/"+str(tabname).lower()+"/"
     namespaceitems="https://situx.github.io/cuneiformontology/examples/"+str(tabname).lower()+"/"
     print(filename)
     print(translitfilename)
@@ -232,7 +233,7 @@ for tabname in tabletnames:
                 if item["purpose"]=="Transcription (Babylonian Reading)":
                     res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_transcription> .\n")
                     res.write("<"+str(indid)+"_body_transcription> rdf:type oa:TextualBody .\n")
-                    res.write("<"+str(indid)+"_body_guideword> oa:motivatedBy oa:describing .\n") 
+                    res.write("<"+str(indid)+"_body_transcription> oa:motivatedBy oa:describing .\n") 
                     res.write("<"+str(indid)+"_body_transcription> rdfs:label \"Babylonian Reading: "+str(item["value"])+"\"@en .\n")
                     res.write("<"+str(indid)+"_body_transcription> rdf:value \""+str(item["value"])+"\"^^xsd:string .\n")
                 if item["purpose"]=="GuideWord":

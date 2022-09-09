@@ -176,6 +176,7 @@ for tabname in tabletnames:
             lineindex=None
             columnindex=None
             wedgeindex=None
+            wedgetype=None
             curtranslit=""
             source=""
             ischaracter=False
@@ -192,6 +193,8 @@ for tabname in tabletnames:
                         charindex=item["value"]
                     if item["purpose"]=="Wedgeindex":
                         wedgeindex=int(item["value"])
+                    if item["purpose"]=="Wedgetype":
+                        wedgetype=item["value"]
                     if item["purpose"]=="Transliteration":
                         curtranslit=item["value"]
                     if item["purpose"]=="TabletSide":
@@ -231,6 +234,13 @@ for tabname in tabletnames:
                 res.write("<"+str(indid)+"_body_wedgeindex> oa:purpose oa:tagging .\n")
                 res.write("<"+str(indid)+"_body_wedgeindex> rdfs:label \"Annotation Body: Wedge "+str(wedgeindex)+"\"@en .\n")
                 res.write("<"+str(indid)+"_body_wedgeindex> rdf:value \""+str(wedgeindex)+"\"^^xsd:integer .\n")
+            if wedgetype!=None and wedgetype!="":
+                res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_wedgetype> .\n")
+                res.write("<"+str(indid)+"_body_wedgetype> rdf:type oa:TextualBody .\n")
+                res.write("<"+str(indid)+"_body_wedgetype> oa:motivatedBy oa:classifying .\n")
+                res.write("<"+str(indid)+"_body_wedgetype> oa:purpose oa:tagging .\n")
+                res.write("<"+str(indid)+"_body_wedgetype> rdfs:label \"Annotation Body: Wedge Type "+str(wedgetype)+"\"@en .\n")
+                res.write("<"+str(indid)+"_body_wedgetype> rdf:value \""+str(wedgetype)+"\"^^xsd:string .\n")
             if columnindex!=None and columnindex!="":
                 res.write("<"+str(indid)+"> oa:hasBody <"+str(indid)+"_body_columnindex> .\n")
                 res.write("<"+str(indid)+"_body_columnindex> rdf:type oa:TextualBody .\n")
