@@ -406,7 +406,7 @@ lemon:WordForm rdf:type owl:Class ;
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/E22_ManMadeObject
-cidoc:E22_ManMadeObject rdf:type owl:Class ;
+cidoc:E22_ManMadeObject rdf:type owl:Class ; rdfs:subClassOf prov:Entity ;
                         rdfs:label "man made object"@en .
 
 
@@ -528,6 +528,8 @@ cunei:Transliteration rdf:type owl:Class ;
 
 
 cunei:Transliteration rdfs:subClassOf cunei:Representation .
+
+cunei:Representation rdfs:subClassOf prov:Entity .
 
 ###  http://www.purl.org/cuneiform#TransliterationCharOccurrence
 cunei:TransliterationCharOccurrence rdf:type owl:Class ;
