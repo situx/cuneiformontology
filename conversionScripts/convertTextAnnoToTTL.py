@@ -46,7 +46,7 @@ def indexTransliteration(transliteration):
                 print("Word: "+str(word))
                 print("Word: "+str(wordindexcounter))
                 wordindex[str(linenumber)+"_"+str(wordcounter)]={"start":wordindexcounter,"end":wordindexcounter+len(word),"exact":str(word),"id":str(linenumber)+"_"+str(wordcounter)}
-                wordindexreverse[str(wordindexcounter)]={"start":wordindexcounter,"end":wordindexcounter+len(word),"id":str(currentside)+"_line"+str(linenumber)+"_word"+str(wordcounter),"exact":str(word),"line":linenumber,"word":wordcounter}
+                wordindexreverse[str(wordindexcounter)]={"start":wordindexcounter,"end":wordindexcounter+len(word),"id":str(currentside)+"_line"+str(linenumber)+"_word"+str(wordcounter)+"_wordformocc","exact":str(word),"line":linenumber,"word":wordcounter}
                 charcounter=1
                 for chara in re.split("-|\.",word):
                     charindex[str(linenumber)+"_"+str(charcounter)]={"start":charindexcounter,"end":charindexcounter+len(chara),"exact":str(chara),"id":str(linenumber)+"_"+str(charcounter)}

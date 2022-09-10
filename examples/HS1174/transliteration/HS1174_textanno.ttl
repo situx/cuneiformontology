@@ -1,8 +1,8 @@
 @prefix as: <https://www.w3.org/ns/activitystreams#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix lemon: <http://lemon-model.net/lemon#> .
-@prefix ns1: <http://purl.org/dc/terms/> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -16,7 +16,7 @@ oa:TextQuoteSelector a owl:Class ;
     rdfs:subClassOf oa:Selector .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/HS1174_lexicon_None> a lemon:Lexicon ;
-    lemon:entry <file:///C:/Users/timohomburg/git/cuneiformontology/examples/HS1174/transliteration/Duku_word> ;
+    lemon:entry <file:///home/timo/git/cuneiformontology/examples/HS1174/transliteration/Duku_word> ;
     lemon:language <http://www.lexvo.org/page/iso639-1/None> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/HS1174_transliteration1_textannotations> a as:Collection ;
@@ -37,13 +37,13 @@ oa:TextQuoteSelector a owl:Class ;
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/fe8a78fb-5ef1-42e2-a764-bee6cdbf41b4> ;
     rdfs:subClassOf skos:Collection .
 
-<file:///C:/Users/timohomburg/git/cuneiformontology/examples/HS1174/transliteration/Duku_word> a lemon:Word ;
+<file:///home/timo/git/cuneiformontology/examples/HS1174/transliteration/Duku_word> a lemon:Word ;
     rdfs:label "Word: Duku"@en .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/147fcf81-14df-4578-a917-0e3cefbfd17a> a oa:Annotation ;
     rdfs:label "Annotation of text passage of transliteration 1 of HS1174 "@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/147fcf81-14df-4578-a917-0e3cefbfd17a_body_class_postag>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/147fcf81-14df-4578-a917-0e3cefbfd17a_body_class_sense>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/147fcf81-14df-4578-a917-0e3cefbfd17a_body_wordform> ;
@@ -79,8 +79,8 @@ oa:TextQuoteSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/1ae487f4-737b-4dab-a46f-6fe74c18a265> a oa:Annotation ;
     rdfs:label "Annotation of text passage of transliteration 1 of HS1174 "@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/1ae487f4-737b-4dab-a46f-6fe74c18a265_body_class_postag>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/1ae487f4-737b-4dab-a46f-6fe74c18a265_body_class_sense>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/1ae487f4-737b-4dab-a46f-6fe74c18a265_body_wordform> ;
@@ -116,8 +116,8 @@ oa:TextQuoteSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/1ed62d2e-7780-4817-b037-4514321f5b60> a oa:Annotation ;
     rdfs:label "Annotation of text passage of transliteration 1 of HS1174 "@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/1ed62d2e-7780-4817-b037-4514321f5b60_body_class_postag>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/1ed62d2e-7780-4817-b037-4514321f5b60_body_class_sense>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/1ed62d2e-7780-4817-b037-4514321f5b60_body_wordform> ;
@@ -153,8 +153,8 @@ oa:TextQuoteSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/36f343b2-b2bc-41e7-b3a4-2d8afca8d283> a oa:Annotation ;
     rdfs:label "Annotation of text passage of transliteration 1 of HS1174 "@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/36f343b2-b2bc-41e7-b3a4-2d8afca8d283_body_class_postag>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/36f343b2-b2bc-41e7-b3a4-2d8afca8d283_body_class_sense>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/36f343b2-b2bc-41e7-b3a4-2d8afca8d283_body_wordform> ;
@@ -190,8 +190,8 @@ oa:TextQuoteSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/3da37ef8-06a5-466a-a609-4f2d9a2b3266> a oa:Annotation ;
     rdfs:label "Annotation of text passage of transliteration 1 of HS1174 "@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/3da37ef8-06a5-466a-a609-4f2d9a2b3266_body_class_postag>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/3da37ef8-06a5-466a-a609-4f2d9a2b3266_body_class_sense>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/3da37ef8-06a5-466a-a609-4f2d9a2b3266_body_wordform> ;
@@ -227,8 +227,8 @@ oa:TextQuoteSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/3fbd349d-e601-40d2-a0d8-69e44f1e4964> a oa:Annotation ;
     rdfs:label "Annotation of text passage of transliteration 1 of HS1174 "@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/3fbd349d-e601-40d2-a0d8-69e44f1e4964_body_class_sense>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/3fbd349d-e601-40d2-a0d8-69e44f1e4964_body_wordform> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/3fbd349d-e601-40d2-a0d8-69e44f1e4964_target1> ;
@@ -259,8 +259,8 @@ oa:TextQuoteSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/673adec3-028d-4d4c-ba56-c666cdbe41d2> a oa:Annotation ;
     rdfs:label "Annotation of text passage of transliteration 1 of HS1174 "@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/673adec3-028d-4d4c-ba56-c666cdbe41d2_body_class_postag>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/673adec3-028d-4d4c-ba56-c666cdbe41d2_body_class_sense>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/673adec3-028d-4d4c-ba56-c666cdbe41d2_body_wordform> ;
@@ -296,8 +296,8 @@ oa:TextQuoteSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/830c20cc-d59d-4722-949d-6bb1a6e7d8dc> a oa:Annotation ;
     rdfs:label "Annotation of text passage of transliteration 1 of HS1174 "@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/830c20cc-d59d-4722-949d-6bb1a6e7d8dc_body_class_postag>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/830c20cc-d59d-4722-949d-6bb1a6e7d8dc_body_class_sense>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/830c20cc-d59d-4722-949d-6bb1a6e7d8dc_body_wordform> ;
@@ -333,8 +333,8 @@ oa:TextQuoteSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/97d2d91f-3444-471c-8175-2fbc33916119> a oa:Annotation ;
     rdfs:label "Annotation of text passage of transliteration 1 of HS1174 "@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/97d2d91f-3444-471c-8175-2fbc33916119_body_class_postag>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/97d2d91f-3444-471c-8175-2fbc33916119_body_class_sense>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/97d2d91f-3444-471c-8175-2fbc33916119_body_wordform> ;
@@ -373,8 +373,8 @@ oa:TextQuoteSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/9e05045f-f555-4e35-a264-900ab6a1577d> a oa:Annotation ;
     rdfs:label "Annotation of text passage of transliteration 1 of HS1174 "@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/9e05045f-f555-4e35-a264-900ab6a1577d_body_class_postag>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/9e05045f-f555-4e35-a264-900ab6a1577d_body_class_sense> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/9e05045f-f555-4e35-a264-900ab6a1577d_target1> ;
@@ -403,8 +403,8 @@ oa:TextQuoteSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/a2f8cb33-c98a-43c9-b8f8-3b94947e839e> a oa:Annotation ;
     rdfs:label "Annotation of text passage of transliteration 1 of HS1174 "@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/a2f8cb33-c98a-43c9-b8f8-3b94947e839e_body_class_postag>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/a2f8cb33-c98a-43c9-b8f8-3b94947e839e_body_class_sense>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/a2f8cb33-c98a-43c9-b8f8-3b94947e839e_body_wordform> ;
@@ -440,8 +440,8 @@ oa:TextQuoteSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/abab8f9a-6b20-45d2-bbc8-682c233d9630> a oa:Annotation ;
     rdfs:label "Annotation of text passage of transliteration 1 of HS1174 "@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/abab8f9a-6b20-45d2-bbc8-682c233d9630_body_class_postag>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/abab8f9a-6b20-45d2-bbc8-682c233d9630_body_lemma> ;
     oa:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/abab8f9a-6b20-45d2-bbc8-682c233d9630_target1> ;
@@ -469,8 +469,8 @@ oa:TextQuoteSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/f5a98936-6492-4e77-b4c6-ddf57a2e40d2> a oa:Annotation ;
     rdfs:label "Annotation of text passage of transliteration 1 of HS1174 "@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/f5a98936-6492-4e77-b4c6-ddf57a2e40d2_body_class_postag>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/f5a98936-6492-4e77-b4c6-ddf57a2e40d2_body_class_sense>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/f5a98936-6492-4e77-b4c6-ddf57a2e40d2_body_wordform> ;
@@ -506,8 +506,8 @@ oa:TextQuoteSelector a owl:Class ;
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/fe8a78fb-5ef1-42e2-a764-bee6cdbf41b4> a oa:Annotation ;
     rdfs:label "Annotation of text passage of transliteration 1 of HS1174 "@en ;
-    ns1:creator <https://orcid.org/0000-0002-9499-5840> ;
-    ns1:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     oa:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/fe8a78fb-5ef1-42e2-a764-bee6cdbf41b4_body_class_postag>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/fe8a78fb-5ef1-42e2-a764-bee6cdbf41b4_body_class_sense>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/fe8a78fb-5ef1-42e2-a764-bee6cdbf41b4_body_wordform> ;
