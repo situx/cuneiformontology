@@ -8,6 +8,7 @@
 @prefix cunei: <http://www.purl.org/cuneiform#> .
 @prefix lemon: <http://lemon-model.net/lemon#> .
 @prefix sf: <http://www.opengis.net/ont/sf#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
 @prefix giga:<http://www.gigamesh.eu/ont#> .
 @prefix wdt:<http://www.wikidata.org/prop/direct/> .
 @prefix prov:<http://www.w3.org/ns/prov#> .
@@ -19,7 +20,6 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix iptc: <http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/> .
 @prefix xmp: <http://ns.adobe.com/xap/1.0/> .
-@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix gsp: <http://www.opengis.net/ont/geosparql#> .
 @base <http://www.w3.org/2002/07/owl#> .
 
@@ -323,8 +323,8 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
 					giga:Mesh rdf:type owl:Class .
 					giga:Mesh rdfs:subClassOf prov:Entity .
 					giga:Mesh rdfs:label "Mesh"@en .
-					geo:Geometry rdf:type owl:Class .
-					geo:Geometry rdfs:label "Geometry"@en .
+					geosparql:Geometry rdf:type owl:Class .
+					geosparql:Geometry rdfs:label "Geometry"@en .
 					foaf:Person rdf:type owl:Class .
 					foaf:Person rdfs:subClassOf prov:Agent .
 					foaf:Person rdfs:label "Person"@en .
@@ -752,59 +752,59 @@ graphemon:GraphemeVariant rdf:type owl:Class ;
 					giga:boundingBox rdfs:label "Bounding Box"@en . 
 					giga:boundingBox skos:definition "The bounding box of the mesh" .
 					giga:boundingBox rdfs:comment "Gigamesh Info: The bounding box of the mesh" .
-					<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_geom> rdf:type geo:Geometry .
+					<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_geom> rdf:type geosparql:Geometry .
 					<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_geom> rdfs:label "HT_07-31-95_3D_GMOCF Bounding Box"@en .
-					<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1> giga:boundingBox <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_geom> . <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_geom> geo:asWKT "ENVELOPE(-71.364300 0.000000 -27.127600,71.364300 101.715500 27.127600)"^^geo:wktLiteral .
+					<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1> giga:boundingBox <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_geom> . <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_geom> geosparql:asWKT "ENVELOPE(-71.364300 0.000000 -27.127600,71.364300 101.715500 27.127600)"^^geosparql:wktLiteral .
 					giga:minimumXCoordinate rdf:type owl:DatatypeProperty .
-					giga:minimumXCoordinate rdfs:domain geo:Geometry .
+					giga:minimumXCoordinate rdfs:domain geosparql:Geometry .
 					giga:minimumXCoordinate rdfs:label "Minimum X Coordinate"@en . 
 					giga:minimumXCoordinate skos:definition "The minimum x coordinate of the mesh" .
 					giga:minimumXCoordinate rdfs:comment "Gigamesh Info: Minimum X Coordinate" .
 					<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_geom> giga:minimumXCoordinate "-71.364300"^^xsd:double .
 					giga:minimumYCoordinate rdf:type owl:DatatypeProperty .
-					giga:minimumYCoordinate rdfs:domain geo:Geometry .
+					giga:minimumYCoordinate rdfs:domain geosparql:Geometry .
 					giga:minimumYCoordinate rdfs:label "Minimum Y Coordinate"@en . 
 					giga:minimumYCoordinate skos:definition "The minimum y coordinate of the mesh" .
 					giga:minimumYCoordinate rdfs:comment "Gigamesh Info: Minimum Y Coordinate" .
 					<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_geom> giga:minimumYCoordinate "0.000000"^^xsd:double .
 					giga:minimumZCoordinate rdf:type owl:DatatypeProperty .
-					giga:minimumZCoordinate rdfs:domain geo:Geometry .
+					giga:minimumZCoordinate rdfs:domain geosparql:Geometry .
 					giga:minimumZCoordinate rdfs:label "Minimum Z Coordinate"@en . 
 					giga:minimumZCoordinate skos:definition "The minimum z coordinate of the mesh" .
 					giga:minimumZCoordinate rdfs:comment "Gigamesh Info: Minimum Z Coordinate" .
 					<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_geom> giga:minimumZCoordinate "-27.127600"^^xsd:double .
 					giga:maximumXCoordinate rdf:type owl:DatatypeProperty .
-					giga:maximumXCoordinate rdfs:domain geo:Geometry .
+					giga:maximumXCoordinate rdfs:domain geosparql:Geometry .
 					giga:maximumXCoordinate rdfs:label "Maximum X Coordinate"@en . 
 					giga:maximumXCoordinate skos:definition "The maximum x coordinate of the mesh" .
 					giga:maximumXCoordinate rdfs:comment "Gigamesh Info: Maximum X Coordinate" .
 					<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_geom> giga:maximumXCoordinate "71.364300"^^xsd:double .
 					giga:maximumYCoordinate rdf:type owl:DatatypeProperty .
-					giga:maximumYCoordinate rdfs:domain geo:Geometry .
+					giga:maximumYCoordinate rdfs:domain geosparql:Geometry .
 					giga:maximumYCoordinate rdfs:label "Maximum Y Coordinate"@en . 
 					giga:maximumYCoordinate skos:definition "The maximum y coordinate of the mesh" .
 					giga:maximumYCoordinate rdfs:comment "Gigamesh Info: Maximum Y Coordinate" .
 					<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_geom> giga:maximumYCoordinate "101.715500"^^xsd:double .
 					giga:maximumZCoordinate rdf:type owl:DatatypeProperty .
-					giga:maximumZCoordinate rdfs:domain geo:Geometry .
+					giga:maximumZCoordinate rdfs:domain geosparql:Geometry .
 					giga:maximumZCoordinate rdfs:label "Maximum Z Coordinate"@en . 
 					giga:maximumZCoordinate skos:definition "The maximum y coordinate of the mesh" .
 					giga:maximumZCoordinate rdfs:comment "Gigamesh Info: Maximum Z Coordinate" .
 					<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_geom> giga:maximumZCoordinate "27.127600"^^xsd:double .
 					giga:boundingBoxWidth rdf:type owl:DatatypeProperty .
-					giga:boundingBoxWidth rdfs:domain geo:Geometry .
+					giga:boundingBoxWidth rdfs:domain geosparql:Geometry .
 					giga:boundingBoxWidth rdfs:label "Bounding Box Width"@en . 
 					giga:boundingBoxWidth skos:definition "The width of the bounding box encompassing the mesh" .
 					giga:boundingBoxWidth rdfs:comment "Gigamesh Info: Bounding Box Width" .
 					<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_geom> giga:boundingBoxWidth "14.300000"^^xsd:double .
 					giga:boundingBoxHeight rdf:type owl:DatatypeProperty .
-					giga:boundingBoxHeight rdfs:domain geo:Geometry .
+					giga:boundingBoxHeight rdfs:domain geosparql:Geometry .
 					giga:boundingBoxHeight rdfs:label "Bounding Box Height"@en. 
 					giga:boundingBoxHeight skos:definition "The height of the bounding box encompassing the mesh" .
 					giga:boundingBoxHeight rdfs:comment "Gigamesh Info: Bounding Box Height" .
 					<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_geom> giga:boundingBoxHeight "10.200000"^^xsd:double .
 					giga:boundingBoxThickness rdf:type owl:DatatypeProperty .
-					giga:boundingBoxThickness rdfs:domain geo:Geometry .
+					giga:boundingBoxThickness rdfs:domain geosparql:Geometry .
 					giga:boundingBoxThickness rdfs:label "Bounding Box Thickness"@en . 
 					giga:boundingBoxThickness skos:definition "The thickness of the bounding box encompassing the mesh" .
 					giga:boundingBoxThickness rdfs:comment "Gigamesh Info: Bounding Box Thickness" .
@@ -1510,8 +1510,8 @@ gsp:Geometry rdfs:subClassOf gsp:SpatialObject .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_excavloc> rdf:type gsp:Feature ;
 														rdfs:label "HT 07-31-95 Excavation Location"@en ;
-														geo:lat 32.0807663774 ;
-														geo:long 48.3289329982 ;
+														geosparql:lat 32.0807663774 ;
+														geosparql:long 48.3289329982 ;
 														gsp:hasGeometry <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_excavloc_geometry> ;
 														owl:sameAs <https://pleiades.stoa.org/places/379400932/> .
 
