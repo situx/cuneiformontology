@@ -19,6 +19,7 @@ jobs:
          sudo apt-get install python3-venv python3-wheel -y
          sudo pip3 install wheel pylode==2.13.2 rdflib shapely
          pylode -i ontmodel/cuneiformontology.ttl -o docs/ontology.html
+         pylode -i ontmodel/imageannotation_vocab.ttl -o docs/imageannotation.html
          pylode -i interlinks/cuneiformontology_interlinks.ttl -o docs/ontologyinterlinks.html
          pylode -i signlist/signlist.ttl -o docs/signlist.html
          pylode -i postagging/akkadian.ttl -o docs/postagging_akkadian.html
