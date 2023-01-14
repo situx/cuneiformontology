@@ -19,22 +19,22 @@
 ###  http://www.purl.org/cuneiform/Erasure
 :Erasure rdf:type owl:Class ;
          rdfs:subClassOf cunei:TabletFeature ;
-         <http://www.w3.org/2004/02/skos/core#definition> "A erased area on a cuneiform tablet"@en .
+         <http://www.w3.org/2004/02/skos/core#definition> "A erased area on a cuneiform tablet"@en ;
          rdfs:label "erasure" .
 
 :Character rdf:type owl:Class ;
          rdfs:subClassOf cunei:TabletFeature ;
-         <http://www.w3.org/2004/02/skos/core#definition> "A cuneiform character on a cuneiform tablet"@en .
+         <http://www.w3.org/2004/02/skos/core#definition> "A cuneiform character on a cuneiform tablet"@en ;
          rdfs:label "character" .
 		 
 :Word rdf:type owl:Class ;
          rdfs:subClassOf cunei:TabletFeature ;
-         <http://www.w3.org/2004/02/skos/core#definition> "A word on a cuneiform tablet"@en .
+         <http://www.w3.org/2004/02/skos/core#definition> "A word on a cuneiform tablet"@en ;
          rdfs:label "character" .
 		 
 :Line rdf:type owl:Class ;
          rdfs:subClassOf cunei:TabletFeature ;
-         <http://www.w3.org/2004/02/skos/core#definition> "A line on a cuneiform tablet"@en .
+         <http://www.w3.org/2004/02/skos/core#definition> "A line on a cuneiform tablet"@en ;
          rdfs:label "character" .
 
 ###  http://www.purl.org/cuneiform/FiringHole
@@ -58,14 +58,14 @@
 ###  http://www.purl.org/cuneiform/Ruling
 :Ruling rdf:type owl:Class ;
         rdfs:subClassOf cunei:TabletFeature ;
-        <http://www.w3.org/2004/02/skos/core#definition> "A ruling on a cuneiform tablet"@en .
+        <http://www.w3.org/2004/02/skos/core#definition> "A ruling on a cuneiform tablet"@en ;
         rdfs:label "ruling"@en .
 
 
 ###  http://www.purl.org/cuneiform/Sealing
 :Sealing rdf:type owl:Class ;
         rdfs:subClassOf cunei:TabletFeature ;
-        <http://www.w3.org/2004/02/skos/core#definition> "A sealing on a cuneiform tablet"@en .
+        <http://www.w3.org/2004/02/skos/core#definition> "A sealing on a cuneiform tablet"@en ;
          rdfs:label "sealing" .
 		 
 
