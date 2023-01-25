@@ -39,6 +39,8 @@ jobs:
          cp -r examples/HT073195/images/ docs/examples/ht073195/images/ 
          cp -r examples/TCH92/images/ docs/examples/tch92/images/ 
          cp -r examples/O147/images/ docs/examples/o147/images/ 
+         wget https://raw.githubusercontent.com/sparqlunicorn/sparqlunicornGoesGIS-ontdoc/main/docgeneration.py 
+         wget https://raw.githubusercontent.com/sparqlunicorn/sparqlunicornGoesGIS-ontdoc/main/prefixes.json 
          python3 docgeneration.py signlist/signlist.ttl docs/ https://situx.github.io/cuneiformontology/ cuneisignlist False
          python3 docgeneration.py examples/HS1174/transliteration/HS1174.atf.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
          python3 docgeneration.py examples/HS1174/transliteration/HS1174_textanno.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
