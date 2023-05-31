@@ -1,0 +1,18 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/o147/O147> a ns1:Tablet ;
+    rdfs:label "Cuneiform Artifact: O147",
+        "O147 cuneiform artifact"@en ;
+    ns1:hasSurface <https://situx.github.io/cuneiformontology/examples/o147/O147_bottom>,
+        <https://situx.github.io/cuneiformontology/examples/o147/O147_left>,
+        <https://situx.github.io/cuneiformontology/examples/o147/O147_obverse>,
+        <https://situx.github.io/cuneiformontology/examples/o147/O147_reverse>,
+        <https://situx.github.io/cuneiformontology/examples/o147/O147_right> ;
+    ns1:material ns1:clay ;
+    ns1:museumNumber "O147"^^xsd:string ;
+    ns1:transliteration <https://situx.github.io/cuneiformontology/examples/o147/transliteration1> ;
+    foaf:image "https://situx.github.io/cuneiformontology/examples/o147/O147_3dmesh1"^^xsd:anyURI .
+

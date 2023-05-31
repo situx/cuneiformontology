@@ -1,0 +1,370 @@
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/dict/1(u)_word> a ns2:Word ;
+    rdfs:label "Word: 1(u)"@en .
+
+<https://situx.github.io/cuneiformontology/examples/dict/1(u)_wordsense> a ns2:LexicalSense ;
+    rdfs:label "Wordsense: 1(u)"@en ;
+    ns2:reference <http://www.wikidata.org/entity/Q23806> .
+
+<https://situx.github.io/cuneiformontology/examples/dict/5(disz)_word> a ns2:Word ;
+    rdfs:label "Word: 5(disz)"@en ;
+    ns2:form <https://situx.github.io/cuneiformontology/examples/dict/5(disz)_wordform_5(disz)> ;
+    ns2:sense <https://situx.github.io/cuneiformontology/examples/dict/5(disz)_wordsense> .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line10_word1> a owl:NamedIndividual ;
+    rdfs:label "O147 transliteration 1 obverse line 10 word 1"@en ;
+    ns1:lineNumber 10 ;
+    ns1:wordIndex 1 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line12_word1> a owl:NamedIndividual ;
+    rdfs:label "O147 transliteration 1 obverse line 12 word 1"@en ;
+    ns1:lineNumber 12 ;
+    ns1:wordIndex 1 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line13_word1> a owl:NamedIndividual ;
+    rdfs:label "O147 transliteration 1 obverse line 13 word 1"@en ;
+    ns1:lineNumber 13 ;
+    ns1:wordIndex 1 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line8_word1> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 obverse line 8 word 1"@en ;
+    ns1:lineNumber 8 ;
+    ns1:wordIndex 1 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line10_word1> a owl:NamedIndividual ;
+    rdfs:label "O147 transliteration 1 reverse line 10 word 1"@en ;
+    ns1:lineNumber 10 ;
+    ns1:wordIndex 1 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line10_word2> a owl:NamedIndividual ;
+    rdfs:label "O147 transliteration 1 reverse line 10 word 2"@en ;
+    ns1:lineNumber 10 ;
+    ns1:wordIndex 2 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line2_word1> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 reverse line 2 word 1"@en ;
+    ns1:lineNumber 2 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line2_word2> ;
+    ns1:wordIndex 1 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line3_word1> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 reverse line 3 word 1"@en ;
+    ns1:lineNumber 3 ;
+    ns1:wordIndex 1 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/dumu_word> a ns2:Word ;
+    rdfs:label "Word: dumu"@en ;
+    ns2:form <https://situx.github.io/cuneiformontology/examples/dict/1(u)_wordform_1(u)> ;
+    ns2:sense <https://situx.github.io/cuneiformontology/examples/o147/dumu_sense> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Lexeme:L643788> .
+
+<https://situx.github.io/cuneiformontology/examples/dict/dumu_wordform_dumu> a ns2:WordForm ;
+    rdfs:label "Wordform: dumu"@en .
+
+<https://situx.github.io/cuneiformontology/examples/dict/dumu_wordsense> a ns2:LexicalSense ;
+    rdfs:label "Wordsense: dumu"@en .
+
+<https://situx.github.io/cuneiformontology/examples/dict/sar_word> a owl:NamedIndividual ;
+    rdfs:label "Word: SAR"@en .
+
+<https://situx.github.io/cuneiformontology/examples/dict/sar_wordform_sar> a owl:NamedIndividual ;
+    rdfs:label "Wordform: SAR"@en .
+
+<https://situx.github.io/cuneiformontology/examples/dict/1(u)_wordform_1(u)> a ns2:WordForm ;
+    rdfs:label "Wordform: 1(u)"@en .
+
+<https://situx.github.io/cuneiformontology/examples/dict/5(disz)_wordform_5(disz)> a ns2:WordForm ;
+    rdfs:label "Wordform: 5(disz)"@en .
+
+<https://situx.github.io/cuneiformontology/examples/dict/5(disz)_wordsense> a ns2:LexicalSense ;
+    rdfs:label "Wordsense: 5(disz)"@en ;
+    ns2:reference <http://www.wikidata.org/entry/Q203> .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line11_word1> a owl:NamedIndividual ;
+    rdfs:label "O147 transliteration 1 obverse line 11 word 1"@en ;
+    ns1:lineNumber 11 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line11_word2> ;
+    ns1:wordIndex 1 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line11_word2> a owl:NamedIndividual ;
+    rdfs:label "O147 transliteration 1 obverse line 11 word 2"@en ;
+    ns1:lineNumber 11 ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line11_word1> ;
+    ns1:wordIndex 2 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line1_word1> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 obverse line 1 word 1"@en ;
+    ns1:lineNumber 1 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line1_word2> ;
+    ns1:wordIndex 1 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line1_word4> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 obverse line 1 word 4"@en ;
+    ns1:lineNumber 1 ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line1_word3> ;
+    ns1:wordIndex 4 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line2_word1> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 obverse line 2 word 1"@en ;
+    ns1:lineNumber 2 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line2_word2> ;
+    ns1:wordIndex 1 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line2_word2> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 obverse line 2 word 2"@en ;
+    ns1:lineNumber 2 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line2_word3> ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line2_word1> ;
+    ns1:wordIndex 2 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line2_word3> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 obverse line 2 word 3"@en ;
+    ns1:lineNumber 2 ;
+    ns1:wordIndex 3 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line3_word1> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 obverse line 3 word 1"@en ;
+    ns1:lineNumber 3 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line3_word2>,
+        <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line3_word3> ;
+    ns1:wordIndex 1 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line3_word3> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 obverse line 3 word 3"@en ;
+    ns1:lineNumber 3 ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line3_word2> ;
+    ns1:wordIndex 3 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line4_word1> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 obverse line 4 word 1"@en ;
+    ns1:lineNumber 4 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line4_word2> ;
+    ns1:wordIndex 1 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line4_word3> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 obverse line 4 word 3"@en ;
+    ns1:lineNumber 4 ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line4_word2> ;
+    ns1:wordIndex 3 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line5_word1> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 obverse line 5 word 1"@en ;
+    ns1:lineNumber 5 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line5_word2> ;
+    ns1:wordIndex 1 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line5_word4> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 obverse line 5 word 4"@en ;
+    ns1:lineNumber 5 ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line5_word3> ;
+    ns1:wordIndex 4 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line6_word1> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 obverse line 6 word 1"@en ;
+    ns1:lineNumber 6 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line6_word2> ;
+    ns1:wordIndex 1 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line6_word2> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 obverse line 6 word 2"@en ;
+    ns1:lineNumber 6 ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line6_word1> ;
+    ns1:wordIndex 2 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line7_word1> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 obverse line 7 word 1"@en ;
+    ns1:lineNumber 7 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line7_word2> ;
+    ns1:wordIndex 1 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line7_word2> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 obverse line 7 word 2"@en ;
+    ns1:lineNumber 7 ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line7_word1> ;
+    ns1:wordIndex 2 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line9_word1> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 obverse line 9 word 1"@en ;
+    ns1:lineNumber 9 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line9_word2> ;
+    ns1:wordIndex 1 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line9_word2> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 obverse line 9 word 2"@en ;
+    ns1:lineNumber 9 ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line9_word1> ;
+    ns1:wordIndex 2 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line11_word1> a owl:NamedIndividual ;
+    rdfs:label "O147 transliteration 1 reverse line 11 word 1"@en ;
+    ns1:lineNumber 11 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line11_word2> ;
+    ns1:wordIndex 1 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line11_word2> a owl:NamedIndividual ;
+    rdfs:label "O147 transliteration 1 reverse line 11 word 2"@en ;
+    ns1:lineNumber 11 ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line11_word1> ;
+    ns1:wordIndex 2 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line1_word2> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 reverse line 1 word 2"@en ;
+    ns1:lineNumber 1 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line1_word3> ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line1_word1> ;
+    ns1:wordIndex 2 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line1_word4> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 reverse line 1 word 4"@en ;
+    ns1:lineNumber 1 ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line1_word3> ;
+    ns1:wordIndex 4 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line2_word2> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 reverse line 2 word 2"@en ;
+    ns1:lineNumber 2 ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line1_word1> ;
+    ns1:wordIndex 2 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line4_word1> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 reverse line 4 word 1"@en ;
+    ns1:lineNumber 4 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line4_word2> ;
+    ns1:wordIndex 1 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line4_word5> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 reverse line 4 word 5"@en ;
+    ns1:lineNumber 4 ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line4_word4> ;
+    ns1:wordIndex 5 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line5_word1> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 reverse line 5 word 1"@en ;
+    ns1:lineNumber 5 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line5_word2> ;
+    ns1:wordIndex 1 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line5_word4> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 reverse line 5 word 4"@en ;
+    ns1:lineNumber 5 ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line5_word3> ;
+    ns1:wordIndex 4 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line6_word1> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 reverse line 6 word 1"@en ;
+    ns1:lineNumber 6 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line6_word2> ;
+    ns1:wordIndex 1 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line6_word2> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 reverse line 6 word 2"@en ;
+    ns1:lineNumber 6 ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line6_word1> ;
+    ns1:wordIndex 2 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line9_word1> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 reverse line 9 word 1"@en ;
+    ns1:lineNumber 9 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line9_word2> ;
+    ns1:wordIndex 1 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line9_word2> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 reverse line 9 word 2"@en ;
+    ns1:lineNumber 9 ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line9_word1> ;
+    ns1:wordIndex 2 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line1_word2> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 obverse line 1 word 2"@en ;
+    ns1:lineNumber 1 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line1_word3> ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line1_word1> ;
+    ns1:wordIndex 2 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line1_word3> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 obverse line 1 word 3"@en ;
+    ns1:lineNumber 1 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line1_word4> ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line1_word2> ;
+    ns1:wordIndex 3 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line3_word2> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 obverse line 3 word 2"@en ;
+    ns1:lineNumber 3 ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line3_word1> ;
+    ns1:wordIndex 2 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line4_word2> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 obverse line 4 word 2"@en ;
+    ns1:lineNumber 4 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line4_word3> ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line4_word1> ;
+    ns1:wordIndex 2 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line5_word2> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 obverse line 5 word 2"@en ;
+    ns1:lineNumber 5 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line5_word3> ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line5_word1> ;
+    ns1:wordIndex 2 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line5_word3> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 obverse line 5 word 3"@en ;
+    ns1:lineNumber 5 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line5_word4> ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_obverse_line5_word2> ;
+    ns1:wordIndex 3 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line1_word3> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 reverse line 1 word 3"@en ;
+    ns1:lineNumber 1 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line1_word4> ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line1_word2> ;
+    ns1:wordIndex 3 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line4_word2> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 reverse line 4 word 2"@en ;
+    ns1:lineNumber 4 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line4_word3> ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line4_word1> ;
+    ns1:wordIndex 2 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line4_word3> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 reverse line 4 word 3"@en ;
+    ns1:lineNumber 4 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line4_word4> ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line4_word2> ;
+    ns1:wordIndex 3 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line4_word4> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 reverse line 4 word 4"@en ;
+    ns1:lineNumber 4 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line4_word5> ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line4_word3> ;
+    ns1:wordIndex 4 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line5_word2> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 reverse line 5 word 2"@en ;
+    ns1:lineNumber 5 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line5_word3> ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line5_word1> ;
+    ns1:wordIndex 2 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line5_word3> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 reverse line 5 word 3"@en ;
+    ns1:lineNumber 5 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line5_word4> ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line5_word2> ;
+    ns1:wordIndex 3 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line1_word1> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "O147 transliteration 1 reverse line 1 word 1"@en ;
+    ns1:lineNumber 1 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line1_word1> ;
+    ns1:wordIndex 1 .
+

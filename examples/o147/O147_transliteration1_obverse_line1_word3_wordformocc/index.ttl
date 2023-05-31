@@ -1,0 +1,14 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line1_word3_wordformocc> a ns2:WordFormOccurance ;
+    rdfs:label " WordForm Occurrence: sar (O147[obverse_line1_word3])"@en ;
+    ns2:consistsOf <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line1_char3_charocc> ;
+    ns2:contains <https://situx.github.io/cuneiformontology/signlist/character_sar> ;
+    ns2:nextWord <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line1_word4_wordformocc> ;
+    ns2:prevWord <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line1_word2_wordformocc> ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sar_reading_sar> ;
+    skos:definition "sar" .
+

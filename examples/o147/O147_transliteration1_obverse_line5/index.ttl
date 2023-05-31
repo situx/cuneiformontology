@@ -1,0 +1,20 @@
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line5> a ns1:TransliterationLine ;
+    rdfs:label "O147 transliteration 1 obverse line 5"@en,
+        "Transliteration Line: 5 [O147_obverse]"@en ;
+    ns2:writtenRepASCII "5"^^ns1:ASCIILiteral ;
+    ns2:writtenRepUnicode ""^^ns1:unicodeLiteral ;
+    ns1:consistsOf <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line5_word1_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line5_word2_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line5_word3_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line5_word4_wordformocc> ;
+    ns1:lineNumber 5 ;
+    ns1:nextLine <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line6> ;
+    ns1:prevLine <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line4> ;
+    skos:definition "5. u3 da e2 isz-du-ki-nu-um " .
+

@@ -1,0 +1,18 @@
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line8_char4_charocc> a ns1:TransliterationCharOccurrence ;
+    rdfs:label "Char Occurrence: PU2 (O147[obverse_transliteration1_line8_char4])"@en ;
+    ns2:writtenRepUnicode "" ;
+    ns1:charIndex 4 ;
+    ns1:lineNumber 8 ;
+    ns1:partOf <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line8_word2_wordformocc> ;
+    ns1:positionInWord 3 ;
+    ns1:positionOnTabletSide 52 ;
+    ns1:prev <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line8_char3_charocc> ;
+    ns1:prevInWord <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line8_char2_charocc> ;
+    skos:definition "PU2" .
+

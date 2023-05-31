@@ -1,0 +1,18 @@
+@prefix ns1: <https://situx.github.io/proj4rdf/ont/crs/> .
+@prefix ns2: <http://situx.github.io/proj4rdf/ont/crs/> .
+@prefix ns3: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2> a ns2:CoordinateSystemAxis,
+        ns1:CoordinateSystemAxis ;
+    rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 2"@en ;
+    ns2:abbreviation "Y" ;
+    ns2:axisDirection ns2:geocentricY ;
+    ns2:axisOrder "2"^^xsd:int ;
+    ns3:hasUnit ns3:millimetre ;
+    ns1:abbreviation "Y" ;
+    ns1:asSVG "<svg width=\"400\" height=\"100\" viewbox=\"0 0 275 100\"><defs><marker id=\"arrowhead\" markerWidth=\"10\" markerHeight=\"7\" refX=\"0\" refY=\"2\" orient=\"auto\"><polygon points=\"0 0, 4 2, 0 4\" /></marker></defs><line x1=\"20\" y1=\"50\" x2=\"200\" y2=\"50\" stroke=\"gray\" stroke-width=\"5\" marker-end=\"url(#arrowhead)\"></line><text x=\"30\" y=\"70\" class=\"small\">Y: Cartesian Y (om:millimetre)</text></svg>"^^<http://www.opengis.net/ont/geosparql/crs#svgLiteral> ;
+    ns1:axisDirection ns1:geocentricY ;
+    ns1:axisOrder "2"^^xsd:int .
+
