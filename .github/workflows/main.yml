@@ -8,7 +8,8 @@ jobs:
 
   ontdocHS1174:
     uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
-    name: Ontdoc HS1174      
+    name: Ontdoc HS1174  
+    needs: build
     with: 
           rdffilepath: examples/HS1174/transliteration/HS1174.atf.ttl examples/HS1174/mesh/HS1174_mesh.ttl examples/HS1174/ttl/HS1174_charvariant.ttl examples/HS1174/ttl/HS1174_charvariant.ttl examples/HS1174/ttl/HS1174_back.png.ttl examples/HS1174/transliteration/HS1174_textanno.ttl examples/HS1174/ttl/hs1174.ttl examples/HS1174/ttl/HS1174_front.png.ttl
           docpath: docs/
@@ -25,6 +26,7 @@ jobs:
   ontdocHT073195:
       uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main 
       name: Ontdoc HT073195      
+      needs: build
       with: 
             rdffilepath: examples/HT073195/transliteration/HT073195_textanno.ttl examples/HT073195/ttl/ht073195.ttl examples/HT073195/transliteration/HT073195.atf.ttl examples/HT073195/ttl/HT073195_front.png.ttl
             docpath: docs/
@@ -41,6 +43,7 @@ jobs:
   ontdocO147:
       uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main 
       name: Ontdoc O147      
+      needs: build
       with: 
             rdffilepath: examples/TCH92/ttl/TCH92_back.png.ttl examples/O147/transliteration/O147_textanno.ttl examples/O147/mesh/O147_back_mesh.ttl examples/O147/mesh/O147_front_mesh.ttl examples/O147/ttl/O147_bottom.png.ttl examples/O147/ttl/O147_right.png.ttl examples/O147/ttl/O147_back.png.ttl examples/O147/ttl/o147.ttl examples/O147/ttl/O147_front.png.ttl examples/O147/transliteration/O147.atf.ttl
             docpath: docs/
@@ -57,6 +60,7 @@ jobs:
   ontdocTCH92:
       uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main 
       name: Ontdoc TCH92      
+      needs: build
       with: 
             rdffilepath: examples/TCH92/mesh/TCH92_mesh.ttl examples/TCH92/ttl/TCH92_back.png.ttl examples/TCH92/transliteration/TCH92_textanno.ttl examples/TCH92/ttl/tch92.ttl examples/TCH92/ttl/TCH92_front.png.ttl examples/TCH92//transliteration/TCH92.atf.ttl
             docpath: docs/
@@ -72,6 +76,7 @@ jobs:
 
   ontdocSignlist:
       uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main 
+      needs: build
       name: Ontdoc Signlist      
       with: 
             rdffilepath: signlist/signlist.ttl
