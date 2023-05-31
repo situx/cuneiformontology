@@ -1,0 +1,16 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_gingira> a ns1:Grapheme ;
+    rdfs:label "Character: Gingira (KISIM5overKISIM5)" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gingira_reading_gingira>,
+        <https://situx.github.io/cuneiformontology/signlist/character_gingira_reading_kisim5&kisim5> ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gingira_kisim5>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kisim5> ;
+    ns1:signName "Gingira (KISIM5overKISIM5)" ;
+    ns1:slha "404x_2" ;
+    ns1:unicodeCodepoint "U+121A9" ;
+    ns1:unicodeRepresentation "𒆩" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q87555843> .
+

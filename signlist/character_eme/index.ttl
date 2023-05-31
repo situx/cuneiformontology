@@ -1,0 +1,26 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_eme> a ns1:Grapheme ;
+    rdfs:label "Character: EME (KA×ME)" ;
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_eme_sense_tongue> ;
+    ns1:abzl "326" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_eme_reading_em4>,
+        <https://situx.github.io/cuneiformontology/signlist/character_eme_reading_eme>,
+        <https://situx.github.io/cuneiformontology/signlist/character_eme_reading_eme_eme>,
+        <https://situx.github.io/cuneiformontology/signlist/character_eme_reading_ka×me>,
+        <https://situx.github.io/cuneiformontology/signlist/character_eme_reading_uli> ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_eme_ka>,
+        <https://situx.github.io/cuneiformontology/signlist/character_me> ;
+    ns1:hethzl "147" ;
+    ns1:labat "32" ;
+    ns1:meszl "61" ;
+    ns1:obo "326" ;
+    ns1:signName "EME (KA×ME)" ;
+    ns1:slha "032" ;
+    ns1:unicodeCodepoint "U+12174" ;
+    ns1:unicodeRepresentation "𒅴" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q87555734> .
+

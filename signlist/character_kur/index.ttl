@@ -1,8 +1,51 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_kur> a ns1:Grapheme ;
-    rdfs:label "Character: KUR"@en ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_kur> ;
-    ns1:variant <https://situx.github.io/cuneiformontology/signlist/character_kur_variant1> .
+    rdfs:label "Character: KUR" ;
+    ns1:abzl "369" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_amma>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_anubu>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_ge21>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_gen3>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_gin3>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_gina3>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_gur16>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_kin3>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_kur>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_lad>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_lat>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_lata>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_mad>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_mak0>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_mat>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_nad>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_nat>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_nata>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_qur2>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_raman>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_ramanu>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_rammanu>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_raszu>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_razu>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_sad>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_sat>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_sata>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_szad>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_szada>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_szadi>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_szadu>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_szahan>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_szat>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_szata>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kur_reading_zizanu> ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_kur> ;
+    ns1:hethzl "329" ;
+    ns1:meszl "578" ;
+    ns1:signName "KUR" ;
+    ns1:slha "366" ;
+    ns1:unicodeCodepoint "U+121B3" ;
+    ns1:unicodeRepresentation "𒆳" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q87555867> .
 

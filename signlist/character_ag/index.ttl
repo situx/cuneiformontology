@@ -1,8 +1,37 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_ag> a ns1:Grapheme ;
-    rdfs:label "Character: AG"@en ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ag_reading_ak> ;
-    ns1:variant <https://situx.github.io/cuneiformontology/signlist/character_ag_variant1> .
+    rdfs:label "Character: AG" ;
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_ag_sense_to_make> ;
+    ns1:abzl "052" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ag_reading_a5>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ag_reading_ag>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ag_reading_ak>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ag_reading_ak_ak>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ag_reading_aka>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ag_reading_akiₓ>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ag_reading_aq>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ag_reading_aqa>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ag_reading_aŋ>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ag_reading_ke3>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ag_reading_ki3>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ag_reading_ki_d_3_ ag>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ag_reading_kid3>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ag_reading_me3>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ag_reading_na3>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ag_reading_ra6>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ag_reading_sza5> ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ag> ;
+    ns1:hethzl "81" ;
+    ns1:labat "97" ;
+    ns1:meszl "127" ;
+    ns1:obo "52" ;
+    ns1:signName "AG" ;
+    ns1:slha "097" ;
+    ns1:unicodeCodepoint "U+1201D" ;
+    ns1:unicodeRepresentation "𒀝" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q87555054> .
 

@@ -1,5 +1,13 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_ta_reading_ta> a <http://www.purl.org/graphemon#GraphemeReading> ;
-    rdfs:label "Grapheme Reading TA: ta"@en .
+<https://situx.github.io/cuneiformontology/signlist/character_ta_reading_ta> a ns1:GraphemeReading ;
+    rdfs:label "Grapheme Reading TA: TA",
+        "Grapheme Reading TA: ta",
+        "Grapheme Reading TA: ta," ;
+    ns1:epoch <http://www.wikidata.org/entity/Q110209565>,
+        <http://www.wikidata.org/entity/Q16530848>,
+        <http://www.wikidata.org/entity/Q22948607>,
+        <http://www.wikidata.org/entity/Q733897> ;
+    ns1:readingValue "ta" .
 

@@ -1,8 +1,25 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_pan> a ns1:Grapheme ;
-    rdfs:label "Character: PAN"@en ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_pan_reading_ban> ;
-    ns1:variant <https://situx.github.io/cuneiformontology/signlist/character_pan_variant1> .
+    rdfs:label "Character: PAN" ;
+    ns1:abzl "027" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_pan_reading_ba10>,
+        <https://situx.github.io/cuneiformontology/signlist/character_pan_reading_ban>,
+        <https://situx.github.io/cuneiformontology/signlist/character_pan_reading_bana>,
+        <https://situx.github.io/cuneiformontology/signlist/character_pan_reading_pan>,
+        <https://situx.github.io/cuneiformontology/signlist/character_pan_reading_pan_pan>,
+        <https://situx.github.io/cuneiformontology/signlist/character_pan_reading_pana>,
+        <https://situx.github.io/cuneiformontology/signlist/character_pan_reading_tir5> ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_pan> ;
+    ns1:hethzl "118" ;
+    ns1:labat "439" ;
+    ns1:meszl "685" ;
+    ns1:obo "27" ;
+    ns1:signName "PAN" ;
+    ns1:slha "439" ;
+    ns1:unicodeCodepoint "U+1227C" ;
+    ns1:unicodeRepresentation "𒉼" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q87556261> .
 

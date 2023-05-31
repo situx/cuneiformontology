@@ -1,8 +1,24 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_ma> a ns1:Grapheme ;
-    rdfs:label "Character: MA"@en ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ma_reading_ma> ;
-    ns1:variant <https://situx.github.io/cuneiformontology/signlist/character_ma_variant1> .
+    rdfs:label "Character: MA" ;
+    ns1:abzl "166" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ma_reading_ma>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ma_reading_ma_ma>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ma_reading_pesz3>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ma_reading_pesz3_k>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ma_reading_peszsze>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ma_reading_wa6> ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ma> ;
+    ns1:hethzl "208" ;
+    ns1:labat "342" ;
+    ns1:meszl "552" ;
+    ns1:obo "166" ;
+    ns1:signName "MA" ;
+    ns1:slha "342" ;
+    ns1:unicodeCodepoint "U+12220" ;
+    ns1:unicodeRepresentation "𒈠" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q87556088> .
 
