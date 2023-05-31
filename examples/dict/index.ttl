@@ -1,0 +1,300 @@
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns3: <http://lemon-model.net/lemon#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/dict/3(disz)_word> a ns3:Word ;
+    rdfs:label "Word: 3(disz)"@en ;
+    ns3:sense <https://situx.github.io/cuneiformontology/examples/hs1174/3(disz)_sense> .
+
+<https://situx.github.io/cuneiformontology/examples/dict/3(disz)_wordform_3(disz)> a ns3:WordForm ;
+    rdfs:label "Wordform: 3(disz)"@en .
+
+<https://situx.github.io/cuneiformontology/examples/dict/3(disz)_wordsense> a ns3:LexicalSense ;
+    rdfs:label "Word Sense: 3(disz)"@en ;
+    ns3:reference <http://www.wikidata.org/entity/Q201> .
+
+<https://situx.github.io/cuneiformontology/examples/dict/3(u)_word> a ns3:Word ;
+    rdfs:label "Word: 3(u)"@en ;
+    ns3:form <https://situx.github.io/cuneiformontology/examples/dict/3(u)_wordform_3(u)> ;
+    ns3:sense <https://situx.github.io/cuneiformontology/examples/hs1174/3(u)_sense> .
+
+<https://situx.github.io/cuneiformontology/examples/dict/3(u)_wordsense> a ns3:LexicalSense ;
+    rdfs:label "Word Sense: 3(u)"@en ;
+    ns3:reference <http://www.wikidata.org/enity/Q42817> .
+
+<https://situx.github.io/cuneiformontology/examples/dict/9(disz)_word> a ns3:Word ;
+    rdfs:label "Word: 9(disz)"@en ;
+    ns3:sense <https://situx.github.io/cuneiformontology/examples/hs1174/9(disz)_sense> .
+
+<https://situx.github.io/cuneiformontology/examples/dict/9(disz)_wordsense> a ns3:LexicalSense ;
+    rdfs:label "Word Sense: 9(disz)"@en ;
+    ns3:reference <http://www.wikidata.org/entity/Q19108> .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line1_word5> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 obverse line 1 word 5"@en ;
+    ns1:lineNumber 1 ;
+    ns1:wordIndex 5 ;
+    ns2:contains <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char5>,
+        <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char6> ;
+    skos:definition "dim2-ma" .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_reverse_line2_word1> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 reverse line 2 word 1"@en ;
+    ns1:lineNumber 2 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_reverse_line1_word2> ;
+    ns1:wordIndex 2 ;
+    skos:definition "nu-banda3" .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_reverse_line2_word2> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 reverse line 2 word 2"@en ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_reverse_line1_word1> ;
+    ns1:wordIndex 1 ;
+    skos:definition "ku3-sa6-ga" .
+
+<https://situx.github.io/cuneiformontology/examples/dict/e2-gal_word> a ns3:Word ;
+    rdfs:label "Word: e2-gal"@en ;
+    ns3:sense <https://situx.github.io/cuneiformontology/examples/hs1174/e2-gal_sense> .
+
+<https://situx.github.io/cuneiformontology/examples/dict/e2-gal_wordform_e2_gal> a ns3:WordForm ;
+    rdfs:label "Wordform: e2-gal"@en ;
+    ns3:writtenRep "e2-gal" .
+
+<https://situx.github.io/cuneiformontology/examples/dict/e2-gal_wordsense> a ns3:LexicalSense ;
+    rdfs:label "Word Sense: e2-gal"@en ;
+    ns3:reference <http://www.wikidata.org/entity/Q16560> .
+
+<https://situx.github.io/cuneiformontology/examples/dict/e2_word> a ns3:Word ;
+    rdfs:label "Word: e2"@en ;
+    ns3:form <https://situx.github.io/cuneiformontology/examples/dict/e2_a_wordform_e2_a> ;
+    ns3:sense <https://situx.github.io/cuneiformontology/examples/hs1174/e2_sense> .
+
+<https://situx.github.io/cuneiformontology/examples/dict/e2_wordform_e2> a ns3:WordForm ;
+    rdfs:label "Wordform 1: e2"@en .
+
+<https://situx.github.io/cuneiformontology/examples/dict/e2_wordsense> a ns3:LexicalSense ;
+    rdfs:label "Word Sense: e2"@en .
+
+<https://situx.github.io/cuneiformontology/examples/dict/gurusz_word> a ns3:Word ;
+    rdfs:label "Word: gurusz"@en .
+
+<https://situx.github.io/cuneiformontology/examples/dict/lu2_word> a ns3:Word ;
+    rdfs:label "Word: lu2"@en .
+
+<https://situx.github.io/cuneiformontology/examples/dict/lu2_wordsense> a ns3:LexicalSense ;
+    rdfs:label "Word Sense: lu2"@en .
+
+<https://situx.github.io/cuneiformontology/examples/dict/szesz_word> a ns3:Word ;
+    rdfs:label "Word: szesz"@en .
+
+<https://situx.github.io/cuneiformontology/examples/dict/szesz_wordsense> a ns3:LexicalSense ;
+    rdfs:label "Word Sense: szesz"@en .
+
+<https://situx.github.io/cuneiformontology/examples/dict/szu_word> a ns3:Word ;
+    rdfs:label "Word: szu"@en .
+
+<https://situx.github.io/cuneiformontology/examples/dict/ugula_word> a ns3:Word ;
+    rdfs:label "Word: ugula"@en ;
+    ns3:form <https://situx.github.io/cuneiformontology/examples/dict/ugula_wordform_ugula> .
+
+<https://situx.github.io/cuneiformontology/examples/dict/ugula_wordsense> a ns3:LexicalSense ;
+    rdfs:label "Word Sense: ugula"@en ;
+    ns3:reference <http://www.wikidata.org/entity/Q16358610> .
+
+<https://situx.github.io/cuneiformontology/examples/dict/3(u)_wordform_3(u)> a ns3:WordForm ;
+    rdfs:label "Wordform: 3(u)"@en .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line1_word1> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 obverse line 1 word 1"@en ;
+    ns1:lineNumber 1 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line1_word2> ;
+    ns1:wordIndex 1 ;
+    ns2:contains <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char1> ;
+    skos:definition "3(u)" .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line1_word3> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 obverse line 1 word 3"@en ;
+    ns1:lineNumber 1 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line1_word4> ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line1_word2> ;
+    ns1:wordIndex 3 ;
+    ns2:contains <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char3> ;
+    skos:definition "gurusz" .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line1_word4> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 obverse line 1 word 4"@en ;
+    ns1:lineNumber 1 ;
+    ns1:wordIndex 4 ;
+    ns2:contains <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char4> ;
+    skos:definition "szu" .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line2_word1> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 obverse line 2 word 1"@en ;
+    ns1:lineNumber 2 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line2_word2> ;
+    ns1:wordIndex 1 ;
+    ns2:contains <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char1>,
+        <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char2>,
+        <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char3>,
+        <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char4> ;
+    skos:definition "da-ak-ru-um" .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line2_word3> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 obverse line 2 word 3"@en ;
+    ns1:lineNumber 2 ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line2_word2> ;
+    ns1:wordIndex 3 ;
+    ns2:contains <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char7>,
+        <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char8> ;
+    skos:definition "ib2-dab5" .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line3_word1> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 obverse line 3 word 1"@en ;
+    ns1:lineNumber 3 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line3_word2> ;
+    ns1:wordIndex 1 ;
+    skos:definition "ugula" .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line3_word2> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 obverse line 3 word 2"@en ;
+    ns1:lineNumber 3 ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line3_word1> ;
+    ns1:wordIndex 2 ;
+    skos:definition "szesz-da-da" .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line4_word1> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 obverse line 4 word 1"@en ;
+    ns1:lineNumber 4 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line4_word2> ;
+    ns1:wordIndex 1 ;
+    skos:definition "9(disz)" .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line4_word5> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 obverse line 4 word 5"@en ;
+    ns1:lineNumber 4 ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line4_word4> ;
+    ns1:wordIndex 5 .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_reverse_line3_word1> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 reverse line 3 word 1"@en ;
+    ns1:lineNumber 3 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_reverse_line3_word2> ;
+    ns1:wordIndex 1 ;
+    skos:definition "e2-gal" .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_reverse_line3_word2> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 reverse line 3 word 2"@en ;
+    ns1:lineNumber 3 ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_reverse_line3_word1> ;
+    ns1:wordIndex 2 ;
+    skos:definition "ensi2-ka" .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_reverse_line4_word1> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 reverse line 4 word 1"@en ;
+    ns1:lineNumber 4 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_reverse_line4_word2> ;
+    ns1:wordIndex 1 ;
+    skos:definition "sza3" .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_reverse_line4_word2> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 reverse line 4 word 2"@en ;
+    ns1:lineNumber 4 ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_reverse_line4_word1> ;
+    ns1:wordIndex 2 ;
+    skos:definition "tum-al!(TA)" .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_reverse_line5_word1> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 reverse line 5 word 1"@en ;
+    ns1:lineNumber 5 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_reverse_line5_word2> ;
+    ns1:wordIndex 1 ;
+    skos:definition "iti" .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_reverse_line5_word2> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 reverse line 5 word 2"@en ;
+    ns1:lineNumber 5 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_reverse_line5_word3> ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_reverse_line5_word1> ;
+    ns1:wordIndex 2 ;
+    skos:definition "du6-ku3" .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_reverse_line5_word4> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 reverse line 5 word 4"@en ;
+    ns1:lineNumber 5 ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_reverse_line5_word3> ;
+    ns1:wordIndex 4 ;
+    skos:definition "9(disz)" .
+
+<https://situx.github.io/cuneiformontology/examples/dict/e2_a_wordform_e2_a> a ns3:WordForm ;
+    rdfs:label "Wordform: e2-a"@en .
+
+<https://situx.github.io/cuneiformontology/examples/dict/ugula_wordform_ugula> a ns3:WordForm ;
+    rdfs:label "Wordform: Ugula"@en .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line1_word2> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 obverse line 1 word 2"@en ;
+    ns1:lineNumber 1 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line1_word3> ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line1_word1> ;
+    ns1:wordIndex 2 ;
+    ns2:contains <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char2> ;
+    skos:definition "3(disz)" .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line2_word2> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 obverse line 2 word 2"@en ;
+    ns1:lineNumber 2 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line2_word3> ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line2_word1> ;
+    ns1:wordIndex 2 ;
+    ns2:contains <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char5>,
+        <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char6> ;
+    skos:definition "e2-a" .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line4_word2> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 obverse line 4 word 2"@en ;
+    ns1:lineNumber 4 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line4_word3> ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line4_word1> ;
+    ns1:wordIndex 2 ;
+    skos:definition "gurusz" .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line4_word3> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 obverse line 4 word 3"@en ;
+    ns1:lineNumber 4 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line4_word4> ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line4_word2> ;
+    ns1:wordIndex 3 ;
+    skos:definition "szu" .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line4_word4> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 obverse line 4 word 4"@en ;
+    ns1:lineNumber 4 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line4_word5> ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_obverse_line4_word3> ;
+    ns1:wordIndex 4 ;
+    skos:definition "dim2-ma" .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_reverse_line1_word1> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 reverse line 1 word 1"@en ;
+    ns1:lineNumber 1 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_reverse_line1_word2> ;
+    ns1:wordIndex 1 ;
+    skos:definition "ugula" .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_reverse_line1_word2> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 reverse line 1 word 2"@en ;
+    ns1:lineNumber 1 ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_reverse_line1_word1> ;
+    ns1:wordIndex 2 ;
+    skos:definition "lu2-ga-a" .
+
+<https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_reverse_line5_word3> a ns1:TransliterationWordOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 reverse line 5 word 3"@en ;
+    ns1:lineNumber 5 ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_reverse_line5_word4> ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/dict/HS1174_transliteration1_reverse_line5_word3> ;
+    ns1:wordIndex 3 ;
+    skos:definition "u4" .
+

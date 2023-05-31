@@ -1,0 +1,21 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix ns3: <http://www.purl.org/graphemon#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4> a ns2:Line ;
+    rdfs:label "HS 1174 obverse side line 4"@en,
+        "Line 4"@en ;
+    ns1:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line4> ;
+    ns2:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/line/line_4_HS1174_03_front.jpg> ;
+    ns2:lineNumber 4 ;
+    ns2:prevLine <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line3> ;
+    ns3:contains <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char1_glyph>,
+        <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char2_glyph>,
+        <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char3_glyph>,
+        <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char4_glyph>,
+        <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char5_glyph> ;
+    foaf:image "https://situx.github.io/cuneiformontology/examples/hs1174/images/line/line_4_HS1174_03_front.jpg"^^xsd:anyURI .
+

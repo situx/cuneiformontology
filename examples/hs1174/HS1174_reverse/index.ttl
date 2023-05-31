@@ -1,0 +1,18 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse> a ns1:ReverseSide,
+        ns1:Side ;
+    rdfs:label "HS 1174 reverse side"@en,
+        "HS1174: reverse"@en ;
+    ns1:isRepresentedBy <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113347:577532/full/full/0/default.jpg> ;
+    ns2:contains <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1>,
+        <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line2>,
+        <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3>,
+        <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line4>,
+        <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line5> ;
+    foaf:image "https://situx.github.io/cuneiformontology/examples/hs1174/images/sides/HS1174_back.jpg"^^xsd:anyURI .
+

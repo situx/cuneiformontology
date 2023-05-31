@@ -1,0 +1,18 @@
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line2> a ns1:TransliterationLine ;
+    rdfs:label "HS 1174 transliteration 1 reverse line 2"@en,
+        "Transliteration Line: 2 [HS1174_reverse]"@en ;
+    ns2:writtenRepASCII "2"^^ns1:ASCIILiteral ;
+    ns2:writtenRepUnicode ""^^ns1:unicodeLiteral ;
+    ns1:consistsOf <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line2_word1_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line2_word2_wordformocc> ;
+    ns1:lineNumber 2 ;
+    ns1:nextLine <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line3> ;
+    ns1:prevLine <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line1> ;
+    skos:definition "2. nu-banda3 ku3-sa6-ga" .
+

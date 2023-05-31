@@ -1,0 +1,20 @@
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns3: <http://www.purl.org/graphemon#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2_char1_charocc> a ns1:TransliterationCharOccurrence ;
+    rdfs:label "Char Occurrence: da (HS1174[obverse_transliteration1_line2_char1])"@en ;
+    ns2:writtenRepUnicode "𒁕" ;
+    ns1:charIndex 1 ;
+    ns1:contains <https://situx.github.io/cuneiformontology/signlist/character_da> ;
+    ns1:lineNumber 2 ;
+    ns1:nextInWord <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2_char2_charocc> ;
+    ns1:partOf <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2_word1_wordformocc> ;
+    ns1:positionInWord 1 ;
+    ns1:positionOnTabletSide 6 ;
+    ns3:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_da_reading_da> ;
+    skos:definition "da" .
+

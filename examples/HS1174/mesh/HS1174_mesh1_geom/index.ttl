@@ -1,0 +1,18 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://www.gigamesh.eu/ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh1_geom> a geo:Geometry ;
+    rdfs:label "HS1174_mesh1 Bounding Box"@en ;
+    ns1:boundingBoxHeight <https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh1_boundingBoxHeight> ;
+    ns1:boundingBoxThickness <https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh1_boundingBoxThickness> ;
+    ns1:boundingBoxWidth <https://situx.github.io/cuneiformontology/examples/HS1174/mesh/HS1174_mesh1_boundingBoxWidth> ;
+    ns1:maximumXCoordinate 1.53257e+01 ;
+    ns1:maximumYCoordinate 3.33153e+01 ;
+    ns1:maximumZCoordinate 7.3791e+00 ;
+    ns1:minimumXCoordinate -1.53257e+01 ;
+    ns1:minimumYCoordinate 0e+00 ;
+    ns1:minimumZCoordinate -7.3791e+00 ;
+    geo:asWKT "ENVELOPE(-15.325700 0.000000 -7.379100,15.325700 33.315300 7.379100)"^^geo:wktLiteral .
+
