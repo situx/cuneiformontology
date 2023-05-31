@@ -1,0 +1,15 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line26> a ns2:Line ;
+    rdfs:label "Line 26"@en,
+        "TCH92 obverse side line 26"@en ;
+    ns1:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line26> ;
+    ns2:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/tch92/images/line/line_26_TCH92_front.jpg> ;
+    ns2:nextLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line27> ;
+    ns2:prevLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line25> ;
+    foaf:image "https://situx.github.io/cuneiformontology/examples/tch92/images/line/line_26_TCH92_front.jpg"^^xsd:anyURI .
+

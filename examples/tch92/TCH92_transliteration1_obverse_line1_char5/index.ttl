@@ -1,0 +1,15 @@
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <https://situx.github.io/cuneiformontology/examples/signlist/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line1_char5> a ns1:TransliterationCharOccurrence ;
+    rdfs:label "TCH92 obverse line 1 char 5"@en ;
+    ns1:charIndex 5 ;
+    ns1:lineNumber 1 ;
+    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line1_char6> ;
+    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line1_char4> ;
+    skos:definition "tar2" ;
+    ns2:hasGraphemeReading ns2:character_dar_reading_tar2 .
+

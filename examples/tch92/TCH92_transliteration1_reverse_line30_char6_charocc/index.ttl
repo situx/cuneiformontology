@@ -1,0 +1,19 @@
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line30_char6_charocc> a ns1:TransliterationCharOccurrence ;
+    rdfs:label "Char Occurrence: ie (TCH92[reverse_transliteration1_line30_char6])"@en ;
+    ns2:writtenRepUnicode "" ;
+    ns1:charIndex 6 ;
+    ns1:lineNumber 30 ;
+    ns1:nextInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line30_char7_charocc> ;
+    ns1:partOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line30_word1_wordformocc> ;
+    ns1:positionInWord 6 ;
+    ns1:positionOnTabletSide 510 ;
+    ns1:prev <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line30_char5_charocc> ;
+    ns1:prevInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line30_char5_charocc> ;
+    skos:definition "ie" .
+

@@ -1,17 +1,9 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns1: <https://situx.github.io/cuneiformontology/examples/tch92/> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/signlist/character_a> a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: A"@en ;
-    ns1:abzl 470 ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_a_reading_a> ;
-    ns1:hasUnicodeCodePoint "U+12000" ;
-    ns1:hasUnicodeRepresentation "𒀀" ;
-    ns1:hethzl 364,
-        365 ;
-    ns1:meszl 839 ;
-    ns1:signName "A" ;
-    ns1:slha 579 ;
-    ns1:variant <https://situx.github.io/cuneiformontology/examples/hs1174/a_charvariant1> .
+    ns2:variant <https://situx.github.io/cuneiformontology/examples/signlist/character_a_reading_a> ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_a_reading_a> .
 

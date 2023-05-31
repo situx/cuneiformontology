@@ -1,0 +1,12 @@
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_word7_wordformocc> a ns1:WordFormOccurance ;
+    rdfs:label " WordForm Occurrence: LU2-sza (TCH92[reverse_line25_word7])"@en ;
+    ns1:consistsOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_char10_charocc>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_char9_charocc> ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_word8_wordformocc> ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_word6_wordformocc> ;
+    skos:definition "LU2-sza" .
+

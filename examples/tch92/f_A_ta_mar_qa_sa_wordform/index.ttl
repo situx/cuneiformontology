@@ -1,0 +1,12 @@
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://situx.github.io/cuneiformontology/examples/tch92/f_A_ta_mar_qa_sa_wordform> a ns2:WordForm ;
+    rdfs:label "WordForm: f-A-ta-mar-qa-sa"@en ;
+    ns2:writtenRepASCII "f-A-ta-mar-qa-sa"^^ns1:ASCIILiteral ;
+    ns2:writtenRepUnicode ""^^ns1:unicodeLiteral ;
+    ns1:isAttested <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19_word1_wordformocc> ;
+    skos:definition "f-A-ta-mar-qa-sa" .
+

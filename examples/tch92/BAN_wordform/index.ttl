@@ -1,0 +1,28 @@
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://situx.github.io/cuneiformontology/examples/tch92/BAN_wordform> a ns2:WordForm ;
+    rdfs:label "WordForm: BAN"@en,
+        "WordForm: BAN#"@en ;
+    ns2:writtenRepASCII "BAN"^^ns1:ASCIILiteral,
+        "BAN#"^^ns1:ASCIILiteral ;
+    ns2:writtenRepUnicode "𒉼"^^ns1:unicodeLiteral ;
+    ns1:isAttested <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line10_word3_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line16_word2_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line1_word2_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line21_word2_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line25_word2_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line27_word3_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line8_word2_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line12_word2_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line17_word2_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line21_word2_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line23_word2_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_word5_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line4_word2_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line9_word2_wordformocc> ;
+    skos:definition "BAN",
+        "BAN#" .
+
