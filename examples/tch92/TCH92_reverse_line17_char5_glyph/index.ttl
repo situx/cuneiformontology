@@ -1,0 +1,17 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix ns3: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line17_char5_glyph> a ns3:TX9_Glyph ;
+    rdfs:label "Glyph at TCH92 reverse side line 17 char 5"@en,
+        "Glyph at TCH92[reverse 17 5])"@en ;
+    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line17_char5_charocc> ;
+    ns3:TXP8_is_component_of ns2:TCH92_writtenText ;
+    ns2:isDamaged false ;
+    ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line17_char4_glyph> ;
+    foaf:image "https://situx.github.io/cuneiformontology/examples/tch92/images/character/char_17_5_BAN_TCH92_back.jpg"^^xsd:anyURI,
+        "https://situx.github.io/cuneiformontology/examples/tch92/images/charline/charline_17_5_BAN_TCH92_back.jpg"^^xsd:anyURI .
+

@@ -1,0 +1,8 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_writtenText> a ns1:TX1_WrittenText ;
+    rdfs:label "Written Text on TCH92" ;
+    ns1:P56_found_on <https://situx.github.io/cuneiformontology/examples/tch92/TCH92> ;
+    ns1:TXP10_read_by <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_writtenText_reading> .
+

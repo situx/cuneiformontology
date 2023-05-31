@@ -21,11 +21,6 @@ var minivowlresult={
    "uri": "http://www.w3.org/2002/07/owl#DatatypeProperty"
   },
   {
-   "name": "Line",
-   "type": "class",
-   "uri": "http://www.purl.org/cuneiform#Line"
-  },
-  {
    "name": "GlyphCollection",
    "type": "class",
    "uri": "http://www.purl.org/cuneiform#GlyphCollection"
@@ -34,6 +29,11 @@ var minivowlresult={
    "name": "GraphemeVariantCollection",
    "type": "class",
    "uri": "http://www.purl.org/graphemon#GraphemeVariantCollection"
+  },
+  {
+   "name": "Line",
+   "type": "class",
+   "uri": "http://www.purl.org/cuneiform#Line"
   },
   {
    "name": "GraphemeCollection",
@@ -133,97 +133,6 @@ var minivowlresult={
  ],
  "links": [
   {
-   "source": 21,
-   "target": 21,
-   "valueTo": "prevInWord",
-   "propertyTo": "class",
-   "uriTo": "http://www.purl.org/cuneiform#prevInWord"
-  },
-  {
-   "source": 21,
-   "target": 16,
-   "valueTo": "prevInWord",
-   "propertyTo": "class",
-   "uriTo": "http://www.purl.org/cuneiform#prevInWord"
-  },
-  {
-   "source": 16,
-   "target": 21,
-   "valueTo": "prevInWord",
-   "propertyTo": "class",
-   "uriTo": "http://www.purl.org/cuneiform#prevInWord"
-  },
-  {
-   "source": 16,
-   "target": 16,
-   "valueTo": "prevInWord",
-   "propertyTo": "class",
-   "uriTo": "http://www.purl.org/cuneiform#prevInWord"
-  },
-  {
-   "source": 21,
-   "target": 23,
-   "valueTo": "partOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.purl.org/cuneiform#partOf"
-  },
-  {
-   "source": 4,
-   "target": 21,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 4,
-   "target": 16,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 4,
-   "target": 13,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 4,
-   "target": 22,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 9,
-   "target": 21,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 9,
-   "target": 16,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 9,
-   "target": 13,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 9,
-   "target": 22,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
    "source": 7,
    "target": 21,
    "valueTo": "member",
@@ -239,192 +148,122 @@ var minivowlresult={
   },
   {
    "source": 7,
-   "target": 13,
+   "target": 22,
    "valueTo": "member",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
   },
   {
    "source": 7,
-   "target": 22,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 11,
-   "target": 21,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 11,
-   "target": 16,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 11,
    "target": 13,
    "valueTo": "member",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 11,
-   "target": 22,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 20,
-   "target": 21,
-   "valueTo": "consistsOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.purl.org/cuneiform#consistsOf"
-  },
-  {
-   "source": 20,
-   "target": 23,
-   "valueTo": "consistsOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.purl.org/cuneiform#consistsOf"
-  },
-  {
-   "source": 23,
-   "target": 21,
-   "valueTo": "consistsOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.purl.org/cuneiform#consistsOf"
-  },
-  {
-   "source": 23,
-   "target": 23,
-   "valueTo": "consistsOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.purl.org/cuneiform#consistsOf"
-  },
-  {
-   "source": 16,
-   "target": 16,
-   "valueTo": "prevGlyph",
-   "propertyTo": "class",
-   "uriTo": "http://www.purl.org/graphemon#prevGlyph"
-  },
-  {
-   "source": 21,
-   "target": 21,
-   "valueTo": "prev",
-   "propertyTo": "class",
-   "uriTo": "http://www.purl.org/cuneiform#prev"
-  },
-  {
-   "source": 21,
-   "target": 20,
-   "valueTo": "contains",
-   "propertyTo": "class",
-   "uriTo": "http://www.purl.org/cuneiform#contains"
-  },
-  {
-   "source": 21,
-   "target": 19,
-   "valueTo": "contains",
-   "propertyTo": "class",
-   "uriTo": "http://www.purl.org/cuneiform#contains"
-  },
-  {
-   "source": 23,
-   "target": 20,
-   "valueTo": "contains",
-   "propertyTo": "class",
-   "uriTo": "http://www.purl.org/cuneiform#contains"
-  },
-  {
-   "source": 23,
-   "target": 19,
-   "valueTo": "contains",
-   "propertyTo": "class",
-   "uriTo": "http://www.purl.org/cuneiform#contains"
-  },
-  {
-   "source": 16,
-   "target": 21,
-   "valueTo": "TXP3_is_rendered_by",
-   "propertyTo": "class",
-   "uriTo": "http://www.cidoc-crm.org/cidoc-crm/TXP3_is_rendered_by"
-  },
-  {
-   "source": 16,
-   "target": 20,
-   "valueTo": "TXP3_is_rendered_by",
-   "propertyTo": "class",
-   "uriTo": "http://www.cidoc-crm.org/cidoc-crm/TXP3_is_rendered_by"
-  },
-  {
-   "source": 16,
-   "target": 23,
-   "valueTo": "TXP3_is_rendered_by",
-   "propertyTo": "class",
-   "uriTo": "http://www.cidoc-crm.org/cidoc-crm/TXP3_is_rendered_by"
-  },
-  {
-   "source": 17,
-   "target": 21,
-   "valueTo": "TXP3_is_rendered_by",
-   "propertyTo": "class",
-   "uriTo": "http://www.cidoc-crm.org/cidoc-crm/TXP3_is_rendered_by"
-  },
-  {
-   "source": 17,
-   "target": 20,
-   "valueTo": "TXP3_is_rendered_by",
-   "propertyTo": "class",
-   "uriTo": "http://www.cidoc-crm.org/cidoc-crm/TXP3_is_rendered_by"
-  },
-  {
-   "source": 17,
-   "target": 23,
-   "valueTo": "TXP3_is_rendered_by",
-   "propertyTo": "class",
-   "uriTo": "http://www.cidoc-crm.org/cidoc-crm/TXP3_is_rendered_by"
   },
   {
    "source": 3,
    "target": 21,
-   "valueTo": "TXP3_is_rendered_by",
+   "valueTo": "member",
    "propertyTo": "class",
-   "uriTo": "http://www.cidoc-crm.org/cidoc-crm/TXP3_is_rendered_by"
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
   },
   {
    "source": 3,
-   "target": 20,
-   "valueTo": "TXP3_is_rendered_by",
+   "target": 16,
+   "valueTo": "member",
    "propertyTo": "class",
-   "uriTo": "http://www.cidoc-crm.org/cidoc-crm/TXP3_is_rendered_by"
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
   },
   {
    "source": 3,
-   "target": 23,
-   "valueTo": "TXP3_is_rendered_by",
+   "target": 22,
+   "valueTo": "member",
    "propertyTo": "class",
-   "uriTo": "http://www.cidoc-crm.org/cidoc-crm/TXP3_is_rendered_by"
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 3,
+   "target": 13,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 11,
+   "target": 21,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 11,
+   "target": 16,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 11,
+   "target": 22,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 11,
+   "target": 13,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 9,
+   "target": 21,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 9,
+   "target": 16,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 9,
+   "target": 22,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 9,
+   "target": 13,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 19,
+   "target": 22,
+   "valueTo": "hasGraphemeReading",
+   "propertyTo": "class",
+   "uriTo": "http://www.purl.org/graphemon#hasGraphemeReading"
   },
   {
    "source": 23,
-   "target": 23,
-   "valueTo": "nextWord",
+   "target": 22,
+   "valueTo": "hasGraphemeReading",
    "propertyTo": "class",
-   "uriTo": "http://www.purl.org/cuneiform#nextWord"
+   "uriTo": "http://www.purl.org/graphemon#hasGraphemeReading"
   },
   {
-   "source": 13,
-   "target": 23,
-   "valueTo": "isAttested",
+   "source": 21,
+   "target": 22,
+   "valueTo": "hasGraphemeReading",
    "propertyTo": "class",
-   "uriTo": "http://www.purl.org/cuneiform#isAttested"
+   "uriTo": "http://www.purl.org/graphemon#hasGraphemeReading"
   },
   {
    "source": 16,
@@ -435,31 +274,192 @@ var minivowlresult={
   },
   {
    "source": 21,
-   "target": 22,
-   "valueTo": "hasGraphemeReading",
-   "propertyTo": "class",
-   "uriTo": "http://www.purl.org/graphemon#hasGraphemeReading"
-  },
-  {
-   "source": 23,
-   "target": 22,
-   "valueTo": "hasGraphemeReading",
-   "propertyTo": "class",
-   "uriTo": "http://www.purl.org/graphemon#hasGraphemeReading"
-  },
-  {
-   "source": 19,
-   "target": 22,
-   "valueTo": "hasGraphemeReading",
-   "propertyTo": "class",
-   "uriTo": "http://www.purl.org/graphemon#hasGraphemeReading"
-  },
-  {
-   "source": 21,
    "target": 21,
    "valueTo": "nextInWord",
    "propertyTo": "class",
    "uriTo": "http://www.purl.org/cuneiform#nextInWord"
+  },
+  {
+   "source": 16,
+   "target": 16,
+   "valueTo": "prevGlyph",
+   "propertyTo": "class",
+   "uriTo": "http://www.purl.org/graphemon#prevGlyph"
+  },
+  {
+   "source": 21,
+   "target": 23,
+   "valueTo": "partOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.purl.org/cuneiform#partOf"
+  },
+  {
+   "source": 13,
+   "target": 23,
+   "valueTo": "isAttested",
+   "propertyTo": "class",
+   "uriTo": "http://www.purl.org/cuneiform#isAttested"
+  },
+  {
+   "source": 16,
+   "target": 21,
+   "valueTo": "TXP3_is_rendered_by",
+   "propertyTo": "class",
+   "uriTo": "http://www.cidoc-crm.org/cidoc-crm/TXP3_is_rendered_by"
+  },
+  {
+   "source": 16,
+   "target": 23,
+   "valueTo": "TXP3_is_rendered_by",
+   "propertyTo": "class",
+   "uriTo": "http://www.cidoc-crm.org/cidoc-crm/TXP3_is_rendered_by"
+  },
+  {
+   "source": 16,
+   "target": 20,
+   "valueTo": "TXP3_is_rendered_by",
+   "propertyTo": "class",
+   "uriTo": "http://www.cidoc-crm.org/cidoc-crm/TXP3_is_rendered_by"
+  },
+  {
+   "source": 17,
+   "target": 21,
+   "valueTo": "TXP3_is_rendered_by",
+   "propertyTo": "class",
+   "uriTo": "http://www.cidoc-crm.org/cidoc-crm/TXP3_is_rendered_by"
+  },
+  {
+   "source": 17,
+   "target": 23,
+   "valueTo": "TXP3_is_rendered_by",
+   "propertyTo": "class",
+   "uriTo": "http://www.cidoc-crm.org/cidoc-crm/TXP3_is_rendered_by"
+  },
+  {
+   "source": 17,
+   "target": 20,
+   "valueTo": "TXP3_is_rendered_by",
+   "propertyTo": "class",
+   "uriTo": "http://www.cidoc-crm.org/cidoc-crm/TXP3_is_rendered_by"
+  },
+  {
+   "source": 5,
+   "target": 21,
+   "valueTo": "TXP3_is_rendered_by",
+   "propertyTo": "class",
+   "uriTo": "http://www.cidoc-crm.org/cidoc-crm/TXP3_is_rendered_by"
+  },
+  {
+   "source": 5,
+   "target": 23,
+   "valueTo": "TXP3_is_rendered_by",
+   "propertyTo": "class",
+   "uriTo": "http://www.cidoc-crm.org/cidoc-crm/TXP3_is_rendered_by"
+  },
+  {
+   "source": 5,
+   "target": 20,
+   "valueTo": "TXP3_is_rendered_by",
+   "propertyTo": "class",
+   "uriTo": "http://www.cidoc-crm.org/cidoc-crm/TXP3_is_rendered_by"
+  },
+  {
+   "source": 21,
+   "target": 19,
+   "valueTo": "contains",
+   "propertyTo": "class",
+   "uriTo": "http://www.purl.org/cuneiform#contains"
+  },
+  {
+   "source": 21,
+   "target": 20,
+   "valueTo": "contains",
+   "propertyTo": "class",
+   "uriTo": "http://www.purl.org/cuneiform#contains"
+  },
+  {
+   "source": 23,
+   "target": 19,
+   "valueTo": "contains",
+   "propertyTo": "class",
+   "uriTo": "http://www.purl.org/cuneiform#contains"
+  },
+  {
+   "source": 23,
+   "target": 20,
+   "valueTo": "contains",
+   "propertyTo": "class",
+   "uriTo": "http://www.purl.org/cuneiform#contains"
+  },
+  {
+   "source": 23,
+   "target": 23,
+   "valueTo": "nextWord",
+   "propertyTo": "class",
+   "uriTo": "http://www.purl.org/cuneiform#nextWord"
+  },
+  {
+   "source": 23,
+   "target": 21,
+   "valueTo": "consistsOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.purl.org/cuneiform#consistsOf"
+  },
+  {
+   "source": 23,
+   "target": 23,
+   "valueTo": "consistsOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.purl.org/cuneiform#consistsOf"
+  },
+  {
+   "source": 20,
+   "target": 21,
+   "valueTo": "consistsOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.purl.org/cuneiform#consistsOf"
+  },
+  {
+   "source": 20,
+   "target": 23,
+   "valueTo": "consistsOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.purl.org/cuneiform#consistsOf"
+  },
+  {
+   "source": 21,
+   "target": 21,
+   "valueTo": "prev",
+   "propertyTo": "class",
+   "uriTo": "http://www.purl.org/cuneiform#prev"
+  },
+  {
+   "source": 21,
+   "target": 21,
+   "valueTo": "prevInWord",
+   "propertyTo": "class",
+   "uriTo": "http://www.purl.org/cuneiform#prevInWord"
+  },
+  {
+   "source": 21,
+   "target": 16,
+   "valueTo": "prevInWord",
+   "propertyTo": "class",
+   "uriTo": "http://www.purl.org/cuneiform#prevInWord"
+  },
+  {
+   "source": 16,
+   "target": 21,
+   "valueTo": "prevInWord",
+   "propertyTo": "class",
+   "uriTo": "http://www.purl.org/cuneiform#prevInWord"
+  },
+  {
+   "source": 16,
+   "target": 16,
+   "valueTo": "prevInWord",
+   "propertyTo": "class",
+   "uriTo": "http://www.purl.org/cuneiform#prevInWord"
   },
   {
    "source": 23,
@@ -476,11 +476,11 @@ var minivowlresult={
    "uriTo": "http://www.purl.org/graphemon#variant"
   },
   {
-   "source": 12,
-   "target": 17,
-   "valueTo": "TXP10_read_by",
+   "source": 14,
+   "target": 15,
+   "valueTo": "hasSurface",
    "propertyTo": "class",
-   "uriTo": "http://www.cidoc-crm.org/cidoc-crm/TXP10_read_by"
+   "uriTo": "http://www.purl.org/cuneiform#hasSurface"
   },
   {
    "source": 12,
@@ -490,11 +490,11 @@ var minivowlresult={
    "uriTo": "http://www.cidoc-crm.org/cidoc-crm/P56_found_on"
   },
   {
-   "source": 14,
-   "target": 15,
-   "valueTo": "hasSurface",
+   "source": 12,
+   "target": 17,
+   "valueTo": "TXP10_read_by",
    "propertyTo": "class",
-   "uriTo": "http://www.purl.org/cuneiform#hasSurface"
+   "uriTo": "http://www.cidoc-crm.org/cidoc-crm/TXP10_read_by"
   }
  ]
 }

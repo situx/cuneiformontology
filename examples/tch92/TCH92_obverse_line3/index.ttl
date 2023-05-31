@@ -1,0 +1,28 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns3: <http://www.purl.org/cuneiform#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line3> a ns3:Line ;
+    rdfs:label "Line 3"@en,
+        "TCH92 obverse side line 3"@en ;
+    ns2:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line3> ;
+    ns3:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/tch92/images/line/line_3_TCH92_front.jpg> ;
+    ns3:nextLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line4> ;
+    ns3:prevLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line2> ;
+    ns1:contains <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line3_char10_glyph>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line3_char11_glyph>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line3_char12_glyph>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line3_char1_glyph>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line3_char2_glyph>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line3_char3_glyph>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line3_char4_glyph>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line3_char5_glyph>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line3_char6_glyph>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line3_char7_glyph>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line3_char8_glyph>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line3_char9_glyph> ;
+    foaf:image "https://situx.github.io/cuneiformontology/examples/tch92/images/line/line_3_TCH92_front.jpg"^^xsd:anyURI .
+

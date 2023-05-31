@@ -1,0 +1,18 @@
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://situx.github.io/cuneiformontology/examples/tch92/5_disz_wordform> a ns2:WordForm ;
+    rdfs:label "WordForm: 5(disz)"@en,
+        "WordForm: [5(disz)"@en ;
+    ns2:writtenRepASCII "5(disz)"^^ns1:ASCIILiteral,
+        "[5(disz)"^^ns1:ASCIILiteral ;
+    ns2:writtenRepUnicode ""^^ns1:unicodeLiteral ;
+    ns1:isAttested <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line22_word5_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line24_word5_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line29_word1_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line29_word5_wordformocc> ;
+    skos:definition "5(disz)",
+        "[5(disz)" .
+

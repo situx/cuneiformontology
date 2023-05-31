@@ -1,0 +1,18 @@
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line14_char10_charocc> a ns2:TransliterationCharOccurrence ;
+    rdfs:label "Char Occurrence: MIN (TCH92[obverse_transliteration1_line14_char10])"@en ;
+    ns1:writtenRepUnicode "" ;
+    ns2:charIndex 10 ;
+    ns2:lineNumber 14 ;
+    ns2:partOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line14_word3_wordformocc> ;
+    ns2:positionInWord 2 ;
+    ns2:positionOnTabletSide 137 ;
+    ns2:prev <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line14_char9_charocc> ;
+    ns2:prevInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line14_char1_charocc> ;
+    skos:definition "MIN" .
+

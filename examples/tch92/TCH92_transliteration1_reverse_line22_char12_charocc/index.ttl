@@ -1,0 +1,20 @@
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix ns3: <http://www.purl.org/graphemon#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line22_char12_charocc> a ns2:TransliterationCharOccurrence ;
+    rdfs:label "Char Occurrence: SZE (TCH92[reverse_transliteration1_line22_char12])"@en ;
+    ns1:writtenRepUnicode "𒊺" ;
+    ns2:charIndex 12 ;
+    ns2:contains <https://situx.github.io/cuneiformontology/signlist/character_sze> ;
+    ns2:lineNumber 22 ;
+    ns2:partOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line22_word7_wordformocc> ;
+    ns2:positionInWord 1 ;
+    ns2:positionOnTabletSide 431 ;
+    ns2:prev <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line22_char11_charocc> ;
+    ns3:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sze_reading_še> ;
+    skos:definition "SZE" .
+

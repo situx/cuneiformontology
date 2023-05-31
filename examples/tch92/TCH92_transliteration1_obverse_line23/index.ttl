@@ -1,0 +1,21 @@
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line23> a ns1:TransliterationLine ;
+    rdfs:label "TCH92 obverse line 23"@en,
+        "Transliteration Line: 23 [TCH92_obverse]"@en ;
+    ns2:writtenRepASCII "23"^^ns1:ASCIILiteral ;
+    ns2:writtenRepUnicode ""^^ns1:unicodeLiteral ;
+    ns1:consistsOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line23_word1_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line23_word2_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line23_word3_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line23_word4_wordformocc> ;
+    ns1:lineNumber 23 ;
+    ns1:nextLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line24> ;
+    ns1:prevLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line22> ;
+    skos:definition "23. {1(disz)}S,il2-li2-{d}Nin-urta DUMU-szu sza ku-kul2#-li#",
+        "{1(disz)}S,il2-li2-{d}Ninurta DUMU-szu sza ku-kul2#-li#" .
+
