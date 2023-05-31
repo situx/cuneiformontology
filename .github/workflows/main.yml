@@ -5,94 +5,6 @@ on:
       branches:
           - main
 jobs:
-
-  ontdocHS1174:
-    uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
-    name: Ontdoc HS1174  
-    needs: build
-    with: 
-          rdffilepath: examples/HS1174/transliteration/HS1174.atf.ttl examples/HS1174/mesh/HS1174_mesh.ttl examples/HS1174/ttl/HS1174_charvariant.ttl examples/HS1174/ttl/HS1174_charvariant.ttl examples/HS1174/ttl/HS1174_back.png.ttl examples/HS1174/transliteration/HS1174_textanno.ttl examples/HS1174/ttl/hs1174.ttl examples/HS1174/ttl/HS1174_front.png.ttl
-          docpath: docs/
-          prefixns: https://situx.github.io/cuneiformontology/
-          prefixnsshort: cuneiex
-          indexpages: true
-          metadatatable: true
-          createcollections: false
-          createnonNSPages: true
-          createVOWL: true
-          preferredlang: en
-          ghpages: true
-          
-  ontdocHT073195:
-      uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main 
-      name: Ontdoc HT073195      
-      needs: build
-      with: 
-            rdffilepath: examples/HT073195/transliteration/HT073195_textanno.ttl examples/HT073195/ttl/ht073195.ttl examples/HT073195/transliteration/HT073195.atf.ttl examples/HT073195/ttl/HT073195_front.png.ttl
-            docpath: docs/
-            prefixns: https://situx.github.io/cuneiformontology/
-            prefixnsshort: cuneiex
-            indexpages: true
-            metadatatable: true
-            createcollections: false
-            createnonNSPages: true
-            createVOWL: true
-            preferredlang: en
-            ghpages: true
-            
-  ontdocO147:
-      uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main 
-      name: Ontdoc O147      
-      needs: build
-      with: 
-            rdffilepath: examples/TCH92/ttl/TCH92_back.png.ttl examples/O147/transliteration/O147_textanno.ttl examples/O147/mesh/O147_back_mesh.ttl examples/O147/mesh/O147_front_mesh.ttl examples/O147/ttl/O147_bottom.png.ttl examples/O147/ttl/O147_right.png.ttl examples/O147/ttl/O147_back.png.ttl examples/O147/ttl/o147.ttl examples/O147/ttl/O147_front.png.ttl examples/O147/transliteration/O147.atf.ttl
-            docpath: docs/
-            prefixns: https://situx.github.io/cuneiformontology/
-            prefixnsshort: cuneiex
-            indexpages: true
-            metadatatable: true
-            createcollections: false
-            createnonNSPages: true
-            createVOWL: true
-            preferredlang: en
-            ghpages: true
-            
-  ontdocTCH92:
-      uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main 
-      name: Ontdoc TCH92      
-      needs: build
-      with: 
-            rdffilepath: examples/TCH92/mesh/TCH92_mesh.ttl examples/TCH92/ttl/TCH92_back.png.ttl examples/TCH92/transliteration/TCH92_textanno.ttl examples/TCH92/ttl/tch92.ttl examples/TCH92/ttl/TCH92_front.png.ttl examples/TCH92//transliteration/TCH92.atf.ttl
-            docpath: docs/
-            prefixns: https://situx.github.io/cuneiformontology/
-            prefixnsshort: cuneiex
-            indexpages: true
-            metadatatable: true
-            createcollections: false
-            createnonNSPages: true
-            createVOWL: true
-            preferredlang: en
-            ghpages: true
-
-  ontdocSignlist:
-      uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main 
-      needs: build
-      name: Ontdoc Signlist      
-      with: 
-            rdffilepath: signlist/signlist.ttl
-            docpath: docs/
-            prefixns: https://situx.github.io/cuneiformontology/
-            prefixnsshort: cuneisignlist
-            indexpages: true
-            metadatatable: true
-            createcollections: false
-            createnonNSPages: true
-            createVOWL: true
-            preferredlang: en
-            ghpages: true
-
-
-
   build:
 
     runs-on: ubuntu-latest
@@ -127,35 +39,35 @@ jobs:
          cp -r examples/HT073195/images/ docs/examples/ht073195/images/ 
          cp -r examples/TCH92/images/ docs/examples/tch92/images/ 
          cp -r examples/O147/images/ docs/examples/o147/images/ 
-         #wget https://raw.githubusercontent.com/sparqlunicorn/sparqlunicornGoesGIS-ontdoc/main/docgeneration.py 
-         #wget https://raw.githubusercontent.com/sparqlunicorn/sparqlunicornGoesGIS-ontdoc/main/prefixes.json 
-         #python3 docgeneration.py signlist/signlist.ttl docs/ https://situx.github.io/cuneiformontology/ cuneisignlist False
-         #python3 docgeneration.py examples/HS1174/transliteration/HS1174.atf.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
-         #python3 docgeneration.py examples/HS1174/transliteration/HS1174_textanno.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
-         #python3 docgeneration.py examples/HS1174/ttl/hs1174.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
-         #python3 docgeneration.py examples/HS1174/ttl/HS1174_front.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
-         #python3 docgeneration.py examples/HS1174/ttl/HS1174_back.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
-         #python3 docgeneration.py examples/HS1174/ttl/HS1174_charvariant.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
-         #python3 docgeneration.py examples/HS1174/mesh/HS1174_mesh.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
-         #python3 docgeneration.py examples/HT073195/transliteration/HT073195.atf.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
-         #python3 docgeneration.py examples/HT073195/ttl/HT073195_front.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
-         #python3 docgeneration.py examples/HT073195/ttl/ht073195.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
-         #python3 docgeneration.py examples/HT073195/transliteration/HT073195_textanno.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
-         #python3 docgeneration.py examples/O147/transliteration/O147.atf.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
-         #python3 docgeneration.py examples/O147/ttl/O147_front.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
-         #python3 docgeneration.py examples/O147/ttl/o147.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
-         #python3 docgeneration.py examples/O147/ttl/O147_back.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
-         #python3 docgeneration.py examples/O147/ttl/O147_right.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False 
-         #python3 docgeneration.py examples/O147/ttl/O147_bottom.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
-         #python3 docgeneration.py examples/O147/mesh/O147_front_mesh.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
-         #python3 docgeneration.py examples/O147/mesh/O147_back_mesh.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
-         #python3 docgeneration.py examples/O147/transliteration/O147_textanno.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
-         #python3 docgeneration.py examples/TCH92//transliteration/TCH92.atf.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
-         #python3 docgeneration.py examples/TCH92/ttl/TCH92_front.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
-         #python3 docgeneration.py examples/TCH92/ttl/tch92.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
-         #python3 docgeneration.py examples/TCH92/transliteration/TCH92_textanno.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
-         #python3 docgeneration.py examples/TCH92/ttl/TCH92_back.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
-         #python3 docgeneration.py examples/TCH92/mesh/TCH92_mesh.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         wget https://raw.githubusercontent.com/sparqlunicorn/sparqlunicornGoesGIS-ontdoc/main/docgeneration.py 
+         wget https://raw.githubusercontent.com/sparqlunicorn/sparqlunicornGoesGIS-ontdoc/main/prefixes.json 
+         python3 docgeneration.py signlist/signlist.ttl docs/ https://situx.github.io/cuneiformontology/ cuneisignlist False
+         python3 docgeneration.py examples/HS1174/transliteration/HS1174.atf.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/HS1174/transliteration/HS1174_textanno.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/HS1174/ttl/hs1174.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/HS1174/ttl/HS1174_front.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/HS1174/ttl/HS1174_back.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/HS1174/ttl/HS1174_charvariant.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/HS1174/mesh/HS1174_mesh.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/HT073195/transliteration/HT073195.atf.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/HT073195/ttl/HT073195_front.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/HT073195/ttl/ht073195.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/HT073195/transliteration/HT073195_textanno.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/O147/transliteration/O147.atf.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/O147/ttl/O147_front.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/O147/ttl/o147.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/O147/ttl/O147_back.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/O147/ttl/O147_right.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False 
+         python3 docgeneration.py examples/O147/ttl/O147_bottom.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/O147/mesh/O147_front_mesh.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/O147/mesh/O147_back_mesh.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/O147/transliteration/O147_textanno.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/TCH92//transliteration/TCH92.atf.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/TCH92/ttl/TCH92_front.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/TCH92/ttl/tch92.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/TCH92/transliteration/TCH92_textanno.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/TCH92/ttl/TCH92_back.png.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
+         python3 docgeneration.py examples/TCH92/mesh/TCH92_mesh.ttl docs/ https://situx.github.io/cuneiformontology/ cuneiex False
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.3.3
       with:
