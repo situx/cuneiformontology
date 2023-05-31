@@ -1,0 +1,20 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_meze> a ns1:Grapheme ;
+    rdfs:label "Character: MEZE (ÁB× ME.EN)" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_meze_reading_ab2×_me_en>,
+        <https://situx.github.io/cuneiformontology/signlist/character_meze_reading_meze>,
+        <https://situx.github.io/cuneiformontology/signlist/character_meze_reading_szem4>,
+        <https://situx.github.io/cuneiformontology/signlist/character_meze_reading_ub6> ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_en>,
+        <https://situx.github.io/cuneiformontology/signlist/character_me>,
+        <https://situx.github.io/cuneiformontology/signlist/character_meze_a2b> ;
+    ns1:meszl "679" ;
+    ns1:signName "MEZE (ÁB× ME.EN)" ;
+    ns1:slha "426" ;
+    ns1:unicodeCodepoint "U+12019" ;
+    ns1:unicodeRepresentation "𒀙" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q87555045> .
+

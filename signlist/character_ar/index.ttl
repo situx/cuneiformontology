@@ -1,0 +1,23 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_ar> a ns1:Grapheme ;
+    rdfs:label "Character: AR (IGI.RI)" ;
+    ns1:abzl "234" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ar_reading_ar>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ar_reading_ar_ar>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ar_reading_ara8>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ar_reading_igi_ri> ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ar_igi>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ri> ;
+    ns1:hethzl "289" ;
+    ns1:labat "451" ;
+    ns1:meszl "726" ;
+    ns1:obo "234" ;
+    ns1:signName "AR (IGI.RI)" ;
+    ns1:slha "451" ;
+    ns1:unicodeCodepoint "U+12148" ;
+    ns1:unicodeRepresentation "𒅈" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q87555645> .
+
