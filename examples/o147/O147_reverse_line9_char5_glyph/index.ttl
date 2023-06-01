@@ -1,19 +1,19 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix ns3: <http://www.purl.org/cuneiform#> .
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns3: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line9_char5_glyph> a ns2:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line9_char5_glyph> a ns3:TX9_Glyph ;
     rdfs:label "Glyph at O147 reverse side line 9 char 5"@en,
         "Glyph at O147[reverse 9 5])"@en ;
-    ns2:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line9_char5_charocc> ;
-    ns2:TXP8_is_component_of ns3:O147_writtenText ;
-    ns3:isDamaged false ;
-    ns3:prevInWord <https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line9_char3_glyph> ;
-    ns1:nextGlyph <https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line9_char6_glyph> ;
-    ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line9_char4_glyph> ;
+    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line9_char5_charocc> ;
+    ns3:TXP8_is_component_of ns1:O147_writtenText ;
+    ns1:isDamaged false ;
+    ns1:prevInWord <https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line9_char3_glyph> ;
+    ns2:nextGlyph <https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line9_char6_glyph> ;
+    ns2:prevGlyph <https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line9_char4_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_9_5_bu_O147_A_color_back.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_9_5_bu_O147_A_shaded_back.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_9_5_bu_O147_B_color_back.jpg"^^xsd:anyURI,

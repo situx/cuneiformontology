@@ -1,13 +1,13 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_bi> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_bi> a ns1:Grapheme ;
     rdfs:label "Character: BI" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_bi_sense_kasz___beer> ;
-    ns2:abzl "079" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_bi_reading_be2>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_bi_sense_kasz___beer> ;
+    ns1:abzl "079" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_bi_reading_be2>,
         <https://situx.github.io/cuneiformontology/signlist/character_bi_reading_be2_be_preferred>,
         <https://situx.github.io/cuneiformontology/signlist/character_bi_reading_bi>,
         <https://situx.github.io/cuneiformontology/signlist/character_bi_reading_bi_bi>,
@@ -31,14 +31,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_bi_reading_su15>,
         <https://situx.github.io/cuneiformontology/signlist/character_bi_reading_sza21>,
         <https://situx.github.io/cuneiformontology/signlist/character_bi_reading_szu13> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_bi> ;
-    ns2:hethzl "153" ;
-    ns2:labat "214" ;
-    ns2:meszl "358" ;
-    ns2:obo "79" ;
-    ns2:signName "BI" ;
-    ns2:slha "214" ;
-    ns2:unicodeCodepoint "U+12049" ;
-    ns2:unicodeRepresentation "𒁉" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_bi> ;
+    ns1:hethzl "153" ;
+    ns1:labat "214" ;
+    ns1:meszl "358" ;
+    ns1:obo "79" ;
+    ns1:signName "BI" ;
+    ns1:slha "214" ;
+    ns1:unicodeCodepoint "U+12049" ;
+    ns1:unicodeRepresentation "𒁉" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555146> .
 

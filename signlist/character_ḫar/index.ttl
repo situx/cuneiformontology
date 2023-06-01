@@ -1,16 +1,16 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_ḫar> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_ḫar> a ns1:Grapheme ;
     rdfs:label "Character: ḪAR (ḪI×ÁŠ)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_ḫar_sense__hur___hole>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_ḫar_sense__hur___hole>,
         <https://situx.github.io/cuneiformontology/signlist/character_ḫar_sense__ur5___thus>,
         <https://situx.github.io/cuneiformontology/signlist/character_ḫar_sense_bracelet>,
         <https://situx.github.io/cuneiformontology/signlist/character_ḫar_sense_so> ;
-    ns2:abzl "281" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ḫar_reading_ar3>,
+    ns1:abzl "281" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ḫar_reading_ar3>,
         <https://situx.github.io/cuneiformontology/signlist/character_ḫar_reading_ara3>,
         <https://situx.github.io/cuneiformontology/signlist/character_ḫar_reading_endibdim>,
         <https://situx.github.io/cuneiformontology/signlist/character_ḫar_reading_ga11>,
@@ -44,15 +44,15 @@
         <https://situx.github.io/cuneiformontology/signlist/character_ḫar_reading_saŋŋar2>,
         <https://situx.github.io/cuneiformontology/signlist/character_ḫar_reading_ur5>,
         <https://situx.github.io/cuneiformontology/signlist/character_ḫar_reading_ura5> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_a2sz>,
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_a2sz>,
         <https://situx.github.io/cuneiformontology/signlist/character_har_hi> ;
-    ns2:hethzl "333" ;
-    ns2:labat "401" ;
-    ns2:meszl "644" ;
-    ns2:obo "281" ;
-    ns2:signName "ḪAR (ḪI×ÁŠ)" ;
-    ns2:slha "401" ;
-    ns2:unicodeCodepoint "U+1212F" ;
-    ns2:unicodeRepresentation "𒄯" ;
+    ns1:hethzl "333" ;
+    ns1:labat "401" ;
+    ns1:meszl "644" ;
+    ns1:obo "281" ;
+    ns1:signName "ḪAR (ḪI×ÁŠ)" ;
+    ns1:slha "401" ;
+    ns1:unicodeCodepoint "U+1212F" ;
+    ns1:unicodeRepresentation "𒄯" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555594> .
 

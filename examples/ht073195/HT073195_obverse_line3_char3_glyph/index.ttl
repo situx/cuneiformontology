@@ -1,19 +1,19 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://www.purl.org/cuneiform#> .
-@prefix ns2: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
 @prefix ns3: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char3_glyph> a ns2:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char3_glyph> a ns1:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 3 char 3"@en,
         "Glyph at HT073195[obverse 3 3])"@en ;
-    ns2:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char3_charocc> ;
-    ns2:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns1:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/me_3_3_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
-    ns1:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line3_char4_glyph> ;
-    ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line3_char2_glyph> ;
+    ns1:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char3_charocc> ;
+    ns1:TXP8_is_component_of ns2:HT073195_writtenText ;
+    ns2:isDamaged false ;
+    ns2:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/me_3_3_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
+    ns2:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line3_char4_glyph> ;
+    ns2:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line3_char2_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char2_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_3_3_1(disz)_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_3_3_1(disz)_HT073195_front.jpg"^^xsd:anyURI .

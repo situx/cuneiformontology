@@ -1,22 +1,22 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://www.purl.org/cuneiform#> .
-@prefix ns3: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns3: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char7_charocc> a ns2:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char7_charocc> a ns3:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: mesz (HT073195[obverse_transliteration1_line3_char7])"@en ;
-    ns3:writtenRepUnicode "𒈨𒌍" ;
-    ns2:charIndex 7 ;
-    ns2:contains <https://situx.github.io/cuneiformontology/signlist/character_esz_3×u>,
+    ns1:writtenRepUnicode "𒈨𒌍" ;
+    ns3:charIndex 7 ;
+    ns3:contains <https://situx.github.io/cuneiformontology/signlist/character_esz_3×u>,
         <https://situx.github.io/cuneiformontology/signlist/character_me> ;
-    ns2:lineNumber 3 ;
-    ns2:partOf <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_word4_wordformocc> ;
-    ns2:positionInWord 2 ;
-    ns2:positionOnTabletSide 18 ;
-    ns2:prev <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char6_charocc> ;
-    ns2:prevInWord <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char1_charocc> ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_me_reading_meš> ;
+    ns3:lineNumber 3 ;
+    ns3:partOf <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_word4_wordformocc> ;
+    ns3:positionInWord 2 ;
+    ns3:positionOnTabletSide 18 ;
+    ns3:prev <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char6_charocc> ;
+    ns3:prevInWord <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char1_charocc> ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_me_reading_meš> ;
     skos:definition "mesz" .
 

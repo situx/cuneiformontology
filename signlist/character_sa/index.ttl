@@ -1,16 +1,16 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_sa> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_sa> a ns2:Grapheme ;
     rdfs:label "Character: SA",
         "Character: SA"@en ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_sa_sense_net>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_sa_sense_net>,
         <https://situx.github.io/cuneiformontology/signlist/character_sa_sense_sinew>,
         <https://situx.github.io/cuneiformontology/signlist/character_sa_sense_tendon> ;
-    ns1:abzl "147" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sa_reading_gid3>,
+    ns2:abzl "147" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sa_reading_gid3>,
         <https://situx.github.io/cuneiformontology/signlist/character_sa_reading_sa>,
         <https://situx.github.io/cuneiformontology/signlist/character_sa_reading_sa@v>,
         <https://situx.github.io/cuneiformontology/signlist/character_sa_reading_sa_sa>,
@@ -18,15 +18,15 @@
         <https://situx.github.io/cuneiformontology/signlist/character_sa_reading_satu_'mountain'>,
         <https://situx.github.io/cuneiformontology/signlist/character_sa_reading_sza10>,
         <https://situx.github.io/cuneiformontology/signlist/character_sa_reading_śa> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_sa> ;
-    ns1:hethzl "200" ;
-    ns1:labat "104" ;
-    ns1:meszl "172" ;
-    ns1:obo "147" ;
-    ns1:signName "SA" ;
-    ns1:slha "104" ;
-    ns1:unicodeCodepoint "U+12293" ;
-    ns1:unicodeRepresentation "𒊓" ;
-    ns1:variant <https://situx.github.io/cuneiformontology/signlist/character_sa_variant1> ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_sa> ;
+    ns2:hethzl "200" ;
+    ns2:labat "104" ;
+    ns2:meszl "172" ;
+    ns2:obo "147" ;
+    ns2:signName "SA" ;
+    ns2:slha "104" ;
+    ns2:unicodeCodepoint "U+12293" ;
+    ns2:unicodeRepresentation "𒊓" ;
+    ns2:variant <https://situx.github.io/cuneiformontology/signlist/character_sa_variant1> ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556305> .
 

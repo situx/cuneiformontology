@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_kid> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_kid> a ns2:Grapheme ;
     rdfs:label "Character: KID (LÍL)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_kid_sense_reed_mat> ;
-    ns1:abzl "163" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_kid_reading_buru6>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_kid_sense_reed_mat> ;
+    ns2:abzl "163" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_kid_reading_buru6>,
         <https://situx.github.io/cuneiformontology/signlist/character_kid_reading_ge2>,
         <https://situx.github.io/cuneiformontology/signlist/character_kid_reading_gi2>,
         <https://situx.github.io/cuneiformontology/signlist/character_kid_reading_gid>,
@@ -39,14 +39,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_kid_reading_szah3>,
         <https://situx.github.io/cuneiformontology/signlist/character_kid_reading_szih2>,
         <https://situx.github.io/cuneiformontology/signlist/character_kid_reading_szutil6?> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_kid_li2l> ;
-    ns1:hethzl "194" ;
-    ns1:labat "313" ;
-    ns1:meszl "484" ;
-    ns1:obo "163" ;
-    ns1:signName "KID (LÍL)" ;
-    ns1:slha "313" ;
-    ns1:unicodeCodepoint "U+121A4" ;
-    ns1:unicodeRepresentation "𒆤" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_kid_li2l> ;
+    ns2:hethzl "194" ;
+    ns2:labat "313" ;
+    ns2:meszl "484" ;
+    ns2:obo "163" ;
+    ns2:signName "KID (LÍL)" ;
+    ns2:slha "313" ;
+    ns2:unicodeCodepoint "U+121A4" ;
+    ns2:unicodeRepresentation "𒆤" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555828> .
 

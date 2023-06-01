@@ -1,15 +1,15 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_sig7> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_sig7> a ns1:Grapheme ;
     rdfs:label "Character: SIG7 (IGI-gunû)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_sig7_sense_green>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_sig7_sense_green>,
         <https://situx.github.io/cuneiformontology/signlist/character_sig7_sense_to_make__beautiful>,
         <https://situx.github.io/cuneiformontology/signlist/character_sig7_sense_yellow> ;
-    ns2:abzl "198" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sig7_reading_agar4>,
+    ns1:abzl "198" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sig7_reading_agar4>,
         <https://situx.github.io/cuneiformontology/signlist/character_sig7_reading_igi2>,
         <https://situx.github.io/cuneiformontology/signlist/character_sig7_reading_igi@g>,
         <https://situx.github.io/cuneiformontology/signlist/character_sig7_reading_igigunuₓ>,
@@ -28,15 +28,15 @@
         <https://situx.github.io/cuneiformontology/signlist/character_sig7_reading_szi7>,
         <https://situx.github.io/cuneiformontology/signlist/character_sig7_reading_ugur2>,
         <https://situx.github.io/cuneiformontology/signlist/character_sig7_reading_ukur5> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gunû>,
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gunû>,
         <https://situx.github.io/cuneiformontology/signlist/character_sig7_igi> ;
-    ns2:hethzl "239" ;
-    ns2:labat "351" ;
-    ns2:meszl "564" ;
-    ns2:obo "198" ;
-    ns2:signName "SIG7 (IGI-gunû)" ;
-    ns2:slha "351" ;
-    ns2:unicodeCodepoint "U+1214A" ;
-    ns2:unicodeRepresentation "𒅊" ;
+    ns1:hethzl "239" ;
+    ns1:labat "351" ;
+    ns1:meszl "564" ;
+    ns1:obo "198" ;
+    ns1:signName "SIG7 (IGI-gunû)" ;
+    ns1:slha "351" ;
+    ns1:unicodeCodepoint "U+1214A" ;
+    ns1:unicodeRepresentation "𒅊" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555649> .
 

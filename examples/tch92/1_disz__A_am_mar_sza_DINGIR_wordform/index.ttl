@@ -1,12 +1,12 @@
-@prefix ns1: <http://www.purl.org/cuneiform#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/1_disz__A_am_mar_sza_DINGIR_wordform> a ns2:WordForm ;
+<https://situx.github.io/cuneiformontology/examples/tch92/1_disz__A_am_mar_sza_DINGIR_wordform> a ns1:WordForm ;
     rdfs:label "WordForm: 1(disz)-A-am-mar-sza-DINGIR"@en ;
-    ns2:writtenRepASCII "1(disz)-A-am-mar-sza-DINGIR"^^ns1:ASCIILiteral ;
-    ns2:writtenRepUnicode ""^^ns1:unicodeLiteral ;
-    ns1:isAttested <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line4_word1_wordformocc> ;
+    ns1:writtenRepASCII "1(disz)-A-am-mar-sza-DINGIR"^^ns2:ASCIILiteral ;
+    ns1:writtenRepUnicode ""^^ns2:unicodeLiteral ;
+    ns2:isAttested <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line4_word1_wordformocc> ;
     skos:definition "1(disz)-A-am-mar-sza-DINGIR" .
 
