@@ -1,26 +1,26 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_ra> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_ra> a ns2:Grapheme ;
     rdfs:label "Character: RA",
         "Character: RA"@en ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_ra_sense_to_beat>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_ra_sense_to_beat>,
         <https://situx.github.io/cuneiformontology/signlist/character_ra_sense_to_strike> ;
-    ns1:abzl "192" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ra_reading_ra>,
+    ns2:abzl "192" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ra_reading_ra>,
         <https://situx.github.io/cuneiformontology/signlist/character_ra_reading_ra_ra>,
         <https://situx.github.io/cuneiformontology/signlist/character_ra_reading_rah2> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ra> ;
-    ns1:hethzl "233" ;
-    ns1:labat "328" ;
-    ns1:meszl "511" ;
-    ns1:obo "194" ;
-    ns1:signName "RA" ;
-    ns1:slha "328" ;
-    ns1:unicodeCodepoint "U+1228F" ;
-    ns1:unicodeRepresentation "𒊏" ;
-    ns1:variant <https://situx.github.io/cuneiformontology/signlist/character_ra_variant1> ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ra> ;
+    ns2:hethzl "233" ;
+    ns2:labat "328" ;
+    ns2:meszl "511" ;
+    ns2:obo "194" ;
+    ns2:signName "RA" ;
+    ns2:slha "328" ;
+    ns2:unicodeCodepoint "U+1228F" ;
+    ns2:unicodeRepresentation "𒊏" ;
+    ns2:variant <https://situx.github.io/cuneiformontology/signlist/character_ra_variant1> ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556297> .
 

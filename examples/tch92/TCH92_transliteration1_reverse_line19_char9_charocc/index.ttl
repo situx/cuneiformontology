@@ -1,21 +1,21 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix ns3: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19_char9_charocc> a ns2:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19_char9_charocc> a ns1:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: su (TCH92[reverse_transliteration1_line19_char9])"@en ;
-    ns1:writtenRepUnicode "𒋢" ;
-    ns2:charIndex 9 ;
-    ns2:contains <https://situx.github.io/cuneiformontology/signlist/character_suoversu> ;
-    ns2:lineNumber 19 ;
-    ns2:partOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19_word2_wordformocc> ;
-    ns2:positionInWord 3 ;
-    ns2:positionOnTabletSide 410 ;
-    ns2:prev <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19_char8_charocc> ;
-    ns2:prevInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19_char2_charocc> ;
+    ns2:writtenRepUnicode "𒋢" ;
+    ns1:charIndex 9 ;
+    ns1:contains <https://situx.github.io/cuneiformontology/signlist/character_suoversu> ;
+    ns1:lineNumber 19 ;
+    ns1:partOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19_word2_wordformocc> ;
+    ns1:positionInWord 3 ;
+    ns1:positionOnTabletSide 410 ;
+    ns1:prev <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19_char8_charocc> ;
+    ns1:prevInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19_char2_charocc> ;
     ns3:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_suoversu_reading_su> ;
     skos:definition "su" .
 

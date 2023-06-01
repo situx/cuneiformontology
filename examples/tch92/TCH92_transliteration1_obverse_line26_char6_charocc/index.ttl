@@ -1,13 +1,13 @@
 @prefix ns1: <http://www.purl.org/cuneiform#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
-@prefix ns3: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns3: <http://lemon-model.net/lemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line26_char6_charocc> a ns1:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: DAM (TCH92[obverse_transliteration1_line26_char6])"@en ;
-    ns2:writtenRepUnicode "𒁮" ;
+    ns3:writtenRepUnicode "𒁮" ;
     ns1:charIndex 6 ;
     ns1:contains <https://situx.github.io/cuneiformontology/signlist/character_dam> ;
     ns1:lineNumber 26 ;
@@ -15,6 +15,6 @@
     ns1:positionInWord 1 ;
     ns1:positionOnTabletSide 228 ;
     ns1:prev <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line26_char5_charocc> ;
-    ns3:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_dam_reading_dam> ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_dam_reading_dam> ;
     skos:definition "DAM" .
 

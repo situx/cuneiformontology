@@ -1,15 +1,15 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_el> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_el> a ns2:Grapheme ;
     rdfs:label "Character: EL",
         "Character: EL"@en ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_el_sense_pure>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_el_sense_pure>,
         <https://situx.github.io/cuneiformontology/signlist/character_el_sense_virgin> ;
-    ns1:abzl "455" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_el_reading_dam0>,
+    ns2:abzl "455" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_el_reading_dam0>,
         <https://situx.github.io/cuneiformontology/signlist/character_el_reading_el>,
         <https://situx.github.io/cuneiformontology/signlist/character_el_reading_el_el>,
         <https://situx.github.io/cuneiformontology/signlist/character_el_reading_ele2>,
@@ -19,15 +19,15 @@
         <https://situx.github.io/cuneiformontology/signlist/character_el_reading_ili5>,
         <https://situx.github.io/cuneiformontology/signlist/character_el_reading_ram0>,
         <https://situx.github.io/cuneiformontology/signlist/character_el_reading_sikil> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_el> ;
-    ns1:hethzl "307" ;
-    ns1:labat "564" ;
-    ns1:meszl "899" ;
-    ns1:obo "455" ;
-    ns1:signName "EL" ;
-    ns1:slha "564" ;
-    ns1:unicodeCodepoint "U+12096" ;
-    ns1:unicodeRepresentation "𒂖" ;
-    ns1:variant <https://situx.github.io/cuneiformontology/signlist/character_el_variant1> ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_el> ;
+    ns2:hethzl "307" ;
+    ns2:labat "564" ;
+    ns2:meszl "899" ;
+    ns2:obo "455" ;
+    ns2:signName "EL" ;
+    ns2:slha "564" ;
+    ns2:unicodeCodepoint "U+12096" ;
+    ns2:unicodeRepresentation "𒂖" ;
+    ns2:variant <https://situx.github.io/cuneiformontology/signlist/character_el_variant1> ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555293> .
 

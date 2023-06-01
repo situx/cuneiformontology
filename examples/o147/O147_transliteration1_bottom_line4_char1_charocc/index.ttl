@@ -1,20 +1,20 @@
-@prefix ns1: <http://www.purl.org/cuneiform#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
-@prefix ns3: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns3: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line4_char1_charocc> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line4_char1_charocc> a ns3:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: ud (O147[bottom_transliteration1_line4_char1])"@en ;
-    ns3:writtenRepUnicode "𒌓" ;
-    ns1:charIndex 1 ;
-    ns1:contains <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar> ;
-    ns1:lineNumber 4 ;
-    ns1:nextInWord <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line4_char2_charocc> ;
-    ns1:partOf <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line4_word1_wordformocc> ;
-    ns1:positionInWord 1 ;
-    ns1:positionOnTabletSide 97 ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_reading_ud> ;
+    ns2:writtenRepUnicode "𒌓" ;
+    ns3:charIndex 1 ;
+    ns3:contains <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar> ;
+    ns3:lineNumber 4 ;
+    ns3:nextInWord <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line4_char2_charocc> ;
+    ns3:partOf <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line4_word1_wordformocc> ;
+    ns3:positionInWord 1 ;
+    ns3:positionOnTabletSide 97 ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_reading_ud> ;
     skos:definition "ud" .
 
