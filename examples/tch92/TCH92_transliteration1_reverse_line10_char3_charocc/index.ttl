@@ -1,22 +1,22 @@
-@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
 @prefix ns2: <http://www.purl.org/graphemon#> .
-@prefix ns3: <http://lemon-model.net/lemon#> .
+@prefix ns3: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line10_char3_charocc> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line10_char3_charocc> a ns3:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: el (TCH92[reverse_transliteration1_line10_char3])"@en ;
-    ns3:writtenRepUnicode "𒂖" ;
-    ns1:charIndex 3 ;
-    ns1:contains <https://situx.github.io/cuneiformontology/signlist/character_el> ;
-    ns1:lineNumber 10 ;
-    ns1:nextInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line10_char4_charocc> ;
-    ns1:partOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line10_word1_wordformocc> ;
-    ns1:positionInWord 3 ;
-    ns1:positionOnTabletSide 323 ;
-    ns1:prev <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line10_char2_charocc> ;
-    ns1:prevInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line10_char2_charocc> ;
+    ns1:writtenRepUnicode "𒂖" ;
+    ns3:charIndex 3 ;
+    ns3:contains <https://situx.github.io/cuneiformontology/signlist/character_el> ;
+    ns3:lineNumber 10 ;
+    ns3:nextInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line10_char4_charocc> ;
+    ns3:partOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line10_word1_wordformocc> ;
+    ns3:positionInWord 3 ;
+    ns3:positionOnTabletSide 323 ;
+    ns3:prev <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line10_char2_charocc> ;
+    ns3:prevInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line10_char2_charocc> ;
     ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_el_reading_el> ;
     skos:definition "el" .
 

@@ -1,13 +1,13 @@
 @prefix ns1: <http://www.purl.org/cuneiform#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
-@prefix ns3: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns3: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line1_char7_charocc> a ns1:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: d (O147[reverse_transliteration1_line1_char7])"@en ;
-    ns3:writtenRepUnicode "𒀭" ;
+    ns2:writtenRepUnicode "𒀭" ;
     ns1:charIndex 7 ;
     ns1:contains <https://situx.github.io/cuneiformontology/signlist/character_an> ;
     ns1:lineNumber 1 ;
@@ -15,6 +15,6 @@
     ns1:positionInWord 1 ;
     ns1:positionOnTabletSide 114 ;
     ns1:prev <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line1_char6_charocc> ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_an_reading_d> ;
+    ns3:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_an_reading_d> ;
     skos:definition "d" .
 

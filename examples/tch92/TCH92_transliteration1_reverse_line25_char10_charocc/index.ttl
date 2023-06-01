@@ -1,21 +1,21 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix ns3: <http://lemon-model.net/lemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_char10_charocc> a ns2:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_char10_charocc> a ns1:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: sza (TCH92[reverse_transliteration1_line25_char10])"@en ;
     ns3:writtenRepUnicode "𒊭" ;
-    ns2:charIndex 10 ;
-    ns2:contains <https://situx.github.io/cuneiformontology/signlist/character_sza> ;
-    ns2:lineNumber 25 ;
-    ns2:partOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_word7_wordformocc> ;
-    ns2:positionInWord 2 ;
-    ns2:positionOnTabletSide 460 ;
-    ns2:prev <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_char9_charocc> ;
-    ns2:prevInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_char1_charocc> ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sza_reading_ša> ;
+    ns1:charIndex 10 ;
+    ns1:contains <https://situx.github.io/cuneiformontology/signlist/character_sza> ;
+    ns1:lineNumber 25 ;
+    ns1:partOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_word7_wordformocc> ;
+    ns1:positionInWord 2 ;
+    ns1:positionOnTabletSide 460 ;
+    ns1:prev <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_char9_charocc> ;
+    ns1:prevInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line25_char1_charocc> ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sza_reading_ša> ;
     skos:definition "sza" .
 

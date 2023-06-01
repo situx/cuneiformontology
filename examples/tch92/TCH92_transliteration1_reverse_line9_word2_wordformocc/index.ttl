@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line9_word2_wordformocc> a ns2:WordFormOccurance ;
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line9_word2_wordformocc> a ns1:WordFormOccurance ;
     rdfs:label " WordForm Occurrence: BAN (TCH92[reverse_line9_word2])"@en ;
-    ns2:consistsOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line9_char5_charocc> ;
-    ns2:contains <https://situx.github.io/cuneiformontology/signlist/character_pan> ;
-    ns2:prevWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line9_word1_wordformocc> ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_pan_reading_ban> ;
+    ns1:consistsOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line9_char5_charocc> ;
+    ns1:contains <https://situx.github.io/cuneiformontology/signlist/character_pan> ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line9_word1_wordformocc> ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_pan_reading_ban> ;
     skos:definition "BAN" .
 

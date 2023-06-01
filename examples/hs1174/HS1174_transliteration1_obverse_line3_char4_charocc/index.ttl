@@ -1,21 +1,21 @@
-@prefix ns1: <http://www.purl.org/cuneiform#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
-@prefix ns3: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns3: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line3_char4_charocc> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line3_char4_charocc> a ns3:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: da (HS1174[obverse_transliteration1_line3_char4])"@en ;
-    ns3:writtenRepUnicode "𒁕" ;
-    ns1:charIndex 4 ;
-    ns1:contains <https://situx.github.io/cuneiformontology/signlist/character_da> ;
-    ns1:lineNumber 3 ;
-    ns1:partOf <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line3_word2_wordformocc> ;
-    ns1:positionInWord 3 ;
-    ns1:positionOnTabletSide 17 ;
-    ns1:prev <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line3_char3_charocc> ;
-    ns1:prevInWord <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line3_char2_charocc> ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_da_reading_da> ;
+    ns2:writtenRepUnicode "𒁕" ;
+    ns3:charIndex 4 ;
+    ns3:contains <https://situx.github.io/cuneiformontology/signlist/character_da> ;
+    ns3:lineNumber 3 ;
+    ns3:partOf <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line3_word2_wordformocc> ;
+    ns3:positionInWord 3 ;
+    ns3:positionOnTabletSide 17 ;
+    ns3:prev <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line3_char3_charocc> ;
+    ns3:prevInWord <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line3_char2_charocc> ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_da_reading_da> ;
     skos:definition "da" .
 

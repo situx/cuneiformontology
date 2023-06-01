@@ -1,16 +1,16 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_kalam> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_kalam> a ns2:Grapheme ;
     rdfs:label "Character: KALAM" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_kalam_sense__kalam___native_land>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_kalam_sense__kalam___native_land>,
         <https://situx.github.io/cuneiformontology/signlist/character_kalam_sense_country>,
         <https://situx.github.io/cuneiformontology/signlist/character_kalam_sense_esp__sumer>,
         <https://situx.github.io/cuneiformontology/signlist/character_kalam_sense_people> ;
-    ns1:abzl "169" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_kalam_reading_kalam>,
+    ns2:abzl "169" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_kalam_reading_kalam>,
         <https://situx.github.io/cuneiformontology/signlist/character_kalam_reading_kalama>,
         <https://situx.github.io/cuneiformontology/signlist/character_kalam_reading_kanam>,
         <https://situx.github.io/cuneiformontology/signlist/character_kalam_reading_kanaŋ>,
@@ -23,13 +23,13 @@
         <https://situx.github.io/cuneiformontology/signlist/character_kalam_reading_un_un>,
         <https://situx.github.io/cuneiformontology/signlist/character_kalam_reading_unu4>,
         <https://situx.github.io/cuneiformontology/signlist/character_kalam_reading_uŋ3> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_kalam> ;
-    ns1:labat "312" ;
-    ns1:meszl "500" ;
-    ns1:obo "169" ;
-    ns1:signName "KALAM" ;
-    ns1:slha "312" ;
-    ns1:unicodeCodepoint "U+12326" ;
-    ns1:unicodeRepresentation "𒌦" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_kalam> ;
+    ns2:labat "312" ;
+    ns2:meszl "500" ;
+    ns2:obo "169" ;
+    ns2:signName "KALAM" ;
+    ns2:slha "312" ;
+    ns2:unicodeCodepoint "U+12326" ;
+    ns2:unicodeRepresentation "𒌦" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556578> .
 

@@ -1,21 +1,21 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://www.purl.org/cuneiform#> .
-@prefix ns3: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns3: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2_char6_charocc> a ns2:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2_char6_charocc> a ns3:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: a (HS1174[obverse_transliteration1_line2_char6])"@en ;
-    ns3:writtenRepUnicode "𒀀" ;
-    ns2:charIndex 6 ;
-    ns2:contains <https://situx.github.io/cuneiformontology/signlist/character_a> ;
-    ns2:lineNumber 2 ;
-    ns2:partOf <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2_word2_wordformocc> ;
-    ns2:positionInWord 2 ;
-    ns2:positionOnTabletSide 11 ;
-    ns2:prev <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2_char5_charocc> ;
-    ns2:prevInWord <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2_char1_charocc> ;
+    ns2:writtenRepUnicode "𒀀" ;
+    ns3:charIndex 6 ;
+    ns3:contains <https://situx.github.io/cuneiformontology/signlist/character_a> ;
+    ns3:lineNumber 2 ;
+    ns3:partOf <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2_word2_wordformocc> ;
+    ns3:positionInWord 2 ;
+    ns3:positionOnTabletSide 11 ;
+    ns3:prev <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2_char5_charocc> ;
+    ns3:prevInWord <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2_char1_charocc> ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_a_reading_a> ;
     skos:definition "a" .
 

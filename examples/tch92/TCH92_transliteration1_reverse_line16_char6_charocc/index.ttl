@@ -1,20 +1,20 @@
-@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix ns2: <http://lemon-model.net/lemon#> .
-@prefix ns3: <http://www.purl.org/graphemon#> .
+@prefix ns3: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line16_char6_charocc> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line16_char6_charocc> a ns3:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: SZE (TCH92[reverse_transliteration1_line16_char6])"@en ;
     ns2:writtenRepUnicode "𒊺" ;
-    ns1:charIndex 6 ;
-    ns1:contains <https://situx.github.io/cuneiformontology/signlist/character_sze> ;
-    ns1:lineNumber 16 ;
-    ns1:partOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line16_word6_wordformocc> ;
-    ns1:positionInWord 1 ;
-    ns1:positionOnTabletSide 386 ;
-    ns1:prev <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line16_char5_charocc> ;
-    ns3:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sze_reading_še> ;
+    ns3:charIndex 6 ;
+    ns3:contains <https://situx.github.io/cuneiformontology/signlist/character_sze> ;
+    ns3:lineNumber 16 ;
+    ns3:partOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line16_word6_wordformocc> ;
+    ns3:positionInWord 1 ;
+    ns3:positionOnTabletSide 386 ;
+    ns3:prev <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line16_char5_charocc> ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sze_reading_še> ;
     skos:definition "SZE" .
 

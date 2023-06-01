@@ -1,15 +1,15 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_igi> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_igi> a ns2:Grapheme ;
     rdfs:label "Character: IGI (ŠI, LIM)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_igi_sense_eye>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_igi_sense_eye>,
         <https://situx.github.io/cuneiformontology/signlist/character_igi_sense_face>,
         <https://situx.github.io/cuneiformontology/signlist/character_igi_sense_front> ;
-    ns1:abzl "233" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_igi_reading_bad5>,
+    ns2:abzl "233" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_igi_reading_bad5>,
         <https://situx.github.io/cuneiformontology/signlist/character_igi_reading_bad5_k>,
         <https://situx.github.io/cuneiformontology/signlist/character_igi_reading_badi>,
         <https://situx.github.io/cuneiformontology/signlist/character_igi_reading_bat5>,
@@ -43,15 +43,15 @@
         <https://situx.github.io/cuneiformontology/signlist/character_igi_reading_sze20>,
         <https://situx.github.io/cuneiformontology/signlist/character_igi_reading_szi>,
         <https://situx.github.io/cuneiformontology/signlist/character_igi_reading_szi_only_in_dutu_szi> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_igi_szi>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_igi_szi>,
         <https://situx.github.io/cuneiformontology/signlist/character_lim> ;
-    ns1:hethzl "288" ;
-    ns1:labat "449" ;
-    ns1:meszl "724" ;
-    ns1:obo "233" ;
-    ns1:signName "IGI (ŠI, LIM)" ;
-    ns1:slha "449" ;
-    ns1:unicodeCodepoint "U+12146" ;
-    ns1:unicodeRepresentation "𒅆" ;
+    ns2:hethzl "288" ;
+    ns2:labat "449" ;
+    ns2:meszl "724" ;
+    ns2:obo "233" ;
+    ns2:signName "IGI (ŠI, LIM)" ;
+    ns2:slha "449" ;
+    ns2:unicodeCodepoint "U+12146" ;
+    ns2:unicodeRepresentation "𒅆" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555641> .
 
