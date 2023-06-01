@@ -1,16 +1,16 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_lul> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_lul> a ns2:Grapheme ;
     rdfs:label "Character: LUL (NAR)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_lul_sense__ka5___fox>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_lul_sense__ka5___fox>,
         <https://situx.github.io/cuneiformontology/signlist/character_lul_sense__nar___musician>,
         <https://situx.github.io/cuneiformontology/signlist/character_lul_sense_liar>,
         <https://situx.github.io/cuneiformontology/signlist/character_lul_sense_singer> ;
-    ns1:abzl "296" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_lul_reading_bah3>,
+    ns2:abzl "296" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_lul_reading_bah3>,
         <https://situx.github.io/cuneiformontology/signlist/character_lul_reading_buh>,
         <https://situx.github.io/cuneiformontology/signlist/character_lul_reading_dugaₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_lul_reading_dunga2>,
@@ -51,14 +51,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_lul_reading_tumga>,
         <https://situx.github.io/cuneiformontology/signlist/character_lul_reading_zalag3>,
         <https://situx.github.io/cuneiformontology/signlist/character_lul_reading_zulug> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_lul_nar> ;
-    ns1:hethzl "19; 351" ;
-    ns1:labat "355" ;
-    ns1:meszl "570" ;
-    ns1:obo "296" ;
-    ns1:signName "LUL (NAR)" ;
-    ns1:slha "355" ;
-    ns1:unicodeCodepoint "U+1221C" ;
-    ns1:unicodeRepresentation "𒈜" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_lul_nar> ;
+    ns2:hethzl "19; 351" ;
+    ns2:labat "355" ;
+    ns2:meszl "570" ;
+    ns2:obo "296" ;
+    ns2:signName "LUL (NAR)" ;
+    ns2:slha "355" ;
+    ns2:unicodeCodepoint "U+1221C" ;
+    ns2:unicodeRepresentation "𒈜" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556081> .
 

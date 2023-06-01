@@ -1,51 +1,51 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <http://www.purl.org/cuneiform#> .
-@prefix ns2: <http://ns.adobe.com/xap/1.0/> .
-@prefix ns3: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns1: <http://www.gigamesh.eu/ont#> .
+@prefix ns2: <http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/> .
+@prefix ns3: <http://www.purl.org/cuneiform#> .
 @prefix ns4: <http://www.w3.org/2003/12/exif/ns#> .
-@prefix ns5: <http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/> .
-@prefix ns6: <http://www.purl.org/graphemon#> .
-@prefix ns7: <http://www.wikidata.org/prop/direct/> .
-@prefix ns8: <http://www.gigamesh.eu/ont#> .
+@prefix ns5: <http://ns.adobe.com/xap/1.0/> .
+@prefix ns6: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns7: <http://www.purl.org/graphemon#> .
+@prefix ns8: <http://www.wikidata.org/prop/direct/> .
 @prefix ns9: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/1(disz)_charvariant1> a ns6:GraphemeVariant ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/1(disz)_charvariant1> a ns7:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: 1(disz)"@en ;
-    ns6:asSVG "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"170\" height=\"80\"><defs/><g stroke=\"#000000\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" fill=\"#000000\"><path fill=\"#000000\" stroke=\"#000000\" paint-order=\"fill stroke markers\" d=\" M 25 20 L 35 20 L 30 30 L 25 20 M 30 30 L 30 60\" stroke-miterlimit=\"10\" stroke-dasharray=\"\"/></g></svg>"^^ns6:svgLiteral ;
-    ns6:hasGottsteinCode "a1"^^ns6:gottsteinLiteral ;
-    ns6:hasPaleoCode "a"^^ns6:paleocodeLiteral .
+    ns7:asSVG "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"170\" height=\"80\"><defs/><g stroke=\"#000000\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" fill=\"#000000\"><path fill=\"#000000\" stroke=\"#000000\" paint-order=\"fill stroke markers\" d=\" M 25 20 L 35 20 L 30 30 L 25 20 M 30 30 L 30 60\" stroke-miterlimit=\"10\" stroke-dasharray=\"\"/></g></svg>"^^ns7:svgLiteral ;
+    ns7:hasGottsteinCode "a1"^^ns7:gottsteinLiteral ;
+    ns7:hasPaleoCode "a"^^ns7:paleocodeLiteral .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/2(disz)_charvariant1> a ns6:GraphemeVariant ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/2(disz)_charvariant1> a ns7:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: 2(disz)"@en ;
-    ns6:asSVG "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"170\" height=\"80\"><defs/><g stroke=\"#000000\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" fill=\"#000000\"><path fill=\"#000000\" stroke=\"#000000\" paint-order=\"fill stroke markers\" d=\" M 25 20 L 35 20 L 30 30 L 25 20 M 30 30 L 30 60 M 35 20 L 45 20 L 40 30 L 35 20 M 40 30 L 40 60\" stroke-miterlimit=\"10\" stroke-dasharray=\"\"/></g></svg>"^^ns6:svgLiteral ;
-    ns6:hasGottsteinCode "a2"^^ns6:gottsteinLiteral ;
-    ns6:hasPaleoCode "a-a"^^ns6:paleocodeLiteral .
+    ns7:asSVG "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"170\" height=\"80\"><defs/><g stroke=\"#000000\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" fill=\"#000000\"><path fill=\"#000000\" stroke=\"#000000\" paint-order=\"fill stroke markers\" d=\" M 25 20 L 35 20 L 30 30 L 25 20 M 30 30 L 30 60 M 35 20 L 45 20 L 40 30 L 35 20 M 40 30 L 40 60\" stroke-miterlimit=\"10\" stroke-dasharray=\"\"/></g></svg>"^^ns7:svgLiteral ;
+    ns7:hasGottsteinCode "a2"^^ns7:gottsteinLiteral ;
+    ns7:hasPaleoCode "a-a"^^ns7:paleocodeLiteral .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/6(disz)_charvariant1> a ns6:GraphemeVariant ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/6(disz)_charvariant1> a ns7:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: 6(disz)"@en .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/8(disz)_charvariant1> a ns6:GraphemeVariant ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/8(disz)_charvariant1> a ns7:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: 8(disz)"@en .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/9(u)_charvariant1> a ns6:GraphemeVariant ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/9(u)_charvariant1> a ns7:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: 9(u)"@en .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195> a ns1:Tablet ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195> a ns3:Tablet ;
     rdfs:label "Cuneiform Artifact: HT073195",
         "HT 07-31-95 cuneiform artifact"@en ;
     dc:spatial <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_excavloc> ;
     <http://purl.org/dc/elements/1.1/temporal:> <https://pleiades.stoa.org/vocabularies/time-periods/late-bronze-age-iran> ;
-    ns1:hasSurface <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_bottom>,
+    ns3:hasSurface <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_bottom>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_left>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_reverse>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_right> ;
-    ns1:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1>,
+    ns3:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo1>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo10>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo11>,
@@ -64,11 +64,11 @@
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo7>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo8>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo9> ;
-    ns1:material ns1:clay ;
-    ns1:museumNumber "HT 07-31-95"^^xsd:string ;
-    ns1:transliteration <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1> .
+    ns3:material ns3:clay ;
+    ns3:museumNumber "HT 07-31-95"^^xsd:string ;
+    ns3:transliteration <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_charoccurrences> a ns6:CharOccurrenceCollection ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_charoccurrences> a ns7:CharOccurrenceCollection ;
     rdfs:label "Char occurrences of cuneiform tablet HT 07-31-95"@en ;
     rdfs:member <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char1>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char2>,
@@ -80,13 +80,13 @@
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_lexicon> a ns9:Lexicon ;
     rdfs:label "Lexicon for tablet HT 07-31-95"@en ;
-    ns9:language ns1:Sumerian .
+    ns9:language ns3:Sumerian .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_top> a ns1:TopSide ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_top> a ns3:TopSide ;
     rdfs:label "HT 07-31-95 top side"@en ;
-    ns1:isRepresentedBy "https://heidicon.ub.uni-heidelberg.de/iiif/2/1611835:841079/full/full/0/default.jpg"^^xsd:anyURI .
+    ns3:isRepresentedBy "https://heidicon.ub.uni-heidelberg.de/iiif/2/1611835:841079/full/full/0/default.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_wordoccurrences> a ns1:WordFormOccurrenceCollection ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_wordoccurrences> a ns3:WordFormOccurrenceCollection ;
     rdfs:label "Wordform occurrences of cuneiform tablet HT 07-31-95"@en ;
     rdfs:member <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_word1>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_word2>,
@@ -104,47 +104,47 @@
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_word2>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_word3> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/a_charvariant1> a ns6:GraphemeVariant ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/a_charvariant1> a ns7:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: A"@en .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/dingir_charvariant1> a ns6:GraphemeVariant ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/dingir_charvariant1> a ns7:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: dingir"@en .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/gi_charvariant1> a ns6:GraphemeVariant ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/gi_charvariant1> a ns7:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: GI"@en .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/har_charvariant1> a ns6:GraphemeVariant ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/har_charvariant1> a ns7:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: HAR"@en .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/ku3_charvariant1> a ns6:GraphemeVariant ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/ku3_charvariant1> a ns7:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: KU3"@en .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/lagab_charvariant1> a ns6:GraphemeVariant ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/lagab_charvariant1> a ns7:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: LAGAB"@en .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/me_charvariant1> a ns6:GraphemeVariant ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/me_charvariant1> a ns7:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: ME"@en .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/mesz_charvariant1> a ns6:GraphemeVariant ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/mesz_charvariant1> a ns7:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: MESZ"@en .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/sza3_charvariant1> a ns6:GraphemeVariant ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/sza3_charvariant1> a ns7:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: SZA3"@en .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_bottom> a ns1:BottomSide ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_bottom> a ns3:BottomSide ;
     rdfs:label "HT 07-31-95 bottom side"@en ;
-    ns1:isRepresentedBy "https://heidicon.ub.uni-heidelberg.de/iiif/2/1611839:841083/full/full/0/default.jpg"^^xsd:anyURI .
+    ns3:isRepresentedBy "https://heidicon.ub.uni-heidelberg.de/iiif/2/1611839:841083/full/full/0/default.jpg"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_excavloc_geometry> a <http://www.opengis.net/ont/sf#Polygon> ;
     rdfs:label "Geometry of excavation site of HT 07-31-95"@en ;
     geo:asWKT "POLYGON ((48.3291942999999975 32.0794295999999974, 48.3299882000000025 32.0798160000000010, 48.3307982999999979 32.0805432000000010, 48.3296126999999984 32.0816385999999980, 48.3285130000000009 32.0823977000000014, 48.3277513000000027 32.0816931999999966, 48.3276224999999968 32.0814023000000006, 48.3276439999999994 32.0798387000000034, 48.3291942999999975 32.0794295999999974))"^^geo:wktLiteral ;
     geo:inSRS <https://situx.github.io/proj4rdf/def/crs/EPSG/0/4326/> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_left> a ns1:LeftSide ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_left> a ns3:LeftSide ;
     rdfs:label "HT 07-31-95 left side"@en ;
-    ns1:isRepresentedBy "https://heidicon.ub.uni-heidelberg.de/iiif/2/1611836:841080/full/full/0/default.jpg"^^xsd:anyURI .
+    ns3:isRepresentedBy "https://heidicon.ub.uni-heidelberg.de/iiif/2/1611836:841080/full/full/0/default.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1> a ns8:Mesh ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1> a ns1:Mesh ;
     rdfs:label "HT_07-31-95_3D_GMOCF"@en ;
     dc:contributor [ ],
         [ ],
@@ -155,257 +155,257 @@
         <https://orcid.org/0000-0002-2004-4153>,
         <https://orcid.org/0000-0002-9499-5840> ;
     dc:creator [ ] ;
-    ns8:NaNVertices <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_NaNVertices> ;
-    ns8:amountOfConnectedComponents <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_connectedComponents> ;
-    ns8:borderFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_borderFaces> ;
-    ns8:borderFacesBridgeTriConnection <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_borderFacesBridgeTriConnection> ;
-    ns8:borderVertices <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_borderVertices> ;
-    ns8:boundingBox <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_geom> ;
-    ns8:bridgeBorderFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_bridgeBorderFaces> ;
-    ns8:circleCenterVertices <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_circleCenterVertices> ;
-    ns8:danglingBorderFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_danglingBorderFaces> ;
-    ns8:finiteFunctionValueVertices <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_finiteFunctionValueVertices> ;
-    ns8:invertedFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_invertedFaces> ;
-    ns8:localFunctionValueMaxVertices <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_localFunctionMaxValueVertices> ;
-    ns8:localFunctionValueMinVertices <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_localFunctionMinValueVertices> ;
-    ns8:manifoldFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_manifoldFaces> ;
-    ns8:manuallyAddedVertices <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_manuallyAddedVertices> ;
-    ns8:nonManifoldFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_nonManifoldFaces> ;
-    ns8:nonManifoldVertices <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_nonManifoldVertices> ;
-    ns8:selectedFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_selectedFaces> ;
-    ns8:selectedVertices <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_selectedVertices> ;
-    ns8:singularVertices <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_singularVertices> ;
-    ns8:soloFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_soloFaces> ;
-    ns8:stickyFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_stickyFaces> ;
-    ns8:syntheticVertexFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_syntheticVertexFaces> ;
-    ns8:syntheticVertices <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_syntheticVertices> ;
-    ns8:threeBorderVertexFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_threeBorderVertexFaces> ;
-    ns8:totalArea 4.0157e+02 ;
-    ns8:totalNumberOfFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> ;
-    ns8:totalNumberOfVertices <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> ;
-    ns8:totalVolumeDX 4.69763e+05 ;
-    ns8:totalVolumeDY 4.69763e+05 ;
-    ns8:totalVolumeDZ 4.69763e+05 ;
-    ns8:vertexIsolated <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_vertexIsolated> ;
-    ns8:vertexNormalLength <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_vertexNormalLength> ;
-    ns8:verticesOnInvertedEdge <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_verticesOnInvertedEdge> ;
-    ns8:verticesPartOfZeroAreaFace <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_verticesPartOfZeroAreaFace> ;
-    ns8:zeroAreaFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_zeroAreaFaces> ;
+    ns1:NaNVertices <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_NaNVertices> ;
+    ns1:amountOfConnectedComponents <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_connectedComponents> ;
+    ns1:borderFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_borderFaces> ;
+    ns1:borderFacesBridgeTriConnection <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_borderFacesBridgeTriConnection> ;
+    ns1:borderVertices <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_borderVertices> ;
+    ns1:boundingBox <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_geom> ;
+    ns1:bridgeBorderFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_bridgeBorderFaces> ;
+    ns1:circleCenterVertices <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_circleCenterVertices> ;
+    ns1:danglingBorderFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_danglingBorderFaces> ;
+    ns1:finiteFunctionValueVertices <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_finiteFunctionValueVertices> ;
+    ns1:invertedFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_invertedFaces> ;
+    ns1:localFunctionValueMaxVertices <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_localFunctionMaxValueVertices> ;
+    ns1:localFunctionValueMinVertices <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_localFunctionMinValueVertices> ;
+    ns1:manifoldFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_manifoldFaces> ;
+    ns1:manuallyAddedVertices <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_manuallyAddedVertices> ;
+    ns1:nonManifoldFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_nonManifoldFaces> ;
+    ns1:nonManifoldVertices <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_nonManifoldVertices> ;
+    ns1:selectedFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_selectedFaces> ;
+    ns1:selectedVertices <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_selectedVertices> ;
+    ns1:singularVertices <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_singularVertices> ;
+    ns1:soloFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_soloFaces> ;
+    ns1:stickyFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_stickyFaces> ;
+    ns1:syntheticVertexFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_syntheticVertexFaces> ;
+    ns1:syntheticVertices <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_syntheticVertices> ;
+    ns1:threeBorderVertexFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_threeBorderVertexFaces> ;
+    ns1:totalArea 4.0157e+02 ;
+    ns1:totalNumberOfFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> ;
+    ns1:totalNumberOfVertices <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> ;
+    ns1:totalVolumeDX 4.69763e+05 ;
+    ns1:totalVolumeDY 4.69763e+05 ;
+    ns1:totalVolumeDZ 4.69763e+05 ;
+    ns1:vertexIsolated <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_vertexIsolated> ;
+    ns1:vertexNormalLength <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_vertexNormalLength> ;
+    ns1:verticesOnInvertedEdge <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_verticesOnInvertedEdge> ;
+    ns1:verticesPartOfZeroAreaFace <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_verticesPartOfZeroAreaFace> ;
+    ns1:zeroAreaFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_zeroAreaFaces> ;
     foaf:image "https://heidicon.ub.uni-heidelberg.de/eas/partitions/5/0/841000/841087/915b9bd695eba26eb54a03d6077d49be0d0df419/application/x-nexus-nxz/HT_07-31-95_3D_GMOCF_r1.50_n4_v512.volume_FuncValColor_Legacy.nxz" .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_NaNVertices> a ns8:NaNVertices ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_NaNVertices> a ns1:NaNVertices ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of NaN Vertices"@en ;
-    ns8:value 0 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
+    ns1:value 0 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_borderFaces> a ns8:BorderFaces ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_borderFaces> a ns1:BorderFaces ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of border faces"@en ;
-    ns8:value 0 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> .
+    ns1:value 0 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_borderFacesBridgeTriConnection> a ns8:BorderFacesBridgeTriConnection ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_borderFacesBridgeTriConnection> a ns1:BorderFacesBridgeTriConnection ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of border faces with a bridge tri connection"@en ;
-    ns8:value 0 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> .
+    ns1:value 0 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_borderVertices> a ns8:BorderVertices ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_borderVertices> a ns1:BorderVertices ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of Border Vertices"@en ;
-    ns8:value 0 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
+    ns1:value 0 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_bridgeBorderFaces> a ns8:BridgeBorderFaces ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_bridgeBorderFaces> a ns1:BridgeBorderFaces ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of bridge border faces"@en ;
-    ns8:value 0 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> .
+    ns1:value 0 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_circleCenterVertices> a ns8:CircleCenterVertices ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_circleCenterVertices> a ns1:CircleCenterVertices ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of circle center vertices"@en ;
-    ns8:value 0 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
+    ns1:value 0 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_connectedComponents> a ns8:ConnectedComponents ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_connectedComponents> a ns1:ConnectedComponents ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of connected components"@en ;
-    ns8:value 1 .
+    ns1:value 1 .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_danglingBorderFaces> a ns8:DanglingBorderFaces ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_danglingBorderFaces> a ns1:DanglingBorderFaces ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of dangling border faces"@en ;
-    ns8:value 0 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> .
+    ns1:value 0 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_finiteFunctionValueVertices> a ns8:FiniteFunctionValueVertices ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_finiteFunctionValueVertices> a ns1:FiniteFunctionValueVertices ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of finite function value vertices"@en ;
-    ns8:value 1187693 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
+    ns1:value 1187693 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_geom> a geo:Geometry ;
     rdfs:label "HT_07-31-95_3D_GMOCF Bounding Box"@en ;
-    ns8:boundingBoxHeight 1.02e+01 ;
-    ns8:boundingBoxThickness 5.4e+00 ;
-    ns8:boundingBoxWidth 1.43e+01 ;
-    ns8:maximumXCoordinate 7.13643e+01 ;
-    ns8:maximumYCoordinate 1.017155e+02 ;
-    ns8:maximumZCoordinate 2.71276e+01 ;
-    ns8:minimumXCoordinate -7.13643e+01 ;
-    ns8:minimumYCoordinate 0e+00 ;
-    ns8:minimumZCoordinate -2.71276e+01 ;
+    ns1:boundingBoxHeight 1.02e+01 ;
+    ns1:boundingBoxThickness 5.4e+00 ;
+    ns1:boundingBoxWidth 1.43e+01 ;
+    ns1:maximumXCoordinate 7.13643e+01 ;
+    ns1:maximumYCoordinate 1.017155e+02 ;
+    ns1:maximumZCoordinate 2.71276e+01 ;
+    ns1:minimumXCoordinate -7.13643e+01 ;
+    ns1:minimumYCoordinate 0e+00 ;
+    ns1:minimumZCoordinate -2.71276e+01 ;
     geo:asWKT "ENVELOPE(-71.364300 0.000000 -27.127600,71.364300 101.715500 27.127600)"^^geo:wktLiteral .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_invertedFaces> a ns8:InvertedFaces ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_invertedFaces> a ns1:InvertedFaces ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of inverted faces"@en ;
-    ns8:value 0 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> .
+    ns1:value 0 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_localFunctionMaxValueVertices> a ns8:LocalFunctionMaxValueVertices ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_localFunctionMaxValueVertices> a ns1:LocalFunctionMaxValueVertices ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of local function maximum value vertices"@en ;
-    ns8:value 0 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
+    ns1:value 0 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_localFunctionMinValueVertices> a ns8:LocalFunctionMinValueVertices ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_localFunctionMinValueVertices> a ns1:LocalFunctionMinValueVertices ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of local function minimum value vertices"@en ;
-    ns8:value 0 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
+    ns1:value 0 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_manifoldFaces> a ns8:ManifoldFaces ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_manifoldFaces> a ns1:ManifoldFaces ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of manifold faces"@en ;
-    ns8:value 2375382 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> .
+    ns1:value 2375382 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_manuallyAddedVertices> a ns8:ManuallyAddedVertices ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_manuallyAddedVertices> a ns1:ManuallyAddedVertices ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of manually added vertices"@en ;
-    ns8:value 0 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
+    ns1:value 0 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_nonManifoldFaces> a ns8:ManifoldFaces ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_nonManifoldFaces> a ns1:ManifoldFaces ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of non-manifold faces"@en ;
-    ns8:value 0 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> .
+    ns1:value 0 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_nonManifoldVertices> a ns8:NonManifoldVertices ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_nonManifoldVertices> a ns1:NonManifoldVertices ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of Non-Manifold Vertices"@en ;
-    ns8:value 0 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
+    ns1:value 0 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_selectedFaces> a ns8:SelectedFaces ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_selectedFaces> a ns1:SelectedFaces ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of selected faces"@en ;
-    ns8:value 0 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> .
+    ns1:value 0 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_selectedVertices> a ns8:SelectedVertices ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_selectedVertices> a ns1:SelectedVertices ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of selected vertices"@en ;
-    ns8:value 0 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
+    ns1:value 0 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_singularVertices> a ns8:SingularVertices ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_singularVertices> a ns1:SingularVertices ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of Singular Vertices"@en ;
-    ns8:value 0 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
+    ns1:value 0 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_soloFaces> a ns8:SoloFaces ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_soloFaces> a ns1:SoloFaces ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of solo faces"@en ;
-    ns8:value 0 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> .
+    ns1:value 0 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_stickyFaces> a ns8:StickyFaces ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_stickyFaces> a ns1:StickyFaces ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of sticky faces"@en ;
-    ns8:value 0 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> .
+    ns1:value 0 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_syntheticVertexFaces> a ns8:SyntheticVertexFaces ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_syntheticVertexFaces> a ns1:SyntheticVertexFaces ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of synthetic vertex faces"@en ;
-    ns8:value 0 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> .
+    ns1:value 0 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_syntheticVertices> a ns8:SyntheticVertices ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_syntheticVertices> a ns1:SyntheticVertices ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of synthetic vertices"@en ;
-    ns8:value 0 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
+    ns1:value 0 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_threeBorderVertexFaces> a ns8:ThreeBorderVertexFaces ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_threeBorderVertexFaces> a ns1:ThreeBorderVertexFaces ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of three border vertex faces"@en ;
-    ns8:value 0 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> .
+    ns1:value 0 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_vertexIsolated> a ns8:VertexIsolated ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_vertexIsolated> a ns1:VertexIsolated ;
     rdfs:label "HT_07-31-95_3D_GMOCF Isolated Vertices"@en ;
-    ns8:value 0 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
+    ns1:value 0 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_vertexNormalLength> a ns8:VertexNormalLength ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_vertexNormalLength> a ns1:VertexNormalLength ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of Vertices with normal length"@en ;
-    ns8:value 0 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
+    ns1:value 0 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_verticesOnInvertedEdge> a ns8:VerticesOnInvertedEdge ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_verticesOnInvertedEdge> a ns1:VerticesOnInvertedEdge ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of Vertices on inverted edges"@en ;
-    ns8:value 0 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
+    ns1:value 0 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_verticesPartOfZeroAreaFace> a ns8:VerticesPartOfZeroAreaFace ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_verticesPartOfZeroAreaFace> a ns1:VerticesPartOfZeroAreaFace ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of Vertices which are part of zero area faces"@en ;
-    ns8:value 0 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
+    ns1:value 0 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_zeroAreaFaces> a ns8:ZeroAreaFaces ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_zeroAreaFaces> a ns1:ZeroAreaFaces ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of zero area faces"@en ;
-    ns8:value 0 ;
-    ns7:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> .
+    ns1:value 0 ;
+    ns8:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse> a ns1:ObverseSide,
-        ns1:Side ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse> a ns3:ObverseSide,
+        ns3:Side ;
     rdfs:label "HT 07-31-95 obverse side"@en,
         "HT073195: obverse"@en ;
-    ns1:isRepresentedBy <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611837:841081/full/full/0/default.jpg> ;
-    ns6:contains <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1>,
+    ns3:isRepresentedBy <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611837:841081/full/full/0/default.jpg> ;
+    ns7:contains <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/sides/HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2_char5_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2_char5_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 2 char 5"@en,
         "Glyph at HT073195[obverse 2 5])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char5_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns1:prevInWord <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2_char1_glyph> ;
-    ns6:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2_char4_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char5_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns3:prevInWord <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2_char1_glyph> ;
+    ns7:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2_char4_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_2_5_GI_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_2_5_GI_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char7_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char7_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 3 char 7"@en,
         "Glyph at HT073195[obverse 3 7])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char7_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns1:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line3_char8_glyph> ;
-    ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line3_char6_glyph> ;
-    ns1:prevInWord <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char1_glyph> ;
-    ns6:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char6_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char7_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line3_char8_glyph> ;
+    ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line3_char6_glyph> ;
+    ns3:prevInWord <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char1_glyph> ;
+    ns7:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char6_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_3_7_mesz_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_3_7_mesz_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char8_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char8_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 4 char 8"@en,
         "Glyph at HT073195[obverse 4 8])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char8_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char7_glyph> ;
-    ns1:prevInWord <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char2_glyph> ;
-    ns6:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char7_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char8_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char7_glyph> ;
+    ns3:prevInWord <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char2_glyph> ;
+    ns7:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char7_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_4_8_u2_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_4_8_u2_HT073195_front.jpg"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo1> a foaf:Image ;
-    ns5:CountryCode "IRN" ;
-    ns5:Event "single picture" ;
-    ns5:LocationCreatedCity "Haft Tappeh" ;
-    ns5:LocationCreatedCountryName "Iran" ;
-    ns5:LocationCreatedWorldRegion "Asia" ;
-    ns2:CreatorTool "Haft Tappeh XMP Generator Script" ;
-    ns2:Owner "Behzad Mofidi-Nasrabadi" ;
-    ns2:UsageTerms "CC BY-SA 4.0" ;
+    ns2:CountryCode "IRN" ;
+    ns2:Event "single picture" ;
+    ns2:LocationCreatedCity "Haft Tappeh" ;
+    ns2:LocationCreatedCountryName "Iran" ;
+    ns2:LocationCreatedWorldRegion "Asia" ;
+    ns5:CreatorTool "Haft Tappeh XMP Generator Script" ;
+    ns5:Owner "Behzad Mofidi-Nasrabadi" ;
+    ns5:UsageTerms "CC BY-SA 4.0" ;
     dc:contributor <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_ehuber>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_tbrandes> ;
     dc:created "2009-01-17T10:31:23"^^xsd:dateTime ;
@@ -435,14 +435,14 @@
     foaf:image "https://heidicon.ub.uni-heidelberg.de/iiif/2/1667769:870859/full/full/0/default.jpg"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo10> a foaf:Image ;
-    ns5:CountryCode "IRN" ;
-    ns5:Event "single picture" ;
-    ns5:LocationCreatedCity "Haft Tappeh" ;
-    ns5:LocationCreatedCountryName "Iran" ;
-    ns5:LocationCreatedWorldRegion "Asia" ;
-    ns2:CreatorTool "Haft Tappeh XMP Generator Script" ;
-    ns2:Owner "Behzad Mofidi-Nasrabadi" ;
-    ns2:UsageTerms "CC BY-SA 4.0" ;
+    ns2:CountryCode "IRN" ;
+    ns2:Event "single picture" ;
+    ns2:LocationCreatedCity "Haft Tappeh" ;
+    ns2:LocationCreatedCountryName "Iran" ;
+    ns2:LocationCreatedWorldRegion "Asia" ;
+    ns5:CreatorTool "Haft Tappeh XMP Generator Script" ;
+    ns5:Owner "Behzad Mofidi-Nasrabadi" ;
+    ns5:UsageTerms "CC BY-SA 4.0" ;
     dc:contributor <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_ehuber>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_tbrandes> ;
     dc:created "2007-01-27T11:30:29"^^xsd:dateTime ;
@@ -472,14 +472,14 @@
     foaf:image "https://heidicon.ub.uni-heidelberg.de/iiif/2/1667779:870869/full/full/0/default.jpg"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo11> a foaf:Image ;
-    ns5:CountryCode "IRN" ;
-    ns5:Event "single picture" ;
-    ns5:LocationCreatedCity "Haft Tappeh" ;
-    ns5:LocationCreatedCountryName "Iran" ;
-    ns5:LocationCreatedWorldRegion "Asia" ;
-    ns2:CreatorTool "Haft Tappeh XMP Generator Script" ;
-    ns2:Owner "Behzad Mofidi-Nasrabadi" ;
-    ns2:UsageTerms "CC BY-SA 4.0" ;
+    ns2:CountryCode "IRN" ;
+    ns2:Event "single picture" ;
+    ns2:LocationCreatedCity "Haft Tappeh" ;
+    ns2:LocationCreatedCountryName "Iran" ;
+    ns2:LocationCreatedWorldRegion "Asia" ;
+    ns5:CreatorTool "Haft Tappeh XMP Generator Script" ;
+    ns5:Owner "Behzad Mofidi-Nasrabadi" ;
+    ns5:UsageTerms "CC BY-SA 4.0" ;
     dc:contributor <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_ehuber>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_tbrandes> ;
     dc:created "2007-01-27T11:30:41"^^xsd:dateTime ;
@@ -509,14 +509,14 @@
     foaf:image "https://heidicon.ub.uni-heidelberg.de/iiif/2/1667780:870870/full/full/0/default.jpg"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo12> a foaf:Image ;
-    ns5:CountryCode "IRN" ;
-    ns5:Event "single picture" ;
-    ns5:LocationCreatedCity "Haft Tappeh" ;
-    ns5:LocationCreatedCountryName "Iran" ;
-    ns5:LocationCreatedWorldRegion "Asia" ;
-    ns2:CreatorTool "Haft Tappeh XMP Generator Script" ;
-    ns2:Owner "Behzad Mofidi-Nasrabadi" ;
-    ns2:UsageTerms "CC BY-SA 4.0" ;
+    ns2:CountryCode "IRN" ;
+    ns2:Event "single picture" ;
+    ns2:LocationCreatedCity "Haft Tappeh" ;
+    ns2:LocationCreatedCountryName "Iran" ;
+    ns2:LocationCreatedWorldRegion "Asia" ;
+    ns5:CreatorTool "Haft Tappeh XMP Generator Script" ;
+    ns5:Owner "Behzad Mofidi-Nasrabadi" ;
+    ns5:UsageTerms "CC BY-SA 4.0" ;
     dc:contributor <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_ehuber>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_tbrandes> ;
     dc:created "2007-01-27T11:31:18"^^xsd:dateTime ;
@@ -546,14 +546,14 @@
     foaf:image "https://heidicon.ub.uni-heidelberg.de/iiif/2/1667781:870871/full/full/0/default.jpg"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo13> a foaf:Image ;
-    ns5:CountryCode "IRN" ;
-    ns5:Event "single picture" ;
-    ns5:LocationCreatedCity "Haft Tappeh" ;
-    ns5:LocationCreatedCountryName "Iran" ;
-    ns5:LocationCreatedWorldRegion "Asia" ;
-    ns2:CreatorTool "Haft Tappeh XMP Generator Script" ;
-    ns2:Owner "Behzad Mofidi-Nasrabadi" ;
-    ns2:UsageTerms "CC BY-SA 4.0" ;
+    ns2:CountryCode "IRN" ;
+    ns2:Event "single picture" ;
+    ns2:LocationCreatedCity "Haft Tappeh" ;
+    ns2:LocationCreatedCountryName "Iran" ;
+    ns2:LocationCreatedWorldRegion "Asia" ;
+    ns5:CreatorTool "Haft Tappeh XMP Generator Script" ;
+    ns5:Owner "Behzad Mofidi-Nasrabadi" ;
+    ns5:UsageTerms "CC BY-SA 4.0" ;
     dc:contributor <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_ehuber>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_tbrandes> ;
     dc:created "2007-01-27T11:31:39"^^xsd:dateTime ;
@@ -583,14 +583,14 @@
     foaf:image "https://heidicon.ub.uni-heidelberg.de/iiif/2/1667782:870872/full/full/0/default.jpg"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo14> a foaf:Image ;
-    ns5:CountryCode "IRN" ;
-    ns5:Event "single picture" ;
-    ns5:LocationCreatedCity "Haft Tappeh" ;
-    ns5:LocationCreatedCountryName "Iran" ;
-    ns5:LocationCreatedWorldRegion "Asia" ;
-    ns2:CreatorTool "Haft Tappeh XMP Generator Script" ;
-    ns2:Owner "Behzad Mofidi-Nasrabadi" ;
-    ns2:UsageTerms "CC BY-SA 4.0" ;
+    ns2:CountryCode "IRN" ;
+    ns2:Event "single picture" ;
+    ns2:LocationCreatedCity "Haft Tappeh" ;
+    ns2:LocationCreatedCountryName "Iran" ;
+    ns2:LocationCreatedWorldRegion "Asia" ;
+    ns5:CreatorTool "Haft Tappeh XMP Generator Script" ;
+    ns5:Owner "Behzad Mofidi-Nasrabadi" ;
+    ns5:UsageTerms "CC BY-SA 4.0" ;
     dc:contributor <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_ehuber>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_tbrandes> ;
     dc:created "2007-01-27T11:32:24"^^xsd:dateTime ;
@@ -620,14 +620,14 @@
     foaf:image "https://heidicon.ub.uni-heidelberg.de/iiif/2/1667783:870873/full/full/0/default.jpg"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo15> a foaf:Image ;
-    ns5:CountryCode "IRN" ;
-    ns5:Event "single picture" ;
-    ns5:LocationCreatedCity "Haft Tappeh" ;
-    ns5:LocationCreatedCountryName "Iran" ;
-    ns5:LocationCreatedWorldRegion "Asia" ;
-    ns2:CreatorTool "Haft Tappeh XMP Generator Script" ;
-    ns2:Owner "Behzad Mofidi-Nasrabadi" ;
-    ns2:UsageTerms "CC BY-SA 4.0" ;
+    ns2:CountryCode "IRN" ;
+    ns2:Event "single picture" ;
+    ns2:LocationCreatedCity "Haft Tappeh" ;
+    ns2:LocationCreatedCountryName "Iran" ;
+    ns2:LocationCreatedWorldRegion "Asia" ;
+    ns5:CreatorTool "Haft Tappeh XMP Generator Script" ;
+    ns5:Owner "Behzad Mofidi-Nasrabadi" ;
+    ns5:UsageTerms "CC BY-SA 4.0" ;
     dc:contributor <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_ehuber>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_tbrandes> ;
     dc:created "2007-01-27T11:29:32"^^xsd:dateTime ;
@@ -657,14 +657,14 @@
     foaf:image "https://heidicon.ub.uni-heidelberg.de/iiif/2/1667784:870874/full/full/0/default.jpg"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo16> a foaf:Image ;
-    ns5:CountryCode "IRN" ;
-    ns5:Event "single picture" ;
-    ns5:LocationCreatedCity "Haft Tappeh" ;
-    ns5:LocationCreatedCountryName "Iran" ;
-    ns5:LocationCreatedWorldRegion "Asia" ;
-    ns2:CreatorTool "Haft Tappeh XMP Generator Script" ;
-    ns2:Owner "Behzad Mofidi-Nasrabadi" ;
-    ns2:UsageTerms "CC BY-SA 4.0" ;
+    ns2:CountryCode "IRN" ;
+    ns2:Event "single picture" ;
+    ns2:LocationCreatedCity "Haft Tappeh" ;
+    ns2:LocationCreatedCountryName "Iran" ;
+    ns2:LocationCreatedWorldRegion "Asia" ;
+    ns5:CreatorTool "Haft Tappeh XMP Generator Script" ;
+    ns5:Owner "Behzad Mofidi-Nasrabadi" ;
+    ns5:UsageTerms "CC BY-SA 4.0" ;
     dc:contributor <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_ehuber>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_tbrandes> ;
     dc:created "2007-01-27T11:29:32"^^xsd:dateTime ;
@@ -694,14 +694,14 @@
     foaf:image "https://heidicon.ub.uni-heidelberg.de/iiif/2/1667784:870874/full/full/0/default.jpg"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo17> a foaf:Image ;
-    ns5:CountryCode "IRN" ;
-    ns5:Event "single picture" ;
-    ns5:LocationCreatedCity "Haft Tappeh" ;
-    ns5:LocationCreatedCountryName "Iran" ;
-    ns5:LocationCreatedWorldRegion "Asia" ;
-    ns2:CreatorTool "Haft Tappeh XMP Generator Script" ;
-    ns2:Owner "Behzad Mofidi-Nasrabadi" ;
-    ns2:UsageTerms "CC BY-SA 4.0" ;
+    ns2:CountryCode "IRN" ;
+    ns2:Event "single picture" ;
+    ns2:LocationCreatedCity "Haft Tappeh" ;
+    ns2:LocationCreatedCountryName "Iran" ;
+    ns2:LocationCreatedWorldRegion "Asia" ;
+    ns5:CreatorTool "Haft Tappeh XMP Generator Script" ;
+    ns5:Owner "Behzad Mofidi-Nasrabadi" ;
+    ns5:UsageTerms "CC BY-SA 4.0" ;
     dc:contributor <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_ehuber>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_tbrandes> ;
     dc:created "2007-01-27T11:30:04"^^xsd:dateTime ;
@@ -731,14 +731,14 @@
     foaf:image "https://heidicon.ub.uni-heidelberg.de/iiif/2/1667784:870874/full/full/0/default.jpg"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo18> a foaf:Image ;
-    ns5:CountryCode "IRN" ;
-    ns5:Event "single picture" ;
-    ns5:LocationCreatedCity "Haft Tappeh" ;
-    ns5:LocationCreatedCountryName "Iran" ;
-    ns5:LocationCreatedWorldRegion "Asia" ;
-    ns2:CreatorTool "Haft Tappeh XMP Generator Script" ;
-    ns2:Owner "Behzad Mofidi-Nasrabadi" ;
-    ns2:UsageTerms "CC BY-SA 4.0" ;
+    ns2:CountryCode "IRN" ;
+    ns2:Event "single picture" ;
+    ns2:LocationCreatedCity "Haft Tappeh" ;
+    ns2:LocationCreatedCountryName "Iran" ;
+    ns2:LocationCreatedWorldRegion "Asia" ;
+    ns5:CreatorTool "Haft Tappeh XMP Generator Script" ;
+    ns5:Owner "Behzad Mofidi-Nasrabadi" ;
+    ns5:UsageTerms "CC BY-SA 4.0" ;
     dc:contributor <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_ehuber>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_tbrandes> ;
     dc:created "2007-01-27T11:30:18"^^xsd:dateTime ;
@@ -768,14 +768,14 @@
     foaf:image "https://heidicon.ub.uni-heidelberg.de/iiif/2/1667784:870874/full/full/0/default.jpg"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo2> a foaf:Image ;
-    ns5:CountryCode "IRN" ;
-    ns5:Event "single picture" ;
-    ns5:LocationCreatedCity "Haft Tappeh" ;
-    ns5:LocationCreatedCountryName "Iran" ;
-    ns5:LocationCreatedWorldRegion "Asia" ;
-    ns2:CreatorTool "Haft Tappeh XMP Generator Script" ;
-    ns2:Owner "Behzad Mofidi-Nasrabadi" ;
-    ns2:UsageTerms "CC BY-SA 4.0" ;
+    ns2:CountryCode "IRN" ;
+    ns2:Event "single picture" ;
+    ns2:LocationCreatedCity "Haft Tappeh" ;
+    ns2:LocationCreatedCountryName "Iran" ;
+    ns2:LocationCreatedWorldRegion "Asia" ;
+    ns5:CreatorTool "Haft Tappeh XMP Generator Script" ;
+    ns5:Owner "Behzad Mofidi-Nasrabadi" ;
+    ns5:UsageTerms "CC BY-SA 4.0" ;
     dc:contributor <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_ehuber>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_tbrandes> ;
     dc:created "2009-01-17T10:31:45"^^xsd:dateTime ;
@@ -805,14 +805,14 @@
     foaf:image "https://heidicon.ub.uni-heidelberg.de/iiif/2/1667770:870860/full/full/0/default.jpg"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo3> a foaf:Image ;
-    ns5:CountryCode "IRN" ;
-    ns5:Event "single picture" ;
-    ns5:LocationCreatedCity "Haft Tappeh" ;
-    ns5:LocationCreatedCountryName "Iran" ;
-    ns5:LocationCreatedWorldRegion "Asia" ;
-    ns2:CreatorTool "Haft Tappeh XMP Generator Script" ;
-    ns2:Owner "Behzad Mofidi-Nasrabadi" ;
-    ns2:UsageTerms "CC BY-SA 4.0" ;
+    ns2:CountryCode "IRN" ;
+    ns2:Event "single picture" ;
+    ns2:LocationCreatedCity "Haft Tappeh" ;
+    ns2:LocationCreatedCountryName "Iran" ;
+    ns2:LocationCreatedWorldRegion "Asia" ;
+    ns5:CreatorTool "Haft Tappeh XMP Generator Script" ;
+    ns5:Owner "Behzad Mofidi-Nasrabadi" ;
+    ns5:UsageTerms "CC BY-SA 4.0" ;
     dc:contributor <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_ehuber>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_tbrandes> ;
     dc:created "2009-01-17T10:31:52"^^xsd:dateTime ;
@@ -842,14 +842,14 @@
     foaf:image "https://heidicon.ub.uni-heidelberg.de/iiif/2/1667771:870861/full/full/0/default.jpg"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo4> a foaf:Image ;
-    ns5:CountryCode "IRN" ;
-    ns5:Event "single picture" ;
-    ns5:LocationCreatedCity "Haft Tappeh" ;
-    ns5:LocationCreatedCountryName "Iran" ;
-    ns5:LocationCreatedWorldRegion "Asia" ;
-    ns2:CreatorTool "Haft Tappeh XMP Generator Script" ;
-    ns2:Owner "Behzad Mofidi-Nasrabadi" ;
-    ns2:UsageTerms "CC BY-SA 4.0" ;
+    ns2:CountryCode "IRN" ;
+    ns2:Event "single picture" ;
+    ns2:LocationCreatedCity "Haft Tappeh" ;
+    ns2:LocationCreatedCountryName "Iran" ;
+    ns2:LocationCreatedWorldRegion "Asia" ;
+    ns5:CreatorTool "Haft Tappeh XMP Generator Script" ;
+    ns5:Owner "Behzad Mofidi-Nasrabadi" ;
+    ns5:UsageTerms "CC BY-SA 4.0" ;
     dc:contributor <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_ehuber>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_tbrandes> ;
     dc:created "2009-01-17T10:31:52"^^xsd:dateTime ;
@@ -879,14 +879,14 @@
     foaf:image "https://heidicon.ub.uni-heidelberg.de/iiif/2/1667772:870862/full/full/0/default.jpg"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo5> a foaf:Image ;
-    ns5:CountryCode "IRN" ;
-    ns5:Event "single picture" ;
-    ns5:LocationCreatedCity "Haft Tappeh" ;
-    ns5:LocationCreatedCountryName "Iran" ;
-    ns5:LocationCreatedWorldRegion "Asia" ;
-    ns2:CreatorTool "Haft Tappeh XMP Generator Script" ;
-    ns2:Owner "Behzad Mofidi-Nasrabadi" ;
-    ns2:UsageTerms "CC BY-SA 4.0" ;
+    ns2:CountryCode "IRN" ;
+    ns2:Event "single picture" ;
+    ns2:LocationCreatedCity "Haft Tappeh" ;
+    ns2:LocationCreatedCountryName "Iran" ;
+    ns2:LocationCreatedWorldRegion "Asia" ;
+    ns5:CreatorTool "Haft Tappeh XMP Generator Script" ;
+    ns5:Owner "Behzad Mofidi-Nasrabadi" ;
+    ns5:UsageTerms "CC BY-SA 4.0" ;
     dc:contributor <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_ehuber>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_tbrandes> ;
     dc:created "2009-01-17T10:32:22"^^xsd:dateTime ;
@@ -916,14 +916,14 @@
     foaf:image "https://heidicon.ub.uni-heidelberg.de/iiif/2/1667773:870863/full/full/0/default.jpg"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo6> a foaf:Image ;
-    ns5:CountryCode "IRN" ;
-    ns5:Event "single picture" ;
-    ns5:LocationCreatedCity "Haft Tappeh" ;
-    ns5:LocationCreatedCountryName "Iran" ;
-    ns5:LocationCreatedWorldRegion "Asia" ;
-    ns2:CreatorTool "Haft Tappeh XMP Generator Script" ;
-    ns2:Owner "Behzad Mofidi-Nasrabadi" ;
-    ns2:UsageTerms "CC BY-SA 4.0" ;
+    ns2:CountryCode "IRN" ;
+    ns2:Event "single picture" ;
+    ns2:LocationCreatedCity "Haft Tappeh" ;
+    ns2:LocationCreatedCountryName "Iran" ;
+    ns2:LocationCreatedWorldRegion "Asia" ;
+    ns5:CreatorTool "Haft Tappeh XMP Generator Script" ;
+    ns5:Owner "Behzad Mofidi-Nasrabadi" ;
+    ns5:UsageTerms "CC BY-SA 4.0" ;
     dc:contributor <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_ehuber>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_tbrandes> ;
     dc:created "2009-01-17T10:32:29"^^xsd:dateTime ;
@@ -953,14 +953,14 @@
     foaf:image "https://heidicon.ub.uni-heidelberg.de/iiif/2/1667774:870864/full/full/0/default.jpg"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo7> a foaf:Image ;
-    ns5:CountryCode "IRN" ;
-    ns5:Event "single picture" ;
-    ns5:LocationCreatedCity "Haft Tappeh" ;
-    ns5:LocationCreatedCountryName "Iran" ;
-    ns5:LocationCreatedWorldRegion "Asia" ;
-    ns2:CreatorTool "Haft Tappeh XMP Generator Script" ;
-    ns2:Owner "Behzad Mofidi-Nasrabadi" ;
-    ns2:UsageTerms "CC BY-SA 4.0" ;
+    ns2:CountryCode "IRN" ;
+    ns2:Event "single picture" ;
+    ns2:LocationCreatedCity "Haft Tappeh" ;
+    ns2:LocationCreatedCountryName "Iran" ;
+    ns2:LocationCreatedWorldRegion "Asia" ;
+    ns5:CreatorTool "Haft Tappeh XMP Generator Script" ;
+    ns5:Owner "Behzad Mofidi-Nasrabadi" ;
+    ns5:UsageTerms "CC BY-SA 4.0" ;
     dc:contributor <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_ehuber>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_tbrandes> ;
     dc:created "2009-01-17T10:32:49"^^xsd:dateTime ;
@@ -990,14 +990,14 @@
     foaf:image "https://heidicon.ub.uni-heidelberg.de/iiif/2/1667775:870865/full/full/0/default.jpg"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo8> a foaf:Image ;
-    ns5:CountryCode "IRN" ;
-    ns5:Event "single picture" ;
-    ns5:LocationCreatedCity "Haft Tappeh" ;
-    ns5:LocationCreatedCountryName "Iran" ;
-    ns5:LocationCreatedWorldRegion "Asia" ;
-    ns2:CreatorTool "Haft Tappeh XMP Generator Script" ;
-    ns2:Owner "Behzad Mofidi-Nasrabadi" ;
-    ns2:UsageTerms "CC BY-SA 4.0" ;
+    ns2:CountryCode "IRN" ;
+    ns2:Event "single picture" ;
+    ns2:LocationCreatedCity "Haft Tappeh" ;
+    ns2:LocationCreatedCountryName "Iran" ;
+    ns2:LocationCreatedWorldRegion "Asia" ;
+    ns5:CreatorTool "Haft Tappeh XMP Generator Script" ;
+    ns5:Owner "Behzad Mofidi-Nasrabadi" ;
+    ns5:UsageTerms "CC BY-SA 4.0" ;
     dc:contributor <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_ehuber>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_tbrandes> ;
     dc:created "2009-01-17T10:32:49"^^xsd:dateTime ;
@@ -1027,14 +1027,14 @@
     foaf:image "https://heidicon.ub.uni-heidelberg.de/iiif/2/1667777:870867/full/full/0/default.jpg"^^xsd:anyURI .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo9> a foaf:Image ;
-    ns5:CountryCode "IRN" ;
-    ns5:Event "single picture" ;
-    ns5:LocationCreatedCity "Haft Tappeh" ;
-    ns5:LocationCreatedCountryName "Iran" ;
-    ns5:LocationCreatedWorldRegion "Asia" ;
-    ns2:CreatorTool "Haft Tappeh XMP Generator Script" ;
-    ns2:Owner "Behzad Mofidi-Nasrabadi" ;
-    ns2:UsageTerms "CC BY-SA 4.0" ;
+    ns2:CountryCode "IRN" ;
+    ns2:Event "single picture" ;
+    ns2:LocationCreatedCity "Haft Tappeh" ;
+    ns2:LocationCreatedCountryName "Iran" ;
+    ns2:LocationCreatedWorldRegion "Asia" ;
+    ns5:CreatorTool "Haft Tappeh XMP Generator Script" ;
+    ns5:Owner "Behzad Mofidi-Nasrabadi" ;
+    ns5:UsageTerms "CC BY-SA 4.0" ;
     dc:contributor <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_ehuber>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_tbrandes> ;
     dc:created "2007-01-27T11:29:21"^^xsd:dateTime ;
@@ -1063,18 +1063,18 @@
     ns4:YResolution "180.0" ;
     foaf:image "https://heidicon.ub.uni-heidelberg.de/iiif/2/1667778:870868/full/full/0/default.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_reverse> a ns1:ReverseSide,
-        ns1:Side ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_reverse> a ns3:ReverseSide,
+        ns3:Side ;
     rdfs:label "HT 07-31-95 reverse side"@en,
         "HT073195: reverse"@en ;
-    ns1:isRepresentedBy "https://heidicon.ub.uni-heidelberg.de/iiif/2/1611840:841084/full/full/0/default.jpg"^^xsd:anyURI ;
+    ns3:isRepresentedBy "https://heidicon.ub.uni-heidelberg.de/iiif/2/1611840:841084/full/full/0/default.jpg"^^xsd:anyURI ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/sides/HT073195_back.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_right> a ns1:RightSide ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_right> a ns3:RightSide ;
     rdfs:label "HT 07-31-95 right side"@en ;
-    ns1:isRepresentedBy "https://heidicon.ub.uni-heidelberg.de/iiif/2/1611838:841082/full/full/0/default.jpg"^^xsd:anyURI .
+    ns3:isRepresentedBy "https://heidicon.ub.uni-heidelberg.de/iiif/2/1611838:841082/full/full/0/default.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_signlist> a ns6:GraphemeCollection ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_signlist> a ns7:GraphemeCollection ;
     rdfs:label "Signlist of HT073195"@en,
         "Signlist of cuneiform tablet HT 07-31-95"@en ;
     rdfs:member <https://situx.github.io/cuneiformontology/examples/signlist/character_a>,
@@ -1094,7 +1094,7 @@
         <https://situx.github.io/cuneiformontology/examples/signlist/character_u2>,
         <https://situx.github.io/cuneiformontology/examples/signlist/character_ud> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_signreadinglist> a ns6:GraphemeReadingCollection ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_signreadinglist> a ns7:GraphemeReadingCollection ;
     rdfs:label "Sign Readings of cuneiform tablet HT 07-31-95"@en ;
     rdfs:member <https://situx.github.io/cuneiformontology/examples/signlist/character_a_reading_a>,
         <https://situx.github.io/cuneiformontology/examples/signlist/character_an_reading_d>,
@@ -1116,61 +1116,61 @@
         <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_reading_babbar>,
         <https://situx.github.io/cuneiformontology/signlist/character_ud_babbar_reading_utu> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1> a ns1:Transliteration ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1> a ns3:Transliteration ;
     rdfs:label "Transliteration 1 of HT 07-31-95 tablet"@en,
         "Transliteration 1 of HT073195"@en ;
-    ns1:signreadings <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_signreadinglist> ;
-    ns1:signs <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_signlist> .
+    ns3:signreadings <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_signreadinglist> ;
+    ns3:signs <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_signlist> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char1> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char1> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 2 char 1"@en ;
-    ns1:charIndex 1 ;
-    ns1:lineNumber 2 ;
-    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char2> ;
-    ns6:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_U_reading_1(u)> .
+    ns3:charIndex 1 ;
+    ns3:lineNumber 2 ;
+    ns3:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char2> ;
+    ns7:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_U_reading_1(u)> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char5> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char5> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 2 char 5"@en ;
-    ns1:charIndex 5 ;
-    ns1:lineNumber 2 ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char4> .
+    ns3:charIndex 5 ;
+    ns3:lineNumber 2 ;
+    ns3:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char4> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char1> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char1> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 3 char 1"@en ;
-    ns1:charIndex 1 ;
-    ns1:lineNumber 3 ;
-    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char2> .
+    ns3:charIndex 1 ;
+    ns3:lineNumber 3 ;
+    ns3:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char2> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char7> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char7> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 3 char 7"@en ;
-    ns1:charIndex 7 ;
-    ns1:lineNumber 3 ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char6> .
+    ns3:charIndex 7 ;
+    ns3:lineNumber 3 ;
+    ns3:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char6> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char1> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char1> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 4 char 1"@en ;
-    ns1:charIndex 1 ;
-    ns1:lineNumber 4 ;
-    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char2> .
+    ns3:charIndex 1 ;
+    ns3:lineNumber 4 ;
+    ns3:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char2> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char8> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char8> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 4 char 8"@en ;
-    ns1:charIndex 8 ;
-    ns1:lineNumber 4 ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char7> ;
-    ns6:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_u2_reading_u2> .
+    ns3:charIndex 8 ;
+    ns3:lineNumber 4 ;
+    ns3:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char7> ;
+    ns7:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_u2_reading_u2> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/babbar_charvariant1> a ns6:GraphemeVariant ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/babbar_charvariant1> a ns7:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: BABBAR"@en ;
-    ns6:variant <https://situx.github.io/cuneiformontology/examples/ht073195/babbar_charvariant1> .
+    ns7:variant <https://situx.github.io/cuneiformontology/examples/ht073195/babbar_charvariant1> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1> a ns1:Line ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1> a ns3:Line ;
     rdfs:label "HT 07-31-95 obverse line 1"@en,
         "Line 1"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1> ;
-    ns1:lineNumber 1 ;
-    ns1:nextLine <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2> ;
-    ns6:contains <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char1_glyph>,
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1> ;
+    ns3:lineNumber 1 ;
+    ns3:nextLine <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2> ;
+    ns7:contains <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char1_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char2_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char3_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char4_glyph>,
@@ -1179,90 +1179,90 @@
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char7_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/line/line_1_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char7_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char7_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 1 char 7"@en,
         "Glyph at HT073195[obverse 1 7])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char7_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns1:prevInWord <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char1_glyph> ;
-    ns6:nextGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char8_glyph> ;
-    ns6:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char6_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char7_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns3:prevInWord <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char1_glyph> ;
+    ns7:nextGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char8_glyph> ;
+    ns7:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char6_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_1_7_BABBAR_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_1_7_BABBAR_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2_char2_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2_char2_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 2 char 2"@en,
         "Glyph at HT073195[obverse 2 2])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char2_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns1:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/6(disz)_2_2_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
-    ns1:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line2_char3_glyph> ;
-    ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line2_char1_glyph> ;
-    ns6:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2_char1_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char2_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns3:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/6(disz)_2_2_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
+    ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line2_char3_glyph> ;
+    ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line2_char1_glyph> ;
+    ns7:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2_char1_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_2_2_6(disz)_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_2_2_6(disz)_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2_char3_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2_char3_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 2 char 3"@en,
         "Glyph at HT073195[obverse 2 3])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char3_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns1:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/sza3_2_3_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
-    ns1:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line2_char4_glyph> ;
-    ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line2_char2_glyph> ;
-    ns6:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2_char2_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char3_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns3:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/sza3_2_3_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
+    ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line2_char4_glyph> ;
+    ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line2_char2_glyph> ;
+    ns7:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2_char2_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_2_3_sza3_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_2_3_sza3_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2_char4_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2_char4_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 2 char 4"@en,
         "Glyph at HT073195[obverse 2 4])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char4_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns1:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/KU3.GI_2_4_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
-    ns1:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line2_char5_glyph> ;
-    ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line2_char3_glyph> ;
-    ns6:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2_char3_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char4_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns3:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/KU3.GI_2_4_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
+    ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line2_char5_glyph> ;
+    ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line2_char3_glyph> ;
+    ns7:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2_char3_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_2_4_KU3_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_2_4_KU3_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char3_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char3_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 3 char 3"@en,
         "Glyph at HT073195[obverse 3 3])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char3_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns1:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/me_3_3_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
-    ns1:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line3_char4_glyph> ;
-    ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line3_char2_glyph> ;
-    ns6:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char2_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char3_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns3:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/me_3_3_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
+    ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line3_char4_glyph> ;
+    ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line3_char2_glyph> ;
+    ns7:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char2_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_3_3_1(disz)_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_3_3_1(disz)_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char5_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char5_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 3 char 5"@en,
         "Glyph at HT073195[obverse 3 5])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char5_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns1:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/H,AR_3_5_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
-    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char4_glyph> ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char6_glyph> ;
-    ns6:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char4_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char5_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns3:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/H,AR_3_5_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
+    ns3:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char4_glyph> ;
+    ns3:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char6_glyph> ;
+    ns7:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char4_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_3_5_8(disz)_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_3_5_8(disz)_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4> a ns1:Line ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4> a ns3:Line ;
     rdfs:label "HT 07-31-95 obverse line 4"@en,
         "Line 4"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4> ;
-    ns1:lineNumber 4 ;
-    ns1:prevLine <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3> ;
-    ns6:contains <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char1_glyph>,
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4> ;
+    ns3:lineNumber 4 ;
+    ns3:prevLine <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3> ;
+    ns7:contains <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char1_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char2_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char3_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char4_glyph>,
@@ -1272,242 +1272,242 @@
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char8_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/line/line_4_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char6_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char6_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 4 char 6"@en,
         "Glyph at HT073195[obverse 4 6])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char6_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns1:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/isz_4_6_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
-    ns1:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char7_glyph> ;
-    ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char5_glyph> ;
-    ns6:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char5_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char6_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns3:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/isz_4_6_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
+    ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char7_glyph> ;
+    ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char5_glyph> ;
+    ns7:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char5_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_4_6_isz_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_4_6_isz_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char7_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char7_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 4 char 7"@en,
         "Glyph at HT073195[obverse 4 7])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char7_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns1:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/szu3_4_7_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
-    ns1:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char8_glyph> ;
-    ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char6_glyph> ;
-    ns1:prevInWord <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char1_glyph> ;
-    ns6:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char6_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char7_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns3:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/szu3_4_7_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
+    ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char8_glyph> ;
+    ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char6_glyph> ;
+    ns3:prevInWord <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char1_glyph> ;
+    ns7:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char6_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_4_7_szu_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_4_7_szu_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char1> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char1> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 1 char 1"@en ;
-    ns1:charIndex 1 ;
-    ns1:lineNumber 1 ;
-    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char2> ;
-    ns6:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_9(u)_reading_9(u)> .
+    ns3:charIndex 1 ;
+    ns3:lineNumber 1 ;
+    ns3:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char2> ;
+    ns7:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_9(u)_reading_9(u)> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char7> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char7> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 1 char 7"@en ;
-    ns1:charIndex 7 ;
-    ns1:lineNumber 1 ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char6> .
+    ns3:charIndex 7 ;
+    ns3:lineNumber 1 ;
+    ns3:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char6> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char2> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char2> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 2 char 2"@en ;
-    ns1:charIndex 2 ;
-    ns1:lineNumber 2 ;
-    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char3> ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char1> ;
-    ns6:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_6(disz)_reading_6(disz)> .
+    ns3:charIndex 2 ;
+    ns3:lineNumber 2 ;
+    ns3:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char3> ;
+    ns3:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char1> ;
+    ns7:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_6(disz)_reading_6(disz)> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char3> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char3> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 2 char 3"@en ;
-    ns1:charIndex 3 ;
-    ns1:lineNumber 2 ;
-    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char4> ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char2> .
+    ns3:charIndex 3 ;
+    ns3:lineNumber 2 ;
+    ns3:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char4> ;
+    ns3:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char2> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char4> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char4> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 2 char 4"@en ;
-    ns1:charIndex 4 ;
-    ns1:lineNumber 2 ;
-    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char5> ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char3> .
+    ns3:charIndex 4 ;
+    ns3:lineNumber 2 ;
+    ns3:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char5> ;
+    ns3:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char3> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char2> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char2> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 3 char 2"@en ;
-    ns1:charIndex 2 ;
-    ns1:lineNumber 3 ;
-    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char3> ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char1> .
+    ns3:charIndex 2 ;
+    ns3:lineNumber 3 ;
+    ns3:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char3> ;
+    ns3:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char1> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char3> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char3> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 3 char 3"@en ;
-    ns1:charIndex 3 ;
-    ns1:lineNumber 3 ;
-    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char4> ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char2> .
+    ns3:charIndex 3 ;
+    ns3:lineNumber 3 ;
+    ns3:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char4> ;
+    ns3:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char2> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char4> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char4> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 3 char 4"@en ;
-    ns1:charIndex 4 ;
-    ns1:lineNumber 3 ;
-    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char5> ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char3> ;
-    ns6:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_me_reading_me> .
+    ns3:charIndex 4 ;
+    ns3:lineNumber 3 ;
+    ns3:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char5> ;
+    ns3:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char3> ;
+    ns7:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_me_reading_me> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char5> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char5> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 3 char 5"@en ;
-    ns1:charIndex 5 ;
-    ns1:lineNumber 3 ;
-    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char6> ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char4> ;
-    ns6:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_8(disz)_reading_8(disz)> .
+    ns3:charIndex 5 ;
+    ns3:lineNumber 3 ;
+    ns3:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char6> ;
+    ns3:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char4> ;
+    ns7:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_8(disz)_reading_8(disz)> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char6> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char6> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 3 char 6"@en ;
-    ns1:charIndex 6 ;
-    ns1:lineNumber 3 ;
-    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char7> ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char5> .
+    ns3:charIndex 6 ;
+    ns3:lineNumber 3 ;
+    ns3:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char7> ;
+    ns3:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char5> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char2> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char2> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 4 char 2"@en ;
-    ns1:charIndex 2 ;
-    ns1:lineNumber 4 ;
-    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char3> ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char1> ;
-    ns6:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_a_reading_a> .
+    ns3:charIndex 2 ;
+    ns3:lineNumber 4 ;
+    ns3:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char3> ;
+    ns3:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char1> ;
+    ns7:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_a_reading_a> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char3> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char3> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 4 char 3"@en ;
-    ns1:charIndex 3 ;
-    ns1:lineNumber 4 ;
-    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char4> ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char2> ;
-    ns6:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_mar_reading_mar> .
+    ns3:charIndex 3 ;
+    ns3:lineNumber 4 ;
+    ns3:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char4> ;
+    ns3:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char2> ;
+    ns7:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_mar_reading_mar> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char4> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char4> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 4 char 4"@en ;
-    ns1:charIndex 4 ;
-    ns1:lineNumber 4 ;
-    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char5> ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char3> ;
-    ns6:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_an_reading_d> .
+    ns3:charIndex 4 ;
+    ns3:lineNumber 4 ;
+    ns3:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char5> ;
+    ns3:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char3> ;
+    ns7:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_an_reading_d> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char5> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char5> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 4 char 5"@en ;
-    ns1:charIndex 5 ;
-    ns1:lineNumber 4 ;
-    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char6> ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char4> ;
-    ns6:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_ud_reading_utu> .
+    ns3:charIndex 5 ;
+    ns3:lineNumber 4 ;
+    ns3:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char6> ;
+    ns3:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char4> ;
+    ns7:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_ud_reading_utu> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char6> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char6> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 4 char 6"@en ;
-    ns1:charIndex 6 ;
-    ns1:lineNumber 4 ;
-    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char7> ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char5> ;
-    ns6:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_isz_reading_isz> .
+    ns3:charIndex 6 ;
+    ns3:lineNumber 4 ;
+    ns3:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char7> ;
+    ns3:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char5> ;
+    ns7:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_isz_reading_isz> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char7> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char7> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 4 char 7"@en ;
-    ns1:charIndex 4 ;
-    ns1:lineNumber 7 ;
-    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char8> ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char6> ;
-    ns6:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_szu_reading_szu> .
+    ns3:charIndex 4 ;
+    ns3:lineNumber 7 ;
+    ns3:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char8> ;
+    ns3:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char6> ;
+    ns7:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_szu_reading_szu> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char2_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char2_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 1 char 2"@en,
         "Glyph at HT073195[obverse 1 2])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char2_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns6:nextGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char3_glyph> ;
-    ns6:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char1_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char2_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns7:nextGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char3_glyph> ;
+    ns7:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char1_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_1_2_2(disz)_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_1_2_2(disz)_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char3_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char3_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 1 char 3"@en,
         "Glyph at HT073195[obverse 1 3])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char3_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns6:nextGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char4_glyph> ;
-    ns6:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char2_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char3_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns7:nextGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char4_glyph> ;
+    ns7:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char2_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_1_3_H,AR_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_1_3_H,AR_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char4_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char4_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 1 char 4"@en,
         "Glyph at HT073195[obverse 1 4])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char4_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns1:prevInWord <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char1_glyph> ;
-    ns6:nextGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char5_glyph> ;
-    ns6:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char3_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char4_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns3:prevInWord <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char1_glyph> ;
+    ns7:nextGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char5_glyph> ;
+    ns7:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char3_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_1_4_mesz_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_1_4_mesz_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char5_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char5_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 1 char 5"@en,
         "Glyph at HT073195[obverse 1 5])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char5_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns6:nextGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char6_glyph> ;
-    ns6:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char4_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char5_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns7:nextGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char6_glyph> ;
+    ns7:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char4_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_1_5_sza3_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_1_5_sza3_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char6_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char6_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 1 char 6"@en,
         "Glyph at HT073195[obverse 1 6])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char6_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns6:nextGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char7_glyph> ;
-    ns6:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char5_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char6_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns7:nextGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char7_glyph> ;
+    ns7:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char5_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_1_6_KU3_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_1_6_KU3_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2> a ns1:Line ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2> a ns3:Line ;
     rdfs:label "HT 07-31-95 obverse line 2"@en,
         "Line 2"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2> ;
-    ns1:lineNumber 2 ;
-    ns1:nextLine <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3> ;
-    ns1:prevLine <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1> ;
-    ns6:contains <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2_char1_glyph>,
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2> ;
+    ns3:lineNumber 2 ;
+    ns3:nextLine <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3> ;
+    ns3:prevLine <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1> ;
+    ns7:contains <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2_char1_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2_char2_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2_char3_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2_char4_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2_char5_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/line/line_2_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2_char1_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2_char1_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 2 char 1"@en,
         "Glyph at HT073195[obverse 2 1])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char1_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns1:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/1(u)_2_1_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
-    ns1:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line2_char2_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char1_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns3:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/1(u)_2_1_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
+    ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line2_char2_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_2_1_1(u)_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_2_1_1(u)_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3> a ns1:Line ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3> a ns3:Line ;
     rdfs:label "HT 07-31-95 obverse line 3"@en,
         "Line 3"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3> ;
-    ns1:lineNumber 3 ;
-    ns1:nextLine <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4> ;
-    ns1:prevLine <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2> ;
-    ns6:contains <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char1_glyph>,
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3> ;
+    ns3:lineNumber 3 ;
+    ns3:nextLine <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4> ;
+    ns3:prevLine <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2> ;
+    ns7:contains <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char1_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char2_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char3_glyph>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char4_glyph>,
@@ -1516,181 +1516,181 @@
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char7_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/line/line_3_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char2_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char2_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 3 char 2"@en,
         "Glyph at HT073195[obverse 3 2])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char2_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns1:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/1(disz)_3_2_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
-    ns1:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line3_char3_glyph> ;
-    ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line3_char1_glyph> ;
-    ns1:prevInWord <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char1_glyph> ;
-    ns6:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char1_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char2_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns3:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/1(disz)_3_2_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
+    ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line3_char3_glyph> ;
+    ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line3_char1_glyph> ;
+    ns3:prevInWord <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char1_glyph> ;
+    ns7:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char1_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_3_2_NIGIN2_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_3_2_NIGIN2_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char4_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char4_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 3 char 4"@en,
         "Glyph at HT073195[obverse 3 4])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char4_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns1:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/8(disz)_3_4_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
-    ns1:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line3_char5_glyph> ;
-    ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line3_char3_glyph> ;
-    ns1:prevInWord <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char1_glyph> ;
-    ns6:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char3_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char4_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns3:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/8(disz)_3_4_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
+    ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line3_char5_glyph> ;
+    ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line3_char3_glyph> ;
+    ns3:prevInWord <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char1_glyph> ;
+    ns7:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char3_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_3_4_ME_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_3_4_ME_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char6_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char6_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 3 char 6"@en,
         "Glyph at HT073195[obverse 3 6])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char6_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns1:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/mesz_3_6_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
-    ns1:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line3_char7_glyph> ;
-    ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line3_char5_glyph> ;
-    ns6:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char5_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char6_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns3:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/mesz_3_6_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
+    ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line3_char7_glyph> ;
+    ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line3_char5_glyph> ;
+    ns7:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char5_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_3_6_H,AR_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_3_6_H,AR_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char4_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char4_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 4 char 4"@en,
         "Glyph at HT073195[obverse 4 4])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char4_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns1:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/d_4_4_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
-    ns1:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char5_glyph> ;
-    ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char3_glyph> ;
-    ns1:prevInWord <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char2_glyph> ;
-    ns6:nextGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char5_glyph> ;
-    ns6:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char3_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char4_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns3:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/d_4_4_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
+    ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char5_glyph> ;
+    ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char3_glyph> ;
+    ns3:prevInWord <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char2_glyph> ;
+    ns7:nextGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char5_glyph> ;
+    ns7:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char3_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_4_4_d_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_4_4_d_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char5_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char5_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 4 char 5"@en,
         "Glyph at HT073195[obverse 4 5])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char5_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns1:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/utu_4_5_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
-    ns1:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char6_glyph> ;
-    ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char4_glyph> ;
-    ns1:prevInWord <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char3_glyph> ;
-    ns6:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char4_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char5_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns3:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/utu_4_5_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
+    ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char6_glyph> ;
+    ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char4_glyph> ;
+    ns3:prevInWord <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char3_glyph> ;
+    ns7:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char4_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_4_5_UTU_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_4_5_UTU_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char2> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char2> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 1 char 2"@en ;
-    ns1:charIndex 2 ;
-    ns1:lineNumber 1 ;
-    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char3> ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char1> ;
-    ns6:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_2(disz)_reading_2(disz)> .
+    ns3:charIndex 2 ;
+    ns3:lineNumber 1 ;
+    ns3:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char3> ;
+    ns3:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char1> ;
+    ns7:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_2(disz)_reading_2(disz)> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char3> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char3> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 1 char 3"@en ;
-    ns1:charIndex 3 ;
-    ns1:lineNumber 1 ;
-    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char4> ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char2> .
+    ns3:charIndex 3 ;
+    ns3:lineNumber 1 ;
+    ns3:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char4> ;
+    ns3:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char2> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char4> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char4> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 1 char 4"@en ;
-    ns1:charIndex 4 ;
-    ns1:lineNumber 1 ;
-    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char5> ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char3> .
+    ns3:charIndex 4 ;
+    ns3:lineNumber 1 ;
+    ns3:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char5> ;
+    ns3:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char3> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char5> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char5> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 1 char 5"@en ;
-    ns1:charIndex 5 ;
-    ns1:lineNumber 1 ;
-    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char6> ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char4> .
+    ns3:charIndex 5 ;
+    ns3:lineNumber 1 ;
+    ns3:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char6> ;
+    ns3:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char4> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char6> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char6> a ns3:TransliterationCharOccurrence ;
     rdfs:label "HT 07-31-95 obverse line 1 char 6"@en ;
-    ns1:charIndex 6 ;
-    ns1:lineNumber 1 ;
-    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char7> ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char5> .
+    ns3:charIndex 6 ;
+    ns3:lineNumber 1 ;
+    ns3:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char7> ;
+    ns3:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char5> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char1_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char1_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 1 char 1"@en,
         "Glyph at HT073195[obverse 1 1])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char1_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns1:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/9(u)_1_1_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
-    ns6:nextGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char2_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char1_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns3:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/9(u)_1_1_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
+    ns7:nextGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1_char2_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_1_1_9(u)_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_1_1_9(u)_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char1_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char1_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 4 char 1"@en,
         "Glyph at HT073195[obverse 4 1])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char1_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns1:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/sza3_4_1_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
-    ns1:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char2_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char1_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns3:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/sza3_4_1_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
+    ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char2_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_4_1_sza3_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_4_1_sza3_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char2_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char2_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 4 char 2"@en,
         "Glyph at HT073195[obverse 4 2])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char2_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns1:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/a_4_2_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
-    ns1:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char3_glyph> ;
-    ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char1_glyph> ;
-    ns6:nextGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char3_glyph> ;
-    ns6:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char1_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char2_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns3:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/a_4_2_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
+    ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char3_glyph> ;
+    ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char1_glyph> ;
+    ns7:nextGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char3_glyph> ;
+    ns7:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char1_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_4_2_a_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_4_2_a_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char3_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char3_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 4 char 3"@en,
         "Glyph at HT073195[obverse 4 3])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char3_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns1:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/mar_4_3_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
-    ns1:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char4_glyph> ;
-    ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char2_glyph> ;
-    ns1:prevInWord <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char1_glyph> ;
-    ns6:nextGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char4_glyph> ;
-    ns6:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char2_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char3_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns3:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/mar_4_3_HT_07-31-95_03_front.jpg"^^xsd:anyURI ;
+    ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char4_glyph> ;
+    ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line4_char2_glyph> ;
+    ns3:prevInWord <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char1_glyph> ;
+    ns7:nextGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char4_glyph> ;
+    ns7:prevGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4_char2_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_4_3_mar_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_4_3_mar_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char1_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char1_glyph> a ns6:TX9_Glyph ;
     rdfs:label "Glyph at HT 07-31-95 obverse side line 3 char 1"@en,
         "Glyph at HT073195[obverse 3 1])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char1_charocc> ;
-    ns3:TXP8_is_component_of ns1:HT073195_writtenText ;
-    ns1:isDamaged false ;
-    ns1:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line3_char1_glyph> ;
-    ns6:nextGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char2_glyph> ;
+    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char1_charocc> ;
+    ns6:TXP8_is_component_of ns3:HT073195_writtenText ;
+    ns3:isDamaged false ;
+    ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/dict/HT073195_obverse_line3_char1_glyph> ;
+    ns7:nextGlyph <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3_char2_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/ht073195/images/character/char_3_1_SZU_HT073195_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/ht073195/images/charline/charline_3_1_SZU_HT073195_front.jpg"^^xsd:anyURI .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> a ns8:TotalNumberOfFaces ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfFaces> a ns1:TotalNumberOfFaces ;
     rdfs:label "HT_07-31-95_3D_GMOCF Total number of faces"@en ;
-    ns8:value 2375382 .
+    ns1:value 2375382 .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> a ns8:TotalNumberOfVertices ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> a ns1:TotalNumberOfVertices ;
     rdfs:label "HT_07-31-95_3D_GMOCF Total Number of Vertices"@en ;
-    ns8:value 1187693 .
+    ns1:value 1187693 .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_ehuber> a foaf:Person ;
     rdfs:label "Eva-Maria Huber"@en ;

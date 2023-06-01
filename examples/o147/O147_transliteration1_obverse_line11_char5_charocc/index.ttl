@@ -1,21 +1,21 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
-@prefix ns3: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix ns3: <http://lemon-model.net/lemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line11_char5_charocc> a ns3:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line11_char5_charocc> a ns2:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: tu (O147[obverse_transliteration1_line11_char5])"@en ;
-    ns2:writtenRepUnicode "𒌅" ;
-    ns3:charIndex 5 ;
-    ns3:contains <https://situx.github.io/cuneiformontology/signlist/character_tu> ;
-    ns3:lineNumber 11 ;
-    ns3:partOf <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line11_word2_wordformocc> ;
-    ns3:positionInWord 4 ;
-    ns3:positionOnTabletSide 70 ;
-    ns3:prev <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line11_char4_charocc> ;
-    ns3:prevInWord <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line11_char3_charocc> ;
+    ns3:writtenRepUnicode "𒌅" ;
+    ns2:charIndex 5 ;
+    ns2:contains <https://situx.github.io/cuneiformontology/signlist/character_tu> ;
+    ns2:lineNumber 11 ;
+    ns2:partOf <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line11_word2_wordformocc> ;
+    ns2:positionInWord 4 ;
+    ns2:positionOnTabletSide 70 ;
+    ns2:prev <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line11_char4_charocc> ;
+    ns2:prevInWord <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line11_char3_charocc> ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_tu_reading_tu> ;
     skos:definition "tu" .
 

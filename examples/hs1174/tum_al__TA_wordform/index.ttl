@@ -1,12 +1,12 @@
-@prefix ns1: <http://www.purl.org/cuneiform#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/tum_al__TA_wordform> a ns2:WordForm ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/tum_al__TA_wordform> a ns1:WordForm ;
     rdfs:label "WordForm: tum-al!(TA)"@en ;
-    ns2:writtenRepASCII "tum-al!(TA)"^^ns1:ASCIILiteral ;
-    ns2:writtenRepUnicode ""^^ns1:unicodeLiteral ;
-    ns1:isAttested <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line4_word2_wordformocc> ;
+    ns1:writtenRepASCII "tum-al!(TA)"^^ns2:ASCIILiteral ;
+    ns1:writtenRepUnicode ""^^ns2:unicodeLiteral ;
+    ns2:isAttested <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line4_word2_wordformocc> ;
     skos:definition "tum-al!(TA)" .
 

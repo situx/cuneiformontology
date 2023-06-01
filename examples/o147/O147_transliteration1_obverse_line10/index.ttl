@@ -1,17 +1,17 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line10> a ns2:TransliterationLine ;
+<https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line10> a ns1:TransliterationLine ;
     rdfs:label "O147 transliteration 1 obverse line 10"@en,
         "Transliteration Line: 10 [O147_obverse]"@en ;
-    ns1:writtenRepASCII "10"^^ns2:ASCIILiteral ;
-    ns1:writtenRepUnicode ""^^ns2:unicodeLiteral ;
-    ns2:consistsOf <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line10_word1_wordformocc> ;
-    ns2:lineNumber 10 ;
-    ns2:nextLine <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line11> ;
-    ns2:prevLine <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line9> ;
+    ns2:writtenRepASCII "10"^^ns1:ASCIILiteral ;
+    ns2:writtenRepUnicode ""^^ns1:unicodeLiteral ;
+    ns1:consistsOf <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line10_word1_wordformocc> ;
+    ns1:lineNumber 10 ;
+    ns1:nextLine <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line11> ;
+    ns1:prevLine <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line9> ;
     skos:definition "10. {m}sa3-ap-h,u-li!-ip-h,ur " .
 

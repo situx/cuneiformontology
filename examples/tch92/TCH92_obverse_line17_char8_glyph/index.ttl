@@ -1,19 +1,19 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://www.purl.org/cuneiform#> .
-@prefix ns2: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix ns3: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix ns3: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line17_char8_glyph> a ns2:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line17_char8_glyph> a ns3:TX9_Glyph ;
     rdfs:label "Glyph at TCH92 obverse side line 17 char 8"@en,
         "Glyph at TCH92[obverse 17 8])"@en ;
-    ns2:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line17_char8_charocc> ;
-    ns2:TXP8_is_component_of ns1:TCH92_writtenText ;
-    ns1:isDamaged false ;
-    ns1:prevInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line17_char1_glyph> ;
-    ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line17_char9_glyph> ;
-    ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line17_char7_glyph> ;
+    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line17_char8_charocc> ;
+    ns3:TXP8_is_component_of ns2:TCH92_writtenText ;
+    ns2:isDamaged false ;
+    ns2:prevInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line17_char1_glyph> ;
+    ns1:nextGlyph <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line17_char9_glyph> ;
+    ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line17_char7_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/tch92/images/character/char_17_8_su_TCH92_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/tch92/images/charline/charline_17_8_su_TCH92_front.jpg"^^xsd:anyURI .
 

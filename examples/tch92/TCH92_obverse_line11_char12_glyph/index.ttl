@@ -1,18 +1,18 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix ns2: <http://www.purl.org/cuneiform#> .
-@prefix ns3: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns3: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line11_char12_glyph> a ns1:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line11_char12_glyph> a ns2:TX9_Glyph ;
     rdfs:label "Glyph at TCH92 obverse side line 11 char 12"@en,
         "Glyph at TCH92[obverse 11 12])"@en ;
-    ns1:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line11_char12_charocc> ;
-    ns1:TXP8_is_component_of ns2:TCH92_writtenText ;
-    ns2:isDamaged true ;
-    ns2:prevInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line11_char2_glyph> ;
-    ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line11_char11_glyph> ;
+    ns2:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line11_char12_charocc> ;
+    ns2:TXP8_is_component_of ns3:TCH92_writtenText ;
+    ns3:isDamaged true ;
+    ns3:prevInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line11_char2_glyph> ;
+    ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line11_char11_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/tch92/images/character/char_11_12_li%23_TCH92_front.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/tch92/images/charline/charline_11_12_li%23_TCH92_front.jpg"^^xsd:anyURI .
 

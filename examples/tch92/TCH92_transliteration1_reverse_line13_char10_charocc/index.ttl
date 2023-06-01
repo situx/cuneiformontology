@@ -1,18 +1,18 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line13_char10_charocc> a ns2:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line13_char10_charocc> a ns1:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: sza2 (TCH92[reverse_transliteration1_line13_char10])"@en ;
-    ns1:writtenRepUnicode "" ;
-    ns2:charIndex 10 ;
-    ns2:lineNumber 13 ;
-    ns2:partOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line13_word2_wordformocc> ;
-    ns2:positionInWord 3 ;
-    ns2:positionOnTabletSide 357 ;
-    ns2:prev <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line13_char9_charocc> ;
-    ns2:prevInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line13_char2_charocc> ;
+    ns2:writtenRepUnicode "" ;
+    ns1:charIndex 10 ;
+    ns1:lineNumber 13 ;
+    ns1:partOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line13_word2_wordformocc> ;
+    ns1:positionInWord 3 ;
+    ns1:positionOnTabletSide 357 ;
+    ns1:prev <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line13_char9_charocc> ;
+    ns1:prevInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line13_char2_charocc> ;
     skos:definition "sza2" .
 

@@ -1,22 +1,22 @@
-@prefix ns1: <http://www.purl.org/cuneiform#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
 @prefix ns3: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line13_char5_charocc> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line13_char5_charocc> a ns2:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: um (TCH92[obverse_transliteration1_line13_char5])"@en ;
-    ns2:writtenRepUnicode "𒌝" ;
-    ns1:charIndex 5 ;
-    ns1:contains <https://situx.github.io/cuneiformontology/signlist/character_um> ;
-    ns1:lineNumber 13 ;
-    ns1:nextInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line13_char6_charocc> ;
-    ns1:partOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line13_word1_wordformocc> ;
-    ns1:positionInWord 5 ;
-    ns1:positionOnTabletSide 122 ;
-    ns1:prev <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line13_char4_charocc> ;
-    ns1:prevInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line13_char4_charocc> ;
+    ns1:writtenRepUnicode "𒌝" ;
+    ns2:charIndex 5 ;
+    ns2:contains <https://situx.github.io/cuneiformontology/signlist/character_um> ;
+    ns2:lineNumber 13 ;
+    ns2:nextInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line13_char6_charocc> ;
+    ns2:partOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line13_word1_wordformocc> ;
+    ns2:positionInWord 5 ;
+    ns2:positionOnTabletSide 122 ;
+    ns2:prev <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line13_char4_charocc> ;
+    ns2:prevInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line13_char4_charocc> ;
     ns3:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_um_reading_um> ;
     skos:definition "um" .
 

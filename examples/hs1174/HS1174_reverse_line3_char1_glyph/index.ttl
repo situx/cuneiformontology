@@ -1,16 +1,16 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ns1: <http://www.purl.org/cuneiform#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
-@prefix ns3: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns2: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns3: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3_char1_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3_char1_glyph> a ns2:TX9_Glyph ;
     rdfs:label "Glyph at HS1174[reverse 3 1])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line3_char1_charocc> ;
-    ns3:TXP8_is_component_of ns1:HS1174_writtenText ;
+    ns2:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line3_char1_charocc> ;
+    ns2:TXP8_is_component_of ns1:HS1174_writtenText ;
     ns1:isDamaged false ;
-    ns2:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3_char2_glyph> ;
+    ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3_char2_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/hs1174/images/character/char_3_1_e2_HS1174_06_back.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_3_1_e2_HS1174_06_back.jpg"^^xsd:anyURI .
 
