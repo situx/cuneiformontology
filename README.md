@@ -9,7 +9,7 @@ The goal of this collection of ontologies is to connect:
 * Photos
 * Part of Speech Tagging Vocabularies 
 * Annotations on the aforementioned media
-
+ 
 For an overview of all parts of the ontology model please check out the Github Page of this repository: https://situx.github.io/cuneiformontology/
  
 ## Annotation vocabularies
