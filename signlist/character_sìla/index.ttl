@@ -1,15 +1,15 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_sìla> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_sìla> a ns2:Grapheme ;
     rdfs:label "Character: SÌLA",
         "Character: SÌLA"@en ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_sìla_sense_a_measure>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_sìla_sense_a_measure>,
         <https://situx.github.io/cuneiformontology/signlist/character_sìla_sense_measuring_pot> ;
-    ns1:abzl "269" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sìla_reading_aq_k>,
+    ns2:abzl "269" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sìla_reading_aq_k>,
         <https://situx.github.io/cuneiformontology/signlist/character_sìla_reading_ga5>,
         <https://situx.github.io/cuneiformontology/signlist/character_sìla_reading_ka4>,
         <https://situx.github.io/cuneiformontology/signlist/character_sìla_reading_qa>,
@@ -22,15 +22,15 @@
         <https://situx.github.io/cuneiformontology/signlist/character_sìla_reading_sila3_sila3>,
         <https://situx.github.io/cuneiformontology/signlist/character_sìla_reading_sila3 _qūm>,
         <https://situx.github.io/cuneiformontology/signlist/character_sìla_reading_szal2> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_si3la> ;
-    ns1:hethzl "21" ;
-    ns1:labat "62" ;
-    ns1:meszl "99" ;
-    ns1:obo "269" ;
-    ns1:signName "SÌLA" ;
-    ns1:slha "062" ;
-    ns1:unicodeCodepoint "U+122E1" ;
-    ns1:unicodeRepresentation "𒋡" ;
-    ns1:variant <https://situx.github.io/cuneiformontology/signlist/character_sìla_variant1> ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_si3la> ;
+    ns2:hethzl "21" ;
+    ns2:labat "62" ;
+    ns2:meszl "99" ;
+    ns2:obo "269" ;
+    ns2:signName "SÌLA" ;
+    ns2:slha "062" ;
+    ns2:unicodeCodepoint "U+122E1" ;
+    ns2:unicodeRepresentation "𒋡" ;
+    ns2:variant <https://situx.github.io/cuneiformontology/signlist/character_sìla_variant1> ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556449> .
 

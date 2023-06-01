@@ -1,20 +1,20 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
-@prefix ns3: <http://www.purl.org/cuneiform#> .
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns3: <http://lemon-model.net/lemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line11_char11_charocc> a ns3:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line11_char11_charocc> a ns1:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: SZE (TCH92[reverse_transliteration1_line11_char11])"@en ;
-    ns2:writtenRepUnicode "𒊺" ;
-    ns3:charIndex 11 ;
-    ns3:contains <https://situx.github.io/cuneiformontology/signlist/character_sze> ;
-    ns3:lineNumber 11 ;
-    ns3:partOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line11_word5_wordformocc> ;
-    ns3:positionInWord 1 ;
-    ns3:positionOnTabletSide 340 ;
-    ns3:prev <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line11_char10_charocc> ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sze_reading_še> ;
+    ns3:writtenRepUnicode "𒊺" ;
+    ns1:charIndex 11 ;
+    ns1:contains <https://situx.github.io/cuneiformontology/signlist/character_sze> ;
+    ns1:lineNumber 11 ;
+    ns1:partOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line11_word5_wordformocc> ;
+    ns1:positionInWord 1 ;
+    ns1:positionOnTabletSide 340 ;
+    ns1:prev <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line11_char10_charocc> ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sze_reading_še> ;
     skos:definition "SZE" .
 
