@@ -1,12 +1,12 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<https://situx.github.io/cuneiformontology/examples/o147/szam2__ti_la_bi__sze3_wordform> a ns1:WordForm ;
+<https://situx.github.io/cuneiformontology/examples/o147/szam2__ti_la_bi__sze3_wordform> a ns2:WordForm ;
     rdfs:label "WordForm: [szam2]-ti-la-bi#-[sze3]"@en ;
-    ns1:writtenRepASCII "[szam2]-ti-la-bi#-[sze3]"^^ns2:ASCIILiteral ;
-    ns1:writtenRepUnicode ""^^ns2:unicodeLiteral ;
-    ns2:isAttested <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line13_word1_wordformocc> ;
+    ns2:writtenRepASCII "[szam2]-ti-la-bi#-[sze3]"^^ns1:ASCIILiteral ;
+    ns2:writtenRepUnicode ""^^ns1:unicodeLiteral ;
+    ns1:isAttested <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line13_word1_wordformocc> ;
     skos:definition "[szam2]-ti-la-bi#-[sze3]" .
 

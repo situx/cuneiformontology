@@ -1,94 +1,94 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
-@prefix ns2: <http://www.wikidata.org/prop/direct/> .
-@prefix ns3: <http://www.gigamesh.eu/ont#> .
+@prefix ns1: <http://www.wikidata.org/prop/direct/> .
+@prefix ns2: <http://www.gigamesh.eu/ont#> .
+@prefix ns3: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1> a ns3:Mesh ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1> a ns2:Mesh ;
     rdfs:label "O147_back_mesh.ply"@en ;
     dcterms:contributor <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_contributor> ;
-    ns3:NaNVertices <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_NaNVertices> ;
-    ns3:amountOfConnectedComponents <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_connectedComponents> ;
-    ns3:borderFaces <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_borderFaces> ;
-    ns3:borderFacesBridgeTriConnection <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_borderFacesBridgeTriConnection> ;
-    ns3:borderVertices <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_borderVertices> ;
-    ns3:boundingBox <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_geom> ;
-    ns3:bridgeBorderFaces <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_bridgeBorderFaces> ;
-    ns3:circleCenterVertices <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_circleCenterVertices> ;
-    ns3:danglingBorderFaces <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_danglingBorderFaces> ;
-    ns3:finiteFunctionValueVertices <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_finiteFunctionValueVertices> ;
-    ns3:invertedFaces <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_invertedFaces> ;
-    ns3:localFunctionValueMaxVertices <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_localFunctionMaxValueVertices> ;
-    ns3:localFunctionValueMinVertices <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_localFunctionMinValueVertices> ;
-    ns3:manifoldFaces <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_manifoldFaces> ;
-    ns3:manuallyAddedVertices <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_manuallyAddedVertices> ;
-    ns3:nonManifoldFaces <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_nonManifoldFaces> ;
-    ns3:nonManifoldVertices <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_nonManifoldVertices> ;
-    ns3:selectedFaces <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_selectedFaces> ;
-    ns3:selectedVertices <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_selectedVertices> ;
-    ns3:singularVertices <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_singularVertices> ;
-    ns3:soloFaces <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_soloFaces> ;
-    ns3:stickyFaces <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_stickyFaces> ;
-    ns3:syntheticVertexFaces <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_syntheticVertexFaces> ;
-    ns3:syntheticVertices <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_syntheticVertices> ;
-    ns3:threeBorderVertexFaces <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_threeBorderVertexFaces> ;
-    ns3:totalArea <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalArea> ;
-    ns3:totalNumberOfFaces <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> ;
-    ns3:totalNumberOfVertices <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> ;
-    ns3:totalVolumeDX <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalVolumeDX> ;
-    ns3:totalVolumeDY <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalVolumeDY> ;
-    ns3:totalVolumeDZ <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalVolumeDZ> ;
-    ns3:vertexIsolated <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_vertexIsolated> ;
-    ns3:vertexNormalLength <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_vertexNormalLength> ;
-    ns3:verticesOnInvertedEdge <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_verticesOnInvertedEdge> ;
-    ns3:verticesPartOfZeroAreaFace <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_verticesPartOfZeroAreaFace> ;
-    ns3:zeroAreaFaces <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_zeroAreaFaces> ;
+    ns2:NaNVertices <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_NaNVertices> ;
+    ns2:amountOfConnectedComponents <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_connectedComponents> ;
+    ns2:borderFaces <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_borderFaces> ;
+    ns2:borderFacesBridgeTriConnection <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_borderFacesBridgeTriConnection> ;
+    ns2:borderVertices <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_borderVertices> ;
+    ns2:boundingBox <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_geom> ;
+    ns2:bridgeBorderFaces <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_bridgeBorderFaces> ;
+    ns2:circleCenterVertices <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_circleCenterVertices> ;
+    ns2:danglingBorderFaces <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_danglingBorderFaces> ;
+    ns2:finiteFunctionValueVertices <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_finiteFunctionValueVertices> ;
+    ns2:invertedFaces <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_invertedFaces> ;
+    ns2:localFunctionValueMaxVertices <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_localFunctionMaxValueVertices> ;
+    ns2:localFunctionValueMinVertices <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_localFunctionMinValueVertices> ;
+    ns2:manifoldFaces <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_manifoldFaces> ;
+    ns2:manuallyAddedVertices <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_manuallyAddedVertices> ;
+    ns2:nonManifoldFaces <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_nonManifoldFaces> ;
+    ns2:nonManifoldVertices <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_nonManifoldVertices> ;
+    ns2:selectedFaces <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_selectedFaces> ;
+    ns2:selectedVertices <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_selectedVertices> ;
+    ns2:singularVertices <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_singularVertices> ;
+    ns2:soloFaces <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_soloFaces> ;
+    ns2:stickyFaces <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_stickyFaces> ;
+    ns2:syntheticVertexFaces <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_syntheticVertexFaces> ;
+    ns2:syntheticVertices <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_syntheticVertices> ;
+    ns2:threeBorderVertexFaces <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_threeBorderVertexFaces> ;
+    ns2:totalArea <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalArea> ;
+    ns2:totalNumberOfFaces <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> ;
+    ns2:totalNumberOfVertices <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> ;
+    ns2:totalVolumeDX <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalVolumeDX> ;
+    ns2:totalVolumeDY <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalVolumeDY> ;
+    ns2:totalVolumeDZ <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalVolumeDZ> ;
+    ns2:vertexIsolated <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_vertexIsolated> ;
+    ns2:vertexNormalLength <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_vertexNormalLength> ;
+    ns2:verticesOnInvertedEdge <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_verticesOnInvertedEdge> ;
+    ns2:verticesPartOfZeroAreaFace <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_verticesPartOfZeroAreaFace> ;
+    ns2:zeroAreaFaces <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_zeroAreaFaces> ;
     geo:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_NaNVertices> a ns3:NaNVertices ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_NaNVertices> a ns2:NaNVertices ;
     rdfs:label "O147_back_mesh.ply Amount of NaN Vertices"@en ;
     rdf:value 0 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_borderFaces> a ns3:BorderFaces ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_borderFaces> a ns2:BorderFaces ;
     rdfs:label "O147_back_mesh.ply Amount of border faces"@en ;
     rdf:value 0 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_borderFacesBridgeTriConnection> a ns3:BorderFacesBridgeTriConnection ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_borderFacesBridgeTriConnection> a ns2:BorderFacesBridgeTriConnection ;
     rdfs:label "O147_back_mesh.ply Amount of border faces with a bridge tri connection"@en ;
     rdf:value 0 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_borderVertices> a ns3:BorderVertices ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_borderVertices> a ns2:BorderVertices ;
     rdfs:label "O147_back_mesh.ply Amount of Border Vertices"@en ;
     rdf:value 0 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_boundingBoxHeight> ns1:hasUnit ns1:millimetre ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_boundingBoxHeight> ns3:hasUnit ns3:millimetre ;
     rdf:value 1.649e+02 .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_boundingBoxThickness> ns1:hasUnit ns1:millimetre ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_boundingBoxThickness> ns3:hasUnit ns3:millimetre ;
     rdf:value 6.94e+01 .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_boundingBoxWidth> ns1:hasUnit ns1:millimetre ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_boundingBoxWidth> ns3:hasUnit ns3:millimetre ;
     rdf:value 2.419e+02 .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_bridgeBorderFaces> a ns3:BridgeBorderFaces ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_bridgeBorderFaces> a ns2:BridgeBorderFaces ;
     rdfs:label "O147_back_mesh.ply Amount of bridge border faces"@en ;
     rdf:value 0 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_circleCenterVertices> a ns3:CircleCenterVertices ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_circleCenterVertices> a ns2:CircleCenterVertices ;
     rdfs:label "O147_back_mesh.ply Amount of circle center vertices"@en ;
     rdf:value 0 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_connectedComponents> a ns3:ConnectedComponents ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_connectedComponents> a ns2:ConnectedComponents ;
     rdfs:label "O147_back_mesh.ply Amount of connected components"@en ;
     rdf:value 0 .
 
@@ -96,147 +96,147 @@
     rdfs:label "O147_back_mesh.ply Contributor"@en ;
     foaf:accountName "" .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_danglingBorderFaces> a ns3:DanglingBorderFaces ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_danglingBorderFaces> a ns2:DanglingBorderFaces ;
     rdfs:label "O147_back_mesh.ply Amount of dangling border faces"@en ;
     rdf:value 0 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_finiteFunctionValueVertices> a ns3:FiniteFunctionValueVertices ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_finiteFunctionValueVertices> a ns2:FiniteFunctionValueVertices ;
     rdfs:label "O147_back_mesh.ply Amount of finite function value vertices"@en ;
     rdf:value 3993000 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
 
 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_geom> a geo:Geometry ;
     rdfs:label "O147_back_mesh.ply Bounding Box"@en ;
-    ns3:boundingBoxHeight <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_boundingBoxHeight> ;
-    ns3:boundingBoxThickness <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_boundingBoxThickness> ;
-    ns3:boundingBoxWidth <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_boundingBoxWidth> ;
-    ns3:maximumXCoordinate 2.419e+03 ;
-    ns3:maximumYCoordinate -0e+00 ;
-    ns3:maximumZCoordinate 1.473383e+02 ;
-    ns3:minimumXCoordinate 0e+00 ;
-    ns3:minimumYCoordinate -1.649e+03 ;
-    ns3:minimumZCoordinate -5.463677e+02 ;
+    ns2:boundingBoxHeight <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_boundingBoxHeight> ;
+    ns2:boundingBoxThickness <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_boundingBoxThickness> ;
+    ns2:boundingBoxWidth <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_boundingBoxWidth> ;
+    ns2:maximumXCoordinate 2.419e+03 ;
+    ns2:maximumYCoordinate -0e+00 ;
+    ns2:maximumZCoordinate 1.473383e+02 ;
+    ns2:minimumXCoordinate 0e+00 ;
+    ns2:minimumYCoordinate -1.649e+03 ;
+    ns2:minimumZCoordinate -5.463677e+02 ;
     geo:asWKT "ENVELOPE(0.000000 -1649.000000 -546.367700,2419.000000 -0.000000 147.338300)"^^geo:wktLiteral ;
     geo:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_invertedFaces> a ns3:InvertedFaces ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_invertedFaces> a ns2:InvertedFaces ;
     rdfs:label "O147_back_mesh.ply Amount of inverted faces"@en ;
     rdf:value 0 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_localFunctionMaxValueVertices> a ns3:LocalFunctionMaxValueVertices ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_localFunctionMaxValueVertices> a ns2:LocalFunctionMaxValueVertices ;
     rdfs:label "O147_back_mesh.ply Amount of local function maximum value vertices"@en ;
     rdf:value 3993000 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_localFunctionMinValueVertices> a ns3:LocalFunctionMinValueVertices ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_localFunctionMinValueVertices> a ns2:LocalFunctionMinValueVertices ;
     rdfs:label "O147_back_mesh.ply Amount of local function minimum value vertices"@en ;
     rdf:value 3993000 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_manifoldFaces> a ns3:ManifoldFaces ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_manifoldFaces> a ns2:ManifoldFaces ;
     rdfs:label "O147_back_mesh.ply Amount of manifold faces"@en ;
     rdf:value 0 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_manuallyAddedVertices> a ns3:ManuallyAddedVertices ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_manuallyAddedVertices> a ns2:ManuallyAddedVertices ;
     rdfs:label "O147_back_mesh.ply Amount of manually added vertices"@en ;
     rdf:value 0 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_nonManifoldFaces> a ns3:NonManifoldFaces ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_nonManifoldFaces> a ns2:NonManifoldFaces ;
     rdfs:label "O147_back_mesh.ply Amount of non-manifold faces"@en ;
     rdf:value 0 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_nonManifoldVertices> a ns3:NonManifoldVertices ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_nonManifoldVertices> a ns2:NonManifoldVertices ;
     rdfs:label "O147_back_mesh.ply Amount of Non-Manifold Vertices"@en ;
     rdf:value 0 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_selectedFaces> a ns3:SelectedFaces ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_selectedFaces> a ns2:SelectedFaces ;
     rdfs:label "O147_back_mesh.ply Amount of selected faces"@en ;
     rdf:value 0 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_selectedVertices> a ns3:SelectedVertices ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_selectedVertices> a ns2:SelectedVertices ;
     rdfs:label "O147_back_mesh.ply Amount of selected vertices"@en ;
     rdf:value 0 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_singularVertices> a ns3:SingularVertices ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_singularVertices> a ns2:SingularVertices ;
     rdfs:label "O147_back_mesh.ply Amount of Singular Vertices"@en ;
     rdf:value 0 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_soloFaces> a ns3:SoloFaces ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_soloFaces> a ns2:SoloFaces ;
     rdfs:label "O147_back_mesh.ply Amount of solo faces"@en ;
     rdf:value 0 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_stickyFaces> a ns3:StickyFaces ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_stickyFaces> a ns2:StickyFaces ;
     rdfs:label "O147_back_mesh.ply Amount of sticky faces"@en ;
     rdf:value 0 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_syntheticVertexFaces> a ns3:SyntheticVertexFaces ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_syntheticVertexFaces> a ns2:SyntheticVertexFaces ;
     rdfs:label "O147_back_mesh.ply Amount of synthetic vertex faces"@en ;
     rdf:value 0 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_syntheticVertices> a ns3:SyntheticVertices ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_syntheticVertices> a ns2:SyntheticVertices ;
     rdfs:label "O147_back_mesh.ply Amount of synthetic vertices"@en ;
     rdf:value 0 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_threeBorderVertexFaces> a ns3:ThreeBorderVertexFaces ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_threeBorderVertexFaces> a ns2:ThreeBorderVertexFaces ;
     rdfs:label "O147_back_mesh.ply Amount of three border vertex faces"@en ;
     rdf:value 0 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalArea> ns1:hasUnit ns1:squareMillimetre ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalArea> ns3:hasUnit ns3:squareMillimetre ;
     rdf:value 0e+00 .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalVolumeDX> ns1:hasUnit ns1:cubicMillimetre ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalVolumeDX> ns3:hasUnit ns3:cubicMillimetre ;
     rdf:value 0e+00 .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalVolumeDY> ns1:hasUnit ns1:cubicMillimetre ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalVolumeDY> ns3:hasUnit ns3:cubicMillimetre ;
     rdf:value 0e+00 .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalVolumeDZ> ns1:hasUnit ns1:cubicMillimetre ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalVolumeDZ> ns3:hasUnit ns3:cubicMillimetre ;
     rdf:value 0e+00 .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_vertexIsolated> a ns3:VertexIsolated ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_vertexIsolated> a ns2:VertexIsolated ;
     rdfs:label "O147_back_mesh.ply Isolated Vertices"@en ;
     rdf:value 3993000 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_vertexNormalLength> a ns3:VertexNormalLength ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_vertexNormalLength> a ns2:VertexNormalLength ;
     rdfs:label "O147_back_mesh.ply Amount of Vertices with normal length"@en ;
     rdf:value 3993000 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_verticesOnInvertedEdge> a ns3:VerticesOnInvertedEdge ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_verticesOnInvertedEdge> a ns2:VerticesOnInvertedEdge ;
     rdfs:label "O147_back_mesh.ply Amount of Vertices on inverted edges"@en ;
     rdf:value 0 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_verticesPartOfZeroAreaFace> a ns3:VerticesPartOfZeroAreaFace ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_verticesPartOfZeroAreaFace> a ns2:VerticesPartOfZeroAreaFace ;
     rdfs:label "O147_back_mesh.ply Amount of Vertices which are part of zero area faces"@en ;
     rdf:value 0 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_zeroAreaFaces> a ns3:ZeroAreaFaces ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_zeroAreaFaces> a ns2:ZeroAreaFaces ;
     rdfs:label "O147_back_mesh.ply Amount of zero area faces"@en ;
     rdf:value 0 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> .
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> a ns3:TotalNumberOfFaces ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfFaces> a ns2:TotalNumberOfFaces ;
     rdfs:label "O147_back_mesh.ply Total number of faces"@en ;
     rdf:value 0 .
 
-<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> a ns3:TotalNumberOfVertices ;
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_totalNumberOfVertices> a ns2:TotalNumberOfVertices ;
     rdfs:label "O147_back_mesh.ply Total Number of Vertices"@en ;
     rdf:value 3993000 .
 

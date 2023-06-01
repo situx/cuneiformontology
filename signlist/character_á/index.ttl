@@ -1,15 +1,15 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_á> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_á> a ns2:Grapheme ;
     rdfs:label "Character: Á" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_á_sense_arm>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_á_sense_arm>,
         <https://situx.github.io/cuneiformontology/signlist/character_á_sense_strength>,
         <https://situx.github.io/cuneiformontology/signlist/character_á_sense_wing> ;
-    ns1:abzl "230" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_á_reading_a2>,
+    ns2:abzl "230" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_á_reading_a2>,
         <https://situx.github.io/cuneiformontology/signlist/character_á_reading_a2_it>,
         <https://situx.github.io/cuneiformontology/signlist/character_á_reading_a2⁻>,
         <https://situx.github.io/cuneiformontology/signlist/character_á_reading_ah5>,
@@ -23,14 +23,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_á_reading_te8>,
         <https://situx.github.io/cuneiformontology/signlist/character_á_reading_te8⁻>,
         <https://situx.github.io/cuneiformontology/signlist/character_á_reading_ti8> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_a2> ;
-    ns1:hethzl "215" ;
-    ns1:labat "334" ;
-    ns1:meszl "560" ;
-    ns1:obo "230" ;
-    ns1:signName "Á" ;
-    ns1:slha "334" ;
-    ns1:unicodeCodepoint "U+12009" ;
-    ns1:unicodeRepresentation "𒀉" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_a2> ;
+    ns2:hethzl "215" ;
+    ns2:labat "334" ;
+    ns2:meszl "560" ;
+    ns2:obo "230" ;
+    ns2:signName "Á" ;
+    ns2:slha "334" ;
+    ns2:unicodeCodepoint "U+12009" ;
+    ns2:unicodeRepresentation "𒀉" ;
     owl:sameAs <http://www.wikidata.org/entity/Q20639233> .
 

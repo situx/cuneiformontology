@@ -1,23 +1,23 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
-@prefix ns3: <http://www.purl.org/cuneiform#> .
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns3: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line15_char3_charocc> a ns3:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line15_char3_charocc> a ns1:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: KAR (TCH92[reverse_transliteration1_line15_char3])"@en ;
-    ns1:writtenRepUnicode "𒋼𒀀" ;
-    ns3:charIndex 3 ;
-    ns3:contains <https://situx.github.io/cuneiformontology/signlist/character_a>,
+    ns2:writtenRepUnicode "𒋼𒀀" ;
+    ns1:charIndex 3 ;
+    ns1:contains <https://situx.github.io/cuneiformontology/signlist/character_a>,
         <https://situx.github.io/cuneiformontology/signlist/character_te> ;
-    ns3:lineNumber 15 ;
-    ns3:nextInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line15_char4_charocc> ;
-    ns3:partOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line15_word1_wordformocc> ;
-    ns3:positionInWord 3 ;
-    ns3:positionOnTabletSide 372 ;
-    ns3:prev <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line15_char2_charocc> ;
-    ns3:prevInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line15_char2_charocc> ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_te_reading_kar> ;
+    ns1:lineNumber 15 ;
+    ns1:nextInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line15_char4_charocc> ;
+    ns1:partOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line15_word1_wordformocc> ;
+    ns1:positionInWord 3 ;
+    ns1:positionOnTabletSide 372 ;
+    ns1:prev <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line15_char2_charocc> ;
+    ns1:prevInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line15_char2_charocc> ;
+    ns3:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_te_reading_kar> ;
     skos:definition "KAR" .
 

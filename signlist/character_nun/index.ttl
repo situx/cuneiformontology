@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_nun> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_nun> a ns2:Grapheme ;
     rdfs:label "Character: NUN" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_nun_sense_prince> ;
-    ns1:abzl "047" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_nun_reading_abₓ>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_nun_sense_prince> ;
+    ns2:abzl "047" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_nun_reading_abₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_nun_reading_agargaraₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_nun_reading_dabaₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_nun_reading_dabₓ>,
@@ -32,14 +32,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_nun_reading_zalₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_nun_reading_zel>,
         <https://situx.github.io/cuneiformontology/signlist/character_nun_reading_zil> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_nun> ;
-    ns1:hethzl "36" ;
-    ns1:labat "87" ;
-    ns1:meszl "143" ;
-    ns1:obo "47" ;
-    ns1:signName "NUN" ;
-    ns1:slha "087" ;
-    ns1:unicodeCodepoint "U+12263" ;
-    ns1:unicodeRepresentation "𒉣" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_nun> ;
+    ns2:hethzl "36" ;
+    ns2:labat "87" ;
+    ns2:meszl "143" ;
+    ns2:obo "47" ;
+    ns2:signName "NUN" ;
+    ns2:slha "087" ;
+    ns2:unicodeCodepoint "U+12263" ;
+    ns2:unicodeRepresentation "𒉣" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556213> .
 

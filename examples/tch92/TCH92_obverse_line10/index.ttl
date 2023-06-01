@@ -1,17 +1,17 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns1: <http://www.purl.org/cuneiform#> .
 @prefix ns2: <http://www.purl.org/graphemon#> .
-@prefix ns3: <http://www.purl.org/cuneiform#> .
+@prefix ns3: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line10> a ns3:Line ;
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line10> a ns1:Line ;
     rdfs:label "Line 10"@en,
         "TCH92 obverse side line 10"@en ;
-    ns1:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line10> ;
-    ns3:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/tch92/images/line/line_10_TCH92_front.jpg> ;
-    ns3:nextLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line11> ;
-    ns3:prevLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line9> ;
+    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line10> ;
+    ns1:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/tch92/images/line/line_10_TCH92_front.jpg> ;
+    ns1:nextLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line11> ;
+    ns1:prevLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line9> ;
     ns2:contains <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line10_char10_glyph>,
         <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line10_char1_glyph>,
         <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line10_char2_glyph>,

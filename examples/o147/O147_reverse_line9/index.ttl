@@ -1,17 +1,17 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix ns3: <http://www.purl.org/cuneiform#> .
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns3: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line9> a ns3:Line ;
+<https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line9> a ns1:Line ;
     rdfs:label "Line 9"@en,
         "O147 reverse line 9"@en ;
-    ns2:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line9> ;
-    ns3:nextLine <https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line10> ;
-    ns3:prevLine <https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line8> ;
-    ns1:contains <https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line9_char1_glyph>,
+    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line9> ;
+    ns1:nextLine <https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line10> ;
+    ns1:prevLine <https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line8> ;
+    ns2:contains <https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line9_char1_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line9_char2_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line9_char3_glyph>,
         <https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line9_char4_glyph>,

@@ -1,14 +1,14 @@
-@prefix ns1: <http://www.purl.org/cuneiform#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line20> a ns1:TransliterationLine ;
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line20> a ns2:TransliterationLine ;
     rdfs:label "TCH92 reverse line 20"@en,
         "Transliteration Line: 20 [TCH92_reverse]"@en ;
-    ns2:writtenRepASCII "20"^^ns1:ASCIILiteral ;
-    ns2:writtenRepUnicode ""^^ns1:unicodeLiteral ;
-    ns1:consistsOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line20_word1_wordformocc>,
+    ns1:writtenRepASCII "20"^^ns2:ASCIILiteral ;
+    ns1:writtenRepUnicode ""^^ns2:unicodeLiteral ;
+    ns2:consistsOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line20_word1_wordformocc>,
         <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line20_word2_wordformocc> ;
     skos:definition "20. NIGIDA SZE" .
 

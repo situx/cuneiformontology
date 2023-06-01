@@ -1,15 +1,15 @@
-@prefix ns1: <http://www.purl.org/cuneiform#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/BAN_wordform> a ns2:WordForm ;
+<https://situx.github.io/cuneiformontology/examples/tch92/BAN_wordform> a ns1:WordForm ;
     rdfs:label "WordForm: BAN"@en,
         "WordForm: BAN#"@en ;
-    ns2:writtenRepASCII "BAN"^^ns1:ASCIILiteral,
-        "BAN#"^^ns1:ASCIILiteral ;
-    ns2:writtenRepUnicode "𒉼"^^ns1:unicodeLiteral ;
-    ns1:isAttested <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line10_word3_wordformocc>,
+    ns1:writtenRepASCII "BAN"^^ns2:ASCIILiteral,
+        "BAN#"^^ns2:ASCIILiteral ;
+    ns1:writtenRepUnicode "𒉼"^^ns2:unicodeLiteral ;
+    ns2:isAttested <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line10_word3_wordformocc>,
         <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line16_word2_wordformocc>,
         <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line1_word2_wordformocc>,
         <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line21_word2_wordformocc>,
