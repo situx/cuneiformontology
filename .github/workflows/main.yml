@@ -42,7 +42,7 @@ jobs:
          wget https://raw.githubusercontent.com/sparqlunicorn/sparqlunicornGoesGIS-ontdoc/main/docgeneration.py 
          wget https://raw.githubusercontent.com/sparqlunicorn/sparqlunicornGoesGIS-ontdoc/main/prefixes.json 
          python3 docgeneration.py --input signlist/signlist.ttl --output docs/ --prefixns https://situx.github.io/cuneiformontology/ --prefixnsshort cuneisignlist --deploypath https://situx.github.io/cuneiformontology/
-         python3 docgeneration.py --input examples/HS1174/transliteration/HS1174.atf.ttl --output docs/ --prefixns https://situx.github.io/cuneiformontology/ --prefixnsshort --deploypath https://situx.github.io/cuneiformontology/
+         python3 docgeneration.py --input examples/HS1174/transliteration/HS1174.atf.ttl --output docs/ --prefixns https://situx.github.io/cuneiformontology/ --prefixnsshort cuneiex --deploypath https://situx.github.io/cuneiformontology/
          python3 docgeneration.py --input examples/HS1174/transliteration/HS1174_textanno.ttl --output docs/ --prefixns https://situx.github.io/cuneiformontology/ --prefixnsshort cuneiex --deploypath https://situx.github.io/cuneiformontology/
          python3 docgeneration.py --input examples/HS1174/ttl/hs1174.ttl --output docs/ --prefixns https://situx.github.io/cuneiformontology/ --prefixnsshort cuneiex --deploypath https://situx.github.io/cuneiformontology/
          python3 docgeneration.py --input examples/HS1174/ttl/HS1174_front.png.ttl --output docs/ --prefixns https://situx.github.io/cuneiformontology/ --prefixnsshort cuneiex --deploypath https://situx.github.io/cuneiformontology/
