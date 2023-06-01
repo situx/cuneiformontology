@@ -1,20 +1,20 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix ns1: <http://www.w3.org/ns/oa#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
-@prefix ns3: <https://www.w3.org/ns/activitystreams#> .
+@prefix ns2: <https://www.w3.org/ns/activitystreams#> .
+@prefix ns3: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_lexicon_None> a ns2:Lexicon ;
-    ns2:entry <file:///home/timo/git/cuneiformontology/examples/O147/transliteration/Ilszu-abuszu_word>,
+<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_lexicon_None> a ns3:Lexicon ;
+    ns3:entry <file:///home/timo/git/cuneiformontology/examples/O147/transliteration/Ilszu-abuszu_word>,
         <file:///home/timo/git/cuneiformontology/examples/O147/transliteration/mahru_word> ;
-    ns2:language <http://www.lexvo.org/page/iso639-1/None> .
+    ns3:language <http://www.lexvo.org/page/iso639-1/None> .
 
-<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_lexicon_akk> a ns2:Lexicon ;
-    ns2:entry <file:///home/timo/git/cuneiformontology/examples/O147/transliteration/Aja_word>,
+<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_lexicon_akk> a ns3:Lexicon ;
+    ns3:entry <file:///home/timo/git/cuneiformontology/examples/O147/transliteration/Aja_word>,
         <file:///home/timo/git/cuneiformontology/examples/O147/transliteration/Annum-pi-Aja_word>,
         <file:///home/timo/git/cuneiformontology/examples/O147/transliteration/Awil-Szamasz-aszszar_word>,
         <file:///home/timo/git/cuneiformontology/examples/O147/transliteration/Iszdukinum_word>,
@@ -66,9 +66,9 @@
         <file:///home/timo/git/cuneiformontology/examples/O147/transliteration/ul_word>,
         <file:///home/timo/git/cuneiformontology/examples/O147/transliteration/waklu_word>,
         <file:///home/timo/git/cuneiformontology/examples/O147/transliteration/warkitu_word> ;
-    ns2:language <http://www.lexvo.org/page/iso639-1/akk> .
+    ns3:language <http://www.lexvo.org/page/iso639-1/akk> .
 
-<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_textannotations> a ns3:Collection ;
+<https://situx.github.io/cuneiformontology/examples/o147/textannotations/O147_transliteration1_textannotations> a ns2:Collection ;
     rdfs:label "Text annotations on O147 transliteration 1"@en ;
     rdfs:member <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0032a19b-e11a-4a83-884f-b8e1bbb0e489>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/02e2a4b9-acd5-4d73-be6f-2a2458acb7a2>,
@@ -154,7 +154,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0032a19b-e11a-4a83-884f-b8e1bbb0e489_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0032a19b-e11a-4a83-884f-b8e1bbb0e489_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0032a19b-e11a-4a83-884f-b8e1bbb0e489_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0032a19b-e11a-4a83-884f-b8e1bbb0e489_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -203,7 +203,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/02e2a4b9-acd5-4d73-be6f-2a2458acb7a2_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/02e2a4b9-acd5-4d73-be6f-2a2458acb7a2_body_wordform> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/02e2a4b9-acd5-4d73-be6f-2a2458acb7a2_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/02e2a4b9-acd5-4d73-be6f-2a2458acb7a2_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -263,7 +263,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0789aa33-43ab-442f-b8d8-d0f97c2317e7_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0789aa33-43ab-442f-b8d8-d0f97c2317e7_body_translit1> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0789aa33-43ab-442f-b8d8-d0f97c2317e7_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0789aa33-43ab-442f-b8d8-d0f97c2317e7_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -315,7 +315,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/08179cf1-06c3-4f88-8093-cd2c361e01c3_body_translit2>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/08179cf1-06c3-4f88-8093-cd2c361e01c3_body_translit3> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/08179cf1-06c3-4f88-8093-cd2c361e01c3_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/08179cf1-06c3-4f88-8093-cd2c361e01c3_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -371,7 +371,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0a8d70cf-afbc-45ea-9f4a-d810f36cf459_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0a8d70cf-afbc-45ea-9f4a-d810f36cf459_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0a8d70cf-afbc-45ea-9f4a-d810f36cf459_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0a8d70cf-afbc-45ea-9f4a-d810f36cf459_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -412,7 +412,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0cbcaa7c-5533-4440-b56c-839df2a2174d_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0cbcaa7c-5533-4440-b56c-839df2a2174d_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0cbcaa7c-5533-4440-b56c-839df2a2174d_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0cbcaa7c-5533-4440-b56c-839df2a2174d_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -461,7 +461,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0f309c73-23b9-4041-94eb-e8eac5f6f531_body_translit2>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0f309c73-23b9-4041-94eb-e8eac5f6f531_body_translit3> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0f309c73-23b9-4041-94eb-e8eac5f6f531_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0f309c73-23b9-4041-94eb-e8eac5f6f531_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -531,7 +531,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0f81e76f-5eee-46e1-9743-709387f56bd7_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0f81e76f-5eee-46e1-9743-709387f56bd7_body_translit1> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0f81e76f-5eee-46e1-9743-709387f56bd7_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/0f81e76f-5eee-46e1-9743-709387f56bd7_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -585,7 +585,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/11c71b4a-fc6a-47b1-ba10-f27377513be6_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/11c71b4a-fc6a-47b1-ba10-f27377513be6_body_wordform> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/11c71b4a-fc6a-47b1-ba10-f27377513be6_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/11c71b4a-fc6a-47b1-ba10-f27377513be6_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -644,7 +644,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/13e760d4-d055-451e-abec-27abde90feeb_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/13e760d4-d055-451e-abec-27abde90feeb_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/13e760d4-d055-451e-abec-27abde90feeb_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/13e760d4-d055-451e-abec-27abde90feeb_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -691,7 +691,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/16971768-eb59-46ec-9587-6806fd01a618_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/16971768-eb59-46ec-9587-6806fd01a618_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/16971768-eb59-46ec-9587-6806fd01a618_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/16971768-eb59-46ec-9587-6806fd01a618_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -740,7 +740,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/19b94580-e18c-4e56-8387-c4525b992200_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/19b94580-e18c-4e56-8387-c4525b992200_body_wordform> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/19b94580-e18c-4e56-8387-c4525b992200_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/19b94580-e18c-4e56-8387-c4525b992200_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -803,7 +803,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/1b2c18c8-e962-4995-b445-9ac5766363c3_body_translit1>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/1b2c18c8-e962-4995-b445-9ac5766363c3_body_wordform> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/1b2c18c8-e962-4995-b445-9ac5766363c3_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/1b2c18c8-e962-4995-b445-9ac5766363c3_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -867,7 +867,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/1b69e579-dede-4aa6-b900-8a6dad92c687_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/1b69e579-dede-4aa6-b900-8a6dad92c687_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/1b69e579-dede-4aa6-b900-8a6dad92c687_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/1b69e579-dede-4aa6-b900-8a6dad92c687_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -916,7 +916,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/204b696c-bd5b-4b34-a5f0-ba2643a3e5ea_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/204b696c-bd5b-4b34-a5f0-ba2643a3e5ea_body_translit1> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/204b696c-bd5b-4b34-a5f0-ba2643a3e5ea_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/204b696c-bd5b-4b34-a5f0-ba2643a3e5ea_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -971,7 +971,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit1>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_body_translit2> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/22e8ef2b-1da3-45ef-b50d-94beec254de4_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -1024,7 +1024,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2617717a-9f8b-4075-8484-b496b326e576_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2617717a-9f8b-4075-8484-b496b326e576_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2617717a-9f8b-4075-8484-b496b326e576_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2617717a-9f8b-4075-8484-b496b326e576_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -1078,7 +1078,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2e833987-3470-4a6f-a0b6-68da13e40db3_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2e833987-3470-4a6f-a0b6-68da13e40db3_body_translit1> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2e833987-3470-4a6f-a0b6-68da13e40db3_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2e833987-3470-4a6f-a0b6-68da13e40db3_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -1128,7 +1128,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit1>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_translit2> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/2eaa08d0-f2e5-48e8-b240-0fcfd8dd1ea9_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -1181,7 +1181,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3036462f-8589-4103-aa78-06b415bb1b4d_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3036462f-8589-4103-aa78-06b415bb1b4d_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3036462f-8589-4103-aa78-06b415bb1b4d_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3036462f-8589-4103-aa78-06b415bb1b4d_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -1238,7 +1238,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/32f94041-1864-4df7-8e25-bdb34a61455a_body_translit1>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/32f94041-1864-4df7-8e25-bdb34a61455a_body_wordform> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/32f94041-1864-4df7-8e25-bdb34a61455a_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/32f94041-1864-4df7-8e25-bdb34a61455a_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -1303,7 +1303,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3a7fc23d-5a29-4fe9-a4c4-95d599b610ac_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3a7fc23d-5a29-4fe9-a4c4-95d599b610ac_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3a7fc23d-5a29-4fe9-a4c4-95d599b610ac_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3a7fc23d-5a29-4fe9-a4c4-95d599b610ac_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -1358,7 +1358,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3b5838ed-d095-43bb-9279-06e32fd1c3c1_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3b5838ed-d095-43bb-9279-06e32fd1c3c1_body_translit1> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3b5838ed-d095-43bb-9279-06e32fd1c3c1_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/3b5838ed-d095-43bb-9279-06e32fd1c3c1_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -1409,7 +1409,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/46c33cad-8e89-4ddd-951f-c176e04bba8c_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/46c33cad-8e89-4ddd-951f-c176e04bba8c_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/46c33cad-8e89-4ddd-951f-c176e04bba8c_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/46c33cad-8e89-4ddd-951f-c176e04bba8c_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -1453,7 +1453,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4b66ca49-41b7-420d-962a-eabf7e3fc051_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4b66ca49-41b7-420d-962a-eabf7e3fc051_body_wordform> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4b66ca49-41b7-420d-962a-eabf7e3fc051_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4b66ca49-41b7-420d-962a-eabf7e3fc051_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -1515,7 +1515,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4e4b4ad3-4c5b-4949-a568-297671a5f2a5_body_translit1>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4e4b4ad3-4c5b-4949-a568-297671a5f2a5_body_translit2> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4e4b4ad3-4c5b-4949-a568-297671a5f2a5_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4e4b4ad3-4c5b-4949-a568-297671a5f2a5_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -1567,7 +1567,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4ed15719-0613-4b0b-ba84-42a1c3a708e0_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4ed15719-0613-4b0b-ba84-42a1c3a708e0_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4ed15719-0613-4b0b-ba84-42a1c3a708e0_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/4ed15719-0613-4b0b-ba84-42a1c3a708e0_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -1613,7 +1613,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/52f0633b-367b-4bea-a5ab-b35751dbb9ae_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/52f0633b-367b-4bea-a5ab-b35751dbb9ae_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/52f0633b-367b-4bea-a5ab-b35751dbb9ae_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/52f0633b-367b-4bea-a5ab-b35751dbb9ae_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -1654,7 +1654,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/53cb0219-d6db-4806-ac73-2c7d9f869059_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/53cb0219-d6db-4806-ac73-2c7d9f869059_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/53cb0219-d6db-4806-ac73-2c7d9f869059_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/53cb0219-d6db-4806-ac73-2c7d9f869059_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -1696,7 +1696,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5411a2d5-217d-4297-a2b9-92d0806ae435_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5411a2d5-217d-4297-a2b9-92d0806ae435_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5411a2d5-217d-4297-a2b9-92d0806ae435_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5411a2d5-217d-4297-a2b9-92d0806ae435_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -1745,7 +1745,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/54ce9aa5-5ea0-4543-845c-b7e67a9de55b_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/54ce9aa5-5ea0-4543-845c-b7e67a9de55b_body_translit1> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/54ce9aa5-5ea0-4543-845c-b7e67a9de55b_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/54ce9aa5-5ea0-4543-845c-b7e67a9de55b_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -1795,7 +1795,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5becb4fd-4958-48b7-871c-1d98c6e9e510_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5becb4fd-4958-48b7-871c-1d98c6e9e510_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5becb4fd-4958-48b7-871c-1d98c6e9e510_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5becb4fd-4958-48b7-871c-1d98c6e9e510_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -1833,7 +1833,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5c78b0a7-5c8f-46dd-b245-70015825d210_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5c78b0a7-5c8f-46dd-b245-70015825d210_body_translit1> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5c78b0a7-5c8f-46dd-b245-70015825d210_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/5c78b0a7-5c8f-46dd-b245-70015825d210_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -1882,7 +1882,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/66044ae7-2b7e-4d90-b735-c69f25554b2a_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/66044ae7-2b7e-4d90-b735-c69f25554b2a_body_translit1> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/66044ae7-2b7e-4d90-b735-c69f25554b2a_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/66044ae7-2b7e-4d90-b735-c69f25554b2a_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -1935,7 +1935,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6621cd1c-a1a3-4d66-98a5-267a686224d8_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6621cd1c-a1a3-4d66-98a5-267a686224d8_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6621cd1c-a1a3-4d66-98a5-267a686224d8_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6621cd1c-a1a3-4d66-98a5-267a686224d8_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -1990,7 +1990,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/66c7dc5b-95b5-4de6-b07c-78cd40efc0c4_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/66c7dc5b-95b5-4de6-b07c-78cd40efc0c4_body_wordform> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/66c7dc5b-95b5-4de6-b07c-78cd40efc0c4_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/66c7dc5b-95b5-4de6-b07c-78cd40efc0c4_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -2050,7 +2050,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/68096439-4877-4a70-a156-18e3d3e28be5_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/68096439-4877-4a70-a156-18e3d3e28be5_body_wordform> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/68096439-4877-4a70-a156-18e3d3e28be5_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/68096439-4877-4a70-a156-18e3d3e28be5_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -2108,7 +2108,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6aa9eb66-d6d3-49a3-b2bb-9527b0bedb51_body_translit1>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6aa9eb66-d6d3-49a3-b2bb-9527b0bedb51_body_translit2> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6aa9eb66-d6d3-49a3-b2bb-9527b0bedb51_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6aa9eb66-d6d3-49a3-b2bb-9527b0bedb51_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -2164,7 +2164,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6ce7cbb6-0821-4cc9-ae80-3f88c40c3430_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6ce7cbb6-0821-4cc9-ae80-3f88c40c3430_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6ce7cbb6-0821-4cc9-ae80-3f88c40c3430_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6ce7cbb6-0821-4cc9-ae80-3f88c40c3430_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -2206,7 +2206,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6d9880fb-49a1-4103-bdfd-a19440f07644_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6d9880fb-49a1-4103-bdfd-a19440f07644_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6d9880fb-49a1-4103-bdfd-a19440f07644_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/6d9880fb-49a1-4103-bdfd-a19440f07644_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -2252,7 +2252,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/71e2af8a-7c2c-4a66-87f0-0bac00a9aab5_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/71e2af8a-7c2c-4a66-87f0-0bac00a9aab5_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/71e2af8a-7c2c-4a66-87f0-0bac00a9aab5_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/71e2af8a-7c2c-4a66-87f0-0bac00a9aab5_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -2293,7 +2293,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/7b5bc417-06b0-497c-a1b2-db59f36e8b7c_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/7b5bc417-06b0-497c-a1b2-db59f36e8b7c_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/7b5bc417-06b0-497c-a1b2-db59f36e8b7c_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/7b5bc417-06b0-497c-a1b2-db59f36e8b7c_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -2334,7 +2334,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/7cac37cc-ae05-4468-9643-cdeecc1b3134_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/7cac37cc-ae05-4468-9643-cdeecc1b3134_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/7cac37cc-ae05-4468-9643-cdeecc1b3134_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/7cac37cc-ae05-4468-9643-cdeecc1b3134_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -2376,7 +2376,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/85156587-47f1-4c4e-8a91-3d45a569109b_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/85156587-47f1-4c4e-8a91-3d45a569109b_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/85156587-47f1-4c4e-8a91-3d45a569109b_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/85156587-47f1-4c4e-8a91-3d45a569109b_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -2425,7 +2425,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86661e47-e4c9-46ca-8fb5-69710e9b7fc9_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86661e47-e4c9-46ca-8fb5-69710e9b7fc9_body_wordform> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86661e47-e4c9-46ca-8fb5-69710e9b7fc9_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86661e47-e4c9-46ca-8fb5-69710e9b7fc9_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -2485,7 +2485,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86bfaccf-619d-45fe-8f73-b76042b0e613_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86bfaccf-619d-45fe-8f73-b76042b0e613_body_translit1> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86bfaccf-619d-45fe-8f73-b76042b0e613_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/86bfaccf-619d-45fe-8f73-b76042b0e613_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -2532,7 +2532,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/917e87d1-0d57-47fb-aa76-e871df2681ff_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/917e87d1-0d57-47fb-aa76-e871df2681ff_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/917e87d1-0d57-47fb-aa76-e871df2681ff_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/917e87d1-0d57-47fb-aa76-e871df2681ff_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -2580,7 +2580,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/92c48249-fc81-4382-8e98-984624971aa8_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/92c48249-fc81-4382-8e98-984624971aa8_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/92c48249-fc81-4382-8e98-984624971aa8_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/92c48249-fc81-4382-8e98-984624971aa8_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -2634,7 +2634,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/9a94a4f5-4051-4094-9308-ee85fbb9d117_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/9a94a4f5-4051-4094-9308-ee85fbb9d117_body_translit1> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/9a94a4f5-4051-4094-9308-ee85fbb9d117_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/9a94a4f5-4051-4094-9308-ee85fbb9d117_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -2683,7 +2683,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/9bcc994a-90df-4105-b7b7-d854f484ad53_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/9bcc994a-90df-4105-b7b7-d854f484ad53_body_wordform> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/9bcc994a-90df-4105-b7b7-d854f484ad53_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/9bcc994a-90df-4105-b7b7-d854f484ad53_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -2741,7 +2741,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a10e26ac-3cdc-4df3-bd30-2922fa277bee_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a10e26ac-3cdc-4df3-bd30-2922fa277bee_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a10e26ac-3cdc-4df3-bd30-2922fa277bee_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a10e26ac-3cdc-4df3-bd30-2922fa277bee_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -2786,7 +2786,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a2cf4e62-cb85-4853-93ee-bd574ab2a52a_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a2cf4e62-cb85-4853-93ee-bd574ab2a52a_body_translit1> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a2cf4e62-cb85-4853-93ee-bd574ab2a52a_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a2cf4e62-cb85-4853-93ee-bd574ab2a52a_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -2846,7 +2846,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a30c404b-4b77-4eb7-8f55-c7c66a669a4e_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a30c404b-4b77-4eb7-8f55-c7c66a669a4e_body_wordform> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a30c404b-4b77-4eb7-8f55-c7c66a669a4e_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a30c404b-4b77-4eb7-8f55-c7c66a669a4e_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -2907,7 +2907,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a336a132-8dc4-4dca-b74e-b4a1f962c13d_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a336a132-8dc4-4dca-b74e-b4a1f962c13d_body_wordform> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a336a132-8dc4-4dca-b74e-b4a1f962c13d_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a336a132-8dc4-4dca-b74e-b4a1f962c13d_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -2968,7 +2968,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a740d970-a16b-4aac-8e38-d3e208135bc7_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a740d970-a16b-4aac-8e38-d3e208135bc7_body_wordform> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a740d970-a16b-4aac-8e38-d3e208135bc7_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/a740d970-a16b-4aac-8e38-d3e208135bc7_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -3029,7 +3029,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ac1c80e9-de3d-46e2-9932-15d7864f206b_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ac1c80e9-de3d-46e2-9932-15d7864f206b_body_wordform> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ac1c80e9-de3d-46e2-9932-15d7864f206b_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ac1c80e9-de3d-46e2-9932-15d7864f206b_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -3089,7 +3089,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/b1c415e7-c35a-4495-804e-d96d7bad4289_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/b1c415e7-c35a-4495-804e-d96d7bad4289_body_wordform> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/b1c415e7-c35a-4495-804e-d96d7bad4289_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/b1c415e7-c35a-4495-804e-d96d7bad4289_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -3146,7 +3146,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/b2b3dbd0-dd30-499c-8985-1736143f367b_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/b2b3dbd0-dd30-499c-8985-1736143f367b_body_translit1> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/b2b3dbd0-dd30-499c-8985-1736143f367b_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/b2b3dbd0-dd30-499c-8985-1736143f367b_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -3204,7 +3204,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c0cbcf5f-873f-4ecb-b02b-bec6a860ea51_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c0cbcf5f-873f-4ecb-b02b-bec6a860ea51_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c0cbcf5f-873f-4ecb-b02b-bec6a860ea51_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c0cbcf5f-873f-4ecb-b02b-bec6a860ea51_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -3253,7 +3253,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c0cffdd5-dc64-45dd-a4c0-f6d1025a7174_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c0cffdd5-dc64-45dd-a4c0-f6d1025a7174_body_translit1> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c0cffdd5-dc64-45dd-a4c0-f6d1025a7174_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c0cffdd5-dc64-45dd-a4c0-f6d1025a7174_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -3306,7 +3306,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c8174ebc-dfce-4f96-b7ac-d179246151c1_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c8174ebc-dfce-4f96-b7ac-d179246151c1_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c8174ebc-dfce-4f96-b7ac-d179246151c1_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/c8174ebc-dfce-4f96-b7ac-d179246151c1_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -3360,7 +3360,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/caf33991-6043-4318-8cd4-21b1486a1321_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/caf33991-6043-4318-8cd4-21b1486a1321_body_translit1> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/caf33991-6043-4318-8cd4-21b1486a1321_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/caf33991-6043-4318-8cd4-21b1486a1321_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -3409,7 +3409,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/cc2cf354-24e4-4533-8515-ebb403386508_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/cc2cf354-24e4-4533-8515-ebb403386508_body_translit1> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/cc2cf354-24e4-4533-8515-ebb403386508_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/cc2cf354-24e4-4533-8515-ebb403386508_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -3464,7 +3464,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/cfd3c28b-118c-43ca-b4b1-94f9eb41fac9_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/cfd3c28b-118c-43ca-b4b1-94f9eb41fac9_body_translit1> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/cfd3c28b-118c-43ca-b4b1-94f9eb41fac9_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/cfd3c28b-118c-43ca-b4b1-94f9eb41fac9_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -3518,7 +3518,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/dcfd952f-2834-431e-b5b4-8166bb4fd761_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/dcfd952f-2834-431e-b5b4-8166bb4fd761_body_translit1> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/dcfd952f-2834-431e-b5b4-8166bb4fd761_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/dcfd952f-2834-431e-b5b4-8166bb4fd761_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -3569,7 +3569,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/de02e886-fbd5-4fff-bd7a-eb2fb270515b_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/de02e886-fbd5-4fff-bd7a-eb2fb270515b_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/de02e886-fbd5-4fff-bd7a-eb2fb270515b_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/de02e886-fbd5-4fff-bd7a-eb2fb270515b_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -3612,7 +3612,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e3ab97a9-20e4-4d78-9fb7-47633191fc37_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e3ab97a9-20e4-4d78-9fb7-47633191fc37_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e3ab97a9-20e4-4d78-9fb7-47633191fc37_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e3ab97a9-20e4-4d78-9fb7-47633191fc37_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -3668,7 +3668,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit1>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_translit2> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/e692611e-9cd2-4d95-8cc9-b1f9a3e3d813_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -3720,7 +3720,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/eb5d1b13-f5cd-4235-9bf1-69a3c6c9cb30_body_lemma>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/eb5d1b13-f5cd-4235-9bf1-69a3c6c9cb30_body_transcription> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/eb5d1b13-f5cd-4235-9bf1-69a3c6c9cb30_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/eb5d1b13-f5cd-4235-9bf1-69a3c6c9cb30_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -3769,7 +3769,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ebe58ce7-e6a5-4981-a525-209c2961f795_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ebe58ce7-e6a5-4981-a525-209c2961f795_body_wordform> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ebe58ce7-e6a5-4981-a525-209c2961f795_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ebe58ce7-e6a5-4981-a525-209c2961f795_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -3829,7 +3829,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ece8bf7a-52c1-41c3-b0be-a5a11475af03_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ece8bf7a-52c1-41c3-b0be-a5a11475af03_body_translit1> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ece8bf7a-52c1-41c3-b0be-a5a11475af03_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/ece8bf7a-52c1-41c3-b0be-a5a11475af03_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;
@@ -3878,7 +3878,7 @@
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/fece81a5-0c1e-474d-81e8-b1f5f648daa4_body_transcription>,
         <https://situx.github.io/cuneiformontology/examples/o147/textannotations/fece81a5-0c1e-474d-81e8-b1f5f648daa4_body_translit1> ;
     ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/o147/textannotations/fece81a5-0c1e-474d-81e8-b1f5f648daa4_target1> ;
-    ns3:generator <https://github.com/recogito/recogito-js> .
+    ns2:generator <https://github.com/recogito/recogito-js> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/textannotations/fece81a5-0c1e-474d-81e8-b1f5f648daa4_body_class_postag> a ns1:SpecificResource ;
     rdfs:label "Annotation body of POSTag classification"@en ;

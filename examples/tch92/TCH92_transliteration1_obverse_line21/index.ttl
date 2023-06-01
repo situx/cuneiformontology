@@ -1,19 +1,19 @@
-@prefix ns1: <http://www.purl.org/cuneiform#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line21> a ns1:TransliterationLine ;
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line21> a ns2:TransliterationLine ;
     rdfs:label "TCH92 obverse line 21"@en,
         "Transliteration Line: 21 [TCH92_obverse]"@en ;
-    ns2:writtenRepASCII "21"^^ns1:ASCIILiteral ;
-    ns2:writtenRepUnicode ""^^ns1:unicodeLiteral ;
-    ns1:consistsOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line21_word1_wordformocc>,
+    ns1:writtenRepASCII "21"^^ns2:ASCIILiteral ;
+    ns1:writtenRepUnicode ""^^ns2:unicodeLiteral ;
+    ns2:consistsOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line21_word1_wordformocc>,
         <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line21_word2_wordformocc> ;
-    ns1:lineNumber 21 ;
-    ns1:nextLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line22> ;
-    ns1:prevLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line20> ;
+    ns2:lineNumber 21 ;
+    ns2:nextLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line22> ;
+    ns2:prevLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line20> ;
     skos:definition "21. {1(disz)}Gu-u2-ug-ma-an-za-a BAN",
         "{1(disz)}Gu-u2-ug-ma-an-za-a BAN" .
 

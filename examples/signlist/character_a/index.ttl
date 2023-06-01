@@ -1,15 +1,15 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
-@prefix ns3: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix ns3: <http://lemon-model.net/lemon#> .
 @prefix ns4: <https://situx.github.io/cuneiformontology/examples/tch92/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/signlist/character_a> a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: A"@en ;
-    ns2:writtenRep "𒀀" ;
-    ns3:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char2> ;
-    ns3:transliteration "a" ;
+    ns3:writtenRep "𒀀" ;
+    ns2:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char2> ;
+    ns2:transliteration "a" ;
     ns1:abzl 470 ;
     ns1:hasUnicodeCodePoint "U+12000" ;
     ns1:hasUnicodeRepresentation "𒀀" ;

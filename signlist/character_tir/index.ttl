@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_tir> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_tir> a ns2:Grapheme ;
     rdfs:label "Character: TIR" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_tir_sense_forest> ;
-    ns1:abzl "380" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_tir_reading_dir4>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_tir_sense_forest> ;
+    ns2:abzl "380" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_tir_reading_dir4>,
         <https://situx.github.io/cuneiformontology/signlist/character_tir_reading_ezina3>,
         <https://situx.github.io/cuneiformontology/signlist/character_tir_reading_ezina3_ezinu3>,
         <https://situx.github.io/cuneiformontology/signlist/character_tir_reading_ezinam3>,
@@ -25,14 +25,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_tir_reading_ter>,
         <https://situx.github.io/cuneiformontology/signlist/character_tir_reading_tir>,
         <https://situx.github.io/cuneiformontology/signlist/character_tir_reading_tir_tir> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_tir> ;
-    ns1:hethzl "344" ;
-    ns1:labat "375" ;
-    ns1:meszl "587" ;
-    ns1:obo "380" ;
-    ns1:signName "TIR" ;
-    ns1:slha "375" ;
-    ns1:unicodeCodepoint "U+12301" ;
-    ns1:unicodeRepresentation "𒌁" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_tir> ;
+    ns2:hethzl "344" ;
+    ns2:labat "375" ;
+    ns2:meszl "587" ;
+    ns2:obo "380" ;
+    ns2:signName "TIR" ;
+    ns2:slha "375" ;
+    ns2:unicodeCodepoint "U+12301" ;
+    ns2:unicodeRepresentation "𒌁" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556503> .
 

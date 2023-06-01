@@ -1,12 +1,12 @@
-@prefix ns1: <http://www.purl.org/cuneiform#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/sza__pil2_ti_szu_nu_wordform> a ns2:WordForm ;
+<https://situx.github.io/cuneiformontology/examples/tch92/sza__pil2_ti_szu_nu_wordform> a ns1:WordForm ;
     rdfs:label "WordForm: sza-[pil2-ti-szu-nu]"@en ;
-    ns2:writtenRepASCII "sza-[pil2-ti-szu-nu]"^^ns1:ASCIILiteral ;
-    ns2:writtenRepUnicode ""^^ns1:unicodeLiteral ;
-    ns1:isAttested <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line30_word3_wordformocc> ;
+    ns1:writtenRepASCII "sza-[pil2-ti-szu-nu]"^^ns2:ASCIILiteral ;
+    ns1:writtenRepUnicode ""^^ns2:unicodeLiteral ;
+    ns2:isAttested <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line30_word3_wordformocc> ;
     skos:definition "sza-[pil2-ti-szu-nu]" .
 

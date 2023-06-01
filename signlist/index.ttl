@@ -1,25 +1,25 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/a_charvariant1> a ns1:GraphemeVariant ;
+<https://situx.github.io/cuneiformontology/signlist/a_charvariant1> a ns2:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: A"@en ;
-    ns2:P62_depicted_by <https://situx.github.io/cuneiformontology/signlist/HS1174_reverse_line1_char4_glyph> ;
-    ns1:asSVG "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"170\" height=\"80\"><defs/><g stroke=\"#000000\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" fill=\"#000000\"><path fill=\"#000000\" stroke=\"#000000\" paint-order=\"fill stroke markers\" d=\" M 25 20 L 35 20 L 30 30 L 25 20 M 30 30 L 30 60 M 35 20 L 45 20 L 40 30 L 35 20 M 40 30 L 40 60\" stroke-miterlimit=\"10\" stroke-dasharray=\"\"/></g></svg>"^^ns1:svgLiteral ;
-    ns1:hasGottsteinCode "a2"^^ns1:gottsteinLiteral,
+    ns1:P62_depicted_by <https://situx.github.io/cuneiformontology/signlist/HS1174_reverse_line1_char4_glyph> ;
+    ns2:asSVG "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"170\" height=\"80\"><defs/><g stroke=\"#000000\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" fill=\"#000000\"><path fill=\"#000000\" stroke=\"#000000\" paint-order=\"fill stroke markers\" d=\" M 25 20 L 35 20 L 30 30 L 25 20 M 30 30 L 30 60 M 35 20 L 45 20 L 40 30 L 35 20 M 40 30 L 40 60\" stroke-miterlimit=\"10\" stroke-dasharray=\"\"/></g></svg>"^^ns2:svgLiteral ;
+    ns2:hasGottsteinCode "a2"^^ns2:gottsteinLiteral,
         "a2" ;
-    ns1:hasPaleoCode "a-a"^^ns1:paleocodeLiteral,
+    ns2:hasPaleoCode "a-a"^^ns2:paleocodeLiteral,
         "a-a" .
 
-<https://situx.github.io/cuneiformontology/signlist/an_charvariant1> a ns1:GraphemeVariant ;
+<https://situx.github.io/cuneiformontology/signlist/an_charvariant1> a ns2:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: AN"@en .
 
-<https://situx.github.io/cuneiformontology/signlist/ba_charvariant1> a ns1:GraphemeVariant ;
+<https://situx.github.io/cuneiformontology/signlist/ba_charvariant1> a ns2:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: BA"@en .
 
-<https://situx.github.io/cuneiformontology/signlist/el_charvariant1> a ns1:GraphemeVariant ;
+<https://situx.github.io/cuneiformontology/signlist/el_charvariant1> a ns2:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: EL"@en .
 
-<https://situx.github.io/cuneiformontology/signlist/ka_charvariant1> a ns1:GraphemeVariant ;
+<https://situx.github.io/cuneiformontology/signlist/ka_charvariant1> a ns2:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: KA"@en .
 

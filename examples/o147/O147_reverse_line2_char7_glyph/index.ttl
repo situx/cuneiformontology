@@ -1,18 +1,18 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix ns2: <http://www.purl.org/cuneiform#> .
-@prefix ns3: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns3: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line2_char7_glyph> a ns3:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line2_char7_glyph> a ns1:TX9_Glyph ;
     rdfs:label "Glyph at O147 reverse side line 2 char 7"@en,
         "Glyph at O147[reverse 2 7])"@en ;
-    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line2_char7_charocc> ;
-    ns3:TXP8_is_component_of ns2:O147_writtenText ;
+    ns1:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line2_char7_charocc> ;
+    ns1:TXP8_is_component_of ns2:O147_writtenText ;
     ns2:isDamaged false ;
     ns2:prevInWord <https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line2_char5_glyph> ;
-    ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line2_char6_glyph> ;
+    ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line2_char6_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_2_7_na_O147_A_color_back.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_2_7_na_O147_A_shaded_back.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_2_7_na_O147_B_color_back.jpg"^^xsd:anyURI,

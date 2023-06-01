@@ -1,18 +1,18 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix ns3: <http://www.purl.org/cuneiform#> .
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns3: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line22> a ns3:Line ;
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line22> a ns1:Line ;
     rdfs:label "Line 22"@en,
         "TCH92 obverse side line 22"@en ;
-    ns2:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line22> ;
-    ns3:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/tch92/images/line/line_22_TCH92_front.jpg> ;
-    ns3:nextLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line23> ;
-    ns3:prevLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line21> ;
-    ns1:contains <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line22_char10_glyph>,
+    ns3:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line22> ;
+    ns1:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/tch92/images/line/line_22_TCH92_front.jpg> ;
+    ns1:nextLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line23> ;
+    ns1:prevLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line21> ;
+    ns2:contains <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line22_char10_glyph>,
         <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line22_char1_glyph>,
         <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line22_char2_glyph>,
         <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line22_char3_glyph>,

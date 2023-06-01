@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
 @prefix ns2: <http://www.purl.org/cuneiform#> .
-@prefix ns3: <http://lemon-model.net/lemon#> .
+@prefix ns3: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line6_char3_charocc> a ns2:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: AMAR (O147[reverse_transliteration1_line6_char3])"@en ;
-    ns3:writtenRepUnicode "𒀫" ;
+    ns1:writtenRepUnicode "𒀫" ;
     ns2:charIndex 3 ;
     ns2:contains <https://situx.github.io/cuneiformontology/signlist/character_amar_zur> ;
     ns2:lineNumber 6 ;
@@ -17,6 +17,6 @@
     ns2:positionOnTabletSide 146 ;
     ns2:prev <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line6_char2_charocc> ;
     ns2:prevInWord <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line6_char1_charocc> ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_amar_zur_reading_amar> ;
+    ns3:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_amar_zur_reading_amar> ;
     skos:definition "AMAR" .
 

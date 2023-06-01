@@ -1,19 +1,19 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line4> a ns2:TransliterationLine ;
+<https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line4> a ns1:TransliterationLine ;
     rdfs:label "O147 transliteration 1 obverse line 4"@en,
         "Transliteration Line: 4 [O147_obverse]"@en ;
-    ns1:writtenRepASCII "4"^^ns2:ASCIILiteral ;
-    ns1:writtenRepUnicode ""^^ns2:unicodeLiteral ;
-    ns2:consistsOf <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line4_word1_wordformocc>,
+    ns2:writtenRepASCII "4"^^ns1:ASCIILiteral ;
+    ns2:writtenRepUnicode ""^^ns1:unicodeLiteral ;
+    ns1:consistsOf <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line4_word1_wordformocc>,
         <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line4_word2_wordformocc>,
         <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line4_word3_wordformocc> ;
-    ns2:lineNumber 4 ;
-    ns2:nextLine <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line5> ;
-    ns2:prevLine <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line3> ;
+    ns1:lineNumber 4 ;
+    ns1:nextLine <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line5> ;
+    ns1:prevLine <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line3> ;
     skos:definition "4. da e2 lu2-{d}utu-asz-szar " .
 
