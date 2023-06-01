@@ -1,0 +1,15 @@
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3> a ns1:TransliterationLine ;
+    rdfs:label "Transliteration Line: 3 [HT073195_obverse]"@en ;
+    ns2:writtenRepASCII "3"^^ns1:ASCIILiteral ;
+    ns2:writtenRepUnicode ""^^ns1:unicodeLiteral ;
+    ns1:consistsOf <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_word1_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_word2_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_word3_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_word4_wordformocc> ;
+    skos:definition "3. SZU.NIGIN2 1(disz)-ME 8(disz) H,AR{mesz}" .
+

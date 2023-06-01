@@ -1,0 +1,13 @@
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line4> a ns2:TransliterationLine ;
+    rdfs:label "Transliteration Line: 4 [HS1174_reverse]"@en ;
+    ns1:writtenRepASCII "4"^^ns2:ASCIILiteral ;
+    ns1:writtenRepUnicode ""^^ns2:unicodeLiteral ;
+    ns2:consistsOf <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line4_word1_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line4_word2_wordformocc> ;
+    skos:definition "4. sza3 tum-al!(TA)" .
+

@@ -1,0 +1,13 @@
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://situx.github.io/cuneiformontology/examples/hs1174/szu_wordform> a ns2:WordForm ;
+    rdfs:label "WordForm: szu"@en ;
+    ns2:writtenRepASCII "szu"^^ns1:ASCIILiteral ;
+    ns2:writtenRepUnicode "𒋗"^^ns1:unicodeLiteral ;
+    ns1:isAttested <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line1_word4_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line4_word3_wordformocc> ;
+    skos:definition "szu" .
+

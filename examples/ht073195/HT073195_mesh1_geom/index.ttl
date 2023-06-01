@@ -1,0 +1,18 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://www.gigamesh.eu/ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_geom> a geo:Geometry ;
+    rdfs:label "HT_07-31-95_3D_GMOCF Bounding Box"@en ;
+    ns1:boundingBoxHeight 1.02e+01 ;
+    ns1:boundingBoxThickness 5.4e+00 ;
+    ns1:boundingBoxWidth 1.43e+01 ;
+    ns1:maximumXCoordinate 7.13643e+01 ;
+    ns1:maximumYCoordinate 1.017155e+02 ;
+    ns1:maximumZCoordinate 2.71276e+01 ;
+    ns1:minimumXCoordinate -7.13643e+01 ;
+    ns1:minimumYCoordinate 0e+00 ;
+    ns1:minimumZCoordinate -2.71276e+01 ;
+    geo:asWKT "ENVELOPE(-71.364300 0.000000 -27.127600,71.364300 101.715500 27.127600)"^^geo:wktLiteral .
+

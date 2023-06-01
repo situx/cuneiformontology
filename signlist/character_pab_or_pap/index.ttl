@@ -3,7 +3,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_pab_or_pap> a ns1:Grapheme ;
-    rdfs:label "Character: PAB or PAP" ;
+    rdfs:label "Character: PAB or PAP",
+        "Character: PAB or PAP"@en ;
     ns1:abzl "249" ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_pab_or_pap_reading_aha3>,
         <https://situx.github.io/cuneiformontology/signlist/character_pab_or_pap_reading_ba14>,
@@ -12,6 +13,7 @@
         <https://situx.github.io/cuneiformontology/signlist/character_pab_or_pap_reading_gur12>,
         <https://situx.github.io/cuneiformontology/signlist/character_pab_or_pap_reading_kur2>,
         <https://situx.github.io/cuneiformontology/signlist/character_pab_or_pap_reading_kuru2>,
+        <https://situx.github.io/cuneiformontology/signlist/character_pab_or_pap_reading_kur₂>,
         <https://situx.github.io/cuneiformontology/signlist/character_pab_or_pap_reading_pa4>,
         <https://situx.github.io/cuneiformontology/signlist/character_pab_or_pap_reading_pab>,
         <https://situx.github.io/cuneiformontology/signlist/character_pab_or_pap_reading_pap>,
@@ -27,5 +29,6 @@
     ns1:slha "060" ;
     ns1:unicodeCodepoint "U+1227D" ;
     ns1:unicodeRepresentation "𒉽" ;
+    ns1:variant <https://situx.github.io/cuneiformontology/signlist/character_pab_or_pap_variant1> ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556262> .
 

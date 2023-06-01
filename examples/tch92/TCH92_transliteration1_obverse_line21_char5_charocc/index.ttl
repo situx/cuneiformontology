@@ -1,0 +1,22 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix ns3: <http://lemon-model.net/lemon#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line21_char5_charocc> a ns2:TransliterationCharOccurrence ;
+    rdfs:label "Char Occurrence: ma (TCH92[obverse_transliteration1_line21_char5])"@en ;
+    ns3:writtenRepUnicode "𒈠" ;
+    ns2:charIndex 5 ;
+    ns2:contains <https://situx.github.io/cuneiformontology/signlist/character_ma> ;
+    ns2:lineNumber 21 ;
+    ns2:nextInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line21_char6_charocc> ;
+    ns2:partOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line21_word1_wordformocc> ;
+    ns2:positionInWord 5 ;
+    ns2:positionOnTabletSide 185 ;
+    ns2:prev <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line21_char4_charocc> ;
+    ns2:prevInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line21_char4_charocc> ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ma_reading_ma> ;
+    skos:definition "ma" .
+

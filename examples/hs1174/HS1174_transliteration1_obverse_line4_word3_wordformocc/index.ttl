@@ -1,0 +1,14 @@
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line4_word3_wordformocc> a ns1:WordFormOccurance ;
+    rdfs:label " WordForm Occurrence: szu (HS1174[obverse_line4_word3])"@en ;
+    ns1:consistsOf <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line4_char3_charocc> ;
+    ns1:contains <https://situx.github.io/cuneiformontology/signlist/character_szu> ;
+    ns1:nextWord <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line4_word4_wordformocc> ;
+    ns1:prevWord <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line4_word2_wordformocc> ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_šu> ;
+    skos:definition "szu" .
+

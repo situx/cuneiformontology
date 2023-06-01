@@ -3,7 +3,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_na> a ns1:Grapheme ;
-    rdfs:label "Character: NA" ;
+    rdfs:label "Character: NA",
+        "Character: NA"@en ;
     ns1:abzl "024" ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_na_reading_aniku>,
         <https://situx.github.io/cuneiformontology/signlist/character_na_reading_na>,
@@ -19,5 +20,6 @@
     ns1:slha "070" ;
     ns1:unicodeCodepoint "U+1223E" ;
     ns1:unicodeRepresentation "𒈾" ;
+    ns1:variant <https://situx.github.io/cuneiformontology/signlist/character_na_variant1> ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556145> .
 

@@ -1,0 +1,19 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://www.gigamesh.eu/ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_geom> a geo:Geometry ;
+    rdfs:label "O147_back_mesh.ply Bounding Box"@en ;
+    ns1:boundingBoxHeight <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_boundingBoxHeight> ;
+    ns1:boundingBoxThickness <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_boundingBoxThickness> ;
+    ns1:boundingBoxWidth <https://situx.github.io/cuneiformontology/examples/O147/mesh/O147_back_mesh1_boundingBoxWidth> ;
+    ns1:maximumXCoordinate 2.419e+03 ;
+    ns1:maximumYCoordinate -0e+00 ;
+    ns1:maximumZCoordinate 1.473383e+02 ;
+    ns1:minimumXCoordinate 0e+00 ;
+    ns1:minimumYCoordinate -1.649e+03 ;
+    ns1:minimumZCoordinate -5.463677e+02 ;
+    geo:asWKT "ENVELOPE(0.000000 -1649.000000 -546.367700,2419.000000 -0.000000 147.338300)"^^geo:wktLiteral ;
+    geo:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
+

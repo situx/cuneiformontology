@@ -1,0 +1,16 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/ns/oa#> .
+@prefix ns2: <https://www.w3.org/ns/activitystreams#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/97d2d91f-3444-471c-8175-2fbc33916119> a ns1:Annotation ;
+    rdfs:label "Annotation of text passage of transliteration 1 of HS1174 "@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns1:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/97d2d91f-3444-471c-8175-2fbc33916119_body_class_postag>,
+        <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/97d2d91f-3444-471c-8175-2fbc33916119_body_class_sense>,
+        <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/97d2d91f-3444-471c-8175-2fbc33916119_body_wordform> ;
+    ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/textannotations/97d2d91f-3444-471c-8175-2fbc33916119_target1> ;
+    ns2:generator <https://github.com/recogito/recogito-js> .
+

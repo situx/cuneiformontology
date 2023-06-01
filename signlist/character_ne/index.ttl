@@ -4,7 +4,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_ne> a ns1:Grapheme ;
-    rdfs:label "Character: NE" ;
+    rdfs:label "Character: NE",
+        "Character: NE"@en ;
     ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_ne_sense_izi___fire> ;
     ns1:abzl "116" ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ne_reading_bar7>,
@@ -75,5 +76,6 @@
     ns1:slha "172" ;
     ns1:unicodeCodepoint "U+12248" ;
     ns1:unicodeRepresentation "𒉈" ;
+    ns1:variant <https://situx.github.io/cuneiformontology/signlist/character_ne_variant1> ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556164> .
 

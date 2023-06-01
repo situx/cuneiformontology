@@ -4,7 +4,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_tum> a ns1:Grapheme ;
-    rdfs:label "Character: TUM" ;
+    rdfs:label "Character: TUM",
+        "Character: TUM"@en ;
     ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_tum_sense_ib2___loins> ;
     ns1:abzl "075" ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_tum_reading_dam3>,
@@ -44,5 +45,6 @@
     ns1:slha "207" ;
     ns1:unicodeCodepoint "U+12308" ;
     ns1:unicodeRepresentation "𒌈" ;
+    ns1:variant <https://situx.github.io/cuneiformontology/signlist/character_tum_variant1> ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556517> .
 

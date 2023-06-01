@@ -4,7 +4,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_szu> a ns1:Grapheme ;
-    rdfs:label "Character: ŠU" ;
+    rdfs:label "Character: ŠU",
+        "Character: SZU"@en ;
     ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_szu_sense_hand>,
         <https://situx.github.io/cuneiformontology/signlist/character_szu_sense_total>,
         <https://situx.github.io/cuneiformontology/signlist/character_szu_sense_totality> ;
@@ -19,7 +20,8 @@
         <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_sagiₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_szu>,
         <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_szu_szu>,
-        <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_szunigin_napharum> ;
+        <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_szunigin_napharum>,
+        <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_šu> ;
     ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_szu> ;
     ns1:hethzl "68" ;
     ns1:labat "354",
@@ -30,5 +32,6 @@
     ns1:slha "354" ;
     ns1:unicodeCodepoint "U+122D7" ;
     ns1:unicodeRepresentation "𒋗" ;
+    ns1:variant <https://situx.github.io/cuneiformontology/signlist/character_szu_variant1> ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556429> .
 

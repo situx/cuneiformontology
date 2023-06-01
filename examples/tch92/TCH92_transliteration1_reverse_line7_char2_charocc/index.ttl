@@ -1,0 +1,19 @@
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line7_char2_charocc> a ns2:TransliterationCharOccurrence ;
+    rdfs:label "Char Occurrence: 1(disz)+na (TCH92[reverse_transliteration1_line7_char2])"@en ;
+    ns1:writtenRepUnicode "" ;
+    ns2:charIndex 2 ;
+    ns2:lineNumber 7 ;
+    ns2:nextInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line7_char3_charocc> ;
+    ns2:partOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line7_word1_wordformocc> ;
+    ns2:positionInWord 2 ;
+    ns2:positionOnTabletSide 300 ;
+    ns2:prev <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line7_char1_charocc> ;
+    ns2:prevInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line7_char1_charocc> ;
+    skos:definition "1(disz)+na" .
+

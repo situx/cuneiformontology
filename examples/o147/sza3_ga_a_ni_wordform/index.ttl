@@ -1,0 +1,12 @@
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://situx.github.io/cuneiformontology/examples/o147/sza3_ga_a_ni_wordform> a ns1:WordForm ;
+    rdfs:label "WordForm: sza3#-ga-a-ni"@en ;
+    ns1:writtenRepASCII "sza3#-ga-a-ni"^^ns2:ASCIILiteral ;
+    ns1:writtenRepUnicode ""^^ns2:unicodeLiteral ;
+    ns2:isAttested <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line3_word1_wordformocc> ;
+    skos:definition "sza3#-ga-a-ni" .
+

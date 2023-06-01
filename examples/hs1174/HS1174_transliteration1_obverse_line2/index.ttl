@@ -1,0 +1,14 @@
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2> a ns2:TransliterationLine ;
+    rdfs:label "Transliteration Line: 2 [HS1174_obverse]"@en ;
+    ns1:writtenRepASCII "2"^^ns2:ASCIILiteral ;
+    ns1:writtenRepUnicode ""^^ns2:unicodeLiteral ;
+    ns2:consistsOf <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2_word1_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2_word2_wordformocc>,
+        <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line2_word3_wordformocc> ;
+    skos:definition "2. da-ak-ru-um e2-a ib2-dab5" .
+

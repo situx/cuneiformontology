@@ -1,0 +1,12 @@
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/cuneiformontology/examples/signlist/character_ku3> a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+    rdfs:label "Character: KU3"@en ;
+    ns1:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char6>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char4> ;
+    ns2:hasUnicodeRepresentation "𒆬" ;
+    ns2:signName "ku3" ;
+    ns2:variant <https://situx.github.io/cuneiformontology/examples/ht073195/ku3_charvariant1> .
+

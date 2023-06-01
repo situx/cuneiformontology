@@ -1,0 +1,19 @@
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line3_char3_charocc> a ns1:TransliterationCharOccurrence ;
+    rdfs:label "Char Occurrence: de3 (O147[reverse_transliteration1_line3_char3])"@en ;
+    ns2:writtenRepUnicode "" ;
+    ns1:charIndex 3 ;
+    ns1:lineNumber 3 ;
+    ns1:nextInWord <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line3_char4_charocc> ;
+    ns1:partOf <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line3_word1_wordformocc> ;
+    ns1:positionInWord 3 ;
+    ns1:positionOnTabletSide 126 ;
+    ns1:prev <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line3_char2_charocc> ;
+    ns1:prevInWord <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line3_char2_charocc> ;
+    skos:definition "de3" .
+

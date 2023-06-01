@@ -3,7 +3,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_bán> a ns1:Grapheme ;
-    rdfs:label "Character: BÁN" ;
+    rdfs:label "Character: BÁN",
+        "Character: BÁN"@en ;
     ns1:abzl "029" ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_bán_reading_1_ban2>,
         <https://situx.github.io/cuneiformontology/signlist/character_bán_reading_1_ban2@c>,
@@ -11,6 +12,7 @@
         <https://situx.github.io/cuneiformontology/signlist/character_bán_reading_ban2@c>,
         <https://situx.github.io/cuneiformontology/signlist/character_bán_reading_ban2@v>,
         <https://situx.github.io/cuneiformontology/signlist/character_bán_reading_banda2>,
+        <https://situx.github.io/cuneiformontology/signlist/character_bán_reading_ban₂>,
         <https://situx.github.io/cuneiformontology/signlist/character_bán_reading_sutu> ;
     ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ba2n> ;
     ns1:hethzl "20" ;
@@ -19,5 +21,6 @@
     ns1:slha "74" ;
     ns1:unicodeCodepoint "U+1244F" ;
     ns1:unicodeRepresentation "𒑏" ;
+    ns1:variant <https://situx.github.io/cuneiformontology/signlist/character_bán_variant1> ;
     owl:sameAs <http://www.wikidata.org/entity/Q87557009> .
 

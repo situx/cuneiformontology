@@ -4,7 +4,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_la> a ns1:Grapheme ;
-    rdfs:label "Character: LA" ;
+    rdfs:label "Character: LA",
+        "Character: LA"@en ;
     ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_la_sense_la_la___ioy> ;
     ns1:abzl "177" ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_la_reading_la>,
@@ -23,5 +24,6 @@
     ns1:slha "055" ;
     ns1:unicodeCodepoint "U+121B7" ;
     ns1:unicodeRepresentation "𒆷" ;
+    ns1:variant <https://situx.github.io/cuneiformontology/signlist/character_la_variant1> ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555876> .
 

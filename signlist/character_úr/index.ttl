@@ -4,7 +4,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_úr> a ns1:Grapheme ;
-    rdfs:label "Character: ÚR" ;
+    rdfs:label "Character: ÚR",
+        "Character: ÚR"@en ;
     ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_úr_sense_legs>,
         <https://situx.github.io/cuneiformontology/signlist/character_úr_sense_trunk_of_a_tree> ;
     ns1:abzl "072" ;
@@ -14,7 +15,8 @@
         <https://situx.github.io/cuneiformontology/signlist/character_úr_reading_ur2_ur2>,
         <https://situx.github.io/cuneiformontology/signlist/character_úr_reading_ur2_uszbar_uszbur_k>,
         <https://situx.github.io/cuneiformontology/signlist/character_úr_reading_ur2_very_rare>,
-        <https://situx.github.io/cuneiformontology/signlist/character_úr_reading_uru8> ;
+        <https://situx.github.io/cuneiformontology/signlist/character_úr_reading_uru8>,
+        <https://situx.github.io/cuneiformontology/signlist/character_úr_reading_ur₂> ;
     ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_u2r> ;
     ns1:hethzl "124" ;
     ns1:labat "203" ;
@@ -25,5 +27,6 @@
     ns1:slha "203" ;
     ns1:unicodeCodepoint "U+1232B" ;
     ns1:unicodeRepresentation "𒌫" ;
+    ns1:variant <https://situx.github.io/cuneiformontology/signlist/character_úr_variant1> ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556588> .
 

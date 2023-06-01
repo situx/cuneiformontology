@@ -1,0 +1,21 @@
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix ns3: <http://www.purl.org/graphemon#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19_char8_charocc> a ns2:TransliterationCharOccurrence ;
+    rdfs:label "Char Occurrence: MUNUS (TCH92[reverse_transliteration1_line19_char8])"@en ;
+    ns1:writtenRepUnicode "𒊩" ;
+    ns2:charIndex 8 ;
+    ns2:contains <https://situx.github.io/cuneiformontology/signlist/character_munus_sal> ;
+    ns2:lineNumber 19 ;
+    ns2:partOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19_word2_wordformocc> ;
+    ns2:positionInWord 2 ;
+    ns2:positionOnTabletSide 409 ;
+    ns2:prev <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19_char7_charocc> ;
+    ns2:prevInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line19_char1_charocc> ;
+    ns3:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_munus_sal_reading_munus> ;
+    skos:definition "MUNUS" .
+

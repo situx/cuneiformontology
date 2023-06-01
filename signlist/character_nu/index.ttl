@@ -3,7 +3,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_nu> a ns1:Grapheme ;
-    rdfs:label "Character: NU" ;
+    rdfs:label "Character: NU",
+        "Character: NU"@en ;
     ns1:abzl "019" ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_nu_reading_la3>,
         <https://situx.github.io/cuneiformontology/signlist/character_nu_reading_nu>,
@@ -22,5 +23,6 @@
     ns1:slha "075" ;
     ns1:unicodeCodepoint "U+12261" ;
     ns1:unicodeRepresentation "𒉡" ;
+    ns1:variant <https://situx.github.io/cuneiformontology/signlist/character_nu_variant1> ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556210> .
 

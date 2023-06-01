@@ -4,7 +4,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_a> a ns1:Grapheme ;
-    rdfs:label "Character: A" ;
+    rdfs:label "Character: A",
+        "Character: A"@en ;
     ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_a_sense_drink>,
         <https://situx.github.io/cuneiformontology/signlist/character_a_sense_water> ;
     ns1:abzl "470" ;
@@ -38,5 +39,6 @@
     ns1:slha "579" ;
     ns1:unicodeCodepoint "U+12000" ;
     ns1:unicodeRepresentation "𒀀" ;
+    ns1:variant <https://situx.github.io/cuneiformontology/signlist/character_a_variant1> ;
     owl:sameAs <http://www.wikidata.org/entity/Q87554995> .
 

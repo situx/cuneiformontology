@@ -1,0 +1,17 @@
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line7_char9_charocc> a ns2:TransliterationCharOccurrence ;
+    rdfs:label "Char Occurrence: pir2 (TCH92[reverse_transliteration1_line7_char9])"@en ;
+    ns1:writtenRepUnicode "" ;
+    ns2:charIndex 9 ;
+    ns2:lineNumber 7 ;
+    ns2:partOf <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line7_word3_wordformocc> ;
+    ns2:positionInWord 1 ;
+    ns2:positionOnTabletSide 307 ;
+    ns2:prev <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line7_char8_charocc> ;
+    skos:definition "pir2" .
+

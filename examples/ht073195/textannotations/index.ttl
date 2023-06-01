@@ -1,0 +1,388 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/ns/oa#> .
+@prefix ns2: <https://www.w3.org/ns/activitystreams#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/HT073195_transliteration1_textannotations> a ns2:Collection ;
+    rdfs:label "Text annotations on HT073195 transliteration 1"@en ;
+    rdfs:member <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/04e0136b-2b19-4e91-b9cb-910f55caffd4>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/34e5d858-b503-485c-9ea0-f2cbf7a3eecd>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/44438ea0-7f7e-4f54-95f3-b08b86bed249>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/4cc7a5e0-b664-489f-8f13-aff76f250f92>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/54fa7b4a-fe2d-489b-9009-084a5d92d73d>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/a82a025f-96cd-451d-91ed-ba5f9eab0a3a>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/adfd8f28-df95-4197-aa33-d77e17729969>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/b94191f1-72dc-4a29-8862-8f26f2299e20>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/bb6b327d-aab4-43a1-bb08-99688a718a5d>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/c310e8c2-bdba-466c-807c-1a85112dd567>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/cf4a4ce8-65fe-4c18-a995-84d451a96992>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/d1f5ccaa-a2cb-454a-86dd-ee48fa2b34d2>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/d682a17d-5fd5-4299-98b4-713cfbc83e34> ;
+    rdfs:subClassOf skos:Collection .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/04e0136b-2b19-4e91-b9cb-910f55caffd4> a ns1:Annotation ;
+    rdfs:label "Annotation of text passage of transliteration 1 of HT073195 "@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns1:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/04e0136b-2b19-4e91-b9cb-910f55caffd4_body_class_postag>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/04e0136b-2b19-4e91-b9cb-910f55caffd4_body_class_sense> ;
+    ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/04e0136b-2b19-4e91-b9cb-910f55caffd4_target1> ;
+    ns2:generator <https://github.com/recogito/recogito-js> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/04e0136b-2b19-4e91-b9cb-910f55caffd4_body_class_postag> a ns1:SpecificResource ;
+    rdfs:label "Annotation body of POSTag classification"@en ;
+    rdf:value "http://purl.org/olia/Sumerian.owl#Number"^^xsd:anyURI .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/04e0136b-2b19-4e91-b9cb-910f55caffd4_body_class_sense> a ns1:SpecificResource ;
+    rdfs:label "8"@en ;
+    rdf:value "http://www.wikidata.org/entity/Q23355"^^xsd:anyURI ;
+    skos:definition "natural number"@en ;
+    ns1:motivatedBy ns1:classifying .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/04e0136b-2b19-4e91-b9cb-910f55caffd4_target1> a owl:NamedIndividual ;
+    rdfs:label "Annotation target1 of Annotation of text section at HT073195 line 0 char 0 on transliteration"@en ;
+    ns1:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/04e0136b-2b19-4e91-b9cb-910f55caffd4_target1_selector> ;
+    ns1:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/HT073195_transliteration1> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/04e0136b-2b19-4e91-b9cb-910f55caffd4_target1_selector> a ns1:TextPositionSelector ;
+    rdfs:label "Annotation target selector of Annotation of text section at HT073195 transliteration  line 0 char 0 on transliteration"@en ;
+    rdf:value "8(disz)" ;
+    ns1:end 133 ;
+    ns1:start 126 .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/34e5d858-b503-485c-9ea0-f2cbf7a3eecd> a ns1:Annotation ;
+    rdfs:label "Annotation of text passage of transliteration 1 of HT073195 "@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns1:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/34e5d858-b503-485c-9ea0-f2cbf7a3eecd_body_class_postag>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/34e5d858-b503-485c-9ea0-f2cbf7a3eecd_body_class_sense> ;
+    ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/34e5d858-b503-485c-9ea0-f2cbf7a3eecd_target1> ;
+    ns2:generator <https://github.com/recogito/recogito-js> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/34e5d858-b503-485c-9ea0-f2cbf7a3eecd_body_class_postag> a ns1:SpecificResource ;
+    rdfs:label "Annotation body of POSTag classification"@en ;
+    rdf:value "http://purl.org/olia/Sumerian.owl#Noun"^^xsd:anyURI .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/34e5d858-b503-485c-9ea0-f2cbf7a3eecd_body_class_sense> a ns1:SpecificResource ;
+    rdfs:label "gold"@en ;
+    rdf:value "http://www.wikidata.org/entity/Q897"^^xsd:anyURI ;
+    skos:definition "chemical element with symbol Au and atomic number 79; yellow-colored precious metal"@en ;
+    ns1:motivatedBy ns1:classifying .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/34e5d858-b503-485c-9ea0-f2cbf7a3eecd_target1> a owl:NamedIndividual ;
+    rdfs:label "Annotation target1 of Annotation of text section at HT073195 line 0 char 0 on transliteration"@en ;
+    ns1:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/34e5d858-b503-485c-9ea0-f2cbf7a3eecd_target1_selector> ;
+    ns1:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/HT073195_transliteration1> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/34e5d858-b503-485c-9ea0-f2cbf7a3eecd_target1_selector> a ns1:TextPositionSelector ;
+    rdfs:label "Annotation target selector of Annotation of text section at HT073195 transliteration  line 0 char 0 on transliteration"@en ;
+    rdf:value "KU3.GI" ;
+    ns1:end 85 ;
+    ns1:start 79 .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/44438ea0-7f7e-4f54-95f3-b08b86bed249> a ns1:Annotation ;
+    rdfs:label "Annotation of text passage of transliteration 1 of HT073195 "@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns1:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/44438ea0-7f7e-4f54-95f3-b08b86bed249_body_class_postag> ;
+    ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/44438ea0-7f7e-4f54-95f3-b08b86bed249_target1> ;
+    ns2:generator <https://github.com/recogito/recogito-js> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/44438ea0-7f7e-4f54-95f3-b08b86bed249_body_class_postag> a ns1:SpecificResource ;
+    rdfs:label "Annotation body of POSTag classification"@en ;
+    rdf:value "http://purl.org/olia/Sumerian.owl#Preposition"^^xsd:anyURI .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/44438ea0-7f7e-4f54-95f3-b08b86bed249_target1> a owl:NamedIndividual ;
+    rdfs:label "Annotation target1 of Annotation of text section at HT073195 line 0 char 0 on transliteration"@en ;
+    ns1:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/44438ea0-7f7e-4f54-95f3-b08b86bed249_target1_selector> ;
+    ns1:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/HT073195_transliteration1> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/44438ea0-7f7e-4f54-95f3-b08b86bed249_target1_selector> a ns1:TextPositionSelector ;
+    rdfs:label "Annotation target selector of Annotation of text section at HT073195 transliteration  line 0 char 0 on transliteration"@en ;
+    rdf:value "sza3" ;
+    ns1:end 152 ;
+    ns1:start 148 .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/4cc7a5e0-b664-489f-8f13-aff76f250f92> a ns1:Annotation ;
+    rdfs:label "Annotation of text passage of transliteration 1 of HT073195 "@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns1:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/4cc7a5e0-b664-489f-8f13-aff76f250f92_body_class_postag>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/4cc7a5e0-b664-489f-8f13-aff76f250f92_body_class_sense> ;
+    ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/4cc7a5e0-b664-489f-8f13-aff76f250f92_target1> ;
+    ns2:generator <https://github.com/recogito/recogito-js> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/4cc7a5e0-b664-489f-8f13-aff76f250f92_body_class_postag> a ns1:SpecificResource ;
+    rdfs:label "Annotation body of POSTag classification"@en ;
+    rdf:value "http://purl.org/olia/Sumerian.owl#Number"^^xsd:anyURI .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/4cc7a5e0-b664-489f-8f13-aff76f250f92_body_class_sense> a ns1:SpecificResource ;
+    rdfs:label "90"@en ;
+    rdf:value "http://www.wikidata.org/entity/Q239346"^^xsd:anyURI ;
+    skos:definition "natural number"@en ;
+    ns1:motivatedBy ns1:classifying .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/4cc7a5e0-b664-489f-8f13-aff76f250f92_target1> a owl:NamedIndividual ;
+    rdfs:label "Annotation target1 of Annotation of text section at HT073195 line 0 char 0 on transliteration"@en ;
+    ns1:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/4cc7a5e0-b664-489f-8f13-aff76f250f92_target1_selector> ;
+    ns1:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/HT073195_transliteration1> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/4cc7a5e0-b664-489f-8f13-aff76f250f92_target1_selector> a ns1:TextPositionSelector ;
+    rdfs:label "Annotation target selector of Annotation of text section at HT073195 transliteration  line 0 char 0 on transliteration"@en ;
+    rdf:value "9(u)" ;
+    ns1:end 22 ;
+    ns1:start 18 .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/54fa7b4a-fe2d-489b-9009-084a5d92d73d> a ns1:Annotation ;
+    rdfs:label "Annotation of text passage of transliteration 1 of HT073195 "@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns1:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/54fa7b4a-fe2d-489b-9009-084a5d92d73d_body_class_postag> ;
+    ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/54fa7b4a-fe2d-489b-9009-084a5d92d73d_target1> ;
+    ns2:generator <https://github.com/recogito/recogito-js> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/54fa7b4a-fe2d-489b-9009-084a5d92d73d_body_class_postag> a ns1:SpecificResource ;
+    rdfs:label "Annotation body of POSTag classification"@en ;
+    rdf:value "http://purl.org/olia/Sumerian.owl#Verb"^^xsd:anyURI .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/54fa7b4a-fe2d-489b-9009-084a5d92d73d_target1> a owl:NamedIndividual ;
+    rdfs:label "Annotation target1 of Annotation of text section at HT073195 line 0 char 0 on transliteration"@en ;
+    ns1:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/54fa7b4a-fe2d-489b-9009-084a5d92d73d_target1_selector> ;
+    ns1:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/HT073195_transliteration1> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/54fa7b4a-fe2d-489b-9009-084a5d92d73d_target1_selector> a ns1:TextPositionSelector ;
+    rdfs:label "Annotation target selector of Annotation of text section at HT073195 transliteration  line 0 char 0 on transliteration"@en ;
+    rdf:value "isz-szu-u2" ;
+    ns1:end 176 ;
+    ns1:start 166 .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/a82a025f-96cd-451d-91ed-ba5f9eab0a3a> a ns1:Annotation ;
+    rdfs:label "Annotation of text passage of transliteration 1 of HT073195 "@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns1:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/a82a025f-96cd-451d-91ed-ba5f9eab0a3a_body_class_postag>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/a82a025f-96cd-451d-91ed-ba5f9eab0a3a_body_class_sense> ;
+    ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/a82a025f-96cd-451d-91ed-ba5f9eab0a3a_target1> ;
+    ns2:generator <https://github.com/recogito/recogito-js> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/a82a025f-96cd-451d-91ed-ba5f9eab0a3a_body_class_postag> a ns1:SpecificResource ;
+    rdfs:label "Annotation body of POSTag classification"@en ;
+    rdf:value "http://purl.org/olia/Sumerian.owl#Number"^^xsd:anyURI .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/a82a025f-96cd-451d-91ed-ba5f9eab0a3a_body_class_sense> a ns1:SpecificResource ;
+    rdfs:label "2"@en ;
+    rdf:value "http://www.wikidata.org/entity/Q200"^^xsd:anyURI ;
+    skos:definition "natural number"@en ;
+    ns1:motivatedBy ns1:classifying .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/a82a025f-96cd-451d-91ed-ba5f9eab0a3a_target1> a owl:NamedIndividual ;
+    rdfs:label "Annotation target1 of Annotation of text section at HT073195 line 0 char 0 on transliteration"@en ;
+    ns1:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/a82a025f-96cd-451d-91ed-ba5f9eab0a3a_target1_selector> ;
+    ns1:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/HT073195_transliteration1> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/a82a025f-96cd-451d-91ed-ba5f9eab0a3a_target1_selector> a ns1:TextPositionSelector ;
+    rdfs:label "Annotation target selector of Annotation of text section at HT073195 transliteration  line 0 char 0 on transliteration"@en ;
+    rdf:value "2(disz)" ;
+    ns1:end 30 ;
+    ns1:start 23 .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/adfd8f28-df95-4197-aa33-d77e17729969> a ns1:Annotation ;
+    rdfs:label "Annotation of text passage of transliteration 1 of HT073195 "@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns1:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/adfd8f28-df95-4197-aa33-d77e17729969_body_class_postag> ;
+    ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/adfd8f28-df95-4197-aa33-d77e17729969_target1> ;
+    ns2:generator <https://github.com/recogito/recogito-js> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/adfd8f28-df95-4197-aa33-d77e17729969_body_class_postag> a ns1:SpecificResource ;
+    rdfs:label "Annotation body of POSTag classification"@en ;
+    rdf:value "http://purl.org/olia/Sumerian.owl#Preposition"^^xsd:anyURI .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/adfd8f28-df95-4197-aa33-d77e17729969_target1> a owl:NamedIndividual ;
+    rdfs:label "Annotation target1 of Annotation of text section at HT073195 line 0 char 0 on transliteration"@en ;
+    ns1:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/adfd8f28-df95-4197-aa33-d77e17729969_target1_selector> ;
+    ns1:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/HT073195_transliteration1> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/adfd8f28-df95-4197-aa33-d77e17729969_target1_selector> a ns1:TextPositionSelector ;
+    rdfs:label "Annotation target selector of Annotation of text section at HT073195 transliteration  line 0 char 0 on transliteration"@en ;
+    rdf:value "sza3" ;
+    ns1:end 78 ;
+    ns1:start 74 .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/b94191f1-72dc-4a29-8862-8f26f2299e20> a ns1:Annotation ;
+    rdfs:label "Annotation of text passage of transliteration 1 of HT073195 "@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns1:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/b94191f1-72dc-4a29-8862-8f26f2299e20_body_class_postag>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/b94191f1-72dc-4a29-8862-8f26f2299e20_body_class_sense> ;
+    ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/b94191f1-72dc-4a29-8862-8f26f2299e20_target1> ;
+    ns2:generator <https://github.com/recogito/recogito-js> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/b94191f1-72dc-4a29-8862-8f26f2299e20_body_class_postag> a ns1:SpecificResource ;
+    rdfs:label "Annotation body of POSTag classification"@en ;
+    rdf:value "http://purl.org/olia/Sumerian.owl#Number"^^xsd:anyURI .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/b94191f1-72dc-4a29-8862-8f26f2299e20_body_class_sense> a ns1:SpecificResource ;
+    rdfs:label "10"@en ;
+    rdf:value "http://www.wikidata.org/entity/Q23806"^^xsd:anyURI ;
+    skos:definition "natural number"@en ;
+    ns1:motivatedBy ns1:classifying .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/b94191f1-72dc-4a29-8862-8f26f2299e20_target1> a owl:NamedIndividual ;
+    rdfs:label "Annotation target1 of Annotation of text section at HT073195 line 0 char 0 on transliteration"@en ;
+    ns1:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/b94191f1-72dc-4a29-8862-8f26f2299e20_target1_selector> ;
+    ns1:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/HT073195_transliteration1> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/b94191f1-72dc-4a29-8862-8f26f2299e20_target1_selector> a ns1:TextPositionSelector ;
+    rdfs:label "Annotation target selector of Annotation of text section at HT073195 transliteration  line 0 char 0 on transliteration"@en ;
+    rdf:value "1(u)" ;
+    ns1:end 65 ;
+    ns1:start 61 .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/bb6b327d-aab4-43a1-bb08-99688a718a5d> a ns1:Annotation ;
+    rdfs:label "Annotation of text passage of transliteration 1 of HT073195 "@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns1:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/bb6b327d-aab4-43a1-bb08-99688a718a5d_body_class_postag>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/bb6b327d-aab4-43a1-bb08-99688a718a5d_body_class_sense> ;
+    ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/bb6b327d-aab4-43a1-bb08-99688a718a5d_target1> ;
+    ns2:generator <https://github.com/recogito/recogito-js> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/bb6b327d-aab4-43a1-bb08-99688a718a5d_body_class_postag> a ns1:SpecificResource ;
+    rdfs:label "Annotation body of POSTag classification"@en ;
+    rdf:value "http://purl.org/olia/Sumerian.owl#Number"^^xsd:anyURI .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/bb6b327d-aab4-43a1-bb08-99688a718a5d_body_class_sense> a ns1:SpecificResource ;
+    rdfs:label "6"@en ;
+    rdf:value "http://www.wikidata.org/entity/Q23488"^^xsd:anyURI ;
+    skos:definition "natural number"@en ;
+    ns1:motivatedBy ns1:classifying .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/bb6b327d-aab4-43a1-bb08-99688a718a5d_target1> a owl:NamedIndividual ;
+    rdfs:label "Annotation target1 of Annotation of text section at HT073195 line 0 char 0 on transliteration"@en ;
+    ns1:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/bb6b327d-aab4-43a1-bb08-99688a718a5d_target1_selector> ;
+    ns1:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/HT073195_transliteration1> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/bb6b327d-aab4-43a1-bb08-99688a718a5d_target1_selector> a ns1:TextPositionSelector ;
+    rdfs:label "Annotation target selector of Annotation of text section at HT073195 transliteration  line 0 char 0 on transliteration"@en ;
+    rdf:value "6(disz)" ;
+    ns1:end 73 ;
+    ns1:start 66 .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/c310e8c2-bdba-466c-807c-1a85112dd567> a ns1:Annotation ;
+    rdfs:label "Annotation of text passage of transliteration 1 of HT073195 "@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns1:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/c310e8c2-bdba-466c-807c-1a85112dd567_body_class_postag>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/c310e8c2-bdba-466c-807c-1a85112dd567_body_class_sense>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/c310e8c2-bdba-466c-807c-1a85112dd567_body_wordform> ;
+    ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/c310e8c2-bdba-466c-807c-1a85112dd567_target1> ;
+    ns2:generator <https://github.com/recogito/recogito-js> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/c310e8c2-bdba-466c-807c-1a85112dd567_body_class_postag> a ns1:SpecificResource ;
+    rdfs:label "Annotation body of POSTag classification"@en ;
+    rdf:value "http://purl.org/olia/Sumerian.owl#Noun"^^xsd:anyURI .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/c310e8c2-bdba-466c-807c-1a85112dd567_body_class_sense> a ns1:SpecificResource ;
+    rdfs:label "silver"@en ;
+    rdf:value "http://www.wikidata.org/entity/Q1090"^^xsd:anyURI ;
+    skos:definition "silver (http://www.wikidata.org/entity/Q1090)"@en ;
+    ns1:motivatedBy ns1:classifying .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/c310e8c2-bdba-466c-807c-1a85112dd567_body_wordform> a ns1:SpecificResource ;
+    rdfs:label "kug-babbar / 𒆬𒌓"@en ;
+    rdf:value "http://www.wikidata.org/entity/L694259-F1"^^xsd:anyURI ;
+    skos:definition "Word kug-babbar / 𒆬𒌓 in  with sense silver"@en ;
+    ns1:motivatedBy ns1:classifying .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/c310e8c2-bdba-466c-807c-1a85112dd567_target1> a owl:NamedIndividual ;
+    rdfs:label "Annotation target1 of Annotation of text section at HT073195 line 0 char 0 on transliteration"@en ;
+    ns1:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/c310e8c2-bdba-466c-807c-1a85112dd567_target1_selector> ;
+    ns1:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/HT073195_transliteration1> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/c310e8c2-bdba-466c-807c-1a85112dd567_target1_selector> a ns1:TextPositionSelector ;
+    rdfs:label "Annotation target selector of Annotation of text section at HT073195 transliteration  line 0 char 0 on transliteration"@en ;
+    rdf:value "KU3.BABBAR" ;
+    ns1:end 57 ;
+    ns1:start 47 .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/cf4a4ce8-65fe-4c18-a995-84d451a96992> a ns1:Annotation ;
+    rdfs:label "Annotation of text passage of transliteration 1 of HT073195 "@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns1:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/cf4a4ce8-65fe-4c18-a995-84d451a96992_body_class_postag>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/cf4a4ce8-65fe-4c18-a995-84d451a96992_body_class_sense> ;
+    ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/cf4a4ce8-65fe-4c18-a995-84d451a96992_target1> ;
+    ns2:generator <https://github.com/recogito/recogito-js> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/cf4a4ce8-65fe-4c18-a995-84d451a96992_body_class_postag> a ns1:SpecificResource ;
+    rdfs:label "Annotation body of POSTag classification"@en ;
+    rdf:value "http://purl.org/olia/Sumerian.owl#Number"^^xsd:anyURI .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/cf4a4ce8-65fe-4c18-a995-84d451a96992_body_class_sense> a ns1:SpecificResource ;
+    rdfs:label "100"@en ;
+    rdf:value "http://www.wikidata.org/entity/Q37413"^^xsd:anyURI ;
+    skos:definition "natural number"@en ;
+    ns1:motivatedBy ns1:classifying .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/cf4a4ce8-65fe-4c18-a995-84d451a96992_target1> a owl:NamedIndividual ;
+    rdfs:label "Annotation target1 of Annotation of text section at HT073195 line 0 char 0 on transliteration"@en ;
+    ns1:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/cf4a4ce8-65fe-4c18-a995-84d451a96992_target1_selector> ;
+    ns1:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/HT073195_transliteration1> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/cf4a4ce8-65fe-4c18-a995-84d451a96992_target1_selector> a ns1:TextPositionSelector ;
+    rdfs:label "Annotation target selector of Annotation of text section at HT073195 transliteration  line 0 char 0 on transliteration"@en ;
+    rdf:value "1(disz)-ME" ;
+    ns1:end 125 ;
+    ns1:start 115 .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/d1f5ccaa-a2cb-454a-86dd-ee48fa2b34d2> a ns1:Annotation ;
+    rdfs:label "Annotation of text passage of transliteration 1 of HT073195 "@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns1:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/d1f5ccaa-a2cb-454a-86dd-ee48fa2b34d2_body_class_postag> ;
+    ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/d1f5ccaa-a2cb-454a-86dd-ee48fa2b34d2_target1> ;
+    ns2:generator <https://github.com/recogito/recogito-js> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/d1f5ccaa-a2cb-454a-86dd-ee48fa2b34d2_body_class_postag> a ns1:SpecificResource ;
+    rdfs:label "Annotation body of POSTag classification"@en ;
+    rdf:value "http://purl.org/olia/Sumerian.owl#PersonName"^^xsd:anyURI .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/d1f5ccaa-a2cb-454a-86dd-ee48fa2b34d2_target1> a owl:NamedIndividual ;
+    rdfs:label "Annotation target1 of Annotation of text section at HT073195 line 0 char 0 on transliteration"@en ;
+    ns1:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/d1f5ccaa-a2cb-454a-86dd-ee48fa2b34d2_target1_selector> ;
+    ns1:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/HT073195_transliteration1> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/d1f5ccaa-a2cb-454a-86dd-ee48fa2b34d2_target1_selector> a ns1:TextPositionSelector ;
+    rdfs:label "Annotation target selector of Annotation of text section at HT073195 transliteration  line 0 char 0 on transliteration"@en ;
+    rdf:value "a-mar-{d}UTU" ;
+    ns1:end 165 ;
+    ns1:start 153 .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/d682a17d-5fd5-4299-98b4-713cfbc83e34> a ns1:Annotation ;
+    rdfs:label "Annotation of text passage of transliteration 1 of HT073195 "@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns1:hasBody <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/d682a17d-5fd5-4299-98b4-713cfbc83e34_body_class_postag> ;
+    ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/d682a17d-5fd5-4299-98b4-713cfbc83e34_target1> ;
+    ns2:generator <https://github.com/recogito/recogito-js> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/d682a17d-5fd5-4299-98b4-713cfbc83e34_body_class_postag> a ns1:SpecificResource ;
+    rdfs:label "Annotation body of POSTag classification"@en ;
+    rdf:value "http://purl.org/olia/Sumerian.owl#Preposition"^^xsd:anyURI .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/d682a17d-5fd5-4299-98b4-713cfbc83e34_target1> a owl:NamedIndividual ;
+    rdfs:label "Annotation target1 of Annotation of text section at HT073195 line 0 char 0 on transliteration"@en ;
+    ns1:hasSelector <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/d682a17d-5fd5-4299-98b4-713cfbc83e34_target1_selector> ;
+    ns1:hasSource <https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/HT073195_transliteration1> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/textannotations/d682a17d-5fd5-4299-98b4-713cfbc83e34_target1_selector> a ns1:TextPositionSelector ;
+    rdfs:label "Annotation target selector of Annotation of text section at HT073195 transliteration  line 0 char 0 on transliteration"@en ;
+    rdf:value "sza3" ;
+    ns1:end 46 ;
+    ns1:start 42 .
+

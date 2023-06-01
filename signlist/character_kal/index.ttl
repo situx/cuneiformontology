@@ -4,7 +4,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_kal> a ns1:Grapheme ;
-    rdfs:label "Character: KAL" ;
+    rdfs:label "Character: KAL",
+        "Character: KAL"@en ;
     ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_kal_sense__gurusz___man>,
         <https://situx.github.io/cuneiformontology/signlist/character_kal_sense__kalag___strong__d_lamma___tutelary_genius>,
         <https://situx.github.io/cuneiformontology/signlist/character_kal_sense_male_worker>,
@@ -76,5 +77,6 @@
     ns1:slha "322" ;
     ns1:unicodeCodepoint "U+12197" ;
     ns1:unicodeRepresentation "𒆗" ;
+    ns1:variant <https://situx.github.io/cuneiformontology/signlist/character_kal_variant1> ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555801> .
 
