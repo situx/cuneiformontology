@@ -1,13 +1,13 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix ns2: <http://www.purl.org/cuneiform#> .
-@prefix ns3: <http://www.purl.org/graphemon#> .
+@prefix ns3: <http://lemon-model.net/lemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line2_char2_charocc> a ns2:TransliterationCharOccurrence ;
     rdfs:label "Char Occurrence: Be (TCH92[obverse_transliteration1_line2_char2])"@en ;
-    ns1:writtenRepUnicode "𒁁" ;
+    ns3:writtenRepUnicode "𒁁" ;
     ns2:charIndex 2 ;
     ns2:contains <https://situx.github.io/cuneiformontology/signlist/character_bad> ;
     ns2:lineNumber 2 ;
@@ -17,6 +17,6 @@
     ns2:positionOnTabletSide 7 ;
     ns2:prev <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line2_char1_charocc> ;
     ns2:prevInWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line2_char1_charocc> ;
-    ns3:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_bad_reading_be> ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_bad_reading_be> ;
     skos:definition "Be" .
 

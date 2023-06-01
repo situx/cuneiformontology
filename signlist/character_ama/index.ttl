@@ -1,17 +1,17 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_ama> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_ama> a ns1:Grapheme ;
     rdfs:label "Character: AMA (GÁ×AN)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_ama_sense__dagal___adi>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_ama_sense__dagal___adi>,
         <https://situx.github.io/cuneiformontology/signlist/character_ama_sense_mother>,
         <https://situx.github.io/cuneiformontology/signlist/character_ama_sense_to_enlarge>,
         <https://situx.github.io/cuneiformontology/signlist/character_ama_sense_wide>,
         <https://situx.github.io/cuneiformontology/signlist/character_ama_sense_width> ;
-    ns2:abzl "094" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ama_reading_ama>,
+    ns1:abzl "094" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ama_reading_ama>,
         <https://situx.github.io/cuneiformontology/signlist/character_ama_reading_ame>,
         <https://situx.github.io/cuneiformontology/signlist/character_ama_reading_ami>,
         <https://situx.github.io/cuneiformontology/signlist/character_ama_reading_arhusz4>,
@@ -28,15 +28,15 @@
         <https://situx.github.io/cuneiformontology/signlist/character_ama_reading_maₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_ama_reading_szaganₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_ama_reading_szakkan7> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ama_ga2>,
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ama_ga2>,
         <https://situx.github.io/cuneiformontology/signlist/character_an> ;
-    ns2:hethzl "57" ;
-    ns2:labat "237" ;
-    ns2:meszl "392" ;
-    ns2:obo "94" ;
-    ns2:signName "AMA (GÁ×AN)" ;
-    ns2:slha "237" ;
-    ns2:unicodeCodepoint "U+120BC" ;
-    ns2:unicodeRepresentation "𒂼" ;
+    ns1:hethzl "57" ;
+    ns1:labat "237" ;
+    ns1:meszl "392" ;
+    ns1:obo "94" ;
+    ns1:signName "AMA (GÁ×AN)" ;
+    ns1:slha "237" ;
+    ns1:unicodeCodepoint "U+120BC" ;
+    ns1:unicodeRepresentation "𒂼" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555364> .
 

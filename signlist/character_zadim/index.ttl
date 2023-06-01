@@ -1,24 +1,24 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_zadim> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_zadim> a ns2:Grapheme ;
     rdfs:label "Character: ZADIM (MUG-gunû)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_zadim_sense_stone_cutter__za_dim2> ;
-    ns1:abzl "011" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_zadim_reading_mug@g>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_zadim_sense_stone_cutter__za_dim2> ;
+    ns2:abzl "011" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_zadim_reading_mug@g>,
         <https://situx.github.io/cuneiformontology/signlist/character_zadim_reading_ut_u4>,
         <https://situx.github.io/cuneiformontology/signlist/character_zadim_reading_uttu4>,
         <https://situx.github.io/cuneiformontology/signlist/character_zadim_reading_zadim> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gunû>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gunû>,
         <https://situx.github.io/cuneiformontology/signlist/character_zadim_mug> ;
-    ns1:labat "4" ;
-    ns1:meszl "13" ;
-    ns1:obo "11" ;
-    ns1:signName "ZADIM (MUG-gunû)" ;
-    ns1:slha "004" ;
-    ns1:unicodeCodepoint "U+1222F" ;
-    ns1:unicodeRepresentation "𒈯" ;
+    ns2:labat "4" ;
+    ns2:meszl "13" ;
+    ns2:obo "11" ;
+    ns2:signName "ZADIM (MUG-gunû)" ;
+    ns2:slha "004" ;
+    ns2:unicodeCodepoint "U+1222F" ;
+    ns2:unicodeRepresentation "𒈯" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556117> .
 

@@ -1,16 +1,16 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://www.purl.org/cuneiform#> .
-@prefix ns2: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
 @prefix ns3: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/o147/O147_bottom_line1_char1_glyph> a ns2:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/o147/O147_bottom_line1_char1_glyph> a ns1:TX9_Glyph ;
     rdfs:label "Glyph at O147 obverse side line 14 char 1"@en,
         "Glyph at O147[bottom 1 1])"@en ;
-    ns2:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line1_char1_charocc> ;
-    ns2:TXP8_is_component_of ns1:O147_writtenText ;
-    ns1:isDamaged false ;
+    ns1:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_bottom_line1_char1_charocc> ;
+    ns1:TXP8_is_component_of ns2:O147_writtenText ;
+    ns2:isDamaged false ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/o147/O147_bottom_line1_char2_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_1_1_%5B…%5D_O147_A_color_bottom.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/o147/images/character/char_1_1_%5B…%5D_O147_A_shaded_bottom.jpg"^^xsd:anyURI,

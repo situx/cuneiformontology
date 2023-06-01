@@ -1,22 +1,22 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://www.purl.org/cuneiform#> .
-@prefix ns3: <https://situx.github.io/cuneiformontology/examples/signlist/> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns3: <http://www.purl.org/cuneiform#> .
 @prefix ns4: <https://situx.github.io/cuneiformontology/examples/tch92/> .
-@prefix ns5: <http://lemon-model.net/lemon#> .
+@prefix ns5: <https://situx.github.io/cuneiformontology/examples/signlist/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ns3:character_3\(disz\) a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_3\(disz\) a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: 3(disz)"@en .
 
-ns3:character_3\(disz\)_reading_3\(disz\) a ns1:GraphemeReading ;
+ns5:character_3\(disz\)_reading_3\(disz\) a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading 3(disz): 3(disz)"@en ;
     ns1:readingValue "3(disz)" .
 
-ns3:character_5\(disz\) a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_5\(disz\) a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: 5(disz)"@en .
 
-ns3:character_DISZ a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_DISZ a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: DISZ"@en ;
     ns1:abzl 390 ;
     ns1:hasUnicodeCodePoint "U+12079" ;
@@ -26,14 +26,14 @@ ns3:character_DISZ a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "DISZ" ;
     ns1:slha 480 .
 
-ns3:character_DISZ_reading_1\(disz\) a ns1:GraphemeReading ;
+ns5:character_DISZ_reading_1\(disz\) a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading DISZ: 1(disz)"@en .
 
-ns3:character_a a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_a a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: A"@en ;
-    ns5:writtenRep "𒀀" ;
-    ns2:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char2> ;
-    ns2:transliteration "a" ;
+    ns2:writtenRep "𒀀" ;
+    ns3:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char2> ;
+    ns3:transliteration "a" ;
     ns1:abzl 470 ;
     ns1:hasUnicodeCodePoint "U+12000" ;
     ns1:hasUnicodeRepresentation "𒀀" ;
@@ -43,11 +43,11 @@ ns3:character_a a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "A" ;
     ns1:slha 579 ;
     ns1:variant <https://situx.github.io/cuneiformontology/examples/ht073195/a_charvariant1>,
-        ns3:character_a_reading_a,
+        ns5:character_a_reading_a,
         <https://situx.github.io/cuneiformontology/signlist/a_charvariant1> ;
-    ns4:hasGraphemeReading ns3:character_a_reading_a .
+    ns4:hasGraphemeReading ns5:character_a_reading_a .
 
-ns3:character_al a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_al a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: AL"@en ;
     ns1:abzl 108 ;
     ns1:hasUnicodeCodePoint "U+12020" ;
@@ -57,11 +57,11 @@ ns3:character_al a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "AL" ;
     ns1:slha 298 .
 
-ns3:character_al_reading_al a ns1:GraphemeReading ;
+ns5:character_al_reading_al a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading AL: al"@en ;
     ns1:readingValue "al" .
 
-ns3:character_am a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_am a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: AM"@en ;
     ns1:abzl 119 ;
     ns1:hasUnicodeCodePoint "U+12120" ;
@@ -71,11 +71,11 @@ ns3:character_am a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "AM" ;
     ns1:slha 170 .
 
-ns3:character_am_reading_am a ns1:GraphemeReading ;
+ns5:character_am_reading_am a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading AM: am"@en ;
     ns1:readingValue "am" .
 
-ns3:character_an a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_an a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: AN"@en ;
     ns1:abzl "009"^^ns1:asciiTransliterationLiteral,
         9 ;
@@ -87,13 +87,13 @@ ns3:character_an a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "AN" ;
     ns1:slha "013"^^ns1:asciiTransliterationLiteral,
         13 ;
-    ns3:hasGraphemeReading ns3:character_an_reading_d,
-        ns3:character_an_reading_dingir .
+    ns5:hasGraphemeReading ns5:character_an_reading_d,
+        ns5:character_an_reading_dingir .
 
-ns3:character_an_reading_an a ns1:GraphemeReading ;
+ns5:character_an_reading_an a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading AN: an"@en .
 
-ns3:character_ansze a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_ansze a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: ANSZE"@en ;
     ns1:abzl 292 ;
     ns1:hasUnicodeCodePoint "U+12032" ;
@@ -103,11 +103,11 @@ ns3:character_ansze a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "ANSZE" ;
     ns1:slha 208 .
 
-ns3:character_ansze_reading_ansze a ns1:GraphemeReading ;
+ns5:character_ansze_reading_ansze a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading ANSZE: ansze"@en ;
     ns1:readingValue "ansze" .
 
-ns3:character_asz2 a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_asz2 a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: ASZ2"@en ;
     ns1:abzl 211 ;
     ns1:hasUnicodeCodePoint "U+1203E" ;
@@ -117,11 +117,11 @@ ns3:character_asz2 a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "ASZ2" ;
     ns1:slha 339 .
 
-ns3:character_asz2_reading_asz2 a ns1:GraphemeReading ;
+ns5:character_asz2_reading_asz2 a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading ASZ2: asz2"@en ;
     ns1:readingValue "asz2" .
 
-ns3:character_ba a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_ba a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: BA"@en ;
     ns1:abzl 303 ;
     ns1:hasUnicodeCodePoint "U+12040" ;
@@ -132,11 +132,11 @@ ns3:character_ba a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:slha 5 ;
     ns1:variant <https://situx.github.io/cuneiformontology/signlist/ba_charvariant1> .
 
-ns3:character_ba_reading_ba a ns1:GraphemeReading ;
+ns5:character_ba_reading_ba a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading BA: ba"@en ;
     ns1:readingValue "ba" .
 
-ns3:character_bad a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_bad a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: BAD"@en ;
     ns1:abzl 25 ;
     ns1:hasUnicodeCodePoint "U+12041" ;
@@ -146,11 +146,11 @@ ns3:character_bad a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "BAD" ;
     ns1:slha 69 .
 
-ns3:character_bad_reading_be a ns1:GraphemeReading ;
+ns5:character_bad_reading_be a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading BAD: be"@en ;
     ns1:readingValue "be" .
 
-ns3:character_ban a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_ban a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: BAN"@en ;
     ns1:abzl 29 ;
     ns1:hasUnicodeCodePoint "U+1244F" ;
@@ -160,11 +160,11 @@ ns3:character_ban a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "BAN2"^^ns1:asciiTransliterationLiteral ;
     ns1:slha 74 .
 
-ns3:character_ban_reading_ban a ns1:GraphemeReading ;
+ns5:character_ban_reading_ban a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading BAN: ban"@en ;
     ns1:readingValue "ban" .
 
-ns3:character_bi a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_bi a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: BI"@en ;
     ns1:abzl 79 ;
     ns1:hasUnicodeCodePoint "U+12049" ;
@@ -175,11 +175,11 @@ ns3:character_bi a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "BI" ;
     ns1:slha 214 .
 
-ns3:character_bi_reading_bi a ns1:GraphemeReading ;
+ns5:character_bi_reading_bi a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading BI: bi"@en ;
     ns1:readingValue "bi" .
 
-ns3:character_bu a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_bu a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: BU"@en ;
     ns1:abzl 265 ;
     ns1:hasUnicodeCodePoint "U+1204D" ;
@@ -189,29 +189,27 @@ ns3:character_bu a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "BU" ;
     ns1:slha 371 .
 
-ns3:character_bu_reading_bu a ns1:GraphemeReading ;
+ns5:character_bu_reading_bu a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading BU: bu"@en ;
     ns1:readingValue "bu" .
 
-ns3:character_da a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_da a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: DA"@en ;
     ns1:abzl 229 ;
+    ns1:hasGraphemeReading ns5:character_da_reading_da ;
     ns1:hasUnicodeCodePoint "U+12055" ;
     ns1:hasUnicodeRepresentation "𒁕" ;
     ns1:hethzl 214 ;
     ns1:meszl 561 ;
     ns1:signName "DA" ;
-    ns1:slha 335 .
+    ns1:slha 335 ;
+    ns1:variant <https://situx.github.io/cuneiformontology/examples/hs1174/da_charvariant1> .
 
-ns3:character_da_reading_da a ns1:GraphemeReading ;
-    rdfs:label "Grapheme Reading DA: da"@en ;
-    ns1:readingValue "da" .
-
-ns3:character_da_reading_t_a a ns1:GraphemeReading ;
+ns5:character_da_reading_t_a a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading DA: t,a"@en ;
     ns1:readingValue "t,a" .
 
-ns3:character_dam a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_dam a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: DAM"@en ;
     ns1:abzl 454 ;
     ns1:hasUnicodeCodePoint "U+1206E" ;
@@ -221,11 +219,11 @@ ns3:character_dam a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "DAM" ;
     ns1:slha 557 .
 
-ns3:character_dam_reading_dam a ns1:GraphemeReading ;
+ns5:character_dam_reading_dam a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading DAM: dam"@en ;
     ns1:readingValue "dam" .
 
-ns3:character_dar a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_dar a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: DAR"@en ;
     ns1:abzl 37 ;
     ns1:hasUnicodeCodePoint "U+1206F" ;
@@ -235,11 +233,11 @@ ns3:character_dar a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "DAR" ;
     ns1:slha 113 .
 
-ns3:character_dar_reading_tar2 a ns1:GraphemeReading ;
+ns5:character_dar_reading_tar2 a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading DAR: tar2"@en ;
     ns1:readingValue "tar2" .
 
-ns3:character_du a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_du a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: DU"@en ;
     ns1:abzl 64,
         197 ;
@@ -250,11 +248,11 @@ ns3:character_du a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "DU" ;
     ns1:slha 206 .
 
-ns3:character_du_reading_du a ns1:GraphemeReading ;
+ns5:character_du_reading_du a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading DU: du"@en ;
     ns1:readingValue "du" .
 
-ns3:character_dumu a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_dumu a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: DUMU"@en,
         "Character: Dumu"@en ;
     ns1:abzl 393 ;
@@ -265,11 +263,11 @@ ns3:character_dumu a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "dumu" ;
     ns1:slha 144 .
 
-ns3:character_dumu_reading_dumu a ns1:GraphemeReading ;
+ns5:character_dumu_reading_dumu a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading DUMU: dumu"@en ;
     ns1:readingValue "dumu" .
 
-ns3:character_el a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_el a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: EL"@en ;
     ns1:abzl 455 ;
     ns1:hasUnicodeCodePoint "U+12096" ;
@@ -279,11 +277,11 @@ ns3:character_el a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "EL" ;
     ns1:slha 564 .
 
-ns3:character_el_reading_el a ns1:GraphemeReading ;
+ns5:character_el_reading_el a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading EL: el"@en ;
     ns1:readingValue "el" .
 
-ns3:character_en a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_en a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: EN"@en ;
     ns1:abzl 62 ;
     ns1:hasUnicodeCodePoint "U+12097" ;
@@ -292,7 +290,7 @@ ns3:character_en a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:meszl 164 ;
     ns1:slha 99 .
 
-ns3:character_erin2 a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_erin2 a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: ERIN2"@en ;
     ns1:abzl 247 ;
     ns1:hasUnicodeCodePoint "U+1209F" ;
@@ -302,11 +300,11 @@ ns3:character_erin2 a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "ERIN2" ;
     ns1:slha 393 .
 
-ns3:character_erin2_reading_pir2 a ns1:GraphemeReading ;
+ns5:character_erin2_reading_pir2 a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading ERIN2: PIR2"@en ;
     ns1:readingValue "pir2" .
 
-ns3:character_gab a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_gab a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: GAB"@en ;
     ns1:abzl 141 ;
     ns1:hasUnicodeCodePoint "U+120EE" ;
@@ -316,28 +314,28 @@ ns3:character_gab a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "GAB" ;
     ns1:slha 167 .
 
-ns3:character_gab_reading_gaba a ns1:GraphemeReading ;
+ns5:character_gab_reading_gaba a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading GAB: gaba"@en ;
     ns1:readingValue "gaba" .
 
-ns3:character_gaba a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_gaba a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: Gaba"@en ;
     ns1:hasUnicodeCodePoint "U+120EE" ;
     ns1:hasUnicodeRepresentation "𒃮" ;
     ns1:signName "GABA" .
 
-ns3:character_ge23 a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_ge23 a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: GE23"@en ;
     ns1:altSignName "DISZ-tenu" ;
-    ns1:hasGraphemeReading ns3:character_ge23_reading_isz8 ;
+    ns1:hasGraphemeReading ns5:character_ge23_reading_isz8 ;
     ns1:hasUnicodeCodePoint "U+12039" ;
     ns1:hasUnicodeRepresentation "𒀹" ;
     ns1:meszl 575 ;
     ns1:signName "GE23" ;
     ns1:slha 360 ;
-    ns3:hasGraphemeReading ns3:character_ge23_reading_isz8 .
+    ns5:hasGraphemeReading ns5:character_ge23_reading_isz8 .
 
-ns3:character_gul a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_gul a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: GUL"@en ;
     ns1:abzl 343 ;
     ns1:hasUnicodeCodePoint "U+12122" ;
@@ -347,11 +345,11 @@ ns3:character_gul a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "GUL" ;
     ns1:slha 429 .
 
-ns3:character_gul_reading_kul2 a ns1:GraphemeReading ;
+ns5:character_gul_reading_kul2 a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading GUL: kul2"@en ;
     ns1:readingValue "kul2" .
 
-ns3:character_ha a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_ha a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: HA"@en ;
     ns1:abzl 475 ;
     ns1:hasUnicodeCodePoint "U+12129" ;
@@ -361,11 +359,11 @@ ns3:character_ha a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "HA" ;
     ns1:slha 589 .
 
-ns3:character_ha_reading_ha a ns1:GraphemeReading ;
+ns5:character_ha_reading_ha a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading HA: ha"@en ;
     ns1:readingValue "ha" .
 
-ns3:character_ia a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_ia a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: IA"@en ;
     ns1:abzl 193 ;
     ns1:hasUnicodeCodePoint "U+12140" ;
@@ -375,11 +373,11 @@ ns3:character_ia a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "IA" ;
     ns1:slha "142a" .
 
-ns3:character_ia_reading_ia a ns1:GraphemeReading ;
+ns5:character_ia_reading_ia a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading IA: ia"@en ;
     ns1:readingValue "ia" .
 
-ns3:character_ib a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_ib a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: IB"@en ;
     ns1:abzl 394 ;
     ns1:hasUnicodeCodePoint "U+12141" ;
@@ -389,16 +387,16 @@ ns3:character_ib a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "IB"^^ns1:asciiTransliterationLiteral ;
     ns1:slha 535 .
 
-ns3:character_ib_reading_urta a ns1:GraphemeReading ;
+ns5:character_ib_reading_urta a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading IB: URTA"@en ;
     ns1:readingValue "urta" .
 
-ns3:character_igi a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_igi a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: IGI"@en ;
     ns1:abzl 233 ;
     ns1:altSignName "LIM",
         "SZI" ;
-    ns1:hasGraphemeReading ns3:character_igi_reading_igi ;
+    ns1:hasGraphemeReading ns5:character_igi_reading_igi ;
     ns1:hasUnicodeCodePoint "U+12146" ;
     ns1:hasUnicodeRepresentation "𒅆" ;
     ns1:hethzl 288 ;
@@ -406,11 +404,11 @@ ns3:character_igi a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "IGI" ;
     ns1:slha 449 .
 
-ns3:character_igi_reading_szi a ns1:GraphemeReading ;
+ns5:character_igi_reading_szi a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading IGI: szi"@en ;
     ns1:readingValue "szi" .
 
-ns3:character_il a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_il a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: IL"@en ;
     ns1:abzl 78 ;
     ns1:hasUnicodeCodePoint "U+1214B" ;
@@ -420,11 +418,11 @@ ns3:character_il a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "IL" ;
     ns1:slha 205 .
 
-ns3:character_il_reading_il a ns1:GraphemeReading ;
+ns5:character_il_reading_il a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading IL: il"@en ;
     ns1:readingValue "il" .
 
-ns3:character_im a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_im a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: IM"@en ;
     ns1:abzl 297 ;
     ns1:hasUnicodeCodePoint "U+1214E" ;
@@ -434,15 +432,15 @@ ns3:character_im a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "IM" ;
     ns1:slha 399 .
 
-ns3:character_im_reading_im a ns1:GraphemeReading ;
+ns5:character_im_reading_im a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading IM: im"@en ;
     ns1:readingValue "im" .
 
-ns3:character_ka a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_ka a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: KA"@en ;
     ns1:abzl 312 ;
-    ns1:hasGraphemeReading ns3:character_ka_reading_inim,
-        ns3:character_ka_reading_pi4 ;
+    ns1:hasGraphemeReading ns5:character_ka_reading_inim,
+        ns5:character_ka_reading_pi4 ;
     ns1:hasUnicodeCodePoint "U+12157" ;
     ns1:hasUnicodeRepresentation "𒅗" ;
     ns1:hethzl 133 ;
@@ -450,16 +448,16 @@ ns3:character_ka a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "KA" ;
     ns1:slha 15 .
 
-ns3:character_kabi a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_kabi a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: KABI"@en ;
     ns1:hasUnicodeCodePoint "U+1215F" ;
     ns1:hasUnicodeRepresentation "𒅟" .
 
-ns3:character_kabi_reading_ka a ns1:GraphemeReading ;
+ns5:character_kabi_reading_ka a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading KABI: ka"@en ;
     ns1:readingValue "ka" .
 
-ns3:character_kam a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_kam a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: KAM"@en ;
     ns1:abzl 279 ;
     ns1:altSignName "H,I.BAD" ;
@@ -470,16 +468,16 @@ ns3:character_kam a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "KAM" ;
     ns1:slha "406v1" .
 
-ns3:character_karcomp a ns1:GraphemeComposition ;
+ns5:character_karcomp a ns1:GraphemeComposition ;
     rdfs:label "Character Composition: KAR"@en ;
     ns1:hasUnicodeRepresentation "𒋼𒀀" ;
     ns1:signName "KAR" .
 
-ns3:character_karcomp_reading_kar a ns1:GraphemeReading ;
+ns5:character_karcomp_reading_kar a ns1:GraphemeReading ;
     rdfs:label "Grapheme Composition Reading KAR: kar"@en ;
     ns1:readingValue "kar" .
 
-ns3:character_ki a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_ki a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: KI"@en ;
     ns1:abzl 432 ;
     ns1:hasUnicodeCodePoint "U+121A0" ;
@@ -489,11 +487,11 @@ ns3:character_ki a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "KI" ;
     ns1:slha 461 .
 
-ns3:character_ki_reading_ki a ns1:GraphemeReading ;
+ns5:character_ki_reading_ki a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading KI: ki"@en ;
     ns1:readingValue "ki" .
 
-ns3:character_kin a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_kin a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: KIN"@en ;
     ns1:abzl 447 ;
     ns1:hasUnicodeCodePoint "U+121A5" ;
@@ -503,26 +501,26 @@ ns3:character_kin a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "KIN" ;
     ns1:slha 538 .
 
-ns3:character_kin_reading_kin a ns1:GraphemeReading ;
+ns5:character_kin_reading_kin a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading KIN: kin"@en ;
     ns1:readingValue "kin" .
 
-ns3:character_kin_reading_qi a ns1:GraphemeReading ;
+ns5:character_kin_reading_qi a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading KIN: QI"@en ;
     ns1:readingValue "qi" .
 
-ns3:character_ku a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_ku a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: KU"@en ;
     ns1:hasUnicodeCodePoint "U+121AA" ;
     ns1:hasUnicodeRepresentation "𒆪" ;
     ns1:meszl 808 ;
     ns1:signName "KU" .
 
-ns3:character_ku_reading_ku a ns1:GraphemeReading ;
+ns5:character_ku_reading_ku a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading KU: ku"@en ;
     ns1:readingValue "ku" .
 
-ns3:character_la a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_la a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: LA"@en ;
     ns1:abzl 177 ;
     ns1:hasUnicodeCodePoint "U+121B7" ;
@@ -532,11 +530,11 @@ ns3:character_la a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "LA" ;
     ns1:slha 55 .
 
-ns3:character_la_reading_la a ns1:GraphemeReading ;
+ns5:character_la_reading_la a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading LA: la"@en ;
     ns1:readingValue "la" .
 
-ns3:character_li a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_li a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: LI"@en ;
     ns1:abzl 381 ;
     ns1:hasUnicodeCodePoint "U+121F7" ;
@@ -545,11 +543,11 @@ ns3:character_li a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:meszl 85 ;
     ns1:slha 59 .
 
-ns3:character_li_reading_li a ns1:GraphemeReading ;
+ns5:character_li_reading_li a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading LI: li"@en ;
     ns1:readingValue "li" .
 
-ns3:character_lu2 a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_lu2 a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: LU2"@en ;
     ns1:abzl 253 ;
     ns1:hasUnicodeCodePoint "U+121FD" ;
@@ -558,21 +556,23 @@ ns3:character_lu2 a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:meszl 514 ;
     ns1:slha 330 .
 
-ns3:character_ma a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_ma a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: MA"@en ;
     ns1:abzl 166 ;
-    ns1:hasGraphemeReading ns3:character_ma_reading_ma ;
     ns1:hasUnicodeCodePoint "U+12220" ;
     ns1:hasUnicodeRepresentation "𒈠" ;
     ns1:hethzl 208 ;
     ns1:meszl 552 ;
     ns1:signName "MA" ;
-    ns1:slha 342 ;
-    ns1:variant <https://situx.github.io/cuneiformontology/examples/hs1174/ma_charvariant1> .
+    ns1:slha 342 .
 
-ns3:character_mar a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_ma_reading_ma a ns1:GraphemeReading ;
+    rdfs:label "Grapheme Reading MA: ma"@en ;
+    ns1:readingValue "ma" .
+
+ns5:character_mar a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: MAR"@en ;
-    ns2:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char3> ;
+    ns3:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char3> ;
     ns1:abzl 144 ;
     ns1:hasUnicodeCodePoint "U+12225" ;
     ns1:hasUnicodeRepresentation "𒈥" ;
@@ -581,11 +581,11 @@ ns3:character_mar a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "MAR" ;
     ns1:slha 307 .
 
-ns3:character_mar_reading_mar a ns1:GraphemeReading ;
+ns5:character_mar_reading_mar a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading MAR: mar"@en ;
     ns1:readingValue "mar" .
 
-ns3:character_masz a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_masz a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: MASZ"@en ;
     ns1:abzl 29 ;
     ns1:hasUnicodeCodePoint "U+12226" ;
@@ -595,18 +595,18 @@ ns3:character_masz a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "MASZ" ;
     ns1:slha 74 .
 
-ns3:character_masz_reading_1_2\(disz\) a ns1:GraphemeReading ;
+ns5:character_masz_reading_1_2\(disz\) a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading MASZ: 1/2(disz)"@en ;
     ns1:readingValue "1/2(disz)" .
 
-ns3:character_masz_reading_masz a ns1:GraphemeReading ;
+ns5:character_masz_reading_masz a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading MASZ: masz"@en ;
     ns1:readingValue "masz" .
 
-ns3:character_me a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_me a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: ME"@en ;
-    ns2:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char4> ;
-    ns2:transliteration "ME" ;
+    ns3:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char4> ;
+    ns3:transliteration "ME" ;
     ns1:abzl 392 ;
     ns1:hasUnicodeCodePoint "U+12228" ;
     ns1:hasUnicodeRepresentation "𒈨" ;
@@ -616,7 +616,7 @@ ns3:character_me a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:slha 532 ;
     ns1:variant <https://situx.github.io/cuneiformontology/examples/ht073195/me_charvariant1> .
 
-ns3:character_mi a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_mi a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: MI"@en ;
     ns1:abzl 348 ;
     ns1:hasUnicodeCodePoint "U+1222A" ;
@@ -626,7 +626,7 @@ ns3:character_mi a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "MI" ;
     ns1:slha 427 .
 
-ns3:character_mi_reading_mi a ns1:GraphemeReading ;
+ns5:character_mi_reading_mi a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading MI: mi"@en ;
     ns1:readingValue "mi" .
 
@@ -634,35 +634,35 @@ ns3:character_mi_reading_mi a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading MI: S,IL2"@en ;
     ns1:readingValue "s,il2" .
 
-ns3:character_min a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_min a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: MIN"@en ;
     ns1:hasUnicodeCodePoint "U+1222B" ;
     ns1:hasUnicodeRepresentation "𒈫" ;
     ns1:signName "MIN" .
 
-ns3:character_min_reading_2\(disz\) a ns1:GraphemeReading ;
+ns5:character_min_reading_2\(disz\) a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading MIN: 2(disz)"@en ;
     ns1:readingValue "2(disz)" .
 
-ns3:character_min_reading_min a ns1:GraphemeReading ;
+ns5:character_min_reading_min a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading MIN: min"@en ;
     ns1:readingValue "min" .
 
-ns3:character_munus a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_munus a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: munus"@en ;
     ns1:hasUnicodeCodePoint "U+122A9" ;
     ns1:hasUnicodeRepresentation "𒊩" ;
     ns1:signName "munus" .
 
-ns3:character_munus_reading_f a ns1:GraphemeReading ;
+ns5:character_munus_reading_f a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading MUNUS: f"@en ;
     ns1:readingValue "f" .
 
-ns3:character_munus_reading_munus a ns1:GraphemeReading ;
+ns5:character_munus_reading_munus a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading MUNUS: munus"@en ;
     ns1:readingValue "munus" .
 
-ns3:character_na a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_na a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: NA"@en ;
     ns1:abzl 24 ;
     ns1:hasUnicodeCodePoint "U+1223E" ;
@@ -672,11 +672,11 @@ ns3:character_na a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "NA" ;
     ns1:slha 70 .
 
-ns3:character_na_reading_na a ns1:GraphemeReading ;
+ns5:character_na_reading_na a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading NA: na"@en ;
     ns1:readingValue "na" .
 
-ns3:character_nab a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_nab a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: NAB"@en ;
     ns1:altSignName "AN over AN" ;
     ns1:hasUnicodeCodePoint "U+1202E" ;
@@ -686,23 +686,23 @@ ns3:character_nab a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "NAB" ;
     ns1:slha 129 .
 
-ns3:character_nab_reading_nap a ns1:GraphemeReading ;
+ns5:character_nab_reading_nap a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading NAB: NAP"@en ;
     ns1:readingValue "nap" .
 
-ns3:character_ne a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_ne a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: NE"@en ;
     ns1:abzl 116 ;
-    ns1:hasGraphemeReading ns3:character_ne_reading_de3 ;
+    ns1:hasGraphemeReading ns5:character_ne_reading_de3 ;
     ns1:hasUnicodeCodePoint "U+12248" ;
     ns1:hasUnicodeRepresentation "𒉈" ;
     ns1:hethzl 169 ;
     ns1:meszl 313 ;
     ns1:signName "NE" ;
     ns1:slha 172 ;
-    ns3:hasGraphemeReading ns3:character_ne_reading_ne .
+    ns5:hasGraphemeReading ns5:character_ne_reading_ne .
 
-ns3:character_nig2 a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_nig2 a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: NIG2"@en ;
     ns1:abzl 473 ;
     ns1:altSignName "GAR",
@@ -714,14 +714,14 @@ ns3:character_nig2 a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "NIG2" ;
     ns1:slha 597 .
 
-ns3:character_nig2_reading_sza2 a ns1:GraphemeReading ;
+ns5:character_nig2_reading_sza2 a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading NIG2: sza2"@en ;
     ns1:readingValue "sza2" .
 
-ns3:character_nigida a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_nigida a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: NIGIDA"@en .
 
-ns3:character_pi a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_pi a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: PI"@en ;
     ns1:abzl 370 ;
     ns1:hasUnicodeCodePoint "U+1227F" ;
@@ -731,11 +731,11 @@ ns3:character_pi a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "PI" ;
     ns1:slha 383 .
 
-ns3:character_pi_reading_pi a ns1:GraphemeReading ;
+ns5:character_pi_reading_pi a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading PI: pi"@en ;
     ns1:readingValue "pi" .
 
-ns3:character_ra a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_ra a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: RA"@en ;
     ns1:abzl 192 ;
     ns1:hasUnicodeCodePoint "U+1228F" ;
@@ -745,11 +745,11 @@ ns3:character_ra a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "RA" ;
     ns1:slha 328 .
 
-ns3:character_ra_reading_ra a ns1:GraphemeReading ;
+ns5:character_ra_reading_ra a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading RA: ra"@en ;
     ns1:readingValue "ra" .
 
-ns3:character_ri a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_ri a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: RI"@en ;
     ns1:abzl 39 ;
     ns1:hasUnicodeCodePoint "U+12291",
@@ -760,14 +760,14 @@ ns3:character_ri a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:meszl 142 ;
     ns1:signName "RI" ;
     ns1:slha 86 ;
-    ns3:hasGraphemeReading ns3:character_ri_reading_re,
-        ns3:character_ri_reading_tal .
+    ns5:hasGraphemeReading ns5:character_ri_reading_re,
+        ns5:character_ri_reading_tal .
 
-ns3:character_ri_reading_ri a ns1:GraphemeReading ;
+ns5:character_ri_reading_ri a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading RI: ri"@en ;
     ns1:readingValue "ri" .
 
-ns3:character_ru a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_ru a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: RU"@en ;
     ns1:abzl 60 ;
     ns1:hasUnicodeCodePoint "U+12292" ;
@@ -776,7 +776,7 @@ ns3:character_ru a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:meszl 111 ;
     ns1:slha 68 .
 
-ns3:character_sar a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_sar a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: SAR"@en ;
     ns1:abzl 385 ;
     ns1:hasUnicodeCodePoint "U+122AC" ;
@@ -787,13 +787,13 @@ ns3:character_sar a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:slha "152iv",
         "331e" .
 
-ns3:character_sar_reading_sar a ns1:GraphemeReading ;
+ns5:character_sar_reading_sar a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading SAR: sar"@en,
         "Grapheme Reading SAR: szar"@en ;
     ns1:readingValue "sar",
         "szar" .
 
-ns3:character_si a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_si a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: SI"@en ;
     ns1:abzl 164 ;
     ns1:hasUnicodeCodePoint "U+122DB" ;
@@ -803,21 +803,21 @@ ns3:character_si a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "SI" ;
     ns1:slha 112 .
 
-ns3:character_si_reading_si a ns1:GraphemeReading ;
+ns5:character_si_reading_si a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading SI: si"@en ;
     ns1:readingValue "si" .
 
-ns3:character_sila3 a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_sila3 a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: SILA3"@en ;
     ns1:hasUnicodeCodePoint "U+122E1" ;
     ns1:hasUnicodeRepresentation "𒋡" ;
     ns1:signName "SILA3" .
 
-ns3:character_sila3_reading_sila3 a ns1:GraphemeReading ;
+ns5:character_sila3_reading_sila3 a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading SILA3: SILA3"@en ;
     ns1:readingValue "sila3" .
 
-ns3:character_su a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_su a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: SU"@en ;
     ns1:abzl 305 ;
     ns1:hasUnicodeCodePoint "U+122E2" ;
@@ -827,11 +827,11 @@ ns3:character_su a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "SU" ;
     ns1:slha 7 .
 
-ns3:character_su_reading_su a ns1:GraphemeReading ;
+ns5:character_su_reading_su a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading SU: su"@en ;
     ns1:readingValue "su" .
 
-ns3:character_sza a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_sza a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: SZA"@en ;
     ns1:abzl 203 ;
     ns1:hasUnicodeCodePoint "U+122AD" ;
@@ -841,25 +841,25 @@ ns3:character_sza a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "SZA" ;
     ns1:slha 353 .
 
-ns3:character_sza_reading_sza a ns1:GraphemeReading ;
+ns5:character_sza_reading_sza a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading SZA: sza"@en ;
     ns1:readingValue "sza" .
 
-ns3:character_sze a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_sze a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: SZE"@en ;
     ns1:hasUnicodeCodePoint "U+122BA" ;
     ns1:hasUnicodeRepresentation "𒊺" ;
     ns1:signName "sze" .
 
-ns3:character_sze_reading_sze a ns1:GraphemeReading ;
+ns5:character_sze_reading_sze a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading SZE: sze"@en ;
     ns1:readingValue "sze" .
 
-ns3:character_szu a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_szu a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: SZU"@en ;
-    ns2:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char1>,
+    ns3:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char1>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char7> ;
-    ns2:transliteration "szu" ;
+    ns3:transliteration "szu" ;
     ns1:abzl 225 ;
     ns1:hasUnicodeCodePoint "U+122D7" ;
     ns1:hasUnicodeRepresentation "𒋗" ;
@@ -868,11 +868,11 @@ ns3:character_szu a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "SZU" ;
     ns1:slha 354 .
 
-ns3:character_szu_reading_szu a ns1:GraphemeReading ;
+ns5:character_szu_reading_szu a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading SZU: szu"@en ;
     ns1:readingValue "szu" .
 
-ns3:character_tar a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_tar a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: TAR"@en ;
     ns1:abzl 231 ;
     ns1:hasUnicodeCodePoint "U+122FB" ;
@@ -882,10 +882,10 @@ ns3:character_tar a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "TAR" ;
     ns1:slha 12 .
 
-ns3:character_tar_reading_sil a ns1:GraphemeReading ;
+ns5:character_tar_reading_sil a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading TAR: SIL"@en .
 
-ns3:character_te a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_te a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: TE"@en ;
     ns1:abzl 289 ;
     ns1:hasUnicodeCodePoint "U+122FC" ;
@@ -894,11 +894,11 @@ ns3:character_te a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:meszl 589 ;
     ns1:slha 376 .
 
-ns3:character_te_reading_te a ns1:GraphemeReading ;
+ns5:character_te_reading_te a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading TE: te"@en ;
     ns1:readingValue "te" .
 
-ns3:character_tu a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_tu a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: TU"@en ;
     ns1:abzl 382 ;
     ns1:hasUnicodeCodePoint "U+12305" ;
@@ -908,11 +908,11 @@ ns3:character_tu a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "TU" ;
     ns1:slha 58 .
 
-ns3:character_tu_reading_tu a ns1:GraphemeReading ;
+ns5:character_tu_reading_tu a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading TU: tu"@en ;
     ns1:readingValue "tu" .
 
-ns3:character_um a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_um a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: UM"@en ;
     ns1:abzl 113 ;
     ns1:hasUnicodeCodePoint "U+1231D" ;
@@ -922,11 +922,11 @@ ns3:character_um a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:signName "UM" ;
     ns1:slha 134 .
 
-ns3:character_um_reading_um a ns1:GraphemeReading ;
+ns5:character_um_reading_um a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading UM: um"@en ;
     ns1:readingValue "um" .
 
-ns3:character_uz a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns5:character_uz a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: UZ"@en ;
     ns1:abzl 379 ;
     ns1:hasUnicodeCodePoint "U+122BB" ;
@@ -935,41 +935,41 @@ ns3:character_uz a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     ns1:meszl 583 ;
     ns1:slha 372 .
 
-ns3:character_uz_reading_us a ns1:GraphemeReading ;
+ns5:character_uz_reading_us a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading UZ: us"@en ;
     ns1:readingValue "us" .
 
-ns3:character_an_reading_d a ns1:GraphemeReading ;
+ns5:character_an_reading_d a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading AN: D"@en,
         "Grapheme Reading AN: d"@en ;
     ns1:readingValue "d" .
 
-ns3:character_an_reading_dingir a ns1:GraphemeReading ;
+ns5:character_an_reading_dingir a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading AN: Dingir"@en,
         "Grapheme Reading AN: dingir"@en ;
     ns1:readingValue "dingir"^^ns1:asciiTransliterationLiteral,
         "dingir" .
 
-ns3:character_ma_reading_ma a ns1:GraphemeReading ;
-    rdfs:label "Grapheme Reading MA: ma"@en ;
-    ns1:readingValue "ma" .
+ns5:character_da_reading_da a ns1:GraphemeReading ;
+    rdfs:label "Grapheme Reading DA: da"@en ;
+    ns1:readingValue "da" .
 
-ns3:character_ne_reading_ne a ns1:GraphemeReading ;
+ns5:character_ne_reading_ne a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading NE: NE"@en ;
     ns1:readingValue "NE" .
 
-ns3:character_ri_reading_re a ns1:GraphemeReading ;
+ns5:character_ri_reading_re a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading RI: RE"@en .
 
-ns3:character_ri_reading_tal a ns1:GraphemeReading ;
+ns5:character_ri_reading_tal a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading RI: TAL"@en ;
     ns1:readingValue "tal" .
 
-ns3:character_a_reading_a a ns1:GraphemeReading ;
+ns5:character_a_reading_a a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading A: a"@en ;
     ns1:readingValue "a" .
 
-ns3:character_ge23_reading_isz8 a ns1:GraphemeReading ;
+ns5:character_ge23_reading_isz8 a ns1:GraphemeReading ;
     rdfs:label "Grapheme Reading GE23: ISZ8"@en ;
     ns1:readingValue "isz8" .
 

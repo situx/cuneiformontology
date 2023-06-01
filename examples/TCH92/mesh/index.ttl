@@ -1,73 +1,73 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <http://www.wikidata.org/prop/direct/> .
-@prefix ns2: <http://www.gigamesh.eu/ont#> .
+@prefix ns1: <http://www.gigamesh.eu/ont#> .
+@prefix ns2: <http://www.wikidata.org/prop/direct/> .
 @prefix ns3: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1> a ns2:Mesh ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1> a ns1:Mesh ;
     rdfs:label "TCH92_mesh1"@en ;
     dcterms:contributor <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_contributor> ;
-    ns2:NaNVertices <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_NaNVertices> ;
-    ns2:amountOfConnectedComponents <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_connectedComponents> ;
-    ns2:borderFaces <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_borderFaces> ;
-    ns2:borderFacesBridgeTriConnection <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_borderFacesBridgeTriConnection> ;
-    ns2:borderVertices <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_borderVertices> ;
-    ns2:boundingBox <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_geom> ;
-    ns2:bridgeBorderFaces <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_bridgeBorderFaces> ;
-    ns2:circleCenterVertices <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_circleCenterVertices> ;
-    ns2:danglingBorderFaces <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_danglingBorderFaces> ;
-    ns2:finiteFunctionValueVertices <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_finiteFunctionValueVertices> ;
-    ns2:invertedFaces <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_invertedFaces> ;
-    ns2:localFunctionValueMaxVertices <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_localFunctionMaxValueVertices> ;
-    ns2:localFunctionValueMinVertices <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_localFunctionMinValueVertices> ;
-    ns2:manifoldFaces <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_manifoldFaces> ;
-    ns2:manuallyAddedVertices <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_manuallyAddedVertices> ;
-    ns2:nonManifoldFaces <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_nonManifoldFaces> ;
-    ns2:nonManifoldVertices <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_nonManifoldVertices> ;
-    ns2:selectedFaces <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_selectedFaces> ;
-    ns2:selectedVertices <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_selectedVertices> ;
-    ns2:singularVertices <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_singularVertices> ;
-    ns2:soloFaces <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_soloFaces> ;
-    ns2:stickyFaces <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_stickyFaces> ;
-    ns2:syntheticVertexFaces <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_syntheticVertexFaces> ;
-    ns2:syntheticVertices <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_syntheticVertices> ;
-    ns2:threeBorderVertexFaces <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_threeBorderVertexFaces> ;
-    ns2:totalArea <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalArea> ;
-    ns2:totalNumberOfFaces <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> ;
-    ns2:totalNumberOfVertices <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> ;
-    ns2:totalVolumeDX <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalVolumeX> ;
-    ns2:totalVolumeDY <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalVolumeY> ;
-    ns2:totalVolumeDZ <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalVolumeZ> ;
-    ns2:vertexIsolated <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_vertexIsolated> ;
-    ns2:vertexNormalLength <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_vertexNormalLength> ;
-    ns2:verticesOnInvertedEdge <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_verticesOnInvertedEdge> ;
-    ns2:verticesPartOfZeroAreaFace <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_verticesPartOfZeroAreaFace> ;
-    ns2:zeroAreaFaces <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_zeroAreaFaces> ;
+    ns1:NaNVertices <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_NaNVertices> ;
+    ns1:amountOfConnectedComponents <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_connectedComponents> ;
+    ns1:borderFaces <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_borderFaces> ;
+    ns1:borderFacesBridgeTriConnection <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_borderFacesBridgeTriConnection> ;
+    ns1:borderVertices <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_borderVertices> ;
+    ns1:boundingBox <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_geom> ;
+    ns1:bridgeBorderFaces <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_bridgeBorderFaces> ;
+    ns1:circleCenterVertices <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_circleCenterVertices> ;
+    ns1:danglingBorderFaces <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_danglingBorderFaces> ;
+    ns1:finiteFunctionValueVertices <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_finiteFunctionValueVertices> ;
+    ns1:invertedFaces <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_invertedFaces> ;
+    ns1:localFunctionValueMaxVertices <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_localFunctionMaxValueVertices> ;
+    ns1:localFunctionValueMinVertices <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_localFunctionMinValueVertices> ;
+    ns1:manifoldFaces <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_manifoldFaces> ;
+    ns1:manuallyAddedVertices <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_manuallyAddedVertices> ;
+    ns1:nonManifoldFaces <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_nonManifoldFaces> ;
+    ns1:nonManifoldVertices <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_nonManifoldVertices> ;
+    ns1:selectedFaces <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_selectedFaces> ;
+    ns1:selectedVertices <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_selectedVertices> ;
+    ns1:singularVertices <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_singularVertices> ;
+    ns1:soloFaces <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_soloFaces> ;
+    ns1:stickyFaces <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_stickyFaces> ;
+    ns1:syntheticVertexFaces <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_syntheticVertexFaces> ;
+    ns1:syntheticVertices <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_syntheticVertices> ;
+    ns1:threeBorderVertexFaces <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_threeBorderVertexFaces> ;
+    ns1:totalArea <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalArea> ;
+    ns1:totalNumberOfFaces <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> ;
+    ns1:totalNumberOfVertices <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> ;
+    ns1:totalVolumeDX <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalVolumeX> ;
+    ns1:totalVolumeDY <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalVolumeY> ;
+    ns1:totalVolumeDZ <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalVolumeZ> ;
+    ns1:vertexIsolated <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_vertexIsolated> ;
+    ns1:vertexNormalLength <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_vertexNormalLength> ;
+    ns1:verticesOnInvertedEdge <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_verticesOnInvertedEdge> ;
+    ns1:verticesPartOfZeroAreaFace <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_verticesPartOfZeroAreaFace> ;
+    ns1:zeroAreaFaces <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_zeroAreaFaces> ;
     geo:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_NaNVertices> a ns2:NaNVertices ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_NaNVertices> a ns1:NaNVertices ;
     rdfs:label "TCH92_mesh1 Amount of NaN Vertices"@en ;
     rdf:value 0 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_borderFaces> a ns2:BorderFaces ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_borderFaces> a ns1:BorderFaces ;
     rdfs:label "TCH92_mesh1 Amount of border faces"@en ;
     rdf:value 0 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_borderFacesBridgeTriConnection> a ns2:BorderFacesBridgeTriConnection ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_borderFacesBridgeTriConnection> a ns1:BorderFacesBridgeTriConnection ;
     rdfs:label "TCH92_mesh1 Amount of border faces with a bridge tri connection"@en ;
     rdf:value 0 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_borderVertices> a ns2:BorderVertices ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_borderVertices> a ns1:BorderVertices ;
     rdfs:label "TCH92_mesh1 Amount of Border Vertices"@en ;
     rdf:value 0 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
 
 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_boundingBoxHeight> ns3:hasUnit ns3:millimetre ;
     rdf:value 1.11e+01 .
@@ -78,17 +78,17 @@
 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_boundingBoxWidth> ns3:hasUnit ns3:millimetre ;
     rdf:value 8e+00 .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_bridgeBorderFaces> a ns2:BridgeBorderFaces ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_bridgeBorderFaces> a ns1:BridgeBorderFaces ;
     rdfs:label "TCH92_mesh1 Amount of bridge border faces"@en ;
     rdf:value 0 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_circleCenterVertices> a ns2:CircleCenterVertices ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_circleCenterVertices> a ns1:CircleCenterVertices ;
     rdfs:label "TCH92_mesh1 Amount of circle center vertices"@en ;
     rdf:value 0 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_connectedComponents> a ns2:ConnectedComponents ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_connectedComponents> a ns1:ConnectedComponents ;
     rdfs:label "TCH92_mesh1 Amount of connected components"@en ;
     rdf:value 0 .
 
@@ -96,104 +96,104 @@
     rdfs:label "TCH92_mesh1 Contributor"@en ;
     foaf:accountName "" .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_danglingBorderFaces> a ns2:DanglingBorderFaces ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_danglingBorderFaces> a ns1:DanglingBorderFaces ;
     rdfs:label "TCH92_mesh1 Amount of dangling border faces"@en ;
     rdf:value 0 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_finiteFunctionValueVertices> a ns2:FiniteFunctionValueVertices ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_finiteFunctionValueVertices> a ns1:FiniteFunctionValueVertices ;
     rdfs:label "TCH92_mesh1 Amount of finite function value vertices"@en ;
     rdf:value 4466245 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
 
 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_geom> a geo:Geometry ;
     rdfs:label "TCH92_mesh1 Bounding Box"@en ;
-    ns2:boundingBoxHeight <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_boundingBoxHeight> ;
-    ns2:boundingBoxThickness <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_boundingBoxThickness> ;
-    ns2:boundingBoxWidth <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_boundingBoxWidth> ;
-    ns2:maximumXCoordinate 3.98078e+01 ;
-    ns2:maximumYCoordinate 5.52546e+01 ;
-    ns2:maximumZCoordinate 1.26612e+01 ;
-    ns2:minimumXCoordinate -3.98078e+01 ;
-    ns2:minimumYCoordinate -5.52546e+01 ;
-    ns2:minimumZCoordinate -1.26612e+01 ;
+    ns1:boundingBoxHeight <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_boundingBoxHeight> ;
+    ns1:boundingBoxThickness <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_boundingBoxThickness> ;
+    ns1:boundingBoxWidth <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_boundingBoxWidth> ;
+    ns1:maximumXCoordinate 3.98078e+01 ;
+    ns1:maximumYCoordinate 5.52546e+01 ;
+    ns1:maximumZCoordinate 1.26612e+01 ;
+    ns1:minimumXCoordinate -3.98078e+01 ;
+    ns1:minimumYCoordinate -5.52546e+01 ;
+    ns1:minimumZCoordinate -1.26612e+01 ;
     geo:asWKT "ENVELOPE(-39.807800 -55.254600 -12.661200,39.807800 55.254600 12.661200)"^^geo:wktLiteral ;
     geo:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_invertedFaces> a ns2:InvertedFaces ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_invertedFaces> a ns1:InvertedFaces ;
     rdfs:label "TCH92_mesh1 Amount of inverted faces"@en ;
     rdf:value 0 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_localFunctionMaxValueVertices> a ns2:LocalFunctionMaxValueVertices ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_localFunctionMaxValueVertices> a ns1:LocalFunctionMaxValueVertices ;
     rdfs:label "TCH92_mesh1 Amount of local function maximum value vertices"@en ;
     rdf:value 223645 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_localFunctionMinValueVertices> a ns2:LocalFunctionMinValueVertices ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_localFunctionMinValueVertices> a ns1:LocalFunctionMinValueVertices ;
     rdfs:label "TCH92_mesh1 Amount of local function minimum value vertices"@en ;
     rdf:value 173363 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_manifoldFaces> a ns2:ManifoldFaces ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_manifoldFaces> a ns1:ManifoldFaces ;
     rdfs:label "TCH92_mesh1 Amount of manifold faces"@en ;
     rdf:value 8932486 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_manuallyAddedVertices> a ns2:ManuallyAddedVertices ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_manuallyAddedVertices> a ns1:ManuallyAddedVertices ;
     rdfs:label "TCH92_mesh1 Amount of manually added vertices"@en ;
     rdf:value 0 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_nonManifoldFaces> a ns2:NonManifoldFaces ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_nonManifoldFaces> a ns1:NonManifoldFaces ;
     rdfs:label "TCH92_mesh1 Amount of non-manifold faces"@en ;
     rdf:value 0 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_nonManifoldVertices> a ns2:NonManifoldVertices ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_nonManifoldVertices> a ns1:NonManifoldVertices ;
     rdfs:label "TCH92_mesh1 Amount of Non-Manifold Vertices"@en ;
     rdf:value 0 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_selectedFaces> a ns2:SelectedFaces ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_selectedFaces> a ns1:SelectedFaces ;
     rdfs:label "TCH92_mesh1 Amount of selected faces"@en ;
     rdf:value 0 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_selectedVertices> a ns2:SelectedVertices ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_selectedVertices> a ns1:SelectedVertices ;
     rdfs:label "TCH92_mesh1 Amount of selected vertices"@en ;
     rdf:value 0 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_singularVertices> a ns2:SingularVertices ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_singularVertices> a ns1:SingularVertices ;
     rdfs:label "TCH92_mesh1 Amount of Singular Vertices"@en ;
     rdf:value 0 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_soloFaces> a ns2:SoloFaces ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_soloFaces> a ns1:SoloFaces ;
     rdfs:label "TCH92_mesh1 Amount of solo faces"@en ;
     rdf:value 0 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_stickyFaces> a ns2:StickyFaces ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_stickyFaces> a ns1:StickyFaces ;
     rdfs:label "TCH92_mesh1 Amount of sticky faces"@en ;
     rdf:value 0 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_syntheticVertexFaces> a ns2:SyntheticVertexFaces ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_syntheticVertexFaces> a ns1:SyntheticVertexFaces ;
     rdfs:label "TCH92_mesh1 Amount of synthetic vertex faces"@en ;
     rdf:value 0 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_syntheticVertices> a ns2:SyntheticVertices ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_syntheticVertices> a ns1:SyntheticVertices ;
     rdfs:label "TCH92_mesh1 Amount of synthetic vertices"@en ;
     rdf:value 0 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_threeBorderVertexFaces> a ns2:ThreeBorderVertexFaces ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_threeBorderVertexFaces> a ns1:ThreeBorderVertexFaces ;
     rdfs:label "TCH92_mesh1 Amount of three border vertex faces"@en ;
     rdf:value 0 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> .
 
 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalArea> ns3:hasUnit ns3:squareMillimetre ;
     rdf:value 2.3442e+02 .
@@ -207,36 +207,36 @@
 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalVolumeZ> ns3:hasUnit ns3:cubicMillimetre ;
     rdf:value 1.407117e+05 .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_vertexIsolated> a ns2:VertexIsolated ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_vertexIsolated> a ns1:VertexIsolated ;
     rdfs:label "TCH92_mesh1 Isolated Vertices"@en ;
     rdf:value 0 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_vertexNormalLength> a ns2:VertexNormalLength ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_vertexNormalLength> a ns1:VertexNormalLength ;
     rdfs:label "TCH92_mesh1 Amount of Vertices with normal length"@en ;
     rdf:value 0 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_verticesOnInvertedEdge> a ns2:VerticesOnInvertedEdge ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_verticesOnInvertedEdge> a ns1:VerticesOnInvertedEdge ;
     rdfs:label "TCH92_mesh1 Amount of Vertices on inverted edges"@en ;
     rdf:value 0 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_verticesPartOfZeroAreaFace> a ns2:VerticesPartOfZeroAreaFace ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_verticesPartOfZeroAreaFace> a ns1:VerticesPartOfZeroAreaFace ;
     rdfs:label "TCH92_mesh1 Amount of Vertices which are part of zero area faces"@en ;
     rdf:value 0 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_zeroAreaFaces> a ns2:ZeroAreaFaces ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_zeroAreaFaces> a ns1:ZeroAreaFaces ;
     rdfs:label "TCH92_mesh1 Amount of zero area faces"@en ;
     rdf:value 0 ;
-    ns1:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> .
+    ns2:P361 <https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> a ns2:TotalNumberOfFaces ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfFaces> a ns1:TotalNumberOfFaces ;
     rdfs:label "TCH92_mesh1 Total number of faces"@en ;
     rdf:value 8932486 .
 
-<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> a ns2:TotalNumberOfVertices ;
+<https://situx.github.io/cuneiformontology/examples/TCH92/mesh/TCH92_mesh1_totalNumberOfVertices> a ns1:TotalNumberOfVertices ;
     rdfs:label "TCH92_mesh1 Total Number of Vertices"@en ;
     rdf:value 4466245 .
 

@@ -1,13 +1,13 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<https://situx.github.io/cuneiformontology/examples/o147/sar_wordform> a ns1:WordForm ;
+<https://situx.github.io/cuneiformontology/examples/o147/sar_wordform> a ns2:WordForm ;
     rdfs:label "WordForm: sar"@en ;
-    ns1:writtenRepASCII "sar"^^ns2:ASCIILiteral ;
-    ns1:writtenRepUnicode "𒊬"^^ns2:unicodeLiteral ;
-    ns2:isAttested <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line1_word3_wordformocc>,
+    ns2:writtenRepASCII "sar"^^ns1:ASCIILiteral ;
+    ns2:writtenRepUnicode "𒊬"^^ns1:unicodeLiteral ;
+    ns1:isAttested <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line1_word3_wordformocc>,
         <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line3_word2_wordformocc> ;
     skos:definition "sar" .
 
