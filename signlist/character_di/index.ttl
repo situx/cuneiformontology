@@ -1,17 +1,17 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_di> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_di> a ns1:Grapheme ;
     rdfs:label "Character: DI" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_di_sense__silim___peace>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_di_sense__silim___peace>,
         <https://situx.github.io/cuneiformontology/signlist/character_di_sense_iudgement>,
         <https://situx.github.io/cuneiformontology/signlist/character_di_sense_pass>,
         <https://situx.github.io/cuneiformontology/signlist/character_di_sense_to_go>,
         <https://situx.github.io/cuneiformontology/signlist/character_di_sense_trial> ;
-    ns2:abzl "431" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_di_reading_156a>,
+    ns1:abzl "431" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_di_reading_156a>,
         <https://situx.github.io/cuneiformontology/signlist/character_di_reading_de>,
         <https://situx.github.io/cuneiformontology/signlist/character_di_reading_di>,
         <https://situx.github.io/cuneiformontology/signlist/character_di_reading_di_di>,
@@ -43,14 +43,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_di_reading_ti4>,
         <https://situx.github.io/cuneiformontology/signlist/character_di_reading_well>,
         <https://situx.github.io/cuneiformontology/signlist/character_di_reading_śa2> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_di> ;
-    ns2:hethzl "312" ;
-    ns2:labat "457" ;
-    ns2:meszl "736" ;
-    ns2:obo "431" ;
-    ns2:signName "DI" ;
-    ns2:slha "457" ;
-    ns2:unicodeCodepoint "U+12072" ;
-    ns2:unicodeRepresentation "𒁲" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_di> ;
+    ns1:hethzl "312" ;
+    ns1:labat "457" ;
+    ns1:meszl "736" ;
+    ns1:obo "431" ;
+    ns1:signName "DI" ;
+    ns1:slha "457" ;
+    ns1:unicodeCodepoint "U+12072" ;
+    ns1:unicodeRepresentation "𒁲" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555229> .
 
