@@ -1,24 +1,24 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_pàd> a ns2:GraphemeComposition ;
+<https://situx.github.io/cuneiformontology/signlist/character_pàd> a ns1:GraphemeComposition ;
     rdfs:label "Character Composition: PÀD (IGI.RU)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_pàd_sense_to_choose>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_pàd_sense_to_choose>,
         <https://situx.github.io/cuneiformontology/signlist/character_pàd_sense_to_find> ;
-    ns2:abzl "235" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_pàd_reading_igi_ru>,
+    ns1:abzl "235" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_pàd_reading_igi_ru>,
         <https://situx.github.io/cuneiformontology/signlist/character_pàd_reading_pa3>,
         <https://situx.github.io/cuneiformontology/signlist/character_pàd_reading_pa3_pad3>,
         <https://situx.github.io/cuneiformontology/signlist/character_pàd_reading_pad3> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_pa3d_igi>,
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_pa3d_igi>,
         <https://situx.github.io/cuneiformontology/signlist/character_ru> ;
-    ns2:hethzl "292" ;
-    ns2:labat "450" ;
-    ns2:meszl "725" ;
-    ns2:obo "235" ;
-    ns2:signName "PÀD (IGI.RU)" ;
-    ns2:slha "450" ;
-    ns2:unicodeCodepoint "U+12146 & U+12292" ;
-    ns2:unicodeRepresentation "𒅆𒊒" .
+    ns1:hethzl "292" ;
+    ns1:labat "450" ;
+    ns1:meszl "725" ;
+    ns1:obo "235" ;
+    ns1:signName "PÀD (IGI.RU)" ;
+    ns1:slha "450" ;
+    ns1:unicodeCodepoint "U+12146 & U+12292" ;
+    ns1:unicodeRepresentation "𒅆𒊒" .
 

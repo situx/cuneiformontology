@@ -1,16 +1,15 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_szu> a ns1:Grapheme ;
-    rdfs:label "Character: ŠU",
-        "Character: SZU"@en ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_szu_sense_hand>,
+<https://situx.github.io/cuneiformontology/signlist/character_szu> a ns2:Grapheme ;
+    rdfs:label "Character: ŠU" ;
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_szu_sense_hand>,
         <https://situx.github.io/cuneiformontology/signlist/character_szu_sense_total>,
         <https://situx.github.io/cuneiformontology/signlist/character_szu_sense_totality> ;
-    ns1:abzl "225" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_1_szu>,
+    ns2:abzl "225" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_1_szu>,
         <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_1_szu@c>,
         <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_isztēnisz>,
         <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_kat7>,
@@ -20,18 +19,16 @@
         <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_sagiₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_szu>,
         <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_szu_szu>,
-        <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_szunigin_napharum>,
-        <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_šu> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_szu> ;
-    ns1:hethzl "68" ;
-    ns1:labat "354",
+        <https://situx.github.io/cuneiformontology/signlist/character_szu_reading_szunigin_napharum> ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_szu> ;
+    ns2:hethzl "68" ;
+    ns2:labat "354",
         "354.1" ;
-    ns1:meszl "567" ;
-    ns1:obo "225" ;
-    ns1:signName "ŠU" ;
-    ns1:slha "354" ;
-    ns1:unicodeCodepoint "U+122D7" ;
-    ns1:unicodeRepresentation "𒋗" ;
-    ns1:variant <https://situx.github.io/cuneiformontology/signlist/character_szu_variant1> ;
+    ns2:meszl "567" ;
+    ns2:obo "225" ;
+    ns2:signName "ŠU" ;
+    ns2:slha "354" ;
+    ns2:unicodeCodepoint "U+122D7" ;
+    ns2:unicodeRepresentation "𒋗" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556429> .
 
