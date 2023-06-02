@@ -1,0 +1,44 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/> .
+@prefix ns2: <http://ns.adobe.com/xap/1.0/> .
+@prefix ns3: <http://www.w3.org/2003/12/exif/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo1> a foaf:Image ;
+    ns1:CountryCode "IRN" ;
+    ns1:Event "single picture" ;
+    ns1:LocationCreatedCity "Haft Tappeh" ;
+    ns1:LocationCreatedCountryName "Iran" ;
+    ns1:LocationCreatedWorldRegion "Asia" ;
+    ns2:CreatorTool "Haft Tappeh XMP Generator Script" ;
+    ns2:Owner "Behzad Mofidi-Nasrabadi" ;
+    ns2:UsageTerms "CC BY-SA 4.0" ;
+    dc:contributor <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_ehuber>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_tbrandes> ;
+    dc:created "2009-01-17T10:31:23"^^xsd:dateTime ;
+    dc:description "Photo 01 of cuneiform clay tablet HT 07-31-95" ;
+    dc:identifier "HT_07-31-95_photo_01" ;
+    dc:language <http://www.lexvo.org/page/iso639-3/akk> ;
+    dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dc:medium "clay" ;
+    dc:publisher "Johannes Gutenberg University Mainz" ;
+    dc:spatial <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_excavloc> ;
+    dc:subject "unknown" ;
+    dc:temporal <https://pleiades.stoa.org/vocabularies/time-periods/late-bronze-age-iran> ;
+    dc:title "HT 07-31-95 photo 01" ;
+    dc:type dc:Image ;
+    ns3:DateTime "2009:01:17 10:31:23" ;
+    ns3:ExifOffset "284" ;
+    ns3:GPSLatitude "32.080207° N" ;
+    ns3:GPSLongitude "48.329165° E" ;
+    ns3:Make "NIKON" ;
+    ns3:Model "E5700" ;
+    ns3:Orientation "1" ;
+    ns3:ResolutionUnit "2" ;
+    ns3:Software "Haft Tappeh XMP Generator Script" ;
+    ns3:XResolution "300.0" ;
+    ns3:YCbCrPositioning "2" ;
+    ns3:YResolution "300.0" ;
+    foaf:image "https://heidicon.ub.uni-heidelberg.de/iiif/2/1667769:870859/full/full/0/default.jpg"^^xsd:anyURI .
+

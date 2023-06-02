@@ -1,0 +1,14 @@
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line10_char3> a owl:NamedIndividual ;
+    rdfs:label "O147 transliteration 1 obverse line 10 char 3"@en ;
+    ns1:charIndex 3 ;
+    ns1:lineNumber 10 ;
+    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line10_char4> ;
+    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line10_char2> ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_ab_reading_ap> .
+

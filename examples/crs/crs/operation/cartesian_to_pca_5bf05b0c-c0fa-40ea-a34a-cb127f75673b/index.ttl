@@ -1,0 +1,10 @@
+@prefix ns1: <http://situx.github.io/proj4rdf/ont/crs/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_5bf05b0c-c0fa-40ea-a34a-cb127f75673b> a ns1:CoordinateOperation ;
+    rdfs:label "Object To PCA"@en ;
+    ns1:parameter <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_5bf05b0c-c0fa-40ea-a34a-cb127f75673b_xaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_5bf05b0c-c0fa-40ea-a34a-cb127f75673b_yaxis_translation>,
+        <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_5bf05b0c-c0fa-40ea-a34a-cb127f75673b_zaxis_translation> ;
+    ns1:sourceCRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> .
+

@@ -1,0 +1,13 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://purl.org/meshsparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/e57afe5b-16df-4194-b793-8ad5beb74fe0_target3d_selector_compref0> a ns1:PCAReference ;
+    rdfs:label "Computing Reference of 3D Annotation target selector of Annotation of Glyph at HS1174 obverse line 4 char 1 on a 3D Mesh"@en ;
+    ns1:referenceVector "[-0.1440722  16.930668    0.32938766] [  0.63424146 -13.869324    -0.79125535] [28.208986  17.635668   0.6449184] [ 6.2522143e-03  1.7469772e+01 -1.4383046e+01]"^^ns1:vectorLiteral ;
+    ns1:stable true ;
+    ns1:transformationMatrix "[[ 1.00000000e+00  5.48518846e-09 -6.32443597e-10 -1.44071917e-01] [-5.48518855e-09  1.00000000e+00  1.45925194e-09  1.69306684e+01] [ 6.32443542e-10 -1.45925202e-09  1.00000000e+00  3.29387754e-01] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^ns1:matrixLiteral ;
+    ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[-0.14407192]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[16.9306684]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[0.32938775]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^<http://situx.github.io/proj4rdf/ont/crs/wktLiteral> ;
+    geo:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_e57afe5b-16df-4194-b793-8ad5beb74fe0> .
+

@@ -1,0 +1,11 @@
+@prefix ns1: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/493ad60d-ce79-413d-9f31-e1d4f94b123b_body_tabletside> a ns1:TextualBody ;
+    rdfs:label "Annotation Body: Tablet Side obverse"@en ;
+    rdf:value "obverse"^^xsd:string ;
+    ns1:motivatedBy ns1:describing ;
+    ns1:purpose ns1:tagging .
+
