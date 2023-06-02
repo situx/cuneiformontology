@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_szesz> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_szesz> a ns2:Grapheme ;
     rdfs:label "Character: ŠEŠ (ÙRI)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_szesz_sense_brother> ;
-    ns1:abzl "021b" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szesz_reading_ah2>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_szesz_sense_brother> ;
+    ns2:abzl "021b" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szesz_reading_ah2>,
         <https://situx.github.io/cuneiformontology/signlist/character_szesz_reading_aha2>,
         <https://situx.github.io/cuneiformontology/signlist/character_szesz_reading_ahi>,
         <https://situx.github.io/cuneiformontology/signlist/character_szesz_reading_mun4>,
@@ -31,15 +31,15 @@
         <https://situx.github.io/cuneiformontology/signlist/character_szesz_reading_uri3>,
         <https://situx.github.io/cuneiformontology/signlist/character_szesz_reading_urin>,
         <https://situx.github.io/cuneiformontology/signlist/character_szesz_reading_zahₓ> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_szesz_u3ri> ;
-    ns1:hethzl "79" ;
-    ns1:labat "331" ;
-    ns1:meszl "535" ;
-    ns1:obo "21.1",
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_szesz_u3ri> ;
+    ns2:hethzl "79" ;
+    ns2:labat "331" ;
+    ns2:meszl "535" ;
+    ns2:obo "21.1",
         "21.2" ;
-    ns1:signName "ŠEŠ (ÙRI)" ;
-    ns1:slha "331" ;
-    ns1:unicodeCodepoint "U+122C0" ;
-    ns1:unicodeRepresentation "𒋀" ;
+    ns2:signName "ŠEŠ (ÙRI)" ;
+    ns2:slha "331" ;
+    ns2:unicodeCodepoint "U+122C0" ;
+    ns2:unicodeRepresentation "𒋀" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556389> .
 
