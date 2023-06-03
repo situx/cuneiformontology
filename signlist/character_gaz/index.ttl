@@ -1,14 +1,14 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_gaz> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_gaz> a ns2:Grapheme ;
     rdfs:label "Character: GAZ (KUM×ŠE)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_gaz_sense_to_crusz>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_gaz_sense_to_crusz>,
         <https://situx.github.io/cuneiformontology/signlist/character_gaz_sense_to_kill> ;
-    ns1:abzl "139" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gaz_reading_gas>,
+    ns2:abzl "139" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gaz_reading_gas>,
         <https://situx.github.io/cuneiformontology/signlist/character_gaz_reading_gaz>,
         <https://situx.github.io/cuneiformontology/signlist/character_gaz_reading_gaz_gaz>,
         <https://situx.github.io/cuneiformontology/signlist/character_gaz_reading_gaza>,
@@ -23,15 +23,15 @@
         <https://situx.github.io/cuneiformontology/signlist/character_gaz_reading_naga3>,
         <https://situx.github.io/cuneiformontology/signlist/character_gaz_reading_naŋ3>,
         <https://situx.github.io/cuneiformontology/signlist/character_gaz_reading_naŋa3> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gaz_kum>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gaz_kum>,
         <https://situx.github.io/cuneiformontology/signlist/character_sze> ;
-    ns1:hethzl "122" ;
-    ns1:labat "192" ;
-    ns1:meszl "340" ;
-    ns1:obo "139" ;
-    ns1:signName "GAZ (KUM×ŠE)" ;
-    ns1:slha "192" ;
-    ns1:unicodeCodepoint "U+12124" ;
-    ns1:unicodeRepresentation "𒄤" ;
+    ns2:hethzl "122" ;
+    ns2:labat "192" ;
+    ns2:meszl "340" ;
+    ns2:obo "139" ;
+    ns2:signName "GAZ (KUM×ŠE)" ;
+    ns2:slha "192" ;
+    ns2:unicodeCodepoint "U+12124" ;
+    ns2:unicodeRepresentation "𒄤" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555571> .
 
