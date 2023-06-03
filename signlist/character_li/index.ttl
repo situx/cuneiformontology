@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_li> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_li> a ns2:Grapheme ;
     rdfs:label "Character: LI" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_li_sense_iuniper> ;
-    ns1:abzl "381" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_li_reading_en3>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_li_sense_iuniper> ;
+    ns2:abzl "381" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_li_reading_en3>,
         <https://situx.github.io/cuneiformontology/signlist/character_li_reading_gub2>,
         <https://situx.github.io/cuneiformontology/signlist/character_li_reading_gup2>,
         <https://situx.github.io/cuneiformontology/signlist/character_li_reading_le>,
@@ -15,14 +15,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_li_reading_li_li>,
         <https://situx.github.io/cuneiformontology/signlist/character_li_reading_ni8>,
         <https://situx.github.io/cuneiformontology/signlist/character_li_reading_nu9> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_li> ;
-    ns1:hethzl "343" ;
-    ns1:labat "59" ;
-    ns1:meszl "85" ;
-    ns1:obo "381" ;
-    ns1:signName "LI" ;
-    ns1:slha "059" ;
-    ns1:unicodeCodepoint "U+121F7" ;
-    ns1:unicodeRepresentation "𒇷" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_li> ;
+    ns2:hethzl "343" ;
+    ns2:labat "59" ;
+    ns2:meszl "85" ;
+    ns2:obo "381" ;
+    ns2:signName "LI" ;
+    ns2:slha "059" ;
+    ns2:unicodeCodepoint "U+121F7" ;
+    ns2:unicodeRepresentation "𒇷" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556007> .
 

@@ -1,9 +1,9 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/3(disz)_charvariant1_ap2> a ns1:CuneiformWedge ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/3(disz)_charvariant1_ap2> a ns2:CuneiformWedge ;
     rdfs:label "Atomic part 2 of grapheme variant 1 of grapheme 3(disz)"@en ;
-    ns2:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char2_wedge2_glyph> ;
-    ns1:leftOf <https://situx.github.io/cuneiformontology/examples/hs1174/3(disz)_charvariant1_ap3> .
+    ns1:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char2_wedge2_glyph> ;
+    ns2:leftOf <https://situx.github.io/cuneiformontology/examples/hs1174/3(disz)_charvariant1_ap3> .
 
