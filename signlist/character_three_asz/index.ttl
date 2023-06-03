@@ -1,22 +1,22 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_three_asz> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_three_asz> a ns2:Grapheme ;
     rdfs:label "Character: three AŠ" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_three_asz_sense_three__talents> ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_three_asz_reading_3_asz>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_three_asz_sense_three__talents> ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_three_asz_reading_3_asz>,
         <https://situx.github.io/cuneiformontology/signlist/character_three_asz_reading_3_asz@c>,
         <https://situx.github.io/cuneiformontology/signlist/character_three_asz_reading_3_iku>,
         <https://situx.github.io/cuneiformontology/signlist/character_three_asz_reading_esz6>,
         <https://situx.github.io/cuneiformontology/signlist/character_three_asz_reading_esz6_#3> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_three_asz> ;
-    ns1:labat "2.1" ;
-    ns1:meszl "004" ;
-    ns1:obo "2" ;
-    ns1:signName "three AŠ" ;
-    ns1:unicodeCodepoint "U+12401" ;
-    ns1:unicodeRepresentation "𒐁" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_three_asz> ;
+    ns2:labat "2.1" ;
+    ns2:meszl "004" ;
+    ns2:obo "2" ;
+    ns2:signName "three AŠ" ;
+    ns2:unicodeCodepoint "U+12401" ;
+    ns2:unicodeRepresentation "𒐁" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556833> .
 
