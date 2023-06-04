@@ -1,5 +1,5 @@
 # Cuneiform Ontology
-   
+    
 This repository includes a set of ontologies which enable cuneiform artifact related data to be interconnected.
              
 The goal of this collection of ontologies is to connect:
