@@ -1,13 +1,13 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_ga> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_ga> a ns1:Grapheme ;
     rdfs:label "Character: GA" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_ga_sense_milk> ;
-    ns2:abzl "201" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ga_reading_ebir4>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_ga_sense_milk> ;
+    ns1:abzl "201" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ga_reading_ebir4>,
         <https://situx.github.io/cuneiformontology/signlist/character_ga_reading_epir4>,
         <https://situx.github.io/cuneiformontology/signlist/character_ga_reading_ga>,
         <https://situx.github.io/cuneiformontology/signlist/character_ga_reading_ga@g>,
@@ -25,16 +25,16 @@
         <https://situx.github.io/cuneiformontology/signlist/character_ga_reading_kur15>,
         <https://situx.github.io/cuneiformontology/signlist/character_ga_reading_qa2>,
         <https://situx.github.io/cuneiformontology/signlist/character_ga_reading_szizbu> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ga> ;
-    ns2:hethzl "159" ;
-    ns2:labat "319",
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ga> ;
+    ns1:hethzl "159" ;
+    ns1:labat "319",
         "319.9" ;
-    ns2:meszl "491" ;
-    ns2:obo "201",
+    ns1:meszl "491" ;
+    ns1:obo "201",
         "202" ;
-    ns2:signName "GA" ;
-    ns2:slha "319" ;
-    ns2:unicodeCodepoint "U+120B5" ;
-    ns2:unicodeRepresentation "𒂵" ;
+    ns1:signName "GA" ;
+    ns1:slha "319" ;
+    ns1:unicodeCodepoint "U+120B5" ;
+    ns1:unicodeRepresentation "𒂵" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555352> .
 
