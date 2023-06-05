@@ -1,13 +1,13 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_nunuz> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_nunuz> a ns1:Grapheme ;
     rdfs:label "Character: NUNUZ" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_nunuz_sense_egg> ;
-    ns2:abzl "371" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_nunuz_reading_nida>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_nunuz_sense_egg> ;
+    ns1:abzl "371" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_nunuz_reading_nida>,
         <https://situx.github.io/cuneiformontology/signlist/character_nunuz_reading_nunu>,
         <https://situx.github.io/cuneiformontology/signlist/character_nunuz_reading_nunus>,
         <https://situx.github.io/cuneiformontology/signlist/character_nunuz_reading_nunuz>,
@@ -16,14 +16,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_nunuz_reading_nuz>,
         <https://situx.github.io/cuneiformontology/signlist/character_nunuz_reading_pel5>,
         <https://situx.github.io/cuneiformontology/signlist/character_nunuz_reading_sug9> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_nunuz> ;
-    ns2:hethzl "328" ;
-    ns2:labat "394" ;
-    ns2:meszl "614" ;
-    ns2:obo "371" ;
-    ns2:signName "NUNUZ" ;
-    ns2:slha "394" ;
-    ns2:unicodeCodepoint "U+1226D" ;
-    ns2:unicodeRepresentation "𒉭" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_nunuz> ;
+    ns1:hethzl "328" ;
+    ns1:labat "394" ;
+    ns1:meszl "614" ;
+    ns1:obo "371" ;
+    ns1:signName "NUNUZ" ;
+    ns1:slha "394" ;
+    ns1:unicodeCodepoint "U+1226D" ;
+    ns1:unicodeRepresentation "𒉭" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556231> .
 
