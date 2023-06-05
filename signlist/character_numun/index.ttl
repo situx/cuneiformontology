@@ -1,13 +1,13 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_numun> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_numun> a ns1:Grapheme ;
     rdfs:label "Character: NUMUN" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_numun_sense_seed> ;
-    ns2:abzl "026" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_numun_reading_gu9>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_numun_sense_seed> ;
+    ns1:abzl "026" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_numun_reading_gu9>,
         <https://situx.github.io/cuneiformontology/signlist/character_numun_reading_gul2>,
         <https://situx.github.io/cuneiformontology/signlist/character_numun_reading_ku9>,
         <https://situx.github.io/cuneiformontology/signlist/character_numun_reading_kul>,
@@ -30,14 +30,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_numun_reading_zir>,
         <https://situx.github.io/cuneiformontology/signlist/character_numun_reading_zir_kul>,
         <https://situx.github.io/cuneiformontology/signlist/character_numun_reading_ziri> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_numun> ;
-    ns2:hethzl "12" ;
-    ns2:labat "72" ;
-    ns2:meszl "117" ;
-    ns2:obo "26" ;
-    ns2:signName "NUMUN" ;
-    ns2:slha "072" ;
-    ns2:unicodeCodepoint "U+121B0" ;
-    ns2:unicodeRepresentation "𒆰" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_numun> ;
+    ns1:hethzl "12" ;
+    ns1:labat "72" ;
+    ns1:meszl "117" ;
+    ns1:obo "26" ;
+    ns1:signName "NUMUN" ;
+    ns1:slha "072" ;
+    ns1:unicodeCodepoint "U+121B0" ;
+    ns1:unicodeRepresentation "𒆰" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555860> .
 

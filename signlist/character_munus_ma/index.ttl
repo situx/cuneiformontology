@@ -1,15 +1,15 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_munus_ma> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_munus_ma> a ns1:Grapheme ;
     rdfs:label "Character: MUNUS+MA" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_munus_ma_sense_burux___harvest>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_munus_ma_sense_burux___harvest>,
         <https://situx.github.io/cuneiformontology/signlist/character_munus_ma_sense_foreign_land>,
         <https://situx.github.io/cuneiformontology/signlist/character_munus_ma_sense_mountain_country>,
         <https://situx.github.io/cuneiformontology/signlist/character_munus_ma_sense_netherworld>,
         <https://situx.github.io/cuneiformontology/signlist/character_munus_ma_sense_pouch> ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_munus_ma_reading_1_ban2_1_ban2>,
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_munus_ma_reading_1_ban2_1_ban2>,
         <https://situx.github.io/cuneiformontology/signlist/character_munus_ma_reading_agargara>,
         <https://situx.github.io/cuneiformontology/signlist/character_munus_ma_reading_agargara_agargara_gar6>,
         <https://situx.github.io/cuneiformontology/signlist/character_munus_ma_reading_burux_k>,
@@ -83,8 +83,8 @@
         <https://situx.github.io/cuneiformontology/signlist/character_munus_ma_reading_utul2>,
         <https://situx.github.io/cuneiformontology/signlist/character_munus_ma_reading_uzug5>,
         <https://situx.github.io/cuneiformontology/signlist/character_munus_ma_reading_x> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_munus_ma> ;
-    ns2:labat "126.3",
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_munus_ma> ;
+    ns1:labat "126.3",
         "134.1",
         "154",
         "366",
@@ -98,8 +98,8 @@
         "575.2",
         "596",
         "87.2" ;
-    ns2:meszl "888" ;
-    ns2:obo "114",
+    ns1:meszl "888" ;
+    ns1:obo "114",
         "122",
         "155",
         "220.2",
@@ -113,8 +113,8 @@
         "389",
         "418",
         "440" ;
-    ns2:signName "MUNUS+MA" ;
-    ns2:slha "556" ;
-    ns2:unicodeCodepoint "" ;
-    ns2:unicodeRepresentation "" .
+    ns1:signName "MUNUS+MA" ;
+    ns1:slha "556" ;
+    ns1:unicodeCodepoint "" ;
+    ns1:unicodeRepresentation "" .
 

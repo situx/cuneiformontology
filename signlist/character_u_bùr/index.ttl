@@ -1,13 +1,13 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_u_bùr> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_u_bùr> a ns1:Grapheme ;
     rdfs:label "Character: U/BÙR" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_u_bùr_sense_buru3___hole> ;
-    ns2:abzl "337" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_u_bùr_reading_010>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_u_bùr_sense_buru3___hole> ;
+    ns1:abzl "337" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_u_bùr_reading_010>,
         <https://situx.github.io/cuneiformontology/signlist/character_u_bùr_reading_10>,
         <https://situx.github.io/cuneiformontology/signlist/character_u_bùr_reading_1_bur3>,
         <https://situx.github.io/cuneiformontology/signlist/character_u_bùr_reading_1_bur3@c>,
@@ -45,15 +45,15 @@
         <https://situx.github.io/cuneiformontology/signlist/character_u_bùr_reading_uszur5>,
         <https://situx.github.io/cuneiformontology/signlist/character_u_bùr_reading_utahₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_u_bùr_reading_utuₓ> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_bu3r>,
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_bu3r>,
         <https://situx.github.io/cuneiformontology/signlist/character_u> ;
-    ns2:hethzl "261" ;
-    ns2:labat "411" ;
-    ns2:meszl "661" ;
-    ns2:obo "337" ;
-    ns2:signName "U/BÙR" ;
-    ns2:slha "411" ;
-    ns2:unicodeCodepoint "U+1230B" ;
-    ns2:unicodeRepresentation "𒌋" ;
+    ns1:hethzl "261" ;
+    ns1:labat "411" ;
+    ns1:meszl "661" ;
+    ns1:obo "337" ;
+    ns1:signName "U/BÙR" ;
+    ns1:slha "411" ;
+    ns1:unicodeCodepoint "U+1230B" ;
+    ns1:unicodeRepresentation "𒌋" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556522> .
 
