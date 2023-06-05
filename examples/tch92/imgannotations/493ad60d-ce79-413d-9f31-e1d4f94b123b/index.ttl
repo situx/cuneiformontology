@@ -1,19 +1,19 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix ns1: <http://www.w3.org/ns/oa#> .
-@prefix ns2: <https://www.w3.org/ns/activitystreams#> .
+@prefix ns1: <https://www.w3.org/ns/activitystreams#> .
+@prefix ns2: <http://www.w3.org/ns/oa#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/493ad60d-ce79-413d-9f31-e1d4f94b123b> a ns1:Annotation ;
+<https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/493ad60d-ce79-413d-9f31-e1d4f94b123b> a ns2:Annotation ;
     rdfs:label "Annotation of Glyph at TCH92 obverse line 10 char 5 on 3D rendering"@en ;
     dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
     dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
-    ns1:hasBody <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/493ad60d-ce79-413d-9f31-e1d4f94b123b_body_charindex>,
+    ns2:hasBody <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/493ad60d-ce79-413d-9f31-e1d4f94b123b_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/493ad60d-ce79-413d-9f31-e1d4f94b123b_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/493ad60d-ce79-413d-9f31-e1d4f94b123b_body_line>,
         <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/493ad60d-ce79-413d-9f31-e1d4f94b123b_body_tabletside>,
         <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/493ad60d-ce79-413d-9f31-e1d4f94b123b_body_translit> ;
-    ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/493ad60d-ce79-413d-9f31-e1d4f94b123b_target1>,
+    ns2:hasTarget <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/493ad60d-ce79-413d-9f31-e1d4f94b123b_target1>,
         <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/493ad60d-ce79-413d-9f31-e1d4f94b123b_target3d> ;
-    ns2:generator <https://github.com/recogito/annotorious-openseadragon> .
+    ns1:generator <https://github.com/recogito/annotorious-openseadragon> .
 
