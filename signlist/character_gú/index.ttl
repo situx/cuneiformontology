@@ -1,15 +1,15 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_gú> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_gú> a ns2:Grapheme ;
     rdfs:label "Character: GÚ (TIK)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_gú_sense_edge>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_gú_sense_edge>,
         <https://situx.github.io/cuneiformontology/signlist/character_gú_sense_neck>,
         <https://situx.github.io/cuneiformontology/signlist/character_gú_sense_river_bank> ;
-    ns1:abzl "089" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gú_reading_gu2>,
+    ns2:abzl "089" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gú_reading_gu2>,
         <https://situx.github.io/cuneiformontology/signlist/character_gú_reading_gu2_biltum>,
         <https://situx.github.io/cuneiformontology/signlist/character_gú_reading_gu2_gu2>,
         <https://situx.github.io/cuneiformontology/signlist/character_gú_reading_gun2>,
@@ -20,14 +20,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_gú_reading_tik>,
         <https://situx.github.io/cuneiformontology/signlist/character_gú_reading_tiq>,
         <https://situx.github.io/cuneiformontology/signlist/character_gú_reading_tiq_tiq> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gu2_tik> ;
-    ns1:hethzl "201" ;
-    ns1:labat "106" ;
-    ns1:meszl "176" ;
-    ns1:obo "89" ;
-    ns1:signName "GÚ (TIK)" ;
-    ns1:slha "106" ;
-    ns1:unicodeCodepoint "U+12118" ;
-    ns1:unicodeRepresentation "𒄘" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gu2_tik> ;
+    ns2:hethzl "201" ;
+    ns2:labat "106" ;
+    ns2:meszl "176" ;
+    ns2:obo "89" ;
+    ns2:signName "GÚ (TIK)" ;
+    ns2:slha "106" ;
+    ns2:unicodeCodepoint "U+12118" ;
+    ns2:unicodeRepresentation "𒄘" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555547> .
 
