@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_ukkin> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_ukkin> a ns2:Grapheme ;
     rdfs:label "Character: UKKIN (URU×MAŠ/BAR)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_ukkin_sense_assembly> ;
-    ns1:abzl "186" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ukkin_reading_barimₓ>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_ukkin_sense_assembly> ;
+    ns2:abzl "186" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ukkin_reading_barimₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_ukkin_reading_kin5>,
         <https://situx.github.io/cuneiformontology/signlist/character_ukkin_reading_ukken>,
         <https://situx.github.io/cuneiformontology/signlist/character_ukkin_reading_ukkin>,
@@ -17,16 +17,16 @@
         <https://situx.github.io/cuneiformontology/signlist/character_ukkin_reading_unkinₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_ukkin_reading_uru×bar>,
         <https://situx.github.io/cuneiformontology/signlist/character_ukkin_reading_uru×masz> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_bar>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_bar>,
         <https://situx.github.io/cuneiformontology/signlist/character_masz>,
         <https://situx.github.io/cuneiformontology/signlist/character_ukkin_uru> ;
-    ns1:hethzl "134" ;
-    ns1:labat "40" ;
-    ns1:meszl "73" ;
-    ns1:obo "186" ;
-    ns1:signName "UKKIN (URU×MAŠ/BAR)" ;
-    ns1:slha "040" ;
-    ns1:unicodeCodepoint "U+1233A" ;
-    ns1:unicodeRepresentation "𒌺" ;
+    ns2:hethzl "134" ;
+    ns2:labat "40" ;
+    ns2:meszl "73" ;
+    ns2:obo "186" ;
+    ns2:signName "UKKIN (URU×MAŠ/BAR)" ;
+    ns2:slha "040" ;
+    ns2:unicodeCodepoint "U+1233A" ;
+    ns2:unicodeRepresentation "𒌺" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556623> .
 

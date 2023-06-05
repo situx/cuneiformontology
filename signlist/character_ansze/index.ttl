@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_ansze> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_ansze> a ns2:Grapheme ;
     rdfs:label "Character: ANŠE (GÌR×PA or GÌR×TAB)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_ansze_sense_donkey> ;
-    ns1:abzl "292" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ansze_reading_ansze>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_ansze_sense_donkey> ;
+    ns2:abzl "292" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ansze_reading_ansze>,
         <https://situx.github.io/cuneiformontology/signlist/character_ansze_reading_ansze@d>,
         <https://situx.github.io/cuneiformontology/signlist/character_ansze_reading_ansze_ansze>,
         <https://situx.github.io/cuneiformontology/signlist/character_ansze_reading_ansze_emārum>,
@@ -18,16 +18,16 @@
         <https://situx.github.io/cuneiformontology/signlist/character_ansze_reading_szagan2>,
         <https://situx.github.io/cuneiformontology/signlist/character_ansze_reading_szakan2_k>,
         <https://situx.github.io/cuneiformontology/signlist/character_ansze_reading_szakan3> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ansze_gi3r>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ansze_gi3r>,
         <https://situx.github.io/cuneiformontology/signlist/character_pa_or_gi3r>,
         <https://situx.github.io/cuneiformontology/signlist/character_tab> ;
-    ns1:hethzl "302" ;
-    ns1:labat "208" ;
-    ns1:meszl "353" ;
-    ns1:obo "292" ;
-    ns1:signName "ANŠE (GÌR×PA or GÌR×TAB)" ;
-    ns1:slha "208" ;
-    ns1:unicodeCodepoint "U+12032" ;
-    ns1:unicodeRepresentation "𒀲" ;
+    ns2:hethzl "302" ;
+    ns2:labat "208" ;
+    ns2:meszl "353" ;
+    ns2:obo "292" ;
+    ns2:signName "ANŠE (GÌR×PA or GÌR×TAB)" ;
+    ns2:slha "208" ;
+    ns2:unicodeCodepoint "U+12032" ;
+    ns2:unicodeRepresentation "𒀲" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555099> .
 
