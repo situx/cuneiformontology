@@ -1,25 +1,25 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_mè> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_mè> a ns2:Grapheme ;
     rdfs:label "Character: MÈ (AG×ERIM)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_mè_sense_battle> ;
-    ns1:abzl "053" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_mè_reading_ak×erin2>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_mè_sense_battle> ;
+    ns2:abzl "053" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_mè_reading_ak×erin2>,
         <https://situx.github.io/cuneiformontology/signlist/character_mè_reading_me11>,
         <https://situx.github.io/cuneiformontology/signlist/character_mè_reading_me3>,
         <https://situx.github.io/cuneiformontology/signlist/character_mè_reading_me6> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_erim>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_erim>,
         <https://situx.github.io/cuneiformontology/signlist/character_me3_ag> ;
-    ns1:hethzl "82" ;
-    ns1:labat "98" ;
-    ns1:meszl "129" ;
-    ns1:obo "53" ;
-    ns1:signName "MÈ (AG×ERIM)" ;
-    ns1:slha "098" ;
-    ns1:unicodeCodepoint "U+1201E" ;
-    ns1:unicodeRepresentation "𒀞" ;
+    ns2:hethzl "82" ;
+    ns2:labat "98" ;
+    ns2:meszl "129" ;
+    ns2:obo "53" ;
+    ns2:signName "MÈ (AG×ERIM)" ;
+    ns2:slha "098" ;
+    ns2:unicodeCodepoint "U+1201E" ;
+    ns2:unicodeRepresentation "𒀞" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555057> .
 

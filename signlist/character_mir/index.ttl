@@ -1,15 +1,15 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_mir> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_mir> a ns2:Grapheme ;
     rdfs:label "Character: MIR (NIMGIR)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_mir_sense__nimgir___town_crier>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_mir_sense__nimgir___town_crier>,
         <https://situx.github.io/cuneiformontology/signlist/character_mir_sense_crown>,
         <https://situx.github.io/cuneiformontology/signlist/character_mir_sense_herald>,
         <https://situx.github.io/cuneiformontology/signlist/character_mir_sense_northwind> ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_mir_reading_aga>,
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_mir_reading_aga>,
         <https://situx.github.io/cuneiformontology/signlist/character_mir_reading_agu>,
         <https://situx.github.io/cuneiformontology/signlist/character_mir_reading_dun3@g@g>,
         <https://situx.github.io/cuneiformontology/signlist/character_mir_reading_ir17>,
@@ -27,12 +27,12 @@
         <https://situx.github.io/cuneiformontology/signlist/character_mir_reading_ten3>,
         <https://situx.github.io/cuneiformontology/signlist/character_mir_reading_tin3>,
         <https://situx.github.io/cuneiformontology/signlist/character_mir_reading_uku> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_mir_nimgir> ;
-    ns1:labat "347" ;
-    ns1:obo "219.1",
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_mir_nimgir> ;
+    ns2:labat "347" ;
+    ns2:obo "219.1",
         "219.2" ;
-    ns1:signName "MIR (NIMGIR)" ;
-    ns1:unicodeCodepoint "U+12087" ;
-    ns1:unicodeRepresentation "𒂇" ;
+    ns2:signName "MIR (NIMGIR)" ;
+    ns2:unicodeCodepoint "U+12087" ;
+    ns2:unicodeRepresentation "𒂇" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555265> .
 

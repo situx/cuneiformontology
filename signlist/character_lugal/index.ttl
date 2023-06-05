@@ -1,14 +1,14 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_lugal> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_lugal> a ns2:Grapheme ;
     rdfs:label "Character: LUGAL" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_lugal_sense_king>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_lugal_sense_king>,
         <https://situx.github.io/cuneiformontology/signlist/character_lugal_sense_owner> ;
-    ns1:abzl "221a" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_lugal_reading_biszeba>,
+    ns2:abzl "221a" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_lugal_reading_biszeba>,
         <https://situx.github.io/cuneiformontology/signlist/character_lugal_reading_biszebi>,
         <https://situx.github.io/cuneiformontology/signlist/character_lugal_reading_hanisz2>,
         <https://situx.github.io/cuneiformontology/signlist/character_lugal_reading_illan>,
@@ -30,14 +30,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_lugal_reading_szarru>,
         <https://situx.github.io/cuneiformontology/signlist/character_lugal_reading_szarrum>,
         <https://situx.github.io/cuneiformontology/signlist/character_lugal_reading_szugur> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_lugal> ;
-    ns1:hethzl "115" ;
-    ns1:labat "151" ;
-    ns1:meszl "266" ;
-    ns1:obo "221.1" ;
-    ns1:signName "LUGAL" ;
-    ns1:slha "151" ;
-    ns1:unicodeCodepoint "U+12217" ;
-    ns1:unicodeRepresentation "𒈗" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_lugal> ;
+    ns2:hethzl "115" ;
+    ns2:labat "151" ;
+    ns2:meszl "266" ;
+    ns2:obo "221.1" ;
+    ns2:signName "LUGAL" ;
+    ns2:slha "151" ;
+    ns2:unicodeCodepoint "U+12217" ;
+    ns2:unicodeRepresentation "𒈗" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556071> .
 

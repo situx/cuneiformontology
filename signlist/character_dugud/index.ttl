@@ -1,13 +1,13 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_dugud> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_dugud> a ns1:Grapheme ;
     rdfs:label "Character: DUGUD" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_dugud_sense_heavy> ;
-    ns2:abzl "349" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_dugud_reading_dugud>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_dugud_sense_heavy> ;
+    ns1:abzl "349" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_dugud_reading_dugud>,
         <https://situx.github.io/cuneiformontology/signlist/character_dugud_reading_dugud_dugud>,
         <https://situx.github.io/cuneiformontology/signlist/character_dugud_reading_duguda>,
         <https://situx.github.io/cuneiformontology/signlist/character_dugud_reading_duguₓ>,
@@ -16,14 +16,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_dugud_reading_kaptu>,
         <https://situx.github.io/cuneiformontology/signlist/character_dugud_reading_qaptu>,
         <https://situx.github.io/cuneiformontology/signlist/character_dugud_reading_ŋi25> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_dugud> ;
-    ns2:hethzl "268" ;
-    ns2:labat "445" ;
-    ns2:meszl "704" ;
-    ns2:obo "349" ;
-    ns2:signName "DUGUD" ;
-    ns2:slha "445" ;
-    ns2:unicodeCodepoint "U+12082" ;
-    ns2:unicodeRepresentation "𒂂" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_dugud> ;
+    ns1:hethzl "268" ;
+    ns1:labat "445" ;
+    ns1:meszl "704" ;
+    ns1:obo "349" ;
+    ns1:signName "DUGUD" ;
+    ns1:slha "445" ;
+    ns1:unicodeCodepoint "U+12082" ;
+    ns1:unicodeRepresentation "𒂂" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555257> .
 
