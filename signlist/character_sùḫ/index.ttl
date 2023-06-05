@@ -1,25 +1,25 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_sùḫ> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_sùḫ> a ns1:Grapheme ;
     rdfs:label "Character: SÙḪ (GUoverGUcrossed)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_sùḫ_sense_confused> ;
-    ns2:abzl "251" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sùḫ_reading_gu_gu>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_sùḫ_sense_confused> ;
+    ns1:abzl "251" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sùḫ_reading_gu_gu>,
         <https://situx.github.io/cuneiformontology/signlist/character_sùḫ_reading_sah4>,
         <https://situx.github.io/cuneiformontology/signlist/character_sùḫ_reading_sih5>,
         <https://situx.github.io/cuneiformontology/signlist/character_sùḫ_reading_suh3>,
         <https://situx.github.io/cuneiformontology/signlist/character_sùḫ_reading_zih> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gucrossed>,
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gucrossed>,
         <https://situx.github.io/cuneiformontology/signlist/character_su3h_gu> ;
-    ns2:labat "569" ;
-    ns2:meszl "892" ;
-    ns2:obo "251" ;
-    ns2:signName "SÙḪ (GUoverGUcrossed)" ;
-    ns2:slha "569" ;
-    ns2:unicodeCodepoint "U+12117" ;
-    ns2:unicodeRepresentation "𒄗" ;
+    ns1:labat "569" ;
+    ns1:meszl "892" ;
+    ns1:obo "251" ;
+    ns1:signName "SÙḪ (GUoverGUcrossed)" ;
+    ns1:slha "569" ;
+    ns1:unicodeCodepoint "U+12117" ;
+    ns1:unicodeRepresentation "𒄗" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555544> .
 

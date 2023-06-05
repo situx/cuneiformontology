@@ -7,8 +7,8 @@
 @prefix ns3: <http://www.purl.org/graphemon#> .
 @prefix ns4: <http://www.purl.org/cuneiform#> .
 @prefix ns5: <http://purl.org/meshsparql#> .
-@prefix ns6: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix ns7: <http://lemon-model.net/lemon#> .
+@prefix ns6: <http://lemon-model.net/lemon#> .
+@prefix ns7: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -64,20 +64,20 @@
         <https://situx.github.io/cuneiformontology/examples/hs1174/um_charvariant1>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/za_charvariant1> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_writtentext> a ns6:TX1_WrittenText ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_writtentext> a ns7:TX1_WrittenText ;
     rdfs:label "HS 1174 obverse side written text"@en .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reading1> a ns6:TX5_Reading ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reading1> a ns7:TX5_Reading ;
     rdfs:label "HS 1174 reading 1"@en ;
-    ns6:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1> .
+    ns7:TXP3_is_rendered_by <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_top> a ns4:TopSide ;
     rdfs:label "HS 1174 top side"@en ;
     ns4:isRepresentedBy <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113342:577527/full/full/0/default.jpg> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_lexicon> a ns7:Lexicon ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_lexicon> a ns6:Lexicon ;
     rdfs:label "Lexicon for tablet HS 1174"@en ;
-    ns7:entry <https://situx.github.io/cuneiformontology/examples/dict/3(disz)_word>,
+    ns6:entry <https://situx.github.io/cuneiformontology/examples/dict/3(disz)_word>,
         <https://situx.github.io/cuneiformontology/examples/dict/3(u)_word>,
         <https://situx.github.io/cuneiformontology/examples/dict/9(disz)_word>,
         <https://situx.github.io/cuneiformontology/examples/dict/e2_word>,
@@ -86,7 +86,7 @@
         <https://situx.github.io/cuneiformontology/examples/dict/ugula_word>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/e2-gal_sense>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/lu2_sense> ;
-    ns7:language ns4:Sumerian .
+    ns6:language ns4:Sumerian .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/Image> a owl:Class ;
     rdfs:label "image"@en ;
@@ -94,7 +94,7 @@
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/TX7_WrittenTextFragment> a owl:Class ;
     rdfs:label "written text fragment"@en ;
-    rdfs:subClassOf ns6:TX1_WrittenText .
+    rdfs:subClassOf ns7:TX1_WrittenText .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/e889905d-7796-46b1-b8df-8b4f7cead442_target_selector> a owl:NamedIndividual .
 
@@ -255,7 +255,7 @@
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/3(disz)_charvariant1> a ns3:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: 3(disz)"@en ;
-    ns6:P62_depicted_by <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char2_glyph> ;
+    ns7:P62_depicted_by <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char2_glyph> ;
     ns3:asSVG "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"75\" height=\"80\"><defs/><g stroke=\"#000000\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" fill=\"#000000\"><path fill=\"#000000\" stroke=\"#000000\" paint-order=\"fill stroke markers\" d=\" M 25 20 L 35 20 L 30 30 L 25 20 M 30 30 L 30 60 M 35 20 L 45 20 L 40 30 L 35 20 M 40 30 L 40 60 M 45 20 L 55 20 L 50 30 L 45 20 M 50 30 L 50 60\" stroke-miterlimit=\"10\" stroke-dasharray=\"\"/></g></svg>"^^ns3:svgLiteral ;
     ns3:hasGottsteinCode "a3"^^ns3:gottsteinLiteral ;
     ns3:hasPaleoCode "a-a-a"^^ns3:paleocodeLiteral .
@@ -271,14 +271,14 @@
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/3(u)_charvariant1> a ns3:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: 3(u)"@en ;
-    ns6:P62_depicted_by <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char1_glyph> ;
+    ns7:P62_depicted_by <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char1_glyph> ;
     ns3:asSVG "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"75\" height=\"50\"><defs/><g stroke=\"#000000\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" fill=\"#000000\"><path fill=\"#000000\" stroke=\"#000000\" paint-order=\"fill stroke markers\" d=\" M 34 15.000000000000007 L 31.6 18.640000000000008 L 30.4 22.320000000000007 L 29.799999999999997 26.000000000000007 L 30.4 29.640000000000008 L 31.6 33.32000000000001 L 34 37.00000000000001 L 31 33.32000000000001 L 28.799999999999997 31.000000000000007 L 27.200000000000003 29.400000000000006 L 25.6 28.000000000000007 L 24 27.000000000000007 L 22.6 26.000000000000004 L 24 25.000000000000007 L 25.6 24.000000000000007 L 27.200000000000003 22.600000000000005 L 28.799999999999997 21.000000000000007 L 31 18.640000000000008 L 34 15.000000000000007 M 44 15.000000000000007 L 41.6 18.640000000000008 L 40.4 22.320000000000007 L 39.8 26.000000000000007 L 40.4 29.640000000000008 L 41.6 33.32000000000001 L 44 37.00000000000001 L 41 33.32000000000001 L 38.8 31.000000000000007 L 37.2 29.400000000000006 L 35.6 28.000000000000007 L 34 27.000000000000007 L 32.6 26.000000000000004 L 34 25.000000000000007 L 35.6 24.000000000000007 L 37.2 22.600000000000005 L 38.8 21.000000000000007 L 41 18.640000000000008 L 44 15.000000000000007 M 54 15.000000000000007 L 51.6 18.640000000000008 L 50.4 22.320000000000007 L 49.8 26.000000000000007 L 50.4 29.640000000000008 L 51.6 33.32000000000001 L 54 37.00000000000001 L 51 33.32000000000001 L 48.8 31.000000000000007 L 47.2 29.400000000000006 L 45.6 28.000000000000007 L 44 27.000000000000007 L 42.6 26.000000000000004 L 44 25.000000000000007 L 45.6 24.000000000000007 L 47.2 22.600000000000005 L 48.8 21.000000000000007 L 51 18.640000000000008 L 54 15.000000000000007\" stroke-miterlimit=\"10\" stroke-dasharray=\"\"/></g></svg>"^^ns3:svgLiteral ;
     ns3:hasGottsteinCode "c3"^^ns3:gottsteinLiteral ;
     ns3:hasPaleoCode "w-w-w"^^ns3:paleocodeLiteral .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/9(disz)_charvariant1> a ns3:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: 9(disz)"@en ;
-    ns6:P62_depicted_by <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char1_glyph>,
+    ns7:P62_depicted_by <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char1_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line5_char5_glyph> ;
     ns3:asSVG "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"100\" height=\"80\"><defs/><g stroke=\"#000000\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" fill=\"#000000\"><path fill=\"#000000\" stroke=\"#000000\" paint-order=\"fill stroke markers\" d=\" M 25 20 L 35 20 L 30 30 L 25 20 M 30 30 L 30 60 M 25 50 L 35 50 L 30 60 L 25 50 M 30 60 L 30 90 M 35 20 L 45 20 L 40 30 L 35 20 M 40 30 L 40 60 M 35 50 L 45 50 L 40 60 L 35 50 M 40 60 L 40 90 M 45 20 L 55 20 L 50 30 L 45 20 M 50 30 L 50 60 M 45 50 L 55 50 L 50 60 L 45 50 M 50 60 L 50 90 M 55 20 L 65 20 L 60 30 L 55 20 M 60 30 L 60 60 M 55 50 L 65 50 L 60 60 L 55 50 M 60 60 L 60 90 M 65 20 L 75 20 L 70 30 L 65 20 M 70 30 L 70 60\" stroke-miterlimit=\"10\" stroke-dasharray=\"\"/></g></svg>"^^ns3:svgLiteral ;
     ns3:hasGottsteinCode "a9"^^ns3:gottsteinLiteral ;
@@ -733,14 +733,14 @@
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/a_charvariant1> a ns3:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: A"@en ;
-    ns6:P62_depicted_by <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1_char4_glyph> ;
+    ns7:P62_depicted_by <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1_char4_glyph> ;
     ns3:asSVG "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"170\" height=\"80\"><defs/><g stroke=\"#000000\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" fill=\"#000000\"><path fill=\"#000000\" stroke=\"#000000\" paint-order=\"fill stroke markers\" d=\" M 25 20 L 35 20 L 30 30 L 25 20 M 30 30 L 30 60 M 35 20 L 45 20 L 40 30 L 35 20 M 40 30 L 40 60\" stroke-miterlimit=\"10\" stroke-dasharray=\"\"/></g></svg>"^^ns3:svgLiteral ;
     ns3:hasGottsteinCode "a2"^^ns3:gottsteinLiteral ;
     ns3:hasPaleoCode "a-a"^^ns3:paleocodeLiteral .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/da_charvariant1> a ns3:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: DA"@en ;
-    ns6:P62_depicted_by <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line3_char3_glyph>,
+    ns7:P62_depicted_by <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line3_char3_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line3_char4_glyph> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/dim2_charvariant1> a ns3:GraphemeVariant ;
@@ -9412,7 +9412,7 @@
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/pa_charvariant1> a ns3:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: PA"@en ;
-    ns6:P62_depicted_by <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line3_char1_glyph>,
+    ns7:P62_depicted_by <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line3_char1_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1_char1_glyph> ;
     ns3:asSVG "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"100\" height=\"80\"><defs/><g stroke=\"#000000\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" fill=\"#000000\"><path fill=\"#000000\" stroke=\"#000000\" paint-order=\"fill stroke markers\" d=\" M 25 20 L 35 20 L 30 30 L 25 20 M 30 30 L 30 60 M 19 41.5 L 19 31.5 L 29 36.5 L 19 41.5 M 29 36.5 L 59 36.5 M 19 48.5 L 19 38.5 L 29 43.5 L 19 48.5 M 29 43.5 L 59 43.5\" stroke-miterlimit=\"10\" stroke-dasharray=\"\"/></g></svg>"^^ns3:svgLiteral ;
     ns3:hasGottsteinCode "a1b2"^^ns3:gottsteinLiteral ;
@@ -9426,11 +9426,11 @@
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/szesz_charvariant1> a ns3:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: SZESZ"@en ;
-    ns6:P62_depicted_by <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line3_char2_glyph> .
+    ns7:P62_depicted_by <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line3_char2_glyph> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/szu_charvariant1> a ns3:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: SZU"@en ;
-    ns6:P62_depicted_by <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char4_glyph> .
+    ns7:P62_depicted_by <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char4_glyph> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/tum_charvariant1> a ns3:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: TUM"@en .
@@ -9443,7 +9443,7 @@
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/um_charvariant1> a ns3:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: UM"@en ;
-    ns6:P62_depicted_by <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char4_glyph> .
+    ns7:P62_depicted_by <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char4_glyph> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/za_charvariant1> a ns3:GraphemeVariant ;
     rdfs:label "Grapheme Variant 1: ZA"@en .
@@ -9475,7 +9475,7 @@
     rdfs:label "Wedge 3 of Glyph at HS 1174 obverse line 1 char 2"@en,
         "Wedge Glyph of cuneiform wedge at HS1174 obverse line 1 char 2 wedge 3"@en .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char6_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char6_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 obverse side line 1 char 6"@en ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char7_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char5_glyph> .
@@ -9491,7 +9491,7 @@
         <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char4_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char5_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char5_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char5_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 obverse side line 4 char 5"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_4_5_ma_HS1174_03_front.jpg> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char4_glyph> .
@@ -9506,7 +9506,7 @@
         <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1_char3_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1_char4_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line2_char5_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line2_char5_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 reverse side line 2 char 5"@en ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line2_char4_glyph> .
 
@@ -9703,7 +9703,7 @@
     ns3:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_9(disz)_reading_9(disz)> ;
     skos:definition "9(disz)" .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char5_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char5_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 obverse side line 1 char 5"@en ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char6_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char4_glyph> .
@@ -9722,24 +9722,24 @@
         <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char7_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char8_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char1_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char1_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 obverse side line 2 char 1"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_2_1_da_HS1174_03_front.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char2_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char5_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char5_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 obverse side line 2 char 5"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_2_5_ib2_HS1174_03_front.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char6_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char4_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char6_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char6_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 obverse side line 2 char 6"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_2_6_dab5_HS1174_03_front.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char7_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char5_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char8_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char8_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 obverse side line 2 char 8"@en ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char7_glyph> .
 
@@ -9754,7 +9754,7 @@
         <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line3_char3_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line3_char4_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line3_char4_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line3_char4_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 obverse side line 3 char 4"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_3_4_da_HS1174_03_front.jpg> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line3_char3_glyph> .
@@ -9771,7 +9771,7 @@
         <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line2_char4_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line2_char5_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line2_char1_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line2_char1_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 reverse side line 2 char 1"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_2_1_nu_HS1174_06_back.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line2_char2_glyph> .
@@ -9787,12 +9787,12 @@
         <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3_char3_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3_char4_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3_char1_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3_char1_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 reverse side line 3 char 1"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_3_1_e2_HS1174_06_back.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3_char2_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3_char4_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3_char4_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 reverse side line 3 char 4"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_3_4_ka_HS1174_06_back.jpg> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3_char3_glyph> .
@@ -9807,17 +9807,17 @@
         <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line4_char2_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line4_char3_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line4_char1_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line4_char1_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 reverse side line 4 char 1"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_4_1_sza3_HS1174_06_back.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line4_char2_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line4_char3_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line4_char3_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 reverse side line 4 char 3"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_4_3_al_HS1174_06_back.jpg> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line4_char2_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line5_char1_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line5_char1_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 reverse side line 5 char 1"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_5_1_iti_HS1174_06_back.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line5_char2_glyph> .
@@ -10020,165 +10020,165 @@
     ns3:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_ud_reading_u4> ;
     skos:definition "u4" .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char1_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char1_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 obverse side line 1 char 1"@en .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char2_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char2_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 obverse side line 1 char 2"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/character/3(u)_6_1_1_1_HS1174_03_front.jpg>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_1_2_3(disz)_HS1174_03_front.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char3_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char1_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char3_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char3_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 obverse side line 1 char 3"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_1_3_gurusz_HS1174_03_front.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char4_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char2_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char2_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char2_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 obverse side line 2 char 2"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_2_2_ak_HS1174_03_front.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char3_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char1_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char3_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char3_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 obverse side line 2 char 3"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_2_3_ru_HS1174_03_front.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char4_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char2_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char4_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char4_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 obverse side line 2 char 4"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_2_4_um_HS1174_03_front.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char5_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char3_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char7_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char7_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 obverse side line 2 char 7"@en ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char8_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char6_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line3_char1_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line3_char1_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 obverse side line 3 char 1"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_3_1_ugula_HS1174_03_front.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line3_char2_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char1_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char1_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 obverse side line 4 char 1"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_4_1_9(disz)_HS1174_03_front.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char2_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char2_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char2_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 obverse side line 4 char 2"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_4_2_gurusz_HS1174_03_front.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char3_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char1_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char3_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char3_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 obverse side line 4 char 3"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_4_3_szu_HS1174_03_front.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char4_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char2_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char4_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char4_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 obverse side line 4 char 4"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_4_4_dim2_HS1174_03_front.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char5_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char3_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1_char1_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1_char1_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 reverse side line 1 char 1"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_1_1_ugula_HS1174_06_back.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1_char2_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1_char2_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1_char2_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 reverse side line 1 char 2"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_1_2_lu2_HS1174_06_back.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1_char3_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1_char1_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1_char3_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1_char3_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 reverse side line 1 char 3"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_1_3_ga_HS1174_06_back.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1_char4_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1_char2_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1_char4_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1_char4_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 reverse side line 1 char 4"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_1_4_a_HS1174_06_back.jpg> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1_char3_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line2_char2_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line2_char2_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 reverse side line 2 char 2"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_2_2_banda3_HS1174_06_back.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line2_char3_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line2_char1_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line2_char3_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line2_char3_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 reverse side line 2 char 3"@en ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line2_char4_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line2_char2_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line2_char4_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line2_char4_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 reverse side line 2 char 4"@en ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line2_char5_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line2_char3_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3_char2_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3_char2_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 reverse side line 3 char 2"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_3_2_gal_HS1174_06_back.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3_char3_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3_char1_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3_char3_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3_char3_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 reverse side line 3 char 3"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_3_3_ensi_HS1174_06_back.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3_char4_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3_char2_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line4_char2_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line4_char2_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 reverse side line 4 char 2"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_4_2_tum_HS1174_06_back.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line4_char3_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line4_char1_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line5_char2_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line5_char2_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 reverse side line 5 char 2"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_5_2_du6_HS1174_06_back.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line5_char3_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line5_char1_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line5_char3_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line5_char3_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 reverse side line 5 char 3"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_5_3_ku3_HS1174_06_back.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line5_char4_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line5_char2_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line5_char4_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line5_char4_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 reverse side line 5 char 4"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_5_4_u4_HS1174_06_back.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line5_char5_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line5_char3_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line5_char5_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line5_char5_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 reverse side line 5 char 5"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_5_5_9(disz)_HS1174_06_back.jpg> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line5_char4_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char4_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char4_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 obverse side line 1 char 4"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_1_4_szu_HS1174_03_front.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char5_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char3_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line3_char2_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line3_char2_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 obverse side line 3 char 2"@en ;
     ns4:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_3_2_szesz_HS1174_03_front.jpg> ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line3_char3_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line3_char1_glyph> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line3_char3_glyph> a ns6:TX9_Glyph ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line3_char3_glyph> a ns7:TX9_Glyph ;
     rdfs:label "Glyph at HS1174 obverse side line 3 char 3"@en ;
     ns3:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line3_char4_glyph> ;
     ns3:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line3_char2_glyph> .
