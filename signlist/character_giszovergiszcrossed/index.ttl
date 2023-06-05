@@ -1,13 +1,13 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_giszovergiszcrossed> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_giszovergiszcrossed> a ns1:Grapheme ;
     rdfs:label "Character: GIŠoverGIŠcrossed" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_giszovergiszcrossed_sense_clay__nail> ;
-    ns2:abzl "274" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_giszovergiszcrossed_reading_adamen3>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_giszovergiszcrossed_sense_clay__nail> ;
+    ns1:abzl "274" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_giszovergiszcrossed_reading_adamen3>,
         <https://situx.github.io/cuneiformontology/signlist/character_giszovergiszcrossed_reading_adamin3>,
         <https://situx.github.io/cuneiformontology/signlist/character_giszovergiszcrossed_reading_alal3>,
         <https://situx.github.io/cuneiformontology/signlist/character_giszovergiszcrossed_reading_an2>,
@@ -41,14 +41,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_giszovergiszcrossed_reading_ul3>,
         <https://situx.github.io/cuneiformontology/signlist/character_giszovergiszcrossed_reading_ul3_kip>,
         <https://situx.github.io/cuneiformontology/signlist/character_giszovergiszcrossed_reading_ulul> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gisz>,
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gisz>,
         <https://situx.github.io/cuneiformontology/signlist/character_giszcrossed> ;
-    ns2:hethzl "260" ;
-    ns2:labat "228" ;
-    ns2:obo "274" ;
-    ns2:signName "GIŠoverGIŠcrossed" ;
-    ns2:slha "296n2" ;
-    ns2:unicodeCodepoint "U+12112" ;
-    ns2:unicodeRepresentation "𒄒" ;
+    ns1:hethzl "260" ;
+    ns1:labat "228" ;
+    ns1:obo "274" ;
+    ns1:signName "GIŠoverGIŠcrossed" ;
+    ns1:slha "296n2" ;
+    ns1:unicodeCodepoint "U+12112" ;
+    ns1:unicodeRepresentation "𒄒" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555533> .
 

@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.purl.org/cuneiform#> .
-@prefix ns2: <https://situx.github.io/cuneiformontology/examples/signlist/> .
+@prefix ns1: <https://situx.github.io/cuneiformontology/examples/signlist/> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line5_char8> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line5_char8> a ns2:TransliterationCharOccurrence ;
     rdfs:label "TCH92 reverse line 5 char 8"@en ;
-    ns1:charIndex 8 ;
-    ns1:lineNumber 5 ;
-    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line5_char9> ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line5_char7> ;
-    ns2:hasGraphemeReading ns2:character_nig2_reading_sza2 .
+    ns2:charIndex 8 ;
+    ns2:lineNumber 5 ;
+    ns2:nextChar <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line5_char9> ;
+    ns2:prevChar <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line5_char7> ;
+    ns1:hasGraphemeReading ns1:character_nig2_reading_sza2 .
 

@@ -1,15 +1,15 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_gigi> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_gigi> a ns2:Grapheme ;
     rdfs:label "Character: GIGI (GI4overGI4)",
         "Character: GIGI (GI4overGI4crossed)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_gigi_sense_to_bar>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_gigi_sense_to_bar>,
         <https://situx.github.io/cuneiformontology/signlist/character_gigi_sense_to_cross>,
         <https://situx.github.io/cuneiformontology/signlist/character_gigi_sense_to_mess_up> ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gigi_reading_esir5>,
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gigi_reading_esir5>,
         <https://situx.github.io/cuneiformontology/signlist/character_gigi_reading_ge16>,
         <https://situx.github.io/cuneiformontology/signlist/character_gigi_reading_gi16>,
         <https://situx.github.io/cuneiformontology/signlist/character_gigi_reading_gi4&gi4>,
@@ -21,19 +21,19 @@
         <https://situx.github.io/cuneiformontology/signlist/character_gigi_reading_gilim>,
         <https://situx.github.io/cuneiformontology/signlist/character_gigi_reading_kil2_kil2>,
         <https://situx.github.io/cuneiformontology/signlist/character_gigi_reading_kilₓ> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gi4>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gi4>,
         <https://situx.github.io/cuneiformontology/signlist/character_gi4crossed>,
         <https://situx.github.io/cuneiformontology/signlist/character_gigi_gi4> ;
-    ns1:labat "67" ;
-    ns1:meszl "508" ;
-    ns1:obo "250" ;
-    ns1:signName "GIGI (GI4overGI4)",
+    ns2:labat "67" ;
+    ns2:meszl "508" ;
+    ns2:obo "250" ;
+    ns2:signName "GIGI (GI4overGI4)",
         "GIGI (GI4overGI4crossed)" ;
-    ns1:slha "326a",
+    ns2:slha "326a",
         "326v" ;
-    ns1:unicodeCodepoint "U+12105",
+    ns2:unicodeCodepoint "U+12105",
         "U+12106" ;
-    ns1:unicodeRepresentation "𒄅",
+    ns2:unicodeRepresentation "𒄅",
         "𒄆" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555504>,
         <http://www.wikidata.org/entity/Q87555508> .
