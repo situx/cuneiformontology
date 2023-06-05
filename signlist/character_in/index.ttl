@@ -1,26 +1,26 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_in> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_in> a ns2:Grapheme ;
     rdfs:label "Character: IN" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_in_sense_insult> ;
-    ns1:abzl "386" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_in_reading_en6>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_in_sense_insult> ;
+    ns2:abzl "386" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_in_reading_en6>,
         <https://situx.github.io/cuneiformontology/signlist/character_in_reading_gir12>,
         <https://situx.github.io/cuneiformontology/signlist/character_in_reading_in>,
         <https://situx.github.io/cuneiformontology/signlist/character_in_reading_in_in>,
         <https://situx.github.io/cuneiformontology/signlist/character_in_reading_ini>,
         <https://situx.github.io/cuneiformontology/signlist/character_in_reading_isin2> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_in> ;
-    ns1:hethzl "354" ;
-    ns1:labat "148" ;
-    ns1:meszl "261" ;
-    ns1:obo "386" ;
-    ns1:signName "IN" ;
-    ns1:slha "148" ;
-    ns1:unicodeCodepoint "U+12154" ;
-    ns1:unicodeRepresentation "𒅔" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_in> ;
+    ns2:hethzl "354" ;
+    ns2:labat "148" ;
+    ns2:meszl "261" ;
+    ns2:obo "386" ;
+    ns2:signName "IN" ;
+    ns2:slha "148" ;
+    ns2:unicodeCodepoint "U+12154" ;
+    ns2:unicodeRepresentation "𒅔" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555671> .
 
