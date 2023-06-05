@@ -1,14 +1,14 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_erim> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_erim> a ns2:Grapheme ;
     rdfs:label "Character: ERIM (ZÁLAG)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_erim_sense_gang_of_workers>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_erim_sense_gang_of_workers>,
         <https://situx.github.io/cuneiformontology/signlist/character_erim_sense_troops> ;
-    ns1:abzl "247" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_erim_reading_bir3>,
+    ns2:abzl "247" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_erim_reading_bir3>,
         <https://situx.github.io/cuneiformontology/signlist/character_erim_reading_erem>,
         <https://situx.github.io/cuneiformontology/signlist/character_erim_reading_eren2>,
         <https://situx.github.io/cuneiformontology/signlist/character_erim_reading_eren2_erin2>,
@@ -41,14 +41,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_erim_reading_zab>,
         <https://situx.github.io/cuneiformontology/signlist/character_erim_reading_zalag2>,
         <https://situx.github.io/cuneiformontology/signlist/character_erim_reading_zap> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_erim_za2lag> ;
-    ns1:hethzl "327" ;
-    ns1:labat "393" ;
-    ns1:meszl "612" ;
-    ns1:obo "247" ;
-    ns1:signName "ERIM (ZÁLAG)" ;
-    ns1:slha "393" ;
-    ns1:unicodeCodepoint "U+1209F" ;
-    ns1:unicodeRepresentation "𒂟" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_erim_za2lag> ;
+    ns2:hethzl "327" ;
+    ns2:labat "393" ;
+    ns2:meszl "612" ;
+    ns2:obo "247" ;
+    ns2:signName "ERIM (ZÁLAG)" ;
+    ns2:slha "393" ;
+    ns2:unicodeCodepoint "U+1209F" ;
+    ns2:unicodeRepresentation "𒂟" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555310> .
 

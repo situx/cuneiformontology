@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.purl.org/cuneiform#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line19> a ns1:Line ;
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line19> a ns2:Line ;
     rdfs:label "TCH92 obverse side line 19"@en ;
-    ns1:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/tch92/images/line/line_19_TCH92_front.jpg> ;
-    ns1:nextLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line20> ;
-    ns1:prevLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line18> ;
-    ns2:contains <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line19_char10_glyph>,
+    ns2:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/tch92/images/line/line_19_TCH92_front.jpg> ;
+    ns2:nextLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line20> ;
+    ns2:prevLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line18> ;
+    ns1:contains <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line19_char10_glyph>,
         <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line19_char11_glyph>,
         <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line19_char1_glyph>,
         <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line19_char2_glyph>,

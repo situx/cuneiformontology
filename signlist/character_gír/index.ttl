@@ -1,15 +1,15 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_gír> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_gír> a ns2:Grapheme ;
     rdfs:label "Character: GÍR" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_gír_sense_dagger>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_gír_sense_dagger>,
         <https://situx.github.io/cuneiformontology/signlist/character_gír_sense_knife>,
         <https://situx.github.io/cuneiformontology/signlist/character_gír_sense_scorpion__ul4___quick> ;
-    ns1:abzl "008" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gír_reading_ad2>,
+    ns2:abzl "008" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gír_reading_ad2>,
         <https://situx.github.io/cuneiformontology/signlist/character_gír_reading_adda4>,
         <https://situx.github.io/cuneiformontology/signlist/character_gír_reading_addu3_gir2>,
         <https://situx.github.io/cuneiformontology/signlist/character_gír_reading_ger2>,
@@ -25,15 +25,15 @@
         <https://situx.github.io/cuneiformontology/signlist/character_gír_reading_ul4>,
         <https://situx.github.io/cuneiformontology/signlist/character_gír_reading_ŋir2>,
         <https://situx.github.io/cuneiformontology/signlist/character_gír_reading_ŋiri2> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gi2r> ;
-    ns1:hethzl "6" ;
-    ns1:labat "10" ;
-    ns1:lak "7" ;
-    ns1:meszl "6" ;
-    ns1:obo "8" ;
-    ns1:signName "GÍR" ;
-    ns1:slha "010" ;
-    ns1:unicodeCodepoint "U+12108" ;
-    ns1:unicodeRepresentation "𒄈" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gi2r> ;
+    ns2:hethzl "6" ;
+    ns2:labat "10" ;
+    ns2:lak "7" ;
+    ns2:meszl "6" ;
+    ns2:obo "8" ;
+    ns2:signName "GÍR" ;
+    ns2:slha "010" ;
+    ns2:unicodeCodepoint "U+12108" ;
+    ns2:unicodeRepresentation "𒄈" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555512> .
 
