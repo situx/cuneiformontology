@@ -1,11 +1,11 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse> a ns2:ObverseSide ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse> a ns1:ObverseSide ;
     rdfs:label "HT 07-31-95 obverse side"@en ;
-    ns2:isRepresentedBy <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611837:841081/full/full/0/default.jpg> ;
-    ns1:contains <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1>,
+    ns1:isRepresentedBy <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611837:841081/full/full/0/default.jpg> ;
+    ns2:contains <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line1>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line2>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line3>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_obverse_line4> .
