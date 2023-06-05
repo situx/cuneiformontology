@@ -1,19 +1,19 @@
-@prefix ns1: <https://situx.github.io/cuneiformontology/examples/signlist/> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <https://situx.github.io/cuneiformontology/examples/signlist/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ns1:character_ri a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns2:character_ri a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: RI"@en ;
-    ns2:abzl 39 ;
-    ns2:hasUnicodeCodePoint "U+12291",
+    ns1:abzl 39 ;
+    ns1:hasUnicodeCodePoint "U+12291",
         "𒊑" ;
-    ns2:hasUnicodeRepresentation "U+12291",
+    ns1:hasUnicodeRepresentation "U+12291",
         "𒊑" ;
-    ns2:hethzl 32 ;
-    ns2:meszl 142 ;
-    ns2:signName "RI" ;
-    ns2:slha 86 ;
-    ns1:hasGraphemeReading ns1:character_ri_reading_re,
-        ns1:character_ri_reading_tal .
+    ns1:hethzl 32 ;
+    ns1:meszl 142 ;
+    ns1:signName "RI" ;
+    ns1:slha 86 ;
+    ns2:hasGraphemeReading ns2:character_ri_reading_re,
+        ns2:character_ri_reading_tal .
 
