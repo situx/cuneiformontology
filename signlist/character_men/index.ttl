@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_men> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_men> a ns2:Grapheme ;
     rdfs:label "Character: MEN (GÁ× ME.EN)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_men_sense_crown> ;
-    ns1:abzl "102" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_men_reading_dan2>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_men_sense_crown> ;
+    ns2:abzl "102" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_men_reading_dan2>,
         <https://situx.github.io/cuneiformontology/signlist/character_men_reading_era3>,
         <https://situx.github.io/cuneiformontology/signlist/character_men_reading_eri15>,
         <https://situx.github.io/cuneiformontology/signlist/character_men_reading_ga2×_me_en>,
@@ -17,15 +17,15 @@
         <https://situx.github.io/cuneiformontology/signlist/character_men_reading_mi4>,
         <https://situx.github.io/cuneiformontology/signlist/character_men_reading_min7>,
         <https://situx.github.io/cuneiformontology/signlist/character_men_reading_tan2> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_en>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_en>,
         <https://situx.github.io/cuneiformontology/signlist/character_me>,
         <https://situx.github.io/cuneiformontology/signlist/character_men_ga2> ;
-    ns1:labat "270" ;
-    ns1:meszl "427" ;
-    ns1:obo "102" ;
-    ns1:signName "MEN (GÁ× ME.EN)" ;
-    ns1:slha "270" ;
-    ns1:unicodeCodepoint "U+120DE" ;
-    ns1:unicodeRepresentation "𒃞" ;
+    ns2:labat "270" ;
+    ns2:meszl "427" ;
+    ns2:obo "102" ;
+    ns2:signName "MEN (GÁ× ME.EN)" ;
+    ns2:slha "270" ;
+    ns2:unicodeCodepoint "U+120DE" ;
+    ns2:unicodeRepresentation "𒃞" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555430> .
 
