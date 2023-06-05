@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_ir> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_ir> a ns2:Grapheme ;
     rdfs:label "Character: IR (GAG-gunû)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_ir_sense_perfume_d> ;
-    ns1:abzl "263" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ir_reading_du3>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_ir_sense_perfume_d> ;
+    ns2:abzl "263" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ir_reading_du3>,
         <https://situx.github.io/cuneiformontology/signlist/character_ir_reading_er>,
         <https://situx.github.io/cuneiformontology/signlist/character_ir_reading_ere14>,
         <https://situx.github.io/cuneiformontology/signlist/character_ir_reading_eresz3>,
@@ -18,15 +18,15 @@
         <https://situx.github.io/cuneiformontology/signlist/character_ir_reading_ir_phonogram_for_ir3_wardum>,
         <https://situx.github.io/cuneiformontology/signlist/character_ir_reading_ire14>,
         <https://situx.github.io/cuneiformontology/signlist/character_ir_reading_iri14> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gunû>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gunû>,
         <https://situx.github.io/cuneiformontology/signlist/character_ir_gag> ;
-    ns1:hethzl "77" ;
-    ns1:labat "232" ;
-    ns1:meszl "437" ;
-    ns1:obo "263" ;
-    ns1:signName "IR (GAG-gunû)" ;
-    ns1:slha "232" ;
-    ns1:unicodeCodepoint "U+12155" ;
-    ns1:unicodeRepresentation "𒅕" ;
+    ns2:hethzl "77" ;
+    ns2:labat "232" ;
+    ns2:meszl "437" ;
+    ns2:obo "263" ;
+    ns2:signName "IR (GAG-gunû)" ;
+    ns2:slha "232" ;
+    ns2:unicodeCodepoint "U+12155" ;
+    ns2:unicodeRepresentation "𒅕" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555672> .
 
