@@ -1,15 +1,15 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_mu> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_mu> a ns2:Grapheme ;
     rdfs:label "Character: MU" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_mu_sense_line_on_a_tablet>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_mu_sense_line_on_a_tablet>,
         <https://situx.github.io/cuneiformontology/signlist/character_mu_sense_name>,
         <https://situx.github.io/cuneiformontology/signlist/character_mu_sense_year> ;
-    ns1:abzl "020" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_mu_reading_gu10>,
+    ns2:abzl "020" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_mu_reading_gu10>,
         <https://situx.github.io/cuneiformontology/signlist/character_mu_reading_i14>,
         <https://situx.github.io/cuneiformontology/signlist/character_mu_reading_ia5>,
         <https://situx.github.io/cuneiformontology/signlist/character_mu_reading_mehida>,
@@ -31,14 +31,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_mu_reading_tuh3>,
         <https://situx.github.io/cuneiformontology/signlist/character_mu_reading_wu4>,
         <https://situx.github.io/cuneiformontology/signlist/character_mu_reading_ŋu10> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_mu> ;
-    ns1:hethzl "17" ;
-    ns1:labat "61" ;
-    ns1:meszl "98" ;
-    ns1:obo "20" ;
-    ns1:signName "MU" ;
-    ns1:slha "061" ;
-    ns1:unicodeCodepoint "U+1222C" ;
-    ns1:unicodeRepresentation "𒈬" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_mu> ;
+    ns2:hethzl "17" ;
+    ns2:labat "61" ;
+    ns2:meszl "98" ;
+    ns2:obo "20" ;
+    ns2:signName "MU" ;
+    ns2:slha "061" ;
+    ns2:unicodeCodepoint "U+1222C" ;
+    ns2:unicodeRepresentation "𒈬" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556112> .
 

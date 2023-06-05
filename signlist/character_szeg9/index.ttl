@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_szeg9> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_szeg9> a ns2:Grapheme ;
     rdfs:label "Character: ŠEG9 (ŠÚ.ŠE.KU.GAG)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_szeg9_sense_szeg9_bar___deer> ;
-    ns1:abzl "429" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szeg9_reading_kiszi6>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_szeg9_sense_szeg9_bar___deer> ;
+    ns2:abzl "429" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szeg9_reading_kiszi6>,
         <https://situx.github.io/cuneiformontology/signlist/character_szeg9_reading_sa21>,
         <https://situx.github.io/cuneiformontology/signlist/character_szeg9_reading_sabar2>,
         <https://situx.github.io/cuneiformontology/signlist/character_szeg9_reading_seg14>,
@@ -22,16 +22,16 @@
         <https://situx.github.io/cuneiformontology/signlist/character_szeg9_reading_szenₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_szeg9_reading_szeŋ9>,
         <https://situx.github.io/cuneiformontology/signlist/character_szeg9_reading_szeŋbar> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gag>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gag>,
         <https://situx.github.io/cuneiformontology/signlist/character_ku>,
         <https://situx.github.io/cuneiformontology/signlist/character_sze>,
         <https://situx.github.io/cuneiformontology/signlist/character_szeg9_szu2> ;
-    ns1:labat "551" ;
-    ns1:meszl "878" ;
-    ns1:obo "429" ;
-    ns1:signName "ŠEG9 (ŠÚ.ŠE.KU.GAG)" ;
-    ns1:slha "551v" ;
-    ns1:unicodeCodepoint "U+122BE" ;
-    ns1:unicodeRepresentation "𒊾" ;
+    ns2:labat "551" ;
+    ns2:meszl "878" ;
+    ns2:obo "429" ;
+    ns2:signName "ŠEG9 (ŠÚ.ŠE.KU.GAG)" ;
+    ns2:slha "551v" ;
+    ns2:unicodeCodepoint "U+122BE" ;
+    ns2:unicodeRepresentation "𒊾" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556385> .
 

@@ -1,20 +1,20 @@
-@prefix ns1: <https://situx.github.io/cuneiformontology/examples/signlist/> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <https://situx.github.io/cuneiformontology/examples/signlist/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ns1:character_an a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+ns2:character_an a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
     rdfs:label "Character: AN"@en ;
-    ns2:abzl "009"^^ns2:asciiTransliterationLiteral,
+    ns1:abzl "009"^^ns1:asciiTransliterationLiteral,
         9 ;
-    ns2:hasUnicodeCodePoint "U+1202D" ;
-    ns2:hasUnicodeRepresentation "𒀭" ;
-    ns2:hethzl "8"^^ns2:asciiTransliterationLiteral,
+    ns1:hasUnicodeCodePoint "U+1202D" ;
+    ns1:hasUnicodeRepresentation "𒀭" ;
+    ns1:hethzl "8"^^ns1:asciiTransliterationLiteral,
         8 ;
-    ns2:meszl 10 ;
-    ns2:signName "AN" ;
-    ns2:slha "013"^^ns2:asciiTransliterationLiteral,
+    ns1:meszl 10 ;
+    ns1:signName "AN" ;
+    ns1:slha "013"^^ns1:asciiTransliterationLiteral,
         13 ;
-    ns1:hasGraphemeReading ns1:character_an_reading_d,
-        ns1:character_an_reading_dingir .
+    ns2:hasGraphemeReading ns2:character_an_reading_d,
+        ns2:character_an_reading_dingir .
 
