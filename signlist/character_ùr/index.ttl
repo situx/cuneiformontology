@@ -1,27 +1,27 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_ùr> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_ùr> a ns1:Grapheme ;
     rdfs:label "Character: ÙR (GÁ×NIR)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_ùr_sense_roof> ;
-    ns2:abzl "099" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ùr_reading_ga2×nun&nun>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_ùr_sense_roof> ;
+    ns1:abzl "099" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ùr_reading_ga2×nun&nun>,
         <https://situx.github.io/cuneiformontology/signlist/character_ùr_reading_guszur>,
         <https://situx.github.io/cuneiformontology/signlist/character_ùr_reading_ur3>,
         <https://situx.github.io/cuneiformontology/signlist/character_ùr_reading_ura3>,
         <https://situx.github.io/cuneiformontology/signlist/character_ùr_reading_uru12>,
         <https://situx.github.io/cuneiformontology/signlist/character_ùr_reading_ŋuszur> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_nir>,
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_nir>,
         <https://situx.github.io/cuneiformontology/signlist/character_u3r_ga2> ;
-    ns2:hethzl "58" ;
-    ns2:labat "255" ;
-    ns2:meszl "411" ;
-    ns2:obo "99" ;
-    ns2:signName "ÙR (GÁ×NIR)" ;
-    ns2:slha "255" ;
-    ns2:unicodeCodepoint "U+120E1" ;
-    ns2:unicodeRepresentation "𒃡" ;
+    ns1:hethzl "58" ;
+    ns1:labat "255" ;
+    ns1:meszl "411" ;
+    ns1:obo "99" ;
+    ns1:signName "ÙR (GÁ×NIR)" ;
+    ns1:slha "255" ;
+    ns1:unicodeCodepoint "U+120E1" ;
+    ns1:unicodeRepresentation "𒃡" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555435> .
 

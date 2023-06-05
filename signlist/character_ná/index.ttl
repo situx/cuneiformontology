@@ -1,14 +1,14 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_ná> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_ná> a ns2:Grapheme ;
     rdfs:label "Character: NÁ" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_ná_sense_to_lie_down>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_ná_sense_to_lie_down>,
         <https://situx.github.io/cuneiformontology/signlist/character_ná_sense_to_sleep> ;
-    ns1:abzl "364" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ná_reading_daramₓ>,
+    ns2:abzl "364" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ná_reading_daramₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_ná_reading_gesznu3>,
         <https://situx.github.io/cuneiformontology/signlist/character_ná_reading_gisznax_gisznux>,
         <https://situx.github.io/cuneiformontology/signlist/character_ná_reading_na2>,
@@ -23,14 +23,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_ná_reading_nud?>,
         <https://situx.github.io/cuneiformontology/signlist/character_ná_reading_timuaₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_ná_reading_ŋesznu3> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_na2> ;
-    ns1:hethzl "314" ;
-    ns1:labat "431" ;
-    ns1:meszl "689" ;
-    ns1:obo "364" ;
-    ns1:signName "NÁ" ;
-    ns1:slha "431" ;
-    ns1:unicodeCodepoint "U+1223F" ;
-    ns1:unicodeRepresentation "𒈿" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_na2> ;
+    ns2:hethzl "314" ;
+    ns2:labat "431" ;
+    ns2:meszl "689" ;
+    ns2:obo "364" ;
+    ns2:signName "NÁ" ;
+    ns2:slha "431" ;
+    ns2:unicodeCodepoint "U+1223F" ;
+    ns2:unicodeRepresentation "𒈿" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556146> .
 

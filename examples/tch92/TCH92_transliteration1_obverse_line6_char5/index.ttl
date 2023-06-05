@@ -1,13 +1,13 @@
-@prefix ns1: <https://situx.github.io/cuneiformontology/examples/tch92/> .
-@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <https://situx.github.io/cuneiformontology/examples/tch92/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ns1:TCH92_transliteration1_obverse_line6_char5 a ns2:TransliterationCharOccurrence ;
+ns2:TCH92_transliteration1_obverse_line6_char5 a ns1:TransliterationCharOccurrence ;
     rdfs:label "TCH92 obverse line 6 char 5"@en ;
-    ns2:charIndex 5 ;
-    ns2:lineNumber 6 ;
-    ns2:nextChar ns1:TCH92_transliteration1_obverse_line6_char6 ;
-    ns2:prevChar ns1:TCH92_transliteration1_obverse_line6_char4 ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_a_reading_a> .
+    ns1:charIndex 5 ;
+    ns1:lineNumber 6 ;
+    ns1:nextChar ns2:TCH92_transliteration1_obverse_line6_char6 ;
+    ns1:prevChar ns2:TCH92_transliteration1_obverse_line6_char4 ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_a_reading_a> .
 

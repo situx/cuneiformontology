@@ -1,17 +1,17 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_lu> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_lu> a ns1:Grapheme ;
     rdfs:label "Character: LU (UDU)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_lu_sense__dab___to_hold>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_lu_sense__dab___to_hold>,
         <https://situx.github.io/cuneiformontology/signlist/character_lu_sense_to_catch>,
         <https://situx.github.io/cuneiformontology/signlist/character_lu_sense_to_pass__by>,
         <https://situx.github.io/cuneiformontology/signlist/character_lu_sense_to_seize>,
         <https://situx.github.io/cuneiformontology/signlist/character_lu_sense_to_traverse> ;
-    ns2:abzl "416" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_lu_reading_dab>,
+    ns1:abzl "416" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_lu_reading_dab>,
         <https://situx.github.io/cuneiformontology/signlist/character_lu_reading_dib>,
         <https://situx.github.io/cuneiformontology/signlist/character_lu_reading_dib_dab>,
         <https://situx.github.io/cuneiformontology/signlist/character_lu_reading_eze>,
@@ -20,14 +20,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_lu_reading_nu12>,
         <https://situx.github.io/cuneiformontology/signlist/character_lu_reading_si6>,
         <https://situx.github.io/cuneiformontology/signlist/character_lu_reading_udu> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_lu_udu> ;
-    ns2:hethzl "210" ;
-    ns2:labat "537" ;
-    ns2:meszl "812" ;
-    ns2:obo "419" ;
-    ns2:signName "LU (UDU)" ;
-    ns2:slha "537" ;
-    ns2:unicodeCodepoint "U+121FB" ;
-    ns2:unicodeRepresentation "𒇻" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_lu_udu> ;
+    ns1:hethzl "210" ;
+    ns1:labat "537" ;
+    ns1:meszl "812" ;
+    ns1:obo "419" ;
+    ns1:signName "LU (UDU)" ;
+    ns1:slha "537" ;
+    ns1:unicodeCodepoint "U+121FB" ;
+    ns1:unicodeRepresentation "𒇻" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556014> .
 

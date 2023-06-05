@@ -1,13 +1,13 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_usz> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_usz> a ns1:Grapheme ;
     rdfs:label "Character: UŠ (NITA)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_usz_sense_nita___male> ;
-    ns2:abzl "068" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_usz_reading_gesz3>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_usz_sense_nita___male> ;
+    ns1:abzl "068" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_usz_reading_gesz3>,
         <https://situx.github.io/cuneiformontology/signlist/character_usz_reading_gisz3>,
         <https://situx.github.io/cuneiformontology/signlist/character_usz_reading_guruszₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_usz_reading_isz10>,
@@ -40,14 +40,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_usz_reading_uś>,
         <https://situx.github.io/cuneiformontology/signlist/character_usz_reading_ŋesz3>,
         <https://situx.github.io/cuneiformontology/signlist/character_usz_reading_ŋisz3> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_usz_nita> ;
-    ns2:hethzl "132" ;
-    ns2:labat "211" ;
-    ns2:meszl "381" ;
-    ns2:obo "68" ;
-    ns2:signName "UŠ (NITA)" ;
-    ns2:slha "211" ;
-    ns2:unicodeCodepoint "U+12351" ;
-    ns2:unicodeRepresentation "𒍑" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_usz_nita> ;
+    ns1:hethzl "132" ;
+    ns1:labat "211" ;
+    ns1:meszl "381" ;
+    ns1:obo "68" ;
+    ns1:signName "UŠ (NITA)" ;
+    ns1:slha "211" ;
+    ns1:unicodeCodepoint "U+12351" ;
+    ns1:unicodeRepresentation "𒍑" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556672> .
 
