@@ -1,16 +1,16 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_e> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_e> a ns1:Grapheme ;
     rdfs:label "Character: E" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_e_sense__e__g____levee>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_e_sense__e__g____levee>,
         <https://situx.github.io/cuneiformontology/signlist/character_e_sense_marû>,
         <https://situx.github.io/cuneiformontology/signlist/character_e_sense_to_do__aux__verb>,
         <https://situx.github.io/cuneiformontology/signlist/character_e_sense_to_say> ;
-    ns2:abzl "167" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_e_reading_e>,
+    ns1:abzl "167" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_e_reading_e>,
         <https://situx.github.io/cuneiformontology/signlist/character_e_reading_e_e>,
         <https://situx.github.io/cuneiformontology/signlist/character_e_reading_eg2>,
         <https://situx.github.io/cuneiformontology/signlist/character_e_reading_eg2_ig2>,
@@ -18,14 +18,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_e_reading_i15>,
         <https://situx.github.io/cuneiformontology/signlist/character_e_reading_ig2>,
         <https://situx.github.io/cuneiformontology/signlist/character_e_reading_yi3> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_e> ;
-    ns2:hethzl "187" ;
-    ns2:labat "308" ;
-    ns2:meszl "498" ;
-    ns2:obo "167" ;
-    ns2:signName "E" ;
-    ns2:slha "308" ;
-    ns2:unicodeCodepoint "U+1208A" ;
-    ns2:unicodeRepresentation "𒂊" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_e> ;
+    ns1:hethzl "187" ;
+    ns1:labat "308" ;
+    ns1:meszl "498" ;
+    ns1:obo "167" ;
+    ns1:signName "E" ;
+    ns1:slha "308" ;
+    ns1:unicodeCodepoint "U+1208A" ;
+    ns1:unicodeRepresentation "𒂊" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555271> .
 

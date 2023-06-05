@@ -1,13 +1,13 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_ùz> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_ùz> a ns1:Grapheme ;
     rdfs:label "Character: ÙZ (MÁ.KASKAL)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_ùz_sense_sze_goat> ;
-    ns2:abzl "054" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ùz_reading_surₓ>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_ùz_sense_sze_goat> ;
+    ns1:abzl "054" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ùz_reading_surₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_ùz_reading_ud5>,
         <https://situx.github.io/cuneiformontology/signlist/character_ùz_reading_ud5_uz3>,
         <https://situx.github.io/cuneiformontology/signlist/character_ùz_reading_uda5>,
@@ -16,15 +16,15 @@
         <https://situx.github.io/cuneiformontology/signlist/character_ùz_reading_uz3>,
         <https://situx.github.io/cuneiformontology/signlist/character_ùz_reading_uza3>,
         <https://situx.github.io/cuneiformontology/signlist/character_ùz_reading_uzud> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_kaskal>,
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_kaskal>,
         <https://situx.github.io/cuneiformontology/signlist/character_u3z_ma2> ;
-    ns2:hethzl "23" ;
-    ns2:labat "122.2" ;
-    ns2:meszl "203" ;
-    ns2:obo "54" ;
-    ns2:signName "ÙZ (MÁ.KASKAL)" ;
-    ns2:slha "122b" ;
-    ns2:unicodeCodepoint "U+1235A" ;
-    ns2:unicodeRepresentation "𒍚" ;
+    ns1:hethzl "23" ;
+    ns1:labat "122.2" ;
+    ns1:meszl "203" ;
+    ns1:obo "54" ;
+    ns1:signName "ÙZ (MÁ.KASKAL)" ;
+    ns1:slha "122b" ;
+    ns1:unicodeCodepoint "U+1235A" ;
+    ns1:unicodeRepresentation "𒍚" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556692> .
 
