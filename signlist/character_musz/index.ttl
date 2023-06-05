@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_musz> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_musz> a ns2:Grapheme ;
     rdfs:label "Character: MUŠ" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_musz_sense_snake> ;
-    ns1:abzl "267" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_musz_reading_imdudu>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_musz_sense_snake> ;
+    ns2:abzl "267" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_musz_reading_imdudu>,
         <https://situx.github.io/cuneiformontology/signlist/character_musz_reading_irhan>,
         <https://situx.github.io/cuneiformontology/signlist/character_musz_reading_mus>,
         <https://situx.github.io/cuneiformontology/signlist/character_musz_reading_musz>,
@@ -32,14 +32,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_musz_reading_wusz>,
         <https://situx.github.io/cuneiformontology/signlist/character_musz_reading_zer3>,
         <https://situx.github.io/cuneiformontology/signlist/character_musz_reading_zir3> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_musz> ;
-    ns1:hethzl "342" ;
-    ns1:labat "374" ;
-    ns1:meszl "585" ;
-    ns1:obo "267" ;
-    ns1:signName "MUŠ" ;
-    ns1:slha "374" ;
-    ns1:unicodeCodepoint "U+12232" ;
-    ns1:unicodeRepresentation "𒈲" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_musz> ;
+    ns2:hethzl "342" ;
+    ns2:labat "374" ;
+    ns2:meszl "585" ;
+    ns2:obo "267" ;
+    ns2:signName "MUŠ" ;
+    ns2:slha "374" ;
+    ns2:unicodeCodepoint "U+12232" ;
+    ns2:unicodeRepresentation "𒈲" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556122> .
 

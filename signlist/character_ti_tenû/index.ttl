@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_ti_tenû> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_ti_tenû> a ns2:Grapheme ;
     rdfs:label "Character: TI tenû",
         "Character: TI-tenû" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_ti_tenû_sense_life> ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ti_tenû_reading_de9>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_ti_tenû_sense_life> ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ti_tenû_reading_de9>,
         <https://situx.github.io/cuneiformontology/signlist/character_ti_tenû_reading_di3>,
         <https://situx.github.io/cuneiformontology/signlist/character_ti_tenû_reading_t_e6>,
         <https://situx.github.io/cuneiformontology/signlist/character_ti_tenû_reading_t_i3>,
@@ -26,17 +26,17 @@
         <https://situx.github.io/cuneiformontology/signlist/character_ti_tenû_reading_til3_tel>,
         <https://situx.github.io/cuneiformontology/signlist/character_ti_tenû_reading_tila3>,
         <https://situx.github.io/cuneiformontology/signlist/character_ti_tenû_reading_tiŋ4> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_tenû>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_tenû>,
         <https://situx.github.io/cuneiformontology/signlist/character_ti>,
         <https://situx.github.io/cuneiformontology/signlist/character_ti_tenû> ;
-    ns1:labat "73" ;
-    ns1:obo "23" ;
-    ns1:signName "TI tenû",
+    ns2:labat "73" ;
+    ns2:obo "23" ;
+    ns2:signName "TI tenû",
         "TI-tenû" ;
-    ns1:slha "073av" ;
-    ns1:unicodeCodepoint "U+122FE",
+    ns2:slha "073av" ;
+    ns2:unicodeCodepoint "U+122FE",
         "U+122FF" ;
-    ns1:unicodeRepresentation "𒋾",
+    ns2:unicodeRepresentation "𒋾",
         "𒋿" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556496>,
         <http://www.wikidata.org/entity/Q87556498> .
