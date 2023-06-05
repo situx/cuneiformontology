@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_te> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_te> a ns2:Grapheme ;
     rdfs:label "Character: TE" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_te_sense_to_approach> ;
-    ns1:abzl "289" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_te_reading_de4>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_te_sense_to_approach> ;
+    ns2:abzl "289" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_te_reading_de4>,
         <https://situx.github.io/cuneiformontology/signlist/character_te_reading_di12>,
         <https://situx.github.io/cuneiformontology/signlist/character_te_reading_gal5>,
         <https://situx.github.io/cuneiformontology/signlist/character_te_reading_gallaₓ>,
@@ -28,14 +28,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_te_reading_ten>,
         <https://situx.github.io/cuneiformontology/signlist/character_te_reading_teŋ3>,
         <https://situx.github.io/cuneiformontology/signlist/character_te_reading_ti7> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_te> ;
-    ns1:hethzl "249" ;
-    ns1:labat "376" ;
-    ns1:meszl "589" ;
-    ns1:obo "289" ;
-    ns1:signName "TE" ;
-    ns1:slha "376" ;
-    ns1:unicodeCodepoint "U+122FC" ;
-    ns1:unicodeRepresentation "𒋼" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_te> ;
+    ns2:hethzl "249" ;
+    ns2:labat "376" ;
+    ns2:meszl "589" ;
+    ns2:obo "289" ;
+    ns2:signName "TE" ;
+    ns2:slha "376" ;
+    ns2:unicodeCodepoint "U+122FC" ;
+    ns2:unicodeRepresentation "𒋼" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556494> .
 
