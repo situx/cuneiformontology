@@ -1,13 +1,13 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_gul> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_gul> a ns1:Grapheme ;
     rdfs:label "Character: GUL (SÚN)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_gul_sense_to_destroy> ;
-    ns2:abzl "343" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gul_reading_gul>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_gul_sense_to_destroy> ;
+    ns1:abzl "343" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gul_reading_gul>,
         <https://situx.github.io/cuneiformontology/signlist/character_gul_reading_gul_gul>,
         <https://situx.github.io/cuneiformontology/signlist/character_gul_reading_gul_kul2>,
         <https://situx.github.io/cuneiformontology/signlist/character_gul_reading_gulu>,
@@ -23,14 +23,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_gul_reading_sun2>,
         <https://situx.github.io/cuneiformontology/signlist/character_gul_reading_suna2>,
         <https://situx.github.io/cuneiformontology/signlist/character_gul_reading_szun3> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gul_su2n> ;
-    ns2:hethzl "271" ;
-    ns2:labat "429" ;
-    ns2:meszl "682" ;
-    ns2:obo "343" ;
-    ns2:signName "GUL (SÚN)" ;
-    ns2:slha "429" ;
-    ns2:unicodeCodepoint "U+12122" ;
-    ns2:unicodeRepresentation "𒄢" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gul_su2n> ;
+    ns1:hethzl "271" ;
+    ns1:labat "429" ;
+    ns1:meszl "682" ;
+    ns1:obo "343" ;
+    ns1:signName "GUL (SÚN)" ;
+    ns1:slha "429" ;
+    ns1:unicodeCodepoint "U+12122" ;
+    ns1:unicodeRepresentation "𒄢" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555566> .
 
