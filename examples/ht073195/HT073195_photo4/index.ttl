@@ -1,19 +1,19 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://ns.adobe.com/xap/1.0/> .
+@prefix ns1: <http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/> .
 @prefix ns2: <http://www.w3.org/2003/12/exif/ns#> .
-@prefix ns3: <http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/> .
+@prefix ns3: <http://ns.adobe.com/xap/1.0/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo4> a foaf:Image ;
-    ns3:CountryCode "IRN" ;
-    ns3:Event "single picture" ;
-    ns3:LocationCreatedCity "Haft Tappeh" ;
-    ns3:LocationCreatedCountryName "Iran" ;
-    ns3:LocationCreatedWorldRegion "Asia" ;
-    ns1:CreatorTool "Haft Tappeh XMP Generator Script" ;
-    ns1:Owner "Behzad Mofidi-Nasrabadi" ;
-    ns1:UsageTerms "CC BY-SA 4.0" ;
+    ns1:CountryCode "IRN" ;
+    ns1:Event "single picture" ;
+    ns1:LocationCreatedCity "Haft Tappeh" ;
+    ns1:LocationCreatedCountryName "Iran" ;
+    ns1:LocationCreatedWorldRegion "Asia" ;
+    ns3:CreatorTool "Haft Tappeh XMP Generator Script" ;
+    ns3:Owner "Behzad Mofidi-Nasrabadi" ;
+    ns3:UsageTerms "CC BY-SA 4.0" ;
     dc:contributor <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_ehuber>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_tbrandes> ;
     dc:created "2009-01-17T10:31:52"^^xsd:dateTime ;
