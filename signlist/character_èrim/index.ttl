@@ -1,26 +1,26 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_èrim> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_èrim> a ns2:Grapheme ;
     rdfs:label "Character: ÈRIM (URU×NÍG)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_èrim_sense_storehouse> ;
-    ns1:abzl "191" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_èrim_reading_erim3>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_èrim_sense_storehouse> ;
+    ns2:abzl "191" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_èrim_reading_erim3>,
         <https://situx.github.io/cuneiformontology/signlist/character_èrim_reading_erimmaₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_èrim_reading_erin3>,
         <https://situx.github.io/cuneiformontology/signlist/character_èrim_reading_irimma>,
         <https://situx.github.io/cuneiformontology/signlist/character_èrim_reading_irimma_erim3>,
         <https://situx.github.io/cuneiformontology/signlist/character_èrim_reading_uru×gar> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_e3rim_uru>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_e3rim_uru>,
         <https://situx.github.io/cuneiformontology/signlist/character_ni2g> ;
-    ns1:labat "49" ;
-    ns1:meszl "83" ;
-    ns1:obo "191" ;
-    ns1:signName "ÈRIM (URU×NÍG)" ;
-    ns1:slha "049" ;
-    ns1:unicodeCodepoint "U+1233F" ;
-    ns1:unicodeRepresentation "𒌿" ;
+    ns2:labat "49" ;
+    ns2:meszl "83" ;
+    ns2:obo "191" ;
+    ns2:signName "ÈRIM (URU×NÍG)" ;
+    ns2:slha "049" ;
+    ns2:unicodeCodepoint "U+1233F" ;
+    ns2:unicodeRepresentation "𒌿" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556634> .
 
