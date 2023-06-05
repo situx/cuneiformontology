@@ -1,14 +1,14 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_engur> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_engur> a ns1:Grapheme ;
     rdfs:label "Character: ENGUR (LAGAB×ḪAL)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_engur_sense_lake__myth_>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_engur_sense_lake__myth_>,
         <https://situx.github.io/cuneiformontology/signlist/character_engur_sense_sea> ;
-    ns2:abzl "404" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_engur_reading_angur>,
+    ns1:abzl "404" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_engur_reading_angur>,
         <https://situx.github.io/cuneiformontology/signlist/character_engur_reading_bunig3>,
         <https://situx.github.io/cuneiformontology/signlist/character_engur_reading_buniŋ3>,
         <https://situx.github.io/cuneiformontology/signlist/character_engur_reading_engur>,
@@ -23,15 +23,15 @@
         <https://situx.github.io/cuneiformontology/signlist/character_engur_reading_zigum>,
         <https://situx.github.io/cuneiformontology/signlist/character_engur_reading_zikum>,
         <https://situx.github.io/cuneiformontology/signlist/character_engur_reading_zikumuₓ> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_engur_lagab>,
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_engur_lagab>,
         <https://situx.github.io/cuneiformontology/signlist/character_hal> ;
-    ns2:hethzl "216" ;
-    ns2:labat "484" ;
-    ns2:meszl "756" ;
-    ns2:obo "404" ;
-    ns2:signName "ENGUR (LAGAB×ḪAL)" ;
-    ns2:slha "484" ;
-    ns2:unicodeCodepoint "U+121C9" ;
-    ns2:unicodeRepresentation "𒇉" ;
+    ns1:hethzl "216" ;
+    ns1:labat "484" ;
+    ns1:meszl "756" ;
+    ns1:obo "404" ;
+    ns1:signName "ENGUR (LAGAB×ḪAL)" ;
+    ns1:slha "484" ;
+    ns1:unicodeCodepoint "U+121C9" ;
+    ns1:unicodeRepresentation "𒇉" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555914> .
 
