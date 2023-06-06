@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_sig> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_sig> a ns2:Grapheme ;
     rdfs:label "Character: SIG" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_sig_sense_low_country> ;
-    ns1:abzl "437" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sig_reading_bek>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_sig_sense_low_country> ;
+    ns2:abzl "437" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sig_reading_bek>,
         <https://situx.github.io/cuneiformontology/signlist/character_sig_reading_big>,
         <https://situx.github.io/cuneiformontology/signlist/character_sig_reading_bik>,
         <https://situx.github.io/cuneiformontology/signlist/character_sig_reading_epig>,
@@ -40,14 +40,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_sig_reading_ziq2>,
         <https://situx.github.io/cuneiformontology/signlist/character_sig_reading_śe2>,
         <https://situx.github.io/cuneiformontology/signlist/character_sig_reading_śi3> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_sig> ;
-    ns1:hethzl "255" ;
-    ns1:labat "592" ;
-    ns1:meszl "881" ;
-    ns1:obo "437" ;
-    ns1:signName "SIG" ;
-    ns1:slha "592" ;
-    ns1:unicodeCodepoint "U+122DD" ;
-    ns1:unicodeRepresentation "𒋝" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_sig> ;
+    ns2:hethzl "255" ;
+    ns2:labat "592" ;
+    ns2:meszl "881" ;
+    ns2:obo "437" ;
+    ns2:signName "SIG" ;
+    ns2:slha "592" ;
+    ns2:unicodeCodepoint "U+122DD" ;
+    ns2:unicodeRepresentation "𒋝" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556442> .
 
