@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_kasz4> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_kasz4> a ns2:Grapheme ;
     rdfs:label "Character: KAŠ4 (DU-szeszszig)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_kasz4_sense_im2___to_run> ;
-    ns1:abzl "066" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_kasz4_reading_barim>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_kasz4_sense_im2___to_run> ;
+    ns2:abzl "066" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_kasz4_reading_barim>,
         <https://situx.github.io/cuneiformontology/signlist/character_kasz4_reading_barim_parim_k>,
         <https://situx.github.io/cuneiformontology/signlist/character_kasz4_reading_barim⁻>,
         <https://situx.github.io/cuneiformontology/signlist/character_kasz4_reading_du@s>,
@@ -30,15 +30,15 @@
         <https://situx.github.io/cuneiformontology/signlist/character_kasz4_reading_parim>,
         <https://situx.github.io/cuneiformontology/signlist/character_kasz4_reading_rim4>,
         <https://situx.github.io/cuneiformontology/signlist/character_kasz4_reading_ālik> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_kasz4_du>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_kasz4_du>,
         <https://situx.github.io/cuneiformontology/signlist/character_szeszszig> ;
-    ns1:hethzl "129" ;
-    ns1:labat "202" ;
-    ns1:meszl "352" ;
-    ns1:obo "66" ;
-    ns1:signName "KAŠ4 (DU-šeššig)" ;
-    ns1:slha "202" ;
-    ns1:unicodeCodepoint "U+1207D" ;
-    ns1:unicodeRepresentation "𒁽" ;
+    ns2:hethzl "129" ;
+    ns2:labat "202" ;
+    ns2:meszl "352" ;
+    ns2:obo "66" ;
+    ns2:signName "KAŠ4 (DU-šeššig)" ;
+    ns2:slha "202" ;
+    ns2:unicodeCodepoint "U+1207D" ;
+    ns2:unicodeRepresentation "𒁽" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555248> .
 
