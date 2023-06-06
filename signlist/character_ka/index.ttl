@@ -1,19 +1,19 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_ka> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_ka> a ns2:Grapheme ;
     rdfs:label "Character: KA" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_ka_sense__dug4___to_say>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_ka_sense__dug4___to_say>,
         <https://situx.github.io/cuneiformontology/signlist/character_ka_sense__inim___word>,
         <https://situx.github.io/cuneiformontology/signlist/character_ka_sense__kiri4___nose>,
         <https://situx.github.io/cuneiformontology/signlist/character_ka_sense__zu2___tooth>,
         <https://situx.github.io/cuneiformontology/signlist/character_ka_sense_mouth>,
         <https://situx.github.io/cuneiformontology/signlist/character_ka_sense_speech>,
         <https://situx.github.io/cuneiformontology/signlist/character_ka_sense_to_do__aux__verb_hamt_u_form> ;
-    ns1:abzl "312" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ka_reading_agu2>,
+    ns2:abzl "312" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ka_reading_agu2>,
         <https://situx.github.io/cuneiformontology/signlist/character_ka_reading_da12>,
         <https://situx.github.io/cuneiformontology/signlist/character_ka_reading_dag5>,
         <https://situx.github.io/cuneiformontology/signlist/character_ka_reading_du11>,
@@ -74,14 +74,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_ka_reading_zu2>,
         <https://situx.github.io/cuneiformontology/signlist/character_ka_reading_zug2>,
         <https://situx.github.io/cuneiformontology/signlist/character_ka_reading_zuh> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ka> ;
-    ns1:hethzl "133" ;
-    ns1:labat "15" ;
-    ns1:meszl "24" ;
-    ns1:obo "312" ;
-    ns1:signName "KA" ;
-    ns1:slha "015" ;
-    ns1:unicodeCodepoint "U+12157" ;
-    ns1:unicodeRepresentation "𒅗" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ka> ;
+    ns2:hethzl "133" ;
+    ns2:labat "15" ;
+    ns2:meszl "24" ;
+    ns2:obo "312" ;
+    ns2:signName "KA" ;
+    ns2:slha "015" ;
+    ns2:unicodeCodepoint "U+12157" ;
+    ns2:unicodeRepresentation "𒅗" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555676> .
 

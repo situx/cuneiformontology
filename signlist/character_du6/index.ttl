@@ -1,15 +1,15 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_du6> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_du6> a ns1:Grapheme ;
     rdfs:label "Character: DU6 (LAGAR-gunû)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_du6_sense_hill>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_du6_sense_hill>,
         <https://situx.github.io/cuneiformontology/signlist/character_du6_sense_tell>,
         <https://situx.github.io/cuneiformontology/signlist/character_du6_sense_to_cover> ;
-    ns2:abzl "311" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_du6_reading_du6>,
+    ns1:abzl "311" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_du6_reading_du6>,
         <https://situx.github.io/cuneiformontology/signlist/character_du6_reading_dul>,
         <https://situx.github.io/cuneiformontology/signlist/character_du6_reading_dul6>,
         <https://situx.github.io/cuneiformontology/signlist/character_du6_reading_lagar@g>,
@@ -18,17 +18,17 @@
         <https://situx.github.io/cuneiformontology/signlist/character_du6_reading_tu21>,
         <https://situx.github.io/cuneiformontology/signlist/character_du6_reading_tul5>,
         <https://situx.github.io/cuneiformontology/signlist/character_du6_reading_tul_tul> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_du6_lagar>,
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_du6_lagar>,
         <https://situx.github.io/cuneiformontology/signlist/character_gunû> ;
-    ns2:hethzl "211" ;
-    ns2:labat "459",
+    ns1:hethzl "211" ;
+    ns1:labat "459",
         "459.1" ;
-    ns2:meszl "721" ;
-    ns2:obo "311",
+    ns1:meszl "721" ;
+    ns1:obo "311",
         "360" ;
-    ns2:signName "DU6 (LAGAR-gunû)" ;
-    ns2:slha "459a" ;
-    ns2:unicodeCodepoint "U+121EF" ;
-    ns2:unicodeRepresentation "𒇯" ;
+    ns1:signName "DU6 (LAGAR-gunû)" ;
+    ns1:slha "459a" ;
+    ns1:unicodeCodepoint "U+121EF" ;
+    ns1:unicodeRepresentation "𒇯" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555990> .
 

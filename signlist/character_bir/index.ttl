@@ -1,13 +1,13 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_bir> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_bir> a ns1:Grapheme ;
     rdfs:label "Character: BIR (ḪI×ŠE)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_bir_sense_to_disperse> ;
-    ns2:abzl "287" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_bir_reading_ber>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_bir_sense_to_disperse> ;
+    ns1:abzl "287" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_bir_reading_ber>,
         <https://situx.github.io/cuneiformontology/signlist/character_bir_reading_bir>,
         <https://situx.github.io/cuneiformontology/signlist/character_bir_reading_bir_bir>,
         <https://situx.github.io/cuneiformontology/signlist/character_bir_reading_biri>,
@@ -22,15 +22,15 @@
         <https://situx.github.io/cuneiformontology/signlist/character_bir_reading_kalam2>,
         <https://situx.github.io/cuneiformontology/signlist/character_bir_reading_pir3>,
         <https://situx.github.io/cuneiformontology/signlist/character_bir_reading_zanzana> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_bir_hi>,
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_bir_hi>,
         <https://situx.github.io/cuneiformontology/signlist/character_sze> ;
-    ns2:hethzl "334" ;
-    ns2:labat "400" ;
-    ns2:meszl "643" ;
-    ns2:obo "287" ;
-    ns2:signName "BIR (ḪI×ŠE)" ;
-    ns2:slha "400" ;
-    ns2:unicodeCodepoint "U+12135" ;
-    ns2:unicodeRepresentation "𒄵" ;
+    ns1:hethzl "334" ;
+    ns1:labat "400" ;
+    ns1:meszl "643" ;
+    ns1:obo "287" ;
+    ns1:signName "BIR (ḪI×ŠE)" ;
+    ns1:slha "400" ;
+    ns1:unicodeCodepoint "U+12135" ;
+    ns1:unicodeRepresentation "𒄵" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555606> .
 

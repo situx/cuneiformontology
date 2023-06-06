@@ -1,14 +1,14 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_é> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_é> a ns1:Grapheme ;
     rdfs:label "Character: É" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_é_sense_house_hold>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_é_sense_house_hold>,
         <https://situx.github.io/cuneiformontology/signlist/character_é_sense_temple> ;
-    ns2:abzl "107" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_é_reading_a14>,
+    ns1:abzl "107" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_é_reading_a14>,
         <https://situx.github.io/cuneiformontology/signlist/character_é_reading_aʾ3>,
         <https://situx.github.io/cuneiformontology/signlist/character_é_reading_bed>,
         <https://situx.github.io/cuneiformontology/signlist/character_é_reading_bet>,
@@ -31,14 +31,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_é_reading_pit>,
         <https://situx.github.io/cuneiformontology/signlist/character_é_reading_ʾa3>,
         <https://situx.github.io/cuneiformontology/signlist/character_é_reading_ˀa3> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_e2> ;
-    ns2:hethzl "199" ;
-    ns2:labat "324" ;
-    ns2:meszl "495" ;
-    ns2:obo "107" ;
-    ns2:signName "É" ;
-    ns2:slha "324" ;
-    ns2:unicodeCodepoint "U+1208D" ;
-    ns2:unicodeRepresentation "𒂍" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_e2> ;
+    ns1:hethzl "199" ;
+    ns1:labat "324" ;
+    ns1:meszl "495" ;
+    ns1:obo "107" ;
+    ns1:signName "É" ;
+    ns1:slha "324" ;
+    ns1:unicodeCodepoint "U+1208D" ;
+    ns1:unicodeRepresentation "𒂍" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555276> .
 
