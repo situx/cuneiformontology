@@ -1,13 +1,13 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_kun> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_kun> a ns1:Grapheme ;
     rdfs:label "Character: KUN" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_kun_sense_tail> ;
-    ns2:abzl "032" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_kun_reading_ku14>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_kun_sense_tail> ;
+    ns1:abzl "032" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_kun_reading_ku14>,
         <https://situx.github.io/cuneiformontology/signlist/character_kun_reading_kug2>,
         <https://situx.github.io/cuneiformontology/signlist/character_kun_reading_kun>,
         <https://situx.github.io/cuneiformontology/signlist/character_kun_reading_kun_k>,
@@ -15,15 +15,15 @@
         <https://situx.github.io/cuneiformontology/signlist/character_kun_reading_kuŋ2>,
         <https://situx.github.io/cuneiformontology/signlist/character_kun_reading_nunnam>,
         <https://situx.github.io/cuneiformontology/signlist/character_kun_reading_qun> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_kun> ;
-    ns2:hethzl "35" ;
-    ns2:labat "77" ;
-    ns2:lak "26" ;
-    ns2:meszl "131" ;
-    ns2:obo "32" ;
-    ns2:signName "KUN" ;
-    ns2:slha "077" ;
-    ns2:unicodeCodepoint "U+121B2" ;
-    ns2:unicodeRepresentation "𒆲" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_kun> ;
+    ns1:hethzl "35" ;
+    ns1:labat "77" ;
+    ns1:lak "26" ;
+    ns1:meszl "131" ;
+    ns1:obo "32" ;
+    ns1:signName "KUN" ;
+    ns1:slha "077" ;
+    ns1:unicodeCodepoint "U+121B2" ;
+    ns1:unicodeRepresentation "𒆲" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555865> .
 

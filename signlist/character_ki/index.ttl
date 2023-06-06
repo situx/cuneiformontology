@@ -1,13 +1,13 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_ki> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_ki> a ns1:Grapheme ;
     rdfs:label "Character: KI" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_ki_sense_place> ;
-    ns2:abzl "432" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ki_reading_ammaₓ>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_ki_sense_place> ;
+    ns1:abzl "432" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ki_reading_ammaₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_ki_reading_ers_etu>,
         <https://situx.github.io/cuneiformontology/signlist/character_ki_reading_gagar>,
         <https://situx.github.io/cuneiformontology/signlist/character_ki_reading_ge5>,
@@ -26,14 +26,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_ki_reading_sasₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_ki_reading_ubdaₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_ki_reading_ŋiszbunₓ> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ki> ;
-    ns2:hethzl "313" ;
-    ns2:labat "461" ;
-    ns2:meszl "737" ;
-    ns2:obo "432" ;
-    ns2:signName "KI" ;
-    ns2:slha "461" ;
-    ns2:unicodeCodepoint "U+121A0" ;
-    ns2:unicodeRepresentation "𒆠" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ki> ;
+    ns1:hethzl "313" ;
+    ns1:labat "461" ;
+    ns1:meszl "737" ;
+    ns1:obo "432" ;
+    ns1:signName "KI" ;
+    ns1:slha "461" ;
+    ns1:unicodeCodepoint "U+121A0" ;
+    ns1:unicodeRepresentation "𒆠" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555819> .
 

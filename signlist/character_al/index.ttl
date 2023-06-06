@@ -1,26 +1,26 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_al> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_al> a ns1:Grapheme ;
     rdfs:label "Character: AL" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_al_sense_hoe> ;
-    ns2:abzl "108" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_al_reading_al>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_al_sense_hoe> ;
+    ns1:abzl "108" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_al_reading_al>,
         <https://situx.github.io/cuneiformontology/signlist/character_al_reading_al_al>,
         <https://situx.github.io/cuneiformontology/signlist/character_al_reading_ala3>,
         <https://situx.github.io/cuneiformontology/signlist/character_al_reading_il10>,
         <https://situx.github.io/cuneiformontology/signlist/character_al_reading_mah2>,
         <https://situx.github.io/cuneiformontology/signlist/character_al_reading_maha2> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_al> ;
-    ns2:hethzl "183" ;
-    ns2:labat "298" ;
-    ns2:meszl "474" ;
-    ns2:obo "108" ;
-    ns2:signName "AL" ;
-    ns2:slha "298" ;
-    ns2:unicodeCodepoint "U+12020" ;
-    ns2:unicodeRepresentation "𒀠" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_al> ;
+    ns1:hethzl "183" ;
+    ns1:labat "298" ;
+    ns1:meszl "474" ;
+    ns1:obo "108" ;
+    ns1:signName "AL" ;
+    ns1:slha "298" ;
+    ns1:unicodeCodepoint "U+12020" ;
+    ns1:unicodeRepresentation "𒀠" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555061> .
 
