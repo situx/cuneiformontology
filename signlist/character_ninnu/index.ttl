@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_ninnu> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_ninnu> a ns2:Grapheme ;
     rdfs:label "Character: NINNU (5×U)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_ninnu_sense_50> ;
-    ns1:abzl "376" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ninnu_reading_050>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_ninnu_sense_50> ;
+    ns2:abzl "376" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ninnu_reading_050>,
         <https://situx.github.io/cuneiformontology/signlist/character_ninnu_reading_50>,
         <https://situx.github.io/cuneiformontology/signlist/character_ninnu_reading_5_bur3>,
         <https://situx.github.io/cuneiformontology/signlist/character_ninnu_reading_5_bur3@c>,
@@ -21,14 +21,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_ninnu_reading_ninnu_‘50’>,
         <https://situx.github.io/cuneiformontology/signlist/character_ninnu_reading_ninuₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_ninnu_reading_u&u_u&u_u> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ninnu_5>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ninnu_5>,
         <https://situx.github.io/cuneiformontology/signlist/character_u> ;
-    ns1:labat "475" ;
-    ns1:meszl "714" ;
-    ns1:obo "376" ;
-    ns1:signName "NINNU (5×U)" ;
-    ns1:slha "475" ;
-    ns1:unicodeCodepoint "U+12410" ;
-    ns1:unicodeRepresentation "𒐐" ;
+    ns2:labat "475" ;
+    ns2:meszl "714" ;
+    ns2:obo "376" ;
+    ns2:signName "NINNU (5×U)" ;
+    ns2:slha "475" ;
+    ns2:unicodeCodepoint "U+12410" ;
+    ns2:unicodeRepresentation "𒐐" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556863> .
 
