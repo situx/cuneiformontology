@@ -1,15 +1,15 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_ab> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_ab> a ns2:Grapheme ;
     rdfs:label "Character: AB" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_ab_sense___esz3___szrine>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_ab_sense___esz3___szrine>,
         <https://situx.github.io/cuneiformontology/signlist/character_ab_sense_lake>,
         <https://situx.github.io/cuneiformontology/signlist/character_ab_sense_sea> ;
-    ns1:abzl "125" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ab_reading_ab>,
+    ns2:abzl "125" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ab_reading_ab>,
         <https://situx.github.io/cuneiformontology/signlist/character_ab_reading_ab2>,
         <https://situx.github.io/cuneiformontology/signlist/character_ab_reading_ab_ab>,
         <https://situx.github.io/cuneiformontology/signlist/character_ab_reading_aba>,
@@ -41,14 +41,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_ab_reading_iz3>,
         <https://situx.github.io/cuneiformontology/signlist/character_ab_reading_unu5>,
         <https://situx.github.io/cuneiformontology/signlist/character_ab_reading_unu_g> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ab> ;
-    ns1:hethzl "97" ;
-    ns1:labat "128" ;
-    ns1:meszl "223" ;
-    ns1:obo "125" ;
-    ns1:signName "AB" ;
-    ns1:slha "128" ;
-    ns1:unicodeCodepoint "U+1200A" ;
-    ns1:unicodeRepresentation "𒀊" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ab> ;
+    ns2:hethzl "97" ;
+    ns2:labat "128" ;
+    ns2:meszl "223" ;
+    ns2:obo "125" ;
+    ns2:signName "AB" ;
+    ns2:slha "128" ;
+    ns2:unicodeCodepoint "U+1200A" ;
+    ns2:unicodeRepresentation "𒀊" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555015> .
 

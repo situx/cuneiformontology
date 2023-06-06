@@ -1,14 +1,14 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_a> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_a> a ns2:Grapheme ;
     rdfs:label "Character: A" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_a_sense_drink>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_a_sense_drink>,
         <https://situx.github.io/cuneiformontology/signlist/character_a_sense_water> ;
-    ns1:abzl "470" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_a_reading_a>,
+    ns2:abzl "470" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_a_reading_a>,
         <https://situx.github.io/cuneiformontology/signlist/character_a_reading_a_a>,
         <https://situx.github.io/cuneiformontology/signlist/character_a_reading_aia2>,
         <https://situx.github.io/cuneiformontology/signlist/character_a_reading_aiax>,
@@ -29,14 +29,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_a_reading_ya10>,
         <https://situx.github.io/cuneiformontology/signlist/character_a_reading_ŋa10>,
         <https://situx.github.io/cuneiformontology/signlist/character_a_reading_ʾu4> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_a> ;
-    ns1:hethzl "364; 365" ;
-    ns1:labat "579" ;
-    ns1:meszl "839" ;
-    ns1:obo "470" ;
-    ns1:signName "A" ;
-    ns1:slha "579" ;
-    ns1:unicodeCodepoint "U+12000" ;
-    ns1:unicodeRepresentation "𒀀" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_a> ;
+    ns2:hethzl "364; 365" ;
+    ns2:labat "579" ;
+    ns2:meszl "839" ;
+    ns2:obo "470" ;
+    ns2:signName "A" ;
+    ns2:slha "579" ;
+    ns2:unicodeCodepoint "U+12000" ;
+    ns2:unicodeRepresentation "𒀀" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87554995> .
 
