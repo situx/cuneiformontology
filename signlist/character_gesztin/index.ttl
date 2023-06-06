@@ -1,28 +1,28 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_gesztin> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_gesztin> a ns1:Grapheme ;
     rdfs:label "Character: GEŠTIN (GIŠ.DIN)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_gesztin_sense_wine> ;
-    ns2:abzl "077" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gesztin_reading_gesztin>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_gesztin_sense_wine> ;
+    ns1:abzl "077" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gesztin_reading_gesztin>,
         <https://situx.github.io/cuneiformontology/signlist/character_gesztin_reading_gesztin@d>,
         <https://situx.github.io/cuneiformontology/signlist/character_gesztin_reading_gesztin_gesztin>,
         <https://situx.github.io/cuneiformontology/signlist/character_gesztin_reading_gesztina>,
         <https://situx.github.io/cuneiformontology/signlist/character_gesztin_reading_mutin>,
         <https://situx.github.io/cuneiformontology/signlist/character_gesztin_reading_ŋesztin>,
         <https://situx.github.io/cuneiformontology/signlist/character_gesztin_reading_ŋesztina> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_din>,
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_din>,
         <https://situx.github.io/cuneiformontology/signlist/character_gesztin_gisz> ;
-    ns2:hethzl "131" ;
-    ns2:labat "210" ;
-    ns2:meszl "212" ;
-    ns2:obo "77" ;
-    ns2:signName "GEŠTIN (GIŠ.DIN)" ;
-    ns2:slha "210" ;
-    ns2:unicodeCodepoint "U+120FE" ;
-    ns2:unicodeRepresentation "𒃾" ;
+    ns1:hethzl "131" ;
+    ns1:labat "210" ;
+    ns1:meszl "212" ;
+    ns1:obo "77" ;
+    ns1:signName "GEŠTIN (GIŠ.DIN)" ;
+    ns1:slha "210" ;
+    ns1:unicodeCodepoint "U+120FE" ;
+    ns1:unicodeRepresentation "𒃾" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555491> .
 

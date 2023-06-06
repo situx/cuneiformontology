@@ -1,12 +1,12 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line3_char5> a ns2:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line3_char5> a ns1:TransliterationCharOccurrence ;
     rdfs:label "O147 transliteration 1 obverse line 3 char 5"@en ;
-    ns2:charIndex 5 ;
-    ns2:lineNumber 3 ;
-    ns2:prevChar <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line3_char4> ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_ud_reading_ud> .
+    ns1:charIndex 5 ;
+    ns1:lineNumber 3 ;
+    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line3_char4> ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_ud_reading_ud> .
 

@@ -1,14 +1,14 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_gim> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_gim> a ns2:Grapheme ;
     rdfs:label "Character: GIM (DÍM)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_gim_sense_dim2___to_build>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_gim_sense_dim2___to_build>,
         <https://situx.github.io/cuneiformontology/signlist/character_gim_sense_to_create> ;
-    ns1:abzl "067" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gim_reading_dem2>,
+    ns2:abzl "067" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gim_reading_dem2>,
         <https://situx.github.io/cuneiformontology/signlist/character_gim_reading_dig2_k>,
         <https://situx.github.io/cuneiformontology/signlist/character_gim_reading_dim2>,
         <https://situx.github.io/cuneiformontology/signlist/character_gim_reading_dima2>,
@@ -39,14 +39,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_gim_reading_t_em2>,
         <https://situx.github.io/cuneiformontology/signlist/character_gim_reading_t_im2>,
         <https://situx.github.io/cuneiformontology/signlist/character_gim_reading_tam6> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gim_di2m> ;
-    ns1:hethzl "165" ;
-    ns1:labat "440" ;
-    ns1:meszl "686" ;
-    ns1:obo "67" ;
-    ns1:signName "GIM (DÍM)" ;
-    ns1:slha "440" ;
-    ns1:unicodeCodepoint "U+12076" ;
-    ns1:unicodeRepresentation "𒁶" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gim_di2m> ;
+    ns2:hethzl "165" ;
+    ns2:labat "440" ;
+    ns2:meszl "686" ;
+    ns2:obo "67" ;
+    ns2:signName "GIM (DÍM)" ;
+    ns2:slha "440" ;
+    ns2:unicodeCodepoint "U+12076" ;
+    ns2:unicodeRepresentation "𒁶" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555236> .
 
