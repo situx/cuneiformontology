@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_masz> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_masz> a ns2:Grapheme ;
     rdfs:label "Character: MAŠ" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_masz_sense_out_side> ;
-    ns1:abzl "029" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_masz_reading_1_2>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_masz_sense_out_side> ;
+    ns2:abzl "029" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_masz_reading_1_2>,
         <https://situx.github.io/cuneiformontology/signlist/character_masz_reading_1_2_disz>,
         <https://situx.github.io/cuneiformontology/signlist/character_masz_reading_1_2_disz@c>,
         <https://situx.github.io/cuneiformontology/signlist/character_masz_reading_ba7>,
@@ -29,14 +29,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_masz_reading_war>,
         <https://situx.github.io/cuneiformontology/signlist/character_masz_reading_wasz>,
         <https://situx.github.io/cuneiformontology/signlist/character_masz_reading_zipah> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_masz> ;
-    ns1:hethzl "20" ;
-    ns1:labat "74" ;
-    ns1:meszl "120" ;
-    ns1:obo "57" ;
-    ns1:signName "MAŠ" ;
-    ns1:slha "74" ;
-    ns1:unicodeCodepoint "U+12226" ;
-    ns1:unicodeRepresentation "𒈦" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_masz> ;
+    ns2:hethzl "20" ;
+    ns2:labat "74" ;
+    ns2:meszl "120" ;
+    ns2:obo "57" ;
+    ns2:signName "MAŠ" ;
+    ns2:slha "74" ;
+    ns2:unicodeCodepoint "U+12226" ;
+    ns2:unicodeRepresentation "𒈦" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556100> .
 
