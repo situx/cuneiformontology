@@ -1,26 +1,26 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_bur> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_bur> a ns1:Grapheme ;
     rdfs:label "Character: BUR (NÍG-gunû)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_bur_sense_stone_vessel> ;
-    ns2:abzl "223" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_bur_reading_bur>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_bur_sense_stone_vessel> ;
+    ns1:abzl "223" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_bur_reading_bur>,
         <https://situx.github.io/cuneiformontology/signlist/character_bur_reading_bur_pur>,
         <https://situx.github.io/cuneiformontology/signlist/character_bur_reading_buru>,
         <https://situx.github.io/cuneiformontology/signlist/character_bur_reading_pur>,
         <https://situx.github.io/cuneiformontology/signlist/character_bur_reading_puru> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_bur_ni2g>,
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_bur_ni2g>,
         <https://situx.github.io/cuneiformontology/signlist/character_gunû> ;
-    ns2:hethzl "245" ;
-    ns2:labat "349" ;
-    ns2:meszl "559" ;
-    ns2:obo "223" ;
-    ns2:signName "BUR (NÍG-gunû)" ;
-    ns2:slha "349" ;
-    ns2:unicodeCodepoint "U+12053" ;
-    ns2:unicodeRepresentation "𒁓" ;
+    ns1:hethzl "245" ;
+    ns1:labat "349" ;
+    ns1:meszl "559" ;
+    ns1:obo "223" ;
+    ns1:signName "BUR (NÍG-gunû)" ;
+    ns1:slha "349" ;
+    ns1:unicodeCodepoint "U+12053" ;
+    ns1:unicodeRepresentation "𒁓" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555162> .
 
