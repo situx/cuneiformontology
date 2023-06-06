@@ -1,12 +1,12 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_agrig> a ns2:GraphemeComposition ;
+<https://situx.github.io/cuneiformontology/signlist/character_agrig> a ns1:GraphemeComposition ;
     rdfs:label "Character Composition: AGRIG (IGI.DUB)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_agrig_sense_signal> ;
-    ns2:abzl "237" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_agrig_reading_agrig>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_agrig_sense_signal> ;
+    ns1:abzl "237" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_agrig_reading_agrig>,
         <https://situx.github.io/cuneiformontology/signlist/character_agrig_reading_aŋrig>,
         <https://situx.github.io/cuneiformontology/signlist/character_agrig_reading_geszgem_giszkim>,
         <https://situx.github.io/cuneiformontology/signlist/character_agrig_reading_geszkim>,
@@ -20,14 +20,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_agrig_reading_ŋeszkim>,
         <https://situx.github.io/cuneiformontology/signlist/character_agrig_reading_ŋiskim>,
         <https://situx.github.io/cuneiformontology/signlist/character_agrig_reading_ŋiszkim> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_agrig_igi>,
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_agrig_igi>,
         <https://situx.github.io/cuneiformontology/signlist/character_dub> ;
-    ns2:hethzl "291" ;
-    ns2:labat "452" ;
-    ns2:meszl "727" ;
-    ns2:obo "237" ;
-    ns2:signName "AGRIG (IGI.DUB)" ;
-    ns2:slha "452v1" ;
-    ns2:unicodeCodepoint "U+12146 & U+1207E" ;
-    ns2:unicodeRepresentation "𒅆𒁾" .
+    ns1:hethzl "291" ;
+    ns1:labat "452" ;
+    ns1:meszl "727" ;
+    ns1:obo "237" ;
+    ns1:signName "AGRIG (IGI.DUB)" ;
+    ns1:slha "452v1" ;
+    ns1:unicodeCodepoint "U+12146 & U+1207E" ;
+    ns1:unicodeRepresentation "𒅆𒁾" .
 

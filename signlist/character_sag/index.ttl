@@ -1,14 +1,14 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_sag> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_sag> a ns2:Grapheme ;
     rdfs:label "Character: SAG" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_sag_sense_head>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_sag_sense_head>,
         <https://situx.github.io/cuneiformontology/signlist/character_sag_sense_individual> ;
-    ns1:abzl "309" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sag_reading_dil2>,
+    ns2:abzl "309" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sag_reading_dil2>,
         <https://situx.github.io/cuneiformontology/signlist/character_sag_reading_dul7>,
         <https://situx.github.io/cuneiformontology/signlist/character_sag_reading_dunga>,
         <https://situx.github.io/cuneiformontology/signlist/character_sag_reading_kusz2>,
@@ -38,14 +38,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_sag_reading_szag>,
         <https://situx.github.io/cuneiformontology/signlist/character_sag_reading_szak>,
         <https://situx.github.io/cuneiformontology/signlist/character_sag_reading_szaq> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_sag> ;
-    ns1:hethzl "192" ;
-    ns1:labat "115" ;
-    ns1:meszl "184" ;
-    ns1:obo "309" ;
-    ns1:signName "SAG" ;
-    ns1:slha "115" ;
-    ns1:unicodeCodepoint "U+12295" ;
-    ns1:unicodeRepresentation "𒊕" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_sag> ;
+    ns2:hethzl "192" ;
+    ns2:labat "115" ;
+    ns2:meszl "184" ;
+    ns2:obo "309" ;
+    ns2:signName "SAG" ;
+    ns2:slha "115" ;
+    ns2:unicodeCodepoint "U+12295" ;
+    ns2:unicodeRepresentation "𒊕" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556308> .
 
