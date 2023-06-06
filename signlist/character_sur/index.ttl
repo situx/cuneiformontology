@@ -1,28 +1,28 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_sur> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_sur> a ns1:Grapheme ;
     rdfs:label "Character: SUR (ŠUR)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_sur_sense_to_brew>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_sur_sense_to_brew>,
         <https://situx.github.io/cuneiformontology/signlist/character_sur_sense_to_press> ;
-    ns2:abzl "056" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sur_reading_sur>,
+    ns1:abzl "056" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sur_reading_sur>,
         <https://situx.github.io/cuneiformontology/signlist/character_sur_reading_sura>,
         <https://situx.github.io/cuneiformontology/signlist/character_sur_reading_szur>,
         <https://situx.github.io/cuneiformontology/signlist/character_sur_reading_szur_only_in_a_szur>,
         <https://situx.github.io/cuneiformontology/signlist/character_sur_reading_szur_szur>,
         <https://situx.github.io/cuneiformontology/signlist/character_sur_reading_t_ir3>,
         <https://situx.github.io/cuneiformontology/signlist/character_sur_reading_śur> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_sur_szur> ;
-    ns2:hethzl "42" ;
-    ns2:labat "101" ;
-    ns2:meszl "151" ;
-    ns2:obo "56" ;
-    ns2:signName "SUR (ŠUR)" ;
-    ns2:slha "101" ;
-    ns2:unicodeCodepoint "U+122E9" ;
-    ns2:unicodeRepresentation "𒋩" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_sur_szur> ;
+    ns1:hethzl "42" ;
+    ns1:labat "101" ;
+    ns1:meszl "151" ;
+    ns1:obo "56" ;
+    ns1:signName "SUR (ŠUR)" ;
+    ns1:slha "101" ;
+    ns1:unicodeCodepoint "U+122E9" ;
+    ns1:unicodeRepresentation "𒋩" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556466> .
 
