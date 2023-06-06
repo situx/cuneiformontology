@@ -1,15 +1,15 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_kug> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_kug> a ns1:Grapheme ;
     rdfs:label "Character: KUG (KÙ)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_kug_sense_holy>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_kug_sense_holy>,
         <https://situx.github.io/cuneiformontology/signlist/character_kug_sense_noble_metal>,
         <https://situx.github.io/cuneiformontology/signlist/character_kug_sense_pure> ;
-    ns2:abzl "428" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_kug_reading_ku3>,
+    ns1:abzl "428" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_kug_reading_ku3>,
         <https://situx.github.io/cuneiformontology/signlist/character_kug_reading_ku3_gi_ki_hurās_um_‘gold’>,
         <https://situx.github.io/cuneiformontology/signlist/character_kug_reading_ku3_in_ku3_babbar_kaspum_‘silver’>,
         <https://situx.github.io/cuneiformontology/signlist/character_kug_reading_ku3_ku3>,
@@ -17,14 +17,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_kug_reading_kuk>,
         <https://situx.github.io/cuneiformontology/signlist/character_kug_reading_kuŋ>,
         <https://situx.github.io/cuneiformontology/signlist/character_kug_reading_qu5> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_kug_ku3> ;
-    ns2:hethzl "69" ;
-    ns2:labat "468" ;
-    ns2:meszl "745" ;
-    ns2:obo "428" ;
-    ns2:signName "KUG (KÙ)" ;
-    ns2:slha "468" ;
-    ns2:unicodeCodepoint "U+121AC" ;
-    ns2:unicodeRepresentation "𒆬" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_kug_ku3> ;
+    ns1:hethzl "69" ;
+    ns1:labat "468" ;
+    ns1:meszl "745" ;
+    ns1:obo "428" ;
+    ns1:signName "KUG (KÙ)" ;
+    ns1:slha "468" ;
+    ns1:unicodeCodepoint "U+121AC" ;
+    ns1:unicodeRepresentation "𒆬" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555850> .
 

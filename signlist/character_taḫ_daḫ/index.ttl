@@ -1,14 +1,14 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_taḫ_daḫ> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_taḫ_daḫ> a ns1:Grapheme ;
     rdfs:label "Character: TAḪ/DAḪ (MUoverMU)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_taḫ_daḫ_sense_to_add>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_taḫ_daḫ_sense_to_add>,
         <https://situx.github.io/cuneiformontology/signlist/character_taḫ_daḫ_sense_to_help> ;
-    ns2:abzl "142" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_taḫ_daḫ_reading_dah>,
+    ns1:abzl "142" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_taḫ_daḫ_reading_dah>,
         <https://situx.github.io/cuneiformontology/signlist/character_taḫ_daḫ_reading_mu&mu>,
         <https://situx.github.io/cuneiformontology/signlist/character_taḫ_daḫ_reading_t_ah>,
         <https://situx.github.io/cuneiformontology/signlist/character_taḫ_daḫ_reading_tah>,
@@ -16,16 +16,16 @@
         <https://situx.github.io/cuneiformontology/signlist/character_taḫ_daḫ_reading_tah_tah>,
         <https://situx.github.io/cuneiformontology/signlist/character_taḫ_daḫ_reading_taha>,
         <https://situx.github.io/cuneiformontology/signlist/character_taḫ_daḫ_reading_tuh2> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_dah_mu>,
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_dah_mu>,
         <https://situx.github.io/cuneiformontology/signlist/character_mu>,
         <https://situx.github.io/cuneiformontology/signlist/character_tah> ;
-    ns2:hethzl "171" ;
-    ns2:labat "169" ;
-    ns2:meszl "301" ;
-    ns2:obo "142" ;
-    ns2:signName "TAḪ/DAḪ (MUoverMU)" ;
-    ns2:slha "169" ;
-    ns2:unicodeCodepoint "U+1222D" ;
-    ns2:unicodeRepresentation "𒈭" ;
+    ns1:hethzl "171" ;
+    ns1:labat "169" ;
+    ns1:meszl "301" ;
+    ns1:obo "142" ;
+    ns1:signName "TAḪ/DAḪ (MUoverMU)" ;
+    ns1:slha "169" ;
+    ns1:unicodeCodepoint "U+1222D" ;
+    ns1:unicodeRepresentation "𒈭" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556114> .
 

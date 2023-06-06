@@ -1,16 +1,16 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://www.w3.org/2003/12/exif/ns#> .
-@prefix ns2: <http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/> .
+@prefix ns1: <http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/> .
+@prefix ns2: <http://www.w3.org/2003/12/exif/ns#> .
 @prefix ns3: <http://ns.adobe.com/xap/1.0/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo1> a foaf:Image ;
-    ns2:CountryCode "IRN" ;
-    ns2:Event "single picture" ;
-    ns2:LocationCreatedCity "Haft Tappeh" ;
-    ns2:LocationCreatedCountryName "Iran" ;
-    ns2:LocationCreatedWorldRegion "Asia" ;
+    ns1:CountryCode "IRN" ;
+    ns1:Event "single picture" ;
+    ns1:LocationCreatedCity "Haft Tappeh" ;
+    ns1:LocationCreatedCountryName "Iran" ;
+    ns1:LocationCreatedWorldRegion "Asia" ;
     ns3:CreatorTool "Haft Tappeh XMP Generator Script" ;
     ns3:Owner "Behzad Mofidi-Nasrabadi" ;
     ns3:UsageTerms "CC BY-SA 4.0" ;
@@ -28,17 +28,17 @@
     dc:temporal <https://pleiades.stoa.org/vocabularies/time-periods/late-bronze-age-iran> ;
     dc:title "HT 07-31-95 photo 01" ;
     dc:type dc:Image ;
-    ns1:DateTime "2009:01:17 10:31:23" ;
-    ns1:ExifOffset "284" ;
-    ns1:GPSLatitude "32.080207° N" ;
-    ns1:GPSLongitude "48.329165° E" ;
-    ns1:Make "NIKON" ;
-    ns1:Model "E5700" ;
-    ns1:Orientation "1" ;
-    ns1:ResolutionUnit "2" ;
-    ns1:Software "Haft Tappeh XMP Generator Script" ;
-    ns1:XResolution "300.0" ;
-    ns1:YCbCrPositioning "2" ;
-    ns1:YResolution "300.0" ;
+    ns2:DateTime "2009:01:17 10:31:23" ;
+    ns2:ExifOffset "284" ;
+    ns2:GPSLatitude "32.080207° N" ;
+    ns2:GPSLongitude "48.329165° E" ;
+    ns2:Make "NIKON" ;
+    ns2:Model "E5700" ;
+    ns2:Orientation "1" ;
+    ns2:ResolutionUnit "2" ;
+    ns2:Software "Haft Tappeh XMP Generator Script" ;
+    ns2:XResolution "300.0" ;
+    ns2:YCbCrPositioning "2" ;
+    ns2:YResolution "300.0" ;
     foaf:image "https://heidicon.ub.uni-heidelberg.de/iiif/2/1667769:870859/full/full/0/default.jpg"^^xsd:anyURI .
 

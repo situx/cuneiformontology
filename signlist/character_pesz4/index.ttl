@@ -1,14 +1,14 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_pesz4> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_pesz4> a ns1:Grapheme ;
     rdfs:label "Character: PEŠ4 (ŠÀ×A)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_pesz4_sense_to_break>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_pesz4_sense_to_break>,
         <https://situx.github.io/cuneiformontology/signlist/character_pesz4_sense_to_rip_into_pieces> ;
-    ns2:abzl "436" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_pesz4_reading_ber7>,
+    ns1:abzl "436" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_pesz4_reading_ber7>,
         <https://situx.github.io/cuneiformontology/signlist/character_pesz4_reading_bir7>,
         <https://situx.github.io/cuneiformontology/signlist/character_pesz4_reading_isla>,
         <https://situx.github.io/cuneiformontology/signlist/character_pesz4_reading_isla_iszla_k>,
@@ -24,14 +24,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_pesz4_reading_sur4>,
         <https://situx.github.io/cuneiformontology/signlist/character_pesz4_reading_sur4_k>,
         <https://situx.github.io/cuneiformontology/signlist/character_pesz4_reading_sza3×a> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_a>,
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_a>,
         <https://situx.github.io/cuneiformontology/signlist/character_pesz4_sza3> ;
-    ns2:labat "390" ;
-    ns2:meszl "608" ;
-    ns2:obo "436" ;
-    ns2:signName "PEŠ4 (ŠÀ×A)" ;
-    ns2:slha "390" ;
-    ns2:unicodeCodepoint "U+122AF" ;
-    ns2:unicodeRepresentation "𒊯" ;
+    ns1:labat "390" ;
+    ns1:meszl "608" ;
+    ns1:obo "436" ;
+    ns1:signName "PEŠ4 (ŠÀ×A)" ;
+    ns1:slha "390" ;
+    ns1:unicodeCodepoint "U+122AF" ;
+    ns1:unicodeRepresentation "𒊯" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556358> .
 
