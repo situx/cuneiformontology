@@ -1,28 +1,28 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_idigna> a ns2:GraphemeComposition ;
+<https://situx.github.io/cuneiformontology/signlist/character_idigna> a ns1:GraphemeComposition ;
     rdfs:label "Character Composition: IDIGNA (DALLA/MAŠ.GÚ.GÀR)",
         "Character Composition: idigna" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_idigna_sense_to_make_clear__dalla__e3>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_idigna_sense_to_make_clear__dalla__e3>,
         <https://situx.github.io/cuneiformontology/signlist/character_idigna_sense_to_manifest> ;
-    ns2:abzl "030(IDIGNA) 087(DALLA)" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_idigna_reading_dal2>,
+    ns1:abzl "030(IDIGNA) 087(DALLA)" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_idigna_reading_dal2>,
         <https://situx.github.io/cuneiformontology/signlist/character_idigna_reading_dalla>,
         <https://situx.github.io/cuneiformontology/signlist/character_idigna_reading_idigna>,
         <https://situx.github.io/cuneiformontology/signlist/character_idigna_reading_masz_gu2_gar3> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ga3r>,
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ga3r>,
         <https://situx.github.io/cuneiformontology/signlist/character_gu2>,
         <https://situx.github.io/cuneiformontology/signlist/character_idigna_dalla>,
         <https://situx.github.io/cuneiformontology/signlist/character_masz> ;
-    ns2:hethzl "253" ;
-    ns2:labat "74.238" ;
-    ns2:meszl "124" ;
-    ns2:obo "30" ;
-    ns2:signName "IDIGNA (DALLA/MAŠ.GÚ.GÀR)" ;
-    ns2:slha "074_238" ;
-    ns2:unicodeCodepoint "U+12226 & U+12118 & U+120FC" ;
-    ns2:unicodeRepresentation "𒄘𒃼",
+    ns1:hethzl "253" ;
+    ns1:labat "74.238" ;
+    ns1:meszl "124" ;
+    ns1:obo "30" ;
+    ns1:signName "IDIGNA (DALLA/MAŠ.GÚ.GÀR)" ;
+    ns1:slha "074_238" ;
+    ns1:unicodeCodepoint "U+12226 & U+12118 & U+120FC" ;
+    ns1:unicodeRepresentation "𒄘𒃼",
         "𒈦𒄘𒃼" .
 

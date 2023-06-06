@@ -1,17 +1,17 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_nigin> a ns2:Grapheme,
-        ns2:GraphemeComposition ;
+<https://situx.github.io/cuneiformontology/signlist/character_nigin> a ns1:Grapheme,
+        ns1:GraphemeComposition ;
     rdfs:label "Character Composition: NIGIN (LAGAB+LAGAB, LAGAB.LAGAB)",
         "Character: NIGIN (LAGAB×LAGAB)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_nigin_sense_to_circle>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_nigin_sense_to_circle>,
         <https://situx.github.io/cuneiformontology/signlist/character_nigin_sense_to_make_the_rounds>,
         <https://situx.github.io/cuneiformontology/signlist/character_nigin_sense_to_wander_about> ;
-    ns2:abzl "403" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_nigin_reading_banₓ>,
+    ns1:abzl "403" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_nigin_reading_banₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_nigin_reading_garadin5>,
         <https://situx.github.io/cuneiformontology/signlist/character_nigin_reading_iszhara3>,
         <https://situx.github.io/cuneiformontology/signlist/character_nigin_reading_karadin5>,
@@ -37,19 +37,19 @@
         <https://situx.github.io/cuneiformontology/signlist/character_nigin_reading_niŋen>,
         <https://situx.github.io/cuneiformontology/signlist/character_nigin_reading_niŋin>,
         <https://situx.github.io/cuneiformontology/signlist/character_nigin_reading_rin3> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_lagab>,
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_lagab>,
         <https://situx.github.io/cuneiformontology/signlist/character_nigin_lagab>,
         <https://situx.github.io/cuneiformontology/signlist/character_nigin_lagab_lagab> ;
-    ns2:labat "529" ;
-    ns2:meszl "804" ;
-    ns2:obo "403" ;
-    ns2:signName "NIGIN (LAGAB+LAGAB, LAGAB.LAGAB)",
+    ns1:labat "529" ;
+    ns1:meszl "804" ;
+    ns1:obo "403" ;
+    ns1:signName "NIGIN (LAGAB+LAGAB, LAGAB.LAGAB)",
         "NIGIN (LAGAB×LAGAB)" ;
-    ns2:slha "529",
+    ns1:slha "529",
         "529v2" ;
-    ns2:unicodeCodepoint "U+121B8 & U+121B8",
+    ns1:unicodeCodepoint "U+121B8 & U+121B8",
         "U+121D4" ;
-    ns2:unicodeRepresentation "𒆸𒆸",
+    ns1:unicodeRepresentation "𒆸𒆸",
         "𒇔" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555940> .
 
