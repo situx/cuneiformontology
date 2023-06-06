@@ -1,17 +1,17 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_bu> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_bu> a ns2:Grapheme ;
     rdfs:label "Character: BU (GÍD)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_bu_sense__gid2___adi>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_bu_sense__gid2___adi>,
         <https://situx.github.io/cuneiformontology/signlist/character_bu_sense_long>,
         <https://situx.github.io/cuneiformontology/signlist/character_bu_sense_to_drag>,
         <https://situx.github.io/cuneiformontology/signlist/character_bu_sense_to_lengthen>,
         <https://situx.github.io/cuneiformontology/signlist/character_bu_sense_to_pull_out> ;
-    ns1:abzl "265" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_bu_reading_bu>,
+    ns2:abzl "265" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_bu_reading_bu>,
         <https://situx.github.io/cuneiformontology/signlist/character_bu_reading_bu_bu>,
         <https://situx.github.io/cuneiformontology/signlist/character_bu_reading_bur12>,
         <https://situx.github.io/cuneiformontology/signlist/character_bu_reading_dim13>,
@@ -65,14 +65,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_bu_reading_szir2>,
         <https://situx.github.io/cuneiformontology/signlist/character_bu_reading_szud2>,
         <https://situx.github.io/cuneiformontology/signlist/character_bu_reading_tur8> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_bu_gi2d> ;
-    ns1:hethzl "339" ;
-    ns1:labat "371" ;
-    ns1:meszl "580" ;
-    ns1:obo "265" ;
-    ns1:signName "BU (GÍD)" ;
-    ns1:slha "371" ;
-    ns1:unicodeCodepoint "U+1204D" ;
-    ns1:unicodeRepresentation "𒁍" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_bu_gi2d> ;
+    ns2:hethzl "339" ;
+    ns2:labat "371" ;
+    ns2:meszl "580" ;
+    ns2:obo "265" ;
+    ns2:signName "BU (GÍD)" ;
+    ns2:slha "371" ;
+    ns2:unicodeCodepoint "U+1204D" ;
+    ns2:unicodeRepresentation "𒁍" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555153> .
 
