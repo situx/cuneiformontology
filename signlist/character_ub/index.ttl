@@ -1,14 +1,14 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_ub> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_ub> a ns2:Grapheme ;
     rdfs:label "Character: UB" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_ub_sense__ar2___praise>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_ub_sense__ar2___praise>,
         <https://situx.github.io/cuneiformontology/signlist/character_ub_sense_corner> ;
-    ns1:abzl "288" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ub_reading_ar2>,
+    ns2:abzl "288" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ub_reading_ar2>,
         <https://situx.github.io/cuneiformontology/signlist/character_ub_reading_ara2>,
         <https://situx.github.io/cuneiformontology/signlist/character_ub_reading_ub>,
         <https://situx.github.io/cuneiformontology/signlist/character_ub_reading_ub_ub>,
@@ -17,14 +17,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_ub_reading_ubu2>,
         <https://situx.github.io/cuneiformontology/signlist/character_ub_reading_up>,
         <https://situx.github.io/cuneiformontology/signlist/character_ub_reading_warₓ> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ub> ;
-    ns1:hethzl "152" ;
-    ns1:labat "306" ;
-    ns1:meszl "504" ;
-    ns1:obo "288" ;
-    ns1:signName "UB" ;
-    ns1:slha "306" ;
-    ns1:unicodeCodepoint "U+12312" ;
-    ns1:unicodeRepresentation "𒌒" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ub> ;
+    ns2:hethzl "152" ;
+    ns2:labat "306" ;
+    ns2:meszl "504" ;
+    ns2:obo "288" ;
+    ns2:signName "UB" ;
+    ns2:slha "306" ;
+    ns2:unicodeCodepoint "U+12312" ;
+    ns2:unicodeRepresentation "𒌒" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556538> .
 

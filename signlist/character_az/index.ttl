@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_az> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_az> a ns2:Grapheme ;
     rdfs:label "Character: AZ (PIRIG×ZA)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_az_sense_bear> ;
-    ns1:abzl "180" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_az_reading_as>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_az_sense_bear> ;
+    ns2:abzl "180" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_az_reading_as>,
         <https://situx.github.io/cuneiformontology/signlist/character_az_reading_asa>,
         <https://situx.github.io/cuneiformontology/signlist/character_az_reading_az>,
         <https://situx.github.io/cuneiformontology/signlist/character_az_reading_az_as>,
@@ -19,15 +19,15 @@
         <https://situx.github.io/cuneiformontology/signlist/character_az_reading_us4>,
         <https://situx.github.io/cuneiformontology/signlist/character_az_reading_us_4>,
         <https://situx.github.io/cuneiformontology/signlist/character_az_reading_uz4> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_az_pirig>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_az_pirig>,
         <https://situx.github.io/cuneiformontology/signlist/character_za> ;
-    ns1:hethzl "92" ;
-    ns1:labat "131" ;
-    ns1:meszl "297" ;
-    ns1:obo "180" ;
-    ns1:signName "AZ (PIRIG×ZA)" ;
-    ns1:slha "131" ;
-    ns1:unicodeCodepoint "U+1228D" ;
-    ns1:unicodeRepresentation "𒊍" ;
+    ns2:hethzl "92" ;
+    ns2:labat "131" ;
+    ns2:meszl "297" ;
+    ns2:obo "180" ;
+    ns2:signName "AZ (PIRIG×ZA)" ;
+    ns2:slha "131" ;
+    ns2:unicodeCodepoint "U+1228D" ;
+    ns2:unicodeRepresentation "𒊍" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556293> .
 
