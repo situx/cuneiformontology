@@ -1,0 +1,11 @@
+@prefix ns1: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d3ca46ed-0156-4a04-9c7c-a5d6fbc66144_body_wedgetype> a ns1:TextualBody ;
+    rdfs:label "Annotation Body: Wedge Type b"@en ;
+    rdf:value "b"^^xsd:string ;
+    ns1:motivatedBy ns1:classifying ;
+    ns1:purpose ns1:tagging .
+

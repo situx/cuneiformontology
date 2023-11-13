@@ -1,0 +1,14 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line1_char6> a ns2:TransliterationCharOccurrence ;
+    rdfs:label "HS 1174 transliteration 1 obverse line 1 char 6"@en ;
+    ns2:charIndex 6 ;
+    ns2:lineNumber 1 ;
+    ns2:prevChar <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_obverse_line1_char5> ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_ma_reading_ma> ;
+    skos:definition "ma" .
+

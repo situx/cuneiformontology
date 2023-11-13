@@ -1,0 +1,11 @@
+@prefix ns1: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/o147/imgannotations/9c90e801-af54-44c7-b9e4-e5fcd346230d_body_tabletside> a ns1:TextualBody ;
+    rdfs:label "Annotation Body: Tablet Side back"@en ;
+    rdf:value "back"^^xsd:string ;
+    ns1:motivatedBy ns1:describing ;
+    ns1:purpose ns1:tagging .
+
