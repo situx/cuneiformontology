@@ -1,0 +1,44 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://www.w3.org/2003/12/exif/ns#> .
+@prefix ns2: <http://ns.adobe.com/xap/1.0/> .
+@prefix ns3: <http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo18> a foaf:Image ;
+    ns3:CountryCode "IRN" ;
+    ns3:Event "single picture" ;
+    ns3:LocationCreatedCity "Haft Tappeh" ;
+    ns3:LocationCreatedCountryName "Iran" ;
+    ns3:LocationCreatedWorldRegion "Asia" ;
+    ns2:CreatorTool "Haft Tappeh XMP Generator Script" ;
+    ns2:Owner "Behzad Mofidi-Nasrabadi" ;
+    ns2:UsageTerms "CC BY-SA 4.0" ;
+    dc:contributor <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_ehuber>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_tbrandes> ;
+    dc:created "2007-01-27T11:30:18"^^xsd:dateTime ;
+    dc:description "Photo 18 of cuneiform clay tablet HT 07-31-95" ;
+    dc:identifier "HT_07-31-95_photo_18" ;
+    dc:language <http://www.lexvo.org/page/iso639-3/akk> ;
+    dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dc:medium "clay" ;
+    dc:publisher "Johannes Gutenberg University Mainz" ;
+    dc:spatial <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_excavloc> ;
+    dc:subject "unknown" ;
+    dc:temporal <https://pleiades.stoa.org/vocabularies/time-periods/late-bronze-age-iran> ;
+    dc:title "HT 07-31-95 photo 18" ;
+    dc:type dc:Image ;
+    ns1:DateTime "2007:01:27 11:30:18" ;
+    ns1:ExifOffset "196" ;
+    ns1:GPSLatitude "32.080207° N" ;
+    ns1:GPSLongitude "48.329165° E" ;
+    ns1:Make "Canon" ;
+    ns1:Model "Canon PowerShot G5" ;
+    ns1:Orientation "1" ;
+    ns1:ResolutionUnit "2" ;
+    ns1:Software "Haft Tappeh XMP Generator Script" ;
+    ns1:XResolution "180.0" ;
+    ns1:YCbCrPositioning "1" ;
+    ns1:YResolution "180.0" ;
+    foaf:image "https://heidicon.ub.uni-heidelberg.de/iiif/2/1667784:870874/full/full/0/default.jpg"^^xsd:anyURI .
+
