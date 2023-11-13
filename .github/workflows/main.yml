@@ -4,6 +4,41 @@ on:
   push: 
       branches:
           - main
+
+ ontdocI:
+    uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
+    name: Ontdoc I      
+    with: 
+          version: v017dev
+          rdffilepath: merged.ttl
+          docpath: docs/
+          prefixns: https://situx.github.io/cuneiformontology/
+          prefixnsshort: cuneisignlist
+          indexpages: true
+          metadatatable: true
+          createcollections: false
+          createnonNSPages: true
+          createVOWL: true
+          preferredlang: en
+          ghpages: true
+
+ ontdocII:
+    uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
+    name: Ontdoc II      
+    with: 
+          version: v017dev
+          rdffilepath: signlist/signlist.ttl
+          docpath: docs/
+          prefixns: https://situx.github.io/cuneiformontology/
+          prefixnsshort: cuneisignlist
+          indexpages: true
+          metadatatable: true
+          createcollections: false
+          createnonNSPages: true
+          createVOWL: true
+          preferredlang: en
+          ghpages: true
+
 jobs:
   build:
 
@@ -39,10 +74,10 @@ jobs:
          cp -r examples/HT073195/images/ docs/examples/ht073195/images/ 
          cp -r examples/TCH92/images/ docs/examples/tch92/images/ 
          cp -r examples/O147/images/ docs/examples/o147/images/ 
-         wget https://raw.githubusercontent.com/sparqlunicorn/sparqlunicornGoesGIS-ontdoc/main/docgeneration.py 
-         wget https://raw.githubusercontent.com/sparqlunicorn/sparqlunicornGoesGIS-ontdoc/main/prefixes.json 
-         python3 docgeneration.py --input signlist/signlist.ttl --output docs/ --prefixns https://situx.github.io/cuneiformontology/ --prefixnsshort cuneisignlist --metadatatable true --deploypath https://situx.github.io/cuneiformontology/
-         python3 docgeneration.py --input merged.ttl --output docs/ --prefixns https://situx.github.io/cuneiformontology/ --prefixnsshort cuneisignlist --metadatatable true --deploypath https://situx.github.io/cuneiformontology/
+         #wget https://raw.githubusercontent.com/sparqlunicorn/sparqlunicornGoesGIS-ontdoc/main/docgeneration.py 
+         #wget https://raw.githubusercontent.com/sparqlunicorn/sparqlunicornGoesGIS-ontdoc/main/prefixes.json 
+         #python3 docgeneration.py --input signlist/signlist.ttl --output docs/ --prefixns https://situx.github.io/cuneiformontology/ --prefixnsshort cuneisignlist --metadatatable true --deploypath https://situx.github.io/cuneiformontology/
+         #python3 docgeneration.py --input merged.ttl --output docs/ --prefixns https://situx.github.io/cuneiformontology/ --prefixnsshort cuneisignlist --metadatatable true --deploypath https://situx.github.io/cuneiformontology/
          #python3 docgeneration.py --input examples/HS1174/transliteration/HS1174.atf.ttl --output docs/ --prefixns https://situx.github.io/cuneiformontology/ --prefixnsshort cuneiex --metadatatable true --deploypath https://situx.github.io/cuneiformontology/
          #python3 docgeneration.py --input examples/HS1174/transliteration/HS1174_textanno.ttl --output docs/ --prefixns https://situx.github.io/cuneiformontology/ --prefixnsshort cuneiex --metadatatable true --deploypath https://situx.github.io/cuneiformontology/
          #python3 docgeneration.py --input examples/HS1174/ttl/hs1174.ttl --output docs/ --prefixns https://situx.github.io/cuneiformontology/ --prefixnsshort cuneiex --metadatatable true --deploypath https://situx.github.io/cuneiformontology/
