@@ -5,42 +5,44 @@ on:
       branches:
           - main
 
- ontdocI:
-    uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
-    name: Ontdoc I      
-    with: 
-          version: v017dev
-          rdffilepath: merged.ttl
-          docpath: docs/
-          prefixns: https://situx.github.io/cuneiformontology/
-          prefixnsshort: cuneisignlist
-          indexpages: true
-          metadatatable: true
-          createcollections: false
-          createnonNSPages: true
-          createVOWL: true
-          preferredlang: en
-          ghpages: true
-
- ontdocII:
-    uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
-    name: Ontdoc II      
-    with: 
-          version: v017dev
-          rdffilepath: signlist/signlist.ttl
-          docpath: docs/
-          prefixns: https://situx.github.io/cuneiformontology/
-          prefixnsshort: cuneisignlist
-          indexpages: true
-          metadatatable: true
-          createcollections: false
-          createnonNSPages: true
-          createVOWL: true
-          preferredlang: en
-          ghpages: true
-
 jobs:
-  build:
+
+   ontdocI:
+      uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
+      name: Ontdoc I      
+      with: 
+            version: v017dev
+            rdffilepath: merged.ttl
+            docpath: docs/
+            prefixns: https://situx.github.io/cuneiformontology/
+            prefixnsshort: cuneisignlist
+            indexpages: true
+            metadatatable: true
+            createcollections: false
+            createnonNSPages: true
+            createVOWL: true
+            preferredlang: en
+            ghpages: true
+
+   ontdocII:
+      uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
+      name: Ontdoc II      
+      with: 
+            version: v017dev
+            rdffilepath: signlist/signlist.ttl
+            docpath: docs/
+            prefixns: https://situx.github.io/cuneiformontology/
+            prefixnsshort: cuneisignlist
+            indexpages: true
+            metadatatable: true
+            createcollections: false
+            createnonNSPages: true
+            createVOWL: true
+            preferredlang: en
+            ghpages: true
+  
+  
+   build:
 
     runs-on: ubuntu-latest
  
