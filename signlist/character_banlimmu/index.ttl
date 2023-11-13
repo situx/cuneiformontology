@@ -1,0 +1,31 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_banlimmu> a ns1:Grapheme,
+        ns1:GraphemeComposition ;
+    rdfs:label "Character Composition: banlimmu",
+        "Character: BANLIMMU (ÁŠ.U/GE23)" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_banlimmu_reading_4>,
+        <https://situx.github.io/cuneiformontology/signlist/character_banlimmu_reading_4_ban2>,
+        <https://situx.github.io/cuneiformontology/signlist/character_banlimmu_reading_4_ban2@c>,
+        <https://situx.github.io/cuneiformontology/signlist/character_banlimmu_reading_4_ban2@c_@v>,
+        <https://situx.github.io/cuneiformontology/signlist/character_banlimmu_reading_4_ban2@v>,
+        <https://situx.github.io/cuneiformontology/signlist/character_banlimmu_reading_4_ban2@v@c>,
+        <https://situx.github.io/cuneiformontology/signlist/character_banlimmu_reading_4_ban2_@v>,
+        <https://situx.github.io/cuneiformontology/signlist/character_banlimmu_reading_banlimmu> ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_banlimmu_a2sz>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ge23>,
+        <https://situx.github.io/cuneiformontology/signlist/character_u> ;
+    ns1:meszl "550" ;
+    ns1:signName "BANLIMMU (ÁŠ.U/GE23)" ;
+    ns1:slha "340",
+        "340v" ;
+    ns1:unicodeCodepoint "U+12452",
+        "U+12453" ;
+    ns1:unicodeRepresentation "𒀾𒌋",
+        "𒑒",
+        "𒑓" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q87557016>,
+        <http://www.wikidata.org/entity/Q87557017> .
+
