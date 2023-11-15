@@ -1,0 +1,12 @@
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line4> a ns1:TransliterationLine ;
+    rdfs:label "TCH92 obverse line 4"@en ;
+    ns1:lineNumber 4 ;
+    ns1:nextLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line5> ;
+    ns1:prevLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line3> ;
+    skos:definition "{1(disz)}A-am-mar-sza-DINGIR DUMU-szu sza2 GABA" .
+

@@ -1,16 +1,16 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_gìr> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_gìr> a ns2:Grapheme ;
     rdfs:label "Character: GÌR" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_gìr_sense__ne3___vigor>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_gìr_sense__ne3___vigor>,
         <https://situx.github.io/cuneiformontology/signlist/character_gìr_sense_foot>,
         <https://situx.github.io/cuneiformontology/signlist/character_gìr_sense_lion>,
         <https://situx.github.io/cuneiformontology/signlist/character_gìr_sense_path> ;
-    ns1:abzl "291b" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gìr_reading_ansze2>,
+    ns2:abzl "291b" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gìr_reading_ansze2>,
         <https://situx.github.io/cuneiformontology/signlist/character_gìr_reading_anszu2>,
         <https://situx.github.io/cuneiformontology/signlist/character_gìr_reading_az>,
         <https://situx.github.io/cuneiformontology/signlist/character_gìr_reading_er9>,
@@ -47,15 +47,15 @@
         <https://situx.github.io/cuneiformontology/signlist/character_gìr_reading_wir>,
         <https://situx.github.io/cuneiformontology/signlist/character_gìr_reading_ŋir3>,
         <https://situx.github.io/cuneiformontology/signlist/character_gìr_reading_ŋiri3> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gi3r> ;
-    ns1:hethzl "301" ;
-    ns1:labat "444" ;
-    ns1:meszl "701" ;
-    ns1:obo "178",
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gi3r> ;
+    ns2:hethzl "301" ;
+    ns2:labat "444" ;
+    ns2:meszl "701" ;
+    ns2:obo "178",
         "291.2" ;
-    ns1:signName "GÌR" ;
-    ns1:slha "444" ;
-    ns1:unicodeCodepoint "U+1210A" ;
-    ns1:unicodeRepresentation "𒄊" ;
+    ns2:signName "GÌR" ;
+    ns2:slha "444" ;
+    ns2:unicodeCodepoint "U+1210A" ;
+    ns2:unicodeRepresentation "𒄊" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555516> .
 

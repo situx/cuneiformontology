@@ -1,0 +1,17 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns2: <http://situx.github.io/proj4rdf/ont/crs/> .
+@prefix ns3: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm_axis2> a ns2:CoordinateSystemAxis,
+        ns1:CoordinateSystemAxis ;
+    rdfs:label "Cartesian coordinate system with 3 axis in millimetre units: Axis 2"@en ;
+    ns2:abbreviation "Y" ;
+    ns2:axisDirection ns2:geocentricY ;
+    ns2:axisOrder "2"^^xsd:int ;
+    ns3:hasUnit ns3:millimetre ;
+    ns1:abbreviation "Y" ;
+    ns1:axisDirection ns1:geocentricY ;
+    ns1:axisOrder "2"^^xsd:int .
+

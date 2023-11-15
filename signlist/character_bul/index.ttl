@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_bul> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_bul> a ns2:Grapheme ;
     rdfs:label "Character: BUL (LAGAB×EŠ)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_bul_sense_to_tremble__tuku4> ;
-    ns1:abzl "411" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_bul_reading_bu5>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_bul_sense_to_tremble__tuku4> ;
+    ns2:abzl "411" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_bul_reading_bu5>,
         <https://situx.github.io/cuneiformontology/signlist/character_bul_reading_bul>,
         <https://situx.github.io/cuneiformontology/signlist/character_bul_reading_bur10>,
         <https://situx.github.io/cuneiformontology/signlist/character_bul_reading_lagab×_u_u_u>,
@@ -25,14 +25,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_bul_reading_tuk4>,
         <https://situx.github.io/cuneiformontology/signlist/character_bul_reading_tuku4>,
         <https://situx.github.io/cuneiformontology/signlist/character_bul_reading_zansur> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_bul_lagab>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_bul_lagab>,
         <https://situx.github.io/cuneiformontology/signlist/character_esz> ;
-    ns1:labat "515" ;
-    ns1:meszl "788" ;
-    ns1:obo "411" ;
-    ns1:signName "BUL (LAGAB×EŠ)" ;
-    ns1:slha "515" ;
-    ns1:unicodeCodepoint "U+121E7" ;
-    ns1:unicodeRepresentation "𒇧" ;
+    ns2:labat "515" ;
+    ns2:meszl "788" ;
+    ns2:obo "411" ;
+    ns2:signName "BUL (LAGAB×EŠ)" ;
+    ns2:slha "515" ;
+    ns2:unicodeCodepoint "U+121E7" ;
+    ns2:unicodeRepresentation "𒇧" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555977> .
 
