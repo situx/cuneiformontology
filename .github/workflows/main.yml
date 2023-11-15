@@ -9,6 +9,7 @@ jobs:
 
    ontdocI:
       uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
+      needs: [build] 
       name: Ontdoc I      
       with: 
             version: v017dev
@@ -26,6 +27,7 @@ jobs:
 
    ontdocII:
       uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
+      needs: [build] 
       name: Ontdoc II      
       with: 
             version: v017dev
@@ -45,7 +47,6 @@ jobs:
    build:
 
     runs-on: ubuntu-latest
-    needs: [ontdocI, ontdocII] 
     steps:
     - uses: actions/checkout@v1
     - name: Create Ontology Documentation 🔧
