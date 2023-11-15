@@ -9,7 +9,6 @@ jobs:
 
    ontdocI:
       uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
-      needs: [build] 
       name: Ontdoc I      
       with: 
             version: v017dev
@@ -27,7 +26,6 @@ jobs:
 
    ontdocII:
       uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
-      needs: [build] 
       name: Ontdoc II      
       with: 
             version: v017dev
@@ -47,6 +45,7 @@ jobs:
    build:
 
     runs-on: ubuntu-latest
+    needs: [ontdocI,ontdocII] 
     steps:
     - uses: actions/checkout@v1
     - name: Create Ontology Documentation 🔧
@@ -108,7 +107,22 @@ jobs:
          #python3 docgeneration.py --input examples/TCH92/ttl/TCH92_back.png.ttl --output docs/ --prefixns https://situx.github.io/cuneiformontology/ --prefixnsshort cuneiex --metadatatable true --deploypath https://situx.github.io/cuneiformontology/
          #python3 docgeneration.py --input examples/TCH92/mesh/TCH92_mesh.ttl --output docs/ --prefixns https://situx.github.io/cuneiformontology/ --prefixnsshort cuneiex --metadatatable true --deploypath https://situx.github.io/cuneiformontology/
     - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4.3.3
+      uses: JamesIves/github-pages-deploy-action@releases/v4
       with:
          BRANCH: gh-pages
-         FOLDER: docs/
+         FOLDER: docs/examples/hs1174/images/
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@releases/v4
+      with:
+         BRANCH: gh-pages
+         FOLDER: docs/examples/ht073195/images/ 
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@releases/v4
+      with:
+         BRANCH: gh-pages
+         FOLDER: docs/examples/o147/images/ 
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@releases/v4
+      with:
+         BRANCH: gh-pages
+         FOLDER: docs/examples/tch92/images/ 
