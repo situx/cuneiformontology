@@ -1,0 +1,27 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_galam> a ns1:Grapheme ;
+    rdfs:label "Character: GALAM (SUKUD)" ;
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_galam_sense_clever>,
+        <https://situx.github.io/cuneiformontology/signlist/character_galam_sense_tall> ;
+    ns1:abzl "210 and 133" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_galam_reading_galam>,
+        <https://situx.github.io/cuneiformontology/signlist/character_galam_reading_galam_cf_133_sukud>,
+        <https://situx.github.io/cuneiformontology/signlist/character_galam_reading_gud5>,
+        <https://situx.github.io/cuneiformontology/signlist/character_galam_reading_sukud>,
+        <https://situx.github.io/cuneiformontology/signlist/character_galam_reading_sukud_cf_210_galam>,
+        <https://situx.github.io/cuneiformontology/signlist/character_galam_reading_ubi> ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_galam_sukud> ;
+    ns1:labat "190.11" ;
+    ns1:meszl "338" ;
+    ns1:obo "133",
+        "210" ;
+    ns1:signName "GALAM (SUKUD)" ;
+    ns1:slha "190kv" ;
+    ns1:unicodeCodepoint "U+120F4" ;
+    ns1:unicodeRepresentation "𒃴" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q87555472> .
+

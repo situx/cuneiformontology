@@ -1,0 +1,29 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_sed> a ns1:Grapheme,
+        ns1:GraphemeComposition ;
+    rdfs:label "Character Composition: sed",
+        "Character: SED (MÙŠ× A.DI)" ;
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_sed_sense_cool>,
+        <https://situx.github.io/cuneiformontology/signlist/character_sed_sense_to_cool> ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sed_reading_musz3×_a_di>,
+        <https://situx.github.io/cuneiformontology/signlist/character_sed_reading_se9>,
+        <https://situx.github.io/cuneiformontology/signlist/character_sed_reading_sed>,
+        <https://situx.github.io/cuneiformontology/signlist/character_sed_reading_sze4>,
+        <https://situx.github.io/cuneiformontology/signlist/character_sed_reading_szed7> ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_a>,
+        <https://situx.github.io/cuneiformontology/signlist/character_di>,
+        <https://situx.github.io/cuneiformontology/signlist/character_sed_mu3sz> ;
+    ns1:labat "103.1" ;
+    ns1:meszl "155" ;
+    ns1:obo "46" ;
+    ns1:signName "SED (MÙŠ× A.DI)" ;
+    ns1:slha "103b" ;
+    ns1:unicodeCodepoint "U+1223B" ;
+    ns1:unicodeRepresentation "𒈹𒁲",
+        "𒈻" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q87556139> .
+

@@ -1,0 +1,13 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_ab_x_nun> a ns1:Grapheme ;
+    rdfs:label "Character: AB x NUN" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ab>,
+        <https://situx.github.io/cuneiformontology/signlist/character_nun> ;
+    ns1:signName "AB x NUN" ;
+    ns1:unicodeCodepoint "U+12370" ;
+    ns1:unicodeRepresentation "𒍰" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q87556738> .
+

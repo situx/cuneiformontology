@@ -1,0 +1,16 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_ka_x_umum_x_pa> a ns1:Grapheme ;
+    rdfs:label "Character: KA x UMUM x PA" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ka_x_umum_x_pa_reading_gudedde>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ka_x_umum_x_pa_reading_ka×umum×pa> ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ka>,
+        <https://situx.github.io/cuneiformontology/signlist/character_pa>,
+        <https://situx.github.io/cuneiformontology/signlist/character_umum> ;
+    ns1:signName "KA x UMUM x PA" ;
+    ns1:unicodeCodepoint "U+1218A" ;
+    ns1:unicodeRepresentation "𒆊" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q87555776> .
+

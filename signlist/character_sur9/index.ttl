@@ -1,0 +1,21 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_sur9> a ns1:Grapheme ;
+    rdfs:label "Character: SUR9 (MÁ.KASKAL.SIG7 and similar)" ;
+    ns1:abzl "055" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sur9_reading_sur9>,
+        <https://situx.github.io/cuneiformontology/signlist/character_sur9_reading_sura9>,
+        <https://situx.github.io/cuneiformontology/signlist/character_sur9_reading_surru>,
+        <https://situx.github.io/cuneiformontology/signlist/character_sur9_reading_zur2> ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_kaskal>,
+        <https://situx.github.io/cuneiformontology/signlist/character_sig7_and_similar>,
+        <https://situx.github.io/cuneiformontology/signlist/character_sur9_ma2> ;
+    ns1:meszl "205" ;
+    ns1:signName "SUR9 (MÁ.KASKAL.SIG7 and similar)" ;
+    ns1:slha "122d" ;
+    ns1:unicodeCodepoint "U+122EA" ;
+    ns1:unicodeRepresentation "𒋪" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q87556468> .
+
