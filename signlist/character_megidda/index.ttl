@@ -1,0 +1,16 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_megidda> a ns1:GraphemeComposition ;
+    rdfs:label "Character Composition: MEGIDDA (TAB.TI)" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_megidda_reading_megida>,
+        <https://situx.github.io/cuneiformontology/signlist/character_megidda_reading_megidda>,
+        <https://situx.github.io/cuneiformontology/signlist/character_megidda_reading_tab_ti> ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_megidda_tab>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ti> ;
+    ns1:meszl "211" ;
+    ns1:signName "MEGIDDA (TAB.TI)" ;
+    ns1:slha "125n" ;
+    ns1:unicodeCodepoint "U+122F0 & U+122FE" ;
+    ns1:unicodeRepresentation "𒋰𒋾" .
+

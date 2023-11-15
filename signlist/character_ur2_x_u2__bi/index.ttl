@@ -1,0 +1,15 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_ur2_x_u2__bi> a ns1:Grapheme ;
+    rdfs:label "Character: UR2 x U2 + BI" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ur2_x_u2_bi_reading_ar>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ur2_x_u2_bi_reading_ur2×_u2_bi> ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_u2__bi>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ur2> ;
+    ns1:signName "UR2 x U2 + BI" ;
+    ns1:unicodeCodepoint "U+12333" ;
+    ns1:unicodeRepresentation "𒌳" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q87556607> .
+

@@ -1,0 +1,20 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_íti> a ns1:Grapheme ;
+    rdfs:label "Character: ÍTI (ITI×BAD)" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_íti_reading_iti2>,
+        <https://situx.github.io/cuneiformontology/signlist/character_íti_reading_itid2>,
+        <https://situx.github.io/cuneiformontology/signlist/character_íti_reading_itu2>,
+        <https://situx.github.io/cuneiformontology/signlist/character_íti_reading_itud2>,
+        <https://situx.github.io/cuneiformontology/signlist/character_íti_reading_ud@s×bad> ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_bad>,
+        <https://situx.github.io/cuneiformontology/signlist/character_i2ti_iti> ;
+    ns1:meszl "21" ;
+    ns1:signName "ÍTI (ITI×BAD)" ;
+    ns1:slha "052xv" ;
+    ns1:unicodeCodepoint "U+1231B" ;
+    ns1:unicodeRepresentation "𒌛" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q87556556> .
+

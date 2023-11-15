@@ -1,0 +1,18 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_liliz> a ns1:Grapheme ;
+    rdfs:label "Character: LILIZ (ÁB×BALAG)" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_liliz_reading_ab2×balag>,
+        <https://situx.github.io/cuneiformontology/signlist/character_liliz_reading_lilis>,
+        <https://situx.github.io/cuneiformontology/signlist/character_liliz_reading_liliz> ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_balag>,
+        <https://situx.github.io/cuneiformontology/signlist/character_liliz_a2b> ;
+    ns1:meszl "676" ;
+    ns1:signName "LILIZ (ÁB×BALAG)" ;
+    ns1:slha "422" ;
+    ns1:unicodeCodepoint "U+12017" ;
+    ns1:unicodeRepresentation "𒀗" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q87555041> .
+

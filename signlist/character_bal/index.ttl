@@ -1,0 +1,33 @@
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_bal> a ns2:Grapheme ;
+    rdfs:label "Character: BAL" ;
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_bal_sense_term>,
+        <https://situx.github.io/cuneiformontology/signlist/character_bal_sense_to_cross>,
+        <https://situx.github.io/cuneiformontology/signlist/character_bal_sense_to_pass_through>,
+        <https://situx.github.io/cuneiformontology/signlist/character_bal_sense_to_pur__as_a__libation>,
+        <https://situx.github.io/cuneiformontology/signlist/character_bal_sense_turn> ;
+    ns2:abzl "003" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_bal_reading_bal>,
+        <https://situx.github.io/cuneiformontology/signlist/character_bal_reading_bala>,
+        <https://situx.github.io/cuneiformontology/signlist/character_bal_reading_balak>,
+        <https://situx.github.io/cuneiformontology/signlist/character_bal_reading_bul3>,
+        <https://situx.github.io/cuneiformontology/signlist/character_bal_reading_kulₓ>,
+        <https://situx.github.io/cuneiformontology/signlist/character_bal_reading_pal>,
+        <https://situx.github.io/cuneiformontology/signlist/character_bal_reading_pal_pal>,
+        <https://situx.github.io/cuneiformontology/signlist/character_bal_reading_pala4>,
+        <https://situx.github.io/cuneiformontology/signlist/character_bal_reading_pul3> ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_bal> ;
+    ns2:hethzl "4" ;
+    ns2:labat "9" ;
+    ns2:meszl "5" ;
+    ns2:obo "3" ;
+    ns2:signName "BAL" ;
+    ns2:slha "009" ;
+    ns2:unicodeCodepoint "U+12044" ;
+    ns2:unicodeRepresentation "𒁄" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q87555136> .
+

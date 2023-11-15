@@ -1,0 +1,330 @@
+<html>
+<head>
+<script src="js/transliterations.js"></script>
+<script src="js/annotatorfunctions.js"></script>
+<script src="js/newurls.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@recogito/annotorious-openseadragon@2.7.2/dist/annotorious.min.css"></link>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/3.0.0/openseadragon.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@recogito/annotorious-openseadragon@2.7.4/dist/openseadragon-annotorious.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@recogito/annotorious-selector-pack@latest/dist/annotorious-selector-pack.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@recogito/annotorious-toolbar@latest/dist/annotorious-toolbar.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@recogito/recogito-js@1.7.1/dist/recogito.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+</head>
+  <body>
+<h1 align="center">Example annotations on cuneiform tablet image media</h1>
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+#grid-source { position: absolute; }
+#grid-overlay { position: relative; }
+.r6o-editor { width:550px}
+.hover { background-color: rgba(0,0,0,0.1) !important; }
+.unselected { background-color: rgba(0,0,0,0.5); }
+.selected { background-color: none; }
+.indexhighlight {border-color: red; stroke:red !important;}
+</style>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6" role="main">
+Tablet: <select id="images" onchange="loadVariants()"></select> Side: <select id="imageside" onchange="reinit(null)"></select><button id="showTransliteration" onClick='document.getElementById("transliterationdialog").show();'>Transliteration</button>
+<script>
+var curnamespace="http://purl.org/cuneiform/"
+var mappings={"PaleoCode":{"inputtype":"text","regex":"","handler":null,"paleocodage":true,"uri":curnamespace+"PaleoCode"},
+"TabletSide":{"inputtype":"select","regex":"","handler":null,"uri":curnamespace+"TabletSide","data":{"selected":"selected","front":"front","back":"back","left":"left","right":"right","top":"top","bottom":"bottom"}},
+"Transliteration":{"inputtype":"text","regex":"","handler":null,"uri":curnamespace+"Transliteration"},
+"Column":{"inputtype":"number","regex":"","handler":null,"uri":curnamespace+"Column"},
+"Line":{"inputtype":"number","regex":"","handler":null,"uri":curnamespace+"Line"},
+"Charindex":{"inputtype":"number","regex":"","handler":null,"uri":curnamespace+"Charindex"},
+"Wordindex":{"inputtype":"number","regex":"","handler":null,"uri":curnamespace+"Wordindex"}
+}
+var readOnlyVar=true
+periods={}
+languages={}
+hs2CDLI={}
+approvals={}
+mlVocabulary={}
+const queryString = window.location.search;
+console.log(queryString);
+const urlParams = new URLSearchParams(queryString);
+console.log(urlParams)
+const tabletid = urlParams.get('tabletid');
+const columnindex = urlParams.get('column');
+const sideid = urlParams.get('sideid');
+const tside = urlParams.get('side');
+const lineindex = urlParams.get('line');
+const charindexparam = urlParams.get('charindex');
+const annotationids = urlParams.get('annotations');
+const firststart=true
+console.log(tabletid+" "+tside+" "+annotationids)
+
+function findGetParameter(parameterName) {
+    var result = null,
+        tmp = [];
+    var items = location.search.substr(1).split("&");
+    for (var index = 0; index < items.length; index++) {
+        tmp = items[index].split("=");
+        if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+    }
+    return result;
+}
+
+$(document).ready(function () {
+      $('#images').selectize({
+          sortField: 'text',
+          maxOptions: 5000
+      });
+      $('#3dimages').selectize({
+          sortField: 'text',
+          maxOptions: 5000
+      });
+
+      loadVariants();
+  });
+
+  var options=""
+  var options2=""
+  for(url in urls){
+    if(url==tabletid){
+      options+="<option value=\""+url+"\" selected=\"selected\">"+url+"</option>"
+    }else{
+      options+="<option value=\""+url+"\">"
+    }
+    if(url in transliterations){
+      options+=url+" (T)</option>"
+    }else{
+      options+=url+"</option>"
+    }
+  }
+  document.getElementById("images").innerHTML=options
+  var index=0;
+  var translitwasclicked=false
+  var websiteprefix="{{site.baseurl}}"
+  var curanno={}
+  var tabletparam=findGetParameter("tablet")
+  var curcharindex={}
+  var curimgindex={}
+  var viewer;
+  var anno;
+  window.onload = function() {
+    viewer = OpenSeadragon({
+      id: "openseadragon",
+      prefixUrl: "openseadragon/images/",
+      degrees: 0,
+      showRotationControl: true,
+      showFlipControl: true,
+      gestureSettingsTouch: {
+        pinchRotate: true
+      },
+      tileSources: {
+        type: "image",
+        url: $('#imageside option:selected').val()
+      }
+    });
+
+    var annoconfig={
+      //formatter: Annotorious.ShapeLabelsFormatter,
+      widgets:[
+    TextMapWidget,
+    'COMMENT',
+    { widget: 'TAG',
+    vocabulary: mlVocabulary
+    }/*,recogito.SemanticTags({
+        dataSources: [
+            'Wikidata',
+            'VIAF'
+        ],
+        availableLanguages: [
+            'en', 'de', 'fa'
+        ],
+        limit: 10
+        })*/
+    ]}
+
+
+    // Initialize the Annotorious plugin
+    anno = OpenSeadragon.Annotorious(viewer,annoconfig);
+    //annotations = OpenSeadragon.Annotations({ viewer });
+    Annotorious.SelectorPack(anno);
+    //Annotorious.BetterPolygon(anno);
+    Annotorious.Toolbar(anno, document.getElementById('my-toolbar-container'));
+
+    $.getJSON("result/"+encodeURIComponent(annotationFileFromImageName($('#imageside option:selected').text())+".json"), function(result){
+      console.log(result)
+    annotations=[]
+    for(ann in result){
+      annotations.push(result[ann])
+    }
+    curanno=result
+    //const annotations = result.map(a => new WebAnnotation(a));
+    anno.setAnnotations(annotations);
+  }).fail(function(jqXHR, textStatus, errorThrown) { anno.setAnnotations([]);})
+    // Attach handlers to listen to events
+    anno.on('createAnnotation', function(a) {
+      console.log(a)
+      console.log(JSON.stringify(a))
+      curanno[a["id"]]=a
+    });
+    anno.on('mouseEnterAnnotation', function(annotation, event) {
+        console.log(annotation["id"])
+        console.log(curimgindex)
+        if(annotation["id"] in curimgindex){
+          $('#'+curimgindex[annotation["id"]]).css({"backgroundColor": "yellow", "color": "red","border": "2px solid red"})
+        }
+    });
+    anno.on('mouseLeaveAnnotation', function(annotation, event) {
+        if(annotation["id"] in curimgindex){
+          $('#'+curimgindex[annotation["id"]]).css({"backgroundColor": "#f7f7f9", "color": "#bd4147","border": "0px"})
+        }
+    });
+    anno.on('selectAnnotation', function(annotation) {
+        if(annotation["id"] in curimgindex){
+          $('#'+curimgindex[annotation["id"]]).css({"backgroundColor": "#f7f7f9", "color": "#bd4147","border": "0px"})
+        }
+    });
+    anno.on('deleteAnnotation', function(a) {
+      delete curanno[a["id"]]
+    });
+    anno.on('updateAnnotation', function(a) {
+      curanno[a["id"]]=a
+    });
+    if(typeof(annotationids)!='undefined'){
+      for(annoid in annotationids){
+        highlightAnnotationById(annoid)
+      }
+    }
+  }
+
+</script>
+<div>
+    <div id="my-toolbar-container"></div>
+<div id="openseadragon" style="width: 640px; height: 580px;"></div>
+</div>
+<a id="metadata" onClick="getEXIFData('openseadragon','metadatafield')">
+<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path></svg>
+</a>
+<span id="period"></span><br/>CDLI: <span id="cdlilink"></span>
+<div id="metadatafield">
+</div>
+</div>
+<div class="col-md-6">
+  3DModel:<br/>
+<select id="3dimages" onchange="setup3dhop()"><option value="https://heidicon.ub.uni-heidelberg.de/eas/partitions/3/0/592000/592202/adce42325842648a219d9f43d7f86da8744a84b1/application/x-ply/HS_1198b_HeiCuBeDa_GigaMesh.ply">Cuneiform Tablet HS 1032B_1</option></select>Data Format:<select id="dataformaturl" onchange="reload3DURLs()"><option value="ply_url">PLY</option><option value="nxz_url">NXZ</option></select>
+<dialog id="transliterationdialog" class="modal-body" style="z-index: 1000 !important ;height: 550px; overflow: auto;">
+    <h3>Transliteration View <span id="textid"></span></h3>
+    <span id="transliterationdialogmessage"></span><br/>
+    <code id="transliterationtextarea" style="width: 300px; height: 550px; overflow: auto;">
+    </code><br/>
+    <button id="closedialog" onClick='toggleTransliterationEdit()'>Edit</button><button id="savetransliteration" onClick='saveTransliterationJSON()'>Save</button><button id="savetransliterationannotation" onClick='saveTransliterationAnnotationJSON()'>Save Transliteration Annotation</button><button id="closedialog" onClick='document.getElementById("transliterationdialog").close()'>Close</button>
+</dialog>
+<dialog id="translationdialog" class="modal-body" style="z-index: 1000 !important ;height: 550px; overflow: auto;">
+    <h3>Translation View <span id="textid"></span></h3>
+    <code id="translationtextarea" style="width: 300px; height: 550px; overflow: auto">
+    </code><br/>
+    <button id="closedialog3" onClick='document.getElementById("translationdialog").close()'>Close</button>
+</dialog>
+<dialog id="paleocodedialog" class="modal-body" style="z-index: 1000 !important ;height: 550px; overflow: auto;">
+    <h3>PaleoCodeList</h3>
+    <ul id="paleocodelist" style="width: 300px; height: 550px; overflow: auto">
+    </ul><br/>
+    <button id="closedialog2" onClick='document.getElementById("paleocodedialog").close()'>Close</button>
+</dialog>
+<div id="3dhop" class="tdhop" style="height:700px;width:640px;" onmousedown="if (event.preventDefault) event.preventDefault()"><div id="tdhlg"></div>
+ <div id="toolbar">
+  <img id="home"        title="Home"                   src="skins/dark/home.png"/><br/>
+<!--ZOOM-->
+  <img id="zoomin"      title="Zoom In"                src="skins/dark/zoomin.png"/><br/>
+  <img id="zoomout"     title="Zoom Out"               src="skins/dark/zoomout.png"/><br/>
+<!--ZOOM-->
+<!--LIGHTING-->
+  <img id="lighting_off" title="Enable Lighting"       src="skins/dark/lighting_off.png" style="position:absolute; visibility:hidden;"/>
+  <img id="lighting"     title="Disable Lighting"      src="skins/dark/lighting.png"/><br/>
+<!--LIGHTING-->
+<!--LIGHT-->
+  <img id="light_on"    title="Disable Light Control"  src="skins/dark/lightcontrol_on.png" style="position:absolute; visibility:hidden;"/>
+  <img id="light"       title="Enable Light Control"   src="skins/dark/lightcontrol.png"/><br/>
+<!--LIGHT-->
+<!--MEASURE-->
+  <img id="measure_on"  title="Disable Measure Tool"   src="skins/dark/measure_on.png" style="position:absolute; visibility:hidden;"/>
+  <img id="measure"     title="Enable Measure Tool"    src="skins/dark/measure.png"/><br/>
+<!--MEASURE-->
+<!--POINT PICKING-->
+  <img id="pick_on"     title="Disable PickPoint Mode" src="skins/dark/pick_on.png" style="position:absolute; visibility:hidden;"/>
+  <img id="pick"        title="Enable PickPoint Mode"  src="skins/dark/pick.png"/><br/>
+<!--POINT PICKING-->
+<!--SECTIONS-->
+  <img id="sections_on" title="Disable Plane Sections" src="skins/dark/sections_on.png" style="position:absolute; visibility:hidden;"/>
+  <img id="sections"    title="Enable Plane Sections"  src="skins/dark/sections.png"/><br/>
+<!--SECTIONS-->
+<!--COLOR-->
+  <img id="color_on"    title="Disable Solid Color"    src="skins/dark/color_on.png" style="position:absolute; visibility:hidden;"/>
+  <img id="color"       title="Enable Solid Color"     src="skins/dark/color.png"/><br/>
+<!--COLOR-->
+<!--CAMERA-->
+  <img id="perspective"  title="Perspective Camera"    src="skins/dark/perspective.png" style="position:absolute; visibility:hidden;"/>
+  <img id="orthographic" title="Orthographic Camera"   src="skins/dark/orthographic.png"/><br/>
+<!--CAMERA-->
+<!--SCREENSHOT-->
+  <img id="screenshot" title="Save Screenshot"   src="skins/dark/screenshot.png"/><br/>
+<!--SCREENSHOT-->
+<!--FULLSCREEN-->
+  <img id="full_on"     title="Exit Full Screen"       src="skins/dark/full_on.png" style="position:absolute; visibility:hidden;"/>
+  <img id="full"        title="Full Screen"            src="skins/dark/full.png"/>
+<!--FULLSCREEN-->
+ </div>
+             <div id="toolbar2">
+                <img id="btn-edit-object" title="Edit Object Information" src="skins/dark/objectedit.png" /><br />
+                <img id="select_on" title="Disable Selection Tool" src="skins/dark/polygon_selection_on.png" style="position:absolute; visibility:hidden;" />
+                <img id="select" title="Enable Polygon Selection" src="skins/dark/polygon_selection.png" /><br />
+                <img id="btn-test-polygoneditor" title="Test Polygon Editor" src="skins/dark/polygon_editor.png" /><br />
+                <img id="btn-open-features-modal" title="Edit Features" src="skins/dark/features.png" /><br />
+                <img id="btn-open-featuregroup-modal" title="Edit Features Groups" src="skins/dark/featuregroup.png" /><br />
+                <img id="btn-open-interpretation-modal" title="Edit Interpretations" src="skins/dark/interpretation.png" /><br />
+            </div>
+<!--MEASURE-->
+ <div id="measure-box" class="output-box">Measured length<hr/><span id="measure-output" class="output-text" onmousedown="event.stopPropagation()">0.0</span></div>
+<!--MEASURE-->
+
+<!--POINT PICKING-->
+ <div id="pickpoint-box" class="output-box">XYZ picked point<hr/><span id="pickpoint-output" class="output-text" onmousedown="event.stopPropagation()">[ 0 , 0 , 0 ]</span></div>
+<!--POINT PICKING-->
+
+<!--SECTIONS-->
+ <div id="sections-box" class="output-box">
+  <table class="output-table" onmousedown="event.stopPropagation()">
+	<tr><td>Plane</td><td>Position</td><td>Flip</td></tr>
+	<tr>
+		<td><img   id="xplane_on"    title="Disable X Axis Section" src="skins/icons/sectionX_on.png" onclick="sectionxSwitch()" style="position:absolute; visibility:hidden; border:1px inset;"/>
+			<img   id="xplane"       title="Enable X Axis Section"  src="skins/icons/sectionX.png"  onclick="sectionxSwitch()"/><br/></td>
+		<td><input id="xplaneSlider" class="output-input"  type="range"    title="Move X Axis Section Position"/></td>
+		<td><input id="xplaneFlip"   class="output-input"  type="checkbox" title="Flip X Axis Section Direction"/></td></tr>
+	<tr>
+		<td><img   id="yplane_on"    title="Disable Y Axis Section" src="skins/icons/sectionY_on.png" onclick="sectionySwitch()" style="position:absolute; visibility:hidden; border:1px inset;"/>
+			<img   id="yplane"       title="Enable Y Axis Section"  src="skins/icons/sectionY.png"  onclick="sectionySwitch()"/><br/></td>
+		<td><input id="yplaneSlider" class="output-input"  type="range"    title="Move Y Axis Section Position"/></td>
+		<td><input id="yplaneFlip"   class="output-input"  type="checkbox" title="Flip Y Axis Section Direction"/></td></tr>
+	<tr>
+		<td><img   id="zplane_on"    title="Disable Z Axis Section" src="skins/icons/sectionZ_on.png" onclick="sectionzSwitch()" style="position:absolute; visibility:hidden; border:1px inset;"/>
+			<img   id="zplane"       title="Enable Z Axis Section"  src="skins/icons/sectionZ.png"  onclick="sectionzSwitch()"/><br/></td>
+		<td><input id="zplaneSlider" class="output-input"  type="range"    title="Move Y Axis Section Position"/></td>
+		<td><input id="zplaneFlip"   class="output-input"  type="checkbox" title="Flip Z Axis Section Direction"/></td></tr></table>
+  <table class="output-table" onmousedown="event.stopPropagation()" style="text-align:right;">
+	<tr>
+	 <td>Show planes<input id="showPlane" class="output-input" type="checkbox" title="Show Section Planes" style="bottom:-3px;"/></td>
+	 <td>Show edges<input  id="showBorder" class="output-input" type="checkbox" title="Show Section Edges" style="bottom:-3px;"/></td></tr></table>
+ </div>
+<!--SECTIONS-->
+
+ <canvas id="draw-canvas" style="background-color:lightgray""/>
+</div>
+</div>
+</body>
+</html>

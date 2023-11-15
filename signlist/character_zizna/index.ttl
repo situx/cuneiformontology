@@ -1,0 +1,22 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_zizna> a ns1:Grapheme ;
+    rdfs:label "Character: ZIZNA (TURoverTUR.ZAoverZA)" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_zizna_reading_tur&tur_za&za>,
+        <https://situx.github.io/cuneiformontology/signlist/character_zizna_reading_zazana>,
+        <https://situx.github.io/cuneiformontology/signlist/character_zizna_reading_zazna>,
+        <https://situx.github.io/cuneiformontology/signlist/character_zizna_reading_zezna>,
+        <https://situx.github.io/cuneiformontology/signlist/character_zizna_reading_zizna>,
+        <https://situx.github.io/cuneiformontology/signlist/character_zizna_reading_zizₓ> ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_tur>,
+        <https://situx.github.io/cuneiformontology/signlist/character_za>,
+        <https://situx.github.io/cuneiformontology/signlist/character_zizna_tur> ;
+    ns1:meszl "257" ;
+    ns1:signName "ZIZNA (TURoverTUR.ZAoverZA)" ;
+    ns1:slha "144f" ;
+    ns1:unicodeCodepoint "U+1230A" ;
+    ns1:unicodeRepresentation "𒌊" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q87556520> .
+
