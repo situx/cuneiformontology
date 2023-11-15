@@ -1,0 +1,15 @@
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line1> a ns1:Line ;
+    rdfs:label "TCH92 obverse side line 1"@en ;
+    ns1:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/tch92/images/line/line_1_TCH92_front.jpg> ;
+    ns1:nextLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line2> ;
+    ns2:contains <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line1_char1_glyph>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line1_char2_glyph>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line1_char3_glyph>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line1_char4_glyph>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line1_char5_glyph>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line1_char6_glyph> .
+

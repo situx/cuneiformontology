@@ -1,0 +1,19 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/ns/oa#> .
+@prefix ns2: <https://www.w3.org/ns/activitystreams#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d1977207-e2f3-4c24-9b5a-39573960a331> a ns1:Annotation ;
+    rdfs:label "Annotation of Glyph at TCH92 reverse line 13 char 11 on 3D rendering"@en ;
+    dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
+    dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    ns1:hasBody <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d1977207-e2f3-4c24-9b5a-39573960a331_body_charindex>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d1977207-e2f3-4c24-9b5a-39573960a331_body_glyph>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d1977207-e2f3-4c24-9b5a-39573960a331_body_line>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d1977207-e2f3-4c24-9b5a-39573960a331_body_tabletside>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d1977207-e2f3-4c24-9b5a-39573960a331_body_translit> ;
+    ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d1977207-e2f3-4c24-9b5a-39573960a331_target1>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/d1977207-e2f3-4c24-9b5a-39573960a331_target3d> ;
+    ns2:generator <https://github.com/recogito/annotorious-openseadragon> .
+

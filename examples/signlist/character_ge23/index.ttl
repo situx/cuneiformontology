@@ -1,0 +1,16 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <https://situx.github.io/cuneiformontology/examples/signlist/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns2:character_ge23 a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+    rdfs:label "Character: GE23"@en ;
+    ns1:altSignName "DISZ-tenu" ;
+    ns1:hasGraphemeReading ns2:character_ge23_reading_isz8 ;
+    ns1:hasUnicodeCodePoint "U+12039" ;
+    ns1:hasUnicodeRepresentation "𒀹" ;
+    ns1:meszl 575 ;
+    ns1:signName "GE23" ;
+    ns1:slha 360 ;
+    ns2:hasGraphemeReading ns2:character_ge23_reading_isz8 .
+
