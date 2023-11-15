@@ -1,0 +1,20 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_nab> a ns1:Grapheme ;
+    rdfs:label "Character: NAB (ANoverAN)" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_nab_reading_an&an>,
+        <https://situx.github.io/cuneiformontology/signlist/character_nab_reading_nab>,
+        <https://situx.github.io/cuneiformontology/signlist/character_nab_reading_nap>,
+        <https://situx.github.io/cuneiformontology/signlist/character_nab_reading_tillaₓ> ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_an>,
+        <https://situx.github.io/cuneiformontology/signlist/character_nab_an> ;
+    ns1:hethzl "100" ;
+    ns1:meszl "246" ;
+    ns1:signName "NAB (ANoverAN)" ;
+    ns1:slha "129" ;
+    ns1:unicodeCodepoint "U+1202E" ;
+    ns1:unicodeRepresentation "𒀮" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q87555089> .
+

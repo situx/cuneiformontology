@@ -1,0 +1,18 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_ítima> a ns1:Grapheme ;
+    rdfs:label "Character: ÍTIMA (UD×MI)" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ítima_reading_itima2>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ítima_reading_ud×mi>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ítima_reading_utima2> ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_i2tima_ud>,
+        <https://situx.github.io/cuneiformontology/signlist/character_mi> ;
+    ns1:meszl "597" ;
+    ns1:signName "ÍTIMA (UD×MI)" ;
+    ns1:slha "382v" ;
+    ns1:unicodeCodepoint "U+12316" ;
+    ns1:unicodeRepresentation "𒌖" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q87556546> .
+

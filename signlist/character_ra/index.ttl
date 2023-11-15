@@ -1,0 +1,24 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_ra> a ns1:Grapheme ;
+    rdfs:label "Character: RA" ;
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_ra_sense_to_beat>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ra_sense_to_strike> ;
+    ns1:abzl "192" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ra_reading_ra>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ra_reading_ra_ra>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ra_reading_rah2> ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ra> ;
+    ns1:hethzl "233" ;
+    ns1:labat "328" ;
+    ns1:meszl "511" ;
+    ns1:obo "194" ;
+    ns1:signName "RA" ;
+    ns1:slha "328" ;
+    ns1:unicodeCodepoint "U+1228F" ;
+    ns1:unicodeRepresentation "𒊏" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q87556297> .
+
