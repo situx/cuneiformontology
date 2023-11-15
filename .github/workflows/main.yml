@@ -45,7 +45,7 @@ jobs:
    build:
 
     runs-on: ubuntu-latest
- 
+    needs: [ontdocI, ontdocII] 
     steps:
     - uses: actions/checkout@v1
     - name: Create Ontology Documentation 🔧
