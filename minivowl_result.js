@@ -58,48 +58,6 @@ var minivowlresult={
  ],
  "links": [
   {
-   "source": 3,
-   "target": 3,
-   "valueTo": "hasPart",
-   "propertyTo": "class",
-   "uriTo": "http://www.purl.org/graphemon#hasPart"
-  },
-  {
-   "source": 3,
-   "target": 2,
-   "valueTo": "hasPart",
-   "propertyTo": "class",
-   "uriTo": "http://www.purl.org/graphemon#hasPart"
-  },
-  {
-   "source": 2,
-   "target": 3,
-   "valueTo": "hasPart",
-   "propertyTo": "class",
-   "uriTo": "http://www.purl.org/graphemon#hasPart"
-  },
-  {
-   "source": 2,
-   "target": 2,
-   "valueTo": "hasPart",
-   "propertyTo": "class",
-   "uriTo": "http://www.purl.org/graphemon#hasPart"
-  },
-  {
-   "source": 3,
-   "target": 6,
-   "valueTo": "hasGraphemeReading",
-   "propertyTo": "class",
-   "uriTo": "http://www.purl.org/graphemon#hasGraphemeReading"
-  },
-  {
-   "source": 2,
-   "target": 6,
-   "valueTo": "hasGraphemeReading",
-   "propertyTo": "class",
-   "uriTo": "http://www.purl.org/graphemon#hasGraphemeReading"
-  },
-  {
    "source": 6,
    "target": 9,
    "valueTo": "epoch",
@@ -108,17 +66,17 @@ var minivowlresult={
   },
   {
    "source": 3,
-   "target": 7,
-   "valueTo": "sense",
+   "target": 6,
+   "valueTo": "hasGraphemeReading",
    "propertyTo": "class",
-   "uriTo": "http://lemon-model.net/lemon#sense"
+   "uriTo": "http://www.purl.org/graphemon#hasGraphemeReading"
   },
   {
    "source": 2,
-   "target": 7,
-   "valueTo": "sense",
+   "target": 6,
+   "valueTo": "hasGraphemeReading",
    "propertyTo": "class",
-   "uriTo": "http://lemon-model.net/lemon#sense"
+   "uriTo": "http://www.purl.org/graphemon#hasGraphemeReading"
   },
   {
    "source": 4,
@@ -133,6 +91,48 @@ var minivowlresult={
    "valueTo": "member",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 3,
+   "target": 3,
+   "valueTo": "hasPart",
+   "propertyTo": "class",
+   "uriTo": "http://www.purl.org/graphemon#hasPart"
+  },
+  {
+   "source": 3,
+   "target": 2,
+   "valueTo": "hasPart",
+   "propertyTo": "class",
+   "uriTo": "http://www.purl.org/graphemon#hasPart"
+  },
+  {
+   "source": 2,
+   "target": 3,
+   "valueTo": "hasPart",
+   "propertyTo": "class",
+   "uriTo": "http://www.purl.org/graphemon#hasPart"
+  },
+  {
+   "source": 2,
+   "target": 2,
+   "valueTo": "hasPart",
+   "propertyTo": "class",
+   "uriTo": "http://www.purl.org/graphemon#hasPart"
+  },
+  {
+   "source": 3,
+   "target": 7,
+   "valueTo": "sense",
+   "propertyTo": "class",
+   "uriTo": "http://lemon-model.net/lemon#sense"
+  },
+  {
+   "source": 2,
+   "target": 7,
+   "valueTo": "sense",
+   "propertyTo": "class",
+   "uriTo": "http://lemon-model.net/lemon#sense"
   }
  ]
 }

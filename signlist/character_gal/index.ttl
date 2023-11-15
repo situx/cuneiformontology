@@ -1,14 +1,14 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_gal> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_gal> a ns2:Grapheme ;
     rdfs:label "Character: GAL" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_gal_sense_great>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_gal_sense_great>,
         <https://situx.github.io/cuneiformontology/signlist/character_gal_sense_large> ;
-    ns1:abzl "213" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gal_reading_gal>,
+    ns2:abzl "213" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gal_reading_gal>,
         <https://situx.github.io/cuneiformontology/signlist/character_gal_reading_gal_gal>,
         <https://situx.github.io/cuneiformontology/signlist/character_gal_reading_gal_rabāˀum>,
         <https://situx.github.io/cuneiformontology/signlist/character_gal_reading_gala8>,
@@ -19,14 +19,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_gal_reading_rab2>,
         <https://situx.github.io/cuneiformontology/signlist/character_gal_reading_rap2>,
         <https://situx.github.io/cuneiformontology/signlist/character_gal_reading_uszumgalₓ> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gal> ;
-    ns1:hethzl "242" ;
-    ns1:labat "343" ;
-    ns1:meszl "553" ;
-    ns1:obo "213" ;
-    ns1:signName "GAL" ;
-    ns1:slha "343" ;
-    ns1:unicodeCodepoint "U+120F2" ;
-    ns1:unicodeRepresentation "𒃲" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gal> ;
+    ns2:hethzl "242" ;
+    ns2:labat "343" ;
+    ns2:meszl "553" ;
+    ns2:obo "213" ;
+    ns2:signName "GAL" ;
+    ns2:slha "343" ;
+    ns2:unicodeCodepoint "U+120F2" ;
+    ns2:unicodeRepresentation "𒃲" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555467> .
 
