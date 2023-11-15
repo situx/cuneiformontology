@@ -50,6 +50,7 @@ jobs:
          cp -r examples/O147/images/ docs/examples/o147/images/ 
          #wget https://raw.githubusercontent.com/sparqlunicorn/sparqlunicornGoesGIS-ontdoc/main/docgeneration.py 
          #wget https://raw.githubusercontent.com/sparqlunicorn/sparqlunicornGoesGIS-ontdoc/main/prefixes.json 
+         cd ontdocscript
          python3 docgeneration.py --input ../signlist/signlist.ttl --output ../docs/ --prefixns https://situx.github.io/cuneiformontology/ --prefixnsshort cuneisignlist --metadatatable true --deploypath https://situx.github.io/cuneiformontology/
          python3 docgeneration.py --input ../merged.ttl --output ../docs/ --prefixns https://situx.github.io/cuneiformontology/ --prefixnsshort cuneisignlist --metadatatable true --deploypath https://situx.github.io/cuneiformontology/
          #python3 docgeneration.py --input examples/HS1174/transliteration/HS1174.atf.ttl --output docs/ --prefixns https://situx.github.io/cuneiformontology/ --prefixnsshort cuneiex --metadatatable true --deploypath https://situx.github.io/cuneiformontology/
