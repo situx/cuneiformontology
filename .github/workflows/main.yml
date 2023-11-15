@@ -8,38 +8,10 @@ on:
 jobs:
 
    ontdocI:
-      uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
-      name: Ontdoc I      
-      with: 
-            version: v017dev
-            rdffilepath: merged.ttl
-            docpath: docs/
-            prefixns: https://situx.github.io/cuneiformontology/
-            prefixnsshort: cuneisignlist
-            indexpages: true
-            metadatatable: true
-            createcollections: false
-            createnonNSPages: false
-            createVOWL: true
-            preferredlang: en
-            ghpages: true
+
 
    ontdocII:
-      uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
-      name: Ontdoc II      
-      with: 
-            version: v017dev
-            rdffilepath: signlist/signlist.ttl
-            docpath: docs/
-            prefixns: https://situx.github.io/cuneiformontology/
-            prefixnsshort: cuneisignlist
-            indexpages: true
-            metadatatable: true
-            createcollections: false
-            createnonNSPages: false
-            createVOWL: true
-            preferredlang: en
-            ghpages: true
+
   
   
    build:
@@ -107,31 +79,41 @@ jobs:
          #python3 docgeneration.py --input examples/TCH92/transliteration/TCH92_textanno.ttl --output docs/ --prefixns https://situx.github.io/cuneiformontology/ --prefixnsshort cuneiex --metadatatable true --deploypath https://situx.github.io/cuneiformontology/
          #python3 docgeneration.py --input examples/TCH92/ttl/TCH92_back.png.ttl --output docs/ --prefixns https://situx.github.io/cuneiformontology/ --prefixnsshort cuneiex --metadatatable true --deploypath https://situx.github.io/cuneiformontology/
          #python3 docgeneration.py --input examples/TCH92/mesh/TCH92_mesh.ttl --output docs/ --prefixns https://situx.github.io/cuneiformontology/ --prefixnsshort cuneiex --metadatatable true --deploypath https://situx.github.io/cuneiformontology/
+    - uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
+      name: Ontdoc I      
+      with: 
+            version: v017dev
+            checkout: false
+            rdffilepath: merged.ttl
+            docpath: docs/
+            prefixns: https://situx.github.io/cuneiformontology/
+            prefixnsshort: cuneisignlist
+            indexpages: true
+            metadatatable: true
+            createcollections: false
+            createnonNSPages: false
+            createVOWL: true
+            preferredlang: en
+            ghpages: false
+    - uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
+      name: Ontdoc II      
+      with: 
+            version: v017dev
+            checkout: false
+            rdffilepath: signlist/signlist.ttl
+            docpath: docs/
+            prefixns: https://situx.github.io/cuneiformontology/
+            prefixnsshort: cuneisignlist
+            indexpages: true
+            metadatatable: true
+            createcollections: false
+            createnonNSPages: false
+            createVOWL: true
+            preferredlang: en
+            ghpages: false
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@releases/v4
       with:
          BRANCH: gh-pages
-         clean: false
-         FOLDER: docs/examples/hs1174/images/
+         FOLDER: docs/
          target-folder: examples/hs1174/images/
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@releases/v4
-      with:
-         BRANCH: gh-pages
-         clean: false
-         FOLDER: docs/examples/ht073195/images/ 
-         target-folder: examples/ht073195/images/
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@releases/v4
-      with:
-         BRANCH: gh-pages
-         clean: false
-         FOLDER: docs/examples/o147/images/ 
-         target-folder: examples/o147/images/
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@releases/v4
-      with:
-         BRANCH: gh-pages
-         clean: false
-         FOLDER: docs/examples/tch92/images/ 
-         target-folder: examples/tch92/images/
