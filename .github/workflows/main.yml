@@ -46,7 +46,7 @@ jobs:
 
     runs-on: ubuntu-latest
     concurrency: ci-${{ github.ref }}
-    needs: [ontdocI,ontdocII] 
+    #needs: [ontdocI,ontdocII] 
     steps:
     - uses: actions/checkout@v1
     - name: Create Ontology Documentation 🔧
