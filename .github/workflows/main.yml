@@ -82,27 +82,4 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@releases/v4
       with:
          BRANCH: gh-pages
-         clean: false
-         FOLDER: docs/examples/hs1174/images/
-         target-folder: examples/hs1174/images/
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@releases/v4
-      with:
-         BRANCH: gh-pages
-         clean: false
-         FOLDER: docs/examples/ht073195/images/ 
-         target-folder: examples/ht073195/images/
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@releases/v4
-      with:
-         BRANCH: gh-pages
-         clean: false
-         FOLDER: docs/examples/o147/images/ 
-         target-folder: examples/o147/images/
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@releases/v4
-      with:
-         BRANCH: gh-pages
-         clean: false
-         FOLDER: docs/examples/tch92/images/ 
-         target-folder: examples/tch92/images/
+         FOLDER: docs/
