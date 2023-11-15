@@ -1,0 +1,21 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_man> a ns1:Grapheme,
+        ns1:GraphemeComposition ;
+    rdfs:label "Character Composition: man",
+        "Character: MAN (2×U)" ;
+    ns1:abzl "363" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_man_reading_man> ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_man_2>,
+        <https://situx.github.io/cuneiformontology/signlist/character_u> ;
+    ns1:hethzl "296" ;
+    ns1:meszl "708" ;
+    ns1:signName "MAN (2×U)" ;
+    ns1:slha "471" ;
+    ns1:unicodeCodepoint "U+12399" ;
+    ns1:unicodeRepresentation "𒌋𒌋",
+        "𒎙" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q87556828> .
+

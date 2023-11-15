@@ -1,0 +1,15 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_kaxad> a ns1:Grapheme ;
+    rdfs:label "Character: KaxAD" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_kaxad_reading_akₓ>,
+        <https://situx.github.io/cuneiformontology/signlist/character_kaxad_reading_ka×ad> ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ad>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ka> ;
+    ns1:signName "KaxAD" ;
+    ns1:unicodeCodepoint "U+12159" ;
+    ns1:unicodeRepresentation "𒅙" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q87555679> .
+

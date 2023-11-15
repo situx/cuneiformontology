@@ -1,0 +1,18 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://situx.github.io/cuneiformontology/signlist/character_émesz> a ns1:Grapheme ;
+    rdfs:label "Character: ÉMEŠ (NE×UD)" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_émesz_reading_emesz2>,
+        <https://situx.github.io/cuneiformontology/signlist/character_émesz_reading_esz12>,
+        <https://situx.github.io/cuneiformontology/signlist/character_émesz_reading_ne×ud> ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_e2mesz_ne>,
+        <https://situx.github.io/cuneiformontology/signlist/character_ud> ;
+    ns1:meszl "314" ;
+    ns1:signName "ÉMEŠ (NE×UD)" ;
+    ns1:slha "174" ;
+    ns1:unicodeCodepoint "U+1224A" ;
+    ns1:unicodeRepresentation "𒉊" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q87556168> .
+
