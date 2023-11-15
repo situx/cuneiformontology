@@ -1,0 +1,13 @@
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char3> a ns2:TransliterationCharOccurrence ;
+    rdfs:label "HT 07-31-95 obverse line 4 char 3"@en ;
+    ns2:charIndex 3 ;
+    ns2:lineNumber 4 ;
+    ns2:nextChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char4> ;
+    ns2:prevChar <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char2> ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_mar_reading_mar> .
+
