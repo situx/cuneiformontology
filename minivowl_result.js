@@ -94,20 +94,6 @@ var minivowlresult={
   },
   {
    "source": 2,
-   "target": 7,
-   "valueTo": "sense",
-   "propertyTo": "class",
-   "uriTo": "http://lemon-model.net/lemon#sense"
-  },
-  {
-   "source": 3,
-   "target": 7,
-   "valueTo": "sense",
-   "propertyTo": "class",
-   "uriTo": "http://lemon-model.net/lemon#sense"
-  },
-  {
-   "source": 2,
    "target": 2,
    "valueTo": "hasPart",
    "propertyTo": "class",
@@ -133,6 +119,20 @@ var minivowlresult={
    "valueTo": "hasPart",
    "propertyTo": "class",
    "uriTo": "http://www.purl.org/graphemon#hasPart"
+  },
+  {
+   "source": 2,
+   "target": 7,
+   "valueTo": "sense",
+   "propertyTo": "class",
+   "uriTo": "http://lemon-model.net/lemon#sense"
+  },
+  {
+   "source": 3,
+   "target": 7,
+   "valueTo": "sense",
+   "propertyTo": "class",
+   "uriTo": "http://lemon-model.net/lemon#sense"
   }
  ]
 }

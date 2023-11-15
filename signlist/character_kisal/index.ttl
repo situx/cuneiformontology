@@ -1,27 +1,27 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_kisal> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_kisal> a ns2:Grapheme ;
     rdfs:label "Character: KISAL" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_kisal_sense_courtyard> ;
-    ns1:abzl "161" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_kisal_reading_bur6>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_kisal_sense_courtyard> ;
+    ns2:abzl "161" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_kisal_reading_bur6>,
         <https://situx.github.io/cuneiformontology/signlist/character_kisal_reading_dag4>,
         <https://situx.github.io/cuneiformontology/signlist/character_kisal_reading_gepar_k>,
         <https://situx.github.io/cuneiformontology/signlist/character_kisal_reading_kisal>,
         <https://situx.github.io/cuneiformontology/signlist/character_kisal_reading_lel4>,
         <https://situx.github.io/cuneiformontology/signlist/character_kisal_reading_par4>,
         <https://situx.github.io/cuneiformontology/signlist/character_kisal_reading_ŋepar> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_kisal> ;
-    ns1:hethzl "228" ;
-    ns1:labat "249" ;
-    ns1:meszl "435" ;
-    ns1:obo "161" ;
-    ns1:signName "KISAL" ;
-    ns1:slha "249" ;
-    ns1:unicodeCodepoint "U+121A6" ;
-    ns1:unicodeRepresentation "𒆦" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_kisal> ;
+    ns2:hethzl "228" ;
+    ns2:labat "249" ;
+    ns2:meszl "435" ;
+    ns2:obo "161" ;
+    ns2:signName "KISAL" ;
+    ns2:slha "249" ;
+    ns2:unicodeCodepoint "U+121A6" ;
+    ns2:unicodeRepresentation "𒆦" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555835> .
 
