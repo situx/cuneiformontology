@@ -1,4 +1,4 @@
-# Cuneiform Ontology
+# Cuneiform Ontology 
                  
 This repository includes a set of ontologies which enable cuneiform artifact related data to be interconnected.
                                                              
