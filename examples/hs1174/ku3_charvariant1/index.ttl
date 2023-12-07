@@ -1,5 +1,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/ku3_charvariant1> a <http://www.purl.org/graphemon#GraphemeVariant> ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/ku3_charvariant1> a <http://www.purl.org/graphemon#GraphemeVariant>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Grapheme Variant 1: KU3"@en .
 

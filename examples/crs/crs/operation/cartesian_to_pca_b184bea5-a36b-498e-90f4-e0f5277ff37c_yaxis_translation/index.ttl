@@ -1,7 +1,9 @@
 @prefix ns1: <http://situx.github.io/proj4rdf/ont/crs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_b184bea5-a36b-498e-90f4-e0f5277ff37c_yaxis_translation> a ns1:OperationParameter ;
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_b184bea5-a36b-498e-90f4-e0f5277ff37c_yaxis_translation> a ns1:OperationParameter,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Y-axis translation"@en ;
     ns1:usesValue <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_b184bea5-a36b-498e-90f4-e0f5277ff37c_yaxis_translation_value> .
 

@@ -1,7 +1,9 @@
 @prefix ns1: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_top> a ns1:TopSide ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_top> a ns1:TopSide,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "HS 1174 top side"@en ;
     ns1:isRepresentedBy <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113342:577527/full/full/0/default.jpg> .
 

@@ -2,7 +2,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174> a ns1:Tablet ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174> a ns1:Tablet,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "HS 1174 cuneiform artifact"@en ;
     ns1:CDLINumber "P134485"^^xsd:string ;
     ns1:hasSurface <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_bottom>,

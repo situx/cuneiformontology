@@ -1,7 +1,9 @@
 @prefix ns1: <http://www.w3.org/ns/oa#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/518ee7ae-1d6d-4e85-94cc-9a8cc0d0d219_body_glyph> a ns1:SpecificResource ;
+<https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/518ee7ae-1d6d-4e85-94cc-9a8cc0d0d219_body_glyph> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:SpecificResource,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Annotation body referencing Glyph at TCH92 reverse line 3 char 3 on 3D rendering"@en ;
     ns1:hasSource <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line3_char3_glyph> ;
     ns1:motivatedBy ns1:identifying .

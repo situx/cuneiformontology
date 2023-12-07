@@ -1,7 +1,9 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_kurum7_reading_sig5> a ns1:GraphemeReading ;
+<https://situx.github.io/cuneiformontology/signlist/character_kurum7_reading_sig5> a ns1:GraphemeReading,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Grapheme Reading KURUM7 (IGI.ERIM): [sig5],",
         "Grapheme Reading KURUM7 (IGI.ERIM): sig5" ;
     ns1:epoch <http://www.wikidata.org/entity/Q733897> ;

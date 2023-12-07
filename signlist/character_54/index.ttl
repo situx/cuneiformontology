@@ -2,7 +2,9 @@
 @prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_54> a ns2:GraphemeComposition ;
+<https://situx.github.io/cuneiformontology/signlist/character_54> a ns2:GraphemeComposition,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character Composition: 54" ;
     ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_54_sense_54> ;
     ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_54_reading_54> ;

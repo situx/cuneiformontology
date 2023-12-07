@@ -3,7 +3,9 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/24548650-6c4d-4a40-b0f6-0724bdce3fcd_target3d_selector> a <http://www.w3.org/ns/oa#WKTSelector> ;
+<https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/24548650-6c4d-4a40-b0f6-0724bdce3fcd_target3d_selector> a <http://www.w3.org/ns/ldp#Resource>,
+        <http://www.w3.org/ns/oa#WKTSelector>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 22 char 3 on a 3D Mesh"@en ;
     ns1:computingReference <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/24548650-6c4d-4a40-b0f6-0724bdce3fcd_target3d_selector_compref0> ;
     ns1:pcaValue "POLYGON Z ((-16.97019368728952 52.766213442535786 -5.943136215209961, -22.802594536480637 53.150969526007216 -5.943136215209961, -23.042282421211116 59.61479423320951 -5.943136215209961, -17.050090890556955 59.3069879313376 -5.943136215209961, -16.97019368728952 52.766213442535786 -0.038009088486433, -22.802594536480637 53.150969526007216 -0.038009088486433, -23.042282421211116 59.61479423320951 -0.038009088486433, -17.050090890556955 59.3069879313376 -0.038009088486433, -16.97019368728952 52.766213442535786 -5.943136215209961))"^^<http://www.w3.org/ns/oa#wktLiteral> ;

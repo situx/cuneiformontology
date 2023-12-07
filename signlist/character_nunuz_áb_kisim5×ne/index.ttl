@@ -2,7 +2,9 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_nunuz_áb_kisim5×ne> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_nunuz_áb_kisim5×ne> a ns1:Grapheme,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: NUNUZ.ÁB/KISIM5×NE" ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_nunuz_áb_kisim5×ne_reading_lahtan4>,
         <https://situx.github.io/cuneiformontology/signlist/character_nunuz_áb_kisim5×ne_reading_nunuz_ab2×ne> ;

@@ -1,18 +1,20 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_gi> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_gi> a ns2:Grapheme,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: GI" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_gi_sense__gi_n___adi>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_gi_sense__gi_n___adi>,
         <https://situx.github.io/cuneiformontology/signlist/character_gi_sense_firm>,
         <https://situx.github.io/cuneiformontology/signlist/character_gi_sense_iust>,
         <https://situx.github.io/cuneiformontology/signlist/character_gi_sense_reed>,
         <https://situx.github.io/cuneiformontology/signlist/character_gi_sense_to_act_iustly>,
         <https://situx.github.io/cuneiformontology/signlist/character_gi_sense_to_stabilize> ;
-    ns1:abzl "040" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gi_reading_eszsza3>,
+    ns2:abzl "040" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gi_reading_eszsza3>,
         <https://situx.github.io/cuneiformontology/signlist/character_gi_reading_ge>,
         <https://situx.github.io/cuneiformontology/signlist/character_gi_reading_gen6>,
         <https://situx.github.io/cuneiformontology/signlist/character_gi_reading_gi>,
@@ -31,14 +33,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_gi_reading_sissiₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_gi_reading_tar5>,
         <https://situx.github.io/cuneiformontology/signlist/character_gi_reading_taru5> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gi> ;
-    ns1:hethzl "30" ;
-    ns1:labat "85" ;
-    ns1:meszl "141" ;
-    ns1:obo "40" ;
-    ns1:signName "GI" ;
-    ns1:slha "085" ;
-    ns1:unicodeCodepoint "U+12100" ;
-    ns1:unicodeRepresentation "𒄀" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gi> ;
+    ns2:hethzl "30" ;
+    ns2:labat "85" ;
+    ns2:meszl "141" ;
+    ns2:obo "40" ;
+    ns2:signName "GI" ;
+    ns2:slha "085" ;
+    ns2:unicodeCodepoint "U+12100" ;
+    ns2:unicodeRepresentation "𒄀" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555494> .
 

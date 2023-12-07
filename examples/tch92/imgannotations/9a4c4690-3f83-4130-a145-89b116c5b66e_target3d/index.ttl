@@ -2,7 +2,9 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/9a4c4690-3f83-4130-a145-89b116c5b66e_target3d> a owl:NamedIndividual ;
+<https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/9a4c4690-3f83-4130-a145-89b116c5b66e_target3d> a owl:NamedIndividual,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "3D Annotation target of Annotation of Glyph at TCH92 reverse line 6 char 7 on 3D rendering"@en ;
     ns1:hasSelector <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/9a4c4690-3f83-4130-a145-89b116c5b66e_target3d_labelselector>,
         <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/9a4c4690-3f83-4130-a145-89b116c5b66e_target3d_meshrefselector>,

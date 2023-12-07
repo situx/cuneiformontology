@@ -1,7 +1,9 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_dag_kisim5×_ú_masz_bar> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_dag_kisim5×_ú_masz_bar> a ns1:Grapheme,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: DAG.KISIM5× Ú.MAŠ/BAR" ;
     ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_bar>,
         <https://situx.github.io/cuneiformontology/signlist/character_dag>,

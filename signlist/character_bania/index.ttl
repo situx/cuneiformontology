@@ -2,7 +2,9 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_bania> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_bania> a ns1:Grapheme,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: BANIA (ÁŠ. UoverU/GE23overGE23)" ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_bania_reading_5>,
         <https://situx.github.io/cuneiformontology/signlist/character_bania_reading_5_ban2>,

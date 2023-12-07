@@ -3,7 +3,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/119e80df-5bb3-4733-9840-65b48dc8a458_body_charindex> a ns1:TextualBody ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/119e80df-5bb3-4733-9840-65b48dc8a458_body_charindex> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:TextualBody,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Annotation Body: Charindex 1"@en ;
     rdf:value 1 ;
     ns1:motivatedBy ns1:describing ;

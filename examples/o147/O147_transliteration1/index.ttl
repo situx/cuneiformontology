@@ -1,7 +1,9 @@
 @prefix ns1: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1> a ns1:Transliteration ;
+<https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1> a ns1:Transliteration,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Transliteration 1 of O147 tablet"@en ;
     ns1:signreadings <https://situx.github.io/cuneiformontology/examples/o147/O147_signreadinglist> ;
     ns1:signs <https://situx.github.io/cuneiformontology/examples/o147/O147_signlist> .

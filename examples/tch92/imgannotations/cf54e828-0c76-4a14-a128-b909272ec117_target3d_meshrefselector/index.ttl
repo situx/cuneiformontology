@@ -2,7 +2,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/cf54e828-0c76-4a14-a128-b909272ec117_target3d_meshrefselector> a <http://purl.org/meshsparql#MeshReferenceSelector> ;
+<https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/cf54e828-0c76-4a14-a128-b909272ec117_target3d_meshrefselector> a <http://purl.org/meshsparql#MeshReferenceSelector>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "3D Annotation target meshref selector of Annotation of Glyph at TCH92 reverse line 5 char 3 on a 3D Mesh"@en ;
     rdf:value "https://situx.github.io/cuneiformontology/examples/meshanno/cf54e828-0c76-4a14-a128-b909272ec117/"^^xsd:anyURI .
 

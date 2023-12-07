@@ -1,5 +1,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/examples/dict/f_la_ka_ma_asz_sze_word> a <http://lemon-model.net/lemon#Word> ;
+<https://situx.github.io/cuneiformontology/examples/dict/f_la_ka_ma_asz_sze_word> a <http://lemon-model.net/lemon#Word>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Word: F-Lakamaszsze"@en .
 

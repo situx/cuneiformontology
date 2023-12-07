@@ -1,7 +1,9 @@
 @prefix ns1: <http://www.w3.org/ns/oa#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c50c7e91-e1fd-44e0-af0c-e05f3b4de41e_body_glyph> a ns1:SpecificResource ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/c50c7e91-e1fd-44e0-af0c-e05f3b4de41e_body_glyph> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:SpecificResource,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Annotation body referencing Glyph at HS1174 obverse line 2 char 3 on 3D rendering"@en ;
     ns1:hasSource <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char3_glyph> ;
     ns1:motivatedBy ns1:identifying .

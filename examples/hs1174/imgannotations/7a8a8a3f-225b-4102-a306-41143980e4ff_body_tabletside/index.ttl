@@ -3,7 +3,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7a8a8a3f-225b-4102-a306-41143980e4ff_body_tabletside> a ns1:TextualBody ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/7a8a8a3f-225b-4102-a306-41143980e4ff_body_tabletside> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:TextualBody,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Annotation Body: Tablet Side obverse"@en ;
     rdf:value "obverse"^^xsd:string ;
     ns1:motivatedBy ns1:describing ;

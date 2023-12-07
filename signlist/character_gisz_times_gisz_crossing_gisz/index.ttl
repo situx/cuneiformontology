@@ -2,7 +2,9 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_gisz_times_gisz_crossing_gisz> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_gisz_times_gisz_crossing_gisz> a ns1:Grapheme,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: GISH TIMES GISH CROSSING GISH" ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gisz_times_gisz_crossing_gisz_reading_gaba@90>,
         <https://situx.github.io/cuneiformontology/signlist/character_gisz_times_gisz_crossing_gisz_reading_gabaₓ> ;

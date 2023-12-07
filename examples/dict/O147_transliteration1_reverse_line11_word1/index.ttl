@@ -3,7 +3,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line11_word1> a owl:NamedIndividual ;
+<https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line11_word1> a owl:NamedIndividual,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "O147 transliteration 1 reverse line 11 word 1"@en ;
     ns1:lineNumber 11 ;
     ns1:nextWord <https://situx.github.io/cuneiformontology/examples/dict/O147_transliteration1_reverse_line11_word2> ;

@@ -1,7 +1,9 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_ne_reading_bi2_bi4_il5_preferred> a ns1:GraphemeReading ;
+<https://situx.github.io/cuneiformontology/signlist/character_ne_reading_bi2_bi4_il5_preferred> a ns1:GraphemeReading,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Grapheme Reading NE: bi2/bi4-il5 preferred)" ;
     ns1:epoch <http://www.wikidata.org/entity/Q22948607> .
 

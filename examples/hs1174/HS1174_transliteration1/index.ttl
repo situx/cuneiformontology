@@ -4,7 +4,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1> a ns1:Transliteration ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1> a ns1:Transliteration,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "HS 1174 transliteration 1"@en ;
     dc:creator "cdlistaff" ;
     dcterms:created "2006-10-12T12:28:12"^^xsd:dateTime ;

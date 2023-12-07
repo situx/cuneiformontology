@@ -1,7 +1,9 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_ab_ha_zag_gaba_hu> a ns1:GraphemeComposition ;
+<https://situx.github.io/cuneiformontology/signlist/character_ab_ha_zag_gaba_hu> a ns1:GraphemeComposition,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character Composition: |ab.ha.zag.gaba.hu|" ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ab_ha_zag_gaba_hu_reading_ab_ha_zag_gaba_hu> ;
     ns1:unicodeRepresentation "𒀊𒄩𒍠𒃮𒄷" .

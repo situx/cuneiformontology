@@ -1,7 +1,9 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_ninda2_times_uruda_reading_gurmi> a ns1:GraphemeReading ;
+<https://situx.github.io/cuneiformontology/signlist/character_ninda2_times_uruda_reading_gurmi> a ns1:GraphemeReading,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Grapheme Reading NINDA2 TIMES URUDA: gurmi" ;
     ns1:readingValue "gurmi" .
 

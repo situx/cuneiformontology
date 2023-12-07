@@ -1,10 +1,12 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_42> a ns2:GraphemeComposition ;
+<https://situx.github.io/cuneiformontology/signlist/character_42> a ns1:GraphemeComposition,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character Composition: 42" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_42_sense_42> ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_42_reading_42> ;
-    ns2:unicodeRepresentation "𒐏𒈫" .
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_42_sense_42> ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_42_reading_42> ;
+    ns1:unicodeRepresentation "𒐏𒈫" .
 

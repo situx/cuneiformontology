@@ -1,7 +1,9 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/c71aefb1-0edf-467d-aafa-a90560f3f85c_target1_selector> a <http://www.w3.org/ns/oa#SvgSelector> ;
+<https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/c71aefb1-0edf-467d-aafa-a90560f3f85c_target1_selector> a <http://www.w3.org/ns/ldp#Resource>,
+        <http://www.w3.org/ns/oa#SvgSelector>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Annotation target selector of Annotation of Glyph at TCH92 obverse line 17 char 5 on 3D rendering"@en ;
     rdf:value "<svg><polygon points=\"885.1257934570312,1498.71630859375 734.3184814453125,1500.6014404296875 732.4334106445312,1592.970947265625 875.7003173828125,1587.315673828125\"></polygon></svg>" .
 

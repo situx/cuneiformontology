@@ -3,7 +3,9 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_dar> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_dar> a ns1:Grapheme,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: DAR (GÙN; ḪU-gunû, SI-gunû)" ;
     ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_dar_sense__gun3___adi>,
         <https://situx.github.io/cuneiformontology/signlist/character_dar_sense_multicolored>,

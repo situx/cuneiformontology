@@ -3,7 +3,9 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line20_word3> a ns1:TransliterationWordOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line20_word3> a ns1:TransliterationWordOccurrence,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "TCH92 obverse line 20 word 3"@en ;
     ns1:lineNumber 20 ;
     ns1:nextWord <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line20_word4> ;

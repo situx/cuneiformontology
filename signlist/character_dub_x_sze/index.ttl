@@ -2,7 +2,9 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_dub_x_sze> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_dub_x_sze> a ns1:Grapheme,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: DUB x ŠE" ;
     ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_dub>,
         <https://situx.github.io/cuneiformontology/signlist/character_sze> ;

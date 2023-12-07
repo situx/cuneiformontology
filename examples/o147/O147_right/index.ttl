@@ -2,7 +2,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/o147/O147_right> a <http://www.purl.org/cuneiform#RightSide> ;
+<https://situx.github.io/cuneiformontology/examples/o147/O147_right> a <http://www.purl.org/cuneiform#RightSide>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "O147 right side"@en ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/o147/images/sides/O147_B_color_right.png"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/o147/images/sides/O147_B_shaded_right.png"^^xsd:anyURI .

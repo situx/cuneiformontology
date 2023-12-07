@@ -2,7 +2,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_reverse> a ns1:ReverseSide ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_reverse> a ns1:ReverseSide,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "HT 07-31-95 reverse side"@en ;
     ns1:isRepresentedBy "https://heidicon.ub.uni-heidelberg.de/iiif/2/1611840:841084/full/full/0/default.jpg"^^xsd:anyURI .
 

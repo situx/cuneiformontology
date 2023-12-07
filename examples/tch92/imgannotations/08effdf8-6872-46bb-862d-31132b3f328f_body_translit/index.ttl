@@ -2,7 +2,9 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/08effdf8-6872-46bb-862d-31132b3f328f_body_translit> a ns1:SpecificResource ;
+<https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/08effdf8-6872-46bb-862d-31132b3f328f_body_translit> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:SpecificResource,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Annotation body referencing transliteration char occurrence at TCH92 obverse line 10 char 3 on 3D rendering"@en ;
     rdf:value "us" ;
     ns1:hasSource <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line10_char3> ;

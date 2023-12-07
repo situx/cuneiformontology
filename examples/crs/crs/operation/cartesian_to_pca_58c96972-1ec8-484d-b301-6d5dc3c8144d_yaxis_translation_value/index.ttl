@@ -3,7 +3,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_58c96972-1ec8-484d-b301-6d5dc3c8144d_yaxis_translation_value> a <http://situx.github.io/proj4rdf/ont/crs/OperationParameterValue> ;
+<https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_58c96972-1ec8-484d-b301-6d5dc3c8144d_yaxis_translation_value> a <http://situx.github.io/proj4rdf/ont/crs/OperationParameterValue>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Y-axis translation value"@en ;
     ns1:hasUnit ns1:millimetre ;
     rdf:value 0e+00 .

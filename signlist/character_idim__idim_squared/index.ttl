@@ -2,7 +2,9 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_idim__idim_squared> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_idim__idim_squared> a ns1:Grapheme,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: IDIM / IDIM squared" ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_idim_idim_squared_reading_4×_idim&idim> ;
     ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_idim>,

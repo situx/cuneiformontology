@@ -1,13 +1,15 @@
-@prefix ns1: <http://www.purl.org/cuneiform#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line8_char3> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line8_char3> a ns2:TransliterationCharOccurrence,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "O147 transliteration 1 reverse line 8 char 3"@en ;
-    ns1:charIndex 3 ;
-    ns1:lineNumber 8 ;
-    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line8_char4> ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line8_char2> ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_ur2_reading_ur2> .
+    ns2:charIndex 3 ;
+    ns2:lineNumber 8 ;
+    ns2:nextChar <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line8_char4> ;
+    ns2:prevChar <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line8_char2> ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/examples/signlist/character_ur2_reading_ur2> .
 

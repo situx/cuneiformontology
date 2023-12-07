@@ -1,6 +1,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_signreadinglist> a <http://www.purl.org/graphemon#GraphemeReadingCollection> ;
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_signreadinglist> a <http://www.purl.org/graphemon#GraphemeReadingCollection>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Sign Readings of cuneiform tablet TCH92"@en ;
     rdfs:member <https://situx.github.io/cuneiformontology/examples/signlist/character_3(disz)_reading_3(disz)>,
         <https://situx.github.io/cuneiformontology/examples/signlist/character_a_reading_a>,

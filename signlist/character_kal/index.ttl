@@ -1,16 +1,18 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_kal> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_kal> a ns2:Grapheme,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: KAL" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_kal_sense__gurusz___man>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_kal_sense__gurusz___man>,
         <https://situx.github.io/cuneiformontology/signlist/character_kal_sense__kalag___strong__d_lamma___tutelary_genius>,
         <https://situx.github.io/cuneiformontology/signlist/character_kal_sense_male_worker>,
         <https://situx.github.io/cuneiformontology/signlist/character_kal_sense_precious> ;
-    ns1:abzl "176" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_kal_reading_alad2>,
+    ns2:abzl "176" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_kal_reading_alad2>,
         <https://situx.github.io/cuneiformontology/signlist/character_kal_reading_basztum>,
         <https://situx.github.io/cuneiformontology/signlist/character_kal_reading_dan>,
         <https://situx.github.io/cuneiformontology/signlist/character_kal_reading_dan_rare>,
@@ -67,14 +69,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_kal_reading_ursub2>,
         <https://situx.github.io/cuneiformontology/signlist/character_kal_reading_zi8>,
         <https://situx.github.io/cuneiformontology/signlist/character_kal_reading_zurzub2> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_kal> ;
-    ns1:hethzl "196" ;
-    ns1:labat "322" ;
-    ns1:meszl "496" ;
-    ns1:obo "176" ;
-    ns1:signName "KAL" ;
-    ns1:slha "322" ;
-    ns1:unicodeCodepoint "U+12197" ;
-    ns1:unicodeRepresentation "𒆗" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_kal> ;
+    ns2:hethzl "196" ;
+    ns2:labat "322" ;
+    ns2:meszl "496" ;
+    ns2:obo "176" ;
+    ns2:signName "KAL" ;
+    ns2:slha "322" ;
+    ns2:unicodeCodepoint "U+12197" ;
+    ns2:unicodeRepresentation "𒆗" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555801> .
 

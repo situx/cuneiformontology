@@ -1,29 +1,31 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_dim×sze_later_dim×kur> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_dim×sze_later_dim×kur> a ns2:Grapheme,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: DIM×ŠE, later DIM×KUR" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_dim×sze_later_dim×kur_sense_salt> ;
-    ns1:abzl "015" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_dim×sze_later_dim×kur_reading_dim×sze>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_dim×sze_later_dim×kur_sense_salt> ;
+    ns2:abzl "015" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_dim×sze_later_dim×kur_reading_dim×sze>,
         <https://situx.github.io/cuneiformontology/signlist/character_dim×sze_later_dim×kur_reading_gakkul2>,
         <https://situx.github.io/cuneiformontology/signlist/character_dim×sze_later_dim×kur_reading_kakkul2>,
         <https://situx.github.io/cuneiformontology/signlist/character_dim×sze_later_dim×kur_reading_mun>,
         <https://situx.github.io/cuneiformontology/signlist/character_dim×sze_later_dim×kur_reading_mun_dim>,
         <https://situx.github.io/cuneiformontology/signlist/character_dim×sze_later_dim×kur_reading_munu> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_dim>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_dim>,
         <https://situx.github.io/cuneiformontology/signlist/character_kur>,
         <https://situx.github.io/cuneiformontology/signlist/character_later_dim>,
         <https://situx.github.io/cuneiformontology/signlist/character_sze> ;
-    ns1:hethzl "18" ;
-    ns1:labat "95" ;
-    ns1:meszl "168" ;
-    ns1:obo "15" ;
-    ns1:signName "DIM×ŠE, later DIM×KUR" ;
-    ns1:slha "095, 095v" ;
-    ns1:unicodeCodepoint "U+12075" ;
-    ns1:unicodeRepresentation "𒁵" ;
+    ns2:hethzl "18" ;
+    ns2:labat "95" ;
+    ns2:meszl "168" ;
+    ns2:obo "15" ;
+    ns2:signName "DIM×ŠE, later DIM×KUR" ;
+    ns2:slha "095, 095v" ;
+    ns2:unicodeCodepoint "U+12075" ;
+    ns2:unicodeRepresentation "𒁵" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555234> .
 

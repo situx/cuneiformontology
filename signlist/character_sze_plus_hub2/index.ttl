@@ -2,7 +2,9 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_sze_plus_hub2> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_sze_plus_hub2> a ns1:Grapheme,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: SHE PLUS HUB2" ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sze_plus_hub2_reading_sag×tak4> ;
     ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_hub2>,

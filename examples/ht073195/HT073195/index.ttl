@@ -3,7 +3,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195> a ns1:Tablet ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195> a ns1:Tablet,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "HT 07-31-95 cuneiform artifact"@en ;
     dc:spatial <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_excavloc> ;
     <http://purl.org/dc/elements/1.1/temporal:> <https://pleiades.stoa.org/vocabularies/time-periods/late-bronze-age-iran> ;

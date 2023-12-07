@@ -1,6 +1,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/HS1174_obverse_annotations> a <https://www.w3.org/ns/activitystreams#Collection> ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/HS1174_obverse_annotations> a <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource>,
+        <https://www.w3.org/ns/activitystreams#Collection> ;
     rdfs:label "Image annotations on HS1174 obverse on medium 3D rendering"@en ;
     rdfs:member <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/00cda0d2-a7fb-4e22-b367-242a7c8119fc>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/059d6ee0-b203-4059-a996-767b25994eb7>,

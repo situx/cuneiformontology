@@ -2,7 +2,9 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_lx> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_lx> a ns1:Grapheme,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: LX (6×U)" ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_lx_reading_6_bur3>,
         <https://situx.github.io/cuneiformontology/signlist/character_lx_reading_6_u>,

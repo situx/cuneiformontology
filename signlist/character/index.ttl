@@ -1,6 +1,8 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character> ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_reading_azlag2>,
+<https://situx.github.io/cuneiformontology/signlist/character> a <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_reading_azlag2>,
         <https://situx.github.io/cuneiformontology/signlist/character_reading_be5>,
         <https://situx.github.io/cuneiformontology/signlist/character_reading_bi7>,
         <https://situx.github.io/cuneiformontology/signlist/character_reading_bid3>,

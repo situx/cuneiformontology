@@ -1,5 +1,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line17> a <http://www.purl.org/cuneiform#TransliterationLine> ;
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_reverse_line17> a <http://www.purl.org/cuneiform#TransliterationLine>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "TCH92 reverse line 17"@en .
 

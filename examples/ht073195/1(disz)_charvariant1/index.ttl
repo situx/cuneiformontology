@@ -1,7 +1,9 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/1(disz)_charvariant1> a ns1:GraphemeVariant ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/1(disz)_charvariant1> a ns1:GraphemeVariant,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Grapheme Variant 1: 1(disz)"@en ;
     ns1:asSVG "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"170\" height=\"80\"><defs/><g stroke=\"#000000\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" fill=\"#000000\"><path fill=\"#000000\" stroke=\"#000000\" paint-order=\"fill stroke markers\" d=\" M 25 20 L 35 20 L 30 30 L 25 20 M 30 30 L 30 60\" stroke-miterlimit=\"10\" stroke-dasharray=\"\"/></g></svg>"^^ns1:svgLiteral ;
     ns1:hasGottsteinCode "a1"^^ns1:gottsteinLiteral ;

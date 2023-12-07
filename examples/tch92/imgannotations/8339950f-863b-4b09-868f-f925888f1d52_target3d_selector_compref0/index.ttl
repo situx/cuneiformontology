@@ -3,7 +3,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/8339950f-863b-4b09-868f-f925888f1d52_target3d_selector_compref0> a ns1:PCAReference ;
+<https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/8339950f-863b-4b09-868f-f925888f1d52_target3d_selector_compref0> a ns1:PCAReference,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Computing Reference of 3D Annotation target selector of Annotation of Glyph at TCH92 obverse line 0 char 8 on a 3D Mesh"@en ;
     ns1:referenceVector "[-0.5874209   0.25887987 -0.0379626 ] [  4.684636  -96.498505    3.3894105] [68.537575    3.9951563  -0.88954216] [-0.32473373  1.1701252  25.283121  ]"^^ns1:vectorLiteral ;
     ns1:stable true ;

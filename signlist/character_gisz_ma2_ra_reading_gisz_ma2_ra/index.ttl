@@ -1,7 +1,9 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_gisz_ma2_ra_reading_gisz_ma2_ra> a ns1:GraphemeReading ;
+<https://situx.github.io/cuneiformontology/signlist/character_gisz_ma2_ra_reading_gisz_ma2_ra> a ns1:GraphemeReading,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Grapheme Reading |gisz.ma2.ra|: |gisz.ma2.ra|" ;
     ns1:readingValue "|gisz.ma2.ra|" .
 

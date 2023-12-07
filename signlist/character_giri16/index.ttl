@@ -1,14 +1,16 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_giri16> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_giri16> a ns2:Grapheme,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: GIRI16 (GÌR×KÁR)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_giri16_sense__kusz_ub7___drum>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_giri16_sense__kusz_ub7___drum>,
         <https://situx.github.io/cuneiformontology/signlist/character_giri16_sense_szem3___tambourine> ;
-    ns1:abzl "293" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_giri16_reading_gir16>,
+    ns2:abzl "293" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_giri16_reading_gir16>,
         <https://situx.github.io/cuneiformontology/signlist/character_giri16_reading_gir3×gan2@t>,
         <https://situx.github.io/cuneiformontology/signlist/character_giri16_reading_giri16>,
         <https://situx.github.io/cuneiformontology/signlist/character_giri16_reading_giri16⁻>,
@@ -18,14 +20,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_giri16_reading_szem5>,
         <https://situx.github.io/cuneiformontology/signlist/character_giri16_reading_ub7>,
         <https://situx.github.io/cuneiformontology/signlist/character_giri16_reading_ŋiri16> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_giri16_gi3r>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_giri16_gi3r>,
         <https://situx.github.io/cuneiformontology/signlist/character_ka2r> ;
-    ns1:labat "423" ;
-    ns1:meszl "675" ;
-    ns1:obo "354" ;
-    ns1:signName "GIRI16 (GÌR×KÁR)" ;
-    ns1:slha "423" ;
-    ns1:unicodeCodepoint "U+1210C" ;
-    ns1:unicodeRepresentation "𒄌" ;
+    ns2:labat "423" ;
+    ns2:meszl "675" ;
+    ns2:obo "354" ;
+    ns2:signName "GIRI16 (GÌR×KÁR)" ;
+    ns2:slha "423" ;
+    ns2:unicodeCodepoint "U+1210C" ;
+    ns2:unicodeRepresentation "𒄌" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555520> .
 

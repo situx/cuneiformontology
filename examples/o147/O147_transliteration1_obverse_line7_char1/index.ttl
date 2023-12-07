@@ -3,7 +3,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line7_char1> a ns1:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_obverse_line7_char1> a ns1:TransliterationCharOccurrence,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "O147 transliteration 1 obverse line 7 char 1"@en ;
     ns1:charIndex 1 ;
     ns1:lineNumber 7 ;

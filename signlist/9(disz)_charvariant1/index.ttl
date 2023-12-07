@@ -2,7 +2,9 @@
 @prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/9(disz)_charvariant1> a ns2:GraphemeVariant ;
+<https://situx.github.io/cuneiformontology/signlist/9(disz)_charvariant1> a ns2:GraphemeVariant,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Grapheme Variant 1: 9(disz)"@en ;
     ns1:P62_depicted_by <https://situx.github.io/cuneiformontology/signlist/HS1174_obverse_line4_char1_glyph>,
         <https://situx.github.io/cuneiformontology/signlist/HS1174_reverse_line5_char5_glyph> ;

@@ -1,14 +1,16 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_szid> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_szid> a ns2:Grapheme,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: ŠID (LAG)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_szid_sense_to_count>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_szid_sense_to_count>,
         <https://situx.github.io/cuneiformontology/signlist/character_szid_sense_to_recite> ;
-    ns1:abzl "212; 207a" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szid_reading_ag3>,
+    ns2:abzl "212; 207a" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szid_reading_ag3>,
         <https://situx.github.io/cuneiformontology/signlist/character_szid_reading_ak3>,
         <https://situx.github.io/cuneiformontology/signlist/character_szid_reading_aka3>,
         <https://situx.github.io/cuneiformontology/signlist/character_szid_reading_alal2>,
@@ -92,14 +94,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_szid_reading_zag3>,
         <https://situx.github.io/cuneiformontology/signlist/character_szid_reading_zandar>,
         <https://situx.github.io/cuneiformontology/signlist/character_szid_reading_zandara> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_szid_lag> ;
-    ns1:hethzl "231" ;
-    ns1:labat "314" ;
-    ns1:meszl "485" ;
-    ns1:obo "212" ;
-    ns1:signName "ŠID (LAG)" ;
-    ns1:slha "314" ;
-    ns1:unicodeCodepoint "U+122C3" ;
-    ns1:unicodeRepresentation "𒋃" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_szid_lag> ;
+    ns2:hethzl "231" ;
+    ns2:labat "314" ;
+    ns2:meszl "485" ;
+    ns2:obo "212" ;
+    ns2:signName "ŠID (LAG)" ;
+    ns2:slha "314" ;
+    ns2:unicodeCodepoint "U+122C3" ;
+    ns2:unicodeRepresentation "𒋃" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556395> .
 

@@ -1,12 +1,14 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_nagainversum> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_nagainversum> a ns2:Grapheme,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: NAGAinversum" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_nagainversum_sense_soda> ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_nagainversum_reading_eresz2>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_nagainversum_sense_soda> ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_nagainversum_reading_eresz2>,
         <https://situx.github.io/cuneiformontology/signlist/character_nagainversum_reading_naga>,
         <https://situx.github.io/cuneiformontology/signlist/character_nagainversum_reading_naga@180>,
         <https://situx.github.io/cuneiformontology/signlist/character_nagainversum_reading_nak2_nak2>,
@@ -14,12 +16,12 @@
         <https://situx.github.io/cuneiformontology/signlist/character_nagainversum_reading_teme2>,
         <https://situx.github.io/cuneiformontology/signlist/character_nagainversum_reading_teme_k>,
         <https://situx.github.io/cuneiformontology/signlist/character_nagainversum_reading_temeₓ> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_nagainversum> ;
-    ns1:labat "293.999" ;
-    ns1:obo "298" ;
-    ns1:signName "NAGAinversum" ;
-    ns1:slha "165n1" ;
-    ns1:unicodeCodepoint "U+12241" ;
-    ns1:unicodeRepresentation "𒉁" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_nagainversum> ;
+    ns2:labat "293.999" ;
+    ns2:obo "298" ;
+    ns2:signName "NAGAinversum" ;
+    ns2:slha "165n1" ;
+    ns2:unicodeCodepoint "U+12241" ;
+    ns2:unicodeRepresentation "𒉁" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556150> .
 

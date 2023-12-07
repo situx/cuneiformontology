@@ -2,7 +2,9 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_dag_kisim5_x_u2__masz> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_dag_kisim5_x_u2__masz> a ns1:Grapheme,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: DAG KISIM5 x U2 + MAŠ" ;
     ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_dag_kisim5>,
         <https://situx.github.io/cuneiformontology/signlist/character_u2__masz> ;

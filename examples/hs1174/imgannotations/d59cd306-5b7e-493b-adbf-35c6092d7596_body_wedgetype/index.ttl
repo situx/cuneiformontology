@@ -3,7 +3,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d59cd306-5b7e-493b-adbf-35c6092d7596_body_wedgetype> a ns1:TextualBody ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d59cd306-5b7e-493b-adbf-35c6092d7596_body_wedgetype> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:TextualBody,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Annotation Body: Wedge Type b"@en ;
     rdf:value "b"^^xsd:string ;
     ns1:motivatedBy ns1:classifying ;

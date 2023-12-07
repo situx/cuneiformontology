@@ -3,7 +3,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/o147/imgannotations/e2aa0dbd-a614-4d22-9bd6-a638c750b03b_body_tabletside> a ns1:TextualBody ;
+<https://situx.github.io/cuneiformontology/examples/o147/imgannotations/e2aa0dbd-a614-4d22-9bd6-a638c750b03b_body_tabletside> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:TextualBody,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Annotation Body: Tablet Side back"@en ;
     rdf:value "back"^^xsd:string ;
     ns1:motivatedBy ns1:describing ;

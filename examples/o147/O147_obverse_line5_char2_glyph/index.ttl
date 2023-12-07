@@ -3,7 +3,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/o147/O147_obverse_line5_char2_glyph> a <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+<https://situx.github.io/cuneiformontology/examples/o147/O147_obverse_line5_char2_glyph> a <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Glyph at O147 obverse side line 5 char 2"@en ;
     ns1:nextGlyph <https://situx.github.io/cuneiformontology/examples/o147/O147_obverse_line5_char3_glyph> ;
     ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/o147/O147_obverse_line5_char1_glyph> ;

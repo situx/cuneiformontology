@@ -3,7 +3,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char4> a ns2:TransliterationCharOccurrence ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char4> a ns2:TransliterationCharOccurrence,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "HT 07-31-95 obverse line 4 char 4"@en ;
     ns2:charIndex 4 ;
     ns2:lineNumber 4 ;

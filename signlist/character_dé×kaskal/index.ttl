@@ -1,13 +1,15 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_dé×kaskal> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_dé×kaskal> a ns2:Grapheme,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: DÉ×KASKAL" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_dé×kaskal_sense__umun2___knowledge>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_dé×kaskal_sense__umun2___knowledge>,
         <https://situx.github.io/cuneiformontology/signlist/character_dé×kaskal_sense_to_pour> ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_dé×kaskal_reading_abzu2>,
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_dé×kaskal_reading_abzu2>,
         <https://situx.github.io/cuneiformontology/signlist/character_dé×kaskal_reading_abzuₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_dé×kaskal_reading_da9>,
         <https://situx.github.io/cuneiformontology/signlist/character_dé×kaskal_reading_de2>,
@@ -25,14 +27,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_dé×kaskal_reading_umum>,
         <https://situx.github.io/cuneiformontology/signlist/character_dé×kaskal_reading_umum×kaskal>,
         <https://situx.github.io/cuneiformontology/signlist/character_dé×kaskal_reading_umun2> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_de2>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_de2>,
         <https://situx.github.io/cuneiformontology/signlist/character_kaskal> ;
-    ns1:labat "338" ;
-    ns1:lak "155/156" ;
-    ns1:obo "215" ;
-    ns1:signName "DÉ×KASKAL" ;
-    ns1:slha "338n1" ;
-    ns1:unicodeCodepoint "U+12324" ;
-    ns1:unicodeRepresentation "𒌤" ;
+    ns2:labat "338" ;
+    ns2:lak "155/156" ;
+    ns2:obo "215" ;
+    ns2:signName "DÉ×KASKAL" ;
+    ns2:slha "338n1" ;
+    ns2:unicodeCodepoint "U+12324" ;
+    ns2:unicodeRepresentation "𒌤" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556575> .
 

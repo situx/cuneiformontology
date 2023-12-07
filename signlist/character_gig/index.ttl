@@ -3,7 +3,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_gig> a ns1:Grapheme,
-        ns1:GraphemeComposition ;
+        ns1:GraphemeComposition,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character Composition: GIG (MI.NUNUZ)",
         "Character: GIG" ;
     ns1:abzl "350" ;

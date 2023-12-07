@@ -2,7 +2,9 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_pioverpicrossed_taltal> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_pioverpicrossed_taltal> a ns1:Grapheme,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: PIoverPIcrossed/TALTAL" ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_pioverpicrossed_taltal_reading_pi_pi>,
         <https://situx.github.io/cuneiformontology/signlist/character_pioverpicrossed_taltal_reading_taltal> ;

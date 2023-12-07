@@ -1,10 +1,12 @@
-@prefix ns1: <http://www.gigamesh.eu/ont#> .
-@prefix ns2: <http://www.wikidata.org/prop/direct/> .
+@prefix ns1: <http://www.wikidata.org/prop/direct/> .
+@prefix ns2: <http://www.gigamesh.eu/ont#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_verticesOnInvertedEdge> a ns1:VerticesOnInvertedEdge ;
+<https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_verticesOnInvertedEdge> a ns2:VerticesOnInvertedEdge,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "HT_07-31-95_3D_GMOCF Amount of Vertices on inverted edges"@en ;
-    ns1:value 0 ;
-    ns2:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
+    ns2:value 0 ;
+    ns1:P361 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_totalNumberOfVertices> .
 

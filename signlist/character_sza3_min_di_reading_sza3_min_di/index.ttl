@@ -1,7 +1,9 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_sza3_min_di_reading_sza3_min_di> a ns1:GraphemeReading ;
+<https://situx.github.io/cuneiformontology/signlist/character_sza3_min_di_reading_sza3_min_di> a ns1:GraphemeReading,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Grapheme Reading |sza3.min.di|: |sza3.min.di|" ;
     ns1:readingValue "|sza3.min.di|" .
 

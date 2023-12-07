@@ -1,7 +1,9 @@
 @prefix ns1: <http://lemon-model.net/lemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_lexicon> a ns1:Lexicon ;
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_lexicon> a ns1:Lexicon,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Lexicon for tablet TCH92"@en ;
     ns1:language <http://www.purl.org/cuneiform#Sumerian> .
 

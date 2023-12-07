@@ -1,11 +1,13 @@
-@prefix ns1: <http://www.purl.org/cuneiform#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char2_glyph> a <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char2_glyph> a <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Glyph at HS1174 obverse side line 1 char 2"@en ;
-    ns1:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/character/3(u)_6_1_1_1_HS1174_03_front.jpg>,
+    ns2:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/character/3(u)_6_1_1_1_HS1174_03_front.jpg>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_1_2_3(disz)_HS1174_03_front.jpg> ;
-    ns2:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char3_glyph> ;
-    ns2:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char1_glyph> .
+    ns1:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char3_glyph> ;
+    ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char1_glyph> .
 

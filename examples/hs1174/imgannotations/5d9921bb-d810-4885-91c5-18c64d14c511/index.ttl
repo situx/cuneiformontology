@@ -4,7 +4,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5d9921bb-d810-4885-91c5-18c64d14c511> a ns1:Annotation ;
+<https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/5d9921bb-d810-4885-91c5-18c64d14c511> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:Annotation,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 1 char 1 wedge 2 on 3D rendering"@en ;
     dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
     dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;

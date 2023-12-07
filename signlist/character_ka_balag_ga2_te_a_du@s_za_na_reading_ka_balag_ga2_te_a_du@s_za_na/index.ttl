@@ -1,7 +1,9 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_ka_balag_ga2_te_a_du@s_za_na_reading_ka_balag_ga2_te_a_du@s_za_na> a ns1:GraphemeReading ;
+<https://situx.github.io/cuneiformontology/signlist/character_ka_balag_ga2_te_a_du@s_za_na_reading_ka_balag_ga2_te_a_du@s_za_na> a ns1:GraphemeReading,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Grapheme Reading |ka.balag.ga2.te.a.du@s.za.na|: |ka.balag.ga2.te.a.du@s.za.na|" ;
     ns1:readingValue "|ka.balag.ga2.te.a.du@s.za.na|" .
 

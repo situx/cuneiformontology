@@ -2,7 +2,9 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_szà×bad> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_szà×bad> a ns1:Grapheme,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: ŠÀ×BAD" ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szà×bad_reading_habrud3>,
         <https://situx.github.io/cuneiformontology/signlist/character_szà×bad_reading_habruda3>,

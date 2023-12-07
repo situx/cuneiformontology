@@ -2,7 +2,9 @@
 @prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_munus_ma> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_munus_ma> a ns1:Grapheme,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: MUNUS+MA" ;
     ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_munus_ma_sense_burux___harvest>,
         <https://situx.github.io/cuneiformontology/signlist/character_munus_ma_sense_foreign_land>,

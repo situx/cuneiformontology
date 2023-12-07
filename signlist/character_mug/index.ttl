@@ -1,13 +1,15 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_mug> a ns1:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_mug> a ns2:Grapheme,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: MUG" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_mug_sense_low_quality_wool__epsd> ;
-    ns1:abzl "012" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_mug_reading_buk>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_mug_sense_low_quality_wool__epsd> ;
+    ns2:abzl "012" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_mug_reading_buk>,
         <https://situx.github.io/cuneiformontology/signlist/character_mug_reading_gaggim>,
         <https://situx.github.io/cuneiformontology/signlist/character_mug_reading_gagim>,
         <https://situx.github.io/cuneiformontology/signlist/character_mug_reading_gakim>,
@@ -22,14 +24,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_mug_reading_puk>,
         <https://situx.github.io/cuneiformontology/signlist/character_mug_reading_szuk2>,
         <https://situx.github.io/cuneiformontology/signlist/character_mug_reading_wuk> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_mug> ;
-    ns1:hethzl "22" ;
-    ns1:labat "3" ;
-    ns1:meszl "12" ;
-    ns1:obo "12" ;
-    ns1:signName "MUG" ;
-    ns1:slha "003" ;
-    ns1:unicodeCodepoint "U+1222E" ;
-    ns1:unicodeRepresentation "𒈮" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_mug> ;
+    ns2:hethzl "22" ;
+    ns2:labat "3" ;
+    ns2:meszl "12" ;
+    ns2:obo "12" ;
+    ns2:signName "MUG" ;
+    ns2:slha "003" ;
+    ns2:unicodeCodepoint "U+1222E" ;
+    ns2:unicodeRepresentation "𒈮" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556115> .
 

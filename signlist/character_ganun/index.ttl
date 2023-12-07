@@ -1,25 +1,27 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_ganun> a ns2:Grapheme ;
+<https://situx.github.io/cuneiformontology/signlist/character_ganun> a ns1:Grapheme,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: GANUN (GÁ×NUN)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_ganun_sense_magazine>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_ganun_sense_magazine>,
         <https://situx.github.io/cuneiformontology/signlist/character_ganun_sense_storage_area> ;
-    ns2:abzl "096" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ganun_reading_ga2×nun>,
+    ns1:abzl "096" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ganun_reading_ga2×nun>,
         <https://situx.github.io/cuneiformontology/signlist/character_ganun_reading_ganun>,
         <https://situx.github.io/cuneiformontology/signlist/character_ganun_reading_uszusz>,
         <https://situx.github.io/cuneiformontology/signlist/character_ganun_reading_ŋanun> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ganun_ga2>,
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ganun_ga2>,
         <https://situx.github.io/cuneiformontology/signlist/character_nun> ;
-    ns2:labat "244" ;
-    ns2:meszl "397" ;
-    ns2:obo "96" ;
-    ns2:signName "GANUN (GÁ×NUN)" ;
-    ns2:slha "244v" ;
-    ns2:unicodeCodepoint "U+120E0" ;
-    ns2:unicodeRepresentation "𒃠" ;
+    ns1:labat "244" ;
+    ns1:meszl "397" ;
+    ns1:obo "96" ;
+    ns1:signName "GANUN (GÁ×NUN)" ;
+    ns1:slha "244v" ;
+    ns1:unicodeCodepoint "U+120E0" ;
+    ns1:unicodeRepresentation "𒃠" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555433> .
 

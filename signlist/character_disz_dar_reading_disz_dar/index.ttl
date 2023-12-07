@@ -1,7 +1,9 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_disz_dar_reading_disz_dar> a ns1:GraphemeReading ;
+<https://situx.github.io/cuneiformontology/signlist/character_disz_dar_reading_disz_dar> a ns1:GraphemeReading,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Grapheme Reading |disz.dar|: |disz.dar|" ;
     ns1:readingValue "|disz.dar|" .
 

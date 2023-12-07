@@ -1,13 +1,15 @@
-@prefix ns1: <http://www.purl.org/cuneiform#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://situx.github.io/cuneiformontology/examples/signlist/character_sza3> a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+<https://situx.github.io/cuneiformontology/examples/signlist/character_sza3> a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: SZA3"@en ;
-    ns1:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char5>,
+    ns2:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char5>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char3>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line4_char1> ;
-    ns1:transliteration "sza3" ;
-    ns2:hasUnicodeRepresentation "𒊮" ;
-    ns2:variant <https://situx.github.io/cuneiformontology/examples/ht073195/sza3_charvariant1> .
+    ns2:transliteration "sza3" ;
+    ns1:hasUnicodeRepresentation "𒊮" ;
+    ns1:variant <https://situx.github.io/cuneiformontology/examples/ht073195/sza3_charvariant1> .
 
