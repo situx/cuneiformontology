@@ -1,18 +1,18 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_> a ns1:Grapheme,
-        ns1:GraphemeComposition,
+<https://situx.github.io/cuneiformontology/signlist/character_> a ns2:Grapheme,
+        ns2:GraphemeComposition,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character Composition: ",
         "Character: ",
         "Character: :(division sign)",
         "Character: ::" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character__sense__du8___to_open>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character__sense__du8___to_open>,
         <https://situx.github.io/cuneiformontology/signlist/character__sense__gisz_h449_tukul___mace>,
         <https://situx.github.io/cuneiformontology/signlist/character__sense__mu4___to_wear_a_garment>,
         <https://situx.github.io/cuneiformontology/signlist/character__sense__tusz___to_sit>,
@@ -27,8 +27,8 @@
         <https://situx.github.io/cuneiformontology/signlist/character__sense_to_untie>,
         <https://situx.github.io/cuneiformontology/signlist/character__sense_weapon> ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns1:abzl "195" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character__reading_>,
+    ns2:abzl "195" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character__reading_>,
         <https://situx.github.io/cuneiformontology/signlist/character_reading_04>,
         <https://situx.github.io/cuneiformontology/signlist/character_reading_07>,
         <https://situx.github.io/cuneiformontology/signlist/character_reading_3_szaru@c_@v>,
@@ -141,29 +141,29 @@
         <https://situx.github.io/cuneiformontology/signlist/character_reading_zuₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_reading_ŋeresz2>,
         <https://situx.github.io/cuneiformontology/signlist/character_reading_ŋurusz> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_>,
         <https://situx.github.io/cuneiformontology/signlist/character_division_sign> ;
-    ns1:hethzl "225",
+    ns2:hethzl "225",
         "248" ;
-    ns1:labat "167",
+    ns2:labat "167",
         "352",
         "536" ;
-    ns1:meszl "114",
+    ns2:meszl "114",
         "565",
         "592",
         "831" ;
-    ns1:obo "141",
+    ns2:obo "141",
         "415",
         "417",
         "82" ;
-    ns1:signName "",
+    ns2:signName "",
         ":(division sign)" ;
-    ns1:slha "352",
+    ns2:slha "352",
         "361n",
         "364n",
         "377n1",
         "578a" ;
-    ns1:unicodeCodepoint "",
+    ns2:unicodeCodepoint "",
         "U+12014",
         "U+1203A",
         "U+12046",
@@ -197,7 +197,7 @@
         "U+12471",
         "U+12472",
         "U+12473" ;
-    ns1:unicodeRepresentation "variant of n183",
+    ns2:unicodeRepresentation "variant of n183",
         "",
         "𒀔",
         "𒀺",

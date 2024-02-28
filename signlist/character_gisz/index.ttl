@@ -1,18 +1,18 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_gisz> a ns2:Grapheme,
+<https://situx.github.io/cuneiformontology/signlist/character_gisz> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: GIŠ (GEŠ)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_gisz_sense_tree>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_gisz_sense_tree>,
         <https://situx.github.io/cuneiformontology/signlist/character_gisz_sense_woden_implement> ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns2:abzl "160" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gisz_reading_es>,
+    ns1:abzl "160" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gisz_reading_es>,
         <https://situx.github.io/cuneiformontology/signlist/character_gisz_reading_esz19>,
         <https://situx.github.io/cuneiformontology/signlist/character_gisz_reading_ez>,
         <https://situx.github.io/cuneiformontology/signlist/character_gisz_reading_gesz>,
@@ -36,14 +36,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_gisz_reading_nisz2>,
         <https://situx.github.io/cuneiformontology/signlist/character_gisz_reading_ŋesz>,
         <https://situx.github.io/cuneiformontology/signlist/character_gisz_reading_ŋisz> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gisz_gesz> ;
-    ns2:hethzl "178" ;
-    ns2:labat "296" ;
-    ns2:meszl "469" ;
-    ns2:obo "160" ;
-    ns2:signName "GIŠ (GEŠ)" ;
-    ns2:slha "296" ;
-    ns2:unicodeCodepoint "U+12111" ;
-    ns2:unicodeRepresentation "𒄑" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gisz_gesz> ;
+    ns1:hethzl "178" ;
+    ns1:labat "296" ;
+    ns1:meszl "469" ;
+    ns1:obo "160" ;
+    ns1:signName "GIŠ (GEŠ)" ;
+    ns1:slha "296" ;
+    ns1:unicodeCodepoint "U+12111" ;
+    ns1:unicodeRepresentation "𒄑" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555530> .
 

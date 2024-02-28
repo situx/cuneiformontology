@@ -1,18 +1,18 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_gur> a ns2:Grapheme,
+<https://situx.github.io/cuneiformontology/signlist/character_gur> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: GUR" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_gur_sense_a_measure_of_capacity>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_gur_sense_a_measure_of_capacity>,
         <https://situx.github.io/cuneiformontology/signlist/character_gur_sense_to_return> ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns2:abzl "092" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gur_reading_gur>,
+    ns1:abzl "092" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gur_reading_gur>,
         <https://situx.github.io/cuneiformontology/signlist/character_gur_reading_gur_gur>,
         <https://situx.github.io/cuneiformontology/signlist/character_gur_reading_gura>,
         <https://situx.github.io/cuneiformontology/signlist/character_gur_reading_guru>,
@@ -24,14 +24,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_gur_reading_taru>,
         <https://situx.github.io/cuneiformontology/signlist/character_gur_reading_typically_in_pns_waqqurtum>,
         <https://situx.github.io/cuneiformontology/signlist/character_gur_reading_zikur_ilī> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gur> ;
-    ns2:hethzl "185" ;
-    ns2:labat "111" ;
-    ns2:meszl "180" ;
-    ns2:obo "92" ;
-    ns2:signName "GUR" ;
-    ns2:slha "111" ;
-    ns2:unicodeCodepoint "U+12125" ;
-    ns2:unicodeRepresentation "𒄥" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gur> ;
+    ns1:hethzl "185" ;
+    ns1:labat "111" ;
+    ns1:meszl "180" ;
+    ns1:obo "92" ;
+    ns1:signName "GUR" ;
+    ns1:slha "111" ;
+    ns1:unicodeCodepoint "U+12125" ;
+    ns1:unicodeRepresentation "𒄥" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555573> .
 

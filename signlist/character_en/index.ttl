@@ -1,18 +1,18 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_en> a ns2:Grapheme,
+<https://situx.github.io/cuneiformontology/signlist/character_en> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: EN" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_en_sense_dignatary>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_en_sense_dignatary>,
         <https://situx.github.io/cuneiformontology/signlist/character_en_sense_lord> ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns2:abzl "062" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_en_reading_adₓ>,
+    ns1:abzl "062" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_en_reading_adₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_en_reading_amₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_en_reading_en>,
         <https://situx.github.io/cuneiformontology/signlist/character_en_reading_en_en>,
@@ -24,14 +24,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_en_reading_uru16>,
         <https://situx.github.io/cuneiformontology/signlist/character_en_reading_urunx>,
         <https://situx.github.io/cuneiformontology/signlist/character_en_reading_urunₓ> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_en> ;
-    ns2:hethzl "40" ;
-    ns2:labat "99" ;
-    ns2:meszl "164" ;
-    ns2:obo "62" ;
-    ns2:signName "EN" ;
-    ns2:slha "099" ;
-    ns2:unicodeCodepoint "U+12097" ;
-    ns2:unicodeRepresentation "𒂗" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_en> ;
+    ns1:hethzl "40" ;
+    ns1:labat "99" ;
+    ns1:meszl "164" ;
+    ns1:obo "62" ;
+    ns1:signName "EN" ;
+    ns1:slha "099" ;
+    ns1:unicodeCodepoint "U+12097" ;
+    ns1:unicodeRepresentation "𒂗" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555295> .
 

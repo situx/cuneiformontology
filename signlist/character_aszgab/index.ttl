@@ -1,29 +1,29 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_aszgab> a ns2:Grapheme,
+<https://situx.github.io/cuneiformontology/signlist/character_aszgab> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: AŠGAB" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_aszgab_sense_leatherworker> ;
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_aszgab_sense_leatherworker> ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns2:abzl "443" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_aszgab_reading_aszgab>,
+    ns1:abzl "443" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_aszgab_reading_aszgab>,
         <https://situx.github.io/cuneiformontology/signlist/character_aszgab_reading_erib>,
         <https://situx.github.io/cuneiformontology/signlist/character_aszgab_reading_irib>,
         <https://situx.github.io/cuneiformontology/signlist/character_aszgab_reading_szigagu>,
         <https://situx.github.io/cuneiformontology/signlist/character_aszgab_reading_szikangu> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_aszgab> ;
-    ns2:hethzl "80" ;
-    ns2:labat "104.6" ;
-    ns2:meszl "173" ;
-    ns2:obo "443" ;
-    ns2:signName "AŠGAB" ;
-    ns2:slha "104_6" ;
-    ns2:unicodeCodepoint "U+1203F" ;
-    ns2:unicodeRepresentation "𒀿" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_aszgab> ;
+    ns1:hethzl "80" ;
+    ns1:labat "104.6" ;
+    ns1:meszl "173" ;
+    ns1:obo "443" ;
+    ns1:signName "AŠGAB" ;
+    ns1:slha "104_6" ;
+    ns1:unicodeCodepoint "U+1203F" ;
+    ns1:unicodeRepresentation "𒀿" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555124> .
 

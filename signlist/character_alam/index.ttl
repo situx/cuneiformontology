@@ -1,17 +1,17 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_alam> a ns1:Grapheme,
+<https://situx.github.io/cuneiformontology/signlist/character_alam> a ns2:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: ALAM (GU4overGU4.NA)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_alam_sense_statue> ;
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_alam_sense_statue> ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns1:abzl "199" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_alam_reading_al2>,
+    ns2:abzl "199" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_alam_reading_al2>,
         <https://situx.github.io/cuneiformontology/signlist/character_alam_reading_alag>,
         <https://situx.github.io/cuneiformontology/signlist/character_alam_reading_alala>,
         <https://situx.github.io/cuneiformontology/signlist/character_alam_reading_alam>,
@@ -23,16 +23,16 @@
         <https://situx.github.io/cuneiformontology/signlist/character_alam_reading_biszebi2>,
         <https://situx.github.io/cuneiformontology/signlist/character_alam_reading_kaszszeba2>,
         <https://situx.github.io/cuneiformontology/signlist/character_alam_reading_kaszszebi2> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_alam_gu4>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_alam_gu4>,
         <https://situx.github.io/cuneiformontology/signlist/character_gu4>,
         <https://situx.github.io/cuneiformontology/signlist/character_na> ;
-    ns1:hethzl "226" ;
-    ns1:labat "358" ;
-    ns1:meszl "573" ;
-    ns1:obo "199" ;
-    ns1:signName "ALAM (GU4overGU4.NA)" ;
-    ns1:slha "358" ;
-    ns1:unicodeCodepoint "U+12029" ;
-    ns1:unicodeRepresentation "𒀩" ;
+    ns2:hethzl "226" ;
+    ns2:labat "358" ;
+    ns2:meszl "573" ;
+    ns2:obo "199" ;
+    ns2:signName "ALAM (GU4overGU4.NA)" ;
+    ns2:slha "358" ;
+    ns2:unicodeCodepoint "U+12029" ;
+    ns2:unicodeRepresentation "𒀩" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555079> .
 
