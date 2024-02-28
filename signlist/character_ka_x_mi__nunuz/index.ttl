@@ -1,11 +1,13 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_ka_x_mi__nunuz> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: KA x MI + NUNUZ" ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ka_x_mi_nunuz_reading_emeŋarŋarₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_ka_x_mi_nunuz_reading_ka×_me_gar_gar_ra> ;
     ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ka>,

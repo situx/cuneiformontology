@@ -1,10 +1,12 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_szu_gar_tur_lal_bi> a ns1:GraphemeComposition,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character Composition: |szu.gar.tur.lal.bi|" ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szu_gar_tur_lal_bi_reading_szu_gar_tur_lal_bi> ;
     ns1:unicodeRepresentation "𒋗𒃻𒌉𒇲𒁉" .
 

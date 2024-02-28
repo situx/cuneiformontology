@@ -1,5 +1,6 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_gu2_x_nun_reading_gu2×nun> a ns1:GraphemeReading,
         <http://www.w3.org/ns/ldp#Resource>,
@@ -7,6 +8,7 @@
     rdfs:label "Grapheme Reading GU2 x NUN: gu2×nun",
         "Grapheme Reading GU2 x NUN: |GU2×NUN|",
         "Grapheme Reading GU2 x NUN: |gu2×nun|" ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
     ns1:epoch <http://www.wikidata.org/entity/Q110209565> ;
     ns1:readingValue "gu2×nun",
         "|gu2×nun|" .

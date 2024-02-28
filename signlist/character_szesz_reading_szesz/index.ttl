@@ -1,5 +1,6 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_szesz_reading_szesz> a ns1:GraphemeReading,
         <http://www.w3.org/ns/ldp#Resource>,
@@ -7,6 +8,7 @@
     rdfs:label "Grapheme Reading ŠEŠ (ÙRI): [szesz],",
         "Grapheme Reading ŠEŠ (ÙRI): szesz",
         "Grapheme Reading ŠEŠ (ÙRI): ŠEŠ" ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
     ns1:epoch <http://www.wikidata.org/entity/Q110209565>,
         <http://www.wikidata.org/entity/Q733897> ;
     ns1:readingValue "szesz" .

@@ -1,7 +1,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_lu_sense__dab___to_hold> a <http://www.purl.org/graphemon#GraphemeSense>,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
-    rdfs:label "Grapheme Sense DIB: (dab): to hold" .
+    rdfs:label "Grapheme Sense DIB: (dab): to hold" ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> .
 

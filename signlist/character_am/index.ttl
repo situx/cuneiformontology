@@ -2,12 +2,14 @@
 @prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_am> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: AM (GU4×KUR)" ;
     ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_am_sense_wild_bull> ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
     ns1:abzl "119" ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_am_reading_adar2>,
         <https://situx.github.io/cuneiformontology/signlist/character_am_reading_am>,

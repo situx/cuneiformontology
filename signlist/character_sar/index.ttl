@@ -1,13 +1,14 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_sar> a ns2:Grapheme,
+<https://situx.github.io/cuneiformontology/signlist/character_sar> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: SAR" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_sar_sense__mu2___to_sprout>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_sar_sense__mu2___to_sprout>,
         <https://situx.github.io/cuneiformontology/signlist/character_sar_sense__nisi___vegetable>,
         <https://situx.github.io/cuneiformontology/signlist/character_sar_sense_garden>,
         <https://situx.github.io/cuneiformontology/signlist/character_sar_sense_orchard>,
@@ -15,8 +16,9 @@
         <https://situx.github.io/cuneiformontology/signlist/character_sar_sense_to_grow>,
         <https://situx.github.io/cuneiformontology/signlist/character_sar_sense_to_run>,
         <https://situx.github.io/cuneiformontology/signlist/character_sar_sense_to_write> ;
-    ns2:abzl "385" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sar_reading_e14>,
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
+    ns1:abzl "385" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sar_reading_e14>,
         <https://situx.github.io/cuneiformontology/signlist/character_sar_reading_kiri6>,
         <https://situx.github.io/cuneiformontology/signlist/character_sar_reading_ma4>,
         <https://situx.github.io/cuneiformontology/signlist/character_sar_reading_mu2>,
@@ -44,14 +46,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_sar_reading_szer9>,
         <https://situx.github.io/cuneiformontology/signlist/character_sar_reading_szir9>,
         <https://situx.github.io/cuneiformontology/signlist/character_sar_reading_śar> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_sar> ;
-    ns2:hethzl "353" ;
-    ns2:labat "331.5" ;
-    ns2:meszl "541" ;
-    ns2:obo "385" ;
-    ns2:signName "SAR" ;
-    ns2:slha "331e, 152iv" ;
-    ns2:unicodeCodepoint "U+122AC" ;
-    ns2:unicodeRepresentation "𒊬" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_sar> ;
+    ns1:hethzl "353" ;
+    ns1:labat "331.5" ;
+    ns1:meszl "541" ;
+    ns1:obo "385" ;
+    ns1:signName "SAR" ;
+    ns1:slha "331e, 152iv" ;
+    ns1:unicodeCodepoint "U+122AC" ;
+    ns1:unicodeRepresentation "𒊬" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556352> .
 

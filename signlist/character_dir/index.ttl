@@ -1,6 +1,7 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_dir> a ns1:GraphemeComposition,
         <http://www.w3.org/ns/ldp#Resource>,
@@ -10,6 +11,7 @@
         <https://situx.github.io/cuneiformontology/signlist/character_dir_sense_superfluous>,
         <https://situx.github.io/cuneiformontology/signlist/character_dir_sense_superior>,
         <https://situx.github.io/cuneiformontology/signlist/character_dir_sense_surplus> ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
     ns1:abzl "164" ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_dir_reading_dir>,
         <https://situx.github.io/cuneiformontology/signlist/character_dir_reading_diri>,

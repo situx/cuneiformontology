@@ -1,6 +1,7 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_idigna> a ns1:GraphemeComposition,
         <http://www.w3.org/ns/ldp#Resource>,
@@ -9,6 +10,7 @@
         "Character Composition: idigna" ;
     ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_idigna_sense_to_make_clear__dalla__e3>,
         <https://situx.github.io/cuneiformontology/signlist/character_idigna_sense_to_manifest> ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
     ns1:abzl "030(IDIGNA) 087(DALLA)" ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_idigna_reading_dal2>,
         <https://situx.github.io/cuneiformontology/signlist/character_idigna_reading_dalla>,

@@ -1,9 +1,11 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/signlist_cuneiform> a <http://www.purl.org/graphemon#GraphemeList>,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Cuneiform Sign List" ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
     rdfs:member <https://situx.github.io/cuneiformontology/signlist/character_>,
         <https://situx.github.io/cuneiformontology/signlist/character_4×an_naga_forming_a_cross>,
         <https://situx.github.io/cuneiformontology/signlist/character_4×en>,

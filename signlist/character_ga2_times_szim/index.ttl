@@ -1,11 +1,13 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_ga2_times_szim> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: GA2 TIMES SHIM" ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ga2_times_szim_reading_ga2×_ne_e2>,
         <https://situx.github.io/cuneiformontology/signlist/character_ga2_times_szim_reading_halubₓ> ;
     ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ga2>,

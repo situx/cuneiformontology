@@ -1,7 +1,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_taḫ_daḫ_sense_to_help> a <http://www.purl.org/graphemon#GraphemeSense>,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
-    rdfs:label "Grapheme Sense DAH (MU/MU): to help" .
+    rdfs:label "Grapheme Sense DAH (MU/MU): to help" ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> .
 

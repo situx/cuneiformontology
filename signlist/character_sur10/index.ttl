@@ -1,5 +1,6 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_sur10> a ns1:Grapheme,
         ns1:GraphemeComposition,
@@ -7,6 +8,7 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character Composition: sur10",
         "Character: SUR10 (MÁ.SIG7 and similar)" ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_sur10_reading_sur10> ;
     ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_sig7_and_similar>,
         <https://situx.github.io/cuneiformontology/signlist/character_sur10_ma2> ;

@@ -2,6 +2,7 @@
 @prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_ti_tenû> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
@@ -9,6 +10,7 @@
     rdfs:label "Character: TI tenû",
         "Character: TI-tenû" ;
     ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_ti_tenû_sense_life> ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ti_tenû_reading_de9>,
         <https://situx.github.io/cuneiformontology/signlist/character_ti_tenû_reading_di3>,
         <https://situx.github.io/cuneiformontology/signlist/character_ti_tenû_reading_t_e6>,

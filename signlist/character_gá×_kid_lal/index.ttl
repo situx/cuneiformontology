@@ -1,11 +1,13 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_gá×_kid_lal> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: GÁ× KID.LAL" ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gá×_kid_lal_reading_elilla>,
         <https://situx.github.io/cuneiformontology/signlist/character_gá×_kid_lal_reading_ga2×_kid_lal>,
         <https://situx.github.io/cuneiformontology/signlist/character_gá×_kid_lal_reading_galilla>,

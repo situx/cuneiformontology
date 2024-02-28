@@ -1,6 +1,7 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_ia7> a ns1:Grapheme,
         ns1:GraphemeComposition,
@@ -8,6 +9,7 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character Composition: ia7",
         "Character: IA7 (TAB.TAB.AŠ)" ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ia7_reading_ia7> ;
     ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_asz>,
         <https://situx.github.io/cuneiformontology/signlist/character_ia7_tab>,

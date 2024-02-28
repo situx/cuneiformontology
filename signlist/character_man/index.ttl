@@ -1,6 +1,7 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_man> a ns1:Grapheme,
         ns1:GraphemeComposition,
@@ -8,6 +9,7 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character Composition: man",
         "Character: MAN (2×U)" ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
     ns1:abzl "363" ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_man_reading_man> ;
     ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_man_2>,

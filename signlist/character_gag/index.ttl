@@ -2,6 +2,7 @@
 @prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_gag> a ns2:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
@@ -12,6 +13,7 @@
         <https://situx.github.io/cuneiformontology/signlist/character_gag_sense_nail>,
         <https://situx.github.io/cuneiformontology/signlist/character_gag_sense_to_apply>,
         <https://situx.github.io/cuneiformontology/signlist/character_gag_sense_to_plant> ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
     ns2:abzl "260" ;
     ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gag_reading_ban4>,
         <https://situx.github.io/cuneiformontology/signlist/character_gag_reading_da3>,

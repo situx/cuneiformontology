@@ -1,16 +1,18 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_nag> a ns2:Grapheme,
+<https://situx.github.io/cuneiformontology/signlist/character_nag> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: NAG (KA×A)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_nag_sense__enmen2___thirst>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_nag_sense__enmen2___thirst>,
         <https://situx.github.io/cuneiformontology/signlist/character_nag_sense_to_drink> ;
-    ns2:abzl "328" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_nag_reading_emma2>,
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
+    ns1:abzl "328" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_nag_reading_emma2>,
         <https://situx.github.io/cuneiformontology/signlist/character_nag_reading_emmen2>,
         <https://situx.github.io/cuneiformontology/signlist/character_nag_reading_emmin2>,
         <https://situx.github.io/cuneiformontology/signlist/character_nag_reading_enmen2>,
@@ -31,15 +33,15 @@
         <https://situx.github.io/cuneiformontology/signlist/character_nag_reading_naq>,
         <https://situx.github.io/cuneiformontology/signlist/character_nag_reading_naŋ>,
         <https://situx.github.io/cuneiformontology/signlist/character_nag_reading_nik5> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_a>,
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_a>,
         <https://situx.github.io/cuneiformontology/signlist/character_nag_ka> ;
-    ns2:hethzl "148" ;
-    ns2:labat "35" ;
-    ns2:meszl "64" ;
-    ns2:obo "328" ;
-    ns2:signName "NAG (KA×A)" ;
-    ns2:slha "035" ;
-    ns2:unicodeCodepoint "U+12158" ;
-    ns2:unicodeRepresentation "𒅘" ;
+    ns1:hethzl "148" ;
+    ns1:labat "35" ;
+    ns1:meszl "64" ;
+    ns1:obo "328" ;
+    ns1:signName "NAG (KA×A)" ;
+    ns1:slha "035" ;
+    ns1:unicodeCodepoint "U+12158" ;
+    ns1:unicodeRepresentation "𒅘" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555678> .
 

@@ -1,11 +1,13 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_tirovertir_gadovergad_nígoverníg> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: TIRoverTIR.GADoverGAD.NÍGoverNÍG" ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_tirovertir_gadovergad_nígoverníg_reading_garadin>,
         <https://situx.github.io/cuneiformontology/signlist/character_tirovertir_gadovergad_nígoverníg_reading_karadin>,
         <https://situx.github.io/cuneiformontology/signlist/character_tirovertir_gadovergad_nígoverníg_reading_sze_nun&nun_&_sze_nun&nun_gad&gad_gar&gar> ;

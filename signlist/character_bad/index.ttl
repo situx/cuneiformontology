@@ -1,18 +1,20 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_bad> a ns1:Grapheme,
+<https://situx.github.io/cuneiformontology/signlist/character_bad> a ns2:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: BAD" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_bad_sense__sumun>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_bad_sense__sumun>,
         <https://situx.github.io/cuneiformontology/signlist/character_bad_sense__usz2___blood>,
         <https://situx.github.io/cuneiformontology/signlist/character_bad_sense_sud___old__til___life>,
         <https://situx.github.io/cuneiformontology/signlist/character_bad_sense_to_open> ;
-    ns1:abzl "025" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_bad_reading_agasz>,
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
+    ns2:abzl "025" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_bad_reading_agasz>,
         <https://situx.github.io/cuneiformontology/signlist/character_bad_reading_ba9>,
         <https://situx.github.io/cuneiformontology/signlist/character_bad_reading_bad>,
         <https://situx.github.io/cuneiformontology/signlist/character_bad_reading_bad_x>,
@@ -73,14 +75,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_bad_reading_ziz>,
         <https://situx.github.io/cuneiformontology/signlist/character_bad_reading_zu4>,
         <https://situx.github.io/cuneiformontology/signlist/character_bad_reading_zuru9> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_bad> ;
-    ns1:hethzl "13" ;
-    ns1:labat "69" ;
-    ns1:meszl "113" ;
-    ns1:obo "25" ;
-    ns1:signName "BAD" ;
-    ns1:slha "069" ;
-    ns1:unicodeCodepoint "U+12041" ;
-    ns1:unicodeRepresentation "𒁁" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_bad> ;
+    ns2:hethzl "13" ;
+    ns2:labat "69" ;
+    ns2:meszl "113" ;
+    ns2:obo "25" ;
+    ns2:signName "BAD" ;
+    ns2:slha "069" ;
+    ns2:unicodeCodepoint "U+12041" ;
+    ns2:unicodeRepresentation "𒁁" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555128> .
 

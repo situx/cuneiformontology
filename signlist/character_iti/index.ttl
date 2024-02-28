@@ -2,6 +2,7 @@
 @prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_iti> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
@@ -9,6 +10,7 @@
     rdfs:label "Character: ITI (UD-szeszszig)",
         "Character: ITI (UD×EŠ)" ;
     ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_iti_sense_month> ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
     ns1:abzl "334" ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_iti_reading_a13>,
         <https://situx.github.io/cuneiformontology/signlist/character_iti_reading_arhu>,

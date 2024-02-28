@@ -2,6 +2,7 @@
 @prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_ni> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
@@ -10,6 +11,7 @@
     ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_ni_sense__zal___to_flow>,
         <https://situx.github.io/cuneiformontology/signlist/character_ni_sense_fat>,
         <https://situx.github.io/cuneiformontology/signlist/character_ni_sense_i3___oil> ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
     ns1:abzl "261" ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ni_reading_be3>,
         <https://situx.github.io/cuneiformontology/signlist/character_ni_reading_bu16>,

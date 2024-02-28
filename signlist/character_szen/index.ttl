@@ -2,6 +2,7 @@
 @prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_szen> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
@@ -9,6 +10,7 @@
     rdfs:label "Character: ŠEN (SU×A)" ;
     ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_szen_sense_clean>,
         <https://situx.github.io/cuneiformontology/signlist/character_szen_sense_pure> ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
     ns1:abzl "306" ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_szen_reading_dur10>,
         <https://situx.github.io/cuneiformontology/signlist/character_szen_reading_rik4>,

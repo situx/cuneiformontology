@@ -2,6 +2,7 @@
 @prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_lugal> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
@@ -9,6 +10,7 @@
     rdfs:label "Character: LUGAL" ;
     ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_lugal_sense_king>,
         <https://situx.github.io/cuneiformontology/signlist/character_lugal_sense_owner> ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
     ns1:abzl "221a" ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_lugal_reading_biszeba>,
         <https://situx.github.io/cuneiformontology/signlist/character_lugal_reading_biszebi>,

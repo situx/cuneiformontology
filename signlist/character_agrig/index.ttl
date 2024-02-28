@@ -1,12 +1,14 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_agrig> a ns1:GraphemeComposition,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character Composition: AGRIG (IGI.DUB)" ;
     ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_agrig_sense_signal> ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
     ns1:abzl "237" ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_agrig_reading_agrig>,
         <https://situx.github.io/cuneiformontology/signlist/character_agrig_reading_aŋrig>,

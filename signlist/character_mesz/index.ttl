@@ -1,6 +1,7 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_mesz> a ns1:Grapheme,
         ns1:GraphemeComposition,
@@ -8,6 +9,7 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character Composition: mesz",
         "Character: MEŠ" ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_mesz_reading_mesz> ;
     ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_mesz> ;
     ns1:hethzl "360" ;

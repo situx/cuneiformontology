@@ -1,11 +1,13 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_eszemin5> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: EŠEMIN5 (BI)" ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_eszemin5_reading_2_esze3>,
         <https://situx.github.io/cuneiformontology/signlist/character_eszemin5_reading_2_esze3@c> ;
     ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_eszemin5_bi> ;

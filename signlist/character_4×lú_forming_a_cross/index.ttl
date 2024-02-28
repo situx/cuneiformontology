@@ -1,11 +1,13 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_4×lú_forming_a_cross> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: 4×LÚ forming a cross" ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
     ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_4×lú_forming_a_cross_reading_4×lu2>,
         <https://situx.github.io/cuneiformontology/signlist/character_4×lú_forming_a_cross_reading_daparaₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_4×lú_forming_a_cross_reading_kapara3>,

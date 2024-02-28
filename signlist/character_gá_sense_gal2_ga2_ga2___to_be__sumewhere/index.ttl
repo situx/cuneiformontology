@@ -1,7 +1,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/character_gá_sense_gal2_ga2_ga2___to_be__sumewhere> a <http://www.purl.org/graphemon#GraphemeSense>,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
-    rdfs:label "Grapheme Sense ĜA2: (ĝal2/ĝa2-ĝa2): to be (sumewhere)" .
+    rdfs:label "Grapheme Sense ĜA2: (ĝal2/ĝa2-ĝa2): to be (sumewhere)" ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> .
 
