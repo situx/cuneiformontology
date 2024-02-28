@@ -1,30 +1,30 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_eme> a ns1:Grapheme,
+<https://situx.github.io/cuneiformontology/signlist/character_eme> a ns2:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: EME (KA×ME)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_eme_sense_tongue> ;
-    void:inDataset <https://situx.github.io/cuneiformontology/cuneisignlist_dataset> ;
-    ns1:abzl "326" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_eme_reading_em4>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_eme_sense_tongue> ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    ns2:abzl "326" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_eme_reading_em4>,
         <https://situx.github.io/cuneiformontology/signlist/character_eme_reading_eme>,
         <https://situx.github.io/cuneiformontology/signlist/character_eme_reading_eme_eme>,
         <https://situx.github.io/cuneiformontology/signlist/character_eme_reading_ka×me>,
         <https://situx.github.io/cuneiformontology/signlist/character_eme_reading_uli> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_eme_ka>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_eme_ka>,
         <https://situx.github.io/cuneiformontology/signlist/character_me> ;
-    ns1:hethzl "147" ;
-    ns1:labat "32" ;
-    ns1:meszl "61" ;
-    ns1:obo "326" ;
-    ns1:signName "EME (KA×ME)" ;
-    ns1:slha "032" ;
-    ns1:unicodeCodepoint "U+12174" ;
-    ns1:unicodeRepresentation "𒅴" ;
+    ns2:hethzl "147" ;
+    ns2:labat "32" ;
+    ns2:meszl "61" ;
+    ns2:obo "326" ;
+    ns2:signName "EME (KA×ME)" ;
+    ns2:slha "032" ;
+    ns2:unicodeCodepoint "U+12174" ;
+    ns2:unicodeRepresentation "𒅴" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555734> .
 
