@@ -1008,7 +1008,41 @@ function prepareAnnotationFromJSON(verts,annotations){
 	return annotations
 }
 
-let camera, scene, renderer,controls,axesHelper;
+let camera, scene, renderer,controls,axesHelper,box,center,size;
+
+function fitCameraToSelection(camera, controls, selection, fitOffset = 1.2) {
+  size = new THREE.Vector3();
+  center = new THREE.Vector3();
+  box = new THREE.Box3();
+  box.makeEmpty();
+  for(const object of selection) {
+    box.expandByObject(object);
+  }
+
+  box.getSize(size);
+  box.getCenter(center );
+
+  const maxSize = Math.max(size.x, size.y, size.z);
+  const fitHeightDistance = maxSize / (2 * Math.atan(Math.PI * camera.fov / 360));
+  const fitWidthDistance = fitHeightDistance / camera.aspect;
+  const distance = fitOffset * Math.max(fitHeightDistance, fitWidthDistance);
+
+  const direction = controls.target.clone()
+    .sub(camera.position)
+    .normalize()
+    .multiplyScalar(distance);
+
+  controls.maxDistance = distance * 10;
+  controls.target.copy(center);
+
+  camera.near = distance / 100;
+  camera.far = distance * 100;
+  camera.updateProjectionMatrix();
+
+  camera.position.copy(controls.target).sub(direction);
+
+  controls.update();
+}
 
 function initThreeJS(domelement,verts,meshurls) {
     scene = new THREE.Scene();
@@ -1054,15 +1088,23 @@ function initThreeJS(domelement,verts,meshurls) {
                 objects.add(mesh);
                 scene.add(objects);
                 addRotationControls(object,geometryF,objects)
+                if(objects.children.length>0){
+                    camera.lookAt( objects.children[0].position );
+                }
+                fitCameraToSelection(camera, controls, objects.children)
             });
         }else if(meshurls[0].includes(".obj")){
             var loader= new THREE.OBJLoader();
-            loader.load(meshurls[0],function ( object ) {objects.add(object);scene.add(objects); addRotationControls(object,geometryF,objects)})
+            loader.load(meshurls[0],function ( object ) {objects.add(object);scene.add(objects); addRotationControls(object,geometryF,objects);if(objects.children.length>0){camera.lookAt( objects.children[0].position );}fitCameraToSelection(camera, controls, objects.children) })
         }else if(meshurls[0].includes(".nxs") || meshurls[0].includes(".nxz")){
             var nexus_obj=new NexusObject(meshurls[0],function(){},renderNXS,renderer);
             objects.add(nexus_obj)
             scene.add(objects);
             addRotationControls(nexus_obj,geometryF,objects)
+            if(objects.children.length>0){
+                camera.lookAt( objects.children[0].position );
+            }
+            fitCameraToSelection(camera, controls, objects.children)
         }else if(meshurls[0].includes(".gltf")){
             var loader = new THREE.GLTFLoader();
             loader.load(meshurls[0], function ( gltf )
@@ -1073,6 +1115,10 @@ function initThreeJS(domelement,verts,meshurls) {
                 objects.add(box)
                 scene.add(objects);
                 addRotationControls(box,geometryF,objects)
+                if(objects.children.length>0){
+                    camera.lookAt( objects.children[0].position );
+                }
+                fitCameraToSelection(camera, controls, objects.children)
             });
         }
     }
@@ -1117,9 +1163,6 @@ function initThreeJS(domelement,verts,meshurls) {
             renderer.setSize( width, height );
         }
     })
-    if(objects.length>0){
-        camera.lookAt( objects[0].position );
-    }
     if(meshurls.length>0 && (meshurls[0].includes(".nxs") || meshurls[0].includes(".nxz"))){
         renderNXS()
     }

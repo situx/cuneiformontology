@@ -1,3 +1,4 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -6,8 +7,8 @@
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Linkset: cunei_dataset - wiki"@en ;
-    void:linkPredicate <http://lemon-model.net/lemon#reference> ;
+    void:linkPredicate owl:sameAs ;
     void:objectsTarget <https://www.wikidata.org/wiki/> ;
     void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    void:triples 2 .
+    void:triples 1 .
 

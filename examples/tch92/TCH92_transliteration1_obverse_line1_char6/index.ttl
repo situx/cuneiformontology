@@ -1,18 +1,18 @@
-@prefix ns1: <http://www.purl.org/cuneiform#> .
-@prefix ns2: <https://situx.github.io/cuneiformontology/examples/signlist/> .
+@prefix ns1: <https://situx.github.io/cuneiformontology/examples/signlist/> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line1_char6> a ns1:TransliterationCharOccurrence,
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line1_char6> a ns2:TransliterationCharOccurrence,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "TCH92 obverse line 1 char 6"@en ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns1:charIndex 6 ;
-    ns1:lineNumber 1 ;
-    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line1_char5> ;
+    ns2:charIndex 6 ;
+    ns2:lineNumber 1 ;
+    ns2:prevChar <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line1_char5> ;
     skos:definition "tar2" ;
-    ns2:hasGraphemeReading ns2:character_ban_reading_ban .
+    ns1:hasGraphemeReading ns1:character_ban_reading_ban .
 

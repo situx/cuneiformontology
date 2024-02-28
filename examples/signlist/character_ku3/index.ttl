@@ -1,5 +1,5 @@
-@prefix ns1: <http://www.purl.org/cuneiform#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -9,16 +9,16 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: KU3"@en ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns1:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char6>,
+    ns2:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line1_char6>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line2_char4> ;
-    ns2:abzl 428 ;
-    ns2:hasUnicodeCodePoint "U+121AC" ;
-    ns2:hasUnicodeRepresentation "𒆬" ;
-    ns2:hethzl 69 ;
-    ns2:meszl 745 ;
-    ns2:signName "KU3",
+    ns1:abzl 428 ;
+    ns1:hasUnicodeCodePoint "U+121AC" ;
+    ns1:hasUnicodeRepresentation "𒆬" ;
+    ns1:hethzl 69 ;
+    ns1:meszl 745 ;
+    ns1:signName "KU3",
         "ku3" ;
-    ns2:slha 468 ;
-    ns2:variant <https://situx.github.io/cuneiformontology/examples/hs1174/ku3_charvariant1>,
+    ns1:slha 468 ;
+    ns1:variant <https://situx.github.io/cuneiformontology/examples/hs1174/ku3_charvariant1>,
         <https://situx.github.io/cuneiformontology/examples/ht073195/ku3_charvariant1> .
 

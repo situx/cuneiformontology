@@ -1,23 +1,23 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix ns1: <https://www.w3.org/ns/activitystreams#> .
-@prefix ns2: <http://www.w3.org/ns/oa#> .
+@prefix ns1: <http://www.w3.org/ns/oa#> .
+@prefix ns2: <https://www.w3.org/ns/activitystreams#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4a1aed45-24db-4cb9-a760-28486d7f6707> a <http://www.w3.org/ns/ldp#Resource>,
-        ns2:Annotation,
+        ns1:Annotation,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 1 wedge 1 on 3D rendering"@en ;
     dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
     dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns2:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4a1aed45-24db-4cb9-a760-28486d7f6707_body_charindex>,
+    ns1:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4a1aed45-24db-4cb9-a760-28486d7f6707_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4a1aed45-24db-4cb9-a760-28486d7f6707_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4a1aed45-24db-4cb9-a760-28486d7f6707_body_line>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4a1aed45-24db-4cb9-a760-28486d7f6707_body_tabletside>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4a1aed45-24db-4cb9-a760-28486d7f6707_body_wedgeindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4a1aed45-24db-4cb9-a760-28486d7f6707_body_wedgetype> ;
-    ns2:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4a1aed45-24db-4cb9-a760-28486d7f6707_target1> ;
-    ns1:generator <https://github.com/recogito/annotorious-openseadragon> .
+    ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/4a1aed45-24db-4cb9-a760-28486d7f6707_target1> ;
+    ns2:generator <https://github.com/recogito/annotorious-openseadragon> .
 

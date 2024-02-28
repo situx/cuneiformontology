@@ -48,48 +48,314 @@
     rdfs:label "Occurrences of vocabulary http://www.w3.org/ns/csvw# in cunei_dataset" ;
     voaf:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> .
 
-<https://situx.github.io/cuneiformontology/cunei_dataset_file:___C:_Users_timohomburg_git_cuneiformontology_signlist_> a void:Linkset ;
-    rdfs:label "Linkset: cunei_dataset - signlist"@en ;
-    void:linkPredicate <http://www.purl.org/graphemon#epoch> ;
-    void:objectsTarget <file:///C:/Users/timohomburg/git/cuneiformontology/signlist/> ;
+<https://situx.github.io/cuneiformontology/cunei_dataset_creativecommons.org_licenses_by-sa_4.0_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - 4.0"@en ;
+    void:linkPredicate dc:license ;
+    void:objectsTarget <https://creativecommons.org/licenses/by-sa/4.0/> ;
     void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    void:triples 126 .
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_github.com_recogito_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - recogito"@en ;
+    void:linkPredicate <https://www.w3.org/ns/activitystreams#generator> ;
+    void:objectsTarget <https://github.com/recogito/> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 681 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_gitlab.rlp.net_api_v4_projects_28015_repository_files_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - files"@en ;
+    void:linkPredicate <http://www.w3.org/ns/oa#hasSource> ;
+    void:objectsTarget <https://gitlab.rlp.net/api/v4/projects/28015/repository/files/> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 201 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_heidicon.ub.uni-heidelberg.de_eas_partitions_1_0_577000_577526_97a78512f61fae4dbdf80c43e7725822a3a23308_application_x-ply_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - x-ply"@en ;
+    void:linkPredicate <http://www.w3.org/ns/oa#hasSource> ;
+    void:objectsTarget <https://heidicon.ub.uni-heidelberg.de/eas/partitions/1/0/577000/577526/97a78512f61fae4dbdf80c43e7725822a3a23308/application/x-ply/> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 36 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_heidicon.ub.uni-heidelberg.de_eas_partitions_5_0_841000_841085_667f74981bf43066b1b10ecd71a86412da7c3074_application_x-ply_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - x-ply"@en ;
+    void:linkPredicate <http://www.w3.org/ns/oa#hasSource> ;
+    void:objectsTarget <https://heidicon.ub.uni-heidelberg.de/eas/partitions/5/0/841000/841085/667f74981bf43066b1b10ecd71a86412da7c3074/application/x-ply/> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 16 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_heidicon.ub.uni-heidelberg.de_iiif_2_1113342:577527_full_full_0_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - 0"@en ;
+    void:linkPredicate <http://www.purl.org/cuneiform#isRepresentedBy> ;
+    void:objectsTarget <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113342:577527/full/full/0/> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_heidicon.ub.uni-heidelberg.de_iiif_2_1113343:577528_full_full_0_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - 0"@en ;
+    void:linkPredicate <http://www.purl.org/cuneiform#isRepresentedBy> ;
+    void:objectsTarget <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113343:577528/full/full/0/> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_heidicon.ub.uni-heidelberg.de_iiif_2_1113344:577529_full_full_0_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - 0"@en ;
+    void:linkPredicate <http://www.purl.org/cuneiform#isRepresentedBy>,
+        <http://www.w3.org/ns/oa#hasSource> ;
+    void:objectsTarget <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113344:577529/full/full/0/> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 1,
+        115 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_heidicon.ub.uni-heidelberg.de_iiif_2_1113345:577530_full_full_0_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - 0"@en ;
+    void:linkPredicate <http://www.purl.org/cuneiform#isRepresentedBy> ;
+    void:objectsTarget <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113345:577530/full/full/0/> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_heidicon.ub.uni-heidelberg.de_iiif_2_1113346:577531_full_full_0_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - 0"@en ;
+    void:linkPredicate <http://www.purl.org/cuneiform#isRepresentedBy> ;
+    void:objectsTarget <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113346:577531/full/full/0/> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_heidicon.ub.uni-heidelberg.de_iiif_2_1113347:577532_full_full_0_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - 0"@en ;
+    void:linkPredicate <http://www.purl.org/cuneiform#isRepresentedBy>,
+        <http://www.w3.org/ns/oa#hasSource> ;
+    void:objectsTarget <https://heidicon.ub.uni-heidelberg.de/iiif/2/1113347:577532/full/full/0/> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 1,
+        21 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_heidicon.ub.uni-heidelberg.de_iiif_2_1611837:841081_full_full_0_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - 0"@en ;
+    void:linkPredicate <http://www.purl.org/cuneiform#isRepresentedBy>,
+        <http://www.w3.org/ns/oa#hasSource> ;
+    void:objectsTarget <https://heidicon.ub.uni-heidelberg.de/iiif/2/1611837:841081/full/full/0/> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 1,
+        19 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_lemon-model.net_lemon_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - lemon:"@en ;
+    void:linkPredicate rdf:type ;
+    void:objectsTarget <http://lemon-model.net/lemon#> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 100 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_orcid.org_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - orcid.org"@en ;
+    void:linkPredicate dc:contributor,
+        dcterms:creator ;
+    void:objectsTarget <https://orcid.org/> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 2,
+        681 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_pleiades.stoa.org_places_379400932_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - 379400932"@en ;
+    void:linkPredicate owl:sameAs ;
+    void:objectsTarget <https://pleiades.stoa.org/places/379400932/> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_pleiades.stoa.org_vocabularies_time-periods_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - time-periods"@en ;
+    void:linkPredicate dc:temporal,
+        <http://purl.org/dc/elements/1.1/temporal:> ;
+    void:objectsTarget <https://pleiades.stoa.org/vocabularies/time-periods/> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 1,
+        18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_purl.org_dc_elements_1.1_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - dce:"@en ;
+    void:linkPredicate dc:type ;
+    void:objectsTarget dc: ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_purl.org_meshsparql_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - msp:"@en ;
+    void:linkPredicate rdf:type ;
+    void:objectsTarget <http://purl.org/meshsparql#> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 981 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_situx.github.io_proj4rdf_def_crs_EPSG_0_4326_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - 4326"@en ;
+    void:linkPredicate geo:inSRS ;
+    void:objectsTarget <https://situx.github.io/proj4rdf/def/crs/EPSG/0/4326/> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_situx.github.io_proj4rdf_ont_crs_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - ns31:"@en ;
+    void:linkPredicate <http://situx.github.io/proj4rdf/ont/crs/axisDirection>,
+        rdf:type ;
+    void:objectsTarget <http://situx.github.io/proj4rdf/ont/crs/> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 3,
+        2293 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_www.cidoc-crm.org_cidoc-crm_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - CIDOC CRM Ontology (crm:)"@en ;
+    void:linkPredicate rdf:type,
+        rdfs:subClassOf ;
+    void:objectsTarget <http://www.cidoc-crm.org/cidoc-crm/> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 1,
+        886 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_www.gigamesh.eu_ont_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - giga:"@en ;
+    void:linkPredicate rdf:type ;
+    void:objectsTarget <http://www.gigamesh.eu/ont#> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 32 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_www.lexvo.org_page_iso639-3_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - iso639-3"@en ;
+    void:linkPredicate dc:language ;
+    void:objectsTarget <http://www.lexvo.org/page/iso639-3/> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_www.ontology-of-units-of-measure.org_resource_om-2_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - Ontology of Units of Measurement (om:)"@en ;
+    void:linkPredicate <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> ;
+    void:objectsTarget <http://www.ontology-of-units-of-measure.org/resource/om-2/> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 984 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_www.opengis.net_ont_crs_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - geocrs:"@en ;
+    void:linkPredicate <http://www.opengis.net/ont/crs/axisDirection>,
+        rdf:type ;
+    void:objectsTarget <http://www.opengis.net/ont/crs/> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 3,
+        4 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_www.opengis.net_ont_geosparql_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - The GeoSPARQL Ontology (gsp:)"@en ;
+    void:linkPredicate rdf:type ;
+    void:objectsTarget geo: ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 5 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_www.opengis.net_ont_sf_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - Simple Features Vocabulary (sf:)"@en ;
+    void:linkPredicate rdf:type ;
+    void:objectsTarget <http://www.opengis.net/ont/sf#> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_www.purl.org_cuneiform_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - cunei:"@en ;
+    void:linkPredicate <http://lemon-model.net/lemon#language>,
+        <http://www.purl.org/cuneiform#material>,
+        rdf:type,
+        rdfs:subClassOf ;
+    void:objectsTarget <http://www.purl.org/cuneiform#> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 1,
+        3,
+        4,
+        1209 .
 
 <https://situx.github.io/cuneiformontology/cunei_dataset_www.purl.org_graphemon_> a void:Linkset ;
     rdfs:label "Linkset: cunei_dataset - graphemon:"@en ;
-    void:linkPredicate rdf:type ;
+    void:linkPredicate rdf:type,
+        rdfs:subPropertyOf ;
     void:objectsTarget <http://www.purl.org/graphemon#> ;
     void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    void:triples 17172 .
+    void:triples 1,
+        247 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_www.w3.org_2002_07_owl_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - Web Ontology Language 2 Vocabulary (owl:)"@en ;
+    void:linkPredicate rdf:type ;
+    void:objectsTarget owl: ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 1156 .
 
 <https://situx.github.io/cuneiformontology/cunei_dataset_www.w3.org_2004_02_skos_core_> a void:Linkset ;
     rdfs:label "Linkset: cunei_dataset - skos:"@en ;
     void:linkPredicate rdf:type ;
     void:objectsTarget skos: ;
     void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    void:triples 5 .
+    void:triples 90 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_www.w3.org_2006_vcard_ns_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - Vcard Vocabulary (vcard2006:)"@en ;
+    void:linkPredicate rdf:type ;
+    void:objectsTarget <http://www.w3.org/2006/vcard/ns#> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_www.w3.org_ns_activitystreams_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - as:"@en ;
+    void:linkPredicate rdf:type ;
+    void:objectsTarget <https://www.w3.org/ns/activitystreams#> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 9 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_www.w3.org_ns_oa_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - Web Annotation Ontology (oa:)"@en ;
+    void:linkPredicate rdf:type,
+        <http://www.w3.org/ns/oa#motivatedBy>,
+        <http://www.w3.org/ns/oa#purpose> ;
+    void:objectsTarget <http://www.w3.org/ns/oa#> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 2221,
+        3479,
+        5168 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_www.wikidata.org_enity_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - enity"@en ;
+    void:linkPredicate <http://lemon-model.net/lemon#reference> ;
+    void:objectsTarget <http://www.wikidata.org/enity/> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 1 .
 
 <https://situx.github.io/cuneiformontology/cunei_dataset_www.wikidata.org_entity_> a void:Linkset ;
-    rdfs:label "Linkset: cunei_dataset - Wikidata Entities (wde:)"@en ;
-    void:linkPredicate <http://lemon-model.net/lemon#reference>,
-        <http://www.purl.org/graphemon#epoch>,
-        owl:sameAs ;
-    void:objectsTarget <http://www.wikidata.org/entity/> ;
-    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    void:triples 287,
-        1266,
-        3375 .
-
-<https://situx.github.io/cuneiformontology/cunei_dataset_www.wikidata.org_wiki_> a void:Linkset ;
-    rdfs:label "Linkset: cunei_dataset - wiki"@en ;
+    rdfs:label "Linkset: cunei_dataset - Wikidata Entities (wde:)"@en,
+        "Linkset: cunei_dataset - entity"@en ;
     void:linkPredicate <http://lemon-model.net/lemon#reference> ;
-    void:objectsTarget <https://www.wikidata.org/wiki/> ;
+    void:objectsTarget <http://www.wikidata.org/entity/>,
+        <https://www.wikidata.org/entity/> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 1,
+        16 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_www.wikidata.org_entry_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - entry"@en ;
+    void:linkPredicate <http://lemon-model.net/lemon#reference> ;
+    void:objectsTarget <http://www.wikidata.org/entry/> ;
     void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     void:triples 2 .
 
+<https://situx.github.io/cuneiformontology/cunei_dataset_www.wikidata.org_wiki_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - wiki"@en ;
+    void:linkPredicate owl:sameAs ;
+    void:objectsTarget <https://www.wikidata.org/wiki/> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_xmlns.com_foaf_0.1_> a void:Linkset ;
+    rdfs:label "Linkset: cunei_dataset - Friend Of A Friend Ontology (foaf:)"@en ;
+    void:linkPredicate rdf:type ;
+    void:objectsTarget foaf: ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 27 .
+
 <https://situx.github.io/cuneiformontology/dc_cunei_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://purl.org/dc/elements/1.1/ in cunei_dataset" ;
-    voaf:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> .
+    voaf:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    voaf:occurrences 36 .
 
 <https://situx.github.io/cuneiformontology/dcam_cunei_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://purl.org/dc/dcam/ in cunei_dataset" ;
@@ -113,11 +379,13 @@
 
 <https://situx.github.io/cuneiformontology/foaf_cunei_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://xmlns.com/foaf/0.1/ in cunei_dataset" ;
-    voaf:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> .
+    voaf:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    voaf:occurrences 54 .
 
 <https://situx.github.io/cuneiformontology/geo_cunei_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.opengis.net/ont/geosparql# in cunei_dataset" ;
-    voaf:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> .
+    voaf:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    voaf:occurrences 10 .
 
 <https://situx.github.io/cuneiformontology/odrl_cunei_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.w3.org/ns/odrl/2/ in cunei_dataset" ;
@@ -129,7 +397,8 @@
 
 <https://situx.github.io/cuneiformontology/owl_cunei_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.w3.org/2002/07/owl# in cunei_dataset" ;
-    voaf:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> .
+    voaf:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    voaf:occurrences 2312 .
 
 <https://situx.github.io/cuneiformontology/prof_cunei_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.w3.org/ns/dx/prof/ in cunei_dataset" ;
@@ -162,7 +431,7 @@
 <https://situx.github.io/cuneiformontology/skos_cunei_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.w3.org/2004/02/skos/core# in cunei_dataset" ;
     voaf:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    voaf:occurrences 10 .
+    voaf:occurrences 180 .
 
 <https://situx.github.io/cuneiformontology/sosa_cunei_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.w3.org/ns/sosa/ in cunei_dataset" ;
@@ -228,12 +497,6 @@ dcmitype: a voaf:Vocabulary ;
     vann:preferredNamespaceUri "http://purl.org/dc/dcmitype/"^^xsd:anyURI ;
     voaf:usageInDataset dcmitype:_cunei_dataset_occ .
 
-dc: a voaf:Vocabulary ;
-    rdfs:label "dc Vocabulary"@en ;
-    vann:preferredNamespacePrefix "dc"^^xsd:string ;
-    vann:preferredNamespaceUri "http://purl.org/dc/elements/1.1/"^^xsd:anyURI ;
-    voaf:usageInDataset dc:_cunei_dataset_occ .
-
 dcterms: a voaf:Vocabulary ;
     rdfs:label "dcterms Vocabulary"@en ;
     vann:preferredNamespacePrefix "dcterms"^^xsd:string ;
@@ -270,12 +533,6 @@ doap: a voaf:Vocabulary ;
     vann:preferredNamespaceUri "http://usefulinc.com/ns/doap#"^^xsd:anyURI ;
     voaf:usageInDataset doap:_cunei_dataset_occ .
 
-geo: a voaf:Vocabulary ;
-    rdfs:label "The GeoSPARQL Ontology"@en ;
-    vann:preferredNamespacePrefix "geo"^^xsd:string ;
-    vann:preferredNamespaceUri "http://www.opengis.net/ont/geosparql#"^^xsd:anyURI ;
-    voaf:usageInDataset geo:_cunei_dataset_occ .
-
 rdf: a voaf:Vocabulary ;
     rdfs:label "The RDF Concepts Vocabulary (RDF)"@en ;
     vann:preferredNamespacePrefix "rdf"^^xsd:string ;
@@ -293,12 +550,6 @@ xsd: a voaf:Vocabulary ;
     vann:preferredNamespacePrefix "xsd"^^xsd:string ;
     vann:preferredNamespaceUri "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ;
     voaf:usageInDataset xsd:_cunei_dataset_occ .
-
-owl: a voaf:Vocabulary ;
-    rdfs:label "Web Ontology Language 2 Vocabulary"@en ;
-    vann:preferredNamespacePrefix "owl"^^xsd:string ;
-    vann:preferredNamespaceUri "http://www.w3.org/2002/07/owl#"^^xsd:anyURI ;
-    voaf:usageInDataset owl:_cunei_dataset_occ .
 
 time: a voaf:Vocabulary ;
     rdfs:label "time Vocabulary"@en ;
@@ -374,14 +625,6 @@ ssn: a voaf:Vocabulary ;
 
 <http://www.wikidata.org/entity/Q121810372> rdfs:label "geospatial data"@en .
 
-foaf: a voaf:Vocabulary ;
-    rdfs:label "Friend Of A Friend Ontology"@en ;
-    vann:preferredNamespacePrefix "foaf"^^xsd:string ;
-    vann:preferredNamespaceUri "http://xmlns.com/foaf/0.1/"^^xsd:anyURI ;
-    voaf:usageInDataset foaf:_cunei_dataset_occ .
-
-foaf:Person rdfs:label "Person"@en .
-
 brick: a voaf:Vocabulary ;
     rdfs:label "brick Vocabulary"@en ;
     vann:preferredNamespacePrefix "brick"^^xsd:string ;
@@ -394,144 +637,1448 @@ schema: a voaf:Vocabulary ;
     vann:preferredNamespaceUri "https://schema.org/"^^xsd:anyURI ;
     voaf:usageInDataset schema:_cunei_dataset_occ .
 
+<https://situx.github.io/cuneiformontology/cunei_dataset_3DMesh> a void:Dataset ;
+    rdfs:label "Class Partition: 3DMesh"@en ;
+    void:class <http://www.purl.org/cuneiform#3DMesh> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_3DRendering> a void:Dataset ;
+    rdfs:label "Class Partition: 3DRendering"@en ;
+    void:class <http://www.purl.org/cuneiform#3DRendering> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Agent> a void:Dataset ;
+    rdfs:label "Class Partition: Agent"@en ;
+    void:class prov:Agent .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Annotation> a void:Dataset ;
+    rdfs:label "Class Partition: Annotation"@en ;
+    void:class <http://www.w3.org/ns/oa#Annotation> ;
+    void:entities 681 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_BorderFaces> a void:Dataset ;
+    rdfs:label "Class Partition: BorderFaces"@en ;
+    void:class <http://www.gigamesh.eu/ont#BorderFaces> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_BorderFacesBridgeTriConnection> a void:Dataset ;
+    rdfs:label "Class Partition: BorderFacesBridgeTriConnection"@en ;
+    void:class <http://www.gigamesh.eu/ont#BorderFacesBridgeTriConnection> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_BorderVertices> a void:Dataset ;
+    rdfs:label "Class Partition: BorderVertices"@en ;
+    void:class <http://www.gigamesh.eu/ont#BorderVertices> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_BottomSide> a void:Dataset ;
+    rdfs:label "Class Partition: BottomSide"@en ;
+    void:class <http://www.purl.org/cuneiform#BottomSide> ;
+    void:entities 4 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_BridgeBorderFaces> a void:Dataset ;
+    rdfs:label "Class Partition: BridgeBorderFaces"@en ;
+    void:class <http://www.gigamesh.eu/ont#BridgeBorderFaces> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_CDLINumber> a void:Dataset ;
+    rdfs:label "Property Partition: CDLINumber"@en ;
+    void:property <http://www.purl.org/cuneiform#CDLINumber> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_CartesianCS> a void:Dataset ;
+    rdfs:label "Class Partition: CartesianCS"@en ;
+    void:class <http://situx.github.io/proj4rdf/ont/crs/CartesianCS>,
+        <http://www.opengis.net/ont/crs/CartesianCS> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_CharOccurrenceCollection> a void:Dataset ;
+    rdfs:label "Class Partition: CharOccurrenceCollection"@en ;
+    void:class <http://www.purl.org/graphemon#CharOccurrenceCollection> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_CircleCenterVertices> a void:Dataset ;
+    rdfs:label "Class Partition: CircleCenterVertices"@en ;
+    void:class <http://www.gigamesh.eu/ont#CircleCenterVertices> ;
+    void:entities 1 .
+
 <https://situx.github.io/cuneiformontology/cunei_dataset_Collection> a void:Dataset ;
     rdfs:label "Class Partition: Collection"@en ;
-    void:class skos:Collection ;
+    void:class skos:Collection,
+        <https://www.w3.org/ns/activitystreams#Collection> ;
+    void:entities 9,
+        90 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_ComputingReference> a void:Dataset ;
+    rdfs:label "Class Partition: ComputingReference"@en ;
+    void:class <http://purl.org/meshsparql#ComputingReference> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_ConnectedComponents> a void:Dataset ;
+    rdfs:label "Class Partition: ConnectedComponents"@en ;
+    void:class <http://www.gigamesh.eu/ont#ConnectedComponents> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_CoordinateOperation> a void:Dataset ;
+    rdfs:label "Class Partition: CoordinateOperation"@en ;
+    void:class <http://situx.github.io/proj4rdf/ont/crs/CoordinateOperation> ;
+    void:entities 327 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_CoordinateSystemAxis> a void:Dataset ;
+    rdfs:label "Class Partition: CoordinateSystemAxis"@en ;
+    void:class <http://situx.github.io/proj4rdf/ont/crs/CoordinateSystemAxis>,
+        <http://www.opengis.net/ont/crs/CoordinateSystemAxis> ;
+    void:entities 3 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_CountryCode> a void:Dataset ;
+    rdfs:label "Property Partition: CountryCode"@en ;
+    void:property <http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/CountryCode> ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_CreatorTool> a void:Dataset ;
+    rdfs:label "Property Partition: CreatorTool"@en ;
+    void:property <http://ns.adobe.com/xap/1.0/CreatorTool> ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_CuneiformArtifactCollection> a void:Dataset ;
+    rdfs:label "Class Partition: CuneiformArtifactCollection"@en ;
+    void:class <http://www.purl.org/cuneiform#CuneiformArtifactCollection> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_CuneiformWedge> a void:Dataset ;
+    rdfs:label "Class Partition: CuneiformWedge"@en ;
+    void:class <http://www.purl.org/graphemon#CuneiformWedge> ;
+    void:entities 12 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_DanglingBorderFaces> a void:Dataset ;
+    rdfs:label "Class Partition: DanglingBorderFaces"@en ;
+    void:class <http://www.gigamesh.eu/ont#DanglingBorderFaces> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_DateTime> a void:Dataset ;
+    rdfs:label "Property Partition: DateTime"@en ;
+    void:property <http://www.w3.org/2003/12/exif/ns#DateTime> ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_E22_ManMadeObject> a void:Dataset ;
+    rdfs:label "Class Partition: E22_ManMadeObject"@en ;
+    void:class <http://www.cidoc-crm.org/cidoc-crm/E22_ManMadeObject> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Entity> a void:Dataset ;
+    rdfs:label "Class Partition: Entity"@en ;
+    void:class prov:Entity .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Event> a void:Dataset ;
+    rdfs:label "Property Partition: Event"@en ;
+    void:property <http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/Event> ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_ExifOffset> a void:Dataset ;
+    rdfs:label "Property Partition: ExifOffset"@en ;
+    void:property <http://www.w3.org/2003/12/exif/ns#ExifOffset> ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Feature> a void:Dataset ;
+    rdfs:label "Class Partition: Feature"@en ;
+    void:class geo:Feature ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_FeatureCollection> a void:Dataset ;
+    rdfs:label "Class Partition: FeatureCollection"@en ;
+    void:class geo:FeatureCollection ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_FiniteFunctionValueVertices> a void:Dataset ;
+    rdfs:label "Class Partition: FiniteFunctionValueVertices"@en ;
+    void:class <http://www.gigamesh.eu/ont#FiniteFunctionValueVertices> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_FragmentSelector> a void:Dataset ;
+    rdfs:label "Class Partition: FragmentSelector"@en ;
+    void:class <http://www.w3.org/ns/oa#FragmentSelector> ;
     void:entities 5 .
 
-<https://situx.github.io/cuneiformontology/cunei_dataset_Epoch> a void:Dataset ;
-    rdfs:label "Class Partition: Epoch"@en ;
-    void:class <http://www.purl.org/cuneiform#Epoch> .
+<https://situx.github.io/cuneiformontology/cunei_dataset_GPSLatitude> a void:Dataset ;
+    rdfs:label "Property Partition: GPSLatitude"@en ;
+    void:property <http://www.w3.org/2003/12/exif/ns#GPSLatitude> ;
+    void:triples 18 .
 
-<https://situx.github.io/cuneiformontology/cunei_dataset_Grapheme> a void:Dataset ;
-    rdfs:label "Class Partition: Grapheme"@en ;
-    void:class <http://www.purl.org/graphemon#Grapheme> ;
-    void:entities 1312 .
+<https://situx.github.io/cuneiformontology/cunei_dataset_GPSLongitude> a void:Dataset ;
+    rdfs:label "Property Partition: GPSLongitude"@en ;
+    void:property <http://www.w3.org/2003/12/exif/ns#GPSLongitude> ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Geometry> a void:Dataset ;
+    rdfs:label "Class Partition: Geometry"@en ;
+    void:class geo:Geometry ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_GeometryCollection> a void:Dataset ;
+    rdfs:label "Class Partition: GeometryCollection"@en ;
+    void:class geo:GeometryCollection ;
+    void:entities 2 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_GigameshInfo> a void:Dataset ;
+    rdfs:label "Class Partition: GigameshInfo"@en ;
+    void:class <http://www.gigamesh.eu/ont#GigameshInfo> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_GlyphCollection> a void:Dataset ;
+    rdfs:label "Class Partition: GlyphCollection"@en ;
+    void:class <http://www.purl.org/graphemon#GlyphCollection> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_GraphemeAtomicPart> a void:Dataset ;
+    rdfs:label "Class Partition: GraphemeAtomicPart"@en ;
+    void:class <http://www.purl.org/graphemon#GraphemeAtomicPart> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_GraphemeAtomicPartCollection> a void:Dataset ;
+    rdfs:label "Class Partition: GraphemeAtomicPartCollection"@en ;
+    void:class <http://www.purl.org/graphemon#GraphemeAtomicPartCollection> ;
+    void:entities 2 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_GraphemeCollection> a void:Dataset ;
+    rdfs:label "Class Partition: GraphemeCollection"@en ;
+    void:class <http://www.purl.org/graphemon#GraphemeCollection> ;
+    void:entities 4 .
 
 <https://situx.github.io/cuneiformontology/cunei_dataset_GraphemeComposition> a void:Dataset ;
     rdfs:label "Class Partition: GraphemeComposition"@en ;
     void:class <http://www.purl.org/graphemon#GraphemeComposition> ;
-    void:entities 3153 .
+    void:entities 3 .
 
-<https://situx.github.io/cuneiformontology/cunei_dataset_GraphemeList> a void:Dataset ;
-    rdfs:label "Class Partition: GraphemeList"@en ;
-    void:class <http://www.purl.org/graphemon#GraphemeList> ;
-    void:entities 1 .
+<https://situx.github.io/cuneiformontology/cunei_dataset_GraphemePart> a void:Dataset ;
+    rdfs:label "Class Partition: GraphemePart"@en ;
+    void:class <http://www.purl.org/graphemon#GraphemePart> .
 
 <https://situx.github.io/cuneiformontology/cunei_dataset_GraphemeReading> a void:Dataset ;
     rdfs:label "Class Partition: GraphemeReading"@en ;
     void:class <http://www.purl.org/graphemon#GraphemeReading> ;
-    void:entities 12036 .
+    void:entities 147 .
 
-<https://situx.github.io/cuneiformontology/cunei_dataset_GraphemeSense> a void:Dataset ;
-    rdfs:label "Class Partition: GraphemeSense"@en ;
-    void:class <http://www.purl.org/graphemon#GraphemeSense> ;
-    void:entities 670 .
+<https://situx.github.io/cuneiformontology/cunei_dataset_GraphemeReadingCollection> a void:Dataset ;
+    rdfs:label "Class Partition: GraphemeReadingCollection"@en ;
+    void:class <http://www.purl.org/graphemon#GraphemeReadingCollection> ;
+    void:entities 4 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_GraphemeVariant> a void:Dataset ;
+    rdfs:label "Class Partition: GraphemeVariant"@en ;
+    void:class <http://www.purl.org/graphemon#GraphemeVariant> ;
+    void:entities 71 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_GraphemeVariantCollection> a void:Dataset ;
+    rdfs:label "Class Partition: GraphemeVariantCollection"@en ;
+    void:class <http://www.purl.org/graphemon#GraphemeVariantCollection> ;
+    void:entities 2 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Group> a void:Dataset ;
+    rdfs:label "Class Partition: Group"@en ;
+    void:class <http://www.w3.org/2006/vcard/ns#Group> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Image> a void:Dataset ;
+    rdfs:label "Class Partition: Image"@en ;
+    void:class foaf:Image,
+        <https://situx.github.io/cuneiformontology/examples/hs1174/Image> ;
+    void:entities 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_InvertedFaces> a void:Dataset ;
+    rdfs:label "Class Partition: InvertedFaces"@en ;
+    void:class <http://www.gigamesh.eu/ont#InvertedFaces> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_LeftSide> a void:Dataset ;
+    rdfs:label "Class Partition: LeftSide"@en ;
+    void:class <http://www.purl.org/cuneiform#LeftSide> ;
+    void:entities 4 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_LexicalEntity> a void:Dataset ;
+    rdfs:label "Class Partition: LexicalEntity"@en ;
+    void:class <http://lemon-model.net/lemon#LexicalEntity> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_LexicalForm> a void:Dataset ;
+    rdfs:label "Class Partition: LexicalForm"@en ;
+    void:class <http://lemon-model.net/lemon#LexicalForm> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_LexicalSense> a void:Dataset ;
+    rdfs:label "Class Partition: LexicalSense"@en ;
+    void:class <http://lemon-model.net/lemon#LexicalSense> ;
+    void:entities 31 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Lexicon> a void:Dataset ;
+    rdfs:label "Class Partition: Lexicon"@en ;
+    void:class <http://lemon-model.net/lemon#Lexicon> ;
+    void:entities 4 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Line> a void:Dataset ;
+    rdfs:label "Class Partition: Line"@en ;
+    void:class <http://www.purl.org/cuneiform#Line> ;
+    void:entities 95 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_LocalFunctionMaxValueVertices> a void:Dataset ;
+    rdfs:label "Class Partition: LocalFunctionMaxValueVertices"@en ;
+    void:class <http://www.gigamesh.eu/ont#LocalFunctionMaxValueVertices> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_LocalFunctionMinValueVertices> a void:Dataset ;
+    rdfs:label "Class Partition: LocalFunctionMinValueVertices"@en ;
+    void:class <http://www.gigamesh.eu/ont#LocalFunctionMinValueVertices> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_LocationCreatedCity> a void:Dataset ;
+    rdfs:label "Property Partition: LocationCreatedCity"@en ;
+    void:property <http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/LocationCreatedCity> ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_LocationCreatedCountryName> a void:Dataset ;
+    rdfs:label "Property Partition: LocationCreatedCountryName"@en ;
+    void:property <http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/LocationCreatedCountryName> ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_LocationCreatedWorldRegion> a void:Dataset ;
+    rdfs:label "Property Partition: LocationCreatedWorldRegion"@en ;
+    void:property <http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/LocationCreatedWorldRegion> ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Make> a void:Dataset ;
+    rdfs:label "Property Partition: Make"@en ;
+    void:property <http://www.w3.org/2003/12/exif/ns#Make> ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_ManifoldFaces> a void:Dataset ;
+    rdfs:label "Class Partition: ManifoldFaces"@en ;
+    void:class <http://www.gigamesh.eu/ont#ManifoldFaces> ;
+    void:entities 2 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_ManuallyAddedVertices> a void:Dataset ;
+    rdfs:label "Class Partition: ManuallyAddedVertices"@en ;
+    void:class <http://www.gigamesh.eu/ont#ManuallyAddedVertices> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Material> a void:Dataset ;
+    rdfs:label "Class Partition: Material"@en ;
+    void:class <http://www.purl.org/cuneiform#Material> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Mesh> a void:Dataset ;
+    rdfs:label "Class Partition: Mesh"@en ;
+    void:class <http://www.gigamesh.eu/ont#Mesh> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_MeshLabelSelector> a void:Dataset ;
+    rdfs:label "Class Partition: MeshLabelSelector"@en ;
+    void:class <http://purl.org/meshsparql#MeshLabelSelector> ;
+    void:entities 327 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_MeshReferenceSelector> a void:Dataset ;
+    rdfs:label "Class Partition: MeshReferenceSelector"@en ;
+    void:class <http://purl.org/meshsparql#MeshReferenceSelector> ;
+    void:entities 327 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Model> a void:Dataset ;
+    rdfs:label "Property Partition: Model"@en ;
+    void:property <http://www.w3.org/2003/12/exif/ns#Model> ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_NonManifoldFaces> a void:Dataset ;
+    rdfs:label "Class Partition: NonManifoldFaces"@en ;
+    void:class <http://www.gigamesh.eu/ont#NonManifoldFaces> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_NonManifoldVertices> a void:Dataset ;
+    rdfs:label "Class Partition: NonManifoldVertices"@en ;
+    void:class <http://www.gigamesh.eu/ont#NonManifoldVertices> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_ObverseSide> a void:Dataset ;
+    rdfs:label "Class Partition: ObverseSide"@en ;
+    void:class <http://www.purl.org/cuneiform#ObverseSide> ;
+    void:entities 4 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Occurence> a void:Dataset ;
+    rdfs:label "Property Partition: Occurence"@en ;
+    void:property <http://www.purl.org/cuneiform#Occurence> ;
+    void:triples 2 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Occurrence> a void:Dataset ;
+    rdfs:label "Property Partition: Occurrence"@en ;
+    void:property <http://www.purl.org/cuneiform#Occurrence> ;
+    void:triples 26 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_OperationParameter> a void:Dataset ;
+    rdfs:label "Class Partition: OperationParameter"@en ;
+    void:class <http://situx.github.io/proj4rdf/ont/crs/OperationParameter> ;
+    void:entities 981 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_OperationParameterValue> a void:Dataset ;
+    rdfs:label "Class Partition: OperationParameterValue"@en ;
+    void:class <http://situx.github.io/proj4rdf/ont/crs/OperationParameterValue> ;
+    void:entities 981 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Orientation> a void:Dataset ;
+    rdfs:label "Property Partition: Orientation"@en ;
+    void:property <http://www.w3.org/2003/12/exif/ns#Orientation> ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Owner> a void:Dataset ;
+    rdfs:label "Property Partition: Owner"@en ;
+    void:property <http://ns.adobe.com/xap/1.0/Owner> ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_P361> a void:Dataset ;
+    rdfs:label "Property Partition: P361"@en ;
+    void:property <http://www.wikidata.org/prop/direct/P361> ;
+    void:triples 28 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_P62_depicted_by> a void:Dataset ;
+    rdfs:label "Property Partition: P62_depicted_by"@en ;
+    void:property <http://www.cidoc-crm.org/cidoc-crm/P62_depicted_by> ;
+    void:triples 23 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_PCAReference> a void:Dataset ;
+    rdfs:label "Class Partition: PCAReference"@en ;
+    void:class <http://purl.org/meshsparql#PCAReference> ;
+    void:entities 327 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_PaleoCodeWedgeType> a void:Dataset ;
+    rdfs:label "Class Partition: PaleoCodeWedgeType"@en ;
+    void:class <http://www.purl.org/cuneiform#PaleoCodeWedgeType> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_PaleoCode_A> a void:Dataset ;
+    rdfs:label "Class Partition: PaleoCode_A"@en ;
+    void:class <http://www.purl.org/cuneiform#PaleoCode_A> ;
+    void:entities 35 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_PaleoCode_B> a void:Dataset ;
+    rdfs:label "Class Partition: PaleoCode_B"@en ;
+    void:class <http://www.purl.org/cuneiform#PaleoCode_B> ;
+    void:entities 44 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_PaleoCode_C> a void:Dataset ;
+    rdfs:label "Class Partition: PaleoCode_C"@en ;
+    void:class <http://www.purl.org/cuneiform#PaleoCode_C> ;
+    void:entities 4 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_PaleoCode_D> a void:Dataset ;
+    rdfs:label "Class Partition: PaleoCode_D"@en ;
+    void:class <http://www.purl.org/cuneiform#PaleoCode_D> ;
+    void:entities 3 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_PaleoCode_W> a void:Dataset ;
+    rdfs:label "Class Partition: PaleoCode_W"@en ;
+    void:class <http://www.purl.org/cuneiform#PaleoCode_W> ;
+    void:entities 9 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Person> a void:Dataset ;
+    rdfs:label "Class Partition: Person"@en ;
+    void:class foaf:Person ;
+    void:entities 9 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Polygon> a void:Dataset ;
+    rdfs:label "Class Partition: Polygon"@en ;
+    void:class <http://www.opengis.net/ont/sf#Polygon> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Representation> a void:Dataset ;
+    rdfs:label "Class Partition: Representation"@en ;
+    void:class <http://www.purl.org/cuneiform#Representation> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_ResolutionUnit> a void:Dataset ;
+    rdfs:label "Property Partition: ResolutionUnit"@en ;
+    void:property <http://www.w3.org/2003/12/exif/ns#ResolutionUnit> ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_ReverseSide> a void:Dataset ;
+    rdfs:label "Class Partition: ReverseSide"@en ;
+    void:class <http://www.purl.org/cuneiform#ReverseSide> ;
+    void:entities 4 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_RightSide> a void:Dataset ;
+    rdfs:label "Class Partition: RightSide"@en ;
+    void:class <http://www.purl.org/cuneiform#RightSide> ;
+    void:entities 4 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_SelectedFaces> a void:Dataset ;
+    rdfs:label "Class Partition: SelectedFaces"@en ;
+    void:class <http://www.gigamesh.eu/ont#SelectedFaces> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_SelectedVertices> a void:Dataset ;
+    rdfs:label "Class Partition: SelectedVertices"@en ;
+    void:class <http://www.gigamesh.eu/ont#SelectedVertices> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Selector> a void:Dataset ;
+    rdfs:label "Class Partition: Selector"@en ;
+    void:class <http://www.w3.org/ns/oa#Selector> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Sentence> a void:Dataset ;
+    rdfs:label "Class Partition: Sentence"@en ;
+    void:class <http://www.purl.org/cuneiform#Sentence> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_SingularVertices> a void:Dataset ;
+    rdfs:label "Class Partition: SingularVertices"@en ;
+    void:class <http://www.gigamesh.eu/ont#SingularVertices> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_SoloFaces> a void:Dataset ;
+    rdfs:label "Class Partition: SoloFaces"@en ;
+    void:class <http://www.gigamesh.eu/ont#SoloFaces> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_SpatialObject> a void:Dataset ;
+    rdfs:label "Class Partition: SpatialObject"@en ;
+    void:class geo:SpatialObject .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_SpatialObjectCollection> a void:Dataset ;
+    rdfs:label "Class Partition: SpatialObjectCollection"@en ;
+    void:class geo:SpatialObjectCollection .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_SpecificResource> a void:Dataset ;
+    rdfs:label "Class Partition: SpecificResource"@en ;
+    void:class <http://www.w3.org/ns/oa#SpecificResource> ;
+    void:entities 1258 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_StickyFaces> a void:Dataset ;
+    rdfs:label "Class Partition: StickyFaces"@en ;
+    void:class <http://www.gigamesh.eu/ont#StickyFaces> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Stroketyped> a void:Dataset ;
+    rdfs:label "Class Partition: Stroketyped"@en ;
+    void:class <http://www.purl.org/graphemon#Stroketyped> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_SvgSelector> a void:Dataset ;
+    rdfs:label "Class Partition: SvgSelector"@en ;
+    void:class <http://www.w3.org/ns/oa#SvgSelector> ;
+    void:entities 676 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_SyntheticVertexFaces> a void:Dataset ;
+    rdfs:label "Class Partition: SyntheticVertexFaces"@en ;
+    void:class <http://www.gigamesh.eu/ont#SyntheticVertexFaces> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_SyntheticVertices> a void:Dataset ;
+    rdfs:label "Class Partition: SyntheticVertices"@en ;
+    void:class <http://www.gigamesh.eu/ont#SyntheticVertices> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_TX1_WrittenText> a void:Dataset ;
+    rdfs:label "Class Partition: TX1_WrittenText"@en ;
+    void:class <http://www.cidoc-crm.org/cidoc-crm/TX1_WrittenText> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_TX2_Writing> a void:Dataset ;
+    rdfs:label "Class Partition: TX2_Writing"@en ;
+    void:class <http://www.cidoc-crm.org/cidoc-crm/TX2_Writing> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_TX4_WritingField> a void:Dataset ;
+    rdfs:label "Class Partition: TX4_WritingField"@en ;
+    void:class <http://www.cidoc-crm.org/cidoc-crm/TX4_WritingField> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_TX5_Reading> a void:Dataset ;
+    rdfs:label "Class Partition: TX5_Reading"@en ;
+    void:class <http://www.cidoc-crm.org/cidoc-crm/TX5_Reading> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_TX6_Transcription> a void:Dataset ;
+    rdfs:label "Class Partition: TX6_Transcription"@en ;
+    void:class <http://www.cidoc-crm.org/cidoc-crm/TX6_Transcription> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_TX7_WrittenTextFragment> a void:Dataset ;
+    rdfs:label "Class Partition: TX7_WrittenTextFragment"@en ;
+    void:class <https://situx.github.io/cuneiformontology/examples/hs1174/TX7_WrittenTextFragment> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_TX8_Grapheme> a void:Dataset ;
+    rdfs:label "Class Partition: TX8_Grapheme"@en ;
+    void:class <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme> ;
+    void:entities 133 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_TX9_Glyph> a void:Dataset ;
+    rdfs:label "Class Partition: TX9_Glyph"@en ;
+    void:class <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph> ;
+    void:entities 751 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_TXP3_is_rendered_by> a void:Dataset ;
+    rdfs:label "Property Partition: TXP3_is_rendered_by"@en ;
+    void:property <http://www.cidoc-crm.org/cidoc-crm/TXP3_is_rendered_by> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Tablet> a void:Dataset ;
+    rdfs:label "Class Partition: Tablet"@en ;
+    void:class <http://www.purl.org/cuneiform#Tablet> ;
+    void:entities 4 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_TabletFeature> a void:Dataset ;
+    rdfs:label "Class Partition: TabletFeature"@en ;
+    void:class <http://www.purl.org/cuneiform#TabletFeature> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_TabletSurface> a void:Dataset ;
+    rdfs:label "Class Partition: TabletSurface"@en ;
+    void:class <http://www.purl.org/cuneiform#TabletSurface> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_TextualBody> a void:Dataset ;
+    rdfs:label "Class Partition: TextualBody"@en ;
+    void:class <http://www.w3.org/ns/oa#TextualBody> ;
+    void:entities 2221 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_ThreeBorderVertexFaces> a void:Dataset ;
+    rdfs:label "Class Partition: ThreeBorderVertexFaces"@en ;
+    void:class <http://www.gigamesh.eu/ont#ThreeBorderVertexFaces> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_TopSide> a void:Dataset ;
+    rdfs:label "Class Partition: TopSide"@en ;
+    void:class <http://www.purl.org/cuneiform#TopSide> ;
+    void:entities 4 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_TotalNumberOfFaces> a void:Dataset ;
+    rdfs:label "Class Partition: TotalNumberOfFaces"@en ;
+    void:class <http://www.gigamesh.eu/ont#TotalNumberOfFaces> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_TotalNumberOfVertices> a void:Dataset ;
+    rdfs:label "Class Partition: TotalNumberOfVertices"@en ;
+    void:class <http://www.gigamesh.eu/ont#TotalNumberOfVertices> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Transliteration> a void:Dataset ;
+    rdfs:label "Class Partition: Transliteration"@en ;
+    void:class <http://www.purl.org/cuneiform#Transliteration> ;
+    void:entities 4 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_TransliterationCharOccurrence> a void:Dataset ;
+    rdfs:label "Class Partition: TransliterationCharOccurrence"@en ;
+    void:class <http://www.purl.org/cuneiform#TransliterationCharOccurrence> ;
+    void:entities 710 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_TransliterationLine> a void:Dataset ;
+    rdfs:label "Class Partition: TransliterationLine"@en ;
+    void:class <http://www.purl.org/cuneiform#TransliterationLine> ;
+    void:entities 95 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_TransliterationPart> a void:Dataset ;
+    rdfs:label "Class Partition: TransliterationPart"@en ;
+    void:class <http://www.purl.org/cuneiform#TransliterationPart> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_TransliterationWordOccurrence> a void:Dataset ;
+    rdfs:label "Class Partition: TransliterationWordOccurrence"@en ;
+    void:class <http://www.purl.org/cuneiform#TransliterationWordOccurrence> ;
+    void:entities 176 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_UsageTerms> a void:Dataset ;
+    rdfs:label "Property Partition: UsageTerms"@en ;
+    void:property <http://ns.adobe.com/xap/1.0/UsageTerms> ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_VertexIsolated> a void:Dataset ;
+    rdfs:label "Class Partition: VertexIsolated"@en ;
+    void:class <http://www.gigamesh.eu/ont#VertexIsolated> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_VertexNormalLength> a void:Dataset ;
+    rdfs:label "Class Partition: VertexNormalLength"@en ;
+    void:class <http://www.gigamesh.eu/ont#VertexNormalLength> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_VerticesOnInvertedEdge> a void:Dataset ;
+    rdfs:label "Class Partition: VerticesOnInvertedEdge"@en ;
+    void:class <http://www.gigamesh.eu/ont#VerticesOnInvertedEdge> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_VerticesPartOfZeroAreaFace> a void:Dataset ;
+    rdfs:label "Class Partition: VerticesPartOfZeroAreaFace"@en ;
+    void:class <http://www.gigamesh.eu/ont#VerticesPartOfZeroAreaFace> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_WKTSelector> a void:Dataset ;
+    rdfs:label "Class Partition: WKTSelector"@en ;
+    void:class <http://www.w3.org/ns/oa#WKTSelector> ;
+    void:entities 327 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_WedgeGlyph> a void:Dataset ;
+    rdfs:label "Class Partition: WedgeGlyph"@en ;
+    void:class <http://www.purl.org/cuneiform#WedgeGlyph> ;
+    void:entities 3 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_WedgeType> a void:Dataset ;
+    rdfs:label "Class Partition: WedgeType"@en ;
+    void:class <http://www.purl.org/cuneiform#WedgeType> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Word> a void:Dataset ;
+    rdfs:label "Class Partition: Word"@en ;
+    void:class <http://lemon-model.net/lemon#Word> ;
+    void:entities 33 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_WordForm> a void:Dataset ;
+    rdfs:label "Class Partition: WordForm"@en ;
+    void:class <http://lemon-model.net/lemon#WordForm>,
+        <http://www.purl.org/cuneiform#WordForm> ;
+    void:entities 32 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_WordFormOccurrenceCollection> a void:Dataset ;
+    rdfs:label "Class Partition: WordFormOccurrenceCollection"@en ;
+    void:class <http://www.purl.org/cuneiform#WordFormOccurrenceCollection> ;
+    void:entities 2 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_XResolution> a void:Dataset ;
+    rdfs:label "Property Partition: XResolution"@en ;
+    void:property <http://www.w3.org/2003/12/exif/ns#XResolution> ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_YCbCrPositioning> a void:Dataset ;
+    rdfs:label "Property Partition: YCbCrPositioning"@en ;
+    void:property <http://www.w3.org/2003/12/exif/ns#YCbCrPositioning> ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_YResolution> a void:Dataset ;
+    rdfs:label "Property Partition: YResolution"@en ;
+    void:property <http://www.w3.org/2003/12/exif/ns#YResolution> ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_ZeroAreaFaces> a void:Dataset ;
+    rdfs:label "Class Partition: ZeroAreaFaces"@en ;
+    void:class <http://www.gigamesh.eu/ont#ZeroAreaFaces> ;
+    void:entities 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_abbreviation> a void:Dataset ;
+    rdfs:label "Property Partition: abbreviation"@en ;
+    void:property <http://situx.github.io/proj4rdf/ont/crs/abbreviation>,
+        <http://www.opengis.net/ont/crs/abbreviation> ;
+    void:triples 3 .
 
 <https://situx.github.io/cuneiformontology/cunei_dataset_abzl> a void:Dataset ;
     rdfs:label "Property Partition: abzl"@en ;
     void:property <http://www.purl.org/graphemon#abzl> ;
-    void:triples 493 .
+    void:triples 112 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_altLabel> a void:Dataset ;
+    rdfs:label "Property Partition: altLabel"@en ;
+    void:property skos:altLabel ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_altSignName> a void:Dataset ;
+    rdfs:label "Property Partition: altSignName"@en ;
+    void:property <http://www.purl.org/graphemon#altSignName> ;
+    void:triples 21 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_amountOfConnectedComponents> a void:Dataset ;
+    rdfs:label "Property Partition: amountOfConnectedComponents"@en ;
+    void:property <http://www.gigamesh.eu/ont#amountOfConnectedComponents> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_asSVG> a void:Dataset ;
+    rdfs:label "Property Partition: asSVG"@en ;
+    void:property <http://situx.github.io/proj4rdf/ont/crs/asSVG>,
+        <http://www.opengis.net/ont/crs/asSVG>,
+        <http://www.purl.org/graphemon#asSVG> ;
+    void:triples 1,
+        13 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_asWKT> a void:Dataset ;
+    rdfs:label "Property Partition: asWKT"@en ;
+    void:property <http://situx.github.io/proj4rdf/ont/crs/asWKT>,
+        <http://www.opengis.net/ont/crs/asWKT>,
+        geo:asWKT ;
+    void:triples 1,
+        2 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_axis> a void:Dataset ;
+    rdfs:label "Property Partition: axis"@en ;
+    void:property <http://situx.github.io/proj4rdf/ont/crs/axis>,
+        <http://www.opengis.net/ont/crs/axis> ;
+    void:triples 3 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_axisDirection> a void:Dataset ;
+    rdfs:label "Property Partition: axisDirection"@en ;
+    void:property <http://situx.github.io/proj4rdf/ont/crs/axisDirection>,
+        <http://www.opengis.net/ont/crs/axisDirection> ;
+    void:triples 3 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_axisOrder> a void:Dataset ;
+    rdfs:label "Property Partition: axisOrder"@en ;
+    void:property <http://situx.github.io/proj4rdf/ont/crs/axisOrder>,
+        <http://www.opengis.net/ont/crs/axisOrder> ;
+    void:triples 3 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_borderFaces> a void:Dataset ;
+    rdfs:label "Property Partition: borderFaces"@en ;
+    void:property <http://www.gigamesh.eu/ont#borderFaces> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_borderFacesBridgeTriConnection> a void:Dataset ;
+    rdfs:label "Property Partition: borderFacesBridgeTriConnection"@en ;
+    void:property <http://www.gigamesh.eu/ont#borderFacesBridgeTriConnection> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_borderVertices> a void:Dataset ;
+    rdfs:label "Property Partition: borderVertices"@en ;
+    void:property <http://www.gigamesh.eu/ont#borderVertices> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_boundingBox> a void:Dataset ;
+    rdfs:label "Property Partition: boundingBox"@en ;
+    void:property <http://www.gigamesh.eu/ont#boundingBox> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_boundingBoxHeight> a void:Dataset ;
+    rdfs:label "Property Partition: boundingBoxHeight"@en ;
+    void:property <http://www.gigamesh.eu/ont#boundingBoxHeight> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_boundingBoxThickness> a void:Dataset ;
+    rdfs:label "Property Partition: boundingBoxThickness"@en ;
+    void:property <http://www.gigamesh.eu/ont#boundingBoxThickness> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_boundingBoxWidth> a void:Dataset ;
+    rdfs:label "Property Partition: boundingBoxWidth"@en ;
+    void:property <http://www.gigamesh.eu/ont#boundingBoxWidth> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_bridgeBorderFaces> a void:Dataset ;
+    rdfs:label "Property Partition: bridgeBorderFaces"@en ;
+    void:property <http://www.gigamesh.eu/ont#bridgeBorderFaces> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_charIndex> a void:Dataset ;
+    rdfs:label "Property Partition: charIndex"@en ;
+    void:property <http://www.purl.org/cuneiform#charIndex> ;
+    void:triples 775 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_circleCenterVertices> a void:Dataset ;
+    rdfs:label "Property Partition: circleCenterVertices"@en ;
+    void:property <http://www.gigamesh.eu/ont#circleCenterVertices> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_comment> a void:Dataset ;
+    rdfs:label "Property Partition: comment"@en ;
+    void:property rdfs:comment ;
+    void:triples 45 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_computingReference> a void:Dataset ;
+    rdfs:label "Property Partition: computingReference"@en ;
+    void:property <http://purl.org/meshsparql#computingReference> ;
+    void:triples 327 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_contains> a void:Dataset ;
+    rdfs:label "Property Partition: contains"@en ;
+    void:property <http://www.purl.org/graphemon#contains> ;
+    void:triples 573 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_contributor> a void:Dataset ;
+    rdfs:label "Property Partition: contributor"@en ;
+    void:property dc:contributor ;
+    void:triples 44 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_coordinateOperation> a void:Dataset ;
+    rdfs:label "Property Partition: coordinateOperation"@en ;
+    void:property geo:coordinateOperation ;
+    void:triples 327 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_created> a void:Dataset ;
+    rdfs:label "Property Partition: created"@en ;
+    void:property dc:created,
+        dcterms:created ;
+    void:triples 1,
+        18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_creator> a void:Dataset ;
+    rdfs:label "Property Partition: creator"@en ;
+    void:property dc:creator,
+        dcterms:creator ;
+    void:triples 2,
+        681 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_danglingBorderFaces> a void:Dataset ;
+    rdfs:label "Property Partition: danglingBorderFaces"@en ;
+    void:property <http://www.gigamesh.eu/ont#danglingBorderFaces> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_definition> a void:Dataset ;
+    rdfs:label "Property Partition: definition"@en ;
+    void:property skos:definition ;
+    void:triples 225 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_description> a void:Dataset ;
+    rdfs:label "Property Partition: description"@en ;
+    void:property dc:description ;
+    void:triples 18 .
 
 <https://situx.github.io/cuneiformontology/cunei_dataset_dist_ttl> a adms:AssetDistribution ;
     rdfs:label "cunei_dataset TTL Distribution"@en ;
     dcat:downloadURL "https://situx.github.io/cuneiformontology/index.ttl"^^xsd:anyURI ;
     dcat:mediaType <http://www.w3.org/ns/formats/Turtle> .
 
-<https://situx.github.io/cuneiformontology/cunei_dataset_epoch> a void:Dataset ;
-    rdfs:label "Property Partition: epoch"@en ;
-    void:property <http://www.purl.org/graphemon#epoch> ;
-    void:triples 3501 .
+<https://situx.github.io/cuneiformontology/cunei_dataset_domain> a void:Dataset ;
+    rdfs:label "Property Partition: domain"@en ;
+    void:property rdfs:domain ;
+    void:triples 47 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_entry> a void:Dataset ;
+    rdfs:label "Property Partition: entry"@en ;
+    void:property <http://lemon-model.net/lemon#entry> ;
+    void:triples 15 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_family_name:> a void:Dataset ;
+    rdfs:label "Property Partition: family_name:"@en ;
+    void:property <http://xmlns.com/foaf/0.1/family_name:> ;
+    void:triples 2 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_finiteFunctionValueVertices> a void:Dataset ;
+    rdfs:label "Property Partition: finiteFunctionValueVertices"@en ;
+    void:property <http://www.gigamesh.eu/ont#finiteFunctionValueVertices> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_form> a void:Dataset ;
+    rdfs:label "Property Partition: form"@en ;
+    void:property <http://lemon-model.net/lemon#form> ;
+    void:triples 23 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_generator> a void:Dataset ;
+    rdfs:label "Property Partition: generator"@en ;
+    void:property <https://www.w3.org/ns/activitystreams#generator> ;
+    void:triples 681 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_givenname:> a void:Dataset ;
+    rdfs:label "Property Partition: givenname:"@en ;
+    void:property <http://xmlns.com/foaf/0.1/givenname:> ;
+    void:triples 2 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_hasBody> a void:Dataset ;
+    rdfs:label "Property Partition: hasBody"@en ;
+    void:property <http://www.w3.org/ns/oa#hasBody> ;
+    void:triples 3479 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_hasGeometry> a void:Dataset ;
+    rdfs:label "Property Partition: hasGeometry"@en ;
+    void:property geo:hasGeometry ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_hasGottsteinCode> a void:Dataset ;
+    rdfs:label "Property Partition: hasGottsteinCode"@en ;
+    void:property <http://www.purl.org/graphemon#hasGottsteinCode> ;
+    void:triples 14 .
 
 <https://situx.github.io/cuneiformontology/cunei_dataset_hasGraphemeReading> a void:Dataset ;
     rdfs:label "Property Partition: hasGraphemeReading"@en ;
-    void:property <http://www.purl.org/graphemon#hasGraphemeReading> ;
-    void:triples 12046 .
+    void:property <http://www.purl.org/graphemon#hasGraphemeReading>,
+        <https://situx.github.io/cuneiformontology/examples/signlist/hasGraphemeReading>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/hasGraphemeReading> ;
+    void:triples 8,
+        186,
+        207 .
 
-<https://situx.github.io/cuneiformontology/cunei_dataset_hasPart> a void:Dataset ;
-    rdfs:label "Property Partition: hasPart"@en ;
-    void:property <http://www.purl.org/graphemon#hasPart> ;
-    void:triples 2715 .
+<https://situx.github.io/cuneiformontology/cunei_dataset_hasPaleoCode> a void:Dataset ;
+    rdfs:label "Property Partition: hasPaleoCode"@en ;
+    void:property <http://www.purl.org/graphemon#hasPaleoCode> ;
+    void:triples 14 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_hasSelector> a void:Dataset ;
+    rdfs:label "Property Partition: hasSelector"@en ;
+    void:property <http://www.w3.org/ns/oa#hasSelector> ;
+    void:triples 1662 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_hasSource> a void:Dataset ;
+    rdfs:label "Property Partition: hasSource"@en ;
+    void:property <http://www.w3.org/ns/oa#hasSource> ;
+    void:triples 2266 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_hasSurface> a void:Dataset ;
+    rdfs:label "Property Partition: hasSurface"@en ;
+    void:property <http://www.purl.org/cuneiform#hasSurface> ;
+    void:triples 20 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_hasTarget> a void:Dataset ;
+    rdfs:label "Property Partition: hasTarget"@en ;
+    void:property <http://www.w3.org/ns/oa#hasTarget> ;
+    void:triples 1008 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_hasUnicodeCodePoint> a void:Dataset ;
+    rdfs:label "Property Partition: hasUnicodeCodePoint"@en ;
+    void:property <http://www.purl.org/graphemon#hasUnicodeCodePoint> ;
+    void:triples 118 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_hasUnicodeRepresentation> a void:Dataset ;
+    rdfs:label "Property Partition: hasUnicodeRepresentation"@en ;
+    void:property <http://www.purl.org/graphemon#hasUnicodeRepresentation> ;
+    void:triples 125 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_hasUnit> a void:Dataset ;
+    rdfs:label "Property Partition: hasUnit"@en ;
+    void:property <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> ;
+    void:triples 984 .
 
 <https://situx.github.io/cuneiformontology/cunei_dataset_hethzl> a void:Dataset ;
     rdfs:label "Property Partition: hethzl"@en ;
     void:property <http://www.purl.org/graphemon#hethzl> ;
-    void:triples 399 .
+    void:triples 111 .
 
-<https://situx.github.io/cuneiformontology/cunei_dataset_labat> a void:Dataset ;
-    rdfs:label "Property Partition: labat"@en ;
-    void:property <http://www.purl.org/graphemon#labat> ;
-    void:triples 450 .
+<https://situx.github.io/cuneiformontology/cunei_dataset_homepage> a void:Dataset ;
+    rdfs:label "Property Partition: homepage"@en ;
+    void:property foaf:homepage ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_identifier> a void:Dataset ;
+    rdfs:label "Property Partition: identifier"@en ;
+    void:property dc:identifier ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_image> a void:Dataset ;
+    rdfs:label "Property Partition: image"@en ;
+    void:property foaf:image ;
+    void:triples 1273 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_inSRS> a void:Dataset ;
+    rdfs:label "Property Partition: inSRS"@en ;
+    void:property geo:inSRS ;
+    void:triples 328 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_invertedFaces> a void:Dataset ;
+    rdfs:label "Property Partition: invertedFaces"@en ;
+    void:property <http://www.gigamesh.eu/ont#invertedFaces> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_isRepresentedBy> a void:Dataset ;
+    rdfs:label "Property Partition: isRepresentedBy"@en ;
+    void:property <http://www.purl.org/cuneiform#isRepresentedBy> ;
+    void:triples 168 .
 
 <https://situx.github.io/cuneiformontology/cunei_dataset_label> a void:Dataset ;
     rdfs:label "Property Partition: label"@en ;
     void:property rdfs:label ;
-    void:triples 19597 .
+    void:triples 12178 .
 
-<https://situx.github.io/cuneiformontology/cunei_dataset_lak> a void:Dataset ;
-    rdfs:label "Property Partition: lak"@en ;
-    void:property <http://www.purl.org/graphemon#lak> ;
-    void:triples 13 .
+<https://situx.github.io/cuneiformontology/cunei_dataset_lat> a void:Dataset ;
+    rdfs:label "Property Partition: lat"@en ;
+    void:property geo:lat ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_leftOf> a void:Dataset ;
+    rdfs:label "Property Partition: leftOf"@en ;
+    void:property <http://www.purl.org/graphemon#leftOf> ;
+    void:triples 4 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_license> a void:Dataset ;
+    rdfs:label "Property Partition: license"@en ;
+    void:property dc:license ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_lineNumber> a void:Dataset ;
+    rdfs:label "Property Partition: lineNumber"@en ;
+    void:property <http://www.purl.org/cuneiform#lineNumber> ;
+    void:triples 1038 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_localFunctionValueMaxVertices> a void:Dataset ;
+    rdfs:label "Property Partition: localFunctionValueMaxVertices"@en ;
+    void:property <http://www.gigamesh.eu/ont#localFunctionValueMaxVertices> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_localFunctionValueMinVertices> a void:Dataset ;
+    rdfs:label "Property Partition: localFunctionValueMinVertices"@en ;
+    void:property <http://www.gigamesh.eu/ont#localFunctionValueMinVertices> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_long> a void:Dataset ;
+    rdfs:label "Property Partition: long"@en ;
+    void:property geo:long ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_manifoldFaces> a void:Dataset ;
+    rdfs:label "Property Partition: manifoldFaces"@en ;
+    void:property <http://www.gigamesh.eu/ont#manifoldFaces> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_manuallyAddedVertices> a void:Dataset ;
+    rdfs:label "Property Partition: manuallyAddedVertices"@en ;
+    void:property <http://www.gigamesh.eu/ont#manuallyAddedVertices> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_material> a void:Dataset ;
+    rdfs:label "Property Partition: material"@en ;
+    void:property <http://www.purl.org/cuneiform#material> ;
+    void:triples 4 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_maximumXCoordinate> a void:Dataset ;
+    rdfs:label "Property Partition: maximumXCoordinate"@en ;
+    void:property <http://www.gigamesh.eu/ont#maximumXCoordinate> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_maximumYCoordinate> a void:Dataset ;
+    rdfs:label "Property Partition: maximumYCoordinate"@en ;
+    void:property <http://www.gigamesh.eu/ont#maximumYCoordinate> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_maximumZCoordinate> a void:Dataset ;
+    rdfs:label "Property Partition: maximumZCoordinate"@en ;
+    void:property <http://www.gigamesh.eu/ont#maximumZCoordinate> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_medium> a void:Dataset ;
+    rdfs:label "Property Partition: medium"@en ;
+    void:property dc:medium ;
+    void:triples 18 .
 
 <https://situx.github.io/cuneiformontology/cunei_dataset_member> a void:Dataset ;
     rdfs:label "Property Partition: member"@en ;
     void:property rdfs:member ;
-    void:triples 1391 .
+    void:triples 1164 .
 
 <https://situx.github.io/cuneiformontology/cunei_dataset_meszl> a void:Dataset ;
     rdfs:label "Property Partition: meszl"@en ;
     void:property <http://www.purl.org/graphemon#meszl> ;
-    void:triples 942 .
+    void:triples 109 .
 
-<https://situx.github.io/cuneiformontology/cunei_dataset_obo> a void:Dataset ;
-    rdfs:label "Property Partition: obo"@en ;
-    void:property <http://www.purl.org/graphemon#obo> ;
-    void:triples 451 .
+<https://situx.github.io/cuneiformontology/cunei_dataset_minimumXCoordinate> a void:Dataset ;
+    rdfs:label "Property Partition: minimumXCoordinate"@en ;
+    void:property <http://www.gigamesh.eu/ont#minimumXCoordinate> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_minimumYCoordinate> a void:Dataset ;
+    rdfs:label "Property Partition: minimumYCoordinate"@en ;
+    void:property <http://www.gigamesh.eu/ont#minimumYCoordinate> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_minimumZCoordinate> a void:Dataset ;
+    rdfs:label "Property Partition: minimumZCoordinate"@en ;
+    void:property <http://www.gigamesh.eu/ont#minimumZCoordinate> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_motivatedBy> a void:Dataset ;
+    rdfs:label "Property Partition: motivatedBy"@en ;
+    void:property <http://www.w3.org/ns/oa#motivatedBy> ;
+    void:triples 3479 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_museumNumber> a void:Dataset ;
+    rdfs:label "Property Partition: museumNumber"@en ;
+    void:property <http://www.purl.org/cuneiform#museumNumber> ;
+    void:triples 4 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_name> a void:Dataset ;
+    rdfs:label "Property Partition: name"@en ;
+    void:property foaf:name ;
+    void:triples 10 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_name:> a void:Dataset ;
+    rdfs:label "Property Partition: name:"@en ;
+    void:property <http://xmlns.com/foaf/0.1/name:> ;
+    void:triples 2 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_nextChar> a void:Dataset ;
+    rdfs:label "Property Partition: nextChar"@en ;
+    void:property <http://www.purl.org/cuneiform#nextChar> ;
+    void:triples 688 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_nextGlyph> a void:Dataset ;
+    rdfs:label "Property Partition: nextGlyph"@en ;
+    void:property <http://www.purl.org/cuneiform#nextGlyph>,
+        <http://www.purl.org/graphemon#nextGlyph> ;
+    void:triples 17,
+        395 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_nextLine> a void:Dataset ;
+    rdfs:label "Property Partition: nextLine"@en ;
+    void:property <http://www.purl.org/cuneiform#nextLine> ;
+    void:triples 147 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_nextWord> a void:Dataset ;
+    rdfs:label "Property Partition: nextWord"@en ;
+    void:property <http://www.purl.org/cuneiform#nextWord> ;
+    void:triples 117 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_nonManifoldFaces> a void:Dataset ;
+    rdfs:label "Property Partition: nonManifoldFaces"@en ;
+    void:property <http://www.gigamesh.eu/ont#nonManifoldFaces> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_nonManifoldVertices> a void:Dataset ;
+    rdfs:label "Property Partition: nonManifoldVertices"@en ;
+    void:property <http://www.gigamesh.eu/ont#nonManifoldVertices> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_parameter> a void:Dataset ;
+    rdfs:label "Property Partition: parameter"@en ;
+    void:property <http://situx.github.io/proj4rdf/ont/crs/parameter> ;
+    void:triples 981 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_pcaValue> a void:Dataset ;
+    rdfs:label "Property Partition: pcaValue"@en ;
+    void:property <http://purl.org/meshsparql#pcaValue> ;
+    void:triples 327 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_prevChar> a void:Dataset ;
+    rdfs:label "Property Partition: prevChar"@en ;
+    void:property <http://www.purl.org/cuneiform#prevChar> ;
+    void:triples 677 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_prevGlyph> a void:Dataset ;
+    rdfs:label "Property Partition: prevGlyph"@en ;
+    void:property <http://www.purl.org/cuneiform#prevGlyph>,
+        <http://www.purl.org/graphemon#prevGlyph> ;
+    void:triples 15,
+        392 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_prevLine> a void:Dataset ;
+    rdfs:label "Property Partition: prevLine"@en ;
+    void:property <http://www.purl.org/cuneiform#prevLine> ;
+    void:triples 147 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_prevWord> a void:Dataset ;
+    rdfs:label "Property Partition: prevWord"@en ;
+    void:property <http://www.purl.org/cuneiform#prevWord> ;
+    void:triples 115 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_publisher> a void:Dataset ;
+    rdfs:label "Property Partition: publisher"@en ;
+    void:property dc:publisher ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_purpose> a void:Dataset ;
+    rdfs:label "Property Partition: purpose"@en ;
+    void:property <http://www.w3.org/ns/oa#purpose> ;
+    void:triples 2221 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_range> a void:Dataset ;
+    rdfs:label "Property Partition: range"@en ;
+    void:property rdfs:range ;
+    void:triples 1 .
 
 <https://situx.github.io/cuneiformontology/cunei_dataset_readingValue> a void:Dataset ;
     rdfs:label "Property Partition: readingValue"@en ;
     void:property <http://www.purl.org/graphemon#readingValue> ;
-    void:triples 11058 .
+    void:triples 140 .
 
 <https://situx.github.io/cuneiformontology/cunei_dataset_reference> a void:Dataset ;
     rdfs:label "Property Partition: reference"@en ;
     void:property <http://lemon-model.net/lemon#reference> ;
-    void:triples 289 .
+    void:triples 20 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_referenceVector> a void:Dataset ;
+    rdfs:label "Property Partition: referenceVector"@en ;
+    void:property <http://purl.org/meshsparql#referenceVector> ;
+    void:triples 327 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_representation> a void:Dataset ;
+    rdfs:label "Class Partition: representation"@en ;
+    void:class <http://www.purl.org/cuneiform#representation> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_rights> a void:Dataset ;
+    rdfs:label "Property Partition: rights"@en ;
+    void:property dcterms:rights ;
+    void:triples 681 .
 
 <https://situx.github.io/cuneiformontology/cunei_dataset_sameAs> a void:Dataset ;
     rdfs:label "Property Partition: sameAs"@en ;
     void:property owl:sameAs ;
-    void:triples 1266 .
+    void:triples 2 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_selectedFaces> a void:Dataset ;
+    rdfs:label "Property Partition: selectedFaces"@en ;
+    void:property <http://www.gigamesh.eu/ont#selectedFaces> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_selectedVertices> a void:Dataset ;
+    rdfs:label "Property Partition: selectedVertices"@en ;
+    void:property <http://www.gigamesh.eu/ont#selectedVertices> ;
+    void:triples 1 .
 
 <https://situx.github.io/cuneiformontology/cunei_dataset_sense> a void:Dataset ;
     rdfs:label "Property Partition: sense"@en ;
     void:property <http://lemon-model.net/lemon#sense> ;
-    void:triples 670 .
+    void:triples 20 .
 
 <https://situx.github.io/cuneiformontology/cunei_dataset_signName> a void:Dataset ;
     rdfs:label "Property Partition: signName"@en ;
     void:property <http://www.purl.org/graphemon#signName> ;
-    void:triples 1415 .
+    void:triples 106 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_signreadings> a void:Dataset ;
+    rdfs:label "Property Partition: signreadings"@en ;
+    void:property <http://www.purl.org/cuneiform#signreadings> ;
+    void:triples 4 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_signs> a void:Dataset ;
+    rdfs:label "Property Partition: signs"@en ;
+    void:property <http://www.purl.org/cuneiform#signs> ;
+    void:triples 4 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_singularVertices> a void:Dataset ;
+    rdfs:label "Property Partition: singularVertices"@en ;
+    void:property <http://www.gigamesh.eu/ont#singularVertices> ;
+    void:triples 1 .
 
 <https://situx.github.io/cuneiformontology/cunei_dataset_slha> a void:Dataset ;
     rdfs:label "Property Partition: slha"@en ;
     void:property <http://www.purl.org/graphemon#slha> ;
-    void:triples 1011 .
+    void:triples 111 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_soloFaces> a void:Dataset ;
+    rdfs:label "Property Partition: soloFaces"@en ;
+    void:property <http://www.gigamesh.eu/ont#soloFaces> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_sourceCRS> a void:Dataset ;
+    rdfs:label "Property Partition: sourceCRS"@en ;
+    void:property <http://situx.github.io/proj4rdf/ont/crs/sourceCRS> ;
+    void:triples 327 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_spatial> a void:Dataset ;
+    rdfs:label "Property Partition: spatial"@en ;
+    void:property dc:spatial ;
+    void:triples 19 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_stable> a void:Dataset ;
+    rdfs:label "Property Partition: stable"@en ;
+    void:property <http://purl.org/meshsparql#stable> ;
+    void:triples 327 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_stickyFaces> a void:Dataset ;
+    rdfs:label "Property Partition: stickyFaces"@en ;
+    void:property <http://www.gigamesh.eu/ont#stickyFaces> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_subClassOf> a void:Dataset ;
+    rdfs:label "Property Partition: subClassOf"@en ;
+    void:property rdfs:subClassOf ;
+    void:triples 109 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_subPropertyOf> a void:Dataset ;
+    rdfs:label "Property Partition: subPropertyOf"@en ;
+    void:property rdfs:subPropertyOf ;
+    void:triples 45 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_subject> a void:Dataset ;
+    rdfs:label "Property Partition: subject"@en ;
+    void:property dc:subject ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_syntheticVertexFaces> a void:Dataset ;
+    rdfs:label "Property Partition: syntheticVertexFaces"@en ;
+    void:property <http://www.gigamesh.eu/ont#syntheticVertexFaces> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_syntheticVertices> a void:Dataset ;
+    rdfs:label "Property Partition: syntheticVertices"@en ;
+    void:property <http://www.gigamesh.eu/ont#syntheticVertices> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_temporal> a void:Dataset ;
+    rdfs:label "Property Partition: temporal"@en ;
+    void:property dc:temporal ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_temporal:> a void:Dataset ;
+    rdfs:label "Property Partition: temporal:"@en ;
+    void:property <http://purl.org/dc/elements/1.1/temporal:> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_threeBorderVertexFaces> a void:Dataset ;
+    rdfs:label "Property Partition: threeBorderVertexFaces"@en ;
+    void:property <http://www.gigamesh.eu/ont#threeBorderVertexFaces> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_title> a void:Dataset ;
+    rdfs:label "Property Partition: title"@en ;
+    void:property dc:title ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_totalArea> a void:Dataset ;
+    rdfs:label "Property Partition: totalArea"@en ;
+    void:property <http://www.gigamesh.eu/ont#totalArea> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_totalNumberOfFaces> a void:Dataset ;
+    rdfs:label "Property Partition: totalNumberOfFaces"@en ;
+    void:property <http://www.gigamesh.eu/ont#totalNumberOfFaces> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_totalNumberOfVertices> a void:Dataset ;
+    rdfs:label "Property Partition: totalNumberOfVertices"@en ;
+    void:property <http://www.gigamesh.eu/ont#totalNumberOfVertices> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_totalVolumeDX> a void:Dataset ;
+    rdfs:label "Property Partition: totalVolumeDX"@en ;
+    void:property <http://www.gigamesh.eu/ont#totalVolumeDX> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_totalVolumeDY> a void:Dataset ;
+    rdfs:label "Property Partition: totalVolumeDY"@en ;
+    void:property <http://www.gigamesh.eu/ont#totalVolumeDY> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_totalVolumeDZ> a void:Dataset ;
+    rdfs:label "Property Partition: totalVolumeDZ"@en ;
+    void:property <http://www.gigamesh.eu/ont#totalVolumeDZ> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_transformationMatrix> a void:Dataset ;
+    rdfs:label "Property Partition: transformationMatrix"@en ;
+    void:property <http://purl.org/meshsparql#transformationMatrix> ;
+    void:triples 327 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_transliteration> a void:Dataset ;
+    rdfs:label "Property Partition: transliteration"@en ;
+    void:property <http://www.purl.org/cuneiform#transliteration> ;
+    void:triples 27 .
 
 <https://situx.github.io/cuneiformontology/cunei_dataset_type> a void:Dataset ;
     rdfs:label "Property Partition: type"@en ;
-    void:property rdf:type ;
-    void:triples 17200 .
+    void:property dc:type,
+        rdf:type ;
+    void:triples 18,
+        12381 .
 
-<https://situx.github.io/cuneiformontology/cunei_dataset_unicodeCodepoint> a void:Dataset ;
-    rdfs:label "Property Partition: unicodeCodepoint"@en ;
-    void:property <http://www.purl.org/graphemon#unicodeCodepoint> ;
-    void:triples 1444 .
+<https://situx.github.io/cuneiformontology/cunei_dataset_usesValue> a void:Dataset ;
+    rdfs:label "Property Partition: usesValue"@en ;
+    void:property <http://situx.github.io/proj4rdf/ont/crs/usesValue> ;
+    void:triples 981 .
 
-<https://situx.github.io/cuneiformontology/cunei_dataset_unicodeRepresentation> a void:Dataset ;
-    rdfs:label "Property Partition: unicodeRepresentation"@en ;
-    void:property <http://www.purl.org/graphemon#unicodeRepresentation> ;
-    void:triples 4525 .
+<https://situx.github.io/cuneiformontology/cunei_dataset_value> a void:Dataset ;
+    rdfs:label "Property Partition: value"@en ;
+    void:property <http://www.gigamesh.eu/ont#value>,
+        rdf:value ;
+    void:triples 31,
+        5441 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_variant> a void:Dataset ;
+    rdfs:label "Property Partition: variant"@en ;
+    void:property <http://www.purl.org/graphemon#variant> ;
+    void:triples 47 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_vertexIsolated> a void:Dataset ;
+    rdfs:label "Property Partition: vertexIsolated"@en ;
+    void:property <http://www.gigamesh.eu/ont#vertexIsolated> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_vertexNormalLength> a void:Dataset ;
+    rdfs:label "Property Partition: vertexNormalLength"@en ;
+    void:property <http://www.gigamesh.eu/ont#vertexNormalLength> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_verticesOnInvertedEdge> a void:Dataset ;
+    rdfs:label "Property Partition: verticesOnInvertedEdge"@en ;
+    void:property <http://www.gigamesh.eu/ont#verticesOnInvertedEdge> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_verticesPartOfZeroAreaFace> a void:Dataset ;
+    rdfs:label "Property Partition: verticesPartOfZeroAreaFace"@en ;
+    void:property <http://www.gigamesh.eu/ont#verticesPartOfZeroAreaFace> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_wktTransformation> a void:Dataset ;
+    rdfs:label "Property Partition: wktTransformation"@en ;
+    void:property <http://purl.org/meshsparql#wktTransformation> ;
+    void:triples 327 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_wordIndex> a void:Dataset ;
+    rdfs:label "Property Partition: wordIndex"@en ;
+    void:property <http://www.purl.org/cuneiform#wordIndex> ;
+    void:triples 187 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_writtenRep> a void:Dataset ;
+    rdfs:label "Property Partition: writtenRep"@en ;
+    void:property <http://lemon-model.net/lemon#writtenRep> ;
+    void:triples 9 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_zeroAreaFaces> a void:Dataset ;
+    rdfs:label "Property Partition: zeroAreaFaces"@en ;
+    void:property <http://www.gigamesh.eu/ont#zeroAreaFaces> ;
+    void:triples 1 .
 
 wgs: a voaf:Vocabulary ;
     rdfs:label "wgs Vocabulary"@en ;
@@ -539,28 +2086,78 @@ wgs: a voaf:Vocabulary ;
     vann:preferredNamespaceUri "https://www.w3.org/2003/01/geo/wgs84_pos#"^^xsd:anyURI ;
     voaf:usageInDataset wgs:_cunei_dataset_occ .
 
+dc: a voaf:Vocabulary ;
+    rdfs:label "dc Vocabulary"@en ;
+    vann:preferredNamespacePrefix "dc"^^xsd:string ;
+    vann:preferredNamespaceUri "http://purl.org/dc/elements/1.1/"^^xsd:anyURI ;
+    voaf:usageInDataset dc:_cunei_dataset_occ .
+
+geo: a voaf:Vocabulary ;
+    rdfs:label "The GeoSPARQL Ontology"@en ;
+    vann:preferredNamespacePrefix "geo"^^xsd:string ;
+    vann:preferredNamespaceUri "http://www.opengis.net/ont/geosparql#"^^xsd:anyURI ;
+    voaf:usageInDataset geo:_cunei_dataset_occ .
+
+owl: a voaf:Vocabulary ;
+    rdfs:label "Web Ontology Language 2 Vocabulary"@en ;
+    vann:preferredNamespacePrefix "owl"^^xsd:string ;
+    vann:preferredNamespaceUri "http://www.w3.org/2002/07/owl#"^^xsd:anyURI ;
+    voaf:usageInDataset owl:_cunei_dataset_occ .
+
 skos: a voaf:Vocabulary ;
     rdfs:label "skos Vocabulary"@en ;
     vann:preferredNamespacePrefix "skos"^^xsd:string ;
     vann:preferredNamespaceUri "http://www.w3.org/2004/02/skos/core#"^^xsd:anyURI ;
     voaf:usageInDataset skos:_cunei_dataset_occ .
 
+foaf: a voaf:Vocabulary ;
+    rdfs:label "Friend Of A Friend Ontology"@en ;
+    vann:preferredNamespacePrefix "foaf"^^xsd:string ;
+    vann:preferredNamespaceUri "http://xmlns.com/foaf/0.1/"^^xsd:anyURI ;
+    voaf:usageInDataset foaf:_cunei_dataset_occ .
+
+foaf:Person rdfs:label "Person"@en .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_NaNVertices> a void:Dataset ;
+    rdfs:label "Class Partition: NaNVertices"@en,
+        "Property Partition: NaNVertices"@en ;
+    void:class <http://www.gigamesh.eu/ont#NaNVertices> ;
+    void:entities 1 ;
+    void:property <http://www.gigamesh.eu/ont#NaNVertices> ;
+    void:triples 1 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_Software> a void:Dataset ;
+    rdfs:label "Class Partition: Software"@en,
+        "Property Partition: Software"@en ;
+    void:class dc:Software ;
+    void:property <http://www.w3.org/2003/12/exif/ns#Software> ;
+    void:triples 18 .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_language> a void:Dataset ;
+    rdfs:label "Class Partition: language"@en,
+        "Property Partition: language"@en ;
+    void:class <http://www.purl.org/cuneiform#language> ;
+    void:property <http://lemon-model.net/lemon#language>,
+        dc:language ;
+    void:triples 3,
+        18 .
+
 <https://situx.github.io/cuneiformontology/cunei_dataset> a void:Dataset,
         adms:Asset ;
     rdfs:label "cunei_dataset"@en ;
-    vext:averageLiteralLength 17 ;
-    vext:averageObjectIRILength 62 ;
-    vext:averagePropertyIRILength 38 ;
-    vext:averageSubjectIRILength 77 ;
-    vext:datatypes 0 ;
-    vext:distinctBlankNodes 0 ;
-    vext:distinctIRIReferences 72024 ;
-    vext:distinctLiterals 35576 ;
-    vext:distinctRDFNodes 107600 ;
+    vext:averageLiteralLength 67 ;
+    vext:averageObjectIRILength 78 ;
+    vext:averagePropertyIRILength 42 ;
+    vext:averageSubjectIRILength 117 ;
+    vext:datatypes 21 ;
+    vext:distinctBlankNodes 11 ;
+    vext:distinctIRIReferences 37151 ;
+    vext:distinctLiterals 11704 ;
+    vext:distinctRDFNodes 48866 ;
     vext:languages 1 ;
     vext:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2024-02-28T18:03:33"^^xsd:dateTime ;
+    dcterms:modified "2024-02-28T18:45:49"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
@@ -569,42 +2166,308 @@ skos: a voaf:Vocabulary ;
     dcterms:title "cunei_dataset"@en ;
     vann:preferredNamespacePrefix "cunei"^^xsd:string ;
     vann:preferredNamespaceUri "https://situx.github.io/cuneiformontology/"^^xsd:anyURI ;
-    void:classPartition <https://situx.github.io/cuneiformontology/cunei_dataset_Collection>,
-        <https://situx.github.io/cuneiformontology/cunei_dataset_Epoch>,
-        <https://situx.github.io/cuneiformontology/cunei_dataset_Grapheme>,
+    void:classPartition <https://situx.github.io/cuneiformontology/cunei_dataset_3DMesh>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_3DRendering>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Agent>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Annotation>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_BorderFaces>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_BorderFacesBridgeTriConnection>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_BorderVertices>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_BottomSide>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_BridgeBorderFaces>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_CartesianCS>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_CharOccurrenceCollection>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_CircleCenterVertices>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Collection>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_ComputingReference>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_ConnectedComponents>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_CoordinateOperation>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_CoordinateSystemAxis>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_CuneiformArtifactCollection>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_CuneiformWedge>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_DanglingBorderFaces>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_E22_ManMadeObject>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Entity>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Feature>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_FeatureCollection>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_FiniteFunctionValueVertices>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_FragmentSelector>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Geometry>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_GeometryCollection>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_GigameshInfo>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_GlyphCollection>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_GraphemeAtomicPart>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_GraphemeAtomicPartCollection>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_GraphemeCollection>,
         <https://situx.github.io/cuneiformontology/cunei_dataset_GraphemeComposition>,
-        <https://situx.github.io/cuneiformontology/cunei_dataset_GraphemeList>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_GraphemePart>,
         <https://situx.github.io/cuneiformontology/cunei_dataset_GraphemeReading>,
-        <https://situx.github.io/cuneiformontology/cunei_dataset_GraphemeSense> ;
-    void:classes 7 ;
+        <https://situx.github.io/cuneiformontology/cunei_dataset_GraphemeReadingCollection>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_GraphemeVariant>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_GraphemeVariantCollection>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Group>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Image>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_InvertedFaces>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_LeftSide>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_LexicalEntity>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_LexicalForm>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_LexicalSense>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Lexicon>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Line>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_LocalFunctionMaxValueVertices>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_LocalFunctionMinValueVertices>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_ManifoldFaces>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_ManuallyAddedVertices>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Material>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Mesh>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_MeshLabelSelector>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_MeshReferenceSelector>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_NaNVertices>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_NonManifoldFaces>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_NonManifoldVertices>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_ObverseSide>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_OperationParameter>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_OperationParameterValue>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_PCAReference>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_PaleoCodeWedgeType>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_PaleoCode_A>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_PaleoCode_B>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_PaleoCode_C>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_PaleoCode_D>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_PaleoCode_W>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Person>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Polygon>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Representation>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_ReverseSide>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_RightSide>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_SelectedFaces>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_SelectedVertices>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Selector>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Sentence>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_SingularVertices>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Software>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_SoloFaces>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_SpatialObject>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_SpatialObjectCollection>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_SpecificResource>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_StickyFaces>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Stroketyped>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_SvgSelector>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_SyntheticVertexFaces>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_SyntheticVertices>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_TX1_WrittenText>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_TX2_Writing>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_TX4_WritingField>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_TX5_Reading>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_TX6_Transcription>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_TX7_WrittenTextFragment>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_TX8_Grapheme>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_TX9_Glyph>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Tablet>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_TabletFeature>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_TabletSurface>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_TextualBody>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_ThreeBorderVertexFaces>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_TopSide>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_TotalNumberOfFaces>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_TotalNumberOfVertices>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Transliteration>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_TransliterationCharOccurrence>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_TransliterationLine>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_TransliterationPart>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_TransliterationWordOccurrence>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_VertexIsolated>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_VertexNormalLength>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_VerticesOnInvertedEdge>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_VerticesPartOfZeroAreaFace>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_WKTSelector>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_WedgeGlyph>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_WedgeType>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Word>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_WordForm>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_WordFormOccurrenceCollection>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_ZeroAreaFaces>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_language>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_representation> ;
+    void:classes 128 ;
     void:dataDump <https://situx.github.io/cuneiformontology/index.ttl> ;
-    void:distinctObjects 53326 ;
-    void:distinctSubjects 18678 ;
-    void:entities 17159 ;
+    void:distinctObjects 24482 ;
+    void:distinctSubjects 12482 ;
+    void:entities 12202 ;
     void:feature <http://www.w3.org/ns/formats/RDFa>,
         <http://www.w3.org/ns/formats/Turtle> ;
-    void:properties 20 ;
-    void:propertyPartition <https://situx.github.io/cuneiformontology/cunei_dataset_abzl>,
-        <https://situx.github.io/cuneiformontology/cunei_dataset_epoch>,
+    void:properties 187 ;
+    void:propertyPartition <https://situx.github.io/cuneiformontology/cunei_dataset_CDLINumber>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_CountryCode>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_CreatorTool>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_DateTime>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Event>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_ExifOffset>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_GPSLatitude>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_GPSLongitude>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_LocationCreatedCity>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_LocationCreatedCountryName>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_LocationCreatedWorldRegion>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Make>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Model>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_NaNVertices>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Occurence>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Occurrence>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Orientation>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Owner>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_P361>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_P62_depicted_by>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_ResolutionUnit>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_Software>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_TXP3_is_rendered_by>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_UsageTerms>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_XResolution>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_YCbCrPositioning>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_YResolution>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_abbreviation>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_abzl>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_altLabel>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_altSignName>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_amountOfConnectedComponents>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_asSVG>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_asWKT>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_axis>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_axisDirection>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_axisOrder>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_borderFaces>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_borderFacesBridgeTriConnection>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_borderVertices>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_boundingBox>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_boundingBoxHeight>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_boundingBoxThickness>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_boundingBoxWidth>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_bridgeBorderFaces>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_charIndex>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_circleCenterVertices>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_comment>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_computingReference>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_contains>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_contributor>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_coordinateOperation>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_created>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_creator>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_danglingBorderFaces>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_definition>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_description>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_domain>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_entry>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_family_name:>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_finiteFunctionValueVertices>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_form>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_generator>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_givenname:>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_hasBody>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_hasGeometry>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_hasGottsteinCode>,
         <https://situx.github.io/cuneiformontology/cunei_dataset_hasGraphemeReading>,
-        <https://situx.github.io/cuneiformontology/cunei_dataset_hasPart>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_hasPaleoCode>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_hasSelector>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_hasSource>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_hasSurface>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_hasTarget>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_hasUnicodeCodePoint>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_hasUnicodeRepresentation>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_hasUnit>,
         <https://situx.github.io/cuneiformontology/cunei_dataset_hethzl>,
-        <https://situx.github.io/cuneiformontology/cunei_dataset_labat>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_homepage>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_identifier>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_image>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_inSRS>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_invertedFaces>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_isRepresentedBy>,
         <https://situx.github.io/cuneiformontology/cunei_dataset_label>,
-        <https://situx.github.io/cuneiformontology/cunei_dataset_lak>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_language>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_lat>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_leftOf>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_license>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_lineNumber>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_localFunctionValueMaxVertices>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_localFunctionValueMinVertices>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_long>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_manifoldFaces>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_manuallyAddedVertices>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_material>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_maximumXCoordinate>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_maximumYCoordinate>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_maximumZCoordinate>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_medium>,
         <https://situx.github.io/cuneiformontology/cunei_dataset_member>,
         <https://situx.github.io/cuneiformontology/cunei_dataset_meszl>,
-        <https://situx.github.io/cuneiformontology/cunei_dataset_obo>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_minimumXCoordinate>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_minimumYCoordinate>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_minimumZCoordinate>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_motivatedBy>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_museumNumber>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_name>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_name:>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_nextChar>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_nextGlyph>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_nextLine>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_nextWord>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_nonManifoldFaces>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_nonManifoldVertices>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_parameter>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_pcaValue>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_prevChar>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_prevGlyph>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_prevLine>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_prevWord>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_publisher>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_purpose>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_range>,
         <https://situx.github.io/cuneiformontology/cunei_dataset_readingValue>,
         <https://situx.github.io/cuneiformontology/cunei_dataset_reference>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_referenceVector>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_rights>,
         <https://situx.github.io/cuneiformontology/cunei_dataset_sameAs>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_selectedFaces>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_selectedVertices>,
         <https://situx.github.io/cuneiformontology/cunei_dataset_sense>,
         <https://situx.github.io/cuneiformontology/cunei_dataset_signName>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_signreadings>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_signs>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_singularVertices>,
         <https://situx.github.io/cuneiformontology/cunei_dataset_slha>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_soloFaces>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_sourceCRS>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_spatial>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_stable>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_stickyFaces>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_subClassOf>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_subPropertyOf>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_subject>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_syntheticVertexFaces>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_syntheticVertices>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_temporal>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_temporal:>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_threeBorderVertexFaces>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_title>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_totalArea>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_totalNumberOfFaces>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_totalNumberOfVertices>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_totalVolumeDX>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_totalVolumeDY>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_totalVolumeDZ>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_transformationMatrix>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_transliteration>,
         <https://situx.github.io/cuneiformontology/cunei_dataset_type>,
-        <https://situx.github.io/cuneiformontology/cunei_dataset_unicodeCodepoint>,
-        <https://situx.github.io/cuneiformontology/cunei_dataset_unicodeRepresentation> ;
-    void:triples 115216 ;
+        <https://situx.github.io/cuneiformontology/cunei_dataset_usesValue>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_value>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_variant>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_vertexIsolated>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_vertexNormalLength>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_verticesOnInvertedEdge>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_verticesPartOfZeroAreaFace>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_wktTransformation>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_wordIndex>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_writtenRep>,
+        <https://situx.github.io/cuneiformontology/cunei_dataset_zeroAreaFaces> ;
+    void:triples 87334 ;
     void:uriSpace "https://situx.github.io/cuneiformontology/"^^xsd:string ;
     void:vocabulary vext:,
         dcam:,
