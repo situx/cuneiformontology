@@ -25,8 +25,8 @@ jobs:
           createVOWL: true
           preferredlang: en
           ghpages: true
-
-    ontdocII:
+          
+  ontdocII:
       uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
       name: Ontdoc II      
       with: 
@@ -45,7 +45,7 @@ jobs:
             ghpages: true
 
   
-      build:
+  build:
 
         runs-on: ubuntu-latest
         concurrency: ci-${{ github.ref }}
@@ -122,4 +122,4 @@ jobs:
           with:
              BRANCH: gh-pages
              FOLDER: docs/
-         clean: false
+             clean: false
