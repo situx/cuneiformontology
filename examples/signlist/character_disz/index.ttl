@@ -1,14 +1,16 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://www.purl.org/cuneiform#> .
-@prefix ns3: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns3: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/signlist/character_disz> a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme>,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: 1(disz)"@en ;
-    ns3:writtenRep "𒁹" ;
-    ns2:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char3> ;
-    ns2:transliteration "1(disz)" ;
-    ns1:variant <https://situx.github.io/cuneiformontology/examples/ht073195/1(disz)_charvariant1> .
+    ns2:writtenRep "𒁹" ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    ns1:Occurrence <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_transliteration1_obverse_line3_char3> ;
+    ns1:transliteration "1(disz)" ;
+    ns3:variant <https://situx.github.io/cuneiformontology/examples/ht073195/1(disz)_charvariant1> .
 

@@ -1,0 +1,14 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_purl.org_meshsparql_> a void:Linkset,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Linkset: cunei_dataset - msp:"@en ;
+    void:linkPredicate rdf:type ;
+    void:objectsTarget <http://purl.org/meshsparql#> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 981 .
+

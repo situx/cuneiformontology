@@ -2,6 +2,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix ns1: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1> a ns1:Transliteration,
@@ -10,6 +11,7 @@
     rdfs:label "HS 1174 transliteration 1"@en ;
     dc:creator "cdlistaff" ;
     dcterms:created "2006-10-12T12:28:12"^^xsd:dateTime ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     ns1:signreadings <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_signreadinglist> ;
     ns1:signs <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_signlist> .
 

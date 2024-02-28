@@ -2,6 +2,7 @@
 @prefix ns1: <http://purl.org/meshsparql#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ee30c3ec-c6dd-413c-9bdb-ad67185ce43c_target3d_selector> a <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/oa#WKTSelector>,
@@ -9,6 +10,7 @@
     rdfs:label "3D Annotation target selector of Annotation of Glyph at TCH92 reverse line 2 char 5 on a 3D Mesh"@en ;
     ns1:computingReference <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/ee30c3ec-c6dd-413c-9bdb-ad67185ce43c_target3d_selector_compref0> ;
     ns1:pcaValue "POLYGON Z ((-14.33036937993398 -45.06701882428519 -8.483567237854004, -10.33089944016547 -44.97846719839962 -8.483567237854004, -10.238957217117381 -40.72796404173355 -8.483567237854004, -14.468282714506113 -40.72796404173355 -8.483567237854004, -14.33036937993398 -45.06701882428519 -7.028708457946777, -10.33089944016547 -44.97846719839962 -7.028708457946777, -10.238957217117381 -40.72796404173355 -7.028708457946777, -14.468282714506113 -40.72796404173355 -7.028708457946777, -14.33036937993398 -45.06701882428519 -8.483567237854004))"^^<http://www.w3.org/ns/oa#wktLiteral> ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     geo:inSRS <https://situx.github.io/cuneiformontology/examples/crs/cs/cartesian_ax3_mm> ;
     rdf:value "POLYGON Z ((-13.742948499139455 -45.32589869446151 -8.44560432434082, -9.743478559370946 -45.237347068575936 -8.44560432434082, -9.651536336322856 -40.986843911909865 -8.44560432434082, -13.880861833711588 -40.986843911909865 -8.44560432434082, -13.742948499139455 -45.32589869446151 -6.990746021270752, -9.743478559370946 -45.237347068575936 -6.990746021270752, -9.651536336322856 -40.986843911909865 -6.990746021270752, -13.880861833711588 -40.986843911909865 -6.990746021270752, -13.742948499139455 -45.32589869446151 -8.44560432434082))"^^<http://www.w3.org/ns/oa#wktLiteral> .
 

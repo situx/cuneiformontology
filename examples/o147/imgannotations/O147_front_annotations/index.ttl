@@ -1,7 +1,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/O147_front_annotations> a <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     rdfs:member <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/07d793e7-8049-4ab2-9ec0-597382dbba1f>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/09aac23a-5b78-45d8-a561-a93d8c8eaaaa>,
         <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/0e53e772-f7bb-43d0-98a5-46e34c8e40ea>,

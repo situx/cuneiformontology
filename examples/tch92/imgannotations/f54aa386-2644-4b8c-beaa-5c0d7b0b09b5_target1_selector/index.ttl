@@ -1,9 +1,11 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/f54aa386-2644-4b8c-beaa-5c0d7b0b09b5_target1_selector> a <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/oa#SvgSelector>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Annotation target selector of Annotation of Glyph at TCH92 reverse line 20 char 8 on 3D rendering"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     rdf:value "<svg><polygon points=\"1307.767822265625,1591.0250244140625 1214.3671875,1589.5185546875 1209.8477783203125,1691.9581298828125 1298.7291259765625,1693.464599609375\"></polygon></svg>" .
 

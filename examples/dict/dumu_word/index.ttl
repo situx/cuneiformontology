@@ -1,6 +1,7 @@
 @prefix ns1: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/dict/dumu_word> a ns1:Word,
         <http://www.w3.org/ns/ldp#Resource>,
@@ -10,5 +11,6 @@
     ns1:form <https://situx.github.io/cuneiformontology/examples/dict/1(u)_wordform_1(u)>,
         <https://situx.github.io/cuneiformontology/examples/dict/dumu_wordform_dumu_szu> ;
     ns1:sense <https://situx.github.io/cuneiformontology/examples/o147/dumu_sense> ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     owl:sameAs <https://www.wikidata.org/wiki/Lexeme:L643788> .
 

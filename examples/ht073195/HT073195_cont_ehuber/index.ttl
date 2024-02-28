@@ -1,10 +1,12 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_ehuber> a <http://www.w3.org/ns/ldp#Resource>,
         foaf:Person,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Eva-Maria Huber"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     <http://xmlns.com/foaf/0.1/family_name:> "Huber" ;
     <http://xmlns.com/foaf/0.1/givenname:> "Eva-Maria" ;
     <http://xmlns.com/foaf/0.1/name:> "Eva-Maria Huber" .

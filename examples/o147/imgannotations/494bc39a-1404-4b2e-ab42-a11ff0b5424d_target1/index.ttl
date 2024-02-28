@@ -1,11 +1,13 @@
 @prefix ns1: <http://www.w3.org/ns/oa#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/494bc39a-1404-4b2e-ab42-a11ff0b5424d_target1> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Annotation target1 of Annotation of Glyph at O147 front line 10 char 2 on 3D rendering"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     ns1:hasSelector <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/494bc39a-1404-4b2e-ab42-a11ff0b5424d_target1_selector> ;
     ns1:hasSource <https://gitlab.rlp.net/api/v4/projects/28015/repository/files/renderings%2FO_0147%2FA%2FO_0147_A_shaded_front.png> .
 

@@ -1,12 +1,14 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_excavloc> a geo:Feature,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "HT 07-31-95 Excavation Location"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     geo:hasGeometry <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_excavloc_geometry> ;
     geo:lat 32.0807663774 ;
     geo:long 48.3289329982 ;

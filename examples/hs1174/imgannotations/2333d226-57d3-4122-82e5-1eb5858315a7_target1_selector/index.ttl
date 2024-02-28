@@ -1,9 +1,11 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/2333d226-57d3-4122-82e5-1eb5858315a7_target1_selector> a <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/oa#SvgSelector>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Annotation target selector of Annotation of Wedge at HS1174 obverse line 4 char 3 wedge 4 on 3D rendering"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     rdf:value "<svg><polygon points=\"429.0068664550781,613.8606567382812 424.46142578125,630.2243041992188 434.46142578125,627.4970703125 465.3705139160156,635.6788940429688 466.27960205078125,629.3152465820312 437.1886901855469,623.8606567382812\"></polygon></svg>" .
 

@@ -3,6 +3,7 @@
 @prefix ns1: <http://www.w3.org/2003/12/exif/ns#> .
 @prefix ns2: <http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/> .
 @prefix ns3: <http://ns.adobe.com/xap/1.0/> .
+@prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_photo9> a <http://www.w3.org/ns/ldp#Resource>,
@@ -30,6 +31,7 @@
     dc:temporal <https://pleiades.stoa.org/vocabularies/time-periods/late-bronze-age-iran> ;
     dc:title "HT 07-31-95 photo 09" ;
     dc:type dc:Image ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     ns1:DateTime "2007:01:27 11:29:21" ;
     ns1:ExifOffset "196" ;
     ns1:GPSLatitude "32.080207° N" ;

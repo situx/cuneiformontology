@@ -1,0 +1,13 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_heidicon.ub.uni-heidelberg.de_eas_partitions_1_0_577000_577526_97a78512f61fae4dbdf80c43e7725822a3a23308_application_x-ply_> a void:Linkset,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Linkset: cunei_dataset - x-ply"@en ;
+    void:linkPredicate <http://www.w3.org/ns/oa#hasSource> ;
+    void:objectsTarget <https://heidicon.ub.uni-heidelberg.de/eas/partitions/1/0/577000/577526/97a78512f61fae4dbdf80c43e7725822a3a23308/application/x-ply/> ;
+    void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    void:triples 36 .
+

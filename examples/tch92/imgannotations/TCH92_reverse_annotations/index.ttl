@@ -1,9 +1,11 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/TCH92_reverse_annotations> a <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource>,
         <https://www.w3.org/ns/activitystreams#Collection> ;
     rdfs:label "Image annotations on TCH92 reverse on medium 3D rendering"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     rdfs:member <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/0052c32d-8670-4bf6-a3b5-41d39b4caaec>,
         <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/00a7b8c0-721b-4a8c-8eea-8c8fa65f3590>,
         <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/00c5a316-757d-4bb7-bc5e-c4a6317bc50e>,

@@ -1,10 +1,12 @@
 @prefix ns1: <http://lemon-model.net/lemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/dict/9(u)_word> a ns1:Word,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Word: 9(u)"@en ;
     ns1:form <https://situx.github.io/cuneiformontology/examples/dict/9(u)_wordform_9(u)> ;
-    ns1:sense <https://situx.github.io/cuneiformontology/examples/dict/9(u)_wordsense> .
+    ns1:sense <https://situx.github.io/cuneiformontology/examples/dict/9(u)_wordsense> ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> .
 

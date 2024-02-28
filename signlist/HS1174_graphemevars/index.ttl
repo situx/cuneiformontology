@@ -1,9 +1,11 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/HS1174_graphemevars> a <http://www.purl.org/graphemon#GraphemeVariantCollection>,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "HS1174 Grapheme Variant Collection"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     rdfs:member <https://situx.github.io/cuneiformontology/signlist/3(disz)_charvariant1>,
         <https://situx.github.io/cuneiformontology/signlist/3(u)_charvariant1>,
         <https://situx.github.io/cuneiformontology/signlist/9(disz)_charvariant1>,

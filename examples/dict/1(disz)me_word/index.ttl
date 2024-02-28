@@ -1,7 +1,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/dict/1(disz)me_word> a <http://lemon-model.net/lemon#Word>,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
-    rdfs:label "Word: 1(disz)-ME"@en .
+    rdfs:label "Word: 1(disz)-ME"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> .
 

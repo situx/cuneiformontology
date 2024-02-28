@@ -1,6 +1,7 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns1: <http://purl.org/meshsparql#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/86c668c6-2039-42f4-b447-cb7b014ed130_target3d_selector_compref0> a ns1:PCAReference,
@@ -11,5 +12,6 @@
     ns1:stable true ;
     ns1:transformationMatrix "[[ 1.00000000e+00  2.16660739e-09  1.32984419e-09  1.20950012e+03] [-2.16660714e-09  1.00000000e+00  1.83508149e-09 -8.24499970e+02] [-1.32984422e-09 -1.83508138e-09  1.00000000e+00 -8.02843825e+00] [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]"^^ns1:matrixLiteral ;
     ns1:wktTransformation "COORDINATEOPERATION[\"Object To PCA\",SOURCECRS[CS[\"cartesian\", 3],  METHOD[\"Geocentric translations\", ID[\"EPSG\", 1031]],        PARAMETER[\"X-axis translation\",  [[1209.50012297]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Y-axis translation\",  [[-824.49997044]], LENGTHUNIT[\"metre\", 1]],        PARAMETER[\"Z-axis translation\",  [[-8.02843825]], LENGTHUNIT[\"metre\", 1]],        AREA[\"Object extent\"],        BBOX[-43.7, 112.85, -9.87, 153.68]]"^^<http://situx.github.io/proj4rdf/ont/crs/wktLiteral> ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     geo:coordinateOperation <https://situx.github.io/cuneiformontology/examples/crs/crs/operation/cartesian_to_pca_86c668c6-2039-42f4-b447-cb7b014ed130> .
 

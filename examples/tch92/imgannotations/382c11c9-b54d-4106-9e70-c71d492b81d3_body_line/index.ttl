@@ -1,12 +1,14 @@
 @prefix ns1: <http://www.w3.org/ns/oa#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/382c11c9-b54d-4106-9e70-c71d492b81d3_body_line> a <http://www.w3.org/ns/ldp#Resource>,
         ns1:TextualBody,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Annotation Body: Line 3"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     rdf:value 3 ;
     ns1:motivatedBy ns1:describing ;
     ns1:purpose ns1:tagging .

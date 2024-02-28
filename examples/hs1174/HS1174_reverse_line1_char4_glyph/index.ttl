@@ -1,11 +1,13 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix ns2: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1_char4_glyph> a <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph>,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Glyph at HS1174 reverse side line 1 char 4"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     ns2:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_1_4_a_HS1174_06_back.jpg> ;
     ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line1_char3_glyph> .
 

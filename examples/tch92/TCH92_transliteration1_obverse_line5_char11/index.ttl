@@ -1,12 +1,14 @@
 @prefix ns1: <http://www.purl.org/cuneiform#> .
 @prefix ns2: <https://situx.github.io/cuneiformontology/examples/signlist/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line5_char11> a ns1:TransliterationCharOccurrence,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "TCH92 obverse line 5 char 11"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     ns1:charIndex 11 ;
     ns1:lineNumber 5 ;
     ns1:nextChar <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line5_char12> ;

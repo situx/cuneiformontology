@@ -2,6 +2,7 @@
 @prefix ns1: <https://www.w3.org/ns/activitystreams#> .
 @prefix ns2: <http://www.w3.org/ns/oa#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/20238516-d42d-4c23-82f8-94626948d45b> a <http://www.w3.org/ns/ldp#Resource>,
@@ -10,6 +11,7 @@
     rdfs:label "Annotation of Wedge at HS1174 obverse line 2 char 4 wedge 4 on 3D rendering"@en ;
     dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
     dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     ns2:hasBody <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/20238516-d42d-4c23-82f8-94626948d45b_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/20238516-d42d-4c23-82f8-94626948d45b_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/20238516-d42d-4c23-82f8-94626948d45b_body_line>,

@@ -1,11 +1,13 @@
 @prefix ns1: <http://www.w3.org/ns/oa#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/d0404773-7f6d-4aa8-84ee-b7450e97ebc6_body_translit> a <http://www.w3.org/ns/ldp#Resource>,
         ns1:SpecificResource,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Annotation body referencing transliteration char occurrence at HS1174 reverse line 2 char 3 on 3D rendering"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     rdf:value "ku3" ;
     ns1:hasSource <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_reverse_line2_char3> ;
     ns1:motivatedBy ns1:identifying .

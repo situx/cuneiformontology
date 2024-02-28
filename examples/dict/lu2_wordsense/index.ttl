@@ -1,7 +1,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/dict/lu2_wordsense> a <http://lemon-model.net/lemon#LexicalSense>,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
-    rdfs:label "Word Sense: lu2"@en .
+    rdfs:label "Word Sense: lu2"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> .
 

@@ -1,10 +1,12 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/signlist/character_sze> a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme>,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: SZE"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     ns1:hasUnicodeCodePoint "U+122BA" ;
     ns1:hasUnicodeRepresentation "𒊺" ;
     ns1:signName "sze" .

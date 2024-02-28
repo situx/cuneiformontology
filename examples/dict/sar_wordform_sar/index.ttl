@@ -1,8 +1,10 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/dict/sar_wordform_sar> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
-    rdfs:label "Wordform: SAR"@en .
+    rdfs:label "Wordform: SAR"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> .
 

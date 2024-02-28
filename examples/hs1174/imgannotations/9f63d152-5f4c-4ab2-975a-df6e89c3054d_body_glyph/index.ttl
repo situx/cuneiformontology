@@ -1,10 +1,12 @@
 @prefix ns1: <http://www.w3.org/ns/oa#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/9f63d152-5f4c-4ab2-975a-df6e89c3054d_body_glyph> a <http://www.w3.org/ns/ldp#Resource>,
         ns1:SpecificResource,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Annotation body referencing Wedge at HS1174 obverse line 4 char 3 wedge 5 on 3D rendering"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     ns1:hasSource <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line4_char3_wedge5_glyph> ;
     ns1:motivatedBy ns1:identifying .
 

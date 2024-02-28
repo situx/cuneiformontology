@@ -1,0 +1,12 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://situx.github.io/cuneiformontology/cunei_dataset_axisDirection> a void:Dataset,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Property Partition: axisDirection"@en ;
+    void:property <http://situx.github.io/proj4rdf/ont/crs/axisDirection>,
+        <http://www.opengis.net/ont/crs/axisDirection> ;
+    void:triples 3 .
+

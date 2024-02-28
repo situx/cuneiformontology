@@ -1,5 +1,6 @@
 @prefix ns1: <http://lemon-model.net/lemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_transliteration1_lexicon> a ns1:Lexicon,
         <http://www.w3.org/ns/ldp#Resource>,
@@ -14,5 +15,6 @@
         <https://situx.github.io/cuneiformontology/examples/dict/ugula_word>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/e2-gal_sense>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/lu2_sense> ;
-    ns1:language <http://www.purl.org/cuneiform#Sumerian> .
+    ns1:language <http://www.purl.org/cuneiform#Sumerian> ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> .
 

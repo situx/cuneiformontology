@@ -1,7 +1,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/O147_right_annotations> a <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource>,
         <https://www.w3.org/ns/activitystreams#Collection> ;
-    rdfs:label "Image annotations on O147 right on medium 3D rendering"@en .
+    rdfs:label "Image annotations on O147 right on medium 3D rendering"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> .
 

@@ -1,0 +1,12 @@
+@prefix ns1: <http://www.w3.org/2006/vcard/ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<https://situx.github.io/cuneiformontology/Person_collection> a ns1:Group,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Person Instances Collection"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    ns1:hasMember <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_ehuber>,
+        <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_cont_tbrandes> .
+

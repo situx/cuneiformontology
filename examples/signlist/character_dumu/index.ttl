@@ -1,5 +1,6 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/signlist/character_dumu> a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme>,
@@ -7,6 +8,7 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: DUMU"@en,
         "Character: Dumu"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     ns1:abzl 393 ;
     ns1:hasUnicodeCodePoint "U+12309" ;
     ns1:hasUnicodeRepresentation "𒌉" ;

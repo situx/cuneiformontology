@@ -1,8 +1,10 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/signlist/character_disz_reading_1(disz)> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
-    rdfs:label "Grapheme Reading DISZ: 1(disz)"@en .
+    rdfs:label "Grapheme Reading DISZ: 1(disz)"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> .
 

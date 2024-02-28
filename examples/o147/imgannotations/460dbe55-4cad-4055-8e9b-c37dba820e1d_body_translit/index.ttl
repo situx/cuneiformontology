@@ -1,11 +1,13 @@
 @prefix ns1: <http://www.w3.org/ns/oa#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/460dbe55-4cad-4055-8e9b-c37dba820e1d_body_translit> a <http://www.w3.org/ns/ldp#Resource>,
         ns1:SpecificResource,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Annotation body referencing transliteration char occurrence at O147 front line 10 char 3 on 3D rendering"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     rdf:value "ap" ;
     ns1:hasSource <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_front_line10_char3> ;
     ns1:motivatedBy ns1:identifying .

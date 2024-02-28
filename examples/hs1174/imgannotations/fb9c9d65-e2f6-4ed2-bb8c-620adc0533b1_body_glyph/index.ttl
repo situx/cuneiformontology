@@ -1,10 +1,12 @@
 @prefix ns1: <http://www.w3.org/ns/oa#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/fb9c9d65-e2f6-4ed2-bb8c-620adc0533b1_body_glyph> a <http://www.w3.org/ns/ldp#Resource>,
         ns1:SpecificResource,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Annotation body referencing Glyph at HS1174 reverse line 3 char 2 on 3D rendering"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     ns1:hasSource <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line3_char2_glyph> ;
     ns1:motivatedBy ns1:identifying .
 

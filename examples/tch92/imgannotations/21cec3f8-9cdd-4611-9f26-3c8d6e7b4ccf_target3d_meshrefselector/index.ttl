@@ -1,10 +1,12 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/21cec3f8-9cdd-4611-9f26-3c8d6e7b4ccf_target3d_meshrefselector> a <http://purl.org/meshsparql#MeshReferenceSelector>,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "3D Annotation target meshref selector of Annotation of Glyph at TCH92 obverse line 9 char 3 on a 3D Mesh"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     rdf:value "https://situx.github.io/cuneiformontology/examples/meshanno/21cec3f8-9cdd-4611-9f26-3c8d6e7b4ccf/"^^xsd:anyURI .
 

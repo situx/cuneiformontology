@@ -1,10 +1,12 @@
 @prefix ns1: <http://www.w3.org/ns/oa#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/a69e8437-1b8f-4c4f-9a72-b76ccab4f167_body_glyph> a <http://www.w3.org/ns/ldp#Resource>,
         ns1:SpecificResource,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Annotation body referencing Glyph at O147 front line 2 char 9 on 3D rendering"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     ns1:hasSource <https://situx.github.io/cuneiformontology/examples/o147/O147_front_line2_char9_glyph> ;
     ns1:motivatedBy ns1:identifying .
 

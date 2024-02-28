@@ -1,9 +1,11 @@
 @prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/signlist/um_charvariant1> a <http://www.purl.org/graphemon#GraphemeVariant>,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Grapheme Variant 1: UM"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     ns1:P62_depicted_by <https://situx.github.io/cuneiformontology/signlist/HS1174_obverse_line2_char4_glyph> .
 

@@ -1,10 +1,12 @@
 @prefix ns1: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1> a ns1:Transliteration,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Transliteration 1 of TCH92 tablet"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     ns1:signreadings <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_signreadinglist> ;
     ns1:signs <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_signlist> .
 

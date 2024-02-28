@@ -1,11 +1,13 @@
 @prefix ns1: <http://www.w3.org/ns/oa#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/1ee4f6dd-4556-411e-a40d-1bfef254fb74_target1> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Annotation target1 of Annotation of Glyph at TCH92 obverse line 4 char 8 on 3D rendering"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     ns1:hasSelector <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/1ee4f6dd-4556-411e-a40d-1bfef254fb74_target1_selector> ;
     ns1:hasSource <https://situx.github.io/cuneiformontology/examples/tch92/images/sides/TCH92_03_ha_front.png> .
 

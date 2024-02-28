@@ -1,11 +1,13 @@
 @prefix ns1: <http://www.w3.org/ns/oa#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/47fdacc5-6576-4c1e-8743-f93be32e998b_target3d> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "3D Annotation target of Annotation of Glyph at HS1174 obverse line 4 char 3 on 3D rendering"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     ns1:hasSelector <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/47fdacc5-6576-4c1e-8743-f93be32e998b_target3d_labelselector>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/47fdacc5-6576-4c1e-8743-f93be32e998b_target3d_meshrefselector>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/47fdacc5-6576-4c1e-8743-f93be32e998b_target3d_selector> ;

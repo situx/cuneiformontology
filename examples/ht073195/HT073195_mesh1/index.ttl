@@ -2,6 +2,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ns1: <http://www.gigamesh.eu/ont#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1> a ns1:Mesh,
@@ -17,6 +18,7 @@
         <https://orcid.org/0000-0002-2004-4153>,
         <https://orcid.org/0000-0002-9499-5840> ;
     dc:creator [ ] ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     ns1:NaNVertices <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_NaNVertices> ;
     ns1:amountOfConnectedComponents <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_connectedComponents> ;
     ns1:borderFaces <https://situx.github.io/cuneiformontology/examples/ht073195/HT073195_mesh1_borderFaces> ;

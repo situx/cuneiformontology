@@ -2,6 +2,7 @@
 @prefix ns1: <http://www.w3.org/ns/oa#> .
 @prefix ns2: <https://www.w3.org/ns/activitystreams#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/26f35b27-c68c-49c4-ae6d-cd9a207b01ed> a <http://www.w3.org/ns/ldp#Resource>,
@@ -10,6 +11,7 @@
     rdfs:label "Annotation of Glyph at TCH92 obverse line 5 char 2 on 3D rendering"@en ;
     dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
     dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     ns1:hasBody <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/26f35b27-c68c-49c4-ae6d-cd9a207b01ed_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/26f35b27-c68c-49c4-ae6d-cd9a207b01ed_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/26f35b27-c68c-49c4-ae6d-cd9a207b01ed_body_line>,

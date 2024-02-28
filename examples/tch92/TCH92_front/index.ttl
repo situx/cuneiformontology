@@ -1,12 +1,14 @@
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix ns2: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_front> a ns2:ObverseSide,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "TCH92 obverse side"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     ns2:isRepresentedBy "https://situx.github.io/cuneiformontology/examples/tch92/images/sides/TCH92_03_ha_front.png"^^xsd:anyURI ;
     ns1:contains <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line1>,
         <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line10>,

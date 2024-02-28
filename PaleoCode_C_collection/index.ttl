@@ -1,0 +1,14 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<https://situx.github.io/cuneiformontology/PaleoCode_C_collection> a skos:Collection,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "PaleoCode_C Instances Collection"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    rdfs:member <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char1_wedge7_glyph>,
+        <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char3_wedge8_glyph>,
+        <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line2_char4_wedge6_glyph>,
+        <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line3_char3_wedge8_glyph> .
+

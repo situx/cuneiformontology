@@ -2,12 +2,14 @@
 @prefix ns2: <http://www.purl.org/cuneiform#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line11_char1> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "O147 transliteration 1 reverse line 11 char 1"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     ns2:charIndex 1 ;
     ns2:lineNumber 11 ;
     ns2:nextChar <https://situx.github.io/cuneiformontology/examples/o147/O147_transliteration1_reverse_line11_char2> ;

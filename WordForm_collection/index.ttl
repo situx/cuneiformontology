@@ -1,0 +1,42 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<https://situx.github.io/cuneiformontology/WordForm_collection> a skos:Collection,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "WordForm Instances Collection"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    rdfs:member <https://situx.github.io/cuneiformontology/examples/dict/1(disz)_wordform_1(disz)>,
+        <https://situx.github.io/cuneiformontology/examples/dict/1(disz)me_wordform_1(disz)_me>,
+        <https://situx.github.io/cuneiformontology/examples/dict/1(u)_wordform_1(u)>,
+        <https://situx.github.io/cuneiformontology/examples/dict/2(disz)_wordform_2(disz)>,
+        <https://situx.github.io/cuneiformontology/examples/dict/3(disz)_wordform_3(disz)>,
+        <https://situx.github.io/cuneiformontology/examples/dict/3(u)_wordform_3(u)>,
+        <https://situx.github.io/cuneiformontology/examples/dict/5(disz)_wordform_5(disz)>,
+        <https://situx.github.io/cuneiformontology/examples/dict/6(disz)_wordform_6(disz)>,
+        <https://situx.github.io/cuneiformontology/examples/dict/8(disz)_wordform_8(disz)>,
+        <https://situx.github.io/cuneiformontology/examples/dict/9(u)_wordform_9(u)>,
+        <https://situx.github.io/cuneiformontology/examples/dict/ban_wordform1>,
+        <https://situx.github.io/cuneiformontology/examples/dict/dam_wordform_dam>,
+        <https://situx.github.io/cuneiformontology/examples/dict/dam_wordform_dam_su>,
+        <https://situx.github.io/cuneiformontology/examples/dict/dumu_wordform_dumu>,
+        <https://situx.github.io/cuneiformontology/examples/dict/dumu_wordform_dumu_szu>,
+        <https://situx.github.io/cuneiformontology/examples/dict/e2-gal_wordform_e2_gal>,
+        <https://situx.github.io/cuneiformontology/examples/dict/e2_a_wordform_e2_a>,
+        <https://situx.github.io/cuneiformontology/examples/dict/e2_wordform_e2>,
+        <https://situx.github.io/cuneiformontology/examples/dict/f-pu-ut-tu-me-ri_wordform_f-pu-ut-tu-me-ri>,
+        <https://situx.github.io/cuneiformontology/examples/dict/f-ta-ki-szu_wordform_f_ta_ki_szu>,
+        <https://situx.github.io/cuneiformontology/examples/dict/f_a_na_ru_qi_al_si_szi_wordform_f_a_na_ru_qi_al_si_szi>,
+        <https://situx.github.io/cuneiformontology/examples/dict/f_ba_bi-szar_ri_wordform_f_ba_bi-szar_ri>,
+        <https://situx.github.io/cuneiformontology/examples/dict/f_im_ma_te_a_am_mar_wordform_f_im_ma_te_a_am_mar>,
+        <https://situx.github.io/cuneiformontology/examples/dict/f_ki_di_ni_tu_wordform_f_ki_di_ni_tu>,
+        <https://situx.github.io/cuneiformontology/examples/dict/f_la_ka_ma_asz_sze_wordform_f_la_ka_ma_asz_sze>,
+        <https://situx.github.io/cuneiformontology/examples/dict/f_me_e_na_ma_gi_wordform_f_me_e_na_ma_gi>,
+        <https://situx.github.io/cuneiformontology/examples/dict/f_pi_il_ha_tu_wordform_f_pi_il_ha_tu>,
+        <https://situx.github.io/cuneiformontology/examples/dict/gaba_wordform_gaba>,
+        <https://situx.github.io/cuneiformontology/examples/dict/kin_wordform_kin>,
+        <https://situx.github.io/cuneiformontology/examples/dict/ku3babbar_wordform_ku3babbar>,
+        <https://situx.github.io/cuneiformontology/examples/dict/sze_wordform_sze>,
+        <https://situx.github.io/cuneiformontology/examples/dict/ugula_wordform_ugula> .
+

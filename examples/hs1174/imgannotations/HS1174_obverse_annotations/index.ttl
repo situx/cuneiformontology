@@ -1,9 +1,11 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/HS1174_obverse_annotations> a <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource>,
         <https://www.w3.org/ns/activitystreams#Collection> ;
     rdfs:label "Image annotations on HS1174 obverse on medium 3D rendering"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     rdfs:member <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/00cda0d2-a7fb-4e22-b367-242a7c8119fc>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/059d6ee0-b203-4059-a996-767b25994eb7>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/imgannotations/0753a90c-1198-4ddd-b818-571579b2a7cf>,

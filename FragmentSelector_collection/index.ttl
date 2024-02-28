@@ -1,0 +1,15 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<https://situx.github.io/cuneiformontology/FragmentSelector_collection> a skos:Collection,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "FragmentSelector Instances Collection"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    rdfs:member <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/3d8544d7-d2bc-4c17-b60e-5800b6599223_target1_selector>,
+        <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/77b627d4-43df-4d5d-ae75-2f247367c59a_target1_selector>,
+        <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/a57779c5-67ad-41de-9de6-590491c89268_target1_selector>,
+        <https://situx.github.io/cuneiformontology/examples/o147/imgannotations/ab6af627-327d-4bd7-b88a-8c0ff1dc7912_target1_selector>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/5d60b30a-221d-4926-bb1f-fb1e5bbc40c3_target1_selector> .
+

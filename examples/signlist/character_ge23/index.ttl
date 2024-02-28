@@ -1,18 +1,20 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <https://situx.github.io/cuneiformontology/examples/signlist/> .
+@prefix ns1: <https://situx.github.io/cuneiformontology/examples/signlist/> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ns2:character_ge23 a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme>,
+ns1:character_ge23 a <http://www.cidoc-crm.org/cidoc-crm/TX8_Grapheme>,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: GE23"@en ;
-    ns1:altSignName "DISZ-tenu" ;
-    ns1:hasGraphemeReading ns2:character_ge23_reading_isz8 ;
-    ns1:hasUnicodeCodePoint "U+12039" ;
-    ns1:hasUnicodeRepresentation "𒀹" ;
-    ns1:meszl 575 ;
-    ns1:signName "GE23" ;
-    ns1:slha 360 ;
-    ns2:hasGraphemeReading ns2:character_ge23_reading_isz8 .
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    ns2:altSignName "DISZ-tenu" ;
+    ns2:hasGraphemeReading ns1:character_ge23_reading_isz8 ;
+    ns2:hasUnicodeCodePoint "U+12039" ;
+    ns2:hasUnicodeRepresentation "𒀹" ;
+    ns2:meszl 575 ;
+    ns2:signName "GE23" ;
+    ns2:slha 360 ;
+    ns1:hasGraphemeReading ns1:character_ge23_reading_isz8 .
 

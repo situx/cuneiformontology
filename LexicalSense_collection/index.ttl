@@ -1,0 +1,41 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<https://situx.github.io/cuneiformontology/LexicalSense_collection> a skos:Collection,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "LexicalSense Instances Collection"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
+    rdfs:member <https://situx.github.io/cuneiformontology/examples/dict/1(disz)_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/1(disz)me_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/1(u)_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/2(disz)_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/3(disz)_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/3(u)_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/5(disz)_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/6(disz)_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/8(disz)_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/9(disz)_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/9(u)_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/ban_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/dam_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/dumu_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/e2-gal_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/e2_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/f-pu-ut-tu-me-ri_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/f_a_na_ru_qi_al_si_szi_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/f_ba_bi-szar_ri_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/f_im_ma_te_a_am_mar_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/f_ki_di_ni_tu_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/f_la_ka_ma_asz_sze_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/f_me_e_na_ma_gi_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/f_pi_il_ha_tu_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/f_ta_ki_szu_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/gaba_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/ku3babbar_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/lu2_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/sze_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/szesz_wordsense>,
+        <https://situx.github.io/cuneiformontology/examples/dict/ugula_wordsense> .
+

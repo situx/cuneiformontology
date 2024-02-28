@@ -1,9 +1,11 @@
 @prefix ns1: <http://lemon-model.net/lemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
 <https://situx.github.io/cuneiformontology/examples/dict/ugula_word> a ns1:Word,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Word: ugula"@en ;
-    ns1:form <https://situx.github.io/cuneiformontology/examples/dict/ugula_wordform_ugula> .
+    ns1:form <https://situx.github.io/cuneiformontology/examples/dict/ugula_wordform_ugula> ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> .
 

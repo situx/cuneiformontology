@@ -1,12 +1,14 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line8_char5_glyph> a <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph>,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Glyph at O147 reverse side line 8 char 5"@en ;
+    void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/o147/O147_reverse_line8_char4_glyph> ;
     foaf:image "https://situx.github.io/cuneiformontology/examples/o147/images/charline/charline_8_5_tim_O147_A_color_back.jpg"^^xsd:anyURI,
         "https://situx.github.io/cuneiformontology/examples/o147/images/charline/charline_8_5_tim_O147_A_shaded_back.jpg"^^xsd:anyURI,
