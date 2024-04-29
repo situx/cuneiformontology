@@ -435,7 +435,7 @@ schema: a voaf:Vocabulary ;
 
 <https://situx.github.io/cuneiformontology/cunei_dataset_dist_ttl> a adms:AssetDistribution ;
     rdfs:label "cunei_dataset TTL Distribution"@en ;
-    dcat:downloadURL "https://situx.github.io/cuneiformontology/index.ttl"^^xsd:anyURI ;
+    dcat:downloadURL "https://situx.github.io/cuneiformontology//index.ttl"^^xsd:anyURI ;
     dcat:mediaType <http://www.w3.org/ns/formats/Turtle> .
 
 <https://situx.github.io/cuneiformontology/cunei_dataset_epoch> a void:Dataset ;
@@ -466,7 +466,7 @@ schema: a voaf:Vocabulary ;
 <https://situx.github.io/cuneiformontology/cunei_dataset_label> a void:Dataset ;
     rdfs:label "Property Partition: label"@en ;
     void:property rdfs:label ;
-    void:triples 19597 .
+    void:triples 19602 .
 
 <https://situx.github.io/cuneiformontology/cunei_dataset_lak> a void:Dataset ;
     rdfs:label "Property Partition: lak"@en ;
@@ -476,7 +476,7 @@ schema: a voaf:Vocabulary ;
 <https://situx.github.io/cuneiformontology/cunei_dataset_member> a void:Dataset ;
     rdfs:label "Property Partition: member"@en ;
     void:property rdfs:member ;
-    void:triples 1391 .
+    void:triples 18563 .
 
 <https://situx.github.io/cuneiformontology/cunei_dataset_meszl> a void:Dataset ;
     rdfs:label "Property Partition: meszl"@en ;
@@ -521,7 +521,7 @@ schema: a voaf:Vocabulary ;
 <https://situx.github.io/cuneiformontology/cunei_dataset_type> a void:Dataset ;
     rdfs:label "Property Partition: type"@en ;
     void:property rdf:type ;
-    void:triples 17200 .
+    void:triples 17205 .
 
 <https://situx.github.io/cuneiformontology/cunei_dataset_unicodeCodepoint> a void:Dataset ;
     rdfs:label "Property Partition: unicodeCodepoint"@en ;
@@ -548,19 +548,19 @@ skos: a voaf:Vocabulary ;
 <https://situx.github.io/cuneiformontology/cunei_dataset> a void:Dataset,
         adms:Asset ;
     rdfs:label "cunei_dataset"@en ;
-    vext:averageLiteralLength 17 ;
-    vext:averageObjectIRILength 62 ;
+    vext:averageLiteralLength 0 ;
+    vext:averageObjectIRILength 46 ;
     vext:averagePropertyIRILength 38 ;
     vext:averageSubjectIRILength 77 ;
     vext:datatypes 0 ;
     vext:distinctBlankNodes 0 ;
-    vext:distinctIRIReferences 72024 ;
-    vext:distinctLiterals 35576 ;
-    vext:distinctRDFNodes 107600 ;
-    vext:languages 1 ;
+    vext:distinctIRIReferences 75080 ;
+    vext:distinctLiterals 0 ;
+    vext:distinctRDFNodes 75080 ;
+    vext:languages 0 ;
     vext:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2024-02-28T18:45:53"^^xsd:dateTime ;
+    dcterms:modified "2024-04-29T23:22:37"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
@@ -577,8 +577,8 @@ skos: a voaf:Vocabulary ;
         <https://situx.github.io/cuneiformontology/cunei_dataset_GraphemeReading>,
         <https://situx.github.io/cuneiformontology/cunei_dataset_GraphemeSense> ;
     void:classes 7 ;
-    void:dataDump <https://situx.github.io/cuneiformontology/index.ttl> ;
-    void:distinctObjects 53326 ;
+    void:dataDump <https://situx.github.io/cuneiformontology//index.ttl> ;
+    void:distinctObjects 56382 ;
     void:distinctSubjects 18678 ;
     void:entities 17159 ;
     void:feature <http://www.w3.org/ns/formats/RDFa>,
@@ -644,7 +644,7 @@ skos: a voaf:Vocabulary ;
         "Person"@en,
         "Q121810372"@en,
         "Time"@en ;
-    dcat:landingPage <https://situx.github.io/cuneiformontology> ;
-    foaf:homepage <https://situx.github.io/cuneiformontology> ;
-    foaf:page <https://situx.github.io/cuneiformontology/index.html> .
+    dcat:landingPage <https://situx.github.io/cuneiformontology/> ;
+    foaf:homepage <https://situx.github.io/cuneiformontology/> ;
+    foaf:page <https://situx.github.io/cuneiformontology//index.html> .
 

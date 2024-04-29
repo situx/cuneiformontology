@@ -1,31 +1,31 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_gisal> a ns1:Grapheme,
+<https://situx.github.io/cuneiformontology/signlist/character_gisal> a ns2:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: GISAL (BI.GIŠ)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_gisal_sense_oar> ;
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_gisal_sense_oar> ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns1:abzl "081" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gisal_reading_biz2>,
+    ns2:abzl "081" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gisal_reading_biz2>,
         <https://situx.github.io/cuneiformontology/signlist/character_gisal_reading_gisal>,
         <https://situx.github.io/cuneiformontology/signlist/character_gisal_reading_giszal>,
         <https://situx.github.io/cuneiformontology/signlist/character_gisal_reading_gizal>,
         <https://situx.github.io/cuneiformontology/signlist/character_gisal_reading_mizal>,
         <https://situx.github.io/cuneiformontology/signlist/character_gisal_reading_ŋisal>,
         <https://situx.github.io/cuneiformontology/signlist/character_gisal_reading_ŋizal> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gisal_bi>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gisal_bi>,
         <https://situx.github.io/cuneiformontology/signlist/character_gisz> ;
-    ns1:labat "226" ;
-    ns1:meszl "376" ;
-    ns1:obo "81" ;
-    ns1:signName "GISAL (BI.GIŠ)" ;
-    ns1:slha "226" ;
-    ns1:unicodeCodepoint "U+12110" ;
-    ns1:unicodeRepresentation "𒄐" ;
+    ns2:labat "226" ;
+    ns2:meszl "376" ;
+    ns2:obo "81" ;
+    ns2:signName "GISAL (BI.GIŠ)" ;
+    ns2:slha "226" ;
+    ns2:unicodeCodepoint "U+12110" ;
+    ns2:unicodeRepresentation "𒄐" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555528> .
 

@@ -1,17 +1,17 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_su6> a ns2:Grapheme,
+<https://situx.github.io/cuneiformontology/signlist/character_su6> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: SU6 (KA×SA)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_su6_sense_beard> ;
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_su6_sense_beard> ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns2:abzl "316" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_su6_reading_dunₓ>,
+    ns1:abzl "316" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_su6_reading_dunₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_su6_reading_ka×sa>,
         <https://situx.github.io/cuneiformontology/signlist/character_su6_reading_mangaga>,
         <https://situx.github.io/cuneiformontology/signlist/character_su6_reading_su6>,
@@ -19,15 +19,15 @@
         <https://situx.github.io/cuneiformontology/signlist/character_su6_reading_sum4>,
         <https://situx.github.io/cuneiformontology/signlist/character_su6_reading_sum4_su6_k>,
         <https://situx.github.io/cuneiformontology/signlist/character_su6_reading_sun4> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_sa>,
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_sa>,
         <https://situx.github.io/cuneiformontology/signlist/character_su6_ka> ;
-    ns2:hethzl "136" ;
-    ns2:labat "18.1" ;
-    ns2:meszl "32" ;
-    ns2:obo "316" ;
-    ns2:signName "SU6 (KA×SA)" ;
-    ns2:slha "018x" ;
-    ns2:unicodeCodepoint "U+1217E" ;
-    ns2:unicodeRepresentation "𒅾" ;
+    ns1:hethzl "136" ;
+    ns1:labat "18.1" ;
+    ns1:meszl "32" ;
+    ns1:obo "316" ;
+    ns1:signName "SU6 (KA×SA)" ;
+    ns1:slha "018x" ;
+    ns1:unicodeCodepoint "U+1217E" ;
+    ns1:unicodeRepresentation "𒅾" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555756> .
 

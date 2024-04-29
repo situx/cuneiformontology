@@ -1,16 +1,16 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_nin_old_munus_túg> a ns1:GraphemeComposition,
+<https://situx.github.io/cuneiformontology/signlist/character_nin_old_munus_túg> a ns2:GraphemeComposition,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character Composition: NIN, old MUNUS.TÚG" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_nin_old_munus_túg_sense_sister> ;
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_nin_old_munus_túg_sense_sister> ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns1:abzl "452" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_nin_old_munus_túg_reading_e5>,
+    ns2:abzl "452" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_nin_old_munus_túg_reading_e5>,
         <https://situx.github.io/cuneiformontology/signlist/character_nin_old_munus_túg_reading_e5_k>,
         <https://situx.github.io/cuneiformontology/signlist/character_nin_old_munus_túg_reading_egi2>,
         <https://situx.github.io/cuneiformontology/signlist/character_nin_old_munus_túg_reading_eresz>,
@@ -26,15 +26,15 @@
         <https://situx.github.io/cuneiformontology/signlist/character_nin_old_munus_túg_reading_nin_nen>,
         <https://situx.github.io/cuneiformontology/signlist/character_nin_old_munus_túg_reading_nina3>,
         <https://situx.github.io/cuneiformontology/signlist/character_nin_old_munus_túg_reading_sal_tug2> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_nin>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_nin>,
         <https://situx.github.io/cuneiformontology/signlist/character_old_munus>,
         <https://situx.github.io/cuneiformontology/signlist/character_tu2g> ;
-    ns1:hethzl "299" ;
-    ns1:labat "556" ;
-    ns1:meszl "887" ;
-    ns1:obo "451" ;
-    ns1:signName "NIN, old MUNUS.TÚG" ;
-    ns1:slha "556" ;
-    ns1:unicodeCodepoint "U+122A9 & U+12306" ;
-    ns1:unicodeRepresentation "𒊩𒌆" .
+    ns2:hethzl "299" ;
+    ns2:labat "556" ;
+    ns2:meszl "887" ;
+    ns2:obo "451" ;
+    ns2:signName "NIN, old MUNUS.TÚG" ;
+    ns2:slha "556" ;
+    ns2:unicodeCodepoint "U+122A9 & U+12306" ;
+    ns2:unicodeRepresentation "𒊩𒌆" .
 

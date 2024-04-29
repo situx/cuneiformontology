@@ -1035,13 +1035,44 @@ function fitCameraToSelection(camera, controls, selection, fitOffset = 1.2) {
   controls.maxDistance = distance * 10;
   controls.target.copy(center);
 
-  camera.near = distance / 100;
-  camera.far = distance * 100;
-  camera.updateProjectionMatrix();
-
-  camera.position.copy(controls.target).sub(direction);
+  if(typeof(camera)!="undefined" && camera!=null){
+      camera.near = distance / 100;
+      camera.far = distance * 100;
+      camera.updateProjectionMatrix();
+      camera.position.copy(controls.target).sub(direction);
+  }
 
   controls.update();
+}
+
+function addFloatingButtonToMap(mapObject, textForButton, onClickFunction, elementID='mapButton1') {
+        // Create the button element with basic dom manipulation
+        let buttonElement = document.createElement("button");
+        buttonElement.id=elementID
+
+        // Set the innertext and class of the button
+        buttonElement.innerHTML = textForButton;
+        buttonElement.className = 'leaflet-floating-button';
+
+        // Add this leaflet control
+        var buttonControl = L.Control.extend({
+          options: {
+            // if you wish to edit the position of the button, change the position here and also make the corresponding changes in the css attached below
+            position: 'bottomright'
+          },
+
+          onAdd: function () {
+            var container = L.DomUtil.create('div');
+            container.appendChild(buttonElement);
+            return container;
+          }
+        });
+
+        // Add the control to the mapObject
+        mapObject.addControl(new buttonControl());
+
+        // The user defined on click action added to the button
+        buttonElement.onclick = onClickFunction;
 }
 
 function initThreeJS(domelement,verts,meshurls) {
@@ -1088,7 +1119,7 @@ function initThreeJS(domelement,verts,meshurls) {
                 objects.add(mesh);
                 scene.add(objects);
                 addRotationControls(object,geometryF,objects)
-                if(objects.children.length>0){
+                if(objects.children.length>0 && typeof(camera)!=="undefined" && camera!=null){
                     camera.lookAt( objects.children[0].position );
                 }
                 fitCameraToSelection(camera, controls, objects.children)
@@ -1101,10 +1132,10 @@ function initThreeJS(domelement,verts,meshurls) {
             objects.add(nexus_obj)
             scene.add(objects);
             addRotationControls(nexus_obj,geometryF,objects)
-            if(objects.children.length>0){
+            /*if(objects.children.length>0){
                 camera.lookAt( objects.children[0].position );
             }
-            fitCameraToSelection(camera, controls, objects.children)
+            fitCameraToSelection(camera, controls, objects.children)*/
         }else if(meshurls[0].includes(".gltf")){
             var loader = new THREE.GLTFLoader();
             loader.load(meshurls[0], function ( gltf )
@@ -1707,6 +1738,7 @@ function fetchLayersFromList(thelist){
 }
 
 var centerpoints=[]
+var clustersfrozen=false
 
 function setupLeaflet(baselayers,epsg,baseMaps,overlayMaps,map,featurecolls,dateatt="",ajax=true){
 	if(ajax){
@@ -1781,7 +1813,15 @@ function setupLeaflet(baselayers,epsg,baseMaps,overlayMaps,map,featurecolls,date
         }
         centerpoints.push(layerr.getBounds().getCenter());
     }
-	layercontrol=L.control.layers(baseMaps,overlayMaps).addTo(map)
+    addFloatingButtonToMap(map, 'Toggle Clusters', ()=>{
+        if(clustersfrozen){
+            markercluster.enableClustering()
+        }else{
+            markercluster.disableClustering()
+        }
+        clustersfrozen=!clustersfrozen
+    }, 'toggleClusters')
+    layercontrol=L.control.layers(baseMaps,overlayMaps).addTo(map)
 	if(dateatt!=null && dateatt!=""){
 		var sliderControl = L.control.sliderControl({
 			position: "bottomleft",

@@ -1,22 +1,22 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_pa> a ns2:Grapheme,
+<https://situx.github.io/cuneiformontology/signlist/character_pa> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: PA" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_pa_sense__gidru___scepter>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_pa_sense__gidru___scepter>,
         <https://situx.github.io/cuneiformontology/signlist/character_pa_sense__sig3___to_strike>,
         <https://situx.github.io/cuneiformontology/signlist/character_pa_sense__ugula___chief_of_a_team>,
         <https://situx.github.io/cuneiformontology/signlist/character_pa_sense_branch>,
         <https://situx.github.io/cuneiformontology/signlist/character_pa_sense_to_make_tremble>,
         <https://situx.github.io/cuneiformontology/signlist/character_pa_sense_wing> ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns2:abzl "143" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_pa_reading_addirₓ>,
+    ns1:abzl "143" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_pa_reading_addirₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_pa_reading_ari3>,
         <https://situx.github.io/cuneiformontology/signlist/character_pa_reading_aru>,
         <https://situx.github.io/cuneiformontology/signlist/character_pa_reading_ba2>,
@@ -86,14 +86,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_pa_reading_ŋeszturu>,
         <https://situx.github.io/cuneiformontology/signlist/character_pa_reading_ŋidri>,
         <https://situx.github.io/cuneiformontology/signlist/character_pa_reading_ŋidru> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_pa> ;
-    ns2:hethzl "174" ;
-    ns2:labat "295" ;
-    ns2:meszl "464" ;
-    ns2:obo "143" ;
-    ns2:signName "PA" ;
-    ns2:slha "295" ;
-    ns2:unicodeCodepoint "U+1227A" ;
-    ns2:unicodeRepresentation "𒉺" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_pa> ;
+    ns1:hethzl "174" ;
+    ns1:labat "295" ;
+    ns1:meszl "464" ;
+    ns1:obo "143" ;
+    ns1:signName "PA" ;
+    ns1:slha "295" ;
+    ns1:unicodeCodepoint "U+1227A" ;
+    ns1:unicodeRepresentation "𒉺" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556257> .
 

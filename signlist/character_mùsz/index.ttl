@@ -1,18 +1,18 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_mùsz> a ns2:Grapheme,
+<https://situx.github.io/cuneiformontology/signlist/character_mùsz> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: MÙŠ (INANNA)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_mùsz_sense_aspect>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_mùsz_sense_aspect>,
         <https://situx.github.io/cuneiformontology/signlist/character_mùsz_sense_face> ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns2:abzl "044" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_mùsz_reading_ennin>,
+    ns1:abzl "044" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_mùsz_reading_ennin>,
         <https://situx.github.io/cuneiformontology/signlist/character_mùsz_reading_ga_sza_an_an_na>,
         <https://situx.github.io/cuneiformontology/signlist/character_mùsz_reading_inana>,
         <https://situx.github.io/cuneiformontology/signlist/character_mùsz_reading_inanna>,
@@ -46,14 +46,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_mùsz_reading_szed12>,
         <https://situx.github.io/cuneiformontology/signlist/character_mùsz_reading_szuba4>,
         <https://situx.github.io/cuneiformontology/signlist/character_mùsz_reading_zanaru> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_mu3sz_inanna> ;
-    ns2:hethzl "41" ;
-    ns2:labat "103" ;
-    ns2:meszl "153" ;
-    ns2:obo "44" ;
-    ns2:signName "MÙŠ (INANNA)" ;
-    ns2:slha "103v" ;
-    ns2:unicodeCodepoint "U+12239" ;
-    ns2:unicodeRepresentation "𒈹" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_mu3sz_inanna> ;
+    ns1:hethzl "41" ;
+    ns1:labat "103" ;
+    ns1:meszl "153" ;
+    ns1:obo "44" ;
+    ns1:signName "MÙŠ (INANNA)" ;
+    ns1:slha "103v" ;
+    ns1:unicodeCodepoint "U+12239" ;
+    ns1:unicodeRepresentation "𒈹" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556136> .
 

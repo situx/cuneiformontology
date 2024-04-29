@@ -1,18 +1,18 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_kár> a ns1:Grapheme,
+<https://situx.github.io/cuneiformontology/signlist/character_kár> a ns2:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: KÁR (GÁN-tenû and ŠÈ-tenû)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_kár_sense_light>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_kár_sense_light>,
         <https://situx.github.io/cuneiformontology/signlist/character_kár_sense_to_be_bright__day> ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns1:abzl "246" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_kár_reading_gan2@t>,
+    ns2:abzl "246" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_kár_reading_gan2@t>,
         <https://situx.github.io/cuneiformontology/signlist/character_kár_reading_gar19>,
         <https://situx.github.io/cuneiformontology/signlist/character_kár_reading_garak>,
         <https://situx.github.io/cuneiformontology/signlist/character_kár_reading_gur6>,
@@ -21,15 +21,15 @@
         <https://situx.github.io/cuneiformontology/signlist/character_kár_reading_kar2>,
         <https://situx.github.io/cuneiformontology/signlist/character_kár_reading_kara2>,
         <https://situx.github.io/cuneiformontology/signlist/character_kár_reading_kiri2> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ka2r_ga2n>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ka2r_ga2n>,
         <https://situx.github.io/cuneiformontology/signlist/character_tenû>,
         <https://situx.github.io/cuneiformontology/signlist/character_tenû_and_sze3> ;
-    ns1:labat "105.2" ;
-    ns1:meszl "175" ;
-    ns1:obo "246" ;
-    ns1:signName "KÁR (GÁN-tenû and ŠÈ-tenû)" ;
-    ns1:slha "105" ;
-    ns1:unicodeCodepoint "U+120F8" ;
-    ns1:unicodeRepresentation "𒃸" ;
+    ns2:labat "105.2" ;
+    ns2:meszl "175" ;
+    ns2:obo "246" ;
+    ns2:signName "KÁR (GÁN-tenû and ŠÈ-tenû)" ;
+    ns2:slha "105" ;
+    ns2:unicodeCodepoint "U+120F8" ;
+    ns2:unicodeRepresentation "𒃸" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555480> .
 

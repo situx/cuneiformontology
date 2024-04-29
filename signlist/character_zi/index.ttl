@@ -1,22 +1,22 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_zi> a ns2:Grapheme,
+<https://situx.github.io/cuneiformontology/signlist/character_zi> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: ZI" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_zi_sense__zi_d____faithful>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_zi_sense__zi_d____faithful>,
         <https://situx.github.io/cuneiformontology/signlist/character_zi_sense__zi_g____to_raise>,
         <https://situx.github.io/cuneiformontology/signlist/character_zi_sense_breath>,
         <https://situx.github.io/cuneiformontology/signlist/character_zi_sense_life>,
         <https://situx.github.io/cuneiformontology/signlist/character_zi_sense_throat>,
         <https://situx.github.io/cuneiformontology/signlist/character_zi_sense_to_arise> ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns2:abzl "041" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_zi_reading_s_e2>,
+    ns1:abzl "041" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_zi_reading_s_e2>,
         <https://situx.github.io/cuneiformontology/signlist/character_zi_reading_s_i2>,
         <https://situx.github.io/cuneiformontology/signlist/character_zi_reading_se2>,
         <https://situx.github.io/cuneiformontology/signlist/character_zi_reading_si2>,
@@ -28,14 +28,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_zi_reading_zid>,
         <https://situx.github.io/cuneiformontology/signlist/character_zi_reading_zig>,
         <https://situx.github.io/cuneiformontology/signlist/character_zi_reading_zig3> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_zi> ;
-    ns2:hethzl "33" ;
-    ns2:labat "84" ;
-    ns2:meszl "140" ;
-    ns2:obo "41" ;
-    ns2:signName "ZI" ;
-    ns2:slha "084" ;
-    ns2:unicodeCodepoint "U+12363" ;
-    ns2:unicodeRepresentation "𒍣" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_zi> ;
+    ns1:hethzl "33" ;
+    ns1:labat "84" ;
+    ns1:meszl "140" ;
+    ns1:obo "41" ;
+    ns1:signName "ZI" ;
+    ns1:slha "084" ;
+    ns1:unicodeCodepoint "U+12363" ;
+    ns1:unicodeRepresentation "𒍣" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556712> .
 

@@ -1,18 +1,18 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_kar> a ns1:GraphemeComposition,
+<https://situx.github.io/cuneiformontology/signlist/character_kar> a ns2:GraphemeComposition,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character Composition: KAR (TE.A)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_kar_sense_quay>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_kar_sense_quay>,
         <https://situx.github.io/cuneiformontology/signlist/character_kar_sense_to_steal>,
         <https://situx.github.io/cuneiformontology/signlist/character_kar_sense_to_take_away> ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns1:abzl "290" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_kar_reading_gar14>,
+    ns2:abzl "290" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_kar_reading_gar14>,
         <https://situx.github.io/cuneiformontology/signlist/character_kar_reading_ka11>,
         <https://situx.github.io/cuneiformontology/signlist/character_kar_reading_kar>,
         <https://situx.github.io/cuneiformontology/signlist/character_kar_reading_kar_kar>,
@@ -21,14 +21,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_kar_reading_qar2>,
         <https://situx.github.io/cuneiformontology/signlist/character_kar_reading_qar2_kar>,
         <https://situx.github.io/cuneiformontology/signlist/character_kar_reading_te_a> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_a>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_a>,
         <https://situx.github.io/cuneiformontology/signlist/character_kar_te> ;
-    ns1:hethzl "250" ;
-    ns1:labat "376.1" ;
-    ns1:meszl "590" ;
-    ns1:obo "290" ;
-    ns1:signName "KAR (TE.A)" ;
-    ns1:slha "376x" ;
-    ns1:unicodeCodepoint "U+122FC & U+12000" ;
-    ns1:unicodeRepresentation "𒋼𒀀" .
+    ns2:hethzl "250" ;
+    ns2:labat "376.1" ;
+    ns2:meszl "590" ;
+    ns2:obo "290" ;
+    ns2:signName "KAR (TE.A)" ;
+    ns2:slha "376x" ;
+    ns2:unicodeCodepoint "U+122FC & U+12000" ;
+    ns2:unicodeRepresentation "𒋼𒀀" .
 

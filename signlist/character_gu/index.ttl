@@ -1,32 +1,32 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_gu> a ns2:Grapheme,
+<https://situx.github.io/cuneiformontology/signlist/character_gu> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: GU" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_gu_sense_flax>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_gu_sense_flax>,
         <https://situx.github.io/cuneiformontology/signlist/character_gu_sense_thread> ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns2:abzl "458" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gu_reading_gu>,
+    ns1:abzl "458" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_gu_reading_gu>,
         <https://situx.github.io/cuneiformontology/signlist/character_gu_reading_gu5_preferred>,
         <https://situx.github.io/cuneiformontology/signlist/character_gu_reading_gu_gu>,
         <https://situx.github.io/cuneiformontology/signlist/character_gu_reading_gu_rare>,
         <https://situx.github.io/cuneiformontology/signlist/character_gu_reading_gumₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_gu_reading_ku8>,
         <https://situx.github.io/cuneiformontology/signlist/character_gu_reading_qu3> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gu> ;
-    ns2:hethzl "304" ;
-    ns2:labat "559" ;
-    ns2:meszl "891" ;
-    ns2:obo "458" ;
-    ns2:signName "GU" ;
-    ns2:slha "559" ;
-    ns2:unicodeCodepoint "U+12116" ;
-    ns2:unicodeRepresentation "𒄖" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_gu> ;
+    ns1:hethzl "304" ;
+    ns1:labat "559" ;
+    ns1:meszl "891" ;
+    ns1:obo "458" ;
+    ns1:signName "GU" ;
+    ns1:slha "559" ;
+    ns1:unicodeCodepoint "U+12116" ;
+    ns1:unicodeRepresentation "𒄖" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555542> .
 

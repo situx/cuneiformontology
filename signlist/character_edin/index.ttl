@@ -1,18 +1,18 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_edin> a ns2:Grapheme,
+<https://situx.github.io/cuneiformontology/signlist/character_edin> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: EDIN" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_edin_sense_plain>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_edin_sense_plain>,
         <https://situx.github.io/cuneiformontology/signlist/character_edin_sense_steppe> ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns2:abzl "115" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_edin_reading_bilₓ>,
+    ns1:abzl "115" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_edin_reading_bilₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_edin_reading_bir4>,
         <https://situx.github.io/cuneiformontology/signlist/character_edin_reading_dinₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_edin_reading_eden>,
@@ -31,14 +31,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_edin_reading_ri10>,
         <https://situx.github.io/cuneiformontology/signlist/character_edin_reading_ribₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_edin_reading_ru6> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_edin> ;
-    ns2:hethzl "(168)" ;
-    ns2:labat "168" ;
-    ns2:meszl "300" ;
-    ns2:obo "115" ;
-    ns2:signName "EDIN" ;
-    ns2:slha "168" ;
-    ns2:unicodeCodepoint "U+12094" ;
-    ns2:unicodeRepresentation "𒂔" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_edin> ;
+    ns1:hethzl "(168)" ;
+    ns1:labat "168" ;
+    ns1:meszl "300" ;
+    ns1:obo "115" ;
+    ns1:signName "EDIN" ;
+    ns1:slha "168" ;
+    ns1:unicodeCodepoint "U+12094" ;
+    ns1:unicodeRepresentation "𒂔" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555289> .
 
