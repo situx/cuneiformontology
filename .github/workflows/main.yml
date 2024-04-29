@@ -10,7 +10,6 @@ jobs:
 
   ontdocI:
     uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
-    needs: build
     name: Ontdoc I      
     with: 
           rdffilepath: signlist/signlist.ttl
@@ -52,7 +51,7 @@ jobs:
 
         runs-on: ubuntu-latest
         concurrency: ci-${{ github.ref }}
-        #needs: [ontdocI,ontdocII] 
+        needs: [ontdocI,ontdocII] 
         steps:
         - uses: actions/checkout@v3
         - uses: actions/checkout@v3
