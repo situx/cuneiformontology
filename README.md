@@ -2,7 +2,7 @@
                  
 This repository includes a set of ontologies which enable cuneiform artifact related data to be interconnected.
                                                               
-The goal of this collection of ontologies is to connect:
+The goal of this collection of ontologies is to connect: 
 * Linked Data Dictionaries defined by the [Ontolex-Lemon model](https://www.w3.org/2019/09/lexicog/)
 * Cuneiform 3D meshes
 * 3D renderings 
