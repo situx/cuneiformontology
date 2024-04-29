@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.purl.org/cuneiform#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/examples/dict/6(disz)_wordform_6(disz)> a ns2:WordForm,
+<https://situx.github.io/cuneiformontology/examples/dict/6(disz)_wordform_6(disz)> a ns1:WordForm,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Wordform: 6(disz)"@en ;
-    ns2:writtenRep "𒐋" ;
+    ns1:writtenRep "𒐋" ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns1:transliteration "6(disz)" .
+    ns2:transliteration "6(disz)" .
 

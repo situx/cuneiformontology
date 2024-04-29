@@ -1,17 +1,17 @@
-@prefix ns1: <https://situx.github.io/cuneiformontology/examples/signlist/> .
-@prefix ns2: <http://www.purl.org/cuneiform#> .
+@prefix ns1: <http://www.purl.org/cuneiform#> .
+@prefix ns2: <https://situx.github.io/cuneiformontology/examples/signlist/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line2_char4> a ns2:TransliterationCharOccurrence,
+<https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line2_char4> a ns1:TransliterationCharOccurrence,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "TCH92 obverse line 2 char 4"@en ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns2:charIndex 4 ;
-    ns2:lineNumber 2 ;
-    ns2:nextChar <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line2_char5> ;
-    ns2:prevChar <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line2_char3> ;
-    ns1:hasGraphemeReading ns1:character_tu_reading_tu .
+    ns1:charIndex 4 ;
+    ns1:lineNumber 2 ;
+    ns1:nextChar <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line2_char5> ;
+    ns1:prevChar <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_transliteration1_obverse_line2_char3> ;
+    ns2:hasGraphemeReading ns2:character_tu_reading_tu .
 

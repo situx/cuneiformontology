@@ -7,8 +7,10 @@
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Linkset: cunei_dataset - graphemon:"@en ;
-    void:linkPredicate rdf:type ;
+    void:linkPredicate rdf:type,
+        rdfs:subPropertyOf ;
     void:objectsTarget <http://www.purl.org/graphemon#> ;
     void:subjectsTarget <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    void:triples 17172 .
+    void:triples 1,
+        247 .
 
