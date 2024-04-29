@@ -10,10 +10,11 @@ jobs:
 
   ontdocI:
     uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
+    needs: build
     name: Ontdoc I      
     with: 
           rdffilepath: signlist/signlist.ttl
-          version: v017dev
+          version: v018
           docpath: docs
           prefixns: https://situx.github.io/cuneiformontology/
           prefixnsshort: cunei
@@ -28,10 +29,11 @@ jobs:
           
   ontdocII:
       uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
+      needs: ontdocI
       name: Ontdoc II      
       with: 
             rdffilepath: merged.ttl
-            version: v017dev
+            version: v018
             docpath: docs
             prefixns: https://situx.github.io/cuneiformontology/
             prefixnsshort: cunei
@@ -42,6 +44,7 @@ jobs:
             createnonNSPages: true
             createVOWL: true
             preferredlang: en
+            sleepbefore: 300
             ghpages: true
 
   
