@@ -6,6 +6,10 @@
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: hasGraphemeReading"@en ;
-    void:property <http://www.purl.org/graphemon#hasGraphemeReading> ;
-    void:triples 12046 .
+    void:property <http://www.purl.org/graphemon#hasGraphemeReading>,
+        <https://situx.github.io/cuneiformontology/examples/signlist/hasGraphemeReading>,
+        <https://situx.github.io/cuneiformontology/examples/tch92/hasGraphemeReading> ;
+    void:triples 8,
+        186,
+        207 .
 

@@ -1,7 +1,9 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ns1: <http://www.purl.org/cuneiform#> .
 @prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line13> a ns1:Line,
         <http://www.w3.org/ns/ldp#Resource>,
@@ -20,5 +22,6 @@
         <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line13_char6_glyph>,
         <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line13_char7_glyph>,
         <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line13_char8_glyph>,
-        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line13_char9_glyph> .
+        <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_obverse_line13_char9_glyph> ;
+    foaf:image "https://situx.github.io/cuneiformontology/examples/tch92/images/line/line_13_TCH92_front.jpg"^^xsd:anyURI .
 

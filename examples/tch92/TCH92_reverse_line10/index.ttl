@@ -1,6 +1,8 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ns1: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line10> a ns1:Line,
         <http://www.w3.org/ns/ldp#Resource>,
@@ -9,5 +11,6 @@
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     ns1:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/tch92/images/line/line_10_TCH92_back.jpg> ;
     ns1:nextLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line11> ;
-    ns1:prevLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line9> .
+    ns1:prevLine <https://situx.github.io/cuneiformontology/examples/tch92/TCH92_reverse_line9> ;
+    foaf:image "https://situx.github.io/cuneiformontology/examples/tch92/images/line/line_10_TCH92_back.jpg"^^xsd:anyURI .
 

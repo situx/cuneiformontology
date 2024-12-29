@@ -1,3 +1,4 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix ns2: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -17,5 +18,6 @@
         <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char3_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char4_glyph>,
         <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char5_glyph>,
-        <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char6_glyph> .
+        <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_obverse_line1_char6_glyph> ;
+    foaf:image "https://situx.github.io/cuneiformontology/examples/hs1174/images/line/line_1_HS1174_03_front.jpg"^^xsd:anyURI .
 

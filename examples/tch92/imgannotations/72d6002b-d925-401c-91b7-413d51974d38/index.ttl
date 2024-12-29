@@ -1,23 +1,23 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix ns1: <https://www.w3.org/ns/activitystreams#> .
-@prefix ns2: <http://www.w3.org/ns/oa#> .
+@prefix ns1: <http://www.w3.org/ns/oa#> .
+@prefix ns2: <https://www.w3.org/ns/activitystreams#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/72d6002b-d925-401c-91b7-413d51974d38> a <http://www.w3.org/ns/ldp#Resource>,
-        ns2:Annotation,
+        ns1:Annotation,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Annotation of Glyph at TCH92 reverse line 12 char 2 on 3D rendering"@en ;
     dcterms:creator <https://orcid.org/0000-0002-9499-5840> ;
     dcterms:rights "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns2:hasBody <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/72d6002b-d925-401c-91b7-413d51974d38_body_charindex>,
+    ns1:hasBody <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/72d6002b-d925-401c-91b7-413d51974d38_body_charindex>,
         <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/72d6002b-d925-401c-91b7-413d51974d38_body_glyph>,
         <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/72d6002b-d925-401c-91b7-413d51974d38_body_line>,
         <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/72d6002b-d925-401c-91b7-413d51974d38_body_tabletside>,
         <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/72d6002b-d925-401c-91b7-413d51974d38_body_translit> ;
-    ns2:hasTarget <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/72d6002b-d925-401c-91b7-413d51974d38_target1>,
+    ns1:hasTarget <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/72d6002b-d925-401c-91b7-413d51974d38_target1>,
         <https://situx.github.io/cuneiformontology/examples/tch92/imgannotations/72d6002b-d925-401c-91b7-413d51974d38_target3d> ;
-    ns1:generator <https://github.com/recogito/annotorious-openseadragon> .
+    ns2:generator <https://github.com/recogito/annotorious-openseadragon> .
 

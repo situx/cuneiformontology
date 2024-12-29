@@ -1,7 +1,9 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ns1: <http://www.purl.org/graphemon#> .
 @prefix ns2: <http://www.purl.org/cuneiform#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line4_char2_glyph> a <http://www.cidoc-crm.org/cidoc-crm/TX9_Glyph>,
         <http://www.w3.org/ns/ldp#Resource>,
@@ -10,5 +12,6 @@
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
     ns2:isRepresentedBy <https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_4_2_tum_HS1174_06_back.jpg> ;
     ns1:nextGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line4_char3_glyph> ;
-    ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line4_char1_glyph> .
+    ns1:prevGlyph <https://situx.github.io/cuneiformontology/examples/hs1174/HS1174_reverse_line4_char1_glyph> ;
+    foaf:image "https://situx.github.io/cuneiformontology/examples/hs1174/images/charline/charline_4_2_tum_HS1174_06_back.jpg"^^xsd:anyURI .
 
