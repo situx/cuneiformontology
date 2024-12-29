@@ -1,19 +1,19 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_apin> a ns1:Grapheme,
+<https://situx.github.io/cuneiformontology/signlist/character_apin> a ns2:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: APIN (ENGAR)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_apin_sense__uru4___to_till>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_apin_sense__uru4___to_till>,
         <https://situx.github.io/cuneiformontology/signlist/character_apin_sense_farmer>,
         <https://situx.github.io/cuneiformontology/signlist/character_apin_sense_plow> ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns1:abzl "005" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_apin_reading_absin3>,
+    ns2:abzl "005" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_apin_reading_absin3>,
         <https://situx.github.io/cuneiformontology/signlist/character_apin_reading_abszin3>,
         <https://situx.github.io/cuneiformontology/signlist/character_apin_reading_apin>,
         <https://situx.github.io/cuneiformontology/signlist/character_apin_reading_apin_apin>,
@@ -27,14 +27,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_apin_reading_ur11>,
         <https://situx.github.io/cuneiformontology/signlist/character_apin_reading_uru4>,
         <https://situx.github.io/cuneiformontology/signlist/character_apin_reading_usz8> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_apin_engar> ;
-    ns1:hethzl "9" ;
-    ns1:labat "56" ;
-    ns1:meszl "90" ;
-    ns1:obo "5" ;
-    ns1:signName "APIN (ENGAR)" ;
-    ns1:slha "056" ;
-    ns1:unicodeCodepoint "U+12033" ;
-    ns1:unicodeRepresentation "𒀳" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_apin_engar> ;
+    ns2:hethzl "9" ;
+    ns2:labat "56" ;
+    ns2:meszl "90" ;
+    ns2:obo "5" ;
+    ns2:signName "APIN (ENGAR)" ;
+    ns2:slha "056" ;
+    ns2:unicodeCodepoint "U+12033" ;
+    ns2:unicodeRepresentation "𒀳" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555101> .
 

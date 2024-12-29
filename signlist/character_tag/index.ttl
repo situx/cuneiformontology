@@ -1,19 +1,19 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_tag> a ns1:Grapheme,
+<https://situx.github.io/cuneiformontology/signlist/character_tag> a ns2:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: TAG (ŠUM)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_tag_sense_to_beat>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_tag_sense_to_beat>,
         <https://situx.github.io/cuneiformontology/signlist/character_tag_sense_to_touch>,
         <https://situx.github.io/cuneiformontology/signlist/character_tag_sense_to_weave> ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns1:abzl "122" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_tag_reading_da6>,
+    ns2:abzl "122" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_tag_reading_da6>,
         <https://situx.github.io/cuneiformontology/signlist/character_tag_reading_daq6>,
         <https://situx.github.io/cuneiformontology/signlist/character_tag_reading_gurusz4>,
         <https://situx.github.io/cuneiformontology/signlist/character_tag_reading_sub6>,
@@ -41,14 +41,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_tag_reading_uttuₓ>,
         <https://situx.github.io/cuneiformontology/signlist/character_tag_reading_zil2>,
         <https://situx.github.io/cuneiformontology/signlist/character_tag_reading_śum> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_tag_szum> ;
-    ns1:hethzl "91" ;
-    ns1:labat "126" ;
-    ns1:meszl "221" ;
-    ns1:obo "121" ;
-    ns1:signName "TAG (ŠUM)" ;
-    ns1:slha "126" ;
-    ns1:unicodeCodepoint "U+122F3" ;
-    ns1:unicodeRepresentation "𒋳" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_tag_szum> ;
+    ns2:hethzl "91" ;
+    ns2:labat "126" ;
+    ns2:meszl "221" ;
+    ns2:obo "121" ;
+    ns2:signName "TAG (ŠUM)" ;
+    ns2:slha "126" ;
+    ns2:unicodeCodepoint "U+122F3" ;
+    ns2:unicodeRepresentation "𒋳" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556484> .
 

@@ -1,14 +1,14 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_ḫi> a ns2:Grapheme,
+<https://situx.github.io/cuneiformontology/signlist/character_ḫi> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: ḪI (DÙG)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_ḫi_sense__dug3___adi>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_ḫi_sense__dug3___adi>,
         <https://situx.github.io/cuneiformontology/signlist/character_ḫi_sense__szar2___numerous>,
         <https://situx.github.io/cuneiformontology/signlist/character_ḫi_sense_companion>,
         <https://situx.github.io/cuneiformontology/signlist/character_ḫi_sense_du10_sa___friend>,
@@ -19,8 +19,8 @@
         <https://situx.github.io/cuneiformontology/signlist/character_ḫi_sense_to_be_make_enioyable>,
         <https://situx.github.io/cuneiformontology/signlist/character_ḫi_sense_to_enioy> ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns2:abzl "277" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ḫi_reading_da10>,
+    ns1:abzl "277" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_ḫi_reading_da10>,
         <https://situx.github.io/cuneiformontology/signlist/character_ḫi_reading_dab3>,
         <https://situx.github.io/cuneiformontology/signlist/character_ḫi_reading_de8>,
         <https://situx.github.io/cuneiformontology/signlist/character_ḫi_reading_di2>,
@@ -44,14 +44,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_ḫi_reading_te2>,
         <https://situx.github.io/cuneiformontology/signlist/character_ḫi_reading_ti2>,
         <https://situx.github.io/cuneiformontology/signlist/character_ḫi_reading_ʾi3> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_hi_du3g> ;
-    ns2:hethzl "335" ;
-    ns2:labat "396.1" ;
-    ns2:meszl "631" ;
-    ns2:obo "277" ;
-    ns2:signName "ḪI (DÙG)" ;
-    ns2:slha "396" ;
-    ns2:unicodeCodepoint "U+1212D" ;
-    ns2:unicodeRepresentation "𒄭" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_hi_du3g> ;
+    ns1:hethzl "335" ;
+    ns1:labat "396.1" ;
+    ns1:meszl "631" ;
+    ns1:obo "277" ;
+    ns1:signName "ḪI (DÙG)" ;
+    ns1:slha "396" ;
+    ns1:unicodeCodepoint "U+1212D" ;
+    ns1:unicodeRepresentation "𒄭" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555589> .
 

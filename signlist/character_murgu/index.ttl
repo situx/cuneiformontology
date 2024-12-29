@@ -1,20 +1,20 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_murgu> a ns1:Grapheme,
+<https://situx.github.io/cuneiformontology/signlist/character_murgu> a ns2:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: MURGU (SIG4)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_murgu_sense__mur7___szoulder>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_murgu_sense__mur7___szoulder>,
         <https://situx.github.io/cuneiformontology/signlist/character_murgu_sense_brick>,
         <https://situx.github.io/cuneiformontology/signlist/character_murgu_sense_brickwork>,
         <https://situx.github.io/cuneiformontology/signlist/character_murgu_sense_walls> ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns1:abzl "243" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_murgu_reading_bar5>,
+    ns2:abzl "243" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_murgu_reading_bar5>,
         <https://situx.github.io/cuneiformontology/signlist/character_murgu_reading_eger6>,
         <https://situx.github.io/cuneiformontology/signlist/character_murgu_reading_egir6>,
         <https://situx.github.io/cuneiformontology/signlist/character_murgu_reading_gar8>,
@@ -36,14 +36,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_murgu_reading_szeg12>,
         <https://situx.github.io/cuneiformontology/signlist/character_murgu_reading_ŋar8>,
         <https://situx.github.io/cuneiformontology/signlist/character_murgu_reading_ŋurgu> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_murgu_sig4> ;
-    ns1:hethzl "311" ;
-    ns1:labat "567" ;
-    ns1:meszl "906" ;
-    ns1:obo "243" ;
-    ns1:signName "MURGU (SIG4)" ;
-    ns1:slha "567" ;
-    ns1:unicodeCodepoint "U+122DE" ;
-    ns1:unicodeRepresentation "𒋞" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_murgu_sig4> ;
+    ns2:hethzl "311" ;
+    ns2:labat "567" ;
+    ns2:meszl "906" ;
+    ns2:obo "243" ;
+    ns2:signName "MURGU (SIG4)" ;
+    ns2:slha "567" ;
+    ns2:unicodeCodepoint "U+122DE" ;
+    ns2:unicodeRepresentation "𒋞" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556443> .
 

@@ -1,19 +1,19 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_bára> a ns2:Grapheme,
+<https://situx.github.io/cuneiformontology/signlist/character_bára> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: BÁRA" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_bára_sense_dais>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_bára_sense_dais>,
         <https://situx.github.io/cuneiformontology/signlist/character_bára_sense_sack>,
         <https://situx.github.io/cuneiformontology/signlist/character_bára_sense_throne> ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns2:abzl "217" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_bára_reading_bar2>,
+    ns1:abzl "217" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_bára_reading_bar2>,
         <https://situx.github.io/cuneiformontology/signlist/character_bára_reading_bara2>,
         <https://situx.github.io/cuneiformontology/signlist/character_bára_reading_bara2_bara2>,
         <https://situx.github.io/cuneiformontology/signlist/character_bára_reading_bara2_barag>,
@@ -25,14 +25,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_bára_reading_szar6>,
         <https://situx.github.io/cuneiformontology/signlist/character_bára_reading_szara>,
         <https://situx.github.io/cuneiformontology/signlist/character_bára_reading_szara_cf_409_szara2> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ba2ra> ;
-    ns2:hethzl "235" ;
-    ns2:labat "344" ;
-    ns2:meszl "554" ;
-    ns2:obo "217" ;
-    ns2:signName "BÁRA" ;
-    ns2:slha "344" ;
-    ns2:unicodeCodepoint "U+12048" ;
-    ns2:unicodeRepresentation "𒁈" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_ba2ra> ;
+    ns1:hethzl "235" ;
+    ns1:labat "344" ;
+    ns1:meszl "554" ;
+    ns1:obo "217" ;
+    ns1:signName "BÁRA" ;
+    ns1:slha "344" ;
+    ns1:unicodeCodepoint "U+12048" ;
+    ns1:unicodeRepresentation "𒁈" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555144> .
 

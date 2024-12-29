@@ -1,17 +1,17 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_dug> a ns2:Grapheme,
+<https://situx.github.io/cuneiformontology/signlist/character_dug> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: DUG (BI×A)" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_dug_sense_earthen_vessel> ;
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_dug_sense_earthen_vessel> ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns2:abzl "080" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_dug_reading_dug>,
+    ns1:abzl "080" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_dug_reading_dug>,
         <https://situx.github.io/cuneiformontology/signlist/character_dug_reading_dug_dug>,
         <https://situx.github.io/cuneiformontology/signlist/character_dug_reading_dug_karpatu>,
         <https://situx.github.io/cuneiformontology/signlist/character_dug_reading_duk>,
@@ -44,15 +44,15 @@
         <https://situx.github.io/cuneiformontology/signlist/character_dug_reading_ursub>,
         <https://situx.github.io/cuneiformontology/signlist/character_dug_reading_urzub>,
         <https://situx.github.io/cuneiformontology/signlist/character_dug_reading_zurzub> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_a>,
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_a>,
         <https://situx.github.io/cuneiformontology/signlist/character_dug_bi> ;
-    ns2:hethzl "162" ;
-    ns2:labat "309" ;
-    ns2:meszl "499" ;
-    ns2:obo "80" ;
-    ns2:signName "DUG (BI×A)" ;
-    ns2:slha "309" ;
-    ns2:unicodeCodepoint "U+12081" ;
-    ns2:unicodeRepresentation "𒂁" ;
+    ns1:hethzl "162" ;
+    ns1:labat "309" ;
+    ns1:meszl "499" ;
+    ns1:obo "80" ;
+    ns1:signName "DUG (BI×A)" ;
+    ns1:slha "309" ;
+    ns1:unicodeCodepoint "U+12081" ;
+    ns1:unicodeRepresentation "𒂁" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555255> .
 

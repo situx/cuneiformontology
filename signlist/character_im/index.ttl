@@ -1,14 +1,14 @@
-@prefix ns1: <http://lemon-model.net/lemon#> .
-@prefix ns2: <http://www.purl.org/graphemon#> .
+@prefix ns1: <http://www.purl.org/graphemon#> .
+@prefix ns2: <http://lemon-model.net/lemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_im> a ns2:Grapheme,
+<https://situx.github.io/cuneiformontology/signlist/character_im> a ns1:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: IM" ;
-    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_im_sense__ni2___fear>,
+    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_im_sense__ni2___fear>,
         <https://situx.github.io/cuneiformontology/signlist/character_im_sense__ni2___personal_suffixes___self>,
         <https://situx.github.io/cuneiformontology/signlist/character_im_sense_cardinal_point>,
         <https://situx.github.io/cuneiformontology/signlist/character_im_sense_clay>,
@@ -16,8 +16,8 @@
         <https://situx.github.io/cuneiformontology/signlist/character_im_sense_tablet>,
         <https://situx.github.io/cuneiformontology/signlist/character_im_sense_wind> ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns2:abzl "297" ;
-    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_im_reading_adad>,
+    ns1:abzl "297" ;
+    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_im_reading_adad>,
         <https://situx.github.io/cuneiformontology/signlist/character_im_reading_anegi>,
         <https://situx.github.io/cuneiformontology/signlist/character_im_reading_did_k>,
         <https://situx.github.io/cuneiformontology/signlist/character_im_reading_em>,
@@ -39,14 +39,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_im_reading_tu15>,
         <https://situx.github.io/cuneiformontology/signlist/character_im_reading_tum9>,
         <https://situx.github.io/cuneiformontology/signlist/character_im_reading_tumu> ;
-    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_im> ;
-    ns2:hethzl "337" ;
-    ns2:labat "399" ;
-    ns2:meszl "641" ;
-    ns2:obo "297" ;
-    ns2:signName "IM" ;
-    ns2:slha "399" ;
-    ns2:unicodeCodepoint "U+1214E" ;
-    ns2:unicodeRepresentation "𒅎" ;
+    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_im> ;
+    ns1:hethzl "337" ;
+    ns1:labat "399" ;
+    ns1:meszl "641" ;
+    ns1:obo "297" ;
+    ns1:signName "IM" ;
+    ns1:slha "399" ;
+    ns1:unicodeCodepoint "U+1214E" ;
+    ns1:unicodeRepresentation "𒅎" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87555658> .
 

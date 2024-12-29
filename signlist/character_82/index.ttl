@@ -1,14 +1,14 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_82> a ns1:GraphemeComposition,
+<https://situx.github.io/cuneiformontology/signlist/character_82> a ns2:GraphemeComposition,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character Composition: 82" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_82_sense_82> ;
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_82_sense_82> ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_82_reading_82> ;
-    ns1:unicodeRepresentation "𒐕𒌋𒌋𒈫" .
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_82_reading_82> ;
+    ns2:unicodeRepresentation "𒐕𒌋𒌋𒈫" .
 

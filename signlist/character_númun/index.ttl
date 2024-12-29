@@ -1,16 +1,16 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_númun> a ns1:GraphemeComposition,
+<https://situx.github.io/cuneiformontology/signlist/character_númun> a ns2:GraphemeComposition,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character Composition: NÚMUN (ZIoverZI.LAGAB)" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_númun_sense_ruszes> ;
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_númun_sense_ruszes> ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns1:abzl "149" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_númun_reading_aszki>,
+    ns2:abzl "149" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_númun_reading_aszki>,
         <https://situx.github.io/cuneiformontology/signlist/character_númun_reading_gin4>,
         <https://situx.github.io/cuneiformontology/signlist/character_númun_reading_gug4>,
         <https://situx.github.io/cuneiformontology/signlist/character_númun_reading_gugₓ>,
@@ -27,14 +27,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_númun_reading_zukum>,
         <https://situx.github.io/cuneiformontology/signlist/character_númun_reading_zuluhu3>,
         <https://situx.github.io/cuneiformontology/signlist/character_númun_reading_zulumhi3> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_lagab>,
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_lagab>,
         <https://situx.github.io/cuneiformontology/signlist/character_nu2mun_zi>,
         <https://situx.github.io/cuneiformontology/signlist/character_zi> ;
-    ns1:labat "66.3" ;
-    ns1:meszl "102" ;
-    ns1:obo "149" ;
-    ns1:signName "NÚMUN (ZIoverZI.LAGAB)" ;
-    ns1:slha "066c" ;
-    ns1:unicodeCodepoint "U+12364 & U+121B8" ;
-    ns1:unicodeRepresentation "𒍤𒆸" .
+    ns2:labat "66.3" ;
+    ns2:meszl "102" ;
+    ns2:obo "149" ;
+    ns2:signName "NÚMUN (ZIoverZI.LAGAB)" ;
+    ns2:slha "066c" ;
+    ns2:unicodeCodepoint "U+12364 & U+121B8" ;
+    ns2:unicodeRepresentation "𒍤𒆸" .
 

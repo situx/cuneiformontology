@@ -1,19 +1,19 @@
-@prefix ns1: <http://www.purl.org/graphemon#> .
-@prefix ns2: <http://lemon-model.net/lemon#> .
+@prefix ns1: <http://lemon-model.net/lemon#> .
+@prefix ns2: <http://www.purl.org/graphemon#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<https://situx.github.io/cuneiformontology/signlist/character_zu> a ns1:Grapheme,
+<https://situx.github.io/cuneiformontology/signlist/character_zu> a ns2:Grapheme,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Character: ZU" ;
-    ns2:sense <https://situx.github.io/cuneiformontology/signlist/character_zu_sense_to_inform>,
+    ns1:sense <https://situx.github.io/cuneiformontology/signlist/character_zu_sense_to_inform>,
         <https://situx.github.io/cuneiformontology/signlist/character_zu_sense_to_know>,
         <https://situx.github.io/cuneiformontology/signlist/character_zu_sense_to_learn> ;
     void:inDataset <https://situx.github.io/cuneiformontology/cunei_dataset> ;
-    ns1:abzl "304" ;
-    ns1:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_zu_reading_ka14>,
+    ns2:abzl "304" ;
+    ns2:hasGraphemeReading <https://situx.github.io/cuneiformontology/signlist/character_zu_reading_ka14>,
         <https://situx.github.io/cuneiformontology/signlist/character_zu_reading_ki6>,
         <https://situx.github.io/cuneiformontology/signlist/character_zu_reading_s_u2>,
         <https://situx.github.io/cuneiformontology/signlist/character_zu_reading_su2>,
@@ -21,14 +21,14 @@
         <https://situx.github.io/cuneiformontology/signlist/character_zu_reading_zu>,
         <https://situx.github.io/cuneiformontology/signlist/character_zu_reading_zu_s_u2>,
         <https://situx.github.io/cuneiformontology/signlist/character_zu_reading_zu_zu> ;
-    ns1:hasPart <https://situx.github.io/cuneiformontology/signlist/character_zu> ;
-    ns1:hethzl "209" ;
-    ns1:labat "6" ;
-    ns1:meszl "15" ;
-    ns1:obo "304" ;
-    ns1:signName "ZU" ;
-    ns1:slha "006" ;
-    ns1:unicodeCodepoint "U+1236A" ;
-    ns1:unicodeRepresentation "𒍪" ;
+    ns2:hasPart <https://situx.github.io/cuneiformontology/signlist/character_zu> ;
+    ns2:hethzl "209" ;
+    ns2:labat "6" ;
+    ns2:meszl "15" ;
+    ns2:obo "304" ;
+    ns2:signName "ZU" ;
+    ns2:slha "006" ;
+    ns2:unicodeCodepoint "U+1236A" ;
+    ns2:unicodeRepresentation "𒍪" ;
     owl:sameAs <http://www.wikidata.org/entity/Q87556728> .
 
